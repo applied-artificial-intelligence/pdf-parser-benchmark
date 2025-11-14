@@ -1,0 +1,1909 @@
+{
+  "project": {
+    "name": "PDF-Bench - PDF-to-Markdown Benchmarking Suite",
+    "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
+    "version": "0.1.0",
+    "created_at": "2025-11-14T06:00:00Z",
+    "updated_at": "2025-11-14T14:26:25.572905+00:00",
+    "estimated_total_hours": 255,
+    "estimated_weeks": "6-7 weeks full-time"
+  },
+  "status": "implementing",
+  "current_task": null,
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Initialize Project with uv",
+      "description": "Set up project structure using uv package manager with pyproject.toml (PEP 621 format)",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "pyproject.toml created with dependencies (PEP 621 format)",
+        "uv.lock generated",
+        "Virtual environment created with uv venv",
+        "Dependencies installed successfully with uv pip install",
+        "uv project structure validated"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T07:03:38.358632Z",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "pyproject.toml",
+        "uv.lock",
+        ".venv/",
+        "pdf_bench/__init__.py",
+        "pdf_bench/main.py",
+        "README.md",
+        ".gitignore"
+      ]
+    },
+    {
+      "id": "TASK-002",
+      "title": "Create Directory Structure",
+      "description": "Create complete directory structure for pdf-bench project",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "acceptance_criteria": [
+        "All directories from architecture created",
+        ".gitignore configured (excludes .cache/, reports/, *.pyc)",
+        "README skeleton created"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": "auditor",
+      "completed_at": "2025-11-14T07:07:39.062099Z",
+      "actual_hours": 0.5,
+      "deliverables": [
+        "14 directories created",
+        "5 __init__.py files",
+        ".gitignore updated",
+        "README validated"
+      ]
+    },
+    {
+      "id": "TASK-003",
+      "title": "Configure Development Tools",
+      "description": "Set up ruff, mypy, pytest, and pre-commit hooks",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "acceptance_criteria": [
+        "ruff configured for linting",
+        "mypy configured for type checking",
+        "pytest configured with coverage",
+        "Pre-commit hooks set up (optional)"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T13:12:47.591813+00:00",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "pyproject.toml (ruff, mypy, pytest config)",
+        ".pre-commit-config.yaml",
+        "docs/development/CONTRIBUTING.md"
+      ]
+    },
+    {
+      "id": "TASK-004",
+      "title": "Define BaseParser Abstract Class",
+      "description": "Create abstract base class interface for all PDF parsers",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/base_parser.py created",
+        "Abstract methods defined (name, parse)",
+        "Type hints complete",
+        "Docstrings written",
+        "Unit tests for interface validation"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": "architect",
+      "completed_at": "2025-11-14T13:19:58.326443+00:00",
+      "actual_hours": 3.0,
+      "deliverables": [
+        "pdf_bench/systems/base_parser.py",
+        "tests/test_systems/test_base_parser.py",
+        "tests/test_systems/__init__.py",
+        "validate_task_004.sh",
+        "TASK-004-design-decisions.md",
+        "TASK-004-completion-summary.md"
+      ]
+    },
+    {
+      "id": "TASK-005",
+      "title": "Implement Caching System",
+      "description": "Create hash-based disk-backed caching system for parser outputs",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/utils/caching.py created",
+        "Hash-based key generation",
+        "Disk-backed storage (.cache/)",
+        "Cache hit/miss tracking",
+        "Unit tests with mock filesystem"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T13:40:57.116443+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/utils/caching.py",
+        "tests/test_utils/test_caching.py",
+        "tests/test_utils/__init__.py",
+        "examples_caching_usage.py"
+      ]
+    },
+    {
+      "id": "TASK-006",
+      "title": "Implement Document Metadata Schema",
+      "description": "Create YAML schema for document metadata with validation",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "YAML schema defined",
+        "Validation function created",
+        "Load/save utilities",
+        "Example metadata files",
+        "Unit tests for validation"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T14:19:21.493667+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/utils/metadata.py",
+        "tests/test_utils/test_metadata.py",
+        "corpus/academic/example_arxiv.yaml",
+        "corpus/business/example_govuk.yaml",
+        "corpus/synthetic/example_pandoc.yaml",
+        "docs/METADATA_SCHEMA.md",
+        "docs/METADATA_QUICKSTART.md"
+      ]
+    },
+    {
+      "id": "TASK-007",
+      "title": "Implement Text Normalization Utilities",
+      "description": "Create text normalization functions (Unicode, whitespace, smart quotes)",
+      "type": "foundation",
+      "phase": 1,
+      "status": "completed",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/utils/normalization.py created",
+        "Unicode NFC normalization",
+        "Whitespace collapsing",
+        "Smart quote normalization",
+        "Unit tests with edge cases"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T14:26:25.572895+00:00",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "pdf_bench/utils/normalization.py",
+        "tests/test_utils/test_normalization.py"
+      ]
+    },
+    {
+      "id": "TASK-008",
+      "title": "Implement PyMuPDFParser (Baseline)",
+      "description": "Create baseline parser using PyMuPDF for simple text extraction",
+      "type": "foundation",
+      "phase": 1,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/pymupdf.py created",
+        "Implements BaseParser interface",
+        "Simple text extraction (no structure)",
+        "Cache integration",
+        "Integration test with sample PDF"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-009",
+      "title": "Implement Normalized Edit Distance Metric",
+      "description": "Create normalized Levenshtein distance metric for text comparison",
+      "type": "foundation",
+      "phase": 1,
+      "status": "pending",
+      "dependencies": [
+        "TASK-007"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/metrics/text_metrics.py created",
+        "Levenshtein distance calculation",
+        "Normalization to 0-1 score",
+        "Handles empty strings",
+        "Unit tests with known distances"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-010",
+      "title": "Create Basic Test Infrastructure",
+      "description": "Set up test directory structure, fixtures, and CI configuration",
+      "type": "foundation",
+      "phase": 1,
+      "status": "pending",
+      "dependencies": [
+        "TASK-003",
+        "TASK-008",
+        "TASK-009"
+      ],
+      "acceptance_criteria": [
+        "tests/ directory structure created",
+        "Fixtures for sample PDF + GT",
+        "Test utilities (comparison helpers)",
+        "CI configuration (GitHub Actions skeleton)",
+        "All existing tests passing"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": "test-engineer"
+    },
+    {
+      "id": "TASK-011",
+      "title": "Create Markdown Test Documents",
+      "description": "Author 5 Markdown documents with increasing complexity for synthetic corpus",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "5 Markdown files created (basic, lists, tables, math, complex)",
+        "Saved in corpus/synthetic/",
+        "Corresponding YAML metadata created"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-012",
+      "title": "Implement Pandoc Wrapper for MD\u2192PDF",
+      "description": "Create wrapper for Pandoc to convert Markdown to PDF using Eisvogel template",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-011"
+      ],
+      "acceptance_criteria": [
+        "builders/build_synthetic.py created",
+        "Pandoc subprocess integration",
+        "Eisvogel template configuration",
+        "PDF hash verification",
+        "Error handling for Pandoc failures"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-013",
+      "title": "Generate PDF from Markdown Test Docs",
+      "description": "Convert all 5 Markdown test documents to PDF with validation",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-012"
+      ],
+      "acceptance_criteria": [
+        "All 5 Markdown files converted to PDF",
+        "PDFs saved with SHA256 hashes",
+        "Visual inspection confirms quality",
+        "Metadata updated with pdf_hash"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-014",
+      "title": "Design DOCX Templates",
+      "description": "Create 3 DOCX templates for synthetic document generation",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "3 DOCX templates created (simple report, table-heavy, multi-column)",
+        "Templates use Jinja2 syntax for variables",
+        "Saved in corpus/synthetic/templates/"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-015",
+      "title": "Implement DOCX\u2192PDF Pipeline",
+      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX\u2192PDF conversion",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-014"
+      ],
+      "acceptance_criteria": [
+        "python-docx-template integration",
+        "LibreOffice headless conversion",
+        "Ground truth extraction from DOCX structure",
+        "PDF hash verification",
+        "Error handling for conversion failures"
+      ],
+      "estimated_hours": 4,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-016",
+      "title": "Generate Synthetic DOCX Documents",
+      "description": "Generate 3 synthetic documents from DOCX templates",
+      "type": "feature",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-015"
+      ],
+      "acceptance_criteria": [
+        "3 DOCX documents generated from templates",
+        "Converted to PDF successfully",
+        "Ground truth Markdown created",
+        "Metadata YAML files created",
+        "Visual inspection confirms quality"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-017",
+      "title": "Implement Ground Truth Validation Script",
+      "description": "Create validation script to check corpus integrity",
+      "type": "testing",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-006",
+        "TASK-013",
+        "TASK-016"
+      ],
+      "acceptance_criteria": [
+        "Validation script checks YAML schema, file existence, hashes, Markdown syntax",
+        "Generates validation report",
+        "Fails loudly on errors"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-018",
+      "title": "Manual Review and Documentation",
+      "description": "Manually review synthetic corpus and document corpus builder usage",
+      "type": "documentation",
+      "phase": 2,
+      "status": "pending",
+      "dependencies": [
+        "TASK-017"
+      ],
+      "acceptance_criteria": [
+        "All 8 synthetic documents manually reviewed",
+        "Review checklist completed",
+        "Corpus builder usage documented in README",
+        "Known limitations documented"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-019",
+      "title": "Implement Markdown AST Parser",
+      "description": "Create Markdown AST parser using mistune for structure analysis",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-002"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/metrics/struct_metrics.py created",
+        "mistune integration for AST generation",
+        "AST node type extraction",
+        "Handles malformed Markdown gracefully",
+        "Unit tests with sample Markdown"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-020",
+      "title": "Implement AST Tree-Edit Distance",
+      "description": "Implement AST-based tree-edit distance metric using zss library",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-019"
+      ],
+      "acceptance_criteria": [
+        "zss library integration",
+        "AST-to-tree conversion",
+        "Tree-edit distance calculation",
+        "Normalization to 0-1 score",
+        "Unit tests with known tree pairs"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": "architect"
+    },
+    {
+      "id": "TASK-021",
+      "title": "Implement Element F1 Score",
+      "description": "Create element type counting and F1 score calculation for Markdown structure",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-019"
+      ],
+      "acceptance_criteria": [
+        "Node type counting (H1, H2, List, Table, etc.)",
+        "Precision/Recall/F1 calculation",
+        "Per-element-type breakdown",
+        "Handles empty documents",
+        "Unit tests with varied documents"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-022",
+      "title": "Implement HTML Table Normalization",
+      "description": "Create HTML table normalization utilities for canonical comparison",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-007"
+      ],
+      "acceptance_criteria": [
+        "Lowercase tags and attributes",
+        "Sort attributes alphabetically",
+        "Normalize whitespace inside tags",
+        "Extract to canonical 2D array",
+        "Unit tests with complex tables"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-023",
+      "title": "Integrate TEDS Metric",
+      "description": "Integrate table-recognition-metric library for TEDS evaluation",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-022"
+      ],
+      "acceptance_criteria": [
+        "table-recognition-metric library integrated",
+        "Wrapper function in table_metrics.py",
+        "HTML table comparison",
+        "Score normalization",
+        "Integration tests with table fixtures"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-024",
+      "title": "Implement GFM Table Parser",
+      "description": "Create GFM table parser for simple Markdown tables",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-019"
+      ],
+      "acceptance_criteria": [
+        "GFM table syntax parsing",
+        "Conversion to 2D array",
+        "Handles alignment markers",
+        "Malformed table handling",
+        "Unit tests with varied GFM tables"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-025",
+      "title": "Implement Cell Content F1",
+      "description": "Create cell-by-cell table comparison metric",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-024"
+      ],
+      "acceptance_criteria": [
+        "Cell-by-cell text comparison",
+        "Precision/Recall/F1 calculation",
+        "Handles mismatched table dimensions",
+        "Unit tests"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-026",
+      "title": "Implement LaTeX Normalization",
+      "description": "Create LaTeX normalization utilities for math comparison",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-007"
+      ],
+      "acceptance_criteria": [
+        "Whitespace collapsing",
+        "Remove \\left, \\right",
+        "Remove redundant grouping {{a}} \u2192 {a}",
+        "Handles inline and display math",
+        "Unit tests with complex equations"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-027",
+      "title": "Implement LaTeX String Matching",
+      "description": "Create LaTeX extraction and string matching metric",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-026"
+      ],
+      "acceptance_criteria": [
+        "Extract LaTeX from Markdown",
+        "Normalize both GT and prediction",
+        "Exact string match",
+        "F1 score calculation",
+        "Unit tests with math-heavy documents"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-028",
+      "title": "Implement chrF++ Metric",
+      "description": "Integrate sacrebleu for chrF++ text similarity metric",
+      "type": "feature",
+      "phase": 3,
+      "status": "pending",
+      "dependencies": [
+        "TASK-007"
+      ],
+      "acceptance_criteria": [
+        "sacrebleu library integration",
+        "Wrapper in text_metrics.py",
+        "Handles empty strings",
+        "Unit tests"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-029",
+      "title": "Install and Test Marker Locally",
+      "description": "Install Marker parser and verify functionality",
+      "type": "integration",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "acceptance_criteria": [
+        "Marker installed from GitHub",
+        "Can run marker_single CLI",
+        "Test on sample PDF",
+        "Output quality inspected"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-030",
+      "title": "Implement MarkerParser Adapter",
+      "description": "Create Marker adapter implementing BaseParser interface",
+      "type": "feature",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-029",
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/marker.py created",
+        "Implements BaseParser interface",
+        "Subprocess integration with marker_single",
+        "Output format handling",
+        "Cache integration",
+        "Error handling",
+        "Integration test"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-031",
+      "title": "Install and Test Nougat Locally",
+      "description": "Install Nougat parser and verify functionality",
+      "type": "integration",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "acceptance_criteria": [
+        "Nougat installed from GitHub",
+        "Model downloaded",
+        "Can run Nougat CLI",
+        "Test on academic PDF",
+        "LaTeX output inspected"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-032",
+      "title": "Implement NougatParser Adapter",
+      "description": "Create Nougat adapter implementing BaseParser interface",
+      "type": "feature",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-031",
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/nougat.py created",
+        "Implements BaseParser interface",
+        "Subprocess integration",
+        "LaTeX-to-Markdown conversion",
+        "Cache integration",
+        "Integration test"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-033",
+      "title": "Install and Test Unstructured Library",
+      "description": "Install Unstructured library and verify functionality",
+      "type": "integration",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-001"
+      ],
+      "acceptance_criteria": [
+        "unstructured library installed",
+        "API exploration completed",
+        "Test on sample PDF",
+        "Markdown output inspected"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-034",
+      "title": "Implement UnstructuredParser Adapter",
+      "description": "Create Unstructured adapter implementing BaseParser interface",
+      "type": "feature",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-033",
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/unstructured.py created",
+        "Implements BaseParser interface",
+        "Configure for Markdown output",
+        "Cache integration",
+        "Integration test"
+      ],
+      "estimated_hours": 4,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-035",
+      "title": "Create Parser Adapter Test Suite",
+      "description": "Create comprehensive integration tests for all parser adapters",
+      "type": "testing",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-008",
+        "TASK-030",
+        "TASK-032",
+        "TASK-034"
+      ],
+      "acceptance_criteria": [
+        "Integration tests for all 4 parsers",
+        "Test on same synthetic corpus",
+        "Verify cache behavior",
+        "Error handling tested",
+        "Performance baseline captured"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": "test-engineer"
+    },
+    {
+      "id": "TASK-036",
+      "title": "Document Parser Installation and Usage",
+      "description": "Update documentation with parser setup instructions",
+      "type": "documentation",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-035"
+      ],
+      "acceptance_criteria": [
+        "README updated with installation instructions",
+        "Per-parser setup documented",
+        "Known limitations documented",
+        "Example usage provided"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-037",
+      "title": "Design Benchmark Configuration Schema",
+      "description": "Create YAML schema for benchmark configuration files",
+      "type": "foundation",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-006"
+      ],
+      "acceptance_criteria": [
+        "YAML schema defined for benchmarks",
+        "Includes document filters, parser selection, metric config",
+        "Example configs created (benchmarks/mvp_all.yaml)",
+        "Validation function"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": "architect"
+    },
+    {
+      "id": "TASK-038",
+      "title": "Implement Config Loader",
+      "description": "Create configuration loader with validation",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-037"
+      ],
+      "acceptance_criteria": [
+        "Load YAML config",
+        "Validate schema",
+        "Resolve document paths",
+        "Load parser classes",
+        "Unit tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-039",
+      "title": "Implement BenchmarkRunner Core",
+      "description": "Create core benchmark orchestration system",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-038",
+        "TASK-009",
+        "TASK-020"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/core.py created",
+        "BenchmarkRunner class",
+        "Task orchestration (parser \u00d7 document)",
+        "Metric computation per result",
+        "Error handling and logging",
+        "Unit tests with mocks"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": "architect"
+    },
+    {
+      "id": "TASK-040",
+      "title": "Implement Parallel Execution",
+      "description": "Add multiprocessing support to benchmark runner",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-039"
+      ],
+      "acceptance_criteria": [
+        "Multiprocessing integration",
+        "Configurable worker count",
+        "Progress tracking with Rich",
+        "Proper error propagation",
+        "Unit tests"
+      ],
+      "estimated_hours": 4,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-041",
+      "title": "Implement Result Persistence",
+      "description": "Create result saving/loading system with JSON schema",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-039"
+      ],
+      "acceptance_criteria": [
+        "Save results to JSON",
+        "Schema: per-document, per-parser, per-metric scores",
+        "Include metadata (timestamps, versions)",
+        "Load results from JSON",
+        "Unit tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-042",
+      "title": "Implement CLI with Typer",
+      "description": "Create CLI interface using Typer framework",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-038",
+        "TASK-039"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/main.py created",
+        "Commands: run, list, report",
+        "pdfbench run --config <yaml> works",
+        "pdfbench list systems shows parsers",
+        "Progress bar during execution",
+        "Error messages are clear"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-043",
+      "title": "Design HTML Report Template",
+      "description": "Create Jinja2 template for HTML reports",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-041"
+      ],
+      "acceptance_criteria": [
+        "Jinja2 template created",
+        "Sections: Leaderboard, metric breakdown, category breakdown",
+        "Clean, professional CSS",
+        "Mobile-responsive",
+        "Chart placeholders (optional for v0.1)"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-044",
+      "title": "Implement Report Generation",
+      "description": "Create report generation system using Jinja2",
+      "type": "feature",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-043"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/report.py created",
+        "Load results JSON",
+        "Calculate aggregate scores",
+        "Render Jinja2 template",
+        "Save HTML report",
+        "Integration test"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-045",
+      "title": "Create Example Benchmark Configs",
+      "description": "Create example benchmark configuration files",
+      "type": "documentation",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-037"
+      ],
+      "acceptance_criteria": [
+        "benchmarks/mvp_all.yaml (all docs, all parsers)",
+        "benchmarks/quick_test.yaml (10 docs, 2 parsers)",
+        "benchmarks/academic_only.yaml",
+        "benchmarks/business_only.yaml"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-046",
+      "title": "End-to-End Integration Test",
+      "description": "Create comprehensive E2E test for full benchmark workflow",
+      "type": "testing",
+      "phase": 5,
+      "status": "pending",
+      "dependencies": [
+        "TASK-042",
+        "TASK-044"
+      ],
+      "acceptance_criteria": [
+        "Run full benchmark on synthetic corpus",
+        "All 4 parsers tested",
+        "All metrics computed",
+        "HTML report generated",
+        "Manual review of report quality",
+        "CI integration"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": "test-engineer"
+    },
+    {
+      "id": "TASK-047",
+      "title": "Identify GOV.UK Target Documents",
+      "description": "Research and select 30 GOV.UK publications for corpus",
+      "type": "documentation",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "30 GOV.UK publications identified",
+        "Varied topics and complexity",
+        "Both HTML and PDF URLs confirmed accessible",
+        "OGL v3.0 license confirmed",
+        "List saved in corpus/business/gov_uk_targets.yaml"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-048",
+      "title": "Implement GOV.UK HTML Scraper",
+      "description": "Create HTML scraper for GOV.UK content extraction",
+      "type": "feature",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [
+        "TASK-047"
+      ],
+      "acceptance_criteria": [
+        "BeautifulSoup integration",
+        "Download HTML content",
+        "Strip navigation, headers, footers",
+        "Extract main content area",
+        "Retry logic for network errors",
+        "Unit tests with mock HTML"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-049",
+      "title": "Implement HTML\u2192Markdown Converter",
+      "description": "Create HTML to Markdown converter for GOV.UK content",
+      "type": "feature",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [
+        "TASK-048"
+      ],
+      "acceptance_criteria": [
+        "Heading extraction (h1\u2192#, h2\u2192##, etc.)",
+        "Paragraph extraction",
+        "List extraction (nested)",
+        "Table conversion (simple\u2192GFM, complex\u2192HTML)",
+        "Figure/image handling",
+        "Applies normalization rules",
+        "Unit tests"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-050",
+      "title": "Implement GOV.UK PDF Downloader",
+      "description": "Create PDF downloader for GOV.UK documents",
+      "type": "feature",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [
+        "TASK-047"
+      ],
+      "acceptance_criteria": [
+        "Download PDFs from URLs",
+        "Verify with SHA256 hash",
+        "Retry logic",
+        "Save to corpus directory",
+        "Unit tests with mock downloads"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-051",
+      "title": "Build GOV.UK Corpus",
+      "description": "Execute GOV.UK corpus building pipeline",
+      "type": "integration",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [
+        "TASK-049",
+        "TASK-050"
+      ],
+      "acceptance_criteria": [
+        "20-30 GOV.UK documents processed",
+        "HTML\u2192Markdown GT generated",
+        "PDFs downloaded",
+        "Metadata YAML files created (OGL v3.0 license)",
+        "Validation script confirms integrity"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-052",
+      "title": "GOV.UK Corpus Quality Review",
+      "description": "Manual quality review of GOV.UK corpus",
+      "type": "testing",
+      "phase": 6,
+      "status": "pending",
+      "dependencies": [
+        "TASK-051"
+      ],
+      "acceptance_criteria": [
+        "Manual review of 10 documents",
+        "GT accuracy spot-checked",
+        "Common failure modes documented",
+        "Known limitations documented",
+        "Refinements applied if needed"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-053",
+      "title": "Identify SEC EDGAR Target Filings",
+      "description": "Research and select 20 SEC filings for financial corpus",
+      "type": "documentation",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "20 target 10-K/10-Q filings identified",
+        "Varied industries",
+        "CIK numbers and filing dates documented",
+        "Both HTML and PDF URLs confirmed",
+        "Public domain status confirmed",
+        "List saved in corpus/business/sec_targets.yaml"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-054",
+      "title": "Implement SEC EDGAR API Client",
+      "description": "Create SEC EDGAR API client for filing downloads",
+      "type": "feature",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [
+        "TASK-053"
+      ],
+      "acceptance_criteria": [
+        "Fetch filing metadata via SEC API",
+        "Download HTML/XBRL source",
+        "Download PDF version",
+        "Rate limiting (SEC requires user-agent)",
+        "Error handling",
+        "Unit tests with mock API"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-055",
+      "title": "Implement Financial Table Extraction",
+      "description": "Create specialized financial table extraction from HTML/XBRL",
+      "type": "feature",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [
+        "TASK-054"
+      ],
+      "acceptance_criteria": [
+        "Parse HTML/XBRL tables",
+        "Handle nested tables",
+        "Extract multi-level headers",
+        "Convert to Markdown (GFM or HTML)",
+        "Apply normalization",
+        "Unit tests with complex financial tables"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-056",
+      "title": "Implement SEC\u2192Markdown Converter",
+      "description": "Create full SEC filing to Markdown converter",
+      "type": "feature",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [
+        "TASK-055"
+      ],
+      "acceptance_criteria": [
+        "Full document HTML\u2192Markdown",
+        "Focus on table accuracy",
+        "Handle SEC-specific formatting",
+        "Unit tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-057",
+      "title": "Build SEC EDGAR Corpus",
+      "description": "Execute SEC corpus building pipeline",
+      "type": "integration",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [
+        "TASK-056"
+      ],
+      "acceptance_criteria": [
+        "10-20 SEC filings processed",
+        "HTML\u2192Markdown GT generated",
+        "PDFs downloaded",
+        "Metadata YAML files created (public domain)",
+        "Validation confirms integrity"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-058",
+      "title": "SEC Corpus Quality Review",
+      "description": "Manual quality review of SEC corpus",
+      "type": "testing",
+      "phase": 7,
+      "status": "pending",
+      "dependencies": [
+        "TASK-057"
+      ],
+      "acceptance_criteria": [
+        "Manual review of 5 filings",
+        "Table extraction quality verified",
+        "TEDS metric tested on SEC tables",
+        "Known limitations documented"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-059",
+      "title": "Identify arXiv Target Papers",
+      "description": "Research and select 30-50 arXiv papers for academic corpus",
+      "type": "documentation",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "30-50 arXiv papers identified",
+        "Categories: cs.CL, cs.CV, math.AP, econ.EM",
+        "Varied complexity (math-heavy, table-heavy, multi-column)",
+        "arXiv IDs documented",
+        "Licenses verified (CC-BY, arXiv license)",
+        "List saved in corpus/academic/arxiv_targets.yaml"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-060",
+      "title": "Implement arXiv API Client",
+      "description": "Create arXiv API client for paper downloads",
+      "type": "feature",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-059"
+      ],
+      "acceptance_criteria": [
+        "Fetch paper metadata via arXiv API",
+        "Download source .tar.gz",
+        "Download PDF",
+        "Rate limiting",
+        "Error handling",
+        "Unit tests with mock API"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-061",
+      "title": "Implement LaTeX Source Extractor",
+      "description": "Create LaTeX source extraction from arXiv tarballs",
+      "type": "feature",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-060"
+      ],
+      "acceptance_criteria": [
+        "Extract .tar.gz",
+        "Identify main .tex file (heuristics)",
+        "Handle multi-file LaTeX projects",
+        "Copy dependencies (images, .bib, etc.)",
+        "Unit tests with sample tarballs"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-062",
+      "title": "Integrate LaTeXML",
+      "description": "Create LaTeXML subprocess wrapper for LaTeX\u2192HTML conversion",
+      "type": "feature",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-061"
+      ],
+      "acceptance_criteria": [
+        "Subprocess wrapper for LaTeXML",
+        "Convert .tex to HTML/XML",
+        "Error handling for LaTeXML failures",
+        "Timeout for long conversions",
+        "Unit tests with sample .tex"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-063",
+      "title": "Implement LaTeXML\u2192Markdown Converter",
+      "description": "Create converter from LaTeXML output to Markdown",
+      "type": "feature",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-062"
+      ],
+      "acceptance_criteria": [
+        "Parse LaTeXML HTML/XML output",
+        "Extract headings, paragraphs, lists",
+        "Extract math (preserve LaTeX)",
+        "Extract tables",
+        "Convert to CMD specification",
+        "Unit tests"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-064",
+      "title": "Implement Pandoc Fallback",
+      "description": "Create Pandoc fallback for LaTeXML failures",
+      "type": "feature",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-062"
+      ],
+      "acceptance_criteria": [
+        "If LaTeXML fails, try Pandoc",
+        "Subprocess wrapper",
+        "Same output format as LaTeXML converter",
+        "Unit tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-065",
+      "title": "Build arXiv Corpus",
+      "description": "Execute arXiv corpus building pipeline",
+      "type": "integration",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-063",
+        "TASK-064"
+      ],
+      "acceptance_criteria": [
+        "30-50 arXiv papers processed",
+        "LaTeX\u2192Markdown GT generated",
+        "80%+ success rate (some failures acceptable)",
+        "PDFs downloaded",
+        "Metadata YAML files created",
+        "Validation confirms integrity"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-066",
+      "title": "arXiv Corpus Quality Review",
+      "description": "Manual quality review of arXiv corpus",
+      "type": "testing",
+      "phase": 8,
+      "status": "pending",
+      "dependencies": [
+        "TASK-065"
+      ],
+      "acceptance_criteria": [
+        "Manual review of 10 papers",
+        "Math extraction quality verified",
+        "Table extraction quality verified",
+        "Common failure modes documented (e.g., custom macros)",
+        "Success rate calculated"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-067",
+      "title": "Implement AWS Textract Adapter",
+      "description": "Create AWS Textract parser adapter with cost tracking",
+      "type": "feature",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/aws_textract.py created",
+        "boto3 integration",
+        "API key from environment variables",
+        "Markdown output formatting",
+        "Cost tracking (per-page pricing)",
+        "Rate limiting",
+        "Cache integration",
+        "Integration test (mock API)"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": "code-reviewer"
+    },
+    {
+      "id": "TASK-068",
+      "title": "Implement Azure Document Intelligence Adapter",
+      "description": "Create Azure DI parser adapter with cost tracking",
+      "type": "feature",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/azure_di.py created",
+        "azure-ai-formrecognizer integration",
+        "API key from environment variables",
+        "Configure for Markdown output",
+        "Cost tracking",
+        "Rate limiting",
+        "Cache integration",
+        "Integration test (mock API)"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": "code-reviewer"
+    },
+    {
+      "id": "TASK-069",
+      "title": "Implement Google Document AI Adapter (Optional)",
+      "description": "Create Google DocAI parser adapter (optional)",
+      "type": "feature",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/google_docai.py created",
+        "Google Cloud client library integration",
+        "API key configuration",
+        "Markdown output formatting",
+        "Cost tracking",
+        "Integration test"
+      ],
+      "estimated_hours": 4,
+      "priority": "low",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-070",
+      "title": "Implement Cost Estimation System",
+      "description": "Create cost calculator for commercial APIs",
+      "type": "feature",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-067",
+        "TASK-068"
+      ],
+      "acceptance_criteria": [
+        "Cost calculator for commercial APIs",
+        "Per-page pricing configuration",
+        "Pre-run cost estimate (CLI flag)",
+        "Post-run cost report",
+        "max_cost parameter to prevent overruns",
+        "Unit tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-071",
+      "title": "Commercial Adapter Integration Tests",
+      "description": "Create comprehensive tests for commercial adapters",
+      "type": "testing",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-067",
+        "TASK-068"
+      ],
+      "acceptance_criteria": [
+        "Mock API responses for tests",
+        "Test error handling (API failures)",
+        "Test rate limiting",
+        "Test cost tracking",
+        "Test cache behavior"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": "test-engineer"
+    },
+    {
+      "id": "TASK-072",
+      "title": "Document Commercial API Setup",
+      "description": "Document commercial API configuration and usage",
+      "type": "documentation",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-071"
+      ],
+      "acceptance_criteria": [
+        "README updated with API setup instructions",
+        "Environment variable configuration documented",
+        "Pricing information linked",
+        "Example usage provided",
+        "Security best practices noted"
+      ],
+      "estimated_hours": 1,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-073",
+      "title": "Create DATASHEET.md",
+      "description": "Create comprehensive dataset documentation following Datasheets for Datasets framework",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [
+        "TASK-065",
+        "TASK-051",
+        "TASK-057"
+      ],
+      "acceptance_criteria": [
+        "Datasheets for Datasets framework followed",
+        "Sections: Motivation, composition, collection process, provenance, limitations, uses, ethics",
+        "Per-document license tracking verified"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-074",
+      "title": "Complete README.md",
+      "description": "Create comprehensive README with all usage instructions",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [
+        "TASK-046",
+        "TASK-072"
+      ],
+      "acceptance_criteria": [
+        "Sections: Overview, features, installation, quick start, usage, corpus, metrics, parsers, FAQ",
+        "Code examples tested",
+        "Screenshots/example output included"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-075",
+      "title": "Create CONTRIBUTING.md",
+      "description": "Create contributor guidelines",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Sections: Code of Conduct, adding parsers, contributing docs, dev setup, testing, PR process",
+        "Examples provided",
+        "Clear, welcoming tone"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-076",
+      "title": "Create LICENSE and Legal Files",
+      "description": "Add license and legal compliance files",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "LICENSE file (MIT or Apache 2.0)",
+        "NOTICE file if using Apache",
+        "License headers in source files",
+        "Third-party license attributions"
+      ],
+      "estimated_hours": 1,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-077",
+      "title": "Create GitHub Issue/PR Templates",
+      "description": "Create GitHub templates for issues and PRs",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [],
+      "acceptance_criteria": [
+        ".github/ISSUE_TEMPLATE/bug_report.md",
+        ".github/ISSUE_TEMPLATE/feature_request.md",
+        ".github/PULL_REQUEST_TEMPLATE.md",
+        "Clear, structured templates"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-078",
+      "title": "Create Example Jupyter Notebook",
+      "description": "Create tutorial Jupyter notebook",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [
+        "TASK-046"
+      ],
+      "acceptance_criteria": [
+        "Notebook demonstrates: loading config, running eval, analyzing results, visualizing metrics",
+        "Runs without errors",
+        "Included in repository"
+      ],
+      "estimated_hours": 3,
+      "priority": "low",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-079",
+      "title": "Complete API Documentation",
+      "description": "Add comprehensive docstrings and API documentation",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [
+        "TASK-046"
+      ],
+      "acceptance_criteria": [
+        "All public classes/functions documented",
+        "Docstrings follow NumPy/Google style",
+        "Type hints complete",
+        "Sphinx setup (optional for v0.1)",
+        "Examples in docstrings"
+      ],
+      "estimated_hours": 3,
+      "priority": "medium",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-080",
+      "title": "Create Release Checklist",
+      "description": "Create comprehensive release checklist for v0.1",
+      "type": "documentation",
+      "phase": 10,
+      "status": "pending",
+      "dependencies": [
+        "TASK-073",
+        "TASK-074",
+        "TASK-075"
+      ],
+      "acceptance_criteria": [
+        "Checklist includes: tests, corpus, benchmark, docs, licenses, repo config, PyPI metadata",
+        "Saved in .claude/work/ for reference"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-081",
+      "title": "Configure PyPI Package",
+      "description": "Prepare package for PyPI distribution",
+      "type": "integration",
+      "phase": 11,
+      "status": "pending",
+      "dependencies": [
+        "TASK-001",
+        "TASK-080"
+      ],
+      "acceptance_criteria": [
+        "pyproject.toml complete with metadata (PEP 621 format)",
+        "Package description, keywords, classifiers",
+        "Entry points for CLI configured",
+        "Build with uv build",
+        "Test PyPI upload",
+        "Production PyPI upload",
+        "pip install pdf-bench works"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-082",
+      "title": "Run Full Benchmark on Complete Corpus",
+      "description": "Execute final benchmark run on complete corpus for v0.1",
+      "type": "testing",
+      "phase": 11,
+      "status": "pending",
+      "dependencies": [
+        "TASK-065",
+        "TASK-051",
+        "TASK-057",
+        "TASK-072"
+      ],
+      "acceptance_criteria": [
+        "Benchmark run on all ~450 documents",
+        "All 7 parsers tested",
+        "All metrics computed",
+        "Results saved to JSON",
+        "HTML report generated",
+        "Manual quality review of report",
+        "Leaderboard results sensible",
+        "Performance metrics captured"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-083",
+      "title": "Write Launch Blog Post",
+      "description": "Write launch announcement blog post",
+      "type": "documentation",
+      "phase": 11,
+      "status": "pending",
+      "dependencies": [
+        "TASK-082"
+      ],
+      "acceptance_criteria": [
+        "Blog post drafted (1500-2000 words)",
+        "Sections: Problem, solution, corpus design, key results, call to action",
+        "Includes charts/visualizations",
+        "Edited and proofread"
+      ],
+      "estimated_hours": 4,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-084",
+      "title": "Prepare GitHub Repository for Public Release",
+      "description": "Final preparation for open-source release",
+      "type": "integration",
+      "phase": 11,
+      "status": "pending",
+      "dependencies": [
+        "TASK-080",
+        "TASK-081"
+      ],
+      "acceptance_criteria": [
+        "Repository description and topics set",
+        "README renders correctly on GitHub",
+        "All sensitive data removed",
+        "CI/CD badges added",
+        "Social preview image configured",
+        "Repository made public",
+        "Initial release tagged (v0.1.0)"
+      ],
+      "estimated_hours": 2,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-085",
+      "title": "Launch and Community Outreach",
+      "description": "Execute launch and initial community engagement",
+      "type": "documentation",
+      "phase": 11,
+      "status": "pending",
+      "dependencies": [
+        "TASK-083",
+        "TASK-084"
+      ],
+      "acceptance_criteria": [
+        "Blog post published on firm website",
+        "GitHub repository announced",
+        "PyPI package announced",
+        "Shared on: Hacker News, Reddit, Twitter/X, LinkedIn",
+        "Initial issues/PRs monitored and responded to"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "agent_recommendation": null
+    }
+  ],
+  "completed_tasks": [
+    "TASK-001",
+    "TASK-002",
+    "TASK-003",
+    "TASK-004",
+    "TASK-005",
+    "TASK-006",
+    "TASK-007"
+  ],
+  "next_available": [
+    "TASK-007",
+    "TASK-008",
+    "TASK-011",
+    "TASK-014",
+    "TASK-019",
+    "TASK-029",
+    "TASK-031",
+    "TASK-033",
+    "TASK-037",
+    "TASK-047",
+    "TASK-053",
+    "TASK-059",
+    "TASK-067",
+    "TASK-068",
+    "TASK-069",
+    "TASK-075",
+    "TASK-076",
+    "TASK-077"
+  ]
+}

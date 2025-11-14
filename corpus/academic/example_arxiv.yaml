@@ -1,0 +1,26 @@
+doc_id: arxiv_1706_03762
+source_url: https://arxiv.org/pdf/1706.03762.pdf
+corpus: academic
+domain: arxiv
+title: Attention Is All You Need
+authors:
+  - Ashish Vaswani
+  - Noam Shazeer
+  - Niki Parmar
+  - Jakob Uszkoreit
+  - Llion Jones
+  - Aidan N. Gomez
+  - Lukasz Kaiser
+  - Illia Polosukhin
+publication_date: '2017-06-12'
+page_count: 15
+file_size_bytes: 2155905
+features:
+  - tables
+  - math
+  - figures
+  - lists
+language: en
+license: arXiv.org perpetual non-exclusive license
+notes: Seminal paper introducing the Transformer architecture. Contains complex mathematical
+  notation and architecture diagrams.

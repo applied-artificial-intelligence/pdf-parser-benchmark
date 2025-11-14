@@ -1,0 +1,18 @@
+doc_id: synthetic_pandoc_001
+source_url: https://github.com/pdf-bench/corpus-builders/synthetic/basic_doc.md
+corpus: synthetic
+domain: pandoc
+title: Basic Synthetic Document with Tables and Math
+publication_date: '2024-11-01'
+page_count: 5
+file_size_bytes: 87432
+features:
+  - tables
+  - math
+  - lists
+  - code
+language: en
+license: CC0-1.0
+notes: Synthetic document generated from Markdown using Pandoc with Eisvogel template.
+  Ground truth is the original Markdown source. Designed to test basic structure,
+  simple tables, and inline/display math.

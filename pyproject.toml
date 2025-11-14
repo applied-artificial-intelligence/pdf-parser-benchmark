@@ -1,0 +1,111 @@
+[project]
+name = "pdf-bench"
+version = "0.1.0"
+description = "Open-source benchmarking suite for PDF-to-Markdown conversion"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "PDF-Bench Contributors"}
+]
+keywords = ["pdf", "markdown", "benchmark", "conversion", "evaluation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "beautifulsoup4>=4.12.0",
+    "lxml>=4.9.0",
+    "python-docx>=1.0.0",
+    "docxtpl>=0.16.0",
+    "mistune>=3.0.0",
+    "pyyaml>=6.0",
+    "python-levenshtein>=0.21.0",
+    "sacrebleu>=2.3.0",
+    "zss>=1.2.0",
+]
+
+[project.optional-dependencies]
+metrics = [
+    "table-recognition-metric>=0.0.4",
+]
+parsers = [
+    "pymupdf>=1.23.0",
+    "unstructured>=0.10.0",
+]
+commercial = [
+    "boto3>=1.28.0",
+    "azure-ai-formrecognizer>=3.3.0",
+]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.6.0",
+]
+
+[project.scripts]
+pdfbench = "pdf_bench.main:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # pyflakes
+    "I",  # isort
+    "B",  # flake8-bugbear
+    "C4", # flake8-comprehensions
+    "UP", # pyupgrade
+    "N",  # pep8-naming
+]
+ignore = []
+
+[tool.ruff.lint.isort]
+known-first-party = ["pdf_bench"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_any_unimported = false
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+check_untyped_defs = true
+strict_equality = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = [
+    "--strict-markers",
+    "--strict-config",
+    "--cov=pdf_bench",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
+
+[dependency-groups]
+dev = [
+    "types-pyyaml>=6.0.12.20250915",
+]
