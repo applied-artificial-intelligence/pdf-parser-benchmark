@@ -1,0 +1,73 @@
+name: Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        enable-cache: true
+
+    - name: Set up Python ${{ matrix.python-version }}
+      run: uv python install ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: uv sync --all-extras
+
+    - name: Run ruff check
+      run: uv run ruff check pdf_bench/ tests/
+      continue-on-error: false
+
+    - name: Run ruff format check
+      run: uv run ruff format --check pdf_bench/ tests/
+      continue-on-error: false
+
+    - name: Run mypy
+      run: uv run mypy pdf_bench/
+      continue-on-error: false
+
+    - name: Run tests with coverage
+      run: uv run pytest --cov=pdf_bench --cov-report=xml --cov-report=term -v
+
+    - name: Upload coverage to Codecov
+      uses: codecov/codecov-action@v4
+      if: matrix.python-version == '3.12'
+      with:
+        file: ./coverage.xml
+        fail_ci_if_error: false
+        token: ${{ secrets.CODECOV_TOKEN }}
+      continue-on-error: true
+
+  test-minimal:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+
+    - name: Set up Python 3.12
+      run: uv python install 3.12
+
+    - name: Install minimal dependencies
+      run: uv sync --no-dev
+
+    - name: Run basic import test
+      run: |
+        uv run python -c "import pdf_bench; print(f'PDF-Bench version: {pdf_bench.__version__}')"
+        uv run python -c "from pdf_bench.systems import PyMuPDFParser; print('Core imports OK')"
