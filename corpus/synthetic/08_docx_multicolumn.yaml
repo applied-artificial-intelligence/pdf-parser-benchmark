@@ -1,0 +1,17 @@
+title: Advances in Machine Learning for NLP
+source: 03_multicolumn.docx
+corpus: synthetic
+category: docx_generated
+license: CC0-1.0
+generation:
+  method: docx_template
+  template: 03_multicolumn.docx
+  builder: python-docx-template + LibreOffice
+  context_variables: 26
+files:
+  docx: 08_docx_multicolumn.docx
+  pdf: 08_docx_multicolumn.pdf
+  ground_truth: 08_docx_multicolumn.md
+hashes:
+  pdf_sha256: ba87ad959f73925fc6fb313bad14954b581c16a93289e5963fccba5282fe727e
+  docx_sha256: 4c8f766fbe1cd06f264a30d95e311f2d119e00d2a376686e71a9ee77c93e3d75

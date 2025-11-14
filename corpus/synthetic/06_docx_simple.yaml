@@ -1,0 +1,17 @@
+title: Annual Performance Review 2025
+source: 01_simple_report.docx
+corpus: synthetic
+category: docx_generated
+license: CC0-1.0
+generation:
+  method: docx_template
+  template: 01_simple_report.docx
+  builder: python-docx-template + LibreOffice
+  context_variables: 14
+files:
+  docx: 06_docx_simple.docx
+  pdf: 06_docx_simple.pdf
+  ground_truth: 06_docx_simple.md
+hashes:
+  pdf_sha256: 0664a6d618253c133f05cb1b43ba441b6e325754730380d43e6da39e9e91c9e6
+  docx_sha256: 4aee86b70dd5f3f2e097b1fc61440b5d35bb76c289504cc1f32d20dad4ec9bd2

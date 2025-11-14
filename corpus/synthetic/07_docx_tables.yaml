@@ -1,0 +1,17 @@
+title: Global Financial Performance Report Q1-Q4 2025
+source: 02_table_heavy.docx
+corpus: synthetic
+category: docx_generated
+license: CC0-1.0
+generation:
+  method: docx_template
+  template: 02_table_heavy.docx
+  builder: python-docx-template + LibreOffice
+  context_variables: 76
+files:
+  docx: 07_docx_tables.docx
+  pdf: 07_docx_tables.pdf
+  ground_truth: 07_docx_tables.md
+hashes:
+  pdf_sha256: 979f616d8c5a2c38db724c585c91ac1292a1d59aa3fd351e2707c9dfa0a71044
+  docx_sha256: 01f3585a4544f4baa4fa5ef0d1710353a786eb004a8f1665aaf724edd5e0ee56
