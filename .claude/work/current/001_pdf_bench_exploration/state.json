@@ -9,7 +9,7 @@
     "estimated_weeks": "6-7 weeks full-time"
   },
   "status": "implementing",
-  "current_task": "TASK-012",
+  "current_task": "TASK-013",
   "tasks": [
     {
       "id": "TASK-001",
@@ -345,7 +345,7 @@
       "description": "Create wrapper for Pandoc to convert Markdown to PDF using Eisvogel template",
       "type": "feature",
       "phase": 2,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-011"
       ],
@@ -358,7 +358,17 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T16:46:53.425428+00:00",
+      "actual_hours": 2.0,
+      "deliverables": [
+        "builders/__init__.py",
+        "builders/build_synthetic.py",
+        "tests/test_builders/__init__.py",
+        "tests/test_builders/test_build_synthetic.py",
+        "corpus/synthetic/*.pdf (5 PDFs)",
+        "Updated YAML metadata with PDF hashes"
+      ]
     },
     {
       "id": "TASK-013",
@@ -1949,5 +1959,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-14T15:35:58.021219+00:00"
+  "updated_at": "2025-11-14T16:46:53.425435+00:00"
 }

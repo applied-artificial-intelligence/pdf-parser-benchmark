@@ -42,10 +42,10 @@ Complex table with longer content:
 
 | Feature | Description | Status |
 |---------|-------------|--------|
-| **Text Extraction** | Extract plain text from PDF documents with character-level accuracy | ✅ Complete |
-| **Structure Detection** | Identify headings, paragraphs, lists, and tables | 🚧 In Progress |
-| **Math Parsing** | Extract and preserve LaTeX mathematical notation | ⏳ Planned |
-| **Image Handling** | Detect and describe embedded images | ⏳ Planned |
+| **Text Extraction** | Extract plain text from PDF documents with character-level accuracy | Complete |
+| **Structure Detection** | Identify headings, paragraphs, lists, and tables | In Progress |
+| **Math Parsing** | Extract and preserve LaTeX mathematical notation | Planned |
+| **Image Handling** | Detect and describe embedded images | Planned |
 
 ## Dataset Statistics
 
@@ -78,4 +78,4 @@ This document tests table extraction including:
 - Numeric data formatting
 - Multi-line cell content
 - Empty cells
-- Various cell content (text, emoji, numbers)
+- Various cell content (text, numbers)

@@ -1,14 +1,13 @@
-document_id: "syn-tables-001"
-source_type: "synthetic"
-category: "synthetic"
-title: "Tables in PDF Parsing"
-description: "Document with various table types: simple GFM tables, alignments, numeric data, multi-line cells, empty cells"
-complexity: "high"
-
-creation_method: "manual_authoring"
-pdf_generation: "pandoc"
-ground_truth_type: "source_markdown"
-
+document_id: syn-tables-001
+source_type: synthetic
+category: synthetic
+title: Tables in PDF Parsing
+description: 'Document with various table types: simple GFM tables, alignments, numeric
+  data, multi-line cells, empty cells'
+complexity: high
+creation_method: manual_authoring
+pdf_generation: pandoc
+ground_truth_type: source_markdown
 features:
   headings: true
   paragraphs: true
@@ -23,27 +22,25 @@ features:
   images: false
   multi_column: false
   emoji: true
-
 table_count: 7
 table_complexity:
-  - simple_gfm
-  - column_alignment
-  - numeric_data
-  - multi_line_cells
-  - empty_cells
-  - mixed_content
-
-license: "MIT"
-authors: ["PDF-Bench Project"]
-created_date: "2025-11-14"
-
+- simple_gfm
+- column_alignment
+- numeric_data
+- multi_line_cells
+- empty_cells
+- mixed_content
+license: MIT
+authors:
+- PDF-Bench Project
+created_date: '2025-11-14'
 file_paths:
-  ground_truth: "corpus/synthetic/03_tables.md"
-  pdf: "corpus/synthetic/03_tables.pdf"
-
+  ground_truth: corpus/synthetic/03_tables.md
+  pdf: corpus/synthetic/03_tables.pdf
 validation:
   ground_truth_exists: true
-  pdf_exists: false
+  pdf_exists: true
   metadata_complete: true
-
-notes: "Table extraction is a critical differentiator for PDF parsers. This document tests TEDS and cell-level F1 metrics."
+notes: Table extraction is a critical differentiator for PDF parsers. This document
+  tests TEDS and cell-level F1 metrics.
+pdf_hash: 928d40a18e39320bc0453cc6623b16b42888238f6a2faa1831c121dbcad239dc

@@ -1,1 +1,1 @@
-"""Corpus builder scripts for PDF-Bench."""
+"""Builders for synthetic corpus generation."""
