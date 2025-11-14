@@ -8,6 +8,12 @@ from pdf_bench.metrics.edit_distance import (
     raw_edit_distance,
 )
 from pdf_bench.metrics.element_f1 import ElementScores, element_f1_score
+from pdf_bench.metrics.table_normalization import (
+    TableCell,
+    extract_table_array,
+    normalize_html_table,
+    tables_equal,
+)
 from pdf_bench.metrics.tree_edit_distance import (
     ast_to_tree,
     normalized_tree_edit_distance,
@@ -32,4 +38,9 @@ __all__ = [
     # Element F1 score
     "element_f1_score",
     "ElementScores",
+    # Table normalization
+    "normalize_html_table",
+    "extract_table_array",
+    "tables_equal",
+    "TableCell",
 ]

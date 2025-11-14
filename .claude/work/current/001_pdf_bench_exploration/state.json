@@ -9,7 +9,7 @@
     "estimated_weeks": "6-7 weeks full-time"
   },
   "status": "implementing",
-  "current_task": "TASK-018",
+  "current_task": "TASK-022",
   "tasks": [
     {
       "id": "TASK-001",
@@ -341,7 +341,7 @@
     },
     {
       "id": "TASK-012",
-      "title": "Implement Pandoc Wrapper for MD→PDF",
+      "title": "Implement Pandoc Wrapper for MD\u2192PDF",
       "description": "Create wrapper for Pandoc to convert Markdown to PDF using Eisvogel template",
       "type": "feature",
       "phase": 2,
@@ -431,8 +431,8 @@
     },
     {
       "id": "TASK-015",
-      "title": "Implement DOCX→PDF Pipeline",
-      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX→PDF conversion",
+      "title": "Implement DOCX\u2192PDF Pipeline",
+      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX\u2192PDF conversion",
       "type": "feature",
       "phase": 2,
       "status": "completed",
@@ -551,7 +551,7 @@
       "description": "Create Markdown AST parser using mistune for structure analysis",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-002"
       ],
@@ -564,7 +564,13 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T21:00:00Z",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/metrics/ast_parser.py",
+        "tests/test_metrics/test_ast_parser.py"
+      ]
     },
     {
       "id": "TASK-020",
@@ -572,7 +578,7 @@
       "description": "Implement AST-based tree-edit distance metric using zss library",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-019"
       ],
@@ -585,7 +591,13 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": "architect"
+      "agent_recommendation": "architect",
+      "completed_at": "2025-11-14T21:00:00Z",
+      "actual_hours": 3.0,
+      "deliverables": [
+        "pdf_bench/metrics/tree_edit_distance.py",
+        "tests/test_metrics/test_tree_edit_distance.py"
+      ]
     },
     {
       "id": "TASK-021",
@@ -593,7 +605,7 @@
       "description": "Create element type counting and F1 score calculation for Markdown structure",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-019"
       ],
@@ -606,7 +618,13 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T21:00:00Z",
+      "actual_hours": 2.0,
+      "deliverables": [
+        "pdf_bench/metrics/element_f1.py",
+        "tests/test_metrics/test_element_f1.py"
+      ]
     },
     {
       "id": "TASK-022",
@@ -614,7 +632,7 @@
       "description": "Create HTML table normalization utilities for canonical comparison",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-007"
       ],
@@ -627,7 +645,14 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T21:16:44.817405Z",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/metrics/table_normalization.py",
+        "tests/test_metrics/test_table_normalization.py",
+        "TASK-022-completion-summary.md"
+      ]
     },
     {
       "id": "TASK-023",
@@ -704,7 +729,7 @@
       "acceptance_criteria": [
         "Whitespace collapsing",
         "Remove \\left, \\right",
-        "Remove redundant grouping {{a}} → {a}",
+        "Remove redundant grouping {{a}} \u2192 {a}",
         "Handles inline and display math",
         "Unit tests with complex equations"
       ],
@@ -986,7 +1011,7 @@
       "acceptance_criteria": [
         "pdf_bench/core.py created",
         "BenchmarkRunner class",
-        "Task orchestration (parser × document)",
+        "Task orchestration (parser \u00d7 document)",
         "Metric computation per result",
         "Error handling and logging",
         "Unit tests with mocks"
@@ -1189,7 +1214,7 @@
     },
     {
       "id": "TASK-049",
-      "title": "Implement HTML→Markdown Converter",
+      "title": "Implement HTML\u2192Markdown Converter",
       "description": "Create HTML to Markdown converter for GOV.UK content",
       "type": "feature",
       "phase": 6,
@@ -1198,10 +1223,10 @@
         "TASK-048"
       ],
       "acceptance_criteria": [
-        "Heading extraction (h1→#, h2→##, etc.)",
+        "Heading extraction (h1\u2192#, h2\u2192##, etc.)",
         "Paragraph extraction",
         "List extraction (nested)",
-        "Table conversion (simple→GFM, complex→HTML)",
+        "Table conversion (simple\u2192GFM, complex\u2192HTML)",
         "Figure/image handling",
         "Applies normalization rules",
         "Unit tests"
@@ -1244,7 +1269,7 @@
       ],
       "acceptance_criteria": [
         "20-30 GOV.UK documents processed",
-        "HTML→Markdown GT generated",
+        "HTML\u2192Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (OGL v3.0 license)",
         "Validation script confirms integrity"
@@ -1340,7 +1365,7 @@
     },
     {
       "id": "TASK-056",
-      "title": "Implement SEC→Markdown Converter",
+      "title": "Implement SEC\u2192Markdown Converter",
       "description": "Create full SEC filing to Markdown converter",
       "type": "feature",
       "phase": 7,
@@ -1349,7 +1374,7 @@
         "TASK-055"
       ],
       "acceptance_criteria": [
-        "Full document HTML→Markdown",
+        "Full document HTML\u2192Markdown",
         "Focus on table accuracy",
         "Handle SEC-specific formatting",
         "Unit tests"
@@ -1370,7 +1395,7 @@
       ],
       "acceptance_criteria": [
         "10-20 SEC filings processed",
-        "HTML→Markdown GT generated",
+        "HTML\u2192Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (public domain)",
         "Validation confirms integrity"
@@ -1465,7 +1490,7 @@
     {
       "id": "TASK-062",
       "title": "Integrate LaTeXML",
-      "description": "Create LaTeXML subprocess wrapper for LaTeX→HTML conversion",
+      "description": "Create LaTeXML subprocess wrapper for LaTeX\u2192HTML conversion",
       "type": "feature",
       "phase": 8,
       "status": "pending",
@@ -1485,7 +1510,7 @@
     },
     {
       "id": "TASK-063",
-      "title": "Implement LaTeXML→Markdown Converter",
+      "title": "Implement LaTeXML\u2192Markdown Converter",
       "description": "Create converter from LaTeXML output to Markdown",
       "type": "feature",
       "phase": 8,
@@ -1538,7 +1563,7 @@
       ],
       "acceptance_criteria": [
         "30-50 arXiv papers processed",
-        "LaTeX→Markdown GT generated",
+        "LaTeX\u2192Markdown GT generated",
         "80%+ success rate (some failures acceptable)",
         "PDFs downloaded",
         "Metadata YAML files created",
@@ -2012,5 +2037,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-14T19:32:28Z"
+  "updated_at": "2025-11-14T21:16:44.817435Z"
 }
