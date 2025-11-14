@@ -1,6 +1,11 @@
 """Metric implementations for benchmarking."""
 
 from pdf_bench.metrics.ast_parser import Element, MarkdownASTParser
+from pdf_bench.metrics.cell_content_f1 import (
+    CellF1Scores,
+    cell_accuracy,
+    cell_content_f1_score,
+)
 from pdf_bench.metrics.edit_distance import (
     character_error_rate,
     edit_similarity,
@@ -58,4 +63,8 @@ __all__ = [
     # GFM table parsing
     "GFMTableParser",
     "GFMTable",
+    # Cell content F1
+    "cell_content_f1_score",
+    "cell_accuracy",
+    "CellF1Scores",
 ]
