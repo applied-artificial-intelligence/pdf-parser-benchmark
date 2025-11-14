@@ -9,7 +9,7 @@
     "estimated_weeks": "6-7 weeks full-time"
   },
   "status": "implementing",
-  "current_task": null,
+  "current_task": "TASK-012",
   "tasks": [
     {
       "id": "TASK-001",
@@ -311,7 +311,7 @@
       "description": "Author 5 Markdown documents with increasing complexity for synthetic corpus",
       "type": "feature",
       "phase": 2,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-002"
       ],
@@ -322,7 +322,22 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T15:35:58.021207+00:00",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "corpus/synthetic/01_basic.md",
+        "corpus/synthetic/01_basic.yaml",
+        "corpus/synthetic/02_lists.md",
+        "corpus/synthetic/02_lists.yaml",
+        "corpus/synthetic/03_tables.md",
+        "corpus/synthetic/03_tables.yaml",
+        "corpus/synthetic/04_math.md",
+        "corpus/synthetic/04_math.yaml",
+        "corpus/synthetic/05_complex.md",
+        "corpus/synthetic/05_complex.yaml",
+        "TASK-011-validation.md"
+      ]
     },
     {
       "id": "TASK-012",
@@ -1933,5 +1948,6 @@
     "TASK-075",
     "TASK-076",
     "TASK-077"
-  ]
+  ],
+  "updated_at": "2025-11-14T15:35:58.021219+00:00"
 }

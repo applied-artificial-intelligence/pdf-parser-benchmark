@@ -1,0 +1,44 @@
+document_id: "syn-complex-001"
+source_type: "synthetic"
+category: "synthetic"
+title: "PDF-Bench: Comprehensive Evaluation Document"
+description: "Complex document combining all features: headings, lists, tables, math, code blocks, various formatting"
+complexity: "very_high"
+
+creation_method: "manual_authoring"
+pdf_generation: "pandoc"
+ground_truth_type: "source_markdown"
+
+features:
+  headings: true
+  paragraphs: true
+  bold: true
+  italic: true
+  ordered_lists: true
+  unordered_lists: true
+  nested_lists: true
+  tables: true
+  math: true
+  code_blocks: true
+  images: false
+  multi_column: false
+  task_lists: true
+
+table_count: 3
+math_equation_count: 8
+code_blocks: 1
+
+license: "MIT"
+authors: ["PDF-Bench Project"]
+created_date: "2025-11-14"
+
+file_paths:
+  ground_truth: "corpus/synthetic/05_complex.md"
+  pdf: "corpus/synthetic/05_complex.pdf"
+
+validation:
+  ground_truth_exists: true
+  pdf_exists: false
+  metadata_complete: true
+
+notes: "Comprehensive test document exercising all major Markdown features. Simulates a real academic paper with tables, math, and code. Most challenging synthetic document."

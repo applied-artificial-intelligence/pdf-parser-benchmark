@@ -1,0 +1,39 @@
+document_id: "syn-basic-001"
+source_type: "synthetic"
+category: "synthetic"
+title: "Introduction to PDF Parsing"
+description: "Simple baseline document with only basic Markdown elements (headings, paragraphs, bold, italic, simple lists)"
+complexity: "basic"
+
+creation_method: "manual_authoring"
+pdf_generation: "pandoc"  # Will be generated via Pandoc
+ground_truth_type: "source_markdown"
+
+features:
+  headings: true
+  paragraphs: true
+  bold: true
+  italic: true
+  ordered_lists: true
+  unordered_lists: true
+  nested_lists: false
+  tables: false
+  math: false
+  code_blocks: false
+  images: false
+  multi_column: false
+
+license: "MIT"
+authors: ["PDF-Bench Project"]
+created_date: "2025-11-14"
+
+file_paths:
+  ground_truth: "corpus/synthetic/01_basic.md"
+  pdf: "corpus/synthetic/01_basic.pdf"  # To be generated
+
+validation:
+  ground_truth_exists: true
+  pdf_exists: false  # Pending generation
+  metadata_complete: true
+
+notes: "Baseline test document for simple PDF parsing without complex formatting. Should be parsable by all systems with >0.95 accuracy."
