@@ -7,6 +7,7 @@ from pdf_bench.metrics.edit_distance import (
     normalized_edit_distance,
     raw_edit_distance,
 )
+from pdf_bench.metrics.element_f1 import ElementScores, element_f1_score
 from pdf_bench.metrics.tree_edit_distance import (
     ast_to_tree,
     normalized_tree_edit_distance,
@@ -28,4 +29,7 @@ __all__ = [
     "tree_edit_distance",
     "normalized_tree_edit_distance",
     "tree_similarity",
+    # Element F1 score
+    "element_f1_score",
+    "ElementScores",
 ]
