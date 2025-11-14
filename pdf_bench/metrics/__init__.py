@@ -14,6 +14,12 @@ from pdf_bench.metrics.table_normalization import (
     normalize_html_table,
     tables_equal,
 )
+from pdf_bench.metrics.teds import (
+    html_table_to_tree,
+    teds_score,
+    teds_score_with_content,
+    tree_size,
+)
 from pdf_bench.metrics.tree_edit_distance import (
     ast_to_tree,
     normalized_tree_edit_distance,
@@ -43,4 +49,9 @@ __all__ = [
     "extract_table_array",
     "tables_equal",
     "TableCell",
+    # TEDS (Table Edit Distance based Similarity)
+    "teds_score",
+    "teds_score_with_content",
+    "html_table_to_tree",
+    "tree_size",
 ]

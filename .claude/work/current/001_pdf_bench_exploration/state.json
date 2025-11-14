@@ -660,7 +660,7 @@
       "description": "Integrate table-recognition-metric library for TEDS evaluation",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-022"
       ],
@@ -673,7 +673,14 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T21:44:29.839518+00:00",
+      "actual_hours": 3.0,
+      "deliverables": [
+        "pdf_bench/metrics/teds.py",
+        "tests/test_metrics/test_teds.py",
+        "TASK-023-completion-summary.md"
+      ]
     },
     {
       "id": "TASK-024",
@@ -2037,5 +2044,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-14T21:16:44.817435Z"
+  "updated_at": "2025-11-14T21:44:29.839535+00:00"
 }
