@@ -2,9 +2,9 @@ document_id: syn-tables-001
 source_type: synthetic
 category: synthetic
 title: Tables in PDF Parsing
-description: 'Document with various table types: simple GFM tables, alignments, numeric
-  data, multi-line cells, empty cells'
-complexity: high
+description: 'Comprehensive table testing with 13 labeled tables: GFM tables, HTML tables
+  with colspan/rowspan, nested tables, tables with lists, realistic business examples'
+complexity: very_high
 creation_method: manual_authoring
 pdf_generation: pandoc
 ground_truth_type: source_markdown
@@ -21,15 +21,32 @@ features:
   code_blocks: false
   images: false
   multi_column: false
-  emoji: true
-table_count: 7
-table_complexity:
-- simple_gfm
+  html_tables: true
+  diagnostic_labels: true
+table_count: 13
+table_types:
+  gfm: 6
+  html_colspan: 1
+  html_rowspan: 1
+  html_complex_merged: 2
+  nested: 1
+  with_lists: 1
+  styled: 1
+table_features:
+- basic_gfm
 - column_alignment
 - numeric_data
 - multi_line_cells
 - empty_cells
-- mixed_content
+- wide_columns
+- colspan
+- rowspan
+- complex_merged_cells
+- nested_tables
+- embedded_lists
+- css_styling
+- financial_tables
+- diagnostic_labeling
 license: MIT
 authors:
 - PDF-Bench Project
@@ -41,6 +58,8 @@ validation:
   ground_truth_exists: true
   pdf_exists: true
   metadata_complete: true
-notes: Table extraction is a critical differentiator for PDF parsers. This document
-  tests TEDS and cell-level F1 metrics.
-pdf_hash: 928d40a18e39320bc0453cc6623b16b42888238f6a2faa1831c121dbcad239dc
+notes: 'Comprehensive table testing with 13 labeled structures (TABLE-01 through TABLE-13)
+  for diagnostic purposes. Each table tests specific features enabling identification
+  of exact parser failures. Critical for TEDS metric evaluation and parser capability
+  analysis.'
+pdf_hash: 82a069258749149a7ea257e327dfbf1810ae4bc2243b127dde0c2f0a88fb8cc9
