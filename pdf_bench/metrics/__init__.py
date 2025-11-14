@@ -7,6 +7,12 @@ from pdf_bench.metrics.edit_distance import (
     normalized_edit_distance,
     raw_edit_distance,
 )
+from pdf_bench.metrics.tree_edit_distance import (
+    ast_to_tree,
+    normalized_tree_edit_distance,
+    tree_edit_distance,
+    tree_similarity,
+)
 
 __all__ = [
     # Edit distance metrics
@@ -17,4 +23,9 @@ __all__ = [
     # AST parsing
     "MarkdownASTParser",
     "Element",
+    # Tree-edit distance
+    "ast_to_tree",
+    "tree_edit_distance",
+    "normalized_tree_edit_distance",
+    "tree_similarity",
 ]
