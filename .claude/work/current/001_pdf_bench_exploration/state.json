@@ -9,7 +9,7 @@
     "estimated_weeks": "6-7 weeks full-time"
   },
   "status": "implementing",
-  "current_task": "TASK-015",
+  "current_task": "TASK-016",
   "tasks": [
     {
       "id": "TASK-001",
@@ -435,7 +435,7 @@
       "description": "Create pipeline using python-docx-template and LibreOffice for DOCX\u2192PDF conversion",
       "type": "feature",
       "phase": 2,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-014"
       ],
@@ -448,7 +448,14 @@
       ],
       "estimated_hours": 4,
       "priority": "medium",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T18:33:34.582861+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "builders/build_docx.py",
+        "tests/test_builders/test_build_docx.py",
+        "TASK-015-validation.md"
+      ]
     },
     {
       "id": "TASK-016",
@@ -1979,5 +1986,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-14T18:24:37.571810+00:00"
+  "updated_at": "2025-11-14T18:33:34.582980+00:00"
 }
