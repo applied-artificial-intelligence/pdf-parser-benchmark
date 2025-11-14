@@ -4,7 +4,7 @@
     "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
     "version": "0.1.0",
     "created_at": "2025-11-14T06:00:00Z",
-    "updated_at": "2025-11-14T14:26:25.572905+00:00",
+    "updated_at": "2025-11-14T14:50:16.656239+00:00",
     "estimated_total_hours": 255,
     "estimated_weeks": "6-7 weeks full-time"
   },
@@ -220,7 +220,7 @@
       "description": "Create baseline parser using PyMuPDF for simple text extraction",
       "type": "foundation",
       "phase": 1,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-004",
         "TASK-005"
@@ -234,7 +234,14 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-14T14:50:16.656226+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/systems/pymupdf.py",
+        "tests/test_systems/test_pymupdf.py",
+        "tests/fixtures/sample.pdf"
+      ]
     },
     {
       "id": "TASK-009",
@@ -1884,7 +1891,8 @@
     "TASK-004",
     "TASK-005",
     "TASK-006",
-    "TASK-007"
+    "TASK-007",
+    "TASK-008"
   ],
   "next_available": [
     "TASK-007",
