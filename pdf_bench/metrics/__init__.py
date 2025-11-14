@@ -14,6 +14,7 @@ from pdf_bench.metrics.table_normalization import (
     normalize_html_table,
     tables_equal,
 )
+from pdf_bench.metrics.gfm_table_parser import GFMTable, GFMTableParser
 from pdf_bench.metrics.teds import (
     html_table_to_tree,
     teds_score,
@@ -54,4 +55,7 @@ __all__ = [
     "teds_score_with_content",
     "html_table_to_tree",
     "tree_size",
+    # GFM table parsing
+    "GFMTableParser",
+    "GFMTable",
 ]
