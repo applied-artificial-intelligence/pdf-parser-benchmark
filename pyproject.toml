@@ -39,11 +39,13 @@ metrics = [
 ]
 parsers = [
     "pymupdf>=1.23.0",
+    "pdfplumber>=0.10.0",
     "unstructured>=0.10.0",
 ]
 commercial = [
     "boto3>=1.28.0",
     "azure-ai-formrecognizer>=3.3.0",
+    "databricks-sql-connector>=3.0.0",
 ]
 dev = [
     "pytest>=7.4.0",

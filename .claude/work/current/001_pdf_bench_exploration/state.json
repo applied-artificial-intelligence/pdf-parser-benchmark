@@ -4,9 +4,10 @@
     "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
     "version": "0.1.0",
     "created_at": "2025-11-14T06:00:00Z",
-    "updated_at": "2025-11-14T15:15:43.455382+00:00",
+    "updated_at": "2025-11-15T22:45:00Z",
     "estimated_total_hours": 255,
-    "estimated_weeks": "6-7 weeks full-time"
+    "estimated_weeks": "6-7 weeks full-time",
+    "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
   },
   "status": "implementing",
   "current_task": "TASK-028",
@@ -875,7 +876,7 @@
       "description": "Install Nougat parser and verify functionality",
       "type": "integration",
       "phase": 4,
-      "status": "pending",
+      "status": "cancelled",
       "dependencies": [
         "TASK-001"
       ],
@@ -888,7 +889,9 @@
       ],
       "estimated_hours": 2,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "cancelled_reason": "Redundant with Marker (Meta). Nougat is academic-focused, heavy dependencies, slow inference. Marker provides better ML-based coverage.",
+      "cancelled_at": "2025-11-15T22:45:00Z"
     },
     {
       "id": "TASK-032",
@@ -896,7 +899,7 @@
       "description": "Create Nougat adapter implementing BaseParser interface",
       "type": "feature",
       "phase": 4,
-      "status": "pending",
+      "status": "cancelled",
       "dependencies": [
         "TASK-031",
         "TASK-004",
@@ -912,7 +915,9 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "cancelled_reason": "Redundant with Marker (Meta). Nougat is academic-focused, heavy dependencies, slow inference. Marker provides better ML-based coverage.",
+      "cancelled_at": "2025-11-15T22:45:00Z"
     },
     {
       "id": "TASK-033",
@@ -2049,6 +2054,56 @@
       "estimated_hours": 2,
       "priority": "medium",
       "agent_recommendation": null
+    },
+    {
+      "id": "TASK-086",
+      "title": "Implement pdfplumber Parser Adapter",
+      "description": "Create pdfplumber adapter implementing BaseParser interface with focus on table extraction via visual layout analysis",
+      "type": "feature",
+      "phase": 4,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/pdfplumber.py created",
+        "Implements BaseParser interface",
+        "Text extraction with character-level positioning",
+        "Table extraction via visual layout analysis",
+        "Cache integration",
+        "Error handling",
+        "Integration tests"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "agent_recommendation": null
+    },
+    {
+      "id": "TASK-087",
+      "title": "Implement Databricks ai_parse_document Adapter",
+      "description": "Create Databricks adapter with workspace integration for ai_parse_document function",
+      "type": "feature",
+      "phase": 9,
+      "status": "pending",
+      "dependencies": [
+        "TASK-004",
+        "TASK-005"
+      ],
+      "acceptance_criteria": [
+        "pdf_bench/systems/databricks.py created",
+        "Implements BaseParser interface",
+        "Databricks SQL integration with ai_parse_document",
+        "Binary file handling for Delta tables",
+        "Unity Catalog result retrieval",
+        "Parse VARIANT output to Markdown",
+        "Documentation for workspace setup (Runtime 17.1+, Mosaic AI)",
+        "Integration tests (mock or requires Databricks account)"
+      ],
+      "estimated_hours": 6,
+      "priority": "medium",
+      "agent_recommendation": null,
+      "notes": "Optional: Requires Databricks workspace (US/EU region), Runtime 17.1+, Mosaic AI access. Platform-integrated approach (not standalone API). Announced late 2024, claims 3-5x lower cost than AWS/Azure/Google."
     }
   ],
   "completed_tasks": [
@@ -2101,5 +2156,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-15T22:34:48.000000+00:00"
+  "updated_at": "2025-11-15T22:45:00Z"
 }
