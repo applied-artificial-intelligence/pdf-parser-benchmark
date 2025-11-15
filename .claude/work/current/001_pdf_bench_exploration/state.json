@@ -9,7 +9,7 @@
     "estimated_weeks": "6-7 weeks full-time"
   },
   "status": "implementing",
-  "current_task": "TASK-027",
+  "current_task": "TASK-028",
   "tasks": [
     {
       "id": "TASK-001",
@@ -802,7 +802,7 @@
       "description": "Integrate sacrebleu for chrF++ text similarity metric",
       "type": "feature",
       "phase": 3,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-007"
       ],
@@ -814,7 +814,15 @@
       ],
       "estimated_hours": 2,
       "priority": "medium",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-15T22:34:48Z",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "pdf_bench/metrics/text_metrics.py",
+        "tests/test_metrics/test_text_metrics.py",
+        "pdf_bench/metrics/__init__.py (updated)",
+        "TASK-028-completion-summary.md"
+      ]
     },
     {
       "id": "TASK-029",
@@ -2044,20 +2052,34 @@
     }
   ],
   "completed_tasks": [
+    "TASK-001",
+    "TASK-002",
+    "TASK-003",
+    "TASK-004",
+    "TASK-005",
+    "TASK-006",
+    "TASK-007",
+    "TASK-008",
+    "TASK-009",
     "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
-    "TASK-010",
+    "TASK-011",
+    "TASK-012",
+    "TASK-013",
+    "TASK-014",
+    "TASK-015",
+    "TASK-016",
+    "TASK-017",
+    "TASK-018",
+    "TASK-019",
+    "TASK-020",
+    "TASK-021",
+    "TASK-022",
+    "TASK-023",
     "TASK-024",
     "TASK-025",
     "TASK-026",
-    "TASK-027"
+    "TASK-027",
+    "TASK-028"
   ],
   "next_available": [
     "TASK-007",
@@ -2079,5 +2101,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-15T00:59:14.038110+00:00"
+  "updated_at": "2025-11-15T22:34:48.000000+00:00"
 }
