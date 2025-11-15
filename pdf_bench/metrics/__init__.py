@@ -40,6 +40,7 @@ from pdf_bench.metrics.latex_matching import (
     latex_f1_score,
     normalize_latex_expressions,
 )
+from pdf_bench.metrics.text_metrics import chrf_plus_plus_score
 
 __all__ = [
     # Edit distance metrics
@@ -47,6 +48,8 @@ __all__ = [
     "edit_similarity",
     "character_error_rate",
     "raw_edit_distance",
+    # Text similarity metrics
+    "chrf_plus_plus_score",
     # AST parsing
     "MarkdownASTParser",
     "Element",
