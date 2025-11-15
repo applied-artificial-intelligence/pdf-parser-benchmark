@@ -32,6 +32,14 @@ from pdf_bench.metrics.tree_edit_distance import (
     tree_edit_distance,
     tree_similarity,
 )
+from pdf_bench.metrics.latex_matching import (
+    LaTeXF1Scores,
+    extract_latex_expressions,
+    latex_accuracy,
+    latex_exact_match_f1,
+    latex_f1_score,
+    normalize_latex_expressions,
+)
 
 __all__ = [
     # Edit distance metrics
@@ -67,4 +75,11 @@ __all__ = [
     "cell_content_f1_score",
     "cell_accuracy",
     "CellF1Scores",
+    # LaTeX matching
+    "latex_f1_score",
+    "latex_accuracy",
+    "latex_exact_match_f1",
+    "extract_latex_expressions",
+    "normalize_latex_expressions",
+    "LaTeXF1Scores",
 ]
