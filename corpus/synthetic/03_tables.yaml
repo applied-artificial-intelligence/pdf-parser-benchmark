@@ -1,65 +1,15 @@
-document_id: syn-tables-001
-source_type: synthetic
-category: synthetic
+doc_id: syn-tables-001
+source_url: https://github.com/pdf-bench/corpus/synthetic/03_tables.md
+corpus: synthetic
+domain: pandoc
 title: Tables in PDF Parsing
-description: 'Comprehensive table testing with 13 labeled tables: GFM tables, HTML tables
-  with colspan/rowspan, nested tables, tables with lists, realistic business examples'
-complexity: very_high
-creation_method: manual_authoring
-pdf_generation: pandoc
-ground_truth_type: source_markdown
-features:
-  headings: true
-  paragraphs: true
-  bold: true
-  italic: false
-  ordered_lists: false
-  unordered_lists: true
-  nested_lists: false
-  tables: true
-  math: false
-  code_blocks: false
-  images: false
-  multi_column: false
-  html_tables: true
-  diagnostic_labels: true
-table_count: 13
-table_types:
-  gfm: 6
-  html_colspan: 1
-  html_rowspan: 1
-  html_complex_merged: 2
-  nested: 1
-  with_lists: 1
-  styled: 1
-table_features:
-- basic_gfm
-- column_alignment
-- numeric_data
-- multi_line_cells
-- empty_cells
-- wide_columns
-- colspan
-- rowspan
-- complex_merged_cells
-- nested_tables
-- embedded_lists
-- css_styling
-- financial_tables
-- diagnostic_labeling
-license: MIT
 authors:
 - PDF-Bench Project
-created_date: '2025-11-14'
-file_paths:
-  ground_truth: corpus/synthetic/03_tables.md
-  pdf: corpus/synthetic/03_tables.pdf
-validation:
-  ground_truth_exists: true
-  pdf_exists: true
-  metadata_complete: true
-notes: 'Comprehensive table testing with 13 labeled structures (TABLE-01 through TABLE-13)
-  for diagnostic purposes. Each table tests specific features enabling identification
-  of exact parser failures. Critical for TEDS metric evaluation and parser capability
-  analysis.'
-pdf_hash: 82a069258749149a7ea257e327dfbf1810ae4bc2243b127dde0c2f0a88fb8cc9
+publication_date: '2025-11-14'
+features:
+- tables
+- lists
+license: MIT
+notes: Comprehensive table testing with 13 labeled structures (TABLE-01 through TABLE-13) for diagnostic
+  purposes. Each table tests specific features enabling identification of exact parser failures. Critical
+  for TEDS metric evaluation and parser capability analysis.

@@ -1,52 +1,14 @@
-document_id: syn-math-001
-source_type: synthetic
-category: synthetic
+doc_id: syn-math-001
+source_url: https://github.com/pdf-bench/corpus/synthetic/04_math.md
+corpus: synthetic
+domain: pandoc
 title: Mathematical Notation in PDFs
-description: 'Document with extensive LaTeX math: inline, display, matrices, Greek
-  letters, summations, integrals, set theory, logic'
-complexity: high
-creation_method: manual_authoring
-pdf_generation: pandoc
-ground_truth_type: source_markdown
-features:
-  headings: true
-  paragraphs: true
-  bold: true
-  italic: false
-  ordered_lists: false
-  unordered_lists: true
-  nested_lists: false
-  tables: false
-  math: true
-  code_blocks: false
-  images: false
-  multi_column: false
-math_features:
-  inline_math: true
-  display_math: true
-  fractions: true
-  radicals: true
-  greek_letters: true
-  subscripts_superscripts: true
-  summations: true
-  products: true
-  integrals: true
-  limits: true
-  matrices: true
-  set_theory: true
-  logic_notation: true
-math_equation_count: 25
-license: MIT
 authors:
 - PDF-Bench Project
-created_date: '2025-11-14'
-file_paths:
-  ground_truth: corpus/synthetic/04_math.md
-  pdf: corpus/synthetic/04_math.pdf
-validation:
-  ground_truth_exists: true
-  pdf_exists: true
-  metadata_complete: true
-notes: Tests LaTeX extraction quality. Nougat and academic-focused parsers should
-  excel. PyMuPDF will likely struggle.
-pdf_hash: 7edddacd1af43cf2c6ea8c16624930b12b31583304b2c2cb29ec219ade32b650
+publication_date: '2025-11-14'
+features:
+- math
+- lists
+license: MIT
+notes: Tests LaTeX extraction quality. Nougat and academic-focused parsers should excel. PyMuPDF will
+  likely struggle.

@@ -1,0 +1,374 @@
+"""
+Configuration loader with runtime resolution for PDF-Bench.
+
+This module extends the basic configuration loading from config.py with runtime
+resolution of document paths and parser classes. It provides a complete, ready-to-use
+configuration object for the benchmark runner.
+"""
+
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any
+
+from pdf_bench.config import BenchmarkConfig, load_config
+from pdf_bench.systems import (
+    BaseParser,
+    MarkerParser,
+    PdfPlumberParser,
+    PyMuPDFParser,
+    UnstructuredParser,
+)
+from pdf_bench.utils.metadata import DocumentMetadata, load_metadata
+
+# Parser class registry mapping parser IDs to classes
+PARSER_REGISTRY: dict[str, type[BaseParser]] = {
+    "pymupdf": PyMuPDFParser,
+    "pdfplumber": PdfPlumberParser,
+    "marker": MarkerParser,
+    "unstructured": UnstructuredParser,
+    # Future parsers will be added here as they're implemented
+    # "aws_textract": AWSTextractParser,
+    # "azure_di": AzureDocumentIntelligenceParser,
+    # "google_docai": GoogleDocAIParser,
+    # "databricks": DatabricksParser,
+}
+
+
+@dataclass
+class DocumentInfo:
+    """
+    Information about a document in the benchmark.
+
+    Fields:
+        doc_id: Document identifier
+        pdf_path: Absolute path to PDF file
+        ground_truth_path: Absolute path to ground truth Markdown file
+        metadata: Document metadata (from YAML file)
+    """
+
+    doc_id: str
+    pdf_path: Path
+    ground_truth_path: Path
+    metadata: DocumentMetadata
+
+
+@dataclass
+class LoadedConfig:
+    """
+    Complete loaded configuration with resolved paths and parser instances.
+
+    This is the runtime-ready version of BenchmarkConfig, with all paths
+    resolved to absolute paths and parser classes instantiated.
+
+    Fields:
+        config: Original benchmark configuration
+        documents: List of documents to benchmark (resolved paths)
+        parser_instances: Instantiated parser objects ready to use
+        results_dir: Absolute path to results directory
+    """
+
+    config: BenchmarkConfig
+    documents: list[DocumentInfo]
+    parser_instances: list[BaseParser]
+    results_dir: Path
+
+    def __str__(self) -> str:
+        """String representation for debugging."""
+        return (
+            f"LoadedConfig(\n"
+            f"  name={self.config.name!r},\n"
+            f"  documents={len(self.documents)},\n"
+            f"  parsers={[p.name for p in self.parser_instances]},\n"
+            f"  results_dir={self.results_dir}\n"
+            f")"
+        )
+
+
+def discover_documents(
+    corpus_dir: Path,
+    config: BenchmarkConfig,
+) -> list[DocumentInfo]:
+    """
+    Discover and filter documents based on configuration.
+
+    Args:
+        corpus_dir: Absolute path to corpus directory
+        config: Benchmark configuration with document filters
+
+    Returns:
+        List of DocumentInfo objects matching the filters
+
+    Raises:
+        FileNotFoundError: If corpus directory doesn't exist
+        ValueError: If no documents match the filters
+    """
+    if not corpus_dir.exists():
+        raise FileNotFoundError(f"Corpus directory not found: {corpus_dir}")
+
+    if not corpus_dir.is_dir():
+        raise ValueError(f"Corpus path is not a directory: {corpus_dir}")
+
+    documents = []
+    filter_config = config.document_filter
+
+    # If include_doc_ids is specified, only load those documents
+    if filter_config.include_doc_ids:
+        for doc_id in filter_config.include_doc_ids:
+            # Try to find metadata file by searching all YAML files
+            # and matching on doc_id field (not filename)
+            found = False
+            for yaml_file in corpus_dir.glob("**/*.yaml"):
+                if yaml_file.name in ["targets.yaml", "schema.yaml"]:
+                    continue
+
+                try:
+                    metadata = load_metadata(yaml_file)
+                    if metadata.doc_id == doc_id:
+                        # Found matching document
+                        file_stem = yaml_file.stem
+                        pdf_path = yaml_file.parent / f"{file_stem}.pdf"
+                        gt_path = yaml_file.parent / f"{file_stem}.md"
+
+                        if pdf_path.exists() and gt_path.exists():
+                            documents.append(
+                                DocumentInfo(
+                                    doc_id=doc_id,
+                                    pdf_path=pdf_path,
+                                    ground_truth_path=gt_path,
+                                    metadata=metadata,
+                                )
+                            )
+                            found = True
+                            break
+                except Exception:
+                    continue
+
+            # Skip if document not found (warn but don't fail)
+            if not found:
+                continue
+    else:
+        # Discover all documents and filter
+        for metadata_path in corpus_dir.glob("**/*.yaml"):
+            # Skip non-metadata YAML files
+            if metadata_path.name in ["targets.yaml", "schema.yaml"]:
+                continue
+
+            try:
+                metadata = load_metadata(metadata_path)
+            except Exception:
+                # Skip invalid metadata files
+                continue
+
+            # Apply corpus filter
+            if filter_config.corpora and metadata.corpus not in filter_config.corpora:
+                continue
+
+            # Apply domain filter
+            if filter_config.domains and metadata.domain not in filter_config.domains:
+                continue
+
+            # Apply feature filter (document must have ALL listed features)
+            if filter_config.features:
+                if not all(f in metadata.features for f in filter_config.features):
+                    continue
+
+            # Apply exclude filter
+            if (
+                filter_config.exclude_doc_ids
+                and metadata.doc_id in filter_config.exclude_doc_ids
+            ):
+                continue
+
+            # Get document paths - use metadata filename stem, not doc_id
+            # (files are named like "01_basic.pdf" not "syn-basic-001.pdf")
+            file_stem = metadata_path.stem  # e.g., "01_basic" from "01_basic.yaml"
+            pdf_path = metadata_path.parent / f"{file_stem}.pdf"
+            gt_path = metadata_path.parent / f"{file_stem}.md"
+
+            # Verify files exist
+            if not pdf_path.exists() or not gt_path.exists():
+                continue
+
+            # Use metadata's doc_id for identification
+            doc_id = metadata.doc_id
+
+            documents.append(
+                DocumentInfo(
+                    doc_id=doc_id,
+                    pdf_path=pdf_path,
+                    ground_truth_path=gt_path,
+                    metadata=metadata,
+                )
+            )
+
+    # Apply max_documents limit if specified
+    if (
+        filter_config.max_documents is not None
+        and len(documents) > filter_config.max_documents
+    ):
+        documents = documents[: filter_config.max_documents]
+
+    if not documents:
+        raise ValueError(
+            "No documents found matching filter criteria. "
+            "Check corpus_dir and document_filter settings."
+        )
+
+    return documents
+
+
+def load_parsers(
+    config: BenchmarkConfig,
+) -> list[BaseParser]:
+    """
+    Load and instantiate parser classes based on configuration.
+
+    Args:
+        config: Benchmark configuration with parser settings
+
+    Returns:
+        List of instantiated parser objects
+
+    Raises:
+        ValueError: If parser not found in registry or instantiation fails
+    """
+    parser_instances = []
+
+    # If no parsers specified, use all available
+    parser_ids = config.parser_config.parsers
+    if not parser_ids:
+        parser_ids = list(PARSER_REGISTRY.keys())
+
+    for parser_id in parser_ids:
+        # Get parser class from registry
+        if parser_id not in PARSER_REGISTRY:
+            raise ValueError(
+                f"Parser '{parser_id}' not found in registry. "
+                f"Available parsers: {list(PARSER_REGISTRY.keys())}"
+            )
+
+        parser_class = PARSER_REGISTRY[parser_id]
+
+        # Get parser-specific options if provided
+        parser_options = config.parser_config.parser_options.get(parser_id, {})
+
+        # Instantiate parser
+        try:
+            if parser_options:
+                # Pass options as keyword arguments
+                parser_instance = parser_class(**parser_options)
+            else:
+                # No options, use defaults
+                parser_instance = parser_class()
+
+            parser_instances.append(parser_instance)
+        except TypeError as e:
+            raise ValueError(
+                f"Failed to instantiate parser '{parser_id}' with options {parser_options}: {e}"
+            ) from e
+
+    return parser_instances
+
+
+def load_benchmark_config(config_path: Path) -> LoadedConfig:
+    """
+    Load complete benchmark configuration with runtime resolution.
+
+    This is the main entry point for loading a benchmark configuration.
+    It loads the YAML config, validates it, resolves all document paths,
+    and instantiates parser objects.
+
+    Args:
+        config_path: Path to benchmark configuration YAML file
+
+    Returns:
+        LoadedConfig with all paths resolved and parsers instantiated
+
+    Raises:
+        FileNotFoundError: If config file or corpus directory not found
+        ValueError: If validation fails or no documents found
+        yaml.YAMLError: If YAML parsing fails
+
+    Example:
+        >>> config = load_benchmark_config(Path("benchmarks/mvp_all.yaml"))
+        >>> print(f"Loaded {len(config.documents)} documents")
+        >>> print(f"Parsers: {[p.name for p in config.parser_instances]}")
+    """
+    # Load basic configuration from YAML
+    config = load_config(config_path)
+
+    # Resolve corpus directory to absolute path
+    # If relative, resolve relative to config file location
+    corpus_dir = Path(config.corpus_dir)
+    if not corpus_dir.is_absolute():
+        corpus_dir = (config_path.parent / corpus_dir).resolve()
+
+    # Discover and filter documents
+    documents = discover_documents(corpus_dir, config)
+
+    # Load parser classes and instantiate
+    parser_instances = load_parsers(config)
+
+    # Resolve results directory to absolute path
+    results_dir = Path(config.output_config.results_dir)
+    if not results_dir.is_absolute():
+        results_dir = (config_path.parent / results_dir).resolve()
+
+    return LoadedConfig(
+        config=config,
+        documents=documents,
+        parser_instances=parser_instances,
+        results_dir=results_dir,
+    )
+
+
+def get_available_parsers() -> list[str]:
+    """
+    Get list of available parser IDs.
+
+    Returns:
+        List of parser IDs that can be used in configurations
+    """
+    return list(PARSER_REGISTRY.keys())
+
+
+def get_parser_info(parser_id: str) -> dict[str, Any]:
+    """
+    Get information about a specific parser.
+
+    Args:
+        parser_id: Parser identifier
+
+    Returns:
+        Dictionary with parser information (name, class, etc.)
+
+    Raises:
+        ValueError: If parser not found
+    """
+    if parser_id not in PARSER_REGISTRY:
+        raise ValueError(
+            f"Parser '{parser_id}' not found. "
+            f"Available: {list(PARSER_REGISTRY.keys())}"
+        )
+
+    parser_class = PARSER_REGISTRY[parser_id]
+
+    # Instantiate with defaults to get name/version
+    try:
+        instance = parser_class()
+        return {
+            "id": parser_id,
+            "class": parser_class.__name__,
+            "name": instance.name,
+            "version": instance.version,
+            "module": parser_class.__module__,
+        }
+    except Exception as e:
+        return {
+            "id": parser_id,
+            "class": parser_class.__name__,
+            "name": parser_id,
+            "version": "unknown",
+            "module": parser_class.__module__,
+            "error": str(e),
+        }

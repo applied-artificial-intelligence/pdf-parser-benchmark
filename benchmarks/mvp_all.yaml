@@ -9,7 +9,7 @@ description: >
   Marker, Unstructured) on the complete synthetic corpus. Computes all text, structure,
   table, and math metrics. This is the primary benchmark for validating parser implementations.
 
-corpus_dir: corpus
+corpus_dir: ../corpus
 
 document_filter:
   # Include all synthetic documents

@@ -9,7 +9,7 @@ description: >
   Runs all parsers on documents tagged with the 'math' feature and evaluates
   using LaTeX-specific metrics. Marker should excel here.
 
-corpus_dir: corpus
+corpus_dir: ../corpus
 
 document_filter:
   # Include all corpora

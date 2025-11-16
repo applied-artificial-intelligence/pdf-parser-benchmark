@@ -9,7 +9,7 @@ description: >
   Marker (high-quality ML) on 3 synthetic documents with core metrics only.
   Completes in ~1-2 minutes.
 
-corpus_dir: corpus
+corpus_dir: ../corpus
 
 document_filter:
   # Include only synthetic documents

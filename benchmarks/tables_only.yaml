@@ -9,7 +9,7 @@ description: >
   on documents tagged with the 'tables' feature and evaluates using table-specific
   metrics (TEDS, cell F1). Useful for comparing table extraction capabilities.
 
-corpus_dir: corpus
+corpus_dir: ../corpus
 
 document_filter:
   # Include all corpora
