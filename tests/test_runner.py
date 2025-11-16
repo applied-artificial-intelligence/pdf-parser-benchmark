@@ -444,3 +444,154 @@ class TestBenchmarkRunner:
         for result in results.results:
             if result.success:
                 assert result.parse_time_seconds >= 0
+
+
+class TestParallelExecution:
+    """Tests for parallel execution functionality."""
+
+    def test_init_with_default_workers(self, sample_config: LoadedConfig) -> None:
+        """Test runner initialization with default (auto) workers."""
+        runner = BenchmarkRunner(sample_config)
+        # Should auto-detect CPU count, capped at 8
+        assert runner.workers >= 1
+        assert runner.workers <= 8
+
+    def test_init_with_sequential(self, sample_config: LoadedConfig) -> None:
+        """Test runner initialization for sequential execution."""
+        runner = BenchmarkRunner(sample_config, parallel_workers=1)
+        assert runner.workers == 1
+
+    def test_init_with_specific_workers(self, sample_config: LoadedConfig) -> None:
+        """Test runner initialization with specific worker count."""
+        runner = BenchmarkRunner(sample_config, parallel_workers=4)
+        assert runner.workers == 4
+
+    def test_init_with_zero_workers(self, sample_config: LoadedConfig) -> None:
+        """Test runner initialization with 0 (auto) workers."""
+        runner = BenchmarkRunner(sample_config, parallel_workers=0)
+        assert runner.workers >= 1
+
+    def test_sequential_execution_with_progress(
+        self, sample_config: LoadedConfig
+    ) -> None:
+        """Test sequential execution (should work same as before)."""
+        runner = BenchmarkRunner(sample_config, parallel_workers=1)
+        results = runner.run()
+
+        # Should have same number of results
+        assert len(results.results) == (
+            len(sample_config.documents) * len(sample_config.parser_instances)
+        )
+        assert results.success_count + results.failure_count == len(results.results)
+
+    def test_parallel_execution(
+        self, tmp_path: Path, sample_metadata: DocumentMetadata
+    ) -> None:
+        """Test parallel execution with multiple workers."""
+        # Create multiple documents for testing parallel execution
+        docs = []
+        for i in range(4):
+            pdf_path = tmp_path / f"test_{i}.pdf"
+            pdf_path.write_text(f"dummy pdf {i}", encoding="utf-8")
+
+            gt_path = tmp_path / f"test_{i}.md"
+            gt_path.write_text(f"# Test {i}\n\nContent {i}", encoding="utf-8")
+
+            docs.append(
+                DocumentInfo(
+                    doc_id=f"test-doc-{i:03d}",
+                    pdf_path=pdf_path,
+                    ground_truth_path=gt_path,
+                    metadata=sample_metadata,
+                )
+            )
+
+        # Create config with multiple documents
+        config = LoadedConfig(
+            config=BenchmarkConfig(
+                name="Parallel Test",
+                description="Test parallel execution",
+                corpus_dir=str(tmp_path),
+                document_filter=DocumentFilter(),
+                parser_config=ParserConfig(parsers=[]),
+                metric_config=MetricConfig(metrics=["edit_similarity"]),
+                output_config=OutputConfig(results_dir="results"),
+            ),
+            documents=docs,
+            parser_instances=[MockParser("parser_1")],
+            results_dir=tmp_path / "results",
+        )
+
+        # Run with 2 workers
+        runner = BenchmarkRunner(config, parallel_workers=2)
+        results = runner.run()
+
+        # Should have 4 results (4 docs × 1 parser)
+        assert len(results.results) == 4
+        assert results.success_count == 4
+        assert results.failure_count == 0
+
+        # All results should have metrics
+        for result in results.results:
+            assert result.success
+            assert "edit_similarity" in result.metrics
+
+    def test_parallel_execution_with_failures(
+        self, tmp_path: Path, sample_metadata: DocumentMetadata
+    ) -> None:
+        """Test parallel execution handles failures correctly."""
+        # Create documents
+        docs = []
+        for i in range(3):
+            pdf_path = tmp_path / f"test_{i}.pdf"
+            pdf_path.write_text(f"dummy pdf {i}", encoding="utf-8")
+
+            gt_path = tmp_path / f"test_{i}.md"
+            gt_path.write_text(f"# Test {i}", encoding="utf-8")
+
+            docs.append(
+                DocumentInfo(
+                    doc_id=f"test-doc-{i:03d}",
+                    pdf_path=pdf_path,
+                    ground_truth_path=gt_path,
+                    metadata=sample_metadata,
+                )
+            )
+
+        # Mix of successful and failing parsers
+        parsers = [
+            MockParser("success", should_fail=False),
+            MockParser("failure", should_fail=True),
+        ]
+
+        config = LoadedConfig(
+            config=BenchmarkConfig(
+                name="Failure Test",
+                description="Test failure handling",
+                corpus_dir=str(tmp_path),
+                document_filter=DocumentFilter(),
+                parser_config=ParserConfig(parsers=[]),
+                metric_config=MetricConfig(metrics=["edit_similarity"]),
+                output_config=OutputConfig(results_dir="results"),
+            ),
+            documents=docs,
+            parser_instances=parsers,
+            results_dir=tmp_path / "results",
+        )
+
+        # Run with parallel workers
+        runner = BenchmarkRunner(config, parallel_workers=2)
+        results = runner.run()
+
+        # Should have 6 results (3 docs × 2 parsers)
+        assert len(results.results) == 6
+
+        # Should have mix of successes and failures
+        assert results.success_count == 3  # success parser on 3 docs
+        assert results.failure_count == 3  # failure parser on 3 docs
+
+        # Check that failures have error messages
+        for result in results.results:
+            if not result.success:
+                assert result.error is not None
+                assert "failed" in result.error.lower()

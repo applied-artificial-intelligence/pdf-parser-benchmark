@@ -1,7 +1,9 @@
 """Benchmark runner that orchestrates parser execution and metric computation."""
 
+import multiprocessing as mp
 import time
 from dataclasses import dataclass, field
+from pathlib import Path
 from typing import Any
 
 from pdf_bench.loader import DocumentInfo, LoadedConfig
@@ -14,6 +16,20 @@ from pdf_bench.metrics import (
     tree_similarity,
 )
 from pdf_bench.systems import BaseParser
+
+try:
+    from rich.progress import (
+        BarColumn,
+        MofNCompleteColumn,
+        Progress,
+        TaskProgressColumn,
+        TextColumn,
+        TimeElapsedColumn,
+    )
+
+    RICH_AVAILABLE = True
+except ImportError:
+    RICH_AVAILABLE = False
 
 # Metric function registry
 METRIC_FUNCTIONS: dict[str, Any] = {
@@ -51,19 +67,116 @@ class BenchmarkResults:
     failure_count: int = 0
 
 
+def _worker_run_single(
+    parser_name: str,
+    parser_class: type[BaseParser],
+    parser_options: dict[str, Any],
+    doc_id: str,
+    pdf_path: Path,
+    gt_path: Path,
+    results_dir: Path,
+    metrics_list: list[str],
+) -> DocumentResult:
+    """Worker function for parallel execution.
+
+    This function is designed to be called by multiprocessing workers.
+    It recreates the parser instance and runs a single benchmark.
+
+    Args:
+        parser_name: Name of the parser
+        parser_class: Parser class to instantiate
+        parser_options: Options to pass to parser constructor
+        doc_id: Document ID
+        pdf_path: Path to PDF file
+        gt_path: Path to ground truth markdown
+        results_dir: Directory to save parser output
+        metrics_list: List of metric names to compute
+
+    Returns:
+        DocumentResult with metrics or error information
+    """
+    try:
+        # Instantiate parser in worker process
+        parser = parser_class(**parser_options)
+
+        # Parse PDF to Markdown
+        start_time = time.time()
+        output_md_path = parser.parse(pdf_path, results_dir)
+        parse_time = time.time() - start_time
+
+        # Read generated and ground truth markdown
+        generated_md = output_md_path.read_text(encoding="utf-8")
+        ground_truth_md = gt_path.read_text(encoding="utf-8")
+
+        # Compute metrics
+        metrics = {}
+        for metric_name in metrics_list:
+            try:
+                metric_func = METRIC_FUNCTIONS.get(metric_name)
+                if metric_func is None:
+                    continue
+
+                score = metric_func(ground_truth_md, generated_md)
+
+                # Handle element_f1 which returns ElementScores
+                if metric_name == "element_f1":
+                    metrics[f"{metric_name}_precision"] = score.precision
+                    metrics[f"{metric_name}_recall"] = score.recall
+                    metrics[f"{metric_name}_f1"] = score.f1
+                else:
+                    metrics[metric_name] = score
+
+            except Exception:
+                metrics[metric_name] = float("nan")
+
+        return DocumentResult(
+            document_id=doc_id,
+            parser_name=parser_name,
+            success=True,
+            metrics=metrics,
+            parse_time_seconds=parse_time,
+        )
+
+    except Exception as e:
+        return DocumentResult(
+            document_id=doc_id,
+            parser_name=parser_name,
+            success=False,
+            metrics={},
+            error=str(e),
+        )
+
+
 class BenchmarkRunner:
     """Orchestrates benchmark execution across parsers and documents."""
 
-    def __init__(self, config: LoadedConfig) -> None:
+    def __init__(self, config: LoadedConfig, parallel_workers: int | None = None) -> None:
         """Initialize runner with loaded configuration.
 
         Args:
             config: LoadedConfig with instantiated parsers and resolved paths
+            parallel_workers: Number of parallel workers to use.
+                0 or None = auto-detect CPU count
+                1 = sequential execution (no multiprocessing)
+                N > 1 = use N parallel workers
         """
         self.config = config
 
+        # Determine worker count
+        if parallel_workers is None:
+            # Use config value if available, otherwise default to auto
+            parallel_workers = getattr(config.config, "parallel_workers", 0)
+
+        if parallel_workers == 0:
+            # Auto-detect: use CPU count, capped at reasonable max
+            self.workers = min(mp.cpu_count(), 8)
+        else:
+            self.workers = max(1, parallel_workers)
+
     def run(self) -> BenchmarkResults:
         """Execute complete benchmark.
+
+        Uses parallel execution if workers > 1, otherwise sequential.
 
         Returns:
             BenchmarkResults with all parser/document combinations
@@ -77,17 +190,133 @@ class BenchmarkRunner:
             total_parsers=len(self.config.parser_instances),
         )
 
-        # For each parser
+        # Build list of all tasks
+        tasks = []
         for parser in self.config.parser_instances:
-            # For each document
             for doc in self.config.documents:
-                result = self._run_single(parser, doc)
-                results.results.append(result)
+                tasks.append((parser, doc))
 
-                if result.success:
-                    results.success_count += 1
-                else:
-                    results.failure_count += 1
+        # Execute tasks (parallel or sequential)
+        if self.workers == 1:
+            # Sequential execution
+            task_results = self._run_sequential(tasks)
+        else:
+            # Parallel execution
+            task_results = self._run_parallel(tasks)
+
+        # Collect results
+        for result in task_results:
+            results.results.append(result)
+            if result.success:
+                results.success_count += 1
+            else:
+                results.failure_count += 1
+
+        return results
+
+    def _run_sequential(
+        self, tasks: list[tuple[BaseParser, DocumentInfo]]
+    ) -> list[DocumentResult]:
+        """Execute tasks sequentially with optional progress bar.
+
+        Args:
+            tasks: List of (parser, document) tuples to execute
+
+        Returns:
+            List of DocumentResults
+        """
+        results = []
+
+        if RICH_AVAILABLE:
+            with Progress(
+                TextColumn("[progress.description]{task.description}"),
+                BarColumn(),
+                MofNCompleteColumn(),
+                TaskProgressColumn(),
+                TimeElapsedColumn(),
+            ) as progress:
+                task_id = progress.add_task(
+                    f"Running {self.config.config.name}", total=len(tasks)
+                )
+
+                for parser, doc in tasks:
+                    result = self._run_single(parser, doc)
+                    results.append(result)
+                    progress.update(task_id, advance=1)
+        else:
+            # No progress bar, just iterate
+            for parser, doc in tasks:
+                result = self._run_single(parser, doc)
+                results.append(result)
+
+        return results
+
+    def _run_parallel(
+        self, tasks: list[tuple[BaseParser, DocumentInfo]]
+    ) -> list[DocumentResult]:
+        """Execute tasks in parallel using multiprocessing.
+
+        Args:
+            tasks: List of (parser, document) tuples to execute
+
+        Returns:
+            List of DocumentResults
+        """
+        # Prepare task arguments for worker function
+        worker_args = []
+        for parser, doc in tasks:
+            # Get parser class
+            parser_class = type(parser)
+
+            # Try to extract constructor arguments from parser instance
+            # This is a best-effort approach - may need customization per parser
+            parser_options = {}
+
+            # Check if parser has common attributes to preserve
+            if hasattr(parser, "_name"):
+                parser_options["name"] = parser._name
+            if hasattr(parser, "_should_fail"):
+                parser_options["should_fail"] = parser._should_fail
+            if hasattr(parser, "_output_content"):
+                parser_options["output_content"] = parser._output_content
+
+            worker_args.append(
+                (
+                    parser.name,
+                    parser_class,
+                    parser_options,
+                    doc.doc_id,
+                    doc.pdf_path,
+                    doc.ground_truth_path,
+                    self.config.results_dir,
+                    self.config.config.metric_config.metrics,
+                )
+            )
+
+        # Execute in parallel with progress tracking
+        results = []
+
+        if RICH_AVAILABLE:
+            with Progress(
+                TextColumn("[progress.description]{task.description}"),
+                BarColumn(),
+                MofNCompleteColumn(),
+                TaskProgressColumn(),
+                TimeElapsedColumn(),
+            ) as progress:
+                task_id = progress.add_task(
+                    f"Running {self.config.config.name} ({self.workers} workers)",
+                    total=len(tasks),
+                )
+
+                with mp.Pool(processes=self.workers) as pool:
+                    for result in pool.starmap(_worker_run_single, worker_args):
+                        results.append(result)
+                        progress.update(task_id, advance=1)
+        else:
+            # No progress bar, just use pool
+            with mp.Pool(processes=self.workers) as pool:
+                results = pool.starmap(_worker_run_single, worker_args)
 
         return results
 
