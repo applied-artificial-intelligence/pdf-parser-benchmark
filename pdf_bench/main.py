@@ -1,13 +1,22 @@
 """Main CLI entry point for PDF-Bench."""
 
+from pathlib import Path
 
 import typer
+from rich.console import Console
+from rich.table import Table
+
+from pdf_bench.loader import PARSER_REGISTRY, load_benchmark_config
+from pdf_bench.persistence import load_results, save_results
+from pdf_bench.runner import BenchmarkRunner
 
 app = typer.Typer(
     name="pdfbench",
     help="PDF-Bench: Benchmarking suite for PDF-to-Markdown conversion",
     add_completion=False,
 )
+
+console = Console()
 
 
 def version_callback(show_version: bool) -> None:
@@ -21,6 +30,7 @@ def version_callback(show_version: bool) -> None:
 
 @app.callback(invoke_without_command=True)
 def main(
+    ctx: typer.Context,
     version: bool | None = typer.Option(
         None,
         "--version",
@@ -31,7 +41,239 @@ def main(
     ),
 ) -> None:
     """PDF-Bench: Benchmarking suite for PDF-to-Markdown conversion."""
-    pass
+    if ctx.invoked_subcommand is None:
+        console.print(
+            "[bold cyan]PDF-Bench[/bold cyan] - "
+            "Benchmarking suite for PDF-to-Markdown conversion"
+        )
+        console.print("\nRun [bold]pdfbench --help[/bold] for usage information.")
+
+
+@app.command()
+def run(
+    config_path: Path = typer.Argument(
+        ..., help="Path to benchmark configuration YAML file", exists=True
+    ),
+    output: Path | None = typer.Option(
+        None, "--output", "-o", help="Path to save results JSON (optional)"
+    ),
+    workers: int | None = typer.Option(
+        None,
+        "--workers",
+        "-w",
+        help="Number of parallel workers (0=auto, 1=sequential, N=parallel)",
+    ),
+) -> None:
+    """
+    Run a benchmark using the specified configuration file.
+
+    Example:
+        pdfbench run benchmarks/quick_test.yaml -o results/quick_test.json
+    """
+    try:
+        console.print(f"\n[bold cyan]Loading configuration:[/bold cyan] {config_path}")
+
+        # Load configuration
+        config = load_benchmark_config(config_path)
+
+        console.print(
+            f"[green]✓[/green] Loaded: {config.config.name}\n"
+            f"  Documents: {len(config.documents)}\n"
+            f"  Parsers: {len(config.parser_instances)}\n"
+            f"  Metrics: {len(config.config.metric_config.metrics)}"
+        )
+
+        # Determine worker count
+        if workers is None:
+            workers = config.config.parallel_workers
+
+        # Create runner
+        console.print(
+            f"\n[bold cyan]Running benchmark...[/bold cyan] "
+            f"(workers: {workers if workers > 0 else 'auto'})"
+        )
+        runner = BenchmarkRunner(config, parallel_workers=workers)
+
+        # Run benchmark
+        results = runner.run()
+
+        # Display summary
+        console.print("\n[bold green]✓ Benchmark Complete[/bold green]")
+        console.print(
+            f"  Total results: {len(results.results)}\n"
+            f"  Successful: {results.success_count}\n"
+            f"  Failed: {results.failure_count}"
+        )
+
+        # Save results if output path provided
+        if output:
+            console.print(f"\n[bold cyan]Saving results:[/bold cyan] {output}")
+
+            # Get parser versions
+            parser_versions = {}
+            for parser in config.parser_instances:
+                try:
+                    parser_versions[parser.name] = parser.version
+                except Exception:
+                    parser_versions[parser.name] = "unknown"
+
+            save_results(
+                results,
+                output,
+                config_file=str(config_path),
+                parser_versions=parser_versions,
+            )
+            console.print(f"[green]✓[/green] Results saved to {output}")
+
+    except FileNotFoundError as e:
+        console.print(f"[red]Error:[/red] File not found: {e}")
+        raise typer.Exit(code=1) from e
+    except ValueError as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise typer.Exit(code=1) from e
+    except Exception as e:
+        console.print(f"[red]Unexpected error:[/red] {e}")
+        raise typer.Exit(code=1) from e
+
+
+@app.command(name="list")
+def list_systems(
+    parsers: bool = typer.Option(
+        True, "--parsers/--no-parsers", help="List available parsers"
+    ),
+    metrics: bool = typer.Option(
+        False, "--metrics", help="List available metrics"
+    ),
+) -> None:
+    """
+    List available parsers and metrics.
+
+    Example:
+        pdfbench list
+        pdfbench list --metrics
+    """
+    if parsers:
+        console.print("\n[bold cyan]Available Parsers:[/bold cyan]\n")
+
+        table = Table(show_header=True, header_style="bold magenta")
+        table.add_column("ID", style="cyan")
+        table.add_column("Name", style="white")
+        table.add_column("Status", style="green")
+
+        for parser_id, parser_class in PARSER_REGISTRY.items():
+            try:
+                # Try to instantiate to check if available
+                _parser = parser_class()
+                status = "✓ Available"
+                name = parser_class.__name__
+            except Exception as e:
+                status = f"✗ Error: {str(e)[:30]}"
+                name = parser_class.__name__
+
+            table.add_row(parser_id, name, status)
+
+        console.print(table)
+
+    if metrics:
+        from pdf_bench.config import VALID_METRICS
+
+        console.print("\n[bold cyan]Available Metrics:[/bold cyan]\n")
+
+        table = Table(show_header=True, header_style="bold magenta")
+        table.add_column("Metric", style="cyan")
+        table.add_column("Category", style="white")
+
+        # Group metrics by category
+        categories = {
+            "Text": ["edit_distance", "edit_similarity", "character_error_rate", "chrf++"],
+            "Structure": ["tree_edit_distance", "tree_similarity", "element_f1"],
+            "Table": ["teds", "teds_with_content", "cell_content_f1", "cell_accuracy"],
+            "Math": ["latex_f1", "latex_accuracy"],
+        }
+
+        for category, metric_list in categories.items():
+            for metric in metric_list:
+                if metric in VALID_METRICS:
+                    table.add_row(metric, category)
+
+        console.print(table)
+
+
+@app.command()
+def report(
+    results_path: Path = typer.Argument(
+        ..., help="Path to benchmark results JSON file", exists=True
+    ),
+    output_path: Path | None = typer.Option(
+        None, "--output", "-o", help="Path to save HTML report (optional)"
+    ),
+) -> None:
+    """
+    Generate HTML report from benchmark results.
+
+    Example:
+        pdfbench report results/quick_test.json -o reports/quick_test.html
+
+    Note: This command is a placeholder. Full report generation will be
+    implemented in a future task.
+    """
+    try:
+        console.print(f"\n[bold cyan]Loading results:[/bold cyan] {results_path}")
+
+        # Load results
+        results = load_results(results_path)
+
+        console.print(
+            f"[green]✓[/green] Loaded: {results.benchmark_name}\n"
+            f"  Timestamp: {results.timestamp}\n"
+            f"  Results: {len(results.results)}\n"
+            f"  Success: {results.success_count}\n"
+            f"  Failed: {results.failure_count}"
+        )
+
+        if output_path:
+            console.print(
+                "\n[yellow]Note:[/yellow] HTML report generation not yet implemented."
+            )
+            console.print(
+                f"Planned output: {output_path}\n"
+                "This feature will be added in TASK-044."
+            )
+        else:
+            # Display summary to console
+            console.print("\n[bold cyan]Summary:[/bold cyan]")
+
+            # Group results by parser
+            from collections import defaultdict
+
+            from pdf_bench.runner import DocumentResult
+
+            by_parser: dict[str, list[DocumentResult]] = defaultdict(list)
+            for result in results.results:
+                by_parser[result.parser_name].append(result)
+
+            table = Table(show_header=True, header_style="bold magenta")
+            table.add_column("Parser", style="cyan")
+            table.add_column("Documents", justify="right")
+            table.add_column("Success Rate", justify="right")
+
+            for parser_name, parser_results in sorted(by_parser.items()):
+                successes = sum(1 for r in parser_results if r.success)
+                total = len(parser_results)
+                rate = (successes / total * 100) if total > 0 else 0
+
+                table.add_row(
+                    parser_name, str(total), f"{rate:.1f}% ({successes}/{total})"
+                )
+
+            console.print(table)
+
+    except FileNotFoundError as e:
+        console.print(f"[red]Error:[/red] File not found: {e}")
+        raise typer.Exit(code=1) from e
+    except Exception as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise typer.Exit(code=1) from e
 
 
 if __name__ == "__main__":
