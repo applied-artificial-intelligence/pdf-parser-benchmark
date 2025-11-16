@@ -4,7 +4,7 @@
     "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
     "version": "0.1.0",
     "created_at": "2025-11-14T06:00:00Z",
-    "updated_at": "2025-11-16T12:43:04.770512+00:00",
+    "updated_at": "2025-11-16T13:20:25.841314+00:00",
     "estimated_total_hours": 255,
     "estimated_weeks": "6-7 weeks full-time",
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
@@ -1382,7 +1382,7 @@
       "description": "Create HTML scraper for GOV.UK content extraction",
       "type": "feature",
       "phase": 6,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-047"
       ],
@@ -1396,7 +1396,16 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T13:20:25.841314+00:00",
+      "actual_hours": 3.0,
+      "deliverables": [
+        "builders/scrape_govuk.py (303 lines)",
+        "builders/download_govuk_corpus.py (353 lines)",
+        "tests/test_builders/test_scrape_govuk.py (527 lines)",
+        "37 tests passing, 98% coverage",
+        "Verified on 2 real GOV.UK URLs"
+      ]
     },
     {
       "id": "TASK-049",
@@ -1519,7 +1528,7 @@
       "description": "Create SEC EDGAR API client for filing downloads",
       "type": "feature",
       "phase": 7,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-053"
       ],
@@ -1533,7 +1542,17 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T13:20:25.841314+00:00",
+      "actual_hours": 1.5,
+      "deliverables": [
+        "builders/sec_edgar_client.py (372 lines)",
+        "builders/download_sec_corpus.py (329 lines)",
+        "tests/test_builders/test_sec_edgar_client.py (438 lines)",
+        "25 tests passing, 89% coverage",
+        "SEC compliance: User-Agent, rate limiting (6.7 req/sec)",
+        "Verified on real SEC filings"
+      ]
     },
     {
       "id": "TASK-055",
@@ -1652,7 +1671,7 @@
       "description": "Create arXiv API client for paper downloads",
       "type": "feature",
       "phase": 8,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-059"
       ],
@@ -1666,7 +1685,18 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T13:20:25.841314+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "builders/arxiv_client.py (347 lines)",
+        "builders/download_arxiv_corpus.py (300 lines)",
+        "tests/test_builders/test_arxiv_client.py (455 lines)",
+        "builders/README_ARXIV.md",
+        "27 tests passing, 96% coverage",
+        "ar5iv HTML5 integration (game-changer for ground truth)",
+        "Verified on real arXiv paper"
+      ]
     },
     {
       "id": "TASK-061",
@@ -2313,7 +2343,10 @@
     "TASK-036",
     "TASK-047",
     "TASK-053",
-    "TASK-059"
+    "TASK-059",
+    "TASK-048",
+    "TASK-054",
+    "TASK-060"
   ],
   "next_available": [
     "TASK-007",
@@ -2335,5 +2368,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763296984.770541
+  "updated_at": 1763299225.841339
 }

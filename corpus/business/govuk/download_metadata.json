@@ -1,0 +1,29 @@
+{
+  "targets_file": "/home/stefan/projects/pdf-bench/corpus/business/gov_uk_targets.yaml",
+  "output_dir": "/home/stefan/projects/pdf-bench/corpus/business/govuk",
+  "statistics": {
+    "total": 2,
+    "processed": 2,
+    "successful": 2,
+    "failed": 0,
+    "skipped": 0
+  },
+  "downloads": [
+    {
+      "url": "https://www.gov.uk/government/publications/nhs-england-annual-report-and-accounts-2024-to-2025",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/govuk_001.html",
+      "content_size": 9280,
+      "status": "success",
+      "id": "govuk_001",
+      "title": "NHS England Annual Report and Accounts 2024 to 2025"
+    },
+    {
+      "url": "https://www.gov.uk/government/publications/cabinet-office-annual-report-and-accounts-2024-to-2025",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/govuk_002.html",
+      "content_size": 8301,
+      "status": "success",
+      "id": "govuk_002",
+      "title": "Cabinet Office Annual Report and Accounts 2024 to 2025"
+    }
+  ]
+}
