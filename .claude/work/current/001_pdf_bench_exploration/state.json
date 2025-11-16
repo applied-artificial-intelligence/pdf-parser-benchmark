@@ -10,7 +10,7 @@
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
   },
   "status": "implementing",
-  "current_task": "TASK-028",
+  "current_task": "TASK-029",
   "tasks": [
     {
       "id": "TASK-001",
@@ -2061,13 +2061,13 @@
       "description": "Create pdfplumber adapter implementing BaseParser interface with focus on table extraction via visual layout analysis",
       "type": "feature",
       "phase": 4,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-004",
         "TASK-005"
       ],
       "acceptance_criteria": [
-        "pdf_bench/systems/pdfplumber.py created",
+        "pdf_bench/systems/pdfplumber_parser.py created",
         "Implements BaseParser interface",
         "Text extraction with character-level positioning",
         "Table extraction via visual layout analysis",
@@ -2077,7 +2077,15 @@
       ],
       "estimated_hours": 3,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-15T23:00:00Z",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "pdf_bench/systems/pdfplumber_parser.py",
+        "tests/test_systems/test_pdfplumber_parser.py",
+        "pdf_bench/systems/__init__.py (updated)",
+        "TASK-086-completion-summary.md"
+      ]
     },
     {
       "id": "TASK-087",
@@ -2134,7 +2142,8 @@
     "TASK-025",
     "TASK-026",
     "TASK-027",
-    "TASK-028"
+    "TASK-028",
+    "TASK-086"
   ],
   "next_available": [
     "TASK-007",
@@ -2156,5 +2165,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-15T22:45:00Z"
+  "updated_at": "2025-11-15T23:00:00Z"
 }
