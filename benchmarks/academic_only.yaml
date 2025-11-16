@@ -1,0 +1,71 @@
+# PDF-Bench Academic Documents Benchmark
+#
+# This benchmark focuses on academic documents (arXiv papers).
+# NOTE: This corpus is not yet populated. Use this as a template.
+
+name: Academic Documents Benchmark
+description: >
+  Benchmark focused on academic documents from arXiv. Tests parsers on papers
+  with complex math, figures, tables, and multi-column layouts typical of
+  academic publications.
+
+  NOTE: Academic corpus not yet populated. This is a template configuration.
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Include only academic documents
+  corpora:
+    - academic
+  # arXiv domain only
+  domains:
+    - arxiv
+  # No specific feature filtering (academic docs have all features)
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  # No limit - process all academic documents
+  max_documents: null
+
+parser_config:
+  # All parsers - academic docs are challenging
+  parsers:
+    - pymupdf
+    - pdfplumber
+    - marker      # ML-based, good for complex layouts
+    - unstructured
+  # Parser-specific options
+  parser_options:
+    unstructured:
+      strategy: hi_res  # Use high-res strategy for academic papers
+    marker:
+      # Marker handles multi-column and math well
+      extract_images: false  # Focus on text extraction
+
+metric_config:
+  # Focus on metrics important for academic documents
+  metrics:
+    # Text metrics
+    - edit_similarity
+    - chrf++
+    # Structure metrics (important for multi-column)
+    - tree_similarity
+    - element_f1
+    # Table metrics (common in papers)
+    - teds
+    - cell_content_f1
+    # Math metrics (critical for academic papers)
+    - latex_f1
+    - latex_accuracy
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: null
+  save_predictions: true
+  verbose: true
+
+# Parallel execution recommended for larger corpus
+parallel_workers: 0
