@@ -10,7 +10,7 @@
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
   },
   "status": "implementing",
-  "current_task": "TASK-038",
+  "current_task": "TASK-040",
   "tasks": [
     {
       "id": "TASK-001",
@@ -342,7 +342,7 @@
     },
     {
       "id": "TASK-012",
-      "title": "Implement Pandoc Wrapper for MD→PDF",
+      "title": "Implement Pandoc Wrapper for MD\u2192PDF",
       "description": "Create wrapper for Pandoc to convert Markdown to PDF using Eisvogel template",
       "type": "feature",
       "phase": 2,
@@ -432,8 +432,8 @@
     },
     {
       "id": "TASK-015",
-      "title": "Implement DOCX→PDF Pipeline",
-      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX→PDF conversion",
+      "title": "Implement DOCX\u2192PDF Pipeline",
+      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX\u2192PDF conversion",
       "type": "feature",
       "phase": 2,
       "status": "completed",
@@ -752,7 +752,7 @@
       "acceptance_criteria": [
         "Whitespace collapsing",
         "Remove \\left, \\right",
-        "Remove redundant grouping {{a}} → {a}",
+        "Remove redundant grouping {{a}} \u2192 {a}",
         "Handles inline and display math",
         "Unit tests with complex equations"
       ],
@@ -1100,7 +1100,7 @@
       "description": "Create core benchmark orchestration system",
       "type": "feature",
       "phase": 5,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-038",
         "TASK-009",
@@ -1109,14 +1109,21 @@
       "acceptance_criteria": [
         "pdf_bench/core.py created",
         "BenchmarkRunner class",
-        "Task orchestration (parser × document)",
+        "Task orchestration (parser \u00d7 document)",
         "Metric computation per result",
         "Error handling and logging",
         "Unit tests with mocks"
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": "architect"
+      "agent_recommendation": "architect",
+      "completed_at": 1763261576.3918455,
+      "actual_hours": 3.0,
+      "deliverables": [
+        "pdf_bench/runner.py (173 lines)",
+        "tests/test_runner.py (447 lines)",
+        "17 tests passing, 95% coverage"
+      ]
     },
     {
       "id": "TASK-040",
@@ -1312,7 +1319,7 @@
     },
     {
       "id": "TASK-049",
-      "title": "Implement HTML→Markdown Converter",
+      "title": "Implement HTML\u2192Markdown Converter",
       "description": "Create HTML to Markdown converter for GOV.UK content",
       "type": "feature",
       "phase": 6,
@@ -1321,10 +1328,10 @@
         "TASK-048"
       ],
       "acceptance_criteria": [
-        "Heading extraction (h1→#, h2→##, etc.)",
+        "Heading extraction (h1\u2192#, h2\u2192##, etc.)",
         "Paragraph extraction",
         "List extraction (nested)",
-        "Table conversion (simple→GFM, complex→HTML)",
+        "Table conversion (simple\u2192GFM, complex\u2192HTML)",
         "Figure/image handling",
         "Applies normalization rules",
         "Unit tests"
@@ -1367,7 +1374,7 @@
       ],
       "acceptance_criteria": [
         "20-30 GOV.UK documents processed",
-        "HTML→Markdown GT generated",
+        "HTML\u2192Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (OGL v3.0 license)",
         "Validation script confirms integrity"
@@ -1463,7 +1470,7 @@
     },
     {
       "id": "TASK-056",
-      "title": "Implement SEC→Markdown Converter",
+      "title": "Implement SEC\u2192Markdown Converter",
       "description": "Create full SEC filing to Markdown converter",
       "type": "feature",
       "phase": 7,
@@ -1472,7 +1479,7 @@
         "TASK-055"
       ],
       "acceptance_criteria": [
-        "Full document HTML→Markdown",
+        "Full document HTML\u2192Markdown",
         "Focus on table accuracy",
         "Handle SEC-specific formatting",
         "Unit tests"
@@ -1493,7 +1500,7 @@
       ],
       "acceptance_criteria": [
         "10-20 SEC filings processed",
-        "HTML→Markdown GT generated",
+        "HTML\u2192Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (public domain)",
         "Validation confirms integrity"
@@ -1588,7 +1595,7 @@
     {
       "id": "TASK-062",
       "title": "Integrate LaTeXML",
-      "description": "Create LaTeXML subprocess wrapper for LaTeX→HTML conversion",
+      "description": "Create LaTeXML subprocess wrapper for LaTeX\u2192HTML conversion",
       "type": "feature",
       "phase": 8,
       "status": "pending",
@@ -1608,7 +1615,7 @@
     },
     {
       "id": "TASK-063",
-      "title": "Implement LaTeXML→Markdown Converter",
+      "title": "Implement LaTeXML\u2192Markdown Converter",
       "description": "Create converter from LaTeXML output to Markdown",
       "type": "feature",
       "phase": 8,
@@ -1661,7 +1668,7 @@
       ],
       "acceptance_criteria": [
         "30-50 arXiv papers processed",
-        "LaTeX→Markdown GT generated",
+        "LaTeX\u2192Markdown GT generated",
         "80%+ success rate (some failures acceptable)",
         "PDFs downloaded",
         "Metadata YAML files created",
@@ -2196,7 +2203,8 @@
     "TASK-033",
     "TASK-034",
     "TASK-037",
-    "TASK-038"
+    "TASK-038",
+    "TASK-039"
   ],
   "next_available": [
     "TASK-007",
@@ -2218,5 +2226,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763259201.76477
+  "updated_at": 1763261576.391847
 }
