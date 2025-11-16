@@ -1443,7 +1443,7 @@
       "description": "Create PDF downloader for GOV.UK documents",
       "type": "feature",
       "phase": 6,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-047"
       ],
@@ -1456,7 +1456,15 @@
       ],
       "estimated_hours": 2,
       "priority": "medium",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T15:18:44.%fZ",
+      "actual_hours": 2,
+      "deliverables": [
+        "builders/download_govuk_pdfs.py (316 lines)",
+        "builders/download_govuk_pdf_corpus.py (425 lines)",
+        "tests/test_builders/test_download_govuk_pdfs.py (560 lines, 31 tests)",
+        "builders/README_GOVUK_PDF.md (191 lines)"
+      ]
     },
     {
       "id": "TASK-051",
@@ -2375,5 +2383,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-16T15:04:35.%f+00:00"
+  "updated_at": "2025-11-16T15:18:44.%f+00:00"
 }
