@@ -8,6 +8,7 @@ from rich.table import Table
 
 from pdf_bench.loader import PARSER_REGISTRY, load_benchmark_config
 from pdf_bench.persistence import load_results, save_results
+from pdf_bench.report_generator import generate_html_report
 from pdf_bench.runner import BenchmarkRunner
 
 app = typer.Typer(
@@ -205,7 +206,10 @@ def report(
         ..., help="Path to benchmark results JSON file", exists=True
     ),
     output_path: Path | None = typer.Option(
-        None, "--output", "-o", help="Path to save HTML report (optional)"
+        None, "--output", "-o", help="Path to save HTML report"
+    ),
+    include_charts: bool = typer.Option(
+        False, "--charts", help="Include chart placeholders in report"
     ),
 ) -> None:
     """
@@ -213,9 +217,7 @@ def report(
 
     Example:
         pdfbench report results/quick_test.json -o reports/quick_test.html
-
-    Note: This command is a placeholder. Full report generation will be
-    implemented in a future task.
+        pdfbench report results/quick_test.json  # Display summary in console
     """
     try:
         console.print(f"\n[bold cyan]Loading results:[/bold cyan] {results_path}")
@@ -232,12 +234,31 @@ def report(
         )
 
         if output_path:
-            console.print(
-                "\n[yellow]Note:[/yellow] HTML report generation not yet implemented."
+            # Generate HTML report
+            console.print("\n[bold cyan]Generating HTML report:[/bold cyan]")
+
+            # Try to extract config file from JSON metadata
+            import json
+
+            config_file = None
+            try:
+                with open(results_path, encoding="utf-8") as f:
+                    data = json.load(f)
+                    config_file = data.get("benchmark", {}).get("config_file")
+            except Exception:
+                pass
+
+            generate_html_report(
+                results,
+                output_path,
+                config_file=config_file,
+                include_charts=include_charts,
             )
+
+            console.print(f"[green]✓[/green] HTML report saved to {output_path}")
             console.print(
-                f"Planned output: {output_path}\n"
-                "This feature will be added in TASK-044."
+                f"  File size: {output_path.stat().st_size:,} bytes\n"
+                f"  Open in browser: file://{output_path.absolute()}"
             )
         else:
             # Display summary to console
