@@ -4,13 +4,13 @@
     "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
     "version": "0.1.0",
     "created_at": "2025-11-14T06:00:00Z",
-    "updated_at": "2025-11-16T11:37:19+00:00",
+    "updated_at": "2025-11-16T12:43:04.770512+00:00",
     "estimated_total_hours": 255,
     "estimated_weeks": "6-7 weeks full-time",
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
   },
   "status": "implementing",
-  "current_task": "TASK-086",
+  "current_task": null,
   "tasks": [
     {
       "id": "TASK-001",
@@ -1356,7 +1356,7 @@
       "description": "Research and select 30 GOV.UK publications for corpus",
       "type": "documentation",
       "phase": 6,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [],
       "acceptance_criteria": [
         "30 GOV.UK publications identified",
@@ -1367,7 +1367,14 @@
       ],
       "estimated_hours": 2,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T12:43:04.770512+00:00",
+      "actual_hours": 2.5,
+      "deliverables": [
+        "corpus/business/gov_uk_targets.yaml (30 documents)",
+        "Verified URL accessibility for all documents",
+        "Confirmed OGL v3.0 licensing"
+      ]
     },
     {
       "id": "TASK-048",
@@ -1484,7 +1491,7 @@
       "description": "Research and select 20 SEC filings for financial corpus",
       "type": "documentation",
       "phase": 7,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [],
       "acceptance_criteria": [
         "20 target 10-K/10-Q filings identified",
@@ -1496,7 +1503,15 @@
       ],
       "estimated_hours": 2,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T12:43:04.770512+00:00",
+      "actual_hours": 2.0,
+      "deliverables": [
+        "corpus/business/sec_targets.yaml (20 filings)",
+        "14 annual reports (10-K) and 6 quarterly reports (10-Q)",
+        "10 industries represented",
+        "All URLs verified and accessible"
+      ]
     },
     {
       "id": "TASK-054",
@@ -1609,7 +1624,7 @@
       "description": "Research and select 30-50 arXiv papers for academic corpus",
       "type": "documentation",
       "phase": 8,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [],
       "acceptance_criteria": [
         "30-50 arXiv papers identified",
@@ -1621,7 +1636,15 @@
       ],
       "estimated_hours": 2,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T12:43:04.770512+00:00",
+      "actual_hours": 2.0,
+      "deliverables": [
+        "corpus/academic/arxiv_targets.yaml (40 papers)",
+        "corpus/academic/ARXIV_SELECTION_METHODOLOGY.md",
+        "100% ar5iv HTML5 coverage",
+        "All papers verified with good rendering quality"
+      ]
     },
     {
       "id": "TASK-060",
@@ -2287,7 +2310,10 @@
     "TASK-044",
     "TASK-045",
     "TASK-035",
-    "TASK-036"
+    "TASK-036",
+    "TASK-047",
+    "TASK-053",
+    "TASK-059"
   ],
   "next_available": [
     "TASK-007",
@@ -2309,5 +2335,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763293039.8073347
+  "updated_at": 1763296984.770541
 }

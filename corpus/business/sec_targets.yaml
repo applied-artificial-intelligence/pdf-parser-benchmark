@@ -1,0 +1,322 @@
+description: "SEC EDGAR filings corpus targets for PDF-Bench financial document testing"
+license: "Public Domain (US Government Works)"
+source: "https://www.sec.gov/edgar"
+total_documents: 20
+selection_methodology: |
+  Documents selected to provide:
+  - Industry diversity (technology, finance, retail, healthcare, energy, manufacturing, consumer goods, automotive)
+  - Filing type variety (12 annual 10-K reports, 8 quarterly 10-Q reports)
+  - Company size range (large-cap and mega-cap companies)
+  - Recent filings (2023-2024) to reflect current SEC formatting standards
+  - High table complexity (financial statements, footnotes, segment data)
+
+documents:
+  # === 10-K Annual Reports (12) ===
+
+  - id: "sec_001"
+    company_name: "Apple Inc."
+    cik: "0000320193"
+    filing_type: "10-K"
+    filing_date: "2024-11-01"
+    accession_number: "0000320193-24-000123"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=320193&accession_number=0000320193-24-000123&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+    industry: "Technology"
+    fiscal_year: 2024
+    fiscal_year_end: "2024-09-28"
+    pages: 92
+    complexity: "high"
+    notes: "Comprehensive financial tables including revenue by product/geography, comprehensive income, segment data"
+
+  - id: "sec_002"
+    company_name: "Microsoft Corporation"
+    cik: "0000789019"
+    filing_type: "10-K"
+    filing_date: "2024-07-30"
+    accession_number: "0000950170-24-091969"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=789019&accession_number=0000950170-24-091969&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/789019/000095017024091969/msft-20240630.htm"
+    industry: "Technology"
+    fiscal_year: 2024
+    fiscal_year_end: "2024-06-30"
+    pages: 86
+    complexity: "high"
+    notes: "Cloud services revenue breakdowns, segment reporting, geographic data, complex footnotes"
+
+  - id: "sec_003"
+    company_name: "Tesla, Inc."
+    cik: "0001318605"
+    filing_type: "10-K"
+    filing_date: "2024-01-29"
+    accession_number: "0001628280-24-002390"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=1318605&accession_number=0001628280-24-002390&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/1318605/000162828024002390/tsla-20231231.htm"
+    industry: "Automotive"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 128
+    complexity: "high"
+    notes: "Revenue by product line, energy generation/storage tables, vehicle production/delivery data"
+
+  - id: "sec_004"
+    company_name: "Amazon.com, Inc."
+    cik: "0001018724"
+    filing_type: "10-K"
+    filing_date: "2024-02-02"
+    accession_number: "0001018724-24-000008"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=1018724&accession_number=0001018724-24-000008&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm"
+    industry: "Technology/Retail"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 87
+    complexity: "high"
+    notes: "AWS revenue tables, North America/International segment data, subscription services breakdown"
+
+  - id: "sec_005"
+    company_name: "JPMorgan Chase & Co."
+    cik: "0000019617"
+    filing_type: "10-K"
+    filing_date: "2024-02-21"
+    accession_number: "0000019617-24-000311"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=19617&accession_number=0000019617-24-000311&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/19617/000001961724000311/jpm-20231231.htm"
+    industry: "Finance"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 312
+    complexity: "high"
+    notes: "Extensive banking tables: loan portfolios, credit metrics, segment results, risk disclosures"
+
+  - id: "sec_006"
+    company_name: "Walmart Inc."
+    cik: "0000104169"
+    filing_type: "10-K"
+    filing_date: "2024-03-22"
+    accession_number: "0000104169-24-000056"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=104169&accession_number=0000104169-24-000056&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/104169/000010416924000056/wmt-20240131.htm"
+    industry: "Retail"
+    fiscal_year: 2024
+    fiscal_year_end: "2024-01-31"
+    pages: 72
+    complexity: "medium"
+    notes: "Segment data (Walmart U.S., International, Sam's Club), comparable store sales tables"
+
+  - id: "sec_007"
+    company_name: "Johnson & Johnson"
+    cik: "0000200406"
+    filing_type: "10-K"
+    filing_date: "2023-02-16"
+    accession_number: "0000200406-23-000016"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=200406&accession_number=0000200406-23-000016&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm"
+    industry: "Healthcare/Pharmaceuticals"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-01-01"
+    pages: 93
+    complexity: "high"
+    notes: "Pharmaceutical sales by product, medical device revenue, geographic segment tables"
+
+  - id: "sec_008"
+    company_name: "Exxon Mobil Corporation"
+    cik: "0000034088"
+    filing_type: "10-K"
+    filing_date: "2024-02-21"
+    accession_number: "0000034088-24-000018"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=34088&accession_number=0000034088-24-000018&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/34088/000003408824000018/xom-20231231.htm"
+    industry: "Energy"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 101
+    complexity: "high"
+    notes: "Oil & gas production tables, refining throughput, earnings by segment, reserve quantities"
+
+  - id: "sec_009"
+    company_name: "The Procter & Gamble Company"
+    cik: "0000080424"
+    filing_type: "10-K"
+    filing_date: "2024-08-08"
+    accession_number: "0000080424-24-000083"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=80424&accession_number=0000080424-24-000083&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/80424/000008042424000083/pg-20240630.htm"
+    industry: "Consumer Goods"
+    fiscal_year: 2024
+    fiscal_year_end: "2024-06-30"
+    pages: 97
+    complexity: "medium"
+    notes: "Revenue by product category, geographic data, brand portfolio tables"
+
+  - id: "sec_010"
+    company_name: "The Boeing Company"
+    cik: "0000012927"
+    filing_type: "10-K"
+    filing_date: "2024-02-07"
+    accession_number: "0000012927-24-000010"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=12927&accession_number=0000012927-24-000010&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/12927/000001292724000010/ba-20231231.htm"
+    industry: "Aerospace/Manufacturing"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 118
+    complexity: "high"
+    notes: "Aircraft deliveries, backlog tables, defense/space/security revenue, contract data"
+
+  - id: "sec_011"
+    company_name: "The Goldman Sachs Group, Inc."
+    cik: "0000886982"
+    filing_type: "10-K"
+    filing_date: "2024-02-23"
+    accession_number: "0000886982-24-000012"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=886982&accession_number=0000886982-24-000012&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/886982/000088698224000012/gs-20231231.htm"
+    industry: "Finance/Investment Banking"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 286
+    complexity: "high"
+    notes: "Investment banking revenue, trading revenue, asset management tables, risk metrics"
+
+  - id: "sec_012"
+    company_name: "The Coca-Cola Company"
+    cik: "0000021344"
+    filing_type: "10-K"
+    filing_date: "2024-02-21"
+    accession_number: "0000021344-24-000009"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=21344&accession_number=0000021344-24-000009&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm"
+    industry: "Consumer Goods/Beverages"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-31"
+    pages: 87
+    complexity: "medium"
+    notes: "Revenue by operating segment, concentrate vs. finished product sales, geographic breakdown"
+
+  - id: "sec_013"
+    company_name: "Intel Corporation"
+    cik: "0000050863"
+    filing_type: "10-K"
+    filing_date: "2024-01-25"
+    accession_number: "0000050863-24-000010"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=50863&accession_number=0000050863-24-000010&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/50863/000005086324000010/intc-20231230.htm"
+    industry: "Technology/Semiconductors"
+    fiscal_year: 2023
+    fiscal_year_end: "2023-12-30"
+    pages: 104
+    complexity: "high"
+    notes: "Revenue by product segment (Client Computing, Data Center, IoT), platform breakdown"
+
+  - id: "sec_014"
+    company_name: "Costco Wholesale Corporation"
+    cik: "0000909832"
+    filing_type: "10-K"
+    filing_date: "2024-10-02"
+    accession_number: "0000909832-24-000049"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=909832&accession_number=0000909832-24-000049&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm"
+    industry: "Retail/Wholesale"
+    fiscal_year: 2024
+    fiscal_year_end: "2024-09-01"
+    pages: 55
+    complexity: "medium"
+    notes: "Warehouse count by geography, merchandise categories, membership data tables"
+
+  # === 10-Q Quarterly Reports (6) ===
+
+  - id: "sec_015"
+    company_name: "Apple Inc."
+    cik: "0000320193"
+    filing_type: "10-Q"
+    filing_date: "2024-05-03"
+    quarter: "Q2"
+    accession_number: "0000320193-24-000069"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=320193&accession_number=0000320193-24-000069&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/320193/000032019324000069/aapl-20240330.htm"
+    industry: "Technology"
+    fiscal_year: 2024
+    fiscal_quarter_end: "2024-03-30"
+    pages: 54
+    complexity: "medium"
+    notes: "Quarterly revenue by product/geography, condensed financial statements"
+
+  - id: "sec_016"
+    company_name: "Tesla, Inc."
+    cik: "0001318605"
+    filing_type: "10-Q"
+    filing_date: "2024-10-23"
+    quarter: "Q3"
+    accession_number: "0001628280-24-043486"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=1318605&accession_number=0001628280-24-043486&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm"
+    industry: "Automotive"
+    fiscal_year: 2024
+    fiscal_quarter_end: "2024-09-30"
+    pages: 78
+    complexity: "high"
+    notes: "Quarterly production/delivery data, automotive revenue, energy segment tables"
+
+  - id: "sec_017"
+    company_name: "Amazon.com, Inc."
+    cik: "0001018724"
+    filing_type: "10-Q"
+    filing_date: "2024-08-01"
+    quarter: "Q2"
+    accession_number: "0001018724-24-000130"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=1018724&accession_number=0001018724-24-000130&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/1018724/000101872424000130/amzn-20240630.htm"
+    industry: "Technology/Retail"
+    fiscal_year: 2024
+    fiscal_quarter_end: "2024-06-30"
+    pages: 59
+    complexity: "medium"
+    notes: "Quarterly AWS revenue, North America/International segment performance"
+
+  - id: "sec_018"
+    company_name: "Walmart Inc."
+    cik: "0000104169"
+    filing_type: "10-Q"
+    filing_date: "2024-05-23"
+    quarter: "Q1"
+    accession_number: "0000104169-24-000105"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=104169&accession_number=0000104169-24-000105&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/104169/000010416924000105/wmt-20240430.htm"
+    industry: "Retail"
+    fiscal_year: 2025
+    fiscal_quarter_end: "2024-04-30"
+    pages: 48
+    complexity: "medium"
+    notes: "Quarterly segment results, comparable sales, condensed statements"
+
+  - id: "sec_019"
+    company_name: "Pfizer Inc."
+    cik: "0000078003"
+    filing_type: "10-Q"
+    filing_date: "2024-10-29"
+    quarter: "Q3"
+    accession_number: "0000078003-24-000191"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=78003&accession_number=0000078003-24-000191&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/78003/000007800324000191/pfe-20240929.htm"
+    industry: "Healthcare/Pharmaceuticals"
+    fiscal_year: 2024
+    fiscal_quarter_end: "2024-09-29"
+    pages: 94
+    complexity: "high"
+    notes: "Quarterly product revenue tables, biopharmaceutical segment data, geographic sales"
+
+  - id: "sec_020"
+    company_name: "NVIDIA Corporation"
+    cik: "0001045810"
+    filing_type: "10-Q"
+    filing_date: "2024-08-28"
+    quarter: "Q2"
+    accession_number: "0001045810-24-000264"
+    url_html: "https://www.sec.gov/cgi-bin/viewer?action=view&cik=1045810&accession_number=0001045810-24-000264&xbrl_type=v"
+    url_document: "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm"
+    industry: "Technology/Semiconductors"
+    fiscal_year: 2025
+    fiscal_quarter_end: "2024-07-28"
+    pages: 60
+    complexity: "high"
+    notes: "Quarterly revenue by market platform (Data Center, Gaming, Professional Visualization)"
