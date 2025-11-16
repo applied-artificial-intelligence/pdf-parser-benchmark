@@ -41,6 +41,12 @@ parsers = [
     "pymupdf>=1.23.0",
     "pdfplumber>=0.10.0",
     "unstructured>=0.10.0",
+    "marker-pdf>=1.10.0",
+]
+ml-parsers = [
+    "marker-pdf>=1.10.0",
+    "torch>=2.5.0",
+    "torchvision>=0.24.0",
 ]
 commercial = [
     "boto3>=1.28.0",
