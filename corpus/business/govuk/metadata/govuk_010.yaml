@@ -1,0 +1,21 @@
+id: govuk_010
+title: 'Criminal Justice Statistics Quarterly: June 2025'
+source_url: https://www.gov.uk/government/statistics/criminal-justice-system-statistics-quarterly-june-2025/criminal-justice-statistics-quarterly-june-2025-html
+publisher: Ministry of Justice
+publication_date: '2025-10-23'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- justice
+- statistics
+- courts
+- prisons
+complexity: medium
+pdf_url: https://assets.publishing.service.gov.uk/media/6824ac12aa3556876875ec5e/Criminal_Justice_Statistics_quarterly_-_December_2024.pdf
+sha256_pdf: a67a64b08fa7a1bcc7c5762a9f68c72016e7f993ea78c6f8f57b42fc1cb84b51
+file_size_pdf: 712386
+page_count: 15
+has_pdf: true
+file_size_html: 29510
+file_size_markdown: 22145

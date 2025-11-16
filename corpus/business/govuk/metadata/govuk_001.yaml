@@ -1,0 +1,20 @@
+id: govuk_001
+title: NHS England Annual Report and Accounts 2024 to 2025
+source_url: https://www.gov.uk/government/publications/nhs-england-annual-report-and-accounts-2024-to-2025
+publisher: NHS England
+publication_date: '2025-10-30'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- health
+- annual-report
+- finance
+complexity: complex
+pdf_url: https://assets.publishing.service.gov.uk/media/69036ef05c84b1206832a86f/nhs-england-annual-report-and-accounts-2024-to-2025.pdf
+sha256_pdf: 3ea850a600bc503001dbd5e9ea92b9e07ac78a7f30a5494ba2370ffdc4dfd802
+file_size_pdf: 2297415
+page_count: 202
+has_pdf: true
+file_size_html: 9284
+file_size_markdown: 952

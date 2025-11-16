@@ -1,0 +1,19 @@
+id: govuk_017
+title: 'Education and Training Statistics for the UK: 2025'
+source_url: https://www.gov.uk/government/statistics/education-and-training-statistics-for-the-uk-2025
+publisher: Department for Education
+publication_date: '2025-11-18'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- education
+- statistics
+- training
+complexity: medium
+pdf_url: null
+has_pdf: false
+notes: UK-wide education statistics covering schools, pupils, teachers, and post-16 education. Published
+  via explore-education-statistics portal. PDF to be generated from HTML for benchmarking.
+file_size_html: 8934
+file_size_markdown: 1023

@@ -1472,7 +1472,7 @@
       "description": "Execute GOV.UK corpus building pipeline",
       "type": "integration",
       "phase": 6,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-049",
         "TASK-050"
@@ -1486,7 +1486,18 @@
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T15:28:30.%fZ",
+      "actual_hours": 4,
+      "deliverables": [
+        "26 GOV.UK documents (18 PDF + 8 HTML-only)",
+        "26 Markdown ground truth files (1.9 MB total)",
+        "18 PDF files (70.6 MB total, 2,251 pages)",
+        "26 metadata YAML files + corpus metadata",
+        "builders/create_govuk_metadata.py",
+        "builders/validate_govuk_corpus.py",
+        "corpus/business/govuk/README.md"
+      ]
     },
     {
       "id": "TASK-052",
@@ -2383,5 +2394,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": "2025-11-16T15:18:44.%f+00:00"
+  "updated_at": "2025-11-16T15:28:30.%f+00:00"
 }

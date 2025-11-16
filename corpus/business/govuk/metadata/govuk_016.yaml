@@ -1,0 +1,20 @@
+id: govuk_016
+title: 'Schools, Pupils and Their Characteristics: Academic Year 2024/25'
+source_url: https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics/2024-25
+publisher: Department for Education
+publication_date: '2025-06-19'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- education
+- statistics
+- schools
+complexity: medium
+pdf_url: https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics/2024-25/data-guidance
+sha256_pdf: a504402f67616610d472d01bfc2867e4c16b53bb74fa67929952375de253ac01
+file_size_pdf: 169010
+page_count: 52
+has_pdf: true
+file_size_html: 57192
+file_size_markdown: 32415

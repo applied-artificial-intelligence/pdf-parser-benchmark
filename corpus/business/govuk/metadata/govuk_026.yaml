@@ -1,0 +1,21 @@
+id: govuk_026
+title: Companies House Annual Report and Accounts 2024 to 2025
+source_url: https://www.gov.uk/government/publications/companies-house-annual-report-and-accounts-2024-to-2025/companies-house-annual-report-and-accounts-2024-to-2025
+publisher: Companies House
+publication_date: '2025-10-31'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- business
+- annual-report
+- finance
+- regulation
+complexity: medium
+pdf_url: https://assets.publishing.service.gov.uk/media/690b47e99456634d9795fe08/HC1408-companies_house_annual_report_and_accounts_2024_to_2025-_accessible_standard.pdf
+sha256_pdf: b913fd3b7dbd15f2e2bdab59c6db101a1e759aa7f65fee8e5c1bd2fc70d7802d
+file_size_pdf: 3598733
+page_count: 196
+has_pdf: true
+file_size_html: 354721
+file_size_markdown: 256900

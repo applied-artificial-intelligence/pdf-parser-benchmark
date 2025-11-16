@@ -1,0 +1,21 @@
+id: govuk_006
+title: Ministry of Defence Annual Report and Accounts 2024-25
+source_url: https://www.gov.uk/government/publications/ministry-of-defence-annual-report-and-accounts-2024-to-2025
+publisher: Ministry of Defence
+publication_date: '2025-10-31'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- defence
+- annual-report
+- finance
+- security
+complexity: complex
+pdf_url: https://assets.publishing.service.gov.uk/media/6909c86b14b040dfe829220f/Ministry_of_Defence_annual_report_and_accounts_2024_to_2025.pdf
+sha256_pdf: 0a2b9271cb2aae7c386d792865eba439a1d25b709e6bcbc426f69b56d641e51b
+file_size_pdf: 7227614
+page_count: 256
+has_pdf: true
+file_size_html: 13725
+file_size_markdown: 1610

@@ -1,0 +1,19 @@
+id: govuk_024
+title: 'Light Rail and Tram Statistics England: Year Ending March 2025'
+source_url: https://www.gov.uk/government/statistics/light-rail-and-tram-statistics-england-year-ending-march-2025/light-rail-and-tram-statistics-england-year-ending-march-2025
+publisher: Department for Transport
+publication_date: '2025-10-18'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- transport
+- statistics
+- public-transport
+complexity: simple
+pdf_url: null
+has_pdf: false
+notes: Annual light rail and tram usage statistics. HTML-only publication with ZIP data tables. PDF to
+  be generated from HTML for benchmarking.
+file_size_html: 40571
+file_size_markdown: 26976

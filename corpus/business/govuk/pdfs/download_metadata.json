@@ -1,0 +1,284 @@
+{
+  "targets_file": "/home/stefan/projects/pdf-bench/corpus/business/gov_uk_targets.yaml",
+  "output_dir": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs",
+  "statistics": {
+    "total": 30,
+    "processed": 22,
+    "successful": 21,
+    "failed": 1,
+    "skipped": 8,
+    "no_pdf_url": 6,
+    "non_pdf_format": 1
+  },
+  "downloads": [
+    {
+      "id": "govuk_001",
+      "title": "NHS England Annual Report and Accounts 2024 to 2025",
+      "url": "https://assets.publishing.service.gov.uk/media/69036ef05c84b1206832a86f/nhs-england-annual-report-and-accounts-2024-to-2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_001.pdf",
+      "status": "skipped",
+      "reason": "already_exists"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/690e1f38896fad804b050fba/36.17_CO_ARA_24-25_00-Book_v17_WEB.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_002.pdf",
+      "file_size": 4446887,
+      "sha256": "37d316e91d22a2ea3fa2ea36e21df68abfb69278a8ef56c0a7ebef420c867890",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_002",
+      "title": "Cabinet Office Annual Report and Accounts 2024 to 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/687e5d318adf4250705c96d8/HMRC_annual_report_and_accounts_2024_to_2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_003.pdf",
+      "file_size": 10411878,
+      "sha256": "329b0361592691407b6c1c11be52986cbca9e367405aa2112ba7ba626e69c6f7",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_003",
+      "title": "HMRC Annual Report and Accounts 2024 to 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/687e2737ae8555bab409a028/E03222296_HMT_Annual_Report__Accounts_2025_Accessible.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_004.pdf",
+      "file_size": 7323443,
+      "sha256": "3825ed9f09da5901dc01bbcbbfdfebbfe32416cebff44abbe97e8b5724714612",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_004",
+      "title": "HM Treasury Annual Report and Accounts 2024 to 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/68c7e4c28dd3590c7dd7ae4c/dbt-annual-report-and-accounts-2024-to-2025-web-accessible.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_005.pdf",
+      "file_size": 2379687,
+      "sha256": "b85880e01c84dcc07d633238b84b03aa1184ea88938dc61a7b308f495d7d048c",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_005",
+      "title": "Department for Business and Trade Annual Report and Accounts 2024-2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6909c86b14b040dfe829220f/Ministry_of_Defence_annual_report_and_accounts_2024_to_2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_006.pdf",
+      "file_size": 7227614,
+      "sha256": "0a2b9271cb2aae7c386d792865eba439a1d25b709e6bcbc426f69b56d641e51b",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_006",
+      "title": "Ministry of Defence Annual Report and Accounts 2024-25"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/67448dd1ece939d55ce92fee/get-britain-working-white-paper.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_007.pdf",
+      "file_size": 1144467,
+      "sha256": "b56f07107750d412f2f1e15e16fb310586568219e1a534a556e367384a684952",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_007",
+      "title": "Get Britain Working White Paper"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6821f334ced319d02c906103/restoring-control-over-the-immigration-system-web-optimised.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_008.pdf",
+      "file_size": 2378588,
+      "sha256": "c5ff95a61effb96aff7ad83806cd6892e60c5fe9a2e949a9822b778fd22ad775",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_008",
+      "title": "Restoring Control over the Immigration System (White Paper CP 1326)"
+    },
+    {
+      "id": "govuk_009",
+      "title": "Crime Outcomes in England and Wales 2024 to 2025",
+      "url": "https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2024-to-2025/crime-outcomes-in-england-and-wales-2024-to-2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_009.pdf",
+      "status": "error",
+      "error": "HTTP 404 error for https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2024-to-2025/crime-outcomes-in-england-and-wales-2024-to-2025.pdf: 404 Client Error: Not Found for url: https://www.gov.uk/government/statistics/crime-outcomes-in-england-and-wales-2024-to-2025/crime-outcomes-in-england-and-wales-2024-to-2025.pdf"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6824ac12aa3556876875ec5e/Criminal_Justice_Statistics_quarterly_-_December_2024.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_010.pdf",
+      "file_size": 712386,
+      "sha256": "a67a64b08fa7a1bcc7c5762a9f68c72016e7f993ea78c6f8f57b42fc1cb84b51",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_010",
+      "title": "Criminal Justice Statistics Quarterly: June 2025"
+    },
+    {
+      "id": "govuk_011",
+      "title": "Road Traffic Estimates in Great Britain 2024",
+      "url": "https://assets.publishing.service.gov.uk/media/6848503389d002b886e7880f/road-traffic-estimates-in-great-britain-2024.zip",
+      "status": "skipped",
+      "reason": "non_pdf_format"
+    },
+    {
+      "id": "govuk_012",
+      "title": "Housing Supply: Indicators of New Supply, England: April to June 2025",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/684c2dc0da3d1b49e6797067/Planning_Application_Statistics_-_January_to_March_2025_-_Factsheet_-_Final.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_013.pdf",
+      "file_size": 83761,
+      "sha256": "cd32eb7919dfd43d0f97e11de2e5c71d1cec80e55ca3c029275dc29e7b3fbd12",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_013",
+      "title": "Planning Applications in England: January to March 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/67e4060df356a2dc0e39b4cd/2024-provisional-greenhouse-gas-emissions-statistics-statistical-release.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_014.pdf",
+      "file_size": 667849,
+      "sha256": "458984350f6e3915a8b0ad6608f390a495a0acee991496d5c698f09303910efb",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_014",
+      "title": "Greenhouse Gas Emissions UK: Provisional Estimates 2024"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/68e7843f187483de54d7668b/Energy_Trends_September_2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_015.pdf",
+      "file_size": 1562443,
+      "sha256": "ee0d0ddf2191597c7f9d87a65678c818b880c01d0ddfa720efc38656b64a5e0d",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_015",
+      "title": "Energy Trends: UK, April to June 2025"
+    },
+    {
+      "url": "https://explore-education-statistics.service.gov.uk/find-statistics/school-pupils-and-their-characteristics/2024-25/data-guidance",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_016.pdf",
+      "file_size": 169010,
+      "sha256": "a504402f67616610d472d01bfc2867e4c16b53bb74fa67929952375de253ac01",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_016",
+      "title": "Schools, Pupils and Their Characteristics: Academic Year 2024/25"
+    },
+    {
+      "id": "govuk_017",
+      "title": "Education and Training Statistics for the UK: 2025",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    },
+    {
+      "url": "https://explore-education-statistics.service.gov.uk/find-statistics/school-funding-statistics/2024-25/data-guidance",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_018.pdf",
+      "file_size": 45507,
+      "sha256": "c61fb6393d17da8e5b9be10e1934b19c6bfe977bfcfabbc7e7e2b10ced4b20bc",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_018",
+      "title": "School Funding Statistics: Financial Year 2024-25"
+    },
+    {
+      "url": "https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/employmentandemployeetypes/bulletins/employmentintheuk/november2025/pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_019.pdf",
+      "file_size": 2418177,
+      "sha256": "21023a24a5adfe08c3f910c92b3e3e4c0b04b39774881aa7acf5f203e655fd12",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_019",
+      "title": "Employment in the UK: November 2025"
+    },
+    {
+      "url": "https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2024/pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_020.pdf",
+      "file_size": 1827948,
+      "sha256": "b2fda0e718fdc47bd3feb4f49edecc0b80345a8e50ee243a430e57a7d13dfc4f",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_020",
+      "title": "GDP Quarterly National Accounts UK: October to December 2024"
+    },
+    {
+      "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/october2025/pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_021.pdf",
+      "file_size": 362950,
+      "sha256": "642fda7aae47679e4b7e39f1880b92a23d4b0b4bf381627d0080a3d609b38d13",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_021",
+      "title": "Public Opinions and Social Trends, Great Britain: October 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69174efeb49cc44345161812/EnglandTBEpiReport2024.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_022.pdf",
+      "file_size": 5772546,
+      "sha256": "e38cdaf13e3350e352985f9c7d77dab143cacaaad90b2ba15a68c74a4ae89383",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_022",
+      "title": "Bovine Tuberculosis in England in 2024"
+    },
+    {
+      "id": "govuk_023",
+      "title": "UK Milk Prices and Composition of Milk Statistics",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    },
+    {
+      "id": "govuk_024",
+      "title": "Light Rail and Tram Statistics England: Year Ending March 2025",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/6846cb7cd25e6f6afd4c01ac/20250529_Carried_Interest_Consultation_Response_v2__1_.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_025.pdf",
+      "file_size": 157567,
+      "sha256": "90379030fb5181c4265f906e71af4c34e038aacbd3da7c9a1798394f3731c32e",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_025",
+      "title": "Tax Treatment of Carried Interest: Consultation Response"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/690b47e99456634d9795fe08/HC1408-companies_house_annual_report_and_accounts_2024_to_2025-_accessible_standard.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_026.pdf",
+      "file_size": 3598733,
+      "sha256": "b913fd3b7dbd15f2e2bdab59c6db101a1e759aa7f65fee8e5c1bd2fc70d7802d",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_026",
+      "title": "Companies House Annual Report and Accounts 2024 to 2025"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/68d3ee72b6c608ff9421b293/health-trends-and-variation-in-England-25-september-2025.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_027.pdf",
+      "file_size": 20094210,
+      "sha256": "1fb2ffe16a719a4bde8287b1939b4a9edacd6adb470c26773375bb086dff817c",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_027",
+      "title": "Health Trends and Variation in England 2025"
+    },
+    {
+      "id": "govuk_028",
+      "title": "Police Powers and Procedures: Stop and Search, Arrests and Mental Health Detentions, Year Ending March 2025",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    },
+    {
+      "url": "https://assets.publishing.service.gov.uk/media/69121170bda892e068aa6454/nps-revisions-2025-consultation-government-response.pdf",
+      "output_path": "/home/stefan/projects/pdf-bench/corpus/business/govuk/pdfs/govuk_029.pdf",
+      "file_size": 304838,
+      "sha256": "42d7710f383f6549bfe70919ddbc62fb2ffdf8837aa14783b2f4807ea35c1f41",
+      "status": "success",
+      "skipped": false,
+      "id": "govuk_029",
+      "title": "National Policy Statements on Energy Infrastructure: 2025 Revisions Government Response"
+    },
+    {
+      "id": "govuk_030",
+      "title": "R&D Tax Credits Statistics: September 2025",
+      "status": "skipped",
+      "reason": "no_pdf_url"
+    }
+  ]
+}

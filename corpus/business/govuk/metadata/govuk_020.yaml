@@ -1,0 +1,21 @@
+id: govuk_020
+title: 'GDP Quarterly National Accounts UK: October to December 2024'
+source_url: https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2024
+publisher: Office for National Statistics
+publication_date: '2025-03-31'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- economy
+- statistics
+- gdp
+- finance
+complexity: complex
+pdf_url: https://www.ons.gov.uk/economy/grossdomesticproductgdp/bulletins/quarterlynationalaccounts/octobertodecember2024/pdf
+sha256_pdf: b2fda0e718fdc47bd3feb4f49edecc0b80345a8e50ee243a430e57a7d13dfc4f
+file_size_pdf: 1827948
+page_count: 77
+has_pdf: true
+file_size_html: 141128
+file_size_markdown: 69966

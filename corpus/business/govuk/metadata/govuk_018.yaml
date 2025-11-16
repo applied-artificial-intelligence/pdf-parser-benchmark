@@ -1,0 +1,20 @@
+id: govuk_018
+title: 'School Funding Statistics: Financial Year 2024-25'
+source_url: https://explore-education-statistics.service.gov.uk/find-statistics/school-funding-statistics/2024-25
+publisher: Department for Education
+publication_date: '2025-07-15'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- education
+- finance
+- statistics
+complexity: medium
+pdf_url: https://explore-education-statistics.service.gov.uk/find-statistics/school-funding-statistics/2024-25/data-guidance
+sha256_pdf: c61fb6393d17da8e5b9be10e1934b19c6bfe977bfcfabbc7e7e2b10ced4b20bc
+file_size_pdf: 45507
+page_count: 38
+has_pdf: true
+file_size_html: 40665
+file_size_markdown: 24472

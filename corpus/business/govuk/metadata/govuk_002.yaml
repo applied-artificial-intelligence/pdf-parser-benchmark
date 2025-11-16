@@ -1,0 +1,20 @@
+id: govuk_002
+title: Cabinet Office Annual Report and Accounts 2024 to 2025
+source_url: https://www.gov.uk/government/publications/cabinet-office-annual-report-and-accounts-2024-to-2025
+publisher: Cabinet Office
+publication_date: '2025-10-23'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- governance
+- annual-report
+- finance
+complexity: complex
+pdf_url: https://assets.publishing.service.gov.uk/media/690e1f38896fad804b050fba/36.17_CO_ARA_24-25_00-Book_v17_WEB.pdf
+sha256_pdf: 37d316e91d22a2ea3fa2ea36e21df68abfb69278a8ef56c0a7ebef420c867890
+file_size_pdf: 4446887
+page_count: 278
+has_pdf: true
+file_size_html: 8305
+file_size_markdown: 570

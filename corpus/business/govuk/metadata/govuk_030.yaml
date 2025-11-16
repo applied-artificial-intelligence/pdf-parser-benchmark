@@ -1,0 +1,20 @@
+id: govuk_030
+title: 'R&D Tax Credits Statistics: September 2025'
+source_url: https://www.gov.uk/government/statistics/corporate-tax-research-and-development-tax-credit/research-and-development-tax-credits-statistics-september-2025
+publisher: HM Revenue & Customs
+publication_date: '2025-09-30'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- taxation
+- statistics
+- research
+- business
+complexity: medium
+pdf_url: null
+has_pdf: false
+notes: Annual R&D tax relief statistics. HTML-only publication with ODS spreadsheet data. PDF to be generated
+  from HTML for benchmarking.
+file_size_html: 30547
+file_size_markdown: 18632

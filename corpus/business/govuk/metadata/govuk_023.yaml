@@ -1,0 +1,20 @@
+id: govuk_023
+title: UK Milk Prices and Composition of Milk Statistics
+source_url: https://www.gov.uk/government/statistics/uk-milk-prices-and-composition-of-milk
+publisher: Department for Environment, Food & Rural Affairs
+publication_date: '2025-11-14'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- agriculture
+- statistics
+- dairy
+- economy
+complexity: simple
+pdf_url: null
+has_pdf: false
+notes: Monthly dairy industry statistics. HTML-only publication with ODS data files. PDF to be generated
+  from HTML for benchmarking.
+file_size_html: 60543
+file_size_markdown: 15033

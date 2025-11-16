@@ -1,0 +1,21 @@
+id: govuk_003
+title: HMRC Annual Report and Accounts 2024 to 2025
+source_url: https://www.gov.uk/government/publications/hmrc-annual-report-and-accounts-2024-to-2025
+publisher: HM Revenue & Customs
+publication_date: '2025-07-22'
+license: Open Government Licence v3.0
+license_url: https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+download_date: '2025-11-16'
+topics:
+- taxation
+- annual-report
+- finance
+- statistics
+complexity: complex
+pdf_url: https://assets.publishing.service.gov.uk/media/687e5d318adf4250705c96d8/HMRC_annual_report_and_accounts_2024_to_2025.pdf
+sha256_pdf: 329b0361592691407b6c1c11be52986cbca9e367405aa2112ba7ba626e69c6f7
+file_size_pdf: 10411878
+page_count: 338
+has_pdf: true
+file_size_html: 39485
+file_size_markdown: 3085
