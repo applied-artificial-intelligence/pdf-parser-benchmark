@@ -342,7 +342,7 @@
     },
     {
       "id": "TASK-012",
-      "title": "Implement Pandoc Wrapper for MD\u2192PDF",
+      "title": "Implement Pandoc Wrapper for MD→PDF",
       "description": "Create wrapper for Pandoc to convert Markdown to PDF using Eisvogel template",
       "type": "feature",
       "phase": 2,
@@ -432,8 +432,8 @@
     },
     {
       "id": "TASK-015",
-      "title": "Implement DOCX\u2192PDF Pipeline",
-      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX\u2192PDF conversion",
+      "title": "Implement DOCX→PDF Pipeline",
+      "description": "Create pipeline using python-docx-template and LibreOffice for DOCX→PDF conversion",
       "type": "feature",
       "phase": 2,
       "status": "completed",
@@ -752,7 +752,7 @@
       "acceptance_criteria": [
         "Whitespace collapsing",
         "Remove \\left, \\right",
-        "Remove redundant grouping {{a}} \u2192 {a}",
+        "Remove redundant grouping {{a}} → {a}",
         "Handles inline and display math",
         "Unit tests with complex equations"
       ],
@@ -1020,7 +1020,7 @@
         "66 integration tests across 6 test classes",
         "Tests for interface compliance, corpus parsing, cache, errors, cross-parser comparison, edge cases",
         "All 4 parsers tested (PyMuPDF, pdfplumber, Marker, Unstructured)",
-        "Code quality: ruff \u2705 mypy --strict \u2705"
+        "Code quality: ruff ✅ mypy --strict ✅"
       ]
     },
     {
@@ -1127,7 +1127,7 @@
       "acceptance_criteria": [
         "pdf_bench/core.py created",
         "BenchmarkRunner class",
-        "Task orchestration (parser \u00d7 document)",
+        "Task orchestration (parser × document)",
         "Metric computation per result",
         "Error handling and logging",
         "Unit tests with mocks"
@@ -1345,7 +1345,7 @@
       "deliverables": [
         "tests/test_integration.py (479 lines)",
         "8 integration test cases covering full workflow",
-        "Tests: config \u2192 run \u2192 save \u2192 load \u2192 report",
+        "Tests: config → run → save → load → report",
         "Tests: parallel execution, error handling, NaN handling",
         "All 900+ tests passing"
       ]
@@ -1409,26 +1409,33 @@
     },
     {
       "id": "TASK-049",
-      "title": "Implement HTML\u2192Markdown Converter",
+      "title": "Implement HTML→Markdown Converter",
       "description": "Create HTML to Markdown converter for GOV.UK content",
       "type": "feature",
       "phase": 6,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-048"
       ],
       "acceptance_criteria": [
-        "Heading extraction (h1\u2192#, h2\u2192##, etc.)",
+        "Heading extraction (h1→#, h2→##, etc.)",
         "Paragraph extraction",
         "List extraction (nested)",
-        "Table conversion (simple\u2192GFM, complex\u2192HTML)",
+        "Table conversion (simple→GFM, complex→HTML)",
         "Figure/image handling",
         "Applies normalization rules",
         "Unit tests"
       ],
       "estimated_hours": 4,
       "priority": "high",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": "2025-11-16T15:04:35.%fZ",
+      "actual_hours": 4,
+      "deliverables": [
+        "builders/govuk_html_to_markdown.py (404 lines)",
+        "builders/convert_govuk_corpus.py (276 lines)",
+        "tests/test_builders/test_govuk_html_to_markdown.py (764 lines, 58 tests)"
+      ]
     },
     {
       "id": "TASK-050",
@@ -1464,7 +1471,7 @@
       ],
       "acceptance_criteria": [
         "20-30 GOV.UK documents processed",
-        "HTML\u2192Markdown GT generated",
+        "HTML→Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (OGL v3.0 license)",
         "Validation script confirms integrity"
@@ -1578,7 +1585,7 @@
     },
     {
       "id": "TASK-056",
-      "title": "Implement SEC\u2192Markdown Converter",
+      "title": "Implement SEC→Markdown Converter",
       "description": "Create full SEC filing to Markdown converter",
       "type": "feature",
       "phase": 7,
@@ -1587,7 +1594,7 @@
         "TASK-055"
       ],
       "acceptance_criteria": [
-        "Full document HTML\u2192Markdown",
+        "Full document HTML→Markdown",
         "Focus on table accuracy",
         "Handle SEC-specific formatting",
         "Unit tests"
@@ -1608,7 +1615,7 @@
       ],
       "acceptance_criteria": [
         "10-20 SEC filings processed",
-        "HTML\u2192Markdown GT generated",
+        "HTML→Markdown GT generated",
         "PDFs downloaded",
         "Metadata YAML files created (public domain)",
         "Validation confirms integrity"
@@ -1722,7 +1729,7 @@
     {
       "id": "TASK-062",
       "title": "Integrate LaTeXML",
-      "description": "Create LaTeXML subprocess wrapper for LaTeX\u2192HTML conversion",
+      "description": "Create LaTeXML subprocess wrapper for LaTeX→HTML conversion",
       "type": "feature",
       "phase": 8,
       "status": "pending",
@@ -1742,7 +1749,7 @@
     },
     {
       "id": "TASK-063",
-      "title": "Implement LaTeXML\u2192Markdown Converter",
+      "title": "Implement LaTeXML→Markdown Converter",
       "description": "Create converter from LaTeXML output to Markdown",
       "type": "feature",
       "phase": 8,
@@ -1795,7 +1802,7 @@
       ],
       "acceptance_criteria": [
         "30-50 arXiv papers processed",
-        "LaTeX\u2192Markdown GT generated",
+        "LaTeX→Markdown GT generated",
         "80%+ success rate (some failures acceptable)",
         "PDFs downloaded",
         "Metadata YAML files created",
@@ -2368,5 +2375,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763299225.841339
+  "updated_at": "2025-11-16T15:04:35.%f+00:00"
 }
