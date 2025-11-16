@@ -1,0 +1,22 @@
+id: sec_002
+company_name: Microsoft Corporation
+cik: 0000789019
+filing_type: 10-K
+filing_date: '2024-07-30'
+accession_number: 0000950170-24-091969
+industry: Technology
+fiscal_year: 2024
+fiscal_year_end: '2024-06-30'
+pages: 86
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/789019/000095017024091969/msft-20240630.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_002.html
+html_size: 5634
+ground_truth_file: ground_truth/sec_002.md
+ground_truth_size: 596
+notes: Cloud services revenue breakdowns, segment reporting, geographic data, complex
+  footnotes

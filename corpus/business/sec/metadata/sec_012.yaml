@@ -1,0 +1,22 @@
+id: sec_012
+company_name: The Coca-Cola Company
+cik: '0000021344'
+filing_type: 10-K
+filing_date: '2024-02-21'
+accession_number: 0000021344-24-000009
+industry: Consumer Goods/Beverages
+fiscal_year: 2023
+fiscal_year_end: '2023-12-31'
+pages: 87
+complexity: medium
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/21344/000002134424000009/ko-20231231.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_012.html
+html_size: 55455
+ground_truth_file: ground_truth/sec_012.md
+ground_truth_size: 753
+notes: Revenue by operating segment, concentrate vs. finished product sales, geographic
+  breakdown

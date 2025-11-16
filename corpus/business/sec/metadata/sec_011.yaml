@@ -1,0 +1,22 @@
+id: sec_011
+company_name: The Goldman Sachs Group, Inc.
+cik: 0000886982
+filing_type: 10-K
+filing_date: '2024-02-23'
+accession_number: 0000886982-24-000012
+industry: Finance/Investment Banking
+fiscal_year: 2023
+fiscal_year_end: '2023-12-31'
+pages: 286
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/886982/000088698224000012/gs-20231231.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_011.html
+html_size: 15784
+ground_truth_file: ground_truth/sec_011.md
+ground_truth_size: 787
+notes: Investment banking revenue, trading revenue, asset management tables, risk
+  metrics

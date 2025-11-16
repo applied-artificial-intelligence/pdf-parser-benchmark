@@ -1,0 +1,22 @@
+id: sec_001
+company_name: Apple Inc.
+cik: 0000320193
+filing_type: 10-K
+filing_date: '2024-11-01'
+accession_number: 0000320193-24-000123
+industry: Technology
+fiscal_year: 2024
+fiscal_year_end: '2024-09-28'
+pages: 92
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_001.html
+html_size: 36482
+ground_truth_file: ground_truth/sec_001.md
+ground_truth_size: 762
+notes: Comprehensive financial tables including revenue by product/geography, comprehensive
+  income, segment data

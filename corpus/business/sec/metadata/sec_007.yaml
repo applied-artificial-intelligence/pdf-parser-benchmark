@@ -1,0 +1,22 @@
+id: sec_007
+company_name: Johnson & Johnson
+cik: '0000200406'
+filing_type: 10-K
+filing_date: '2023-02-16'
+accession_number: 0000200406-23-000016
+industry: Healthcare/Pharmaceuticals
+fiscal_year: 2023
+fiscal_year_end: '2023-01-01'
+pages: 93
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/200406/000020040623000016/jnj-20230101.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_007.html
+html_size: 45196
+ground_truth_file: ground_truth/sec_007.md
+ground_truth_size: 741
+notes: Pharmaceutical sales by product, medical device revenue, geographic segment
+  tables

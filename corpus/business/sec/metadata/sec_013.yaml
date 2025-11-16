@@ -1,0 +1,21 @@
+id: sec_013
+company_name: Intel Corporation
+cik: 0000050863
+filing_type: 10-K
+filing_date: '2024-01-25'
+accession_number: 0000050863-24-000010
+industry: Technology/Semiconductors
+fiscal_year: 2023
+fiscal_year_end: '2023-12-30'
+pages: 104
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/50863/000005086324000010/intc-20231230.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_013.html
+html_size: 38907
+ground_truth_file: ground_truth/sec_013.md
+ground_truth_size: 776
+notes: Revenue by product segment (Client Computing, Data Center, IoT), platform breakdown

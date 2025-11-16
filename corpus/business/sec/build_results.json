@@ -1,0 +1,424 @@
+[
+  {
+    "filing_id": "sec_001",
+    "download": {
+      "filing_id": "sec_001",
+      "company_name": "Apple Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_001.html",
+      "html_size": 36482,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_001",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_001.md",
+      "markdown_size": 762
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_002",
+    "download": {
+      "filing_id": "sec_002",
+      "company_name": "Microsoft Corporation",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_002.html",
+      "html_size": 5634,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_002",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_002.md",
+      "markdown_size": 596
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_003",
+    "download": {
+      "filing_id": "sec_003",
+      "company_name": "Tesla, Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_003.html",
+      "html_size": 44849,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_003",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_003.md",
+      "markdown_size": 781
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_004",
+    "download": {
+      "filing_id": "sec_004",
+      "company_name": "Amazon.com, Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_004.html",
+      "html_size": 42606,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_004",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_004.md",
+      "markdown_size": 781
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_005",
+    "download": {
+      "filing_id": "sec_005",
+      "company_name": "JPMorgan Chase & Co.",
+      "html_downloaded": true,
+      "pdf_downloaded": true,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_005.html",
+      "html_size": 5507,
+      "pdf_path": "corpus/business/sec/pdfs/sec_005.pdf",
+      "pdf_size": 31767015,
+      "pdf_hash": "2294f46933789896d02ef0472fd9e25f7d4be99896a225aaa229daa9b4839086"
+    },
+    "conversion": {
+      "filing_id": "sec_005",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_005.md",
+      "markdown_size": 585
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_006",
+    "download": {
+      "filing_id": "sec_006",
+      "company_name": "Walmart Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_006.html",
+      "html_size": 37995,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_006",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_006.md",
+      "markdown_size": 768
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_007",
+    "download": {
+      "filing_id": "sec_007",
+      "company_name": "Johnson & Johnson",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_007.html",
+      "html_size": 45196,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_007",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_007.md",
+      "markdown_size": 741
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_008",
+    "download": {
+      "filing_id": "sec_008",
+      "company_name": "Exxon Mobil Corporation",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_008.html",
+      "html_size": 49496,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_008",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_008.md",
+      "markdown_size": 772
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_009",
+    "download": {
+      "filing_id": "sec_009",
+      "company_name": "The Procter & Gamble Company",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_009.html",
+      "html_size": 43510,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_009",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_009.md",
+      "markdown_size": 826
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_010",
+    "download": {
+      "filing_id": "sec_010",
+      "company_name": "The Boeing Company",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_010.html",
+      "html_size": 57126,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_010",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_010.md",
+      "markdown_size": 752
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_011",
+    "download": {
+      "filing_id": "sec_011",
+      "company_name": "The Goldman Sachs Group, Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_011.html",
+      "html_size": 15784,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_011",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_011.md",
+      "markdown_size": 787
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_012",
+    "download": {
+      "filing_id": "sec_012",
+      "company_name": "The Coca-Cola Company",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_012.html",
+      "html_size": 55455,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_012",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_012.md",
+      "markdown_size": 753
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_013",
+    "download": {
+      "filing_id": "sec_013",
+      "company_name": "Intel Corporation",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_013.html",
+      "html_size": 38907,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_013",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_013.md",
+      "markdown_size": 776
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_014",
+    "download": {
+      "filing_id": "sec_014",
+      "company_name": "Costco Wholesale Corporation",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_014.html",
+      "html_size": 34879,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_014",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_014.md",
+      "markdown_size": 769
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_015",
+    "download": {
+      "filing_id": "sec_015",
+      "company_name": "Apple Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_015.html",
+      "html_size": 28913,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_015",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_015.md",
+      "markdown_size": 761
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_016",
+    "download": {
+      "filing_id": "sec_016",
+      "company_name": "Tesla, Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_016.html",
+      "html_size": 34931,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_016",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_016.md",
+      "markdown_size": 782
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_017",
+    "download": {
+      "filing_id": "sec_017",
+      "company_name": "Amazon.com, Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_017.html",
+      "html_size": 30451,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_017",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_017.md",
+      "markdown_size": 782
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_018",
+    "download": {
+      "filing_id": "sec_018",
+      "company_name": "Walmart Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_018.html",
+      "html_size": 26952,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_018",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_018.md",
+      "markdown_size": 769
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_019",
+    "download": {
+      "filing_id": "sec_019",
+      "company_name": "Pfizer Inc.",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_019.html",
+      "html_size": 41304,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_019",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_019.md",
+      "markdown_size": 772
+    },
+    "success": true
+  },
+  {
+    "filing_id": "sec_020",
+    "download": {
+      "filing_id": "sec_020",
+      "company_name": "NVIDIA Corporation",
+      "html_downloaded": true,
+      "pdf_downloaded": false,
+      "errors": [],
+      "html_path": "corpus/business/sec/html/sec_020.html",
+      "html_size": 36519,
+      "pdf_available": false
+    },
+    "conversion": {
+      "filing_id": "sec_020",
+      "converted": true,
+      "errors": [],
+      "markdown_path": "corpus/business/sec/ground_truth/sec_020.md",
+      "markdown_size": 777
+    },
+    "success": true
+  }
+]

@@ -1,0 +1,21 @@
+id: sec_016
+company_name: Tesla, Inc.
+cik: 0001318605
+filing_type: 10-Q
+filing_date: '2024-10-23'
+accession_number: 0001628280-24-043486
+industry: Automotive
+fiscal_year: 2024
+fiscal_year_end: null
+pages: 78
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/1318605/000162828024043486/tsla-20240930.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-Q
+html_file: html/sec_016.html
+html_size: 34931
+ground_truth_file: ground_truth/sec_016.md
+ground_truth_size: 782
+notes: Quarterly production/delivery data, automotive revenue, energy segment tables

@@ -1,0 +1,22 @@
+id: sec_004
+company_name: Amazon.com, Inc.
+cik: 0001018724
+filing_type: 10-K
+filing_date: '2024-02-02'
+accession_number: 0001018724-24-000008
+industry: Technology/Retail
+fiscal_year: 2023
+fiscal_year_end: '2023-12-31'
+pages: 87
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/1018724/000101872424000008/amzn-20231231.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_004.html
+html_size: 42606
+ground_truth_file: ground_truth/sec_004.md
+ground_truth_size: 781
+notes: AWS revenue tables, North America/International segment data, subscription
+  services breakdown

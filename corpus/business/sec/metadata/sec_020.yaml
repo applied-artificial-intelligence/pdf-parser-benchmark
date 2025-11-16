@@ -1,0 +1,21 @@
+id: sec_020
+company_name: NVIDIA Corporation
+cik: 0001045810
+filing_type: 10-Q
+filing_date: '2024-08-28'
+accession_number: 0001045810-24-000264
+industry: Technology/Semiconductors
+fiscal_year: 2025
+fiscal_year_end: null
+pages: 60
+complexity: high
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/1045810/000104581024000264/nvda-20240728.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-Q
+html_file: html/sec_020.html
+html_size: 36519
+ground_truth_file: ground_truth/sec_020.md
+ground_truth_size: 777
+notes: Quarterly revenue by market platform (Data Center, Gaming, Professional Visualization)

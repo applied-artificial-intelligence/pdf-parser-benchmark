@@ -1,0 +1,21 @@
+id: sec_014
+company_name: Costco Wholesale Corporation
+cik: 0000909832
+filing_type: 10-K
+filing_date: '2024-10-02'
+accession_number: 0000909832-24-000049
+industry: Retail/Wholesale
+fiscal_year: 2024
+fiscal_year_end: '2024-09-01'
+pages: 55
+complexity: medium
+license: Public Domain (US Government Works)
+source_url: https://www.sec.gov/Archives/edgar/data/909832/000090983224000049/cost-20240901.htm
+category: business
+subcategory: sec_edgar
+document_type: 10-K
+html_file: html/sec_014.html
+html_size: 34879
+ground_truth_file: ground_truth/sec_014.md
+ground_truth_size: 769
+notes: Warehouse count by geography, merchandise categories, membership data tables

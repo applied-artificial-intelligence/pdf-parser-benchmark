@@ -1,0 +1,43 @@
+corpus_name: SEC EDGAR Filings Corpus
+description: SEC EDGAR filings corpus targets for PDF-Bench financial document testing
+license: Public Domain (US Government Works)
+source: https://www.sec.gov/edgar
+total_documents: 20
+html_documents: 20
+pdf_documents: 1
+markdown_ground_truth: 20
+total_pdf_size_bytes: 31767015
+total_pdf_size_mb: 30.3
+total_markdown_size_bytes: 15092
+total_markdown_size_kb: 14.74
+selection_methodology: 'Documents selected to provide:
+
+  - Industry diversity (technology, finance, retail, healthcare, energy, manufacturing,
+  consumer goods, automotive)
+
+  - Filing type variety (12 annual 10-K reports, 8 quarterly 10-Q reports)
+
+  - Company size range (large-cap and mega-cap companies)
+
+  - Recent filings (2023-2024) to reflect current SEC formatting standards
+
+  - High table complexity (financial statements, footnotes, segment data)
+
+  '
+filing_types:
+- 10-Q
+- 10-K
+industries:
+- Healthcare/Pharmaceuticals
+- Technology/Retail
+- Energy
+- Retail/Wholesale
+- Finance
+- Consumer Goods/Beverages
+- Aerospace/Manufacturing
+- Retail
+- Consumer Goods
+- Technology/Semiconductors
+- Finance/Investment Banking
+- Technology
+- Automotive

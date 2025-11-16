@@ -1,0 +1,567 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>View Filing Data</title>
+<script type="text/javascript" src="/js/third-party/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/include/accordionMenu.js"></script>
+<script type="text/javascript" src="/include/Show.js"></script>
+<link rel="stylesheet" type="text/css" href="/include/interactive2.css" />
+<link  rel="stylesheet" href="/edgar/search/global/css/bootstrap/bootstrap.min.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="/include/report.css" />
+<link rel="stylesheet" type="text/css" href="/include/print.css" media="print" />
+<link rel="stylesheet" type="text/css" href="/include/xbrlViewerStyle.css" />
+<!--[if lt IE 8]>
+<style type="text/css">
+li.accordion a {display:inline-block;}
+li.accordion a {display:block;}
+</style>
+<![endif]-->
+<script type="text/javascript" language="javascript">
+var InstanceReportXslt = "/include/InstanceReport.xslt";
+var reports = new Array(97);
+    reports[1] = "/Archives/edgar/data/80424/000008042424000083/R1.htm";
+    reports[2] = "/Archives/edgar/data/80424/000008042424000083/R2.htm";
+    reports[3] = "/Archives/edgar/data/80424/000008042424000083/R3.htm";
+    reports[4] = "/Archives/edgar/data/80424/000008042424000083/R4.htm";
+    reports[5] = "/Archives/edgar/data/80424/000008042424000083/R5.htm";
+    reports[6] = "/Archives/edgar/data/80424/000008042424000083/R6.htm";
+    reports[7] = "/Archives/edgar/data/80424/000008042424000083/R7.htm";
+    reports[8] = "/Archives/edgar/data/80424/000008042424000083/R8.htm";
+    reports[9] = "/Archives/edgar/data/80424/000008042424000083/R9.htm";
+    reports[10] = "/Archives/edgar/data/80424/000008042424000083/R10.htm";
+    reports[11] = "/Archives/edgar/data/80424/000008042424000083/R11.htm";
+    reports[12] = "/Archives/edgar/data/80424/000008042424000083/R12.htm";
+    reports[13] = "/Archives/edgar/data/80424/000008042424000083/R13.htm";
+    reports[14] = "/Archives/edgar/data/80424/000008042424000083/R14.htm";
+    reports[15] = "/Archives/edgar/data/80424/000008042424000083/R15.htm";
+    reports[16] = "/Archives/edgar/data/80424/000008042424000083/R16.htm";
+    reports[17] = "/Archives/edgar/data/80424/000008042424000083/R17.htm";
+    reports[18] = "/Archives/edgar/data/80424/000008042424000083/R18.htm";
+    reports[19] = "/Archives/edgar/data/80424/000008042424000083/R19.htm";
+    reports[20] = "/Archives/edgar/data/80424/000008042424000083/R20.htm";
+    reports[21] = "/Archives/edgar/data/80424/000008042424000083/R21.htm";
+    reports[22] = "/Archives/edgar/data/80424/000008042424000083/R22.htm";
+    reports[23] = "/Archives/edgar/data/80424/000008042424000083/R23.htm";
+    reports[24] = "/Archives/edgar/data/80424/000008042424000083/R24.htm";
+    reports[25] = "/Archives/edgar/data/80424/000008042424000083/R25.htm";
+    reports[26] = "/Archives/edgar/data/80424/000008042424000083/R26.htm";
+    reports[27] = "/Archives/edgar/data/80424/000008042424000083/R27.htm";
+    reports[28] = "/Archives/edgar/data/80424/000008042424000083/R28.htm";
+    reports[29] = "/Archives/edgar/data/80424/000008042424000083/R29.htm";
+    reports[30] = "/Archives/edgar/data/80424/000008042424000083/R30.htm";
+    reports[31] = "/Archives/edgar/data/80424/000008042424000083/R31.htm";
+    reports[32] = "/Archives/edgar/data/80424/000008042424000083/R32.htm";
+    reports[33] = "/Archives/edgar/data/80424/000008042424000083/R33.htm";
+    reports[34] = "/Archives/edgar/data/80424/000008042424000083/R34.htm";
+    reports[35] = "/Archives/edgar/data/80424/000008042424000083/R35.htm";
+    reports[36] = "/Archives/edgar/data/80424/000008042424000083/R36.htm";
+    reports[37] = "/Archives/edgar/data/80424/000008042424000083/R37.htm";
+    reports[38] = "/Archives/edgar/data/80424/000008042424000083/R38.htm";
+    reports[39] = "/Archives/edgar/data/80424/000008042424000083/R39.htm";
+    reports[40] = "/Archives/edgar/data/80424/000008042424000083/R40.htm";
+    reports[41] = "/Archives/edgar/data/80424/000008042424000083/R41.htm";
+    reports[42] = "/Archives/edgar/data/80424/000008042424000083/R42.htm";
+    reports[43] = "/Archives/edgar/data/80424/000008042424000083/R43.htm";
+    reports[44] = "/Archives/edgar/data/80424/000008042424000083/R44.htm";
+    reports[45] = "/Archives/edgar/data/80424/000008042424000083/R45.htm";
+    reports[46] = "/Archives/edgar/data/80424/000008042424000083/R46.htm";
+    reports[47] = "/Archives/edgar/data/80424/000008042424000083/R47.htm";
+    reports[48] = "/Archives/edgar/data/80424/000008042424000083/R48.htm";
+    reports[49] = "/Archives/edgar/data/80424/000008042424000083/R49.htm";
+    reports[50] = "/Archives/edgar/data/80424/000008042424000083/R50.htm";
+    reports[51] = "/Archives/edgar/data/80424/000008042424000083/R51.htm";
+    reports[52] = "/Archives/edgar/data/80424/000008042424000083/R52.htm";
+    reports[53] = "/Archives/edgar/data/80424/000008042424000083/R53.htm";
+    reports[54] = "/Archives/edgar/data/80424/000008042424000083/R54.htm";
+    reports[55] = "/Archives/edgar/data/80424/000008042424000083/R55.htm";
+    reports[56] = "/Archives/edgar/data/80424/000008042424000083/R56.htm";
+    reports[57] = "/Archives/edgar/data/80424/000008042424000083/R57.htm";
+    reports[58] = "/Archives/edgar/data/80424/000008042424000083/R58.htm";
+    reports[59] = "/Archives/edgar/data/80424/000008042424000083/R59.htm";
+    reports[60] = "/Archives/edgar/data/80424/000008042424000083/R60.htm";
+    reports[61] = "/Archives/edgar/data/80424/000008042424000083/R61.htm";
+    reports[62] = "/Archives/edgar/data/80424/000008042424000083/R62.htm";
+    reports[63] = "/Archives/edgar/data/80424/000008042424000083/R63.htm";
+    reports[64] = "/Archives/edgar/data/80424/000008042424000083/R64.htm";
+    reports[65] = "/Archives/edgar/data/80424/000008042424000083/R65.htm";
+    reports[66] = "/Archives/edgar/data/80424/000008042424000083/R66.htm";
+    reports[67] = "/Archives/edgar/data/80424/000008042424000083/R67.htm";
+    reports[68] = "/Archives/edgar/data/80424/000008042424000083/R68.htm";
+    reports[69] = "/Archives/edgar/data/80424/000008042424000083/R69.htm";
+    reports[70] = "/Archives/edgar/data/80424/000008042424000083/R70.htm";
+    reports[71] = "/Archives/edgar/data/80424/000008042424000083/R71.htm";
+    reports[72] = "/Archives/edgar/data/80424/000008042424000083/R72.htm";
+    reports[73] = "/Archives/edgar/data/80424/000008042424000083/R73.htm";
+    reports[74] = "/Archives/edgar/data/80424/000008042424000083/R74.htm";
+    reports[75] = "/Archives/edgar/data/80424/000008042424000083/R75.htm";
+    reports[76] = "/Archives/edgar/data/80424/000008042424000083/R76.htm";
+    reports[77] = "/Archives/edgar/data/80424/000008042424000083/R77.htm";
+    reports[78] = "/Archives/edgar/data/80424/000008042424000083/R78.htm";
+    reports[79] = "/Archives/edgar/data/80424/000008042424000083/R79.htm";
+    reports[80] = "/Archives/edgar/data/80424/000008042424000083/R80.htm";
+    reports[81] = "/Archives/edgar/data/80424/000008042424000083/R81.htm";
+    reports[82] = "/Archives/edgar/data/80424/000008042424000083/R82.htm";
+    reports[83] = "/Archives/edgar/data/80424/000008042424000083/R83.htm";
+    reports[84] = "/Archives/edgar/data/80424/000008042424000083/R84.htm";
+    reports[85] = "/Archives/edgar/data/80424/000008042424000083/R85.htm";
+    reports[86] = "/Archives/edgar/data/80424/000008042424000083/R86.htm";
+    reports[87] = "/Archives/edgar/data/80424/000008042424000083/R87.htm";
+    reports[88] = "/Archives/edgar/data/80424/000008042424000083/R88.htm";
+    reports[89] = "/Archives/edgar/data/80424/000008042424000083/R89.htm";
+    reports[90] = "/Archives/edgar/data/80424/000008042424000083/R90.htm";
+    reports[91] = "/Archives/edgar/data/80424/000008042424000083/R91.htm";
+    reports[92] = "/Archives/edgar/data/80424/000008042424000083/R92.htm";
+    reports[93] = "/Archives/edgar/data/80424/000008042424000083/R93.htm";
+    reports[94] = "/Archives/edgar/data/80424/000008042424000083/R94.htm";
+    reports[95] = "/Archives/edgar/data/80424/000008042424000083/R95.htm";
+    reports[96] = "/Archives/edgar/data/80424/000008042424000083/R96.htm";
+    reports[97] = 'all';
+   function loadXSLDoc(url) {
+      var doc;
+      var jqxhr=$.ajax({type: "GET",
+                        url: url,
+                        async: false});
+      // code for IE
+      if (window.ActiveXObject || "ActiveXObject" in window) {
+         doc = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.3.0");
+         doc.loadXML(jqxhr.responseText);
+      }
+      // code for other browsers
+      else if (document.implementation && document.implementation.createDocument) {
+         doc=document.implementation.createDocument("","",null);
+         doc.async=true;
+         doc = jqxhr.responseXML.documentElement;
+      }
+      return doc;
+   }
+   function fixSrcAttr(src) {
+      var url_path = "/Archives/edgar/data/80424/000008042424000083/";
+      var uri = src.substr(0,5);
+      // No change is needed if the 'src' attribute contains an embedded image
+      if (uri == 'data:') {
+         return src;
+      }
+      // Absolute URL on EDGAR website is unchanged
+      var idx = src.lastIndexOf('https://s3.amazonaws.com/archives.sec.gov/edgar/data/')
+      if (idx > -1) {
+        return src;
+      } // For all other URLs use only basename component
+      var idx = src.lastIndexOf('/');
+      if (idx > -1) {
+         src = src.substring(idx+1,src.length);
+      }
+      return url_path + src;
+   }
+   function getReport(url, xsl_url) {
+      if (xsl_url == null) { xsl_url = InstanceReportXslt; }
+      var ext = url.substring(url.lastIndexOf('.')+1, url.length);
+      if (ext == 'htm') {
+          $.ajax({
+          type: "GET",
+          url: url,
+          dataType: "text",
+          async:false,
+          success: function (data) {
+                  // Strip out everything between the "TEXT" elements
+                  var idx = data.indexOf('<TEXT>');
+                  if (idx > -1) {
+                     data = data.substring(idx+6,data.length);
+                     idx = data.indexOf('</TEXT>');
+                     if ( idx > -1) {
+                        data = data.substring(0,idx);
+                     }
+                  }
+          	 jQuery('#reportDiv').append(data)
+                  .find('img').attr('src', function(i, val) { return fixSrcAttr(val);}).end();
+              }
+          });
+      } else {
+          $.ajax({
+          type: "GET",
+          url: url,
+          dataType: "text",
+          async: false,
+          success: function(data) {
+                  data = data.replace(/^\s+|\s+$/g, ''); // leading or trailing whitespace causes problems
+                  var path="/" + url.substring(1, url.lastIndexOf('/')+1);
+                  // code for IE
+                  if (window.ActiveXObject || "ActiveXObject" in window) {
+                     xsl_doc = loadXSLDoc(xsl_url)
+                     var xslt = new ActiveXObject("Msxml2.XSLTemplate.3.0");
+                     xslt.stylesheet = xsl_doc;
+                     var xslproc = xslt.createProcessor();
+                     var doc = new ActiveXObject("Msxml2.FreeThreadedDOMDocument.3.0");
+                     doc.loadXML(data);
+                     xslproc.input = doc;
+                     xslproc.addParameter("source", path );
+                     xslproc.addParameter("asPage", "true" );
+                     xslproc.transform();
+                     // Find all images and prepend the base URL to the src attribute
+                     jQuery('#reportDiv').append(jQuery(xslproc.output)
+                                         .find('img')
+                                         .attr('src', function(i, val) {
+                                                         return fixSrcAttr(val);
+                                                      }).end());
+                  }
+                  // code for other browsers
+                  else if (document.implementation && document.implementation.createDocument) {
+                     xsltProcessor=new XSLTProcessor();
+                     xsltProcessor.importStylesheet(loadXSLDoc(xsl_url));
+                     xsltProcessor.setParameter(null,"source",path);
+                     xsltProcessor.setParameter(null,"asPage","true");
+                     parser = new DOMParser();
+                     xmlDoc = parser.parseFromString(data, "text/xml");
+                     var rpt = xsltProcessor.transformToFragment(xmlDoc, document);
+                     document.getElementById("reportDiv").appendChild(rpt);
+                     FixNotesForGeckoWebkit( document.getElementById( 'reportDiv' ) );
+                     // Find all images and prepend the base URL to the src attribute
+                     jQuery('#reportDiv').find('img')
+                                         .attr('src', function(i, val) {
+                                                         return fixSrcAttr(val);
+                                                      });
+                  } else {
+                     alert('Your browser cannot handle this script');
+                  }
+               }
+            });
+       }
+   }
+   function clearReportDiv() {
+      // code for IE
+      if (window.ActiveXObject || "ActiveXObject" in window) {
+         document.getElementById("reportDiv").innerHTML='';
+      }
+      // code for Mozilla, Firefox, Opera, etc.
+      else if (document.implementation && document.implementation.createDocument) {
+         x = document.getElementById("reportDiv").childNodes;
+         for (i=x.length-1;i>-1;i--) {
+            node = document.getElementById("reportDiv").childNodes[i];
+            if (node) {
+               document.getElementById("reportDiv").removeChild(node);
+            }
+         }
+      }
+   }
+   function loadReport(idx) {
+      if (window.XMLHttpRequest || window.ActiveXObject || "ActiveXObject" in window) {
+         clearReportDiv();
+         xsl_url = null;
+         if (reports[idx] == 'all') {
+            highlightAllMenuItems();
+            jQuery.ajaxSetup({async:false});
+            for (var i=1; i<=reports.length; i++) {
+               if (reports[i] != 'all') {
+                  getReport(reports[i], xsl_url);
+                  var li = document.getElementById('r'+idx);
+                  if (li) {
+                     li.parentNode.style.display='block';
+                  }
+               } else {
+                  break;
+               }
+            }
+         }
+         else {
+            getReport(reports[idx], xsl_url);
+            var li = document.getElementById('r'+idx);
+            if (li) {
+               li.parentNode.style.display='block';
+            }
+         }
+         window.scrollTo(0,0);
+      }
+      else {
+         alert('Your browser cannot handle this script');
+      }
+   }
+   function highlight(link) {
+      var parent = document.getElementById( 'menu' );
+      var links = parent.getElementsByTagName( 'a' );
+      for (var i = 0; i < links.length; i++){
+         if (links[i].className == 'xbrlviewer') {
+            if (links[i] == link) {
+               link.style.background = "#C1CDCD";
+            } else {
+               links[i].style.background = "#F5F5EB";
+            }
+         }
+      }
+   }
+   //the parameter 'div' represents <div id="reportDiv">
+   function FixNotesForGeckoWebkit( div ){
+      //textContent is only found in "other" browsers
+      //if it exists, search it for our table - there should only be one
+      if( div.textContent ){
+         var tables = div.getElementsByTagName( 'table' );
+         if( tables.length ){
+            //loop through the tables
+           for( var t = 0; t < tables.length; t++ ){
+              var cells = tables[t].getElementsByTagName( 'td' );
+              //loop through the cells, checking for class="text" which indicates some kind of text content - this includes HTML for notes
+              for( var i = 0; i < cells.length; i++ ){
+                 var curCell = cells[ i ];
+                 if( curCell.className == 'text' ){
+                    //<td class="text" found - now check if this HTML had already been rendered - if so, we should not attempt to render it again
+                    var nodes = curCell.getElementsByTagName( '*' );
+                    if( nodes.length <= 1 ){
+                       //no "nodes" found so perform a secondary check that we have text which resembles HTML
+                       nodes = curCell.textContent.match( /<\/?[a-zA-Z]{1}\w*[^>]*>/g );
+                       if( nodes && nodes.length ){
+                          //this text does resemble HTML, use the textContent as HTML and that will convert the text to HTML content.
+                          curCell.innerHTML = curCell.textContent;
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+   window.onload = function () {
+      loadReport(1);
+   }
+</script>
+</head>
+<body style="margin: 0">
+<noscript><div style="color:red; font-weight:bold; text-align:center;">This page uses Javascript. Your browser either doesn't support Javascript or you have it turned off. To see this page as it is meant to appear please use a Javascript enabled browser.</div></noscript>
+<!-- BEGIN BANNER -->
+<!-- BEGIN BANNER -->
+<div  id="header" style="text-align: center;">
+    <nav id="main-navbar" class="navbar navbar-expand">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav__sec_link" href="https://www.sec.gov">
+                    <img src="/edgar/search/images/edgar-logo-2x.png" alt="" style="height:6.25rem">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav__sec_link" href="https://www.sec.gov">
+                    <span class="link-text d-inline">SEC.gov</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav__link" href="https://www.sec.gov/submit-filings/about-edgar" id="edgar-short-form"><span class="link-text">EDGAR</span></a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="https://www.sec.gov/edgar/search/efts-faq.html" class="nav__link" target="_blank" rel="noopener noreferrer">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.sec.gov/edgar/search-and-access" class="nav__link">Filings search tools</a>
+            </li>
+        </ul>
+    </nav>
+    <h1 style="position: relative; top: -40px;">View Filing Data</h1>
+</div>
+<!-- END BANNER -->
+<!-- BEGIN BREADCRUMBS -->
+<div id="breadCrumbs">
+   <ul>
+      <li><a href="/">SEC Home</a> &#187;</li>
+      <li><a href="/edgar/searchedgar/companysearch.html">Company Search</a> &#187;</li>
+      <li class="last">Current Page</li>
+   </ul>
+</div>
+<hr>
+<!-- END BREADCRUMBS -->
+<!-- START COMPANY HEADERS DIV -->
+<div style="margin: 5px 20px 0px 20px; padding-top: 5px; padding-left: 5px;">
+   <div class="companyInfo">
+     <span class="companyName">PROCTER &amp; GAMBLE Co (Filer) <acronym title="Central Index Key">CIK</acronym>: 0000080424</span>
+   </div>
+   <div class="clear"></div>
+</div>
+<!-- END COMPANY HEADERS DIV -->
+<!-- START CONTENT DIV -->
+<div>
+   <table>
+     <tr>
+        <td colspan="2"><a class="xbrlviewer" style="color: black; font-weight: bold;" href="javascript:window.print();">Print Document</a></td>
+     </tr>
+     <tr>
+       <td style="vertical-align: top;">
+         
+<div style="width: 170px; margin-right: 5px;">
+  <ul id="menu">
+<!-- category_idx = 0 and prev_category = -1 with grp_idx = 0 -->
+<!-- category_idx = 1 and prev_category = 0 with grp_idx = 2 -->
+<!-- category_idx = 2 and prev_category = 1 with grp_idx = 3 -->
+<!-- category_idx = 3 and prev_category = 2 with grp_idx = 4 -->
+<!-- category_idx = 4 and prev_category = 3 with grp_idx = 5 -->
+<!-- category_idx = 5 and prev_category = 4 with grp_idx = 6 -->
+    <li class="accordion">
+       <li id="menu_cat1" class='accordion ix' ><a href='/ix?doc=/Archives/edgar/data/80424/000008042424000083/pg-20240630.htm'><button type="button" class="btn btn-warning">10-K</button></a></li>
+    <li class="accordion">
+      <a id="menu_cat2" href="#">Cover</a>
+      <ul>
+            <li class="accordion" id="r1" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(1);">Cover Page</a></li>
+            <li class="accordion" id="r2" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(2);">Audit Information</a></li>
+      </ul>
+    </li>
+    <li class="accordion">
+      <a id="menu_cat3" href="#">Financial Statements</a>
+      <ul>
+            <li class="accordion" id="r3" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(3);">Consolidated Statements of Earnings</a></li>
+            <li class="accordion" id="r4" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(4);">Consolidated Statements of Comprehensive Income</a></li>
+            <li class="accordion" id="r5" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(5);">Consolidated Statements of Comprehensive Income (Parenthetical)</a></li>
+            <li class="accordion" id="r6" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(6);">Consolidated Balance Sheets</a></li>
+            <li class="accordion" id="r7" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(7);">Consolidated Balance Sheets (Parenthetical)</a></li>
+            <li class="accordion" id="r8" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(8);">Consolidated Statements of Shareholders' Equity</a></li>
+            <li class="accordion" id="r9" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(9);">Consolidated Statements of Shareholders' Equity (Parenthetical)</a></li>
+            <li class="accordion" id="r10" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(10);">Consolidated Statements of Cash Flows</a></li>
+      </ul>
+    </li>
+    <li class="accordion">
+      <a id="menu_cat4" href="#">Notes to Financial Statements</a>
+      <ul>
+            <li class="accordion" id="r11" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(11);">SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES</a></li>
+            <li class="accordion" id="r12" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(12);">SEGMENT INFORMATION</a></li>
+            <li class="accordion" id="r13" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(13);">SUPPLEMENTAL FINANCIAL INFORMATION</a></li>
+            <li class="accordion" id="r14" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(14);">GOODWILL AND INTANGIBLE ASSETS</a></li>
+            <li class="accordion" id="r15" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(15);">INCOME TAXES</a></li>
+            <li class="accordion" id="r16" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(16);">EARNINGS PER SHARE</a></li>
+            <li class="accordion" id="r17" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(17);">SHARE-BASED COMPENSATION</a></li>
+            <li class="accordion" id="r18" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(18);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN</a></li>
+            <li class="accordion" id="r19" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(19);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS</a></li>
+            <li class="accordion" id="r20" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(20);">SHORT-TERM AND LONG-TERM DEBT</a></li>
+            <li class="accordion" id="r21" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(21);">ACCUMULATED OTHER COMPREHENSIVE INCOME/(LOSS)</a></li>
+            <li class="accordion" id="r22" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(22);">LEASES</a></li>
+            <li class="accordion" id="r23" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(23);">COMMITMENTS AND CONTINGENCIES</a></li>
+            <li class="accordion" id="r24" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(24);">SUPPLIER FINANCE PROGRAMS</a></li>
+            <li class="accordion" id="r25" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(25);">SUBSEQUENT EVENT</a></li>
+            <li class="accordion" id="r26" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(26);">Pay vs Performance Disclosure</a></li>
+            <li class="accordion" id="r27" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(27);">Insider Trading Arrangements</a></li>
+            <li class="accordion" id="r28" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(28);">Insider Trading Policies and Procedures</a></li>
+      </ul>
+    </li>
+    <li class="accordion">
+      <a id="menu_cat5" href="#">Accounting Policies</a>
+      <ul>
+            <li class="accordion" id="r29" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(29);">SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES (Policies)</a></li>
+      </ul>
+    </li>
+    <li class="accordion">
+      <a id="menu_cat6" href="#">Notes Tables</a>
+      <ul>
+            <li class="accordion" id="r30" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(30);">SEGMENT INFORMATION (Tables)</a></li>
+            <li class="accordion" id="r31" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(31);">SUPPLEMENTAL FINANCIAL INFORMATION (Tables)</a></li>
+            <li class="accordion" id="r32" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(32);">GOODWILL AND INTANGIBLE ASSETS (Tables)</a></li>
+            <li class="accordion" id="r33" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(33);">INCOME TAXES (Tables)</a></li>
+            <li class="accordion" id="r34" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(34);">EARNINGS PER SHARE (Tables)</a></li>
+            <li class="accordion" id="r35" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(35);">SHARE-BASED COMPENSATION (Tables)</a></li>
+            <li class="accordion" id="r36" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(36);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN (Tables)</a></li>
+            <li class="accordion" id="r37" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(37);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS (Tables)</a></li>
+            <li class="accordion" id="r38" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(38);">SHORT-TERM AND LONG-TERM DEBT (Tables)</a></li>
+            <li class="accordion" id="r39" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(39);">ACCUMULATED OTHER COMPREHENSIVE INCOME/(LOSS) (Tables)</a></li>
+            <li class="accordion" id="r40" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(40);">LEASES (Tables)</a></li>
+            <li class="accordion" id="r41" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(41);">COMMITMENTS AND CONTINGENCIES (Tables)</a></li>
+      </ul>
+    </li>
+    <li class="accordion">
+      <a id="menu_cat7" href="#">Notes Details</a>
+      <ul>
+            <li class="accordion" id="r42" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(42);">SUMMARY OF SIGNIFICANT ACCOUNTING POLICIES - Additional Information (Details)</a></li>
+            <li class="accordion" id="r43" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(43);">SEGMENT INFORMATION - Additional Information (Details)</a></li>
+            <li class="accordion" id="r44" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(44);">SEGMENT INFORMATION - Percent Of Sales By Business Unit (Details)</a></li>
+            <li class="accordion" id="r45" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(45);">SEGMENT INFORMATION - US And International Sales And Assets (Details)</a></li>
+            <li class="accordion" id="r46" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(46);">SEGMENT INFORMATION - Global Segment Results (Details)</a></li>
+            <li class="accordion" id="r47" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(47);">SUPPLEMENTAL FINANCIAL INFORMATION - Property, Plant And Equipment (Details)</a></li>
+            <li class="accordion" id="r48" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(48);">SUPPLEMENTAL FINANCIAL INFORMATION - Accrued And Other Liabilities (Details)</a></li>
+            <li class="accordion" id="r49" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(49);">SUPPLEMENTAL FINANCIAL INFORMATION - Additional Information (Details)</a></li>
+            <li class="accordion" id="r50" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(50);">SUPPLEMENTAL FINANCIAL INFORMATION - Restructuring Activity (Details)</a></li>
+            <li class="accordion" id="r51" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(51);">SUPPLEMENTAL FINANCIAL INFORMATION - Other Costs (Details)</a></li>
+            <li class="accordion" id="r52" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(52);">GOODWILL AND INTANGIBLE ASSETS - Goodwill By Global Business Unit (Details)</a></li>
+            <li class="accordion" id="r53" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(53);">GOODWILL AND INTANGIBLE ASSETS - Additional Information (Details)</a></li>
+            <li class="accordion" id="r54" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(54);">GOODWILL AND INTANGIBLE ASSETS - Intangible Assets (Details)</a></li>
+            <li class="accordion" id="r55" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(55);">GOODWILL AND INTANGIBLE ASSETS - Amortization Of Intangible Assets (Details)</a></li>
+            <li class="accordion" id="r56" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(56);">GOODWILL AND INTANGIBLE ASSETS - Estimated Amortization Expense (Details)</a></li>
+            <li class="accordion" id="r57" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(57);">INCOME TAXES - Earnings From Continuing Operations Before Income Taxes (Details)</a></li>
+            <li class="accordion" id="r58" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(58);">INCOME TAXES - Provision For Income Taxes On Continuing Operations (Details)</a></li>
+            <li class="accordion" id="r59" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(59);">INCOME TAXES - Income Tax Rate Reconciliation (Details)</a></li>
+            <li class="accordion" id="r60" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(60);">INCOME TAXES - Additional Information (Details)</a></li>
+            <li class="accordion" id="r61" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(61);">INCOME TAXES - Unrecognized Tax Benefits Reconciliation (Details)</a></li>
+            <li class="accordion" id="r62" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(62);">INCOME TAXES - Deferred Income Tax Assets And Liabilities (Details)</a></li>
+            <li class="accordion" id="r63" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(63);">EARNINGS PER SHARE (Details)</a></li>
+            <li class="accordion" id="r64" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(64);">SHARE-BASED COMPENSATION - Additional Information (Details)</a></li>
+            <li class="accordion" id="r65" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(65);">SHARE-BASED COMPENSATION - Share-Based Compensation Activity (Details)</a></li>
+            <li class="accordion" id="r66" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(66);">SHARE-BASED COMPENSATION - Assumptions Utilized In The Binomial Lattice-Based Valuation Model (Details)</a></li>
+            <li class="accordion" id="r67" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(67);">SHARE-BASED COMPENSATION - Options Outstanding (Details)</a></li>
+            <li class="accordion" id="r68" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(68);">SHARE-BASED COMPENSATION - Additional Information On Stock Options (Details)</a></li>
+            <li class="accordion" id="r69" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(69);">SHARE-BASED COMPENSATION - Schedule Of Non-Vested RSUs And PSUs (Details)</a></li>
+            <li class="accordion" id="r70" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(70);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Additional Information (Details)</a></li>
+            <li class="accordion" id="r71" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(71);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Reconciliation Of Benefit Obligations And Plan Assets (Details)</a></li>
+            <li class="accordion" id="r72" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(72);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Reconciliation Of Benefit Plans Recognized In The Balance Sheet (Details)</a></li>
+            <li class="accordion" id="r73" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(73);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Pension Plans With Accumulated And Projected Benefit Obligations In Excess Of Plan (Details)</a></li>
+            <li class="accordion" id="r74" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(74);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Components Of Net Periodic Benefit Cost (Details)</a></li>
+            <li class="accordion" id="r75" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(75);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Weighted Average Assumptions For The Benefit Calculations As Well As Assumed Health Care Trend Rates Balance Sheets (Details)</a></li>
+            <li class="accordion" id="r76" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(76);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Weighted Average Assumptions For The Benefit Calculations As Well As Assumed Health Care Trend Rates Statement Of Earnings (Details)</a></li>
+            <li class="accordion" id="r77" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(77);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Target And Actual Asset Allocation (Details)</a></li>
+            <li class="accordion" id="r78" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(78);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Fair Value Of Plan Asset (Details)</a></li>
+            <li class="accordion" id="r79" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(79);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - Total Benefit Payments Expected To Be Paid (Details)</a></li>
+            <li class="accordion" id="r80" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(80);">POSTRETIREMENT BENEFITS AND EMPLOYEE STOCK OWNERSHIP PLAN - ESOP Shares Outstanding (Details)</a></li>
+            <li class="accordion" id="r81" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(81);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS - Additional Information (Details)</a></li>
+            <li class="accordion" id="r82" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(82);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS - Notional Amounts And Fair Values Of Qualifying And Non-Qualifying Financial Instruments Used In Hedging Transactions (Details)</a></li>
+            <li class="accordion" id="r83" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(83);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS - Gains And Losses On Derivatives In Net Investment Hedges Recognized in OCI (Details)</a></li>
+            <li class="accordion" id="r84" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(84);">RISK MANAGEMENT ACTIVITIES AND FAIR VALUE MEASUREMENTS - Gains And Losses On Derivatives In Net Investment Hedges Recognized in Earnings (Details)</a></li>
+            <li class="accordion" id="r85" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(85);">SHORT-TERM AND LONG-TERM DEBT - Short-Term Debt (Details)</a></li>
+            <li class="accordion" id="r86" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(86);">SHORT-TERM AND LONG-TERM DEBT - Long-Term Debt (Details)</a></li>
+            <li class="accordion" id="r87" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(87);">SHORT-TERM AND LONG-TERM DEBT - Long-Term Debt Maturities (Details)</a></li>
+            <li class="accordion" id="r88" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(88);">SHORT-TERM AND LONG-TERM DEBT - Additional Information (Details)</a></li>
+            <li class="accordion" id="r89" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(89);">ACCUMULATED OTHER COMPREHENSIVE INCOME/(LOSS) - Statement of AOCI (Details)</a></li>
+            <li class="accordion" id="r90" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(90);">LEASES - Lease Cost (Details)</a></li>
+            <li class="accordion" id="r91" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(91);">LEASES - Supplemental Balance Sheet (Details)</a></li>
+            <li class="accordion" id="r92" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(92);">LEASES - Future Maturities (Details)</a></li>
+            <li class="accordion" id="r93" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(93);">LEASES - Additional Information (Details)</a></li>
+            <li class="accordion" id="r94" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(94);">COMMITMENTS AND CONTINGENCIES - Purchase Obligations (Details)</a></li>
+            <li class="accordion" id="r95" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(95);">SUPPLIER FINANCE PROGRAMS (Details)</a></li>
+            <li class="accordion" id="r96" ><a class="xbrlviewer" onClick="javascript:highlight(this);" href="javascript:loadReport(96);">SUBSEQUENT EVENT (Details)</a></li>
+      </ul>
+    </li>
+    <li><a class="all_reports" href="javascript:loadReport(97);"><img src="/images/reports.gif" border="0" height="12" width="9" alt="Reports" />All Reports</a></li>
+  </ul>
+</div>
+
+       </td>
+       <td style="vertical-align: top;">
+         <div id="reportDiv"></div>
+       </td>
+     </tr>
+   </table>
+</div>
+<div style="clear:both"></div>
+<div id="help"></div>
+<!-- END CONTENT DIV -->
+<!-- START FILER DIV -->
+<div id="contentDiv">
+   <div class="filerDiv">
+      <div class="mailer">Mailing Address
+         <span class="mailerAddress">ONE PROCTER & GAMBLE PLAZA</span>
+         <span class="mailerAddress">
+CINCINNATI OH 45202         </span>
+      </div>
+      <div class="mailer">Business Address
+         <span class="mailerAddress">ONE PROCTER & GAMBLE PLAZA</span>
+         <span class="mailerAddress">
+CINCINNATI OH 45202         </span>
+         <span class="mailerAddress">5139831100</span>
+      </div>
+      <div class="companyInfo">
+          <span class="companyName">PROCTER &amp; GAMBLE Co (Filer) <acronym title="Central Index Key">CIK</acronym>: <a href="/cgi-bin/browse-edgar?CIK=0000080424&amp;action=getcompany">0000080424 (see all company filings)</a></span> <p class="identInfo"><acronym title="Internal Revenue Service Number">IRS No.</acronym>: <strong>310411980</strong> | State of Incorp.: <strong>OH</strong> | Fiscal Year End: <strong>0630</strong><br />Type: <strong>10-K</strong> | Act: <strong>34</strong> | File No.: <a href="/cgi-bin/browse-edgar?filenum=001-00434&amp;action=getcompany"><strong>001-00434</strong></a> | Film No.: <strong>241174995</strong><br /><acronym title="Standard Industrial Code">SIC</acronym>: <b><a href="/cgi-bin/browse-edgar?action=getcompany&amp;SIC=2840&amp;owner=include">2840</a></b> Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics<br />(CF Office: 08 Industrial Applications and Services)</p>
+      </div>
+      <div class="clear"></div>
+   </div>
+</div>
+<!-- END FILER DIV -->
+<!-- END FOOTER DIV -->
+<div id="footer">
+  <div class="currentURL">https://www.sec.gov/cgi-bin/viewer</div>
+  <div class="links"><a href="/index.htm">Home</a> | <a href="/edgar/searchedgar/webusers.htm">Search the Next-Generation EDGAR System</a> | <a href="javascript:history.back()">Previous Page</a></div>
+  <div class="modified">Modified 11/14/2022</div>
+</div>
+<!-- END FOOTER DIV -->
+</body>
+</html>
