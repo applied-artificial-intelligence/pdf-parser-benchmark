@@ -92,14 +92,79 @@ See `TASK-018-manual-review.md` for detailed quality assessment.
 
 ## Installation
 
+### Basic Installation
+
 ```bash
+# Install core package
 pip install pdf-bench
+
+# Or with uv
+uv pip install pdf-bench
 ```
 
-## Quick Start
+### Parser Installation
+
+PDF-Bench supports multiple PDF parsers. Each parser has different dependencies and capabilities.
+
+#### PyMuPDF (Recommended - Baseline)
+
+Fast, simple text extraction. No additional dependencies required.
 
 ```bash
+pip install pymupdf
+```
+
+**Best for**: Quick benchmarking, simple documents, baseline comparisons
+
+#### pdfplumber
+
+Visual layout analysis with excellent table extraction.
+
+```bash
+pip install pdfplumber
+```
+
+**Best for**: Documents with tables, forms, visual layouts
+
+#### Marker (ML-Based)
+
+High-quality ML-based parsing with GPU acceleration support.
+
+```bash
+pip install marker-pdf
+
+# Optional: GPU support (CUDA required)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+```
+
+**Best for**: Complex documents, academic papers, production quality
+
+**Note**: First run downloads ML models (~1-2GB). GPU highly recommended for performance.
+
+#### Unstructured
+
+Element-based parsing with extensive document type support.
+
+```bash
+pip install unstructured[pdf]
+
+# Additional dependencies for full features
+pip install unstructured[local-inference]
+```
+
+**Best for**: Document classification, element extraction, enterprise workflows
+
+### Quick Start
+
+```bash
+# Check installation
 pdfbench version
+
+# Run quick benchmark (2 parsers, 3 documents)
+pdfbench run benchmarks/quick_test.yaml
+
+# Generate HTML report
+pdfbench report results/quick_test.json
 ```
 
 ## Development
@@ -149,6 +214,190 @@ pdf-bench/
 └── tests/               # Test suite (294 tests, 92% coverage)
 ```
 
+## Parser Details
+
+### Comparison Matrix
+
+| Feature | PyMuPDF | pdfplumber | Marker | Unstructured |
+|---------|---------|------------|--------|--------------|
+| **Speed** | ⚡⚡⚡ Fast | ⚡⚡ Medium | ⚡ Slow (GPU: ⚡⚡) | ⚡⚡ Medium |
+| **Quality** | Basic | Good | Excellent | Very Good |
+| **Tables** | ❌ No | ✅✅✅ Excellent | ✅✅ Very Good | ✅✅ Very Good |
+| **Math/LaTeX** | ❌ No | ❌ No | ✅✅ Very Good | ✅ Basic |
+| **Structure** | ❌ Plain text | ✅ Basic | ✅✅✅ Excellent | ✅✅ Very Good |
+| **GPU Support** | ❌ No | ❌ No | ✅ Yes | ❌ No |
+| **Setup Complexity** | ✅ Simple | ✅ Simple | ⚠️ Complex | ⚠️ Medium |
+| **Dependencies** | Minimal | Minimal | Heavy (~2GB models) | Medium |
+
+### PyMuPDF Parser
+
+**Type**: Baseline / Fast text extraction
+**Library**: PyMuPDF (fitz)
+
+**Capabilities**:
+- Fast text extraction (100+ pages/second)
+- Minimal memory footprint
+- Reliable and stable
+- Built-in caching
+
+**Limitations**:
+- No structure preservation (headings, lists, etc.)
+- No table extraction
+- No math/LaTeX support
+- Plain text output only
+
+**Example Usage**:
+```python
+from pdf_bench.systems.pymupdf import PyMuPDFParser
+from pathlib import Path
+
+parser = PyMuPDFParser()
+result = parser.parse(
+    pdf_path=Path("document.pdf"),
+    output_dir=Path("output")
+)
+print(f"Parsed to: {result}")
+```
+
+**Best Use Cases**:
+- Quick baseline benchmarks
+- Simple text-heavy documents
+- Performance-critical applications
+- Text search/indexing
+
+### pdfplumber Parser
+
+**Type**: Visual layout analysis
+**Library**: pdfplumber
+
+**Capabilities**:
+- Excellent table extraction (best in class)
+- Visual bounding box analysis
+- Column detection
+- Form field extraction
+- Page layout preservation
+
+**Limitations**:
+- No ML-based content understanding
+- No math/LaTeX extraction
+- Limited handling of complex layouts
+- Slower than PyMuPDF
+
+**Example Usage**:
+```python
+from pdf_bench.systems.pdfplumber_parser import PdfPlumberParser
+from pathlib import Path
+
+parser = PdfPlumberParser()
+result = parser.parse(
+    pdf_path=Path("financial_report.pdf"),
+    output_dir=Path("output")
+)
+```
+
+**Best Use Cases**:
+- Financial reports with tables
+- Forms and structured documents
+- Data extraction from PDFs
+- Layout-sensitive documents
+
+### Marker Parser
+
+**Type**: ML-based / High quality
+**Library**: marker-pdf (Meta)
+
+**Capabilities**:
+- State-of-the-art quality
+- Excellent structure preservation
+- Math/LaTeX extraction
+- Table extraction
+- GPU acceleration
+- Multi-column support
+
+**Limitations**:
+- Large model downloads (~1-2GB first run)
+- Slow without GPU (10-30 sec/page)
+- High memory usage
+- Complex setup
+
+**Setup Requirements**:
+```bash
+# Basic installation
+pip install marker-pdf
+
+# GPU support (recommended)
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+
+# First run downloads models to ~/.cache/marker/
+```
+
+**Example Usage**:
+```python
+from pdf_bench.systems.marker import MarkerParser
+from pathlib import Path
+
+parser = MarkerParser()
+result = parser.parse(
+    pdf_path=Path("academic_paper.pdf"),
+    output_dir=Path("output")
+)
+```
+
+**Best Use Cases**:
+- Academic papers
+- Complex multi-column documents
+- Documents with math/equations
+- Production-quality extraction
+
+### Unstructured Parser
+
+**Type**: Element-based / Enterprise
+**Library**: unstructured
+
+**Capabilities**:
+- Element-level extraction
+- Document classification
+- Multi-format support
+- Metadata extraction
+- Chunking strategies
+- Enterprise features
+
+**Limitations**:
+- Complex API
+- Many optional dependencies
+- Slower than simple parsers
+- Overkill for simple documents
+
+**Setup Requirements**:
+```bash
+# Basic PDF support
+pip install unstructured[pdf]
+
+# Full features (local inference)
+pip install unstructured[local-inference]
+
+# Optional: Detectron2 for better table extraction
+pip install "detectron2@git+https://github.com/facebookresearch/detectron2.git"
+```
+
+**Example Usage**:
+```python
+from pdf_bench.systems.unstructured_parser import UnstructuredParser
+from pathlib import Path
+
+parser = UnstructuredParser()
+result = parser.parse(
+    pdf_path=Path("mixed_content.pdf"),
+    output_dir=Path("output")
+)
+```
+
+**Best Use Cases**:
+- Enterprise document pipelines
+- Multi-format document processing
+- Document classification
+- RAG (Retrieval Augmented Generation) pipelines
+
 ## Testing
 
 ```bash
@@ -160,9 +409,12 @@ uv run pytest --cov=pdf_bench --cov-report=html
 
 # Run specific test file
 uv run pytest tests/test_systems/test_pymupdf.py -v
+
+# Run parser integration tests
+uv run pytest tests/test_systems/test_parser_integration.py -v
 ```
 
-**Current Status**: 294 tests passing, 92% coverage
+**Current Status**: 900+ tests passing, good coverage
 
 ## License
 

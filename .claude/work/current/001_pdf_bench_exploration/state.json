@@ -4,7 +4,7 @@
     "description": "Open-source benchmarking suite for evaluating PDF-to-Markdown conversion systems with commercially permissive licensing",
     "version": "0.1.0",
     "created_at": "2025-11-14T06:00:00Z",
-    "updated_at": "2025-11-16T05:30:44+00:00",
+    "updated_at": "2025-11-16T11:37:19+00:00",
     "estimated_total_hours": 255,
     "estimated_weeks": "6-7 weeks full-time",
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
@@ -1029,7 +1029,7 @@
       "description": "Update documentation with parser setup instructions",
       "type": "documentation",
       "phase": 4,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-035"
       ],
@@ -1041,7 +1041,17 @@
       ],
       "estimated_hours": 3,
       "priority": "medium",
-      "agent_recommendation": null
+      "agent_recommendation": null,
+      "completed_at": 1763293039.8073306,
+      "actual_hours": 1.5,
+      "deliverables": [
+        "README.md updated with comprehensive parser documentation",
+        "Installation instructions for all 4 parsers",
+        "Comparison matrix with capabilities and limitations",
+        "Per-parser setup requirements documented",
+        "Example usage code for each parser",
+        "Best use cases identified"
+      ]
     },
     {
       "id": "TASK-037",
@@ -2276,7 +2286,8 @@
     "TASK-043",
     "TASK-044",
     "TASK-045",
-    "TASK-035"
+    "TASK-035",
+    "TASK-036"
   ],
   "next_available": [
     "TASK-007",
@@ -2298,5 +2309,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763271044.3948715
+  "updated_at": 1763293039.8073347
 }
