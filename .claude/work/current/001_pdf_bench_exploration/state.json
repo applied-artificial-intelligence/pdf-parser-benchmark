@@ -10,7 +10,7 @@
     "notes": "Added pdfplumber (TASK-086, 3h) and Databricks (TASK-087, 6h) parsers. Cancelled Nougat tasks (TASK-031, TASK-032, -6h). Net change: +3 hours. Total tasks: 87 (85 original + 2 new)."
   },
   "status": "implementing",
-  "current_task": "TASK-034",
+  "current_task": "TASK-037",
   "tasks": [
     {
       "id": "TASK-001",
@@ -1041,7 +1041,7 @@
       "description": "Create YAML schema for benchmark configuration files",
       "type": "foundation",
       "phase": 5,
-      "status": "pending",
+      "status": "completed",
       "dependencies": [
         "TASK-006"
       ],
@@ -1053,7 +1053,18 @@
       ],
       "estimated_hours": 2,
       "priority": "high",
-      "agent_recommendation": "architect"
+      "agent_recommendation": "architect",
+      "completed_at": 1763258448.661814,
+      "actual_hours": 2.0,
+      "deliverables": [
+        "pdf_bench/config.py",
+        "tests/test_config.py",
+        "benchmarks/mvp_all.yaml",
+        "benchmarks/quick_test.yaml",
+        "benchmarks/tables_only.yaml",
+        "benchmarks/math_only.yaml",
+        "docs/BENCHMARK_CONFIG.md"
+      ]
     },
     {
       "id": "TASK-038",
@@ -2176,7 +2187,8 @@
     "TASK-086",
     "TASK-030",
     "TASK-033",
-    "TASK-034"
+    "TASK-034",
+    "TASK-037"
   ],
   "next_available": [
     "TASK-007",
@@ -2198,5 +2210,5 @@
     "TASK-076",
     "TASK-077"
   ],
-  "updated_at": 1763256231.374059
+  "updated_at": 1763258448.662109
 }
