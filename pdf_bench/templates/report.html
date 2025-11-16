@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ benchmark_name }} - PDF-Bench Report</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Header */
+        header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #1e40af;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .metadata {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 6px;
+        }
+
+        .metadata-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .metadata-label {
+            font-size: 0.875rem;
+            color: #64748b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .metadata-value {
+            font-size: 1.125rem;
+            color: #1e293b;
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        /* Section headers */
+        h2 {
+            color: #1e40af;
+            font-size: 1.75rem;
+            margin: 40px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        h3 {
+            color: #475569;
+            font-size: 1.25rem;
+            margin: 30px 0 15px 0;
+        }
+
+        /* Leaderboard */
+        .leaderboard {
+            margin: 30px 0;
+        }
+
+        .leaderboard-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .leaderboard-table thead {
+            background: #1e40af;
+            color: white;
+        }
+
+        .leaderboard-table th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .leaderboard-table th.numeric {
+            text-align: right;
+        }
+
+        .leaderboard-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .leaderboard-table td.numeric {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .leaderboard-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        .rank {
+            font-weight: 700;
+            color: #64748b;
+            font-size: 1.125rem;
+        }
+
+        .rank-1 { color: #f59e0b; }
+        .rank-2 { color: #9ca3af; }
+        .rank-3 { color: #d97706; }
+
+        .parser-name {
+            font-weight: 600;
+            color: #1e293b;
+        }
+
+        .score {
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        .score-high { color: #16a34a; }
+        .score-medium { color: #eab308; }
+        .score-low { color: #dc2626; }
+
+        /* Metric breakdown */
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .metric-card {
+            background: #f8fafc;
+            border: 1px solid #e5e7eb;
+            border-radius: 6px;
+            padding: 20px;
+        }
+
+        .metric-card h4 {
+            color: #475569;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 15px;
+        }
+
+        .metric-scores {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .metric-score-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .metric-parser {
+            color: #1e293b;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-weight: 600;
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Category breakdown */
+        .category-section {
+            margin: 30px 0;
+        }
+
+        .category-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 0.9rem;
+        }
+
+        .category-table thead {
+            background: #64748b;
+            color: white;
+        }
+
+        .category-table th {
+            padding: 10px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .category-table th.numeric {
+            text-align: right;
+        }
+
+        .category-table td {
+            padding: 10px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .category-table td.numeric {
+            text-align: right;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .category-table tbody tr:hover {
+            background: #f8fafc;
+        }
+
+        /* Progress bars */
+        .progress-bar {
+            background: #e5e7eb;
+            border-radius: 4px;
+            height: 8px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #2563eb, #3b82f6);
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.3s ease;
+        }
+
+        /* Chart placeholder */
+        .chart-placeholder {
+            background: #f8fafc;
+            border: 2px dashed #cbd5e1;
+            border-radius: 6px;
+            padding: 60px 20px;
+            text-align: center;
+            color: #64748b;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 2px solid #e5e7eb;
+            text-align: center;
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .metadata {
+                grid-template-columns: 1fr;
+            }
+
+            .leaderboard-table {
+                font-size: 0.875rem;
+            }
+
+            .leaderboard-table th,
+            .leaderboard-table td {
+                padding: 10px 8px;
+            }
+
+            .metric-grid {
+                grid-template-columns: 1fr;
+            }
+
+            /* Hide less critical columns on mobile */
+            .hide-mobile {
+                display: none;
+            }
+        }
+
+        /* Utility classes */
+        .text-muted {
+            color: #64748b;
+        }
+
+        .text-success {
+            color: #16a34a;
+        }
+
+        .text-warning {
+            color: #eab308;
+        }
+
+        .text-error {
+            color: #dc2626;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .badge-success {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .badge-warning {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .badge-error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>{{ benchmark_name }}</h1>
+            <p class="text-muted">PDF-to-Markdown Benchmark Report</p>
+
+            <div class="metadata">
+                <div class="metadata-item">
+                    <span class="metadata-label">Generated</span>
+                    <span class="metadata-value">{{ timestamp }}</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Documents</span>
+                    <span class="metadata-value">{{ total_documents }}</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Parsers</span>
+                    <span class="metadata-value">{{ total_parsers }}</span>
+                </div>
+                <div class="metadata-item">
+                    <span class="metadata-label">Success Rate</span>
+                    <span class="metadata-value">{{ "%.1f"|format(success_rate) }}%</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Leaderboard Section -->
+        <section class="leaderboard">
+            <h2>🏆 Leaderboard</h2>
+            <p class="text-muted">Parsers ranked by average score across all metrics</p>
+
+            <table class="leaderboard-table">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Parser</th>
+                        <th class="numeric">Avg Score</th>
+                        <th class="numeric">Success Rate</th>
+                        <th class="numeric hide-mobile">Documents</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for entry in leaderboard %}
+                    <tr>
+                        <td class="rank rank-{{ entry.rank }}">{{ entry.rank }}</td>
+                        <td class="parser-name">{{ entry.parser }}</td>
+                        <td class="numeric">
+                            <span class="score {% if entry.avg_score >= 0.8 %}score-high{% elif entry.avg_score >= 0.6 %}score-medium{% else %}score-low{% endif %}">
+                                {{ "%.3f"|format(entry.avg_score) }}
+                            </span>
+                        </td>
+                        <td class="numeric">{{ "%.1f"|format(entry.success_rate * 100) }}%</td>
+                        <td class="numeric hide-mobile">{{ entry.num_documents }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Metric Breakdown Section -->
+        <section class="metric-breakdown">
+            <h2>📊 Metric Breakdown</h2>
+            <p class="text-muted">Performance by metric across all parsers</p>
+
+            <div class="metric-grid">
+                {% for metric_name, scores in metrics.items() %}
+                <div class="metric-card">
+                    <h4>{{ metric_name }}</h4>
+                    <div class="metric-scores">
+                        {% for score_item in scores %}
+                        <div class="metric-score-item">
+                            <span class="metric-parser">{{ score_item.parser }}</span>
+                            <span class="metric-value {% if score_item.score >= 0.8 %}text-success{% elif score_item.score >= 0.6 %}text-warning{% else %}text-error{% endif %}">
+                                {{ "%.3f"|format(score_item.score) if score_item.score is not none else "N/A" }}
+                            </span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: {{ (score_item.score * 100) if score_item.score is not none else 0 }}%"></div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+
+        <!-- Category Breakdown Section -->
+        <section class="category-breakdown">
+            <h2>📁 Category Breakdown</h2>
+            <p class="text-muted">Performance by document category or feature</p>
+
+            {% for category, data in categories.items() %}
+            <div class="category-section">
+                <h3>{{ category }}</h3>
+                <table class="category-table">
+                    <thead>
+                        <tr>
+                            <th>Parser</th>
+                            <th class="numeric">Avg Score</th>
+                            <th class="numeric">Success</th>
+                            <th class="numeric hide-mobile">Failures</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for entry in data %}
+                        <tr>
+                            <td>{{ entry.parser }}</td>
+                            <td class="numeric">
+                                <span class="{% if entry.avg_score >= 0.8 %}text-success{% elif entry.avg_score >= 0.6 %}text-warning{% else %}text-error{% endif %}">
+                                    {{ "%.3f"|format(entry.avg_score) }}
+                                </span>
+                            </td>
+                            <td class="numeric">{{ entry.successes }}</td>
+                            <td class="numeric hide-mobile">{{ entry.failures }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endfor %}
+        </section>
+
+        <!-- Chart Placeholder (Optional) -->
+        {% if include_charts %}
+        <section class="charts">
+            <h2>📈 Visualizations</h2>
+            <div class="chart-placeholder">
+                <p>📊 Interactive charts will be added in a future version</p>
+                <p class="text-muted" style="margin-top: 10px;">Consider integration with Chart.js or Plotly</p>
+            </div>
+        </section>
+        {% endif %}
+
+        <footer>
+            <p>Generated by <strong>PDF-Bench</strong> - Open-source benchmarking suite for PDF-to-Markdown conversion</p>
+            {% if config_file %}
+            <p class="text-muted" style="margin-top: 10px;">Config: {{ config_file }}</p>
+            {% endif %}
+        </footer>
+    </div>
+</body>
+</html>
