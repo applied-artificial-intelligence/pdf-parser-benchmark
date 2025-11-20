@@ -8,13 +8,16 @@ from typing import Any
 
 from pdf_bench.loader import DocumentInfo, LoadedConfig
 from pdf_bench.metrics import (
+    MarkdownASTParser,
     chrf_plus_plus_score,
+    character_error_rate,
     edit_similarity,
     element_f1_score,
     latex_f1_score,
-    teds_score,
+    teds_score_with_content,
     tree_similarity,
 )
+from pdf_bench.metrics.markdown_to_html import markdown_table_to_html
 from pdf_bench.systems import BaseParser
 
 try:
@@ -31,13 +34,64 @@ try:
 except ImportError:
     RICH_AVAILABLE = False
 
+
+# Wrapper functions for AST-based metrics
+# These metrics need parsed AST objects, not raw strings
+_ast_parser = MarkdownASTParser()
+
+
+def _tree_similarity_wrapper(ground_truth: str, prediction: str) -> float:
+    """Wrapper for tree_similarity that handles string parsing."""
+    try:
+        gt_ast = _ast_parser.parse(ground_truth)
+        pred_ast = _ast_parser.parse(prediction)
+        return tree_similarity(gt_ast, pred_ast)
+    except Exception:
+        # Return None on parse failure (will be converted to NaN)
+        return float("nan")
+
+
+def _element_f1_wrapper(ground_truth: str, prediction: str) -> float:
+    """Wrapper for element_f1_score that handles string parsing and returns F1."""
+    try:
+        gt_ast = _ast_parser.parse(ground_truth)
+        pred_ast = _ast_parser.parse(prediction)
+        scores = element_f1_score(gt_ast, pred_ast)
+        # element_f1_score returns a dict with 'overall' and 'per_element' keys
+        return scores['overall']['f1']
+    except Exception:
+        return float("nan")
+
+
+def _teds_wrapper(ground_truth: str, prediction: str) -> float:
+    """Wrapper for teds_score_with_content that converts markdown tables to HTML.
+
+    Uses content-aware TEDS that includes cell text in comparison, not just structure.
+    This provides more discriminative scores than structure-only TEDS.
+    """
+    try:
+        # Convert markdown tables to HTML
+        gt_html = markdown_table_to_html(ground_truth)
+        pred_html = markdown_table_to_html(prediction)
+
+        # If no tables found, return NaN
+        if gt_html is None or pred_html is None:
+            return float("nan")
+
+        return teds_score_with_content(pred_html, gt_html)
+    except Exception:
+        return float("nan")
+
+
 # Metric function registry
+# All functions must have signature: (ground_truth: str, prediction: str) -> float
 METRIC_FUNCTIONS: dict[str, Any] = {
     "edit_similarity": edit_similarity,
     "chrf++": chrf_plus_plus_score,
-    "tree_similarity": tree_similarity,
-    "element_f1": element_f1_score,
-    "teds": teds_score,
+    "character_error_rate": character_error_rate,
+    "tree_similarity": _tree_similarity_wrapper,
+    "element_f1": _element_f1_wrapper,
+    "teds": _teds_wrapper,  # Use wrapper to convert markdown→HTML
     "latex_f1": latex_f1_score,
 }
 
@@ -385,13 +439,8 @@ class BenchmarkRunner:
                 # Call metric function
                 score = metric_func(ground_truth, prediction)
 
-                # Handle element_f1 which returns ElementScores
-                if metric_name == "element_f1":
-                    metrics[f"{metric_name}_precision"] = score.precision
-                    metrics[f"{metric_name}_recall"] = score.recall
-                    metrics[f"{metric_name}_f1"] = score.f1
-                else:
-                    metrics[metric_name] = score
+                # All wrappers return floats directly
+                metrics[metric_name] = score
 
             except Exception:
                 # Mark metric as N/A on failure rather than failing entire benchmark
