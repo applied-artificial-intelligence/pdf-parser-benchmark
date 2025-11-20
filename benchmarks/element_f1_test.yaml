@@ -1,0 +1,28 @@
+name: Element F1 Fix Test
+description: Quick test to verify element_f1 returns valid scores
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: [synthetic]
+  max_documents: 3
+
+parser_config:
+  parsers:
+    - pdfplumber
+    - pymupdf
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - element_f1
+    - teds
+  aggregate: false
+
+output_config:
+  results_dir: results
+  save_format: json
+  save_predictions: false
+  verbose: true
+
+parallel_workers: 0
