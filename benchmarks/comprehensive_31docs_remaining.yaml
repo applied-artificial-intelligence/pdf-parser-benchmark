@@ -1,0 +1,54 @@
+# Remaining Open-Source Parsers (5 more)
+#
+# This complements comprehensive_31docs_fixed.yaml which tested:
+# marker_ollama, pdfplumber, pymupdf, pypdfium2, unstructured
+
+name: Comprehensive 31-Document Evaluation (Remaining Parsers)
+description: >
+  Test the remaining 5 open-source parsers on the full synthetic corpus
+  with all 6 metrics. Run overnight to complete the evaluation.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora:
+    - synthetic
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null  # All 31 documents
+
+parser_config:
+  parsers:
+    - docling           # IBM's recent parser
+    - extractous        # Rust-based
+    - pymupdf4llm       # PyMuPDF optimized for LLMs
+    - pdfminer          # Classic Python parser
+    - pypdf             # Alternative PDF library
+
+metric_config:
+  metrics:
+    # Text Accuracy
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+    # Structural Fidelity
+    - tree_similarity
+    - element_f1
+
+    # Table Integrity
+    - teds
+
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: results/comprehensive_31docs_remaining_report.html
+  save_predictions: true
+  verbose: true
+
+parallel_workers: 0  # Auto-detect CPU count
