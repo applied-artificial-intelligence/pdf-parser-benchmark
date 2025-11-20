@@ -171,14 +171,7 @@ def _worker_run_single(
                     continue
 
                 score = metric_func(ground_truth_md, generated_md)
-
-                # Handle element_f1 which returns ElementScores
-                if metric_name == "element_f1":
-                    metrics[f"{metric_name}_precision"] = score.precision
-                    metrics[f"{metric_name}_recall"] = score.recall
-                    metrics[f"{metric_name}_f1"] = score.f1
-                else:
-                    metrics[metric_name] = score
+                metrics[metric_name] = score
 
             except Exception:
                 metrics[metric_name] = float("nan")
