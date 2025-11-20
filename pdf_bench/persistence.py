@@ -24,14 +24,22 @@ def _serialize_metrics(metrics: dict[str, float]) -> dict[str, float | None]:
     Convert metrics dict, handling NaN values by converting to None.
 
     Args:
-        metrics: Dictionary of metric name -> float value (may contain NaN)
+        metrics: Dictionary of metric name -> float value (may contain NaN or None)
 
     Returns:
         Dictionary with NaN values converted to None for JSON serialization
     """
-    return {
-        key: (None if math.isnan(value) else value) for key, value in metrics.items()
-    }
+    result = {}
+    for key, value in metrics.items():
+        # Handle None values (shouldn't happen but be defensive)
+        if value is None:
+            result[key] = None
+        # Handle NaN values
+        elif isinstance(value, float) and math.isnan(value):
+            result[key] = None
+        else:
+            result[key] = value
+    return result
 
 
 def _deserialize_metrics(metrics: dict[str, float | None]) -> dict[str, float]:
