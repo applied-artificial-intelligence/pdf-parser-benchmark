@@ -220,10 +220,15 @@ class BenchmarkRunner:
         else:
             self.workers = max(1, parallel_workers)
 
-    def run(self) -> BenchmarkResults:
-        """Execute complete benchmark.
+    def run(self, checkpoint_path: Path | None = None, checkpoint_interval: int = 20) -> BenchmarkResults:
+        """Execute complete benchmark with incremental checkpointing.
 
         Uses parallel execution if workers > 1, otherwise sequential.
+        Saves checkpoints every checkpoint_interval results to allow resumption on failure.
+
+        Args:
+            checkpoint_path: Optional path to save/load checkpoints. If None, no checkpointing.
+            checkpoint_interval: Number of results between checkpoints (default: 20)
 
         Returns:
             BenchmarkResults with all parser/document combinations
@@ -243,21 +248,56 @@ class BenchmarkRunner:
             for doc in self.config.documents:
                 tasks.append((parser, doc))
 
+        # Load existing checkpoint if available
+        completed_tasks = set()
+        if checkpoint_path and checkpoint_path.exists():
+            try:
+                from pdf_bench.persistence import load_results
+                checkpoint_results = load_results(checkpoint_path)
+                results.results = checkpoint_results.results
+                results.success_count = checkpoint_results.success_count
+                results.failure_count = checkpoint_results.failure_count
+
+                # Build set of completed (parser, doc_id) pairs
+                for result in results.results:
+                    completed_tasks.add((result.parser_name, result.document_id))
+
+                print(f"✓ Loaded checkpoint: {len(completed_tasks)} tasks already complete")
+            except Exception as e:
+                print(f"⚠ Could not load checkpoint: {e}, starting fresh")
+
+        # Filter out already-completed tasks
+        remaining_tasks = []
+        for parser, doc in tasks:
+            if (parser.name, doc.doc_id) not in completed_tasks:
+                remaining_tasks.append((parser, doc))
+
+        if not remaining_tasks:
+            print("✓ All tasks already complete!")
+            return results
+
+        print(f"→ Running {len(remaining_tasks)} tasks ({len(completed_tasks)} already done)")
+
         # Execute tasks (parallel or sequential)
         if self.workers == 1:
-            # Sequential execution
-            task_results = self._run_sequential(tasks)
+            # Sequential execution with checkpointing
+            task_results = self._run_sequential_with_checkpoints(
+                remaining_tasks, results, checkpoint_path, checkpoint_interval
+            )
         else:
-            # Parallel execution
-            task_results = self._run_parallel(tasks)
+            # Parallel execution with checkpointing
+            task_results = self._run_parallel_with_checkpoints(
+                remaining_tasks, results, checkpoint_path, checkpoint_interval
+            )
 
-        # Collect results
-        for result in task_results:
-            results.results.append(result)
-            if result.success:
-                results.success_count += 1
-            else:
-                results.failure_count += 1
+        # Collect results (may already be in results from checkpointing)
+        if task_results:
+            for result in task_results:
+                results.results.append(result)
+                if result.success:
+                    results.success_count += 1
+                else:
+                    results.failure_count += 1
 
         return results
 
@@ -297,6 +337,189 @@ class BenchmarkRunner:
                 results.append(result)
 
         return results
+
+    def _run_sequential_with_checkpoints(
+        self,
+        tasks: list[tuple[BaseParser, DocumentInfo]],
+        results: BenchmarkResults,
+        checkpoint_path: Path | None,
+        checkpoint_interval: int,
+    ) -> list[DocumentResult]:
+        """Execute tasks sequentially with periodic checkpointing.
+
+        Args:
+            tasks: List of (parser, document) tuples to execute
+            results: BenchmarkResults object to update
+            checkpoint_path: Path to save checkpoints
+            checkpoint_interval: Number of results between checkpoints
+
+        Returns:
+            Empty list (results are added directly to results object)
+        """
+        from pdf_bench.persistence import save_results
+
+        task_results = []
+        checkpoint_counter = 0
+
+        if RICH_AVAILABLE:
+            with Progress(
+                TextColumn("[progress.description]{task.description}"),
+                BarColumn(),
+                MofNCompleteColumn(),
+                TaskProgressColumn(),
+                TimeElapsedColumn(),
+            ) as progress:
+                task_id = progress.add_task(
+                    f"Running {self.config.config.name}", total=len(tasks)
+                )
+
+                for parser, doc in tasks:
+                    result = self._run_single(parser, doc)
+                    task_results.append(result)
+                    results.results.append(result)
+
+                    if result.success:
+                        results.success_count += 1
+                    else:
+                        results.failure_count += 1
+
+                    checkpoint_counter += 1
+
+                    # Save checkpoint periodically
+                    if checkpoint_path and checkpoint_counter >= checkpoint_interval:
+                        save_results(results, checkpoint_path)
+                        checkpoint_counter = 0
+
+                    progress.update(task_id, advance=1)
+        else:
+            # No progress bar, just iterate
+            for i, (parser, doc) in enumerate(tasks):
+                result = self._run_single(parser, doc)
+                task_results.append(result)
+                results.results.append(result)
+
+                if result.success:
+                    results.success_count += 1
+                else:
+                    results.failure_count += 1
+
+                checkpoint_counter += 1
+
+                # Save checkpoint periodically
+                if checkpoint_path and checkpoint_counter >= checkpoint_interval:
+                    save_results(results, checkpoint_path)
+                    checkpoint_counter = 0
+                    print(f"✓ Checkpoint saved ({i+1}/{len(tasks)} tasks complete)")
+
+        # Final checkpoint
+        if checkpoint_path:
+            save_results(results, checkpoint_path)
+
+        return []  # Results already added to results object
+
+    def _run_parallel_with_checkpoints(
+        self,
+        tasks: list[tuple[BaseParser, DocumentInfo]],
+        results: BenchmarkResults,
+        checkpoint_path: Path | None,
+        checkpoint_interval: int,
+    ) -> list[DocumentResult]:
+        """Execute tasks in parallel with periodic checkpointing.
+
+        Args:
+            tasks: List of (parser, document) tuples to execute
+            results: BenchmarkResults object to update
+            checkpoint_path: Path to save checkpoints
+            checkpoint_interval: Number of results between checkpoints
+
+        Returns:
+            Empty list (results are added directly to results object)
+        """
+        from pdf_bench.persistence import save_results
+
+        # Prepare task arguments for worker function
+        worker_args = []
+        for parser, doc in tasks:
+            parser_class = type(parser)
+            parser_options = {}
+
+            if hasattr(parser, "_name"):
+                parser_options["name"] = parser._name
+            if hasattr(parser, "_should_fail"):
+                parser_options["should_fail"] = parser._should_fail
+            if hasattr(parser, "_output_content"):
+                parser_options["output_content"] = parser._output_content
+
+            worker_args.append(
+                (
+                    parser.name,
+                    parser_class,
+                    parser_options,
+                    doc.doc_id,
+                    doc.pdf_path,
+                    doc.ground_truth_path,
+                    self.config.results_dir,
+                    self.config.config.metric_config.metrics,
+                )
+            )
+
+        # Execute in parallel with progress tracking and checkpointing
+        checkpoint_counter = 0
+
+        if RICH_AVAILABLE:
+            with Progress(
+                TextColumn("[progress.description]{task.description}"),
+                BarColumn(),
+                MofNCompleteColumn(),
+                TaskProgressColumn(),
+                TimeElapsedColumn(),
+            ) as progress:
+                task_id = progress.add_task(
+                    f"Running {self.config.config.name} ({self.workers} workers)",
+                    total=len(tasks),
+                )
+
+                with mp.Pool(processes=self.workers) as pool:
+                    for result in pool.starmap(_worker_run_single, worker_args):
+                        results.results.append(result)
+
+                        if result.success:
+                            results.success_count += 1
+                        else:
+                            results.failure_count += 1
+
+                        checkpoint_counter += 1
+
+                        # Save checkpoint periodically
+                        if checkpoint_path and checkpoint_counter >= checkpoint_interval:
+                            save_results(results, checkpoint_path)
+                            checkpoint_counter = 0
+
+                        progress.update(task_id, advance=1)
+        else:
+            # No progress bar, just use pool
+            with mp.Pool(processes=self.workers) as pool:
+                for i, result in enumerate(pool.starmap(_worker_run_single, worker_args)):
+                    results.results.append(result)
+
+                    if result.success:
+                        results.success_count += 1
+                    else:
+                        results.failure_count += 1
+
+                    checkpoint_counter += 1
+
+                    # Save checkpoint periodically
+                    if checkpoint_path and checkpoint_counter >= checkpoint_interval:
+                        save_results(results, checkpoint_path)
+                        checkpoint_counter = 0
+                        print(f"✓ Checkpoint saved ({i+1}/{len(tasks)} tasks complete)")
+
+        # Final checkpoint
+        if checkpoint_path:
+            save_results(results, checkpoint_path)
+
+        return []  # Results already added to results object
 
     def _run_parallel(
         self, tasks: list[tuple[BaseParser, DocumentInfo]]
