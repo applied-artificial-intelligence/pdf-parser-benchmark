@@ -14,15 +14,27 @@ import yaml
 
 # Valid parser identifiers
 VALID_PARSERS = [
+    # Open-source parsers
     "pymupdf",
+    "pymupdf4llm",
     "pdfplumber",
-    "marker",
+    "pypdf",
+    "pypdf2",
+    "pypdfium2",
+    "pdfminer",
+    "tika",
+    "extractous",
     "unstructured",
-    # Future parsers
+    "marker",
+    "marker_ollama",
+    "docling",
+    "kreuzberg",
+    # Commercial/API parsers
     "aws_textract",
-    "azure_di",
-    "google_docai",
+    "azure_document_intelligence",
+    "google_document_ai",
     "databricks",
+    "landing_ai",
 ]
 
 # Valid metric identifiers
@@ -52,8 +64,8 @@ VALID_CORPORA = ["academic", "business", "synthetic"]
 # Valid domains for filtering
 VALID_DOMAINS = {
     "academic": ["arxiv"],
-    "business": ["gov-uk", "sec-edgar"],
-    "synthetic": ["pandoc", "libreoffice"],
+    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr"],
+    "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }
 
 # Valid features for filtering

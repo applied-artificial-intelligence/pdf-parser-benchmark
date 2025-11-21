@@ -12,25 +12,52 @@ from typing import Any
 
 from pdf_bench.config import BenchmarkConfig, load_config
 from pdf_bench.systems import (
+    AWSTextractParser,
+    AzureDocumentIntelligenceParser,
     BaseParser,
+    DatabricksParser,
+    DoclingParser,
+    ExtractousParser,
+    GoogleDocumentAIParser,
+    KreuzbergParser,
+    LandingAIParser,
+    MarkerOllamaParser,
     MarkerParser,
+    PDFMinerParser,
     PdfPlumberParser,
+    PyPDF2Parser,
+    PyPDFParser,
+    PyPDFium2Parser,
+    PyMuPDF4LLMParser,
     PyMuPDFParser,
+    TikaParser,
     UnstructuredParser,
 )
 from pdf_bench.utils.metadata import DocumentMetadata, load_metadata
 
 # Parser class registry mapping parser IDs to classes
 PARSER_REGISTRY: dict[str, type[BaseParser]] = {
+    # Open-source parsers
     "pymupdf": PyMuPDFParser,
+    "pymupdf4llm": PyMuPDF4LLMParser,
     "pdfplumber": PdfPlumberParser,
-    "marker": MarkerParser,
+    "pypdf": PyPDFParser,
+    "pypdf2": PyPDF2Parser,
+    "pypdfium2": PyPDFium2Parser,
+    "pdfminer": PDFMinerParser,
+    "tika": TikaParser,
+    "extractous": ExtractousParser,
     "unstructured": UnstructuredParser,
-    # Future parsers will be added here as they're implemented
-    # "aws_textract": AWSTextractParser,
-    # "azure_di": AzureDocumentIntelligenceParser,
-    # "google_docai": GoogleDocAIParser,
-    # "databricks": DatabricksParser,
+    "marker": MarkerParser,
+    "marker_ollama": MarkerOllamaParser,
+    "docling": DoclingParser,
+    "kreuzberg": KreuzbergParser,
+    # Commercial/API parsers
+    "aws_textract": AWSTextractParser,
+    "azure_document_intelligence": AzureDocumentIntelligenceParser,
+    "google_document_ai": GoogleDocumentAIParser,
+    "databricks": DatabricksParser,
+    "landing_ai": LandingAIParser,
 }
 
 
@@ -182,8 +209,17 @@ def discover_documents(
             # Get document paths - use metadata filename stem, not doc_id
             # (files are named like "01_basic.pdf" not "syn-basic-001.pdf")
             file_stem = metadata_path.stem  # e.g., "01_basic" from "01_basic.yaml"
+
+            # Try multiple locations for PDF and ground truth files
+            # Pattern 1: Same directory as YAML (synthetic corpus)
             pdf_path = metadata_path.parent / f"{file_stem}.pdf"
             gt_path = metadata_path.parent / f"{file_stem}.md"
+
+            # Pattern 2: Sibling pdfs/ and ground_truth/ directories (business corpus)
+            if not pdf_path.exists():
+                corpus_root = metadata_path.parent.parent  # e.g., corpus/business/invoices
+                pdf_path = corpus_root / "pdfs" / f"{file_stem}.pdf"
+                gt_path = corpus_root / "ground_truth" / f"{file_stem}.md"
 
             # Verify files exist
             if not pdf_path.exists() or not gt_path.exists():

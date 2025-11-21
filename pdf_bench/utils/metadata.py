@@ -16,7 +16,7 @@ import yaml
 VALID_CORPORA = ["academic", "business", "synthetic"]
 VALID_DOMAINS = {
     "academic": ["arxiv"],
-    "business": ["gov-uk", "sec-edgar"],
+    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr"],
     "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }
 
@@ -105,12 +105,14 @@ class DocumentMetadata:
                     f"Valid domains: {valid_domains}"
                 )
 
-        # Validate URL format (basic check)
+        # Validate URL format (basic check) - allow generated:// for synthetic data
         if self.source_url and not (
-            self.source_url.startswith("http://") or self.source_url.startswith("https://")
+            self.source_url.startswith("http://")
+            or self.source_url.startswith("https://")
+            or self.source_url.startswith("generated://")
         ):
             errors.append(
-                f"source_url must start with http:// or https://, got '{self.source_url}'"
+                f"source_url must start with http://, https://, or generated://, got '{self.source_url}'"
             )
 
         # Validate numeric fields
