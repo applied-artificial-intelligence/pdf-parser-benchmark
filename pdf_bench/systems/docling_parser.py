@@ -26,12 +26,21 @@ See config/parsers/docling.yaml for all available options.
 """
 
 import gc
+import os
 from pathlib import Path
 from typing import Any
 
-from pdf_bench.systems.base_parser import BaseParser
-from pdf_bench.utils.caching import cache_key, get_cached, store_cached
-from pdf_bench.utils.parser_config import get_parser_defaults, load_parser_config
+# Set thread limits BEFORE importing docling (affects MKL, OpenMP, etc.)
+# See: https://github.com/docling-project/docling-serve/issues/366
+_num_threads = os.environ.get("DOCLING_NUM_THREADS", "2")
+os.environ.setdefault("OMP_NUM_THREADS", _num_threads)
+os.environ.setdefault("MKL_NUM_THREADS", _num_threads)
+os.environ.setdefault("OPENBLAS_NUM_THREADS", _num_threads)
+
+# These imports must come after env setup  # noqa: E402
+from pdf_bench.systems.base_parser import BaseParser  # noqa: E402
+from pdf_bench.utils.caching import cache_key, get_cached, store_cached  # noqa: E402
+from pdf_bench.utils.parser_config import get_parser_defaults, load_parser_config  # noqa: E402
 
 try:
     import docling  # noqa: F401
@@ -255,16 +264,23 @@ class DoclingParser(BaseParser):
             # Store in cache
             cached_path = store_cached(key, output_path, cache_dir)
 
-            # Memory cleanup: call unload() on the result to release backend resources
+            # Memory cleanup: call unload() on backends to release resources
             # See: https://github.com/docling-project/docling/issues/2209
+            # and: https://github.com/docling-project/docling-serve/issues/366
             try:
-                if hasattr(result, "unload"):
-                    result.unload()
-                # Also try to unload the document backend if accessible
-                if hasattr(result, "document") and hasattr(result.document, "_backend"):
+                # Primary cleanup path: result.input._backend.unload()
+                if hasattr(result, "input") and hasattr(result.input, "_backend"):
+                    backend = result.input._backend
+                    if hasattr(backend, "unload"):
+                        backend.unload()
+                # Fallback: try document._backend
+                elif hasattr(result, "document") and hasattr(result.document, "_backend"):
                     backend = result.document._backend
                     if hasattr(backend, "unload"):
                         backend.unload()
+                # Also try result-level unload
+                if hasattr(result, "unload"):
+                    result.unload()
             except Exception:
                 pass  # Best effort cleanup
 
