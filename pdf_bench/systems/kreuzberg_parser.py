@@ -2,17 +2,22 @@
 
 Kreuzberg is a Rust-based document intelligence framework supporting 50+ formats
 with async processing and built-in OCR capabilities.
+
+NOTE: By default, this parser disables OCR to avoid loading heavy ML models.
+For OCR-based extraction, use force_ocr=True in parser_options.
 """
 
 import asyncio
 from pathlib import Path
 
 try:
-    import kreuzberg  # type: ignore[import-untyped]
+    import kreuzberg
+    from kreuzberg import ExtractionConfig
 
     KREUZBERG_AVAILABLE = True
 except ImportError:
     KREUZBERG_AVAILABLE = False
+    ExtractionConfig = None  # type: ignore[misc,assignment]
 
 from pdf_bench.systems.base_parser import BaseParser
 from pdf_bench.utils.caching import cache_key, get_cached, store_cached
@@ -22,10 +27,15 @@ class KreuzbergParser(BaseParser):
     """PDF parser using Kreuzberg for text extraction.
 
     Kreuzberg is a Rust-based framework with async support and OCR capabilities.
+
+    By default, OCR is disabled for performance. Enable with force_ocr=True.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, force_ocr: bool = False) -> None:
         """Initialize the KreuzbergParser.
+
+        Args:
+            force_ocr: If True, enable OCR for scanned documents (memory-intensive)
 
         Raises:
             ImportError: If kreuzberg is not installed
@@ -34,6 +44,8 @@ class KreuzbergParser(BaseParser):
             raise ImportError(
                 "kreuzberg is required for KreuzbergParser. Install with: pip install kreuzberg"
             )
+
+        self._force_ocr = force_ocr
 
         try:
             self._version = str(kreuzberg.__version__)
@@ -60,7 +72,7 @@ class KreuzbergParser(BaseParser):
         Returns:
             Path: Path to the generated Markdown file
         """
-        from kreuzberg import extract_file  # type: ignore[import-untyped]
+        from kreuzberg import extract_file
 
         # Validate input
         if not pdf_path.exists():
@@ -77,9 +89,15 @@ class KreuzbergParser(BaseParser):
 
         # Parse the PDF using async function
         try:
+            # Configure extraction - disable OCR by default to avoid loading ML models
+            if self._force_ocr:
+                config = ExtractionConfig(force_ocr=True)
+            else:
+                # Text-only mode: no OCR backend, much faster and lighter
+                config = ExtractionConfig(ocr_backend=None, force_ocr=False)
 
-            async def extract_async():
-                result = await extract_file(str(pdf_path))
+            async def extract_async() -> str:
+                result = await extract_file(str(pdf_path), config=config)
                 return result.content
 
             # Run async function in sync context
