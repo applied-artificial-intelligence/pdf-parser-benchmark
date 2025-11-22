@@ -3,10 +3,18 @@
 Docling is a modern document intelligence library from IBM that
 converts PDFs to markdown with excellent structure preservation.
 
-Resource Requirements:
-    - Fast mode (no OCR): ~2-4GB RAM, ~2-5 sec/doc
-    - Accurate mode (with OCR): ~8-12GB RAM, ~30-60 sec/doc
+IMPORTANT - Resource Requirements:
+    - Fast mode (no OCR): ~8-12GB RAM per instance, ~2-5 sec/doc
+    - Accurate mode (with OCR): ~12-16GB RAM per instance, ~30-60 sec/doc
     - GPU recommended for OCR mode (CUDA or MPS)
+    - KNOWN MEMORY LEAK: Docling accumulates memory over conversions
+      (see https://github.com/docling-project/docling/issues/2209)
+    - Converter is recreated every 10 documents to mitigate leaks
+
+Benchmark Recommendations:
+    - Use --workers 1 for docling (memory-intensive)
+    - For 128GB RAM: max 8 workers for lightweight parsers, max 1-2 for docling
+    - Set OMP_NUM_THREADS=2 env var to limit internal parallelism
 
 Configuration (in order of precedence):
     1. Constructor arguments: DoclingParser(do_ocr=True)
@@ -17,8 +25,13 @@ Configuration (in order of precedence):
 See config/parsers/docling.yaml for all available options.
 """
 
+import gc
 from pathlib import Path
 from typing import Any
+
+from pdf_bench.systems.base_parser import BaseParser
+from pdf_bench.utils.caching import cache_key, get_cached, store_cached
+from pdf_bench.utils.parser_config import get_parser_defaults, load_parser_config
 
 try:
     import docling  # noqa: F401
@@ -27,9 +40,9 @@ try:
 except ImportError:
     DOCLING_AVAILABLE = False
 
-from pdf_bench.systems.base_parser import BaseParser
-from pdf_bench.utils.caching import cache_key, get_cached, store_cached
-from pdf_bench.utils.parser_config import get_parser_defaults, load_parser_config
+# Recreate converter every N documents to mitigate memory leaks
+# See: https://github.com/docling-project/docling/issues/2209
+CONVERTER_RESET_INTERVAL = 10
 
 # Known configuration options for environment variable lookup
 KNOWN_OPTIONS = [
@@ -122,11 +135,13 @@ class DoclingParser(BaseParser):
         # Extract commonly used options
         self._do_ocr = self._config.get("do_ocr", False)
         self._do_table_structure = self._config.get("do_table_structure", True)
-        self._num_threads = self._config.get("num_threads", 4)
+        self._num_threads = self._config.get("num_threads", 2)  # Lower default for memory
         self._device = self._config.get("device", "auto")
 
         # Lazy-loaded converter (created on first use)
         self._converter: Any = None
+        # Counter for memory leak mitigation
+        self._conversion_count = 0
 
     def _get_converter(self) -> Any:
         """Get or create the document converter with configured options."""
@@ -222,6 +237,12 @@ class DoclingParser(BaseParser):
 
         # Parse the PDF
         try:
+            # Reset converter periodically to mitigate memory leaks
+            if self._conversion_count >= CONVERTER_RESET_INTERVAL:
+                self._converter = None
+                gc.collect()
+                self._conversion_count = 0
+
             converter = self._get_converter()
             result = converter.convert(str(pdf_path))
             markdown_text = result.document.export_to_markdown()
@@ -233,6 +254,11 @@ class DoclingParser(BaseParser):
 
             # Store in cache
             cached_path = store_cached(key, output_path, cache_dir)
+
+            # Increment counter and run gc after each conversion
+            self._conversion_count += 1
+            gc.collect()
+
             return cached_path
 
         except Exception as e:
@@ -241,10 +267,20 @@ class DoclingParser(BaseParser):
 
 # Convenience factory functions for benchmark configurations
 def create_docling_fast() -> DoclingParser:
-    """Create Docling parser optimized for speed (no OCR)."""
-    return DoclingParser(do_ocr=False, do_table_structure=True, num_threads=4)
+    """Create Docling parser optimized for speed (no OCR).
+
+    Uses conservative settings to avoid memory exhaustion:
+    - 2 threads (vs 4 default)
+    - No OCR
+    - Table structure enabled
+    """
+    return DoclingParser(do_ocr=False, do_table_structure=True, num_threads=2)
 
 
 def create_docling_accurate() -> DoclingParser:
-    """Create Docling parser optimized for accuracy (with OCR)."""
-    return DoclingParser(do_ocr=True, do_table_structure=True, num_threads=4)
+    """Create Docling parser optimized for accuracy (with OCR).
+
+    WARNING: Very memory-intensive (~12-16GB per instance).
+    Use --workers 1 when running benchmarks with this parser.
+    """
+    return DoclingParser(do_ocr=True, do_table_structure=True, num_threads=2)

@@ -3,9 +3,16 @@
 # Documents with embedded text (machine-readable PDFs).
 # All parsers can handle these documents efficiently.
 #
-# Corpora: synthetic (31 docs), CUAD (75 docs)
-# Total: 106 documents
-# Estimated time: 30-60 minutes with 4 workers
+# Corpora: synthetic (31 docs), CUAD (75 docs), business
+# Total: ~350 documents
+#
+# RESOURCE REQUIREMENTS:
+#   - docling: ~8-12GB RAM per worker (use workers=1)
+#   - pymupdf/pdfplumber: ~500MB RAM per worker (safe with workers=4)
+#
+# Estimated time:
+#   - With docling (workers=1): 2-4 hours
+#   - Without docling (workers=4): 30-60 minutes
 
 name: "Tier 1: Text-Based Documents"
 description: |
@@ -27,17 +34,17 @@ parser_config:
   parsers:
     # Fast, lightweight parsers
     - pymupdf
-    - pymupdf4llm
     - pdfplumber
-    - pypdf
-    - pypdfium2
-    - pdfminer
-    # Medium-weight parsers
-    - kreuzberg
-    - extractous
     # Heavy parsers (no OCR mode)
     - docling  # Fast mode, no OCR
-    - marker
+    # Commented out - require extra installation:
+    # - pymupdf4llm
+    # - pypdf
+    # - pypdfium2
+    # - pdfminer
+    # - kreuzberg
+    # - extractous
+    # - marker
 
 metric_config:
   metrics:
@@ -51,5 +58,8 @@ output_config:
   checkpoint_interval: 20
 
 execution_config:
-  workers: 4
+  # IMPORTANT: docling is memory-intensive (~8-12GB per worker)
+  # Use workers=1 when including docling to avoid OOM
+  # For pymupdf/pdfplumber only, workers=4 is safe
+  workers: 1
   timeout_per_document: 120

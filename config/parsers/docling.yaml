@@ -37,11 +37,14 @@ table_mode: fast
 # Performance Settings
 # --------------------
 # Number of CPU threads for processing
-num_threads: 4
+# IMPORTANT: Lower values reduce memory usage
+# Each thread adds ~1-2GB memory overhead
+num_threads: 2
 
 # Device selection: "auto", "cpu", "cuda", "mps"
 # "auto" will use GPU if available
-device: auto
+# NOTE: GPU mode requires additional VRAM (~4-8GB)
+device: cpu
 
 # Advanced Options
 # ----------------
