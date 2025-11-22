@@ -1,0 +1,23 @@
+doc_id: 29_mixed_policy_doc
+source_url: https://github.com/pdf-bench/corpus/synthetic/29_mixed_policy_doc.docx
+corpus: synthetic
+domain: mixed
+title: 'Employee Handbook: Section 5'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- nested
+- policy
+- hierarchy
+license: MIT
+notes: Policy document with nested lists and tables. Tests hierarchy.
+files:
+  docx: 29_mixed_policy_doc.docx
+  pdf: 29_mixed_policy_doc.pdf
+  ground_truth: 29_mixed_policy_doc.md
+hashes:
+  pdf: 5a32c77657caed5bf8ffe1f10142905d7f83440d8f2e852ccfbe208889a2e2f7
+  ground_truth: 1013c907e049907dadd5f0634d86c20ee0dbae33aaab4d0358160f6025bb15b6

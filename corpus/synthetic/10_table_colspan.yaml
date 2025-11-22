@@ -1,0 +1,21 @@
+doc_id: 10_table_colspan
+source_url: https://github.com/pdf-bench/corpus/synthetic/10_table_colspan.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 02: Merged Columns'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- merged_cells
+- colspan
+license: MIT
+notes: Table with merged cells (colspan). Tests horizontal cell merging.
+files:
+  docx: 10_table_colspan.docx
+  pdf: 10_table_colspan.pdf
+  ground_truth: 10_table_colspan.md
+hashes:
+  pdf: 69ddd7adb8f44f776f889334a85a55165a427e951f56b0292a074a6c629c9b6d
+  ground_truth: cbad2792822397d90b86ea376788bdcbc541ecafb4a0d4a52efe9e0998793f2c

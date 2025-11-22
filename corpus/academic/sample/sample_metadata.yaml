@@ -1,0 +1,54 @@
+description: Sample arXiv papers for Phase 2 testing
+focus: Math-heavy papers for Marker equation testing
+papers:
+- arxiv_id: '2302.14852'
+  complexity:
+    math: high
+    tables: low
+  html: 2302.14852.html
+  id: arxiv_023
+  notes: Pure math with dense equations - perfect for Marker
+  pdf: 2302.14852.pdf
+  source: 2302.14852.tar.gz
+  title: Navier-Stokes Equation
+- arxiv_id: '2303.18223'
+  complexity:
+    math: low
+    tables: high
+  html: 2303.18223.html
+  id: arxiv_001
+  notes: Extensive comparison tables
+  pdf: 2303.18223.pdf
+  source: 2303.18223.tar.gz
+  title: Survey of Large Language Models
+- arxiv_id: '2302.13971'
+  complexity:
+    math: medium
+    tables: high
+  html: 2302.13971.html
+  id: arxiv_003
+  notes: Foundation model with scaling laws (some equations)
+  pdf: 2302.13971.pdf
+  source: 2302.13971.tar.gz
+  title: LLaMA
+- arxiv_id: '2303.17564'
+  complexity:
+    math: medium
+    tables: high
+  html: 2303.17564.html
+  id: arxiv_004
+  notes: Domain-specific LLM with training details
+  pdf: 2303.17564.pdf
+  source: 2303.17564.tar.gz
+  title: BloombergGPT
+- arxiv_id: '2303.08774'
+  complexity:
+    math: low
+    tables: high
+  html: 2303.08774.html
+  id: arxiv_002
+  notes: Extensive benchmarks and evaluation tables
+  pdf: 2303.08774.pdf
+  source: 2303.08774.tar.gz
+  title: GPT-4 Technical Report
+total: 5

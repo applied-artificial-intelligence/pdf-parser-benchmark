@@ -32,6 +32,12 @@ import subprocess
 import sys
 from pathlib import Path
 
+try:
+    import marker  # type: ignore[import-untyped]
+    MARKER_AVAILABLE = True
+except ImportError:
+    MARKER_AVAILABLE = False
+
 from pdf_bench.systems.base_parser import BaseParser
 from pdf_bench.utils.caching import cache_key, get_cached, store_cached
 
@@ -66,8 +72,15 @@ class MarkerParser(BaseParser):
         environment and verifies it's available.
 
         Raises:
+            ImportError: If marker-pdf is not installed
             RuntimeError: If marker_single executable is not found in the venv.
         """
+        if not MARKER_AVAILABLE:
+            raise ImportError(
+                "marker-pdf is required for MarkerParser. "
+                "Install with: pip install marker-pdf"
+            )
+
         # Find marker_single executable in virtual environment
         venv_bin = Path(sys.prefix) / "bin" / "marker_single"
 
@@ -81,11 +94,9 @@ class MarkerParser(BaseParser):
 
         # Get version from marker-pdf package
         try:
-            import marker  # type: ignore[import-untyped]
-
             version: str = str(marker.__version__)
             self._version = version
-        except (ImportError, AttributeError):
+        except AttributeError:
             # Fallback if marker package doesn't have __version__
             self._version = "1.10.1"
 

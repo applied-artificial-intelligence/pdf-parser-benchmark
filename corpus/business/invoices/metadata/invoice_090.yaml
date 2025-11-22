@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Singapore
+  name: Romero-Jimenez
+document_id: invoice_090
+due_date: '2025-10-31'
+generated_at: '2025-11-18T16:47:12.075414'
+industry: saas
+invoice_date: '2025-10-01'
+invoice_number: INV-58567
+line_item_count: 6
+payment_terms: Net 30
+region: APAC
+subtotal: 9792056.56
+tax_amount: 979205.66
+template_style: small_business
+total: 10771262.22
+vendor:
+  country: New Zealand
+  name: Cloud Solutions
+corpus: business
+source_url: generated://invoice_090
+domain: invoices
+doc_id: invoice_090

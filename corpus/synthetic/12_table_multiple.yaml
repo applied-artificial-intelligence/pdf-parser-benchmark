@@ -1,0 +1,20 @@
+doc_id: 12_table_multiple
+source_url: https://github.com/pdf-bench/corpus/synthetic/12_table_multiple.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 04: Multiple Tables'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- multiple_tables
+license: MIT
+notes: Multiple tables separated by text. Tests table boundary detection.
+files:
+  docx: 12_table_multiple.docx
+  pdf: 12_table_multiple.pdf
+  ground_truth: 12_table_multiple.md
+hashes:
+  pdf: 6b9d2ca9c5f9d2cbb10e616f118ec1f80c260f07ce1e3aa40e885bc6813ce273
+  ground_truth: 6eceb0f612ead2a874420cd41a33fb0a3b428c3138232df7385bc68871b193a7

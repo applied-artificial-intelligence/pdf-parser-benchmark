@@ -1,0 +1,23 @@
+doc_id: 19_list_mixed_types
+source_url: https://github.com/pdf-bench/corpus/synthetic/19_list_mixed_types.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 05: Mixed List Types'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- bullets
+- numbered
+- nested
+- mixed
+license: MIT
+notes: Mixed numbered and bulleted lists. Tests list type detection.
+files:
+  docx: 19_list_mixed_types.docx
+  pdf: 19_list_mixed_types.pdf
+  ground_truth: 19_list_mixed_types.md
+hashes:
+  pdf: 9eb50df604b4b2b29b0c788d7be4a635dc29ab282a795477ed2a314eccf786f0
+  ground_truth: ce0001e02276bd0b3dad7d47f53e23d2f11cd81f528a46c75802747c4655ba8a

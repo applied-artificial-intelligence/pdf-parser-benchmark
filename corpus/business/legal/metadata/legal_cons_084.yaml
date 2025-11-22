@@ -1,0 +1,25 @@
+id: legal_cons_084
+contract_type: consulting
+generated_at: '2025-11-18T18:10:11.719417'
+source: synthetic
+category: business
+subcategory: legal
+client: Anderson Technologies
+consultant: Jaime Ramos
+hourly_rate: 500
+jurisdiction: Florida
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_cons_084
+doc_id: legal_cons_084
+domain: legal

@@ -1,0 +1,14 @@
+corpus: academic
+data_source: academic_literature
+doc_id: omnidoc_062
+domain: academic
+features: []
+language: english
+layout: other_layout
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_062
+special_issues:
+- table_fewer_line
+- table_horizontal
+- table_span
+- table_with_formula

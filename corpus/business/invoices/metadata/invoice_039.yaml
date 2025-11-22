@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Spain
+  name: Rohleder Drewes Stiftung & Co. KG
+document_id: invoice_039
+due_date: '2025-12-01'
+generated_at: '2025-11-18T16:45:56.565302'
+industry: printing
+invoice_date: '2025-11-01'
+invoice_number: INV-66767
+line_item_count: 4
+payment_terms: 50% Deposit, 50% on Completion
+region: EU
+subtotal: 12313.73
+tax_amount: 2585.88
+template_style: economy
+total: 14899.61
+vendor:
+  country: France
+  name: Professional Publishing
+corpus: business
+source_url: generated://invoice_039
+domain: invoices
+doc_id: invoice_039

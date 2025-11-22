@@ -1,0 +1,22 @@
+doc_id: 24_column_newsletter
+source_url: https://github.com/pdf-bench/corpus/synthetic/24_column_newsletter.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Newsletter: Company Updates'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_2
+- newsletter
+- articles
+license: MIT
+notes: Newsletter-style layout. Tests article separation.
+files:
+  docx: 24_column_newsletter.docx
+  pdf: 24_column_newsletter.pdf
+  ground_truth: 24_column_newsletter.md
+hashes:
+  pdf: 511820c86112bd0717643a06639fd967417b97071b8daca5ebc9625702ce7efd
+  ground_truth: b28affa584bec922005f17a7a32dd51ea76cd4dbfb943000daa1c22e8fb7cd6d

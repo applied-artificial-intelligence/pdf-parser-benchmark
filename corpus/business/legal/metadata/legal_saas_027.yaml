@@ -1,0 +1,26 @@
+id: legal_saas_027
+contract_type: saas
+generated_at: '2025-11-18T18:09:32.363478'
+source: synthetic
+category: business
+subcategory: legal
+provider: Lopez, Harding and Torres Inc.
+customer: Chambers, Sloan and Gardner Corporation
+platform_name: Cloud Workspace
+annual_value: 219996
+jurisdiction: Texas
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_saas_027
+doc_id: legal_saas_027
+domain: legal

@@ -1,0 +1,23 @@
+doc_id: 13_table_complex_headers
+source_url: https://github.com/pdf-bench/corpus/synthetic/13_table_complex_headers.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 05: Complex Structure'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- merged_cells
+- rowspan
+- colspan
+- complex_headers
+license: MIT
+notes: Complex table with multi-level merged headers. Tests advanced structure.
+files:
+  docx: 13_table_complex_headers.docx
+  pdf: 13_table_complex_headers.pdf
+  ground_truth: 13_table_complex_headers.md
+hashes:
+  pdf: 039cb4b641a764858417b409c25e9dd47aa89ceab89c228bf3bd5e6e0eac5312
+  ground_truth: 4e8416f0ea582897642a00274b2de519b3737ffe2c72fa758b68f1e5e55418b7

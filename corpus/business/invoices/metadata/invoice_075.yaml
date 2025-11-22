@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: George, Park and Sherman
+document_id: invoice_075
+due_date: '2025-11-30'
+generated_at: '2025-11-18T16:46:49.626514'
+industry: it_consulting
+invoice_date: '2025-10-31'
+invoice_number: INV-28221
+line_item_count: 6
+payment_terms: Net 30
+region: CA
+subtotal: 8685292.94
+tax_amount: 1300622.62
+template_style: enterprise
+total: 9985915.56
+vendor:
+  country: Canada
+  name: Digital Systems
+corpus: business
+source_url: generated://invoice_075
+domain: invoices
+doc_id: invoice_075

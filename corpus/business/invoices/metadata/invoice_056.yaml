@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: United Kingdom
+  name: Brown, Mitchell and Bruce
+document_id: invoice_056
+due_date: '2025-08-22'
+generated_at: '2025-11-18T16:46:21.672021'
+industry: accounting
+invoice_date: '2025-08-22'
+invoice_number: INV-58934
+line_item_count: 6
+payment_terms: Due on Receipt
+region: UK
+subtotal: 932537.6
+tax_amount: 186507.52
+template_style: economy
+total: 1119045.12
+vendor:
+  country: United Kingdom
+  name: Liberty Tax Group
+corpus: business
+source_url: generated://invoice_056
+domain: invoices
+doc_id: invoice_056

@@ -1,0 +1,22 @@
+doc_id: 27_mixed_business_report
+source_url: https://github.com/pdf-bench/corpus/synthetic/27_mixed_business_report.docx
+corpus: synthetic
+domain: mixed
+title: Quarterly Business Review
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- headings
+- mixed_content
+license: MIT
+notes: Business report with tables and lists. Tests real-world complexity.
+files:
+  docx: 27_mixed_business_report.docx
+  pdf: 27_mixed_business_report.pdf
+  ground_truth: 27_mixed_business_report.md
+hashes:
+  pdf: 337f019742a3a69568ab8bc1de9b3bd154ad77f3aa2a5ad448e019ff9610df33
+  ground_truth: d900d891eb2109c39a4d87bffe502b562301ef85bdb37741143a60dc7c648717

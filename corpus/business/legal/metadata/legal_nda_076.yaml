@@ -1,0 +1,25 @@
+id: legal_nda_076
+contract_type: nda
+generated_at: '2025-11-18T18:10:05.175221'
+source: synthetic
+category: business
+subcategory: legal
+disclosing_party: Taylor-Higgins LLC
+receiving_party: Hines-King Corporation
+purpose: evaluating investment opportunities
+jurisdiction: Delaware
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_nda_076
+doc_id: legal_nda_076
+domain: legal

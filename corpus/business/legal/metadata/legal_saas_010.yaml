@@ -1,0 +1,26 @@
+id: legal_saas_010
+contract_type: saas
+generated_at: '2025-11-18T18:09:23.035869'
+source: synthetic
+category: business
+subcategory: legal
+provider: Smith-Smith Ltd.
+customer: Morton Technologies
+platform_name: Integrated Hub
+annual_value: 264996
+jurisdiction: California
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_saas_010
+doc_id: legal_saas_010
+domain: legal

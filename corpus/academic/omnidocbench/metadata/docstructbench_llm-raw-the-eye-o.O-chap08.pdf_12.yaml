@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-the-eye-o.O-chap08.pdf_12
+domain: book
+height: 2200
+language: english
+layout: single_column
+page_no: 12
+source: omnidocbench
+width: 1700

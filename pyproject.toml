@@ -1,6 +1,6 @@
 [project]
 name = "pdf-bench"
-version = "0.1.0"
+version = "1.0.0"
 description = "Open-source benchmarking suite for PDF-to-Markdown conversion"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -8,17 +8,20 @@ license = {text = "MIT"}
 authors = [
     {name = "PDF-Bench Contributors"}
 ]
-keywords = ["pdf", "markdown", "benchmark", "conversion", "evaluation"]
+keywords = ["pdf", "markdown", "benchmark", "conversion", "evaluation", "document-processing", "nlp"]
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup :: Markdown",
+    "Topic :: Scientific/Engineering :: Information Analysis",
 ]
-
 dependencies = [
     "typer>=0.9.0",
     "rich>=13.0.0",
@@ -32,7 +35,19 @@ dependencies = [
     "sacrebleu>=2.3.0",
     "zss>=1.2.0",
     "requests>=2.31.0",
+    "boto3>=1.40.73",
+    "azure-ai-documentintelligence>=1.0.2",
+    "datasets>=4.4.1",
+    "python-dotenv>=1.2.1",
+    "google-cloud-documentai>=3.7.0",
 ]
+
+[project.urls]
+Homepage = "https://github.com/YOUR_USERNAME/pdf-bench"
+Repository = "https://github.com/YOUR_USERNAME/pdf-bench"
+Issues = "https://github.com/YOUR_USERNAME/pdf-bench/issues"
+Documentation = "https://github.com/YOUR_USERNAME/pdf-bench#readme"
+Changelog = "https://github.com/YOUR_USERNAME/pdf-bench/releases"
 
 [project.optional-dependencies]
 metrics = [
@@ -67,6 +82,47 @@ pdfbench = "pdf_bench.main:app"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.claude",
+    "/.git",
+    "/.github/workflows",
+    "/.vscode",
+    "/corpus/academic",
+    "/corpus/business/sec_edgar",
+    "/corpus/business/sec_edgar_test",
+    "/corpus/business/sec_optionc",
+    "/corpus/business/govuk_pdf",
+    "*.log",
+    "*.pyc",
+    "*.pyo",
+    "*~",
+    "/.pytest_cache",
+    "/.mypy_cache",
+    "/.ruff_cache",
+    "/dist",
+    "/build",
+    "/__pycache__",
+    "/node_modules",
+    "/examples/*.pdf",
+    "/batch_*.py",
+    "/browser_*.py",
+    "/chrome_*.py",
+    "/download_*.py",
+    "/find_*.py",
+    "/save_*.py",
+    "/sec_*.log",
+    "/arxiv_*.log",
+    "/*_manifest*.yaml",
+    "TASK-*.md",
+    "SEC_DOWNLOAD_SUMMARY.md",
+    ".mcp.json",
+    ".pre-commit-config.yaml",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["pdf_bench"]
 
 [tool.ruff]
 line-length = 100

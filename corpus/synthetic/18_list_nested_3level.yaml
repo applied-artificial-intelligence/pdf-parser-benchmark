@@ -1,0 +1,22 @@
+doc_id: 18_list_nested_3level
+source_url: https://github.com/pdf-bench/corpus/synthetic/18_list_nested_3level.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 04: Three-Level Nesting'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- bullets
+- nested
+- depth_3
+license: MIT
+notes: Three-level nested bullets. Tests deep nesting.
+files:
+  docx: 18_list_nested_3level.docx
+  pdf: 18_list_nested_3level.pdf
+  ground_truth: 18_list_nested_3level.md
+hashes:
+  pdf: 455c5a17c3bcf49ee68ac29091f16c94ee1cdfa9ad9c1890a67e6bcb4d7cdc32
+  ground_truth: 30156936333120f14c39e593e14c1dbdbfc446c9bf9a6f6043b97e9820820b8c

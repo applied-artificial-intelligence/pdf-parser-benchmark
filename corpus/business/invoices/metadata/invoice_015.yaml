@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Peterson-Richards
+document_id: invoice_015
+due_date: '2025-10-13'
+generated_at: '2025-11-18T16:45:23.428409'
+industry: legal
+invoice_date: '2025-10-13'
+invoice_number: INV-37661
+line_item_count: 4
+payment_terms: Due on Receipt
+region: US
+subtotal: 86369.76
+tax_amount: 7557.35
+template_style: economy
+total: 93927.11
+vendor:
+  country: USA
+  name: Wilson Legal Group
+corpus: business
+source_url: generated://invoice_015
+domain: invoices
+doc_id: invoice_015

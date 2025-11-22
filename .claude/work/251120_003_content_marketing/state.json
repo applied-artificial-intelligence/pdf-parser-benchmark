@@ -1,0 +1,699 @@
+{
+  "work_unit_id": "251120_003_content_marketing",
+  "name": "PDF-Bench Content Marketing Execution",
+  "description": "Execute comprehensive content marketing campaign: 278-doc benchmark, domain analysis, OmniDocBench comparison, and 6-7 high-quality blog posts to showcase document intelligence expertise",
+  "status": "active",
+  "created_at": "2025-11-20T18:30:00Z",
+  "estimated_effort_hours": 60,
+  "timeline": "2-week MVP (evaluation), 8-week full rollout (content creation)",
+  "critical_path": "TASK-001 → TASK-002 → TASK-004 → TASK-005 (blog posts depend on analysis)",
+  
+  "phases": [
+    {
+      "phase_id": "PHASE-1",
+      "name": "Complete Benchmark Evaluation",
+      "description": "Run comprehensive 278-doc benchmark and domain analysis",
+      "estimated_hours": 14,
+      "timeline": "Week 1",
+      "tasks": ["TASK-001", "TASK-002", "TASK-003"]
+    },
+    {
+      "phase_id": "PHASE-2", 
+      "name": "Content Creation - Tier 1 (Credibility)",
+      "description": "Write 3 attention-getting blog posts to establish technical credibility",
+      "estimated_hours": 10,
+      "timeline": "Week 1-2",
+      "tasks": ["TASK-004", "TASK-005", "TASK-006"]
+    },
+    {
+      "phase_id": "PHASE-3",
+      "name": "Content Creation - Tier 2 (Methodology)",
+      "description": "Write 3-4 methodology and domain-specific blog posts",
+      "estimated_hours": 14,
+      "timeline": "Week 2-4",
+      "tasks": ["TASK-007", "TASK-008", "TASK-009", "TASK-010"]
+    },
+    {
+      "phase_id": "PHASE-4",
+      "name": "GitHub & Documentation Polish",
+      "description": "Update README, create visualizations, polish documentation",
+      "estimated_hours": 12,
+      "timeline": "Week 3-4",
+      "tasks": ["TASK-011", "TASK-012", "TASK-013"]
+    },
+    {
+      "phase_id": "PHASE-5",
+      "name": "Rollout & Engagement",
+      "description": "Publish posts on schedule, engage with community",
+      "estimated_hours": 8,
+      "timeline": "Week 5-8",
+      "tasks": ["TASK-014", "TASK-015"]
+    }
+  ],
+
+  "tasks": [
+    {
+      "task_id": "TASK-001",
+      "title": "Run 278-Document Comprehensive Benchmark",
+      "description": "Execute full benchmark evaluation: 278 documents × 10 parsers = 2,780 runs with all metrics (text, structure, elements, tables)",
+      "status": "ready",
+      "priority": "critical",
+      "estimated_hours": 8,
+      "phase": "PHASE-1",
+      "dependencies": [],
+      "blocks": ["TASK-002", "TASK-003", "TASK-004", "TASK-005"],
+      "parallel_opportunities": "Can run in background overnight",
+      
+      "acceptance_criteria": [
+        "All 10 parsers tested on 278 documents",
+        "Results saved in structured JSON format",
+        "Success rate >95% (failures documented)",
+        "All 6 metrics computed: edit_similarity, chrf++, CER, tree_similarity, element_f1, TEDS",
+        "Per-domain results preserved (synthetic, legal, invoices, HR)"
+      ],
+      
+      "implementation_notes": [
+        "Create comprehensive_278docs.yaml benchmark config",
+        "Include all 10 parsers: docling, marker_ollama, pymupdf4llm, pdfplumber, pypdf, pypdfium2, extractous, unstructured, pymupdf, pdfminer",
+        "Use parallel_workers: 8 for speed",
+        "Run overnight: estimated 8-12 hours runtime",
+        "Handle failures gracefully (docling 23% failure rate expected)",
+        "Save to results/comprehensive_278docs_full.json"
+      ],
+      
+      "deliverables": [
+        "benchmarks/comprehensive_278docs.yaml - benchmark config",
+        "benchmarks/results/comprehensive_278docs_full.json - complete results",
+        "benchmarks/results/comprehensive_278docs_summary.txt - quick stats"
+      ]
+    },
+
+    {
+      "task_id": "TASK-002",
+      "title": "Domain-Specific Analysis",
+      "description": "Analyze benchmark results by domain (synthetic, legal, invoices, HR) to create domain-specific leaderboards and identify ranking changes",
+      "status": "blocked",
+      "priority": "high",
+      "estimated_hours": 3,
+      "phase": "PHASE-1",
+      "dependencies": ["TASK-001"],
+      "blocks": ["TASK-007"],
+      "parallel_opportunities": "None",
+      
+      "acceptance_criteria": [
+        "Results segmented by 4 domains: synthetic, legal, invoices, HR",
+        "Domain-specific leaderboards created",
+        "Ranking changes quantified (e.g., Parser X: #2 overall, #5 on legal)",
+        "Key insights documented: which parsers excel at which domains",
+        "Statistical significance tested (sample sizes: 33, 108, 100, 34)"
+      ],
+      
+      "implementation_notes": [
+        "Create analysis script: analyze_domain_performance.py",
+        "Load results/comprehensive_278docs_full.json",
+        "Group by document metadata (domain field)",
+        "Calculate per-domain averages for all 6 metrics",
+        "Identify statistically significant ranking changes",
+        "Create domain leaderboard tables (Markdown + CSV)"
+      ],
+      
+      "deliverables": [
+        "analysis/domain_leaderboards.md - comprehensive analysis",
+        "analysis/domain_rankings.csv - machine-readable rankings",
+        "analysis/ranking_changes.md - key insights on domain variation"
+      ]
+    },
+
+    {
+      "task_id": "TASK-003",
+      "title": "OmniDocBench Integration & Comparison",
+      "description": "Run top 5 parsers on OmniDocBench demo data and compare rankings with PDF-Bench to document complementarity",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 3,
+      "phase": "PHASE-1",
+      "dependencies": ["TASK-001"],
+      "blocks": ["TASK-004"],
+      "parallel_opportunities": "Can run in parallel with TASK-002",
+      
+      "acceptance_criteria": [
+        "OmniDocBench demo data (18 documents) downloaded and processed",
+        "Top 5 parsers tested: docling, marker_ollama, pymupdf4llm, pdfplumber, pypdf",
+        "Rankings compared: OmniDocBench vs PDF-Bench (synthetic) vs PDF-Bench (business)",
+        "Key divergences documented with explanations",
+        "Complementarity validated (not competition)"
+      ],
+      
+      "implementation_notes": [
+        "Use OmniDocBench's public demo dataset (18 docs)",
+        "Convert OmniDocBench ground truth (JSON) to PDF-Bench format (Markdown)",
+        "Run benchmark with same metrics as PDF-Bench",
+        "Focus on TEDS comparison (11.5% gap already noted)",
+        "Document where rankings agree (validate baseline) vs diverge (domain-specific)",
+        "Frame as 'Phase I validation' (ODB) + 'Phase II validation' (PDF-Bench)"
+      ],
+      
+      "deliverables": [
+        "analysis/omnidocbench_comparison.md - comprehensive comparison",
+        "benchmarks/results/omnidocbench_18docs.json - ODB results",
+        "analysis/framework_complementarity.md - positioning document"
+      ]
+    },
+
+    {
+      "task_id": "TASK-004",
+      "title": "Blog Post #1: Comprehensive 10-Parser Comparison",
+      "description": "Write flagship blog post comparing 10 parsers across OmniDocBench and PDF-Bench with actual data and key findings",
+      "status": "blocked",
+      "priority": "high",
+      "estimated_hours": 4,
+      "phase": "PHASE-2",
+      "dependencies": ["TASK-001", "TASK-003"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-005, TASK-006 once data ready",
+      
+      "acceptance_criteria": [
+        "3,000-4,000 words with comprehensive data tables",
+        "Side-by-side comparison: OmniDocBench vs PDF-Bench",
+        "All 10 parsers profiled with strengths/weaknesses",
+        "Key findings highlighted (structure gap, domain variation, reliability trade-offs)",
+        "Positioned as complementary to OmniDocBench (not competitive)",
+        "Includes decision tree: how to choose a parser"
+      ],
+      
+      "structure": [
+        "1. Introduction: Why parser evaluation matters for RAG/LLM pipelines",
+        "2. Methodology: Two benchmarks (ODB + PDF-Bench), 10 parsers, 6 metrics",
+        "3. Overall Results: Leaderboard table with all metrics",
+        "4. Key Finding 1: 50% structure preservation gap (83% text, 33% structure)",
+        "5. Key Finding 2: Docling beats Marker on structure (traditional ML > VLM)",
+        "6. Key Finding 3: Rankings change by domain (synthetic vs legal vs invoices)",
+        "7. Parser Profiles: Detailed breakdown of top 5",
+        "8. Decision Framework: How to choose based on use case",
+        "9. Conclusion: Both benchmarks necessary (baseline + domain-specific)"
+      ],
+      
+      "deliverables": [
+        "blog/01_comprehensive_parser_comparison.md - blog post",
+        "blog/assets/01_leaderboard_table.png - main results table",
+        "blog/assets/01_structure_gap_chart.png - visualization"
+      ]
+    },
+
+    {
+      "task_id": "TASK-005",
+      "title": "Blog Post #2: Docling vs Marker (Traditional ML Beats VLM)",
+      "description": "Write attention-grabbing post on surprising finding: IBM's traditional CV/ML parser (Docling) beats VLM-based parser (Marker) on structure",
+      "status": "blocked",
+      "priority": "high",
+      "estimated_hours": 3,
+      "phase": "PHASE-2",
+      "dependencies": ["TASK-001"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-004, TASK-006",
+      
+      "acceptance_criteria": [
+        "2,000-2,500 words with clear data comparison",
+        "Head-to-head metrics table: Docling vs Marker across all dimensions",
+        "Explanation of why traditional ML won (document structure is a solved CV problem)",
+        "Discussion of VLM advantages (text recognition, unclear layouts)",
+        "Balanced perspective: not 'VLMs are bad' but 'traditional ML still competitive'",
+        "Attention-grabbing headline for HN/Reddit"
+      ],
+      
+      "structure": [
+        "1. Hook: 'VLMs are the future' narrative challenged",
+        "2. The Matchup: Docling (IBM, open-source, traditional) vs Marker+Ollama (VLM)",
+        "3. Results: Docling wins element_f1 (84.1% vs 69.4%), tree_sim (61.2% vs 49.3%)",
+        "4. Why Traditional ML Won: Document structure is geometric, not semantic",
+        "5. Where VLMs Excel: Text recognition (89.9% vs 87.4%)",
+        "6. Trade-offs: Speed (docling 3× faster), reliability (marker 7% better)",
+        "7. Implications: Don't assume VLMs beat everything; test on your domain",
+        "8. Conclusion: Hybrid approaches may be optimal"
+      ],
+      
+      "deliverables": [
+        "blog/02_docling_vs_marker_vml.md - blog post",
+        "blog/assets/02_head_to_head_table.png - comparison table",
+        "blog/assets/02_metric_breakdown_chart.png - radar chart"
+      ]
+    },
+
+    {
+      "task_id": "TASK-006",
+      "title": "Blog Post #3: The 50% Structure Preservation Gap",
+      "description": "Write post on industry-wide problem: all parsers achieve 83% text accuracy but only 33% structure preservation",
+      "status": "blocked",
+      "priority": "high",
+      "estimated_hours": 3,
+      "phase": "PHASE-2",
+      "dependencies": ["TASK-001"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-004, TASK-005",
+      
+      "acceptance_criteria": [
+        "2,000-2,500 words explaining the structure problem",
+        "Data from all 10 parsers showing consistent gap",
+        "Concrete examples: heading hierarchy lost, list nesting flattened",
+        "Impact analysis: why this matters for RAG, LLM context, search",
+        "Discussion of why this is hard (PDF has no semantic structure)",
+        "Call to action: prioritize structure metrics, not just text accuracy"
+      ],
+      
+      "structure": [
+        "1. The Problem: 'My parser has 90% accuracy' is misleading",
+        "2. The Data: All 10 parsers show 50-point structure gap",
+        "3. What Gets Lost: Heading levels, list nesting, section hierarchy, reading order",
+        "4. Real-World Impact: RAG chunks lose context, LLMs miss document structure",
+        "5. Why This Is Hard: PDF stores coordinates, not semantics",
+        "6. Case Studies: Multi-column layouts, nested lists, complex tables",
+        "7. What Success Looks Like: Docling at 61.2% is still failing 40% of structure",
+        "8. Recommendations: Measure structure, choose parsers accordingly, hybrid strategies"
+      ],
+      
+      "deliverables": [
+        "blog/03_structure_preservation_gap.md - blog post",
+        "blog/assets/03_gap_visualization.png - 83% vs 33% chart",
+        "blog/assets/03_example_failures.png - side-by-side examples"
+      ]
+    },
+
+    {
+      "task_id": "TASK-007",
+      "title": "Blog Post #4: Why Parser Rankings Change by Domain",
+      "description": "Write post showing empirical evidence that 'best parser' depends on document type with domain-specific leaderboards",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 4,
+      "phase": "PHASE-3",
+      "dependencies": ["TASK-002"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-008",
+      
+      "acceptance_criteria": [
+        "2,500-3,000 words with 4 domain-specific leaderboards",
+        "Concrete examples of ranking changes (Parser X: #2 synthetic, #7 legal)",
+        "Explanations for why rankings change (layout styles, fonts, structure)",
+        "Statistical significance analysis (not just noise)",
+        "Implications: domain validation essential for production confidence"
+      ],
+      
+      "structure": [
+        "1. Setup: The 'Best Parser' Question",
+        "2. Methodology: 278 documents across 4 domains (synthetic, legal, invoices, HR)",
+        "3. Overall Leaderboard: Docling #1, but...",
+        "4. Synthetic Leaderboard: Controlled conditions favor X",
+        "5. Legal Leaderboard: Complex hierarchy changes rankings",
+        "6. Invoice Leaderboard: pdfplumber dominates (table specialist)",
+        "7. HR Leaderboard: Resume formats favor Y",
+        "8. Key Insights: 30% of parsers change ±2 positions across domains",
+        "9. Production Implications: Test on YOUR document types, not general benchmarks",
+        "10. Framework: OmniDocBench (baseline) → domain corpus (validation)"
+      ],
+      
+      "deliverables": [
+        "blog/04_domain_specific_rankings.md - blog post",
+        "blog/assets/04_domain_leaderboards.png - 4 leaderboard comparison",
+        "blog/assets/04_ranking_shift_heatmap.png - parser rank changes"
+      ]
+    },
+
+    {
+      "task_id": "TASK-008",
+      "title": "Blog Post #5: How to Evaluate PDF Parsers (Framework)",
+      "description": "Write comprehensive methodology guide: step-by-step process for enterprises to evaluate parsers on their documents",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 4,
+      "phase": "PHASE-3",
+      "dependencies": ["TASK-001", "TASK-002", "TASK-003"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-007, TASK-009",
+      
+      "acceptance_criteria": [
+        "3,000-3,500 words with actionable framework",
+        "Step-by-step evaluation process with examples",
+        "Decision trees for parser selection",
+        "Sample sizing guidance (how many test documents needed)",
+        "Metric selection guidance (which metrics matter for which use cases)",
+        "Replicable: reader can follow process for their domain"
+      ],
+      
+      "structure": [
+        "1. The Challenge: 19 parsers, which to choose?",
+        "2. Phase I: Public Benchmark Screening (OmniDocBench)",
+        "3. Phase II: Domain-Specific Validation (PDF-Bench approach)",
+        "4. Step 1: Document Collection (100-200 representative samples)",
+        "5. Step 2: Ground Truth Creation (manual + validation)",
+        "6. Step 3: Metric Selection (text vs structure vs tables)",
+        "7. Step 4: Parser Testing (top 3-5 candidates)",
+        "8. Step 5: Analysis & Decision (trade-offs, cost, speed, accuracy)",
+        "9. Decision Trees: Use case → recommended parsers",
+        "10. Maintenance: Monitor production, detect drift"
+      ],
+      
+      "deliverables": [
+        "blog/05_evaluation_framework.md - blog post",
+        "blog/assets/05_decision_tree.png - parser selection flowchart",
+        "blog/assets/05_evaluation_process.png - phase diagram"
+      ]
+    },
+
+    {
+      "task_id": "TASK-009",
+      "title": "Blog Post #6: Beyond Text Accuracy (Multi-Metric Evaluation)",
+      "description": "Write technical deep-dive on why 6 metrics matter and how to interpret element_f1, tree_similarity, TEDS",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 3,
+      "phase": "PHASE-3",
+      "dependencies": ["TASK-001"],
+      "blocks": [],
+      "parallel_opportunities": "Can write in parallel with TASK-007, TASK-008",
+      
+      "acceptance_criteria": [
+        "2,500-3,000 words explaining 6 metrics",
+        "Technical but accessible (target: senior engineers, not researchers)",
+        "Concrete examples for each metric with pass/fail cases",
+        "Guidance on metric thresholds (what's good vs bad)",
+        "Trade-offs discussion (speed vs accuracy, text vs structure)",
+        "Measurement transparency: how PDF-Bench calculates each metric"
+      ],
+      
+      "structure": [
+        "1. The Myth: '90% accuracy' doesn't tell the whole story",
+        "2. Text Accuracy Metrics: edit_similarity, chrF++, CER",
+        "3. Structure Metrics: tree_similarity (Markdown AST), element_f1 (detection)",
+        "4. Table Metric: TEDS (Tree Edit Distance-based Similarity)",
+        "5. Example Failures: High text score, low structure score → broken document",
+        "6. Metric Trade-offs: What to prioritize for RAG vs search vs archival",
+        "7. Benchmarking Best Practices: Multiple metrics, not single score",
+        "8. PDF-Bench Implementation: Open-source, reproducible"
+      ],
+      
+      "deliverables": [
+        "blog/06_multi_metric_evaluation.md - blog post",
+        "blog/assets/06_metric_examples.png - visual examples",
+        "blog/assets/06_parser_profiles_radar.png - multi-metric comparison"
+      ]
+    },
+
+    {
+      "task_id": "TASK-010",
+      "title": "Blog Post #7: Creating Domain-Specific Corpora (Practical Guide)",
+      "description": "Write how-to guide for generating synthetic test corpora matching enterprise document characteristics",
+      "status": "blocked",
+      "priority": "low",
+      "estimated_hours": 3,
+      "phase": "PHASE-3",
+      "dependencies": ["TASK-001"],
+      "blocks": [],
+      "parallel_opportunities": "Can write anytime after TASK-001 complete",
+      
+      "acceptance_criteria": [
+        "2,500-3,000 words with replicable process",
+        "Step-by-step: DOCX generation → LibreOffice conversion → ground truth extraction",
+        "Parameterization examples: fonts, layouts, branding, structure",
+        "Code snippets from PDF-Bench corpus builders",
+        "Template library: invoice template, contract template, resume template",
+        "Privacy considerations: why synthetic > real documents for benchmarking"
+      ],
+      
+      "structure": [
+        "1. Why Synthetic: Privacy, control, perfect ground truth",
+        "2. Our Approach: DOCX → PDF pipeline (LibreOffice headless)",
+        "3. Document Parameterization: Fonts, colors, logos, layouts",
+        "4. Structure Variation: Tables (simple → complex), lists (flat → nested)",
+        "5. Ground Truth Extraction: DOCX internals → Markdown",
+        "6. Validation: Ensure ground truth matches semantic intent",
+        "7. Scale Considerations: 100-200 documents sufficient",
+        "8. Tools & Templates: PDF-Bench open-source corpus builders",
+        "9. Case Studies: Legal, invoices, HR corpora from PDF-Bench"
+      ],
+      
+      "deliverables": [
+        "blog/07_creating_domain_corpora.md - blog post",
+        "blog/assets/07_pipeline_diagram.png - DOCX → PDF process",
+        "blog/assets/07_parameterization_examples.png - template variations"
+      ]
+    },
+
+    {
+      "task_id": "TASK-011",
+      "title": "Update GitHub README with Actual Results",
+      "description": "Replace placeholder results in README with comprehensive 278-doc benchmark data and update quick-start guide",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 2,
+      "phase": "PHASE-4",
+      "dependencies": ["TASK-001", "TASK-002"],
+      "blocks": [],
+      "parallel_opportunities": "Can work on in parallel with blog writing",
+      
+      "acceptance_criteria": [
+        "README.md updated with 278-doc results (not 31-doc)",
+        "Top 5 leaderboard reflects full benchmark",
+        "Quick-start section with working examples",
+        "Links to blog posts (placeholders for unpublished)",
+        "Corpus statistics updated (278 docs, 4 domains)",
+        "Installation instructions verified"
+      ],
+      
+      "deliverables": [
+        "README.md - updated top-level README",
+        "docs/RESULTS.md - comprehensive results tables",
+        "docs/QUICKSTART.md - new quick-start guide"
+      ]
+    },
+
+    {
+      "task_id": "TASK-012",
+      "title": "Create Visualizations & Charts",
+      "description": "Generate publication-quality charts and visualizations for blog posts and GitHub documentation",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 6,
+      "phase": "PHASE-4",
+      "dependencies": ["TASK-001", "TASK-002"],
+      "blocks": [],
+      "parallel_opportunities": "Can create while blog posts are being written",
+      
+      "acceptance_criteria": [
+        "Leaderboard comparison tables (OmniDocBench vs PDF-Bench)",
+        "Domain-specific heatmaps (parsers × domains × metrics)",
+        "Parser decision tree flowchart",
+        "Structure gap visualization (83% text vs 33% structure)",
+        "Radar charts for parser profiles (6 metrics)",
+        "All charts: high-res PNG + SVG, publication-ready"
+      ],
+      
+      "implementation_notes": [
+        "Use matplotlib/seaborn for charts",
+        "Use Mermaid for flowcharts/diagrams",
+        "Create visualization script: generate_charts.py",
+        "Style: Clean, professional, color-blind friendly",
+        "Export: 300 DPI for blog, SVG for web"
+      ],
+      
+      "deliverables": [
+        "blog/assets/ - 15-20 charts for blog posts",
+        "docs/assets/ - documentation diagrams",
+        "scripts/generate_charts.py - reproducible chart generation"
+      ]
+    },
+
+    {
+      "task_id": "TASK-013",
+      "title": "Documentation Polish & Examples",
+      "description": "Create comprehensive documentation: QUICKSTART, example notebooks, API reference",
+      "status": "blocked",
+      "priority": "low",
+      "estimated_hours": 4,
+      "phase": "PHASE-4",
+      "dependencies": ["TASK-001"],
+      "blocks": [],
+      "parallel_opportunities": "Can work on anytime",
+      
+      "acceptance_criteria": [
+        "QUICKSTART.md with 5-minute setup",
+        "Example Jupyter notebook: run benchmark, analyze results",
+        "API documentation for key modules (loader, metrics, systems)",
+        "Contributing guide with dev setup",
+        "FAQ section with common issues"
+      ],
+      
+      "deliverables": [
+        "docs/QUICKSTART.md - quick-start guide",
+        "examples/benchmark_tutorial.ipynb - walkthrough notebook",
+        "docs/API.md - API reference",
+        "CONTRIBUTING.md - contribution guidelines"
+      ]
+    },
+
+    {
+      "task_id": "TASK-014",
+      "title": "Blog Post Publishing Schedule",
+      "description": "Publish blog posts on 2-week cadence with social media promotion and community engagement",
+      "status": "blocked",
+      "priority": "medium",
+      "estimated_hours": 6,
+      "phase": "PHASE-5",
+      "dependencies": ["TASK-004", "TASK-005", "TASK-006", "TASK-007", "TASK-008", "TASK-009", "TASK-010"],
+      "blocks": [],
+      "parallel_opportunities": "None (sequential publishing)",
+      
+      "acceptance_criteria": [
+        "Week 1: Blog #1 (Comprehensive Comparison) - flagship post",
+        "Week 2: Blog #2 (Docling vs Marker) - attention-grabbing",
+        "Week 3: Blog #3 (Structure Gap) - problem definition",
+        "Week 4: Blog #4 (Domain Rankings) - methodology proof",
+        "Week 6: Blog #5 (Evaluation Framework) - practical guide",
+        "Week 8: Blog #6 (Multi-Metric) - technical deep-dive",
+        "Week 10: Blog #7 (Corpus Creation) - replication guide (optional)"
+      ],
+      
+      "promotion_strategy": [
+        "HN submission for posts #1, #2, #3 (most attention-grabbing)",
+        "Reddit: r/MachineLearning, r/LLMs, r/datascience",
+        "LinkedIn: Target enterprise AI decision-makers",
+        "Twitter/X: Tag parser authors (Marker, Docling teams)",
+        "Dev.to / Medium cross-posting",
+        "Direct outreach to parser maintainers for validation"
+      ],
+      
+      "deliverables": [
+        "Published blog posts on company website/blog platform",
+        "Social media promotion threads",
+        "Engagement metrics tracking"
+      ]
+    },
+
+    {
+      "task_id": "TASK-015",
+      "title": "Community Engagement & Iteration",
+      "description": "Respond to feedback, iterate on findings, engage with discussions, collect inbound leads",
+      "status": "blocked",
+      "priority": "low",
+      "estimated_hours": 2,
+      "phase": "PHASE-5",
+      "dependencies": ["TASK-014"],
+      "blocks": [],
+      "parallel_opportunities": "Ongoing throughout rollout",
+      
+      "acceptance_criteria": [
+        "Respond to HN/Reddit comments within 24 hours",
+        "Track inbound inquiries (demo requests, consulting leads)",
+        "Document feedback for methodology improvements",
+        "Create GitHub issues for community requests",
+        "Iterate on blog posts based on feedback (corrections, clarifications)"
+      ],
+      
+      "success_metrics": [
+        "HN upvotes: 100+ for posts #1-3 (credibility)",
+        "GitHub stars: 100+ within 8 weeks",
+        "Inbound leads: 5-10 qualified inquiries",
+        "Blog views: 5,000+ across all posts",
+        "Conference talk submissions: 1-2 (optional)"
+      ],
+      
+      "deliverables": [
+        "Feedback log with action items",
+        "Lead tracking spreadsheet",
+        "Updated blog posts (corrections/additions)",
+        "Community engagement metrics report"
+      ]
+    }
+  ],
+
+  "dependencies_graph": {
+    "TASK-001": ["TASK-002", "TASK-003", "TASK-004", "TASK-005", "TASK-006", "TASK-007", "TASK-008", "TASK-009", "TASK-010", "TASK-011", "TASK-012"],
+    "TASK-002": ["TASK-007", "TASK-011", "TASK-012"],
+    "TASK-003": ["TASK-004"],
+    "TASK-004": ["TASK-014"],
+    "TASK-005": ["TASK-014"],
+    "TASK-006": ["TASK-014"],
+    "TASK-007": ["TASK-014"],
+    "TASK-008": ["TASK-014"],
+    "TASK-009": ["TASK-014"],
+    "TASK-010": ["TASK-014"],
+    "TASK-011": [],
+    "TASK-012": [],
+    "TASK-013": [],
+    "TASK-014": ["TASK-015"]
+  },
+
+  "parallel_opportunities": [
+    {
+      "group": "benchmark_and_blog_prep",
+      "description": "While TASK-001 runs overnight (8h), can prepare blog post outlines and GitHub structure",
+      "tasks": ["TASK-001 (background)", "TASK-013 (foreground)"]
+    },
+    {
+      "group": "analysis_tasks",
+      "description": "Domain analysis and OmniDocBench comparison are independent",
+      "tasks": ["TASK-002", "TASK-003"]
+    },
+    {
+      "group": "tier1_blog_posts",
+      "description": "Once TASK-001 complete, all 3 Tier 1 blog posts can be written in parallel",
+      "tasks": ["TASK-004", "TASK-005", "TASK-006"]
+    },
+    {
+      "group": "tier2_blog_posts",
+      "description": "Tier 2 blog posts can be written in parallel",
+      "tasks": ["TASK-007", "TASK-008", "TASK-009", "TASK-010"]
+    },
+    {
+      "group": "github_polish",
+      "description": "GitHub work can happen independently of blog writing",
+      "tasks": ["TASK-011", "TASK-012", "TASK-013"]
+    }
+  ],
+
+  "risk_mitigation": [
+    {
+      "risk": "TASK-001 fails to complete (8h runtime)",
+      "mitigation": "Run in background with monitoring; restart on failure; handle parser failures gracefully",
+      "impact": "Critical path blocked"
+    },
+    {
+      "risk": "Docling 23% failure rate affects results",
+      "mitigation": "Document failures as part of reliability analysis; include in blog posts as trade-off discussion",
+      "impact": "Medium - becomes feature not bug"
+    },
+    {
+      "risk": "Blog posts take longer than estimated (3-4h each)",
+      "mitigation": "Focus on quality over quantity; 6 excellent posts better than 7 rushed",
+      "impact": "Low - can extend timeline"
+    },
+    {
+      "risk": "OmniDocBench comparison shows contradictory results",
+      "mitigation": "Frame as 'different benchmarks measure different things'; emphasize complementarity",
+      "impact": "Medium - adjust positioning"
+    },
+    {
+      "risk": "Low engagement on blog posts",
+      "mitigation": "Iterate on headlines, promote more aggressively, engage with comments",
+      "impact": "Low - content still serves as reference"
+    }
+  ],
+
+  "success_criteria": {
+    "technical": [
+      "278-doc benchmark complete with all 6 metrics",
+      "Domain-specific leaderboards showing ranking changes",
+      "OmniDocBench comparison validating complementarity"
+    ],
+    "content": [
+      "6-7 high-quality blog posts published",
+      "GitHub README updated with actual results",
+      "Documentation polished and complete"
+    ],
+    "business": [
+      "5-10 inbound consulting inquiries",
+      "100+ GitHub stars within 8 weeks",
+      "HN front page for 1-2 posts",
+      "Industry discussion/citations"
+    ]
+  }
+}

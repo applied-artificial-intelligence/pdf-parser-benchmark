@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Vasquez-Edwards
+document_id: invoice_020
+due_date: '2025-11-30'
+generated_at: '2025-11-18T16:45:30.586790'
+industry: manufacturing
+invoice_date: '2025-10-31'
+invoice_number: INV-99703
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 26023.02
+tax_amount: 2277.01
+template_style: small_business
+total: 28300.03
+vendor:
+  country: USA
+  name: Global Fabrication
+corpus: business
+source_url: generated://invoice_020
+domain: invoices
+doc_id: invoice_020

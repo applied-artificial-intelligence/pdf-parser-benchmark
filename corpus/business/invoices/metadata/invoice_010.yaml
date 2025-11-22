@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Marshall LLC
+document_id: invoice_010
+due_date: '2025-11-08'
+generated_at: '2025-11-18T16:45:16.086225'
+industry: it_consulting
+invoice_date: '2025-10-09'
+invoice_number: INV-41693
+line_item_count: 6
+payment_terms: Net 30
+region: US
+subtotal: 897373.26
+tax_amount: 78520.16
+template_style: enterprise
+total: 975893.42
+vendor:
+  country: USA
+  name: Synergy Services
+corpus: business
+source_url: generated://invoice_010
+domain: invoices
+doc_id: invoice_010

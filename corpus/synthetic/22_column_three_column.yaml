@@ -1,0 +1,21 @@
+doc_id: 22_column_three_column
+source_url: https://github.com/pdf-bench/corpus/synthetic/22_column_three_column.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Column Test 02: Three-Column Layout'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_3
+- reading_order
+license: MIT
+notes: Three-column layout. Tests reading order across multiple columns.
+files:
+  docx: 22_column_three_column.docx
+  pdf: 22_column_three_column.pdf
+  ground_truth: 22_column_three_column.md
+hashes:
+  pdf: 4ec5023441dc18d2558e3dadf62a289eb7b956aa383ea93d419b5d7452444f5a
+  ground_truth: c2b1c167c7482dccc3ac93cf1fba9bbc425d3cb0af7c31862c4b458d55c920e9

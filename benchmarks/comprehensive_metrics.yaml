@@ -1,0 +1,76 @@
+# PDF-Bench Comprehensive Multi-Metric Evaluation
+#
+# This benchmark evaluates parsers across all implemented metrics to provide
+# a multi-dimensional view of parser performance beyond simple text similarity.
+#
+# Implements the DocParse-Score framework with 4 components:
+# 1. Text Accuracy (25%): edit_similarity, chrf++, character_error_rate
+# 2. Structural Fidelity (30%): tree_similarity, element_f1
+# 3. Table Integrity (25%): teds, cell_content_f1
+# 4. Reading Order (20%): Not yet implemented - manual analysis required
+
+name: Comprehensive Multi-Metric Evaluation
+description: >
+  Multi-dimensional parser evaluation using all implemented metrics.
+  Tests text accuracy, structural fidelity, table integrity, and element detection.
+  Provides per-metric scores to identify parser strengths and weaknesses.
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Use synthetic corpus for comprehensive feature coverage
+  corpora:
+    - synthetic
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  # Test top performers + baseline parsers for comparison
+  parsers:
+    - marker_ollama      # Best overall (88.17% text similarity)
+    - pypdfium2          # Best pure open-source (82.65%)
+    - pymupdf            # Speed baseline (78.26%, fastest)
+    - pdfplumber         # Table specialist (63.60% overall)
+    - unstructured       # ETL baseline (65.45%)
+
+  parser_options:
+    unstructured:
+      strategy: fast
+
+metric_config:
+  # All implemented metrics for comprehensive evaluation
+  metrics:
+    # === Text Accuracy Metrics (DocParse-Score: 25%) ===
+    - edit_similarity          # Current baseline: normalized edit distance
+    - chrf++                   # Character n-gram F-score (MT standard)
+    - character_error_rate     # OCR standard metric (error rate, lower is better)
+
+    # === Structural Fidelity Metrics (DocParse-Score: 30%) ===
+    - tree_similarity          # Markdown AST tree edit distance
+    - element_f1               # Element detection F1 (FIXED: now uses wrapper)
+
+    # === Table Integrity Metrics (DocParse-Score: 25%) ===
+    - teds                     # Table Edit Distance-based Similarity (content-aware)
+    # Note: Uses teds_score_with_content which includes cell text in comparison
+    # Note: Returns NaN for documents without tables (PyMuPDF) or failed extraction
+    # Note: cell_content_f1 and cell_accuracy removed - require table-specific parsing
+
+    # === Math/LaTeX Metrics (Bonus) ===
+    # Note: latex_f1 and latex_accuracy removed - synthetic corpus has no equations
+
+  # Compute aggregate scores across all documents
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: results/comprehensive_metrics_report.html
+  save_predictions: true
+  verbose: true
+
+# Use parallel execution for speed
+parallel_workers: 0

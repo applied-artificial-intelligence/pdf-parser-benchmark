@@ -1,0 +1,26 @@
+id: legal_saas_024
+contract_type: saas
+generated_at: '2025-11-18T18:09:30.680685'
+source: synthetic
+category: business
+subcategory: legal
+provider: Davidson, Tucker and Thompson Ltd.
+customer: Nicholson-Martinez Inc.
+platform_name: Integrated Platform
+annual_value: 99996
+jurisdiction: Delaware
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_saas_024
+doc_id: legal_saas_024
+domain: legal

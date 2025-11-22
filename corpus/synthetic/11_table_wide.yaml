@@ -1,0 +1,20 @@
+doc_id: 11_table_wide
+source_url: https://github.com/pdf-bench/corpus/synthetic/11_table_wide.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 03: Wide Table'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- wide_table
+license: MIT
+notes: Wide table with 7 columns. Tests horizontal scrolling and structure.
+files:
+  docx: 11_table_wide.docx
+  pdf: 11_table_wide.pdf
+  ground_truth: 11_table_wide.md
+hashes:
+  pdf: 00c1b9e68154a0a0fdcecffba65e4a5df8ee637affd09f0a6b846153932287a8
+  ground_truth: 92c7d365b6fb11e6833bc93636438b8f4457b28a088d0dc6f7618cf97c794609

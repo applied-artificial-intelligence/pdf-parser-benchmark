@@ -1,0 +1,21 @@
+doc_id: 14_table_financial
+source_url: https://github.com/pdf-bench/corpus/synthetic/14_table_financial.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 06: Financial Statement'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- financial
+- numeric
+license: MIT
+notes: Financial table with formatted numbers. Tests numeric data extraction.
+files:
+  docx: 14_table_financial.docx
+  pdf: 14_table_financial.pdf
+  ground_truth: 14_table_financial.md
+hashes:
+  pdf: 203fd70286dcc40a03f683123ca4f840bebfb6d9f4f397a4f538fa36f0b522b5
+  ground_truth: 6615398f1ef39bda5978942a24caa8f5de76c0d66d26f7a96eca126761b873c5

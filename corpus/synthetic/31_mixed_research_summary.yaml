@@ -1,0 +1,22 @@
+doc_id: 31_mixed_research_summary
+source_url: https://github.com/pdf-bench/corpus/synthetic/31_mixed_research_summary.docx
+corpus: synthetic
+domain: mixed
+title: Market Research Summary
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- data
+- analysis
+license: MIT
+notes: Research summary with data tables. Tests analytical content.
+files:
+  docx: 31_mixed_research_summary.docx
+  pdf: 31_mixed_research_summary.pdf
+  ground_truth: 31_mixed_research_summary.md
+hashes:
+  pdf: c3de20f84605a367b7c0cf0c91f8bfb78e389304319a948cfe90ddcf07c93add
+  ground_truth: be2e79c512e5ee562447818ae0fdfc1a8b2141e3d53e2d901090bdb3ff69f441

@@ -1,0 +1,12 @@
+corpus: academic
+data_source: academic_literature
+doc_id: omnidoc_145
+domain: academic
+features: []
+language: english
+layout: other_layout
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_145
+special_issues:
+- table_horizontal
+- table_omission_line

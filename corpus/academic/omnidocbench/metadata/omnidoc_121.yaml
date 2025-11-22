@@ -1,0 +1,11 @@
+corpus: academic
+data_source: magazine
+doc_id: omnidoc_121
+domain: news
+features: []
+language: simplified_chinese
+layout: double_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_121
+special_issues:
+- colorful_backgroud

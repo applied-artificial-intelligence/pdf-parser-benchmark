@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-scihub-o.O-j.apcata.2004.01.008.pdf_6
+domain: academic_literature
+height: 2203
+language: english
+layout: double_column
+page_no: 6
+source: omnidocbench
+width: 1653

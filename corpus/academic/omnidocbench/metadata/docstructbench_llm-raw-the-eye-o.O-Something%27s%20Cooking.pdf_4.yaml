@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-the-eye-o.O-Something%27s%20Cooking.pdf_4
+domain: magazine
+height: 2175
+language: english
+layout: double_column
+page_no: 482
+source: omnidocbench
+width: 1600

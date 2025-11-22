@@ -1,0 +1,21 @@
+doc_id: 21_column_two_column
+source_url: https://github.com/pdf-bench/corpus/synthetic/21_column_two_column.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Column Test 01: Two-Column Text'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_2
+- reading_order
+license: MIT
+notes: Two-column layout. Tests reading order (down then across).
+files:
+  docx: 21_column_two_column.docx
+  pdf: 21_column_two_column.pdf
+  ground_truth: 21_column_two_column.md
+hashes:
+  pdf: 1aa093026946f369a1d54692fdd72c0741acea976481e86a5e98dab809c03254
+  ground_truth: 068e451123c817eec649cf02891ed55204d649061b5c44fa5fa084a2e7681b41

@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-scihub-o.O-hyp.1040.pdf_9
+domain: academic_literature
+height: 2339
+language: english
+layout: single_column
+page_no: 9
+source: omnidocbench
+width: 1653

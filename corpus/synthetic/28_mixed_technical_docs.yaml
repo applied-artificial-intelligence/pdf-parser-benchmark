@@ -1,0 +1,22 @@
+doc_id: 28_mixed_technical_docs
+source_url: https://github.com/pdf-bench/corpus/synthetic/28_mixed_technical_docs.docx
+corpus: synthetic
+domain: mixed
+title: API Integration Guide
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- code
+- technical
+license: MIT
+notes: Technical documentation. Tests structured reference content.
+files:
+  docx: 28_mixed_technical_docs.docx
+  pdf: 28_mixed_technical_docs.pdf
+  ground_truth: 28_mixed_technical_docs.md
+hashes:
+  pdf: c20b05279e791d809716e4c8c69ef55915596d911cee20b75be22e407cf37f95
+  ground_truth: f49c944632ca1f830d7978d883c8fd89cf89edd0611e572aacc4bc09ec197c72

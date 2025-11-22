@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: New Zealand
+  name: Pollard PLC
+document_id: invoice_099
+due_date: '2025-10-09'
+generated_at: '2025-11-18T16:47:25.634162'
+industry: manufacturing
+invoice_date: '2025-09-09'
+invoice_number: INV-13751
+line_item_count: 4
+payment_terms: Net 30
+region: APAC
+subtotal: 15794.27
+tax_amount: 1579.43
+template_style: small_business
+total: 17373.7
+vendor:
+  country: Australia
+  name: Global Inc
+corpus: business
+source_url: generated://invoice_099
+domain: invoices
+doc_id: invoice_099

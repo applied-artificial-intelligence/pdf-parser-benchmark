@@ -1,4 +1,8 @@
-"""Utility functions and helpers."""
+"""Utility functions and helpers.
+
+SPDX-License-Identifier: MIT
+Copyright (c) 2025 PDF-Bench Contributors
+"""
 
 from pdf_bench.utils.latex_normalization import (
     collapse_whitespace,

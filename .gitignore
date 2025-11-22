@@ -54,6 +54,37 @@ results/
 .cache/
 reports/
 
+# Environment
+.env
+.env.*
+
 # OS
 .DS_Store
 Thumbs.db
+
+# Service accounts (keep local only)
+pdf-parser-demo-*.json
+
+# Temporary test outputs (root level only)
+/temp_*/
+/test_integration_output/
+/test_parsers_output/
+/test_manual_ollama/
+/test_marker_*/
+/test_ollama_enabled/
+/test_tables_*/
+
+# Test scripts at root (not tests/ directory)
+/test_*.py
+/run_*_benchmark.py
+/download_*.py
+/validate_*.py
+
+# Log files
+/*.log
+
+# Cleanup scripts
+/cleanup_*.sh
+
+# Keep legitimate directories
+!/tests/

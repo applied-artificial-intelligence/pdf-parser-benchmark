@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: New Zealand
+  name: Lucas PLC
+document_id: invoice_098
+due_date: '2025-11-11'
+generated_at: '2025-11-18T16:47:24.169473'
+industry: saas
+invoice_date: '2025-10-12'
+invoice_number: INV-30107
+line_item_count: 10
+payment_terms: Net 30
+region: APAC
+subtotal: 3504764.79
+tax_amount: 525714.72
+template_style: enterprise
+total: 4030479.51
+vendor:
+  country: Australia
+  name: Sync Technologies
+corpus: business
+source_url: generated://invoice_098
+domain: invoices
+doc_id: invoice_098

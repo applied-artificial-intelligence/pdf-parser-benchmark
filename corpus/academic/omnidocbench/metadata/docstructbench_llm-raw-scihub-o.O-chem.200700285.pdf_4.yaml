@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-scihub-o.O-chem.200700285.pdf_4
+domain: academic_literature
+height: 2339
+language: english
+layout: 1andmore_column
+page_no: 205
+source: omnidocbench
+width: 1653

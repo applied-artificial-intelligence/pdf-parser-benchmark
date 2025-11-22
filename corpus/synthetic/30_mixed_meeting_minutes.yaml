@@ -1,0 +1,22 @@
+doc_id: 30_mixed_meeting_minutes
+source_url: https://github.com/pdf-bench/corpus/synthetic/30_mixed_meeting_minutes.docx
+corpus: synthetic
+domain: mixed
+title: Product Team Meeting Minutes
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- headings
+- structured
+license: MIT
+notes: Meeting minutes with agenda and action items. Tests structure.
+files:
+  docx: 30_mixed_meeting_minutes.docx
+  pdf: 30_mixed_meeting_minutes.pdf
+  ground_truth: 30_mixed_meeting_minutes.md
+hashes:
+  pdf: f509f210195049136c10d502caf1297e2338f45e6ffa8aee3593220d499493ac
+  ground_truth: 0a158887990e69de1b3e1197228d90d856e8b9a2460ad5e1949a4df5636d7840

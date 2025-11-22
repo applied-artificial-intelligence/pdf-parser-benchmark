@@ -1,0 +1,22 @@
+doc_id: 23_column_mixed_width
+source_url: https://github.com/pdf-bench/corpus/synthetic/23_column_mixed_width.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Column Test 03: Mixed Width Sections'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_2
+- full_width
+- mixed_sections
+license: MIT
+notes: Mixed full-width and column sections. Tests section transitions.
+files:
+  docx: 23_column_mixed_width.docx
+  pdf: 23_column_mixed_width.pdf
+  ground_truth: 23_column_mixed_width.md
+hashes:
+  pdf: b8dae9c7526edb85109c711842736f9eac239eed97347074d3947453e85fc93e
+  ground_truth: 4ae043f3ad955b2080d9d14d329e128b6f786aa65925cc409b1bdd7dd7a213fe

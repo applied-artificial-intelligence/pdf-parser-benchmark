@@ -4,3 +4,8 @@ corpus: synthetic
 domain: libreoffice
 title: Annual Performance Review 2025
 license: CC0-1.0
+pdf_hash: 3afc46d408c55cebbfb3f9d2f288708ee90bcca2946b9d88efdade34d3aa8ad8
+file_paths:
+  pdf: corpus/synthetic/06_docx_simple.pdf
+validation:
+  pdf_exists: true

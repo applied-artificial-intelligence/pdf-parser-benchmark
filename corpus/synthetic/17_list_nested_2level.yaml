@@ -1,0 +1,22 @@
+doc_id: 17_list_nested_2level
+source_url: https://github.com/pdf-bench/corpus/synthetic/17_list_nested_2level.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 03: Two-Level Nesting'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- bullets
+- nested
+- depth_2
+license: MIT
+notes: Two-level nested bullets. Tests list nesting detection.
+files:
+  docx: 17_list_nested_2level.docx
+  pdf: 17_list_nested_2level.pdf
+  ground_truth: 17_list_nested_2level.md
+hashes:
+  pdf: 9b1c4a419431e62db870462bf9398a503f02d9cc12046d492c8adb16e4caa0ff
+  ground_truth: e4bc11cbae1fccd919f6d8496d0782627b50683e31570909edb5f14564986782

@@ -1,0 +1,63 @@
+# Comprehensive 278-Document Multi-Parser Evaluation
+#
+# Full corpus evaluation: 278 documents × 10 parsers = 2,780 runs
+# Includes: synthetic (32), legal (108), invoices (100), HR (34), academic (3)
+
+name: Comprehensive 278-Document Evaluation
+description: >
+  Complete PDF-Bench corpus evaluation across all document types.
+  Tests 10 open-source parsers with 6 metrics to evaluate domain-specific
+  performance and validate hypothesis that parser rankings change by domain.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []  # Empty = discover all documents
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null  # All 278 documents
+
+parser_config:
+  parsers:
+    - docling           # IBM, best structure preservation
+    - marker_ollama     # VLM-based, high text accuracy
+    - pymupdf4llm       # LLM-optimized, reliable
+    - pdfplumber        # Table specialist
+    - pymupdf           # Speed baseline
+    - pypdfium2         # Pure open-source
+    - pypdf             # Alternative lib
+    - extractous        # Rust-based
+    - unstructured      # ETL pipeline
+    - pdfminer          # Classic Python
+
+  parser_options:
+    unstructured:
+      strategy: fast
+
+metric_config:
+  metrics:
+    # Text Accuracy
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+    # Structural Fidelity
+    - tree_similarity
+    - element_f1
+
+    # Table Integrity
+    - teds
+
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: results/comprehensive_278docs_all_parsers_report.html
+  save_predictions: true
+  verbose: true
+
+parallel_workers: 2  # 2 parallel workers for lower CPU usage

@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Clark LLC
+document_id: invoice_025
+due_date: '2025-10-05'
+generated_at: '2025-11-18T16:45:37.411244'
+industry: saas
+invoice_date: '2025-09-05'
+invoice_number: INV-35958
+line_item_count: 5
+payment_terms: Net 30
+region: US
+subtotal: 7892920.96
+tax_amount: 690630.58
+template_style: enterprise
+total: 8583551.54
+vendor:
+  country: USA
+  name: Flow Cloud
+corpus: business
+source_url: generated://invoice_025
+domain: invoices
+doc_id: invoice_025

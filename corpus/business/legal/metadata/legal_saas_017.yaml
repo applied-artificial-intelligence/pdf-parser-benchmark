@@ -1,0 +1,26 @@
+id: legal_saas_017
+contract_type: saas
+generated_at: '2025-11-18T18:09:26.279395'
+source: synthetic
+category: business
+subcategory: legal
+provider: Sanchez, Orr and Glover Ltd.
+customer: Adams Group LLC
+platform_name: Enterprise Workspace
+annual_value: 15000
+jurisdiction: Florida
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_saas_017
+doc_id: legal_saas_017
+domain: legal

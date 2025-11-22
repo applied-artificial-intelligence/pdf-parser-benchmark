@@ -1,0 +1,13 @@
+corpus: academic
+data_source: book
+doc_id: omnidoc_076
+domain: academic
+features: []
+language: simplified_chinese
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_076
+special_issues:
+- table_full_line
+- table_horizontal
+- table_span

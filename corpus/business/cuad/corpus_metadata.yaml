@@ -1,0 +1,9 @@
+description: Contract Understanding Atticus Dataset - real SEC filing contracts
+document_count: 75
+domain: legal
+features:
+- contracts
+- legal
+- sec_filings
+name: CUAD Contracts
+source: https://www.atticusprojectai.org/cuad

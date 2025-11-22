@@ -4,3 +4,8 @@ corpus: synthetic
 domain: libreoffice
 title: Global Financial Performance Report Q1-Q4 2025
 license: CC0-1.0
+pdf_hash: 124380ea3fc729271feb1071a91268f0373267288f381c1ef55db2a62fde361f
+file_paths:
+  pdf: corpus/synthetic/07_docx_tables.pdf
+validation:
+  pdf_exists: true

@@ -1,0 +1,59 @@
+# Comprehensive 31-Document Multi-Metric Evaluation (Fixed Metrics)
+#
+# This benchmark runs all 31 synthetic documents with fixed element_f1 and TEDS metrics.
+# Uses 5 parsers across 6 metrics to evaluate multi-dimensional performance.
+
+name: Comprehensive 31-Document Evaluation (Fixed)
+description: >
+  Full synthetic corpus evaluation with corrected metrics.
+  Tests element_f1 (now returns valid scores) and content-aware TEDS
+  (discriminates based on cell content, not just structure).
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora:
+    - synthetic
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null  # All 31 documents
+
+parser_config:
+  parsers:
+    - pdfplumber         # Table specialist
+    - pymupdf            # Speed baseline
+    - pypdfium2          # Pure open-source
+    - unstructured       # ETL baseline
+    - marker_ollama      # Best overall performer
+
+  parser_options:
+    unstructured:
+      strategy: fast
+
+metric_config:
+  metrics:
+    # Text Accuracy
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+    # Structural Fidelity
+    - tree_similarity
+    - element_f1       # FIXED: Now returns valid scores
+
+    # Table Integrity
+    - teds             # FIXED: Content-aware variant
+
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: results/comprehensive_31docs_fixed_report.html
+  save_predictions: true
+  verbose: true
+
+parallel_workers: 0  # Auto-detect CPU count

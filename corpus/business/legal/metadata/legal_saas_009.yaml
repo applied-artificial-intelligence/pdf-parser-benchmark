@@ -1,0 +1,26 @@
+id: legal_saas_009
+contract_type: saas
+generated_at: '2025-11-18T18:09:22.568914'
+source: synthetic
+category: business
+subcategory: legal
+provider: Roy, Williams and Young Inc.
+customer: Kim Solutions
+platform_name: Pro Suite
+annual_value: 334992
+jurisdiction: Illinois
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_saas_009
+doc_id: legal_saas_009
+domain: legal

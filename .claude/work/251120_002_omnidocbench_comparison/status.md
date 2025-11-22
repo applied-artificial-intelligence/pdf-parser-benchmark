@@ -1,9 +1,50 @@
 # OmniDocBench Integration - Session Status
 
-**Date**: 2025-11-20
-**Status**: In Progress - Framework Comparison Phase
+**Date**: 2025-11-20 (Updated 2025-11-21)
+**Status**: Complete - Comprehensive Benchmark Finished
 
-## Completed Today
+## Summary
+
+Full 273-document benchmark completed across 10 open-source parsers with domain-specific analysis. Key findings:
+- **2,730 runs** (273 docs × 10 parsers), 99.7% success rate
+- **Legal documents "solved"**: 4 parsers achieve 98.8% accuracy
+- **Invoices expose all parsers**: Best achieves only 49.9%
+- **Table specialist confirmed**: pdfplumber leads with 93.4% TEDS
+- Results file: `results/full_corpus_353docs.json`
+- Analysis: `.claude/work/251120_001_review/273_doc_comprehensive_results.md`
+
+## Completed (Updated 2025-11-21)
+
+### 4. Full Corpus Benchmark (273 docs × 10 parsers) ✅ NEW
+**Date**: 2025-11-21
+**Results**: 2,730 runs, 99.7% success rate
+**File**: `results/full_corpus_353docs.json`
+**Analysis**: `.claude/work/251120_001_review/273_doc_comprehensive_results.md`
+
+**Parser Rankings (by edit similarity)**:
+| Rank | Parser | Edit Sim | TEDS | Success |
+|------|--------|----------|------|---------|
+| 1 | pypdfium2 | 78.3% | - | 100% |
+| 2 | pypdf | 78.3% | - | 100% |
+| 3 | extractous | 77.5% | - | 100% |
+| 4 | pymupdf | 77.3% | - | 100% |
+| 5 | kreuzberg | 74.9% | - | 100% |
+| 6 | pymupdf4llm | 74.7% | 84.8% | 100% |
+| 7 | docling | 71.3% | 84.5% | 97.4% |
+| 8 | pdfplumber | 70.4% | **93.4%** | 100% |
+| 9 | pdfminer | 68.2% | - | 100% |
+| 10 | unstructured | 66.5% | - | 100% |
+
+**Domain-Specific Findings**:
+- Legal: 98.8% (pypdfium2/pypdf/pymupdf/pdfplumber tie)
+- HR/Resumes: 87.8% (unstructured wins)
+- Synthetic: 87.5% (kreuzberg/pypdfium2 tie)
+- Invoices: 49.9% (all parsers struggle!)
+
+**Metric Correlations**:
+- edit_similarity vs CER: -0.978 (near-perfect inverse)
+- edit_similarity vs chrF++: 0.739 (strong positive)
+- edit_similarity vs tree_similarity: 0.174 (weak - text ≠ structure)
 
 ### 1. Fixed element_f1 Metric Bug
 **Issue**: Previous "fix" commit didn't actually remove buggy handler code

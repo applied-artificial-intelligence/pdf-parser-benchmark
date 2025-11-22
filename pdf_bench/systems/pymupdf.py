@@ -26,7 +26,11 @@ Examples:
 from pathlib import Path
 from typing import cast
 
-import fitz  # type: ignore[import-untyped]  # PyMuPDF
+try:
+    import fitz  # type: ignore[import-untyped]  # PyMuPDF
+    PYMUPDF_AVAILABLE = True
+except ImportError:
+    PYMUPDF_AVAILABLE = False
 
 from pdf_bench.systems.base_parser import BaseParser
 from pdf_bench.utils.caching import cache_key, get_cached, store_cached
@@ -54,6 +58,18 @@ class PyMuPDFParser(BaseParser):
         >>> output = Path("output")
         >>> result = parser.parse(pdf, output)
     """
+
+    def __init__(self) -> None:
+        """Initialize PyMuPDF parser.
+
+        Raises:
+            ImportError: If PyMuPDF is not installed
+        """
+        if not PYMUPDF_AVAILABLE:
+            raise ImportError(
+                "PyMuPDF is required for PyMuPDFParser. "
+                "Install with: pip install pymupdf"
+            )
 
     @property
     def name(self) -> str:

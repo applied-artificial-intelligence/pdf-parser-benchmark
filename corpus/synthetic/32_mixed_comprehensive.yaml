@@ -1,0 +1,23 @@
+doc_id: 32_mixed_comprehensive
+source_url: https://github.com/pdf-bench/corpus/synthetic/32_mixed_comprehensive.docx
+corpus: synthetic
+domain: mixed
+title: Annual Report 2025
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- lists
+- nested
+- headings
+- comprehensive
+license: MIT
+notes: Comprehensive annual report. Tests all features combined.
+files:
+  docx: 32_mixed_comprehensive.docx
+  pdf: 32_mixed_comprehensive.pdf
+  ground_truth: 32_mixed_comprehensive.md
+hashes:
+  pdf: fe5f4555b17881f0d250df641006a4162d99bf040039ef132f8c70a333258d80
+  ground_truth: a427d335bb79b80c2f7f0d607027a28cb18d3ac212af2ee088c75e83360f865e

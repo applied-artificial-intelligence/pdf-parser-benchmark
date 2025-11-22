@@ -1,0 +1,11 @@
+corpus: academic
+data_source: book
+doc_id: omnidoc_084
+domain: academic
+features: []
+language: simplified_chinese
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_084
+special_issues:
+- colorful_backgroud

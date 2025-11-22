@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Netherlands
+  name: Kambs Christoph GmbH
+document_id: invoice_047
+due_date: '2025-10-31'
+generated_at: '2025-11-18T16:46:08.558970'
+industry: saas
+invoice_date: '2025-10-01'
+invoice_number: INV-57715
+line_item_count: 6
+payment_terms: Net 30
+region: EU
+subtotal: 1388430.75
+tax_amount: 305454.76
+template_style: small_business
+total: 1693885.51
+vendor:
+  country: France
+  name: Nexus Labs
+corpus: business
+source_url: generated://invoice_047
+domain: invoices
+doc_id: invoice_047

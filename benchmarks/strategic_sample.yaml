@@ -1,0 +1,63 @@
+# Strategic Sample: Domain-Specific Evaluation
+#
+# Sample: ~60-80 documents across all domains for domain-specific analysis
+# Goal: Demonstrate "parser rankings change by document type" with manageable runtime
+
+name: Strategic Domain Sample
+description: >
+  Strategic sample across all document types to demonstrate domain-specific
+  parser performance differences. Includes representative documents from each
+  domain to validate the hypothesis that parser rankings change by domain.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: 80  # ~80 documents for manageable runtime
+
+parser_config:
+  parsers:
+    - docling           # IBM, best structure preservation
+    - marker_ollama     # VLM-based, high text accuracy
+    - pymupdf4llm       # LLM-optimized, reliable
+    - pdfplumber        # Table specialist
+    - pymupdf           # Speed baseline
+    - pypdfium2         # Pure open-source
+    - pypdf             # Alternative lib
+    - extractous        # Rust-based
+    - unstructured      # ETL pipeline
+    - pdfminer          # Classic Python
+
+  parser_options:
+    unstructured:
+      strategy: fast
+
+metric_config:
+  metrics:
+    # Text Accuracy
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+    # Structural Fidelity
+    - tree_similarity
+    - element_f1
+
+    # Table Integrity
+    - teds
+
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: true
+  report_path: results/strategic_sample_report.html
+  save_predictions: true
+  verbose: true
+
+parallel_workers: 2  # 2 parallel workers for lower CPU usage

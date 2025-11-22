@@ -1,0 +1,22 @@
+doc_id: 20_list_with_paragraphs
+source_url: https://github.com/pdf-bench/corpus/synthetic/20_list_with_paragraphs.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 06: Lists with Paragraphs'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- bullets
+- paragraphs
+- mixed_content
+license: MIT
+notes: Lists interspersed with paragraphs. Tests content separation.
+files:
+  docx: 20_list_with_paragraphs.docx
+  pdf: 20_list_with_paragraphs.pdf
+  ground_truth: 20_list_with_paragraphs.md
+hashes:
+  pdf: b0f76ae53114b9d61e154ab837bd5bdb3e845807aea5ad474af4c8b845e182f6
+  ground_truth: 43c1606919a47597cac121a50eb77ab48f0511d040e2bf299c3ff9a11c28e9e5

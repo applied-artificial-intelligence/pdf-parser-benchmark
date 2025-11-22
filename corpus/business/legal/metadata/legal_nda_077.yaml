@@ -1,0 +1,25 @@
+id: legal_nda_077
+contract_type: nda
+generated_at: '2025-11-18T18:10:05.907347'
+source: synthetic
+category: business
+subcategory: legal
+disclosing_party: Simmons, Farley and Myers Corporation
+receiving_party: Collins Ltd Ltd.
+purpose: exploring a strategic partnership
+jurisdiction: Delaware
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_nda_077
+doc_id: legal_nda_077
+domain: legal

@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-the-eye-o.O-Chapter14.pdf_2
+domain: colorful_textbook
+height: 2200
+language: english
+layout: single_column
+page_no: 377
+source: omnidocbench
+width: 1750

@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-the-eye-o.O-1995_2418.pdf_1
+domain: academic_literature
+height: 2200
+language: english
+layout: three_column
+page_no: 333
+source: omnidocbench
+width: 1700

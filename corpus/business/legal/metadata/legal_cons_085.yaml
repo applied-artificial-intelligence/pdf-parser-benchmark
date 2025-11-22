@@ -1,0 +1,25 @@
+id: legal_cons_085
+contract_type: consulting
+generated_at: '2025-11-18T18:10:12.493151'
+source: synthetic
+category: business
+subcategory: legal
+client: Harris, Christensen and Hayes Ltd.
+consultant: Miss Christine Mitchell
+hourly_rate: 135
+jurisdiction: Florida
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_cons_085
+doc_id: legal_cons_085
+domain: legal

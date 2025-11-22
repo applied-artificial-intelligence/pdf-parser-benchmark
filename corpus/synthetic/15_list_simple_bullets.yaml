@@ -1,0 +1,20 @@
+doc_id: 15_list_simple_bullets
+source_url: https://github.com/pdf-bench/corpus/synthetic/15_list_simple_bullets.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 01: Simple Bullets'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- bullets
+license: MIT
+notes: Simple bulleted list. Tests basic list detection.
+files:
+  docx: 15_list_simple_bullets.docx
+  pdf: 15_list_simple_bullets.pdf
+  ground_truth: 15_list_simple_bullets.md
+hashes:
+  pdf: b561692b7990a17dfa497e0d1bb5b60505deef2b27164d8860bf6ad4796e19de
+  ground_truth: 724763e1d0a3324dc09733b78eed950e0d74f1943d82183b72490c2edc917fc5

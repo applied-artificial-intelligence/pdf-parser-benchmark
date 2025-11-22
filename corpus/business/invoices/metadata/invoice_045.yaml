@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Italy
+  name: Rosemann Pieper AG
+document_id: invoice_045
+due_date: '2025-10-18'
+generated_at: '2025-11-18T16:46:05.429619'
+industry: freight
+invoice_date: '2025-10-03'
+invoice_number: INV-11023
+line_item_count: 4
+payment_terms: Net 15
+region: EU
+subtotal: 9929.62
+tax_amount: 1886.63
+template_style: economy
+total: 11816.25
+vendor:
+  country: Italy
+  name: Continental Freight
+corpus: business
+source_url: generated://invoice_045
+domain: invoices
+doc_id: invoice_045

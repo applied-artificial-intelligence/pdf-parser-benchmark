@@ -1,0 +1,26 @@
+id: legal_emp_036
+contract_type: employment
+generated_at: '2025-11-18T18:09:37.090837'
+source: synthetic
+category: business
+subcategory: legal
+employer: Richardson PLC Inc.
+employee: Steven Freeman
+position: VP of Operations
+annual_salary: 255,000
+jurisdiction: Texas
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_emp_036
+doc_id: legal_emp_036
+domain: legal

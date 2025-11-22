@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-scihub-o.O-j.ergon.2003.12.002.pdf_5
+domain: academic_literature
+height: 2062
+language: english
+layout: double_column
+page_no: 5
+source: omnidocbench
+width: 1512

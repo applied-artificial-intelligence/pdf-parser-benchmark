@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-the-eye-o.O-ST-169-R1-072694.pdf_76
+domain: book
+height: 2200
+language: english
+layout: single_column
+page_no: 76
+source: omnidocbench
+width: 1700

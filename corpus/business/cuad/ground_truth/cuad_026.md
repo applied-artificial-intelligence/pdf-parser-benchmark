@@ -1,0 +1,135 @@
+## [***] = Confidential Treatment Requested
+
+## SCHEDULE A Product License Schedule FORM  This Product License Schedule is issued pursuant to the Software License, Customization and Maintenance Agreement (the "Agreement") executed by and between Bank of America, N.A. ("Bank of America") and Cardlytics, ("Supplier") and incorporates by reference all of the terms and conditions of the Agreement.
+
+## Term For Ordering
+
+A. Software
+
+This Schedule constitutes an Order in accordance with the terms of the Agreement.
+
+B. Payment Schedule for Source Code delivery as outlined in Section 2.7
+
+•  Beginning three (3) years after the General Services Agreement Effective Date, the Supplier Software version in place one (1) yearfollowing the Service reaching 10,000,000 Users $[***]
+
+•  The latest commercially available version, or earlier versions at Bank of America's option, of the Supplier Software:
+
+•  Beginning 3 years after the General Services Agreement Effective Date or one (1) year following the Service reaching 10,000,000 Users, whichever is later, if Supplier has failed to meet either of the Performance Adjustments as outlined in Schedule B of the General Services Agreement for six (6) consecutive months. $[***]
+
+•  Beginning 3 years after the General Services Agreement Effective Date and one (1) year following the National Launch date and Supplier has met both of the Performance Adjustments as outlined in Schedule B of the General Services Agreement. Bank of America Total Revenue Share minus Supplier Total Revenue share for the preceding twelve (12) months
+
+•  At any time if Supplier materially breaches either Agreement $[***]
+
+C. Maintenance Services
+
+No-charge Maintenance Services shall be provided from the Delivery Date through the Warranty Period. The first paid (Initial) Maintenance Term shall commence upon expiration of the Warranty Period and shall continue for twelve (12) months thereafter. Thereafter, the Maintenance Term shall automatically renew for successive period, 12 months, on the terms and conditions of this Agreement unless Bank of America terminates Maintenance Services pursuant to this Agreement. Bank of America may terminate Maintenance Services for convenience at any time in accordance with the Section entitled "Termination" of the Agreement. If Bank of America terminates the Maintenance Services, Bank of America shall have the right to reinstate the Maintenance Services without paying any reinstatement fee. During the initial Maintenance Term and any renewal term, Maintenance Fees shall be paid in the increments described below under "Payment Terms."    Proprietary to Bank of America  Page A-2  vTIP2010
+
+Source: CARDLYTICS, INC., S-1, 1/12/2018
+
+
+
+
+
+## Products   Licensed Programs:  Program Materials:  Platform:
+
+The Software consists of the following:  The Program Materials include the following:  The Platform consists of the following:
+
+Cardlytics OPS (Offer Placement System) Version 3.0
+
+
+
+Installation Guides Operational Guides
+
+
+
+Computer: database servers, application servers and web servers
+
+Operating System: Microsoft.net and SQL 2008
+
+Other Required Components Client side ad serving technology
+
+## Payment Terms
+
+The Software License and Maintenance will be provided at no charge.    Proprietary to Bank of America  Page A-3  vTIP2010
+
+Source: CARDLYTICS, INC., S-1, 1/12/2018
+
+
+
+
+
+## [***] = Confidential Treatment Requested
+
+## Payment Terms
+
+## Delivery/Installation Dates   Acceptance Period  Maintenance Period
+
+## Warranty Period Duration
+
+Delivery Date:
+
+TBD
+
+Installation Date:
+
+TBD
+
+The period commencing on the Installation Date and continuing for the number of days specified:
+
+120 days
+
+
+
+Notwithstanding anything set forth elsewhere in this Agreement (or below), the Maintenance Period shall be twenty- four (24) hours per day, seven (7) days per week, including Bank of America holidays.
+
+120 days
+
+## Method Of Delivery And State Where Software And Documentation Are Received
+
+The method of delivery and name of the State where Supplier shall deliver and Bank of America shall receive Software and Documentation:
+
+TBD
+
+## Training
+
+Supplier shall provide the following training classes pursuant to this Agreement in connection with installation of the first copy of the Software.
+
+Date:
+
+## Installation Support
+
+In addition to the installation support provided pursuant to the Section entitled "Ordering, Delivery and Installation," Supplier shall provide Bank of America the following installation services:
+
+Installation Support will be handled in a separate agreement
+
+## Non-Maintenance Services Support
+
+Support services shall be provided at the Time and Materials rates set forth in the Price List.
+
+## Relationship Managers
+
+The following shall be the Relationship Managers for the parties:    Bank of America:  Cardlytics:    Brian Woodward  Jason Brooks     Address: [***]  [***]    Proprietary to Bank of America  Page A-4  vTIP2010
+
+Source: CARDLYTICS, INC., S-1, 1/12/2018
+
+
+
+
+
+## Source Code Installation Site
+
+Bank of America shall maintain its copy of the Source Code on the terms of this Agreement at the following address:    Address:  TBD
+
+## Installation Site
+
+Address:  TBD
+
+## Invoice Address(Es)
+
+Licenses:
+
+N/A         Maintenance:
+
+N/A          Proprietary to Bank of America  Page A-5  vTIP2010
+
+Source: CARDLYTICS, INC., S-1, 1/12/2018

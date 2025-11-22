@@ -1,0 +1,25 @@
+id: legal_svc_095
+contract_type: service
+generated_at: '2025-11-18T18:10:20.669882'
+source: synthetic
+category: business
+subcategory: legal
+service_provider: King-Carter Corporation
+customer: Bailey-David Inc.
+service_description: facility maintenance and janitorial services
+jurisdiction: Florida
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_svc_095
+doc_id: legal_svc_095
+domain: legal

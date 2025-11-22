@@ -28,7 +28,11 @@ Examples:
 from pathlib import Path
 from typing import Any
 
-from unstructured.partition.pdf import partition_pdf
+try:
+    from unstructured.partition.pdf import partition_pdf
+    UNSTRUCTURED_AVAILABLE = True
+except ImportError:
+    UNSTRUCTURED_AVAILABLE = False
 
 from pdf_bench.systems.base_parser import BaseParser
 from pdf_bench.utils.caching import cache_key, get_cached, store_cached
@@ -74,8 +78,15 @@ class UnstructuredParser(BaseParser):
             infer_table_structure: Whether to infer table structure (hi_res only).
 
         Raises:
+            ImportError: If unstructured is not installed
             ValueError: If strategy is not one of 'fast', 'auto', 'hi_res'.
         """
+        if not UNSTRUCTURED_AVAILABLE:
+            raise ImportError(
+                "unstructured is required for UnstructuredParser. "
+                "Install with: pip install unstructured"
+            )
+
         valid_strategies = ["fast", "auto", "hi_res"]
         if strategy not in valid_strategies:
             raise ValueError(

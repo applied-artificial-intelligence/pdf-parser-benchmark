@@ -1,0 +1,23 @@
+doc_id: 25_column_academic
+source_url: https://github.com/pdf-bench/corpus/synthetic/25_column_academic.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Research Paper: Multi-Column Format'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_2
+- academic
+- abstract
+- references
+license: MIT
+notes: Academic paper layout with abstract and references. Tests structure.
+files:
+  docx: 25_column_academic.docx
+  pdf: 25_column_academic.pdf
+  ground_truth: 25_column_academic.md
+hashes:
+  pdf: 03aa9abccc2a6c19c0a9fdb1189ee5acbade24c7e44f714364628881c7a5131d
+  ground_truth: 19b05e4401c558b4cdead0bdd2e1767e01912ef6cd0ff8eb2d52f9f897d585ed

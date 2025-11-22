@@ -30,7 +30,11 @@ Examples:
 from pathlib import Path
 from typing import Any, cast
 
-import pdfplumber
+try:
+    import pdfplumber
+    PDFPLUMBER_AVAILABLE = True
+except ImportError:
+    PDFPLUMBER_AVAILABLE = False
 
 from pdf_bench.systems.base_parser import BaseParser
 from pdf_bench.utils.caching import cache_key, get_cached, store_cached
@@ -59,6 +63,18 @@ class PdfPlumberParser(BaseParser):
         >>> output = Path("output")
         >>> result = parser.parse(pdf, output)
     """
+
+    def __init__(self) -> None:
+        """Initialize pdfplumber parser.
+
+        Raises:
+            ImportError: If pdfplumber is not installed
+        """
+        if not PDFPLUMBER_AVAILABLE:
+            raise ImportError(
+                "pdfplumber is required for PdfPlumberParser. "
+                "Install with: pip install pdfplumber"
+            )
 
     @property
     def name(self) -> str:

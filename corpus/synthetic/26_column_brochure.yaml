@@ -1,0 +1,22 @@
+doc_id: 26_column_brochure
+source_url: https://github.com/pdf-bench/corpus/synthetic/26_column_brochure.docx
+corpus: synthetic
+domain: multicolumn
+title: 'Product Brochure: Features Overview'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- multicolumn
+- columns_3
+- marketing
+- features
+license: MIT
+notes: Marketing brochure with feature grid. Tests visual layout.
+files:
+  docx: 26_column_brochure.docx
+  pdf: 26_column_brochure.pdf
+  ground_truth: 26_column_brochure.md
+hashes:
+  pdf: 4573997991ba2f44c21c3394727dda8ffa60816bb52f887684a0522270e62e1f
+  ground_truth: e7d99f9b92133cfad5f0f8230c50f939a86b689b750befca3f99e0df60a85702

@@ -9,5 +9,10 @@ publication_date: '2025-11-14'
 features:
 - lists
 license: MIT
-notes: Baseline test document for simple PDF parsing without complex formatting. Should be parsable by
-  all systems with >0.95 accuracy.
+notes: Baseline test document for simple PDF parsing without complex formatting. Should
+  be parsable by all systems with >0.95 accuracy.
+pdf_hash: 48ffa6a7191aa7ef8d280723e0fc8824f0b7c67a58560928b64bb43ec2869444
+file_paths:
+  pdf: corpus/synthetic/01_basic.pdf
+validation:
+  pdf_exists: true

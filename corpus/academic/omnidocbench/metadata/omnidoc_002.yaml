@@ -1,0 +1,13 @@
+corpus: academic
+data_source: PPT2PDF
+doc_id: omnidoc_002
+domain: presentation
+features: []
+language: simplified_chinese
+layout: double_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_002
+special_issues:
+- colorful_backgroud
+- table_full_line
+- table_horizontal

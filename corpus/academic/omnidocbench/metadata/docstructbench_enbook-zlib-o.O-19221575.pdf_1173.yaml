@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_enbook-zlib-o.O-19221575.pdf_1173
+domain: book
+height: 1475
+language: english
+layout: double_column
+page_no: 1173
+source: omnidocbench
+width: 875

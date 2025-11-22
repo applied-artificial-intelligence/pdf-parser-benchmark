@@ -1,0 +1,20 @@
+doc_id: 09_table_simple_grid
+source_url: https://github.com/pdf-bench/corpus/synthetic/09_table_simple_grid.docx
+corpus: synthetic
+domain: tables
+title: 'Table Test 01: Simple Grid'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- tables
+- simple_grid
+license: MIT
+notes: Basic 3x4 table with headers. Tests simple table detection.
+files:
+  docx: 09_table_simple_grid.docx
+  pdf: 09_table_simple_grid.pdf
+  ground_truth: 09_table_simple_grid.md
+hashes:
+  pdf: af7b75277249285c005d913a9ec40b7c38a02b8e98791d8cc2bab58a229dc14b
+  ground_truth: 0d05d6ccd9cfd53abe87dd9bcf4a739dd8dc6c980c219c4c02db7565ff7551b3

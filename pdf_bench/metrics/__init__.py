@@ -1,4 +1,8 @@
-"""Metric implementations for benchmarking."""
+"""Metric implementations for benchmarking.
+
+SPDX-License-Identifier: MIT
+Copyright (c) 2025 PDF-Bench Contributors
+"""
 
 from pdf_bench.metrics.ast_parser import Element, MarkdownASTParser
 from pdf_bench.metrics.cell_content_f1 import (

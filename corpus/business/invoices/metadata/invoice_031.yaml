@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Spain
+  name: Scheibe
+document_id: invoice_031
+due_date: '2025-11-25'
+generated_at: '2025-11-18T16:45:45.520677'
+industry: manufacturing
+invoice_date: '2025-10-26'
+invoice_number: INV-83943
+line_item_count: 7
+payment_terms: Net 30
+region: EU
+subtotal: 18386.38
+tax_amount: 3677.28
+template_style: enterprise
+total: 22063.66
+vendor:
+  country: Netherlands
+  name: Titan Manufacturing
+corpus: business
+source_url: generated://invoice_031
+domain: invoices
+doc_id: invoice_031

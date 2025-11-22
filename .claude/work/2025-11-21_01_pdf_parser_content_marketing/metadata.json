@@ -1,0 +1,27 @@
+{
+    "name": "2025-11-21_01_pdf_parser_content_marketing",
+    "date": "2025-11-21",
+    "counter": "01",
+    "created_at": "2025-11-21T10:30:00-05:00",
+    "requirement_type": "description",
+    "requirement_source": "PDF parser benchmark content marketing - create practitioner-focused content from the 273-doc benchmark results demonstrating expertise in parser selection",
+    "phase": "planning_complete",
+    "status": "active",
+    "related_work_units": [
+        "251120_001_review",
+        "251120_002_omnidocbench_comparison"
+    ],
+    "key_data_sources": [
+        "results/full_corpus_353docs.json",
+        ".claude/work/251120_001_review/273_doc_comprehensive_results.md",
+        ".claude/work/251120_002_omnidocbench_comparison/framework_comparison.md",
+        ".claude/reference/content_marketing_strategy.md"
+    ],
+    "deliverables": {
+        "blog_posts": ["comprehensive_evaluation", "structure_gap", "domain_variation"],
+        "visualizations": ["parser_comparison_chart", "domain_heatmap", "metric_correlation"],
+        "documentation": ["readme_update", "social_snippets"]
+    },
+    "estimated_effort_hours": 15,
+    "priority": "high"
+}

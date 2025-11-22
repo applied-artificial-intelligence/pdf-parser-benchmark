@@ -1,0 +1,14 @@
+corpus: academic
+data_source: colorful_textbook
+doc_id: omnidoc_115
+domain: education
+features:
+- watermark
+language: english
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_115
+special_issues:
+- watermark
+- table_horizontal
+- table_wireless_line

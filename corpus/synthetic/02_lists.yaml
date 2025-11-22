@@ -9,5 +9,10 @@ publication_date: '2025-11-14'
 features:
 - lists
 license: MIT
-notes: Tests nested list preservation, mixed list types, and task lists. Challenging for parsers that
-  don't analyze document structure.
+notes: Tests nested list preservation, mixed list types, and task lists. Challenging
+  for parsers that don't analyze document structure.
+pdf_hash: 38ae32e6e4abff05610f5d60f9c4eeac87a24890495e1a023165c1c93275fcc0
+file_paths:
+  pdf: corpus/synthetic/02_lists.pdf
+validation:
+  pdf_exists: true

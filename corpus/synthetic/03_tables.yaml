@@ -10,6 +10,12 @@ features:
 - tables
 - lists
 license: MIT
-notes: Comprehensive table testing with 13 labeled structures (TABLE-01 through TABLE-13) for diagnostic
-  purposes. Each table tests specific features enabling identification of exact parser failures. Critical
-  for TEDS metric evaluation and parser capability analysis.
+notes: Comprehensive table testing with 13 labeled structures (TABLE-01 through TABLE-13)
+  for diagnostic purposes. Each table tests specific features enabling identification
+  of exact parser failures. Critical for TEDS metric evaluation and parser capability
+  analysis.
+pdf_hash: 59aaccf6badecad4f2f7bcf5553622fbd41904da7ba68e9a95e88443d690ab01
+file_paths:
+  pdf: corpus/synthetic/03_tables.pdf
+validation:
+  pdf_exists: true

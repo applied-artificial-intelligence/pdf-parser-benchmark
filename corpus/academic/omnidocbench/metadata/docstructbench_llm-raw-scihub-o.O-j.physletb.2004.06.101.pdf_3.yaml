@@ -1,0 +1,9 @@
+corpus: academic
+doc_id: docstructbench_llm-raw-scihub-o.O-j.physletb.2004.06.101.pdf_3
+domain: academic_literature
+height: 2059
+language: english
+layout: single_column
+page_no: 3
+source: omnidocbench
+width: 1517

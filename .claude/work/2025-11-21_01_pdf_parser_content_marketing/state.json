@@ -1,0 +1,152 @@
+{
+  "project": {
+    "name": "PDF Parser Content Marketing",
+    "description": "Create practitioner-focused content from 273-doc benchmark demonstrating expertise in parser selection",
+    "created_at": "2025-11-21T10:30:00-05:00",
+    "updated_at": "2025-11-21T10:45:00-05:00"
+  },
+  "status": "completed",
+  "current_task": null,
+  "tasks": [
+    {
+      "id": "TASK-001",
+      "title": "Create visualization scripts for benchmark data",
+      "description": "Build Python scripts to generate publication-quality charts from results/full_corpus_353docs.json including parser comparison bar charts, domain heatmap, and metric correlation matrix",
+      "type": "foundation",
+      "status": "completed",
+      "completed_at": "2025-11-21T17:52:00-05:00",
+      "dependencies": [],
+      "acceptance_criteria": [
+        "Parser ranking bar chart (by edit_similarity)",
+        "Domain breakdown heatmap (parsers × domains)",
+        "TEDS comparison chart for table-capable parsers",
+        "Metric correlation visualization",
+        "Charts saved as PNG/SVG for blog embedding"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "output_files": ["scripts/generate_visualizations.py", "docs/charts/"]
+    },
+    {
+      "id": "TASK-002",
+      "title": "Write Blog Post #1: Comprehensive Evaluation of 10 PDF Parsers",
+      "description": "Create flagship blog post with side-by-side parser comparison, methodology explanation, and key findings from 273-doc benchmark",
+      "type": "content",
+      "status": "pending",
+      "dependencies": ["TASK-001"],
+      "acceptance_criteria": [
+        "All 10 parsers included with scores",
+        "6 metrics explained (edit_similarity, chrF++, CER, tree_similarity, element_f1, TEDS)",
+        "Domain breakdown section (legal, invoices, HR, synthetic)",
+        "Methodology section with reproducibility instructions",
+        "Visual comparison charts embedded",
+        "Key takeaways summary",
+        "2000-3000 words"
+      ],
+      "estimated_hours": 5,
+      "priority": "high",
+      "output_files": ["docs/blog/01_comprehensive_evaluation.md"]
+    },
+    {
+      "id": "TASK-003",
+      "title": "Write Blog Post #3: The 50% Structure Preservation Gap",
+      "description": "Create thought leadership piece on industry-wide structure preservation problem, showing 83% text vs 33% structure gap",
+      "type": "content",
+      "status": "pending",
+      "dependencies": ["TASK-001"],
+      "acceptance_criteria": [
+        "50% gap explained with benchmark data",
+        "Correlation analysis (edit_sim vs tree_sim: 0.174)",
+        "Practical implications for RAG and document understanding",
+        "Why this matters for production deployments",
+        "Recommendations section",
+        "1500-2000 words"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "output_files": ["docs/blog/03_structure_gap.md"]
+    },
+    {
+      "id": "TASK-004",
+      "title": "Write Blog Post #4: Why Parser Rankings Change by Document Type",
+      "description": "Create data-driven post showing how parser rankings vary across legal, invoices, HR domains with decision framework",
+      "type": "content",
+      "status": "pending",
+      "dependencies": ["TASK-001"],
+      "acceptance_criteria": [
+        "Domain-specific leaderboards for each category",
+        "Quantified ranking changes (e.g., 49% gap legal→invoices)",
+        "The invoice problem highlighted (all parsers <50%)",
+        "Decision framework for parser selection",
+        "When to use custom validation vs public benchmarks",
+        "1500-2000 words"
+      ],
+      "estimated_hours": 3,
+      "priority": "high",
+      "output_files": ["docs/blog/04_domain_variation.md"]
+    },
+    {
+      "id": "TASK-005",
+      "title": "Update README with key findings",
+      "description": "Refresh project README to highlight benchmark findings, make it compelling for GitHub visitors",
+      "type": "documentation",
+      "status": "pending",
+      "dependencies": ["TASK-002"],
+      "acceptance_criteria": [
+        "Executive summary of findings",
+        "Quick-start section for running benchmarks",
+        "Parser recommendation table",
+        "Links to detailed blog posts",
+        "Clear methodology explanation",
+        "Installation and reproduction instructions"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "output_files": ["README.md"]
+    },
+    {
+      "id": "TASK-006",
+      "title": "Create social media snippets",
+      "description": "Draft shareable content for LinkedIn, Twitter highlighting key findings",
+      "type": "marketing",
+      "status": "pending",
+      "dependencies": ["TASK-002", "TASK-003", "TASK-004"],
+      "acceptance_criteria": [
+        "5 LinkedIn post drafts (different angles)",
+        "10 Twitter thread ideas",
+        "Key stats formatted for sharing",
+        "Image captions for chart sharing"
+      ],
+      "estimated_hours": 2,
+      "priority": "medium",
+      "output_files": ["docs/social/snippets.md"]
+    },
+    {
+      "id": "TASK-007",
+      "title": "Create results summary for non-technical stakeholders",
+      "description": "One-page executive summary of findings suitable for business audiences",
+      "type": "documentation",
+      "status": "pending",
+      "dependencies": ["TASK-002"],
+      "acceptance_criteria": [
+        "One page PDF/markdown",
+        "Key findings in bullet points",
+        "Recommendations by use case",
+        "No technical jargon",
+        "Clear call to action"
+      ],
+      "estimated_hours": 1,
+      "priority": "low",
+      "output_files": ["docs/executive_summary.md"]
+    }
+  ],
+  "completed_tasks": ["TASK-001"],
+  "next_available": ["TASK-002", "TASK-003", "TASK-004"],
+  "parallel_batches": {
+    "batch_1": ["TASK-001"],
+    "batch_2": ["TASK-002", "TASK-003", "TASK-004"],
+    "batch_3": ["TASK-005", "TASK-006", "TASK-007"]
+  },
+  "total_estimated_hours": 19,
+  "critical_path": ["TASK-001", "TASK-002", "TASK-005"]
+}

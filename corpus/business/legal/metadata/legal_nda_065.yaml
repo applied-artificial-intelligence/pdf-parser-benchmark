@@ -1,0 +1,25 @@
+id: legal_nda_065
+contract_type: nda
+generated_at: '2025-11-18T18:09:56.361381'
+source: synthetic
+category: business
+subcategory: legal
+disclosing_party: Mccormick-Rojas LLC
+receiving_party: Chan Group Ltd.
+purpose: discussing a potential merger or acquisition
+jurisdiction: Illinois
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_nda_065
+doc_id: legal_nda_065
+domain: legal

@@ -153,8 +153,17 @@ def discover_documents(
                     if metadata.doc_id == doc_id:
                         # Found matching document
                         file_stem = yaml_file.stem
+
+                        # Try multiple locations for PDF and ground truth files
+                        # Pattern 1: Same directory as YAML (synthetic corpus)
                         pdf_path = yaml_file.parent / f"{file_stem}.pdf"
                         gt_path = yaml_file.parent / f"{file_stem}.md"
+
+                        # Pattern 2: Sibling pdfs/ and ground_truth/ directories (business corpus)
+                        if not pdf_path.exists():
+                            corpus_root = yaml_file.parent.parent
+                            pdf_path = corpus_root / "pdfs" / f"{file_stem}.pdf"
+                            gt_path = corpus_root / "ground_truth" / f"{file_stem}.md"
 
                         if pdf_path.exists() and gt_path.exists():
                             documents.append(

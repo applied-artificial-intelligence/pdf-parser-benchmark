@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: New Zealand
+  name: Buck Ltd
+document_id: invoice_096
+due_date: '2025-11-25'
+generated_at: '2025-11-18T16:47:21.219176'
+industry: freight
+invoice_date: '2025-11-10'
+invoice_number: INV-64788
+line_item_count: 8
+payment_terms: Net 15
+region: APAC
+subtotal: 16760.07
+tax_amount: 1676.01
+template_style: small_business
+total: 18436.08
+vendor:
+  country: Singapore
+  name: Premier Shipping
+corpus: business
+source_url: generated://invoice_096
+domain: invoices
+doc_id: invoice_096

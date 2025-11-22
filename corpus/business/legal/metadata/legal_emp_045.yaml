@@ -1,0 +1,26 @@
+id: legal_emp_045
+contract_type: employment
+generated_at: '2025-11-18T18:09:41.879770'
+source: synthetic
+category: business
+subcategory: legal
+employer: Anderson Enterprises
+employee: Mrs. Mallory Browning
+position: Product Manager
+annual_salary: 170,000
+jurisdiction: Massachusetts
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_emp_045
+doc_id: legal_emp_045
+domain: legal

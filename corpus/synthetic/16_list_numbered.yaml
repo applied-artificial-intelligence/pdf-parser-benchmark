@@ -1,0 +1,20 @@
+doc_id: 16_list_numbered
+source_url: https://github.com/pdf-bench/corpus/synthetic/16_list_numbered.docx
+corpus: synthetic
+domain: lists
+title: 'List Test 02: Numbered Steps'
+authors:
+- PDF-Bench Project
+publication_date: '2025-11-18'
+features:
+- lists
+- numbered
+license: MIT
+notes: Numbered procedural list. Tests ordered list detection.
+files:
+  docx: 16_list_numbered.docx
+  pdf: 16_list_numbered.pdf
+  ground_truth: 16_list_numbered.md
+hashes:
+  pdf: 56a01848fcfe90202ae7c2e669542f9b30f3f899a8b7f242b0f73b2381bd4a2d
+  ground_truth: 4d8bdf3fcb2c87054e0ea9acea7b4c36e0092452340677f1380c01000f3da88d

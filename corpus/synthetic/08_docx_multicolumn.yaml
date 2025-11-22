@@ -4,3 +4,8 @@ corpus: synthetic
 domain: libreoffice
 title: Advances in Machine Learning for NLP
 license: CC0-1.0
+pdf_hash: dcb782af439e2a23ff7eb575f287e5a743588104e5f626069b8eecf9306641b9
+file_paths:
+  pdf: corpus/synthetic/08_docx_multicolumn.pdf
+validation:
+  pdf_exists: true

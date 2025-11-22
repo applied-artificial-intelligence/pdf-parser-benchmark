@@ -1,0 +1,36 @@
+{
+  "generated_at": "2025-11-18T16:47:27.220802",
+  "total_invoices": 100,
+  "distribution": {
+    "total": 100,
+    "by_region": {
+      "US": 30,
+      "EU": 20,
+      "UK": 15,
+      "CA": 20,
+      "APAC": 15
+    },
+    "by_industry": {
+      "saas": 13,
+      "manufacturing": 13,
+      "legal": 9,
+      "it_consulting": 10,
+      "construction": 10,
+      "retail": 5,
+      "architecture": 4,
+      "printing": 4,
+      "freight": 8,
+      "accounting": 4,
+      "marketing": 4,
+      "property_mgmt": 3,
+      "medical": 5,
+      "landscaping": 5,
+      "catering": 3
+    },
+    "by_complexity": {
+      "simple": 38,
+      "medium": 47,
+      "complex": 15
+    }
+  }
+}

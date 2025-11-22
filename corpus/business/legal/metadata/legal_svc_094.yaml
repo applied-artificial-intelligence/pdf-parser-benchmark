@@ -1,0 +1,25 @@
+id: legal_svc_094
+contract_type: service
+generated_at: '2025-11-18T18:10:19.928249'
+source: synthetic
+category: business
+subcategory: legal
+service_provider: Peterson-Sellers LLC
+customer: Orr Technologies
+service_description: marketing and advertising services
+jurisdiction: Illinois
+quality_tags:
+- legal_numbering
+- defined_terms
+- signature_blocks
+- recitals
+- multi_section
+complexity:
+  has_subsections: true
+  has_numbered_lists: true
+  has_legal_language: true
+  multi_page: true
+corpus: business
+source_url: generated://legal_svc_094
+doc_id: legal_svc_094
+domain: legal

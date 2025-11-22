@@ -12,5 +12,10 @@ features:
 - code
 - lists
 license: MIT
-notes: Comprehensive test document exercising all major Markdown features. Simulates a real academic paper
-  with tables, math, and code. Most challenging synthetic document.
+notes: Comprehensive test document exercising all major Markdown features. Simulates
+  a real academic paper with tables, math, and code. Most challenging synthetic document.
+pdf_hash: 1d57e2fc3f7f18350d1cf5807d24327a3a8c43b41d678c54a0642f39bff04e36
+file_paths:
+  pdf: corpus/synthetic/05_complex.pdf
+validation:
+  pdf_exists: true
