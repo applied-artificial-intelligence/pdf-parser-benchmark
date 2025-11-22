@@ -9,7 +9,7 @@ Generates 100 realistic legal contracts across 5 types:
 
 Each contract includes:
 - DOCX source document
-- PDF conversion
+- PDF conversion (normalized for parser compatibility)
 - Markdown ground truth
 - YAML metadata with contract details and quality tags
 
@@ -30,8 +30,9 @@ import yaml
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from builders.legal.contract_templates import get_template
-from builders.legal.data_generators import LegalDataGenerator
+from builders.legal.contract_templates import get_template  # noqa: E402
+from builders.legal.data_generators import LegalDataGenerator  # noqa: E402
+from builders.pdf_utils import normalize_pdf  # noqa: E402
 
 
 class LegalCorpusBuilder:
@@ -105,6 +106,8 @@ class LegalCorpusBuilder:
                 capture_output=True,
                 timeout=60,
             )
+            # Normalize PDF for parser compatibility
+            normalize_pdf(pdf_path)
             return True
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError) as e:
             print(f"Warning: PDF conversion failed for {docx_path.name}: {e}")

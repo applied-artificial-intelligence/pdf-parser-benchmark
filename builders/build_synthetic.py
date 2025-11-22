@@ -7,6 +7,7 @@ using Pandoc with LaTeX backend. It supports:
 - SHA256 hash verification for generated PDFs
 - Error handling for Pandoc failures
 - Metadata integration with YAML files
+- PDF normalization for parser compatibility
 """
 
 import hashlib
@@ -15,6 +16,8 @@ import sys
 from pathlib import Path
 
 import yaml
+
+from builders.pdf_utils import normalize_pdf
 
 
 class PandocBuilder:
@@ -105,7 +108,11 @@ class PandocBuilder:
                 check=True,
             )
 
-            # Calculate SHA256 hash
+            # Normalize PDF for parser compatibility
+            # (removes object streams that some parsers can't handle)
+            normalize_pdf(output_pdf_path)
+
+            # Calculate SHA256 hash (after normalization)
             pdf_hash = self._calculate_hash(output_pdf_path)
 
             print(f"✅ PDF created: {output_pdf_path}")

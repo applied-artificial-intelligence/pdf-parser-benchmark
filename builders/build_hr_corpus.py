@@ -7,7 +7,7 @@ This script generates 50 resumes + 50 job applications distributed across:
 
 Output:
 - DOCX source files for ground truth extraction
-- PDF files for parser testing
+- PDF files for parser testing (normalized for parser compatibility)
 - Markdown ground truth
 - YAML metadata
 """
@@ -34,6 +34,7 @@ from builders.hr.resume_templates import (
     FunctionalResumeTemplate,
     HybridResumeTemplate,
 )
+from builders.pdf_utils import normalize_pdf
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
@@ -154,6 +155,9 @@ def convert_docx_to_pdf(docx_path: Path, pdf_path: Path) -> None:
     generated_pdf = output_dir / f"{docx_path.stem}.pdf"
     if generated_pdf != pdf_path and generated_pdf.exists():
         generated_pdf.rename(pdf_path)
+
+    # Normalize PDF for parser compatibility
+    normalize_pdf(pdf_path)
 
 
 def generate_resume(

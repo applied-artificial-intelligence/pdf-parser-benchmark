@@ -2,8 +2,9 @@
 
 This script:
 1. Converts all DOCX files (09-32) to PDF using LibreOffice headless
-2. Extracts ground truth markdown from DOCX structure
-3. Creates metadata YAML files with hashes and document info
+2. Normalizes PDFs for parser compatibility
+3. Extracts ground truth markdown from DOCX structure
+4. Creates metadata YAML files with hashes and document info
 """
 
 import hashlib
@@ -12,6 +13,8 @@ from pathlib import Path
 
 import yaml
 from docx import Document
+
+from builders.pdf_utils import normalize_pdf
 
 
 def convert_docx_to_pdf(docx_path: Path) -> Path:
@@ -48,14 +51,17 @@ def convert_docx_to_pdf(docx_path: Path) -> Path:
             check=True,
         )
         print(f"    {result.stdout.strip()}")
-    except subprocess.TimeoutExpired:
-        raise RuntimeError(f"Conversion timeout: {docx_path.name}")
+    except subprocess.TimeoutExpired as e:
+        raise RuntimeError(f"Conversion timeout: {docx_path.name}") from e
     except subprocess.CalledProcessError as e:
-        raise RuntimeError(f"Conversion failed: {e.stderr}")
+        raise RuntimeError(f"Conversion failed: {e.stderr}") from e
 
     pdf_path = docx_path.with_suffix(".pdf")
     if not pdf_path.exists():
         raise RuntimeError(f"PDF not created: {pdf_path}")
+
+    # Normalize PDF for parser compatibility
+    normalize_pdf(pdf_path)
 
     return pdf_path
 

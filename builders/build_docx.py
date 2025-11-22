@@ -6,6 +6,7 @@ This module provides functionality to:
 3. Extract ground truth from DOCX structure
 4. Calculate and verify PDF hashes
 5. Update metadata YAML files
+6. Normalize PDFs for parser compatibility
 
 Dependencies:
 - docxtpl (python-docx-template)
@@ -21,6 +22,8 @@ from typing import Any
 import yaml
 from docx import Document
 from docxtpl import DocxTemplate  # type: ignore[import-untyped]
+
+from builders.pdf_utils import normalize_pdf
 
 
 class DocxBuilder:
@@ -113,6 +116,10 @@ class DocxBuilder:
         pdf_path = docx_path.with_suffix(".pdf")
         if not pdf_path.exists():
             raise RuntimeError(f"PDF not created by LibreOffice: {pdf_path}")
+
+        # Normalize PDF for parser compatibility
+        # (removes object streams that some parsers can't handle)
+        normalize_pdf(pdf_path)
 
         return pdf_path
 
