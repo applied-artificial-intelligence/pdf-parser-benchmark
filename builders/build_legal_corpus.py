@@ -19,21 +19,19 @@ Usage:
 """
 
 import argparse
-import os
 import subprocess
 import sys
-from pathlib import Path
-from typing import Dict, List
-import yaml
 from datetime import datetime
+from pathlib import Path
+
+import yaml
 
 # Add project root to path
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 
-from builders.legal.data_generators import LegalDataGenerator
 from builders.legal.contract_templates import get_template
-from builders.legal.contract_config import CONTRACTS
+from builders.legal.data_generators import LegalDataGenerator
 
 
 class LegalCorpusBuilder:
@@ -97,13 +95,15 @@ class LegalCorpusBuilder:
                 [
                     "libreoffice",
                     "--headless",
-                    "--convert-to", "pdf",
-                    "--outdir", str(pdf_path.parent),
-                    str(docx_path)
+                    "--convert-to",
+                    "pdf",
+                    "--outdir",
+                    str(pdf_path.parent),
+                    str(docx_path),
                 ],
                 check=True,
                 capture_output=True,
-                timeout=60
+                timeout=60,
             )
             return True
         except (subprocess.CalledProcessError, subprocess.TimeoutExpired, FileNotFoundError) as e:
@@ -131,13 +131,13 @@ class LegalCorpusBuilder:
                 continue
 
             # Check if this is a heading
-            if para.style.name.startswith('Heading'):
+            if para.style.name.startswith("Heading"):
                 # Extract heading level
-                if para.style.name == 'Heading 1':
+                if para.style.name == "Heading 1":
                     lines.append(f"# {text}")
-                elif para.style.name == 'Heading 2':
+                elif para.style.name == "Heading 2":
                     lines.append(f"## {text}")
-                elif para.style.name == 'Heading 3':
+                elif para.style.name == "Heading 3":
                     lines.append(f"### {text}")
                 else:
                     lines.append(text)
@@ -148,11 +148,8 @@ class LegalCorpusBuilder:
         return "\n".join(lines)
 
     def _generate_metadata(
-        self,
-        contract_id: str,
-        contract_type: str,
-        variables: Dict[str, any]
-    ) -> Dict[str, any]:
+        self, contract_id: str, contract_type: str, variables: dict[str, any]
+    ) -> dict[str, any]:
         """Generate metadata for a contract.
 
         Args:
@@ -175,50 +172,60 @@ class LegalCorpusBuilder:
 
         # Add contract-specific metadata
         if contract_type == "saas":
-            metadata.update({
-                "provider": variables["provider"],
-                "customer": variables["customer"],
-                "platform_name": variables.get("platform_name", ""),
-                "annual_value": variables.get("monthly_fee", 0) * 12,
-                "jurisdiction": variables.get("jurisdiction", ""),
-            })
+            metadata.update(
+                {
+                    "provider": variables["provider"],
+                    "customer": variables["customer"],
+                    "platform_name": variables.get("platform_name", ""),
+                    "annual_value": variables.get("monthly_fee", 0) * 12,
+                    "jurisdiction": variables.get("jurisdiction", ""),
+                }
+            )
         elif contract_type == "employment":
-            metadata.update({
-                "employer": variables["company"],
-                "employee": variables["employee"],
-                "position": variables.get("position_title", ""),
-                "annual_salary": variables.get("annual_salary", ""),
-                "jurisdiction": variables.get("jurisdiction", ""),
-            })
+            metadata.update(
+                {
+                    "employer": variables["company"],
+                    "employee": variables["employee"],
+                    "position": variables.get("position_title", ""),
+                    "annual_salary": variables.get("annual_salary", ""),
+                    "jurisdiction": variables.get("jurisdiction", ""),
+                }
+            )
         elif contract_type == "nda":
-            metadata.update({
-                "disclosing_party": variables["disclosing_party"],
-                "receiving_party": variables["receiving_party"],
-                "purpose": variables.get("purpose", ""),
-                "jurisdiction": variables.get("jurisdiction", ""),
-            })
+            metadata.update(
+                {
+                    "disclosing_party": variables["disclosing_party"],
+                    "receiving_party": variables["receiving_party"],
+                    "purpose": variables.get("purpose", ""),
+                    "jurisdiction": variables.get("jurisdiction", ""),
+                }
+            )
         elif contract_type == "consulting":
-            metadata.update({
-                "client": variables["client"],
-                "consultant": variables["consultant"],
-                "hourly_rate": variables.get("hourly_rate", 0),
-                "jurisdiction": variables.get("jurisdiction", ""),
-            })
+            metadata.update(
+                {
+                    "client": variables["client"],
+                    "consultant": variables["consultant"],
+                    "hourly_rate": variables.get("hourly_rate", 0),
+                    "jurisdiction": variables.get("jurisdiction", ""),
+                }
+            )
         elif contract_type == "service":
-            metadata.update({
-                "service_provider": variables["service_provider"],
-                "customer": variables["customer"],
-                "service_description": variables.get("service_description", ""),
-                "jurisdiction": variables.get("jurisdiction", ""),
-            })
+            metadata.update(
+                {
+                    "service_provider": variables["service_provider"],
+                    "customer": variables["customer"],
+                    "service_description": variables.get("service_description", ""),
+                    "jurisdiction": variables.get("jurisdiction", ""),
+                }
+            )
 
         # Quality tags for benchmarking
         metadata["quality_tags"] = [
             "legal_numbering",  # Uses 5-level legal numbering
-            "defined_terms",     # Contains defined terms
+            "defined_terms",  # Contains defined terms
             "signature_blocks",  # Has signature blocks
-            "recitals",         # Contains WHEREAS clauses
-            "multi_section",    # Multiple numbered sections
+            "recitals",  # Contains WHEREAS clauses
+            "multi_section",  # Multiple numbered sections
         ]
 
         # Complexity indicators
@@ -231,11 +238,7 @@ class LegalCorpusBuilder:
 
         return metadata
 
-    def generate_contract(
-        self,
-        contract_type: str,
-        contract_num: int
-    ) -> bool:
+    def generate_contract(self, contract_type: str, contract_num: int) -> bool:
         """Generate a single contract.
 
         Args:
@@ -275,7 +278,7 @@ class LegalCorpusBuilder:
             if self._docx_to_pdf(docx_path, pdf_path):
                 print(f"  ✓ Converted to PDF: {pdf_path.name}")
             else:
-                print(f"  ⚠ PDF conversion failed (continuing anyway)")
+                print("  ⚠ PDF conversion failed (continuing anyway)")
 
             # Extract ground truth
             ground_truth = self._extract_ground_truth(docx_path)
@@ -295,20 +298,21 @@ class LegalCorpusBuilder:
         except Exception as e:
             print(f"  ✗ Error generating {contract_id}: {e}")
             import traceback
+
             traceback.print_exc()
             return False
 
-    def build_corpus(self) -> Dict[str, int]:
+    def build_corpus(self) -> dict[str, int]:
         """Build the complete corpus.
 
         Returns:
             Dictionary with success/failure counts
         """
-        print(f"\n{'='*60}")
-        print(f"Legal Corpus Builder")
+        print(f"\n{'=' * 60}")
+        print("Legal Corpus Builder")
         print(f"Mode: {'TEST' if self.test_mode else 'FULL'}")
         print(f"Output: {self.base_dir}")
-        print(f"{'='*60}\n")
+        print(f"{'=' * 60}\n")
 
         stats = {
             "total": 0,
@@ -321,7 +325,7 @@ class LegalCorpusBuilder:
         for contract_type, count in self.distribution.items():
             print(f"\n📄 Generating {count} {contract_type.upper()} contracts...")
 
-            for i in range(1, count + 1):
+            for _i in range(1, count + 1):
                 if self.generate_contract(contract_type, global_num):
                     stats["success"] += 1
                 else:
@@ -330,13 +334,13 @@ class LegalCorpusBuilder:
                 global_num += 1
 
         # Print summary
-        print(f"\n{'='*60}")
-        print(f"Corpus Generation Complete")
-        print(f"{'='*60}")
+        print(f"\n{'=' * 60}")
+        print("Corpus Generation Complete")
+        print(f"{'=' * 60}")
         print(f"Total contracts: {stats['total']}")
         print(f"Successful: {stats['success']}")
         print(f"Failed: {stats['failed']}")
-        print(f"\nOutput directories:")
+        print("\nOutput directories:")
         print(f"  - DOCX: {self.docx_dir}")
         print(f"  - PDF: {self.pdf_dir}")
         print(f"  - Ground Truth: {self.ground_truth_dir}")
@@ -349,23 +353,18 @@ def main():
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Build legal contract corpus")
     parser.add_argument(
-        "--test",
-        action="store_true",
-        help="Generate test corpus (10 contracts instead of 100)"
+        "--test", action="store_true", help="Generate test corpus (10 contracts instead of 100)"
     )
     parser.add_argument(
         "--output-dir",
         type=Path,
         default=Path("corpus/business/legal"),
-        help="Output directory for corpus (default: corpus/business/legal)"
+        help="Output directory for corpus (default: corpus/business/legal)",
     )
     args = parser.parse_args()
 
     # Build corpus
-    builder = LegalCorpusBuilder(
-        base_dir=args.output_dir,
-        test_mode=args.test
-    )
+    builder = LegalCorpusBuilder(base_dir=args.output_dir, test_mode=args.test)
 
     stats = builder.build_corpus()
 

@@ -6,16 +6,13 @@ This module creates three professional invoice templates:
 3. Economy Template - Minimal, cost-conscious style
 """
 
-from pathlib import Path
-from decimal import Decimal
 from datetime import datetime
-from typing import List
 
 from docx import Document
-from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.shared import Inches, Pt, RGBColor
 
 from builders.invoice.data_generators import CompanyInfo, LineItem
 from builders.invoice.tax_calculators import TaxResult
@@ -26,16 +23,16 @@ def add_table_borders(table):
     tbl = table._tbl
     tblPr = tbl.tblPr
     if tblPr is None:
-        tblPr = OxmlElement('w:tblPr')
+        tblPr = OxmlElement("w:tblPr")
         tbl.insert(0, tblPr)
 
-    tblBorders = OxmlElement('w:tblBorders')
-    for border_name in ['top', 'left', 'bottom', 'right', 'insideH', 'insideV']:
-        border = OxmlElement(f'w:{border_name}')
-        border.set(qn('w:val'), 'single')
-        border.set(qn('w:sz'), '4')
-        border.set(qn('w:space'), '0')
-        border.set(qn('w:color'), '000000')
+    tblBorders = OxmlElement("w:tblBorders")
+    for border_name in ["top", "left", "bottom", "right", "insideH", "insideV"]:
+        border = OxmlElement(f"w:{border_name}")
+        border.set(qn("w:val"), "single")
+        border.set(qn("w:sz"), "4")
+        border.set(qn("w:space"), "0")
+        border.set(qn("w:color"), "000000")
         tblBorders.append(border)
 
     tblPr.append(tblBorders)
@@ -61,7 +58,7 @@ class EnterpriseTemplate:
         due_date: datetime,
         vendor: CompanyInfo,
         customer: CompanyInfo,
-        line_items: List[LineItem],
+        line_items: list[LineItem],
         tax_result: TaxResult,
         payment_terms: str,
         notes: str = "",
@@ -96,7 +93,7 @@ class EnterpriseTemplate:
         left_para.add_run(f"{vendor.city}, {vendor.state_province} {vendor.postal_code}\n")
         if vendor.country:
             left_para.add_run(f"{vendor.country}\n")
-        left_para.add_run(f"\n")
+        left_para.add_run("\n")
         left_para.add_run(f"Phone: {vendor.phone}\n")
         left_para.add_run(f"Email: {vendor.email}\n")
         if vendor.tax_id:
@@ -107,17 +104,17 @@ class EnterpriseTemplate:
         right_para = right_cell.paragraphs[0]
         right_para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
 
-        right_para.add_run(f"Invoice #: ").font.bold = True
+        right_para.add_run("Invoice #: ").font.bold = True
         right_para.add_run(f"{invoice_number}\n")
 
-        right_para.add_run(f"Date: ").font.bold = True
+        right_para.add_run("Date: ").font.bold = True
         right_para.add_run(f"{invoice_date.strftime('%B %d, %Y')}\n")
 
-        right_para.add_run(f"Due Date: ").font.bold = True
+        right_para.add_run("Due Date: ").font.bold = True
         right_para.add_run(f"{due_date.strftime('%B %d, %Y')}\n")
 
         if po_number:
-            right_para.add_run(f"\nPO Number: ").font.bold = True
+            right_para.add_run("\nPO Number: ").font.bold = True
             right_para.add_run(f"{po_number}\n")
 
         self.doc.add_paragraph()  # Spacing
@@ -133,7 +130,9 @@ class EnterpriseTemplate:
         customer_name_run = customer_para.add_run(f"{customer.name}\n")
         customer_name_run.font.bold = True
         customer_para.add_run(f"{customer.address}\n")
-        customer_para.add_run(f"{customer.city}, {customer.state_province} {customer.postal_code}\n")
+        customer_para.add_run(
+            f"{customer.city}, {customer.state_province} {customer.postal_code}\n"
+        )
         if customer.country:
             customer_para.add_run(f"{customer.country}\n")
 
@@ -141,7 +140,7 @@ class EnterpriseTemplate:
 
         # Line items table
         items_table = self.doc.add_table(rows=1, cols=5)
-        items_table.style = 'Light Grid Accent 1'
+        items_table.style = "Light Grid Accent 1"
 
         # Header row
         header_cells = items_table.rows[0].cells
@@ -224,7 +223,7 @@ class EnterpriseTemplate:
         if tax_result.tax_number:
             tax_num_para = self.doc.add_paragraph()
             tax_num_para.add_run(tax_result.tax_number)
-            tax_num_para.style = 'Intense Quote'
+            tax_num_para.style = "Intense Quote"
 
         # Notes
         if notes:
@@ -256,7 +255,7 @@ class SmallBusinessTemplate:
         due_date: datetime,
         vendor: CompanyInfo,
         customer: CompanyInfo,
-        line_items: List[LineItem],
+        line_items: list[LineItem],
         tax_result: TaxResult,
         payment_terms: str,
         notes: str = "",
@@ -314,7 +313,9 @@ class SmallBusinessTemplate:
         customer_name_run = customer_para.add_run(f"{customer.name}\n")
         customer_name_run.font.bold = True
         customer_para.add_run(f"{customer.address}\n")
-        customer_para.add_run(f"{customer.city}, {customer.state_province} {customer.postal_code}\n")
+        customer_para.add_run(
+            f"{customer.city}, {customer.state_province} {customer.postal_code}\n"
+        )
 
         self.doc.add_paragraph()  # Spacing
 
@@ -378,7 +379,7 @@ class SmallBusinessTemplate:
             self.doc.add_paragraph()
             notes_para = self.doc.add_paragraph()
             notes_para.add_run(notes)
-            notes_para.style = 'Intense Quote'
+            notes_para.style = "Intense Quote"
 
         return self.doc
 
@@ -402,7 +403,7 @@ class EconomyTemplate:
         due_date: datetime,
         vendor: CompanyInfo,
         customer: CompanyInfo,
-        line_items: List[LineItem],
+        line_items: list[LineItem],
         tax_result: TaxResult,
         payment_terms: str,
         notes: str = "",

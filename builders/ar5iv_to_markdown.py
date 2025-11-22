@@ -6,14 +6,9 @@ Uses pandoc for conversion with minimal post-processing to clean up formatting.
 import re
 import subprocess
 from pathlib import Path
-from typing import Optional
 
 
-def convert_html_to_markdown(
-    html_path: Path,
-    output_path: Path,
-    cleanup: bool = True
-) -> bool:
+def convert_html_to_markdown(html_path: Path, output_path: Path, cleanup: bool = True) -> bool:
     """
     Convert ar5iv HTML to Markdown using pandoc.
 
@@ -27,19 +22,22 @@ def convert_html_to_markdown(
     """
     try:
         # Run pandoc conversion
-        result = subprocess.run(
+        subprocess.run(
             [
-                'pandoc',
+                "pandoc",
                 str(html_path),
-                '-f', 'html',
-                '-t', 'markdown',
-                '--wrap=none',  # Don't wrap long lines
-                '-o', str(output_path)
+                "-f",
+                "html",
+                "-t",
+                "markdown",
+                "--wrap=none",  # Don't wrap long lines
+                "-o",
+                str(output_path),
             ],
             capture_output=True,
             text=True,
             check=True,
-            timeout=60
+            timeout=60,
         )
 
         if cleanup:
@@ -67,52 +65,51 @@ def apply_cleanup(md_path: Path) -> None:
     - Remove LaTeX spacing commands
     - Remove inline CSS classes
     """
-    with open(md_path, 'r', encoding='utf-8') as f:
+    with open(md_path, encoding="utf-8") as f:
         content = f.read()
 
     # Remove pandoc div markers (keep content, remove ::: wrappers)
-    content = re.sub(r'^::: \{[^}]+\}\s*$', '', content, flags=re.MULTILINE)
-    content = re.sub(r'^:::\s*$', '', content, flags=re.MULTILINE)
-    content = re.sub(r'^::: [a-z_]+\s*$', '', content, flags=re.MULTILINE)
+    content = re.sub(r"^::: \{[^}]+\}\s*$", "", content, flags=re.MULTILINE)
+    content = re.sub(r"^:::\s*$", "", content, flags=re.MULTILINE)
+    content = re.sub(r"^::: [a-z_]+\s*$", "", content, flags=re.MULTILINE)
 
     # Remove table wrappers around equations (Pandoc adds these)
     # Example:   -- ---- --\n  $$...$$ \n  -- ---- --
     # These appear as lines with dashes and spaces
-    content = re.sub(r'^\s*-+\s+-+\s*$', '', content, flags=re.MULTILINE)
+    content = re.sub(r"^\s*-+\s+-+\s*$", "", content, flags=re.MULTILINE)
 
     # Remove inline CSS classes and spans
     # Example: [Text]{.ltx_class} -> Text
     # Example: [2](#ref){.ltx_ref} -> 2
-    content = re.sub(r'\[([^\]]+)\]\([^)]*\)\{[^}]+\}', r'\1', content)  # Links with classes
-    content = re.sub(r'\[([^\]]+)\]\{[^}]+\}', r'\1', content)  # Spans with classes
+    content = re.sub(r"\[([^\]]+)\]\([^)]*\)\{[^}]+\}", r"\1", content)  # Links with classes
+    content = re.sub(r"\[([^\]]+)\]\{[^}]+\}", r"\1", content)  # Spans with classes
 
     # Remove LaTeX spacing commands
-    content = re.sub(r'\\hspace\{0pt\}', '', content)
+    content = re.sub(r"\\hspace\{0pt\}", "", content)
 
     # Remove excessive braces around function arguments
     # Example: \text{u}{(x,t)} -> \text{u}(x,t)
-    content = re.sub(r'(\w)\{(\([^}]+\))\}', r'\1\2', content)
+    content = re.sub(r"(\w)\{(\([^}]+\))\}", r"\1\2", content)
 
     # Remove HTML class/id attributes from headers
     # Example: ## [1. ]{.ltx_tag} Title {#id} -> ## 1. Title
-    content = re.sub(r'(\#{1,6}\s+.+?)\s+\{[^}]+\}', r'\1', content)
+    content = re.sub(r"(\#{1,6}\s+.+?)\s+\{[^}]+\}", r"\1", content)
 
     # Clean up multiple blank lines (max 2 consecutive)
-    content = re.sub(r'\n{4,}', '\n\n\n', content)
+    content = re.sub(r"\n{4,}", "\n\n\n", content)
 
     # Remove leading/trailing whitespace per line (preserve indentation for code)
-    lines = content.split('\n')
+    lines = content.split("\n")
     lines = [line.rstrip() for line in lines]
-    content = '\n'.join(lines)
+    content = "\n".join(lines)
 
     # Save cleaned content
-    with open(md_path, 'w', encoding='utf-8') as f:
+    with open(md_path, "w", encoding="utf-8") as f:
         f.write(content)
 
 
 def convert_all_arxiv_samples(
-    sample_dir: Path = Path("corpus/academic/sample"),
-    output_dir: Optional[Path] = None
+    sample_dir: Path = Path("corpus/academic/sample"), output_dir: Path | None = None
 ) -> dict:
     """
     Convert all ar5iv HTML files in sample directory to Markdown.
@@ -158,18 +155,15 @@ def convert_all_arxiv_samples(
             md_size = output_path.stat().st_size / 1024
             print(f"   ✓ Markdown: {output_path.name} ({md_size:.1f} KB)")
             results[arxiv_id] = {
-                'success': True,
-                'html_path': str(html_path),
-                'md_path': str(output_path),
-                'html_size_kb': round(html_path.stat().st_size / 1024, 1),
-                'md_size_kb': round(md_size, 1)
+                "success": True,
+                "html_path": str(html_path),
+                "md_path": str(output_path),
+                "html_size_kb": round(html_path.stat().st_size / 1024, 1),
+                "md_size_kb": round(md_size, 1),
             }
         else:
-            print(f"   ❌ Conversion failed")
-            results[arxiv_id] = {
-                'success': False,
-                'html_path': str(html_path)
-            }
+            print("   ❌ Conversion failed")
+            results[arxiv_id] = {"success": False, "html_path": str(html_path)}
 
         print()
 
@@ -177,15 +171,15 @@ def convert_all_arxiv_samples(
     print("=" * 70)
     print("📊 Conversion Summary")
     print("=" * 70)
-    successful = sum(1 for r in results.values() if r['success'])
+    successful = sum(1 for r in results.values() if r["success"])
     print(f"Successful: {successful}/{len(html_files)}")
 
     if successful > 0:
-        total_html_kb = sum(r['html_size_kb'] for r in results.values() if r['success'])
-        total_md_kb = sum(r['md_size_kb'] for r in results.values() if r['success'])
+        total_html_kb = sum(r["html_size_kb"] for r in results.values() if r["success"])
+        total_md_kb = sum(r["md_size_kb"] for r in results.values() if r["success"])
         print(f"Total HTML: {total_html_kb:.1f} KB")
         print(f"Total Markdown: {total_md_kb:.1f} KB")
-        print(f"Compression: {(1 - total_md_kb/total_html_kb) * 100:.1f}%")
+        print(f"Compression: {(1 - total_md_kb / total_html_kb) * 100:.1f}%")
 
     print()
     print("✅ Conversion complete")
@@ -199,7 +193,7 @@ def main():
     results = convert_all_arxiv_samples()
 
     # Print any failures
-    failures = [arxiv_id for arxiv_id, r in results.items() if not r['success']]
+    failures = [arxiv_id for arxiv_id, r in results.items() if not r["success"]]
     if failures:
         print()
         print("⚠️  Failed conversions:")

@@ -9,7 +9,7 @@ This module defines 15 industry types with authentic characteristics including:
 """
 
 from dataclasses import dataclass
-from typing import List, Dict, Any
+from typing import Any
 
 
 @dataclass
@@ -17,12 +17,12 @@ class IndustryConfig:
     """Configuration for an industry type."""
 
     name: str
-    company_suffixes: List[str]
-    company_prefixes: List[str]
-    products_services: List[Dict[str, Any]]  # {name, unit, price_range}
-    payment_terms: List[str]
+    company_suffixes: list[str]
+    company_prefixes: list[str]
+    products_services: list[dict[str, Any]]  # {name, unit, price_range}
+    payment_terms: list[str]
     typical_line_items: tuple[int, int]  # (min, max)
-    notes_templates: List[str]
+    notes_templates: list[str]
 
 
 # SaaS / Cloud Services
@@ -31,7 +31,11 @@ SAAS_CONFIG = IndustryConfig(
     company_suffixes=["Technologies", "Software", "Cloud", "Labs", "Digital", "Solutions"],
     company_prefixes=["Cloud", "Data", "Sync", "Stream", "Connect", "Flow", "Smart", "Nexus"],
     products_services=[
-        {"name": "Enterprise Plan - Annual", "unit": "subscription", "price_range": (24000, 120000)},
+        {
+            "name": "Enterprise Plan - Annual",
+            "unit": "subscription",
+            "price_range": (24000, 120000),
+        },
         {"name": "Professional Plan - Monthly", "unit": "subscription", "price_range": (499, 2499)},
         {"name": "API Usage", "unit": "per 1000 calls", "price_range": (0.50, 5.00)},
         {"name": "Additional Storage", "unit": "TB/month", "price_range": (50, 200)},
@@ -44,7 +48,7 @@ SAAS_CONFIG = IndustryConfig(
         "Thank you for your business. Support available 24/7 at support@{company}.com",
         "Auto-renews annually unless cancelled 30 days prior to renewal date.",
         "Questions? Contact your account manager or billing@{company}.com",
-    ]
+    ],
 )
 
 # Manufacturing / Industrial
@@ -67,7 +71,7 @@ MANUFACTURING_CONFIG = IndustryConfig(
         "Purchase Order #{po_number} - Rush charges may apply for expedited orders.",
         "All materials conform to ASTM standards. Certifications available upon request.",
         "Standard lead time 4-6 weeks. Contact production@{company}.com for rush orders.",
-    ]
+    ],
 )
 
 # Legal Services
@@ -90,7 +94,7 @@ LEGAL_CONFIG = IndustryConfig(
         "Matter: {matter_number}. Retain this invoice for your records.",
         "Detailed time entries available upon request. Questions? Contact billing@{company}.com",
         "Payment by wire transfer, check, or credit card accepted.",
-    ]
+    ],
 )
 
 # Freight / Logistics
@@ -113,7 +117,7 @@ FREIGHT_CONFIG = IndustryConfig(
         "BOL #{bol_number} - Shipment delivered on {date}. POD available online.",
         "Fuel surcharge updated weekly based on DOE index. Current rate: {rate}%",
         "Questions about this shipment? Call 1-800-{company} or email freight@{company}.com",
-    ]
+    ],
 )
 
 # Construction
@@ -137,7 +141,7 @@ CONSTRUCTION_CONFIG = IndustryConfig(
         "Project: {project_name} - Invoice #{invoice_number} for work period {period}",
         "Retain 10% until final completion and inspection. License #: {license_number}",
         "Change orders require written approval. Contact PM@{company}.com",
-    ]
+    ],
 )
 
 # Marketing / Advertising Agency
@@ -160,7 +164,7 @@ MARKETING_CONFIG = IndustryConfig(
         "Campaign: {campaign_name} - Deliverables due {date}",
         "Media buy is net of agency commission. Detailed reporting available in client portal.",
         "Questions? Contact your account executive at {email}",
-    ]
+    ],
 )
 
 # IT Services / Consulting
@@ -183,7 +187,7 @@ IT_CONSULTING_CONFIG = IndustryConfig(
         "Project #{project_number} - Hours for period ending {date}",
         "Detailed time logs attached. All work performed remotely unless noted.",
         "Questions? Contact your project manager at pm@{company}.com",
-    ]
+    ],
 )
 
 # Medical / Healthcare Services
@@ -205,7 +209,7 @@ MEDICAL_CONFIG = IndustryConfig(
         "Patient: {patient_id} - Date of Service: {date} - Insurance pending",
         "This is not a bill. Your insurance carrier may pay all or part of this amount.",
         "Questions about billing? Call (555) 123-4567 or visit our billing portal.",
-    ]
+    ],
 )
 
 # Retail / E-commerce
@@ -227,7 +231,7 @@ RETAIL_CONFIG = IndustryConfig(
         "Order #{order_number} - Shipped via {carrier} on {date}",
         "Volume discounts available. Contact sales@{company}.com for quote.",
         "Returns accepted within 30 days with original packaging.",
-    ]
+    ],
 )
 
 # Architecture / Engineering
@@ -250,7 +254,7 @@ ARCHITECTURE_CONFIG = IndustryConfig(
         "Project: {project_name} - Phase: {phase} - Invoice #{invoice_number}",
         "Architectural services per AIA B101 agreement dated {date}",
         "Questions? Contact project lead at design@{company}.com",
-    ]
+    ],
 )
 
 # Accounting / Financial Services
@@ -272,7 +276,7 @@ ACCOUNTING_CONFIG = IndustryConfig(
         "Tax Year {year} - Client: {client_number} - Prepared by {preparer}",
         "All work performed in accordance with GAAP and AICPA standards.",
         "Questions? Contact your accountant at {email} or call {phone}",
-    ]
+    ],
 )
 
 # Catering / Food Service
@@ -296,7 +300,7 @@ CATERING_CONFIG = IndustryConfig(
         "Event: {event_name} on {date} - Guest count: {count}",
         "Gratuity (18%) and service charge included. Sales tax additional.",
         "Final count due 72 hours prior to event. Contact events@{company}.com",
-    ]
+    ],
 )
 
 # Printing / Publishing
@@ -319,7 +323,7 @@ PRINTING_CONFIG = IndustryConfig(
         "Job #{job_number} - Proof approved {date} - Ship date: {ship_date}",
         "All work guaranteed. Reprints for errors at no charge.",
         "Questions? Contact production@{company}.com or call {phone}",
-    ]
+    ],
 )
 
 # Property Management / Real Estate
@@ -342,7 +346,7 @@ PROPERTY_MGMT_CONFIG = IndustryConfig(
         "Property: {property_address} - Period: {period}",
         "Owner statement available in online portal. Login at portal.{company}.com",
         "Questions? Contact your property manager at {email}",
-    ]
+    ],
 )
 
 # Landscaping / Grounds Maintenance
@@ -366,7 +370,7 @@ LANDSCAPING_CONFIG = IndustryConfig(
         "Property: {property_address} - Service date: {date}",
         "Seasonal contracts available - save 15%. Call {phone} for details.",
         "Questions or service requests? Email service@{company}.com",
-    ]
+    ],
 )
 
 

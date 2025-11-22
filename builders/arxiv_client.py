@@ -14,7 +14,7 @@ import logging
 import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from typing import Any, Optional
+from typing import Any
 from urllib.parse import quote
 
 import requests
@@ -294,12 +294,10 @@ class ArxivClient:
             self._download_file(url, output_path, expected_content_type="text/html")
             logger.info(f"Successfully downloaded ar5iv HTML for {arxiv_id} to {output_path}")
         except Exception as e:
-            raise ArxivDownloadError(
-                f"Failed to download ar5iv HTML for {arxiv_id}: {e}"
-            ) from e
+            raise ArxivDownloadError(f"Failed to download ar5iv HTML for {arxiv_id}: {e}") from e
 
     def _download_file(
-        self, url: str, output_path: Path, expected_content_type: Optional[str] = None
+        self, url: str, output_path: Path, expected_content_type: str | None = None
     ) -> None:
         """
         Download a file with verification.

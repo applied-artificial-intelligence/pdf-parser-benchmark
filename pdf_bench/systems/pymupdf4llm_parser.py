@@ -7,7 +7,8 @@ Markdown output optimized for LLM consumption, with better structure preservatio
 from pathlib import Path
 
 try:
-    import pymupdf4llm  # type: ignore[import-untyped]
+    import pymupdf4llm  # type: ignore[import-untyped]  # noqa: F401
+
     PYMUPDF4LLM_AVAILABLE = True
 except ImportError:
     PYMUPDF4LLM_AVAILABLE = False
@@ -38,6 +39,7 @@ class PyMuPDF4LLMParser(BaseParser):
         try:
             # pymupdf4llm doesn't have __version__, use pymupdf version
             import pymupdf
+
             self._version = str(pymupdf.VersionBind)
         except (ImportError, AttributeError):
             self._version = "0.2.2"

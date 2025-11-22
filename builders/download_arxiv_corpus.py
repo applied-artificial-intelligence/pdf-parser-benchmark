@@ -16,7 +16,6 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-
 from arxiv_client import ArxivClient, ArxivClientError
 
 # Configure logging
@@ -94,10 +93,10 @@ class ArxivCorpusDownloader:
         """
         arxiv_id = paper["arxiv_id"]
         paper_id = paper["id"]
-        logger.info(f"\n{'='*80}")
+        logger.info(f"\n{'=' * 80}")
         logger.info(f"Processing {paper_id}: {arxiv_id}")
         logger.info(f"Title: {paper['title']}")
-        logger.info(f"{'='*80}")
+        logger.info(f"{'=' * 80}")
 
         errors = []
 
@@ -126,9 +125,7 @@ class ArxivCorpusDownloader:
                 logger.info(f"[{paper_id}] Downloading PDF...")
                 try:
                     self.client.download_pdf(arxiv_id, pdf_path)
-                    logger.info(
-                        f"[{paper_id}] PDF downloaded: {pdf_path.stat().st_size} bytes"
-                    )
+                    logger.info(f"[{paper_id}] PDF downloaded: {pdf_path.stat().st_size} bytes")
                 except ArxivClientError as e:
                     error_msg = f"PDF download failed: {e}"
                     logger.error(f"[{paper_id}] {error_msg}")

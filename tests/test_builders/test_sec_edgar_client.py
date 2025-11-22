@@ -1,7 +1,8 @@
 """Tests for SEC EDGAR client."""
 
 import time
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import Mock, patch
+
 import pytest
 import requests
 
@@ -53,7 +54,7 @@ class TestRateLimiting:
         """Test that rate limiting delays requests."""
         client = SECEdgarClient(rate_limit_delay=0.1)
 
-        start_time = time.time()
+        time.time()
         client._rate_limit()
         first_request = time.time()
         client._rate_limit()
@@ -82,7 +83,7 @@ class TestRateLimiting:
 class TestMakeRequest:
     """Test HTTP request functionality."""
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_successful_request(self, mock_get: Mock) -> None:
         """Test successful HTTP request."""
         # Setup mock response
@@ -99,7 +100,7 @@ class TestMakeRequest:
         mock_get.assert_called_once()
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_404_error(self, mock_get: Mock) -> None:
         """Test handling of 404 errors."""
         mock_response = Mock()
@@ -114,8 +115,8 @@ class TestMakeRequest:
 
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
-    @patch('time.sleep')  # Mock sleep to speed up test
+    @patch("builders.sec_edgar_client.requests.Session.get")
+    @patch("time.sleep")  # Mock sleep to speed up test
     def test_403_retry_logic(self, mock_sleep: Mock, mock_get: Mock) -> None:
         """Test retry logic for 403 errors."""
         # First two attempts return 403, third succeeds
@@ -137,8 +138,8 @@ class TestMakeRequest:
         assert mock_sleep.call_count == 2  # Should sleep between retries
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
-    @patch('time.sleep')
+    @patch("builders.sec_edgar_client.requests.Session.get")
+    @patch("time.sleep")
     def test_timeout_retry(self, mock_sleep: Mock, mock_get: Mock) -> None:
         """Test retry logic for timeouts."""
         # First attempt times out, second succeeds
@@ -154,8 +155,8 @@ class TestMakeRequest:
         assert mock_get.call_count == 2
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
-    @patch('time.sleep')
+    @patch("builders.sec_edgar_client.requests.Session.get")
+    @patch("time.sleep")
     def test_max_retries_exceeded(self, mock_sleep: Mock, mock_get: Mock) -> None:
         """Test that max retries is enforced."""
         mock_get.side_effect = requests.exceptions.Timeout("Always timeout")
@@ -173,7 +174,7 @@ class TestMakeRequest:
 class TestDownloadFilingHTML:
     """Test HTML filing download."""
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_download_html_success(self, mock_get: Mock) -> None:
         """Test successful HTML download."""
         mock_response = Mock()
@@ -188,7 +189,7 @@ class TestDownloadFilingHTML:
         assert mock_get.called
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_download_html_with_leading_zeros(self, mock_get: Mock) -> None:
         """Test HTML download with CIK containing leading zeros."""
         mock_response = Mock()
@@ -207,7 +208,7 @@ class TestDownloadFilingHTML:
         assert "cik=1&" in url or "cik=1" in url
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_download_html_error(self, mock_get: Mock) -> None:
         """Test error handling in HTML download."""
         mock_get.side_effect = requests.RequestException("Network error")
@@ -223,8 +224,8 @@ class TestDownloadFilingHTML:
 class TestDownloadFilingPDF:
     """Test PDF filing download."""
 
-    @patch.object(SECEdgarClient, 'find_pdf_url')
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch.object(SECEdgarClient, "find_pdf_url")
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_download_pdf_success(self, mock_get: Mock, mock_find_pdf: Mock) -> None:
         """Test successful PDF download."""
         # Mock PDF URL discovery
@@ -233,18 +234,18 @@ class TestDownloadFilingPDF:
         # Mock PDF download
         mock_response = Mock()
         mock_response.status_code = 200
-        mock_response.content = b'%PDF-1.4\nTest PDF content'
+        mock_response.content = b"%PDF-1.4\nTest PDF content"
         mock_get.return_value = mock_response
 
         client = SECEdgarClient(rate_limit_delay=0)
         pdf = client.download_filing_pdf("0000320193", "0000320193-24-000123")
 
         assert pdf is not None
-        assert pdf.startswith(b'%PDF')
-        assert b'Test PDF content' in pdf
+        assert pdf.startswith(b"%PDF")
+        assert b"Test PDF content" in pdf
         client.close()
 
-    @patch.object(SECEdgarClient, 'find_pdf_url')
+    @patch.object(SECEdgarClient, "find_pdf_url")
     def test_download_pdf_not_available(self, mock_find_pdf: Mock) -> None:
         """Test PDF download when no PDF available."""
         mock_find_pdf.return_value = None
@@ -255,8 +256,8 @@ class TestDownloadFilingPDF:
         assert pdf is None
         client.close()
 
-    @patch.object(SECEdgarClient, 'find_pdf_url')
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch.object(SECEdgarClient, "find_pdf_url")
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_download_pdf_invalid_format(self, mock_get: Mock, mock_find_pdf: Mock) -> None:
         """Test PDF download with invalid PDF format."""
         mock_find_pdf.return_value = "https://www.sec.gov/test.pdf"
@@ -264,7 +265,7 @@ class TestDownloadFilingPDF:
         # Return HTML instead of PDF
         mock_response = Mock()
         mock_response.status_code = 200
-        mock_response.content = b'<html>Not a PDF</html>'
+        mock_response.content = b"<html>Not a PDF</html>"
         mock_get.return_value = mock_response
 
         client = SECEdgarClient(rate_limit_delay=0)
@@ -277,7 +278,7 @@ class TestDownloadFilingPDF:
 class TestFindPDFURL:
     """Test PDF URL discovery."""
 
-    @patch.object(SECEdgarClient, 'get_filing_index')
+    @patch.object(SECEdgarClient, "get_filing_index")
     def test_find_pdf_url_success(self, mock_get_index: Mock) -> None:
         """Test finding PDF URL in filing index."""
         mock_index_html = """
@@ -298,7 +299,7 @@ class TestFindPDFURL:
         assert pdf_url.startswith("https://www.sec.gov")
         client.close()
 
-    @patch.object(SECEdgarClient, 'get_filing_index')
+    @patch.object(SECEdgarClient, "get_filing_index")
     def test_find_pdf_url_not_found(self, mock_get_index: Mock) -> None:
         """Test when no PDF URL found in filing index."""
         mock_index_html = """
@@ -316,7 +317,7 @@ class TestFindPDFURL:
         assert pdf_url is None
         client.close()
 
-    @patch.object(SECEdgarClient, 'get_filing_index')
+    @patch.object(SECEdgarClient, "get_filing_index")
     def test_find_pdf_url_with_absolute_url(self, mock_get_index: Mock) -> None:
         """Test finding PDF URL when link is absolute."""
         mock_index_html = """
@@ -338,7 +339,7 @@ class TestFindPDFURL:
 class TestGetFilingMetadata:
     """Test filing metadata retrieval."""
 
-    @patch.object(SECEdgarClient, 'get_filing_index')
+    @patch.object(SECEdgarClient, "get_filing_index")
     def test_get_metadata_success(self, mock_get_index: Mock) -> None:
         """Test successful metadata retrieval."""
         mock_index_html = """
@@ -360,14 +361,14 @@ class TestGetFilingMetadata:
         client = SECEdgarClient(rate_limit_delay=0)
         metadata = client.get_filing_metadata("0000320193", "0000320193-24-000123")
 
-        assert metadata['cik'] == "0000320193"
-        assert metadata['accession_number'] == "0000320193-24-000123"
-        assert metadata['company_name'] == "APPLE INC"
-        assert len(metadata['documents']) == 1
-        assert metadata['documents'][0]['document'] == "aapl-20240928.htm"
+        assert metadata["cik"] == "0000320193"
+        assert metadata["accession_number"] == "0000320193-24-000123"
+        assert metadata["company_name"] == "APPLE INC"
+        assert len(metadata["documents"]) == 1
+        assert metadata["documents"][0]["document"] == "aapl-20240928.htm"
         client.close()
 
-    @patch.object(SECEdgarClient, 'get_filing_index')
+    @patch.object(SECEdgarClient, "get_filing_index")
     def test_get_metadata_error(self, mock_get_index: Mock) -> None:
         """Test metadata retrieval with error."""
         mock_get_index.side_effect = Exception("Network error")
@@ -375,15 +376,15 @@ class TestGetFilingMetadata:
         client = SECEdgarClient(rate_limit_delay=0)
         metadata = client.get_filing_metadata("0000320193", "0000320193-24-000123")
 
-        assert 'error' in metadata
-        assert metadata['cik'] == "0000320193"
+        assert "error" in metadata
+        assert metadata["cik"] == "0000320193"
         client.close()
 
 
 class TestGetFilingIndex:
     """Test filing index retrieval."""
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_get_index_success(self, mock_get: Mock) -> None:
         """Test successful index retrieval."""
         mock_response = Mock()
@@ -397,7 +398,7 @@ class TestGetFilingIndex:
         assert "Filing Index" in index_html
         client.close()
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_get_index_fallback_url(self, mock_get: Mock) -> None:
         """Test fallback to alternate index URL."""
         # First URL fails, second succeeds
@@ -422,7 +423,7 @@ class TestGetFilingIndex:
 class TestUserAgentHeader:
     """Test User-Agent header presence."""
 
-    @patch('builders.sec_edgar_client.requests.Session.get')
+    @patch("builders.sec_edgar_client.requests.Session.get")
     def test_user_agent_in_request(self, mock_get: Mock) -> None:
         """Test that User-Agent header is included in requests."""
         mock_response = Mock()

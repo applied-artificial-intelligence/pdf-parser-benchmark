@@ -9,8 +9,8 @@ from typing import Any
 from pdf_bench.loader import DocumentInfo, LoadedConfig
 from pdf_bench.metrics import (
     MarkdownASTParser,
-    chrf_plus_plus_score,
     character_error_rate,
+    chrf_plus_plus_score,
     edit_similarity,
     element_f1_score,
     latex_f1_score,
@@ -58,7 +58,7 @@ def _element_f1_wrapper(ground_truth: str, prediction: str) -> float:
         pred_ast = _ast_parser.parse(prediction)
         scores = element_f1_score(gt_ast, pred_ast)
         # element_f1_score returns a dict with 'overall' and 'per_element' keys
-        return scores['overall']['f1']
+        return scores["overall"]["f1"]
     except Exception:
         return float("nan")
 
@@ -220,7 +220,9 @@ class BenchmarkRunner:
         else:
             self.workers = max(1, parallel_workers)
 
-    def run(self, checkpoint_path: Path | None = None, checkpoint_interval: int = 20) -> BenchmarkResults:
+    def run(
+        self, checkpoint_path: Path | None = None, checkpoint_interval: int = 20
+    ) -> BenchmarkResults:
         """Execute complete benchmark with incremental checkpointing.
 
         Uses parallel execution if workers > 1, otherwise sequential.
@@ -253,6 +255,7 @@ class BenchmarkRunner:
         if checkpoint_path and checkpoint_path.exists():
             try:
                 from pdf_bench.persistence import load_results
+
                 checkpoint_results = load_results(checkpoint_path)
                 results.results = checkpoint_results.results
                 results.success_count = checkpoint_results.success_count
@@ -301,9 +304,7 @@ class BenchmarkRunner:
 
         return results
 
-    def _run_sequential(
-        self, tasks: list[tuple[BaseParser, DocumentInfo]]
-    ) -> list[DocumentResult]:
+    def _run_sequential(self, tasks: list[tuple[BaseParser, DocumentInfo]]) -> list[DocumentResult]:
         """Execute tasks sequentially with optional progress bar.
 
         Args:
@@ -322,9 +323,7 @@ class BenchmarkRunner:
                 TaskProgressColumn(),
                 TimeElapsedColumn(),
             ) as progress:
-                task_id = progress.add_task(
-                    f"Running {self.config.config.name}", total=len(tasks)
-                )
+                task_id = progress.add_task(f"Running {self.config.config.name}", total=len(tasks))
 
                 for parser, doc in tasks:
                     result = self._run_single(parser, doc)
@@ -369,9 +368,7 @@ class BenchmarkRunner:
                 TaskProgressColumn(),
                 TimeElapsedColumn(),
             ) as progress:
-                task_id = progress.add_task(
-                    f"Running {self.config.config.name}", total=len(tasks)
-                )
+                task_id = progress.add_task(f"Running {self.config.config.name}", total=len(tasks))
 
                 for parser, doc in tasks:
                     result = self._run_single(parser, doc)
@@ -409,7 +406,7 @@ class BenchmarkRunner:
                 if checkpoint_path and checkpoint_counter >= checkpoint_interval:
                     save_results(results, checkpoint_path)
                     checkpoint_counter = 0
-                    print(f"✓ Checkpoint saved ({i+1}/{len(tasks)} tasks complete)")
+                    print(f"✓ Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)")
 
         # Final checkpoint
         if checkpoint_path:
@@ -513,7 +510,7 @@ class BenchmarkRunner:
                     if checkpoint_path and checkpoint_counter >= checkpoint_interval:
                         save_results(results, checkpoint_path)
                         checkpoint_counter = 0
-                        print(f"✓ Checkpoint saved ({i+1}/{len(tasks)} tasks complete)")
+                        print(f"✓ Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)")
 
         # Final checkpoint
         if checkpoint_path:
@@ -521,9 +518,7 @@ class BenchmarkRunner:
 
         return []  # Results already added to results object
 
-    def _run_parallel(
-        self, tasks: list[tuple[BaseParser, DocumentInfo]]
-    ) -> list[DocumentResult]:
+    def _run_parallel(self, tasks: list[tuple[BaseParser, DocumentInfo]]) -> list[DocumentResult]:
         """Execute tasks in parallel using multiprocessing.
 
         Args:
@@ -631,9 +626,7 @@ class BenchmarkRunner:
                 error=str(e),
             )
 
-    def _compute_metrics(
-        self, ground_truth: str, prediction: str
-    ) -> dict[str, float]:
+    def _compute_metrics(self, ground_truth: str, prediction: str) -> dict[str, float]:
         """Compute all configured metrics.
 
         Args:

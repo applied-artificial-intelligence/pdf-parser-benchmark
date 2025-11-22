@@ -85,9 +85,7 @@ class TestNormalizedEditDistance:
     def test_normalization_disabled(self) -> None:
         """Test behavior when normalization is disabled."""
         # Whitespace differences count as edits
-        distance = normalized_edit_distance(
-            "hello world", "hello  world", normalize=False
-        )
+        distance = normalized_edit_distance("hello world", "hello  world", normalize=False)
         assert distance > 0.0
 
     def test_normalization_options(self) -> None:
@@ -284,29 +282,21 @@ class TestNormalizationIntegration:
     def test_ligature_normalization(self) -> None:
         """Test ligature normalization when enabled."""
         # fi ligature
-        distance = normalized_edit_distance(
-            "first", "\ufb01rst", ligatures=True
-        )
+        distance = normalized_edit_distance("first", "\ufb01rst", ligatures=True)
         assert distance == 0.0
 
         # Without ligature normalization
-        distance = normalized_edit_distance(
-            "first", "\ufb01rst", ligatures=False
-        )
+        distance = normalized_edit_distance("first", "\ufb01rst", ligatures=False)
         assert distance > 0.0
 
     def test_hyphen_normalization(self) -> None:
         """Test hyphen normalization when enabled."""
         # En-dash to hyphen
-        distance = normalized_edit_distance(
-            "1-10", "1\u201310", hyphens=True
-        )
+        distance = normalized_edit_distance("1-10", "1\u201310", hyphens=True)
         assert distance == 0.0
 
         # Without hyphen normalization
-        distance = normalized_edit_distance(
-            "1-10", "1\u201310", hyphens=False
-        )
+        distance = normalized_edit_distance("1-10", "1\u201310", hyphens=False)
         assert distance > 0.0
 
     def test_combined_normalization(self) -> None:

@@ -48,6 +48,7 @@ from pathlib import Path
 
 try:
     import marker  # type: ignore[import-untyped]
+
     MARKER_AVAILABLE = True
 except ImportError:
     MARKER_AVAILABLE = False
@@ -108,8 +109,7 @@ class MarkerOllamaParser(BaseParser):
 
         if not venv_bin.exists():
             raise RuntimeError(
-                f"marker_single not found at {venv_bin}. "
-                "Install with: uv pip install marker-pdf"
+                f"marker_single not found at {venv_bin}. Install with: uv pip install marker-pdf"
             )
 
         self._marker_cmd = str(venv_bin)
@@ -127,27 +127,25 @@ class MarkerOllamaParser(BaseParser):
             available_models = [m.get("name", "") for m in models_data.get("models", [])]
 
             # Check for llama3.2-vision (with or without tag)
-            has_vision_model = any(
-                "llama3.2-vision" in model.lower()
-                for model in available_models
-            )
+            has_vision_model = any("llama3.2-vision" in model.lower() for model in available_models)
 
             if not has_vision_model:
                 logger.warning(
                     "llama3.2-vision model not found in Ollama. "
                     "Available models: %s. "
                     "Install with: ollama pull llama3.2-vision",
-                    available_models
+                    available_models,
                 )
                 # Don't raise error - let Marker/Ollama handle it
             else:
-                logger.info("Ollama server ready with vision model: %s",
-                           [m for m in available_models if "llama3.2-vision" in m.lower()])
+                logger.info(
+                    "Ollama server ready with vision model: %s",
+                    [m for m in available_models if "llama3.2-vision" in m.lower()],
+                )
 
         except (requests.RequestException, requests.ConnectionError) as e:
             raise RuntimeError(
-                "Ollama server not accessible at http://localhost:11434. "
-                "Start with: ollama serve"
+                "Ollama server not accessible at http://localhost:11434. Start with: ollama serve"
             ) from e
         except Exception as e:
             logger.warning("Could not verify Ollama models: %s", e)

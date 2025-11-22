@@ -9,10 +9,9 @@ This module generates authentic invoice data including:
 """
 
 import random
+from dataclasses import dataclass
 from datetime import datetime, timedelta
 from decimal import Decimal
-from typing import Dict, List, Tuple
-from dataclasses import dataclass
 
 from faker import Faker
 
@@ -20,6 +19,7 @@ from faker import Faker
 @dataclass
 class CompanyInfo:
     """Company information for invoice."""
+
     name: str
     address: str
     city: str
@@ -35,6 +35,7 @@ class CompanyInfo:
 @dataclass
 class LineItem:
     """Single line item on invoice."""
+
     description: str
     quantity: Decimal
     unit: str
@@ -180,7 +181,7 @@ class InvoiceDataGenerator:
             seq = random.randint(10000, 99999)
             return f"INV-{seq}"
 
-    def generate_invoice_date(self, days_ago_range: Tuple[int, int] = (0, 90)) -> datetime:
+    def generate_invoice_date(self, days_ago_range: tuple[int, int] = (0, 90)) -> datetime:
         """Generate invoice date within specified range.
 
         Args:
@@ -216,11 +217,8 @@ class InvoiceDataGenerator:
             return invoice_date + timedelta(days=30)
 
     def generate_line_items(
-        self,
-        industry_config,
-        count_range: Tuple[int, int] = None,
-        complexity: str = "medium"
-    ) -> List[LineItem]:
+        self, industry_config, count_range: tuple[int, int] = None, complexity: str = "medium"
+    ) -> list[LineItem]:
         """Generate realistic line items for invoice.
 
         Args:
@@ -253,18 +251,22 @@ class InvoiceDataGenerator:
 
             # Generate unit price within industry range
             min_price, max_price = product["price_range"]
-            unit_price = Decimal(str(random.uniform(min_price, max_price))).quantize(Decimal("0.01"))
+            unit_price = Decimal(str(random.uniform(min_price, max_price))).quantize(
+                Decimal("0.01")
+            )
 
             # Calculate amount
             amount = (quantity * unit_price).quantize(Decimal("0.01"))
 
-            items.append(LineItem(
-                description=product["name"],
-                quantity=quantity,
-                unit=product["unit"],
-                unit_price=unit_price,
-                amount=amount,
-            ))
+            items.append(
+                LineItem(
+                    description=product["name"],
+                    quantity=quantity,
+                    unit=product["unit"],
+                    unit_price=unit_price,
+                    amount=amount,
+                )
+            )
 
         return items
 
@@ -329,7 +331,7 @@ class InvoiceDataGenerator:
 
         return notes
 
-    def add_variation(self, items: List[LineItem], variation_type: str) -> List[LineItem]:
+    def add_variation(self, items: list[LineItem], variation_type: str) -> list[LineItem]:
         """Add realistic variations to line items.
 
         Args:
@@ -345,34 +347,40 @@ class InvoiceDataGenerator:
             discount_pct = random.choice([Decimal("0.05"), Decimal("0.10"), Decimal("0.15")])
             discount_amount = -(subtotal * discount_pct).quantize(Decimal("0.01"))
 
-            items.append(LineItem(
-                description=f"Volume Discount ({discount_pct * 100:.0f}%)",
-                quantity=Decimal("1"),
-                unit="discount",
-                unit_price=discount_amount,
-                amount=discount_amount,
-            ))
+            items.append(
+                LineItem(
+                    description=f"Volume Discount ({discount_pct * 100:.0f}%)",
+                    quantity=Decimal("1"),
+                    unit="discount",
+                    unit_price=discount_amount,
+                    amount=discount_amount,
+                )
+            )
 
         elif variation_type == "rush_fee":
             # Add rush processing fee
             rush_fee = random.choice([Decimal("50.00"), Decimal("100.00"), Decimal("250.00")])
-            items.append(LineItem(
-                description="Rush Processing Fee",
-                quantity=Decimal("1"),
-                unit="fee",
-                unit_price=rush_fee,
-                amount=rush_fee,
-            ))
+            items.append(
+                LineItem(
+                    description="Rush Processing Fee",
+                    quantity=Decimal("1"),
+                    unit="fee",
+                    unit_price=rush_fee,
+                    amount=rush_fee,
+                )
+            )
 
         elif variation_type == "shipping":
             # Add shipping charge
             shipping = Decimal(str(random.uniform(15, 250))).quantize(Decimal("0.01"))
-            items.append(LineItem(
-                description="Shipping & Handling",
-                quantity=Decimal("1"),
-                unit="shipment",
-                unit_price=shipping,
-                amount=shipping,
-            ))
+            items.append(
+                LineItem(
+                    description="Shipping & Handling",
+                    quantity=Decimal("1"),
+                    unit="shipment",
+                    unit_price=shipping,
+                    amount=shipping,
+                )
+            )
 
         return items

@@ -1,0 +1,55 @@
+# Docling Parser Configuration
+# https://github.com/docling-project/docling
+#
+# Copy to one of these locations to customize:
+#   - ./.pdfbench/docling.yaml (project-local)
+#   - ~/.config/pdfbench/docling.yaml (user default)
+#
+# Or set via environment variables:
+#   DOCLING_OCR=true
+#   DOCLING_TABLE_STRUCTURE=true
+#   DOCLING_THREADS=4
+
+# OCR Configuration
+# -----------------
+# Enable OCR for scanned documents or images
+# WARNING: OCR significantly increases:
+#   - Memory usage: ~8-12GB (vs ~2-4GB without)
+#   - Processing time: ~30-60 sec/doc (vs ~2-5 sec)
+#   - GPU strongly recommended for OCR mode
+do_ocr: false
+
+# OCR languages (ISO 639-1 codes)
+# Only used when do_ocr is true
+ocr_languages:
+  - en
+
+# Table Structure Extraction
+# --------------------------
+# Uses TableFormer model for table detection and structure
+# Adds ~1-2GB memory but greatly improves table output
+do_table_structure: true
+
+# Table extraction mode: "fast" or "accurate"
+# "accurate" uses more compute but better results
+table_mode: fast
+
+# Performance Settings
+# --------------------
+# Number of CPU threads for processing
+num_threads: 4
+
+# Device selection: "auto", "cpu", "cuda", "mps"
+# "auto" will use GPU if available
+device: auto
+
+# Advanced Options
+# ----------------
+# Generate page images (for visual grounding)
+generate_page_images: false
+
+# Generate images of pictures found in document
+generate_picture_images: false
+
+# Image scale factor (higher = better quality, more memory)
+images_scale: 1.0

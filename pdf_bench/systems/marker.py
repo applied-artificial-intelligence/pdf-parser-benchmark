@@ -34,6 +34,7 @@ from pathlib import Path
 
 try:
     import marker  # type: ignore[import-untyped]
+
     MARKER_AVAILABLE = True
 except ImportError:
     MARKER_AVAILABLE = False
@@ -77,8 +78,7 @@ class MarkerParser(BaseParser):
         """
         if not MARKER_AVAILABLE:
             raise ImportError(
-                "marker-pdf is required for MarkerParser. "
-                "Install with: pip install marker-pdf"
+                "marker-pdf is required for MarkerParser. Install with: pip install marker-pdf"
             )
 
         # Find marker_single executable in virtual environment
@@ -86,8 +86,7 @@ class MarkerParser(BaseParser):
 
         if not venv_bin.exists():
             raise RuntimeError(
-                f"marker_single not found at {venv_bin}. "
-                "Install with: uv pip install marker-pdf"
+                f"marker_single not found at {venv_bin}. Install with: uv pip install marker-pdf"
             )
 
         self._marker_cmd = str(venv_bin)
@@ -219,9 +218,7 @@ class MarkerParser(BaseParser):
             return cached_path
 
         except subprocess.TimeoutExpired as e:
-            raise RuntimeError(
-                f"Marker processing timed out after 300 seconds: {e}"
-            ) from e
+            raise RuntimeError(f"Marker processing timed out after 300 seconds: {e}") from e
         except subprocess.CalledProcessError as e:
             raise RuntimeError(
                 f"Marker execution failed with exit code {e.returncode}\n"

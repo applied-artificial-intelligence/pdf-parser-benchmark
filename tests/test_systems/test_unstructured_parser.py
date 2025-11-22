@@ -167,9 +167,7 @@ class TestUnstructuredParserBasicParsing:
 class TestUnstructuredParserErrorHandling:
     """Test error handling for various failure scenarios."""
 
-    def test_parse_nonexistent_pdf(
-        self, parser: UnstructuredParser, output_dir: Path
-    ) -> None:
+    def test_parse_nonexistent_pdf(self, parser: UnstructuredParser, output_dir: Path) -> None:
         """Test that parsing a nonexistent PDF raises FileNotFoundError."""
         nonexistent_pdf = Path("/tmp/does_not_exist.pdf")
 
@@ -293,9 +291,7 @@ class TestUnstructuredParserMarkdownConversion:
         # Should have paragraph breaks (double newlines)
         assert "\n\n" in content
 
-    def test_empty_elements_are_filtered(
-        self, parser: UnstructuredParser
-    ) -> None:
+    def test_empty_elements_are_filtered(self, parser: UnstructuredParser) -> None:
         """Test that empty elements are filtered out."""
         # Create mock elements with empty text
         mock_elements = [
@@ -409,9 +405,7 @@ class TestUnstructuredParserEdgeCases:
         assert result2.suffix == ".md"
         assert result3.suffix == ".md"
 
-    def test_empty_element_list(
-        self, parser: UnstructuredParser
-    ) -> None:
+    def test_empty_element_list(self, parser: UnstructuredParser) -> None:
         """Test markdown conversion with empty element list."""
         markdown = parser._elements_to_markdown([])
         assert markdown == ""

@@ -60,6 +60,7 @@ try:
         ResourceNotFoundError,
         ServiceRequestError,
     )
+
     AZURE_AVAILABLE = True
 except ImportError:
     AZURE_AVAILABLE = False
@@ -254,9 +255,7 @@ class AzureDocumentIntelligenceParser(BaseParser):
             # Call Azure Document Intelligence API
             # New SDK version uses 'body' parameter instead of 'analyze_request'
             poller = self._client.begin_analyze_document(
-                model_id="prebuilt-read",
-                body=pdf_bytes,
-                content_type="application/pdf"
+                model_id="prebuilt-read", body=pdf_bytes, content_type="application/pdf"
             )
 
             # Wait for result
@@ -300,9 +299,7 @@ class AzureDocumentIntelligenceParser(BaseParser):
                 ) from e
 
         except ResourceNotFoundError as e:
-            raise RuntimeError(
-                f"Azure Document Intelligence resource not found: {e}"
-            ) from e
+            raise RuntimeError(f"Azure Document Intelligence resource not found: {e}") from e
 
         except ServiceRequestError as e:
             raise RuntimeError(f"Azure service request error: {e}") from e
@@ -311,9 +308,7 @@ class AzureDocumentIntelligenceParser(BaseParser):
             raise PermissionError(f"Permission denied: {e}") from e
 
         except Exception as e:
-            raise RuntimeError(
-                f"Failed to parse PDF with Azure Document Intelligence: {e}"
-            ) from e
+            raise RuntimeError(f"Failed to parse PDF with Azure Document Intelligence: {e}") from e
 
     def _extract_text(self, result: AnalyzeResult) -> str:
         """Extract text from Azure Document Intelligence AnalyzeResult.

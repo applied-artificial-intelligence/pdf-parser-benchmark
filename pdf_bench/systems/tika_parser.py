@@ -7,7 +7,8 @@ supports 1000+ file formats including PDFs.
 from pathlib import Path
 
 try:
-    import tika  # type: ignore[import-untyped]
+    import tika  # type: ignore[import-untyped]  # noqa: F401
+
     TIKA_AVAILABLE = True
 except ImportError:
     TIKA_AVAILABLE = False
@@ -31,8 +32,7 @@ class TikaParser(BaseParser):
         """
         if not TIKA_AVAILABLE:
             raise ImportError(
-                "tika-python is required for TikaParser. "
-                "Install with: pip install tika"
+                "tika-python is required for TikaParser. Install with: pip install tika"
             )
 
         # Tika doesn't have a version in the Python wrapper
@@ -77,7 +77,7 @@ class TikaParser(BaseParser):
         try:
             # Parse file and extract text
             file_data = parser.from_file(str(pdf_path))
-            text = file_data.get('content', '')
+            text = file_data.get("content", "")
 
             if text is None:
                 text = ""

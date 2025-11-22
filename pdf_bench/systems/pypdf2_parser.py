@@ -8,6 +8,7 @@ from pathlib import Path
 
 try:
     import PyPDF2  # type: ignore[import-untyped]
+
     PYPDF2_AVAILABLE = True
 except ImportError:
     PYPDF2_AVAILABLE = False
@@ -30,8 +31,7 @@ class PyPDF2Parser(BaseParser):
         """
         if not PYPDF2_AVAILABLE:
             raise ImportError(
-                "PyPDF2 is required for PyPDF2Parser. "
-                "Install with: pip install PyPDF2"
+                "PyPDF2 is required for PyPDF2Parser. Install with: pip install PyPDF2"
             )
 
         try:

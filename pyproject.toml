@@ -141,6 +141,9 @@ select = [
 ]
 ignore = []
 
+[tool.ruff.lint.per-file-ignores]
+"pdf_bench/main.py" = ["B008"]  # typer uses function calls in defaults
+
 [tool.ruff.lint.isort]
 known-first-party = ["pdf_bench"]
 

@@ -156,17 +156,13 @@ class CostEstimator:
         "pdfplumber": ParserPricing(
             parser_name="pdfplumber", cost_per_page=0.0, notes="Open-source, free"
         ),
-        "marker": ParserPricing(
-            parser_name="marker", cost_per_page=0.0, notes="Open-source, free"
-        ),
+        "marker": ParserPricing(parser_name="marker", cost_per_page=0.0, notes="Open-source, free"),
         "unstructured": ParserPricing(
             parser_name="unstructured", cost_per_page=0.0, notes="Open-source, free"
         ),
     }
 
-    def estimate_cost(
-        self, pdf_paths: list[Path], parser_name: str
-    ) -> CostEstimate:
+    def estimate_cost(self, pdf_paths: list[Path], parser_name: str) -> CostEstimate:
         """Estimate cost for parsing a list of PDFs with a specific parser.
 
         This method counts pages in each PDF and calculates total cost
@@ -192,8 +188,7 @@ class CostEstimator:
         """
         if parser_name not in self.PARSER_PRICING:
             raise ValueError(
-                f"Unknown parser: {parser_name}. "
-                f"Supported: {list(self.PARSER_PRICING.keys())}"
+                f"Unknown parser: {parser_name}. Supported: {list(self.PARSER_PRICING.keys())}"
             )
 
         pricing = self.PARSER_PRICING[parser_name]

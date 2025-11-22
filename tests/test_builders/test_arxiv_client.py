@@ -24,7 +24,6 @@ from builders.arxiv_client import (
     ArxivMetadataError,
 )
 
-
 # Sample Atom XML response from arXiv API
 SAMPLE_ATOM_XML = """<?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -188,9 +187,7 @@ class TestMetadataFetching:
             client.get_paper_metadata("2303.18223")
 
     @patch("builders.arxiv_client.ArxivClient._make_request")
-    def test_get_metadata_request_failure(
-        self, mock_request: Mock, client: ArxivClient
-    ) -> None:
+    def test_get_metadata_request_failure(self, mock_request: Mock, client: ArxivClient) -> None:
         """Test error handling when request fails."""
         mock_request.side_effect = ArxivClientError("Network error")
 
@@ -361,9 +358,7 @@ class TestMakeRequest:
     """Test HTTP request handling."""
 
     @patch("builders.arxiv_client.requests.Session.get")
-    def test_make_request_success(
-        self, mock_get: Mock, client: ArxivClient
-    ) -> None:
+    def test_make_request_success(self, mock_get: Mock, client: ArxivClient) -> None:
         """Test successful HTTP request."""
         mock_response = Mock()
         mock_response.status_code = 200
@@ -375,9 +370,7 @@ class TestMakeRequest:
         mock_get.assert_called_once()
 
     @patch("builders.arxiv_client.requests.Session.get")
-    def test_make_request_raises_for_status(
-        self, mock_get: Mock, client: ArxivClient
-    ) -> None:
+    def test_make_request_raises_for_status(self, mock_get: Mock, client: ArxivClient) -> None:
         """Test that failed requests raise exceptions."""
         mock_response = Mock()
         mock_response.status_code = 404
@@ -388,9 +381,7 @@ class TestMakeRequest:
             client._make_request("https://example.com")
 
     @patch("builders.arxiv_client.requests.Session.get")
-    def test_make_request_timeout(
-        self, mock_get: Mock, client: ArxivClient
-    ) -> None:
+    def test_make_request_timeout(self, mock_get: Mock, client: ArxivClient) -> None:
         """Test timeout handling."""
         mock_get.side_effect = requests.exceptions.Timeout("Timeout")
 
@@ -398,9 +389,7 @@ class TestMakeRequest:
             client._make_request("https://example.com")
 
     @patch("builders.arxiv_client.requests.Session.get")
-    def test_make_request_includes_user_agent(
-        self, mock_get: Mock, client: ArxivClient
-    ) -> None:
+    def test_make_request_includes_user_agent(self, mock_get: Mock, client: ArxivClient) -> None:
         """Test that User-Agent header is set."""
         mock_response = Mock()
         mock_response.status_code = 200
@@ -423,9 +412,7 @@ class TestDownloadFile:
         """Test that files are downloaded in chunks."""
         mock_response = Mock()
         mock_response.headers = {"Content-Type": "application/pdf"}
-        mock_response.iter_content = Mock(
-            return_value=[b"chunk1", b"chunk2", b"chunk3"]
-        )
+        mock_response.iter_content = Mock(return_value=[b"chunk1", b"chunk2", b"chunk3"])
         mock_request.return_value = mock_response
 
         output_path = tmp_path / "test.pdf"

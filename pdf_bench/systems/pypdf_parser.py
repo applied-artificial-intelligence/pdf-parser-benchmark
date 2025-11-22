@@ -8,6 +8,7 @@ from pathlib import Path
 
 try:
     import pypdf  # type: ignore[import-untyped]
+
     PYPDF_AVAILABLE = True
 except ImportError:
     PYPDF_AVAILABLE = False
@@ -30,10 +31,7 @@ class PyPDFParser(BaseParser):
             ImportError: If pypdf is not installed
         """
         if not PYPDF_AVAILABLE:
-            raise ImportError(
-                "pypdf is required for PyPDFParser. "
-                "Install with: pip install pypdf"
-            )
+            raise ImportError("pypdf is required for PyPDFParser. Install with: pip install pypdf")
 
         try:
             self._version = str(pypdf.__version__)

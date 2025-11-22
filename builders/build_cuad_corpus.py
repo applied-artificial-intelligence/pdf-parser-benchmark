@@ -5,10 +5,9 @@ CUAD (Contract Understanding Atticus Dataset) contains real legal contracts
 from SEC filings with extracted text that can serve as ground truth.
 """
 
-import json
-import os
 import shutil
 from pathlib import Path
+
 import yaml
 
 
@@ -49,31 +48,31 @@ def txt_to_markdown(txt_path: Path) -> str:
     Returns:
         Markdown string
     """
-    with open(txt_path, 'r', encoding='utf-8', errors='replace') as f:
+    with open(txt_path, encoding="utf-8", errors="replace") as f:
         content = f.read()
 
     # Basic cleanup
-    lines = content.split('\n')
+    lines = content.split("\n")
     md_lines = []
 
     for line in lines:
         line = line.strip()
         if not line:
-            md_lines.append('')
+            md_lines.append("")
             continue
 
         # Detect potential headers (all caps lines, numbered sections)
         if line.isupper() and len(line) > 3 and len(line) < 100:
             md_lines.append(f"## {line.title()}")
-        elif line.startswith(('ARTICLE', 'SECTION', 'EXHIBIT', 'SCHEDULE')):
+        elif line.startswith(("ARTICLE", "SECTION", "EXHIBIT", "SCHEDULE")):
             md_lines.append(f"## {line}")
-        elif line[0].isdigit() and '.' in line[:5]:
+        elif line[0].isdigit() and "." in line[:5]:
             # Numbered section
             md_lines.append(f"### {line}")
         else:
             md_lines.append(line)
 
-    return '\n'.join(md_lines)
+    return "\n".join(md_lines)
 
 
 def extract_contract_type(filename: str) -> str:
@@ -88,28 +87,28 @@ def extract_contract_type(filename: str) -> str:
     filename_lower = filename.lower()
 
     contract_types = [
-        ('hosting', 'Hosting Agreement'),
-        ('development', 'Development Agreement'),
-        ('license', 'License Agreement'),
-        ('service', 'Service Agreement'),
-        ('supply', 'Supply Agreement'),
-        ('distribution', 'Distribution Agreement'),
-        ('agency', 'Agency Agreement'),
-        ('joint venture', 'Joint Venture Agreement'),
-        ('strategic alliance', 'Strategic Alliance Agreement'),
-        ('endorsement', 'Endorsement Agreement'),
-        ('outsourcing', 'Outsourcing Agreement'),
-        ('collaboration', 'Collaboration Agreement'),
-        ('maintenance', 'Maintenance Agreement'),
-        ('co-branding', 'Co-Branding Agreement'),
-        ('non-competition', 'Non-Competition Agreement'),
+        ("hosting", "Hosting Agreement"),
+        ("development", "Development Agreement"),
+        ("license", "License Agreement"),
+        ("service", "Service Agreement"),
+        ("supply", "Supply Agreement"),
+        ("distribution", "Distribution Agreement"),
+        ("agency", "Agency Agreement"),
+        ("joint venture", "Joint Venture Agreement"),
+        ("strategic alliance", "Strategic Alliance Agreement"),
+        ("endorsement", "Endorsement Agreement"),
+        ("outsourcing", "Outsourcing Agreement"),
+        ("collaboration", "Collaboration Agreement"),
+        ("maintenance", "Maintenance Agreement"),
+        ("co-branding", "Co-Branding Agreement"),
+        ("non-competition", "Non-Competition Agreement"),
     ]
 
     for keyword, contract_type in contract_types:
         if keyword in filename_lower:
             return contract_type
 
-    return 'Contract'
+    return "Contract"
 
 
 def build_cuad_corpus(
@@ -156,7 +155,7 @@ def build_cuad_corpus(
             # Convert TXT to markdown
             markdown = txt_to_markdown(txt_path)
             md_dest = output_dir / "ground_truth" / f"{doc_id}.md"
-            with open(md_dest, 'w', encoding='utf-8') as f:
+            with open(md_dest, "w", encoding="utf-8") as f:
                 f.write(markdown)
 
             # Create metadata
@@ -172,7 +171,7 @@ def build_cuad_corpus(
             }
 
             meta_dest = output_dir / "metadata" / f"{doc_id}.yaml"
-            with open(meta_dest, 'w') as f:
+            with open(meta_dest, "w") as f:
                 yaml.dump(metadata, f, default_flow_style=False)
 
             stats["converted"] += 1
@@ -191,7 +190,7 @@ def build_cuad_corpus(
         "features": ["contracts", "legal", "sec_filings"],
     }
 
-    with open(output_dir / "corpus_metadata.yaml", 'w') as f:
+    with open(output_dir / "corpus_metadata.yaml", "w") as f:
         yaml.dump(corpus_meta, f, default_flow_style=False)
 
     return stats
@@ -214,7 +213,7 @@ def main():
         max_docs=args.max,
     )
 
-    print(f"\nBuild complete:")
+    print("\nBuild complete:")
     print(f"  Total pairs: {stats['total']}")
     print(f"  Converted: {stats['converted']}")
     print(f"  Errors: {stats['errors']}")

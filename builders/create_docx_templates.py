@@ -105,7 +105,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     # Table 1: Simple 3x4 table
     doc.add_heading("TABLE-01: Basic Data Table", level=2)
     table1 = doc.add_table(rows=4, cols=3)
-    table1.style = 'Light Grid Accent 1'
+    table1.style = "Light Grid Accent 1"
     table1.alignment = WD_TABLE_ALIGNMENT.CENTER
 
     # Header row
@@ -132,7 +132,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     # Table 2: Financial table with alignment
     doc.add_heading("TABLE-02: Financial Summary (Q1-Q4)", level=2)
     table2 = doc.add_table(rows=5, cols=5)
-    table2.style = 'Medium Grid 1 Accent 1'
+    table2.style = "Medium Grid 1 Accent 1"
 
     # Header
     hdr = table2.rows[0].cells
@@ -143,7 +143,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     hdr[4].text = "Margin %"
 
     # Quarters data
-    for i, quarter in enumerate(['Q1', 'Q2', 'Q3', 'Q4'], start=1):
+    for i, quarter in enumerate(["Q1", "Q2", "Q3", "Q4"], start=1):
         cells = table2.rows[i].cells
         cells[0].text = quarter
         cells[1].text = f"{{{{ q{i}_revenue }}}}"
@@ -158,7 +158,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     doc.add_paragraph("{{ regional_intro }}")
 
     table3 = doc.add_table(rows=6, cols=4)
-    table3.style = 'Light List Accent 1'
+    table3.style = "Light List Accent 1"
 
     # Header
     hdr = table3.rows[0].cells
@@ -168,7 +168,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     hdr[3].text = "Market Share"
 
     # Regions
-    regions = ['North America', 'Europe', 'Asia Pacific', 'Latin America', 'Africa']
+    regions = ["North America", "Europe", "Asia Pacific", "Latin America", "Africa"]
     for i, region in enumerate(regions, start=1):
         cells = table3.rows[i].cells
         cells[0].text = region
@@ -181,7 +181,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     # Table 4: Wide table (7 columns)
     doc.add_heading("TABLE-04: Product Metrics (Wide Table)", level=2)
     table4 = doc.add_table(rows=4, cols=7)
-    table4.style = 'Medium Grid 1 Accent 1'
+    table4.style = "Medium Grid 1 Accent 1"
 
     # Header
     headers = ["Product", "Units Sold", "Price", "Revenue", "Cost", "Profit", "ROI %"]
@@ -203,7 +203,7 @@ def create_table_heavy_template(output_path: Path) -> None:
     # Table 5: Nested information (using lists within table cells)
     doc.add_heading("TABLE-05: Team Assignments", level=2)
     table5 = doc.add_table(rows=4, cols=3)
-    table5.style = 'Light Grid Accent 1'
+    table5.style = "Light Grid Accent 1"
 
     # Header
     hdr = table5.rows[0].cells
@@ -298,22 +298,27 @@ def create_multicolumn_template(output_path: Path) -> None:
         for cell in row.cells:
             cell_element = cell._element
             tc_pr = cell_element.get_or_add_tcPr()
-            tc_borders = tc_pr.find('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tcBorders')
+            tc_borders = tc_pr.find(
+                ".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tcBorders"
+            )
             if tc_borders is None:
                 from docx.oxml import OxmlElement
-                tc_borders = OxmlElement('w:tcBorders')
+
+                tc_borders = OxmlElement("w:tcBorders")
                 tc_pr.append(tc_borders)
 
             # Set all borders to none
-            for border_name in ['top', 'left', 'bottom', 'right', 'insideH', 'insideV']:
-                border = tc_borders.find(f'.//{{http://schemas.openxmlformats.org/wordprocessingml/2006/main}}{border_name}')
+            for border_name in ["top", "left", "bottom", "right", "insideH", "insideV"]:
+                border = tc_borders.find(
+                    f".//{{http://schemas.openxmlformats.org/wordprocessingml/2006/main}}{border_name}"
+                )
                 if border is None:
                     from docx.oxml import OxmlElement
-                    border = OxmlElement(f'w:{border_name}')
+
+                    border = OxmlElement(f"w:{border_name}")
                     tc_borders.append(border)
                 border.set(
-                    '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val',
-                    'none'
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val", "none"
                 )
 
     # Back to full width
@@ -321,7 +326,7 @@ def create_multicolumn_template(output_path: Path) -> None:
 
     # Comparison table
     comp_table = doc.add_table(rows=4, cols=3)
-    comp_table.style = 'Light Grid Accent 1'
+    comp_table.style = "Light Grid Accent 1"
 
     # Header
     hdr = comp_table.rows[0].cells
@@ -356,21 +361,26 @@ def create_multicolumn_template(output_path: Path) -> None:
         for cell in row.cells:
             cell_element = cell._element
             tc_pr = cell_element.get_or_add_tcPr()
-            tc_borders = tc_pr.find('.//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tcBorders')
+            tc_borders = tc_pr.find(
+                ".//{http://schemas.openxmlformats.org/wordprocessingml/2006/main}tcBorders"
+            )
             if tc_borders is None:
                 from docx.oxml import OxmlElement
-                tc_borders = OxmlElement('w:tcBorders')
+
+                tc_borders = OxmlElement("w:tcBorders")
                 tc_pr.append(tc_borders)
 
-            for border_name in ['top', 'left', 'bottom', 'right', 'insideH', 'insideV']:
-                border = tc_borders.find(f'.//{{http://schemas.openxmlformats.org/wordprocessingml/2006/main}}{border_name}')
+            for border_name in ["top", "left", "bottom", "right", "insideH", "insideV"]:
+                border = tc_borders.find(
+                    f".//{{http://schemas.openxmlformats.org/wordprocessingml/2006/main}}{border_name}"
+                )
                 if border is None:
                     from docx.oxml import OxmlElement
-                    border = OxmlElement(f'w:{border_name}')
+
+                    border = OxmlElement(f"w:{border_name}")
                     tc_borders.append(border)
                 border.set(
-                    '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val',
-                    'none'
+                    "{http://schemas.openxmlformats.org/wordprocessingml/2006/main}val", "none"
                 )
 
     # Conclusion (full width)

@@ -150,8 +150,8 @@ def extract_table_array(html: str) -> list[list[str]]:
             content = cell.get_text(strip=True)
             rowspan_val = cell.get("rowspan", "1")
             colspan_val = cell.get("colspan", "1")
-            rowspan = int(rowspan_val) if isinstance(rowspan_val, (str, int)) else 1
-            colspan = int(colspan_val) if isinstance(colspan_val, (str, int)) else 1
+            rowspan = int(rowspan_val) if isinstance(rowspan_val, str | int) else 1
+            colspan = int(colspan_val) if isinstance(colspan_val, str | int) else 1
             is_header = cell.name == "th"
 
             cell_obj = TableCell(
@@ -196,9 +196,7 @@ def _expand_spans_to_grid(rows_data: list[list[TableCell]]) -> list[list[str]]:
     grid: list[list[str]] = [["" for _ in range(max_cols)] for _ in range(num_rows)]
 
     # Track which cells are already filled (due to rowspan)
-    filled: list[list[bool]] = [
-        [False for _ in range(max_cols)] for _ in range(num_rows)
-    ]
+    filled: list[list[bool]] = [[False for _ in range(max_cols)] for _ in range(num_rows)]
 
     # Fill the grid
     for row_idx, row_cells in enumerate(rows_data):

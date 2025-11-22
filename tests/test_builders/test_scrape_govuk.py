@@ -1,6 +1,5 @@
 """Tests for GOV.UK HTML scraper."""
 
-from pathlib import Path
 from unittest.mock import Mock, patch
 
 import pytest

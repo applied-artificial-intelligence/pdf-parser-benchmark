@@ -3,12 +3,14 @@
 
 import sys
 from pathlib import Path
+
 from tqdm import tqdm
 
 # Add pdf_bench to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from pdf_bench.systems.marker_ollama import MarkerOllamaParser
+
 
 def main():
     # Paths
@@ -31,6 +33,7 @@ def main():
             print(f"✓ {img_path.name} → {output_path.name}")
         except Exception as e:
             print(f"✗ {img_path.name}: {e}")
+
 
 if __name__ == "__main__":
     main()

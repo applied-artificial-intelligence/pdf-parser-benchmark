@@ -103,9 +103,7 @@ class TestMarkdownASTParser:
 
         # Find nested list
         first_item = top_list["children"][0]
-        nested_list = next(
-            c for c in first_item["children"] if c["type"] == "list"
-        )
+        nested_list = next(c for c in first_item["children"] if c["type"] == "list")
         assert nested_list["attrs"]["depth"] == 1
         assert len(nested_list["children"]) == 2
 
@@ -147,7 +145,7 @@ def hello():
         code_block = next(t for t in ast if t["type"] == "block_code")
         assert code_block["style"] == "fenced"
         assert code_block["attrs"]["info"] == "python"
-        assert 'def hello()' in code_block["raw"]
+        assert "def hello()" in code_block["raw"]
 
     def test_parse_code_block_without_language(self) -> None:
         """Test parsing code block without language specifier."""

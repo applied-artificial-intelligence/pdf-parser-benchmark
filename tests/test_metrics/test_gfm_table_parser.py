@@ -446,7 +446,7 @@ class TestEdgeCases:
         parser = GFMTableParser()
         rows = ["| A | B |", "|---|---|"]
         for i in range(100):
-            rows.append(f"| {i} | {i*2} |")
+            rows.append(f"| {i} | {i * 2} |")
 
         markdown = "\n".join(rows)
 

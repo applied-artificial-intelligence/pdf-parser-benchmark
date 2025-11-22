@@ -46,11 +46,7 @@ def generate_html_report(
     categories = _calculate_category_breakdown(results)
 
     # Calculate success rate
-    success_rate = (
-        (results.success_count / len(results.results) * 100)
-        if results.results
-        else 0.0
-    )
+    success_rate = (results.success_count / len(results.results) * 100) if results.results else 0.0
 
     # Render template
     html_content = template.render(
@@ -94,9 +90,7 @@ def _calculate_leaderboard(results: BenchmarkResults) -> list[dict[str, Any]]:
         success_count = len(parser_results)
 
         # Count total results for this parser (including failures)
-        total_results = sum(
-            1 for r in results.results if r.parser_name == parser_name
-        )
+        total_results = sum(1 for r in results.results if r.parser_name == parser_name)
         success_rate = success_count / total_results if total_results > 0 else 0.0
 
         parser_scores.append(
@@ -110,9 +104,7 @@ def _calculate_leaderboard(results: BenchmarkResults) -> list[dict[str, Any]]:
 
     # Sort by average score (descending)
     parser_scores.sort(
-        key=lambda x: (
-            float(x["avg_score"]) if isinstance(x["avg_score"], (int, float)) else 0.0
-        ),
+        key=lambda x: (float(x["avg_score"]) if isinstance(x["avg_score"], int | float) else 0.0),
         reverse=True,
     )
 
@@ -128,9 +120,7 @@ def _calculate_metric_breakdown(
 ) -> dict[str, list[dict[str, Any]]]:
     """Calculate metric scores by parser for each metric."""
     # Group by metric, then by parser
-    metric_data: dict[str, dict[str, list[float]]] = defaultdict(
-        lambda: defaultdict(list)
-    )
+    metric_data: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
 
     for result in results.results:
         if result.success:
@@ -147,9 +137,7 @@ def _calculate_metric_breakdown(
             scores_list.append({"parser": parser_name, "score": avg_score})
 
         # Sort by score (descending)
-        scores_list.sort(
-            key=lambda x: x["score"] if x["score"] is not None else -1, reverse=True
-        )
+        scores_list.sort(key=lambda x: x["score"] if x["score"] is not None else -1, reverse=True)
         metrics_output[metric_name] = scores_list
 
     return metrics_output

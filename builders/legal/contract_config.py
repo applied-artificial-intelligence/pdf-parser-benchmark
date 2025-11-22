@@ -8,28 +8,29 @@ This module defines 5 contract types with authentic characteristics including:
 """
 
 from dataclasses import dataclass
-from typing import List, Dict, Any
 
 
 @dataclass
 class ContractSection:
     """Configuration for a contract section."""
+
     name: str
     required: bool
-    subsections: List[str] = None
+    subsections: list[str] = None
 
 
 @dataclass
 class ContractConfig:
     """Configuration for a contract type."""
+
     name: str
-    sections: List[ContractSection]
-    defined_terms: List[str]  # Terms that should be capitalized after definition
-    recitals: List[str]  # WHEREAS clauses
-    party_types: List[str]  # e.g., ["Provider", "Client"] or ["Company", "Employee"]
+    sections: list[ContractSection]
+    defined_terms: list[str]  # Terms that should be capitalized after definition
+    recitals: list[str]  # WHEREAS clauses
+    party_types: list[str]  # e.g., ["Provider", "Client"] or ["Company", "Employee"]
     typical_duration: tuple[int, int]  # (min_months, max_months)
     typical_value_range: tuple[int, int]  # (min_amount, max_amount) in USD
-    governing_law_jurisdictions: List[str]
+    governing_law_jurisdictions: list[str]
 
 
 # SaaS Agreement Configuration
@@ -37,42 +38,71 @@ SAAS_CONFIG = ContractConfig(
     name="SaaS Agreement",
     sections=[
         ContractSection("Definitions", required=True),
-        ContractSection("Services", required=True, subsections=[
-            "Service Description",
-            "Service Level Agreement",
-            "Support Services",
-        ]),
-        ContractSection("Subscription and Fees", required=True, subsections=[
-            "Subscription Plans",
-            "Payment Terms",
-            "Invoicing",
-        ]),
-        ContractSection("Data and Privacy", required=True, subsections=[
-            "Data Ownership",
-            "Data Security",
-            "Privacy Compliance",
-        ]),
+        ContractSection(
+            "Services",
+            required=True,
+            subsections=[
+                "Service Description",
+                "Service Level Agreement",
+                "Support Services",
+            ],
+        ),
+        ContractSection(
+            "Subscription and Fees",
+            required=True,
+            subsections=[
+                "Subscription Plans",
+                "Payment Terms",
+                "Invoicing",
+            ],
+        ),
+        ContractSection(
+            "Data and Privacy",
+            required=True,
+            subsections=[
+                "Data Ownership",
+                "Data Security",
+                "Privacy Compliance",
+            ],
+        ),
         ContractSection("Intellectual Property", required=True),
-        ContractSection("Term and Termination", required=True, subsections=[
-            "Initial Term",
-            "Renewal",
-            "Termination for Cause",
-            "Effect of Termination",
-        ]),
+        ContractSection(
+            "Term and Termination",
+            required=True,
+            subsections=[
+                "Initial Term",
+                "Renewal",
+                "Termination for Cause",
+                "Effect of Termination",
+            ],
+        ),
         ContractSection("Warranties and Disclaimers", required=True),
         ContractSection("Limitation of Liability", required=True),
         ContractSection("Indemnification", required=False),
-        ContractSection("General Provisions", required=True, subsections=[
-            "Governing Law",
-            "Dispute Resolution",
-            "Notices",
-            "Entire Agreement",
-        ]),
+        ContractSection(
+            "General Provisions",
+            required=True,
+            subsections=[
+                "Governing Law",
+                "Dispute Resolution",
+                "Notices",
+                "Entire Agreement",
+            ],
+        ),
     ],
     defined_terms=[
-        "Service", "Services", "Platform", "Subscription", "Subscriber",
-        "Customer Data", "Confidential Information", "Documentation",
-        "Service Level Agreement", "SLA", "Uptime", "Support Services",
+        "Service",
+        "Services",
+        "Platform",
+        "Subscription",
+        "Subscriber",
+        "Customer Data",
+        "Confidential Information",
+        "Documentation",
+        "Service Level Agreement",
+        "SLA",
+        "Uptime",
+        "Support Services",
     ],
     recitals=[
         "Provider offers a cloud-based software platform",
@@ -91,31 +121,51 @@ EMPLOYMENT_CONFIG = ContractConfig(
     name="Employment Agreement",
     sections=[
         ContractSection("Position and Duties", required=True),
-        ContractSection("Compensation", required=True, subsections=[
-            "Base Salary",
-            "Bonus and Incentives",
-            "Benefits",
-        ]),
+        ContractSection(
+            "Compensation",
+            required=True,
+            subsections=[
+                "Base Salary",
+                "Bonus and Incentives",
+                "Benefits",
+            ],
+        ),
         ContractSection("Term of Employment", required=True),
-        ContractSection("Termination", required=True, subsections=[
-            "Termination by Company",
-            "Termination by Employee",
-            "Severance",
-        ]),
+        ContractSection(
+            "Termination",
+            required=True,
+            subsections=[
+                "Termination by Company",
+                "Termination by Employee",
+                "Severance",
+            ],
+        ),
         ContractSection("Confidentiality", required=True),
         ContractSection("Intellectual Property Assignment", required=True),
         ContractSection("Non-Compete and Non-Solicitation", required=False),
         ContractSection("At-Will Employment", required=True),
-        ContractSection("General Provisions", required=True, subsections=[
-            "Governing Law",
-            "Entire Agreement",
-            "Amendments",
-        ]),
+        ContractSection(
+            "General Provisions",
+            required=True,
+            subsections=[
+                "Governing Law",
+                "Entire Agreement",
+                "Amendments",
+            ],
+        ),
     ],
     defined_terms=[
-        "Employee", "Company", "Position", "Base Salary", "Bonus",
-        "Confidential Information", "Intellectual Property", "Work Product",
-        "Termination Date", "Severance", "Benefits",
+        "Employee",
+        "Company",
+        "Position",
+        "Base Salary",
+        "Bonus",
+        "Confidential Information",
+        "Intellectual Property",
+        "Work Product",
+        "Termination Date",
+        "Severance",
+        "Benefits",
     ],
     recitals=[
         "Company desires to employ Employee in the specified position",
@@ -134,28 +184,45 @@ NDA_CONFIG = ContractConfig(
     name="Non-Disclosure Agreement",
     sections=[
         ContractSection("Definitions", required=True),
-        ContractSection("Confidential Information", required=True, subsections=[
-            "Definition of Confidential Information",
-            "Exclusions from Confidential Information",
-        ]),
-        ContractSection("Obligations", required=True, subsections=[
-            "Non-Disclosure",
-            "Non-Use",
-            "Protection Measures",
-        ]),
+        ContractSection(
+            "Confidential Information",
+            required=True,
+            subsections=[
+                "Definition of Confidential Information",
+                "Exclusions from Confidential Information",
+            ],
+        ),
+        ContractSection(
+            "Obligations",
+            required=True,
+            subsections=[
+                "Non-Disclosure",
+                "Non-Use",
+                "Protection Measures",
+            ],
+        ),
         ContractSection("Permitted Disclosures", required=True),
         ContractSection("Return of Materials", required=True),
         ContractSection("Term and Termination", required=True),
         ContractSection("Remedies", required=True),
-        ContractSection("General Provisions", required=True, subsections=[
-            "Governing Law",
-            "Entire Agreement",
-            "Severability",
-        ]),
+        ContractSection(
+            "General Provisions",
+            required=True,
+            subsections=[
+                "Governing Law",
+                "Entire Agreement",
+                "Severability",
+            ],
+        ),
     ],
     defined_terms=[
-        "Confidential Information", "Disclosing Party", "Receiving Party",
-        "Purpose", "Representatives", "Effective Date", "Term",
+        "Confidential Information",
+        "Disclosing Party",
+        "Receiving Party",
+        "Purpose",
+        "Representatives",
+        "Effective Date",
+        "Term",
     ],
     recitals=[
         "Parties contemplate entering into business discussions",
@@ -173,37 +240,60 @@ NDA_CONFIG = ContractConfig(
 CONSULTING_CONFIG = ContractConfig(
     name="Consulting Agreement",
     sections=[
-        ContractSection("Services", required=True, subsections=[
-            "Scope of Services",
-            "Deliverables",
-            "Timeline",
-        ]),
-        ContractSection("Compensation", required=True, subsections=[
-            "Fees",
-            "Expenses",
-            "Payment Terms",
-        ]),
+        ContractSection(
+            "Services",
+            required=True,
+            subsections=[
+                "Scope of Services",
+                "Deliverables",
+                "Timeline",
+            ],
+        ),
+        ContractSection(
+            "Compensation",
+            required=True,
+            subsections=[
+                "Fees",
+                "Expenses",
+                "Payment Terms",
+            ],
+        ),
         ContractSection("Term and Termination", required=True),
         ContractSection("Independent Contractor Relationship", required=True),
-        ContractSection("Intellectual Property", required=True, subsections=[
-            "Work Product Ownership",
-            "Pre-Existing IP",
-            "License Grants",
-        ]),
+        ContractSection(
+            "Intellectual Property",
+            required=True,
+            subsections=[
+                "Work Product Ownership",
+                "Pre-Existing IP",
+                "License Grants",
+            ],
+        ),
         ContractSection("Confidentiality", required=True),
         ContractSection("Representations and Warranties", required=True),
         ContractSection("Indemnification", required=False),
         ContractSection("Limitation of Liability", required=False),
-        ContractSection("General Provisions", required=True, subsections=[
-            "Governing Law",
-            "Dispute Resolution",
-            "Entire Agreement",
-        ]),
+        ContractSection(
+            "General Provisions",
+            required=True,
+            subsections=[
+                "Governing Law",
+                "Dispute Resolution",
+                "Entire Agreement",
+            ],
+        ),
     ],
     defined_terms=[
-        "Consultant", "Client", "Services", "Deliverables", "Work Product",
-        "Fees", "Confidential Information", "Effective Date",
-        "Pre-Existing IP", "Statement of Work",
+        "Consultant",
+        "Client",
+        "Services",
+        "Deliverables",
+        "Work Product",
+        "Fees",
+        "Confidential Information",
+        "Effective Date",
+        "Pre-Existing IP",
+        "Statement of Work",
     ],
     recitals=[
         "Client desires to engage Consultant to provide certain services",
@@ -221,40 +311,67 @@ CONSULTING_CONFIG = ContractConfig(
 SERVICE_CONFIG = ContractConfig(
     name="Service Agreement",
     sections=[
-        ContractSection("Services", required=True, subsections=[
-            "Service Description",
-            "Service Standards",
-            "Service Locations",
-        ]),
-        ContractSection("Fees and Payment", required=True, subsections=[
-            "Service Fees",
-            "Payment Schedule",
-            "Late Payments",
-        ]),
+        ContractSection(
+            "Services",
+            required=True,
+            subsections=[
+                "Service Description",
+                "Service Standards",
+                "Service Locations",
+            ],
+        ),
+        ContractSection(
+            "Fees and Payment",
+            required=True,
+            subsections=[
+                "Service Fees",
+                "Payment Schedule",
+                "Late Payments",
+            ],
+        ),
         ContractSection("Term and Renewal", required=True),
-        ContractSection("Responsibilities of Parties", required=True, subsections=[
-            "Service Provider Obligations",
-            "Customer Obligations",
-        ]),
+        ContractSection(
+            "Responsibilities of Parties",
+            required=True,
+            subsections=[
+                "Service Provider Obligations",
+                "Customer Obligations",
+            ],
+        ),
         ContractSection("Changes to Services", required=True),
-        ContractSection("Termination", required=True, subsections=[
-            "Termination for Convenience",
-            "Termination for Cause",
-            "Effect of Termination",
-        ]),
+        ContractSection(
+            "Termination",
+            required=True,
+            subsections=[
+                "Termination for Convenience",
+                "Termination for Cause",
+                "Effect of Termination",
+            ],
+        ),
         ContractSection("Warranties", required=True),
         ContractSection("Limitation of Liability", required=True),
         ContractSection("Insurance", required=False),
-        ContractSection("General Provisions", required=True, subsections=[
-            "Governing Law",
-            "Notices",
-            "Entire Agreement",
-        ]),
+        ContractSection(
+            "General Provisions",
+            required=True,
+            subsections=[
+                "Governing Law",
+                "Notices",
+                "Entire Agreement",
+            ],
+        ),
     ],
     defined_terms=[
-        "Service Provider", "Customer", "Services", "Service Fees",
-        "Service Standards", "Term", "Effective Date", "Service Locations",
-        "Change Order", "Force Majeure",
+        "Service Provider",
+        "Customer",
+        "Services",
+        "Service Fees",
+        "Service Standards",
+        "Term",
+        "Effective Date",
+        "Service Locations",
+        "Change Order",
+        "Force Majeure",
     ],
     recitals=[
         "Customer requires certain services to be provided",

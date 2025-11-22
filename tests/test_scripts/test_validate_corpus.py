@@ -56,9 +56,7 @@ class TestValidationResult:
 
     def test_init_defaults(self) -> None:
         """Test initialization with default values."""
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
         assert result.document_id == "test"
         assert result.passed is True
         assert result.errors == []
@@ -66,9 +64,7 @@ class TestValidationResult:
 
     def test_add_error(self) -> None:
         """Test adding an error marks as failed."""
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
         result.add_error("Test error")
 
         assert result.passed is False
@@ -77,9 +73,7 @@ class TestValidationResult:
 
     def test_add_warning(self) -> None:
         """Test adding a warning doesn't affect pass status."""
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
         result.add_warning("Test warning")
 
         assert result.passed is True
@@ -155,16 +149,12 @@ class TestCorpusValidator:
         assert result.passed is True
         assert len(result.errors) == 0
 
-    def test_validate_yaml_schema_missing_required_fields(
-        self, temp_corpus_dir: Path
-    ) -> None:
+    def test_validate_yaml_schema_missing_required_fields(self, temp_corpus_dir: Path) -> None:
         """Test schema validation catches missing required fields."""
         incomplete_metadata = {"title": "Test"}
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_yaml_schema(incomplete_metadata, result)
 
@@ -178,9 +168,7 @@ class TestCorpusValidator:
         valid_pandoc_metadata["corpus"] = "invalid_corpus"
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_yaml_schema(valid_pandoc_metadata, result)
 
@@ -194,9 +182,7 @@ class TestCorpusValidator:
         del valid_pandoc_metadata["pdf_hash"]
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_yaml_schema(valid_pandoc_metadata, result)
 
@@ -216,13 +202,9 @@ class TestCorpusValidator:
         md_path.write_text("# Test")
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
-        file_paths = validator._validate_file_existence(
-            valid_pandoc_metadata, result
-        )
+        file_paths = validator._validate_file_existence(valid_pandoc_metadata, result)
 
         assert result.passed is True
         assert "pdf" in file_paths
@@ -235,13 +217,9 @@ class TestCorpusValidator:
     ) -> None:
         """Test file existence validation catches missing files."""
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
-        _ = validator._validate_file_existence(
-            valid_pandoc_metadata, result
-        )
+        _ = validator._validate_file_existence(valid_pandoc_metadata, result)
 
         assert result.passed is False
         assert len(result.errors) >= 2  # Missing PDF and ground truth
@@ -266,9 +244,7 @@ class TestCorpusValidator:
         valid_pandoc_metadata["pdf_hash"] = actual_hash
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         file_paths = {"pdf": pdf_path}
         validator._validate_hashes(valid_pandoc_metadata, file_paths, result)
@@ -288,9 +264,7 @@ class TestCorpusValidator:
         valid_pandoc_metadata["pdf_hash"] = "wrong_hash"
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         file_paths = {"pdf": pdf_path}
         validator._validate_hashes(valid_pandoc_metadata, file_paths, result)
@@ -304,9 +278,7 @@ class TestCorpusValidator:
         md_path.write_text("# Heading\n\nThis is a paragraph.")
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_markdown(md_path, result)
 
@@ -319,9 +291,7 @@ class TestCorpusValidator:
         md_path.write_text("")
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_markdown(md_path, result)
 
@@ -334,9 +304,7 @@ class TestCorpusValidator:
         md_path.write_text("hi")
 
         validator = CorpusValidator(temp_corpus_dir)
-        result = ValidationResult(
-            document_id="test", yaml_file=Path("test.yaml")
-        )
+        result = ValidationResult(document_id="test", yaml_file=Path("test.yaml"))
 
         validator._validate_markdown(md_path, result)
 
@@ -349,12 +317,8 @@ class TestCorpusValidator:
         validator = CorpusValidator(temp_corpus_dir)
 
         # Add some passing results
-        result1 = ValidationResult(
-            document_id="doc1", yaml_file=Path("doc1.yaml")
-        )
-        result2 = ValidationResult(
-            document_id="doc2", yaml_file=Path("doc2.yaml")
-        )
+        result1 = ValidationResult(document_id="doc1", yaml_file=Path("doc1.yaml"))
+        result2 = ValidationResult(document_id="doc2", yaml_file=Path("doc2.yaml"))
         validator.results = [result1, result2]
 
         report = validator.generate_report()
@@ -369,14 +333,10 @@ class TestCorpusValidator:
         validator = CorpusValidator(temp_corpus_dir)
 
         # Add passing result
-        result1 = ValidationResult(
-            document_id="doc1", yaml_file=Path("doc1.yaml")
-        )
+        result1 = ValidationResult(document_id="doc1", yaml_file=Path("doc1.yaml"))
 
         # Add failing result
-        result2 = ValidationResult(
-            document_id="doc2", yaml_file=Path("doc2.yaml")
-        )
+        result2 = ValidationResult(document_id="doc2", yaml_file=Path("doc2.yaml"))
         result2.add_error("Test error")
         result2.add_warning("Test warning")
 

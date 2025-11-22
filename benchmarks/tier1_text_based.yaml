@@ -1,0 +1,55 @@
+# Tier 1: Text-Based Documents Benchmark
+#
+# Documents with embedded text (machine-readable PDFs).
+# All parsers can handle these documents efficiently.
+#
+# Corpora: synthetic (31 docs), CUAD (75 docs)
+# Total: 106 documents
+# Estimated time: 30-60 minutes with 4 workers
+
+name: "Tier 1: Text-Based Documents"
+description: |
+  Benchmark for machine-readable PDFs with embedded text.
+  Includes synthetic test documents and real legal contracts.
+  All parsers should work well on these documents.
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Include synthetic and business corpora (both text-based)
+  corpora:
+    - synthetic
+    - business
+  # Exclude OmniDocBench (requires OCR)
+  exclude_doc_ids: []
+
+parser_config:
+  parsers:
+    # Fast, lightweight parsers
+    - pymupdf
+    - pymupdf4llm
+    - pdfplumber
+    - pypdf
+    - pypdfium2
+    - pdfminer
+    # Medium-weight parsers
+    - kreuzberg
+    - extractous
+    # Heavy parsers (no OCR mode)
+    - docling  # Fast mode, no OCR
+    - marker
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+    - element_f1
+
+output_config:
+  results_dir: ../results/tier1
+  checkpoint_interval: 20
+
+execution_config:
+  workers: 4
+  timeout_per_document: 120

@@ -1,9 +1,8 @@
 """Tests for Azure Document Intelligence parser implementation with mocked API calls."""
 
-import os
 import shutil
 from pathlib import Path
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import pytest
 from azure.core.exceptions import HttpResponseError, ResourceNotFoundError
@@ -117,25 +116,20 @@ class TestAzureDocumentIntelligenceParserInitialization:
             "pdf_bench.systems.azure_document_intelligence.DocumentIntelligenceClient",
             return_value=mock_doc_intelligence_client,
         ) as mock_client:
-            parser = AzureDocumentIntelligenceParser()
+            AzureDocumentIntelligenceParser()
 
             # Verify client was called with correct endpoint
             mock_client.assert_called_once()
             call_kwargs = mock_client.call_args[1]
-            assert (
-                call_kwargs["endpoint"]
-                == "https://test-resource.cognitiveservices.azure.com/"
-            )
+            assert call_kwargs["endpoint"] == "https://test-resource.cognitiveservices.azure.com/"
 
-    def test_parser_uses_constructor_credentials(
-        self, mock_doc_intelligence_client: Mock
-    ) -> None:
+    def test_parser_uses_constructor_credentials(self, mock_doc_intelligence_client: Mock) -> None:
         """Test that parser accepts credentials via constructor."""
         with patch(
             "pdf_bench.systems.azure_document_intelligence.DocumentIntelligenceClient",
             return_value=mock_doc_intelligence_client,
         ) as mock_client:
-            parser = AzureDocumentIntelligenceParser(
+            AzureDocumentIntelligenceParser(
                 endpoint="https://custom.cognitiveservices.azure.com/",
                 api_key="custom_key",
             )
@@ -462,9 +456,7 @@ class TestAzureDocumentIntelligenceParserErrorHandling:
         mock_doc_intelligence_client: Mock,
     ) -> None:
         """Test handling of resource not found errors."""
-        mock_doc_intelligence_client.begin_analyze_document.side_effect = (
-            ResourceNotFoundError()
-        )
+        mock_doc_intelligence_client.begin_analyze_document.side_effect = ResourceNotFoundError()
 
         with pytest.raises(RuntimeError, match="Azure Document Intelligence"):
             parser.parse(sample_pdf, output_dir)

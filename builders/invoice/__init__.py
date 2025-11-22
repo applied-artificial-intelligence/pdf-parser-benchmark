@@ -6,8 +6,8 @@ This module provides tools for generating realistic business invoices across:
 - Multiple complexity and quality levels
 """
 
-from builders.invoice.industry_config import INDUSTRIES
 from builders.invoice.data_generators import InvoiceDataGenerator
+from builders.invoice.industry_config import INDUSTRIES
 from builders.invoice.tax_calculators import get_tax_calculator
 from builders.invoice.templates import get_template
 

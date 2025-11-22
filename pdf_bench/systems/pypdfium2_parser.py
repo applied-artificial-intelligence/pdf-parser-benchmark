@@ -8,6 +8,7 @@ from pathlib import Path
 
 try:
     import pypdfium2  # type: ignore[import-untyped]
+
     PYPDFIUM2_AVAILABLE = True
 except ImportError:
     PYPDFIUM2_AVAILABLE = False
@@ -31,8 +32,7 @@ class PyPDFium2Parser(BaseParser):
         """
         if not PYPDFIUM2_AVAILABLE:
             raise ImportError(
-                "pypdfium2 is required for PyPDFium2Parser. "
-                "Install with: pip install pypdfium2"
+                "pypdfium2 is required for PyPDFium2Parser. Install with: pip install pypdfium2"
             )
 
         try:

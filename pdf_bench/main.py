@@ -44,8 +44,7 @@ def main(
     """PDF-Bench: Benchmarking suite for PDF-to-Markdown conversion."""
     if ctx.invoked_subcommand is None:
         console.print(
-            "[bold cyan]PDF-Bench[/bold cyan] - "
-            "Benchmarking suite for PDF-to-Markdown conversion"
+            "[bold cyan]PDF-Bench[/bold cyan] - Benchmarking suite for PDF-to-Markdown conversion"
         )
         console.print("\nRun [bold]pdfbench --help[/bold] for usage information.")
 
@@ -144,12 +143,8 @@ def run(
 
 @app.command(name="list")
 def list_systems(
-    parsers: bool = typer.Option(
-        True, "--parsers/--no-parsers", help="List available parsers"
-    ),
-    metrics: bool = typer.Option(
-        False, "--metrics", help="List available metrics"
-    ),
+    parsers: bool = typer.Option(True, "--parsers/--no-parsers", help="List available parsers"),
+    metrics: bool = typer.Option(False, "--metrics", help="List available metrics"),
 ) -> None:
     """
     List available parsers and metrics.
@@ -288,9 +283,7 @@ def report(
                 total = len(parser_results)
                 rate = (successes / total * 100) if total > 0 else 0
 
-                table.add_row(
-                    parser_name, str(total), f"{rate:.1f}% ({successes}/{total})"
-                )
+                table.add_row(parser_name, str(total), f"{rate:.1f}% ({successes}/{total})")
 
             console.print(table)
 

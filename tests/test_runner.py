@@ -252,9 +252,7 @@ class TestBenchmarkRunner:
         assert results.timestamp is not None
         assert results.total_documents == len(sample_config.documents)
         assert results.total_parsers == len(sample_config.parser_instances)
-        assert len(results.results) == (
-            results.total_documents * results.total_parsers
-        )
+        assert len(results.results) == (results.total_documents * results.total_parsers)
         assert results.success_count + results.failure_count == len(results.results)
 
     def test_run_multiple_parsers_and_documents(
@@ -309,9 +307,7 @@ class TestBenchmarkRunner:
         assert results.total_parsers == 2
 
         # Verify all combinations present
-        doc_parser_combos = {
-            (r.document_id, r.parser_name) for r in results.results
-        }
+        doc_parser_combos = {(r.document_id, r.parser_name) for r in results.results}
         assert len(doc_parser_combos) == 6  # All unique
 
     def test_run_with_mixed_success_failure(
@@ -371,9 +367,7 @@ class TestBenchmarkRunner:
         # Identical strings should have high scores
         assert metrics["edit_similarity"] == pytest.approx(1.0)
 
-    def test_compute_metrics_unknown_metric_skipped(
-        self, sample_config: LoadedConfig
-    ) -> None:
+    def test_compute_metrics_unknown_metric_skipped(self, sample_config: LoadedConfig) -> None:
         """Test that unknown metrics are skipped gracefully."""
         # Add unknown metric to config
         sample_config.config.metric_config.metrics.append("unknown_metric_xyz")
@@ -391,9 +385,7 @@ class TestBenchmarkRunner:
         # Unknown metric should not be present (skipped)
         assert "unknown_metric_xyz" not in metrics
 
-    def test_compute_metrics_element_f1_special_handling(
-        self, sample_config: LoadedConfig
-    ) -> None:
+    def test_compute_metrics_element_f1_special_handling(self, sample_config: LoadedConfig) -> None:
         """Test that element_f1 metric failures are handled gracefully."""
         # Configure element_f1 metric
         sample_config.config.metric_config.metrics = ["element_f1"]
@@ -409,9 +401,7 @@ class TestBenchmarkRunner:
         assert "element_f1" in metrics
         assert str(metrics["element_f1"]) == "nan"
 
-    def test_compute_metrics_failure_handled(
-        self, sample_config: LoadedConfig
-    ) -> None:
+    def test_compute_metrics_failure_handled(self, sample_config: LoadedConfig) -> None:
         """Test that metric computation failures are handled gracefully."""
         runner = BenchmarkRunner(sample_config)
 
@@ -471,9 +461,7 @@ class TestParallelExecution:
         runner = BenchmarkRunner(sample_config, parallel_workers=0)
         assert runner.workers >= 1
 
-    def test_sequential_execution_with_progress(
-        self, sample_config: LoadedConfig
-    ) -> None:
+    def test_sequential_execution_with_progress(self, sample_config: LoadedConfig) -> None:
         """Test sequential execution (should work same as before)."""
         runner = BenchmarkRunner(sample_config, parallel_workers=1)
         results = runner.run()
@@ -484,9 +472,7 @@ class TestParallelExecution:
         )
         assert results.success_count + results.failure_count == len(results.results)
 
-    def test_parallel_execution(
-        self, tmp_path: Path, sample_metadata: DocumentMetadata
-    ) -> None:
+    def test_parallel_execution(self, tmp_path: Path, sample_metadata: DocumentMetadata) -> None:
         """Test parallel execution with multiple workers."""
         # Create multiple documents for testing parallel execution
         docs = []

@@ -1,0 +1,55 @@
+# Tier 2: OCR-Required Documents Benchmark
+#
+# Scanned documents and image-based PDFs that require OCR.
+# Only OCR-capable parsers can extract text from these.
+#
+# Corpora: OmniDocBench (193 docs)
+# Estimated time: 4-8 hours with 1 worker (OCR is slow)
+#
+# IMPORTANT: Run overnight or on a machine with GPU
+
+name: "Tier 2: OCR-Required Documents"
+description: |
+  Benchmark for image-based PDFs requiring OCR extraction.
+  OmniDocBench contains academic documents converted from images.
+  Only OCR-capable parsers are included.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora:
+    - academic  # OmniDocBench
+
+parser_config:
+  parsers:
+    # OCR-capable parsers only
+    - docling-ocr  # Docling with OCR enabled
+    - marker       # Has built-in OCR
+    # Commercial APIs (if configured)
+    # - aws_textract
+    # - azure_document_intelligence
+    # - google_document_ai
+
+  parser_options:
+    docling-ocr:
+      do_ocr: true
+      do_table_structure: true
+      num_threads: 4
+      device: auto  # Will use CUDA if available
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+    - element_f1
+
+output_config:
+  results_dir: ../results/tier2
+  # Checkpoint frequently due to long runtime
+  checkpoint_interval: 10
+
+execution_config:
+  # Single worker to manage memory (OCR is memory-intensive)
+  workers: 1
+  timeout_per_document: 300  # 5 minutes per doc for OCR

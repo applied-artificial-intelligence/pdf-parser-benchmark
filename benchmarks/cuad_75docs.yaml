@@ -96,14 +96,10 @@ parser_config:
     - pymupdf
     - pypdfium2
     - pypdf
-    - extractous
-    - unstructured
     - pdfminer
     - kreuzberg
 
-  parser_options:
-    unstructured:
-      strategy: fast
+  parser_options: {}
 
 metric_config:
   metrics:
@@ -118,8 +114,8 @@ output:
   format: json
   include_raw_output: false
   checkpointing: true
-  checkpoint_interval: 50
+  checkpoint_interval: 10
 
 execution:
-  parallel_workers: 2
+  parallel_workers: 1
   timeout_seconds: 300

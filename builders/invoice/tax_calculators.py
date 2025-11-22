@@ -9,19 +9,19 @@ This module provides authentic tax calculation for 5 geographic regions:
 """
 
 from dataclasses import dataclass
-from typing import Optional, Dict
 from decimal import Decimal
 
 
 @dataclass
 class TaxResult:
     """Result of tax calculation."""
+
     subtotal: Decimal
     tax_amount: Decimal
     tax_rate: Decimal
     tax_label: str
     total: Decimal
-    tax_number: Optional[str] = None  # VAT number, GST registration, etc.
+    tax_number: str | None = None  # VAT number, GST registration, etc.
 
 
 class TaxCalculator:
@@ -76,18 +76,18 @@ class EUTaxCalculator(TaxCalculator):
 
     # Standard VAT rates by country
     VAT_RATES = {
-        "DE": Decimal("0.19"),   # Germany
-        "FR": Decimal("0.20"),   # France
-        "IT": Decimal("0.22"),   # Italy
-        "ES": Decimal("0.21"),   # Spain
-        "NL": Decimal("0.21"),   # Netherlands
-        "BE": Decimal("0.21"),   # Belgium
-        "AT": Decimal("0.20"),   # Austria
-        "SE": Decimal("0.25"),   # Sweden
-        "DK": Decimal("0.25"),   # Denmark
-        "FI": Decimal("0.24"),   # Finland
-        "PL": Decimal("0.23"),   # Poland
-        "IE": Decimal("0.23"),   # Ireland
+        "DE": Decimal("0.19"),  # Germany
+        "FR": Decimal("0.20"),  # France
+        "IT": Decimal("0.22"),  # Italy
+        "ES": Decimal("0.21"),  # Spain
+        "NL": Decimal("0.21"),  # Netherlands
+        "BE": Decimal("0.21"),  # Belgium
+        "AT": Decimal("0.20"),  # Austria
+        "SE": Decimal("0.25"),  # Sweden
+        "DK": Decimal("0.25"),  # Denmark
+        "FI": Decimal("0.24"),  # Finland
+        "PL": Decimal("0.23"),  # Poland
+        "IE": Decimal("0.23"),  # Ireland
     }
 
     def calculate(self, subtotal: Decimal, country: str = "DE", **kwargs) -> TaxResult:
@@ -116,6 +116,7 @@ class EUTaxCalculator(TaxCalculator):
     def _generate_vat_number(self, country: str) -> str:
         """Generate a realistic-looking VAT number."""
         import random
+
         if country == "DE":
             return f"DE{random.randint(100000000, 999999999)}"
         elif country == "FR":
@@ -134,8 +135,8 @@ class UKTaxCalculator(TaxCalculator):
     """United Kingdom VAT calculator."""
 
     STANDARD_RATE = Decimal("0.20")  # 20% standard rate
-    REDUCED_RATE = Decimal("0.05")   # 5% reduced rate
-    ZERO_RATE = Decimal("0.00")      # 0% zero rate
+    REDUCED_RATE = Decimal("0.05")  # 5% reduced rate
+    ZERO_RATE = Decimal("0.00")  # 0% zero rate
 
     def calculate(self, subtotal: Decimal, rate_type: str = "standard", **kwargs) -> TaxResult:
         """Calculate UK VAT.
@@ -156,6 +157,7 @@ class UKTaxCalculator(TaxCalculator):
 
         # Generate realistic UK VAT number
         import random
+
         vat_number = f"GB{random.randint(100000000, 999999999)}"
 
         return TaxResult(
@@ -179,13 +181,15 @@ class CanadaTaxCalculator(TaxCalculator):
         "NB": {"type": "HST", "rate": Decimal("0.15")},  # New Brunswick
         "NL": {"type": "HST", "rate": Decimal("0.15")},  # Newfoundland
         "PE": {"type": "HST", "rate": Decimal("0.15")},  # Prince Edward Island
-
         # GST + PST provinces (separate)
-        "BC": {"type": "GST+PST", "gst": Decimal("0.05"), "pst": Decimal("0.07")},  # British Columbia
+        "BC": {
+            "type": "GST+PST",
+            "gst": Decimal("0.05"),
+            "pst": Decimal("0.07"),
+        },  # British Columbia
         "SK": {"type": "GST+PST", "gst": Decimal("0.05"), "pst": Decimal("0.06")},  # Saskatchewan
         "MB": {"type": "GST+PST", "gst": Decimal("0.05"), "pst": Decimal("0.07")},  # Manitoba
         "QC": {"type": "GST+QST", "gst": Decimal("0.05"), "qst": Decimal("0.09975")},  # Quebec
-
         # GST only provinces
         "AB": {"type": "GST", "rate": Decimal("0.05")},  # Alberta
         "NT": {"type": "GST", "rate": Decimal("0.05")},  # Northwest Territories
@@ -227,6 +231,7 @@ class CanadaTaxCalculator(TaxCalculator):
 
         # Generate realistic GST number
         import random
+
         gst_number = f"{random.randint(100000000, 999999999)}RT0001"
 
         return TaxResult(
@@ -244,12 +249,12 @@ class APACTaxCalculator(TaxCalculator):
 
     # Tax rates by country
     TAX_RATES = {
-        "AU": {"type": "GST", "rate": Decimal("0.10")},   # Australia
-        "NZ": {"type": "GST", "rate": Decimal("0.15")},   # New Zealand
-        "SG": {"type": "GST", "rate": Decimal("0.09")},   # Singapore (9% as of 2024)
+        "AU": {"type": "GST", "rate": Decimal("0.10")},  # Australia
+        "NZ": {"type": "GST", "rate": Decimal("0.15")},  # New Zealand
+        "SG": {"type": "GST", "rate": Decimal("0.09")},  # Singapore (9% as of 2024)
         "JP": {"type": "Consumption Tax", "rate": Decimal("0.10")},  # Japan
-        "IN": {"type": "GST", "rate": Decimal("0.18")},   # India (standard rate)
-        "MY": {"type": "SST", "rate": Decimal("0.10")},   # Malaysia (Sales & Service Tax)
+        "IN": {"type": "GST", "rate": Decimal("0.18")},  # India (standard rate)
+        "MY": {"type": "SST", "rate": Decimal("0.10")},  # Malaysia (Sales & Service Tax)
     }
 
     def calculate(self, subtotal: Decimal, country: str = "AU", **kwargs) -> TaxResult:
@@ -281,6 +286,7 @@ class APACTaxCalculator(TaxCalculator):
     def _generate_tax_number(self, country: str) -> str:
         """Generate a realistic-looking tax registration number."""
         import random
+
         if country == "AU":
             # Australian ABN (Australian Business Number)
             return f"ABN {random.randint(10000000000, 99999999999)}"
@@ -289,7 +295,9 @@ class APACTaxCalculator(TaxCalculator):
             return f"GST {random.randint(100000000, 999999999)}"
         elif country == "SG":
             # Singapore GST registration
-            return f"{random.randint(10000000, 99999999)}{random.choice('ABCDEFGHJKLMNPQRSTUVWXYZ')}"
+            return (
+                f"{random.randint(10000000, 99999999)}{random.choice('ABCDEFGHJKLMNPQRSTUVWXYZ')}"
+            )
         elif country == "JP":
             # Japan Corporate Number
             return f"{random.randint(1000000000000, 9999999999999)}"

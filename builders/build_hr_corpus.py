@@ -19,28 +19,24 @@ import random
 import subprocess
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List
 
 import yaml
 from docx import Document
 
-from builders.hr.industry_config import INDUSTRIES, EXPERIENCE_LEVELS
 from builders.hr.data_generators import ResumeDataGenerator
+from builders.hr.industry_config import INDUSTRIES
+from builders.hr.job_app_templates import (
+    JobApplicationTemplate,
+    generate_cover_letter,
+)
 from builders.hr.resume_templates import (
     ChronologicalResumeTemplate,
     FunctionalResumeTemplate,
     HybridResumeTemplate,
 )
-from builders.hr.job_app_templates import (
-    JobApplicationTemplate,
-    generate_cover_letter,
-)
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -139,8 +135,10 @@ def convert_docx_to_pdf(docx_path: Path, pdf_path: Path) -> None:
         [
             "libreoffice",
             "--headless",
-            "--convert-to", "pdf",
-            "--outdir", str(output_dir),
+            "--convert-to",
+            "pdf",
+            "--outdir",
+            str(output_dir),
             str(docx_path),
         ],
         capture_output=True,
@@ -163,10 +161,10 @@ def generate_resume(
     industry_key: str,
     experience_level: str,
     resume_format: str,
-    output_dirs: Dict[str, Path],
+    output_dirs: dict[str, Path],
     generator: ResumeDataGenerator,
     current_year: int,
-) -> Dict:
+) -> dict:
     """Generate a single resume with all output files.
 
     Args:
@@ -268,10 +266,10 @@ def generate_job_application(
     resume_id: int,
     industry_key: str,
     experience_level: str,
-    output_dirs: Dict[str, Path],
+    output_dirs: dict[str, Path],
     generator: ResumeDataGenerator,
     current_year: int,
-) -> Dict:
+) -> dict:
     """Generate a single job application with all output files.
 
     Args:
@@ -465,18 +463,26 @@ def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
             "by_industry": {
                 industry: {
                     "resumes": len([r for r in resume_metadata_list if r["industry"] == industry]),
-                    "job_applications": len([a for a in app_metadata_list if a["industry"] == industry]),
-                    "total": len([r for r in resume_metadata_list if r["industry"] == industry]) +
-                            len([a for a in app_metadata_list if a["industry"] == industry]),
+                    "job_applications": len(
+                        [a for a in app_metadata_list if a["industry"] == industry]
+                    ),
+                    "total": len([r for r in resume_metadata_list if r["industry"] == industry])
+                    + len([a for a in app_metadata_list if a["industry"] == industry]),
                 }
                 for industry in DISTRIBUTION.keys()
             },
             "by_experience_level": {
                 level: {
-                    "resumes": len([r for r in resume_metadata_list if r["experience_level"] == level]),
-                    "job_applications": len([a for a in app_metadata_list if a["experience_level"] == level]),
-                    "total": len([r for r in resume_metadata_list if r["experience_level"] == level]) +
-                            len([a for a in app_metadata_list if a["experience_level"] == level]),
+                    "resumes": len(
+                        [r for r in resume_metadata_list if r["experience_level"] == level]
+                    ),
+                    "job_applications": len(
+                        [a for a in app_metadata_list if a["experience_level"] == level]
+                    ),
+                    "total": len(
+                        [r for r in resume_metadata_list if r["experience_level"] == level]
+                    )
+                    + len([a for a in app_metadata_list if a["experience_level"] == level]),
                 }
                 for level in ["entry", "mid", "senior", "executive"]
             },
@@ -502,9 +508,7 @@ def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
 
 def main():
     """Main entry point."""
-    parser = argparse.ArgumentParser(
-        description="Generate HR corpus for PDF-Bench"
-    )
+    parser = argparse.ArgumentParser(description="Generate HR corpus for PDF-Bench")
     parser.add_argument(
         "--output",
         type=Path,

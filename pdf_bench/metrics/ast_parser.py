@@ -121,9 +121,7 @@ class MarkdownASTParser:
         self._extract_recursive(ast, elements)
         return elements
 
-    def _extract_recursive(
-        self, tokens: list[dict[str, Any]], elements: list[Element]
-    ) -> None:
+    def _extract_recursive(self, tokens: list[dict[str, Any]], elements: list[Element]) -> None:
         """Recursively extract elements from token tree.
 
         Args:

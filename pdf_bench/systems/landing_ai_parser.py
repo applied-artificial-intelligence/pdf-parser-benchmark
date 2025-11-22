@@ -44,21 +44,22 @@ Environment Variables:
     LANDING_AI_PROJECT_ID: Project ID for custom models (optional)
 """
 
+import base64
 import os
 import time
-import base64
 from pathlib import Path
 from typing import Any
-import json
 
 try:
     import requests
+
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
 
 try:
     import fitz  # PyMuPDF for PDF to image conversion
+
     PYMUPDF_AVAILABLE = True
 except ImportError:
     PYMUPDF_AVAILABLE = False
@@ -82,8 +83,7 @@ class LandingAIParser:
         """
         if not REQUESTS_AVAILABLE:
             raise ImportError(
-                "requests is required for Landing AI parser. "
-                "Install with: pip install requests"
+                "requests is required for Landing AI parser. Install with: pip install requests"
             )
 
         if not PYMUPDF_AVAILABLE:
@@ -158,11 +158,11 @@ class LandingAIParser:
                 all_text.append(f"## Page {page_num + 1}\n\n{page_text}")
 
         except Exception as e:
-            raise Exception(f"Landing AI processing failed: {e}")
+            raise Exception(f"Landing AI processing failed: {e}") from e
         finally:
             doc.close()
 
-        processing_time = time.time() - start_time
+        time.time() - start_time
 
         # Combine all pages into markdown
         markdown = "\n\n".join(all_text)
@@ -201,12 +201,7 @@ class LandingAIParser:
             payload["project_id"] = self.project_id
 
         try:
-            response = requests.post(
-                url,
-                headers=self.headers,
-                json=payload,
-                timeout=30
-            )
+            response = requests.post(url, headers=self.headers, json=payload, timeout=30)
 
             if response.status_code != 200:
                 # Fallback: Return error message as placeholder
@@ -277,11 +272,7 @@ class LandingAIParser:
             # Try to ping the API (adjust endpoint as needed)
             url = f"{endpoint}/health"
 
-            response = requests.get(
-                url,
-                headers=headers,
-                timeout=10
-            )
+            response = requests.get(url, headers=headers, timeout=10)
 
             if response.status_code == 200:
                 return True, "Credentials valid"

@@ -19,11 +19,11 @@ from pdf_bench.systems.marker import MarkerParser
 from pdf_bench.systems.marker_ollama import MarkerOllamaParser
 from pdf_bench.systems.pdfminer_parser import PDFMinerParser
 from pdf_bench.systems.pdfplumber_parser import PdfPlumberParser
+from pdf_bench.systems.pymupdf import PyMuPDFParser
+from pdf_bench.systems.pymupdf4llm_parser import PyMuPDF4LLMParser
 from pdf_bench.systems.pypdf2_parser import PyPDF2Parser
 from pdf_bench.systems.pypdf_parser import PyPDFParser
 from pdf_bench.systems.pypdfium2_parser import PyPDFium2Parser
-from pdf_bench.systems.pymupdf import PyMuPDFParser
-from pdf_bench.systems.pymupdf4llm_parser import PyMuPDF4LLMParser
 from pdf_bench.systems.tika_parser import TikaParser
 from pdf_bench.systems.unstructured_parser import UnstructuredParser
 

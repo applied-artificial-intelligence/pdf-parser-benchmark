@@ -96,8 +96,9 @@ def mock_response() -> Mock:
     response.status_code = 200
     response.headers = {"content-length": str(len(SAMPLE_PDF_CONTENT))}
     response.iter_content = Mock(
-        return_value=[SAMPLE_PDF_CONTENT[i:i+8192]
-                     for i in range(0, len(SAMPLE_PDF_CONTENT), 8192)]
+        return_value=[
+            SAMPLE_PDF_CONTENT[i : i + 8192] for i in range(0, len(SAMPLE_PDF_CONTENT), 8192)
+        ]
     )
     return response
 
@@ -159,9 +160,7 @@ class TestDownloadPDF:
         assert output_path.read_bytes() == SAMPLE_PDF_CONTENT
 
     @patch("builders.download_govuk_pdfs.requests.get")
-    def test_download_pdf_skip_existing(
-        self, mock_get: Mock, temp_pdf_file: Path
-    ) -> None:
+    def test_download_pdf_skip_existing(self, mock_get: Mock, temp_pdf_file: Path) -> None:
         """Test skipping download when file exists."""
         result = download_pdf(
             url="https://example.gov.uk/test.pdf",
@@ -485,9 +484,7 @@ class TestEdgeCases:
     """Tests for edge cases and boundary conditions."""
 
     @patch("builders.download_govuk_pdfs.requests.get")
-    def test_download_large_file_chunked(
-        self, mock_get: Mock, tmp_path: Path
-    ) -> None:
+    def test_download_large_file_chunked(self, mock_get: Mock, tmp_path: Path) -> None:
         """Test downloading large file in chunks."""
         # Create large content (1MB)
         large_content = b"x" * (1024 * 1024)
@@ -496,7 +493,7 @@ class TestEdgeCases:
         mock_response.status_code = 200
         mock_response.headers = {"content-length": str(len(large_content))}
         # Split into chunks
-        chunks = [large_content[i:i+8192] for i in range(0, len(large_content), 8192)]
+        chunks = [large_content[i : i + 8192] for i in range(0, len(large_content), 8192)]
         mock_response.iter_content = Mock(return_value=chunks)
 
         mock_get.return_value = mock_response
@@ -513,9 +510,7 @@ class TestEdgeCases:
         assert output_path.read_bytes() == large_content
 
     @patch("builders.download_govuk_pdfs.requests.get")
-    def test_download_with_keep_alive_chunks(
-        self, mock_get: Mock, tmp_path: Path
-    ) -> None:
+    def test_download_with_keep_alive_chunks(self, mock_get: Mock, tmp_path: Path) -> None:
         """Test that keep-alive chunks (empty) are filtered out."""
         mock_response = Mock(spec=requests.Response)
         mock_response.status_code = 200
@@ -538,9 +533,7 @@ class TestEdgeCases:
         assert output_path.read_bytes() == SAMPLE_PDF_CONTENT
 
     @patch("builders.download_govuk_pdfs.requests.get")
-    def test_download_no_content_length_header(
-        self, mock_get: Mock, tmp_path: Path
-    ) -> None:
+    def test_download_no_content_length_header(self, mock_get: Mock, tmp_path: Path) -> None:
         """Test download when Content-Length header is missing."""
         mock_response = Mock(spec=requests.Response)
         mock_response.status_code = 200

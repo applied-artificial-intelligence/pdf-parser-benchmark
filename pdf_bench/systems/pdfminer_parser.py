@@ -5,10 +5,10 @@ detailed PDF analysis and text extraction with layout information.
 """
 
 from pathlib import Path
-from io import StringIO
 
 try:
     import pdfminer  # type: ignore[import-untyped]
+
     PDFMINER_AVAILABLE = True
 except ImportError:
     PDFMINER_AVAILABLE = False

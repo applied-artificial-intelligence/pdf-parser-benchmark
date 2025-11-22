@@ -28,10 +28,11 @@ Examples:
 """
 
 from pathlib import Path
-from typing import Any, cast
+from typing import Any
 
 try:
     import pdfplumber
+
     PDFPLUMBER_AVAILABLE = True
 except ImportError:
     PDFPLUMBER_AVAILABLE = False
@@ -72,8 +73,7 @@ class PdfPlumberParser(BaseParser):
         """
         if not PDFPLUMBER_AVAILABLE:
             raise ImportError(
-                "pdfplumber is required for PdfPlumberParser. "
-                "Install with: pip install pdfplumber"
+                "pdfplumber is required for PdfPlumberParser. Install with: pip install pdfplumber"
             )
 
     @property

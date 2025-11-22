@@ -247,9 +247,7 @@ def main() -> None:
     """CLI entry point for building synthetic corpus."""
     import argparse
 
-    parser = argparse.ArgumentParser(
-        description="Build synthetic PDFs from Markdown using Pandoc"
-    )
+    parser = argparse.ArgumentParser(description="Build synthetic PDFs from Markdown using Pandoc")
     parser.add_argument(
         "corpus_dir",
         type=Path,

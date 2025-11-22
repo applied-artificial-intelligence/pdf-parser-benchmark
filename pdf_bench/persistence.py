@@ -52,10 +52,7 @@ def _deserialize_metrics(metrics: dict[str, float | None]) -> dict[str, float]:
     Returns:
         Dictionary with None values converted back to NaN
     """
-    return {
-        key: (float("nan") if value is None else value)
-        for key, value in metrics.items()
-    }
+    return {key: (float("nan") if value is None else value) for key, value in metrics.items()}
 
 
 def save_results(
@@ -74,10 +71,7 @@ def save_results(
         parser_versions: Optional dict of parser name -> version
     """
     # Prepare environment info
-    python_ver = (
-        f"{sys.version_info.major}.{sys.version_info.minor}."
-        f"{sys.version_info.micro}"
-    )
+    python_ver = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
     env_info = {
         "python_version": python_ver,
         "platform": platform.platform(),

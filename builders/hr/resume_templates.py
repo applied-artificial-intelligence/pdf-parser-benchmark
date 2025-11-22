@@ -6,22 +6,19 @@ This module creates three professional resume templates:
 3. Hybrid Resume - Combination of chronological and functional
 """
 
-from pathlib import Path
-from datetime import datetime
-from typing import List
 
 from docx import Document
-from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
+from docx.shared import Inches, Pt, RGBColor
 
 from builders.hr.data_generators import (
     CandidateInfo,
-    Education,
-    WorkExperience,
-    Skill,
     Certification,
+    Education,
+    Skill,
+    WorkExperience,
 )
 
 
@@ -51,10 +48,10 @@ class ChronologicalResumeTemplate:
         self,
         candidate: CandidateInfo,
         professional_summary: str,
-        work_experience: List[WorkExperience],
-        education: List[Education],
-        skills: List[Skill],
-        certifications: List[Certification] = None,
+        work_experience: list[WorkExperience],
+        education: list[Education],
+        skills: list[Skill],
+        certifications: list[Certification] = None,
     ) -> Document:
         """Generate chronological resume."""
 
@@ -99,12 +96,12 @@ class ChronologicalResumeTemplate:
 
             # Responsibilities and achievements
             for responsibility in exp.responsibilities:
-                bullet_para = self.doc.add_paragraph(responsibility, style='List Bullet')
+                bullet_para = self.doc.add_paragraph(responsibility, style="List Bullet")
                 bullet_para.paragraph_format.left_indent = Inches(0.25)
                 bullet_para.paragraph_format.space_after = Pt(2)
 
             for achievement in exp.achievements:
-                bullet_para = self.doc.add_paragraph(achievement, style='List Bullet')
+                bullet_para = self.doc.add_paragraph(achievement, style="List Bullet")
                 bullet_para.paragraph_format.left_indent = Inches(0.25)
                 bullet_para.paragraph_format.space_after = Pt(2)
 
@@ -156,12 +153,12 @@ class ChronologicalResumeTemplate:
 
         # Add bottom border
         pPr = header_para._element.get_or_add_pPr()
-        pBdr = OxmlElement('w:pBdr')
-        bottom = OxmlElement('w:bottom')
-        bottom.set(qn('w:val'), 'single')
-        bottom.set(qn('w:sz'), '6')
-        bottom.set(qn('w:space'), '1')
-        bottom.set(qn('w:color'), '003366')
+        pBdr = OxmlElement("w:pBdr")
+        bottom = OxmlElement("w:bottom")
+        bottom.set(qn("w:val"), "single")
+        bottom.set(qn("w:sz"), "6")
+        bottom.set(qn("w:space"), "1")
+        bottom.set(qn("w:color"), "003366")
         pBdr.append(bottom)
         pPr.append(pBdr)
 
@@ -195,10 +192,10 @@ class FunctionalResumeTemplate:
         self,
         candidate: CandidateInfo,
         professional_summary: str,
-        work_experience: List[WorkExperience],
-        education: List[Education],
-        skills: List[Skill],
-        certifications: List[Certification] = None,
+        work_experience: list[WorkExperience],
+        education: list[Education],
+        skills: list[Skill],
+        certifications: list[Certification] = None,
     ) -> Document:
         """Generate functional resume."""
 
@@ -260,7 +257,7 @@ class FunctionalResumeTemplate:
 
         # Show top 6-8 achievements
         for achievement in all_achievements[:8]:
-            bullet_para = self.doc.add_paragraph(achievement, style='List Bullet')
+            bullet_para = self.doc.add_paragraph(achievement, style="List Bullet")
             bullet_para.paragraph_format.left_indent = Inches(0.25)
             bullet_para.paragraph_format.space_after = Pt(4)
 
@@ -342,10 +339,10 @@ class HybridResumeTemplate:
         self,
         candidate: CandidateInfo,
         professional_summary: str,
-        work_experience: List[WorkExperience],
-        education: List[Education],
-        skills: List[Skill],
-        certifications: List[Certification] = None,
+        work_experience: list[WorkExperience],
+        education: list[Education],
+        skills: list[Skill],
+        certifications: list[Certification] = None,
     ) -> Document:
         """Generate hybrid resume."""
 
@@ -383,7 +380,7 @@ class HybridResumeTemplate:
         # Group in rows of skills
         chunk_size = 6
         for i in range(0, len(skill_names), chunk_size):
-            chunk = skill_names[i:i + chunk_size]
+            chunk = skill_names[i : i + chunk_size]
             skills_para = self.doc.add_paragraph()
             skills_para.add_run("• ").font.bold = True
             skills_para.add_run(", ".join(chunk))
@@ -411,7 +408,7 @@ class HybridResumeTemplate:
 
             # Responsibilities
             for responsibility in exp.responsibilities[:3]:  # Limit to 3 for hybrid
-                bullet_para = self.doc.add_paragraph(responsibility, style='List Bullet')
+                bullet_para = self.doc.add_paragraph(responsibility, style="List Bullet")
                 bullet_para.paragraph_format.left_indent = Inches(0.25)
                 bullet_para.paragraph_format.space_after = Pt(2)
 
@@ -425,7 +422,7 @@ class HybridResumeTemplate:
                 achievements_para.paragraph_format.space_after = Pt(2)
 
                 for achievement in exp.achievements:
-                    bullet_para = self.doc.add_paragraph(achievement, style='List Bullet')
+                    bullet_para = self.doc.add_paragraph(achievement, style="List Bullet")
                     bullet_para.paragraph_format.left_indent = Inches(0.5)
                     bullet_para.paragraph_format.space_after = Pt(2)
 
@@ -476,12 +473,12 @@ class HybridResumeTemplate:
         """Add a horizontal line separator."""
         line_para = self.doc.add_paragraph()
         pPr = line_para._element.get_or_add_pPr()
-        pBdr = OxmlElement('w:pBdr')
-        bottom = OxmlElement('w:bottom')
-        bottom.set(qn('w:val'), 'single')
-        bottom.set(qn('w:sz'), '12')
-        bottom.set(qn('w:space'), '1')
-        bottom.set(qn('w:color'), '000000')
+        pBdr = OxmlElement("w:pBdr")
+        bottom = OxmlElement("w:bottom")
+        bottom.set(qn("w:val"), "single")
+        bottom.set(qn("w:sz"), "12")
+        bottom.set(qn("w:space"), "1")
+        bottom.set(qn("w:color"), "000000")
         pBdr.append(bottom)
         pPr.append(pBdr)
         line_para.paragraph_format.space_after = Pt(12)

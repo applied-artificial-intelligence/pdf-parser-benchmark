@@ -159,7 +159,9 @@ class TestCrossParserConsistency:
 
     @patch("boto3.client")
     @patch("pdf_bench.systems.azure_document_intelligence.DocumentIntelligenceClient")
-    def test_same_cost_per_page(self, mock_azure_client: MagicMock, mock_boto_client: MagicMock) -> None:
+    def test_same_cost_per_page(
+        self, mock_azure_client: MagicMock, mock_boto_client: MagicMock
+    ) -> None:
         """Test that both parsers have the same cost per page."""
         # Setup mocks
         mock_boto_client.return_value = MagicMock()
@@ -182,8 +184,9 @@ class TestCrossParserConsistency:
     def test_both_parsers_can_be_instantiated_together(self) -> None:
         """Test both parsers can be instantiated in the same process."""
         # This test verifies no resource conflicts occur
-        with patch("boto3.client"), patch(
-            "pdf_bench.systems.azure_document_intelligence.DocumentIntelligenceClient"
+        with (
+            patch("boto3.client"),
+            patch("pdf_bench.systems.azure_document_intelligence.DocumentIntelligenceClient"),
         ):
             aws_parser = AWSTextractParser(
                 aws_access_key_id="test_key",
@@ -225,17 +228,13 @@ class TestBudgetEnforcement:
 
             # Check against a $1 budget
             # 1,000 pages * $0.0015/page = $1.50, should exceed budget
-            within_budget, estimate = estimator.check_budget(
-                pdfs, "aws_textract", max_cost=1.0
-            )
+            within_budget, estimate = estimator.check_budget(pdfs, "aws_textract", max_cost=1.0)
 
             assert not within_budget
             assert estimate.total_cost > 1.0
 
             # Check against a $2 budget (should be within)
-            within_budget, estimate = estimator.check_budget(
-                pdfs, "aws_textract", max_cost=2.0
-            )
+            within_budget, estimate = estimator.check_budget(pdfs, "aws_textract", max_cost=2.0)
 
             assert within_budget
             assert estimate.total_cost < 2.0

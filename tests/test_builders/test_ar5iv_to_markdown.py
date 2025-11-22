@@ -2,21 +2,22 @@
 Tests for ar5iv HTML5 to Markdown converter.
 """
 
-import pytest
-from pathlib import Path
-from unittest.mock import patch, MagicMock
 import sys
+from pathlib import Path
+from unittest.mock import MagicMock, patch
+
+import pytest
 
 # Add builders to path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent / "builders"))
 
 from ar5iv_to_markdown import (
-    download_ar5iv_html,
-    extract_main_content,
+    Ar5ivConversionError,
+    Ar5ivDownloadError,
     convert_ar5iv_to_markdown,
     download_and_convert_ar5iv,
-    Ar5ivDownloadError,
-    Ar5ivConversionError,
+    download_ar5iv_html,
+    extract_main_content,
 )
 
 
@@ -27,10 +28,10 @@ class TestDownloadAr5ivHtml:
         """Test successful ar5iv HTML download."""
         mock_html = "<html><article class='ltx_document'>Test content</article></html>"
 
-        with patch('ar5iv_to_markdown.requests.get') as mock_get:
+        with patch("ar5iv_to_markdown.requests.get") as mock_get:
             mock_response = MagicMock()
             mock_response.status_code = 200
-            mock_response.headers = {'Content-Type': 'text/html'}
+            mock_response.headers = {"Content-Type": "text/html"}
             mock_response.text = mock_html
             mock_get.return_value = mock_response
 
@@ -45,10 +46,12 @@ class TestDownloadAr5ivHtml:
         """Test 404 error handling."""
         import requests
 
-        with patch('ar5iv_to_markdown.requests.get') as mock_get:
+        with patch("ar5iv_to_markdown.requests.get") as mock_get:
             mock_response = MagicMock()
             mock_response.status_code = 404
-            mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
+            mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(
+                response=mock_response
+            )
             mock_get.return_value = mock_response
 
             output_path = tmp_path / "test.html"
@@ -58,10 +61,10 @@ class TestDownloadAr5ivHtml:
 
     def test_download_wrong_content_type(self, tmp_path):
         """Test wrong content type error."""
-        with patch('ar5iv_to_markdown.requests.get') as mock_get:
+        with patch("ar5iv_to_markdown.requests.get") as mock_get:
             mock_response = MagicMock()
             mock_response.status_code = 200
-            mock_response.headers = {'Content-Type': 'application/json'}
+            mock_response.headers = {"Content-Type": "application/json"}
             mock_response.text = '{"error": "not html"}'
             mock_get.return_value = mock_response
 
@@ -93,8 +96,8 @@ class TestExtractMainContent:
         article = extract_main_content(html_path)
 
         assert article is not None
-        assert article.name == 'article'
-        assert 'ltx_document' in article.get('class', [])
+        assert article.name == "article"
+        assert "ltx_document" in article.get("class", [])
 
     def test_extract_fallback_to_body(self, tmp_path):
         """Test fallback to body when article not found."""
@@ -113,7 +116,7 @@ class TestExtractMainContent:
         content = extract_main_content(html_path)
 
         assert content is not None
-        assert content.name == 'body'
+        assert content.name == "body"
 
     def test_extract_missing_content_error(self, tmp_path):
         """Test error when no content can be extracted."""
@@ -156,13 +159,13 @@ class TestConvertAr5ivToMarkdown:
 
         result = convert_ar5iv_to_markdown(html_path, output_path)
 
-        assert result['success'] is True
+        assert result["success"] is True
         assert output_path.exists()
 
         markdown = output_path.read_text()
-        assert '# Test Paper' in markdown
-        assert 'Abstract' in markdown
-        assert 'Introduction' in markdown
+        assert "# Test Paper" in markdown
+        assert "Abstract" in markdown
+        assert "Introduction" in markdown
 
     def test_conversion_with_math(self, tmp_path):
         """Test conversion with mathematical content."""
@@ -188,10 +191,10 @@ class TestConvertAr5ivToMarkdown:
 
         result = convert_ar5iv_to_markdown(html_path, output_path)
 
-        assert result['success'] is True
+        assert result["success"] is True
 
         markdown = output_path.read_text()
-        assert '$E = mc^2$' in markdown or 'E = mc^2' in markdown
+        assert "$E = mc^2$" in markdown or "E = mc^2" in markdown
 
     def test_conversion_stats(self, tmp_path):
         """Test that conversion returns correct statistics."""
@@ -220,10 +223,10 @@ class TestConvertAr5ivToMarkdown:
 
         result = convert_ar5iv_to_markdown(html_path, output_path)
 
-        assert result['success'] is True
-        assert 'stats' in result
-        assert result['stats']['sections'] >= 2
-        assert result['stats']['size_bytes'] > 0
+        assert result["success"] is True
+        assert "stats" in result
+        assert result["stats"]["sections"] >= 2
+        assert result["stats"]["size_bytes"] > 0
 
 
 class TestDownloadAndConvertAr5iv:
@@ -242,37 +245,39 @@ class TestDownloadAndConvertAr5iv:
         </html>
         """
 
-        with patch('ar5iv_to_markdown.requests.get') as mock_get:
+        with patch("ar5iv_to_markdown.requests.get") as mock_get:
             mock_response = MagicMock()
             mock_response.status_code = 200
-            mock_response.headers = {'Content-Type': 'text/html'}
+            mock_response.headers = {"Content-Type": "text/html"}
             mock_response.text = mock_html
             mock_get.return_value = mock_response
 
             result = download_and_convert_ar5iv("2303.08774", tmp_path)
 
-            assert result['success'] is True
-            assert result['arxiv_id'] == "2303.08774"
-            assert result['html_path'] is not None
-            assert result['markdown_path'] is not None
-            assert result['error'] is None
-            assert result['stats'] is not None
+            assert result["success"] is True
+            assert result["arxiv_id"] == "2303.08774"
+            assert result["html_path"] is not None
+            assert result["markdown_path"] is not None
+            assert result["error"] is None
+            assert result["stats"] is not None
 
     def test_complete_pipeline_download_failure(self, tmp_path):
         """Test pipeline with download failure."""
         import requests
 
-        with patch('ar5iv_to_markdown.requests.get') as mock_get:
+        with patch("ar5iv_to_markdown.requests.get") as mock_get:
             mock_response = MagicMock()
             mock_response.status_code = 404
-            mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(response=mock_response)
+            mock_response.raise_for_status.side_effect = requests.exceptions.HTTPError(
+                response=mock_response
+            )
             mock_get.return_value = mock_response
 
             result = download_and_convert_ar5iv("9999.99999", tmp_path)
 
-            assert result['success'] is False
-            assert result['error'] is not None
-            assert "not found" in result['error'].lower()
+            assert result["success"] is False
+            assert result["error"] is not None
+            assert "not found" in result["error"].lower()
 
 
 if __name__ == "__main__":

@@ -10,7 +10,6 @@ import os
 from pathlib import Path
 from typing import Any
 
-
 # Category type to markdown heading level mapping
 HEADING_LEVELS = {
     "title": 1,
@@ -132,7 +131,9 @@ def annotation_to_markdown(annotation: dict[str, Any]) -> str:
     layout_dets = annotation.get("layout_dets", [])
 
     # Sort by reading order if available (handle None values)
-    sorted_dets = sorted(layout_dets, key=lambda x: x.get("order") if x.get("order") is not None else float('inf'))
+    sorted_dets = sorted(
+        layout_dets, key=lambda x: x.get("order") if x.get("order") is not None else float("inf")
+    )
 
     md_parts = []
     for det in sorted_dets:
@@ -248,6 +249,7 @@ def convert_omnidocbench(
         # Write metadata YAML
         meta_path = output_dir / "metadata" / f"{doc_id}.yaml"
         import yaml
+
         with open(meta_path, "w", encoding="utf-8") as f:
             yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True)
 
@@ -266,7 +268,9 @@ def main():
     parser.add_argument("--images", help="Images directory (for filtering)")
     parser.add_argument("--sources", nargs="+", help="Filter to specific data sources")
     parser.add_argument("--max", type=int, help="Maximum documents to convert")
-    parser.add_argument("--no-require-image", action="store_true", help="Don't require image to exist")
+    parser.add_argument(
+        "--no-require-image", action="store_true", help="Don't require image to exist"
+    )
 
     args = parser.parse_args()
 
@@ -279,7 +283,7 @@ def main():
         images_dir=args.images,
     )
 
-    print(f"Conversion complete:")
+    print("Conversion complete:")
     print(f"  Total annotations: {stats['total']}")
     print(f"  Converted: {stats['converted']}")
     print(f"  Skipped (source filter): {stats['skipped_source']}")

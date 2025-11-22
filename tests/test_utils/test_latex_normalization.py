@@ -1,6 +1,5 @@
 """Tests for LaTeX normalization utilities."""
 
-
 from pdf_bench.utils.latex_normalization import (
     collapse_whitespace,
     extract_math_content,

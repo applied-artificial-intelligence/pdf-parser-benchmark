@@ -27,7 +27,8 @@ VALID_PARSERS = [
     "unstructured",
     "marker",
     "marker_ollama",
-    "docling",
+    "docling",  # Fast mode (no OCR) - ~2-4GB RAM, 2-5 sec/doc
+    "docling-ocr",  # OCR mode - ~8-12GB RAM, 30-60 sec/doc, GPU recommended
     "kreuzberg",
     # Commercial/API parsers
     "aws_textract",
@@ -114,9 +115,7 @@ class DocumentFilter:
         # Validate corpora
         for corpus in self.corpora:
             if corpus not in VALID_CORPORA:
-                errors.append(
-                    f"Invalid corpus '{corpus}'. Valid corpora: {VALID_CORPORA}"
-                )
+                errors.append(f"Invalid corpus '{corpus}'. Valid corpora: {VALID_CORPORA}")
 
         # Validate domains
         for domain in self.domains:
@@ -128,16 +127,12 @@ class DocumentFilter:
                     break
             if not valid:
                 all_domains = [d for domains in VALID_DOMAINS.values() for d in domains]
-                errors.append(
-                    f"Invalid domain '{domain}'. Valid domains: {all_domains}"
-                )
+                errors.append(f"Invalid domain '{domain}'. Valid domains: {all_domains}")
 
         # Validate features
         for feature in self.features:
             if feature not in VALID_FEATURES:
-                errors.append(
-                    f"Invalid feature '{feature}'. Valid features: {VALID_FEATURES}"
-                )
+                errors.append(f"Invalid feature '{feature}'. Valid features: {VALID_FEATURES}")
 
         # Validate max_documents
         if self.max_documents is not None and self.max_documents < 1:
@@ -177,9 +172,7 @@ class MetricConfig:
 
         for metric in self.metrics:
             if metric not in VALID_METRICS:
-                errors.append(
-                    f"Invalid metric '{metric}'. Valid metrics: {VALID_METRICS}"
-                )
+                errors.append(f"Invalid metric '{metric}'. Valid metrics: {VALID_METRICS}")
 
         if errors:
             raise ValueError(
@@ -213,9 +206,7 @@ class ParserConfig:
 
         for parser in self.parsers:
             if parser not in VALID_PARSERS:
-                errors.append(
-                    f"Invalid parser '{parser}'. Valid parsers: {VALID_PARSERS}"
-                )
+                errors.append(f"Invalid parser '{parser}'. Valid parsers: {VALID_PARSERS}")
 
         # Validate parser_options keys match parsers
         for parser_name in self.parser_options.keys():
@@ -263,9 +254,7 @@ class OutputConfig:
         errors = []
 
         if self.save_format not in ["json", "csv", "both"]:
-            errors.append(
-                f"save_format must be 'json', 'csv', or 'both', got '{self.save_format}'"
-            )
+            errors.append(f"save_format must be 'json', 'csv', or 'both', got '{self.save_format}'")
 
         if not self.results_dir:
             errors.append("results_dir cannot be empty")

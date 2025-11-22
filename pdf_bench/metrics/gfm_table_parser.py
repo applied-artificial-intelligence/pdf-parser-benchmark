@@ -70,9 +70,7 @@ class GFMTableParser:
     def __init__(self) -> None:
         """Initialize the GFM table parser with AST parser."""
         # Ensure table plugin is enabled
-        self._ast_parser = MarkdownASTParser(
-            plugins=["table", "strikethrough", "task_lists"]
-        )
+        self._ast_parser = MarkdownASTParser(plugins=["table", "strikethrough", "task_lists"])
 
     def extract_tables(self, markdown: str) -> list[GFMTable]:
         """Extract all GFM tables from Markdown text.
@@ -167,18 +165,14 @@ class GFMTableParser:
                 body_rows = table_body.get("children", [])
                 for row_token in body_rows:
                     if row_token.get("type") == "table_row":
-                        row_cells = self._parse_table_row(
-                            row_token.get("children", [])
-                        )
+                        row_cells = self._parse_table_row(row_token.get("children", []))
                         # Pad or truncate to match num_cols
                         row_cells = self._normalize_row(row_cells, num_cols)
                         cells.append(row_cells)
 
             num_rows = len(cells)
 
-            return GFMTable(
-                cells=cells, alignment=alignment, num_rows=num_rows, num_cols=num_cols
-            )
+            return GFMTable(cells=cells, alignment=alignment, num_rows=num_rows, num_cols=num_cols)
 
         except (KeyError, StopIteration, TypeError, ValueError):
             # Malformed table - return None for graceful degradation
@@ -236,9 +230,7 @@ class GFMTableParser:
 
         return text
 
-    def _extract_alignment(
-        self, table_head: dict[str, Any], num_cols: int
-    ) -> list[str]:
+    def _extract_alignment(self, table_head: dict[str, Any], num_cols: int) -> list[str]:
         """Extract column alignment from table header.
 
         GFM alignment is encoded in the separator row:

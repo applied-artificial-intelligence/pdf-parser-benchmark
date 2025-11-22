@@ -1,10 +1,8 @@
 """Tests for AWS Textract parser implementation with mocked API calls."""
 
-import os
 import shutil
 from pathlib import Path
-from typing import Any
-from unittest.mock import MagicMock, Mock, patch
+from unittest.mock import Mock, patch
 
 import boto3
 import pytest
@@ -112,7 +110,7 @@ class TestAWSTextractParserInitialization:
     ) -> None:
         """Test that parser loads credentials from environment variables."""
         with patch("boto3.client", return_value=mock_textract_client) as mock_boto:
-            parser = AWSTextractParser()
+            AWSTextractParser()
 
             # Verify boto3.client was called with correct credentials
             mock_boto.assert_called_once_with(
@@ -122,12 +120,10 @@ class TestAWSTextractParserInitialization:
                 region_name="us-east-1",
             )
 
-    def test_parser_uses_constructor_credentials(
-        self, mock_textract_client: Mock
-    ) -> None:
+    def test_parser_uses_constructor_credentials(self, mock_textract_client: Mock) -> None:
         """Test that parser accepts credentials via constructor."""
         with patch("boto3.client", return_value=mock_textract_client) as mock_boto:
-            parser = AWSTextractParser(
+            AWSTextractParser(
                 aws_access_key_id="custom_key",
                 aws_secret_access_key="custom_secret",
                 region_name="us-west-2",
@@ -149,7 +145,7 @@ class TestAWSTextractParserInitialization:
         monkeypatch.delenv("AWS_REGION", raising=False)
 
         with patch("boto3.client", return_value=mock_textract_client) as mock_boto:
-            parser = AWSTextractParser()
+            AWSTextractParser()
 
             call_kwargs = mock_boto.call_args[1]
             assert call_kwargs["region_name"] == "us-east-1"
@@ -417,9 +413,7 @@ class TestAWSTextractParserCaching:
 class TestAWSTextractParserErrorHandling:
     """Test error handling and edge cases."""
 
-    def test_parse_missing_file(
-        self, parser: AWSTextractParser, output_dir: Path
-    ) -> None:
+    def test_parse_missing_file(self, parser: AWSTextractParser, output_dir: Path) -> None:
         """Test that parser raises error for missing PDF file."""
         missing_pdf = Path("nonexistent.pdf")
 
@@ -515,9 +509,7 @@ class TestAWSTextractParserErrorHandling:
 class TestAWSTextractParserTextExtraction:
     """Test text extraction from Textract responses."""
 
-    def test_extract_blocks_filters_line_blocks(
-        self, parser: AWSTextractParser
-    ) -> None:
+    def test_extract_blocks_filters_line_blocks(self, parser: AWSTextractParser) -> None:
         """Test that _extract_blocks only extracts LINE blocks."""
         response = {
             "Blocks": [
@@ -534,9 +526,7 @@ class TestAWSTextractParserTextExtraction:
         assert blocks[0] == "Line 1"
         assert blocks[1] == "Line 2"
 
-    def test_extract_blocks_skips_empty_text(
-        self, parser: AWSTextractParser
-    ) -> None:
+    def test_extract_blocks_skips_empty_text(self, parser: AWSTextractParser) -> None:
         """Test that _extract_blocks skips empty text."""
         response = {
             "Blocks": [

@@ -9,7 +9,6 @@ This module defines 5 industry types with authentic characteristics including:
 """
 
 from dataclasses import dataclass
-from typing import List, Dict, Any
 
 
 @dataclass
@@ -17,14 +16,14 @@ class HRIndustryConfig:
     """Configuration for an HR industry type."""
 
     name: str
-    company_suffixes: List[str]
-    company_prefixes: List[str]
-    job_titles: Dict[str, List[str]]  # experience_level -> titles
-    skills: List[str]
-    certifications: List[str]
-    responsibilities: Dict[str, List[str]]  # experience_level -> responsibilities
-    achievements_templates: List[str]
-    salary_ranges: Dict[str, tuple[int, int]]  # experience_level -> (min, max)
+    company_suffixes: list[str]
+    company_prefixes: list[str]
+    job_titles: dict[str, list[str]]  # experience_level -> titles
+    skills: list[str]
+    certifications: list[str]
+    responsibilities: dict[str, list[str]]  # experience_level -> responsibilities
+    achievements_templates: list[str]
+    salary_ranges: dict[str, tuple[int, int]]  # experience_level -> (min, max)
 
 
 # Technology / Software Development
@@ -70,11 +69,31 @@ TECHNOLOGY_CONFIG = HRIndustryConfig(
         ],
     },
     skills=[
-        "Python", "Java", "JavaScript", "TypeScript", "React", "Node.js",
-        "AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD",
-        "PostgreSQL", "MongoDB", "Redis", "Git", "Agile/Scrum",
-        "Machine Learning", "TensorFlow", "PyTorch", "REST APIs",
-        "Microservices", "System Design", "Linux", "Terraform",
+        "Python",
+        "Java",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "Node.js",
+        "AWS",
+        "Azure",
+        "GCP",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "PostgreSQL",
+        "MongoDB",
+        "Redis",
+        "Git",
+        "Agile/Scrum",
+        "Machine Learning",
+        "TensorFlow",
+        "PyTorch",
+        "REST APIs",
+        "Microservices",
+        "System Design",
+        "Linux",
+        "Terraform",
     ],
     certifications=[
         "AWS Certified Solutions Architect",
@@ -174,11 +193,22 @@ HEALTHCARE_CONFIG = HRIndustryConfig(
         ],
     },
     skills=[
-        "Patient Care", "Electronic Health Records (EHR)", "Epic", "Cerner",
-        "Medical Terminology", "HIPAA Compliance", "Clinical Documentation",
-        "Patient Assessment", "Care Coordination", "Medical Billing",
-        "Quality Improvement", "Healthcare Analytics", "Regulatory Compliance",
-        "Infection Control", "Emergency Response", "Care Planning",
+        "Patient Care",
+        "Electronic Health Records (EHR)",
+        "Epic",
+        "Cerner",
+        "Medical Terminology",
+        "HIPAA Compliance",
+        "Clinical Documentation",
+        "Patient Assessment",
+        "Care Coordination",
+        "Medical Billing",
+        "Quality Improvement",
+        "Healthcare Analytics",
+        "Regulatory Compliance",
+        "Infection Control",
+        "Emergency Response",
+        "Care Planning",
     ],
     certifications=[
         "Registered Nurse (RN)",
@@ -280,11 +310,25 @@ FINANCE_CONFIG = HRIndustryConfig(
         ],
     },
     skills=[
-        "Financial Modeling", "Excel (Advanced)", "Financial Reporting",
-        "GAAP", "IFRS", "SAP", "Oracle Financials", "QuickBooks",
-        "Budgeting & Forecasting", "Variance Analysis", "Financial Analysis",
-        "Tableau", "Power BI", "SQL", "VBA", "Python",
-        "M&A Analysis", "Valuation", "Risk Management",
+        "Financial Modeling",
+        "Excel (Advanced)",
+        "Financial Reporting",
+        "GAAP",
+        "IFRS",
+        "SAP",
+        "Oracle Financials",
+        "QuickBooks",
+        "Budgeting & Forecasting",
+        "Variance Analysis",
+        "Financial Analysis",
+        "Tableau",
+        "Power BI",
+        "SQL",
+        "VBA",
+        "Python",
+        "M&A Analysis",
+        "Valuation",
+        "Risk Management",
     ],
     certifications=[
         "CPA (Certified Public Accountant)",
@@ -384,12 +428,24 @@ MANUFACTURING_CONFIG = HRIndustryConfig(
         ],
     },
     skills=[
-        "Lean Manufacturing", "Six Sigma", "Continuous Improvement",
-        "Production Planning", "Quality Control", "ISO 9001",
-        "Safety Management", "OSHA Compliance", "Root Cause Analysis",
-        "CAD/CAM", "PLC Programming", "Equipment Maintenance",
-        "Inventory Management", "ERP Systems", "Process Optimization",
-        "Statistical Process Control", "GD&T", "5S Implementation",
+        "Lean Manufacturing",
+        "Six Sigma",
+        "Continuous Improvement",
+        "Production Planning",
+        "Quality Control",
+        "ISO 9001",
+        "Safety Management",
+        "OSHA Compliance",
+        "Root Cause Analysis",
+        "CAD/CAM",
+        "PLC Programming",
+        "Equipment Maintenance",
+        "Inventory Management",
+        "ERP Systems",
+        "Process Optimization",
+        "Statistical Process Control",
+        "GD&T",
+        "5S Implementation",
     ],
     certifications=[
         "Six Sigma Black Belt",
@@ -490,11 +546,21 @@ EDUCATION_CONFIG = HRIndustryConfig(
         ],
     },
     skills=[
-        "Curriculum Development", "Lesson Planning", "Classroom Management",
-        "Educational Technology", "Learning Management Systems (LMS)",
-        "Student Assessment", "Data-Driven Instruction", "Differentiated Instruction",
-        "Google Classroom", "Canvas", "Blackboard", "Educational Standards",
-        "Student Support Services", "Parent Communication", "Professional Development",
+        "Curriculum Development",
+        "Lesson Planning",
+        "Classroom Management",
+        "Educational Technology",
+        "Learning Management Systems (LMS)",
+        "Student Assessment",
+        "Data-Driven Instruction",
+        "Differentiated Instruction",
+        "Google Classroom",
+        "Canvas",
+        "Blackboard",
+        "Educational Standards",
+        "Student Support Services",
+        "Parent Communication",
+        "Professional Development",
     ],
     certifications=[
         "State Teaching License",

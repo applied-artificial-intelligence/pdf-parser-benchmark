@@ -45,13 +45,13 @@ Environment Variables:
 """
 
 import os
-import time
 from pathlib import Path
 from typing import Any
 
 try:
     import boto3
     from botocore.exceptions import BotoCoreError, ClientError
+
     AWS_AVAILABLE = True
 except ImportError:
     AWS_AVAILABLE = False
@@ -114,16 +114,13 @@ class AWSTextractParser(BaseParser):
         """
         if not AWS_AVAILABLE:
             raise ImportError(
-                "boto3 is required for AWS Textract parser. "
-                "Install with: pip install boto3"
+                "boto3 is required for AWS Textract parser. Install with: pip install boto3"
             )
 
         # Get credentials from args or environment
         self._aws_profile = os.getenv("AWS_PROFILE")
         self._aws_access_key_id = aws_access_key_id or os.getenv("AWS_ACCESS_KEY_ID")
-        self._aws_secret_access_key = aws_secret_access_key or os.getenv(
-            "AWS_SECRET_ACCESS_KEY"
-        )
+        self._aws_secret_access_key = aws_secret_access_key or os.getenv("AWS_SECRET_ACCESS_KEY")
         self._region_name = region_name or os.getenv("AWS_REGION", "us-east-1")
 
         # Initialize boto3 client
@@ -262,19 +259,13 @@ class AWSTextractParser(BaseParser):
             error_msg = e.response.get("Error", {}).get("Message", str(e))
 
             if error_code == "ThrottlingException":
-                raise RuntimeError(
-                    f"AWS Textract rate limit exceeded: {error_msg}"
-                ) from e
+                raise RuntimeError(f"AWS Textract rate limit exceeded: {error_msg}") from e
             elif error_code == "InvalidParameterException":
                 raise ValueError(f"Invalid PDF file: {error_msg}") from e
             elif error_code == "ProvisionedThroughputExceededException":
-                raise RuntimeError(
-                    f"AWS Textract throughput exceeded: {error_msg}"
-                ) from e
+                raise RuntimeError(f"AWS Textract throughput exceeded: {error_msg}") from e
             else:
-                raise RuntimeError(
-                    f"AWS Textract API error ({error_code}): {error_msg}"
-                ) from e
+                raise RuntimeError(f"AWS Textract API error ({error_code}): {error_msg}") from e
 
         except BotoCoreError as e:
             raise RuntimeError(f"AWS SDK error: {e}") from e
@@ -305,15 +296,14 @@ class AWSTextractParser(BaseParser):
             ClientError: If Textract API call fails.
             BotoCoreError: If boto3 SDK error occurs.
         """
-        import io
 
         try:
             import fitz  # PyMuPDF
-        except ImportError:
+        except ImportError as err:
             raise ImportError(
                 "PyMuPDF (fitz) is required for multi-page PDF support. "
                 "Install with: pip install pymupdf"
-            )
+            ) from err
 
         # Open PDF to check page count
         pdf_doc = fitz.open(stream=pdf_bytes, filetype="pdf")
@@ -335,9 +325,7 @@ class AWSTextractParser(BaseParser):
                 png_bytes = pix.tobytes("png")
 
                 # Call Textract for this page
-                response = self._client.detect_document_text(
-                    Document={"Bytes": png_bytes}
-                )
+                response = self._client.detect_document_text(Document={"Bytes": png_bytes})
                 page_blocks = self._extract_blocks(response)
                 all_text_blocks.extend(page_blocks)
 

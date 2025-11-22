@@ -54,9 +54,7 @@ def test_render_template_simple(builder):
         "references": "Test refs",
     }
 
-    docx_path = builder.render_template(
-        "01_simple_report.docx", context, "test_output"
-    )
+    docx_path = builder.render_template("01_simple_report.docx", context, "test_output")
 
     assert docx_path.exists()
     assert docx_path.name == "test_output.docx"
@@ -89,9 +87,7 @@ def test_convert_to_pdf(builder):
         "references": "Refs",
     }
 
-    docx_path = builder.render_template(
-        "01_simple_report.docx", context, "test_pdf"
-    )
+    docx_path = builder.render_template("01_simple_report.docx", context, "test_pdf")
 
     # Convert to PDF
     pdf_path = builder.convert_to_pdf(docx_path)
@@ -128,9 +124,7 @@ def test_extract_ground_truth(builder):
         "references": "References text",
     }
 
-    docx_path = builder.render_template(
-        "01_simple_report.docx", context, "test_gt"
-    )
+    docx_path = builder.render_template("01_simple_report.docx", context, "test_gt")
 
     # Extract GT
     gt = builder.extract_ground_truth(docx_path)

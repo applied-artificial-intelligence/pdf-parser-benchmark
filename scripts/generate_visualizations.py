@@ -11,11 +11,11 @@ Output: docs/charts/ directory with PNG and SVG files
 """
 
 import json
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
 
-import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
+import matplotlib.pyplot as plt
 import numpy as np
 import seaborn as sns
 
@@ -53,7 +53,7 @@ def aggregate_results(data: dict) -> tuple[dict, dict]:
         metrics = r.get("metrics", {})
 
         for metric, value in metrics.items():
-            if value is not None and isinstance(value, (int, float)):
+            if value is not None and isinstance(value, int | float):
                 parser_metrics[parser][metric].append(value)
                 parser_domain_metrics[parser][domain][metric].append(value)
 
@@ -82,7 +82,7 @@ def create_parser_ranking_chart(parser_metrics: dict, output_dir: Path):
     bars = ax.barh(parsers, scores, color=colors)
 
     # Add value labels
-    for bar, score in zip(bars, scores):
+    for bar, score in zip(bars, scores, strict=False):
         ax.text(
             score + 0.5,
             bar.get_y() + bar.get_height() / 2,
@@ -113,7 +113,7 @@ def create_parser_ranking_chart(parser_metrics: dict, output_dir: Path):
     fig.savefig(output_dir / "parser_ranking.png", dpi=150, bbox_inches="tight")
     fig.savefig(output_dir / "parser_ranking.svg", bbox_inches="tight")
     plt.close(fig)
-    print(f"✅ Created parser_ranking.png/svg")
+    print("✅ Created parser_ranking.png/svg")
 
 
 def create_domain_heatmap(parser_domain_metrics: dict, output_dir: Path):
@@ -126,7 +126,9 @@ def create_domain_heatmap(parser_domain_metrics: dict, output_dir: Path):
     for parser in parsers:
         row = []
         for domain in domains:
-            values = parser_domain_metrics.get(parser, {}).get(domain, {}).get("edit_similarity", [])
+            values = (
+                parser_domain_metrics.get(parser, {}).get(domain, {}).get("edit_similarity", [])
+            )
             if values:
                 row.append(np.mean(values) * 100)
             else:
@@ -166,7 +168,9 @@ def create_domain_heatmap(parser_domain_metrics: dict, output_dir: Path):
             value = matrix[i, j]
             if not np.isnan(value):
                 text_color = "white" if value < 60 else "black"
-                ax.text(j, i, f"{value:.1f}", ha="center", va="center", color=text_color, fontsize=9)
+                ax.text(
+                    j, i, f"{value:.1f}", ha="center", va="center", color=text_color, fontsize=9
+                )
 
     ax.set_title("Parser Performance by Document Domain", fontsize=14, fontweight="bold")
 
@@ -186,7 +190,7 @@ def create_domain_heatmap(parser_domain_metrics: dict, output_dir: Path):
     fig.savefig(output_dir / "domain_heatmap.png", dpi=150, bbox_inches="tight")
     fig.savefig(output_dir / "domain_heatmap.svg", bbox_inches="tight")
     plt.close(fig)
-    print(f"✅ Created domain_heatmap.png/svg")
+    print("✅ Created domain_heatmap.png/svg")
 
 
 def create_teds_comparison(parser_metrics: dict, output_dir: Path):
@@ -214,7 +218,7 @@ def create_teds_comparison(parser_metrics: dict, output_dir: Path):
     bars = ax.bar(parsers, scores, color=colors)
 
     # Add value labels
-    for bar, score in zip(bars, scores):
+    for bar, score in zip(bars, scores, strict=False):
         ax.text(
             bar.get_x() + bar.get_width() / 2,
             score + 1,
@@ -252,7 +256,7 @@ def create_teds_comparison(parser_metrics: dict, output_dir: Path):
     fig.savefig(output_dir / "teds_comparison.png", dpi=150, bbox_inches="tight")
     fig.savefig(output_dir / "teds_comparison.svg", bbox_inches="tight")
     plt.close(fig)
-    print(f"✅ Created teds_comparison.png/svg")
+    print("✅ Created teds_comparison.png/svg")
 
 
 def create_metric_correlation(data: dict, output_dir: Path):
@@ -261,7 +265,13 @@ def create_metric_correlation(data: dict, output_dir: Path):
 
     # Extract metrics into arrays
     metrics_data = defaultdict(list)
-    metric_names = ["edit_similarity", "chrf++", "character_error_rate", "tree_similarity", "element_f1"]
+    metric_names = [
+        "edit_similarity",
+        "chrf++",
+        "character_error_rate",
+        "tree_similarity",
+        "element_f1",
+    ]
 
     for r in results:
         m = r.get("metrics", {})
@@ -313,7 +323,9 @@ def create_metric_correlation(data: dict, output_dir: Path):
             value = corr_matrix[i, j]
             if not np.isnan(value):
                 text_color = "white" if abs(value) > 0.5 else "black"
-                ax.text(j, i, f"{value:.2f}", ha="center", va="center", color=text_color, fontsize=9)
+                ax.text(
+                    j, i, f"{value:.2f}", ha="center", va="center", color=text_color, fontsize=9
+                )
 
     ax.set_title("Metric Correlations Across 2,730 Benchmark Runs", fontsize=14, fontweight="bold")
 
@@ -334,7 +346,7 @@ def create_metric_correlation(data: dict, output_dir: Path):
     fig.savefig(output_dir / "metric_correlation.png", dpi=150, bbox_inches="tight")
     fig.savefig(output_dir / "metric_correlation.svg", bbox_inches="tight")
     plt.close(fig)
-    print(f"✅ Created metric_correlation.png/svg")
+    print("✅ Created metric_correlation.png/svg")
 
 
 def main():

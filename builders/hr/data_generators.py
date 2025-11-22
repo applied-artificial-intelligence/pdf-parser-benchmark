@@ -9,9 +9,8 @@ This module generates authentic HR data including:
 """
 
 import random
-from datetime import datetime, timedelta
-from typing import List, Tuple
 from dataclasses import dataclass
+from datetime import datetime
 
 from faker import Faker
 
@@ -19,6 +18,7 @@ from faker import Faker
 @dataclass
 class CandidateInfo:
     """Candidate personal information."""
+
     name: str
     address: str
     city: str
@@ -33,6 +33,7 @@ class CandidateInfo:
 @dataclass
 class Education:
     """Educational background entry."""
+
     degree: str
     major: str
     institution: str
@@ -45,19 +46,21 @@ class Education:
 @dataclass
 class WorkExperience:
     """Work experience entry."""
+
     company: str
     title: str
     city: str
     state: str
     start_date: str  # e.g., "January 2020"
     end_date: str  # e.g., "Present" or "June 2023"
-    responsibilities: List[str]
-    achievements: List[str]
+    responsibilities: list[str]
+    achievements: list[str]
 
 
 @dataclass
 class Skill:
     """Technical or professional skill."""
+
     name: str
     category: str = ""  # e.g., "Programming Languages", "Tools"
 
@@ -65,6 +68,7 @@ class Skill:
 @dataclass
 class Certification:
     """Professional certification."""
+
     name: str
     issuer: str
     year: int
@@ -128,7 +132,7 @@ class ResumeDataGenerator:
 
     def generate_education(
         self, experience_level: str, graduation_year_base: int
-    ) -> List[Education]:
+    ) -> list[Education]:
         """Generate realistic education history.
 
         Args:
@@ -294,7 +298,7 @@ class ResumeDataGenerator:
         industry_config,
         experience_level: str,
         current_year: int,
-    ) -> Tuple[List[WorkExperience], int]:
+    ) -> tuple[list[WorkExperience], int]:
         """Generate realistic work history based on experience level.
 
         Args:
@@ -424,7 +428,7 @@ class ResumeDataGenerator:
 
     def _generate_achievements(
         self, industry_config, level_key: str, num_achievements: int = 3
-    ) -> List[str]:
+    ) -> list[str]:
         """Generate realistic achievements from templates.
 
         Args:
@@ -465,7 +469,7 @@ class ResumeDataGenerator:
 
     def generate_skills(
         self, industry_config, experience_level: str, num_skills: int = None
-    ) -> List[Skill]:
+    ) -> list[Skill]:
         """Generate realistic skills list.
 
         Args:
@@ -496,7 +500,7 @@ class ResumeDataGenerator:
 
     def generate_certifications(
         self, industry_config, experience_level: str, current_year: int
-    ) -> List[Certification]:
+    ) -> list[Certification]:
         """Generate realistic certifications.
 
         Args:

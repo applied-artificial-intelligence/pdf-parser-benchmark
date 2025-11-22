@@ -12,18 +12,19 @@ This script:
 3. Creates metadata files for each document
 """
 
-import json
 import hashlib
-from pathlib import Path
+import json
 from collections import defaultdict
+from pathlib import Path
+
 import yaml
 
 # External dependencies
 try:
     from PIL import Image
     from reportlab.lib.pagesizes import letter
-    from reportlab.pdfgen import canvas
     from reportlab.lib.utils import ImageReader
+    from reportlab.pdfgen import canvas
 except ImportError as e:
     print(f"Missing dependency: {e}")
     print("Install with: pip install pillow reportlab")
@@ -45,25 +46,25 @@ def extract_document_id(image_path: str) -> tuple[str, int]:
         'yanbaopptmerge_yanbaoPPT_1015.jpg' -> ('yanbaopptmerge_yanbaoPPT_1015', 1)
     """
     # Remove .jpg/.png extension
-    if image_path.endswith('.jpg'):
+    if image_path.endswith(".jpg"):
         base = image_path[:-4]
-    elif image_path.endswith('.png'):
+    elif image_path.endswith(".png"):
         base = image_path[:-4]
     else:
         base = image_path
 
     # Handle different naming patterns
-    if '_page_' in base:
+    if "_page_" in base:
         # Pattern: PPT_xxx_page_N
-        parts = base.rsplit('_page_', 1)
+        parts = base.rsplit("_page_", 1)
         try:
             return parts[0], int(parts[1])
         except ValueError:
             return base, 1
 
     # Pattern: xxx.pdf_N where N is a small number (page number)
-    if '.pdf_' in base:
-        parts = base.rsplit('_', 1)
+    if ".pdf_" in base:
+        parts = base.rsplit("_", 1)
         try:
             page_num = int(parts[1])
             if page_num < 1000:  # Reasonable page number
@@ -80,51 +81,51 @@ def generate_ground_truth_markdown(page_data: dict) -> str:
 
     Sorts elements by reading order and formats based on category type.
     """
-    layout_dets = page_data.get('layout_dets', [])
+    layout_dets = page_data.get("layout_dets", [])
 
     # Sort by order
     sorted_dets = sorted(
-        [d for d in layout_dets if not d.get('ignore', False)],
-        key=lambda x: x.get('order') if x.get('order') is not None else 999
+        [d for d in layout_dets if not d.get("ignore", False)],
+        key=lambda x: x.get("order") if x.get("order") is not None else 999,
     )
 
     markdown_parts = []
 
     for det in sorted_dets:
-        cat = det.get('category_type', '')
-        text = det.get('text', '').strip()
-        latex = det.get('latex', '')
+        cat = det.get("category_type", "")
+        text = det.get("text", "").strip()
+        latex = det.get("latex", "")
 
         if not text and not latex:
             continue
 
-        if cat == 'title':
+        if cat == "title":
             markdown_parts.append(f"# {text}")
-        elif cat == 'figure_caption':
+        elif cat == "figure_caption":
             markdown_parts.append(f"*{text}*")
-        elif cat == 'table_caption':
+        elif cat == "table_caption":
             markdown_parts.append(f"**{text}**")
-        elif cat == 'text_block':
+        elif cat == "text_block":
             markdown_parts.append(text)
-        elif cat == 'table':
+        elif cat == "table":
             # Tables may have LaTeX or text representation
             if latex:
                 markdown_parts.append(f"```\n{latex}\n```")
             elif text:
                 markdown_parts.append(text)
-        elif cat == 'equation':
+        elif cat == "equation":
             if latex:
                 markdown_parts.append(f"${latex}$")
             elif text:
                 markdown_parts.append(text)
-        elif cat == 'footnote':
+        elif cat == "footnote":
             markdown_parts.append(f"[^1]: {text}")
         else:
             # Default: just include the text
             if text:
                 markdown_parts.append(text)
 
-    return '\n\n'.join(markdown_parts)
+    return "\n\n".join(markdown_parts)
 
 
 def image_to_pdf(image_path: Path, pdf_path: Path):
@@ -139,53 +140,46 @@ def image_to_pdf(image_path: Path, pdf_path: Path):
         c.save()
 
 
-def create_metadata(
-    doc_id: str,
-    page_info: dict,
-    output_path: Path
-):
+def create_metadata(doc_id: str, page_info: dict, output_path: Path):
     """Create metadata YAML file for a document."""
-    page_attr = page_info.get('page_attribute', {})
+    page_attr = page_info.get("page_attribute", {})
 
     metadata = {
-        'doc_id': doc_id,
-        'corpus': 'academic',
-        'domain': 'mixed',  # OmniDocBench has diverse document types
-        'source': 'omnidocbench',
-        'source_url': f"generated://omnidocbench/{doc_id}",
-        'features': [],
-        'data_source': page_attr.get('data_source', 'unknown'),
-        'language': page_attr.get('language', 'unknown'),
-        'layout': page_attr.get('layout', 'unknown'),
+        "doc_id": doc_id,
+        "corpus": "academic",
+        "domain": "mixed",  # OmniDocBench has diverse document types
+        "source": "omnidocbench",
+        "source_url": f"generated://omnidocbench/{doc_id}",
+        "features": [],
+        "data_source": page_attr.get("data_source", "unknown"),
+        "language": page_attr.get("language", "unknown"),
+        "layout": page_attr.get("layout", "unknown"),
     }
 
     # Add features based on content
-    special_issues = page_attr.get('special_issue', [])
+    special_issues = page_attr.get("special_issue", [])
     if special_issues:
-        metadata['special_issues'] = special_issues
-        if 'watermark' in special_issues:
-            metadata['features'].append('watermark')
-        if 'stamp' in special_issues:
-            metadata['features'].append('stamp')
+        metadata["special_issues"] = special_issues
+        if "watermark" in special_issues:
+            metadata["features"].append("watermark")
+        if "stamp" in special_issues:
+            metadata["features"].append("stamp")
 
     # Map data source to domain
     source_to_domain = {
-        'PPT2PDF': 'presentation',
-        'exam_paper': 'education',
-        'book': 'academic',
-        'newspaper': 'news',
-        'magazine': 'news',
-        'colorful_textbook': 'education',
-        'academic_literature': 'academic',
-        'note': 'handwritten',
-        'research_report': 'business',
+        "PPT2PDF": "presentation",
+        "exam_paper": "education",
+        "book": "academic",
+        "newspaper": "news",
+        "magazine": "news",
+        "colorful_textbook": "education",
+        "academic_literature": "academic",
+        "note": "handwritten",
+        "research_report": "business",
     }
-    metadata['domain'] = source_to_domain.get(
-        page_attr.get('data_source', ''),
-        'mixed'
-    )
+    metadata["domain"] = source_to_domain.get(page_attr.get("data_source", ""), "mixed")
 
-    with open(output_path, 'w') as f:
+    with open(output_path, "w") as f:
         yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True)
 
 
@@ -204,19 +198,19 @@ def convert_omnidocbench(
         english_only: Only include English documents
     """
     # Load JSON
-    json_path = source_dir / 'OmniDocBench.json'
+    json_path = source_dir / "OmniDocBench.json"
     data = load_omnidocbench(json_path)
     print(f"Loaded {len(data)} pages from OmniDocBench")
 
     # Check which images are actually available
-    images_dir = source_dir / 'images'
-    available_images = set(f.name for f in images_dir.glob('*.jpg'))
+    images_dir = source_dir / "images"
+    available_images = {f.name for f in images_dir.glob("*.jpg")}
     print(f"Found {len(available_images)} available images")
 
     # Group pages by document (only those with available images)
     docs = defaultdict(list)
     for page in data:
-        img_path = page['page_info']['image_path']
+        img_path = page["page_info"]["image_path"]
 
         # Skip if image not available
         if img_path not in available_images:
@@ -226,8 +220,8 @@ def convert_omnidocbench(
 
         # Apply English filter if requested
         if english_only:
-            lang = page['page_info'].get('page_attribute', {}).get('language', '')
-            if lang not in ['english', 'English', 'en']:
+            lang = page["page_info"].get("page_attribute", {}).get("language", "")
+            if lang not in ["english", "English", "en"]:
                 continue
 
         docs[doc_stem].append((page_num, page))
@@ -240,9 +234,9 @@ def convert_omnidocbench(
         doc_stems = list(docs.keys())
 
     # Create output directories
-    pdfs_dir = output_dir / 'pdfs'
-    gt_dir = output_dir / 'ground_truth'
-    meta_dir = output_dir / 'metadata'
+    pdfs_dir = output_dir / "pdfs"
+    gt_dir = output_dir / "ground_truth"
+    meta_dir = output_dir / "metadata"
 
     pdfs_dir.mkdir(parents=True, exist_ok=True)
     gt_dir.mkdir(parents=True, exist_ok=True)
@@ -253,15 +247,15 @@ def convert_omnidocbench(
         pages = sorted(docs[doc_stem], key=lambda x: x[0])
 
         # Generate short doc ID
-        hash_suffix = hashlib.md5(doc_stem.encode()).hexdigest()[:8]
+        hashlib.md5(doc_stem.encode()).hexdigest()[:8]
         doc_id = f"omnidoc_{converted:03d}"
 
         # For now, convert only single-page documents (simplifies PDF conversion)
         # Multi-page would require merging PDFs
         if len(pages) == 1:
             page_num, page_data = pages[0]
-            img_name = page_data['page_info']['image_path']
-            img_path = source_dir / 'images' / img_name
+            img_name = page_data["page_info"]["image_path"]
+            img_path = source_dir / "images" / img_name
 
             if not img_path.exists():
                 print(f"  Image not found: {img_path}")
@@ -278,11 +272,11 @@ def convert_omnidocbench(
             # Generate ground truth
             gt_markdown = generate_ground_truth_markdown(page_data)
             gt_path = gt_dir / f"{doc_id}.md"
-            gt_path.write_text(gt_markdown, encoding='utf-8')
+            gt_path.write_text(gt_markdown, encoding="utf-8")
 
             # Create metadata
             meta_path = meta_dir / f"{doc_id}.yaml"
-            create_metadata(doc_id, page_data['page_info'], meta_path)
+            create_metadata(doc_id, page_data["page_info"], meta_path)
 
             converted += 1
             if converted % 50 == 0:
@@ -292,42 +286,35 @@ def convert_omnidocbench(
 
     # Create corpus metadata
     corpus_meta = {
-        'name': 'OmniDocBench',
-        'description': 'Academic document layout benchmark converted from OmniDocBench',
-        'source': 'https://huggingface.co/datasets/opendatalab/OmniDocBench',
-        'document_count': converted,
-        'ground_truth_type': 'annotated_text_extraction',
+        "name": "OmniDocBench",
+        "description": "Academic document layout benchmark converted from OmniDocBench",
+        "source": "https://huggingface.co/datasets/opendatalab/OmniDocBench",
+        "document_count": converted,
+        "ground_truth_type": "annotated_text_extraction",
     }
-    with open(output_dir / 'corpus_metadata.yaml', 'w') as f:
+    with open(output_dir / "corpus_metadata.yaml", "w") as f:
         yaml.dump(corpus_meta, f)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     import argparse
 
-    parser = argparse.ArgumentParser(description='Convert OmniDocBench to pdf-bench format')
+    parser = argparse.ArgumentParser(description="Convert OmniDocBench to pdf-bench format")
     parser.add_argument(
-        '--source-dir',
+        "--source-dir",
         type=Path,
-        default=Path('/home/stefan/projects/OmniDocBench_full'),
-        help='OmniDocBench source directory'
+        default=Path("/home/stefan/projects/OmniDocBench_full"),
+        help="OmniDocBench source directory",
     )
     parser.add_argument(
-        '--output-dir',
+        "--output-dir",
         type=Path,
-        default=Path('corpus/academic/omnidocbench'),
-        help='Output directory for converted corpus'
+        default=Path("corpus/academic/omnidocbench"),
+        help="Output directory for converted corpus",
     )
+    parser.add_argument("--max-docs", type=int, default=None, help="Maximum documents to convert")
     parser.add_argument(
-        '--max-docs',
-        type=int,
-        default=None,
-        help='Maximum documents to convert'
-    )
-    parser.add_argument(
-        '--english-only',
-        action='store_true',
-        help='Only include English documents'
+        "--english-only", action="store_true", help="Only include English documents"
     )
 
     args = parser.parse_args()

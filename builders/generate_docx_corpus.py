@@ -378,7 +378,7 @@ def main() -> None:
     print()
     print(f"Generated {len(results)} documents:")
     for i, doc in enumerate(documents, 1):
-        output_name = str(doc['output'])
+        output_name = str(doc["output"])
         print(f"  {i}. {output_name}")
         print(f"     - DOCX: {output_dir / output_name}.docx")
         print(f"     - PDF:  {output_dir / output_name}.pdf")

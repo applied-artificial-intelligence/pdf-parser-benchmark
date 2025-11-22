@@ -30,6 +30,7 @@ from typing import Any
 
 try:
     from unstructured.partition.pdf import partition_pdf
+
     UNSTRUCTURED_AVAILABLE = True
 except ImportError:
     UNSTRUCTURED_AVAILABLE = False
@@ -65,9 +66,7 @@ class UnstructuredParser(BaseParser):
         >>> parser = UnstructuredParser(strategy="hi_res", infer_table_structure=True)
     """
 
-    def __init__(
-        self, strategy: str = "fast", infer_table_structure: bool = False
-    ) -> None:
+    def __init__(self, strategy: str = "fast", infer_table_structure: bool = False) -> None:
         """Initialize the UnstructuredParser.
 
         Args:
@@ -89,9 +88,7 @@ class UnstructuredParser(BaseParser):
 
         valid_strategies = ["fast", "auto", "hi_res"]
         if strategy not in valid_strategies:
-            raise ValueError(
-                f"Invalid strategy '{strategy}'. Must be one of {valid_strategies}"
-            )
+            raise ValueError(f"Invalid strategy '{strategy}'. Must be one of {valid_strategies}")
 
         self._strategy = strategy
         self._infer_table_structure = infer_table_structure

@@ -5,15 +5,15 @@ Tests extraction of LaTeX source files from arXiv tarballs,
 main .tex file identification, and dependency handling.
 """
 
+# Add builders to path
+import sys
 import tarfile
 import tempfile
 from pathlib import Path
 
 import pytest
 
-# Add builders to path
-import sys
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'builders'))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / "builders"))
 
 from latex_extractor import LaTeXExtractor, extract_latex_source
 
@@ -283,18 +283,18 @@ Test content.
         result = extractor.extract()
 
         # Check success
-        assert result['success'] is True
-        assert result['error'] is None
+        assert result["success"] is True
+        assert result["error"] is None
 
         # Check main .tex file identified
-        assert result['main_tex'] is not None
-        assert result['main_tex'].name == "main.tex"
+        assert result["main_tex"] is not None
+        assert result["main_tex"].name == "main.tex"
 
         # Check file was extracted
         assert (output_dir / "main.tex").exists()
 
         # Check content
-        content = result['main_tex'].read_text()
+        content = result["main_tex"].read_text()
         assert r"\documentclass{article}" in content
         assert r"\begin{document}" in content
 
@@ -306,21 +306,21 @@ Test content.
         result = extractor.extract()
 
         # Check success
-        assert result['success'] is True
-        assert result['error'] is None
+        assert result["success"] is True
+        assert result["error"] is None
 
         # Check main .tex file identified
-        assert result['main_tex'] is not None
-        assert result['main_tex'].name == "paper.tex"
+        assert result["main_tex"] is not None
+        assert result["main_tex"].name == "paper.tex"
 
         # Check all files extracted
-        assert len(result['all_files']) >= 6  # paper.tex + 2 sections + image + bib + sty
+        assert len(result["all_files"]) >= 6  # paper.tex + 2 sections + image + bib + sty
 
         # Check dependencies identified
-        dependency_names = {dep.name for dep in result['dependencies']}
-        assert 'diagram.png' in dependency_names
-        assert 'references.bib' in dependency_names
-        assert 'custom.sty' in dependency_names
+        dependency_names = {dep.name for dep in result["dependencies"]}
+        assert "diagram.png" in dependency_names
+        assert "references.bib" in dependency_names
+        assert "custom.sty" in dependency_names
 
         # Check structure preserved
         assert (output_dir / "paper.tex").exists()
@@ -335,8 +335,8 @@ Test content.
         extractor = LaTeXExtractor(simple_tarball, output_dir)
         result = extractor.extract()
 
-        assert result['success'] is True
-        assert result['main_tex'].name == "main.tex"
+        assert result["success"] is True
+        assert result["main_tex"].name == "main.tex"
 
     def test_identify_main_tex_by_content(self, ambiguous_tarball, temp_dir):
         """Test main .tex file identification by content score."""
@@ -345,9 +345,9 @@ Test content.
         extractor = LaTeXExtractor(ambiguous_tarball, output_dir)
         result = extractor.extract()
 
-        assert result['success'] is True
+        assert result["success"] is True
         # article.tex should be identified (more content, higher score)
-        assert result['main_tex'].name == "article.tex"
+        assert result["main_tex"].name == "article.tex"
 
     def test_exclude_build_artifacts(self, tarball_with_build_artifacts, temp_dir):
         """Test that build artifacts are excluded from extraction."""
@@ -356,22 +356,22 @@ Test content.
         extractor = LaTeXExtractor(tarball_with_build_artifacts, output_dir)
         result = extractor.extract()
 
-        assert result['success'] is True
+        assert result["success"] is True
 
         # Check that .tex file was extracted
-        extracted_names = {f.name for f in result['all_files']}
-        assert 'main.tex' in extracted_names
+        extracted_names = {f.name for f in result["all_files"]}
+        assert "main.tex" in extracted_names
 
         # Check that build artifacts were excluded
-        assert 'main.aux' not in extracted_names
-        assert 'main.log' not in extracted_names
+        assert "main.aux" not in extracted_names
+        assert "main.log" not in extracted_names
         # Note: .pdf is not in exclude list (could be a figure), so it may be extracted
 
     def test_empty_tarball(self, temp_dir):
         """Test handling of empty tarball."""
         # Create empty tarball
         tarball_path = temp_dir / "empty.tar.gz"
-        with tarfile.open(tarball_path, "w:gz") as tar:
+        with tarfile.open(tarball_path, "w:gz"):
             pass
 
         output_dir = temp_dir / "output_empty"
@@ -379,8 +379,8 @@ Test content.
         extractor = LaTeXExtractor(tarball_path, output_dir)
         result = extractor.extract()
 
-        assert result['success'] is False
-        assert "No files extracted" in result['error']
+        assert result["success"] is False
+        assert "No files extracted" in result["error"]
 
     def test_tarball_without_tex_files(self, temp_dir):
         """Test handling of tarball without .tex files."""
@@ -401,8 +401,8 @@ Test content.
         extractor = LaTeXExtractor(tarball_path, output_dir)
         result = extractor.extract()
 
-        assert result['success'] is False
-        assert "No .tex files found" in result['error']
+        assert result["success"] is False
+        assert "No .tex files found" in result["error"]
 
     def test_convenience_function(self, simple_tarball, temp_dir):
         """Test the convenience function extract_latex_source()."""
@@ -410,9 +410,9 @@ Test content.
 
         result = extract_latex_source(simple_tarball, output_dir)
 
-        assert result['success'] is True
-        assert result['main_tex'] is not None
-        assert result['main_tex'].name == "main.tex"
+        assert result["success"] is True
+        assert result["main_tex"] is not None
+        assert result["main_tex"].name == "main.tex"
 
     def test_copy_to_directory(self, multi_file_tarball, temp_dir):
         """Test copying extracted files to a new directory."""
@@ -422,8 +422,8 @@ Test content.
         extractor = LaTeXExtractor(multi_file_tarball, output_dir)
         result = extractor.copy_to_directory(dest_dir, preserve_structure=True)
 
-        assert result['success'] is True
-        assert 'copied_to' in result
+        assert result["success"] is True
+        assert "copied_to" in result
 
         # Check files were copied with structure preserved
         assert (dest_dir / "paper.tex").exists()
@@ -438,7 +438,7 @@ Test content.
         extractor = LaTeXExtractor(multi_file_tarball, output_dir)
         result = extractor.copy_to_directory(dest_dir, preserve_structure=False)
 
-        assert result['success'] is True
+        assert result["success"] is True
 
         # Check files were copied (but in flat structure)
         assert (dest_dir / "paper.tex").exists()
@@ -466,7 +466,7 @@ class TestMainFileHeuristics:
 
     def test_heuristic_common_names(self, temp_dir):
         """Test that common main file names are recognized."""
-        common_names = ['main.tex', 'paper.tex', 'article.tex', 'manuscript.tex']
+        common_names = ["main.tex", "paper.tex", "article.tex", "manuscript.tex"]
 
         for name in common_names:
             output_dir = temp_dir / f"test_{name}"
@@ -474,7 +474,9 @@ class TestMainFileHeuristics:
 
             # Create file with minimal content
             tex_file = output_dir / name
-            self.create_tex_file(tex_file, r"\documentclass{article}\begin{document}Test\end{document}")
+            self.create_tex_file(
+                tex_file, r"\documentclass{article}\begin{document}Test\end{document}"
+            )
 
             extractor = LaTeXExtractor(Path("dummy.tar.gz"), output_dir)
             main_file = extractor._identify_main_tex([tex_file])
@@ -515,7 +517,7 @@ class TestMainFileHeuristics:
 \maketitle
 \section{Introduction}
 \section{Methods}
-\end{document}"""
+\end{document}""",
         )
 
         extractor = LaTeXExtractor(Path("dummy.tar.gz"), output_dir)

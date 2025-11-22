@@ -76,7 +76,7 @@ class TestXBRLDetection:
 
     def test_has_xbrl_tags_detects_ix_namespace(self) -> None:
         """Test detection of ix: namespace tags."""
-        html = '<table><td><ix:nonFraction>123</ix:nonFraction></td></table>'
+        html = "<table><td><ix:nonFraction>123</ix:nonFraction></td></table>"
         soup = BeautifulSoup(html, "html.parser")
         table = soup.find("table")
         assert table is not None

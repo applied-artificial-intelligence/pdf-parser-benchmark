@@ -8,20 +8,23 @@ Generates authentic-looking contract data including:
 """
 
 import random
-from datetime import datetime, timedelta
-from typing import Dict, List, Tuple
 from dataclasses import dataclass
+from datetime import datetime, timedelta
+
 from faker import Faker
 
 from .contract_config import (
-    SAAS_CONFIG, EMPLOYMENT_CONFIG, NDA_CONFIG,
-    CONSULTING_CONFIG, SERVICE_CONFIG, ContractConfig
+    CONSULTING_CONFIG,
+    EMPLOYMENT_CONFIG,
+    SAAS_CONFIG,
+    SERVICE_CONFIG,
 )
 
 
 @dataclass
 class Party:
     """Represents a party to a contract."""
+
     name: str
     type: str  # "Company", "Individual", "Provider", etc.
     address: str
@@ -118,8 +121,14 @@ class LegalDataGenerator:
             State name for jurisdiction
         """
         common_jurisdictions = [
-            "Delaware", "California", "New York", "Texas",
-            "Illinois", "Massachusetts", "Washington", "Florida"
+            "Delaware",
+            "California",
+            "New York",
+            "Texas",
+            "Illinois",
+            "Massachusetts",
+            "Washington",
+            "Florida",
         ]
         return random.choice(common_jurisdictions)
 
@@ -161,7 +170,7 @@ class LegalDataGenerator:
     # SAAS-SPECIFIC GENERATORS
     # ============================================================
 
-    def generate_saas_variables(self) -> Dict[str, any]:
+    def generate_saas_variables(self) -> dict[str, any]:
         """Generate variables for SaaS Agreement.
 
         Returns:
@@ -171,7 +180,15 @@ class LegalDataGenerator:
         customer = self.generate_company_party("Customer")
 
         # Platform/service names
-        platform_adjectives = ["Cloud", "Smart", "Enterprise", "Pro", "Digital", "Adaptive", "Integrated"]
+        platform_adjectives = [
+            "Cloud",
+            "Smart",
+            "Enterprise",
+            "Pro",
+            "Digital",
+            "Adaptive",
+            "Integrated",
+        ]
         platform_types = ["Platform", "Suite", "Hub", "Workspace", "Portal", "Engine"]
         platform_name = f"{random.choice(platform_adjectives)} {random.choice(platform_types)}"
 
@@ -186,7 +203,6 @@ class LegalDataGenerator:
 
         # Pricing
         monthly_fee = self.generate_monetary_value(*SAAS_CONFIG.typical_value_range)
-        annual_fee = monthly_fee  # Stored as annual in config, but we'll use monthly
 
         # Service levels
         uptime_options = ["99.5", "99.9", "99.95"]
@@ -204,7 +220,9 @@ class LegalDataGenerator:
             "service_purpose": random.choice(purposes),
             "uptime_pct": random.choice(uptime_options),
             "notice_hours": random.choice([24, 48, 72]),
-            "business_hours": random.choice(["9am-5pm EST", "8am-6pm PST", "Monday-Friday 9am-5pm"]),
+            "business_hours": random.choice(
+                ["9am-5pm EST", "8am-6pm PST", "Monday-Friday 9am-5pm"]
+            ),
             "critical_response_hrs": random.choice([1, 2, 4]),
             "high_response_hrs": random.choice([8, 12, 24]),
             "normal_response_hrs": random.choice([24, 48, 72]),
@@ -229,7 +247,7 @@ class LegalDataGenerator:
     # EMPLOYMENT-SPECIFIC GENERATORS
     # ============================================================
 
-    def generate_employment_variables(self) -> Dict[str, any]:
+    def generate_employment_variables(self) -> dict[str, any]:
         """Generate variables for Employment Agreement.
 
         Returns:
@@ -240,10 +258,30 @@ class LegalDataGenerator:
 
         # Job titles by level
         job_titles = {
-            "entry": ["Software Engineer", "Marketing Associate", "Sales Representative", "Data Analyst"],
-            "mid": ["Senior Software Engineer", "Marketing Manager", "Account Manager", "Product Manager"],
-            "senior": ["Engineering Manager", "Director of Marketing", "Sales Director", "VP of Operations"],
-            "executive": ["VP of Engineering", "Chief Marketing Officer", "Chief Revenue Officer", "Chief Technology Officer"],
+            "entry": [
+                "Software Engineer",
+                "Marketing Associate",
+                "Sales Representative",
+                "Data Analyst",
+            ],
+            "mid": [
+                "Senior Software Engineer",
+                "Marketing Manager",
+                "Account Manager",
+                "Product Manager",
+            ],
+            "senior": [
+                "Engineering Manager",
+                "Director of Marketing",
+                "Sales Director",
+                "VP of Operations",
+            ],
+            "executive": [
+                "VP of Engineering",
+                "Chief Marketing Officer",
+                "Chief Revenue Officer",
+                "Chief Technology Officer",
+            ],
         }
 
         level = random.choice(["entry", "mid", "senior", "executive"])
@@ -293,7 +331,7 @@ class LegalDataGenerator:
     # NDA-SPECIFIC GENERATORS
     # ============================================================
 
-    def generate_nda_variables(self) -> Dict[str, any]:
+    def generate_nda_variables(self) -> dict[str, any]:
         """Generate variables for NDA.
 
         Returns:
@@ -323,7 +361,7 @@ class LegalDataGenerator:
     # CONSULTING-SPECIFIC GENERATORS
     # ============================================================
 
-    def generate_consulting_variables(self) -> Dict[str, any]:
+    def generate_consulting_variables(self) -> dict[str, any]:
         """Generate variables for Consulting Agreement.
 
         Returns:
@@ -360,7 +398,7 @@ class LegalDataGenerator:
     # SERVICE AGREEMENT-SPECIFIC GENERATORS
     # ============================================================
 
-    def generate_service_variables(self) -> Dict[str, any]:
+    def generate_service_variables(self) -> dict[str, any]:
         """Generate variables for Service Agreement.
 
         Returns:
@@ -382,7 +420,7 @@ class LegalDataGenerator:
         billing_frequencies = ["monthly", "quarterly", "annually"]
 
         # Fees
-        annual_fee = self.generate_monetary_value(*SERVICE_CONFIG.typical_value_range)
+        self.generate_monetary_value(*SERVICE_CONFIG.typical_value_range)
 
         # Insurance coverage
         gl_coverage = random.choice([1000000, 2000000, 3000000])  # General liability
@@ -410,7 +448,7 @@ class LegalDataGenerator:
     # GENERIC GENERATOR
     # ============================================================
 
-    def generate_contract_variables(self, contract_type: str) -> Dict[str, any]:
+    def generate_contract_variables(self, contract_type: str) -> dict[str, any]:
         """Generate variables for any contract type.
 
         Args:

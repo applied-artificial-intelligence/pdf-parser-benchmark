@@ -105,20 +105,14 @@ class DocxBuilder:
                 check=True,
             )
         except subprocess.TimeoutExpired as e:
-            raise RuntimeError(
-                "LibreOffice conversion timeout after 60s"
-            ) from e
+            raise RuntimeError("LibreOffice conversion timeout after 60s") from e
         except subprocess.CalledProcessError as e:
-            raise RuntimeError(
-                f"LibreOffice conversion failed: {e.stderr}"
-            ) from e
+            raise RuntimeError(f"LibreOffice conversion failed: {e.stderr}") from e
 
         # Check PDF was created
         pdf_path = docx_path.with_suffix(".pdf")
         if not pdf_path.exists():
-            raise RuntimeError(
-                f"PDF not created by LibreOffice: {pdf_path}"
-            )
+            raise RuntimeError(f"PDF not created by LibreOffice: {pdf_path}")
 
         return pdf_path
 
@@ -169,9 +163,7 @@ class DocxBuilder:
                         break
 
                 if table:
-                    markdown_lines.append(
-                        self._table_to_markdown(table)
-                    )
+                    markdown_lines.append(self._table_to_markdown(table))
 
         return "\n\n".join(markdown_lines)
 

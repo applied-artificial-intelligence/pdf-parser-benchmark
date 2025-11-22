@@ -152,9 +152,7 @@ class TestCostEstimator:
         marker_pricing = estimator.PARSER_PRICING["marker"]
         assert marker_pricing.cost_per_page == 0.0
 
-    def test_estimate_cost_single_pdf(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_estimate_cost_single_pdf(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test cost estimation for a single PDF."""
         estimate = estimator.estimate_cost([sample_pdf], "aws_textract")
 
@@ -179,9 +177,7 @@ class TestCostEstimator:
         assert estimate.total_pages > 0
         assert len(estimate.breakdown) == 2
 
-    def test_estimate_cost_with_breakdown(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_estimate_cost_with_breakdown(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test that estimate includes per-PDF breakdown."""
         estimate = estimator.estimate_cost([sample_pdf], "aws_textract")
 
@@ -192,9 +188,7 @@ class TestCostEstimator:
         assert pdf_breakdown["pages"] > 0
         assert pdf_breakdown["cost"] > 0
 
-    def test_estimate_cost_unknown_parser(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_estimate_cost_unknown_parser(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test that unknown parser raises ValueError."""
         with pytest.raises(ValueError, match="Unknown parser"):
             estimator.estimate_cost([sample_pdf], "nonexistent_parser")
@@ -214,9 +208,7 @@ class TestCostEstimator:
         assert estimate.cost_per_page == 0.0
         assert estimate.total_cost == 0.0
 
-    def test_check_budget_within_limit(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_check_budget_within_limit(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test budget check when cost is within limit."""
         within_budget, estimate = estimator.check_budget(
             [sample_pdf], "aws_textract", max_cost=10.0
@@ -225,9 +217,7 @@ class TestCostEstimator:
         assert within_budget is True
         assert estimate.total_cost < 10.0
 
-    def test_check_budget_exceeds_limit(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_check_budget_exceeds_limit(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test budget check when cost exceeds limit."""
         within_budget, estimate = estimator.check_budget(
             [sample_pdf], "aws_textract", max_cost=0.001
@@ -368,9 +358,7 @@ class TestCostReport:
 class TestCostEstimatorIntegration:
     """Integration tests for cost estimator with real PDF files."""
 
-    def test_realistic_cost_estimate(
-        self, estimator: CostEstimator, sample_pdf: Path
-    ) -> None:
+    def test_realistic_cost_estimate(self, estimator: CostEstimator, sample_pdf: Path) -> None:
         """Test realistic cost estimate with sample PDF."""
         # Estimate for 100 sample PDFs
         pdfs = [sample_pdf]  # Just one, but we can scale the estimate

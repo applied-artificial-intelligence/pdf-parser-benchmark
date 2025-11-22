@@ -18,23 +18,18 @@ import json
 import logging
 import subprocess
 from datetime import datetime
-from decimal import Decimal
 from pathlib import Path
-from typing import Dict, List, Tuple
 
 import yaml
 from docx import Document
 
+from builders.invoice.data_generators import InvoiceDataGenerator
 from builders.invoice.industry_config import INDUSTRIES
-from builders.invoice.data_generators import InvoiceDataGenerator, LineItem
 from builders.invoice.tax_calculators import get_tax_calculator
 from builders.invoice.templates import get_template
 
 # Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 
 
@@ -138,12 +133,14 @@ def convert_docx_to_pdf(docx_path: Path, pdf_path: Path) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     # Run LibreOffice conversion
-    result = subprocess.run(
+    subprocess.run(
         [
             "libreoffice",
             "--headless",
-            "--convert-to", "pdf",
-            "--outdir", str(output_dir),
+            "--convert-to",
+            "pdf",
+            "--outdir",
+            str(output_dir),
             str(docx_path),
         ],
         capture_output=True,
@@ -164,9 +161,9 @@ def generate_invoice(
     industry_key: str,
     complexity: str,
     template_style: str,
-    output_dirs: Dict[str, Path],
+    output_dirs: dict[str, Path],
     generator: InvoiceDataGenerator,
-) -> Tuple[Path, Path, Path]:
+) -> tuple[Path, Path, Path]:
     """Generate a single invoice with DOCX, PDF, ground truth, and metadata.
 
     Args:
@@ -212,13 +209,21 @@ def generate_invoice(
     # Get region-specific tax parameters
     tax_params = {}
     if region == "US":
-        tax_params["state"] = DISTRIBUTION["US"]["states"][invoice_id % len(DISTRIBUTION["US"]["states"])]
+        tax_params["state"] = DISTRIBUTION["US"]["states"][
+            invoice_id % len(DISTRIBUTION["US"]["states"])
+        ]
     elif region == "EU":
-        tax_params["country"] = DISTRIBUTION["EU"]["countries"][invoice_id % len(DISTRIBUTION["EU"]["countries"])]
+        tax_params["country"] = DISTRIBUTION["EU"]["countries"][
+            invoice_id % len(DISTRIBUTION["EU"]["countries"])
+        ]
     elif region == "CA":
-        tax_params["province"] = DISTRIBUTION["CA"]["provinces"][invoice_id % len(DISTRIBUTION["CA"]["provinces"])]
+        tax_params["province"] = DISTRIBUTION["CA"]["provinces"][
+            invoice_id % len(DISTRIBUTION["CA"]["provinces"])
+        ]
     elif region == "APAC":
-        tax_params["country"] = DISTRIBUTION["APAC"]["countries"][invoice_id % len(DISTRIBUTION["APAC"]["countries"])]
+        tax_params["country"] = DISTRIBUTION["APAC"]["countries"][
+            invoice_id % len(DISTRIBUTION["APAC"]["countries"])
+        ]
 
     tax_result = tax_calc.calculate(subtotal, **tax_params)
 
@@ -333,9 +338,9 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
         region_count = config["count"]
         industries = config["industries"]
 
-        logger.info(f"\n{'='*60}")
+        logger.info(f"\n{'=' * 60}")
         logger.info(f"Region: {region} ({region_count} invoices)")
-        logger.info(f"{'='*60}")
+        logger.info(f"{'=' * 60}")
 
         # Create generator for this region
         generator = InvoiceDataGenerator(region=region, seed=42 + invoice_id)
@@ -396,9 +401,9 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
     with open(summary_path, "w") as f:
         json.dump(summary, f, indent=2)
 
-    logger.info(f"\n{'='*60}")
+    logger.info(f"\n{'=' * 60}")
     logger.info("Corpus Generation Complete!")
-    logger.info(f"{'='*60}")
+    logger.info(f"{'=' * 60}")
     logger.info(f"Total invoices: {stats['total']}")
     logger.info(f"By region: {stats['by_region']}")
     logger.info(f"By industry: {stats['by_industry']}")
@@ -408,9 +413,7 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
 
 def main():
     """Main entry point."""
-    parser = argparse.ArgumentParser(
-        description="Generate realistic invoice corpus for PDF-Bench"
-    )
+    parser = argparse.ArgumentParser(description="Generate realistic invoice corpus for PDF-Bench")
     parser.add_argument(
         "--output",
         type=Path,

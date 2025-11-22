@@ -282,9 +282,7 @@ class TestPdfPlumberParserCaching:
 class TestPdfPlumberParserErrorHandling:
     """Test error handling for various edge cases."""
 
-    def test_parse_nonexistent_file(
-        self, parser: PdfPlumberParser, output_dir: Path
-    ) -> None:
+    def test_parse_nonexistent_file(self, parser: PdfPlumberParser, output_dir: Path) -> None:
         """Test that parsing nonexistent file raises FileNotFoundError."""
         nonexistent = Path("/tmp/nonexistent_file_12345.pdf")
 
@@ -453,6 +451,6 @@ class TestPdfPlumberParserIntegration:
         key_terms = ["PDF Bench", "Introduction", "Features", "Conclusion"]
         for term in key_terms:
             # Allow for minor variations
-            assert (
-                term in parsed_content or term.lower() in parsed_content.lower()
-            ), f"Missing term: {term}"
+            assert term in parsed_content or term.lower() in parsed_content.lower(), (
+                f"Missing term: {term}"
+            )

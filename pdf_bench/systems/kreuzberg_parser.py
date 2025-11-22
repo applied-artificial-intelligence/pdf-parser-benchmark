@@ -9,6 +9,7 @@ from pathlib import Path
 
 try:
     import kreuzberg  # type: ignore[import-untyped]
+
     KREUZBERG_AVAILABLE = True
 except ImportError:
     KREUZBERG_AVAILABLE = False
@@ -31,8 +32,7 @@ class KreuzbergParser(BaseParser):
         """
         if not KREUZBERG_AVAILABLE:
             raise ImportError(
-                "kreuzberg is required for KreuzbergParser. "
-                "Install with: pip install kreuzberg"
+                "kreuzberg is required for KreuzbergParser. Install with: pip install kreuzberg"
             )
 
         try:
@@ -77,6 +77,7 @@ class KreuzbergParser(BaseParser):
 
         # Parse the PDF using async function
         try:
+
             async def extract_async():
                 result = await extract_file(str(pdf_path))
                 return result.content

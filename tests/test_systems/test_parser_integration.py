@@ -241,9 +241,7 @@ class TestCacheBehavior:
 class TestErrorHandling:
     """Test error handling across all parsers."""
 
-    def test_parse_nonexistent_file(
-        self, parser_instance: BaseParser, output_dir: Path
-    ) -> None:
+    def test_parse_nonexistent_file(self, parser_instance: BaseParser, output_dir: Path) -> None:
         """All parsers should handle nonexistent files gracefully."""
         nonexistent = Path("nonexistent.pdf")
 
@@ -312,9 +310,7 @@ class TestPerformanceBaselines:
         assert result_path.exists()
 
         # Record baseline (not asserting specific times, just measuring)
-        print(
-            f"\n{parser_instance.name} parse time (01_basic.pdf): {parse_time:.3f}s"
-        )
+        print(f"\n{parser_instance.name} parse time (01_basic.pdf): {parse_time:.3f}s")
 
         # Sanity check: should complete in reasonable time (< 60 seconds)
         assert parse_time < 60.0
@@ -356,9 +352,7 @@ class TestPerformanceBaselines:
 class TestCrossParserComparison:
     """Compare behavior across different parsers."""
 
-    def test_all_parsers_produce_markdown(
-        self, corpus_dir: Path, output_dir: Path
-    ) -> None:
+    def test_all_parsers_produce_markdown(self, corpus_dir: Path, output_dir: Path) -> None:
         """Verify all parsers produce valid markdown output."""
         pdf_path = corpus_dir / "01_basic.pdf"
         if not pdf_path.exists():
@@ -385,9 +379,7 @@ class TestCrossParserComparison:
         for parser_name, content in results.items():
             assert len(content) > 50, f"{parser_name} produced very short output"
 
-    def test_output_file_naming_consistency(
-        self, corpus_dir: Path, output_dir: Path
-    ) -> None:
+    def test_output_file_naming_consistency(self, corpus_dir: Path, output_dir: Path) -> None:
         """Verify all parsers follow consistent output naming."""
         pdf_path = corpus_dir / "01_basic.pdf"
         if not pdf_path.exists():

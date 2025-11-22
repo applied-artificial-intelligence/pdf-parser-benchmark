@@ -18,7 +18,6 @@ Example:
 """
 
 from dataclasses import dataclass, field
-from typing import List, Dict, Optional, Tuple
 
 
 def _int_to_lower_alpha(n: int) -> str:
@@ -26,7 +25,7 @@ def _int_to_lower_alpha(n: int) -> str:
     result = ""
     while n > 0:
         n -= 1
-        result = chr(ord('a') + (n % 26)) + result
+        result = chr(ord("a") + (n % 26)) + result
         n //= 26
     return result
 
@@ -34,9 +33,19 @@ def _int_to_lower_alpha(n: int) -> str:
 def _int_to_roman(n: int) -> str:
     """Convert integer to lowercase Roman numerals (i, ii, iii, iv, v, ...)."""
     values = [
-        (1000, 'm'), (900, 'cm'), (500, 'd'), (400, 'cd'),
-        (100, 'c'), (90, 'xc'), (50, 'l'), (40, 'xl'),
-        (10, 'x'), (9, 'ix'), (5, 'v'), (4, 'iv'), (1, 'i')
+        (1000, "m"),
+        (900, "cm"),
+        (500, "d"),
+        (400, "cd"),
+        (100, "c"),
+        (90, "xc"),
+        (50, "l"),
+        (40, "xl"),
+        (10, "x"),
+        (9, "ix"),
+        (5, "v"),
+        (4, "iv"),
+        (1, "i"),
     ]
     result = ""
     for value, numeral in values:
@@ -50,11 +59,12 @@ def _int_to_roman(n: int) -> str:
 @dataclass
 class NumberedItem:
     """A numbered item in a legal document."""
+
     level: int  # 1-5
     number_str: str  # e.g., "1.2.3" or "(a)" or "(ii)"
     title: str  # Section title/heading (empty for list items)
     content: str = ""  # Content text (if any)
-    children: List['NumberedItem'] = field(default_factory=list)
+    children: list["NumberedItem"] = field(default_factory=list)
 
     @property
     def full_reference(self) -> str:
@@ -112,9 +122,9 @@ class LegalNumbering:
     """Manages hierarchical legal numbering system."""
 
     def __init__(self):
-        self.items: List[NumberedItem] = []
-        self.current_path: List[int] = [0, 0, 0, 0, 0]  # Counters for each level
-        self.reference_map: Dict[str, NumberedItem] = {}  # For cross-references
+        self.items: list[NumberedItem] = []
+        self.current_path: list[int] = [0, 0, 0, 0, 0]  # Counters for each level
+        self.reference_map: dict[str, NumberedItem] = {}  # For cross-references
 
     def add_section(self, level: int, title: str = "", content: str = "") -> NumberedItem:
         """Add a numbered section at the specified level.
@@ -238,7 +248,7 @@ class LegalNumbering:
 
         return item.full_reference
 
-    def generate_toc(self, max_level: int = 2) -> List[str]:
+    def generate_toc(self, max_level: int = 2) -> list[str]:
         """Generate table of contents.
 
         Args:
@@ -344,7 +354,7 @@ class ContractNumbering(LegalNumbering):
         content = f"{party} shall {obligation}."
         return self.add_paragraph(content)
 
-    def add_list_items(self, intro: str, items: List[str], level: int = 4) -> List[NumberedItem]:
+    def add_list_items(self, intro: str, items: list[str], level: int = 4) -> list[NumberedItem]:
         """Add an introduction followed by a list of items.
 
         Args:
@@ -366,7 +376,7 @@ class ContractNumbering(LegalNumbering):
 
         return created_items
 
-    def add_recital(self, recital_text: str) -> Tuple[str, str]:
+    def add_recital(self, recital_text: str) -> tuple[str, str]:
         """Add a WHEREAS recital clause.
 
         Recitals are traditionally not numbered, but we track them for TOC.
@@ -403,8 +413,8 @@ if __name__ == "__main__":
         [
             "Design documents within 30 days",
             "Prototype within 60 days",
-            "Final product within 90 days"
-        ]
+            "Final product within 90 days",
+        ],
     )
 
     # Article 3: Compensation
@@ -417,7 +427,7 @@ if __name__ == "__main__":
 
     # Generate markdown
     print(numbering.to_markdown())
-    print("\n" + "="*60 + "\n")
+    print("\n" + "=" * 60 + "\n")
 
     # Generate TOC
     toc = numbering.generate_toc(max_level=2)

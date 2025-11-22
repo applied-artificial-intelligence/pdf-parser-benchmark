@@ -5,16 +5,16 @@ Tests conversion of LaTeXML HTML/XML output to CommonMark Markdown,
 including headings, paragraphs, lists, math, and tables.
 """
 
-import pytest
-
 # Add builders to path
 import sys
 from pathlib import Path
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / 'builders'))
+
+import pytest
+
+sys.path.insert(0, str(Path(__file__).parent.parent.parent / "builders"))
 
 from latexml_to_markdown import (
     LaTeXMLToMarkdownConverter,
-    LaTeXMLConversionError,
     convert_latexml_to_markdown,
 )
 
@@ -33,14 +33,14 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_headings(self):
         """Test conversion of section headings."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <section class="ltx_section">
                 <h2 class="ltx_title">Introduction</h2>
                 <p class="ltx_p">Section content.</p>
             </section>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -50,7 +50,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_subsections(self):
         """Test conversion of nested sections."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <section class="ltx_section">
                 <h2 class="ltx_title">Main Section</h2>
@@ -60,7 +60,7 @@ class TestLaTeXMLToMarkdownConverter:
                 </section>
             </section>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -70,7 +70,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_itemize_list(self):
         """Test conversion of bulleted list (itemize)."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <ul class="ltx_itemize">
                 <li class="ltx_item">First item</li>
@@ -78,7 +78,7 @@ class TestLaTeXMLToMarkdownConverter:
                 <li class="ltx_item">Third item</li>
             </ul>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -89,7 +89,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_enumerate_list(self):
         """Test conversion of numbered list (enumerate)."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <ol class="ltx_enumerate">
                 <li class="ltx_item">First item</li>
@@ -97,7 +97,7 @@ class TestLaTeXMLToMarkdownConverter:
                 <li class="ltx_item">Third item</li>
             </ol>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -108,11 +108,11 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_inline_math(self):
         """Test conversion of inline math (preserves LaTeX)."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <p class="ltx_p">The equation <math class="ltx_Math"><annotation encoding="application/x-tex">E = mc^2</annotation></math> is famous.</p>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -121,13 +121,13 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_display_math(self):
         """Test conversion of display math."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <math class="ltx_Math displaystyle">
                 <annotation encoding="application/x-tex">\\int_{-\\infty}^{\\infty} e^{-x^2} dx = \\sqrt{\\pi}</annotation>
             </math>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -137,7 +137,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_simple_table(self):
         """Test conversion of simple table to GFM."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <table class="ltx_tabular">
                 <tr><th>Header 1</th><th>Header 2</th></tr>
@@ -145,7 +145,7 @@ class TestLaTeXMLToMarkdownConverter:
                 <tr><td>Cell 3</td><td>Cell 4</td></tr>
             </table>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -157,14 +157,14 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_complex_table(self):
         """Test conversion of complex table (with rowspan) to HTML."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <table class="ltx_tabular">
                 <tr><th rowspan="2">Header</th><th>Col 1</th></tr>
                 <tr><td>Data 1</td></tr>
             </table>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -175,11 +175,11 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_strong_and_em(self):
         """Test conversion of bold and italic text."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <p class="ltx_p">This is <strong>bold</strong> and <em>italic</em> text.</p>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -189,11 +189,11 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_link(self):
         """Test conversion of hyperlinks."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <p class="ltx_p">Visit <a href="https://example.com">this link</a> for more.</p>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -202,14 +202,14 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_figure(self):
         """Test conversion of figure with caption."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <figure class="ltx_figure">
                 <img src="diagram.png" alt="System Diagram"/>
                 <figcaption class="ltx_caption">Figure 1: System architecture</figcaption>
             </figure>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -220,7 +220,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_normalize_whitespace(self):
         """Test whitespace normalization."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <p class="ltx_p">Paragraph    with     extra      spaces.</p>
 
@@ -228,7 +228,7 @@ class TestLaTeXMLToMarkdownConverter:
 
             <p class="ltx_p">Another paragraph.</p>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -241,7 +241,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_without_ltx_document(self):
         """Test conversion when ltx_document class is missing."""
-        html = '<body><p>Simple paragraph.</p></body>'
+        html = "<body><p>Simple paragraph.</p></body>"
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -250,7 +250,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_nested_lists(self):
         """Test conversion of nested lists."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <ul class="ltx_itemize">
                 <li class="ltx_item">
@@ -263,7 +263,7 @@ class TestLaTeXMLToMarkdownConverter:
                 <li class="ltx_item">Item 2</li>
             </ul>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -274,11 +274,11 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_convert_code(self):
         """Test conversion of inline code."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <p class="ltx_p">Use the <code>print()</code> function.</p>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)
@@ -306,7 +306,7 @@ class TestLaTeXMLToMarkdownConverter:
 
     def test_complex_document(self):
         """Test conversion of complex document with multiple elements."""
-        html = '''
+        html = """
         <div class="ltx_document">
             <section class="ltx_section">
                 <h2 class="ltx_title">Introduction</h2>
@@ -336,7 +336,7 @@ class TestLaTeXMLToMarkdownConverter:
                 </table>
             </section>
         </div>
-        '''
+        """
 
         converter = LaTeXMLToMarkdownConverter()
         result = converter.convert(html)

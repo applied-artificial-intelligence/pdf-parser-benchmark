@@ -205,9 +205,7 @@ def element_f1_score(
         gt_count = gt_counts.get(element_type, 0)
         pred_count = pred_counts.get(element_type, 0)
 
-        precision, recall, f1, tp, fp, fn = calculate_precision_recall_f1(
-            gt_count, pred_count
-        )
+        precision, recall, f1, tp, fp, fn = calculate_precision_recall_f1(gt_count, pred_count)
 
         per_element_scores[element_type] = ElementScores(
             element_type=element_type,
@@ -226,12 +224,8 @@ def element_f1_score(
         macro_precision = sum(s.precision for s in per_element_scores.values()) / len(
             per_element_scores
         )
-        macro_recall = sum(s.recall for s in per_element_scores.values()) / len(
-            per_element_scores
-        )
-        macro_f1 = sum(s.f1 for s in per_element_scores.values()) / len(
-            per_element_scores
-        )
+        macro_recall = sum(s.recall for s in per_element_scores.values()) / len(per_element_scores)
+        macro_f1 = sum(s.f1 for s in per_element_scores.values()) / len(per_element_scores)
     else:
         # Empty documents
         macro_precision = 1.0
@@ -256,9 +250,7 @@ def element_f1_score(
     if micro_precision + micro_recall == 0:
         micro_f1 = 0.0
     else:
-        micro_f1 = (
-            2 * (micro_precision * micro_recall) / (micro_precision + micro_recall)
-        )
+        micro_f1 = 2 * (micro_precision * micro_recall) / (micro_precision + micro_recall)
 
     return {
         "overall": {

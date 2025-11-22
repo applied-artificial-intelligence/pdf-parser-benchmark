@@ -891,7 +891,9 @@ class TestSECSpecificFormatting:
 
     def test_convert_xbrl_tagged_content(self) -> None:
         """Test handling of XBRL-tagged content."""
-        converter = SECHTMLToMarkdown(extract_metadata=False, use_financial_tables=True, strip_xbrl=True)
+        converter = SECHTMLToMarkdown(
+            extract_metadata=False, use_financial_tables=True, strip_xbrl=True
+        )
         html = """
         <html>
             <body>

@@ -201,9 +201,7 @@ class TestPyMuPDFParserCaching:
 class TestPyMuPDFParserErrorHandling:
     """Test error handling for various edge cases."""
 
-    def test_parse_nonexistent_file(
-        self, parser: PyMuPDFParser, output_dir: Path
-    ) -> None:
+    def test_parse_nonexistent_file(self, parser: PyMuPDFParser, output_dir: Path) -> None:
         """Test that parsing nonexistent file raises FileNotFoundError."""
         nonexistent = Path("/tmp/nonexistent_file_12345.pdf")
 
@@ -326,21 +324,15 @@ Third paragraph."""
 
         # Page 1
         page1 = doc.new_page()
-        page1.insert_textbox(
-            fitz.Rect(50, 50, 545, 792), "Content on page 1", fontsize=12
-        )
+        page1.insert_textbox(fitz.Rect(50, 50, 545, 792), "Content on page 1", fontsize=12)
 
         # Page 2
         page2 = doc.new_page()
-        page2.insert_textbox(
-            fitz.Rect(50, 50, 545, 792), "Content on page 2", fontsize=12
-        )
+        page2.insert_textbox(fitz.Rect(50, 50, 545, 792), "Content on page 2", fontsize=12)
 
         # Page 3
         page3 = doc.new_page()
-        page3.insert_textbox(
-            fitz.Rect(50, 50, 545, 792), "Content on page 3", fontsize=12
-        )
+        page3.insert_textbox(fitz.Rect(50, 50, 545, 792), "Content on page 3", fontsize=12)
 
         doc.save(multipage_pdf)
         doc.close()

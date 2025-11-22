@@ -44,15 +44,15 @@ Environment Variables:
     DATABRICKS_CLUSTER_ID: Cluster ID for processing (optional)
 """
 
+import base64
 import os
 import time
-import base64
 from pathlib import Path
 from typing import Any
-import json
 
 try:
     import requests
+
     REQUESTS_AVAILABLE = True
 except ImportError:
     REQUESTS_AVAILABLE = False
@@ -74,8 +74,7 @@ class DatabricksParser:
         """
         if not REQUESTS_AVAILABLE:
             raise ImportError(
-                "requests is required for Databricks parser. "
-                "Install with: pip install requests"
+                "requests is required for Databricks parser. Install with: pip install requests"
             )
 
         # Get required config from environment
@@ -133,7 +132,7 @@ class DatabricksParser:
         # Read PDF and encode as base64
         with open(pdf_path, "rb") as f:
             pdf_content = f.read()
-            pdf_base64 = base64.b64encode(pdf_content).decode("utf-8")
+            base64.b64encode(pdf_content).decode("utf-8")
 
         # Estimate page count (rough estimate from file size)
         # Average: 50-100 KB per page for typical PDFs
@@ -149,7 +148,8 @@ class DatabricksParser:
             dbfs_path = f"/tmp/{pdf_path.name}"
             self._upload_to_dbfs(dbfs_path, pdf_content)
 
-            # Process document (simulated - actual implementation would call Document Intelligence API)
+            # Process document (simulated - actual implementation would call
+            # Document Intelligence API)
             # For now, we'll use a simple text extraction approach
             markdown = self._process_document(dbfs_path, estimated_pages)
 
@@ -157,9 +157,9 @@ class DatabricksParser:
             self._delete_from_dbfs(dbfs_path)
 
         except Exception as e:
-            raise Exception(f"Databricks processing failed: {e}")
+            raise Exception(f"Databricks processing failed: {e}") from e
 
-        processing_time = time.time() - start_time
+        time.time() - start_time
 
         # Write markdown
         output_path.write_text(markdown, encoding="utf-8")
@@ -309,12 +309,7 @@ This placeholder demonstrates the cost tracking and API integration pattern.
             url = f"{host}/api/2.0/workspace/list"
             payload = {"path": "/"}
 
-            response = requests.get(
-                url,
-                headers=headers,
-                json=payload,
-                timeout=10
-            )
+            response = requests.get(url, headers=headers, json=payload, timeout=10)
 
             if response.status_code == 200:
                 return True, "Credentials valid"

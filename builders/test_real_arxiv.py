@@ -38,7 +38,7 @@ def test_real_arxiv() -> None:
         logger.info(f"   Authors: {', '.join(metadata['authors'][:3])}...")
         logger.info(f"   Categories: {', '.join(metadata['categories'])}")
         logger.info(f"   Published: {metadata['published']}")
-        logger.info(f"   ✓ Metadata fetched successfully")
+        logger.info("   ✓ Metadata fetched successfully")
 
         # 2. Test PDF download (first 10 pages only to save bandwidth)
         logger.info("\n2. Testing PDF download...")
@@ -48,7 +48,7 @@ def test_real_arxiv() -> None:
         else:
             client.download_pdf(test_arxiv_id, pdf_path)
             logger.info(f"   PDF downloaded: {pdf_path.stat().st_size} bytes")
-            logger.info(f"   ✓ PDF download successful")
+            logger.info("   ✓ PDF download successful")
 
         # 3. Test source download
         logger.info("\n3. Testing source download...")
@@ -58,7 +58,7 @@ def test_real_arxiv() -> None:
         else:
             client.download_source(test_arxiv_id, source_path)
             logger.info(f"   Source downloaded: {source_path.stat().st_size} bytes")
-            logger.info(f"   ✓ Source download successful")
+            logger.info("   ✓ Source download successful")
 
         # 4. Test ar5iv HTML download
         logger.info("\n4. Testing ar5iv HTML5 download...")
@@ -68,7 +68,7 @@ def test_real_arxiv() -> None:
         else:
             client.download_ar5iv_html(test_arxiv_id, ar5iv_path)
             logger.info(f"   ar5iv HTML downloaded: {ar5iv_path.stat().st_size} bytes")
-            logger.info(f"   ✓ ar5iv HTML download successful")
+            logger.info("   ✓ ar5iv HTML download successful")
 
         logger.info("\n" + "=" * 80)
         logger.info("✓ ALL TESTS PASSED")

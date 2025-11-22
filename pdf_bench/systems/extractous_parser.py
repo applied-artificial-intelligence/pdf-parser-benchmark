@@ -8,6 +8,7 @@ from pathlib import Path
 
 try:
     import extractous  # type: ignore[import-untyped]
+
     EXTRACTOUS_AVAILABLE = True
 except ImportError:
     EXTRACTOUS_AVAILABLE = False
@@ -31,8 +32,7 @@ class ExtractousParser(BaseParser):
         """
         if not EXTRACTOUS_AVAILABLE:
             raise ImportError(
-                "extractous is required for ExtractousParser. "
-                "Install with: pip install extractous"
+                "extractous is required for ExtractousParser. Install with: pip install extractous"
             )
 
         try:

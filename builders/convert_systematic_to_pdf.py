@@ -89,20 +89,20 @@ def extract_ground_truth(docx_path: Path) -> str:
                 continue
 
             # Check if heading
-            if para.style.name.startswith('Heading'):
+            if para.style.name.startswith("Heading"):
                 level = int(para.style.name.split()[-1])
                 markdown_lines.append(f"{'#' * level} {text}")
             # Check if list
-            elif para.style.name.startswith('List'):
-                if 'Bullet' in para.style.name:
+            elif para.style.name.startswith("List"):
+                if "Bullet" in para.style.name:
                     level = 0
-                    if '2' in para.style.name:
+                    if "2" in para.style.name:
                         level = 1
-                    elif '3' in para.style.name:
+                    elif "3" in para.style.name:
                         level = 2
-                    indent = '  ' * level
+                    indent = "  " * level
                     markdown_lines.append(f"{indent}- {text}")
-                elif 'Number' in para.style.name:
+                elif "Number" in para.style.name:
                     markdown_lines.append(f"1. {text}")
             # Regular paragraph
             else:
@@ -126,9 +126,7 @@ def extract_ground_truth(docx_path: Path) -> str:
 
                 # Add header separator after first row
                 if row_idx == 0:
-                    markdown_lines.append(
-                        "| " + " | ".join(["---"] * len(cells)) + " |"
-                    )
+                    markdown_lines.append("| " + " | ".join(["---"] * len(cells)) + " |")
 
     return "\n".join(markdown_lines)
 
@@ -385,15 +383,13 @@ def main():
             # 3. Create metadata
             print("  📋 Creating metadata...")
             if doc_id in DOCUMENT_INFO:
-                yaml_path = create_metadata(
-                    docx_path, pdf_path, md_path, DOCUMENT_INFO[doc_id]
-                )
+                yaml_path = create_metadata(docx_path, pdf_path, md_path, DOCUMENT_INFO[doc_id])
                 print(f"    ✓ {yaml_path.name}")
             else:
                 print(f"    ⚠️  No metadata template for {doc_id}")
 
             success_count += 1
-            print(f"  ✅ Complete")
+            print("  ✅ Complete")
 
         except Exception as e:
             print(f"  ❌ Failed: {e}")

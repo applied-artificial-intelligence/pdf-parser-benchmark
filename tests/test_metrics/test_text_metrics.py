@@ -131,9 +131,7 @@ class TestChrFPlusPlusScore:
         score = chrf_plus_plus_score(nfd_text, nfc_text, unicode=True)
         assert score == 100.0
         # With Unicode normalization disabled
-        score = chrf_plus_plus_score(
-            nfd_text, nfc_text, normalize=True, unicode=False
-        )
+        score = chrf_plus_plus_score(nfd_text, nfc_text, normalize=True, unicode=False)
         assert score < 100.0
 
     def test_normalization_selective_whitespace(self) -> None:
@@ -142,9 +140,7 @@ class TestChrFPlusPlusScore:
         score = chrf_plus_plus_score("hello  world", "hello world", whitespace=True)
         assert score == 100.0
         # Just verify the option is accepted without error
-        score = chrf_plus_plus_score(
-            "hello world", "hello world", normalize=True, whitespace=False
-        )
+        score = chrf_plus_plus_score("hello world", "hello world", normalize=True, whitespace=False)
         assert score == 100.0
 
     def test_normalization_selective_quotes(self) -> None:
@@ -153,9 +149,7 @@ class TestChrFPlusPlusScore:
         score = chrf_plus_plus_score('"hello"', '"hello"', quotes=True)
         assert score == 100.0
         # Just verify the option is accepted without error
-        score = chrf_plus_plus_score(
-            '"hello"', '"hello"', normalize=True, quotes=False
-        )
+        score = chrf_plus_plus_score('"hello"', '"hello"', normalize=True, quotes=False)
         assert 0.0 <= score <= 100.0
 
     def test_normalization_hyphens(self) -> None:
@@ -187,8 +181,7 @@ class TestChrFPlusPlusScore:
         )
         # Extracted text with minor OCR errors
         hypothesis = (
-            "The quick brown fox jumps over the lazy dog. "
-            "This is a test of PDF extracton accuracy."
+            "The quick brown fox jumps over the lazy dog. This is a test of PDF extracton accuracy."
         )
         score = chrf_plus_plus_score(reference, hypothesis)
         # Should have high score despite small error

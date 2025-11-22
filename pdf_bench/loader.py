@@ -6,6 +6,7 @@ resolution of document paths and parser classes. It provides a complete, ready-t
 configuration object for the benchmark runner.
 """
 
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -16,7 +17,6 @@ from pdf_bench.systems import (
     AzureDocumentIntelligenceParser,
     BaseParser,
     DatabricksParser,
-    DoclingParser,
     ExtractousParser,
     GoogleDocumentAIParser,
     KreuzbergParser,
@@ -25,18 +25,24 @@ from pdf_bench.systems import (
     MarkerParser,
     PDFMinerParser,
     PdfPlumberParser,
-    PyPDF2Parser,
-    PyPDFParser,
-    PyPDFium2Parser,
     PyMuPDF4LLMParser,
     PyMuPDFParser,
+    PyPDF2Parser,
+    PyPDFium2Parser,
+    PyPDFParser,
     TikaParser,
     UnstructuredParser,
 )
+from pdf_bench.systems.docling_parser import create_docling_accurate, create_docling_fast
 from pdf_bench.utils.metadata import DocumentMetadata, load_metadata
 
-# Parser class registry mapping parser IDs to classes
-PARSER_REGISTRY: dict[str, type[BaseParser]] = {
+# Type alias for parser factories (class or callable returning parser)
+ParserFactory = type[BaseParser] | Callable[[], BaseParser]
+
+# Parser class registry mapping parser IDs to classes or factory functions
+# Note: "docling" defaults to fast mode (no OCR) for reasonable performance
+# Use "docling-ocr" for OCR mode or configure via parser_options in YAML
+PARSER_REGISTRY: dict[str, ParserFactory] = {
     # Open-source parsers
     "pymupdf": PyMuPDFParser,
     "pymupdf4llm": PyMuPDF4LLMParser,
@@ -50,14 +56,15 @@ PARSER_REGISTRY: dict[str, type[BaseParser]] = {
     "unstructured": UnstructuredParser,
     "marker": MarkerParser,
     "marker_ollama": MarkerOllamaParser,
-    "docling": DoclingParser,
+    "docling": create_docling_fast,  # Fast mode (no OCR) - ~2-4GB RAM, 2-5 sec/doc
+    "docling-ocr": create_docling_accurate,  # OCR mode - ~8-12GB RAM, 30-60 sec/doc
     "kreuzberg": KreuzbergParser,
-    # Commercial/API parsers
+    # Commercial/API parsers (type: ignore due to incomplete typing in cloud SDK deps)
     "aws_textract": AWSTextractParser,
     "azure_document_intelligence": AzureDocumentIntelligenceParser,
-    "google_document_ai": GoogleDocumentAIParser,
-    "databricks": DatabricksParser,
-    "landing_ai": LandingAIParser,
+    "google_document_ai": GoogleDocumentAIParser,  # type: ignore[dict-item]
+    "databricks": DatabricksParser,  # type: ignore[dict-item]
+    "landing_ai": LandingAIParser,  # type: ignore[dict-item]
 }
 
 
@@ -209,10 +216,7 @@ def discover_documents(
                     continue
 
             # Apply exclude filter
-            if (
-                filter_config.exclude_doc_ids
-                and metadata.doc_id in filter_config.exclude_doc_ids
-            ):
+            if filter_config.exclude_doc_ids and metadata.doc_id in filter_config.exclude_doc_ids:
                 continue
 
             # Get document paths - use metadata filename stem, not doc_id
@@ -247,10 +251,7 @@ def discover_documents(
             )
 
     # Apply max_documents limit if specified
-    if (
-        filter_config.max_documents is not None
-        and len(documents) > filter_config.max_documents
-    ):
+    if filter_config.max_documents is not None and len(documents) > filter_config.max_documents:
         documents = documents[: filter_config.max_documents]
 
     if not documents:
@@ -285,26 +286,26 @@ def load_parsers(
         parser_ids = list(PARSER_REGISTRY.keys())
 
     for parser_id in parser_ids:
-        # Get parser class from registry
+        # Get parser class/factory from registry
         if parser_id not in PARSER_REGISTRY:
             raise ValueError(
                 f"Parser '{parser_id}' not found in registry. "
                 f"Available parsers: {list(PARSER_REGISTRY.keys())}"
             )
 
-        parser_class = PARSER_REGISTRY[parser_id]
+        parser_factory = PARSER_REGISTRY[parser_id]
 
         # Get parser-specific options if provided
         parser_options = config.parser_config.parser_options.get(parser_id, {})
 
-        # Instantiate parser
+        # Instantiate parser (factory function or class)
         try:
             if parser_options:
                 # Pass options as keyword arguments
-                parser_instance = parser_class(**parser_options)
+                parser_instance = parser_factory(**parser_options)
             else:
-                # No options, use defaults
-                parser_instance = parser_class()
+                # No options, use defaults (works for both classes and factory functions)
+                parser_instance = parser_factory()
 
             parser_instances.append(parser_instance)
         except TypeError as e:
@@ -392,8 +393,7 @@ def get_parser_info(parser_id: str) -> dict[str, Any]:
     """
     if parser_id not in PARSER_REGISTRY:
         raise ValueError(
-            f"Parser '{parser_id}' not found. "
-            f"Available: {list(PARSER_REGISTRY.keys())}"
+            f"Parser '{parser_id}' not found. Available: {list(PARSER_REGISTRY.keys())}"
         )
 
     parser_class = PARSER_REGISTRY[parser_id]

@@ -143,9 +143,7 @@ class TestMarkerParserBasicParsing:
 class TestMarkerParserErrorHandling:
     """Test error handling for various failure scenarios."""
 
-    def test_parse_nonexistent_pdf(
-        self, parser: MarkerParser, output_dir: Path
-    ) -> None:
+    def test_parse_nonexistent_pdf(self, parser: MarkerParser, output_dir: Path) -> None:
         """Test that parsing a nonexistent PDF raises FileNotFoundError."""
         nonexistent_pdf = Path("/tmp/does_not_exist.pdf")
 
@@ -176,9 +174,7 @@ class TestMarkerParserErrorHandling:
     ) -> None:
         """Test that subprocess timeout raises RuntimeError."""
         with patch("subprocess.run") as mock_run:
-            mock_run.side_effect = subprocess.TimeoutExpired(
-                cmd="marker_single", timeout=300
-            )
+            mock_run.side_effect = subprocess.TimeoutExpired(cmd="marker_single", timeout=300)
 
             with pytest.raises(RuntimeError, match="timed out"):
                 parser.parse(sample_pdf, output_dir)

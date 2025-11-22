@@ -119,9 +119,7 @@ def _create_node_label(token: dict[str, Any], token_type: str) -> str:
     return token_type
 
 
-def tree_edit_distance(
-    ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]
-) -> int:
+def tree_edit_distance(ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]) -> int:
     """Calculate raw tree-edit distance between two ASTs.
 
     Uses the Zhang-Shasha algorithm to compute the minimum number of edit
@@ -147,9 +145,7 @@ def tree_edit_distance(
     return int(simple_distance(tree1, tree2))
 
 
-def normalized_tree_edit_distance(
-    ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]
-) -> float:
+def normalized_tree_edit_distance(ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]) -> float:
     """Calculate normalized tree-edit distance between two ASTs.
 
     Normalizes the raw edit distance by the maximum tree size to produce a
@@ -189,9 +185,7 @@ def normalized_tree_edit_distance(
     return float(raw_distance) / float(max_size)
 
 
-def tree_similarity(
-    ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]
-) -> float:
+def tree_similarity(ast1: list[dict[str, Any]], ast2: list[dict[str, Any]]) -> float:
     """Calculate tree similarity score between two ASTs.
 
     Similarity is the complement of normalized distance:

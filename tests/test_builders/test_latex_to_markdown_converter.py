@@ -8,22 +8,21 @@ Tests the fallback logic between LaTeXML and Pandoc, including:
 - Tool preference handling
 """
 
+# Add builders to path
+import sys
 import tempfile
 from pathlib import Path
-from unittest.mock import Mock, patch, MagicMock
+from unittest.mock import MagicMock, patch
 
 import pytest
 
-# Add builders to path
-import sys
-builders_path = Path(__file__).parent.parent.parent / 'builders'
+builders_path = Path(__file__).parent.parent.parent / "builders"
 sys.path.insert(0, str(builders_path))
 
 # Import after path is set
-import latex_to_markdown_converter
 from latex_to_markdown_converter import (
-    convert_latex_to_markdown,
     LatexToMarkdownConversionError,
+    convert_latex_to_markdown,
 )
 
 
@@ -81,28 +80,24 @@ Display:
 
         assert "not found" in str(exc_info.value).lower()
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
-    @patch('latex_to_markdown_converter.LaTeXMLToMarkdownConverter')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
+    @patch("latex_to_markdown_converter.LaTeXMLToMarkdownConverter")
     def test_latexml_success_no_fallback(
-        self,
-        mock_converter_class,
-        mock_wrapper_class,
-        simple_tex_file,
-        temp_dir
+        self, mock_converter_class, mock_wrapper_class, simple_tex_file, temp_dir
     ):
         """Test successful LaTeXML conversion (no fallback to Pandoc)."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability check
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper
             mock_wrapper = MagicMock()
             mock_wrapper.convert_to_html.return_value = {
-                'success': True,
-                'returncode': 0,
-                'stdout': '',
-                'stderr': '',
-                'error': None,
+                "success": True,
+                "returncode": 0,
+                "stdout": "",
+                "stderr": "",
+                "error": None,
             }
             mock_wrapper_class.return_value = mock_wrapper
 
@@ -115,11 +110,11 @@ Display:
             result = convert_latex_to_markdown(simple_tex_file, output_file)
 
             # Verify result
-            assert result['success'] is True
-            assert result['tool_used'] == 'latexml'
-            assert result['markdown_path'] == output_file
-            assert isinstance(result['duration'], float)
-            assert result['duration'] > 0
+            assert result["success"] is True
+            assert result["tool_used"] == "latexml"
+            assert result["markdown_path"] == output_file
+            assert isinstance(result["duration"], float)
+            assert result["duration"] > 0
 
             # Verify LaTeXML was called
             mock_wrapper_class.assert_called_once()
@@ -129,36 +124,33 @@ Display:
             assert output_file.exists()
             assert "Test" in output_file.read_text()
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
-    @patch('latex_to_markdown_converter.PandocWrapper')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
+    @patch("latex_to_markdown_converter.PandocWrapper")
     def test_latexml_fail_pandoc_success(
-        self,
-        mock_pandoc_class,
-        mock_latexml_class,
-        simple_tex_file,
-        temp_dir
+        self, mock_pandoc_class, mock_latexml_class, simple_tex_file, temp_dir
     ):
         """Test LaTeXML failure → Pandoc fallback → success."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability (available but fails)
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper (fails)
             mock_latexml = MagicMock()
             from latexml_wrapper import LaTeXMLConversionError
+
             mock_latexml.convert_to_html.side_effect = LaTeXMLConversionError("LaTeXML failed")
             mock_latexml_class.return_value = mock_latexml
 
             # Mock Pandoc availability
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
+            with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
                 # Mock Pandoc wrapper (succeeds)
                 mock_pandoc = MagicMock()
                 mock_pandoc.convert_to_markdown.return_value = {
-                    'success': True,
-                    'returncode': 0,
-                    'stdout': '',
-                    'stderr': '',
-                    'error': None,
+                    "success": True,
+                    "returncode": 0,
+                    "stdout": "",
+                    "stderr": "",
+                    "error": None,
                 }
                 mock_pandoc_class.return_value = mock_pandoc
 
@@ -166,75 +158,69 @@ Display:
                 result = convert_latex_to_markdown(simple_tex_file, output_file)
 
                 # Verify result
-                assert result['success'] is True
-                assert result['tool_used'] == 'pandoc'
-                assert result['markdown_path'] == output_file
+                assert result["success"] is True
+                assert result["tool_used"] == "pandoc"
+                assert result["markdown_path"] == output_file
 
                 # Verify errors list contains LaTeXML failure
-                assert len(result['errors']) > 0
-                assert any('LaTeXML' in err for err in result['errors'])
+                assert len(result["errors"]) > 0
+                assert any("LaTeXML" in err for err in result["errors"])
 
                 # Verify both tools were attempted
                 mock_latexml_class.assert_called_once()
                 mock_pandoc_class.assert_called_once()
 
-    @patch('latex_to_markdown_converter.PandocWrapper')
+    @patch("latex_to_markdown_converter.PandocWrapper")
     def test_prefer_pandoc(self, mock_pandoc_class, simple_tex_file, temp_dir):
         """Test preferring Pandoc over LaTeXML."""
         output_file = temp_dir / "output.md"
 
         # Mock Pandoc availability
-        with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
             # Mock Pandoc wrapper (succeeds)
             mock_pandoc = MagicMock()
             mock_pandoc.convert_to_markdown.return_value = {
-                'success': True,
-                'returncode': 0,
-                'stdout': '',
-                'stderr': '',
-                'error': None,
+                "success": True,
+                "returncode": 0,
+                "stdout": "",
+                "stderr": "",
+                "error": None,
             }
             mock_pandoc_class.return_value = mock_pandoc
 
             # Convert with prefer_latexml=False
-            result = convert_latex_to_markdown(
-                simple_tex_file,
-                output_file,
-                prefer_latexml=False
-            )
+            result = convert_latex_to_markdown(simple_tex_file, output_file, prefer_latexml=False)
 
             # Verify result
-            assert result['success'] is True
-            assert result['tool_used'] == 'pandoc'
+            assert result["success"] is True
+            assert result["tool_used"] == "pandoc"
 
             # Verify Pandoc was called
             mock_pandoc_class.assert_called_once()
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
-    @patch('latex_to_markdown_converter.PandocWrapper')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
+    @patch("latex_to_markdown_converter.PandocWrapper")
     def test_both_tools_fail(
-        self,
-        mock_pandoc_class,
-        mock_latexml_class,
-        simple_tex_file,
-        temp_dir
+        self, mock_pandoc_class, mock_latexml_class, simple_tex_file, temp_dir
     ):
         """Test both LaTeXML and Pandoc fail → raise error."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability (available but fails)
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper (fails)
             mock_latexml = MagicMock()
             from latexml_wrapper import LaTeXMLConversionError
+
             mock_latexml.convert_to_html.side_effect = LaTeXMLConversionError("LaTeXML failed")
             mock_latexml_class.return_value = mock_latexml
 
             # Mock Pandoc availability (available but fails)
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
+            with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
                 # Mock Pandoc wrapper (fails)
                 mock_pandoc = MagicMock()
                 from pandoc_wrapper import PandocConversionError
+
                 mock_pandoc.convert_to_markdown.side_effect = PandocConversionError("Pandoc failed")
                 mock_pandoc_class.return_value = mock_pandoc
 
@@ -253,8 +239,10 @@ Display:
         output_file = temp_dir / "output.md"
 
         # Mock both tools as unavailable
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=False):
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=False):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=False):
+            with patch(
+                "latex_to_markdown_converter.PandocWrapper.is_available", return_value=False
+            ):
                 # Convert should raise error
                 with pytest.raises(LatexToMarkdownConversionError) as exc_info:
                     convert_latex_to_markdown(simple_tex_file, output_file)
@@ -263,28 +251,30 @@ Display:
                 error_msg = str(exc_info.value)
                 assert "all conversion methods failed" in error_msg.lower()
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
     def test_latexml_only(self, mock_latexml_class, simple_tex_file, temp_dir):
         """Test conversion when only LaTeXML is available."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability (available and succeeds)
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock Pandoc unavailable
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=False):
+            with patch(
+                "latex_to_markdown_converter.PandocWrapper.is_available", return_value=False
+            ):
                 # Mock LaTeXML wrapper
                 mock_latexml = MagicMock()
                 mock_latexml.convert_to_html.return_value = {
-                    'success': True,
-                    'returncode': 0,
-                    'stdout': '',
-                    'stderr': '',
-                    'error': None,
+                    "success": True,
+                    "returncode": 0,
+                    "stdout": "",
+                    "stderr": "",
+                    "error": None,
                 }
                 mock_latexml_class.return_value = mock_latexml
 
                 # Mock converter
-                with patch('latex_to_markdown_converter.LaTeXMLToMarkdownConverter') as mock_conv:
+                with patch("latex_to_markdown_converter.LaTeXMLToMarkdownConverter") as mock_conv:
                     mock_converter = MagicMock()
                     mock_converter.convert.return_value = "# Test\n"
                     mock_conv.return_value = mock_converter
@@ -293,26 +283,26 @@ Display:
                     result = convert_latex_to_markdown(simple_tex_file, output_file)
 
                     # Verify result
-                    assert result['success'] is True
-                    assert result['tool_used'] == 'latexml'
+                    assert result["success"] is True
+                    assert result["tool_used"] == "latexml"
 
-    @patch('latex_to_markdown_converter.PandocWrapper')
+    @patch("latex_to_markdown_converter.PandocWrapper")
     def test_pandoc_only(self, mock_pandoc_class, simple_tex_file, temp_dir):
         """Test conversion when only Pandoc is available."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML unavailable
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=False):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=False):
             # Mock Pandoc availability (available and succeeds)
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
+            with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
                 # Mock Pandoc wrapper
                 mock_pandoc = MagicMock()
                 mock_pandoc.convert_to_markdown.return_value = {
-                    'success': True,
-                    'returncode': 0,
-                    'stdout': '',
-                    'stderr': '',
-                    'error': None,
+                    "success": True,
+                    "returncode": 0,
+                    "stdout": "",
+                    "stderr": "",
+                    "error": None,
                 }
                 mock_pandoc_class.return_value = mock_pandoc
 
@@ -320,31 +310,27 @@ Display:
                 result = convert_latex_to_markdown(simple_tex_file, output_file)
 
                 # Verify result
-                assert result['success'] is True
-                assert result['tool_used'] == 'pandoc'
+                assert result["success"] is True
+                assert result["tool_used"] == "pandoc"
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
-    @patch('latex_to_markdown_converter.LaTeXMLToMarkdownConverter')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
+    @patch("latex_to_markdown_converter.LaTeXMLToMarkdownConverter")
     def test_latexml_with_warnings(
-        self,
-        mock_converter_class,
-        mock_wrapper_class,
-        simple_tex_file,
-        temp_dir
+        self, mock_converter_class, mock_wrapper_class, simple_tex_file, temp_dir
     ):
         """Test LaTeXML conversion with stderr warnings."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper with warnings in stderr
             mock_wrapper = MagicMock()
             mock_wrapper.convert_to_html.return_value = {
-                'success': True,
-                'returncode': 0,
-                'stdout': '',
-                'stderr': 'Warning: Missing package xyz',
-                'error': None,
+                "success": True,
+                "returncode": 0,
+                "stdout": "",
+                "stderr": "Warning: Missing package xyz",
+                "error": None,
             }
             mock_wrapper_class.return_value = mock_wrapper
 
@@ -357,70 +343,67 @@ Display:
             result = convert_latex_to_markdown(simple_tex_file, output_file)
 
             # Verify result
-            assert result['success'] is True
-            assert result['tool_used'] == 'latexml'
+            assert result["success"] is True
+            assert result["tool_used"] == "latexml"
 
             # Verify warnings were captured
-            assert len(result['warnings']) > 0
-            assert any('Warning' in warn for warn in result['warnings'])
+            assert len(result["warnings"]) > 0
+            assert any("Warning" in warn for warn in result["warnings"])
 
-    @patch('latex_to_markdown_converter.PandocWrapper')
+    @patch("latex_to_markdown_converter.PandocWrapper")
     def test_pandoc_with_warnings(self, mock_pandoc_class, simple_tex_file, temp_dir):
         """Test Pandoc conversion with stderr warnings."""
         output_file = temp_dir / "output.md"
 
         # Mock Pandoc availability
-        with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
             # Mock Pandoc wrapper with warnings
             mock_pandoc = MagicMock()
             mock_pandoc.convert_to_markdown.return_value = {
-                'success': True,
-                'returncode': 0,
-                'stdout': '',
-                'stderr': 'Warning: Unknown macro',
-                'error': None,
+                "success": True,
+                "returncode": 0,
+                "stdout": "",
+                "stderr": "Warning: Unknown macro",
+                "error": None,
             }
             mock_pandoc_class.return_value = mock_pandoc
 
             # Convert
-            result = convert_latex_to_markdown(
-                simple_tex_file,
-                output_file,
-                prefer_latexml=False
-            )
+            result = convert_latex_to_markdown(simple_tex_file, output_file, prefer_latexml=False)
 
             # Verify result
-            assert result['success'] is True
-            assert result['tool_used'] == 'pandoc'
+            assert result["success"] is True
+            assert result["tool_used"] == "pandoc"
 
             # Verify warnings were captured
-            assert len(result['warnings']) > 0
-            assert any('Warning' in warn for warn in result['warnings'])
+            assert len(result["warnings"]) > 0
+            assert any("Warning" in warn for warn in result["warnings"])
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
     def test_latexml_timeout(self, mock_wrapper_class, simple_tex_file, temp_dir):
         """Test LaTeXML timeout → fallback to Pandoc."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper (timeout)
             mock_latexml = MagicMock()
             from latexml_wrapper import LaTeXMLTimeoutError
+
             mock_latexml.convert_to_html.side_effect = LaTeXMLTimeoutError("Timeout")
             mock_wrapper_class.return_value = mock_latexml
 
             # Mock Pandoc availability
-            with patch('latex_to_markdown_converter.PandocWrapper.is_available', return_value=True):
-                with patch('latex_to_markdown_converter.PandocWrapper') as mock_pandoc_class:
+            with patch("latex_to_markdown_converter.PandocWrapper.is_available", return_value=True):
+                with patch("latex_to_markdown_converter.PandocWrapper") as mock_pandoc_class:
                     # Mock Pandoc wrapper (succeeds)
                     mock_pandoc = MagicMock()
                     mock_pandoc.convert_to_markdown.return_value = {
-                        'success': True,
-                        'returncode': 0,
-                        'stdout': '',
-                        'stderr': '',
-                        'error': None,
+                        "success": True,
+                        "returncode": 0,
+                        "stdout": "",
+                        "stderr": "",
+                        "error": None,
                     }
                     mock_pandoc_class.return_value = mock_pandoc
 
@@ -428,35 +411,33 @@ Display:
                     result = convert_latex_to_markdown(simple_tex_file, output_file, timeout=60)
 
                     # Verify result
-                    assert result['success'] is True
-                    assert result['tool_used'] == 'pandoc'
+                    assert result["success"] is True
+                    assert result["tool_used"] == "pandoc"
 
                     # Verify errors contains timeout message
-                    assert len(result['errors']) > 0
-                    assert any('Timeout' in err or 'timeout' in err.lower() for err in result['errors'])
+                    assert len(result["errors"]) > 0
+                    assert any(
+                        "Timeout" in err or "timeout" in err.lower() for err in result["errors"]
+                    )
 
-    @patch('latex_to_markdown_converter.LaTeXMLWrapper')
-    @patch('latex_to_markdown_converter.LaTeXMLToMarkdownConverter')
+    @patch("latex_to_markdown_converter.LaTeXMLWrapper")
+    @patch("latex_to_markdown_converter.LaTeXMLToMarkdownConverter")
     def test_custom_timeout(
-        self,
-        mock_converter_class,
-        mock_wrapper_class,
-        simple_tex_file,
-        temp_dir
+        self, mock_converter_class, mock_wrapper_class, simple_tex_file, temp_dir
     ):
         """Test custom timeout is passed to converters."""
         output_file = temp_dir / "output.md"
 
         # Mock LaTeXML availability
-        with patch('latex_to_markdown_converter.LaTeXMLWrapper.is_available', return_value=True):
+        with patch("latex_to_markdown_converter.LaTeXMLWrapper.is_available", return_value=True):
             # Mock LaTeXML wrapper
             mock_wrapper = MagicMock()
             mock_wrapper.convert_to_html.return_value = {
-                'success': True,
-                'returncode': 0,
-                'stdout': '',
-                'stderr': '',
-                'error': None,
+                "success": True,
+                "returncode": 0,
+                "stdout": "",
+                "stderr": "",
+                "error": None,
             }
             mock_wrapper_class.return_value = mock_wrapper
 
@@ -466,7 +447,7 @@ Display:
             mock_converter_class.return_value = mock_converter
 
             # Convert with custom timeout
-            result = convert_latex_to_markdown(simple_tex_file, output_file, timeout=600)
+            convert_latex_to_markdown(simple_tex_file, output_file, timeout=600)
 
             # Verify timeout was passed to wrapper
             mock_wrapper_class.assert_called_once_with(timeout=600)

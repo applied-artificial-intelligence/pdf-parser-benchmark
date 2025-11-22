@@ -56,6 +56,7 @@ from typing import Any
 try:
     from google.api_core.client_options import ClientOptions
     from google.cloud import documentai_v1 as documentai
+
     GOOGLE_AVAILABLE = True
 except ImportError:
     GOOGLE_AVAILABLE = False
@@ -93,9 +94,7 @@ class GoogleDocumentAIParser:
             )
 
         if not self.project_id:
-            raise ValueError(
-                "GOOGLE_CLOUD_PROJECT environment variable must be set"
-            )
+            raise ValueError("GOOGLE_CLOUD_PROJECT environment variable must be set")
 
         # Initialize client
         opts = ClientOptions(api_endpoint=f"{self.location}-documentai.googleapis.com")
@@ -151,7 +150,7 @@ class GoogleDocumentAIParser:
                 f"Failed to create Document AI processor. "
                 f"Please create one manually in the GCP Console and set "
                 f"GOOGLE_DOCUMENT_AI_PROCESSOR_ID environment variable. Error: {e}"
-            )
+            ) from e
 
     def parse(self, pdf_path: Path, output_dir: Path) -> Path:
         """Parse a PDF file using Google Document AI.
@@ -178,7 +177,9 @@ class GoogleDocumentAIParser:
             pdf_content = f.read()
 
         # Prepare request
-        name = f"projects/{self.project_id}/locations/{self.location}/processors/{self.processor_id}"
+        name = (
+            f"projects/{self.project_id}/locations/{self.location}/processors/{self.processor_id}"
+        )
 
         # Create Document AI request
         raw_document = documentai.RawDocument(
@@ -197,9 +198,9 @@ class GoogleDocumentAIParser:
             result = self.client.process_document(request=request)
             document = result.document
         except Exception as e:
-            raise Exception(f"Document AI processing failed: {e}")
+            raise Exception(f"Document AI processing failed: {e}") from e
 
-        processing_time = time.time() - start_time
+        time.time() - start_time
 
         # Convert to markdown
         markdown = self._document_to_markdown(document)
@@ -229,7 +230,7 @@ class GoogleDocumentAIParser:
         seen_text = set()  # Track seen text to avoid duplicates
 
         # Process each page
-        for page_num, page in enumerate(document.pages):
+        for _page_num, page in enumerate(document.pages):
             # Use blocks for better structure (blocks contain paragraphs)
             if page.blocks:
                 for block in page.blocks:
@@ -350,14 +351,14 @@ class GoogleDocumentAIParser:
             return False
 
         # Doesn't end with sentence-ending punctuation
-        if text.rstrip().endswith(('.', ',', ';', ':')):
+        if text.rstrip().endswith((".", ",", ";", ":")):
             return False
 
         # Check if text appears to be a title/heading pattern
         # (starts with capital, no list markers)
         if text[0].isupper() and not text[0].isdigit():
             # Not a list item
-            if not any(text.startswith(p) for p in ['• ', '- ', '* ', '1.', '2.', '3.']):
+            if not any(text.startswith(p) for p in ["• ", "- ", "* ", "1.", "2.", "3."]):
                 # Relatively short
                 if len(text) < 80:
                     return True
@@ -395,19 +396,19 @@ class GoogleDocumentAIParser:
         import re
 
         # Check for numbered list patterns (1. 2. 3. etc)
-        numbered_pattern = r'^(\d+)\.\s*(.+)$'
+        numbered_pattern = r"^(\d+)\.\s*(.+)$"
         match = re.match(numbered_pattern, text)
         if match:
             return f"{match.group(1)}. {match.group(2)}"
 
         # Check for bullet patterns
-        bullet_chars = ['•', '●', '○', '▪', '▸', '►', '‣', '⁃']
+        bullet_chars = ["•", "●", "○", "▪", "▸", "►", "‣", "⁃"]
         for bullet in bullet_chars:
             if text.startswith(bullet):
                 return f"- {text[1:].strip()}"
 
         # Check for dash/asterisk bullets
-        if text.startswith('- ') or text.startswith('* '):
+        if text.startswith("- ") or text.startswith("* "):
             return text
 
         return text
@@ -427,7 +428,7 @@ class GoogleDocumentAIParser:
 
         # Split on numbered list items (1. 2. 3. etc.)
         # This pattern finds "N. Text" patterns
-        numbered_split = re.split(r'(?=\s+\d+\.\s+)', text)
+        numbered_split = re.split(r"(?=\s+\d+\.\s+)", text)
 
         for part in numbered_split:
             part = part.strip()
@@ -435,14 +436,14 @@ class GoogleDocumentAIParser:
                 continue
 
             # Check if this part starts with a number
-            num_match = re.match(r'^(\d+)\.\s+(.+)$', part, re.DOTALL)
+            num_match = re.match(r"^(\d+)\.\s+(.+)$", part, re.DOTALL)
             if num_match:
                 lines.append(f"{num_match.group(1)}. {num_match.group(2).strip()}")
                 continue
 
             # Split on bullet points
-            bullet_chars = '•●○▪▸►‣⁃'
-            bullet_pattern = f'(?=[{re.escape(bullet_chars)}]\\s*)'
+            bullet_chars = "•●○▪▸►‣⁃"
+            bullet_pattern = f"(?=[{re.escape(bullet_chars)}]\\s*)"
             bullet_parts = re.split(bullet_pattern, part)
 
             for bullet_part in bullet_parts:
@@ -459,17 +460,17 @@ class GoogleDocumentAIParser:
                 # Try to detect section headers within the text
                 # Look for patterns like "Section Name Text that follows"
                 section_patterns = [
-                    r'^(Why PDF Parsing Matters)\s+',
-                    r'^(Common Challenges)\s+',
-                    r'^(Evaluation Metrics)\s+',
-                    r'^(Conclusion)\s+',
+                    r"^(Why PDF Parsing Matters)\s+",
+                    r"^(Common Challenges)\s+",
+                    r"^(Evaluation Metrics)\s+",
+                    r"^(Conclusion)\s+",
                 ]
 
                 for pattern in section_patterns:
                     match = re.match(pattern, bullet_part)
                     if match:
                         header = match.group(1)
-                        rest = bullet_part[len(match.group(0)):].strip()
+                        rest = bullet_part[len(match.group(0)) :].strip()
                         lines.append(f"## {header}")
                         lines.append("")
                         if rest:
@@ -501,9 +502,7 @@ class GoogleDocumentAIParser:
 
         return "".join(text_segments)
 
-    def _table_to_markdown(
-        self, table: documentai.Document.Page.Table, full_text: str
-    ) -> str:
+    def _table_to_markdown(self, table: documentai.Document.Page.Table, full_text: str) -> str:
         """Convert Document AI table to markdown table.
 
         Args:
@@ -520,7 +519,11 @@ class GoogleDocumentAIParser:
 
         for cell in table.body_rows:
             for table_cell in cell.cells:
-                row_index = table_cell.layout.text_anchor.text_segments[0].start_index if table_cell.layout.text_anchor.text_segments else 0
+                row_index = (
+                    table_cell.layout.text_anchor.text_segments[0].start_index
+                    if table_cell.layout.text_anchor.text_segments
+                    else 0
+                )
 
                 # New row detected
                 if current_row and row_index != current_row_index:

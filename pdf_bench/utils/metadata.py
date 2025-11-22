@@ -112,7 +112,8 @@ class DocumentMetadata:
             or self.source_url.startswith("generated://")
         ):
             errors.append(
-                f"source_url must start with http://, https://, or generated://, got '{self.source_url}'"
+                f"source_url must start with http://, https://, or generated://, "
+                f"got '{self.source_url}'"
             )
 
         # Validate numeric fields

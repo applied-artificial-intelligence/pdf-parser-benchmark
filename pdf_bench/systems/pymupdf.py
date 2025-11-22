@@ -28,6 +28,7 @@ from typing import cast
 
 try:
     import fitz  # type: ignore[import-untyped]  # PyMuPDF
+
     PYMUPDF_AVAILABLE = True
 except ImportError:
     PYMUPDF_AVAILABLE = False
@@ -67,8 +68,7 @@ class PyMuPDFParser(BaseParser):
         """
         if not PYMUPDF_AVAILABLE:
             raise ImportError(
-                "PyMuPDF is required for PyMuPDFParser. "
-                "Install with: pip install pymupdf"
+                "PyMuPDF is required for PyMuPDFParser. Install with: pip install pymupdf"
             )
 
     @property

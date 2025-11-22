@@ -7,13 +7,11 @@ This module creates professional job application documents including:
 - References
 """
 
-from pathlib import Path
 from datetime import datetime
-from typing import List, Optional
 
 from docx import Document
-from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.shared import Inches, Pt, RGBColor
 
 from builders.hr.data_generators import CandidateInfo, WorkExperience
 
@@ -45,7 +43,7 @@ class JobApplicationTemplate:
         position_title: str,
         company_name: str,
         cover_letter: str,
-        work_experience: List[WorkExperience],
+        work_experience: list[WorkExperience],
         application_date: datetime = None,
     ) -> Document:
         """Generate job application document.
@@ -135,7 +133,7 @@ class JobApplicationTemplate:
         self._add_section_header("COVER LETTER")
 
         # Split cover letter into paragraphs (if not already split)
-        paragraphs = cover_letter.split('\n\n') if '\n\n' in cover_letter else [cover_letter]
+        paragraphs = cover_letter.split("\n\n") if "\n\n" in cover_letter else [cover_letter]
 
         for para_text in paragraphs:
             para = self.doc.add_paragraph(para_text)
@@ -167,19 +165,19 @@ class JobApplicationTemplate:
 
             ref_table.rows[0].cells[0].text = "Name:"
             ref_table.rows[0].cells[0].paragraphs[0].runs[0].font.bold = True
-            ref_table.rows[0].cells[1].text = ref['name']
+            ref_table.rows[0].cells[1].text = ref["name"]
 
             ref_table.rows[1].cells[0].text = "Title:"
             ref_table.rows[1].cells[0].paragraphs[0].runs[0].font.bold = True
-            ref_table.rows[1].cells[1].text = ref['title']
+            ref_table.rows[1].cells[1].text = ref["title"]
 
             ref_table.rows[2].cells[0].text = "Company:"
             ref_table.rows[2].cells[0].paragraphs[0].runs[0].font.bold = True
-            ref_table.rows[2].cells[1].text = ref['company']
+            ref_table.rows[2].cells[1].text = ref["company"]
 
             ref_table.rows[3].cells[0].text = "Phone:"
             ref_table.rows[3].cells[0].paragraphs[0].runs[0].font.bold = True
-            ref_table.rows[3].cells[1].text = ref['phone']
+            ref_table.rows[3].cells[1].text = ref["phone"]
 
         # Disclaimer
         self.doc.add_paragraph()
@@ -199,7 +197,9 @@ class JobApplicationTemplate:
         sig_line_para.add_run("_" * 50)
         sig_line_para.paragraph_format.space_after = Pt(4)
 
-        sig_label_para = self.doc.add_paragraph("Signature                                                        Date")
+        sig_label_para = self.doc.add_paragraph(
+            "Signature                                                        Date"
+        )
         sig_label_para.paragraph_format.left_indent = Inches(0.5)
 
         return self.doc
@@ -215,7 +215,7 @@ class JobApplicationTemplate:
         header_para.paragraph_format.space_before = Pt(16)
         header_para.paragraph_format.space_after = Pt(8)
 
-    def _generate_references(self, work_experience: List[WorkExperience]) -> List[dict]:
+    def _generate_references(self, work_experience: list[WorkExperience]) -> list[dict]:
         """Generate professional references from work experience.
 
         Args:
@@ -224,8 +224,9 @@ class JobApplicationTemplate:
         Returns:
             List of 3 reference dictionaries
         """
-        from faker import Faker
         import random
+
+        from faker import Faker
 
         fake = Faker()
         references = []
@@ -257,10 +258,10 @@ class JobApplicationTemplate:
             phone = fake.phone_number()
 
             ref = {
-                'name': ref_name,
-                'title': manager_title,
-                'company': exp.company,
-                'phone': phone,
+                "name": ref_name,
+                "title": manager_title,
+                "company": exp.company,
+                "phone": phone,
             }
             references.append(ref)
 
@@ -271,12 +272,14 @@ class JobApplicationTemplate:
             company = fake.company()
             phone = fake.phone_number()
 
-            references.append({
-                'name': ref_name,
-                'title': manager_title,
-                'company': company,
-                'phone': phone,
-            })
+            references.append(
+                {
+                    "name": ref_name,
+                    "title": manager_title,
+                    "company": company,
+                    "phone": phone,
+                }
+            )
 
         return references[:3]
 

@@ -15,19 +15,20 @@ Supports 5 contract types:
 - Service Agreement
 """
 
-from docx import Document
-from docx.shared import Pt, Inches, RGBColor
-from docx.enum.text import WD_PARAGRAPH_ALIGNMENT, WD_LINE_SPACING
-from docx.enum.style import WD_STYLE_TYPE
-from typing import Dict, List, Optional
-import random
-from datetime import datetime
 
+from docx import Document
+from docx.enum.text import WD_PARAGRAPH_ALIGNMENT
+from docx.shared import Inches, Pt
+
+from .clause_library import ClauseLibrary, ClauseVariant, DefinedTermsTracker
 from .contract_config import (
-    SAAS_CONFIG, EMPLOYMENT_CONFIG, NDA_CONFIG,
-    CONSULTING_CONFIG, SERVICE_CONFIG, ContractConfig
+    CONSULTING_CONFIG,
+    EMPLOYMENT_CONFIG,
+    NDA_CONFIG,
+    SAAS_CONFIG,
+    SERVICE_CONFIG,
+    ContractConfig,
 )
-from .clause_library import ClauseLibrary, DefinedTermsTracker, ClauseVariant
 from .numbering import ContractNumbering
 
 
@@ -40,7 +41,7 @@ class BaseContractTemplate:
         self.clause_lib = ClauseLibrary()
         self.numbering = ContractNumbering()
         self.terms_tracker = DefinedTermsTracker()
-        self.variables: Dict[str, any] = {}
+        self.variables: dict[str, any] = {}
 
         # Set up document formatting
         self._setup_document_styles()
@@ -48,23 +49,23 @@ class BaseContractTemplate:
     def _setup_document_styles(self):
         """Configure document-wide styles."""
         # Set up default font
-        style = self.doc.styles['Normal']
+        style = self.doc.styles["Normal"]
         font = style.font
-        font.name = 'Times New Roman'
+        font.name = "Times New Roman"
         font.size = Pt(12)
 
         # Set up heading styles
         for i in range(1, 4):
-            heading_style = self.doc.styles[f'Heading {i}']
+            heading_style = self.doc.styles[f"Heading {i}"]
             heading_font = heading_style.font
-            heading_font.name = 'Times New Roman'
+            heading_font.name = "Times New Roman"
             heading_font.bold = True
             if i == 1:
                 heading_font.size = Pt(14)
             else:
                 heading_font.size = Pt(12)
 
-    def _add_title_page(self, title: str, parties: List[Dict[str, str]], effective_date: str):
+    def _add_title_page(self, title: str, parties: list[dict[str, str]], effective_date: str):
         """Add contract title page.
 
         Args:
@@ -99,9 +100,9 @@ class BaseContractTemplate:
         for i, party in enumerate(parties):
             party_para = self.doc.add_paragraph()
             party_para.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
-            party_para.add_run(f'{party["name"]}\n')
+            party_para.add_run(f"{party['name']}\n")
             if "address" in party:
-                party_para.add_run(f'{party["address"]}\n')
+                party_para.add_run(f"{party['address']}\n")
             party_type_run = party_para.add_run(f'("{party["type"]}")')
             party_type_run.italic = True
 
@@ -114,7 +115,7 @@ class BaseContractTemplate:
         # Page break
         self.doc.add_page_break()
 
-    def _add_recitals(self, recitals: List[str]):
+    def _add_recitals(self, recitals: list[str]):
         """Add WHEREAS recital clauses.
 
         Args:
@@ -136,7 +137,9 @@ class BaseContractTemplate:
         # NOW THEREFORE clause
         self.doc.add_paragraph()
         now_para = self.doc.add_paragraph()
-        now_para.add_run("NOW, THEREFORE, in consideration of the mutual covenants and agreements set forth herein and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:")
+        now_para.add_run(
+            "NOW, THEREFORE, in consideration of the mutual covenants and agreements set forth herein and for other good and valuable consideration, the receipt and sufficiency of which are hereby acknowledged, the parties agree as follows:"
+        )
         now_para.paragraph_format.left_indent = Inches(0.5)
 
         self.doc.add_paragraph()  # Spacing
@@ -186,7 +189,7 @@ class BaseContractTemplate:
         section_name: str,
         level: int = 3,
         variant: ClauseVariant = ClauseVariant.STANDARD,
-        contract_type: Optional[str] = None,
+        contract_type: str | None = None,
     ):
         """Add a clause from the library with variable substitution.
 
@@ -211,7 +214,7 @@ class BaseContractTemplate:
         # Add to document
         self._add_numbered_section(level, content=content)
 
-    def _add_signature_block(self, parties: List[Dict[str, str]]):
+    def _add_signature_block(self, parties: list[dict[str, str]]):
         """Add signature blocks for all parties.
 
         Args:
@@ -221,7 +224,9 @@ class BaseContractTemplate:
         self.doc.add_paragraph()
 
         sig_para = self.doc.add_paragraph()
-        sig_run = sig_para.add_run("IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date.")
+        sig_para.add_run(
+            "IN WITNESS WHEREOF, the parties have executed this Agreement as of the Effective Date."
+        )
         sig_para.paragraph_format.space_before = Pt(12)
 
         self.doc.add_paragraph()
@@ -252,7 +257,7 @@ class BaseContractTemplate:
             self.doc.add_paragraph()  # Spacing between parties
             self.doc.add_paragraph()
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate the contract document.
 
         Args:
@@ -270,7 +275,7 @@ class SaaSAgreementTemplate(BaseContractTemplate):
     def __init__(self):
         super().__init__(SAAS_CONFIG)
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate SaaS Agreement.
 
         Required variables:
@@ -289,15 +294,25 @@ class SaaSAgreementTemplate(BaseContractTemplate):
 
         # Title page
         parties = [
-            {"name": variables["provider"], "type": "Provider", "address": variables.get("provider_address", "")},
-            {"name": variables["customer"], "type": "Customer", "address": variables.get("customer_address", "")},
+            {
+                "name": variables["provider"],
+                "type": "Provider",
+                "address": variables.get("provider_address", ""),
+            },
+            {
+                "name": variables["customer"],
+                "type": "Customer",
+                "address": variables.get("customer_address", ""),
+            },
         ]
-        self._add_title_page("SOFTWARE AS A SERVICE AGREEMENT", parties, variables["effective_date"])
+        self._add_title_page(
+            "SOFTWARE AS A SERVICE AGREEMENT", parties, variables["effective_date"]
+        )
 
         # Recitals
         recitals = [
-            f'{variables["provider"]} offers a cloud-based software platform',
-            f'{variables["customer"]} desires to subscribe to and use the Services',
+            f"{variables['provider']} offers a cloud-based software platform",
+            f"{variables['customer']} desires to subscribe to and use the Services",
             "the parties wish to establish terms governing such use",
         ]
         self._add_recitals(recitals)
@@ -351,7 +366,7 @@ class EmploymentAgreementTemplate(BaseContractTemplate):
     def __init__(self):
         super().__init__(EMPLOYMENT_CONFIG)
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate Employment Agreement.
 
         Required variables:
@@ -371,27 +386,33 @@ class EmploymentAgreementTemplate(BaseContractTemplate):
         self._add_title_page("EMPLOYMENT AGREEMENT", parties, variables["effective_date"])
 
         recitals = [
-            f'{variables["company"]} desires to employ {variables["employee"]} in the specified position',
-            f'{variables["employee"]} wishes to accept such employment',
+            f"{variables['company']} desires to employ {variables['employee']} in the specified position",
+            f"{variables['employee']} wishes to accept such employment",
             "the parties desire to set forth the terms of the employment relationship",
         ]
         self._add_recitals(recitals)
 
         self._add_numbered_section(1, "Position and Duties")
-        self._add_clause_with_substitution("Position and Duties", level=3, contract_type="employment")
+        self._add_clause_with_substitution(
+            "Position and Duties", level=3, contract_type="employment"
+        )
 
         self._add_numbered_section(1, "Compensation")
         self._add_numbered_section(2, "Base Salary")
         self._add_clause_with_substitution("Base Salary", level=3, contract_type="employment")
 
         self._add_numbered_section(1, "At-Will Employment")
-        self._add_clause_with_substitution("At-Will Employment", level=3, contract_type="employment")
+        self._add_clause_with_substitution(
+            "At-Will Employment", level=3, contract_type="employment"
+        )
 
         self._add_numbered_section(1, "Confidentiality")
         self._add_clause_with_substitution("Confidentiality", level=3, contract_type="employment")
 
         self._add_numbered_section(1, "Intellectual Property Assignment")
-        self._add_clause_with_substitution("Intellectual Property Assignment", level=3, contract_type="employment")
+        self._add_clause_with_substitution(
+            "Intellectual Property Assignment", level=3, contract_type="employment"
+        )
 
         self._add_numbered_section(1, "General Provisions")
         self._add_numbered_section(2, "Governing Law")
@@ -410,7 +431,7 @@ class NDATemplate(BaseContractTemplate):
     def __init__(self):
         super().__init__(NDA_CONFIG)
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate NDA.
 
         Required variables:
@@ -437,8 +458,12 @@ class NDATemplate(BaseContractTemplate):
 
         self._add_numbered_section(1, "Definitions")
         self._add_numbered_section(2, "Confidential Information")
-        self._add_clause_with_substitution("Definition of Confidential Information", level=3, contract_type="nda")
-        self._add_clause_with_substitution("Exclusions from Confidential Information", level=3, contract_type="nda")
+        self._add_clause_with_substitution(
+            "Definition of Confidential Information", level=3, contract_type="nda"
+        )
+        self._add_clause_with_substitution(
+            "Exclusions from Confidential Information", level=3, contract_type="nda"
+        )
 
         self._add_numbered_section(1, "Obligations")
         self._add_clause_with_substitution("Non-Disclosure", level=3, contract_type="nda")
@@ -467,7 +492,7 @@ class ConsultingAgreementTemplate(BaseContractTemplate):
     def __init__(self):
         super().__init__(CONSULTING_CONFIG)
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate Consulting Agreement.
 
         Required variables:
@@ -486,8 +511,8 @@ class ConsultingAgreementTemplate(BaseContractTemplate):
         self._add_title_page("CONSULTING AGREEMENT", parties, variables["effective_date"])
 
         recitals = [
-            f'{variables["client"]} desires to engage {variables["consultant"]} to provide certain services',
-            f'{variables["consultant"]} has expertise and is willing to provide such services',
+            f"{variables['client']} desires to engage {variables['consultant']} to provide certain services",
+            f"{variables['consultant']} has expertise and is willing to provide such services",
             "the parties wish to establish terms governing the engagement",
         ]
         self._add_recitals(recitals)
@@ -501,10 +526,14 @@ class ConsultingAgreementTemplate(BaseContractTemplate):
         self._add_clause_with_substitution("Expenses", level=3, contract_type="consulting")
 
         self._add_numbered_section(1, "Independent Contractor Relationship")
-        self._add_clause_with_substitution("Independent Contractor Relationship", level=3, contract_type="consulting")
+        self._add_clause_with_substitution(
+            "Independent Contractor Relationship", level=3, contract_type="consulting"
+        )
 
         self._add_numbered_section(1, "Intellectual Property")
-        self._add_clause_with_substitution("Work Product Ownership", level=3, contract_type="consulting")
+        self._add_clause_with_substitution(
+            "Work Product Ownership", level=3, contract_type="consulting"
+        )
 
         self._add_numbered_section(1, "General Provisions")
         self._add_numbered_section(2, "Governing Law")
@@ -523,7 +552,7 @@ class ServiceAgreementTemplate(BaseContractTemplate):
     def __init__(self):
         super().__init__(SERVICE_CONFIG)
 
-    def generate(self, variables: Dict[str, any]) -> Document:
+    def generate(self, variables: dict[str, any]) -> Document:
         """Generate Service Agreement.
 
         Required variables:
@@ -542,8 +571,8 @@ class ServiceAgreementTemplate(BaseContractTemplate):
         self._add_title_page("SERVICE AGREEMENT", parties, variables["start_date"])
 
         recitals = [
-            f'{variables["customer"]} requires certain services to be provided',
-            f'{variables["service_provider"]} is in the business of providing such services',
+            f"{variables['customer']} requires certain services to be provided",
+            f"{variables['service_provider']} is in the business of providing such services",
             "the parties desire to enter into an agreement for the provision of services",
         ]
         self._add_recitals(recitals)

@@ -1,0 +1,39 @@
+# Quick Validation Benchmark
+#
+# Fast benchmark for development and CI/CD.
+# Tests a small subset with fast parsers.
+#
+# Documents: 10 (sampled)
+# Estimated time: 2-5 minutes
+
+name: "Quick Validation"
+description: |
+  Fast validation benchmark for development.
+  Tests core functionality with minimal documents.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora:
+    - synthetic
+  max_documents: 10
+
+parser_config:
+  parsers:
+    # Fast parsers only
+    - pymupdf
+    - pdfplumber
+    - docling
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output_config:
+  results_dir: ../results/quick
+  checkpoint_interval: 5
+
+execution_config:
+  workers: 4
+  timeout_per_document: 60

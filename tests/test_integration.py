@@ -70,9 +70,7 @@ class TestQuickBenchmarkWorkflow:
             results,
             results_path,
             config_file=str(config_path),
-            parser_versions={
-                parser.name: parser.version for parser in config.parser_instances
-            },
+            parser_versions={parser.name: parser.version for parser in config.parser_instances},
         )
 
         # Verify JSON file was created
@@ -114,9 +112,7 @@ class TestQuickBenchmarkWorkflow:
         assert loaded_results.failure_count == results.failure_count
 
         # Verify individual results match
-        for original, loaded in zip(
-            results.results, loaded_results.results, strict=True
-        ):
+        for original, loaded in zip(results.results, loaded_results.results, strict=True):
             assert loaded.document_id == original.document_id
             assert loaded.parser_name == original.parser_name
             assert loaded.success == original.success
@@ -138,9 +134,7 @@ class TestQuickBenchmarkWorkflow:
 
         # Step 5: Generate HTML report
         report_path = tmp_path / "quick_test_report.html"
-        generate_html_report(
-            loaded_results, report_path, config_file=str(config_path)
-        )
+        generate_html_report(loaded_results, report_path, config_file=str(config_path))
 
         # Verify HTML report was created
         assert report_path.exists()

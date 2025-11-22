@@ -179,11 +179,7 @@ def latex_exact_match_f1(
     # Calculate metrics
     precision = tp / len(predicted_exprs) if len(predicted_exprs) > 0 else 0.0
     recall = tp / len(ground_truth_exprs) if len(ground_truth_exprs) > 0 else 0.0
-    f1 = (
-        (2 * precision * recall) / (precision + recall)
-        if (precision + recall) > 0
-        else 0.0
-    )
+    f1 = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
 
     return LaTeXF1Scores(
         precision=precision,

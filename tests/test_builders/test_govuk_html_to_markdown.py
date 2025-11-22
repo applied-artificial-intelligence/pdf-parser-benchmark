@@ -1,6 +1,7 @@
 """Tests for GOV.UK HTML to Markdown converter."""
 
 import pytest
+from bs4 import BeautifulSoup
 
 from builders.govuk_html_to_markdown import (
     MarkdownConversionError,
@@ -16,7 +17,6 @@ from builders.govuk_html_to_markdown import (
     _table_to_html,
     html_to_markdown,
 )
-from bs4 import BeautifulSoup
 
 
 class TestNormalizeWhitespace:
@@ -480,7 +480,9 @@ class TestConvertParagraph:
 
     def test_converts_mixed_formatting(self):
         """Test conversion of mixed inline formatting."""
-        html = '<p>This has <strong>bold</strong>, <em>italic</em>, and <a href="/test">links</a>.</p>'
+        html = (
+            '<p>This has <strong>bold</strong>, <em>italic</em>, and <a href="/test">links</a>.</p>'
+        )
         soup = BeautifulSoup(html, "lxml")
         p = soup.find("p")
         result = _convert_paragraph(p)
