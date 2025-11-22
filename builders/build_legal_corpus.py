@@ -47,7 +47,7 @@ class LegalCorpusBuilder:
         """
         self.base_dir = base_dir
         self.test_mode = test_mode
-        self.generator = LegalDataGenerator(seed=42 if test_mode else None)
+        self.generator = LegalDataGenerator(seed=42 if test_mode else 0)
 
         # Contract distribution
         if test_mode:
@@ -75,7 +75,7 @@ class LegalCorpusBuilder:
 
         self._create_directories()
 
-    def _create_directories(self):
+    def _create_directories(self) -> None:
         """Create output directories."""
         for directory in [self.docx_dir, self.pdf_dir, self.ground_truth_dir, self.metadata_dir]:
             directory.mkdir(parents=True, exist_ok=True)
@@ -124,7 +124,7 @@ class LegalCorpusBuilder:
         """
         from docx import Document
 
-        doc = Document(doc_path)
+        doc = Document(str(doc_path))
         lines = []
 
         for para in doc.paragraphs:
@@ -134,13 +134,14 @@ class LegalCorpusBuilder:
                 continue
 
             # Check if this is a heading
-            if para.style.name.startswith("Heading"):
+            style_name = para.style.name if para.style else ""
+            if style_name.startswith("Heading"):
                 # Extract heading level
-                if para.style.name == "Heading 1":
+                if style_name == "Heading 1":
                     lines.append(f"# {text}")
-                elif para.style.name == "Heading 2":
+                elif style_name == "Heading 2":
                     lines.append(f"## {text}")
-                elif para.style.name == "Heading 3":
+                elif style_name == "Heading 3":
                     lines.append(f"### {text}")
                 else:
                     lines.append(text)
@@ -151,8 +152,8 @@ class LegalCorpusBuilder:
         return "\n".join(lines)
 
     def _generate_metadata(
-        self, contract_id: str, contract_type: str, variables: dict[str, any]
-    ) -> dict[str, any]:
+        self, contract_id: str, contract_type: str, variables: dict[str, object]
+    ) -> dict[str, object]:
         """Generate metadata for a contract.
 
         Args:
@@ -164,7 +165,7 @@ class LegalCorpusBuilder:
             Metadata dictionary
         """
         # Extract key information from variables
-        metadata = {
+        metadata: dict[str, object] = {
             "id": contract_id,
             "contract_type": contract_type,
             "generated_at": datetime.now().isoformat(),
@@ -180,7 +181,7 @@ class LegalCorpusBuilder:
                     "provider": variables["provider"],
                     "customer": variables["customer"],
                     "platform_name": variables.get("platform_name", ""),
-                    "annual_value": variables.get("monthly_fee", 0) * 12,
+                    "annual_value": str(int(str(variables.get("monthly_fee", 0) or 0)) * 12),
                     "jurisdiction": variables.get("jurisdiction", ""),
                 }
             )
@@ -270,6 +271,8 @@ class LegalCorpusBuilder:
             # Generate DOCX using template
             template = get_template(contract_type)
             doc = template.generate(variables)
+            if doc is None:
+                raise RuntimeError(f"Failed to generate document for {contract_id}")
 
             # Save DOCX
             docx_path = self.docx_dir / f"{contract_id}.docx"
@@ -352,7 +355,7 @@ class LegalCorpusBuilder:
         return stats
 
 
-def main():
+def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Build legal contract corpus")
     parser.add_argument(

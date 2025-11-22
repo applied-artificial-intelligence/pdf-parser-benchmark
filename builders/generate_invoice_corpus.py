@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 
 
 # Distribution matrix: 100 invoices across 5 regions
-DISTRIBUTION = {
+DISTRIBUTION: dict[str, dict[str, int | list[str]]] = {
     "US": {
         "count": 30,
         "industries": ["saas", "manufacturing", "legal", "it_consulting", "construction", "retail"],
@@ -64,7 +64,7 @@ DISTRIBUTION = {
 
 
 # Complexity levels
-COMPLEXITY_LEVELS = {
+COMPLEXITY_LEVELS: dict[str, dict[str, int | float]] = {
     "simple": {"min_items": 1, "max_items": 3, "weight": 0.3},
     "medium": {"min_items": 4, "max_items": 10, "weight": 0.5},
     "complex": {"min_items": 11, "max_items": 50, "weight": 0.2},
@@ -84,7 +84,7 @@ def extract_ground_truth_from_docx(docx_path: Path) -> str:
     Returns:
         Markdown-formatted ground truth text
     """
-    doc = Document(docx_path)
+    doc = Document(str(docx_path))
 
     # Extract text from all paragraphs
     paragraphs = []
@@ -201,9 +201,11 @@ def generate_invoice(
 
     # Generate line items based on complexity
     complexity_config = COMPLEXITY_LEVELS[complexity]
+    min_items = int(complexity_config["min_items"])
+    max_items = int(complexity_config["max_items"])
     line_items = generator.generate_line_items(
         industry_config,
-        count_range=(complexity_config["min_items"], complexity_config["max_items"]),
+        count_range=(min_items, max_items),
     )
 
     # Calculate tax
@@ -211,25 +213,26 @@ def generate_invoice(
     tax_calc = get_tax_calculator(region)
 
     # Get region-specific tax parameters
-    tax_params = {}
+    tax_params: dict[str, str] = {}
     if region == "US":
-        tax_params["state"] = DISTRIBUTION["US"]["states"][
-            invoice_id % len(DISTRIBUTION["US"]["states"])
-        ]
+        us_states = DISTRIBUTION["US"].get("states", [])
+        if isinstance(us_states, list) and us_states:
+            tax_params["state"] = str(us_states[invoice_id % len(us_states)])
     elif region == "EU":
-        tax_params["country"] = DISTRIBUTION["EU"]["countries"][
-            invoice_id % len(DISTRIBUTION["EU"]["countries"])
-        ]
+        eu_countries = DISTRIBUTION["EU"].get("countries", [])
+        if isinstance(eu_countries, list) and eu_countries:
+            tax_params["country"] = str(eu_countries[invoice_id % len(eu_countries)])
     elif region == "CA":
-        tax_params["province"] = DISTRIBUTION["CA"]["provinces"][
-            invoice_id % len(DISTRIBUTION["CA"]["provinces"])
-        ]
+        ca_provinces = DISTRIBUTION["CA"].get("provinces", [])
+        if isinstance(ca_provinces, list) and ca_provinces:
+            tax_params["province"] = str(ca_provinces[invoice_id % len(ca_provinces)])
     elif region == "APAC":
-        tax_params["country"] = DISTRIBUTION["APAC"]["countries"][
-            invoice_id % len(DISTRIBUTION["APAC"]["countries"])
-        ]
+        apac_countries = DISTRIBUTION["APAC"].get("countries", [])
+        if isinstance(apac_countries, list) and apac_countries:
+            tax_params["country"] = str(apac_countries[invoice_id % len(apac_countries)])
 
-    tax_result = tax_calc.calculate(subtotal, **tax_params)
+    from decimal import Decimal
+    tax_result = tax_calc.calculate(Decimal(str(subtotal)), **tax_params)
 
     # Generate PO number
     po_number = generator.generate_po_number()
@@ -331,16 +334,16 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
 
     # Generate invoices according to distribution
     invoice_id = 1
-    stats = {
-        "total": 0,
-        "by_region": {},
-        "by_industry": {},
-        "by_complexity": {},
-    }
+    stats_total = 0
+    stats_by_region: dict[str, int] = {}
+    stats_by_industry: dict[str, int] = {}
+    stats_by_complexity: dict[str, int] = {}
 
     for region, config in DISTRIBUTION.items():
-        region_count = config["count"]
-        industries = config["industries"]
+        count_val = config.get("count", 0)
+        region_count = count_val if isinstance(count_val, int) else 0
+        industries_val = config.get("industries", [])
+        industries = industries_val if isinstance(industries_val, list) else []
 
         logger.info(f"\n{'=' * 60}")
         logger.info(f"Region: {region} ({region_count} invoices)")
@@ -351,7 +354,7 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
 
         for i in range(region_count):
             # Select industry (round-robin)
-            industry_key = industries[i % len(industries)]
+            industry_key = str(industries[i % len(industries)])
 
             # Select complexity (weighted random)
             complexity_rand = (i * 17) % 100  # Pseudo-random but deterministic
@@ -378,10 +381,10 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
                 )
 
                 # Update stats
-                stats["total"] += 1
-                stats["by_region"][region] = stats["by_region"].get(region, 0) + 1
-                stats["by_industry"][industry_key] = stats["by_industry"].get(industry_key, 0) + 1
-                stats["by_complexity"][complexity] = stats["by_complexity"].get(complexity, 0) + 1
+                stats_total += 1
+                stats_by_region[region] = stats_by_region.get(region, 0) + 1
+                stats_by_industry[industry_key] = stats_by_industry.get(industry_key, 0) + 1
+                stats_by_complexity[complexity] = stats_by_complexity.get(complexity, 0) + 1
 
                 invoice_id += 1
 
@@ -396,9 +399,15 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
 
     # Write summary
     summary_path = output_base / "corpus_summary.json"
+    stats = {
+        "total": stats_total,
+        "by_region": stats_by_region,
+        "by_industry": stats_by_industry,
+        "by_complexity": stats_by_complexity,
+    }
     summary = {
         "generated_at": datetime.now().isoformat(),
-        "total_invoices": stats["total"],
+        "total_invoices": stats_total,
         "distribution": stats,
     }
 
@@ -408,14 +417,14 @@ def generate_corpus(output_base: Path, count: int = 100) -> None:
     logger.info(f"\n{'=' * 60}")
     logger.info("Corpus Generation Complete!")
     logger.info(f"{'=' * 60}")
-    logger.info(f"Total invoices: {stats['total']}")
-    logger.info(f"By region: {stats['by_region']}")
-    logger.info(f"By industry: {stats['by_industry']}")
-    logger.info(f"By complexity: {stats['by_complexity']}")
+    logger.info(f"Total invoices: {stats_total}")
+    logger.info(f"By region: {stats_by_region}")
+    logger.info(f"By industry: {stats_by_industry}")
+    logger.info(f"By complexity: {stats_by_complexity}")
     logger.info(f"Summary saved to: {summary_path}")
 
 
-def main():
+def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Generate realistic invoice corpus for PDF-Bench")
     parser.add_argument(

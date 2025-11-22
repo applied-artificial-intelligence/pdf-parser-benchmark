@@ -42,7 +42,7 @@ logger = logging.getLogger(__name__)
 
 
 # Distribution matrix: 100 documents (50 resumes + 50 job applications)
-DISTRIBUTION = {
+DISTRIBUTION: dict[str, dict[str, int | list[str]]] = {
     "technology": {
         "count": 20,  # 10 resumes + 10 job apps
         "levels": ["entry", "mid", "senior", "executive"],
@@ -79,7 +79,7 @@ def extract_ground_truth_from_docx(docx_path: Path) -> str:
     Returns:
         Markdown-formatted ground truth text
     """
-    doc = Document(docx_path)
+    doc = Document(str(docx_path))
 
     # Extract text from all paragraphs
     paragraphs = []
@@ -208,6 +208,7 @@ def generate_resume(
     )
 
     # Select template based on format
+    template: ChronologicalResumeTemplate | FunctionalResumeTemplate | HybridResumeTemplate
     if resume_format == "chronological":
         template = ChronologicalResumeTemplate()
     elif resume_format == "functional":
@@ -222,8 +223,10 @@ def generate_resume(
         work_experience=work_experience,
         education=education,
         skills=skills,
-        certifications=certifications if certifications else None,
+        certifications=certifications if certifications else [],
     )
+    if doc is None:
+        raise RuntimeError(f"Failed to create resume for {doc_id}")
 
     # Save DOCX
     docx_path = output_dirs["docx"] / f"{doc_id}.docx"
@@ -326,6 +329,8 @@ def generate_job_application(
         work_experience=work_experience,
         application_date=datetime.now(),
     )
+    if doc is None:
+        raise RuntimeError(f"Failed to create job application for {doc_id}")
 
     # Save DOCX
     docx_path = output_dirs["docx"] / f"{doc_id}.docx"
@@ -366,7 +371,7 @@ def generate_job_application(
     return metadata
 
 
-def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
+def generate_corpus(output_base: Path, count: int = 100, seed: int = 42) -> None:
     """Generate complete HR corpus.
 
     Args:
@@ -394,12 +399,15 @@ def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
     resume_metadata_list = []
 
     for industry_key, config in DISTRIBUTION.items():
-        docs_per_industry = config["count"] // 2  # Half for resumes
-        levels = config["levels"]
+        count_val = config["count"]
+        count = count_val if isinstance(count_val, int) else 0
+        levels_val = config["levels"]
+        levels = levels_val if isinstance(levels_val, list) else []
+        docs_per_industry = count // 2  # Half for resumes
 
         for i in range(docs_per_industry):
             # Cycle through experience levels
-            experience_level = levels[i % len(levels)]
+            experience_level = str(levels[i % len(levels)])
 
             # Cycle through resume formats
             resume_format = RESUME_FORMATS[i % len(RESUME_FORMATS)]
@@ -427,12 +435,15 @@ def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
     app_metadata_list = []
 
     for industry_key, config in DISTRIBUTION.items():
-        docs_per_industry = config["count"] // 2  # Half for job apps
-        levels = config["levels"]
+        count_val = config["count"]
+        count = count_val if isinstance(count_val, int) else 0
+        levels_val = config["levels"]
+        levels = levels_val if isinstance(levels_val, list) else []
+        docs_per_industry = count // 2  # Half for job apps
 
         for i in range(docs_per_industry):
             # Cycle through experience levels
-            experience_level = levels[i % len(levels)]
+            experience_level = str(levels[i % len(levels)])
 
             # Calculate corresponding resume ID for alignment
             # Each industry has 10 resumes and 10 apps, so app aligns with resume
@@ -510,7 +521,7 @@ def generate_corpus(output_base: Path, count: int = 100, seed: int = 42):
     logger.info("=" * 60)
 
 
-def main():
+def main() -> None:
     """Main entry point."""
     parser = argparse.ArgumentParser(description="Generate HR corpus for PDF-Bench")
     parser.add_argument(

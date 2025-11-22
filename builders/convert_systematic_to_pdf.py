@@ -95,20 +95,21 @@ def extract_ground_truth(docx_path: Path) -> str:
                 continue
 
             # Check if heading
-            if para.style.name.startswith("Heading"):
-                level = int(para.style.name.split()[-1])
+            style_name = para.style.name if para.style else ""
+            if style_name.startswith("Heading"):
+                level = int(style_name.split()[-1])
                 markdown_lines.append(f"{'#' * level} {text}")
             # Check if list
-            elif para.style.name.startswith("List"):
-                if "Bullet" in para.style.name:
+            elif style_name.startswith("List"):
+                if "Bullet" in style_name:
                     level = 0
-                    if "2" in para.style.name:
+                    if "2" in style_name:
                         level = 1
-                    elif "3" in para.style.name:
+                    elif "3" in style_name:
                         level = 2
                     indent = "  " * level
                     markdown_lines.append(f"{indent}- {text}")
-                elif "Number" in para.style.name:
+                elif "Number" in style_name:
                     markdown_lines.append(f"1. {text}")
             # Regular paragraph
             else:
@@ -349,7 +350,7 @@ DOCUMENT_INFO = {
 }
 
 
-def main():
+def main() -> None:
     """Convert all systematic corpus documents to PDF."""
     corpus_dir = Path("corpus/synthetic")
 
