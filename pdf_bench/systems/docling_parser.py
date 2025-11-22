@@ -255,7 +255,19 @@ class DoclingParser(BaseParser):
             # Store in cache
             cached_path = store_cached(key, output_path, cache_dir)
 
-            # Increment counter and run gc after each conversion
+            # Memory cleanup: call unload() on the result to release backend resources
+            # See: https://github.com/docling-project/docling/issues/2209
+            try:
+                if hasattr(result, "unload"):
+                    result.unload()
+                # Also try to unload the document backend if accessible
+                if hasattr(result, "document") and hasattr(result.document, "_backend"):
+                    backend = result.document._backend
+                    if hasattr(backend, "unload"):
+                        backend.unload()
+            except Exception:
+                pass  # Best effort cleanup
+
             self._conversion_count += 1
             gc.collect()
 
