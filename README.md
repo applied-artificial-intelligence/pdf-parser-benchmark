@@ -1,6 +1,6 @@
 # PDF-Bench: Comprehensive PDF Parser Benchmark
 
-**2,730 Benchmark Runs | 10 Open-Source Parsers | 273 Business Documents | 4 Domains**
+**3,530 Benchmark Runs | 10 Open-Source Parsers | 353 Documents | 7 Domains**
 
 ---
 
@@ -28,7 +28,7 @@ Parsers achieve **74% text accuracy** but only **35% structure preservation**—
 
 ---
 
-## Overall Rankings (273 Documents)
+## Overall Rankings (353 Documents)
 
 | Rank | Parser | Edit Similarity | chrF++ | Reliability | Best For |
 |------|--------|-----------------|--------|-------------|----------|
@@ -108,16 +108,20 @@ python scripts/generate_visualizations.py
 
 ---
 
-## Test Corpus (273 Documents)
+## Test Corpus (353 Documents)
 
 | Domain | Documents | Characteristics |
 |--------|-----------|-----------------|
 | Legal (Synthetic) | 108 | Contracts, NDAs, licensing |
+| CUAD (Real Contracts) | 75 | Actual legal agreements |
 | Invoices | 100 | Complex tables, varied formats |
 | HR/Resumes | 34 | Multiple layouts and styles |
+| Academic Papers | 5 | arXiv papers with LaTeX |
 | Synthetic | 31 | Tables, lists, columns |
 
-All documents have manually verified ground truth from source HTML/DOCX conversions.
+All documents have manually verified ground truth from source HTML/DOCX/LaTeX conversions.
+
+**Full corpus available**: 798 documents including 445 OmniDocBench academic papers (English subset)
 
 ---
 
@@ -206,4 +210,4 @@ MIT License. Individual parsers have their own licenses.
 
 ---
 
-**Last Updated**: 2025-11-21 | **Version**: 2.1 | **Benchmark Runs**: 2,730
+**Last Updated**: 2025-11-25 | **Version**: 2.2 | **Benchmark Runs**: 3,530
