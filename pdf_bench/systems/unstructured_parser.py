@@ -166,7 +166,9 @@ class UnstructuredParser(BaseParser):
             raise ValueError(f"Path is not a file: {pdf_path}")
 
         # Generate cache key (include strategy in version for cache invalidation)
-        cache_version = f"{self.version}-{self._strategy}"
+        # v2: Added pdfminer fallback for fast strategy
+        # v3: Fixed pikepdf dependency - fast strategy now works natively
+        cache_version = f"{self.version}-{self._strategy}-v3"
         key = cache_key(pdf_path, self.name, cache_version)
 
         # Check cache
@@ -218,10 +220,48 @@ class UnstructuredParser(BaseParser):
             infer_table_structure=self._infer_table_structure,
         )
 
+        # If fast strategy returns empty, fall back to direct pdfminer extraction
+        # This handles PDFs where unstructured's fast strategy fails
+        if not elements and self._strategy == "fast":
+            return self._fallback_pdfminer_extraction(pdf_path)
+
         # Convert elements to markdown
         markdown_content = self._elements_to_markdown(elements)
 
         return markdown_content
+
+    def _fallback_pdfminer_extraction(self, pdf_path: Path) -> str:
+        """Fall back to direct pdfminer extraction when partition_pdf fails.
+
+        This is a workaround for PDFs where unstructured's fast strategy
+        returns empty results despite having embedded text.
+
+        Args:
+            pdf_path: Path to the PDF file.
+
+        Returns:
+            str: Plain text content (not structured markdown).
+        """
+        try:
+            from pdfminer.high_level import extract_text
+
+            text = extract_text(str(pdf_path))
+            if text:
+                # Basic cleanup - normalize whitespace
+                lines = text.split("\n")
+                cleaned_lines = []
+                for line in lines:
+                    line = line.strip()
+                    if line:
+                        cleaned_lines.append(line)
+                return "\n\n".join(cleaned_lines) + "\n"
+            return ""
+        except ImportError:
+            # pdfminer not available, return empty
+            return ""
+        except Exception:
+            # Any other error, return empty
+            return ""
 
     def _elements_to_markdown(self, elements: list[Any]) -> str:
         """Convert Unstructured elements to Markdown format.

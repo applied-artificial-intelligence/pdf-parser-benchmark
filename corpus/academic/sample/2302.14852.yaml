@@ -1,0 +1,17 @@
+doc_id: arxiv-2302.14852
+source_url: https://arxiv.org/abs/2302.14852
+corpus: academic
+domain: arxiv
+title: "Toolformer: Language Models Can Teach Themselves to Use Tools"
+authors:
+  - Meta AI
+publication_date: '2023-02-09'
+features:
+  - equations
+  - two_column
+  - citations
+license: arXiv
+notes: Toolformer paper - tool use in LLMs
+file_paths:
+  pdf: corpus/academic/sample/pdfs/2302.14852.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2302.14852.md

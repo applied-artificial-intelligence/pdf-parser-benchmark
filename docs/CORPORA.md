@@ -1,162 +1,155 @@
 # PDF-Bench Test Corpora
 
-**Total Documents**: 275+ with perfect ground truth
-**Categories**: Synthetic, Business (Invoices, Legal, HR), Academic
-**Ground Truth Method**: DOCX → PDF with programmatic structure extraction
+Comprehensive collection of PDF documents for benchmarking parser performance across diverse document types.
+
+**Total Documents**: 800+ across 6 corpus categories
+**Ground Truth Methods**: DOCX-to-PDF (synthetic/business), Text extraction (external)
+**Benchmark Status**: 560+ documents fully benchmarked
 
 ---
 
 ## Overview
 
-PDF-Bench uses a multi-corpus approach to test parser performance across different document types and use cases.
+PDF-Bench uses a multi-corpus approach combining synthetic documents (perfect ground truth) with real-world documents from established datasets.
 
 ### Corpus Summary
 
-| Corpus | Documents | Status | Ground Truth Method | Use Case |
-|--------|-----------|--------|---------------------|----------|
-| **Synthetic** | 33 | ✅ Complete | DOCX programmatic | Systematic feature testing |
-| **Invoices** | 100 | ✅ Complete | Template generation | Business document extraction |
-| **Legal** | 108 | ✅ Complete | Template generation | Contract parsing |
-| **HR** | 34 | ✅ Complete | Template generation | Resume extraction |
-| **Academic** | 5 | ✅ Sample | LaTeX source | Equation extraction |
+| Corpus | Documents | Status | Ground Truth | Benchmarked |
+|--------|-----------|--------|--------------|-------------|
+| **Synthetic** | 31 | Complete | Markdown source | Yes (all parsers) |
+| **CUAD Contracts** | 75 | Complete | PDF text layer | Yes (13 parsers) |
+| **Invoices** | 100 | Complete | Markdown source | In progress |
+| **Legal Templates** | 108 | Complete | Markdown source | In progress |
+| **HR/Resumes** | 34 | Complete | Markdown source | Yes (11 parsers) |
+| **OmniDocBench** | 252 (English) | Complete | Text extraction | Yes (4 OCR parsers) |
 
-**Total**: 280 documents across 5 corpora
+**Total**: 800+ documents across 6 corpora
 
 ---
 
-## 1. Synthetic Corpus (33 Documents)
+## 1. Synthetic Corpus (31 Documents)
 
-**Purpose**: Systematic testing of parser capabilities across document features
+**Purpose**: Systematic, controlled testing of specific parser capabilities
 
-### Statistics
-- **Documents**: 33 PDFs with perfect ground truth
-- **Size**: ~900KB total
-- **Generation**: DOCX (python-docx) → PDF (LibreOffice headless)
-- **Success Rate**: 100% (all documents generated successfully)
+### Design Philosophy
+
+The synthetic corpus uses **DOCX-to-PDF conversion** to achieve perfect ground truth:
+1. Create documents programmatically with python-docx
+2. Extract structure directly from DOCX internals
+3. Convert DOCX to PDF with LibreOffice headless
+4. Result: Ground truth matches semantic structure exactly
 
 ### Document Categories
 
-#### Basic Text (7 documents)
-Simple documents testing fundamental extraction:
-- 01: Basic text and headings
-- 02: Lists (bullets, numbered)
-- 03: Basic tables
-- 05: Mixed content
-- 06: DOCX-generated simple report
-- 07: DOCX table-heavy document
-- 08: DOCX multi-column layout
+| Category | Documents | Features Tested |
+|----------|-----------|-----------------|
+| Basic Text | 7 | Paragraphs, headings, basic lists |
+| Tables | 6 | Simple grids, merged cells, multi-level headers |
+| Lists | 6 | Bullets, numbered, nested (2-3 levels) |
+| Multi-Column | 6 | Two/three columns, mixed layouts, newsletter |
+| Mixed Content | 6 | Reports, meeting minutes, annual reports |
 
-#### Tables (6 documents: 09-14)
-Progressive table complexity:
-- 09: Simple 3x4 grid
-- 10: Merged columns (colspan)
-- 11: Wide table (7 columns)
-- 12: Multiple tables per document
-- 13: Complex multi-level headers
-- 14: Financial statement with formatting
+### Key Findings by Category
 
-**Parser Performance**:
+**Tables (09-14)**:
 - Best: PyPDFium2 (78.57%), PyPDF, Kreuzberg
 - Worst: PDFMiner (54.55%), Docling (53.01%)
-- **Challenge**: Merged cells and complex headers
+- Challenge: Merged cells and complex headers
 
-#### Lists (6 documents: 15-20)
-List detection and nesting:
-- 15: Simple bullets
-- 16: Numbered lists
-- 17: Two-level nesting
-- 18: Three-level nesting
-- 19: Mixed numbered/bullets
-- 20: Lists with paragraphs
-
-**Parser Performance**:
-- Best: PdfPlumber (97.71%), Unstructured (97.98%)
-- All parsers perform well (>90%)
-- **Challenge**: Nesting levels
-
-#### Multi-Column (6 documents: 21-26)
-Reading order challenges:
-- 21: Two-column text
-- 22: Three-column layout
-- 23: Mixed full-width and columns
-- 24: Newsletter style
-- 25: Academic paper format
-- 26: Marketing brochure
-
-**Parser Performance**:
-- Best: PyMuPDF (89-97%), Kreuzberg (88-93%), Marker (88-92%)
+**Multi-Column (21-26)**:
+- Best: PyMuPDF (89-97%), Kreuzberg (88-93%)
 - Worst: PdfPlumber (44-67%), Unstructured (42-65%)
-- **Challenge**: Reading order (down-then-across vs across-then-down)
+- Challenge: Reading order (down-then-across vs across-then-down)
 
-#### Mixed Content (6 documents: 27-32)
-Real-world complexity:
-- 27: Business report
-- 28: Technical documentation
-- 29: Policy document
-- 30: Meeting minutes
-- 31: Research summary
-- 32: Comprehensive annual report
+**Lists (15-20)**:
+- All parsers perform well (>90%)
+- Best: PdfPlumber (97.71%), Unstructured (97.98%)
 
-**Parser Performance**:
-- Best: PyPDFium2 (76-88%), Kreuzberg (76-88%), PyMuPDF (73-87%)
-- **Challenge**: Combining tables, lists, multi-column, and text
+### Files
 
-### Ground Truth Quality
-**Perfect** - Extracted directly from DOCX structure using python-docx:
-- Paragraphs → Markdown text
-- Tables → Markdown tables
-- Lists → Markdown lists
-- Headings → Markdown headings
-
-**Files**:
-- PDFs: `corpus/synthetic/*.pdf`
-- Ground truth: `corpus/synthetic/*.md`
-- Metadata: `corpus/synthetic/*.yaml`
-- Summary: `corpus/synthetic/CORPUS_SUMMARY.md`
+- PDFs: `corpus/synthetic/pdfs/*.pdf`
+- Ground truth: `corpus/synthetic/ground_truth/*.md`
+- Metadata: `corpus/synthetic/metadata/*.yaml`
 
 ---
 
-## 2. Business Invoices Corpus (100 Documents)
+## 2. CUAD Legal Contracts (75 Documents)
 
-**Purpose**: Test extraction of structured business documents with tables and key-value pairs
+**Purpose**: Real-world legal document parsing from SEC filings
 
-### Statistics
-- **Documents**: 100 invoices
-- **Size**: ~8MB total
-- **Generation Time**: ~45 seconds (automated)
-- **Industries**: Retail, consulting, manufacturing, services, etc.
+### Source
 
-### Document Variants
-- Simple invoices (single product)
-- Multi-line invoices (10+ products)
-- Service invoices (hourly billing)
-- Complex invoices (discounts, taxes, shipping)
-- International invoices (multiple currencies)
+**CUAD (Contract Understanding Atticus Dataset)**:
+- Published by The Atticus Project
+- 510 contracts from SEC EDGAR filings
+- We use a 75-document subset for manageable benchmark runtime
 
-### Key Features Tested
-- **Tables**: Product line items
-- **Key-value extraction**: Invoice #, date, total, tax
-- **Formatting**: Currency, percentages
-- **Layout**: Headers, footers, logos
+### Document Characteristics
 
-### Generation Method
-1. **Template**: Jinja2 templates with python-docx
-2. **Data**: Realistic generated data (Faker library)
-3. **Variants**: Randomized complexity
-4. **Conversion**: LibreOffice headless DOCX→PDF
+| Characteristic | Value |
+|----------------|-------|
+| Average pages | 15-50 |
+| Format | Dense legal text, numbered clauses |
+| Tables | Minimal |
+| Multi-column | Single column only |
+| Complexity | High (legal terminology, cross-references) |
 
 ### Ground Truth
-Extracted from DOCX structure:
-- Invoice header (number, date, due date)
-- Vendor/customer information
-- Line items (description, quantity, price, total)
-- Totals (subtotal, tax, shipping, grand total)
 
-### Benchmark Results
-- Status: Benchmarking in progress
-- Expected: Table parsers (PdfPlumber, PyPDFium2) to excel
+Uses **PDF text layer extraction** (not OCR):
+- PyMuPDF extracts embedded text
+- Normalized and cleaned for comparison
+- Quality depends on original PDF encoding
 
-**Files**:
+### Use Cases
+
+- Testing dense text extraction
+- Evaluating numbered section handling
+- Legal document parsing accuracy
+
+### Files
+
+- PDFs: `corpus/business/cuad/pdfs/*.pdf`
+- Ground truth: `corpus/business/cuad/ground_truth/*.md`
+- Metadata: `corpus/business/cuad/metadata/*.yaml`
+
+---
+
+## 3. Business Invoices (100 Documents)
+
+**Purpose**: Table extraction and structured data parsing
+
+### Generation Method
+
+Uses DOCX templates with Jinja2 and python-docx:
+1. Template-based invoice generation
+2. Randomized vendor/customer data (Faker library)
+3. Variable line item counts (1-15 items)
+4. LibreOffice DOCX-to-PDF conversion
+
+### Document Variants
+
+| Variant | Count | Features |
+|---------|-------|----------|
+| Simple | 30 | 1-3 line items, basic layout |
+| Standard | 40 | 5-8 line items, tax calculations |
+| Complex | 30 | 10+ items, discounts, shipping |
+
+### Key Features Tested
+
+- **Tables**: Line item grids with headers
+- **Key-value pairs**: Invoice number, dates, totals
+- **Numerical accuracy**: Currency, percentages, calculations
+- **Layout**: Headers, footers, company logos
+
+### Expected Performance
+
+- Table-focused parsers (PdfPlumber, PyPDFium2) expected to excel
+- Structure-aware parsers (Docling, Marker) for layout preservation
+- TEDS metric particularly relevant
+
+### Files
+
 - PDFs: `corpus/business/invoices/pdfs/*.pdf`
 - Ground truth: `corpus/business/invoices/ground_truth/*.md`
 - Metadata: `corpus/business/invoices/metadata/*.yaml`
@@ -164,48 +157,36 @@ Extracted from DOCX structure:
 
 ---
 
-## 3. Business Legal Corpus (108 Documents)
+## 4. Legal Templates (108 Documents)
 
-**Purpose**: Test extraction of legal documents with complex structure and numbering
-
-### Statistics
-- **Documents**: 108 legal documents
-- **Size**: ~15MB total
-- **Generation Time**: ~60 seconds (automated)
-- **Types**: Contracts, agreements, terms of service
+**Purpose**: Hierarchical structure and formal document formatting
 
 ### Document Types
-- Employment agreements (40 documents)
-- Non-disclosure agreements (25 documents)
-- Service contracts (20 documents)
-- Terms of service (15 documents)
-- Other legal documents (8 documents)
+
+| Type | Count | Features |
+|------|-------|----------|
+| Employment Agreements | 40 | Standard contract structure |
+| Non-Disclosure Agreements | 25 | Concise, defined terms |
+| Service Contracts | 20 | Scope of work, deliverables |
+| Terms of Service | 15 | Long-form, numbered sections |
+| Other Legal | 8 | Mixed legal formats |
 
 ### Key Features Tested
-- **Hierarchical numbering**: 1.1, 1.1.1, 1.1.1.1
-- **Defined terms**: Capitalized defined terms
-- **Cross-references**: Section references
-- **Complex clauses**: Multi-paragraph clauses
-- **Legal formatting**: All caps headers, indentation
 
-### Generation Method
-1. **Templates**: Legal document templates with realistic clauses
-2. **Variations**: Randomized parties, dates, terms
-3. **Complexity**: 5-50 sections per document
-4. **Conversion**: LibreOffice DOCX→PDF
+- **Hierarchical numbering**: 1.1, 1.1.1, 1.1.1.1 patterns
+- **Defined terms**: Capitalized term conventions
+- **Cross-references**: "See Section 4.2" patterns
+- **Complex clauses**: Multi-paragraph subsections
+- **Legal formatting**: ALL CAPS headers, indentation
 
-### Ground Truth
-Extracted from DOCX structure:
-- Section numbering and hierarchy
-- Clause text with formatting
-- Defined terms
-- Signature blocks
+### Expected Performance
 
-### Benchmark Results
-- Status: Benchmarking in progress
-- Expected: Structure-aware parsers to excel on numbering
+- Structure-aware parsers should preserve numbering
+- Tree similarity metric particularly relevant
+- Element F1 for heading/section detection
 
-**Files**:
+### Files
+
 - PDFs: `corpus/business/legal/pdfs/*.pdf`
 - Ground truth: `corpus/business/legal/ground_truth/*.md`
 - Metadata: `corpus/business/legal/metadata/*.yaml`
@@ -213,58 +194,38 @@ Extracted from DOCX structure:
 
 ---
 
-## 4. Business HR Corpus (34 Documents)
+## 5. HR Documents/Resumes (34 Documents)
 
-**Purpose**: Test extraction of resumes and job applications
+**Purpose**: Section extraction and varied formatting handling
 
-### Statistics
-- **Documents**: 34 resumes
-- **Size**: ~3MB total
-- **Generation Time**: ~20 seconds (automated)
-- **Formats**: Multiple layout styles
+### Resume Formats
 
-### Resume Variants
-- Traditional format (reverse chronological)
-- Functional format (skills-focused)
-- Combination format
-- Academic CV style
-- Creative/design-focused
+| Format | Count | Layout |
+|--------|-------|--------|
+| Chronological | 15 | Traditional reverse-chronological |
+| Functional | 10 | Skills-focused organization |
+| Combination | 5 | Mixed format |
+| Academic CV | 4 | Extended format with publications |
 
 ### Industries Represented
-- Technology
-- Finance
-- Healthcare
-- Education
-- Manufacturing
-- Retail
-- Consulting
+
+Technology, Finance, Healthcare, Education, Manufacturing, Retail, Consulting
 
 ### Key Features Tested
-- **Sections**: Contact, summary, experience, education, skills
-- **Lists**: Bullet points (responsibilities, achievements)
-- **Tables**: Skills matrix
-- **Formatting**: Bold, italics, different font sizes
-- **Layout**: Single column, two-column
 
-### Generation Method
-1. **Templates**: Resume templates with realistic content
-2. **Data**: Generated profiles (names, companies, dates)
-3. **Variations**: Different layouts and styles
-4. **Conversion**: LibreOffice DOCX→PDF
+- **Section detection**: Contact, Summary, Experience, Education, Skills
+- **Lists**: Bullet points for responsibilities and achievements
+- **Varied fonts**: Bold, italic, different sizes
+- **Two-column layouts**: Some modern resume formats
 
-### Ground Truth
-Extracted from DOCX structure:
-- Section headers
-- Work experience (company, title, dates, responsibilities)
-- Education (institution, degree, dates)
-- Skills lists
-- Contact information
+### Expected Performance
 
-### Benchmark Results
-- Status: Benchmarking in progress
-- Expected: Layout-aware parsers to handle format variations
+- Layout-aware parsers should handle format variations
+- Element F1 for section detection
+- Tree similarity for organizational structure
 
-**Files**:
+### Files
+
 - PDFs: `corpus/business/hr/pdfs/*.pdf`
 - Ground truth: `corpus/business/hr/ground_truth/*.md`
 - Metadata: `corpus/business/hr/metadata/*.yaml`
@@ -272,213 +233,311 @@ Extracted from DOCX structure:
 
 ---
 
-## 5. Academic Corpus (5 Sample Papers)
+## 6. OmniDocBench (252 English Documents)
 
-**Purpose**: Test equation extraction and academic paper formatting
+**Purpose**: Diverse real-world documents including scanned/image-based PDFs
 
-### Statistics
-- **Documents**: 5 arXiv papers
-- **Source**: LaTeX source from arXiv
-- **Format**: Two-column academic papers
-- **Equations**: Math-heavy content
+### Source
 
-### Papers Included
-1. **2303.18223**: Navier-Stokes analysis (high math complexity)
-2. **2303.08774**: GPT-4 technical report
-3. **2302.13971**: LLaMA paper
-4. **2303.17564**: BloombergGPT
-5. **2303.18223**: LLM survey
+**OmniDocBench** (CVPR 2025):
+- Comprehensive document parsing benchmark
+- 1,355 total pages across 9 document types
+- We use the 252-document English subset
 
-### Key Features Tested
-- **Equations**: LaTeX math rendering
-- **Two-column layout**: Academic format
-- **Citations**: References and bibliography
-- **Figures**: Captions and placement
-- **Tables**: Academic data tables
+### Document Types
 
-### Ground Truth Source
-**LaTeX source** (arxiv.org provides original .tex files):
-- Perfect equation ground truth
-- Semantic structure preserved
-- Can extract specific elements
+| Type | Included | Notes |
+|------|----------|-------|
+| Academic papers | Yes | Two-column, equations |
+| Financial reports | Yes | Tables, charts |
+| Textbooks | Yes | Mixed content |
+| Books | Yes | Various layouts |
+| Research reports | Yes | Technical documents |
+| Newspapers | Limited | Complex multi-column |
+| Slides | Limited | Visual-heavy |
+| Handwritten | Excluded | OCR challenge (Chinese) |
+| Exam papers | Limited | Mixed content |
 
-**Alternative**: ar5iv HTML5 conversion
-- Human-readable HTML
-- MathML for equations
-- Can serve as additional validation
+### Ground Truth
 
-### Benchmark Results
-- Status: Marker+Ollama testing in progress
-- Expected: Only Marker variants handle equations well
-- Alternative parsers: Text-only extraction
+**Text extraction** from OmniDocBench JSON annotations:
+- Original format includes polygon coordinates
+- We extract text content as ground truth
+- Some information loss vs. full OmniDocBench evaluation
 
-### Use Cases
-- Equation extraction quality testing
-- Academic paper parsing
-- Multi-column layout testing
-- Math-heavy document benchmarking
+### OCR vs. Text-Based Parsing
 
-**Files**:
-- PDFs: `corpus/academic/sample/*.pdf`
-- LaTeX source: `corpus/academic/sample/*.tar.gz`
-- Builder: `builders/download_arxiv_corpus.py`
+OmniDocBench documents are primarily **image-based** (scanned or screenshot):
+- Standard text extraction parsers return empty/minimal output
+- OCR-capable parsers (Marker, Docling-OCR, Kreuzberg-OCR) required
+- Benchmark results reflect OCR quality, not just parsing
+
+### Benchmark Results (OCR Parsers)
+
+| Parser | Edit Similarity | Notes |
+|--------|-----------------|-------|
+| Marker | ~77% | Best overall |
+| Docling (OCR) | ~69% | Good structure preservation |
+| Kreuzberg (OCR) | ~51% | Fast but less accurate |
+| Unstructured (OCR) | ~45% | Basic OCR |
+
+### Files
+
+- PDFs: `corpus/academic/omnidocbench/pdfs/*.pdf`
+- Ground truth: `corpus/academic/omnidocbench/ground_truth/*.md`
+- Metadata: `corpus/academic/omnidocbench/metadata/*.yaml`
+- Builder: `builders/convert_omnidocbench.py`
 
 ---
 
-## Corpus Generation Infrastructure
+## Ground Truth Methodology
 
-### DOCX→PDF Pipeline
+### DOCX-to-PDF Pipeline (Synthetic + Business)
 
-**Tools**:
-- `python-docx`: Programmatic DOCX creation
-- `LibreOffice`: Headless PDF conversion
-- `Jinja2`: Template engine for variations
+The DOCX-to-PDF approach provides **perfect ground truth** because:
 
-**Benefits**:
-- 100% reproducible
-- Perfect ground truth (source of truth is code)
-- Scalable (can generate 1000s of documents)
-- Controlled complexity
+1. **Source of truth is programmatic**: We create the document structure in code
+2. **No parsing required**: Extract directly from DOCX XML internals
+3. **Deterministic conversion**: LibreOffice produces consistent PDFs
+4. **Full control**: Can test any feature combination
 
-**Process**:
 ```python
-# 1. Create DOCX with python-docx
-doc = Document()
-doc.add_heading('Title', 0)
-doc.add_paragraph('Content')
-table = doc.add_table(rows=3, cols=3)
-# ... add content ...
-doc.save('document.docx')
+# Example: Ground truth extraction
+from docx import Document
 
-# 2. Extract ground truth from DOCX structure
-markdown = extract_markdown_from_docx(doc)
-Path('document.md').write_text(markdown)
-
-# 3. Convert DOCX → PDF with LibreOffice
-subprocess.run([
-    'libreoffice', '--headless', '--convert-to', 'pdf',
-    'document.docx', '--outdir', 'output/'
-])
+doc = Document('template.docx')
+for para in doc.paragraphs:
+    if para.style.name.startswith('Heading'):
+        level = int(para.style.name[-1])
+        print(f"{'#' * level} {para.text}")
+    else:
+        print(para.text)
 ```
 
-### Failed Approaches (For Reference)
+### Text Extraction (CUAD, OmniDocBench)
 
-**HTML→Markdown** (FAILED):
-- Tried: GOV.UK, SEC EDGAR HTML as ground truth
-- Failed: HTML and PDF are semantically different
-- Lesson: Don't use HTML as PDF ground truth
+For documents where we don't control creation:
+- Extract embedded text layer (if available)
+- Use OCR output from established benchmark
+- Quality varies with source document
 
-**LaTeX→PDF** (Partial success):
-- Works for academic papers
-- Complex: LaTeX compilation issues
-- Limited: Only for equation-heavy documents
+### Failed Approaches (Lessons Learned)
 
----
+**HTML-to-Markdown** (FAILED):
+- Tried GOV.UK, SEC EDGAR HTML as ground truth
+- HTML and PDF are fundamentally different formats
+- Navigation elements, version mismatches cause problems
+- **Lesson**: Don't use HTML as PDF ground truth
 
-## Quality Assurance
-
-### Ground Truth Validation
-All ground truth is validated by:
-1. **Source validation**: Extracted from structured source (DOCX/LaTeX)
-2. **Manual review**: Sample documents manually inspected
-3. **Parser consensus**: Multiple parsers should agree on ground truth
-4. **Metadata completeness**: All documents have complete metadata
-
-### Known Issues
-
-**Resolved**:
-- GOV.UK corpus deleted (HTML/PDF version mismatch)
-- OmniDocBench archived (OCR benchmark, out of scope)
-
-**None currently** - All 5 corpora are high quality
+**LaTeX-to-PDF** (Limited success):
+- Works for academic papers with LaTeX source
+- Complex: Compilation issues, package dependencies
+- Limited to equation-heavy documents
 
 ---
 
-## Future Expansion
+## Domain Performance Analysis
 
-### Planned Corpora
+Parser performance varies significantly by document type. This section shows how the same parser can excel in one domain while struggling in another.
 
-**Financial Documents** (50+ docs):
-- 10-K filings
-- Earnings reports
-- Balance sheets
-- Income statements
+### Why Domain Matters
 
-**Government Forms** (50+ docs):
-- Tax forms (1040, W-2, etc.)
-- Immigration forms
-- License applications
-- Government reports
+| Document Type | Key Challenge | Best Parser Traits |
+|--------------|---------------|-------------------|
+| **Invoices** | Table extraction, number accuracy | Table-aware, structured output |
+| **Resumes/HR** | Section detection, varied layouts | Layout analysis, heading detection |
+| **Legal** | Dense text, hierarchical numbering | Text fidelity, structure preservation |
+| **Multi-column** | Reading order | Layout models, column detection |
 
-**Healthcare** (30+ docs):
-- Medical records (anonymized)
-- Insurance claims
-- Lab reports
-- Prescription forms
+### Commercial Parser Performance by Domain
 
-**Technical Docs** (30+ docs):
-- API documentation
-- User manuals
-- Technical specifications
-- Product datasheets
+Based on 540+ documents across 4 commercial parsers:
 
-**Total Target**: 500+ documents across 10+ categories
+| Domain | Best Performer | Score | Worst Performer | Score | Gap |
+|--------|---------------|-------|-----------------|-------|-----|
+| **Synthetic** | Azure | 92% | Google | 78% | 14pts |
+| **Invoices** | Azure | 89% | AWS | 71% | 18pts |
+| **HR/Resumes** | Azure | 88% | AWS | 74% | 14pts |
+| **Legal (CUAD)** | AWS | 82% | Databricks | 69% | 13pts |
+
+**Key Insight**: No single parser dominates all domains. Azure leads for structured business documents, while AWS performs better on dense legal text.
+
+### Open Source Parser Performance by Domain
+
+Based on 353+ documents across 13 open source parsers:
+
+| Domain | Top 3 Parsers | Worst Performer |
+|--------|--------------|-----------------|
+| **Synthetic** | PyPDFium2 (80%), Kreuzberg (79%), PyPDF (78%) | Docling (51%) |
+| **Multi-column** | PyMuPDF (93%), Kreuzberg (91%), Extractous (88%) | PdfPlumber (56%) |
+| **Tables** | PyPDFium2 (79%), PyPDF (77%), Kreuzberg (76%) | PDFMiner (55%) |
+| **Lists** | PdfPlumber (98%), Unstructured (98%), PyMuPDF (96%) | Docling (88%) |
+
+### Domain-Specific Recommendations
+
+**For Invoice Processing:**
+1. Azure Document Intelligence (88.6%) - Best overall accuracy
+2. Databricks (87.5% format-agnostic) - Good with format normalization
+3. AWS Textract (76.5%) - Wide coverage, lower accuracy
+
+**For Resume Parsing:**
+1. Azure Document Intelligence - Best section detection
+2. Databricks - Good structure with markdown output
+3. Any layout-aware parser (Marker, Docling) for complex formats
+
+**For Legal Contracts:**
+1. AWS Textract - Best on dense text
+2. Azure Document Intelligence - Good structure preservation
+3. PyMuPDF - Fast and accurate for text extraction
+
+**For Multi-Column Documents:**
+1. PyMuPDF (93%) - Excellent reading order
+2. Kreuzberg (91%) - Fast with good accuracy
+3. AVOID: PdfPlumber (56%) - Struggles with column detection
+
+---
+
+## Business Document Priority Framework
+
+Based on OCR market research and enterprise automation trends:
+
+### Tier 1: Highest Volume & Value
+
+| Category | Document Types | Market Data |
+|----------|----------------|-------------|
+| **Finance/AP** | Invoices, Receipts, POs | BFSI = 21.3% of OCR market |
+| **HR/Recruiting** | Resumes, Applications | 99% of Fortune 500 use ATS |
+| **Legal** | Contracts, NDAs | High corporate volume |
+| **KYC/Identity** | ID documents, Utility bills | 65M docs in 2024 (+41% YoY) |
+
+### Tier 2: Industry-Specific
+
+- Healthcare: CMS-1500, UB-04 claims
+- Banking: Loan applications, tax forms
+- Logistics: Bills of lading, packing slips
+- Insurance: Claims forms, policies
+
+### Current Coverage
+
+- Finance: **100 invoices** (complete)
+- HR: **34 resumes** (complete)
+- Legal: **108 templates** + **75 real contracts** (complete)
+- Others: Expansion planned
 
 ---
 
 ## Usage
 
-### Loading a Corpus
-
-```python
-from pdf_bench import load_corpus
-
-# Load specific corpus
-corpus = load_corpus("synthetic")
-print(f"{len(corpus)} documents loaded")
-
-# Iterate through documents
-for doc in corpus:
-    pdf_path = doc.pdf_path
-    ground_truth = doc.ground_truth
-    metadata = doc.metadata
-```
-
-### Running Benchmarks
+### Loading a Specific Corpus
 
 ```bash
-# Single corpus
-python -m pdf_bench benchmarks/synthetic.yaml
+# Run benchmark on synthetic corpus only
+uv run python -m pdf_bench.runner benchmarks/synthetic_31docs.yaml
 
-# Multiple corpora
-python -m pdf_bench benchmarks/comprehensive.yaml
+# Run on CUAD contracts
+uv run python -m pdf_bench.runner benchmarks/cuad_75docs.yaml
 
-# Specific parser
-python -m pdf_bench benchmarks/synthetic.yaml --parsers pypdfium2,marker_ollama
+# Run on all business documents
+uv run python -m pdf_bench.runner benchmarks/business_all.yaml
 ```
 
-### Creating Custom Corpus
+### Adding Custom Documents
 
-See builder scripts in `builders/` directory for examples:
-- `builders/generate_invoice_corpus.py` - Invoice generation
-- `builders/build_legal_corpus.py` - Legal documents
-- `builders/build_hr_corpus.py` - Resume generation
+1. Create directory structure:
+   ```
+   corpus/custom/
+   ├── pdfs/
+   │   └── document.pdf
+   ├── ground_truth/
+   │   └── document.md
+   └── metadata/
+       └── document.yaml
+   ```
+
+2. Create metadata YAML:
+   ```yaml
+   doc_id: custom_001
+   pdf_file: document.pdf
+   ground_truth_file: document.md
+   domain: custom
+   features:
+     - tables
+     - multi_column
+   ```
+
+3. Create benchmark config referencing your corpus
+
+---
+
+## External Benchmarks Reference
+
+PDF-Bench incorporates or references these established benchmarks:
+
+| Benchmark | Focus | Documents | Use in PDF-Bench |
+|-----------|-------|-----------|------------------|
+| **CUAD** | Legal contracts | 510 | 75-doc subset included |
+| **OmniDocBench** | Diverse documents | 1,355 | English subset included |
+| **DocLayNet** | Layout analysis | 80,863 | Reference only |
+| **PubTabNet** | Table structure | 568K tables | TEDS metric source |
+| **FinTabNet** | Financial tables | 112K | Planned expansion |
+
+---
+
+## Quality Assurance
+
+### Validation Checks
+
+All corpora undergo:
+1. **Source validation**: Ground truth extracted from structured source
+2. **Format verification**: All PDFs readable by target parsers
+3. **Metadata completeness**: Required fields present
+4. **Sample inspection**: Manual review of representative documents
+
+### Known Issues
+
+| Issue | Status | Workaround |
+|-------|--------|------------|
+| OmniDocBench Chinese docs excluded | By design | Focus on English subset |
+| Some OmniDocBench images low quality | Accepted | Reflects real-world conditions |
+| CUAD multi-page extraction | Known | Per-document scoring |
+
+---
+
+## Future Expansion
+
+### Planned Additions
+
+| Corpus | Documents | Priority | Status |
+|--------|-----------|----------|--------|
+| Financial Reports | 50+ | High | Planned |
+| Government Forms | 50+ | Medium | Planned |
+| Healthcare Documents | 30+ | Low | Blocked (HIPAA) |
+| Technical Manuals | 30+ | Medium | Planned |
+
+### Target: 1000+ Documents
+
+Current: 800+ documents
+Goal: 1000+ documents across 10+ categories
 
 ---
 
 ## References
 
-**Code**:
-- `pdf_bench/loader.py` - Corpus loading
-- `pdf_bench/config.py` - Corpus configuration
-- `builders/` - Corpus generation scripts
+### Builder Scripts
 
-**Documentation**:
-- `corpus/synthetic/CORPUS_SUMMARY.md` - Synthetic details
-- `.claude/reference/lessons_learned.md` - Generation insights
+- `builders/generate_systematic_corpus.py` - Synthetic corpus
+- `builders/download_cuad_corpus.py` - CUAD contracts
+- `builders/generate_invoice_corpus.py` - Invoice generation
+- `builders/build_legal_corpus.py` - Legal templates
+- `builders/build_hr_corpus.py` - Resume generation
+- `builders/convert_omnidocbench.py` - OmniDocBench conversion
+
+### Documentation
+
+- [METHODOLOGY.md](METHODOLOGY.md) - Evaluation methodology
+- [METRICS.md](METRICS.md) - Metric explanations
+- [PARSERS.md](PARSERS.md) - Parser comparison
 
 ---
 
-**Last Updated**: 2025-11-20
-**Total Documents**: 280 with perfect ground truth
-**Ready for Benchmarking**: All 5 corpora
+*Last Updated: 2025-11-23*

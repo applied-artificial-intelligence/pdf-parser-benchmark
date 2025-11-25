@@ -1,0 +1,35 @@
+name: "Single Document Test - Google Document AI Async"
+description: "Test one large document that requires async processing"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - arxiv
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - arxiv-2302.13971  # 27 pages - requires async
+  max_documents: null
+
+parser_config:
+  parsers:
+    - google_document_ai
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

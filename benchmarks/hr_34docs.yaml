@@ -1,0 +1,58 @@
+# HR Documents Benchmark: 34 Documents
+#
+# Generated resumes and HR documents with varied formats.
+# Tests section extraction, list handling, and document structure.
+#
+# Ground truth: Markdown source files used to generate PDFs
+
+name: "HR Documents Benchmark"
+description: |
+  34 generated resumes with varying experience levels and formats.
+  Tests section extraction (experience, education, skills), list handling,
+  and chronological/functional document structures.
+  Ground truth from original markdown templates.
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - hr
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    - docling
+    - pymupdf4llm
+    - pdfplumber
+    - pymupdf
+    - pypdfium2
+    - pypdf
+    - pdfminer
+    - kreuzberg
+    - marker
+    - tika
+    - unstructured
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - tree_similarity
+    - element_f1
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

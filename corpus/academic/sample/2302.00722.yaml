@@ -1,0 +1,19 @@
+doc_id: arxiv-2302.00722
+source_url: https://arxiv.org/abs/2302.00722
+corpus: academic
+domain: arxiv
+title: "Survey of Deep Learning"
+authors:
+  - Various
+publication_date: '2023-02-01'
+features:
+  - equations
+  - two_column
+  - citations
+  - tables
+  - figures
+license: arXiv
+notes: Deep learning survey paper - 14 pages
+file_paths:
+  pdf: corpus/academic/sample/2302.00722.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2302.00722.md

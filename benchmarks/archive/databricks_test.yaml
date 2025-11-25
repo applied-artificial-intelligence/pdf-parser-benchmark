@@ -1,0 +1,26 @@
+name: Databricks Parser Test
+description: Quick test of Databricks ai_parse_document integration
+
+corpus_dir: /home/stefan/applied-ai/pdf-bench/corpus
+
+document_filter:
+  include_doc_ids:
+    - syn-basic-001
+    - syn-lists-001
+    - syn-tables-001
+
+parser_config:
+  parsers:
+    - databricks
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output_config:
+  results_dir: results
+  save_format: json
+  verbose: true
+
+parallel_workers: 1

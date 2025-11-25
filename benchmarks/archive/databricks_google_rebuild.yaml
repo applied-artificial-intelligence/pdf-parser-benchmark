@@ -1,0 +1,113 @@
+name: Databricks + Google Cache Rebuild
+description: Re-run Databricks and Google parsers to populate cache for format-agnostic scoring.
+corpus_dir: /home/stefan/applied-ai/pdf-bench/corpus
+document_filter:
+  include_doc_ids:
+  # Synthetic (27 docs)
+  - 06_docx_simple
+  - 07_docx_tables
+  - 08_docx_multicolumn
+  - 09_table_simple_grid
+  - 10_table_colspan
+  - 11_table_wide
+  - 12_table_multiple
+  - 13_table_complex_headers
+  - 14_table_financial
+  - 15_list_simple_bullets
+  - 16_list_numbered
+  - 17_list_nested_2level
+  - 18_list_nested_3level
+  - 19_list_mixed_types
+  - 20_list_with_paragraphs
+  - 21_column_two_column
+  - 22_column_three_column
+  - 23_column_mixed_width
+  - 24_column_newsletter
+  - 25_column_academic
+  - 26_column_brochure
+  - 27_mixed_business_report
+  - 28_mixed_technical_docs
+  - 29_mixed_policy_doc
+  - 30_mixed_meeting_minutes
+  - 31_mixed_research_summary
+  - 32_mixed_comprehensive
+  # CUAD (15 docs)
+  - cuad_007
+  - cuad_020
+  - cuad_026
+  - cuad_027
+  - cuad_028
+  - cuad_036
+  - cuad_037
+  - cuad_038
+  - cuad_042
+  - cuad_051
+  - cuad_052
+  - cuad_054
+  - cuad_059
+  - cuad_060
+  - cuad_066
+  # Invoices (30 docs sample)
+  - invoice_001
+  - invoice_005
+  - invoice_010
+  - invoice_015
+  - invoice_020
+  - invoice_025
+  - invoice_030
+  - invoice_035
+  - invoice_040
+  - invoice_045
+  - invoice_050
+  - invoice_055
+  - invoice_060
+  - invoice_065
+  - invoice_070
+  - invoice_075
+  - invoice_080
+  - invoice_085
+  - invoice_090
+  - invoice_095
+  - invoice_100
+  # HR (15 docs)
+  - resume_001
+  - resume_005
+  - resume_010
+  - resume_015
+  - resume_020
+  - resume_025
+  - job_app_001
+  - job_app_005
+  - job_app_010
+  # Legal (15 docs)
+  - legal_saas_001
+  - legal_saas_010
+  - legal_saas_020
+  - legal_nda_001
+  - legal_nda_010
+  - legal_nda_020
+  - legal_employment_001
+  - legal_employment_010
+  - legal_employment_020
+  - legal_msa_001
+  - legal_msa_010
+  - legal_vendor_001
+  - legal_vendor_010
+
+parser_config:
+  parsers:
+  - databricks
+  - google_document_ai
+
+metric_config:
+  metrics:
+  - edit_similarity
+  - chrf++
+  aggregate: true
+
+output_config:
+  results_dir: results
+  save_format: json
+  verbose: true
+
+parallel_workers: 1

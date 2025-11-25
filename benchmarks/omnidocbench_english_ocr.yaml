@@ -1,0 +1,172 @@
+# OmniDocBench English OCR Benchmark: 124 Documents x 5 OCR-capable Parsers
+name: OmniDocBench English OCR Benchmark
+description: >
+  Benchmark on English documents from OmniDocBench using OCR-capable parsers only.
+  Documents are image-based PDFs requiring OCR for text extraction.
+  Focus on English content for fair OCR comparison (avoids CJK font issues).
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # 124 English documents from OmniDocBench
+    - omnidoc_003
+    - omnidoc_004
+    - omnidoc_005
+    - omnidoc_006
+    - omnidoc_007
+    - omnidoc_008
+    - omnidoc_009
+    - omnidoc_010
+    - omnidoc_011
+    - omnidoc_012
+    - omnidoc_013
+    - omnidoc_014
+    - omnidoc_015
+    - omnidoc_016
+    - omnidoc_017
+    - omnidoc_018
+    - omnidoc_019
+    - omnidoc_020
+    - omnidoc_021
+    - omnidoc_022
+    - omnidoc_023
+    - omnidoc_024
+    - omnidoc_025
+    - omnidoc_026
+    - omnidoc_027
+    - omnidoc_028
+    - omnidoc_029
+    - omnidoc_030
+    - omnidoc_031
+    - omnidoc_032
+    - omnidoc_033
+    - omnidoc_034
+    - omnidoc_035
+    - omnidoc_036
+    - omnidoc_037
+    - omnidoc_038
+    - omnidoc_039
+    - omnidoc_040
+    - omnidoc_041
+    - omnidoc_042
+    - omnidoc_043
+    - omnidoc_044
+    - omnidoc_045
+    - omnidoc_046
+    - omnidoc_047
+    - omnidoc_048
+    - omnidoc_049
+    - omnidoc_050
+    - omnidoc_051
+    - omnidoc_052
+    - omnidoc_053
+    - omnidoc_054
+    - omnidoc_055
+    - omnidoc_056
+    - omnidoc_057
+    - omnidoc_058
+    - omnidoc_059
+    - omnidoc_060
+    - omnidoc_061
+    - omnidoc_062
+    - omnidoc_063
+    - omnidoc_064
+    - omnidoc_065
+    - omnidoc_100
+    - omnidoc_102
+    - omnidoc_103
+    - omnidoc_104
+    - omnidoc_105
+    - omnidoc_106
+    - omnidoc_108
+    - omnidoc_110
+    - omnidoc_113
+    - omnidoc_115
+    - omnidoc_117
+    - omnidoc_119
+    - omnidoc_135
+    - omnidoc_136
+    - omnidoc_137
+    - omnidoc_138
+    - omnidoc_139
+    - omnidoc_140
+    - omnidoc_141
+    - omnidoc_142
+    - omnidoc_143
+    - omnidoc_144
+    - omnidoc_145
+    - omnidoc_146
+    - omnidoc_147
+    - omnidoc_148
+    - omnidoc_149
+    - omnidoc_150
+    - omnidoc_151
+    - omnidoc_152
+    - omnidoc_153
+    - omnidoc_154
+    - omnidoc_155
+    - omnidoc_156
+    - omnidoc_157
+    - omnidoc_158
+    - omnidoc_159
+    - omnidoc_160
+    - omnidoc_161
+    - omnidoc_162
+    - omnidoc_163
+    - omnidoc_171
+    - omnidoc_172
+    - omnidoc_173
+    - omnidoc_175
+    - omnidoc_176
+    - omnidoc_177
+    - omnidoc_178
+    - omnidoc_179
+    - omnidoc_180
+    - omnidoc_181
+    - omnidoc_182
+    - omnidoc_183
+    - omnidoc_185
+    - omnidoc_186
+    - omnidoc_187
+    - omnidoc_188
+    - omnidoc_189
+    - omnidoc_190
+    - omnidoc_191
+    - omnidoc_192
+  max_documents: null
+
+parser_config:
+  parsers:
+    # OCR-capable open source parsers only
+    - docling          # Built-in OCR (EasyOCR by default)
+    - marker           # Built-in OCR with surya
+    - kreuzberg        # Tesseract OCR support
+    - unstructured     # OCR via hi_res strategy
+    - tika             # OCR via Tesseract server
+
+  parser_options:
+    unstructured:
+      strategy: hi_res  # Required for OCR
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - element_f1
+    - teds
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 20
+
+execution:
+  parallel_workers: 1  # Sequential due to high memory usage
+  timeout_seconds: 600  # OCR is slow, 10 min timeout per doc

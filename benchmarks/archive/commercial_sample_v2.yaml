@@ -1,0 +1,57 @@
+name: "Commercial Parsers - Sample Test v2"
+description: "Test AWS and Azure on 2 docs from each corpus type (correct IDs)"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic (2)
+    - syn-basic-001
+    - syn-tables-001
+    # CUAD (2)
+    - cuad_000
+    - cuad_001
+    # Invoices (2)
+    - invoice_064
+    - invoice_090
+    # Legal (2)
+    - legal_emp_033
+    - legal_saas_005
+    # HR (2)
+    - resume_017
+    - resume_019
+    # Academic/arXiv (2)
+    - arxiv-2302.13971
+    - arxiv-2302.14852
+    # OmniDocBench - various types (4)
+    - omnidoc_000
+    - omnidoc_001
+    - omnidoc_145
+    - omnidoc_069
+  max_documents: null
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 4
+  timeout_seconds: 120

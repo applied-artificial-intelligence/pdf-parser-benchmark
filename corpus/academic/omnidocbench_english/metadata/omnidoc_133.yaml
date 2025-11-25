@@ -1,0 +1,14 @@
+corpus: academic
+data_source: colorful_textbook
+doc_id: omnidoc_133
+domain: education
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_133
+special_issues:
+- fuzzy_scan
+- colorful_backgroud
+- table_horizontal
+- table_full_line

@@ -3,7 +3,7 @@ data_source: magazine
 doc_id: omnidoc_162
 domain: news
 features: []
-language: english
+language: en
 layout: double_column
 source: omnidocbench
 source_url: generated://omnidocbench/omnidoc_162

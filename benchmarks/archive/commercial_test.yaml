@@ -1,0 +1,34 @@
+name: "Commercial Parsers - API Test"
+description: "Quick test of commercial APIs on 3 documents"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora:
+    - synthetic
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: 3
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+    - google_document_ai
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 120

@@ -1,0 +1,33 @@
+name: "Commercial Parsers - AWS/Azure Test"
+description: "Quick test of AWS and Azure APIs on 3 documents"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora:
+    - synthetic
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: 3
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 120

@@ -1,0 +1,47 @@
+# OCR Validation: Test 3 docs with ALL 4 OCR parsers
+# Run this BEFORE a full benchmark to verify OCR is working
+name: OmniDocBench OCR Validation - 4 Parsers (3 docs)
+description: >
+  Quick validation that all 4 parsers are performing OCR correctly.
+  Run after installing tesseract-ocr system package.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - omnidoc_000
+    - omnidoc_050
+    - omnidoc_100
+  max_documents: null
+
+parser_config:
+  parsers:
+    - docling-ocr      # EasyOCR backend, GPU accelerated
+    - marker           # Built-in surya OCR
+    - kreuzberg        # Tesseract OCR (requires tesseract-ocr system package)
+    - unstructured     # Tesseract OCR via hi_res strategy
+
+  parser_options:
+    kreuzberg:
+      force_ocr: true
+    unstructured:
+      strategy: hi_res
+      infer_table_structure: true
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

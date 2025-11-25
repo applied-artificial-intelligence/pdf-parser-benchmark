@@ -1,0 +1,301 @@
+# OmniDocBench OCR Benchmark: All 4 Parsers
+# Now that tesseract-ocr is installed, all parsers work correctly
+name: OmniDocBench OCR - All 4 Parsers (252 docs)
+description: >
+  Full OCR benchmark with all 4 validated parsers.
+  Validation results (3 docs):
+  - marker: 95.8% edit similarity, 93.8 chrf++ (best accuracy, fastest)
+  - docling-ocr: 87.9% edit similarity, 80.5 chrf++ (good quality)
+  - unstructured: 86.5% edit similarity, 94.3 chrf++ (hi_res with tesseract)
+  - kreuzberg: 65.8% edit similarity, 65.9 chrf++ (tesseract OCR)
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - omnidoc_000
+    - omnidoc_001
+    - omnidoc_002
+    - omnidoc_003
+    - omnidoc_004
+    - omnidoc_005
+    - omnidoc_006
+    - omnidoc_007
+    - omnidoc_008
+    - omnidoc_009
+    - omnidoc_010
+    - omnidoc_011
+    - omnidoc_012
+    - omnidoc_013
+    - omnidoc_014
+    - omnidoc_015
+    - omnidoc_016
+    - omnidoc_017
+    - omnidoc_018
+    - omnidoc_019
+    - omnidoc_020
+    - omnidoc_021
+    - omnidoc_022
+    - omnidoc_023
+    - omnidoc_024
+    - omnidoc_025
+    - omnidoc_026
+    - omnidoc_027
+    - omnidoc_028
+    - omnidoc_029
+    - omnidoc_030
+    - omnidoc_031
+    - omnidoc_032
+    - omnidoc_033
+    - omnidoc_034
+    - omnidoc_035
+    - omnidoc_036
+    - omnidoc_037
+    - omnidoc_038
+    - omnidoc_039
+    - omnidoc_040
+    - omnidoc_041
+    - omnidoc_042
+    - omnidoc_043
+    - omnidoc_044
+    - omnidoc_045
+    - omnidoc_046
+    - omnidoc_047
+    - omnidoc_048
+    - omnidoc_049
+    - omnidoc_050
+    - omnidoc_051
+    - omnidoc_052
+    - omnidoc_053
+    - omnidoc_054
+    - omnidoc_055
+    - omnidoc_056
+    - omnidoc_057
+    - omnidoc_058
+    - omnidoc_059
+    - omnidoc_060
+    - omnidoc_061
+    - omnidoc_062
+    - omnidoc_063
+    - omnidoc_064
+    - omnidoc_065
+    - omnidoc_066
+    - omnidoc_067
+    - omnidoc_068
+    - omnidoc_069
+    - omnidoc_070
+    - omnidoc_071
+    - omnidoc_072
+    - omnidoc_073
+    - omnidoc_074
+    - omnidoc_075
+    - omnidoc_076
+    - omnidoc_077
+    - omnidoc_078
+    - omnidoc_079
+    - omnidoc_080
+    - omnidoc_081
+    - omnidoc_082
+    - omnidoc_083
+    - omnidoc_084
+    - omnidoc_085
+    - omnidoc_086
+    - omnidoc_087
+    - omnidoc_088
+    - omnidoc_089
+    - omnidoc_090
+    - omnidoc_091
+    - omnidoc_092
+    - omnidoc_093
+    - omnidoc_094
+    - omnidoc_095
+    - omnidoc_096
+    - omnidoc_097
+    - omnidoc_098
+    - omnidoc_099
+    - omnidoc_100
+    - omnidoc_101
+    - omnidoc_102
+    - omnidoc_103
+    - omnidoc_104
+    - omnidoc_105
+    - omnidoc_106
+    - omnidoc_107
+    - omnidoc_108
+    - omnidoc_109
+    - omnidoc_110
+    - omnidoc_111
+    - omnidoc_112
+    - omnidoc_113
+    - omnidoc_114
+    - omnidoc_115
+    - omnidoc_116
+    - omnidoc_117
+    - omnidoc_118
+    - omnidoc_119
+    - omnidoc_120
+    - omnidoc_121
+    - omnidoc_122
+    - omnidoc_123
+    - omnidoc_124
+    - omnidoc_125
+    - omnidoc_126
+    - omnidoc_127
+    - omnidoc_128
+    - omnidoc_129
+    - omnidoc_130
+    - omnidoc_131
+    - omnidoc_132
+    - omnidoc_133
+    - omnidoc_134
+    - omnidoc_135
+    - omnidoc_136
+    - omnidoc_137
+    - omnidoc_138
+    - omnidoc_139
+    - omnidoc_140
+    - omnidoc_141
+    - omnidoc_142
+    - omnidoc_143
+    - omnidoc_144
+    - omnidoc_145
+    - omnidoc_146
+    - omnidoc_147
+    - omnidoc_148
+    - omnidoc_149
+    - omnidoc_150
+    - omnidoc_151
+    - omnidoc_152
+    - omnidoc_153
+    - omnidoc_154
+    - omnidoc_155
+    - omnidoc_156
+    - omnidoc_157
+    - omnidoc_158
+    - omnidoc_159
+    - omnidoc_160
+    - omnidoc_161
+    - omnidoc_162
+    - omnidoc_163
+    - omnidoc_164
+    - omnidoc_165
+    - omnidoc_166
+    - omnidoc_167
+    - omnidoc_168
+    - omnidoc_169
+    - omnidoc_170
+    - omnidoc_171
+    - omnidoc_172
+    - omnidoc_173
+    - omnidoc_174
+    - omnidoc_175
+    - omnidoc_176
+    - omnidoc_177
+    - omnidoc_178
+    - omnidoc_179
+    - omnidoc_180
+    - omnidoc_181
+    - omnidoc_182
+    - omnidoc_183
+    - omnidoc_184
+    - omnidoc_185
+    - omnidoc_186
+    - omnidoc_187
+    - omnidoc_188
+    - omnidoc_189
+    - omnidoc_190
+    - omnidoc_191
+    - omnidoc_192
+    - omnidoc_193
+    - omnidoc_194
+    - omnidoc_195
+    - omnidoc_196
+    - omnidoc_197
+    - omnidoc_198
+    - omnidoc_199
+    - omnidoc_200
+    - omnidoc_201
+    - omnidoc_202
+    - omnidoc_203
+    - omnidoc_204
+    - omnidoc_205
+    - omnidoc_206
+    - omnidoc_207
+    - omnidoc_208
+    - omnidoc_209
+    - omnidoc_210
+    - omnidoc_211
+    - omnidoc_212
+    - omnidoc_213
+    - omnidoc_214
+    - omnidoc_215
+    - omnidoc_216
+    - omnidoc_217
+    - omnidoc_218
+    - omnidoc_219
+    - omnidoc_220
+    - omnidoc_221
+    - omnidoc_222
+    - omnidoc_223
+    - omnidoc_224
+    - omnidoc_225
+    - omnidoc_226
+    - omnidoc_227
+    - omnidoc_228
+    - omnidoc_229
+    - omnidoc_230
+    - omnidoc_231
+    - omnidoc_232
+    - omnidoc_233
+    - omnidoc_234
+    - omnidoc_235
+    - omnidoc_236
+    - omnidoc_237
+    - omnidoc_238
+    - omnidoc_239
+    - omnidoc_240
+    - omnidoc_241
+    - omnidoc_242
+    - omnidoc_243
+    - omnidoc_244
+    - omnidoc_245
+    - omnidoc_246
+    - omnidoc_247
+    - omnidoc_248
+    - omnidoc_249
+    - omnidoc_250
+    - omnidoc_251
+  max_documents: null
+
+parser_config:
+  parsers:
+    - marker           # Built-in surya OCR - best accuracy
+    - docling-ocr      # EasyOCR backend - good quality
+    - kreuzberg        # Tesseract OCR (now working with tesseract-ocr installed)
+    - unstructured     # Tesseract OCR via hi_res strategy
+
+  parser_options:
+    kreuzberg:
+      force_ocr: true
+    unstructured:
+      strategy: hi_res
+      infer_table_structure: true
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 25
+
+execution:
+  parallel_workers: 1  # Sequential due to GPU memory constraints
+  timeout_seconds: 300

@@ -1,0 +1,91 @@
+name: "Commercial Parsers - 50 Doc Sample"
+description: "AWS, Azure, Google on 50 representative documents"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic (10)
+    - syn-basic-001
+    - syn-lists-001
+    - syn-tables-001
+    - syn-math-001
+    - syn-multicolumn-001
+    - syn-mixed-001
+    - syn-complex-001
+    - syn-pandoc-001
+    - syn-comprehensive-001
+    - syn-libreoffice-001
+    # CUAD (10)
+    - cuad_000
+    - cuad_001
+    - cuad_002
+    - cuad_003
+    - cuad_004
+    - cuad_010
+    - cuad_020
+    - cuad_030
+    - cuad_040
+    - cuad_050
+    # Invoices (10)
+    - invoice_001
+    - invoice_010
+    - invoice_020
+    - invoice_030
+    - invoice_040
+    - invoice_050
+    - invoice_060
+    - invoice_070
+    - invoice_080
+    - invoice_090
+    # Legal (10)
+    - legal_emp_001
+    - legal_emp_010
+    - legal_emp_020
+    - legal_saas_001
+    - legal_saas_010
+    - legal_nda_001
+    - legal_nda_010
+    - legal_service_001
+    - legal_service_010
+    - legal_partner_001
+    # HR (5)
+    - resume_001
+    - resume_010
+    - resume_020
+    - resume_030
+    - job_app_001
+    # Academic (5)
+    - arxiv-2302.13971
+    - arxiv-2302.14852
+    - arxiv-2303.08774
+    - arxiv-2303.17564
+    - arxiv-2303.18223
+  max_documents: null
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+    - google_document_ai
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 2
+  timeout_seconds: 180

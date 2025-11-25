@@ -8,12 +8,18 @@ The normalization pipeline handles:
 - Whitespace collapsing and cleanup
 - Smart quote normalization to ASCII equivalents
 - Optional hyphen and ligature normalization
+- Optional markdown/HTML stripping (format-agnostic comparison)
 
 Example:
     >>> from pdf_bench.utils.normalization import normalize_text
     >>> text = "  "Smart   quotes"  "
     >>> normalize_text(text)
     '"Smart quotes"'
+
+    >>> # Strip markdown/HTML for format-agnostic comparison
+    >>> md_text = "# Header\\n<table><tr><td>Cell</td></tr></table>"
+    >>> normalize_text(md_text, strip_formatting=True)
+    'Header Cell'
 """
 
 import re
@@ -57,6 +63,112 @@ _LIGATURE_MAP: Final[dict[str, str]] = {
     "\ufb05": "ft",  # Latin small ligature long s t
     "\ufb06": "st",  # Latin small ligature st
 }
+
+
+def strip_markdown(text: str) -> str:
+    """Strip markdown formatting from text.
+
+    Removes common markdown syntax while preserving the underlying text content.
+    This enables format-agnostic comparison between parsers that output different
+    formats (plain text vs markdown).
+
+    Handles:
+    - Headers (# ## ### etc.)
+    - Bold/italic (**text**, *text*, __text__, _text_)
+    - Links [text](url) -> text
+    - Images ![alt](url) -> alt
+    - Code blocks and inline code
+    - Blockquotes (>)
+    - Horizontal rules (---, ***)
+    - List markers (-, *, +, 1.)
+
+    Args:
+        text: Input text with potential markdown formatting
+
+    Returns:
+        Text with markdown syntax removed
+
+    Example:
+        >>> strip_markdown("# Header\\n**bold** and *italic*")
+        'Header bold and italic'
+    """
+    # Remove code blocks (``` ... ```)
+    text = re.sub(r"```[\s\S]*?```", "", text)
+
+    # Remove inline code (`code`)
+    text = re.sub(r"`([^`]+)`", r"\1", text)
+
+    # Remove images ![alt](url) -> alt
+    text = re.sub(r"!\[([^\]]*)\]\([^)]+\)", r"\1", text)
+
+    # Remove links [text](url) -> text
+    text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
+
+    # Remove headers (# at start of line)
+    text = re.sub(r"^#{1,6}\s*", "", text, flags=re.MULTILINE)
+
+    # Remove bold/italic markers
+    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)  # **bold**
+    text = re.sub(r"__([^_]+)__", r"\1", text)  # __bold__
+    text = re.sub(r"\*([^*]+)\*", r"\1", text)  # *italic*
+    text = re.sub(r"_([^_]+)_", r"\1", text)  # _italic_
+
+    # Remove blockquotes (> at start of line)
+    text = re.sub(r"^>\s*", "", text, flags=re.MULTILINE)
+
+    # Remove horizontal rules
+    text = re.sub(r"^[-*_]{3,}\s*$", "", text, flags=re.MULTILINE)
+
+    # Remove list markers (but keep the content)
+    text = re.sub(r"^[\s]*[-*+]\s+", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^[\s]*\d+\.\s+", "", text, flags=re.MULTILINE)
+
+    return text
+
+
+def strip_html(text: str) -> str:
+    """Strip HTML tags from text.
+
+    Removes HTML/XML tags while preserving the text content between them.
+    This enables format-agnostic comparison between parsers that output
+    HTML tables vs plain text.
+
+    Args:
+        text: Input text with potential HTML tags
+
+    Returns:
+        Text with HTML tags removed
+
+    Example:
+        >>> strip_html("<table><tr><td>Cell 1</td><td>Cell 2</td></tr></table>")
+        'Cell 1 Cell 2'
+    """
+    # Replace tags with space to prevent word concatenation
+    text = re.sub(r"<[^>]+>", " ", text)
+    return text
+
+
+def fix_number_spacing(text: str) -> str:
+    """Fix numbers that have been incorrectly split by spaces.
+
+    Some parsers (notably Google Document AI) insert spaces into numbers,
+    e.g., "45. 87" instead of "45.87". This function fixes such issues.
+
+    Args:
+        text: Input text with potential spacing issues in numbers
+
+    Returns:
+        Text with number spacing corrected
+
+    Example:
+        >>> fix_number_spacing("The value is 45. 87 dollars")
+        'The value is 45.87 dollars'
+    """
+    # Fix "45. 87" -> "45.87"
+    text = re.sub(r"(\d+)\.\s+(\d+)", r"\1.\2", text)
+    # Fix "$ 100" -> "$100" (currency symbols)
+    text = re.sub(r"(\$)\s+(\d)", r"\1\2", text)
+    return text
 
 
 def normalize_unicode(text: str) -> str:
@@ -231,16 +343,19 @@ def normalize_text(
     quotes: bool = True,
     hyphens: bool = False,
     ligatures: bool = False,
+    strip_formatting: bool = False,
 ) -> str:
     """Master normalization function that applies all normalizations.
 
     This function applies normalizations in the correct order to ensure
     consistent results:
-    1. Unicode NFC normalization (if enabled)
-    2. Ligature normalization (if enabled)
-    3. Quote normalization (if enabled)
-    4. Hyphen normalization (if enabled)
-    5. Whitespace normalization (if enabled, applied last)
+    1. Strip formatting (markdown/HTML) if enabled - FIRST to avoid regex issues
+    2. Fix number spacing (e.g., "45. 87" -> "45.87")
+    3. Unicode NFC normalization (if enabled)
+    4. Ligature normalization (if enabled)
+    5. Quote normalization (if enabled)
+    6. Hyphen normalization (if enabled)
+    7. Whitespace normalization (if enabled, applied last)
 
     The function is idempotent: applying it multiple times produces the
     same result as applying it once.
@@ -252,6 +367,9 @@ def normalize_text(
         quotes: Apply quote normalization (default: True)
         hyphens: Apply hyphen normalization (default: False)
         ligatures: Apply ligature normalization (default: False)
+        strip_formatting: Strip markdown/HTML formatting for format-agnostic
+            comparison (default: False). This is useful when comparing parsers
+            that output different formats (plain text vs markdown vs HTML).
 
     Returns:
         Fully normalized text ready for comparison
@@ -260,7 +378,18 @@ def normalize_text(
         >>> text = "  "Smart   quotes" and ﬁle  "
         >>> normalize_text(text, ligatures=True)
         '"Smart quotes" and file'
+
+        >>> # Format-agnostic comparison
+        >>> md_text = "# Header\\n<table><tr><td>Cell</td></tr></table>"
+        >>> normalize_text(md_text, strip_formatting=True)
+        'Header Cell'
     """
+    # Strip formatting first (before other normalizations can be confused by markup)
+    if strip_formatting:
+        text = strip_markdown(text)
+        text = strip_html(text)
+        text = fix_number_spacing(text)
+
     # Apply Unicode normalization first (foundation for all other operations)
     if unicode:
         text = normalize_unicode(text)

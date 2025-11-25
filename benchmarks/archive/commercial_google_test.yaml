@@ -1,0 +1,34 @@
+name: "Google Document AI - Quick Test"
+description: "Test Google Document AI on 3 documents"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - syn-basic-001
+    - cuad_000
+    - omnidoc_000
+  max_documents: null
+
+parser_config:
+  parsers:
+    - google_document_ai
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 120

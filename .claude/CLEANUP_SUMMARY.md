@@ -1,67 +1,106 @@
-# Cleanup Summary - 2025-11-17
+# Repository Cleanup Summary
 
-## What Was Deleted
+**Date**: 2025-11-24
+**Context**: Pre-final benchmark run cleanup
 
-### Broken Corpus (All Custom Ground Truth Failed)
-- `corpus/synthetic/` - 8 trivial documents
-- `corpus/business/sec_edgar/` - 29% similarity (XML artifacts, broken HTML→MD)
-- `corpus/business/govuk/` - 2.6% similarity (HTML was download pages, not content)
-- `corpus/academic/arxiv/` - Academic papers (not business documents)
+## Actions Taken
 
-### Wrong Approach
-- `builders/` - All corpus generation scripts
-- All benchmark scripts using edit distance metric (wrong metric)
-- False documentation claiming "Phase 10/11" and "124 documents"
+### 1. results/ Directory Cleanup ✅
 
-### Outdated Infrastructure
-- `examples/`, `benchmark_results/`, `docs/`, `scripts/`
-- All cache and build artifacts
-- TASK-*.md validation files
-- Most .claude/transitions/ (kept last 6 directories for context)
+**Removed**:
+- 42 checkpoint files (`*.checkpoint.json`) - duplicates of final results
+- 26 markdown files from root - parser test outputs that shouldn't be there
+- `results/tier1/` directory - 252 MD files (2.3MB) of test outputs
+- `results/quick/` directory - 10 MD files of test outputs
+- `results/debug_teds/` - empty debug directory
+- `results/debug_element_f1/` - empty debug directory
 
-## What Was Preserved
+**Result**:
+- Before: 386 files, 16MB
+- After: 56 files, 7.4MB
+- **Savings**: 330 files removed, 8.6MB freed
 
-### Claude Infrastructure
-- `.claude/reference/benchmark_survey.md` - Excellent research on PDF benchmarks
-- `.claude/work/2025117_001_parser_evaluation/` - New requirement document
-- Recent transitions (2025-11-14 through 2025-11-18)
+**Added**:
+- `results/README.md` - documentation of all result files and their purposes
 
-### Potentially Salvageable Code
-- `pdf_bench/utils/cost_tracking.py` - Cost estimation utilities
-- `pdf_bench/systems/aws_textract.py` - AWS API integration
-- `pdf_bench/systems/azure_document_intelligence.py` - Azure API integration
-- `pdf_bench/systems/base_parser.py` - Parser interface concept (needs redesign)
+### 2. tests/ Directory - KEPT ✅
 
-### Core Infrastructure
-- `pyproject.toml`, `uv.lock` - Dependency management
-- `.gitignore`
-- `tests/` structure (will need complete rewrite)
-- Git history (all commits preserved)
+**Audit Initially Found**: 0 test functions
+**Actual Count**: 166 test functions across 6 test files
+- test_config.py: 50 tests
+- test_loader.py: 33 tests
+- test_helpers.py: 30 tests
+- test_runner.py: 24 tests
+- test_persistence.py: 20 tests
+- test_integration.py: 9 tests
 
-## Why This Failed
+**Decision**: Keep all - these are real, implemented tests
 
-**Root Cause**: HTML→Markdown ground truth generation is fundamentally flawed
+### 3. Parser Systems - Relationship Clarified ✅
 
-**Problems**:
-1. HTML and PDF are semantically different formats
-2. GOV.UK doesn't publish documents as HTML (they're native PDFs)
-3. SEC HTML has too many artifacts to serve as clean ground truth
-4. Edit distance metric inappropriate for structured document comparison
-5. No validation of ground truth quality before building pipeline
+**Question**: Should pdf-bench use pdfsmith instead of duplicate implementations?
 
-## Lessons Learned
+**Answer**: NO - Keep separate
+- pdfsmith exists at `/home/stefan/applied-ai/pdfsmith/` as a clean library
+- pdf-bench parsers are benchmark adapters with extra features:
+  - Cost tracking (`.last_parsing_cost`, `.total_cost`)
+  - File-based caching for benchmark runs
+  - Metadata extraction specific to benchmarking
+  - `BaseParser` interface for harness integration
+- **Different purposes**: pdfsmith = library, pdf-bench = benchmarking instrumentation
 
-1. **Validate data quality FIRST** - Don't build infrastructure on untested assumptions
-2. **Use established benchmarks** - Don't reinvent the wheel
-3. **Question approaches** - HTML as ground truth was questionable from the start
-4. **Test small** - Should have tested 1-2 documents before generating 124
-5. **Use proper metrics** - mAP and TEDS exist for a reason
+### 4. Documentation - Already Excellent ✅
 
-## Path Forward
+No changes needed. docs/ is well-organized with:
+- Clear separation of concerns (corpora, parsers, metrics, results)
+- Good archival practice (archive/ subdirectory)
+- Machine-readable + human-readable formats
 
-Use established benchmarks:
-- DocLayNet (81K pages, CDLA-Permissive)
-- PubTabNet (568K tables, Public)
-- OmniDocBench (CVPR 2025, Apache-2.0)
+### 5. Benchmarks - Well-Organized ✅
 
-Build leaderboard + white paper as originally spec'd.
+No changes needed. 19 active configs + 42 archived configs properly separated.
+
+### 6. Metrics - All Active ✅
+
+All 13 metric files are actively used. No redundancy found.
+
+## Not Done (Deferred)
+
+### builders/ Directory
+**Status**: Needs review but not urgent
+- 34 files total
+- Core builders (CUAD, HR, legal, invoices, systematic) - clearly needed
+- ArXiv converters and one-time scripts - unclear if still needed
+- **Decision**: Defer until builders are actively maintained
+
+### archive/ Checkpoints
+**Status**: Could save ~4MB by removing checkpoints from archive/
+- **Decision**: Keep for now - archive is meant to preserve history
+
+## Summary
+
+**Files Removed**: 330
+**Disk Space Freed**: 8.6MB
+**Risk Level**: Zero - only removed duplicates and test outputs
+**Documentation Added**: results/README.md
+
+## Repository State
+
+**Well-Organized**:
+- ✅ results/ - clean, documented
+- ✅ benchmarks/ - active + archived
+- ✅ docs/ - excellent structure
+- ✅ tests/ - 166 real tests
+- ✅ metrics/ - all used
+- ✅ pdf_bench/systems/ - benchmarking adapters (not duplicates)
+
+**Needs Future Attention**:
+- ⚠️ builders/ - consolidate when actively maintaining
+- ⚠️ archive/ - could remove checkpoints for more space
+
+## Next Steps
+
+Ready to:
+1. Replace oversized ArXiv paper (2304.08901, 11MB) with smaller one
+2. Run final comprehensive benchmark with all fixes validated
+3. Generate final results and leaderboards

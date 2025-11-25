@@ -1,0 +1,12 @@
+corpus: academic
+data_source: exam_paper
+doc_id: omnidoc_073
+domain: education
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_073
+special_issues:
+- table_horizontal
+- table_full_line

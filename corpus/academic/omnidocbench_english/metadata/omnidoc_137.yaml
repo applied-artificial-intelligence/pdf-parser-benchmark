@@ -1,0 +1,11 @@
+corpus: academic
+data_source: magazine
+doc_id: omnidoc_137
+domain: news
+features: []
+language: en
+layout: other_layout
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_137
+special_issues:
+- None

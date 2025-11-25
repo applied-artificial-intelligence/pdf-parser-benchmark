@@ -1,32 +1,27 @@
 """Landing AI Document Intelligence parser with cost tracking.
 
-This module implements a parser using Landing AI's Visual Prompting platform,
-which uses computer vision and foundation models for document understanding.
+This module implements a parser using Landing AI's ADE (Agentic Document Extraction)
+SDK, which provides document parsing capabilities via foundation models.
 
-Landing AI features:
-- Visual Prompting for zero-shot document analysis
-- Pre-trained models for common document types
-- Custom model training with minimal data
-- Cloud-based and on-premise deployment options
-- High accuracy on complex layouts and forms
+Landing AI ADE features:
+- High-accuracy document parsing using DPT-2 model
+- Support for PDF, images, and other document formats
+- Chunk-based output with structured content
+- Cloud-based API processing
 
 Key features:
-- API-based processing (no local installation required)
-- Excellent performance on forms and invoices
-- Visual grounding (highlights extracted regions)
+- Simple SDK-based integration
+- Fast processing
 - Built-in cost tracking
-- Fast iteration with visual feedback
+- Structured output with chunks
 
 Cost Model:
-    - Document OCR: ~$2-5 per 1,000 pages (varies by plan)
-    - Custom models: Additional training costs
-    - Enterprise plans: Custom pricing
-    This parser uses $3.50/1000 pages as baseline
+    - Estimated ~$3.50 per 1,000 pages
+    - Varies by plan and usage tier
 
 API Limits:
     - Max file size: 25 MB per file
-    - Rate limit: Varies by plan (typically 100-1000 req/min)
-    - Batch processing available
+    - Rate limit: Varies by plan
 
 Examples:
     >>> from pathlib import Path
@@ -35,30 +30,27 @@ Examples:
     >>> output_dir = Path("output")
     >>> result = parser.parse(pdf_path, output_dir)
     >>> print(f"Estimated cost: ${parser.last_parsing_cost:.4f}")
-    >>> print(result)
-    PosixPath('output/document.md')
 
 Environment Variables:
-    LANDING_AI_API_KEY: API key for Landing AI (required)
-    LANDING_AI_ENDPOINT: API endpoint (optional, defaults to production)
-    LANDING_AI_PROJECT_ID: Project ID for custom models (optional)
+    VISION_AGENT_API_KEY: API key for Landing AI (required)
 """
 
-import base64
+from __future__ import annotations
+
 import os
 import time
 from pathlib import Path
 from typing import Any
 
 try:
-    import requests
+    from landingai_ade import LandingAIADE
 
-    REQUESTS_AVAILABLE = True
+    LANDINGAI_AVAILABLE = True
 except ImportError:
-    REQUESTS_AVAILABLE = False
+    LANDINGAI_AVAILABLE = False
 
 try:
-    import fitz  # PyMuPDF for PDF to image conversion
+    import fitz  # PyMuPDF for page counting
 
     PYMUPDF_AVAILABLE = True
 except ImportError:
@@ -66,56 +58,60 @@ except ImportError:
 
 
 class LandingAIParser:
-    """Parser using Landing AI Visual Prompting."""
+    """Parser using Landing AI ADE SDK."""
 
     # Pricing: Estimated $3.50 per 1,000 pages
     COST_PER_PAGE = 0.0035
 
-    # Default API endpoint
-    DEFAULT_ENDPOINT = "https://api.landing.ai/v1"
-
-    def __init__(self):
+    def __init__(self, **kwargs: Any):
         """Initialize Landing AI parser.
 
+        Args:
+            **kwargs: Additional options (ignored for compatibility)
+
         Raises:
-            ImportError: If required packages are not installed
+            ImportError: If landingai-ade is not installed
             ValueError: If required environment variables are missing
         """
-        if not REQUESTS_AVAILABLE:
+        if not LANDINGAI_AVAILABLE:
             raise ImportError(
-                "requests is required for Landing AI parser. Install with: pip install requests"
+                "landingai-ade is required for Landing AI parser. "
+                "Install with: pip install landingai-ade"
             )
 
-        if not PYMUPDF_AVAILABLE:
-            raise ImportError(
-                "PyMuPDF is required for Landing AI parser (PDF to image conversion). "
-                "Install with: pip install pymupdf"
-            )
-
-        # Get required config from environment
-        self.api_key = os.getenv("LANDING_AI_API_KEY")
-        self.endpoint = os.getenv("LANDING_AI_ENDPOINT", self.DEFAULT_ENDPOINT)
-        self.project_id = os.getenv("LANDING_AI_PROJECT_ID")
+        # Get API key from environment
+        self.api_key = os.getenv("VISION_AGENT_API_KEY")
 
         if not self.api_key:
             raise ValueError(
-                "LANDING_AI_API_KEY environment variable must be set. "
+                "VISION_AGENT_API_KEY environment variable must be set. "
                 "Get your API key from https://landing.ai/platform"
             )
 
-        # Set up API headers
-        self.headers = {
-            "apikey": self.api_key,
-            "Content-Type": "application/json",
-        }
+        # Initialize client
+        self.client = LandingAIADE(apikey=self.api_key)
 
         # Track costs
         self.last_parsing_cost = 0.0
         self.total_cost = 0.0
         self.pages_processed = 0
 
+        # Parser identification
+        self._name = "landing_ai"
+        self._version = "1.0.0"
+
+    @property
+    def name(self) -> str:
+        """Return parser name."""
+        return self._name
+
+    @property
+    def version(self) -> str:
+        """Return parser version."""
+        return self._version
+
     def parse(self, pdf_path: Path, output_dir: Path) -> Path:
-        """Parse a PDF file using Landing AI.
+        """Parse a PDF file using Landing AI ADE.
 
         Args:
             pdf_path: Path to input PDF file
@@ -134,38 +130,25 @@ class LandingAIParser:
         output_dir.mkdir(parents=True, exist_ok=True)
         output_path = output_dir / f"{pdf_path.stem}.md"
 
-        # Convert PDF pages to images
-        doc = fitz.open(pdf_path)
-        page_count = len(doc)
+        # Get page count for cost tracking
+        page_count = self._get_page_count(pdf_path)
 
-        all_text = []
         start_time = time.time()
 
         try:
-            # Process each page
-            for page_num in range(page_count):
-                page = doc[page_num]
+            # Call Landing AI ADE
+            response = self.client.parse(
+                document=pdf_path,
+                model="dpt-2-latest",
+            )
 
-                # Convert page to image (PNG)
-                pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))  # 2x zoom for better quality
-                img_bytes = pix.tobytes("png")
-
-                # Encode image as base64
-                img_base64 = base64.b64encode(img_bytes).decode("utf-8")
-
-                # Call Landing AI API for this page
-                page_text = self._process_page(img_base64, page_num + 1)
-                all_text.append(f"## Page {page_num + 1}\n\n{page_text}")
+            # Convert response to markdown
+            markdown = self._response_to_markdown(response)
 
         except Exception as e:
             raise Exception(f"Landing AI processing failed: {e}") from e
-        finally:
-            doc.close()
 
-        time.time() - start_time
-
-        # Combine all pages into markdown
-        markdown = "\n\n".join(all_text)
+        processing_time = time.time() - start_time
 
         # Write markdown
         output_path.write_text(markdown, encoding="utf-8")
@@ -178,57 +161,76 @@ class LandingAIParser:
 
         return output_path
 
-    def _process_page(self, image_base64: str, page_num: int) -> str:
-        """Process a single page image using Landing AI.
+    def _get_page_count(self, pdf_path: Path) -> int:
+        """Get page count from PDF.
 
         Args:
-            image_base64: Base64-encoded PNG image
-            page_num: Page number (for logging)
+            pdf_path: Path to PDF file
 
         Returns:
-            Extracted text from the page
+            Number of pages
         """
-        # Landing AI Visual Prompting API endpoint
-        url = f"{self.endpoint}/ocr"
+        if PYMUPDF_AVAILABLE:
+            try:
+                doc = fitz.open(pdf_path)
+                count = len(doc)
+                doc.close()
+                return count
+            except Exception:
+                pass
 
-        payload = {
-            "image": f"data:image/png;base64,{image_base64}",
-            "model": "general-ocr",  # Use general OCR model
-        }
+        # Fallback: estimate from file size (~75KB per page)
+        return max(1, pdf_path.stat().st_size // 75000)
 
-        # If custom project specified, use it
-        if self.project_id:
-            payload["project_id"] = self.project_id
+    def _response_to_markdown(self, response: Any) -> str:
+        """Convert Landing AI response to markdown.
 
-        try:
-            response = requests.post(url, headers=self.headers, json=payload, timeout=30)
+        Args:
+            response: Response from LandingAIADE.parse()
 
-            if response.status_code != 200:
-                # Fallback: Return error message as placeholder
-                return f"[Error processing page {page_num}: {response.status_code}]"
+        Returns:
+            Markdown text
+        """
+        lines = []
 
-            result = response.json()
+        # Response has .chunks attribute with extracted content
+        if hasattr(response, "chunks") and response.chunks:
+            for i, chunk in enumerate(response.chunks):
+                # Each chunk may have different attributes
+                if hasattr(chunk, "text"):
+                    text = chunk.text.strip()
+                    if text:
+                        lines.append(text)
+                        lines.append("")
+                elif hasattr(chunk, "content"):
+                    content = chunk.content.strip()
+                    if content:
+                        lines.append(content)
+                        lines.append("")
+                elif isinstance(chunk, str):
+                    if chunk.strip():
+                        lines.append(chunk.strip())
+                        lines.append("")
+                elif isinstance(chunk, dict):
+                    # Handle dict-like chunks
+                    text = chunk.get("text", chunk.get("content", ""))
+                    if text:
+                        lines.append(str(text).strip())
+                        lines.append("")
 
-            # Extract text from response
-            # Note: Actual response format may vary based on Landing AI API version
-            if "text" in result:
-                return result["text"]
-            elif "predictions" in result:
-                # Extract text from predictions
-                texts = []
-                for pred in result["predictions"]:
-                    if "text" in pred:
-                        texts.append(pred["text"])
-                return "\n".join(texts)
-            else:
-                return "[No text extracted]"
+        # Fallback: try to get markdown directly
+        if not lines:
+            if hasattr(response, "markdown"):
+                return response.markdown
+            elif hasattr(response, "text"):
+                return response.text
+            elif hasattr(response, "content"):
+                return response.content
 
-        except requests.exceptions.Timeout:
-            return f"[Timeout processing page {page_num}]"
-        except requests.exceptions.RequestException as e:
-            return f"[Network error on page {page_num}: {e}]"
-        except Exception as e:
-            return f"[Error processing page {page_num}: {e}]"
+        if not lines:
+            return "# Empty Document\n\nNo content extracted."
+
+        return "\n".join(lines).strip()
 
     def get_cost_info(self) -> dict[str, Any]:
         """Get cost information for this parser.
@@ -251,44 +253,16 @@ class LandingAIParser:
         Returns:
             Tuple of (is_valid, error_message)
         """
-        if not REQUESTS_AVAILABLE:
-            return False, "requests package not installed"
+        if not LANDINGAI_AVAILABLE:
+            return False, "landingai-ade package not installed"
 
-        if not PYMUPDF_AVAILABLE:
-            return False, "PyMuPDF package not installed"
-
-        api_key = os.getenv("LANDING_AI_API_KEY")
+        api_key = os.getenv("VISION_AGENT_API_KEY")
         if not api_key:
-            return False, "LANDING_AI_API_KEY not set"
+            return False, "VISION_AGENT_API_KEY not set"
 
-        # Test API key with a simple request
+        # Try to initialize client
         try:
-            endpoint = os.getenv("LANDING_AI_ENDPOINT", LandingAIParser.DEFAULT_ENDPOINT)
-            headers = {
-                "apikey": api_key,
-                "Content-Type": "application/json",
-            }
-
-            # Try to ping the API (adjust endpoint as needed)
-            url = f"{endpoint}/health"
-
-            response = requests.get(url, headers=headers, timeout=10)
-
-            if response.status_code == 200:
-                return True, "Credentials valid"
-            elif response.status_code == 401:
-                return False, "Invalid API key"
-            elif response.status_code == 403:
-                return False, "API key lacks required permissions"
-            else:
-                # If health endpoint doesn't exist, assume API key is valid
-                # (some APIs don't have a health endpoint)
-                return True, "API key configured (unable to verify)"
-
-        except requests.exceptions.Timeout:
-            return False, "Connection timeout"
-        except requests.exceptions.ConnectionError:
-            return False, "Cannot connect to Landing AI API"
+            LandingAIADE(apikey=api_key)
+            return True, "Client initialized successfully"
         except Exception as e:
-            # Unable to verify, but API key is set
-            return True, f"API key configured (verification skipped: {e})"
+            return False, f"Failed to initialize client: {e}"

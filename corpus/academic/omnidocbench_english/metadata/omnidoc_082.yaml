@@ -1,0 +1,13 @@
+corpus: academic
+data_source: academic_literature
+doc_id: omnidoc_082
+domain: academic
+features: []
+language: en
+layout: 1andmore_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_082
+special_issues:
+- table_fewer_line
+- table_span
+- table_horizontal

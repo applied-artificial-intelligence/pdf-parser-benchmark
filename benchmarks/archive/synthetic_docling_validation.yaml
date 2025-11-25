@@ -1,0 +1,36 @@
+# Synthetic Corpus Docling Validation
+#
+# Validates PDF normalization fixes by running all synthetic documents
+# through docling. Tests that MediaBox issues are resolved.
+#
+# Documents: 31 (all synthetic)
+# Estimated time: 5-10 minutes
+
+name: "Synthetic Docling Validation"
+description: |
+  Validation benchmark for docling PDF normalization.
+  Verifies all synthetic PDFs parse without MediaBox errors.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora:
+    - synthetic
+
+parser_config:
+  parsers:
+    - docling
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output_config:
+  results_dir: ../results
+  checkpoint_interval: 10
+
+execution_config:
+  workers: 1
+  timeout_per_document: 120

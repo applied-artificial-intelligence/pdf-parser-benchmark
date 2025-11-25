@@ -1,0 +1,50 @@
+name: "Academic Papers - 10 Diverse arXiv Papers"
+description: "Test diverse academic papers: equations, two-column layouts, pure math (single-column), materials science, chemical physics"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - arxiv
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    - pypdfium2
+    - pymupdf
+    - marker
+    - docling
+    - pdfplumber
+    - pymupdf4llm
+    - kreuzberg
+    - pdfminer
+    - pypdf
+    - unstructured
+    - extractous
+    - tika
+    - aws_textract
+    - azure_document_intelligence
+    - google_document_ai
+    - databricks
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 5
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

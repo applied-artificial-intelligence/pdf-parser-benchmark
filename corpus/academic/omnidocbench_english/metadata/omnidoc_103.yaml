@@ -1,0 +1,14 @@
+corpus: academic
+data_source: exam_paper
+doc_id: omnidoc_103
+domain: education
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_103
+special_issues:
+- fuzzy_scan
+- table_full_line
+- table_with_formula
+- table_horizontal

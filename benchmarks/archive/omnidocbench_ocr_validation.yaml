@@ -1,0 +1,49 @@
+# OCR Validation: Test 3 docs with ALL OCR options enabled
+# Run this BEFORE a full benchmark to verify OCR is working
+name: OmniDocBench OCR Validation (3 docs)
+description: >
+  Quick validation that all parsers are actually performing OCR.
+  Run this first to verify setup before long benchmarks.
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Just 3 test documents
+    - omnidoc_000
+    - omnidoc_050
+    - omnidoc_100
+  max_documents: null
+
+parser_config:
+  parsers:
+    - docling-ocr      # OCR mode (do_ocr=True built-in)
+    - marker           # Has built-in OCR (no extra config needed)
+    - kreuzberg        # Needs force_ocr: true
+    - unstructured     # Needs strategy: hi_res
+    # NOTE: tika requires external Tesseract server - skip for now
+
+  parser_options:
+    kreuzberg:
+      force_ocr: true
+    unstructured:
+      strategy: hi_res
+      infer_table_structure: true
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: false
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

@@ -15,7 +15,7 @@ import yaml
 # Valid corpus and domain values
 VALID_CORPORA = ["academic", "business", "synthetic"]
 VALID_DOMAINS = {
-    "academic": ["arxiv"],
+    "academic": ["arxiv", "academic", "presentation", "education", "news", "book", "handwritten", "mixed"],
     "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr"],
     "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }

@@ -1,0 +1,18 @@
+doc_id: arxiv-2410.00443
+source_url: https://arxiv.org/abs/2410.00443
+corpus: academic
+domain: arxiv
+title: "Metal-insulator transition in CaV₁₋ₓWₓO₃"
+authors:
+  - Various
+publication_date: '2024-10-01'
+features:
+  - equations
+  - two_column
+  - citations
+  - figures
+license: arXiv
+notes: Materials science condensed matter physics - 13 pages
+file_paths:
+  pdf: corpus/academic/sample/2410.00443.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2410.00443.md

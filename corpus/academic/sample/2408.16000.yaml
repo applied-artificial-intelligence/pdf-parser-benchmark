@@ -1,0 +1,19 @@
+doc_id: arxiv-2408.16000
+source_url: https://arxiv.org/abs/2408.16000
+corpus: academic
+domain: arxiv
+title: "A cycle with a 'short' period in the phenomenological model of a single neuron"
+authors:
+  - Margarita M. Preobrazhenskaia
+  - Igor E. Preobrazhenskii
+publication_date: '2024-08-28'
+features:
+  - equations
+  - single_column
+  - citations
+  - mathematical_neuroscience
+license: arXiv
+notes: Dynamical systems / mathematical neuroscience - 12 pages, 267KB
+file_paths:
+  pdf: corpus/academic/sample/2408.16000.pdf
+  ground_truth: corpus/academic/sample/2408.16000.md

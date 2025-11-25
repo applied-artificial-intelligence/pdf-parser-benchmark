@@ -3,7 +3,7 @@ data_source: magazine
 doc_id: omnidoc_129
 domain: news
 features: []
-language: simplified_chinese
+language: zh
 layout: double_column
 source: omnidocbench
 source_url: generated://omnidocbench/omnidoc_129

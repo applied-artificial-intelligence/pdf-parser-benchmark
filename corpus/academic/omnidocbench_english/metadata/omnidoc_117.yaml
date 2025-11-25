@@ -1,0 +1,13 @@
+corpus: academic
+data_source: magazine
+doc_id: omnidoc_117
+domain: news
+features: []
+language: en
+layout: other_layout
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_117
+special_issues:
+- table_horizontal
+- table_full_line
+- colorful_backgroud

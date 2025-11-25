@@ -1,0 +1,2831 @@
+{
+  "generated_at": "2025-11-24T11:55:58.206057",
+  "summary": {
+    "total_documents": 605,
+    "total_parsers": 20,
+    "parsers": [
+      "aws_textract",
+      "azure_document_intelligence",
+      "databricks",
+      "docling",
+      "docling-fast",
+      "extractous",
+      "google_document_ai",
+      "kreuzberg",
+      "landing_ai",
+      "marker",
+      "marker_ollama",
+      "pdfminer",
+      "pdfplumber",
+      "pymupdf",
+      "pymupdf4llm",
+      "pypdf",
+      "pypdf2",
+      "pypdfium2",
+      "tika",
+      "unstructured"
+    ],
+    "coverage_categories": {
+      "complete (18+ parsers)": 195,
+      "good (13-17 parsers)": 153,
+      "partial (5-12 parsers)": 257,
+      "minimal (1-4 parsers)": 0
+    }
+  },
+  "coverage_by_category": {
+    "complete_coverage": [
+      {
+        "doc_id": "06_docx_simple",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "07_docx_tables",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "08_docx_multicolumn",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "09_table_simple_grid",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "10_table_colspan",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "11_table_wide",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "12_table_multiple",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "13_table_complex_headers",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "14_table_financial",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "15_list_simple_bullets",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "16_list_numbered",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "17_list_nested_2level",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "18_list_nested_3level",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "19_list_mixed_types",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "20_list_with_paragraphs",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "21_column_two_column",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "22_column_three_column",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "23_column_mixed_width",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "24_column_newsletter",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "25_column_academic",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "26_column_brochure",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "27_mixed_business_report",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "28_mixed_technical_docs",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "29_mixed_policy_doc",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "30_mixed_meeting_minutes",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "31_mixed_research_summary",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "32_mixed_comprehensive",
+        "parser_count": 20,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "marker_ollama",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_007",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_020",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_026",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_027",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_028",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_036",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_037",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_038",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_042",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_051",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_052",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_054",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_059",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_061",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_074",
+        "parser_count": 18,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_001",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_002",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_003",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_004",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_005",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_006",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_007",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "invoice_008",
+        "parser_count": 19,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling",
+          "docling-fast",
+          "extractous",
+          "google_document_ai",
+          "kreuzberg",
+          "landing_ai",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      }
+    ],
+    "good_coverage": [
+      {
+        "doc_id": "cuad_000",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_001",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_002",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_003",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_004",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_005",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_006",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_008",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_009",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_010",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_011",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_012",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_013",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_014",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_015",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_016",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_017",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_018",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_019",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_021",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_022",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_023",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_024",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_025",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_029",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_030",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_031",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_032",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_033",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_034",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_035",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_039",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_040",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_041",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_043",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_044",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_045",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_046",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_047",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_048",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_049",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_050",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_053",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_055",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_056",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_057",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_058",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_060",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_062",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "cuad_063",
+        "parser_count": 13,
+        "parsers": [
+          "docling-fast",
+          "extractous",
+          "kreuzberg",
+          "marker",
+          "pdfminer",
+          "pdfplumber",
+          "pymupdf",
+          "pymupdf4llm",
+          "pypdf",
+          "pypdf2",
+          "pypdfium2",
+          "tika",
+          "unstructured"
+        ]
+      }
+    ],
+    "partial_coverage": [
+      {
+        "doc_id": "arxiv-2302.13971",
+        "parser_count": 10,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "google_document_ai",
+          "landing_ai",
+          "marker",
+          "pymupdf",
+          "pypdf2",
+          "pypdfium2"
+        ]
+      },
+      {
+        "doc_id": "arxiv-2302.14852",
+        "parser_count": 10,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "google_document_ai",
+          "landing_ai",
+          "marker",
+          "pymupdf",
+          "pypdf2",
+          "pypdfium2"
+        ]
+      },
+      {
+        "doc_id": "arxiv-2303.08774",
+        "parser_count": 10,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "google_document_ai",
+          "landing_ai",
+          "marker",
+          "pymupdf",
+          "pypdf2",
+          "pypdfium2"
+        ]
+      },
+      {
+        "doc_id": "arxiv-2303.17564",
+        "parser_count": 10,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "google_document_ai",
+          "landing_ai",
+          "marker",
+          "pymupdf",
+          "pypdf2",
+          "pypdfium2"
+        ]
+      },
+      {
+        "doc_id": "arxiv-2303.18223",
+        "parser_count": 10,
+        "parsers": [
+          "aws_textract",
+          "azure_document_intelligence",
+          "databricks",
+          "docling-fast",
+          "google_document_ai",
+          "landing_ai",
+          "marker",
+          "pymupdf",
+          "pypdf2",
+          "pypdfium2"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_000",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_001",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_002",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_003",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_004",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_005",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_006",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_007",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_008",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_009",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_010",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_011",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_012",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_013",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_014",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_015",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_016",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_017",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_018",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_019",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_020",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_021",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_022",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_023",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_024",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_025",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_026",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_027",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_028",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_029",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_030",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_031",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_032",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_033",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_034",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_035",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_036",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_037",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_038",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_039",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_040",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_041",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_042",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_043",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      },
+      {
+        "doc_id": "omnidoc_044",
+        "parser_count": 5,
+        "parsers": [
+          "docling-fast",
+          "kreuzberg",
+          "marker",
+          "tika",
+          "unstructured"
+        ]
+      }
+    ],
+    "minimal_coverage": []
+  }
+}

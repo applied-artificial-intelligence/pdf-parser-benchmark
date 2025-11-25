@@ -3,7 +3,7 @@ data_source: book
 doc_id: omnidoc_073
 domain: academic
 features: []
-language: simplified_chinese
+language: zh
 layout: single_column
 source: omnidocbench
 source_url: generated://omnidocbench/omnidoc_073

@@ -1,0 +1,12 @@
+corpus: academic
+data_source: book
+doc_id: omnidoc_068
+domain: academic
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_068
+special_issues:
+- table_fewer_line
+- table_horizontal

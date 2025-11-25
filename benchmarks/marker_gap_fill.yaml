@@ -1,0 +1,176 @@
+name: "Marker Gap Fill"
+description: |
+  Fill coverage gap for marker parser - 137 documents missing.
+  Uses actual corpus document IDs from gap analysis.
+  Marker is GPU-heavy and slow, so using single worker.
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic test documents (20 docs)
+    - 06_docx_simple
+    - 07_docx_tables
+    - 08_docx_multicolumn
+    - 10_table_colspan
+    - 11_table_wide
+    - 12_table_multiple
+    - 13_table_complex_headers
+    - 14_table_financial
+    - 15_list_simple_bullets
+    - 17_list_nested_2level
+    - 19_list_mixed_types
+    - 20_list_with_paragraphs
+    - 21_column_two_column
+    - 25_column_academic
+    - 27_mixed_business_report
+    - 28_mixed_technical_docs
+    - 29_mixed_policy_doc
+    - 30_mixed_meeting_minutes
+    - 31_mixed_research_summary
+    - 32_mixed_comprehensive
+    # ArXiv papers (4)
+    - arxiv-2302.13971
+    - arxiv-2302.14852
+    - arxiv-2303.08774
+    - arxiv-2303.18223
+    # Legal consulting agreements (12)
+    - legal_cons_007
+    - legal_cons_008
+    - legal_cons_081
+    - legal_cons_082
+    - legal_cons_083
+    - legal_cons_084
+    - legal_cons_085
+    - legal_cons_086
+    - legal_cons_087
+    - legal_cons_088
+    - legal_cons_089
+    - legal_cons_090
+    # Legal employment agreements (32)
+    - legal_emp_003
+    - legal_emp_004
+    - legal_emp_031
+    - legal_emp_032
+    - legal_emp_033
+    - legal_emp_034
+    - legal_emp_035
+    - legal_emp_036
+    - legal_emp_037
+    - legal_emp_038
+    - legal_emp_039
+    - legal_emp_040
+    - legal_emp_041
+    - legal_emp_042
+    - legal_emp_043
+    - legal_emp_044
+    - legal_emp_045
+    - legal_emp_046
+    - legal_emp_047
+    - legal_emp_048
+    - legal_emp_049
+    - legal_emp_050
+    - legal_emp_051
+    - legal_emp_052
+    - legal_emp_053
+    - legal_emp_054
+    - legal_emp_055
+    - legal_emp_056
+    - legal_emp_057
+    - legal_emp_058
+    - legal_emp_059
+    - legal_emp_060
+    # Legal NDA agreements (22)
+    - legal_nda_005
+    - legal_nda_006
+    - legal_nda_061
+    - legal_nda_062
+    - legal_nda_063
+    - legal_nda_064
+    - legal_nda_065
+    - legal_nda_066
+    - legal_nda_067
+    - legal_nda_068
+    - legal_nda_069
+    - legal_nda_070
+    - legal_nda_071
+    - legal_nda_072
+    - legal_nda_073
+    - legal_nda_074
+    - legal_nda_075
+    - legal_nda_076
+    - legal_nda_077
+    - legal_nda_078
+    - legal_nda_079
+    - legal_nda_080
+    # Legal SaaS agreements (30)
+    - legal_saas_001
+    - legal_saas_002
+    - legal_saas_003
+    - legal_saas_004
+    - legal_saas_005
+    - legal_saas_006
+    - legal_saas_007
+    - legal_saas_008
+    - legal_saas_009
+    - legal_saas_010
+    - legal_saas_011
+    - legal_saas_012
+    - legal_saas_013
+    - legal_saas_014
+    - legal_saas_015
+    - legal_saas_016
+    - legal_saas_017
+    - legal_saas_018
+    - legal_saas_019
+    - legal_saas_020
+    - legal_saas_021
+    - legal_saas_022
+    - legal_saas_023
+    - legal_saas_024
+    - legal_saas_025
+    - legal_saas_026
+    - legal_saas_027
+    - legal_saas_028
+    - legal_saas_029
+    - legal_saas_030
+    # Legal service agreements (12)
+    - legal_svc_009
+    - legal_svc_010
+    - legal_svc_091
+    - legal_svc_092
+    - legal_svc_093
+    - legal_svc_094
+    - legal_svc_095
+    - legal_svc_096
+    - legal_svc_097
+    - legal_svc_098
+    - legal_svc_099
+    - legal_svc_100
+    # Resumes (3)
+    - resume_009
+    - resume_010
+    - resume_034
+    # Synthetic complex docs (2)
+    - syn-complex-001
+    - syn-tables-001
+
+parser_config:
+  parsers:
+    - marker
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - character_error_rate
+    - chrf++
+
+output:
+  format: json
+  checkpointing: true
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 600

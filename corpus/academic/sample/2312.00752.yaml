@@ -1,0 +1,18 @@
+doc_id: arxiv-2312.00752
+source_url: https://arxiv.org/abs/2312.00752
+corpus: academic
+domain: arxiv
+title: "CLIP-Powered Visual Grounding"
+authors:
+  - Various
+publication_date: '2023-12-01'
+features:
+  - equations
+  - two_column
+  - citations
+  - figures
+license: arXiv
+notes: Visual grounding with CLIP - 13 pages
+file_paths:
+  pdf: corpus/academic/sample/2312.00752.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2312.00752.md

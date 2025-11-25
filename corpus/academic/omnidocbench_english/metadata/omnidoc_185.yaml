@@ -1,0 +1,14 @@
+corpus: academic
+data_source: book
+doc_id: omnidoc_185
+domain: academic
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_185
+special_issues:
+- table_span
+- table_fewer_line
+- table_veritical
+- table_with_formula

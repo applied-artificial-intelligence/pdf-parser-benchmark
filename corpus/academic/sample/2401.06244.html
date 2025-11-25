@@ -1,0 +1,1197 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>[2401.06244] YOLO-Former: YOLO Shakes Hand With ViT</title><meta property="og:description" content="The proposed YOLO-Former method seamlessly integrates the ideas of transformer and YOLOv4 to create a highly accurate and efficient object detection system. The method leverages the fast inference speed of YOLOv4 and i…">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YOLO-Former: YOLO Shakes Hand With ViT">
+<meta name="twitter:image:src" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta name="twitter:image:alt" content="ar5iv logo">
+<meta property="og:title" content="YOLO-Former: YOLO Shakes Hand With ViT">
+<meta property="og:site_name" content="ar5iv">
+<meta property="og:image" content="https://ar5iv.labs.arxiv.org/assets/ar5iv_card.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ar5iv.labs.arxiv.org/html/2401.06244">
+<link rel="canonical" target="_blank" href="https://ar5iv.labs.arxiv.org/html/2401.06244">
+
+<!--Generated on Tue Feb 27 09:46:20 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="keywords" lang="en" content="
+Article submission,  IEEE,  IEEEtran,  journal,  ">
+
+<script>
+  function detectColorScheme(){
+    var theme="light";
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if(current_theme){
+      if(current_theme == "dark"){
+        theme = "dark";
+      } }
+    else if(!window.matchMedia) { return false; }
+    else if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      theme = "dark"; }
+    if (theme=="dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.setAttribute("data-theme", "light"); } }
+
+  detectColorScheme();
+
+  function toggleColorScheme(){
+    var current_theme = localStorage.getItem("ar5iv_theme");
+    if (current_theme) {
+      if (current_theme == "light") {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+      else {
+        localStorage.setItem("ar5iv_theme", "light"); } }
+    else {
+        localStorage.setItem("ar5iv_theme", "dark"); }
+    detectColorScheme(); }
+</script>
+<link media="all" rel="stylesheet" href="/assets/ar5iv-fonts.0.8.4.css"><link media="all" rel="stylesheet" href="/assets/ar5iv.0.8.4.css"><link media="all" rel="stylesheet" href="/assets/ar5iv-site.0.2.2.css">
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">YOLO-Former: YOLO Shakes Hand With ViT</h1>
+<div class="ltx_authors">
+<span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Javad Khoramdel
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Ahmad Moori
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Yasamin Borhani
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Armin Ghanbarzadeh
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Esmaeil Najafi 
+<br class="ltx_break">Tarbiat Modares University
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname">Faculty of Mechanical Engineering, K. N. Toosi University of Technology 
+<br class="ltx_break">Tehran, Iran 
+<br class="ltx_break"><span id="id1.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">j.khoramdel@modares.ac.ir</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><span id="id2.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">ahmadmoori@email.kntu.ac.ir</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><span id="id3.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">borhaniyasamin@gmail.com</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><span id="id4.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">agz1986@gmail.com</span>
+</span></span>
+<span class="ltx_author_before">  </span><span class="ltx_creator ltx_role_author">
+<span class="ltx_personname"><span id="id5.1.id1" class="ltx_text ltx_font_typewriter" style="font-size:90%;">najafi.e@kntu.ac.ir</span>
+</span></span>
+</div>
+
+<div class="ltx_abstract">
+<h6 class="ltx_title ltx_title_abstract">Abstract</h6>
+<p id="id6.id1" class="ltx_p">The proposed YOLO-Former method seamlessly integrates the ideas of transformer and YOLOv4 to create a highly accurate and efficient object detection system. The method leverages the fast inference speed of YOLOv4 and incorporates the advantages of the transformer architecture through the integration of convolutional attention and transformer modules. The results demonstrate the effectiveness of the proposed approach, with a mean average precision (mAP) of 85.76% on the Pascal VOC dataset, while maintaining high prediction speed with a frame rate of 10.85 frames per second. The contribution of this work lies in the demonstration of how the innovative combination of these two state-of-the-art techniques can lead to further improvements in the field of object detection.</p>
+</div>
+<div class="ltx_keywords">
+<h6 class="ltx_title ltx_title_keywords">Index Terms: </h6>
+Article submission, IEEE, IEEEtran, journal, <span id="id7.id1" class="ltx_text ltx_LaTeX_logo" style="letter-spacing:-0.2em; margin-right:0.1em;">L<span id="id7.id1.1" class="ltx_text" style="position:relative; bottom:0.4ex;font-variant:small-caps;;">a</span>T<span id="id7.id1.2" class="ltx_text" style="position:relative; bottom:-0.2ex;font-variant:small-caps;font-size:120%;">e</span>X</span>, paper, template, typesetting.
+
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">I </span><span id="S1.1.1" class="ltx_text ltx_font_smallcaps">Introduction</span>
+</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p id="S1.p1.1" class="ltx_p">Many computer vision tasks, such as image classification, image segmentation, and object detection, are dominated by deep neural networks due to the recent advancements in deep learning. Object detection is the task of detecting instances of semantic objects of a certain class in digital images and videos <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="" class="ltx_ref">1</a>]</cite>. Some applications of such systems are license plate character recognition, object tracking, human face and body detection and recognition, activity recognition, medical imaging, advanced driving assistant systems, manufacturing industry, and robotics.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p id="S1.p2.1" class="ltx_p">With the advent of big-data and higher processing power, the deep neural network based methods for object detection have become more popular. These networks are capable of end-to-end object detection without the need of additional components and are mostly based on convolutional neural networks <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>.
+The state-of-the-art object detection methods can be further categorized into two main categories. First, region proposal based models that prioritize detection accuracy over inference speed such as RCNN <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib3" title="" class="ltx_ref">3</a>]</cite>, fast RCNN <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib4" title="" class="ltx_ref">4</a>]</cite>, mask RCNN <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib5" title="" class="ltx_ref">5</a>]</cite>. Second, one-stage detection models that have high inference speeds and are capable of achieving real time detection. The examples of one-stage models include single shot multibox detector (SSD) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib6" title="" class="ltx_ref">6</a>]</cite>, you only look once (YOLO) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib7" title="" class="ltx_ref">7</a>]</cite>, EfficientDet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib8" title="" class="ltx_ref">8</a>]</cite>, RetinaNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib9" title="" class="ltx_ref">9</a>]</cite>, CenterNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib10" title="" class="ltx_ref">10</a>]</cite>, and HourGlass <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib11" title="" class="ltx_ref">11</a>]</cite>.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p id="S1.p3.1" class="ltx_p">Although all the previously mentioned object detectors rely solely on the convolutional and pooling layers, the impressive results of Vision Transformer (ViT) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib12" title="" class="ltx_ref">12</a>]</cite> which is based on attention layers, has inspired ViT-YOLO <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib13" title="" class="ltx_ref">13</a>]</cite>, and DETR <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib14" title="" class="ltx_ref">14</a>]</cite> to develop object detectors based on the idea of the transformer. The detection transformer (DETR) framework uses the transformer encoder-decoder-based architecture to perform end-to-end object detection <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib14" title="" class="ltx_ref">14</a>]</cite>. The ViT-YOLO embeds the scaled dot multi-head attention layer at the end of the YOLOv4 backbone by flattening the feature maps before the attention layer. It then reshapes the attention layer outputs to 2D to be consistent with the remainder of the network <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib13" title="" class="ltx_ref">13</a>]</cite>.</p>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p id="S1.p4.1" class="ltx_p">This paper improves the accuracy of YOLOv4 by introducing the YOLO-Former algorithm that employs a novel convolutional self-attention module (CSAM) in the YOLOv4 structure. The CSAM is developed based on the scaled dot self-attention (SDSA). In order to connect the proposed CSAM to other components in the network, a convolutional transformer module has been implemented. The presented object detector is further enhanced by using several augmentation policies to increase its generalization capability. As such, the YOLO-Former provides more accurate results on the Pascal VOC dataset, while preserving the real-time execution property.</p>
+</div>
+<div id="S1.p5" class="ltx_para">
+<p id="S1.p5.1" class="ltx_p">The structure of the paper is as follows. Section <a href="#S2" title="II Background ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">II</span></a> presents a summary of the studies on augmentations, regularization, and attention mechanisms. The network structure and developed modules are discussed in Section <a href="#S3" title="III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">III</span></a>. A detailed description of the experiments conducted with the implemented model and the YOLOv4 dataset, training configuration, and evaluation is available in Section <a href="#S4" title="IV Experiment ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">IV</span></a>. The results and comparison to the literature are discussed in Section <a href="#S5" title="V Results and Discussion ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">V</span></a> and, finally, Section <a href="#S6" title="VI Conclusion ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">VI</span></a> concludes the paper.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">II </span><span id="S2.1.1" class="ltx_text ltx_font_smallcaps">Background</span>
+</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p id="S2.p1.1" class="ltx_p">A brief review of the formerly conducted studies on augmentations, regularization, and attention mechanisms is given in the following.</p>
+</div>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S2.SS1.4.1.1" class="ltx_text">II-A</span> </span><span id="S2.SS1.5.2" class="ltx_text ltx_font_italic">Augmentation</span>
+</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p id="S2.SS1.p1.1" class="ltx_p">The great impact of the augmentation on extending the generalization ability of the models has made it inseparable from image processing. A network can benefit from augmentation methods such as translation, color jittering, rotation, etc. not only as a means of providing more data, but also as a means of making it less sensitive to these transformations <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib15" title="" class="ltx_ref">15</a>]</cite>. For instance, occlusion is a challenge problem in image recognition. One solution for that is introduced as the cutout method, which makes the used dataset more versatile <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib16" title="" class="ltx_ref">16</a>]</cite>. In this technique, a random region of images is covered by a rectangle which its size can be chosen according to the size of the objects in each image. Thus, the network should not learn features that rely on the whole object of interest. The same inspiration underlies other methods, such as GridMask <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib17" title="" class="ltx_ref">17</a>]</cite> and Hide-and-seek (HaS)<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib18" title="" class="ltx_ref">18</a>]</cite>.</p>
+</div>
+<div id="S2.SS1.p2" class="ltx_para">
+<p id="S2.SS1.p2.1" class="ltx_p">Augmenting across a batch of samples can be beneficial as it extends the vicinity of the dataset as multiple instances of multiple images are mixed to produce a new picture <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>. Various augmentations in image classification are applied to a batch of images like mixup <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>, cutmix <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib20" title="" class="ltx_ref">20</a>]</cite>, and puzzle mix <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib21" title="" class="ltx_ref">21</a>]</cite>. Although attempts have been made to extend the applicability of these techniques beyond image classification to object detection <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>, a very compelling method called mosaic augmentation is implemented in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib22" title="" class="ltx_ref">22</a>]</cite>.</p>
+</div>
+<div id="S2.SS1.p3" class="ltx_para">
+<p id="S2.SS1.p3.1" class="ltx_p">Studies suggest that the severity and number of augmentation techniques used during the training affect the model accuracy <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib23" title="" class="ltx_ref">23</a>, <a href="#bib.bib24" title="" class="ltx_ref">24</a>, <a href="#bib.bib25" title="" class="ltx_ref">25</a>]</cite>. By training a reinforcement learning agent on a small dataset, AutoAugment attempts to find an augmentation policy for combining the augmentation transformations. The high computational cost of AutoAugment encouraged the authors of <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib24" title="" class="ltx_ref">24</a>]</cite> to develop RandAugment, which parameterizes the data augmentation process with only two parameters; the number of operations (N), and severity (M). Combining RandAugment <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib24" title="" class="ltx_ref">24</a>]</cite> and mixup <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib19" title="" class="ltx_ref">19</a>]</cite>, AugMix augments an image separately in different chains. An augmented image is created by weighted summation of augmentation chains using coefficients from a Dirichlet distribution. Finally, the coefficients from a Beta distribution are drawn to calculate the weighted sum of the original and augmented images.</p>
+</div>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S2.SS2.4.1.1" class="ltx_text">II-B</span> </span><span id="S2.SS2.5.2" class="ltx_text ltx_font_italic">Regularization</span>
+</h3>
+
+<div id="S2.SS2.p1" class="ltx_para">
+<p id="S2.SS2.p1.1" class="ltx_p">As with augmentation, the overfitting problem can be reduced by regularization techniques like dropout. Although dropout works well with fully connected layers, the authors of <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib26" title="" class="ltx_ref">26</a>]</cite> have developed Dropblock as a method for convolutional layers. Rather than randomly dropping features at random locations, Dropblock drops a connected region. According to their study, decreasing the probability of keeping blocks is more effective than utilizing a fixed probability.</p>
+</div>
+<div id="S2.SS2.p2" class="ltx_para">
+<p id="S2.SS2.p2.1" class="ltx_p">Some methods are only applicable to a specific structure, like shake-shake regularization <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib27" title="" class="ltx_ref">27</a>]</cite>, which can be applied to a multi-branch network. This approach is developed for a three-branch network; two branches are multiplied by small random numbers, then summed up with the third branch during the training forward pass, and different random numbers from a Beta distribution are used as multipliers during backpropagation. These two branches are multiplied by 0.5 at test time.</p>
+</div>
+</section>
+<section id="S2.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S2.SS3.4.1.1" class="ltx_text">II-C</span> </span><span id="S2.SS3.5.2" class="ltx_text ltx_font_italic">Attention Mechanisms</span>
+</h3>
+
+<div id="S2.SS3.p1" class="ltx_para">
+<p id="S2.SS3.p1.1" class="ltx_p">The application of attention mechanisms in the artificial neural network has been associated with NLP tasks <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib28" title="" class="ltx_ref">28</a>]</cite>. In machine translation, the network should concentrate on certain parts of the input sequence from the source language to predict a word in the target language. An attention mechanism is proposed in <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib29" title="" class="ltx_ref">29</a>]</cite> that could help the network to pay attention. This work encouraged other researchers to investigate the applicability of attention for solving different tasks <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib30" title="" class="ltx_ref">30</a>, <a href="#bib.bib31" title="" class="ltx_ref">31</a>, <a href="#bib.bib32" title="" class="ltx_ref">32</a>, <a href="#bib.bib33" title="" class="ltx_ref">33</a>]</cite>. Formerly, the common choices for solving the NLP tasks like machine translation were recurrent and convolutional neural networks. The authors of <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib34" title="" class="ltx_ref">34</a>]</cite> suggested a different architecture called Transformer. Unlike the other works which combined attention with either recurrent or convolutional neural networks, Transformer was only based on the scaled dot multi-head self-attention (SDMHSA). They claimed that attention could solve the machine translation task on its own. This concept has been investigated in other studies like BERT <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib35" title="" class="ltx_ref">35</a>]</cite>.</p>
+</div>
+<div id="S2.SS3.p2" class="ltx_para">
+<p id="S2.SS3.p2.1" class="ltx_p">The promising results of using attention in the NLP field has motivated computer vision scientists to improve their results by adding attention to their networks <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib36" title="" class="ltx_ref">36</a>, <a href="#bib.bib37" title="" class="ltx_ref">37</a>, <a href="#bib.bib38" title="" class="ltx_ref">38</a>, <a href="#bib.bib39" title="" class="ltx_ref">39</a>]</cite>. In <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib40" title="" class="ltx_ref">40</a>]</cite>, convolutional block attention module (CBAM) has been introduced for convolutional neural networks. This module includs two sub-modules. A spatial attention module (SAM) and a channel attention module (CAM). The authors embedded the CBAM in the structure of a number of the state-of-the-art architectures like ResNet50 <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib41" title="" class="ltx_ref">41</a>]</cite>, ResNeXt50 <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib42" title="" class="ltx_ref">42</a>]</cite>, and MobileNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib43" title="" class="ltx_ref">43</a>]</cite>. By taking advantage of attention, they have achieved higher accuracy in image classification on ImageNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib44" title="" class="ltx_ref">44</a>]</cite> and object detection on Pascal VOC <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib45" title="" class="ltx_ref">45</a>]</cite> and Microsoft COCO <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib46" title="" class="ltx_ref">46</a>]</cite>. The vision transformer (ViT) has bridged the gap between image classification and transformer architecture by dealing with an image as a sequence of patches. This network has achieved state-of-the-art accuracy on ImageNet classification. Similar to <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib35" title="" class="ltx_ref">35</a>]</cite> and <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib34" title="" class="ltx_ref">34</a>]</cite>, ViT only uses the MHSDSA as the main component all over the network <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib12" title="" class="ltx_ref">12</a>]</cite>.</p>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">III </span><span id="S3.1.1" class="ltx_text ltx_font_smallcaps">Network Structure</span>
+</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p id="S3.p1.1" class="ltx_p">The YOLOv4 architecture can be divided into three sub-networks: the backbone, the neck, and the head. The backbone of YOLOv4 is called CPS-Darknet-53. The CPS-Darknet-53 extracts feature from the input image and generate output at three levels. The first level output has the highest spatial resolution and is suitable for detecting small-sized objects. The second level output has less spatial resolution than the first, making it appropriate for finding medium-sized objects in the image. The feature map has more depth than the first stage feature map at this stage. The third and last stage output has the deepest feature map with the least spatial resolution. The YOLOv4 neck takes these feature maps and up-samples the lowest resolution feature map with the bi-linear interpolation method to match the spatial resolution of the second stage feature map. Then this up-sampled feature map is then concatenated with the second-level feature map to help the mid-level resolution feature map enrich the features for detecting medium-sized objects. The obtained feature map is up-sampled and concatenated with the highest-resolution feature map. The YOLOv4 head receives the feature maps from the neck to detect objects at three scales.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p id="S3.p2.1" class="ltx_p">It is evident that residual blocks play a vital role inside the YOLOv4 backbone due to 23 residual blocks in CPS-Darknet-53. Motivated by the ViT transformer block, a transformer attention block is implemented and utilized to replace the residual blocks in CPS-Darknet-53. Replacement of the residual blocks is decided due to the fact that the attention block contains residual connections, and a network can learn to bypass the attention mechanism using the residual connections if necessary. Consequently, not only is the residual property preserved, but the network can also learn to pay attention to the areas of interest. The convolutional transformer and the convolutional self-attention modules will be explained in Section <a href="#S3.SS1" title="III-A Convolutional Transformer Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag"><span class="ltx_text">III-A</span></span></a> and Section <a href="#S3.SS2" title="III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag"><span class="ltx_text">III-B</span></span></a> respectively.</p>
+</div>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS1.4.1.1" class="ltx_text">III-A</span> </span><span id="S3.SS1.5.2" class="ltx_text ltx_font_italic">Convolutional Transformer Module</span>
+</h3>
+
+<div id="S3.SS1.p1" class="ltx_para">
+<p id="S3.SS1.p1.1" class="ltx_p">Like residual blocks in ResNet architectures, transformer layers are building blocks in ViT models. The block diagram for these layers is demonstrated in Fig. <a href="#S3.F1" title="Figure 1 ‣ III-A Convolutional Transformer Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>(a). Before applying the scaled dot multi-head self-attention (SDMHSA), layer normalization (LN) normalizes the features. A residual connection adds the initial features to the output of the attention layer. Afterward, the results are normalized once more by layer normalization. Then, the normalized features are given to two consecutive dense layers (Dense1 and Dense2) with GeLU activation. Another residual connection combines the output of the SDMHSA with the output of the dense layers.</p>
+</div>
+<div id="S3.SS1.p2" class="ltx_para">
+<p id="S3.SS1.p2.1" class="ltx_p">Inspired by this layer, a convolutional transformer layer is implemented, shown in Fig. <a href="#S3.F1" title="Figure 1 ‣ III-A Convolutional Transformer Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>(b). While retaining the same overall structure as the transformer layer, minor changes have been made to make the module consistent with the convolutional network structure. The features’ dimensions remain unchanged in ViT models; however, the depth of feature maps usually changes in CNNs. Accordingly, to ensure the dimensions match inside the residual connections, Conv1 is added to the module. Also, the SDMHSA, dense layers are replaced with the convolutiona self-attention module (CSAM) and convolutional layers (Conv2 and Conv3), respectively. Since batch normalization outperforms layer normalization in CNNs, synchronized batch normalization (SBN) is preferred.</p>
+</div>
+<figure id="S3.F1" class="ltx_figure"><img src="/html/2401.06244/assets/x1.png" id="S3.F1.g1" class="ltx_graphics ltx_centering ltx_img_portrait" width="461" height="743" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>The transformer layer structure for (a) Yolov4 and (b) YOLO-Former. Each module initially pre-processes the input features and feeds it into the specialized attention module. The sum of attention layer output and the input features are processed differently to obtain the output.</figcaption>
+</figure>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S3.SS2.4.1.1" class="ltx_text">III-B</span> </span><span id="S3.SS2.5.2" class="ltx_text ltx_font_italic">Convolutional self-attention Module</span>
+</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<p id="S3.SS2.p1.1" class="ltx_p">A fundamental component of ViT is the scaled dot self-attention (SDSA) mechanism. As shown in Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(a), the linear projection of the input forms the Query (Q), Key (K), and Value (V). Attention scores are calculated by taking softmax from the matrix multiplication of Q and K<sup id="S3.SS2.p1.1.1" class="ltx_sup">T</sup>. The final output results from a matrix multiplication between the value and the attention scores. Multi-head self-attention is created by feeding the same input to multiple SDSAs and concatenating the outputs.</p>
+</div>
+<figure id="S3.F2" class="ltx_figure"><img src="/html/2401.06244/assets/x2.png" id="S3.F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="447" height="336" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>Attention modules used in (a) Yolov4 and (b) YOLO-Former. Each input is divided to three branches: Key, Query, and Value. These branches are then processed and multiplied according to the multiplication convention stated in each algorithm. They are then processed in a final stage and output (They then go through one final stage of processing before being output). (c) Potential building blocks used in the YOLO-Former attention module for the model iterations described in the paper: single-head (c1), multi-branch (c2), and multi-head (c3)</figcaption>
+</figure>
+<div id="S3.SS2.p2" class="ltx_para">
+<p id="S3.SS2.p2.2" class="ltx_p">Based on the idea of SDSA, a convolutional self-attention mechanism has been developed in this paper, shown in Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(b). Same as in the ViT, the same inputs are given to the Query, Key, and Value gates. Each gate processes the input by a series of operations shown with <math id="S3.SS2.p2.1.m1.1" class="ltx_Math" alttext="\Psi" display="inline"><semantics id="S3.SS2.p2.1.m1.1a"><mi mathvariant="normal" id="S3.SS2.p2.1.m1.1.1" xref="S3.SS2.p2.1.m1.1.1.cmml">Ψ</mi><annotation-xml encoding="MathML-Content" id="S3.SS2.p2.1.m1.1b"><ci id="S3.SS2.p2.1.m1.1.1.cmml" xref="S3.SS2.p2.1.m1.1.1">Ψ</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS2.p2.1.m1.1c">\Psi</annotation></semantics></math> in Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(b). The <math id="S3.SS2.p2.2.m2.1" class="ltx_Math" alttext="\Psi" display="inline"><semantics id="S3.SS2.p2.2.m2.1a"><mi mathvariant="normal" id="S3.SS2.p2.2.m2.1.1" xref="S3.SS2.p2.2.m2.1.1.cmml">Ψ</mi><annotation-xml encoding="MathML-Content" id="S3.SS2.p2.2.m2.1b"><ci id="S3.SS2.p2.2.m2.1.1.cmml" xref="S3.SS2.p2.2.m2.1.1">Ψ</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS2.p2.2.m2.1c">\Psi</annotation></semantics></math> operations are similar across all three gates.</p>
+</div>
+<div id="S3.SS2.p3" class="ltx_para">
+<p id="S3.SS2.p3.1" class="ltx_p">A variety of attention modules are formed depending on what occurs within the <math id="S3.SS2.p3.1.m1.1" class="ltx_Math" alttext="\Psi" display="inline"><semantics id="S3.SS2.p3.1.m1.1a"><mi mathvariant="normal" id="S3.SS2.p3.1.m1.1.1" xref="S3.SS2.p3.1.m1.1.1.cmml">Ψ</mi><annotation-xml encoding="MathML-Content" id="S3.SS2.p3.1.m1.1b"><ci id="S3.SS2.p3.1.m1.1.1.cmml" xref="S3.SS2.p3.1.m1.1.1">Ψ</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS2.p3.1.m1.1c">\Psi</annotation></semantics></math>. In the simplest scheme, a 1x1 convolution (Conv1) followed by the synchronized batch- normalization (SBN) and the mish activation, then; convolved with the 3x3 kernels (Conv2) which creates the output (single-head attention, Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c1)). With the aim of finding an analogous to SDMHSA in convolutional configurations, other alternatives are also developed. A variant is implemented by processing the input in three parallel branches and adding the outputs together (multi-branch attention, Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c2)). There are two branches with only a 1x1 convolution (Conv1.b and Conv1.c), SBN, and mish activation, and one branch with an additional 3x3 convolution (Conv2). The next form divides the mish block result by its depth into four feature maps (CH.a, CH.b, CH.c, and CH.d) and processes each of them separately using 3x3 convolutions and then, concatenates them (multi-head attention, see Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(c3)). Multi-head and multi-branch concepts are combined by integrating the multi-head concept into each branch of the multi-branch attention module (multi-head multi-branch attention).</p>
+</div>
+<div id="S3.SS2.p4" class="ltx_para">
+<p id="S3.SS2.p4.1" class="ltx_p">As Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>(b) indicates, no matter which variant is applied, the activation map is obtained via the multiplication of Query and Key, activated by the sigmoid function. The <math id="S3.SS2.p4.1.m1.1" class="ltx_Math" alttext="\Psi" display="inline"><semantics id="S3.SS2.p4.1.m1.1a"><mi mathvariant="normal" id="S3.SS2.p4.1.m1.1.1" xref="S3.SS2.p4.1.m1.1.1.cmml">Ψ</mi><annotation-xml encoding="MathML-Content" id="S3.SS2.p4.1.m1.1b"><ci id="S3.SS2.p4.1.m1.1.1.cmml" xref="S3.SS2.p4.1.m1.1.1">Ψ</ci></annotation-xml><annotation encoding="application/x-tex" id="S3.SS2.p4.1.m1.1c">\Psi</annotation></semantics></math> output in the Value gates goes through SBN layer and mish activation. Afterward, the Value s multiplied by the attention map. The result of this operation is convolved with a 1x1 kernel (Conv3), and like the other 1x1 convolutions, the output is fed to mish function accordingly. The same procedure is repeated with a convolutional layer with a 3x3 kernel (Conv4) to acquire the outcome of the attention branch. The final output of the attention mechanism is obtained by summing up its branch output with the residual connection from the input so that the network can learn to bypass the attention if required. In contrast with SDSA, all the multiplications are element-wise in the proposed module.</p>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">IV </span><span id="S4.1.1" class="ltx_text ltx_font_smallcaps">Experiment</span>
+</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p id="S4.p1.1" class="ltx_p">This section outlines the details of the conducted experiments, including the dataset, the augmentation techniques, hyperparameters, the training and evaluation procedures.</p>
+</div>
+<section id="S4.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S4.SS1.4.1.1" class="ltx_text">IV-A</span> </span><span id="S4.SS1.5.2" class="ltx_text ltx_font_italic">Dataset</span>
+</h3>
+
+<div id="S4.SS1.p1" class="ltx_para">
+<p id="S4.SS1.p1.1" class="ltx_p">This study focuses on the Pascal VOC as the target dataset. This dataset has 21,503 images (16,551 for the training set and 4952 for the test set), including bounding box annotations for the instances of 20 different categories. Since the number of training samples has not been adequate to overcome the overfitting, 100,000 additional images from the Microsoft COCO dataset have been added to the training set. The Microsoft COCO dataset has labels for 80 categories, 20 of which are the same as Pascal VOC. In order to merge these two datasets, common categories are preserved, and the other classes are neglected.</p>
+</div>
+<figure id="S4.F3" class="ltx_figure">
+<div class="ltx_flex_figure">
+<div class="ltx_flex_cell ltx_flex_size_1">
+<figure id="S4.F3.sf1" class="ltx_figure ltx_figure_panel ltx_align_center"><img src="/html/2401.06244/assets/x3.png" id="S4.F3.sf1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="95" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">(a) </span>(a)</figcaption>
+</figure>
+</div>
+<div class="ltx_flex_break"></div>
+<div class="ltx_flex_cell ltx_flex_size_1">
+<figure id="S4.F3.sf2" class="ltx_figure ltx_figure_panel ltx_align_center"><img src="/html/2401.06244/assets/x4.png" id="S4.F3.sf2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="415" height="67" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">(b) </span>(b)</figcaption>
+</figure>
+</div>
+</div>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 3: </span>The process of two augmentations (a) constrained rotation and (b) zoom out, being applied to sample images from the dataset and maintain all parts of the image as well as the original size.</figcaption>
+</figure>
+</section>
+<section id="S4.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S4.SS2.4.1.1" class="ltx_text">IV-B</span> </span><span id="S4.SS2.5.2" class="ltx_text ltx_font_italic">Implemented Augmentations</span>
+</h3>
+
+<div id="S4.SS2.p1" class="ltx_para">
+<p id="S4.SS2.p1.1" class="ltx_p">Several augmentations are used in this research; one of them is rotation. Although rotation is a popular augmentation technique for image classification, naively rotating the image in object detection might cause objects of interest to slip-outside the image boundaries. In addition, prior bounding boxes are no longer credible. Hence, the image is padded so that the corners of the unrotated image lie on the boundaries of the rotated image. Then, the image is resized to match the initial resolution, as is shown in Fig. <a href="#S4.F3" title="Figure 3 ‣ IV-A Dataset ‣ IV Experiment ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>(a). In order to accommodate for homogeneous transformation, the bounding boxes are also rotated along the center of the image. Finally, the smallest rectangle, which includes the rotated bounding box, is selected as the new bounding box.</p>
+</div>
+<div id="S4.SS2.p2" class="ltx_para">
+<p id="S4.SS2.p2.1" class="ltx_p">Another augmentation comes from the fact that it is conventional to train fully convolutional neural networks with variable input image resolutions to make them scale invariant <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib47" title="" class="ltx_ref">47</a>, <a href="#bib.bib48" title="" class="ltx_ref">48</a>]</cite>. For example, YOLOv4 is trained with varying image sizes during the training process in the darknet framework. In every ten iterations, nine are trained with the basic resolution, and the remaining one is trained with a random resolution, higher or lower than the prior size. Currently, TPUs are not capable of handling variable tensors during training. Instead of using a variety of resolutions, we use zoom-out augmentation as shown in Fig. <a href="#S4.F3" title="Figure 3 ‣ IV-A Dataset ‣ IV Experiment ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>(b). The input image is randomly resized to the lower resolutions. Then it is padded to maintain the original size of the picture.</p>
+</div>
+<div id="S4.SS2.p3" class="ltx_para">
+<p id="S4.SS2.p3.1" class="ltx_p">Besides constrained rotation and zoom-out, other operations are utilized, including color jittering, translation, cropping, horizontal flip, posterizing, cut-out, solarizing, inversion, sharpening, and mosaic augmentation. These operations can be divided into two groups: (i) geometrical operations (e.g., translation, crop, zoom-out, flip, constrained rotation) and (ii) non-geometric operations (e.g., cut-out, color jittering, posterizing, etc.). Geometrical methods are successively applied in random order with a probability of 50% for each operation. Non-geometric methods are combined with either RandAugment or AugMix. RandAugment’s number of augmentation layers (N) and magnitude of operations (M) are set to 2 and 10, respectively. Hyper-parameters for AugMix include three chains of augmentation with a severity of 7 for each technique. The depth of each chain is randomly selected between 1 and 3. The coefficients for mixing the chains were drawn from a beta distribution with <math id="S4.SS2.p3.1.m1.1" class="ltx_Math" alttext="\alpha=\beta=1" display="inline"><semantics id="S4.SS2.p3.1.m1.1a"><mrow id="S4.SS2.p3.1.m1.1.1" xref="S4.SS2.p3.1.m1.1.1.cmml"><mi id="S4.SS2.p3.1.m1.1.1.2" xref="S4.SS2.p3.1.m1.1.1.2.cmml">α</mi><mo id="S4.SS2.p3.1.m1.1.1.3" xref="S4.SS2.p3.1.m1.1.1.3.cmml">=</mo><mi id="S4.SS2.p3.1.m1.1.1.4" xref="S4.SS2.p3.1.m1.1.1.4.cmml">β</mi><mo id="S4.SS2.p3.1.m1.1.1.5" xref="S4.SS2.p3.1.m1.1.1.5.cmml">=</mo><mn id="S4.SS2.p3.1.m1.1.1.6" xref="S4.SS2.p3.1.m1.1.1.6.cmml">1</mn></mrow><annotation-xml encoding="MathML-Content" id="S4.SS2.p3.1.m1.1b"><apply id="S4.SS2.p3.1.m1.1.1.cmml" xref="S4.SS2.p3.1.m1.1.1"><and id="S4.SS2.p3.1.m1.1.1a.cmml" xref="S4.SS2.p3.1.m1.1.1"></and><apply id="S4.SS2.p3.1.m1.1.1b.cmml" xref="S4.SS2.p3.1.m1.1.1"><eq id="S4.SS2.p3.1.m1.1.1.3.cmml" xref="S4.SS2.p3.1.m1.1.1.3"></eq><ci id="S4.SS2.p3.1.m1.1.1.2.cmml" xref="S4.SS2.p3.1.m1.1.1.2">𝛼</ci><ci id="S4.SS2.p3.1.m1.1.1.4.cmml" xref="S4.SS2.p3.1.m1.1.1.4">𝛽</ci></apply><apply id="S4.SS2.p3.1.m1.1.1c.cmml" xref="S4.SS2.p3.1.m1.1.1"><eq id="S4.SS2.p3.1.m1.1.1.5.cmml" xref="S4.SS2.p3.1.m1.1.1.5"></eq><share href="#S4.SS2.p3.1.m1.1.1.4.cmml" id="S4.SS2.p3.1.m1.1.1d.cmml" xref="S4.SS2.p3.1.m1.1.1"></share><cn type="integer" id="S4.SS2.p3.1.m1.1.1.6.cmml" xref="S4.SS2.p3.1.m1.1.1.6">1</cn></apply></apply></annotation-xml><annotation encoding="application/x-tex" id="S4.SS2.p3.1.m1.1c">\alpha=\beta=1</annotation></semantics></math>. By using mosaic augmentation smaller batch sizes can be utilized. Moreover, offline mosaic augmentation needs less memory, hence storage problems can be avoided.</p>
+</div>
+</section>
+<section id="S4.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S4.SS3.4.1.1" class="ltx_text">IV-C</span> </span><span id="S4.SS3.5.2" class="ltx_text ltx_font_italic">Implemented Regularizations</span>
+</h3>
+
+<div id="S4.SS3.p1" class="ltx_para">
+<p id="S4.SS3.p1.1" class="ltx_p">The implemented regularization techniques are scheduled drop block (SDB) <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib26" title="" class="ltx_ref">26</a>]</cite>, shake-shake <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib27" title="" class="ltx_ref">27</a>]</cite>, and L2. In the experiments utilized with SDB, only the last three layers before the YOLO layers are regularized with 3x3 blocks. Starting from the probability of 1 for keeping the blocks, this rate is scheduled to achieve the probability of 0.90 at the last epoch. The shake-shake regularization are only applied to models that have multi-branch attention arrangements, as the nature of this regularization requires it. In the presence of shake-shake the two branches with only 1x1 convolutions (Conv1.b and Conv1.c in Fig. <a href="#S3.F2" title="Figure 2 ‣ III-B Convolutional self-attention Module ‣ III Network Structure ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>) are multiplied by random numbers in feedforward and backpropagation during the training. For the L2, the coefficient is set to 0.0005.</p>
+</div>
+<figure id="S4.T1" class="ltx_table">
+<table id="S4.T1.1" class="ltx_tabular ltx_centering ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S4.T1.1.1.1" class="ltx_tr">
+<th id="S4.T1.1.1.1.1" class="ltx_td ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t"></th>
+<th id="S4.T1.1.1.1.2" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">Model</th>
+<th id="S4.T1.1.1.1.3" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Input Res.</th>
+<th id="S4.T1.1.1.1.4" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Aug. Policy</th>
+<th id="S4.T1.1.1.1.5" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">Regularization</th>
+<th id="S4.T1.1.1.1.6" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Attention Module</th>
+<th id="S4.T1.1.1.1.7" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">mAP %</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S4.T1.1.2.1" class="ltx_tr">
+<td id="S4.T1.1.2.1.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r ltx_border_t">1</td>
+<td id="S4.T1.1.2.1.2" class="ltx_td ltx_align_left ltx_border_r ltx_border_t">YOLOv4</td>
+<td id="S4.T1.1.2.1.3" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">416x416</td>
+<td id="S4.T1.1.2.1.4" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">AugMix</td>
+<td id="S4.T1.1.2.1.5" class="ltx_td ltx_align_left ltx_border_r ltx_border_t">L2</td>
+<td id="S4.T1.1.2.1.6" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">-</td>
+<td id="S4.T1.1.2.1.7" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">83.27</td>
+</tr>
+<tr id="S4.T1.1.3.2" class="ltx_tr">
+<td id="S4.T1.1.3.2.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">2</td>
+<td id="S4.T1.1.3.2.2" class="ltx_td ltx_align_left ltx_border_r">YOLOv4</td>
+<td id="S4.T1.1.3.2.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.3.2.4" class="ltx_td ltx_align_center ltx_border_r">AugMix</td>
+<td id="S4.T1.1.3.2.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.3.2.6" class="ltx_td ltx_align_center ltx_border_r">-</td>
+<td id="S4.T1.1.3.2.7" class="ltx_td ltx_align_center ltx_border_r">83.75</td>
+</tr>
+<tr id="S4.T1.1.4.3" class="ltx_tr">
+<td id="S4.T1.1.4.3.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">3</td>
+<td id="S4.T1.1.4.3.2" class="ltx_td ltx_align_left ltx_border_r">YOLOv4</td>
+<td id="S4.T1.1.4.3.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.4.3.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.4.3.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.4.3.6" class="ltx_td ltx_align_center ltx_border_r">-</td>
+<td id="S4.T1.1.4.3.7" class="ltx_td ltx_align_center ltx_border_r">85.21</td>
+</tr>
+<tr id="S4.T1.1.5.4" class="ltx_tr">
+<td id="S4.T1.1.5.4.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">4</td>
+<td id="S4.T1.1.5.4.2" class="ltx_td ltx_align_left ltx_border_r">YOLOv4</td>
+<td id="S4.T1.1.5.4.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.5.4.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.5.4.5" class="ltx_td ltx_align_left ltx_border_r">L2 &amp; SDB</td>
+<td id="S4.T1.1.5.4.6" class="ltx_td ltx_align_center ltx_border_r">-</td>
+<td id="S4.T1.1.5.4.7" class="ltx_td ltx_align_center ltx_border_r">85.06</td>
+</tr>
+<tr id="S4.T1.1.6.5" class="ltx_tr">
+<td id="S4.T1.1.6.5.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">5</td>
+<td id="S4.T1.1.6.5.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.6.5.3" class="ltx_td ltx_align_center ltx_border_r">416x416</td>
+<td id="S4.T1.1.6.5.4" class="ltx_td ltx_align_center ltx_border_r">AugMix</td>
+<td id="S4.T1.1.6.5.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.6.5.6" class="ltx_td ltx_align_center ltx_border_r">single-head</td>
+<td id="S4.T1.1.6.5.7" class="ltx_td ltx_align_center ltx_border_r">83.32</td>
+</tr>
+<tr id="S4.T1.1.7.6" class="ltx_tr">
+<td id="S4.T1.1.7.6.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">6</td>
+<td id="S4.T1.1.7.6.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.7.6.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.7.6.4" class="ltx_td ltx_align_center ltx_border_r">AugMix</td>
+<td id="S4.T1.1.7.6.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.7.6.6" class="ltx_td ltx_align_center ltx_border_r">single-head</td>
+<td id="S4.T1.1.7.6.7" class="ltx_td ltx_align_center ltx_border_r">84.26</td>
+</tr>
+<tr id="S4.T1.1.8.7" class="ltx_tr">
+<td id="S4.T1.1.8.7.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">7</td>
+<td id="S4.T1.1.8.7.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.8.7.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.8.7.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.8.7.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.8.7.6" class="ltx_td ltx_align_center ltx_border_r">single-head</td>
+<td id="S4.T1.1.8.7.7" class="ltx_td ltx_align_center ltx_border_r">85.76</td>
+</tr>
+<tr id="S4.T1.1.9.8" class="ltx_tr">
+<td id="S4.T1.1.9.8.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">8</td>
+<td id="S4.T1.1.9.8.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.9.8.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.9.8.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.9.8.5" class="ltx_td ltx_align_left ltx_border_r">L2 &amp; SDB</td>
+<td id="S4.T1.1.9.8.6" class="ltx_td ltx_align_center ltx_border_r">single-head</td>
+<td id="S4.T1.1.9.8.7" class="ltx_td ltx_align_center ltx_border_r">85.37</td>
+</tr>
+<tr id="S4.T1.1.10.9" class="ltx_tr">
+<td id="S4.T1.1.10.9.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">9</td>
+<td id="S4.T1.1.10.9.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.10.9.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.10.9.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.10.9.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.10.9.6" class="ltx_td ltx_align_center ltx_border_r">multi-branch</td>
+<td id="S4.T1.1.10.9.7" class="ltx_td ltx_align_center ltx_border_r">85.40</td>
+</tr>
+<tr id="S4.T1.1.11.10" class="ltx_tr">
+<td id="S4.T1.1.11.10.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">10</td>
+<td id="S4.T1.1.11.10.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.11.10.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.11.10.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.11.10.5" class="ltx_td ltx_align_left ltx_border_r">L2 &amp; shake-shake</td>
+<td id="S4.T1.1.11.10.6" class="ltx_td ltx_align_center ltx_border_r">multi-branch</td>
+<td id="S4.T1.1.11.10.7" class="ltx_td ltx_align_center ltx_border_r">85.60</td>
+</tr>
+<tr id="S4.T1.1.12.11" class="ltx_tr">
+<td id="S4.T1.1.12.11.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">11</td>
+<td id="S4.T1.1.12.11.2" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.12.11.3" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S4.T1.1.12.11.4" class="ltx_td ltx_align_center ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.12.11.5" class="ltx_td ltx_align_left ltx_border_r">L2</td>
+<td id="S4.T1.1.12.11.6" class="ltx_td ltx_align_center ltx_border_r">multi-head</td>
+<td id="S4.T1.1.12.11.7" class="ltx_td ltx_align_center ltx_border_r">84.63</td>
+</tr>
+<tr id="S4.T1.1.13.12" class="ltx_tr">
+<td id="S4.T1.1.13.12.1" class="ltx_td ltx_align_center ltx_border_b ltx_border_l ltx_border_r">12</td>
+<td id="S4.T1.1.13.12.2" class="ltx_td ltx_align_left ltx_border_b ltx_border_r">YOLO-Former</td>
+<td id="S4.T1.1.13.12.3" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">512x512</td>
+<td id="S4.T1.1.13.12.4" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">RandAug.</td>
+<td id="S4.T1.1.13.12.5" class="ltx_td ltx_align_left ltx_border_b ltx_border_r">L2 &amp; shake-shake</td>
+<td id="S4.T1.1.13.12.6" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">multi-head multi-branch</td>
+<td id="S4.T1.1.13.12.7" class="ltx_td ltx_align_center ltx_border_b ltx_border_r"><span id="S4.T1.1.13.12.7.1" class="ltx_text ltx_font_bold">86.01</span></td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">TABLE I: </span>The mean average precision (mAP) of YOLO-Former and YOLOv4 with different augmentation techniques, input resolutions, and regularization methods.</figcaption>
+</figure>
+<figure id="S4.F4" class="ltx_figure"><img src="/html/2401.06244/assets/x5.png" id="S4.F4.g1" class="ltx_graphics ltx_img_portrait" width="461" height="646" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 4: </span>Comparison between YOLOv4 and YOLO-Former’s average precision (AP) on Pascal VOC classes.</figcaption>
+</figure>
+</section>
+<section id="S4.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection"><span id="S4.SS4.4.1.1" class="ltx_text">IV-D</span> </span><span id="S4.SS4.5.2" class="ltx_text ltx_font_italic">Training and Evaluation</span>
+</h3>
+
+<div id="S4.SS4.p1" class="ltx_para">
+<p id="S4.SS4.p1.1" class="ltx_p">In all the experiments, the models are trained on TPU with 8 replicas with a mini-batch size of 32 (global batch size of 256) for 225 epochs. The objective function is the summation of the GIoU <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib49" title="" class="ltx_ref">49</a>]</cite>, the focal loss <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib50" title="" class="ltx_ref">50</a>]</cite>, and the binary cross-entropy for localization, foreground-background identification, and classification. The labels for classification are smoothened with a factor of 0.01. To avoid the instability at the beginning, the learning rate increases linearly from 0 to 0.0026 in the first 20 epochs; then cosine decay learning rate scheduler <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib51" title="" class="ltx_ref">51</a>]</cite> is utilized to decrease the learning rate down to 0 at the last iteration. All the batch normalization layers in the networks are synchronized. SGD optimizes the model weights with a momentum of 0.996. At the end of each epoch, the mAP is calculated on the test set of Pascal VOC with an IOU threshold of 50%. The best obtained mAP is reported as the final result at each trial.</p>
+</div>
+</section>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">V </span><span id="S5.1.1" class="ltx_text ltx_font_smallcaps">Results and Discussion</span>
+</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p id="S5.p1.1" class="ltx_p">The primitive trials are accomplished with YOLO-Former, based on the single-head attention module. Initially, no augmentations or additional images are used for training the YOLO-Former model, but the results have been inferior (39.76% mAP). Adding simple augmentation techniques such as random translation, random crop, and changing the image’s hue, contrast, and brightness improves the results up to 47.24%. Further improvement have been obtained by adding more augmentations like mosaic augmentation, constrained rotation, and zoom-out (64.09%). Depite the test accuracy, the training accuracy is considerably high (98% mAP) in all the immediate experiments. This considerable gap motivates to extend the experiments with a more extensive training set.</p>
+</div>
+<div id="S5.p2" class="ltx_para">
+<p id="S5.p2.1" class="ltx_p">After the immediate trials, YOLOv4 and YOLO-Former are trained on the combination of COCO and Pascal VOC training sets. A breakdown of the experiment settings and results is presented in Table <a href="#S4.T1" title="TABLE I ‣ IV-C Implemented Regularizations ‣ IV Experiment ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">I</span></a>. Starting with the input resolution of 416, these models are trained with AugMix as the policy for augmentation and L2 as the regularization. The YOLO-Former is able to achieve an mAP of 83.32% which is slightly better than YOLO (83.27%). This vast improvement has been made thanks to the additional data from the COCO dataset. With the same setting, increasing the input resolution to 512 helps the YOLO-Former to enhance the mAP up to 84.26%. Training time also increases from 100 to 144 hours when the input resolution is increased. The same experiment is executed by switching the augmentation policy from AugMix to RandAugment. YOLOv4 and YOLO-Former achieves better results with the RandAugment policy than AugMix. In order to investigate the possibility of achieving better, scheduled DropBlock regularization is added to the networks in the last experiment as the regularization procedure. Still, it causes a drop in the mAP for both models.</p>
+</div>
+<div id="S5.p3" class="ltx_para">
+<p id="S5.p3.1" class="ltx_p">Aside from achieving more accurate results than YOLOv4, other variations of the proposed attention module are investigated for the possibility of achieving better results than the single-head (SH) configuration (85.76%). The network based on the multi-branch (MB) attention module configuration is trained with and without shake-shake regularization. While both obtained mAPs are less than single-head configuration, the shake-shake regularization increases the multi-branch variant’s mAP from 85.42% to 85.60%. The multi-head design provided better results than YOLOv4, but less than the single-head design (85.37%). The multi-head multi-branch (MHMB) attention module regularized by shake-shake helps the YOLO-Former to gain the highest mAP (86.01%).</p>
+</div>
+<div id="S5.p4" class="ltx_para">
+<p id="S5.p4.1" class="ltx_p">Based on this study’s most accurate YOLOv4 and YOLO-Former predictions, Fig. <a href="#S4.F4" title="Figure 4 ‣ IV-C Implemented Regularizations ‣ IV Experiment ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a> illustrates each class’s average precision (AP). In spite of YOLOv4’s higher AP in five classes (potted plant, cow, bicycle, motorbike, and airplane), YOLO-Former’s AP was equal to or greater in every other class. Besides that, the pattern is almost the same; both models have the most difficulties with the potted plant class, and airplane, bus, and horse are the most accessible classes to detect.
+A comparison is made between YOLOv4 and YOLO-Former in terms of mAP against the most accurate models on the Pascal test set, depicted in Fig. <a href="#S5.F5" title="Figure 5 ‣ V Results and Discussion ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>. The YOLO-Former and YOLOv4 outperforms all the previously evaluated works in the literature on Pascal VOC dataset such as DETReg <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib52" title="" class="ltx_ref">52</a>]</cite>, HSD <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib53" title="" class="ltx_ref">53</a>]</cite>, CoupleNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib54" title="" class="ltx_ref">54</a>]</cite>, EEEA-Net-C2 <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib55" title="" class="ltx_ref">55</a>]</cite>, SSD512 <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib6" title="" class="ltx_ref">6</a>]</cite>, BlitzNet512<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib56" title="" class="ltx_ref">56</a>]</cite>, Localize <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib57" title="" class="ltx_ref">57</a>]</cite>, and CenterNet <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib58" title="" class="ltx_ref">58</a>]</cite>, except NAS-FPN <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib59" title="" class="ltx_ref">59</a>]</cite>.</p>
+</div>
+<div id="S5.p5" class="ltx_para">
+<p id="S5.p5.1" class="ltx_p">Since the YOLO network’s ability to perform in real-time is an important characteristic, the prediction speed is worth examining. In this regard, 1000 random images are selected for the YOLOv4 and the YOLO-Former variants to make the prediction. The required time for each prediction is captured and averaged over all these test images. Testing is carried out on Tesla P100 at three different resolutions, 384x384, 416x416, and 512x512. The results are presented in Table <a href="#S5.T2" title="TABLE II ‣ V Results and Discussion ‣ YOLO-Former: YOLO Shakes Hand With ViT" class="ltx_ref"><span class="ltx_text ltx_ref_tag">II</span></a>. All resolutions shows YOLOv4 to be faster than YOLO-Former models, but as the resolution increases, the gap decreases. Among the YOLO-Former variants, it is the fastest with the single-head attention module; with the combined multi-head and multi-branch (MHMB) attention module appears to be the slowest.</p>
+</div>
+<figure id="S5.F5" class="ltx_figure"><img src="/html/2401.06244/assets/x6.png" id="S5.F5.g1" class="ltx_graphics ltx_img_landscape" width="461" height="230" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 5: </span>The mean average precision (mAP) of YOLOv4 and YOLO-Former compared to the top-performing models on the Pascal VOC test set according to papers with code <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib60" title="" class="ltx_ref">60</a>]</cite>.</figcaption>
+</figure>
+<figure id="S5.T2" class="ltx_table">
+<table id="S5.T2.1" class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<thead class="ltx_thead">
+<tr id="S5.T2.1.1.1" class="ltx_tr">
+<th id="S5.T2.1.1.1.1" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_l ltx_border_r ltx_border_t"></th>
+<th id="S5.T2.1.1.1.2" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">Input Res.</th>
+<th id="S5.T2.1.1.1.3" class="ltx_td ltx_align_left ltx_th ltx_th_column ltx_border_r ltx_border_t">Model</th>
+<th id="S5.T2.1.1.1.4" class="ltx_td ltx_align_center ltx_th ltx_th_column ltx_border_r ltx_border_t">FPS</th>
+</tr>
+</thead>
+<tbody class="ltx_tbody">
+<tr id="S5.T2.1.2.1" class="ltx_tr">
+<td id="S5.T2.1.2.1.1" class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.2.1.2" class="ltx_td ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.2.1.3" class="ltx_td ltx_align_left ltx_border_r ltx_border_t">YOLOv4</td>
+<td id="S5.T2.1.2.1.4" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">16.74</td>
+</tr>
+<tr id="S5.T2.1.3.2" class="ltx_tr">
+<td id="S5.T2.1.3.2.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.3.2.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.3.2.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (SH)</td>
+<td id="S5.T2.1.3.2.4" class="ltx_td ltx_align_center ltx_border_r">11.76</td>
+</tr>
+<tr id="S5.T2.1.4.3" class="ltx_tr">
+<td id="S5.T2.1.4.3.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">1</td>
+<td id="S5.T2.1.4.3.2" class="ltx_td ltx_align_center ltx_border_r">320x320</td>
+<td id="S5.T2.1.4.3.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MH)</td>
+<td id="S5.T2.1.4.3.4" class="ltx_td ltx_align_center ltx_border_r">10.16</td>
+</tr>
+<tr id="S5.T2.1.5.4" class="ltx_tr">
+<td id="S5.T2.1.5.4.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.5.4.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.5.4.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MB)</td>
+<td id="S5.T2.1.5.4.4" class="ltx_td ltx_align_center ltx_border_r">9.76</td>
+</tr>
+<tr id="S5.T2.1.6.5" class="ltx_tr">
+<td id="S5.T2.1.6.5.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.6.5.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.6.5.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MHMB)</td>
+<td id="S5.T2.1.6.5.4" class="ltx_td ltx_align_center ltx_border_r">7.33</td>
+</tr>
+<tr id="S5.T2.1.7.6" class="ltx_tr">
+<td id="S5.T2.1.7.6.1" class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.7.6.2" class="ltx_td ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.7.6.3" class="ltx_td ltx_align_left ltx_border_r ltx_border_t">YOLOv4</td>
+<td id="S5.T2.1.7.6.4" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">12.31</td>
+</tr>
+<tr id="S5.T2.1.8.7" class="ltx_tr">
+<td id="S5.T2.1.8.7.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.8.7.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.8.7.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (SH)</td>
+<td id="S5.T2.1.8.7.4" class="ltx_td ltx_align_center ltx_border_r">10.85</td>
+</tr>
+<tr id="S5.T2.1.9.8" class="ltx_tr">
+<td id="S5.T2.1.9.8.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">2</td>
+<td id="S5.T2.1.9.8.2" class="ltx_td ltx_align_center ltx_border_r">416x416</td>
+<td id="S5.T2.1.9.8.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MH)</td>
+<td id="S5.T2.1.9.8.4" class="ltx_td ltx_align_center ltx_border_r">9.09</td>
+</tr>
+<tr id="S5.T2.1.10.9" class="ltx_tr">
+<td id="S5.T2.1.10.9.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.10.9.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.10.9.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MB)</td>
+<td id="S5.T2.1.10.9.4" class="ltx_td ltx_align_center ltx_border_r">8.88</td>
+</tr>
+<tr id="S5.T2.1.11.10" class="ltx_tr">
+<td id="S5.T2.1.11.10.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.11.10.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.11.10.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MHMB)</td>
+<td id="S5.T2.1.11.10.4" class="ltx_td ltx_align_center ltx_border_r">7.08</td>
+</tr>
+<tr id="S5.T2.1.12.11" class="ltx_tr">
+<td id="S5.T2.1.12.11.1" class="ltx_td ltx_border_l ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.12.11.2" class="ltx_td ltx_border_r ltx_border_t"></td>
+<td id="S5.T2.1.12.11.3" class="ltx_td ltx_align_left ltx_border_r ltx_border_t">YOLOv4</td>
+<td id="S5.T2.1.12.11.4" class="ltx_td ltx_align_center ltx_border_r ltx_border_t">11.63</td>
+</tr>
+<tr id="S5.T2.1.13.12" class="ltx_tr">
+<td id="S5.T2.1.13.12.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.13.12.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.13.12.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (SH)</td>
+<td id="S5.T2.1.13.12.4" class="ltx_td ltx_align_center ltx_border_r">10.27</td>
+</tr>
+<tr id="S5.T2.1.14.13" class="ltx_tr">
+<td id="S5.T2.1.14.13.1" class="ltx_td ltx_align_center ltx_border_l ltx_border_r">3</td>
+<td id="S5.T2.1.14.13.2" class="ltx_td ltx_align_center ltx_border_r">512x512</td>
+<td id="S5.T2.1.14.13.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MH)</td>
+<td id="S5.T2.1.14.13.4" class="ltx_td ltx_align_center ltx_border_r">8.97</td>
+</tr>
+<tr id="S5.T2.1.15.14" class="ltx_tr">
+<td id="S5.T2.1.15.14.1" class="ltx_td ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.15.14.2" class="ltx_td ltx_border_r"></td>
+<td id="S5.T2.1.15.14.3" class="ltx_td ltx_align_left ltx_border_r">YOLO-Former (MB)</td>
+<td id="S5.T2.1.15.14.4" class="ltx_td ltx_align_center ltx_border_r">8.02</td>
+</tr>
+<tr id="S5.T2.1.16.15" class="ltx_tr">
+<td id="S5.T2.1.16.15.1" class="ltx_td ltx_border_b ltx_border_l ltx_border_r"></td>
+<td id="S5.T2.1.16.15.2" class="ltx_td ltx_border_b ltx_border_r"></td>
+<td id="S5.T2.1.16.15.3" class="ltx_td ltx_align_left ltx_border_b ltx_border_r">YOLO-Former (MHMB)</td>
+<td id="S5.T2.1.16.15.4" class="ltx_td ltx_align_center ltx_border_b ltx_border_r">6.97</td>
+</tr>
+</tbody>
+</table>
+<figcaption class="ltx_caption"><span class="ltx_tag ltx_tag_table">TABLE II: </span>The comparison of YOLOv4 and YOLO-Former prediction speed (frame per second) with various input resolutions.</figcaption>
+</figure>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">VI </span><span id="S6.1.1" class="ltx_text ltx_font_smallcaps">Conclusion</span>
+</h2>
+
+<div id="S6.p1" class="ltx_para">
+<p id="S6.p1.1" class="ltx_p">This study developed a real-time object detector called YOLO-Former, based on the idea of the transformer and YOLOv4. In order to accomplish this network, several convolutional self-attention modules were developed. The implemented model was trained with several settings and compared with YOLOv4 on the Pascal VOC test set. The RandAugment-trained YOLOv4 and YOLO-Former provided more accurate results than the AugMix-trained YOLOv4. Moreover, additional data was essential to achieve a desirable accuracy on the Pascal VOC test data. Based on the obtained results, it is concluded that through attention, YOLO-Former is capable of producing a higher accuracy at the cost of a drop in prediction speed. This descent becomes insignificant as the input resolution increases. Additionally, the single-head convolutional self-attention module offered the best accuracy-speed tradeoff. As such, the proposed YOLO-Former has provided a more accurate convolutional object detector compared to the similar existing methods on the Pascal VOC dataset.</p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+<li id="bib.bib1" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock">
+C. P. Papageorgiou, M. Oren, and T. Poggio, “A general framework for object
+detection,” in <em id="bib.bib1.1.1" class="ltx_emph ltx_font_italic">Sixth International Conference on Computer Vision (IEEE
+Cat. No. 98CH36271)</em>.   IEEE, 1998, pp.
+555–562.
+
+</span>
+</li>
+<li id="bib.bib2" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[2]</span>
+<span class="ltx_bibblock">
+Y. LeCun, Y. Bengio <em id="bib.bib2.1.1" class="ltx_emph ltx_font_italic">et al.</em>, “Convolutional networks for images, speech,
+and time series,” <em id="bib.bib2.2.2" class="ltx_emph ltx_font_italic">The handbook of brain theory and neural networks</em>,
+vol. 3361, no. 10, p. 1995, 1995.
+
+</span>
+</li>
+<li id="bib.bib3" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[3]</span>
+<span class="ltx_bibblock">
+R. Girshick, J. Donahue, T. Darrell, and J. Malik, “Rich feature hierarchies
+for accurate object detection and semantic segmentation,” in
+<em id="bib.bib3.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE conference on computer vision and pattern
+recognition</em>, 2014, pp. 580–587.
+
+</span>
+</li>
+<li id="bib.bib4" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[4]</span>
+<span class="ltx_bibblock">
+R. Girshick, “Fast r-cnn,” in <em id="bib.bib4.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE international
+conference on computer vision</em>, 2015, pp. 1440–1448.
+
+</span>
+</li>
+<li id="bib.bib5" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[5]</span>
+<span class="ltx_bibblock">
+K. He, G. Gkioxari, P. Dollár, and R. Girshick, “Mask r-cnn,” in
+<em id="bib.bib5.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE international conference on computer vision</em>,
+2017, pp. 2961–2969.
+
+</span>
+</li>
+<li id="bib.bib6" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[6]</span>
+<span class="ltx_bibblock">
+W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y. Fu, and A. C. Berg,
+“Ssd: Single shot multibox detector,” in <em id="bib.bib6.1.1" class="ltx_emph ltx_font_italic">European conference on
+computer vision</em>.   Springer, 2016, pp.
+21–37.
+
+</span>
+</li>
+<li id="bib.bib7" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[7]</span>
+<span class="ltx_bibblock">
+J. Redmon and A. Farhadi, “Yolov3: An incremental improvement,” <em id="bib.bib7.1.1" class="ltx_emph ltx_font_italic">arXiv
+preprint arXiv:1804.02767</em>, 2018.
+
+</span>
+</li>
+<li id="bib.bib8" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[8]</span>
+<span class="ltx_bibblock">
+M. Tan, R. Pang, and Q. V. Le, “Efficientdet: Scalable and efficient object
+detection,” in <em id="bib.bib8.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF conference on computer
+vision and pattern recognition</em>, 2020, pp. 10 781–10 790.
+
+</span>
+</li>
+<li id="bib.bib9" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[9]</span>
+<span class="ltx_bibblock">
+T.-Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollár, “Focal loss for
+dense object detection,” in <em id="bib.bib9.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE international
+conference on computer vision</em>, 2017, pp. 2980–2988.
+
+</span>
+</li>
+<li id="bib.bib10" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[10]</span>
+<span class="ltx_bibblock">
+K. Duan, S. Bai, L. Xie, H. Qi, Q. Huang, and Q. Tian, “Centernet: Keypoint
+triplets for object detection,” in <em id="bib.bib10.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF
+international conference on computer vision</em>, 2019, pp. 6569–6578.
+
+</span>
+</li>
+<li id="bib.bib11" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[11]</span>
+<span class="ltx_bibblock">
+A. Newell, K. Yang, and J. Deng, “Stacked hourglass networks for human pose
+estimation,” in <em id="bib.bib11.1.1" class="ltx_emph ltx_font_italic">European conference on computer vision</em>.   Springer, 2016, pp. 483–499.
+
+</span>
+</li>
+<li id="bib.bib12" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[12]</span>
+<span class="ltx_bibblock">
+A. Dosovitskiy, L. Beyer, A. Kolesnikov, D. Weissenborn, X. Zhai,
+T. Unterthiner, M. Dehghani, M. Minderer, G. Heigold, S. Gelly <em id="bib.bib12.1.1" class="ltx_emph ltx_font_italic">et al.</em>,
+“An image is worth 16x16 words: Transformers for image recognition at
+scale,” <em id="bib.bib12.2.2" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2010.11929</em>, 2020.
+
+</span>
+</li>
+<li id="bib.bib13" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[13]</span>
+<span class="ltx_bibblock">
+Z. Zhang, X. Lu, G. Cao, Y. Yang, L. Jiao, and F. Liu, “Vit-yolo:
+Transformer-based yolo for object detection,” in <em id="bib.bib13.1.1" class="ltx_emph ltx_font_italic">Proceedings of the
+IEEE/CVF International Conference on Computer Vision</em>, 2021, pp. 2799–2808.
+
+</span>
+</li>
+<li id="bib.bib14" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[14]</span>
+<span class="ltx_bibblock">
+N. Carion, F. Massa, G. Synnaeve, N. Usunier, A. Kirillov, and S. Zagoruyko,
+“End-to-end object detection with transformers,” in <em id="bib.bib14.1.1" class="ltx_emph ltx_font_italic">European
+conference on computer vision</em>.   Springer, 2020, pp. 213–229.
+
+</span>
+</li>
+<li id="bib.bib15" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[15]</span>
+<span class="ltx_bibblock">
+C. Shorten and T. M. Khoshgoftaar, “A survey on image data augmentation for
+deep learning,” <em id="bib.bib15.1.1" class="ltx_emph ltx_font_italic">Journal of big data</em>, vol. 6, no. 1, pp. 1–48, 2019.
+
+</span>
+</li>
+<li id="bib.bib16" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[16]</span>
+<span class="ltx_bibblock">
+T. DeVries and G. W. Taylor, “Improved regularization of convolutional neural
+networks with cutout,” <em id="bib.bib16.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1708.04552</em>, 2017.
+
+</span>
+</li>
+<li id="bib.bib17" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[17]</span>
+<span class="ltx_bibblock">
+P. Chen, S. Liu, H. Zhao, and J. Jia, “Gridmask data augmentation,”
+<em id="bib.bib17.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2001.04086</em>, 2020.
+
+</span>
+</li>
+<li id="bib.bib18" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[18]</span>
+<span class="ltx_bibblock">
+K. K. Singh, H. Yu, A. Sarmasi, G. Pradeep, and Y. J. Lee, “Hide-and-seek: A
+data augmentation technique for weakly-supervised localization and beyond,”
+<em id="bib.bib18.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1811.02545</em>, 2018.
+
+</span>
+</li>
+<li id="bib.bib19" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[19]</span>
+<span class="ltx_bibblock">
+H. Zhang, M. Cisse, Y. N. Dauphin, and D. Lopez-Paz, “mixup: Beyond empirical
+risk minimization,” <em id="bib.bib19.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1710.09412</em>, 2017.
+
+</span>
+</li>
+<li id="bib.bib20" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[20]</span>
+<span class="ltx_bibblock">
+S. Yun, D. Han, S. J. Oh, S. Chun, J. Choe, and Y. Yoo, “Cutmix:
+Regularization strategy to train strong classifiers with localizable
+features,” in <em id="bib.bib20.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF international conference on
+computer vision</em>, 2019, pp. 6023–6032.
+
+</span>
+</li>
+<li id="bib.bib21" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[21]</span>
+<span class="ltx_bibblock">
+J.-H. Kim, W. Choo, and H. O. Song, “Puzzle mix: Exploiting saliency and local
+statistics for optimal mixup,” in <em id="bib.bib21.1.1" class="ltx_emph ltx_font_italic">International Conference on Machine
+Learning</em>.   PMLR, 2020, pp. 5275–5285.
+
+</span>
+</li>
+<li id="bib.bib22" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[22]</span>
+<span class="ltx_bibblock">
+A. Bochkovskiy, C.-Y. Wang, and H.-Y. M. Liao, “Yolov4: Optimal speed and
+accuracy of object detection,” <em id="bib.bib22.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:2004.10934</em>, 2020.
+
+</span>
+</li>
+<li id="bib.bib23" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[23]</span>
+<span class="ltx_bibblock">
+E. D. Cubuk, B. Zoph, D. Mane, V. Vasudevan, and Q. V. Le, “Autoaugment:
+Learning augmentation strategies from data,” in <em id="bib.bib23.1.1" class="ltx_emph ltx_font_italic">Proceedings of the
+IEEE/CVF Conference on Computer Vision and Pattern Recognition</em>, 2019, pp.
+113–123.
+
+</span>
+</li>
+<li id="bib.bib24" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[24]</span>
+<span class="ltx_bibblock">
+E. D. Cubuk, B. Zoph, J. Shlens, and Q. V. Le, “Randaugment: Practical
+automated data augmentation with a reduced search space,” in
+<em id="bib.bib24.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition Workshops</em>, 2020, pp. 702–703.
+
+</span>
+</li>
+<li id="bib.bib25" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[25]</span>
+<span class="ltx_bibblock">
+D. Hendrycks, N. Mu, E. D. Cubuk, B. Zoph, J. Gilmer, and B. Lakshminarayanan,
+“Augmix: A simple data processing method to improve robustness and
+uncertainty,” <em id="bib.bib25.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1912.02781</em>, 2019.
+
+</span>
+</li>
+<li id="bib.bib26" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[26]</span>
+<span class="ltx_bibblock">
+G. Ghiasi, T.-Y. Lin, and Q. V. Le, “Dropblock: A regularization method for
+convolutional networks,” <em id="bib.bib26.1.1" class="ltx_emph ltx_font_italic">Advances in neural information processing
+systems</em>, vol. 31, 2018.
+
+</span>
+</li>
+<li id="bib.bib27" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[27]</span>
+<span class="ltx_bibblock">
+X. Gastaldi, “Shake-shake regularization,” <em id="bib.bib27.1.1" class="ltx_emph ltx_font_italic">arXiv preprint
+arXiv:1705.07485</em>, 2017.
+
+</span>
+</li>
+<li id="bib.bib28" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[28]</span>
+<span class="ltx_bibblock">
+I. Sutskever, O. Vinyals, and Q. V. Le, “Sequence to sequence learning with
+neural networks,” <em id="bib.bib28.1.1" class="ltx_emph ltx_font_italic">Advances in neural information processing systems</em>,
+vol. 27, 2014.
+
+</span>
+</li>
+<li id="bib.bib29" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[29]</span>
+<span class="ltx_bibblock">
+D. Bahdanau, K. Cho, and Y. Bengio, “Neural machine translation by jointly
+learning to align and translate,” <em id="bib.bib29.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1409.0473</em>,
+2014.
+
+</span>
+</li>
+<li id="bib.bib30" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[30]</span>
+<span class="ltx_bibblock">
+Y. Wu, M. Schuster, Z. Chen, Q. V. Le, M. Norouzi, W. Macherey, M. Krikun,
+Y. Cao, Q. Gao, K. Macherey <em id="bib.bib30.1.1" class="ltx_emph ltx_font_italic">et al.</em>, “Google’s neural machine
+translation system: Bridging the gap between human and machine translation,”
+<em id="bib.bib30.2.2" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1609.08144</em>, 2016.
+
+</span>
+</li>
+<li id="bib.bib31" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[31]</span>
+<span class="ltx_bibblock">
+M.-T. Luong, H. Pham, and C. D. Manning, “Effective approaches to
+attention-based neural machine translation,” <em id="bib.bib31.1.1" class="ltx_emph ltx_font_italic">arXiv preprint
+arXiv:1508.04025</em>, 2015.
+
+</span>
+</li>
+<li id="bib.bib32" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[32]</span>
+<span class="ltx_bibblock">
+Z. Yang, D. Yang, C. Dyer, X. He, A. Smola, and E. Hovy, “Hierarchical
+attention networks for document classification,” in <em id="bib.bib32.1.1" class="ltx_emph ltx_font_italic">Proceedings of the
+2016 conference of the North American chapter of the association for
+computational linguistics: human language technologies</em>, 2016, pp.
+1480–1489.
+
+</span>
+</li>
+<li id="bib.bib33" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[33]</span>
+<span class="ltx_bibblock">
+K. M. Hermann, T. Kocisky, E. Grefenstette, L. Espeholt, W. Kay, M. Suleyman,
+and P. Blunsom, “Teaching machines to read and comprehend,” <em id="bib.bib33.1.1" class="ltx_emph ltx_font_italic">Advances
+in neural information processing systems</em>, vol. 28, 2015.
+
+</span>
+</li>
+<li id="bib.bib34" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[34]</span>
+<span class="ltx_bibblock">
+A. Vaswani, N. Shazeer, N. Parmar, J. Uszkoreit, L. Jones, A. N. Gomez,
+Ł. Kaiser, and I. Polosukhin, “Attention is all you need,”
+<em id="bib.bib34.1.1" class="ltx_emph ltx_font_italic">Advances in neural information processing systems</em>, vol. 30, 2017.
+
+</span>
+</li>
+<li id="bib.bib35" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[35]</span>
+<span class="ltx_bibblock">
+J. Devlin, M.-W. Chang, K. Lee, and K. Toutanova, “Bert: Pre-training of deep
+bidirectional transformers for language understanding,” <em id="bib.bib35.1.1" class="ltx_emph ltx_font_italic">arXiv preprint
+arXiv:1810.04805</em>, 2018.
+
+</span>
+</li>
+<li id="bib.bib36" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[36]</span>
+<span class="ltx_bibblock">
+F. Wang, M. Jiang, C. Qian, S. Yang, C. Li, H. Zhang, X. Wang, and X. Tang,
+“Residual attention network for image classification,” in <em id="bib.bib36.1.1" class="ltx_emph ltx_font_italic">Proceedings
+of the IEEE conference on computer vision and pattern recognition</em>, 2017, pp.
+3156–3164.
+
+</span>
+</li>
+<li id="bib.bib37" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[37]</span>
+<span class="ltx_bibblock">
+L.-C. Chen, Y. Yang, J. Wang, W. Xu, and A. L. Yuille, “Attention to scale:
+Scale-aware semantic image segmentation,” in <em id="bib.bib37.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE
+conference on computer vision and pattern recognition</em>, 2016, pp. 3640–3649.
+
+</span>
+</li>
+<li id="bib.bib38" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[38]</span>
+<span class="ltx_bibblock">
+J. Hu, L. Shen, and G. Sun, “Squeeze-and-excitation networks,” in
+<em id="bib.bib38.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE conference on computer vision and pattern
+recognition</em>, 2018, pp. 7132–7141.
+
+</span>
+</li>
+<li id="bib.bib39" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[39]</span>
+<span class="ltx_bibblock">
+D. Zhao, Y. Chen, and L. Lv, “Deep reinforcement learning with visual
+attention for vehicle classification,” <em id="bib.bib39.1.1" class="ltx_emph ltx_font_italic">IEEE Transactions on Cognitive
+and Developmental Systems</em>, vol. 9, no. 4, pp. 356–367, 2016.
+
+</span>
+</li>
+<li id="bib.bib40" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[40]</span>
+<span class="ltx_bibblock">
+S. Woo, J. Park, J.-Y. Lee, and I. S. Kweon, “Cbam: Convolutional block
+attention module,” in <em id="bib.bib40.1.1" class="ltx_emph ltx_font_italic">Proceedings of the European conference on
+computer vision (ECCV)</em>, 2018, pp. 3–19.
+
+</span>
+</li>
+<li id="bib.bib41" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[41]</span>
+<span class="ltx_bibblock">
+K. He, X. Zhang, S. Ren, and J. Sun, “Deep residual learning for image
+recognition,” in <em id="bib.bib41.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE conference on computer vision
+and pattern recognition</em>, 2016, pp. 770–778.
+
+</span>
+</li>
+<li id="bib.bib42" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[42]</span>
+<span class="ltx_bibblock">
+S. Xie, R. Girshick, P. Dollár, Z. Tu, and K. He, “Aggregated residual
+transformations for deep neural networks,” in <em id="bib.bib42.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE
+conference on computer vision and pattern recognition</em>, 2017, pp. 1492–1500.
+
+</span>
+</li>
+<li id="bib.bib43" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[43]</span>
+<span class="ltx_bibblock">
+A. G. Howard, M. Zhu, B. Chen, D. Kalenichenko, W. Wang, T. Weyand,
+M. Andreetto, and H. Adam, “Mobilenets: Efficient convolutional neural
+networks for mobile vision applications,” <em id="bib.bib43.1.1" class="ltx_emph ltx_font_italic">arXiv preprint
+arXiv:1704.04861</em>, 2017.
+
+</span>
+</li>
+<li id="bib.bib44" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[44]</span>
+<span class="ltx_bibblock">
+J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li, and L. Fei-Fei, “Imagenet: A
+large-scale hierarchical image database,” in <em id="bib.bib44.1.1" class="ltx_emph ltx_font_italic">2009 IEEE conference on
+computer vision and pattern recognition</em>.   Ieee, 2009, pp. 248–255.
+
+</span>
+</li>
+<li id="bib.bib45" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[45]</span>
+<span class="ltx_bibblock">
+M. Everingham, S. Eslami, L. Van Gool, C. K. Williams, J. Winn, and
+A. Zisserman, “The pascal visual object classes challenge: A
+retrospective,” <em id="bib.bib45.1.1" class="ltx_emph ltx_font_italic">International journal of computer vision</em>, vol. 111,
+no. 1, pp. 98–136, 2015.
+
+</span>
+</li>
+<li id="bib.bib46" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[46]</span>
+<span class="ltx_bibblock">
+T.-Y. Lin, M. Maire, S. Belongie, J. Hays, P. Perona, D. Ramanan,
+P. Dollár, and C. L. Zitnick, “Microsoft coco: Common objects in
+context,” in <em id="bib.bib46.1.1" class="ltx_emph ltx_font_italic">European conference on computer vision</em>.   Springer, 2014, pp. 740–755.
+
+</span>
+</li>
+<li id="bib.bib47" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[47]</span>
+<span class="ltx_bibblock">
+K. He, X. Zhang, S. Ren, and J. Sun, “Spatial pyramid pooling in deep
+convolutional networks for visual recognition,” <em id="bib.bib47.1.1" class="ltx_emph ltx_font_italic">IEEE transactions on
+pattern analysis and machine intelligence</em>, vol. 37, no. 9, pp. 1904–1916,
+2015.
+
+</span>
+</li>
+<li id="bib.bib48" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[48]</span>
+<span class="ltx_bibblock">
+D. G. Lowe, “Distinctive image features from scale-invariant keypoints,”
+<em id="bib.bib48.1.1" class="ltx_emph ltx_font_italic">International journal of computer vision</em>, vol. 60, no. 2, pp. 91–110,
+2004.
+
+</span>
+</li>
+<li id="bib.bib49" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[49]</span>
+<span class="ltx_bibblock">
+H. Rezatofighi, N. Tsoi, J. Gwak, A. Sadeghian, I. Reid, and S. Savarese,
+“Generalized intersection over union: A metric and a loss for bounding box
+regression,” in <em id="bib.bib49.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF conference on computer
+vision and pattern recognition</em>, 2019, pp. 658–666.
+
+</span>
+</li>
+<li id="bib.bib50" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[50]</span>
+<span class="ltx_bibblock">
+T.-Y. Lin, P. Goyal, R. Girshick, K. He, and P. Dollár, “Focal loss for
+dense object detection,” in <em id="bib.bib50.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE international
+conference on computer vision</em>, 2017, pp. 2980–2988.
+
+</span>
+</li>
+<li id="bib.bib51" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[51]</span>
+<span class="ltx_bibblock">
+I. Loshchilov and F. Hutter, “Sgdr: Stochastic gradient descent with warm
+restarts,” <em id="bib.bib51.1.1" class="ltx_emph ltx_font_italic">arXiv preprint arXiv:1608.03983</em>, 2016.
+
+</span>
+</li>
+<li id="bib.bib52" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[52]</span>
+<span class="ltx_bibblock">
+M. Maaz, H. Rasheed, S. Khan, F. S. Khan, R. M. Anwer, and M.-H. Yang,
+“Class-agnostic object detection with multi-modal transformer,” in
+<em id="bib.bib52.1.1" class="ltx_emph ltx_font_italic">The European Conference on Computer Vision. Springer</em>, 2022.
+
+</span>
+</li>
+<li id="bib.bib53" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[53]</span>
+<span class="ltx_bibblock">
+J. Cao, Y. Pang, J. Han, and X. Li, “Hierarchical shot detector,” in
+<em id="bib.bib53.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF international conference on computer
+vision</em>, 2019, pp. 9705–9714.
+
+</span>
+</li>
+<li id="bib.bib54" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[54]</span>
+<span class="ltx_bibblock">
+Y. Zhu, C. Zhao, J. Wang, X. Zhao, Y. Wu, and H. Lu, “Couplenet: Coupling
+global structure with local parts for object detection,” in
+<em id="bib.bib54.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE international conference on computer vision</em>,
+2017, pp. 4126–4134.
+
+</span>
+</li>
+<li id="bib.bib55" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[55]</span>
+<span class="ltx_bibblock">
+C. Termritthikun, Y. Jamtsho, J. Ieamsaard, P. Muneesawang, and I. Lee,
+“Eeea-net: An early exit evolutionary neural architecture search,”
+<em id="bib.bib55.1.1" class="ltx_emph ltx_font_italic">Engineering Applications of Artificial Intelligence</em>, vol. 104, p.
+104397, 2021.
+
+</span>
+</li>
+<li id="bib.bib56" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[56]</span>
+<span class="ltx_bibblock">
+N. Dvornik, K. Shmelkov, J. Mairal, and C. Schmid, “Blitznet: A real-time deep
+network for scene understanding,” in <em id="bib.bib56.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE
+international conference on computer vision</em>, 2017, pp. 4154–4162.
+
+</span>
+</li>
+<li id="bib.bib57" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[57]</span>
+<span class="ltx_bibblock">
+H. Zhang, E. Fromont, S. Lefèvre, and B. Avignon, “Localize to classify
+and classify to localize: Mutual guidance in object detection,” in
+<em id="bib.bib57.1.1" class="ltx_emph ltx_font_italic">Proceedings of the Asian Conference on Computer Vision</em>, 2020.
+
+</span>
+</li>
+<li id="bib.bib58" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[58]</span>
+<span class="ltx_bibblock">
+X. Zhou, D. Wang, and P. Krähenbühl, “Objects as points,” <em id="bib.bib58.1.1" class="ltx_emph ltx_font_italic">arXiv
+preprint arXiv:1904.07850</em>, 2019.
+
+</span>
+</li>
+<li id="bib.bib59" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[59]</span>
+<span class="ltx_bibblock">
+G. Ghiasi, Y. Cui, A. Srinivas, R. Qian, T.-Y. Lin, E. D. Cubuk, Q. V. Le, and
+B. Zoph, “Simple copy-paste is a strong data augmentation method for
+instance segmentation,” in <em id="bib.bib59.1.1" class="ltx_emph ltx_font_italic">Proceedings of the IEEE/CVF Conference on
+Computer Vision and Pattern Recognition</em>, 2021, pp. 2918–2928.
+
+</span>
+</li>
+<li id="bib.bib60" class="ltx_bibitem">
+<span class="ltx_tag ltx_tag_bibitem">[60]</span>
+<span class="ltx_bibblock">
+Papers with code.
+<span class="ltx_ref ltx_nolink ltx_url ltx_font_typewriter ltx_ref_self">https://paperswithcode.com/sota/object-detection-on-pascal-voc-2007</span>
+Accessed on 10/27/2022. [Online]. Available:
+<span class="ltx_ref ltx_nolink ltx_url ltx_font_typewriter ltx_ref_self">https://paperswithcode.com/sota/object-detection-on-pascal-voc-2007</span>
+
+</span>
+</li>
+</ul>
+</section>
+</article>
+</div>
+<div class="ar5iv-footer"><a href="javascript: void(0)" class="ar5iv-nav-button ar5iv-nav-button-prev">◄</a>
+    <a class="ar5iv-home-button" href="/"><img height="40" alt="ar5iv homepage" src="/assets/ar5iv.png"></a>
+    <a href="/feeling_lucky" class="ar5iv-text-button">Feeling<br>lucky?</a>
+    <a href="/land_of_honey_and_milk" rel="nofollow" aria-hidden="true" tabindex="-1"></a>
+    <a href="/log/2401.06244" class="ar5iv-text-button ar5iv-severity-ok">Conversion<br>report</a>
+    <a class="ar5iv-text-button" target="_blank" href="https://github.com/dginev/ar5iv/issues/new?template=improve-article--arxiv-id-.md&title=Improve+article+2401.06244">Report<br>an issue</a>
+    <a href="https://arxiv.org/abs/2401.06244" class="ar5iv-text-button arxiv-ui-theme">View&nbsp;original<br>on&nbsp;arXiv</a><a href="javascript: void(0)" class="ar5iv-nav-button ar5iv-nav-button-next">►</a>
+</div><footer class="ltx_page_footer">
+<a class="ar5iv-toggle-color-scheme" href="javascript:toggleColorScheme()" title="Toggle ar5iv color scheme"><span class="color-scheme-icon"></span></a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/license" target="_blank">Copyright</a>
+<a class="ar5iv-footer-button" href="https://arxiv.org/help/policies/privacy_policy" target="_blank">Privacy Policy</a>
+
+<div class="ltx_page_logo">Generated  on Tue Feb 27 09:46:20 2024 by <a target="_blank" href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+</div></footer>
+</div>
+
+    <script>
+      var canMathML = typeof(MathMLElement) == "function";
+      if (!canMathML) {
+        var body = document.querySelector("body");
+        body.firstElementChild.setAttribute('style', 'opacity: 0;');
+        var loading = document.createElement("div");
+        loading.setAttribute("id", "mathjax-loading-spinner");
+        var message = document.createElement("div");
+        message.setAttribute("id", "mathjax-loading-message");
+        message.innerText = "Typesetting Equations...";
+        body.prepend(loading);
+        body.prepend(message);
+
+        var el = document.createElement("script");
+        el.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+        document.querySelector("head").appendChild(el);
+
+        window.MathJax = {
+          startup: {
+            pageReady: () => {
+              return MathJax.startup.defaultPageReady().then(() => {
+                body.removeChild(loading);
+                body.removeChild(message);
+                body.firstElementChild.removeAttribute('style');
+              }); } } };
+      }
+    </script>
+    <script>
+    // Auxiliary function, building the preview feature when
+    // an inline citation is clicked
+    function clicked_cite(e) {
+      e.preventDefault();
+      let cite = this.closest('.ltx_cite');
+      let next = cite.nextSibling;
+      if (next && next.nodeType == Node.ELEMENT_NODE && next.getAttribute('class') == "ar5iv-bibitem-preview") {
+        next.remove();
+        return; }
+      // Before adding a preview modal,
+      // cleanup older previews, in case they're still open
+      document.querySelectorAll('span.ar5iv-bibitem-preview').forEach(function(node) {
+        node.remove();
+      })
+
+      // Create the preview
+      preview = document.createElement('span');
+      preview.setAttribute('class','ar5iv-bibitem-preview');
+      let target = document.getElementById(this.getAttribute('href').slice(1));
+      target.childNodes.forEach(function (child) {
+        preview.append(child.cloneNode(true));
+      });
+      let close_x = document.createElement('button');
+      close_x.setAttribute("aria-label","Close modal for bibliography item preview");
+      close_x.textContent = "×";
+      close_x.setAttribute('class', 'ar5iv-button-close-preview');
+      close_x.setAttribute('onclick','this.parentNode.remove()');
+      preview.append(close_x);
+      preview.querySelectorAll('.ltx_tag_bibitem').forEach(function(node) {
+        node.remove();
+      });
+      cite.parentNode.insertBefore(preview, cite.nextSibling);
+      return;
+    }
+    // Global Document initialization:
+    // - assign the preview feature to all inline citation links
+    document.querySelectorAll(".ltx_cite .ltx_ref").forEach(function (link) {
+      link.addEventListener("click", clicked_cite);
+    });
+    </script>
+    </body>
+</html>

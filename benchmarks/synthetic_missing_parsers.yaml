@@ -1,0 +1,46 @@
+name: "Synthetic - Missing Parsers"
+description: "Run parsers missing from initial synthetic benchmark"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora:
+    - synthetic
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    # Missing from original run
+    - docling
+    - marker
+    - kreuzberg
+    - pdfminer
+    - pypdf
+    - pypdf2
+    - tika
+    - extractous
+    - pymupdf4llm
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - tree_similarity
+    - element_f1
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

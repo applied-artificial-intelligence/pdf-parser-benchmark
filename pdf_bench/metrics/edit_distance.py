@@ -322,3 +322,115 @@ def raw_edit_distance(
 
     # Compute edit distance
     return levenshtein_distance(text1, text2)
+
+
+def edit_similarity_normalized(
+    text1: str,
+    text2: str,
+) -> float:
+    """Compute format-agnostic edit similarity between two texts.
+
+    This variant strips markdown and HTML formatting before comparison,
+    enabling fair comparison between parsers that output different formats
+    (plain text vs markdown vs HTML tables).
+
+    This addresses a key benchmark methodology issue: parsers like Databricks
+    that output HTML tables or Google that adds markdown headers should not
+    be penalized for formatting choices when they correctly extract the content.
+
+    Format stripping includes:
+    - Markdown headers (# ## ### etc.)
+    - HTML tags (<table>, <tr>, <td>, etc.)
+    - Markdown bold/italic (**text**, *text*)
+    - Number spacing fixes (45. 87 -> 45.87)
+
+    Args:
+        text1: First text to compare (typically ground truth)
+        text2: Second text to compare (typically parser output)
+
+    Returns:
+        Normalized edit similarity in range [0.0, 1.0]
+        Higher scores indicate better content extraction
+
+    Example:
+        >>> gt = "INVOICE\\nItem 1\\n$100"
+        >>> html_output = "<table><tr><td>INVOICE</td></tr><tr><td>Item 1</td><td>$100</td></tr></table>"
+        >>> md_output = "# INVOICE\\n**Item 1**\\n$100"
+        >>>
+        >>> # Raw comparison penalizes formatting
+        >>> edit_similarity(gt, html_output)
+        0.45  # Low score due to HTML tags
+        >>>
+        >>> # Format-agnostic comparison is fair
+        >>> edit_similarity_normalized(gt, html_output)
+        0.95  # High score - content is correct
+    """
+    # Apply format-agnostic normalization
+    text1_norm = normalize_text(text1, strip_formatting=True)
+    text2_norm = normalize_text(text2, strip_formatting=True)
+
+    # Handle empty strings
+    if not text1_norm and not text2_norm:
+        return 1.0  # Both empty after normalization = identical
+    if not text1_norm or not text2_norm:
+        return 0.0  # One empty = no similarity
+
+    # Compute edit distance on normalized text
+    edit_dist = levenshtein_distance(text1_norm, text2_norm)
+
+    # Normalize by max length
+    max_len = max(len(text1_norm), len(text2_norm))
+    normalized_dist = edit_dist / max_len
+
+    return 1.0 - normalized_dist
+
+
+def token_recall(
+    ground_truth: str,
+    hypothesis: str,
+) -> float:
+    """Compute token-level recall - what fraction of ground truth words appear in output.
+
+    This metric measures content extraction completeness regardless of:
+    - Word order
+    - Formatting
+    - Whitespace
+
+    Token recall is useful for determining if a parser extracted all the
+    content, even if it reorganized or reformatted it.
+
+    Args:
+        ground_truth: Reference text (expected content)
+        hypothesis: Parser output to evaluate
+
+    Returns:
+        Recall score in range [0.0, 1.0]
+        1.0 means all ground truth tokens found in hypothesis
+
+    Example:
+        >>> gt = "The quick brown fox"
+        >>> hyp = "fox brown quick The other words"  # Reordered + extra
+        >>> token_recall(gt, hyp)
+        1.0  # All GT words present
+
+        >>> hyp2 = "The quick brown"  # Missing "fox"
+        >>> token_recall(gt, hyp2)
+        0.75  # 3/4 words found
+    """
+    # Normalize both texts (strip formatting, collapse whitespace)
+    gt_norm = normalize_text(ground_truth, strip_formatting=True).lower()
+    hyp_norm = normalize_text(hypothesis, strip_formatting=True).lower()
+
+    # Tokenize
+    gt_tokens = set(gt_norm.split())
+    hyp_tokens = set(hyp_norm.split())
+
+    # Handle empty ground truth
+    if not gt_tokens:
+        return 1.0 if not hyp_tokens else 0.0
+
+    # Compute recall
+    found = gt_tokens & hyp_tokens
+    recall = len(found) / len(gt_tokens)
+
+    return recall

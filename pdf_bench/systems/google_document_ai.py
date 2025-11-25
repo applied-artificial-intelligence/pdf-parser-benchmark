@@ -26,8 +26,9 @@ Cost Model:
 
 API Limits:
     - Max file size: 20 MB (synchronous)
-    - Max pages: 15 pages (synchronous), unlimited (async)
+    - Max pages: 15 pages (synchronous), 500 pages (async with GCS)
     - Rate limit: 600 pages/minute
+    - Async batch processing automatically used for >15 page documents when GCS configured
 
 Examples:
     >>> from pathlib import Path
@@ -44,6 +45,7 @@ Environment Variables:
     GOOGLE_CLOUD_PROJECT: GCP project ID (required)
     GOOGLE_CLOUD_LOCATION: Processor location (optional, defaults to us)
     GOOGLE_DOCUMENT_AI_PROCESSOR_ID: Processor ID (optional, auto-creates if missing)
+    GOOGLE_CLOUD_STORAGE_BUCKET: GCS bucket for batch processing (optional, for >15 page docs)
 """
 
 from __future__ import annotations
@@ -56,10 +58,13 @@ from typing import Any
 try:
     from google.api_core.client_options import ClientOptions
     from google.cloud import documentai_v1 as documentai
+    from google.cloud import storage
 
     GOOGLE_AVAILABLE = True
 except ImportError:
     GOOGLE_AVAILABLE = False
+
+from pdf_bench.utils.caching import cache_key, get_cached, store_cached
 
 
 class GoogleDocumentAIParser:
@@ -68,13 +73,17 @@ class GoogleDocumentAIParser:
     # Pricing: $1.50 per 1,000 pages for Document OCR
     COST_PER_PAGE = 0.0015
 
-    def __init__(self):
+    def __init__(self, **kwargs: Any):
         """Initialize Google Cloud Document AI parser.
+
+        Args:
+            **kwargs: Additional options (ignored for compatibility)
 
         Raises:
             ImportError: If google-cloud-documentai is not installed
             ValueError: If required environment variables are missing
         """
+        # Ignore extra kwargs for compatibility with runner
         if not GOOGLE_AVAILABLE:
             raise ImportError(
                 "google-cloud-documentai is required for Google Document AI. "
@@ -86,6 +95,7 @@ class GoogleDocumentAIParser:
         self.project_id = os.getenv("GOOGLE_CLOUD_PROJECT")
         self.location = os.getenv("GOOGLE_CLOUD_LOCATION", "us")
         self.processor_id = os.getenv("GOOGLE_DOCUMENT_AI_PROCESSOR_ID")
+        self.gcs_bucket = os.getenv("GOOGLE_CLOUD_STORAGE_BUCKET")  # Optional, for >15 page docs
 
         if not self.credentials_path:
             raise ValueError(
@@ -96,18 +106,33 @@ class GoogleDocumentAIParser:
         if not self.project_id:
             raise ValueError("GOOGLE_CLOUD_PROJECT environment variable must be set")
 
-        # Initialize client
+        # Initialize clients
         opts = ClientOptions(api_endpoint=f"{self.location}-documentai.googleapis.com")
         self.client = documentai.DocumentProcessorServiceClient(client_options=opts)
+        self.storage_client = storage.Client(project=self.project_id) if self.gcs_bucket else None
 
         # Track costs
         self.last_parsing_cost = 0.0
         self.total_cost = 0.0
         self.pages_processed = 0
 
+        # Parser identification
+        self._name = "google_document_ai"
+        self._version = "1.0.0"
+
         # Get or create processor
         if not self.processor_id:
             self.processor_id = self._get_or_create_processor()
+
+    @property
+    def name(self) -> str:
+        """Return parser name."""
+        return self._name
+
+    @property
+    def version(self) -> str:
+        """Return parser version."""
+        return self._version
 
     def _get_or_create_processor(self) -> str:
         """Get existing OCR processor or create one if it doesn't exist.
@@ -172,6 +197,13 @@ class GoogleDocumentAIParser:
         output_dir.mkdir(parents=True, exist_ok=True)
         output_path = output_dir / f"{pdf_path.stem}.md"
 
+        # Check cache first
+        cache_dir = Path(".cache")
+        key = cache_key(pdf_path, self._name, self._version)
+        cached = get_cached(key, cache_dir)
+        if cached is not None:
+            return cached
+
         # Read PDF file
         with open(pdf_path, "rb") as f:
             pdf_content = f.read()
@@ -198,7 +230,16 @@ class GoogleDocumentAIParser:
             result = self.client.process_document(request=request)
             document = result.document
         except Exception as e:
-            raise Exception(f"Document AI processing failed: {e}") from e
+            # Check if this is a page limit error
+            error_str = str(e)
+            if "page" in error_str.lower() and ("limit" in error_str.lower() or "exceed" in error_str.lower()):
+                # Retry with async batch processing
+                try:
+                    document = self._process_document_async(pdf_content)
+                except Exception as async_error:
+                    raise Exception(f"Document AI async processing failed: {async_error}") from async_error
+            else:
+                raise Exception(f"Document AI processing failed: {e}") from e
 
         time.time() - start_time
 
@@ -208,6 +249,9 @@ class GoogleDocumentAIParser:
         # Write markdown
         output_path.write_text(markdown, encoding="utf-8")
 
+        # Store in cache for future runs
+        store_cached(key, output_path)
+
         # Track costs
         page_count = len(document.pages)
         cost = page_count * self.COST_PER_PAGE
@@ -216,6 +260,115 @@ class GoogleDocumentAIParser:
         self.pages_processed += page_count
 
         return output_path
+
+    def _process_document_async(self, pdf_content: bytes) -> documentai.Document:
+        """Process document using async batch API for documents exceeding sync limits.
+
+        Args:
+            pdf_content: Raw PDF bytes
+
+        Returns:
+            Processed Document object
+
+        Raises:
+            Exception: If batch processing fails or GCS not configured
+        """
+        if not self.gcs_bucket:
+            raise Exception(
+                "Document exceeds 15-page synchronous API limit. "
+                "Async batch processing requires Google Cloud Storage. "
+                "Set GOOGLE_CLOUD_STORAGE_BUCKET environment variable to enable."
+            )
+
+        if not self.storage_client:
+            raise Exception("GCS storage client not initialized")
+
+        import uuid
+
+        # Generate unique paths for this document
+        request_id = str(uuid.uuid4())[:8]
+        input_uri = f"gs://{self.gcs_bucket}/pdf-bench/input/{request_id}.pdf"
+        output_uri_prefix = f"gs://{self.gcs_bucket}/pdf-bench/output/{request_id}/"
+
+        try:
+            # Upload PDF to GCS
+            bucket = self.storage_client.bucket(self.gcs_bucket)
+            input_blob = bucket.blob(f"pdf-bench/input/{request_id}.pdf")
+            input_blob.upload_from_string(pdf_content, content_type="application/pdf")
+
+            # Create batch processing request
+            name = (
+                f"projects/{self.project_id}/locations/{self.location}/"
+                f"processors/{self.processor_id}"
+            )
+
+            gcs_document = documentai.GcsDocument(
+                gcs_uri=input_uri,
+                mime_type="application/pdf",
+            )
+
+            gcs_documents = documentai.GcsDocuments(documents=[gcs_document])
+            input_config = documentai.BatchDocumentsInputConfig(gcs_documents=gcs_documents)
+
+            # Output to GCS
+            gcs_output_config = documentai.DocumentOutputConfig.GcsOutputConfig(
+                gcs_uri=output_uri_prefix,
+            )
+            output_config = documentai.DocumentOutputConfig(gcs_output_config=gcs_output_config)
+
+            request = documentai.BatchProcessRequest(
+                name=name,
+                input_documents=input_config,
+                document_output_config=output_config,
+            )
+
+            # Start batch operation (returns LRO - Long Running Operation)
+            operation = self.client.batch_process_documents(request=request)
+
+            # Wait for completion (with timeout)
+            timeout = 300  # 5 minutes max
+            operation.result(timeout=timeout)
+
+            # Download results from GCS
+            # The actual structure is: gs://bucket/pdf-bench/output/{request_id}/{operation_id}/0/{request_id}-N.json
+            # List all blobs in the output directory
+            output_prefix = f"pdf-bench/output/{request_id}/"
+            output_blobs = list(bucket.list_blobs(prefix=output_prefix))
+
+            if not output_blobs:
+                raise Exception(f"No output files found in GCS: gs://{self.gcs_bucket}/{output_prefix}")
+
+            # Find JSON files (there may be multiple shards)
+            json_blobs = [b for b in output_blobs if b.name.endswith(".json")]
+            if not json_blobs:
+                raise Exception(f"No JSON output files found in GCS: gs://{self.gcs_bucket}/{output_prefix}")
+
+            # If there are multiple shards, we need to merge them
+            # For simplicity, we'll use the first shard which contains the full document text
+            # Sort by name to ensure we get -0.json first
+            json_blobs.sort(key=lambda b: b.name)
+            output_blob = json_blobs[0]
+
+            # Download and parse the JSON result
+            output_json = output_blob.download_as_text()
+
+            # Parse using Document.from_json() method
+            # The batch API output is directly a Document JSON (no wrapper)
+            document = documentai.Document.from_json(output_json)
+
+            # Cleanup: delete temporary files from GCS
+            try:
+                input_blob.delete()
+                # Delete all output files for this request
+                for blob in output_blobs:
+                    blob.delete()
+            except Exception:
+                pass  # Ignore cleanup errors
+
+            return document
+
+        except Exception as e:
+            raise Exception(f"Async batch processing failed: {e}") from e
 
     def _document_to_markdown(self, document: documentai.Document) -> str:
         """Convert Document AI Document to markdown.

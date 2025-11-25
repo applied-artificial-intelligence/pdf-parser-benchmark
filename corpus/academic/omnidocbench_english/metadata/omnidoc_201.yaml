@@ -1,0 +1,11 @@
+corpus: academic
+data_source: book
+doc_id: omnidoc_201
+domain: academic
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_201
+special_issues:
+- None

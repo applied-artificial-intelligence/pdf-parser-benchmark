@@ -1,0 +1,58 @@
+# Invoice Documents Benchmark: 100 Documents
+#
+# Generated business invoices with tables, line items, and calculations.
+# Good test for table extraction and numerical accuracy.
+#
+# Ground truth: Markdown source files used to generate PDFs
+
+name: "Invoice Documents Benchmark"
+description: |
+  100 generated business invoices with varying complexity.
+  Tests table extraction (line items), numerical parsing, and document structure.
+  Ground truth from original markdown templates.
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - invoices
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    - docling
+    - pymupdf4llm
+    - pdfplumber
+    - pymupdf
+    - pypdfium2
+    - pypdf
+    - pdfminer
+    - kreuzberg
+    - marker
+    - tika
+    - unstructured
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - tree_similarity
+    - element_f1
+    - teds
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

@@ -1,0 +1,9 @@
+corpus: academic
+data_source: newspaper
+doc_id: omnidoc_181
+domain: news
+features: []
+language: en
+layout: three_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_181

@@ -1,0 +1,49 @@
+name: "ArXiv Complete - Short Papers"
+description: |
+  Complete ArXiv coverage for papers under 30 pages (Google Document AI compatible).
+  Papers: LLaMA (14p), Navier-Stokes (7p)
+  Missing parsers: All 16 (11 open-source + 5 commercial)
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - arxiv-2302.13971  # LLaMA (14 pages)
+    - arxiv-2302.14852  # Navier-Stokes PDE (7 pages)
+
+parser_config:
+  parsers:
+    # Commercial (5)
+    - aws_textract
+    - azure_document_intelligence
+    - databricks
+    - google_document_ai
+    - landing_ai
+    # Open-source (11)
+    - docling
+    - extractous
+    - kreuzberg
+    - marker_ollama
+    - pdfminer
+    - pdfplumber
+    - pymupdf4llm
+    - pypdf
+    - pypdf2
+    - tika
+    - unstructured
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  checkpointing: true
+
+execution:
+  parallel_workers: 2
+  timeout_seconds: 600

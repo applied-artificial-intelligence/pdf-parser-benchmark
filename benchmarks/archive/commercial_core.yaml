@@ -1,0 +1,49 @@
+name: "Commercial Parsers - Core Corpora"
+description: "AWS, Azure, Google on 353 core documents (excluding OmniDocBench)"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    # Synthetic
+    - pandoc
+    - libreoffice
+    - tables
+    - lists
+    - multicolumn
+    - mixed
+    # Business
+    - legal
+    - invoices
+    - hr
+    # Academic
+    - arxiv
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+    - google_document_ai
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 25
+
+execution:
+  parallel_workers: 4
+  timeout_seconds: 120

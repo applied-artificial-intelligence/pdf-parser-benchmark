@@ -40,6 +40,7 @@ dependencies = [
     "datasets>=4.4.1",
     "python-dotenv>=1.2.1",
     "google-cloud-documentai>=3.7.0",
+    "google-cloud-storage>=2.10.0",
 ]
 
 [project.urls]
@@ -57,6 +58,7 @@ parsers = [
     "pymupdf>=1.23.0",
     "pdfplumber>=0.10.0",
     "unstructured>=0.10.0",
+    "pikepdf>=9.0",  # Required for unstructured fast strategy
     "marker-pdf>=1.10.0",
 ]
 ml-parsers = [
@@ -68,6 +70,8 @@ commercial = [
     "boto3>=1.28.0",
     "azure-ai-formrecognizer>=3.3.0",
     "databricks-sql-connector>=3.0.0",
+    "databricks-sdk>=0.30.0",
+    "landingai-ade>=0.1.0",
 ]
 dev = [
     "pytest>=7.4.0",

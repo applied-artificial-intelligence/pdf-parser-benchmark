@@ -1,0 +1,49 @@
+name: "ArXiv Complete - Long Papers"
+description: |
+  Complete ArXiv coverage for papers over 30 pages (Google Document AI NOT compatible).
+  Papers: GPT-4 (100p), BloombergGPT (52p), LLM Survey (163p)
+  Missing parsers: 15 (11 open-source + 4 commercial, excluding google_document_ai)
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - arxiv-2303.08774  # GPT-4 (100 pages) - TOO LONG for Google
+    - arxiv-2303.17564  # BloombergGPT (52 pages) - TOO LONG for Google
+    - arxiv-2303.18223  # LLM Survey (163 pages) - TOO LONG for Google
+
+parser_config:
+  parsers:
+    # Commercial (4) - NO google_document_ai
+    - aws_textract
+    - azure_document_intelligence
+    - databricks
+    - landing_ai
+    # Open-source (11)
+    - docling
+    - extractous
+    - kreuzberg
+    - marker_ollama
+    - pdfminer
+    - pdfplumber
+    - pymupdf4llm
+    - pypdf
+    - pypdf2
+    - tika
+    - unstructured
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+
+output:
+  format: json
+  checkpointing: true
+
+execution:
+  parallel_workers: 2
+  timeout_seconds: 600

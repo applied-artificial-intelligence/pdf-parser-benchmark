@@ -1,0 +1,120 @@
+# CUAD Benchmark: marker, tika, unstructured
+# These parsers have heavier dependencies (ML models, Java server)
+
+name: CUAD Marker/Tika/Unstructured Benchmark
+description: >
+  Remaining open-source parsers on 75 CUAD legal contracts.
+  marker: ML-based (~2GB models)
+  tika: Java server (~600MB)
+  unstructured: Heavy ML dependencies
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - cuad_000
+    - cuad_001
+    - cuad_002
+    - cuad_003
+    - cuad_004
+    - cuad_005
+    - cuad_006
+    - cuad_007
+    - cuad_008
+    - cuad_009
+    - cuad_010
+    - cuad_011
+    - cuad_012
+    - cuad_013
+    - cuad_014
+    - cuad_015
+    - cuad_016
+    - cuad_017
+    - cuad_018
+    - cuad_019
+    - cuad_020
+    - cuad_021
+    - cuad_022
+    - cuad_023
+    - cuad_024
+    - cuad_025
+    - cuad_026
+    - cuad_027
+    - cuad_028
+    - cuad_029
+    - cuad_030
+    - cuad_031
+    - cuad_032
+    - cuad_033
+    - cuad_034
+    - cuad_035
+    - cuad_036
+    - cuad_037
+    - cuad_038
+    - cuad_039
+    - cuad_040
+    - cuad_041
+    - cuad_042
+    - cuad_043
+    - cuad_044
+    - cuad_045
+    - cuad_046
+    - cuad_047
+    - cuad_048
+    - cuad_049
+    - cuad_050
+    - cuad_051
+    - cuad_052
+    - cuad_053
+    - cuad_054
+    - cuad_055
+    - cuad_056
+    - cuad_057
+    - cuad_058
+    - cuad_059
+    - cuad_060
+    - cuad_061
+    - cuad_062
+    - cuad_063
+    - cuad_064
+    - cuad_065
+    - cuad_066
+    - cuad_067
+    - cuad_068
+    - cuad_069
+    - cuad_070
+    - cuad_071
+    - cuad_072
+    - cuad_073
+    - cuad_074
+  max_documents: null
+
+parser_config:
+  parsers:
+    - marker
+    - tika
+    # - unstructured  # Skipped: missing unstructured_inference dep
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - element_f1
+    - teds
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

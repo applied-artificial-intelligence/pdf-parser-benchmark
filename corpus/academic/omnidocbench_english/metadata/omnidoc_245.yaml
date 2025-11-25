@@ -1,0 +1,11 @@
+corpus: academic
+data_source: exam_paper
+doc_id: omnidoc_245
+domain: education
+features: []
+language: en
+layout: double_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_245
+special_issues:
+- None

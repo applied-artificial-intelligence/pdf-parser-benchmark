@@ -1,0 +1,31 @@
+**Theorem 2.19** Let $m$ be an integer that is the product of two prime numbers. The prime divisors of $m$ are the roots of the quadratic equation
+
+and so $\varphi(m)$determines the prime factors of $ m$ .
+
+**Proof**. If  $m = p q$, then
+
+and so
+
+Equivalently, $p$  and $q$  are the solutions of the quadratic equation
+
+This completes the proof. □
+
+For example, if $m = 221$ and $\varphi(m) = 192$, then the quadratic equation
+
+has solutions $x = 13$ and $x = 17$, and $221 = 13 \cdot 17$.
+
+This method, known as the *RSA cryptosystem*, is called a public key cryptosystem, since the encryption key is made available to everyone, and the encrypted message can be transmitted through public channels. Only the possessor of the prime factors of $m$ can decrypt the message. RSA is simple, but useful, and is the basis of many commercially valuable cryptosystems.
+
+# Exercises
+
+1. Consider the secret key cryptosystem constructed from the prime
+$p = 947$ and the encoding key $e = 167$. Encipher the plaintext $P = 2$.
+Find a decrypting key and decipher the ciphertext $C = 3$.
+2. Consider the primes $p = 53$ and $q = 61$. Let $m = pq$. Prove that $e = 7$ is relatively prime to $\varphi(m)$. Find a positive integer $d$ such that $ed \equiv 1 \pmod{\varphi(m)}$.
+3. The integer 6059 is the product of two distinct primes, and $\varphi(6059) = 5904$. Use Theorem 2.19 to compute the prime divisors of 6059.
+4. The probability that an integer chosen at random between 1 and $n$ is relatively prime to $n$ is $\varphi(n)/n$. Let $n=pq$, where $p$ and $q$ are distinct primes greater than $x$. Prove that the probability that a randomly chosen positive integer up to $x$ is relatively prime to $n$ is greater than
+$(1-1/x)^2$. If $x=200$, this probability is greater than 0.99.
+
+2.7 Public Key Cryptography
+
+79

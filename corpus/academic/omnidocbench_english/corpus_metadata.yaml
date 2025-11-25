@@ -1,0 +1,5 @@
+description: Academic document layout benchmark converted from OmniDocBench
+document_count: 252
+ground_truth_type: annotated_text_extraction
+name: OmniDocBench
+source: https://huggingface.co/datasets/opendatalab/OmniDocBench

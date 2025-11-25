@@ -13,8 +13,10 @@ from pdf_bench.metrics.cell_content_f1 import (
 from pdf_bench.metrics.edit_distance import (
     character_error_rate,
     edit_similarity,
+    edit_similarity_normalized,
     normalized_edit_distance,
     raw_edit_distance,
+    token_recall,
 )
 from pdf_bench.metrics.element_f1 import ElementScores, element_f1_score
 from pdf_bench.metrics.gfm_table_parser import GFMTable, GFMTableParser
@@ -50,6 +52,8 @@ __all__ = [
     # Edit distance metrics
     "normalized_edit_distance",
     "edit_similarity",
+    "edit_similarity_normalized",  # Format-agnostic version
+    "token_recall",  # Content extraction completeness
     "character_error_rate",
     "raw_edit_distance",
     # Text similarity metrics

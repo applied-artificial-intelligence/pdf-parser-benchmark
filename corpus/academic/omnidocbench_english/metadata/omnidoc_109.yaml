@@ -1,0 +1,14 @@
+corpus: academic
+data_source: exam_paper
+doc_id: omnidoc_109
+domain: education
+features: []
+language: en
+layout: 1andmore_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_109
+special_issues:
+- table_horizontal
+- colorful_backgroud
+- table_wireless_line
+- table_span

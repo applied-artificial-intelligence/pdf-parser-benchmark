@@ -1,0 +1,11 @@
+corpus: academic
+data_source: PPT2PDF
+doc_id: omnidoc_186
+domain: presentation
+features: []
+language: en
+layout: single_column
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_186
+special_issues:
+- None

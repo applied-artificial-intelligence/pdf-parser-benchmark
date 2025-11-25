@@ -88,3 +88,7 @@ pdf-parser-demo-*.json
 
 # Keep legitimate directories
 !/tests/
+.internal/
+
+# Parser cache directories
+.kreuzberg/

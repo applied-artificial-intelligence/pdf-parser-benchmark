@@ -1,0 +1,11 @@
+corpus: academic
+data_source: colorful_textbook
+doc_id: omnidoc_115
+domain: education
+features: []
+language: en
+layout: other_layout
+source: omnidocbench
+source_url: generated://omnidocbench/omnidoc_115
+special_issues:
+- colorful_backgroud

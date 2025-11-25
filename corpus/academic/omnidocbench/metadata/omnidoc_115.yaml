@@ -4,7 +4,7 @@ doc_id: omnidoc_115
 domain: education
 features:
 - watermark
-language: english
+language: en
 layout: single_column
 source: omnidocbench
 source_url: generated://omnidocbench/omnidoc_115

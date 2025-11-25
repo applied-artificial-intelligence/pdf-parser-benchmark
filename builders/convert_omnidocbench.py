@@ -202,10 +202,11 @@ def convert_omnidocbench(
     data = load_omnidocbench(json_path)
     print(f"Loaded {len(data)} pages from OmniDocBench")
 
-    # Check which images are actually available
+    # Check which images are actually available (both JPG and PNG)
     images_dir = source_dir / "images"
     available_images = {f.name for f in images_dir.glob("*.jpg")}
-    print(f"Found {len(available_images)} available images")
+    available_images.update(f.name for f in images_dir.glob("*.png"))
+    print(f"Found {len(available_images)} available images (JPG + PNG)")
 
     # Group pages by document (only those with available images)
     docs = defaultdict(list)
