@@ -1,0 +1,133 @@
+# Frontier Models Combined Benchmark
+# Runs all 7 frontier parsers on a curated ~200 page subset
+#
+# Estimated cost breakdown:
+#   Premium models (gemini_3_pro, gpt_5, claude_sonnet_4_5): ~$6
+#   Budget models (gemini_2_5_flash, gpt_5_mini, claude_haiku_4_5): ~$2
+#   LlamaParse: FREE
+#   Total: ~$8-10
+#
+# Use this config for comprehensive frontier model comparison
+
+name: frontier_all_models
+description: "All frontier models on curated 200-page subset"
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Curated selection for fair comparison
+  include_doc_ids:
+    # Synthetic - full coverage (31 docs, 40 pages)
+    - syn-basic-001
+    - syn-basic-002
+    - syn-basic-003
+    - syn-basic-004
+    - syn-basic-005
+    - syn-tables-001
+    - syn-tables-002
+    - syn-tables-003
+    - syn-tables-004
+    - syn-tables-005
+    - syn-columns-001
+    - syn-columns-002
+    - syn-columns-003
+    - syn-columns-004
+    - syn-columns-005
+    - syn-lists-001
+    - syn-lists-002
+    - syn-lists-003
+    - syn-mixed-001
+    - syn-mixed-002
+    - syn-mixed-003
+    - syn-mixed-004
+    - syn-mixed-005
+
+    # Invoices - sample (20 docs, ~35 pages)
+    - inv-001
+    - inv-005
+    - inv-010
+    - inv-015
+    - inv-020
+    - inv-025
+    - inv-030
+    - inv-035
+    - inv-040
+    - inv-045
+    - inv-050
+    - inv-055
+    - inv-060
+    - inv-065
+    - inv-070
+    - inv-075
+    - inv-080
+    - inv-085
+    - inv-090
+    - inv-095
+
+    # HR documents (15 docs, ~25 pages)
+    - hr-001
+    - hr-003
+    - hr-005
+    - hr-007
+    - hr-009
+    - hr-011
+    - hr-013
+    - hr-015
+    - hr-017
+    - hr-019
+    - hr-021
+    - hr-023
+    - hr-025
+    - hr-027
+    - hr-029
+
+    # Legal templates (10 docs, ~45 pages)
+    - leg-001
+    - leg-010
+    - leg-020
+    - leg-030
+    - leg-040
+    - leg-050
+    - leg-060
+    - leg-070
+    - leg-080
+    - leg-090
+
+    # CUAD - small contracts only (15 docs, ~50 pages)
+    - cuad-028
+    - cuad-072
+    - cuad-074
+    - cuad-034
+    - cuad-023
+    - cuad-064
+    - cuad-000
+    - cuad-019
+    - cuad-066
+    - cuad-012
+    - cuad-040
+    - cuad-057
+    - cuad-058
+    - cuad-055
+    - cuad-070
+
+parser_config:
+  parsers:
+    # LlamaParse (free)
+    - llamaparse
+    # Budget tier
+    - gemini_2_5_flash
+    - gpt_5_mini
+    - claude_3_5_haiku
+    # Premium tier
+    - gemini_3_pro
+    - gpt_5
+    - claude_sonnet_4
+
+metrics:
+  - chrf
+  - edit_similarity
+  - tree_similarity
+
+output_config:
+  results_dir: ../results
+  save_predictions: true

@@ -13,16 +13,20 @@ from typing import Any
 
 from pdf_bench.config import BenchmarkConfig, load_config
 from pdf_bench.systems import (
+    AnthropicParser,
     AWSTextractParser,
     AzureDocumentIntelligenceParser,
     BaseParser,
     DatabricksParser,
     ExtractousParser,
+    GeminiParser,
     GoogleDocumentAIParser,
     KreuzbergParser,
     LandingAIParser,
+    LlamaParseParser,
     MarkerOllamaParser,
     MarkerParser,
+    OpenAIParser,
     PDFMinerParser,
     PdfPlumberParser,
     PyMuPDF4LLMParser,
@@ -65,6 +69,14 @@ PARSER_REGISTRY: dict[str, ParserFactory] = {
     "google_document_ai": GoogleDocumentAIParser,  # type: ignore[dict-item]
     "databricks": DatabricksParser,  # type: ignore[dict-item]
     "landing_ai": LandingAIParser,  # type: ignore[dict-item]
+    "llamaparse": LlamaParseParser,  # type: ignore[dict-item]
+    # Frontier models (multimodal LLMs)
+    "gemini_3_pro": lambda: GeminiParser(model="gemini-3-pro"),
+    "gemini_2_5_flash": lambda: GeminiParser(model="gemini-2.5-flash"),
+    "gpt_5": lambda: OpenAIParser(model="gpt-5"),
+    "gpt_5_mini": lambda: OpenAIParser(model="gpt-5-mini"),
+    "claude_sonnet_4": lambda: AnthropicParser(model="claude-sonnet-4"),
+    "claude_3_5_haiku": lambda: AnthropicParser(model="claude-3-5-haiku"),
 }
 
 

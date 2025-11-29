@@ -1,0 +1,138 @@
+# Frontier Premium Benchmark - ~300 pages
+# For expensive frontier models: gemini_3_pro, gpt_5, claude_sonnet_4_5
+#
+# Estimated cost: ~$8-12 total for all 3 premium models
+#
+# Selection criteria:
+# - Diverse document types (synthetic, invoices, HR, legal, contracts)
+# - Manageable page counts (avoid 100+ page documents)
+# - Representative of real-world use cases
+
+name: frontier_premium_300p
+description: "Premium frontier model benchmark (~300 pages) - diverse document types"
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Include specific documents for controlled testing
+  include_doc_ids:
+    # Synthetic (15 docs, ~20 pages) - test basic parsing capabilities
+    - syn-basic-001
+    - syn-basic-002
+    - syn-basic-003
+    - syn-basic-004
+    - syn-basic-005
+    - syn-tables-001
+    - syn-tables-002
+    - syn-tables-003
+    - syn-tables-004
+    - syn-tables-005
+    - syn-columns-001
+    - syn-columns-002
+    - syn-mixed-001
+    - syn-mixed-002
+    - syn-mixed-003
+
+    # Invoices (30 docs, ~50 pages) - structured data extraction
+    - inv-001
+    - inv-002
+    - inv-003
+    - inv-004
+    - inv-005
+    - inv-006
+    - inv-007
+    - inv-008
+    - inv-009
+    - inv-010
+    - inv-011
+    - inv-012
+    - inv-013
+    - inv-014
+    - inv-015
+    - inv-016
+    - inv-017
+    - inv-018
+    - inv-019
+    - inv-020
+    - inv-021
+    - inv-022
+    - inv-023
+    - inv-024
+    - inv-025
+    - inv-026
+    - inv-027
+    - inv-028
+    - inv-029
+    - inv-030
+
+    # HR documents (15 docs, ~25 pages) - resumes, applications
+    - hr-001
+    - hr-002
+    - hr-003
+    - hr-004
+    - hr-005
+    - hr-006
+    - hr-007
+    - hr-008
+    - hr-009
+    - hr-010
+    - hr-011
+    - hr-012
+    - hr-013
+    - hr-014
+    - hr-015
+
+    # Legal templates (15 docs, ~65 pages) - contracts, agreements
+    - leg-001
+    - leg-002
+    - leg-003
+    - leg-004
+    - leg-005
+    - leg-006
+    - leg-007
+    - leg-008
+    - leg-009
+    - leg-010
+    - leg-011
+    - leg-012
+    - leg-013
+    - leg-014
+    - leg-015
+
+    # CUAD contracts - small ones only (20 docs, ~100 pages)
+    - cuad-028
+    - cuad-072
+    - cuad-074
+    - cuad-034
+    - cuad-023
+    - cuad-064
+    - cuad-000
+    - cuad-019
+    - cuad-066
+    - cuad-012
+    - cuad-040
+    - cuad-057
+    - cuad-058
+    - cuad-055
+    - cuad-070
+    - cuad-007
+    - cuad-073
+    - cuad-059
+    - cuad-016
+    - cuad-011
+
+parser_config:
+  # Premium frontier models only
+  parsers:
+    - gemini_3_pro
+    - gpt_5
+    - claude_sonnet_4
+
+metrics:
+  - chrf
+  - edit_similarity
+  - tree_similarity
+
+output_config:
+  results_dir: ../results
+  save_predictions: true

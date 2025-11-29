@@ -1,0 +1,55 @@
+# Frontier Budget Benchmark - ~800 pages
+# For cost-effective frontier models: gemini_2_5_flash, gpt_5_mini, claude_haiku_4_5
+#
+# Estimated cost: ~$5-7 total for all 3 budget models
+#
+# Selection criteria:
+# - Broader coverage than premium subset
+# - Still excludes very large documents (>50 pages)
+# - More statistical significance for rankings
+
+name: frontier_budget_800p
+description: "Budget frontier model benchmark (~800 pages) - expanded coverage"
+
+corpus_dir: ../corpus
+
+document_filter:
+  # Use domain filters for broader coverage
+  domains:
+    - synthetic
+    - invoices
+    - hr
+    - legal_templates
+    - legal_contracts
+
+  # Exclude very large CUAD documents
+  exclude_doc_ids:
+    # CUAD docs > 50 pages
+    - cuad-039
+    - cuad-051
+    - cuad-010
+    - cuad-022
+    - cuad-030
+    - cuad-003
+    - cuad-052
+    - cuad-027
+    - cuad-025
+    - cuad-008
+
+  max_documents: 200  # Cap at ~200 docs
+
+parser_config:
+  # Budget frontier models
+  parsers:
+    - gemini_2_5_flash
+    - gpt_5_mini
+    - claude_3_5_haiku
+
+metrics:
+  - chrf
+  - edit_similarity
+  - tree_similarity
+
+output_config:
+  results_dir: ../results
+  save_predictions: true

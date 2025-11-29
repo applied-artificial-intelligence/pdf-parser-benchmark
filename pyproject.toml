@@ -72,6 +72,13 @@ commercial = [
     "databricks-sql-connector>=3.0.0",
     "databricks-sdk>=0.30.0",
     "landingai-ade>=0.1.0",
+    "llama-parse>=0.6.0",
+]
+frontier = [
+    "llama-parse>=0.6.0",
+    "google-generativeai>=0.8.0",
+    "openai>=1.50.0",
+    "anthropic>=0.40.0",
 ]
 dev = [
     "pytest>=7.4.0",
