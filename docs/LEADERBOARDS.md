@@ -3,8 +3,76 @@
 Publication-ready leaderboard formats for different audiences and use cases.
 
 **Date**: November 2025
-**Benchmark Version**: 1.0
+**Benchmark Version**: 1.1 (with Frontier LLMs)
 **Documents Evaluated**: 800+ across 6 corpora
+**Last Updated**: 2025-11-30
+
+---
+
+## NEW: Frontier LLM Parser Leaderboard
+
+### The Big Picture: LLMs vs Traditional Parsers
+
+Frontier LLMs (GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5) can now parse PDFs directly via vision capabilities. How do they compare?
+
+| Category | Best Parser | Edit Sim | Cost/Page | Use Case |
+|----------|-------------|----------|-----------|----------|
+| **Premium LLM** | GPT-5.1 | **92%** | ~$0.05 | Highest quality, low volume |
+| **Premium LLM** | Gemini 3 Pro | 87% | ~$0.03 | Quality/cost balance |
+| **Premium LLM** | Claude Sonnet 4.5 | 80% | ~$0.04 | Anthropic ecosystem |
+| **Budget LLM** | LlamaParse | 78% | $0.003 | **Sweet spot** - LLM quality, 10x cheaper |
+| **Budget LLM** | Gemini 2.0 Flash | 77% | ~$0.001 | Cheapest LLM option |
+| **Open Source** | pypdfium2/pypdf | 78% | Free | Best free option |
+| **Commercial API** | Azure Doc Intel | 88% | ~$0.0015 | Enterprise, forms |
+
+### Key Finding: The 14-Point Premium Gap
+
+**GPT-5.1 (92%) vs best open-source (78%) = 14 percentage points improvement**
+
+Is it worth $0.05/page? Depends on:
+- **High-value documents** (legal, financial): Yes
+- **Bulk processing** (millions of pages): No - use open source or LlamaParse
+
+### Frontier LLM Rankings (28 documents)
+
+| Rank | Model | Edit Sim | ChrF++ | Tree Sim | Cost/Page |
+|------|-------|----------|--------|----------|-----------|
+| 1 | **GPT-5.1** | **92%** | **93.0** | 44% | ~$0.05 |
+| 2 | Gemini 3 Pro | 87% | 86.2 | 43% | ~$0.03 |
+| 3 | Claude Sonnet 4.5 | 80% | 81.7 | 44% | ~$0.04 |
+
+### Budget LLM Rankings (30 documents)
+
+| Rank | Model | Edit Sim | ChrF++ | Tree Sim | Cost/Page |
+|------|-------|----------|--------|----------|-----------|
+| 1 | **LlamaParse** | **78%** | **83.4** | **39%** | $0.003 |
+| 2 | Gemini 2.0 Flash | 77% | 80.3 | 35% | ~$0.001 |
+| 3 | GPT-4o-mini | 75% | 76.7 | 13% | ~$0.002 |
+| 4 | Claude 3.5 Haiku | 68% | 69.7 | 33% | ~$0.002 |
+
+### LLM Selection Guide
+
+| If You Need | Choose | Why |
+|-------------|--------|-----|
+| Maximum quality, cost no object | **GPT-5.1** | 92% - best in class |
+| Quality/cost balance | **Gemini 3 Pro** | 87% at ~$0.03/page |
+| Budget LLM quality | **LlamaParse** | 78% at $0.003/page (10x cheaper than frontier) |
+| Cheapest LLM option | **Gemini 2.0 Flash** | 77% at ~$0.001/page |
+| Anthropic ecosystem | **Claude Sonnet 4.5** | 80% with Claude integration |
+
+### Critical Insight: GPT-4o-mini's Structure Problem
+
+GPT-4o-mini scores only **13% tree similarity** vs 35%+ for others. It extracts text well but destroys document structure. **Avoid for RAG pipelines** where structure matters.
+
+### LlamaParse: The Sweet Spot
+
+LlamaParse deserves special mention:
+- **78% edit similarity** - matches best open-source parsers
+- **$0.003/page** - 10x cheaper than frontier LLMs
+- **Purpose-built for PDF** - not a general LLM doing PDF on the side
+- **Free tier**: 1,000 pages/day for testing
+
+For most use cases, LlamaParse offers the best quality/cost ratio.
 
 ---
 

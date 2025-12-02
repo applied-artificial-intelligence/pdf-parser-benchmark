@@ -1,0 +1,100 @@
+# Unified Frontier Model Benchmark - 30 diverse documents
+# Includes LlamaParse + all verified budget frontier models
+#
+# Parsers included:
+#   - llamaparse (cost_effective mode, $0.003/page)
+#   - gemini_2_0_flash ($0.0002/page)
+#   - gpt_4o_mini ($0.0001/page)
+#   - claude_3_5_haiku ($0.0021/page)
+#
+# Estimated cost: ~$0.10 total (30 docs * ~100 pages avg)
+#
+# Document selection (30 total):
+#   - 10 synthetic (tables, lists, multicolumn - diverse features)
+#   - 5 invoices (structured data extraction)
+#   - 5 HR/resumes (document understanding)
+#   - 5 arxiv papers (academic content)
+#   - 5 small CUAD contracts (legal text)
+
+name: frontier_unified_30docs
+description: "Unified frontier benchmark: LlamaParse + budget LLMs (30 diverse docs)"
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic - tables (3 docs)
+    - 09_table_simple_grid
+    - 10_table_colspan
+    - 14_table_financial
+
+    # Synthetic - lists (3 docs)
+    - 15_list_simple_bullets
+    - 17_list_nested_2level
+    - 19_list_mixed_types
+
+    # Synthetic - multicolumn/mixed (4 docs)
+    - 21_column_two_column
+    - 24_column_newsletter
+    - 27_mixed_business_report
+    - 32_mixed_comprehensive
+
+    # Invoices - varied styles (5 docs)
+    - invoice_001
+    - invoice_015
+    - invoice_030
+    - invoice_050
+    - invoice_075
+
+    # HR documents - resumes (5 docs)
+    - resume_001
+    - resume_005
+    - resume_010
+    - resume_020
+    - resume_030
+
+    # Arxiv papers (5 docs)
+    - arxiv-2302.00722
+    - arxiv-2302.13971
+    - arxiv-2312.00752
+    - arxiv-2401.06244
+    - arxiv-2403.09313
+
+    # CUAD contracts - small ones (5 docs)
+    - cuad_000
+    - cuad_007
+    - cuad_011
+    - cuad_016
+    - cuad_028
+
+  max_documents: null
+
+parser_config:
+  # LlamaParse + verified working budget frontier models
+  parsers:
+    - llamaparse          # Cost-effective mode ($0.003/page)
+    - gemini_2_0_flash    # Google budget (~$0.0002/page)
+    - gpt_4o_mini         # OpenAI budget (~$0.0001/page)
+    - claude_3_5_haiku    # Anthropic budget (~$0.0021/page)
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+  aggregate: true
+
+output_config:
+  results_dir: ../results
+  save_format: json
+  generate_report: true
+  save_predictions: false
+  verbose: true
+
+parallel_workers: 1

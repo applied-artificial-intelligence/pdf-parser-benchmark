@@ -69,13 +69,27 @@ PARSER_REGISTRY: dict[str, ParserFactory] = {
     "google_document_ai": GoogleDocumentAIParser,  # type: ignore[dict-item]
     "databricks": DatabricksParser,  # type: ignore[dict-item]
     "landing_ai": LandingAIParser,  # type: ignore[dict-item]
-    "llamaparse": LlamaParseParser,  # type: ignore[dict-item]
-    # Frontier models (multimodal LLMs)
-    "gemini_3_pro": lambda: GeminiParser(model="gemini-3-pro"),
-    "gemini_2_5_flash": lambda: GeminiParser(model="gemini-2.5-flash"),
-    "gpt_5": lambda: OpenAIParser(model="gpt-5"),
-    "gpt_5_mini": lambda: OpenAIParser(model="gpt-5-mini"),
-    "claude_sonnet_4": lambda: AnthropicParser(model="claude-sonnet-4"),
+    "llamaparse": lambda: LlamaParseParser(parsing_mode="cost_effective"),
+    "llamaparse_agentic": lambda: LlamaParseParser(parsing_mode="agentic"),
+    "llamaparse_premium": lambda: LlamaParseParser(parsing_mode="premium"),
+    # Frontier models - Gemini (Google) - Premium
+    "gemini_3_pro": lambda: GeminiParser(model="gemini-3-pro-preview"),
+    "gemini_2_5_pro": lambda: GeminiParser(model="gemini-2.5-pro-preview-06-05"),
+    "gemini_1_5_pro": lambda: GeminiParser(model="gemini-1.5-pro"),
+    # Frontier models - Gemini (Google) - Budget
+    "gemini_2_5_flash": lambda: GeminiParser(model="gemini-2.5-flash-preview-05-20"),
+    "gemini_2_0_flash": lambda: GeminiParser(model="gemini-2.0-flash"),
+    "gemini_1_5_flash": lambda: GeminiParser(model="gemini-1.5-flash"),
+    # Frontier models - OpenAI - Premium
+    "gpt_5_1": lambda: OpenAIParser(model="gpt-5.1"),
+    "gpt_4o": lambda: OpenAIParser(model="gpt-4o"),
+    "gpt_4_turbo": lambda: OpenAIParser(model="gpt-4-turbo"),
+    # Frontier models - OpenAI - Budget
+    "gpt_4o_mini": lambda: OpenAIParser(model="gpt-4o-mini"),
+    # Frontier models - Anthropic - Premium (use short names from anthropic_parser.py)
+    "claude_sonnet_4_5": lambda: AnthropicParser(model="claude-sonnet-4-5"),
+    "claude_3_opus": lambda: AnthropicParser(model="claude-3-opus"),
+    # Frontier models - Anthropic - Budget
     "claude_3_5_haiku": lambda: AnthropicParser(model="claude-3-5-haiku"),
 }
 

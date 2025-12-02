@@ -1,6 +1,30 @@
 # PDF-Bench: Comprehensive PDF Parser Benchmark
 
-**3,530 Benchmark Runs | 10 Open-Source Parsers | 353 Documents | 7 Domains**
+**17 Parsers | 353+ Documents | 7 Domains | Open Source + Commercial + Frontier LLMs**
+
+---
+
+## NEW: Frontier LLM Parsers (November 2025)
+
+We benchmarked frontier LLMs (GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5) against traditional parsers:
+
+| Category | Parser | Edit Similarity | Cost/Page |
+|----------|--------|-----------------|-----------|
+| **Premium LLM** | GPT-5.1 | **92%** | ~$0.05 |
+| **Premium LLM** | Gemini 3 Pro | 87% | ~$0.03 |
+| **Premium LLM** | Claude Sonnet 4.5 | 80% | ~$0.04 |
+| **Budget LLM** | LlamaParse | 78% | $0.003 |
+| **Budget LLM** | Gemini 2.0 Flash | 77% | ~$0.001 |
+| **Open Source** | pypdfium2 | 78% | Free |
+| **Commercial** | Azure Doc Intel | 88% | ~$0.0015 |
+
+### Key Insight: The 14-Point Premium Gap
+
+GPT-5.1 achieves **92% edit similarity**—14 points higher than the best open-source parser (78%). But at $0.05/page, it's 50x more expensive than LlamaParse which matches open-source quality at $0.003/page.
+
+**Recommendation**: Use **LlamaParse** for most use cases (best quality/cost ratio). Reserve premium LLMs for high-value, low-volume documents.
+
+See [docs/LEADERBOARDS.md](docs/LEADERBOARDS.md) for full LLM comparison.
 
 ---
 
@@ -171,13 +195,17 @@ pdf-bench/
 
 ---
 
-## Parsers Tested
+## Parsers Tested (17 Total)
 
-**Text Extraction**: pypdfium2, pypdf, pymupdf, pdfminer, extractous, kreuzberg
+**Frontier LLMs**: GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5, GPT-4o-mini, Gemini 2.0 Flash, Claude 3.5 Haiku
 
-**Structure-Aware**: pymupdf4llm, docling, unstructured
+**Commercial APIs**: LlamaParse, Azure Document Intelligence, AWS Textract, Google Document AI
 
-**Table-Focused**: pdfplumber
+**Open Source - Text**: pypdfium2, pypdf, pymupdf, pdfminer, extractous, kreuzberg
+
+**Open Source - Structure**: pymupdf4llm, docling, unstructured, marker
+
+**Open Source - Tables**: pdfplumber
 
 ---
 
@@ -210,4 +238,4 @@ MIT License. Individual parsers have their own licenses.
 
 ---
 
-**Last Updated**: 2025-11-25 | **Version**: 2.2 | **Benchmark Runs**: 3,530
+**Last Updated**: 2025-11-30 | **Version**: 2.3 (with Frontier LLMs) | **Parsers**: 17 | **Documents**: 353+

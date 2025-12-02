@@ -36,6 +36,29 @@ VALID_PARSERS = [
     "google_document_ai",
     "databricks",
     "landing_ai",
+    # Frontier model parsers
+    "llamaparse",
+    "llamaparse_agentic",
+    "llamaparse_premium",
+    # Gemini models - Premium (latest frontier)
+    "gemini_3_pro",  # Latest flagship: gemini-3-pro-preview
+    "gemini_2_5_pro",  # Previous flagship: gemini-2.5-pro-preview-06-05
+    # Gemini models - Budget
+    "gemini_2_5_flash",  # Fast: gemini-2.5-flash-preview-05-20
+    "gemini_2_0_flash",  # Stable: gemini-2.0-flash
+    "gemini_1_5_pro",  # Legacy
+    "gemini_1_5_flash",  # Legacy
+    # OpenAI models - Premium (latest frontier)
+    "gpt_5_1",  # Latest flagship: gpt-5.1
+    "gpt_4o",  # Previous flagship
+    "gpt_4_turbo",  # Legacy
+    # OpenAI models - Budget
+    "gpt_4o_mini",
+    # Anthropic models - Premium
+    "claude_sonnet_4_5",
+    "claude_3_opus",
+    # Anthropic models - Budget
+    "claude_3_5_haiku",
 ]
 
 # Valid metric identifiers

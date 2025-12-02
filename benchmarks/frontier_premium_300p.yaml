@@ -1,5 +1,5 @@
 # Frontier Premium Benchmark - ~300 pages
-# For expensive frontier models: gemini_3_pro, gpt_5, claude_sonnet_4_5
+# For expensive frontier models: gemini_3_pro, gpt_5, claude_sonnet_4
 #
 # Estimated cost: ~$8-12 total for all 3 premium models
 #
@@ -14,125 +14,139 @@ description: "Premium frontier model benchmark (~300 pages) - diverse document t
 corpus_dir: ../corpus
 
 document_filter:
-  # Include specific documents for controlled testing
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
   include_doc_ids:
     # Synthetic (15 docs, ~20 pages) - test basic parsing capabilities
-    - syn-basic-001
-    - syn-basic-002
-    - syn-basic-003
-    - syn-basic-004
-    - syn-basic-005
-    - syn-tables-001
-    - syn-tables-002
-    - syn-tables-003
-    - syn-tables-004
-    - syn-tables-005
-    - syn-columns-001
-    - syn-columns-002
-    - syn-mixed-001
-    - syn-mixed-002
-    - syn-mixed-003
+    - 01_basic
+    - 02_lists
+    - 03_tables
+    - 04_math
+    - 05_complex
+    - 09_table_simple_grid
+    - 10_table_colspan
+    - 11_table_wide
+    - 12_table_multiple
+    - 13_table_complex_headers
+    - 15_list_simple_bullets
+    - 16_list_numbered
+    - 17_list_nested_2level
+    - 21_multicolumn_2col
+    - 25_mixed_report
 
     # Invoices (30 docs, ~50 pages) - structured data extraction
-    - inv-001
-    - inv-002
-    - inv-003
-    - inv-004
-    - inv-005
-    - inv-006
-    - inv-007
-    - inv-008
-    - inv-009
-    - inv-010
-    - inv-011
-    - inv-012
-    - inv-013
-    - inv-014
-    - inv-015
-    - inv-016
-    - inv-017
-    - inv-018
-    - inv-019
-    - inv-020
-    - inv-021
-    - inv-022
-    - inv-023
-    - inv-024
-    - inv-025
-    - inv-026
-    - inv-027
-    - inv-028
-    - inv-029
-    - inv-030
+    - inv_001
+    - inv_002
+    - inv_003
+    - inv_004
+    - inv_005
+    - inv_006
+    - inv_007
+    - inv_008
+    - inv_009
+    - inv_010
+    - inv_011
+    - inv_012
+    - inv_013
+    - inv_014
+    - inv_015
+    - inv_016
+    - inv_017
+    - inv_018
+    - inv_019
+    - inv_020
+    - inv_021
+    - inv_022
+    - inv_023
+    - inv_024
+    - inv_025
+    - inv_026
+    - inv_027
+    - inv_028
+    - inv_029
+    - inv_030
 
     # HR documents (15 docs, ~25 pages) - resumes, applications
-    - hr-001
-    - hr-002
-    - hr-003
-    - hr-004
-    - hr-005
-    - hr-006
-    - hr-007
-    - hr-008
-    - hr-009
-    - hr-010
-    - hr-011
-    - hr-012
-    - hr-013
-    - hr-014
-    - hr-015
+    - hr_001
+    - hr_002
+    - hr_003
+    - hr_004
+    - hr_005
+    - hr_006
+    - hr_007
+    - hr_008
+    - hr_009
+    - hr_010
+    - hr_011
+    - hr_012
+    - hr_013
+    - hr_014
+    - hr_015
 
     # Legal templates (15 docs, ~65 pages) - contracts, agreements
-    - leg-001
-    - leg-002
-    - leg-003
-    - leg-004
-    - leg-005
-    - leg-006
-    - leg-007
-    - leg-008
-    - leg-009
-    - leg-010
-    - leg-011
-    - leg-012
-    - leg-013
-    - leg-014
-    - leg-015
+    - leg_001
+    - leg_002
+    - leg_003
+    - leg_004
+    - leg_005
+    - leg_006
+    - leg_007
+    - leg_008
+    - leg_009
+    - leg_010
+    - leg_011
+    - leg_012
+    - leg_013
+    - leg_014
+    - leg_015
 
     # CUAD contracts - small ones only (20 docs, ~100 pages)
-    - cuad-028
-    - cuad-072
-    - cuad-074
-    - cuad-034
-    - cuad-023
-    - cuad-064
-    - cuad-000
-    - cuad-019
-    - cuad-066
-    - cuad-012
-    - cuad-040
-    - cuad-057
-    - cuad-058
-    - cuad-055
-    - cuad-070
-    - cuad-007
-    - cuad-073
-    - cuad-059
-    - cuad-016
-    - cuad-011
+    - cuad_028
+    - cuad_072
+    - cuad_074
+    - cuad_034
+    - cuad_023
+    - cuad_064
+    - cuad_000
+    - cuad_019
+    - cuad_066
+    - cuad_012
+    - cuad_040
+    - cuad_057
+    - cuad_058
+    - cuad_055
+    - cuad_070
+    - cuad_007
+    - cuad_073
+    - cuad_059
+    - cuad_016
+    - cuad_011
+
+  max_documents: null
 
 parser_config:
-  # Premium frontier models only
+  # ACTUAL Premium frontier models (latest 2025)
   parsers:
-    - gemini_3_pro
-    - gpt_5
-    - claude_sonnet_4
+    - gemini_3_pro      # gemini-3-pro-preview - $2.00/$12.00 per 1M tokens
+    - gpt_5_1           # gpt-5.1 - $1.25/$10.00 per 1M tokens
+    - claude_sonnet_4_5 # claude-sonnet-4-5 - $3.00/$15.00 per 1M tokens
 
-metrics:
-  - chrf
-  - edit_similarity
-  - tree_similarity
+  parser_options: {}
 
-output_config:
-  results_dir: ../results
-  save_predictions: true
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

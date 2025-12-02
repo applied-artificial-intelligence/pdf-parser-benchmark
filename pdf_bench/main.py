@@ -97,10 +97,10 @@ def run(
         # Enable checkpointing if output path provided
         checkpoint_path = Path(output).with_suffix(".checkpoint.json") if output else None
         if checkpoint_path:
-            console.print(f"[dim]Checkpointing enabled: {checkpoint_path} (every 20 results)[/dim]")
+            console.print(f"[dim]Checkpointing enabled: {checkpoint_path} (every result)[/dim]")
 
-        # Run benchmark with checkpointing
-        results = runner.run(checkpoint_path=checkpoint_path, checkpoint_interval=20)
+        # Run benchmark with checkpointing - save every result
+        results = runner.run(checkpoint_path=checkpoint_path, checkpoint_interval=1)
 
         # Display summary
         console.print("\n[bold green]✓ Benchmark Complete[/bold green]")
