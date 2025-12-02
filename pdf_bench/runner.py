@@ -20,6 +20,8 @@ from pdf_bench.metrics import (
 from pdf_bench.metrics.markdown_to_html import markdown_table_to_html
 from pdf_bench.systems import BaseParser
 
+import sys
+
 try:
     from rich.progress import (
         BarColumn,
@@ -30,7 +32,9 @@ try:
         TimeElapsedColumn,
     )
 
-    RICH_AVAILABLE = True
+    # Only use Rich progress bar if we have a real TTY
+    # Otherwise it blocks/hangs in background processes and piped output
+    RICH_AVAILABLE = sys.stdout.isatty()
 except ImportError:
     RICH_AVAILABLE = False
 
@@ -422,16 +426,19 @@ class BenchmarkRunner:
 
                     progress.update(task_id, advance=1)
         else:
-            # No progress bar, just iterate
+            # No progress bar, just iterate with text output
             for i, (parser, doc) in enumerate(tasks):
+                print(f"[{i + 1}/{len(tasks)}] {parser.name} / {doc.doc_id}...", end=" ", flush=True)
                 result = self._run_single(parser, doc)
                 task_results.append(result)
                 results.results.append(result)
 
                 if result.success:
                     results.success_count += 1
+                    print(f"SUCCESS ({result.parse_time_seconds:.1f}s)", flush=True)
                 else:
                     results.failure_count += 1
+                    print(f"FAILED: {result.error}", flush=True)
 
                 checkpoint_counter += 1
 
@@ -439,7 +446,7 @@ class BenchmarkRunner:
                 if checkpoint_path and checkpoint_counter >= checkpoint_interval:
                     save_results(results, checkpoint_path)
                     checkpoint_counter = 0
-                    print(f"✓ Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)")
+                    print(f"  -> Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)", flush=True)
 
         # Final checkpoint
         if checkpoint_path:
