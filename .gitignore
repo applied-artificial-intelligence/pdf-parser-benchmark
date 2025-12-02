@@ -93,3 +93,4 @@ pdf-parser-demo-*.json
 # Parser cache directories
 .kreuzberg/
 .claude/
+CLAUDE.md
