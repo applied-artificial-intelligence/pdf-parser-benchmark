@@ -12,86 +12,107 @@ from pathlib import Path
 from typing import Any
 
 from pdf_bench.config import BenchmarkConfig, load_config
-from pdf_bench.systems import (
-    AnthropicParser,
-    AWSTextractParser,
-    AzureDocumentIntelligenceParser,
-    BaseParser,
-    DatabricksParser,
-    ExtractousParser,
-    GeminiParser,
-    GoogleDocumentAIParser,
-    KreuzbergParser,
-    LandingAIParser,
-    LlamaParseParser,
-    MarkerOllamaParser,
-    MarkerParser,
-    OpenAIParser,
-    PDFMinerParser,
-    PdfPlumberParser,
-    PyMuPDF4LLMParser,
-    PyMuPDFParser,
-    PyPDF2Parser,
-    PyPDFium2Parser,
-    PyPDFParser,
-    TikaParser,
-    UnstructuredParser,
-)
-from pdf_bench.systems.docling_parser import create_docling_accurate, create_docling_fast
+from pdf_bench.systems import BaseParser
+from pdf_bench.systems.landing_ai_parser import LandingAIParser
+from pdf_bench.systems.marker_ollama import MarkerOllamaParser
+from pdf_bench.systems.pdfsmith_adapter import PdfsmithAdapter
+
+# Native parsers (not available in pdfsmith)
+from pdf_bench.systems.tika_parser import TikaParser
 from pdf_bench.utils.metadata import DocumentMetadata, load_metadata
 
 # Type alias for parser factories (class or callable returning parser)
 ParserFactory = type[BaseParser] | Callable[[], BaseParser]
 
 # Parser class registry mapping parser IDs to classes or factory functions
-# Note: "docling" defaults to fast mode (no OCR) for reasonable performance
-# Use "docling-ocr" for OCR mode or configure via parser_options in YAML
+# Uses pdfsmith backends for most parsers, with native implementations for
+# parsers not available in pdfsmith (tika, marker_ollama, landing_ai)
 PARSER_REGISTRY: dict[str, ParserFactory] = {
-    # Open-source parsers
-    "pymupdf": PyMuPDFParser,
-    "pymupdf4llm": PyMuPDF4LLMParser,
-    "pdfplumber": PdfPlumberParser,
-    "pypdf": PyPDFParser,
-    "pypdf2": PyPDF2Parser,
-    "pypdfium2": PyPDFium2Parser,
-    "pdfminer": PDFMinerParser,
+    # ========== pdfsmith backends (open-source) ==========
+    "pdfsmith-pypdf": lambda: PdfsmithAdapter("pypdf"),
+    "pdfsmith-pdfplumber": lambda: PdfsmithAdapter("pdfplumber"),
+    "pdfsmith-pymupdf": lambda: PdfsmithAdapter("pymupdf"),
+    "pdfsmith-pymupdf4llm": lambda: PdfsmithAdapter("pymupdf4llm"),
+    "pdfsmith-pdfminer": lambda: PdfsmithAdapter("pdfminer"),
+    "pdfsmith-pypdfium2": lambda: PdfsmithAdapter("pypdfium2"),
+    "pdfsmith-unstructured": lambda: PdfsmithAdapter("unstructured"),
+    "pdfsmith-kreuzberg": lambda: PdfsmithAdapter("kreuzberg"),
+    "pdfsmith-extractous": lambda: PdfsmithAdapter("extractous"),
+    "pdfsmith-docling": lambda: PdfsmithAdapter("docling"),
+    "pdfsmith-marker": lambda: PdfsmithAdapter("marker"),
+    # ========== pdfsmith backends (commercial cloud OCR) ==========
+    "pdfsmith-aws_textract": lambda: PdfsmithAdapter("aws_textract"),
+    "pdfsmith-azure": lambda: PdfsmithAdapter("azure_document_intelligence"),
+    "pdfsmith-google": lambda: PdfsmithAdapter("google_document_ai"),
+    "pdfsmith-databricks": lambda: PdfsmithAdapter("databricks"),
+    "pdfsmith-llamaparse": lambda: PdfsmithAdapter("llamaparse"),
+    # ========== pdfsmith backends (frontier LLMs) ==========
+    # Anthropic
+    "pdfsmith-anthropic": lambda: PdfsmithAdapter("anthropic"),
+    "pdfsmith-anthropic-haiku": lambda: PdfsmithAdapter(
+        "anthropic", model="claude-3-5-haiku"
+    ),
+    "pdfsmith-anthropic-sonnet": lambda: PdfsmithAdapter(
+        "anthropic", model="claude-sonnet-4-5"
+    ),
+    # OpenAI
+    "pdfsmith-openai": lambda: PdfsmithAdapter("openai"),
+    "pdfsmith-openai-mini": lambda: PdfsmithAdapter("openai", model="gpt-4o-mini"),
+    "pdfsmith-openai-4o": lambda: PdfsmithAdapter("openai", model="gpt-4o"),
+    "pdfsmith-openai-5": lambda: PdfsmithAdapter("openai", model="gpt-5.1"),
+    # Gemini
+    "pdfsmith-gemini": lambda: PdfsmithAdapter("gemini"),
+    "pdfsmith-gemini-flash": lambda: PdfsmithAdapter("gemini", model="gemini-2.0-flash"),
+    "pdfsmith-gemini-pro": lambda: PdfsmithAdapter(
+        "gemini", model="gemini-3-pro-preview"
+    ),
+    # ========== Native parsers (not in pdfsmith) ==========
     "tika": TikaParser,
-    "extractous": ExtractousParser,
-    "unstructured": UnstructuredParser,
-    "marker": MarkerParser,
     "marker_ollama": MarkerOllamaParser,
-    "docling": create_docling_fast,  # Fast mode (no OCR) - ~2-4GB RAM, 2-5 sec/doc
-    "docling-ocr": create_docling_accurate,  # OCR mode - ~8-12GB RAM, 30-60 sec/doc
-    "kreuzberg": KreuzbergParser,
-    # Commercial/API parsers (type: ignore due to incomplete typing in cloud SDK deps)
-    "aws_textract": AWSTextractParser,
-    "azure_document_intelligence": AzureDocumentIntelligenceParser,
-    "google_document_ai": GoogleDocumentAIParser,  # type: ignore[dict-item]
-    "databricks": DatabricksParser,  # type: ignore[dict-item]
     "landing_ai": LandingAIParser,  # type: ignore[dict-item]
-    "llamaparse": lambda: LlamaParseParser(parsing_mode="cost_effective"),
-    "llamaparse_agentic": lambda: LlamaParseParser(parsing_mode="agentic"),
-    "llamaparse_premium": lambda: LlamaParseParser(parsing_mode="premium"),
-    # Frontier models - Gemini (Google) - Premium
-    "gemini_3_pro": lambda: GeminiParser(model="gemini-3-pro-preview"),
-    "gemini_2_5_pro": lambda: GeminiParser(model="gemini-2.5-pro-preview-06-05"),
-    "gemini_1_5_pro": lambda: GeminiParser(model="gemini-1.5-pro"),
-    # Frontier models - Gemini (Google) - Budget
-    "gemini_2_5_flash": lambda: GeminiParser(model="gemini-2.5-flash-preview-05-20"),
-    "gemini_2_0_flash": lambda: GeminiParser(model="gemini-2.0-flash"),
-    "gemini_1_5_flash": lambda: GeminiParser(model="gemini-1.5-flash"),
-    # Frontier models - OpenAI - Premium
-    "gpt_5_1": lambda: OpenAIParser(model="gpt-5.1"),
-    "gpt_4o": lambda: OpenAIParser(model="gpt-4o"),
-    "gpt_4_turbo": lambda: OpenAIParser(model="gpt-4-turbo"),
-    # Frontier models - OpenAI - Budget
-    "gpt_4o_mini": lambda: OpenAIParser(model="gpt-4o-mini"),
-    # Frontier models - Anthropic - Premium (use short names from anthropic_parser.py)
-    "claude_sonnet_4_5": lambda: AnthropicParser(model="claude-sonnet-4-5"),
-    "claude_3_opus": lambda: AnthropicParser(model="claude-3-opus"),
-    # Frontier models - Anthropic - Budget
-    "claude_3_5_haiku": lambda: AnthropicParser(model="claude-3-5-haiku"),
 }
+
+# ========== Backward compatibility aliases ==========
+# Map old parser names to new pdfsmith-prefixed names
+PARSER_ALIASES: dict[str, str] = {
+    # Open-source parsers
+    "pypdf": "pdfsmith-pypdf",
+    "pdfplumber": "pdfsmith-pdfplumber",
+    "pymupdf": "pdfsmith-pymupdf",
+    "pymupdf4llm": "pdfsmith-pymupdf4llm",
+    "pdfminer": "pdfsmith-pdfminer",
+    "pypdfium2": "pdfsmith-pypdfium2",
+    "unstructured": "pdfsmith-unstructured",
+    "kreuzberg": "pdfsmith-kreuzberg",
+    "extractous": "pdfsmith-extractous",
+    "docling": "pdfsmith-docling",
+    "marker": "pdfsmith-marker",
+    # Commercial cloud OCR
+    "aws_textract": "pdfsmith-aws_textract",
+    "azure_document_intelligence": "pdfsmith-azure",
+    "google_document_ai": "pdfsmith-google",
+    "databricks": "pdfsmith-databricks",
+    "llamaparse": "pdfsmith-llamaparse",
+    # Frontier LLM aliases (old names)
+    "claude_3_5_haiku": "pdfsmith-anthropic-haiku",
+    "claude_sonnet_4_5": "pdfsmith-anthropic-sonnet",
+    "claude_3_opus": "pdfsmith-anthropic-sonnet",  # Map to sonnet as fallback
+    "gpt_4o_mini": "pdfsmith-openai-mini",
+    "gpt_4o": "pdfsmith-openai-4o",
+    "gpt_5_1": "pdfsmith-openai-5",
+    "gpt_4_turbo": "pdfsmith-openai-4o",  # Map to 4o as fallback
+    "gemini_2_0_flash": "pdfsmith-gemini-flash",
+    "gemini_2_5_flash": "pdfsmith-gemini-flash",
+    "gemini_3_pro": "pdfsmith-gemini-pro",
+    "gemini_2_5_pro": "pdfsmith-gemini-pro",
+    "gemini_1_5_pro": "pdfsmith-gemini-pro",
+    "gemini_1_5_flash": "pdfsmith-gemini-flash",
+}
+
+# Register aliases in PARSER_REGISTRY
+for alias, target in PARSER_ALIASES.items():
+    if alias not in PARSER_REGISTRY:  # Don't overwrite if already defined
+        PARSER_REGISTRY[alias] = PARSER_REGISTRY[target]
 
 
 @dataclass

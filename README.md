@@ -115,7 +115,18 @@ uv sync
 
 # Or pip
 pip install -e .
+
+# Install pdfsmith (required for most parsers)
+pip install pdfsmith
+
+# Optional: Install specific parser groups
+pip install pdfsmith[light]       # pypdf, pdfplumber, pymupdf
+pip install pdfsmith[recommended] # + docling, marker
+pip install pdfsmith[frontier]    # + Anthropic, OpenAI, Gemini LLMs
+pip install pdfsmith[commercial]  # + AWS, Azure, Google, LlamaParse
 ```
+
+**Note**: pdf-bench uses [pdfsmith](https://github.com/youruser/pdfsmith) as its parsing backend. Native parsers (tika, marker_ollama, landing_ai) are implemented directly.
 
 ## Quick Start
 
@@ -181,10 +192,10 @@ All documents have manually verified ground truth from source HTML/DOCX/LaTeX co
 ```
 pdf-bench/
 ├── pdf_bench/          # Core library
-│   ├── systems/        # Parser implementations
+│   ├── systems/        # Parser adapters (pdfsmith + native)
 │   ├── metrics/        # Evaluation metrics
 │   └── utils/          # Utilities
-├── corpus/             # Test documents (273)
+├── corpus/             # Test documents (353+)
 │   ├── synthetic/      # Systematic tests
 │   └── business/       # Invoices, legal, HR
 ├── benchmarks/         # Benchmark configs
@@ -192,6 +203,12 @@ pdf-bench/
 ├── scripts/            # Analysis scripts
 └── docs/               # Documentation
 ```
+
+### Architecture
+
+pdf-bench uses **pdfsmith** as its unified parsing backend. Most parsers are accessed through `PdfsmithAdapter`, which bridges pdfsmith's API (`parse() -> str`) to pdf-bench's API (`parse() -> Path`).
+
+Native parsers not in pdfsmith: `tika`, `marker_ollama`, `landing_ai`
 
 ---
 
@@ -238,4 +255,4 @@ MIT License. Individual parsers have their own licenses.
 
 ---
 
-**Last Updated**: 2025-11-30 | **Version**: 2.3 (with Frontier LLMs) | **Parsers**: 17 | **Documents**: 353+
+**Last Updated**: 2025-12-02 | **Version**: 3.0 (pdfsmith integration) | **Parsers**: 17 | **Documents**: 353+

@@ -58,7 +58,8 @@ def _element_f1_wrapper(ground_truth: str, prediction: str) -> float:
         pred_ast = _ast_parser.parse(prediction)
         scores = element_f1_score(gt_ast, pred_ast)
         # element_f1_score returns a dict with 'overall' and 'per_element' keys
-        return scores["overall"]["f1"]
+        f1_score: float = scores["overall"]["f1"]
+        return f1_score
     except Exception:
         return float("nan")
 
@@ -94,6 +95,38 @@ METRIC_FUNCTIONS: dict[str, Any] = {
     "teds": _teds_wrapper,  # Use wrapper to convert markdown→HTML
     "latex_f1": latex_f1_score,
 }
+
+
+def _extract_parser_init_args(parser: BaseParser) -> tuple[type[BaseParser], dict[str, Any]]:
+    """Extract class and constructor arguments from a parser instance.
+
+    This is needed for multiprocessing: we can't pickle parser instances directly,
+    so we need to reconstruct them in worker processes.
+
+    Args:
+        parser: Parser instance to extract args from
+
+    Returns:
+        Tuple of (parser_class, parser_options_dict)
+    """
+    parser_class = type(parser)
+    parser_options: dict[str, Any] = {}
+
+    # PdfsmithAdapter needs backend_name and kwargs
+    if hasattr(parser, "_backend_name"):
+        parser_options["backend_name"] = parser._backend_name
+        if hasattr(parser, "_kwargs") and parser._kwargs:
+            parser_options.update(parser._kwargs)
+
+    # Test parser attributes (MockParser etc.)
+    if hasattr(parser, "_name"):
+        parser_options["name"] = parser._name
+    if hasattr(parser, "_should_fail"):
+        parser_options["should_fail"] = parser._should_fail
+    if hasattr(parser, "_output_content"):
+        parser_options["output_content"] = parser._output_content
+
+    return parser_class, parser_options
 
 
 @dataclass
@@ -437,15 +470,7 @@ class BenchmarkRunner:
         # Prepare task arguments for worker function
         worker_args = []
         for parser, doc in tasks:
-            parser_class = type(parser)
-            parser_options = {}
-
-            if hasattr(parser, "_name"):
-                parser_options["name"] = parser._name
-            if hasattr(parser, "_should_fail"):
-                parser_options["should_fail"] = parser._should_fail
-            if hasattr(parser, "_output_content"):
-                parser_options["output_content"] = parser._output_content
+            parser_class, parser_options = _extract_parser_init_args(parser)
 
             worker_args.append(
                 (
@@ -530,20 +555,7 @@ class BenchmarkRunner:
         # Prepare task arguments for worker function
         worker_args = []
         for parser, doc in tasks:
-            # Get parser class
-            parser_class = type(parser)
-
-            # Try to extract constructor arguments from parser instance
-            # This is a best-effort approach - may need customization per parser
-            parser_options = {}
-
-            # Check if parser has common attributes to preserve
-            if hasattr(parser, "_name"):
-                parser_options["name"] = parser._name
-            if hasattr(parser, "_should_fail"):
-                parser_options["should_fail"] = parser._should_fail
-            if hasattr(parser, "_output_content"):
-                parser_options["output_content"] = parser._output_content
+            parser_class, parser_options = _extract_parser_init_args(parser)
 
             worker_args.append(
                 (

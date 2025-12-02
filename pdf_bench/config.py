@@ -12,53 +12,32 @@ from typing import Any
 
 import yaml
 
-# Valid parser identifiers
-VALID_PARSERS = [
-    # Open-source parsers
-    "pymupdf",
-    "pymupdf4llm",
-    "pdfplumber",
-    "pypdf",
-    "pypdf2",
-    "pypdfium2",
-    "pdfminer",
-    "tika",
-    "extractous",
-    "unstructured",
-    "marker",
-    "marker_ollama",
-    "docling",  # Fast mode (no OCR) - ~2-4GB RAM, 2-5 sec/doc
-    "docling-ocr",  # OCR mode - ~8-12GB RAM, 30-60 sec/doc, GPU recommended
-    "kreuzberg",
-    # Commercial/API parsers
-    "aws_textract",
-    "azure_document_intelligence",
-    "google_document_ai",
-    "databricks",
-    "landing_ai",
-    # Frontier model parsers
-    "llamaparse",
-    "llamaparse_agentic",
-    "llamaparse_premium",
-    # Gemini models - Premium (latest frontier)
-    "gemini_3_pro",  # Latest flagship: gemini-3-pro-preview
-    "gemini_2_5_pro",  # Previous flagship: gemini-2.5-pro-preview-06-05
-    # Gemini models - Budget
-    "gemini_2_5_flash",  # Fast: gemini-2.5-flash-preview-05-20
-    "gemini_2_0_flash",  # Stable: gemini-2.0-flash
-    "gemini_1_5_pro",  # Legacy
-    "gemini_1_5_flash",  # Legacy
-    # OpenAI models - Premium (latest frontier)
-    "gpt_5_1",  # Latest flagship: gpt-5.1
-    "gpt_4o",  # Previous flagship
-    "gpt_4_turbo",  # Legacy
-    # OpenAI models - Budget
-    "gpt_4o_mini",
-    # Anthropic models - Premium
-    "claude_sonnet_4_5",
-    "claude_3_opus",
-    # Anthropic models - Budget
-    "claude_3_5_haiku",
+
+# Valid parser identifiers - loaded dynamically from PARSER_REGISTRY
+# This includes both pdfsmith-prefixed names and backward-compat aliases
+def _get_valid_parsers() -> list[str]:
+    """Get valid parser IDs from the registry (lazy load to avoid circular imports)."""
+    try:
+        from pdf_bench.loader import PARSER_REGISTRY
+        return list(PARSER_REGISTRY.keys())
+    except ImportError:
+        # Fallback for when loader not available (e.g., during testing)
+        return []
+
+
+# Legacy list kept for reference - actual validation uses _get_valid_parsers()
+_LEGACY_PARSERS = [
+    # Open-source parsers (old names, now aliases)
+    "pymupdf", "pymupdf4llm", "pdfplumber", "pypdf", "pypdf2", "pypdfium2",
+    "pdfminer", "extractous", "unstructured", "marker", "docling", "kreuzberg",
+    # Native parsers (not in pdfsmith)
+    "tika", "marker_ollama", "landing_ai",
+    # Commercial (old names)
+    "aws_textract", "azure_document_intelligence", "google_document_ai",
+    "databricks", "llamaparse",
+    # Frontier LLMs (old names)
+    "gemini_3_pro", "gemini_2_5_pro", "gemini_2_0_flash", "gpt_5_1", "gpt_4o",
+    "gpt_4o_mini", "claude_sonnet_4_5", "claude_3_5_haiku",
 ]
 
 # Valid metric identifiers
@@ -226,17 +205,22 @@ class ParserConfig:
             ValueError: If any validation rule is violated
         """
         errors = []
+        valid_parsers = _get_valid_parsers()
+
+        # Skip validation if registry not available (during initial import)
+        if not valid_parsers:
+            return
 
         for parser in self.parsers:
-            if parser not in VALID_PARSERS:
-                errors.append(f"Invalid parser '{parser}'. Valid parsers: {VALID_PARSERS}")
+            if parser not in valid_parsers:
+                errors.append(f"Invalid parser '{parser}'. Valid parsers: {valid_parsers}")
 
         # Validate parser_options keys match parsers
         for parser_name in self.parser_options.keys():
-            if parser_name not in VALID_PARSERS:
+            if parser_name not in valid_parsers:
                 errors.append(
                     f"Invalid parser in parser_options: '{parser_name}'. "
-                    f"Valid parsers: {VALID_PARSERS}"
+                    f"Valid parsers: {valid_parsers}"
                 )
 
         if errors:
