@@ -35,12 +35,9 @@ dependencies = [
     "sacrebleu>=2.3.0",
     "zss>=1.2.0",
     "requests>=2.31.0",
-    "boto3>=1.40.73",
-    "azure-ai-documentintelligence>=1.0.2",
-    "datasets>=4.4.1",
     "python-dotenv>=1.2.1",
-    "google-cloud-documentai>=3.7.0",
-    "google-cloud-storage>=2.10.0",
+    # pdfsmith provides unified PDF parsing - install from PyPI or local path
+    # "pdfsmith>=0.2.0",  # Uncomment when published to PyPI
 ]
 
 [project.urls]
@@ -51,35 +48,52 @@ Documentation = "https://github.com/YOUR_USERNAME/pdf-bench#readme"
 Changelog = "https://github.com/YOUR_USERNAME/pdf-bench/releases"
 
 [project.optional-dependencies]
+# Note: pdfsmith must be installed separately until PyPI publication
+# Install locally with: pip install -e ../pdfsmith
 metrics = [
     "table-recognition-metric>=0.0.4",
 ]
-parsers = [
-    "pymupdf>=1.23.0",
+# Light parsers via pdfsmith
+light = [
+    "pypdf>=4.0",
     "pdfplumber>=0.10.0",
-    "unstructured>=0.10.0",
-    "pikepdf>=9.0",  # Required for unstructured fast strategy
-    "marker-pdf>=1.10.0",
+    "pymupdf>=1.23.0",
 ]
-ml-parsers = [
+# Recommended parsers via pdfsmith
+recommended = [
+    "pypdf>=4.0",
+    "pdfplumber>=0.10.0",
+    "pymupdf4llm>=0.0.10",
+    "kreuzberg>=3.0",
+]
+# Heavy ML parsers via pdfsmith
+heavy = [
+    "docling>=2.0",
     "marker-pdf>=1.10.0",
     "torch>=2.5.0",
     "torchvision>=0.24.0",
 ]
+# Commercial cloud OCR via pdfsmith
 commercial = [
     "boto3>=1.28.0",
-    "azure-ai-formrecognizer>=3.3.0",
-    "databricks-sql-connector>=3.0.0",
+    "azure-ai-documentintelligence>=1.0",
+    "google-cloud-documentai>=2.0",
+    "google-cloud-storage>=2.0",
     "databricks-sdk>=0.30.0",
-    "landingai-ade>=0.1.0",
     "llama-parse>=0.6.0",
 ]
+# Frontier LLM parsers via pdfsmith
 frontier = [
-    "llama-parse>=0.6.0",
-    "google-generativeai>=0.8.0",
-    "openai>=1.50.0",
     "anthropic>=0.40.0",
+    "openai>=1.50.0",
+    "google-genai>=1.0",
 ]
+# Native parsers (not in pdfsmith)
+native = [
+    "tika",
+    "marker-pdf>=1.10.0",  # For marker_ollama
+]
+# Development dependencies
 dev = [
     "pytest>=7.4.0",
     "pytest-cov>=4.1.0",

@@ -148,7 +148,7 @@ class LandingAIParser:
         except Exception as e:
             raise Exception(f"Landing AI processing failed: {e}") from e
 
-        processing_time = time.time() - start_time
+        time.time() - start_time
 
         # Write markdown
         output_path.write_text(markdown, encoding="utf-8")
@@ -195,7 +195,7 @@ class LandingAIParser:
 
         # Response has .chunks attribute with extracted content
         if hasattr(response, "chunks") and response.chunks:
-            for i, chunk in enumerate(response.chunks):
+            for _i, chunk in enumerate(response.chunks):
                 # Each chunk may have different attributes
                 if hasattr(chunk, "text"):
                     text = chunk.text.strip()
@@ -221,11 +221,11 @@ class LandingAIParser:
         # Fallback: try to get markdown directly
         if not lines:
             if hasattr(response, "markdown"):
-                return response.markdown
+                return str(response.markdown)
             elif hasattr(response, "text"):
-                return response.text
+                return str(response.text)
             elif hasattr(response, "content"):
-                return response.content
+                return str(response.content)
 
         if not lines:
             return "# Empty Document\n\nNo content extracted."

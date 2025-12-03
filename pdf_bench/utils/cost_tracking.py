@@ -35,7 +35,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-import fitz  # type: ignore[import-untyped]  # PyMuPDF for page counting
+import fitz  # PyMuPDF for page counting
 
 
 @dataclass

@@ -354,7 +354,7 @@ def edit_similarity_normalized(
 
     Example:
         >>> gt = "INVOICE\\nItem 1\\n$100"
-        >>> html_output = "<table><tr><td>INVOICE</td></tr><tr><td>Item 1</td><td>$100</td></tr></table>"
+        >>> html_output = "<table><tr><td>INVOICE</td></tr></table>"
         >>> md_output = "# INVOICE\\n**Item 1**\\n$100"
         >>>
         >>> # Raw comparison penalizes formatting

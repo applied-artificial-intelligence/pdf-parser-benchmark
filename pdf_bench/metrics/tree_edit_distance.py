@@ -27,7 +27,7 @@ Example:
 
 from typing import Any
 
-from zss import Node, simple_distance  # type: ignore[import-untyped]
+from zss import Node, simple_distance
 
 
 def ast_to_tree(ast: list[dict[str, Any]]) -> Node:

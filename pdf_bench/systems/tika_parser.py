@@ -7,7 +7,7 @@ supports 1000+ file formats including PDFs.
 from pathlib import Path
 
 try:
-    import tika  # type: ignore[import-untyped]  # noqa: F401
+    import tika  # noqa: F401
 
     TIKA_AVAILABLE = True
 except ImportError:
@@ -58,7 +58,7 @@ class TikaParser(BaseParser):
         Returns:
             Path: Path to the generated Markdown file
         """
-        from tika import parser  # type: ignore[import-untyped]
+        from tika import parser
 
         # Validate input
         if not pdf_path.exists():

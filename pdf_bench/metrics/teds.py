@@ -21,7 +21,7 @@ Where:
 from __future__ import annotations
 
 from bs4 import BeautifulSoup, Tag
-from zss import Node, simple_distance  # type: ignore[import-untyped]
+from zss import Node, simple_distance
 
 from pdf_bench.metrics.table_normalization import normalize_html_table
 

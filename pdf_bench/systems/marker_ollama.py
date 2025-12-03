@@ -47,7 +47,7 @@ import sys
 from pathlib import Path
 
 try:
-    import marker  # type: ignore[import-untyped]
+    import marker
 
     MARKER_AVAILABLE = True
 except ImportError:

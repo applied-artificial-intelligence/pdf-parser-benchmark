@@ -49,12 +49,8 @@ PARSER_REGISTRY: dict[str, ParserFactory] = {
     # ========== pdfsmith backends (frontier LLMs) ==========
     # Anthropic
     "pdfsmith-anthropic": lambda: PdfsmithAdapter("anthropic"),
-    "pdfsmith-anthropic-haiku": lambda: PdfsmithAdapter(
-        "anthropic", model="claude-3-5-haiku"
-    ),
-    "pdfsmith-anthropic-sonnet": lambda: PdfsmithAdapter(
-        "anthropic", model="claude-sonnet-4-5"
-    ),
+    "pdfsmith-anthropic-haiku": lambda: PdfsmithAdapter("anthropic", model="claude-3-5-haiku"),
+    "pdfsmith-anthropic-sonnet": lambda: PdfsmithAdapter("anthropic", model="claude-sonnet-4-5"),
     # OpenAI
     "pdfsmith-openai": lambda: PdfsmithAdapter("openai"),
     "pdfsmith-openai-mini": lambda: PdfsmithAdapter("openai", model="gpt-4o-mini"),
@@ -63,9 +59,7 @@ PARSER_REGISTRY: dict[str, ParserFactory] = {
     # Gemini
     "pdfsmith-gemini": lambda: PdfsmithAdapter("gemini"),
     "pdfsmith-gemini-flash": lambda: PdfsmithAdapter("gemini", model="gemini-2.0-flash"),
-    "pdfsmith-gemini-pro": lambda: PdfsmithAdapter(
-        "gemini", model="gemini-3-pro-preview"
-    ),
+    "pdfsmith-gemini-pro": lambda: PdfsmithAdapter("gemini", model="gemini-3-pro-preview"),
     # ========== Native parsers (not in pdfsmith) ==========
     "tika": TikaParser,
     "marker_ollama": MarkerOllamaParser,

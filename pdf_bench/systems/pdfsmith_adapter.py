@@ -56,8 +56,7 @@ class PdfsmithAdapter(BaseParser):
         """
         if not PDFSMITH_AVAILABLE:
             raise ImportError(
-                "pdfsmith is required for PdfsmithAdapter. "
-                "Install with: pip install pdfsmith"
+                "pdfsmith is required for PdfsmithAdapter. Install with: pip install pdfsmith"
             )
 
         self._backend_name = backend_name

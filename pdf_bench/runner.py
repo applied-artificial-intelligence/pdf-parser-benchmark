@@ -1,6 +1,7 @@
 """Benchmark runner that orchestrates parser execution and metric computation."""
 
 import multiprocessing as mp
+import sys
 import time
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -19,8 +20,6 @@ from pdf_bench.metrics import (
 )
 from pdf_bench.metrics.markdown_to_html import markdown_table_to_html
 from pdf_bench.systems import BaseParser
-
-import sys
 
 try:
     from rich.progress import (
@@ -428,7 +427,9 @@ class BenchmarkRunner:
         else:
             # No progress bar, just iterate with text output
             for i, (parser, doc) in enumerate(tasks):
-                print(f"[{i + 1}/{len(tasks)}] {parser.name} / {doc.doc_id}...", end=" ", flush=True)
+                print(
+                    f"[{i + 1}/{len(tasks)}] {parser.name} / {doc.doc_id}...", end=" ", flush=True
+                )
                 result = self._run_single(parser, doc)
                 task_results.append(result)
                 results.results.append(result)
@@ -446,7 +447,9 @@ class BenchmarkRunner:
                 if checkpoint_path and checkpoint_counter >= checkpoint_interval:
                     save_results(results, checkpoint_path)
                     checkpoint_counter = 0
-                    print(f"  -> Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)", flush=True)
+                    print(
+                        f"  -> Checkpoint saved ({i + 1}/{len(tasks)} tasks complete)", flush=True
+                    )
 
         # Final checkpoint
         if checkpoint_path:

@@ -29,7 +29,7 @@ def _serialize_metrics(metrics: dict[str, float]) -> dict[str, float | None]:
     Returns:
         Dictionary with NaN values converted to None for JSON serialization
     """
-    result = {}
+    result: dict[str, float | None] = {}
     for key, value in metrics.items():
         # Handle None values (shouldn't happen but be defensive)
         if value is None:

@@ -27,7 +27,7 @@ Example:
     96.15...  # High similarity despite small difference
 """
 
-from sacrebleu.metrics import CHRF  # type: ignore[attr-defined]
+from sacrebleu.metrics import CHRF
 
 from pdf_bench.utils.normalization import normalize_text
 
