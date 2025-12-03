@@ -68,7 +68,7 @@ def create_comparison_markdown(
     score: float,
     output_path: Path,
     ground_truth_path: Path,
-    title: str
+    title: str,
 ) -> str:
     """Create a markdown file with side-by-side comparison."""
     # Read files
@@ -79,13 +79,19 @@ def create_comparison_markdown(
 
     # Truncate if too long
     max_lines = 100
-    parser_lines = parser_output.split('\n')
-    gt_lines = ground_truth.split('\n')
+    parser_lines = parser_output.split("\n")
+    gt_lines = ground_truth.split("\n")
 
     if len(parser_lines) > max_lines:
-        parser_output = '\n'.join(parser_lines[:max_lines]) + f"\n\n... (truncated, showing {max_lines}/{len(parser_lines)} lines)"
+        parser_output = (
+            "\n".join(parser_lines[:max_lines])
+            + f"\n\n... (truncated, showing {max_lines}/{len(parser_lines)} lines)"
+        )
     if len(gt_lines) > max_lines:
-        ground_truth = '\n'.join(gt_lines[:max_lines]) + f"\n\n... (truncated, showing {max_lines}/{len(gt_lines)} lines)"
+        ground_truth = (
+            "\n".join(gt_lines[:max_lines])
+            + f"\n\n... (truncated, showing {max_lines}/{len(gt_lines)} lines)"
+        )
 
     # Create comparison markdown
     comparison = f"""# {title}
@@ -121,11 +127,13 @@ def extract_good_examples(results: dict, n: int = 5):
     scores = []
     for result in results.get("results", []):
         if result["success"] and result["metrics"].get("edit_similarity"):
-            scores.append({
-                "doc_id": result["document_id"],
-                "parser": result["parser_name"],
-                "score": result["metrics"]["edit_similarity"]
-            })
+            scores.append(
+                {
+                    "doc_id": result["document_id"],
+                    "parser": result["parser_name"],
+                    "score": result["metrics"]["edit_similarity"],
+                }
+            )
 
     # Sort by score and take top N with diversity
     scores.sort(key=lambda x: x["score"], reverse=True)
@@ -158,11 +166,11 @@ def extract_good_examples(results: dict, n: int = 5):
             item["score"],
             output_path,
             gt_path,
-            f"Good Example #{i}: {item['parser']} on {item['doc_id']}"
+            f"Good Example #{i}: {item['parser']} on {item['doc_id']}",
         )
 
         out_file = OUTPUT_DIR / "good" / f"example_{i}_{item['parser']}_{item['doc_id']}.md"
-        with open(out_file, 'w') as f:
+        with open(out_file, "w") as f:
             f.write(comparison)
 
         print(f"  ✓ Created {out_file.name} (score: {item['score']:.2%})")
@@ -178,11 +186,13 @@ def extract_bad_examples(results: dict, n: int = 5):
         if result["success"] and result["metrics"].get("edit_similarity"):
             score = result["metrics"]["edit_similarity"]
             if score < 0.7:  # Only include poor performers
-                scores.append({
-                    "doc_id": result["document_id"],
-                    "parser": result["parser_name"],
-                    "score": score
-                })
+                scores.append(
+                    {
+                        "doc_id": result["document_id"],
+                        "parser": result["parser_name"],
+                        "score": score,
+                    }
+                )
 
     # Sort by score (worst first) and take bottom N with diversity
     scores.sort(key=lambda x: x["score"])
@@ -211,11 +221,11 @@ def extract_bad_examples(results: dict, n: int = 5):
             item["score"],
             output_path,
             gt_path,
-            f"Bad Example #{i}: {item['parser']} on {item['doc_id']}"
+            f"Bad Example #{i}: {item['parser']} on {item['doc_id']}",
         )
 
         out_file = OUTPUT_DIR / "bad" / f"example_{i}_{item['parser']}_{item['doc_id']}.md"
-        with open(out_file, 'w') as f:
+        with open(out_file, "w") as f:
             f.write(comparison)
 
         print(f"  ✓ Created {out_file.name} (score: {item['score']:.2%})")
@@ -226,11 +236,7 @@ def extract_failure_modes(results: dict):
     print("Extracting failure mode examples...")
 
     # Look for specific patterns in results
-    failure_patterns = {
-        "multi_column": [],
-        "tables": [],
-        "structure": []
-    }
+    failure_patterns = {"multi_column": [], "tables": [], "structure": []}
 
     for result in results.get("results", []):
         if not result["success"] or not result["metrics"]:
@@ -241,30 +247,27 @@ def extract_failure_modes(results: dict):
         metrics = result["metrics"]
 
         # Multi-column issues (low tree similarity despite ok text)
-        if (metrics.get("edit_similarity", 0) > 0.7 and
-            metrics.get("tree_similarity", 1) < 0.5):
-            failure_patterns["multi_column"].append({
-                "doc_id": doc_id,
-                "parser": parser,
-                "edit_sim": metrics["edit_similarity"],
-                "tree_sim": metrics.get("tree_similarity", 0)
-            })
+        if metrics.get("edit_similarity", 0) > 0.7 and metrics.get("tree_similarity", 1) < 0.5:
+            failure_patterns["multi_column"].append(
+                {
+                    "doc_id": doc_id,
+                    "parser": parser,
+                    "edit_sim": metrics["edit_similarity"],
+                    "tree_sim": metrics.get("tree_similarity", 0),
+                }
+            )
 
         # Table issues (low TEDS)
         if metrics.get("teds") and metrics["teds"] < 0.5:
-            failure_patterns["tables"].append({
-                "doc_id": doc_id,
-                "parser": parser,
-                "teds": metrics["teds"]
-            })
+            failure_patterns["tables"].append(
+                {"doc_id": doc_id, "parser": parser, "teds": metrics["teds"]}
+            )
 
         # Structure issues (low element F1)
         if metrics.get("element_f1") and metrics["element_f1"] < 0.5:
-            failure_patterns["structure"].append({
-                "doc_id": doc_id,
-                "parser": parser,
-                "element_f1": metrics["element_f1"]
-            })
+            failure_patterns["structure"].append(
+                {"doc_id": doc_id, "parser": parser, "element_f1": metrics["element_f1"]}
+            )
 
     # Create documentation for each failure mode
     modes_found = 0
@@ -282,13 +285,13 @@ def extract_failure_modes(results: dict):
                 item["edit_sim"],
                 output_path,
                 gt_path,
-                "Failure Mode: Multi-Column Issues"
+                "Failure Mode: Multi-Column Issues",
             )
             comparison += f"\n**Issue**: Good text extraction ({item['edit_sim']:.2%}) but poor structure ({item['tree_sim']:.2%})\n"
             comparison += "**Likely cause**: Multi-column layout not properly handled, reading order incorrect.\n"
 
             out_file = OUTPUT_DIR / "failure_modes" / "multi_column_failure.md"
-            with open(out_file, 'w') as f:
+            with open(out_file, "w") as f:
                 f.write(comparison)
             print("  ✓ Created multi_column_failure.md")
             modes_found += 1
@@ -302,9 +305,9 @@ def extract_failure_modes(results: dict):
         if output_path and gt_path:
             comparison = f"""# Failure Mode: Table Extraction
 
-**Document**: `{item['doc_id']}`
-**Parser**: `{item['parser']}`
-**TEDS Score**: {item['teds']:.2%}
+**Document**: `{item["doc_id"]}`
+**Parser**: `{item["parser"]}`
+**TEDS Score**: {item["teds"]:.2%}
 
 **Issue**: Parser failed to preserve table structure
 
@@ -313,15 +316,15 @@ def extract_failure_modes(results: dict):
 - Table boundaries misidentified
 - Cell content extracted but structure lost
 
-See cached output at: `.cache/{item['parser']}/{item['doc_id']}.md`
-Ground truth at: `{find_ground_truth(item['doc_id'])}`
+See cached output at: `.cache/{item["parser"]}/{item["doc_id"]}.md`
+Ground truth at: `{find_ground_truth(item["doc_id"])}`
 
 ---
 
 *Generated for PDF-Bench publication*
 """
             out_file = OUTPUT_DIR / "failure_modes" / "table_extraction_failure.md"
-            with open(out_file, 'w') as f:
+            with open(out_file, "w") as f:
                 f.write(comparison)
             print("  ✓ Created table_extraction_failure.md")
             modes_found += 1
@@ -357,7 +360,7 @@ Generated examples of parser performance for content marketing.
 
     index_content += "\n---\n\n*All examples extracted from benchmark results.*\n"
 
-    with open(OUTPUT_DIR / "INDEX.md", 'w') as f:
+    with open(OUTPUT_DIR / "INDEX.md", "w") as f:
         f.write(index_content)
 
     print("✓ Created INDEX.md")

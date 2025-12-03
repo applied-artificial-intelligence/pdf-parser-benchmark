@@ -1,0 +1,94 @@
+# Frontier Focused Benchmark - 30 diverse documents
+# For verified budget frontier models: gemini_2_0_flash, gpt_4o_mini, claude_3_5_haiku
+#
+# Estimated cost: ~$0.07 total for all 3 budget models
+# (30 docs * 3 parsers * ~$0.0008/doc avg)
+#
+# Selection criteria:
+# - 10 synthetic (tables, lists, multicolumn - diverse features)
+# - 5 invoices (structured data extraction)
+# - 5 HR/resumes (document understanding)
+# - 5 arxiv papers (academic content)
+# - 5 small CUAD contracts (legal text)
+
+name: frontier_focused_30docs
+description: "Focused frontier model benchmark (30 diverse docs) - verified parsers only"
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic - tables (3 docs)
+    - 09_table_simple_grid
+    - 10_table_colspan
+    - 14_table_financial
+
+    # Synthetic - lists (3 docs)
+    - 15_list_simple_bullets
+    - 17_list_nested_2level
+    - 19_list_mixed_types
+
+    # Synthetic - multicolumn/mixed (4 docs)
+    - 21_column_two_column
+    - 24_column_newsletter
+    - 27_mixed_business_report
+    - 32_mixed_comprehensive
+
+    # Invoices - varied styles (5 docs)
+    - invoice_001
+    - invoice_015
+    - invoice_030
+    - invoice_050
+    - invoice_075
+
+    # HR documents - resumes (5 docs)
+    - resume_001
+    - resume_005
+    - resume_010
+    - resume_020
+    - resume_030
+
+    # Arxiv papers (5 docs)
+    - arxiv-2302.00722
+    - arxiv-2302.13971
+    - arxiv-2312.00752
+    - arxiv-2401.06244
+    - arxiv-2403.09313
+
+    # CUAD contracts - small ones (5 docs)
+    - cuad_000
+    - cuad_007
+    - cuad_011
+    - cuad_016
+    - cuad_028
+
+  max_documents: null
+
+parser_config:
+  # Only verified working budget frontier models
+  parsers:
+    - gemini_2_0_flash
+    - gpt_4o_mini
+    - claude_3_5_haiku
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

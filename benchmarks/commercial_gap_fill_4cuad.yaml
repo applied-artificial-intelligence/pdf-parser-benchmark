@@ -1,0 +1,54 @@
+# Gap fill: Run commercial parsers on 4 CUAD docs they're missing
+# This completes the 30-doc comparison set for commercial APIs
+#
+# 4 commercial parsers × 4 docs = 16 API calls
+# (some redundant but simpler than tracking per-parser)
+#
+# Commercial APIs:
+#   - aws_textract
+#   - azure_document_intelligence
+#   - google_document_ai
+#   - databricks
+
+name: commercial_gap_fill_4cuad
+description: "Gap fill: commercial APIs on 4 missing CUAD docs"
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - cuad_000
+    - cuad_007
+    - cuad_011
+    - cuad_016
+
+  max_documents: null
+
+parser_config:
+  parsers:
+    - aws_textract
+    - azure_document_intelligence
+    - google_document_ai
+    - databricks
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+  aggregate: true
+
+output_config:
+  results_dir: ../results
+  save_format: json
+  generate_report: true
+  save_predictions: false
+  verbose: true
+
+parallel_workers: 1

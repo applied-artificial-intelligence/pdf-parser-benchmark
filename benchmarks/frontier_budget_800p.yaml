@@ -1,5 +1,5 @@
-# Frontier Budget Benchmark - ~800 pages
-# For cost-effective frontier models: gemini_2_5_flash, gpt_5_mini, claude_haiku_4_5
+# Frontier Budget Benchmark - ~200 documents
+# For cost-effective frontier models: gemini_2_5_flash, gpt_5_mini, claude_3_5_haiku
 #
 # Estimated cost: ~$5-7 total for all 3 budget models
 #
@@ -9,47 +9,290 @@
 # - More statistical significance for rankings
 
 name: frontier_budget_800p
-description: "Budget frontier model benchmark (~800 pages) - expanded coverage"
+description: "Budget frontier model benchmark (~200 docs) - expanded coverage"
 
 corpus_dir: ../corpus
 
 document_filter:
-  # Use domain filters for broader coverage
-  domains:
-    - synthetic
-    - invoices
-    - hr
-    - legal_templates
-    - legal_contracts
-
-  # Exclude very large CUAD documents
+  corpora: []
+  domains: []
+  features: []
+  # Exclude very large CUAD documents (>50 pages)
   exclude_doc_ids:
-    # CUAD docs > 50 pages
-    - cuad-039
-    - cuad-051
-    - cuad-010
-    - cuad-022
-    - cuad-030
-    - cuad-003
-    - cuad-052
-    - cuad-027
-    - cuad-025
-    - cuad-008
+    - cuad_039
+    - cuad_051
+    - cuad_010
+    - cuad_022
+    - cuad_030
+    - cuad_003
+    - cuad_052
+    - cuad_027
+    - cuad_025
+    - cuad_008
+  include_doc_ids:
+    # All synthetic documents (33 docs)
+    - 01_basic
+    - 02_lists
+    - 03_tables
+    - 04_math
+    - 05_complex
+    - 06_docx_simple
+    - 07_docx_tables
+    - 08_docx_multicolumn
+    - 09_table_simple_grid
+    - 10_table_colspan
+    - 11_table_wide
+    - 12_table_multiple
+    - 13_table_complex_headers
+    - 14_table_financial
+    - 15_list_simple_bullets
+    - 16_list_numbered
+    - 17_list_nested_2level
+    - 18_list_nested_3level
+    - 19_list_mixed_types
+    - 20_list_with_paragraphs
+    - 21_multicolumn_2col
+    - 22_multicolumn_3col
+    - 23_multicolumn_unequal
+    - 24_multicolumn_with_tables
+    - 25_mixed_report
+    - 26_mixed_academic
+    - 27_mixed_newsletter
+    - 28_mixed_manual
+    - 29_mixed_brochure
+    - 30_pandoc_basic
+    - 31_pandoc_academic
+    - 32_libreoffice_basic
+    - 33_libreoffice_complex
 
-  max_documents: 200  # Cap at ~200 docs
+    # All invoices (100 docs)
+    - inv_001
+    - inv_002
+    - inv_003
+    - inv_004
+    - inv_005
+    - inv_006
+    - inv_007
+    - inv_008
+    - inv_009
+    - inv_010
+    - inv_011
+    - inv_012
+    - inv_013
+    - inv_014
+    - inv_015
+    - inv_016
+    - inv_017
+    - inv_018
+    - inv_019
+    - inv_020
+    - inv_021
+    - inv_022
+    - inv_023
+    - inv_024
+    - inv_025
+    - inv_026
+    - inv_027
+    - inv_028
+    - inv_029
+    - inv_030
+    - inv_031
+    - inv_032
+    - inv_033
+    - inv_034
+    - inv_035
+    - inv_036
+    - inv_037
+    - inv_038
+    - inv_039
+    - inv_040
+    - inv_041
+    - inv_042
+    - inv_043
+    - inv_044
+    - inv_045
+    - inv_046
+    - inv_047
+    - inv_048
+    - inv_049
+    - inv_050
+    - inv_051
+    - inv_052
+    - inv_053
+    - inv_054
+    - inv_055
+    - inv_056
+    - inv_057
+    - inv_058
+    - inv_059
+    - inv_060
+    - inv_061
+    - inv_062
+    - inv_063
+    - inv_064
+    - inv_065
+    - inv_066
+    - inv_067
+    - inv_068
+    - inv_069
+    - inv_070
+    - inv_071
+    - inv_072
+    - inv_073
+    - inv_074
+    - inv_075
+    - inv_076
+    - inv_077
+    - inv_078
+    - inv_079
+    - inv_080
+    - inv_081
+    - inv_082
+    - inv_083
+    - inv_084
+    - inv_085
+    - inv_086
+    - inv_087
+    - inv_088
+    - inv_089
+    - inv_090
+    - inv_091
+    - inv_092
+    - inv_093
+    - inv_094
+    - inv_095
+    - inv_096
+    - inv_097
+    - inv_098
+    - inv_099
+    - inv_100
+
+    # All HR documents (34 docs)
+    - hr_001
+    - hr_002
+    - hr_003
+    - hr_004
+    - hr_005
+    - hr_006
+    - hr_007
+    - hr_008
+    - hr_009
+    - hr_010
+    - hr_011
+    - hr_012
+    - hr_013
+    - hr_014
+    - hr_015
+    - hr_016
+    - hr_017
+    - hr_018
+    - hr_019
+    - hr_020
+    - hr_021
+    - hr_022
+    - hr_023
+    - hr_024
+    - hr_025
+    - hr_026
+    - hr_027
+    - hr_028
+    - hr_029
+    - hr_030
+    - hr_031
+    - hr_032
+    - hr_033
+    - hr_034
+
+    # CUAD contracts - excluding large ones (65 docs after exclusions)
+    - cuad_000
+    - cuad_001
+    - cuad_002
+    - cuad_004
+    - cuad_005
+    - cuad_006
+    - cuad_007
+    - cuad_009
+    - cuad_011
+    - cuad_012
+    - cuad_013
+    - cuad_014
+    - cuad_015
+    - cuad_016
+    - cuad_017
+    - cuad_018
+    - cuad_019
+    - cuad_020
+    - cuad_021
+    - cuad_023
+    - cuad_024
+    - cuad_026
+    - cuad_028
+    - cuad_029
+    - cuad_031
+    - cuad_032
+    - cuad_033
+    - cuad_034
+    - cuad_035
+    - cuad_036
+    - cuad_037
+    - cuad_038
+    - cuad_040
+    - cuad_041
+    - cuad_042
+    - cuad_043
+    - cuad_044
+    - cuad_045
+    - cuad_046
+    - cuad_047
+    - cuad_048
+    - cuad_049
+    - cuad_050
+    - cuad_053
+    - cuad_054
+    - cuad_055
+    - cuad_056
+    - cuad_057
+    - cuad_058
+    - cuad_059
+    - cuad_060
+    - cuad_061
+    - cuad_062
+    - cuad_063
+    - cuad_064
+    - cuad_065
+    - cuad_066
+    - cuad_067
+    - cuad_068
+    - cuad_069
+    - cuad_070
+    - cuad_071
+    - cuad_072
+    - cuad_073
+    - cuad_074
+
+  max_documents: null
 
 parser_config:
-  # Budget frontier models
+  # Budget frontier models (cost-effective)
   parsers:
-    - gemini_2_5_flash
-    - gpt_5_mini
+    - gemini_2_0_flash
+    - gpt_4o_mini
     - claude_3_5_haiku
 
-metrics:
-  - chrf
-  - edit_similarity
-  - tree_similarity
+  parser_options: {}
 
-output_config:
-  results_dir: ../results
-  save_predictions: true
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 10
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

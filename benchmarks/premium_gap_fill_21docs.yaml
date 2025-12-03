@@ -1,0 +1,77 @@
+# Gap fill: Run premium frontier models on 21 docs they're missing
+# This completes the 30-doc comparison set across ALL frontier models
+#
+# 4 premium models × 21 docs = 84 API calls
+#
+# Premium models:
+#   - gpt_5_1 (~$0.05/page)
+#   - gpt_4o (~$0.02/page)
+#   - gemini_3_pro (~$0.03/page)
+#   - claude_sonnet_4_5 (~$0.04/page)
+
+name: premium_gap_fill_21docs
+description: "Gap fill: premium frontier models on 21 missing docs"
+
+corpus_dir: ../corpus
+
+document_filter:
+  corpora: []
+  domains: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    # Synthetic - 6 docs (tables, columns, mixed)
+    - 14_table_financial
+    - 19_list_mixed_types
+    - 21_column_two_column
+    - 24_column_newsletter
+    - 27_mixed_business_report
+    - 32_mixed_comprehensive
+
+    # Arxiv papers - 5 docs
+    - arxiv-2302.00722
+    - arxiv-2302.13971
+    - arxiv-2312.00752
+    - arxiv-2401.06244
+    - arxiv-2403.09313
+
+    # Invoices - 5 docs
+    - invoice_001
+    - invoice_015
+    - invoice_030
+    - invoice_050
+    - invoice_075
+
+    # Resumes - 5 docs
+    - resume_001
+    - resume_005
+    - resume_010
+    - resume_020
+    - resume_030
+
+  max_documents: null
+
+parser_config:
+  parsers:
+    - gpt_5_1
+    - gpt_4o
+    - gemini_3_pro
+    - claude_sonnet_4_5
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - tree_similarity
+  aggregate: true
+
+output_config:
+  results_dir: ../results
+  save_format: json
+  generate_report: true
+  save_predictions: false
+  verbose: true
+
+parallel_workers: 1
