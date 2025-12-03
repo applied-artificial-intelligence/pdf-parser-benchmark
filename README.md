@@ -44,7 +44,7 @@ Our benchmark reveals that **parser rankings change dramatically by document typ
 
 ### The Invoice Problem
 
-**No parser exceeds 50% accuracy on invoices.** This is an industry-wide limitation, not a parser selection issue.
+**Invoices remain challenging**, with most parsers achieving 70-80% accuracy on our test set. Complex table layouts and varied formatting continue to pose difficulties across all parsers.
 
 ### The Structure Gap
 
@@ -107,7 +107,7 @@ Parsers achieve **74% text accuracy** but only **35% structure preservation**—
 
 ```bash
 # Clone and install
-git clone https://github.com/youruser/pdf-bench.git
+git clone https://github.com/strickvl/pdf-bench.git
 cd pdf-bench
 
 # Using uv (recommended)
@@ -126,7 +126,7 @@ pip install pdfsmith[frontier]    # + Anthropic, OpenAI, Gemini LLMs
 pip install pdfsmith[commercial]  # + AWS, Azure, Google, LlamaParse
 ```
 
-**Note**: pdf-bench uses [pdfsmith](https://github.com/youruser/pdfsmith) as its parsing backend. Native parsers (tika, marker_ollama, landing_ai) are implemented directly.
+**Note**: pdf-bench uses [pdfsmith](https://github.com/strickvl/pdfsmith) as its parsing backend. Native parsers (tika, marker_ollama, landing_ai) are implemented directly.
 
 ## Quick Start
 
@@ -249,7 +249,7 @@ MIT License. Individual parsers have their own licenses.
   title = {PDF-Bench: Comprehensive PDF Parser Benchmark},
   author = {PDF-Bench Contributors},
   year = {2025},
-  url = {https://github.com/youruser/pdf-bench}
+  url = {https://github.com/strickvl/pdf-bench}
 }
 ```
 

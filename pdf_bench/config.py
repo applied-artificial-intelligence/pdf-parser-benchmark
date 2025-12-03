@@ -18,9 +18,10 @@ import yaml
 def _get_valid_parsers() -> list[str]:
     """Get valid parser IDs from the registry (lazy load to avoid circular imports)."""
     try:
-        from pdf_bench.loader import PARSER_REGISTRY
+        from pdf_bench.loader import PARSER_ALIASES, PARSER_REGISTRY
 
-        return list(PARSER_REGISTRY.keys())
+        # Include both registry keys and backward-compat aliases
+        return list(PARSER_REGISTRY.keys()) + list(PARSER_ALIASES.keys())
     except ImportError:
         # Fallback for when loader not available (e.g., during testing)
         return []

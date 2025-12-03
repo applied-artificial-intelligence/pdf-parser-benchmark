@@ -10,12 +10,12 @@ from pdf_bench.config import (
     VALID_CORPORA,
     VALID_FEATURES,
     VALID_METRICS,
-    VALID_PARSERS,
     BenchmarkConfig,
     DocumentFilter,
     MetricConfig,
     OutputConfig,
     ParserConfig,
+    _get_valid_parsers,
     load_config,
     save_config,
 )
@@ -508,12 +508,15 @@ class TestExampleConfigs:
 class TestConstantsCompleteness:
     """Tests to ensure constants are comprehensive and up-to-date."""
 
-    def test_valid_parsers_matches_imports(self) -> None:
-        """VALID_PARSERS should match available parser implementations."""
-        # We have 4 parsers currently implemented
-        implemented_parsers = {"pymupdf", "pdfplumber", "marker", "unstructured"}
-        for parser in implemented_parsers:
-            assert parser in VALID_PARSERS, f"Parser '{parser}' missing from VALID_PARSERS"
+    def test_valid_parsers_includes_pdfsmith_backends(self) -> None:
+        """Valid parsers should include pdfsmith backends."""
+        valid_parsers = _get_valid_parsers()
+        # Check pdfsmith backends are registered
+        pdfsmith_parsers = {"pdfsmith-pypdf", "pdfsmith-pymupdf", "pdfsmith-docling"}
+        for parser in pdfsmith_parsers:
+            assert parser in valid_parsers, f"Parser '{parser}' missing from registry"
+        # Check native parsers
+        assert "tika" in valid_parsers, "Native parser 'tika' missing"
 
     def test_valid_metrics_comprehensive(self) -> None:
         """VALID_METRICS should include all metric types."""

@@ -71,6 +71,7 @@ PARSER_REGISTRY: dict[str, ParserFactory] = {
 PARSER_ALIASES: dict[str, str] = {
     # Open-source parsers
     "pypdf": "pdfsmith-pypdf",
+    "pypdf2": "pdfsmith-pypdf",  # pypdf2 was merged into pypdf
     "pdfplumber": "pdfsmith-pdfplumber",
     "pymupdf": "pdfsmith-pymupdf",
     "pymupdf4llm": "pdfsmith-pymupdf4llm",
