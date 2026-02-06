@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from pdf_bench.loader import DocumentInfo, LoadedConfig
+from pdf_bench.loader import DocumentInfo, IMAGE_CAPABLE_BACKENDS, LoadedConfig
 from pdf_bench.metrics import (
     MarkdownASTParser,
     character_error_rate,
@@ -87,6 +87,15 @@ def _teds_wrapper(ground_truth: str, prediction: str) -> float:
         return float("nan")
 
 
+def _latex_f1_wrapper(ground_truth: str, prediction: str) -> float:
+    """Wrapper for latex_f1_score that returns just the F1 score as a float."""
+    try:
+        scores = latex_f1_score(ground_truth, prediction)
+        return scores.f1
+    except Exception:
+        return float("nan")
+
+
 # Metric function registry
 # All functions must have signature: (ground_truth: str, prediction: str) -> float
 METRIC_FUNCTIONS: dict[str, Any] = {
@@ -96,7 +105,7 @@ METRIC_FUNCTIONS: dict[str, Any] = {
     "tree_similarity": _tree_similarity_wrapper,
     "element_f1": _element_f1_wrapper,
     "teds": _teds_wrapper,  # Use wrapper to convert markdown→HTML
-    "latex_f1": latex_f1_score,
+    "latex_f1": _latex_f1_wrapper,
 }
 
 
@@ -162,7 +171,7 @@ def _worker_run_single(
     parser_class: type[BaseParser],
     parser_options: dict[str, Any],
     doc_id: str,
-    pdf_path: Path,
+    input_path: Path,
     gt_path: Path,
     results_dir: Path,
     metrics_list: list[str],
@@ -177,7 +186,7 @@ def _worker_run_single(
         parser_class: Parser class to instantiate
         parser_options: Options to pass to parser constructor
         doc_id: Document ID
-        pdf_path: Path to PDF file
+        input_path: Path to input file (PDF or image)
         gt_path: Path to ground truth markdown
         results_dir: Directory to save parser output
         metrics_list: List of metric names to compute
@@ -189,9 +198,9 @@ def _worker_run_single(
         # Instantiate parser in worker process
         parser = parser_class(**parser_options)
 
-        # Parse PDF to Markdown
+        # Parse input to Markdown
         start_time = time.time()
-        output_md_path = parser.parse(pdf_path, results_dir)
+        output_md_path = parser.parse(input_path, results_dir)
         parse_time = time.time() - start_time
 
         # Read generated and ground truth markdown
@@ -228,6 +237,27 @@ def _worker_run_single(
             metrics={},
             error=str(e),
         )
+
+
+def _parser_supports_document(parser: BaseParser, doc: DocumentInfo) -> bool:
+    """Check if a parser can handle a given document type.
+
+    PDFs are supported by all parsers, but images require specific backends.
+
+    Args:
+        parser: Parser instance to check
+        doc: Document info with input type
+
+    Returns:
+        True if parser can handle document, False otherwise
+    """
+    # PDFs are supported by all parsers
+    if doc.input_type == "pdf":
+        return True
+
+    # For images, check if parser is image-capable
+    # Use parser.name which includes "pdfsmith-" prefix
+    return parser.name in IMAGE_CAPABLE_BACKENDS
 
 
 class BenchmarkRunner:
@@ -280,11 +310,20 @@ class BenchmarkRunner:
             total_parsers=len(self.config.parser_instances),
         )
 
-        # Build list of all tasks
+        # Build list of all tasks, filtering incompatible parser/document pairs
         tasks = []
+        skipped_image_tasks = 0
         for parser in self.config.parser_instances:
             for doc in self.config.documents:
-                tasks.append((parser, doc))
+                if _parser_supports_document(parser, doc):
+                    tasks.append((parser, doc))
+                else:
+                    skipped_image_tasks += 1
+
+        if skipped_image_tasks > 0:
+            print(
+                f"→ Skipped {skipped_image_tasks} tasks: image documents with non-image-capable parsers"
+            )
 
         # Load existing checkpoint if available
         completed_tasks = set()
@@ -488,7 +527,7 @@ class BenchmarkRunner:
                     parser_class,
                     parser_options,
                     doc.doc_id,
-                    doc.pdf_path,
+                    doc.input_path,
                     doc.ground_truth_path,
                     self.config.results_dir,
                     self.config.config.metric_config.metrics,
@@ -573,7 +612,7 @@ class BenchmarkRunner:
                     parser_class,
                     parser_options,
                     doc.doc_id,
-                    doc.pdf_path,
+                    doc.input_path,
                     doc.ground_truth_path,
                     self.config.results_dir,
                     self.config.config.metric_config.metrics,
@@ -618,9 +657,9 @@ class BenchmarkRunner:
             DocumentResult with metrics or error information
         """
         try:
-            # 1. Parse PDF to Markdown
+            # 1. Parse input (PDF or image) to Markdown
             start_time = time.time()
-            output_md_path = parser.parse(doc.pdf_path, self.config.results_dir)
+            output_md_path = parser.parse(doc.input_path, self.config.results_dir)
             parse_time = time.time() - start_time
 
             # 2. Read generated and ground truth markdown

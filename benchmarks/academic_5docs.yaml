@@ -26,6 +26,8 @@ metric_config:
     - edit_similarity
     - chrf++
     - character_error_rate
+    - latex_f1
+    - element_f1
 
 output:
   format: json
