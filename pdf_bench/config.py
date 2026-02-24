@@ -89,8 +89,26 @@ VALID_CORPORA = ["academic", "business", "synthetic"]
 
 # Valid domains for filtering
 VALID_DOMAINS = {
-    "academic": ["arxiv"],
-    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr"],
+    "academic": [
+        "arxiv",
+        # OmniDocBench domains
+        "academic",
+        "academic_literature",
+        "book",
+        "colorful_textbook",
+        "education",
+        "exam_paper",
+        "handwritten",
+        "magazine",
+        "mixed",
+        "news",
+        "newspaper",
+        "note",
+        "PPT2PDF",
+        "presentation",
+        "research_report",
+    ],
+    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr", "legal_contracts"],
     "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }
 

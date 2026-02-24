@@ -1,0 +1,5 @@
+doc_id: sec-cencora-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/1140859/000110465926005807/tm2533035d4_ars.pdf

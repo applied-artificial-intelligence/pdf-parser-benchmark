@@ -17,15 +17,24 @@ VALID_CORPORA = ["academic", "business", "synthetic"]
 VALID_DOMAINS = {
     "academic": [
         "arxiv",
+        # OmniDocBench domains
         "academic",
-        "presentation",
-        "education",
-        "news",
+        "academic_literature",
         "book",
+        "colorful_textbook",
+        "education",
+        "exam_paper",
         "handwritten",
+        "magazine",
         "mixed",
+        "news",
+        "newspaper",
+        "note",
+        "PPT2PDF",
+        "presentation",
+        "research_report",
     ],
-    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr"],
+    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr", "legal_contracts"],
     "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }
 
@@ -49,11 +58,11 @@ class DocumentMetadata:
 
     Required Fields:
         doc_id: Unique identifier (e.g., "arxiv_2301_12345")
-        source_url: URL to download original PDF
         corpus: Which corpus it belongs to ("academic", "business", "synthetic")
         domain: Subcategory within corpus (e.g., "arxiv", "gov-uk")
 
     Optional Fields:
+        source_url: URL to download original PDF (optional for OmniDocBench)
         title: Document title
         authors: List of author names
         publication_date: When published (ISO 8601 format: "YYYY-MM-DD")
@@ -67,11 +76,11 @@ class DocumentMetadata:
 
     # Required fields
     doc_id: str
-    source_url: str
     corpus: str
     domain: str
 
     # Optional fields
+    source_url: str | None = None  # Made optional for OmniDocBench compatibility
     title: str | None = None
     authors: list[str] = field(default_factory=list)
     publication_date: str | None = None
@@ -94,8 +103,6 @@ class DocumentMetadata:
         # Required fields must not be empty
         if not self.doc_id:
             errors.append("doc_id is required and cannot be empty")
-        if not self.source_url:
-            errors.append("source_url is required and cannot be empty")
         if not self.corpus:
             errors.append("corpus is required and cannot be empty")
         if not self.domain:
@@ -137,9 +144,11 @@ class DocumentMetadata:
         #     if feature not in VALID_FEATURES:
         #         errors.append(f"Unknown feature '{feature}'. Valid features: {VALID_FEATURES}")
 
-        # Validate language code (basic check - 2 letter code)
-        if self.language and len(self.language) != 2:
-            errors.append(f"language should be 2-letter ISO 639-1 code, got '{self.language}'")
+        # Validate language code - allow both 2-letter ISO codes and descriptive names
+        # (OmniDocBench uses descriptive names like "simplified_chinese", "en")
+        # Only flag completely empty/whitespace-only values
+        if self.language is not None and not self.language.strip():
+            errors.append("language cannot be empty or whitespace-only")
 
         # Validate publication_date format (basic check)
         if self.publication_date:
@@ -219,7 +228,6 @@ class DocumentMetadata:
         # Extract required fields
         try:
             doc_id = data["doc_id"]
-            source_url = data["source_url"]
             corpus = data["corpus"]
             domain = data["domain"]
         except KeyError as e:
@@ -228,9 +236,9 @@ class DocumentMetadata:
         # Create instance with optional fields
         metadata = cls(
             doc_id=doc_id,
-            source_url=source_url,
             corpus=corpus,
             domain=domain,
+            source_url=data.get("source_url"),  # Now optional
             title=data.get("title"),
             authors=data.get("authors", []),
             publication_date=data.get("publication_date"),

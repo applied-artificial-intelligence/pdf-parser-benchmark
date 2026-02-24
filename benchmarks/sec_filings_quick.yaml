@@ -1,0 +1,38 @@
+name: "SEC Filings - Quick Baseline (pypdfium2 only)"
+description: "Quick baseline test on 30 SEC ARS annual reports"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - sec-edgar
+  corpora:
+    - business
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids: []
+  max_documents: null
+
+parser_config:
+  parsers:
+    - pypdfium2
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - element_f1
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 5
+
+parallel_workers: 1
+
+execution:
+  timeout_seconds: 300

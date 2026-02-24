@@ -86,6 +86,10 @@ pdf-parser-demo-*.json
 # Cleanup scripts
 /cleanup_*.sh
 
+# Intermediate build artifacts
+corpus/*/html_cache/
+data_exports/
+
 # Keep legitimate directories
 !/tests/
 .internal/

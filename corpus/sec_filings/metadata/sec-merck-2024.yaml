@@ -1,0 +1,5 @@
+doc_id: sec-merck-2024
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/310158/000162828025017867/formars202410-k.pdf
