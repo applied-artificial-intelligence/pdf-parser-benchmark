@@ -1,0 +1,921 @@
+{
+  "benchmark": {
+    "name": "frontier_premium_300p",
+    "timestamp": "2025-11-30T18:20:43.137820+00:00",
+    "config_file": "benchmarks/frontier_premium_300p.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "gemini_gemini_1_5_pro": "1.0.0",
+      "openai_gpt_4o": "1.0.0",
+      "anthropic_claude_sonnet_4_5": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "gemini_gemini_1_5_pro",
+      "success": false,
+      "metrics": {},
+      "error": "Gemini API call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8408163265306122,
+        "chrf++": 92.63803177653419,
+        "tree_similarity": 0.02857142857142858
+      },
+      "error": null,
+      "parse_time_seconds": 3.84576153755188
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7203389830508475,
+        "chrf++": 77.27278376401276,
+        "tree_similarity": 0.02857142857142858
+      },
+      "error": null,
+      "parse_time_seconds": 3.206324815750122
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8269794721407624,
+        "chrf++": 88.66705239729166,
+        "tree_similarity": 0.019230769230769273
+      },
+      "error": null,
+      "parse_time_seconds": 4.034553289413452
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8532338308457712,
+        "chrf++": 92.8224048210283,
+        "tree_similarity": 0.019607843137254943
+      },
+      "error": null,
+      "parse_time_seconds": 2.868638038635254
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6932515337423313,
+        "chrf++": 79.25405174910107,
+        "tree_similarity": 0.019230769230769273
+      },
+      "error": null,
+      "parse_time_seconds": 2.1584270000457764
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9087136929460581,
+        "chrf++": 97.29656962896418,
+        "tree_similarity": 0.050000000000000044
+      },
+      "error": null,
+      "parse_time_seconds": 3.6945791244506836
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9293478260869565,
+        "chrf++": 92.25025080154397,
+        "tree_similarity": 0.04347826086956519
+      },
+      "error": null,
+      "parse_time_seconds": 2.27323317527771
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9035087719298246,
+        "chrf++": 97.08835098998837,
+        "tree_similarity": 0.02941176470588236
+      },
+      "error": null,
+      "parse_time_seconds": 2.2863681316375732
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8904403866809882,
+        "chrf++": 89.22081131751246,
+        "tree_similarity": 0.018867924528301883
+      },
+      "error": null,
+      "parse_time_seconds": 12.995439767837524
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9698004673737192,
+        "chrf++": 96.79484688176659,
+        "tree_similarity": 0.33333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 8.87039303779602
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9027868637969384,
+        "chrf++": 92.29995771144053,
+        "tree_similarity": 0.0714285714285714
+      },
+      "error": null,
+      "parse_time_seconds": 33.855875730514526
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9475939353988134,
+        "chrf++": 94.29811957753088,
+        "tree_similarity": 0.02083333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 14.604456186294556
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8824148824148824,
+        "chrf++": 85.78144569809764,
+        "tree_similarity": 0.05555555555555558
+      },
+      "error": null,
+      "parse_time_seconds": 6.547162294387817
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8775933609958506,
+        "chrf++": 88.51608452593813,
+        "tree_similarity": 0.023809523809523836
+      },
+      "error": null,
+      "parse_time_seconds": 7.613752365112305
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8994959042218021,
+        "chrf++": 90.2968152094507,
+        "tree_similarity": 0.01388888888888884
+      },
+      "error": null,
+      "parse_time_seconds": 8.00691533088684
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8924502799768295,
+        "chrf++": 92.40693336229113,
+        "tree_similarity": 0.03125
+      },
+      "error": null,
+      "parse_time_seconds": 10.995687007904053
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8802051282051282,
+        "chrf++": 89.29342437238898,
+        "tree_similarity": 0.007246376811594235
+      },
+      "error": null,
+      "parse_time_seconds": 27.9555082321167
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9746341463414634,
+        "chrf++": 97.1513475977843,
+        "tree_similarity": 0.009345794392523366
+      },
+      "error": null,
+      "parse_time_seconds": 16.86278510093689
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.28931987247608926,
+        "chrf++": 33.4364383663333,
+        "tree_similarity": 0.00170068027210879
+      },
+      "error": null,
+      "parse_time_seconds": 19.554753065109253
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8895434947174407,
+        "chrf++": 89.37309520306435,
+        "tree_similarity": 0.0012970168612191912
+      },
+      "error": null,
+      "parse_time_seconds": 136.3618402481079
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8470093919920909,
+        "chrf++": 84.63732010566041,
+        "tree_similarity": 0.023809523809523836
+      },
+      "error": null,
+      "parse_time_seconds": 16.59097957611084
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9502530138413454,
+        "chrf++": 94.81722326532068,
+        "tree_similarity": 0.011111111111111072
+      },
+      "error": null,
+      "parse_time_seconds": 112.400949716568
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1072617259152896,
+        "chrf++": 12.8600419872221,
+        "tree_similarity": 0.0003972983710767153
+      },
+      "error": null,
+      "parse_time_seconds": 19.657976865768433
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9206636500754148,
+        "chrf++": 89.27672964072208,
+        "tree_similarity": 0.007936507936507908
+      },
+      "error": null,
+      "parse_time_seconds": 77.43730235099792
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9655575539568345,
+        "chrf++": 95.27898812552799,
+        "tree_similarity": 0.022222222222222254
+      },
+      "error": null,
+      "parse_time_seconds": 15.404242515563965
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05737106941768455,
+        "chrf++": 6.720476449832087,
+        "tree_similarity": 0.002732240437158473
+      },
+      "error": null,
+      "parse_time_seconds": 19.68288516998291
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9278171367464243,
+        "chrf++": 93.62325481879972,
+        "tree_similarity": 0.034965034965035
+      },
+      "error": null,
+      "parse_time_seconds": 11.491543769836426
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9413521006611217,
+        "chrf++": 93.25757550473524,
+        "tree_similarity": 0.0011990407673860837
+      },
+      "error": null,
+      "parse_time_seconds": 40.36472797393799
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9074889867841409,
+        "chrf++": 94.30572483936629,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 5.714229106903076
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8657407407407407,
+        "chrf++": 84.19124359414603,
+        "tree_similarity": 0.8205128205128205
+      },
+      "error": null,
+      "parse_time_seconds": 6.592376708984375
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8909090909090909,
+        "chrf++": 92.24964868194107,
+        "tree_similarity": 0.9074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 24.60966181755066
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8886010362694301,
+        "chrf++": 93.72627405072687,
+        "tree_similarity": 0.8571428571428572
+      },
+      "error": null,
+      "parse_time_seconds": 39.206461906433105
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.803680981595092,
+        "chrf++": 81.18589916288899,
+        "tree_similarity": 0.9074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 6.139536142349243
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9733333333333334,
+        "chrf++": 98.89698236906894,
+        "tree_similarity": 0.6956521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 4.521286964416504
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9715909090909091,
+        "chrf++": 93.21261053207456,
+        "tree_similarity": 0.7307692307692308
+      },
+      "error": null,
+      "parse_time_seconds": 8.552738904953003
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9295774647887324,
+        "chrf++": 78.0657732340898,
+        "tree_similarity": 0.02941176470588236
+      },
+      "error": null,
+      "parse_time_seconds": 4.632909059524536
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.825201072386059,
+        "chrf++": 89.3626135619828,
+        "tree_similarity": 0.4736842105263158
+      },
+      "error": null,
+      "parse_time_seconds": 10.6793212890625
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.989288307915759,
+        "chrf++": 98.9632359692677,
+        "tree_similarity": 0.042857142857142816
+      },
+      "error": null,
+      "parse_time_seconds": 20.218470811843872
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9503027245206862,
+        "chrf++": 94.38830817587512,
+        "tree_similarity": 0.04580152671755722
+      },
+      "error": null,
+      "parse_time_seconds": 37.57843518257141
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7574217705268789,
+        "chrf++": 89.18214907949088,
+        "tree_similarity": 0.35245901639344257
+      },
+      "error": null,
+      "parse_time_seconds": 51.13353085517883
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47740315638450503,
+        "chrf++": 79.51453286006938,
+        "tree_similarity": 0.5266272189349113
+      },
+      "error": null,
+      "parse_time_seconds": 24.348464965820312
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9050230946882217,
+        "chrf++": 91.48569376404019,
+        "tree_similarity": 0.24404761904761907
+      },
+      "error": null,
+      "parse_time_seconds": 20.116634368896484
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9660990470239025,
+        "chrf++": 96.80357178560898,
+        "tree_similarity": 0.426829268292683
+      },
+      "error": null,
+      "parse_time_seconds": 83.31432008743286
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8543224075138969,
+        "chrf++": 92.44151989582323,
+        "tree_similarity": 0.5253164556962026
+      },
+      "error": null,
+      "parse_time_seconds": 40.890427350997925
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8896025692492975,
+        "chrf++": 90.13908381876763,
+        "tree_similarity": 0.5122950819672132
+      },
+      "error": null,
+      "parse_time_seconds": 34.11117720603943
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9858161350844278,
+        "chrf++": 98.01209137503123,
+        "tree_similarity": 0.7196969696969697
+      },
+      "error": null,
+      "parse_time_seconds": 73.41050744056702
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3578231014469059,
+        "chrf++": 40.766813530002835,
+        "tree_similarity": 0.3112244897959183
+      },
+      "error": null,
+      "parse_time_seconds": 94.20926213264465
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5336866010598031,
+        "chrf++": 57.48301186137047,
+        "tree_similarity": 0.44487678339818415
+      },
+      "error": null,
+      "parse_time_seconds": 200.44810104370117
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9419179436480475,
+        "chrf++": 94.79586980169795,
+        "tree_similarity": 0.12068965517241381
+      },
+      "error": null,
+      "parse_time_seconds": 70.52815532684326
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7118067242604436,
+        "chrf++": 74.96954351062597,
+        "tree_similarity": 0.26515151515151514
+      },
+      "error": null,
+      "parse_time_seconds": 111.0935959815979
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14805654003535829,
+        "chrf++": 17.773254710875577,
+        "tree_similarity": 0.09336511720301943
+      },
+      "error": null,
+      "parse_time_seconds": 122.62815237045288
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9283257918552036,
+        "chrf++": 90.46215821016716,
+        "tree_similarity": 0.14267515923566876
+      },
+      "error": null,
+      "parse_time_seconds": 117.37990140914917
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.975876602995247,
+        "chrf++": 96.60162492138546,
+        "tree_similarity": 0.6825396825396826
+      },
+      "error": null,
+      "parse_time_seconds": 58.47227334976196
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.15816794178716398,
+        "chrf++": 18.96500162712428,
+        "tree_similarity": 0.4585152838427947
+      },
+      "error": null,
+      "parse_time_seconds": 104.83300018310547
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9399812859243417,
+        "chrf++": 94.1874558773337,
+        "tree_similarity": 0.3706293706293706
+      },
+      "error": null,
+      "parse_time_seconds": 43.875009298324585
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5318526642902843,
+        "chrf++": 57.5101800660061,
+        "tree_similarity": 0.4532374100719424
+      },
+      "error": null,
+      "parse_time_seconds": 111.1119031906128
+    }
+  ],
+  "summary": {
+    "total_documents": 28,
+    "total_parsers": 3,
+    "total_results": 84,
+    "success_count": 56,
+    "failure_count": 28
+  }
+}

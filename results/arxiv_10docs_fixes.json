@@ -1,0 +1,264 @@
+{
+  "benchmark": {
+    "name": "Academic Papers - 10 Diverse arXiv Papers (Fixed Parsers Only)",
+    "timestamp": "2025-11-24T20:46:09.305011+00:00",
+    "config_file": "benchmarks/arxiv_10docs_fixes.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "databricks": "1.0.0",
+      "google_document_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2409.06598",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.21970963484381878,
+        "chrf++": 29.894842446564272,
+        "character_error_rate": 0.7802903651561812
+      },
+      "error": null,
+      "parse_time_seconds": 0.002521038055419922
+    },
+    {
+      "document_id": "arxiv-2410.00443",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11683063137961291,
+        "chrf++": 19.466264345024513,
+        "character_error_rate": 1.7062104042116535
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014579296112060547
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3036911472091073,
+        "chrf++": 36.158751449313336,
+        "character_error_rate": 0.6963088527908927
+      },
+      "error": null,
+      "parse_time_seconds": 0.00112152099609375
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6028116582427893,
+        "chrf++": 66.21658547251795,
+        "character_error_rate": 0.39718834175721074
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015561580657958984
+    },
+    {
+      "document_id": "arxiv-2409.01306",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1956783011595813,
+        "chrf++": 55.197023672565834,
+        "character_error_rate": 1.045172060961818
+      },
+      "error": null,
+      "parse_time_seconds": 0.003452777862548828
+    },
+    {
+      "document_id": "arxiv-2304.08901",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4499686546579178,
+        "chrf++": 53.900681474300086,
+        "character_error_rate": 0.5500313453420822
+      },
+      "error": null,
+      "parse_time_seconds": 0.011406898498535156
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6798239971180815,
+        "chrf++": 71.27119660520438,
+        "character_error_rate": 0.32017600288191855
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007517337799072266
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4994453438867902,
+        "chrf++": 59.49563439163802,
+        "character_error_rate": 0.5005546561132098
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018923282623291016
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06175236642280091,
+        "chrf++": 13.781698032185204,
+        "character_error_rate": 6.639839034205232
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016145706176757812
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12952932527119687,
+        "chrf++": 29.66827433072409,
+        "character_error_rate": 0.8704706747288031
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005290508270263672
+    },
+    {
+      "document_id": "arxiv-2409.06598",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16829980402351719,
+        "chrf++": 22.95226503976408,
+        "character_error_rate": 0.8317001959764828
+      },
+      "error": null,
+      "parse_time_seconds": 0.006482124328613281
+    },
+    {
+      "document_id": "arxiv-2410.00443",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11315163709529907,
+        "chrf++": 19.66524285684166,
+        "character_error_rate": 1.0815561702507361
+      },
+      "error": null,
+      "parse_time_seconds": 66.11310601234436
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1108661439159162,
+        "chrf++": 14.11760156545725,
+        "character_error_rate": 0.8891338560840838
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007407665252685547
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5376653248993675,
+        "chrf++": 64.49258585798366,
+        "character_error_rate": 0.46233467510063253
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006997585296630859
+    },
+    {
+      "document_id": "arxiv-2409.01306",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3349345683666326,
+        "chrf++": 45.55512229067179,
+        "character_error_rate": 0.6650654316333674
+      },
+      "error": null,
+      "parse_time_seconds": 77.64827799797058
+    },
+    {
+      "document_id": "arxiv-2304.08901",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2264721862331257,
+        "chrf++": 30.789524054197358,
+        "character_error_rate": 0.7735278137668743
+      },
+      "error": null,
+      "parse_time_seconds": 75.78316307067871
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6548773898052132,
+        "chrf++": 69.85827611093843,
+        "character_error_rate": 0.3451226101947868
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005774497985839844
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47650956407027645,
+        "chrf++": 56.05462637145823,
+        "character_error_rate": 0.5234904359297236
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010540485382080078
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.13380070105157738,
+        "chrf++": 21.351910287090128,
+        "character_error_rate": 1.6977965353094175
+      },
+      "error": null,
+      "parse_time_seconds": 104.12557053565979
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2005881558613033,
+        "chrf++": 22.09149924215104,
+        "character_error_rate": 0.7994118441386967
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005488395690917969
+    }
+  ],
+  "summary": {
+    "total_documents": 10,
+    "total_parsers": 2,
+    "total_results": 20,
+    "success_count": 20,
+    "failure_count": 0
+  }
+}

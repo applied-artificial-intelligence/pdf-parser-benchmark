@@ -1,0 +1,229 @@
+{
+  "benchmark": {
+    "name": "premium_gap_fill_21docs",
+    "timestamp": "2025-12-02T19:47:18.715623+00:00"
+  },
+  "results": [
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 6.4373016357421875e-06,
+      "output_length": 0
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-06,
+      "output_length": 0
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 9.5367431640625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 7.152557373046875e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 1.430511474609375e-06,
+      "output_length": 0
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 7.152557373046875e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 9.5367431640625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 3.337860107421875e-06,
+      "output_length": 0
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 7.152557373046875e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 7.152557373046875e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "openai_gpt_4o",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 7.152557373046875e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "openai_gpt_5_1",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "gemini_3_pro",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 2.384185791015625e-07,
+      "output_length": 0
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": false,
+      "metrics": {},
+      "error": "parse() got an unexpected keyword argument 'model'",
+      "parse_time_seconds": 4.76837158203125e-07,
+      "output_length": 0
+    }
+  ],
+  "summary": {
+    "total": 24,
+    "success": 0,
+    "failed": 24
+  }
+}

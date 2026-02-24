@@ -1,0 +1,398 @@
+{
+  "benchmark": {
+    "name": "Marker Comparison (29 synthetic docs)",
+    "timestamp": "2025-11-26T22:52:24.335159+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9730679156908665,
+        "chrf++": 96.2873325867799,
+        "character_error_rate": 0.027544910179640718,
+        "tree_similarity": 0.540983606557377
+      },
+      "error": null,
+      "parse_time_seconds": 10.343587636947632
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7438524590163935,
+        "chrf++": 78.08163332914101,
+        "character_error_rate": 0.26743688489516476,
+        "tree_similarity": 0.6597222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 9.635671138763428
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9380216657787249,
+        "chrf++": 95.16573551243303,
+        "character_error_rate": 0.06437926581811473,
+        "tree_similarity": 0.4814814814814815
+      },
+      "error": null,
+      "parse_time_seconds": 10.117093563079834
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8803418803418803,
+        "chrf++": 86.9543044820974,
+        "character_error_rate": 0.1320754716981132,
+        "tree_similarity": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 9.075656414031982
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8376068376068376,
+        "chrf++": 79.3363200338692,
+        "character_error_rate": 0.17592592592592593,
+        "tree_similarity": 0.7804878048780488
+      },
+      "error": null,
+      "parse_time_seconds": 9.750071048736572
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8225352112676056,
+        "chrf++": 76.15161509608383,
+        "character_error_rate": 0.20454545454545456,
+        "tree_similarity": 0.7424242424242424
+      },
+      "error": null,
+      "parse_time_seconds": 9.944825172424316
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8639798488664987,
+        "chrf++": 86.09837601728405,
+        "character_error_rate": 0.1529745042492918,
+        "tree_similarity": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 8.970149993896484
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7822085889570553,
+        "chrf++": 71.75865005646921,
+        "character_error_rate": 0.21779141104294478,
+        "tree_similarity": 0.8166666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 9.1089346408844
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9521739130434783,
+        "chrf++": 95.25303872937256,
+        "character_error_rate": 0.0502283105022831,
+        "tree_similarity": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 8.87708592414856
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9318801089918256,
+        "chrf++": 90.33024572432797,
+        "character_error_rate": 0.07225433526011561,
+        "tree_similarity": 0.4864864864864865
+      },
+      "error": null,
+      "parse_time_seconds": 9.825119256973267
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9493087557603687,
+        "chrf++": 94.81414160599095,
+        "character_error_rate": 0.05339805825242718,
+        "tree_similarity": 0.7894736842105263
+      },
+      "error": null,
+      "parse_time_seconds": 9.034799098968506
+    },
+    {
+      "document_id": "18_list_nested_3level",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9688385269121813,
+        "chrf++": 96.84697277809164,
+        "character_error_rate": 0.03216374269005848,
+        "tree_similarity": 0.8666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 9.103915452957153
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9514066496163683,
+        "chrf++": 94.04381119975996,
+        "character_error_rate": 0.05080213903743316,
+        "tree_similarity": 0.7894736842105263
+      },
+      "error": null,
+      "parse_time_seconds": 8.788349151611328
+    },
+    {
+      "document_id": "20_list_with_paragraphs",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9677914110429447,
+        "chrf++": 95.99712338502076,
+        "character_error_rate": 0.0328125,
+        "tree_similarity": 0.1470588235294118
+      },
+      "error": null,
+      "parse_time_seconds": 8.859216213226318
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9344608879492601,
+        "chrf++": 94.62280121405236,
+        "character_error_rate": 0.06553911205073996,
+        "tree_similarity": 0.33333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 8.737892389297485
+    },
+    {
+      "document_id": "22_column_three_column",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5714285714285714,
+        "chrf++": 75.52381491078698,
+        "character_error_rate": 0.42857142857142855,
+        "tree_similarity": 0.25
+      },
+      "error": null,
+      "parse_time_seconds": 9.745083332061768
+    },
+    {
+      "document_id": "23_column_mixed_width",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9363867684478372,
+        "chrf++": 92.70431410450094,
+        "character_error_rate": 0.06361323155216285,
+        "tree_similarity": 0.2777777777777778
+      },
+      "error": null,
+      "parse_time_seconds": 0.00022220611572265625
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9126984126984127,
+        "chrf++": 91.50099942104792,
+        "character_error_rate": 0.0873015873015873,
+        "tree_similarity": 0.2727272727272727
+      },
+      "error": null,
+      "parse_time_seconds": 9.465969562530518
+    },
+    {
+      "document_id": "25_column_academic",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.916015625,
+        "chrf++": 90.62035647041449,
+        "character_error_rate": 0.08514851485148515,
+        "tree_similarity": 0.2857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 8.47863245010376
+    },
+    {
+      "document_id": "26_column_brochure",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8615384615384616,
+        "chrf++": 84.75420070953598,
+        "character_error_rate": 0.13846153846153847,
+        "tree_similarity": 0.2857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 8.776227951049805
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9024390243902439,
+        "chrf++": 86.20143352336022,
+        "character_error_rate": 0.10646387832699619,
+        "tree_similarity": 0.6829268292682926
+      },
+      "error": null,
+      "parse_time_seconds": 9.268712520599365
+    },
+    {
+      "document_id": "28_mixed_technical_docs",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8735849056603774,
+        "chrf++": 87.04074123861682,
+        "character_error_rate": 0.1375770020533881,
+        "tree_similarity": 0.6721311475409837
+      },
+      "error": null,
+      "parse_time_seconds": 8.899958372116089
+    },
+    {
+      "document_id": "29_mixed_policy_doc",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8949343339587242,
+        "chrf++": 87.4303089823336,
+        "character_error_rate": 0.1111111111111111,
+        "tree_similarity": 0.5384615384615384
+      },
+      "error": null,
+      "parse_time_seconds": 9.76347804069519
+    },
+    {
+      "document_id": "30_mixed_meeting_minutes",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8947368421052632,
+        "chrf++": 89.49192629253287,
+        "character_error_rate": 0.11556982343499198,
+        "tree_similarity": 0.6708860759493671
+      },
+      "error": null,
+      "parse_time_seconds": 9.68998908996582
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9018302828618968,
+        "chrf++": 90.71609391059421,
+        "character_error_rate": 0.1068840579710145,
+        "tree_similarity": 0.7415730337078652
+      },
+      "error": null,
+      "parse_time_seconds": 9.076843976974487
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9553846153846154,
+        "chrf++": 99.49699792169189,
+        "character_error_rate": 0.04574132492113565,
+        "tree_similarity": 0.048387096774193505
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009887218475341797
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9499923768867206,
+        "chrf++": 96.70947672024471,
+        "character_error_rate": 0.05075042549899428,
+        "tree_similarity": 0.17755102040816328
+      },
+      "error": null,
+      "parse_time_seconds": 9.692909002304077
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9443254817987152,
+        "chrf++": 97.52043327250665,
+        "character_error_rate": 0.056955093099671415,
+        "tree_similarity": 0.037878787878787845
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007221698760986328
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9243564356435644,
+        "chrf++": 99.46257996313167,
+        "character_error_rate": 0.07617148554336989,
+        "tree_similarity": 0.0318118948824343
+      },
+      "error": null,
+      "parse_time_seconds": 9.233689785003662
+    }
+  ],
+  "summary": {
+    "total_documents": 29,
+    "total_parsers": 1,
+    "total_results": 29,
+    "success_count": 29,
+    "failure_count": 0
+  }
+}

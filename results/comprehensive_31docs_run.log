@@ -1,0 +1,20 @@
+/home/stefan/projects/pdf-bench/.venv/lib/python3.13/site-packages/tika/__init__.py:20: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  __import__('pkg_resources').declare_namespace(__name__)
+Consider using the pymupdf_layout package for a greatly improved page layout analysis.
+
+Loading configuration: benchmarks/comprehensive_metrics.yaml
+✓ Loaded: Comprehensive Multi-Metric Evaluation
+  Documents: 31
+  Parsers: 5
+  Metrics: 6
+
+Running benchmark... (workers: 4)
+Running Comprehensive Multi-Metric Evaluation (4 workers) ━━━━━ 155… 100% 0:29:…
+
+✓ Benchmark Complete
+  Total results: 155
+  Successful: 150
+  Failed: 5
+
+Saving results: results/comprehensive_31docs.json
+✓ Results saved to results/comprehensive_31docs.json

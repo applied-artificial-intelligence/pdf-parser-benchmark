@@ -1,0 +1,573 @@
+{
+  "benchmark": "gap_fill_async",
+  "timestamp": "2025-12-02T16:28:23Z",
+  "results": [
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 5.864247798919678,
+      "input_tokens": 1708,
+      "output_tokens": 155,
+      "metrics": {}
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 4.157826900482178,
+      "input_tokens": 335,
+      "output_tokens": 132,
+      "metrics": {}
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 28.749448776245117,
+      "input_tokens": 534,
+      "output_tokens": 194,
+      "metrics": {}
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 3.7728750705718994,
+      "input_tokens": 1689,
+      "output_tokens": 107,
+      "metrics": {}
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 3.5684142112731934,
+      "input_tokens": 323,
+      "output_tokens": 108,
+      "metrics": {}
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 9.797158241271973,
+      "input_tokens": 534,
+      "output_tokens": 100,
+      "metrics": {}
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 4.248732566833496,
+      "input_tokens": 1724,
+      "output_tokens": 128,
+      "metrics": {}
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 3.0900533199310303,
+      "input_tokens": 346,
+      "output_tokens": 122,
+      "metrics": {}
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 28.96242666244507,
+      "input_tokens": 534,
+      "output_tokens": 113,
+      "metrics": {}
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 4.366443872451782,
+      "input_tokens": 1677,
+      "output_tokens": 88,
+      "metrics": {}
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 2.598383903503418,
+      "input_tokens": 312,
+      "output_tokens": 84,
+      "metrics": {}
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 22.35077977180481,
+      "input_tokens": 534,
+      "output_tokens": 82,
+      "metrics": {}
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 5.411962270736694,
+      "input_tokens": 1736,
+      "output_tokens": 173,
+      "metrics": {}
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 3.840698003768921,
+      "input_tokens": 360,
+      "output_tokens": 170,
+      "metrics": {}
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 16.589181423187256,
+      "input_tokens": 534,
+      "output_tokens": 186,
+      "metrics": {}
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 9.777241230010986,
+      "input_tokens": 3402,
+      "output_tokens": 297,
+      "metrics": {}
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 3.3535289764404297,
+      "input_tokens": 479,
+      "output_tokens": 285,
+      "metrics": {}
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 24.3614501953125,
+      "input_tokens": 1054,
+      "output_tokens": 320,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.96462082862854,
+      "input_tokens": 3616,
+      "output_tokens": 568,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 12.386853218078613,
+      "input_tokens": 741,
+      "output_tokens": 551,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 31.870704889297485,
+      "input_tokens": 1054,
+      "output_tokens": 743,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 6.032897233963013,
+      "input_tokens": 1850,
+      "output_tokens": 300,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 4.397729158401489,
+      "input_tokens": 460,
+      "output_tokens": 268,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 22.767173528671265,
+      "input_tokens": 534,
+      "output_tokens": 361,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.417892217636108,
+      "input_tokens": 3536,
+      "output_tokens": 451,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 7.123366355895996,
+      "input_tokens": 579,
+      "output_tokens": 408,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 36.548781871795654,
+      "input_tokens": 1054,
+      "output_tokens": 521,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 8.727790117263794,
+      "input_tokens": 3608,
+      "output_tokens": 563,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 7.023187160491943,
+      "input_tokens": 627,
+      "output_tokens": 481,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 20.63294744491577,
+      "input_tokens": 1054,
+      "output_tokens": 644,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.746516704559326,
+      "input_tokens": 3512,
+      "output_tokens": 451,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 7.166422367095947,
+      "input_tokens": 575,
+      "output_tokens": 430,
+      "metrics": {}
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 36.545143604278564,
+      "input_tokens": 1054,
+      "output_tokens": 531,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 6.410385608673096,
+      "input_tokens": 1853,
+      "output_tokens": 275,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 4.551939249038696,
+      "input_tokens": 468,
+      "output_tokens": 252,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 15.841700315475464,
+      "input_tokens": 534,
+      "output_tokens": 269,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 6.196527719497681,
+      "input_tokens": 1799,
+      "output_tokens": 221,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 4.336174488067627,
+      "input_tokens": 422,
+      "output_tokens": 203,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 15.653368473052979,
+      "input_tokens": 534,
+      "output_tokens": 227,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.952012300491333,
+      "input_tokens": 3638,
+      "output_tokens": 505,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 7.025180339813232,
+      "input_tokens": 675,
+      "output_tokens": 446,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 20.087036609649658,
+      "input_tokens": 1054,
+      "output_tokens": 508,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.448785305023193,
+      "input_tokens": 3602,
+      "output_tokens": 467,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 6.298165798187256,
+      "input_tokens": 648,
+      "output_tokens": 415,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 29.18245840072632,
+      "input_tokens": 1054,
+      "output_tokens": 445,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 7.042760610580444,
+      "input_tokens": 3556,
+      "output_tokens": 420,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 5.4857587814331055,
+      "input_tokens": 601,
+      "output_tokens": 362,
+      "metrics": {}
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 22.935763120651245,
+      "input_tokens": 1054,
+      "output_tokens": 424,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 298.2376449108124,
+      "input_tokens": 34784,
+      "output_tokens": 10824,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 129.07599139213562,
+      "input_tokens": 15430,
+      "output_tokens": 14630,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 183.96785831451416,
+      "input_tokens": 6398,
+      "output_tokens": 15159,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 98.64022922515869,
+      "input_tokens": 27410,
+      "output_tokens": 20824,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 237.27887654304504,
+      "input_tokens": 14378,
+      "output_tokens": 0,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 243.39711689949036,
+      "input_tokens": 18734,
+      "output_tokens": 0,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 253.4050488471985,
+      "input_tokens": 26703,
+      "output_tokens": 11926,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 140.0744776725769,
+      "input_tokens": 12180,
+      "output_tokens": 10730,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 133.77430653572083,
+      "input_tokens": 4694,
+      "output_tokens": 11137,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 181.25441670417786,
+      "input_tokens": 35789,
+      "output_tokens": 7981,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 132.18337225914001,
+      "input_tokens": 11148,
+      "output_tokens": 10102,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "parse_time_seconds": 135.41464805603027,
+      "input_tokens": 7994,
+      "output_tokens": 11366,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 138.96520471572876,
+      "input_tokens": 71825,
+      "output_tokens": 3825,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "parse_time_seconds": 395.455899477005,
+      "input_tokens": 99868,
+      "output_tokens": 13791,
+      "metrics": {}
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "parse_time_seconds": 185.38740348815918,
+      "input_tokens": 39349,
+      "output_tokens": 19934,
+      "metrics": {}
+    }
+  ]
+}

@@ -48,7 +48,8 @@ dmypy.json
 # Project specific
 datasets/
 outputs/
-results/
+results/*.md
+results/archive/
 *.pdf
 *.docx
 .cache/
