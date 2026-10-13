@@ -1,0 +1,6 @@
+Invoice summary
+Invoice ID: INV-2026-013
+Vendor: Example Components
+Total: 1275.40
+Currency: USD
+Due date: 2026-11-12

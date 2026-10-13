@@ -1,0 +1,112 @@
+{
+  "benchmark": {
+    "name": "Source-first invoice field smoke comparison",
+    "timestamp": "2026-10-13T18:41:51.706897+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "parser_versions": {
+      "fresh-pdfsmith-pypdf": "6.3.0",
+      "fresh-pdfsmith-pdfplumber": "0.11.8"
+    }
+  },
+  "results": [
+    {
+      "document_id": "inline",
+      "parser_name": "fresh-pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 1.0,
+        "chrf++": 100.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.04151606559753418
+    },
+    {
+      "document_id": "columns",
+      "parser_name": "fresh-pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4017094017094017,
+        "chrf++": 78.75241740228864,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013904571533203125
+    },
+    {
+      "document_id": "raster",
+      "parser_name": "fresh-pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006194114685058594
+    },
+    {
+      "document_id": "corrupt",
+      "parser_name": "fresh-pdfsmith-pypdf",
+      "success": false,
+      "metrics": {},
+      "error": "Stream has ended unexpectedly",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "inline",
+      "parser_name": "fresh-pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 1.0,
+        "chrf++": 100.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0043756961822509766
+    },
+    {
+      "document_id": "columns",
+      "parser_name": "fresh-pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 1.0,
+        "chrf++": 100.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.003927946090698242
+    },
+    {
+      "document_id": "raster",
+      "parser_name": "fresh-pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013422966003417969
+    },
+    {
+      "document_id": "corrupt",
+      "parser_name": "fresh-pdfsmith-pdfplumber",
+      "success": false,
+      "metrics": {},
+      "error": "No /Root object! - Is this really a PDF?",
+      "parse_time_seconds": 0.0
+    }
+  ],
+  "summary": {
+    "total_documents": 4,
+    "total_parsers": 2,
+    "total_results": 8,
+    "success_count": 6,
+    "failure_count": 2
+  }
+}
