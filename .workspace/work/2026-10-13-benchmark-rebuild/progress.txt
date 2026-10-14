@@ -1,0 +1,34 @@
+PDF-Bench reconstruction - October 14, 2026
+
+Current milestone
+Review preparation complete. First engineering milestone is reconciled evidence
+and a reproducible internal-benchmark example; substantial implementation awaits
+actual returned GPT/Claude reviews and disposition of correctness blockers.
+
+Confirmed direction
+Practical parser selection plus teaching teams how to design an internal benchmark
+for their own use case. Our preserved history and new invoice example demonstrate
+selection, reference truth, task/grader design, failures and operating conditions.
+ParseBench is prior art to reuse/acknowledge, not a universal leaderboard to imitate.
+
+Changes
+Created spec.md, six-issue plan.md, external-review packet with exact code/evidence
+hashes, separate reviewer prompts, baseline-checks.json and integration-handoff.txt.
+No benchmark source, old results, website or editorial manuscript modified.
+
+Checks
+48 focused tests passed with warnings as errors (fresh packet preparation run).
+Terms, plan shape, premises, claims and closure checks passed. Packet builder lint
+and formatting passed. Prior comparison hash and five mirrored checkpoint files
+match the independently reviewed revision d9305d6100e5288fa2fc255e088bfd8e22664b98.
+Inherited repository-wide checks are not green: 183 lint findings, 19 format files,
+one whitespace finding. These are retained in baseline-checks.json for the reviewed
+implementation scope. Dirty inherited work is preserved and deliberately unstaged.
+
+Next owner step
+Reconcile actual external reports, then begin the reviewed registry/reference/task
+and execution repairs. No report is assumed returned and no new parser ranking exists.
+
+Decisions needed
+Stefan submits external-review-packet.txt to GPT and Claude using review-gpt.txt
+and review-claude.txt and returns both reports. Spending/release choices are deferred.

@@ -1,0 +1,72 @@
+PDF-Bench source-owner handoff - October 14, 2026
+
+Acknowledgment
+The existing website/editorial owners retain their portfolio, publication and CMS
+work. This conversation owns source reconstruction, evaluation and evidence.
+Stefan confirmed practical parser selection and then emphasized a worked lesson
+in constructing an internal benchmark that fits the team's actual use case.
+
+Current milestone
+Specification, six-issue plan and self-contained external-review packet prepared.
+The first implementation milestone is "Reconciled evidence and a reproducible
+internal-benchmark example". Actual GPT and Claude reviews are pending. After
+their correctness findings are resolved, the owner reconciles historical runs,
+qualifies independent truth, repairs execution identity/failure accounting, runs
+all 100 retained source invoices with pypdf and pdfplumber, and generates the
+report/export. The earlier three-variant invoice diagnostic is preserved separately
+and is not this milestone's completion evidence.
+
+Visitor task and useful result
+An engineer designing a document pipeline can inspect a worked internal-benchmark
+protocol, see how reference errors/selection/failure denominators change conclusions,
+compare extraction of invoice fields and header-associated line items under one
+declared downstream extractor, and reproduce/regrade the evidence. The report
+explains corpus fit and what to change for the team's own permitted documents.
+This supports consulting through demonstrated evaluation practice. No real-vendor
+population accuracy, general parser winner or causal business benefit is promised.
+
+Expected export contract, proposed until external review
+- Versioned run/bundle ID, schema version, actual execution dates and completeness.
+- Family, downstream task, fixed input IDs/renditions, input/source/reference/output
+  hashes, independent reference/qualification method and applicability decisions.
+- Planned/attempted/complete/empty/failed/timed-out/incomplete counts and IDs;
+  fixed-population task success and exact eligible/scored denominators per metric;
+  paired comparison and common-success diagnostic clearly distinguished.
+- Exact parser/backend/package/source identity, PDFsmith metadata/source disagreement,
+  options, extractor/grader/normalizer, cache/checkpoint mode, timeout/resource policy,
+  hardware and declared timing/cost boundary; unknown historical values remain null.
+- Source revision plus implementation hashes/dependency snapshot for dirty code;
+  retained raw outputs, frozen references, offline regrading and relocated replay.
+- Each claim resolves to run/artifact hash, JSON pointer, metric/denominator, evidence
+  tier, supported interpretation and limits. No aggregate flattens evidence families.
+- Generated appendix and project-local technical report include benchmark-design
+  decisions, historical lessons and explicit OCR/table/deck/arXiv follow-on protocols.
+
+Current inspectable review material
+Work unit: /home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/
+Files: spec.md, plan.md, external-review-packet.txt, review-gpt.txt, review-claude.txt,
+review-inputs.json, baseline-checks.json and external-review-packet.sha256.
+Packet SHA-256: aa33a7e48c92d50e923d8e919addcdd872a87e11242952a36dd0eb7a9174f0d5
+Source base: bf8285b4cf4e69295eda2391665d54d9077d4d0a, with preserved dirty source.
+Earlier reviewed revision: d9305d6100e5288fa2fc255e088bfd8e22664b98.
+The review-input manifest confirms the five mirrored checkpoint files match that
+revision and records whole-file hashes for the actual code/evidence excerpts.
+
+Fresh verification
+48 focused runner/persistence/local-evaluation tests passed with warnings as errors.
+Spec terms, plan shape, premises, claims and closure checks passed. The packet
+builder passes focused Ruff checks. Repository-wide baseline has 183 lint findings,
+19 files requiring formatting and one inherited diff whitespace finding; these
+are recorded, not falsely reported repaired. No reconstruction comparison executed.
+
+Integration boundary
+The retained "What LLM and agent benchmark scores actually tell you" article gives
+the general benchmark-interpretation context. This project's worked example gives
+the document-evaluation application. Editorial receives verified new findings and
+exact immutable artifacts after execution. This handoff is not ready numerical
+website copy or approval to restore an old results page. Paid calls, release,
+publication, scheduling, public-main merge and deployment remain unapproved.
+
+Next actions
+Stefan submits the packet with the respective prompts to GPT and Claude and returns
+both reports. No website/editorial implementation or spending decision is needed.
