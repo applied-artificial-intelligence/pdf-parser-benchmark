@@ -50,12 +50,13 @@ def read_json(path: Path) -> dict:
 
 def runtime_identity() -> dict:
     """Capture installed versions and actual source bytes, including editable PDFsmith."""
-    sources = {}
+    sources, locations = {}, {}
     for package in ["pdfsmith", "pypdf", "pdfplumber", "pdfminer"]:
         spec = importlib.util.find_spec(package)
         if spec is None or spec.origin is None:
             raise ValueError(f"Missing execution dependency: {package}")
         root = Path(spec.origin).parent
+        locations[package] = str(root)
         paths = (
             [
                 root / name
@@ -103,6 +104,7 @@ def runtime_identity() -> dict:
             )
         ),
         "source_files": sources,
+        "package_locations": locations,
         "backend_dependencies": {
             name: importlib.metadata.version(name)
             for name in [
@@ -368,16 +370,19 @@ def summarize(plan: dict, rows: list[dict], grades: dict[str, dict | None]) -> d
 
 
 def execute_plan(plan_dir: Path, output: Path) -> Path:
+    plan_dir, output = plan_dir.resolve(), output.resolve()
     plan = validate_plan(plan_dir)
     protocol = read_json(plan_dir / "task-protocol.json")
     _task_matches(protocol)
-    if implementation_identity(runtime_identity()) != plan["runtime_identity"]:
+    environment = runtime_identity()
+    if implementation_identity(environment) != plan["runtime_identity"]:
         raise ValueError("Execution runtime differs from the frozen plan")
     output.mkdir(parents=True, exist_ok=True)
     run_id = uuid.uuid4().hex
     staging, final = output / f".incomplete-{run_id}", output / f"run-{run_id}"
     staging.mkdir()
     shutil.copytree(plan_dir, staging / "frozen-plan")
+    write_json_atomic(staging / "execution-environment.json", environment)
     rows, grades = [], {}
     write_json_atomic(staging / "journal.json", {"status": "incomplete", "attempts": rows})
     started = time.perf_counter()
@@ -482,7 +487,15 @@ def validate_run(directory: Path) -> dict:
     if digest(directory / "frozen-plan/plan.json") != completion["plan_sha256"]:
         raise ValueError("Completed plan identity mismatch")
     rows = read_json(directory / "journal.json")["attempts"]
-    required = {"frozen-plan/plan.json", "journal.json", "summary.json"}
+    required = {
+        "frozen-plan/plan.json",
+        "journal.json",
+        "summary.json",
+        "execution-environment.json",
+    }
+    actual_environment = read_json(directory / "execution-environment.json")
+    if implementation_identity(actual_environment) != plan["runtime_identity"]:
+        raise ValueError("Recorded execution environment differs from the planned implementation")
     required.update(f"frozen-plan/{name}" for name in plan["files"])
     grades = {}
     for row in rows:

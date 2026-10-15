@@ -1,3 +1,4 @@
+*.pdf binary
 .workspace/work/*/retained-evidence/** linguist-generated=true
 .workspace/work/*/parsebench-inventory.json linguist-generated=true
 .workspace/work/*/parsebench-snapshot.json linguist-generated=true
@@ -7,8 +8,9 @@
 .workspace/work/*/invoice-reference-evidence/** linguist-generated=true
 .workspace/work/*/invoice-development-evidence/** linguist-generated=true
 tests/fixtures/invoice_parser_outputs/*.md linguist-generated=true whitespace=-blank-at-eol
-.workspace/work/*/invoice-comparison-plan/** linguist-generated=true
+.workspace/work/*/invoice-comparison-plan*/** linguist-generated=true
 .workspace/work/*/invoice-comparison-evidence/** linguist-generated=true
-.workspace/work/*/invoice-runtime-artifacts/** linguist-generated=true
+.workspace/work/*/invoice-runtime-artifacts*/** linguist-generated=true
+.workspace/work/*/invoice-execution-controls/** linguist-generated=true
 .workspace/work/*/invoice-comparison-evidence/**/retained-output.md whitespace=-blank-at-eol
 .workspace/work/*/invoice-comparison-evidence/**/parser-output/*.md whitespace=-blank-at-eol

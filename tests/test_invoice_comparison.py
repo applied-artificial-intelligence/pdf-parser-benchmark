@@ -2,6 +2,8 @@
 
 import copy
 import shutil
+import subprocess
+import sys
 from pathlib import Path
 
 import pytest
@@ -21,6 +23,23 @@ def _plan(tmp_path, **options):
         document_ids=["invoice_001", "invoice_003"],
         **options,
     )
+
+
+def test_cli_relative_paths_do_not_lose_the_first_produced_attempt(tmp_path):
+    _plan(tmp_path)
+    result = subprocess.run(
+        [sys.executable, "-m", "pdf_bench.invoice_comparison", "run", "plan", "runs"],
+        cwd=tmp_path,
+        capture_output=True,
+        text=True,
+        timeout=60,
+        check=False,
+    )
+    assert result.returncode == 0, result.stderr
+    pointer = comparison.read_json(tmp_path / "runs/latest.json")
+    summary = comparison.validate_run(tmp_path / "runs" / pointer["bundle"])
+    assert summary["pypdf"]["counts"]["planned"] == 2
+    assert summary["pdfplumber"]["counts"]["success_content"] == 2
 
 
 def test_population_is_frozen_before_any_backend_initialization(tmp_path, monkeypatch):

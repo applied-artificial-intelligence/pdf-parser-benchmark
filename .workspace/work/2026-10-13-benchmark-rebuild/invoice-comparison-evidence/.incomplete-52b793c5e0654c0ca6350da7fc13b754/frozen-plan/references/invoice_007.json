@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-28365",
+    "vendor": "Cloud Software",
+    "due_date": "2025-11-26",
+    "grand_total": "9822354.44",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Implementation Services",
+      "quantity": "59.28",
+      "unit": "hour",
+      "unit_price": "293.28",
+      "line_total": "17385.64"
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "26.83",
+      "unit": "subscription",
+      "unit_price": "1498.62",
+      "line_total": "40207.97"
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "19.44",
+      "unit": "month",
+      "unit_price": "1646.11",
+      "line_total": "32000.38"
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "84.32",
+      "unit": "subscription",
+      "unit_price": "73478.08",
+      "line_total": "6195671.71"
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "11.24",
+      "unit": "subscription",
+      "unit_price": "1370.27",
+      "line_total": "15401.83"
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "75.98",
+      "unit": "month",
+      "unit_price": "1646.72",
+      "line_total": "125117.79"
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "57.51",
+      "unit": "subscription",
+      "unit_price": "1534.89",
+      "line_total": "88271.52"
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "38.23",
+      "unit": "subscription",
+      "unit_price": "66170.43",
+      "line_total": "2529695.54"
+    },
+    {
+      "description": "Additional Storage",
+      "quantity": "56.62",
+      "unit": "TB/month",
+      "unit_price": "131.41",
+      "line_total": "7440.43"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-28365",
+    "vendor": "Cloud Software",
+    "due_date": "November 26, 2025",
+    "grand_total": "$9,822,354.44",
+    "records": [
+      {
+        "description": "Implementation Services",
+        "quantity": "59.28",
+        "unit": "hour",
+        "unit_price": "$293.28",
+        "line_total": "$17,385.64"
+      },
+      {
+        "description": "Professional Plan - Monthly",
+        "quantity": "26.83",
+        "unit": "subscription",
+        "unit_price": "$1,498.62",
+        "line_total": "$40,207.97"
+      },
+      {
+        "description": "Premium Support",
+        "quantity": "19.44",
+        "unit": "month",
+        "unit_price": "$1,646.11",
+        "line_total": "$32,000.38"
+      },
+      {
+        "description": "Enterprise Plan - Annual",
+        "quantity": "84.32",
+        "unit": "subscription",
+        "unit_price": "$73,478.08",
+        "line_total": "$6,195,671.71"
+      },
+      {
+        "description": "Professional Plan - Monthly",
+        "quantity": "11.24",
+        "unit": "subscription",
+        "unit_price": "$1,370.27",
+        "line_total": "$15,401.83"
+      },
+      {
+        "description": "Premium Support",
+        "quantity": "75.98",
+        "unit": "month",
+        "unit_price": "$1,646.72",
+        "line_total": "$125,117.79"
+      },
+      {
+        "description": "Professional Plan - Monthly",
+        "quantity": "57.51",
+        "unit": "subscription",
+        "unit_price": "$1,534.89",
+        "line_total": "$88,271.52"
+      },
+      {
+        "description": "Enterprise Plan - Annual",
+        "quantity": "38.23",
+        "unit": "subscription",
+        "unit_price": "$66,170.43",
+        "line_total": "$2,529,695.54"
+      },
+      {
+        "description": "Additional Storage",
+        "quantity": "56.62",
+        "unit": "TB/month",
+        "unit_price": "$131.41",
+        "line_total": "$7,440.43"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_007"
+}

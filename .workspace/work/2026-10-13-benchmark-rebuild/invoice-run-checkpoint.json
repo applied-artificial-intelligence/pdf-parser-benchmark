@@ -1,24 +1,27 @@
 {
-  "status": "frozen_before_primary_execution",
-  "plan_sha256": "31d64d00fe359d5217430d62f22b90180c539a43e63d4ed3bb1480e7fc19ad70",
+  "status": "frozen_revision_2_before_completed_primary_execution",
+  "plan": "invoice-comparison-plan-v2/plan.json",
+  "plan_sha256": "cc9c40438d3d146b74b0091b872eb8a21b75e11b89c81d950e1c32c91be8e4a5",
+  "supersedes_plan_sha256": "31d64d00fe359d5217430d62f22b90180c539a43e63d4ed3bb1480e7fc19ad70",
+  "population_and_options_unchanged": true,
   "planned_pairs": 200,
   "eligible_documents": 100,
-  "runtime_identity": "a876070cedbb58efba07d41fe331777f60eb76d41a05ecb592c72001702b1dc7",
+  "runtime_identity": "4b159c81edfb3816738e7fde759d3aedb37e2744e23fdccd1722b40eaf2b4c27",
   "runtime_artifacts": {
-    "invoice-runtime-artifacts/identity-replay.json": "3d43ed62d536aca203a09bf097efed8f032379931e9a0e5a61ec3aa4d7235555",
-    "invoice-runtime-artifacts/pdf_bench-1.0.0-py3-none-any.whl": "7100025edc76020565e52d851f0a2c073fd8c8edb6fef61d607fa51e242807ce",
-    "invoice-runtime-artifacts/pdfsmith-0.2.0-py3-none-any.whl": "a37cef0e5a2f9c7bae9a57cdaef4bfa6f69bfa404e141e007a069b348a7cd123",
-    "invoice-runtime-artifacts/requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
-    "invoice-runtime-artifacts/requirements.lock": "30d0f300b1ef39acad8e6292e046830847a064b6dede346052b1f0d722fcc1f7",
-    "invoice-runtime-artifacts/runtime-provenance.json": "8e0bbbe453e64ca3a2e717ef5ca9fe591f01e07f3a1a9f40966b34d2b2a66ad8"
+    "invoice-runtime-artifacts-v2/identity-replay.json": "23d4e2aef6778922c446da71242289b65c2786e9728a6f764e24ab29d65341b1",
+    "invoice-runtime-artifacts-v2/pdf_bench-1.0.0-py3-none-any.whl": "3ae07f0dc96dc0884ef0a50ca92876010f607ef9fc0553c9d68d5bdda77946ab",
+    "invoice-runtime-artifacts-v2/pdfsmith-0.2.0-py3-none-any.whl": "656ac6b42d523be346c451e635d5ff4be97aafd03f01ab18c4bd92d6fdadc6bb",
+    "invoice-runtime-artifacts-v2/requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
+    "invoice-runtime-artifacts-v2/requirements.lock": "b2234829be818ddca61f8b174a271edcca05d242a77fce7b16bfb93eb15db57c",
+    "invoice-runtime-artifacts-v2/runtime-provenance.json": "dc3510409943822659dbe32817def5c50224e63091ef673f087d3ac96c6c982a"
   },
-  "faithful_format_control_sha256": "c76e002f74cb8f73c44d9e2965bbe84cbcbdeb87034eb25103a64c51aa86530a",
-  "faithful_control_scope": "Reference-derived supported Markdown format only; no claim about unseen PDF layouts",
-  "primary_executions": [],
+  "faithful_format_control_sha256": "272de5ed2cc1a23c235b1696d5ad0d21d0ffb0fb2d5350035260d8c02a7f2c0f",
+  "completed_primary_executions": [],
+  "interrupted_execution": "invoice-cli-path-defect.json",
   "verification": {
-    "full_suite_passed": 961,
+    "full_suite_passed": 964,
     "skipped": 18,
-    "focused_actual_reproduction_tests": 16,
-    "relocated_runtime_identity_equal": true
+    "cli_relative_paths_red_then_green": true,
+    "actual_mechanism_controls": 5
   }
 }

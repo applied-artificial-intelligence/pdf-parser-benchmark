@@ -1,0 +1,1949 @@
+{
+  "schema_version": 1,
+  "frozen_at": "2026-10-15T21:13:12.190998+00:00",
+  "scope": "primary",
+  "reference_manifest_sha256": "2cff95eba5904e0933caf5e761ea836f8392f3528d484ac8914131257de6d765",
+  "task_protocol_sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e",
+  "runtime_identity": "4b159c81edfb3816738e7fde759d3aedb37e2744e23fdccd1722b40eaf2b4c27",
+  "documents": [
+    {
+      "document_id": "invoice_001",
+      "pdf_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "reference_sha256": "cb0addd1ddb309df0b30cd3f2f916d7611fa3c323daca858a95858aab808f6d6",
+      "source_sha256": "f791c722ce3ddbd44142c41be6fc8cd8e8d28cc3bed786c0a26fe141467abcb8",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_002",
+      "pdf_sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+      "reference_sha256": "e0be10de9956f9c72d569574e6febe7e3260a2826d596889e88b67d22df969bd",
+      "source_sha256": "06360a8360c4cadee927d88b0585743a9b09f46bde94f987b80c0026f5ee2e1e",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_003",
+      "pdf_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "reference_sha256": "152aa63f467c61fb8dc421286ed5984e59f65e1b557cf966aee7c7a3d4409dd2",
+      "source_sha256": "691c54302cf097b39cd0ea903be5a6a8fd76df32c6d0422f704e40c88174d8b2",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_004",
+      "pdf_sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+      "reference_sha256": "3dae7c3cd37343806cd60d0b168e4a54f30eb85a18bb4e016e840d53983d007f",
+      "source_sha256": "e75f6c9c0aaf5832a751964c010ec90e079249655fdc315c842902407e944c96",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_005",
+      "pdf_sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+      "reference_sha256": "672b94013a24ca4495582b6d6c0a19714e0020e67c3ffe4ea4b4cdb1f8a4a665",
+      "source_sha256": "6250b2a88a1c3affdefcd651cad46757611ebbfed32ad0eebea81a5e0a9f1017",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_006",
+      "pdf_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "reference_sha256": "82578ac4b59ff005f4f210bac9a35b70bbfc5f37c9b5cf61fcf906c831e1c225",
+      "source_sha256": "f70a1aa37c7e6941d2d9f92cf07f5d4f467bddcdb9634c58c6275ccd535a902d",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_007",
+      "pdf_sha256": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+      "reference_sha256": "54f18de3f11dbedb7d0508cbf81b9bb2175e7f080caf7371c7221e137faf25dc",
+      "source_sha256": "dc7e65ce214f652ccea8b70c6e2677a1c4d532a3b95c0ade50238179e3b75c23",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_008",
+      "pdf_sha256": "3ea084ec8af6079de98cbbdebe9cb43a733c17c15847f6db21647b772647c42a",
+      "reference_sha256": "0665a30788a05502d7837ca8b0450c21c60a99dbf0b438cf79eef17972dfd998",
+      "source_sha256": "a6ed78d19890a90801d169c6727e51369d65aa295ae6829fee2ea9560d675c08",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_009",
+      "pdf_sha256": "3396e9c3da53ece2a27dc8b702d82233c0658e3684d941ff814332990264a915",
+      "reference_sha256": "27af251ff02fb9b75bb1ba9490c84d4a937ff699fbec79482ec90d43f5067b62",
+      "source_sha256": "09ba12ecac205fe0258bc7188332b1a5b23871dbe7d74ed94f80a678076629a5",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_010",
+      "pdf_sha256": "75283a63c5d9ccc9a136eb6f96de9b1f80b4a30742d36ea849ec93eed6be7543",
+      "reference_sha256": "0111a066cd109bd3f68624df25e1129add00f1dd18d261d7f7bf7a01629c0a39",
+      "source_sha256": "c4f6341e68abcb25ce42757271ebbe27305d482a393810ec51fc44dade1183c8",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_011",
+      "pdf_sha256": "66e6ef089381719efdaf6ad6c4433f6c563288e8090dc886b5e71b6d116403c0",
+      "reference_sha256": "e703ddfb37d809a2e1599548c2adbde8d81e3cfba76d9b3d495c08a3e9bee44a",
+      "source_sha256": "9576ae50d3ab9a39ec4e0cd2f0d66c81d5de9afaa63e35672e805880cb98f060",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_012",
+      "pdf_sha256": "00d820df793677f7c014670e11b5e17ad6ac3210aa02ecae963d60d481245eb4",
+      "reference_sha256": "73e9732b037f7fbb38c2d79362452a1747665a8a3c5af7c6580beb9696f0c479",
+      "source_sha256": "0e6dfbd5e86d2fa6758f71212191b955b3ba070a9e90e97cfa63f28015c00174",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_013",
+      "pdf_sha256": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+      "reference_sha256": "cb3d68310ef18e0837e85834f5301b45dbdf083e4712b667b7e1333f5991f213",
+      "source_sha256": "d9bcf518ea5f2e3f247554d396038d3cb448a5f5f16d8d8f0c325e8381f28abc",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_014",
+      "pdf_sha256": "55d1d5128f667980b1d36dabb07b2f9dbe4cf1b441f75ce747b3447c59901856",
+      "reference_sha256": "5e0bf7aa10df1bc97adf32a42aec0324b5692b00deb7016f24fa276010269967",
+      "source_sha256": "0faf4010c7d3b2ab85f2819edd470503308357b508cc85b57f9a6c6064cfb7c1",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_015",
+      "pdf_sha256": "dee528c36e685b876a909fcc3d513c5cce7d57fcab7a2eb65c047c8071a2e854",
+      "reference_sha256": "f3671179ff00fd03b607256dabe0102bfb28cd761b44363ae9ea941655b5a627",
+      "source_sha256": "69814327e4f15ca6a039716824a7e0e66997a1c5607378ab4ab1c822fbcec4f8",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_016",
+      "pdf_sha256": "929346d201bb12cb82c64d5114273f66a9959f77b91e558a12e72e85001ecc10",
+      "reference_sha256": "c5a24beed703238ab8ea815ed210d515bdc8d8e58cac19eb053d1cb75aa1da69",
+      "source_sha256": "c2eef0ef7b087cd069d16a98c98394349b0ebceecb0282d42b602d6318ff0cb3",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_017",
+      "pdf_sha256": "3d3deee9f6ed5f72a4bfe05d0ac075c622a7103d9aa657916922d74473faace3",
+      "reference_sha256": "d80393cf6641da3cddd501608a0805ac4906782086ee169b0f59fafa85d5cb4b",
+      "source_sha256": "0c08cb64bcadc4358460b6de545a242be8ecbff802bcc2a2396195da461b8a7d",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_018",
+      "pdf_sha256": "cac4d69876239e61e8d0cf87c312ce85f472b485c208214a8b785cbe4543b304",
+      "reference_sha256": "12bcd2df75eca79335e90863c43429d56028bd1156e906cf0891151fc9af33b4",
+      "source_sha256": "fe8e1515a9a4ddaec3e2ad16993cd229515554a1faf1d9ebcdbbf2b598a7706f",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_019",
+      "pdf_sha256": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+      "reference_sha256": "6ca3ea321659ebc99c0a07131ac16d854cee62dc751f27730ba67c7c9ce2324c",
+      "source_sha256": "42e13e4fb8040102bc6d412c5733178068c0272cabc32173d44ae2843f2eb528",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_020",
+      "pdf_sha256": "bafa7d22fc6bffbfc0a45078d95fb07990fccb375affc3d785348801ff8b855a",
+      "reference_sha256": "9f3504db3227014f2adb7e7fd3651ac21a9597b142ccc81a7ac4cf828174ea76",
+      "source_sha256": "f15cb21224eb4fdfaa0491ca1efabdf4ca621d8b592f8a5b5a545ad6953068b1",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_021",
+      "pdf_sha256": "892502d4b309267492d5538d8ce107960f4ccadc89559ae2d691c5b6890d1aca",
+      "reference_sha256": "d66b20eff35566cb4b965de7cf22207f16404277e34252a3e841b29bac6509fa",
+      "source_sha256": "5666f54a2b0c55e4535e88a72c5a42081978811e1e337cf2773b9ce7e02186ae",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_022",
+      "pdf_sha256": "68f5e47d12264cd5fac463c2336ab721fcae442bd27029efd123f178a3c21c2b",
+      "reference_sha256": "547051943f9e094c330f77fb58fbe57a4df12a2f9e9a90f00998282b6724a050",
+      "source_sha256": "869c12ee1e056addb83f022d72de404f7602f20c3ef0664fc89fa31fd8d2e145",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_023",
+      "pdf_sha256": "1c540386f722907310729f502979e37ed45a54d96293e43fdd16da71ad7e0b90",
+      "reference_sha256": "c33b6abddfef677fd53910c34ca2a0d36d04131dc6b7366ab0cc3e27f19f9bcc",
+      "source_sha256": "cb2abe651be01bd302fcb5c25c2610793278a14a2fc7b2329b702de23f4a1a7f",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_024",
+      "pdf_sha256": "677bfeb9bdb3dc417b443837f0f45a7ac4c3c3a2b9aeeae9343902391d1a3fd1",
+      "reference_sha256": "f29557081d2342a83f6796b301adaa52a6672bfdf206da45838e5502e3bcc4d1",
+      "source_sha256": "75007058a9a092194d9433897e4341421cf532a53e7f0c6a16840bfceb197646",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_025",
+      "pdf_sha256": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+      "reference_sha256": "23d6d36957b9b2bcd452476696f216104eb2774f43893d0cdbff71a5194d604c",
+      "source_sha256": "62a2e507b21ff9473e76e5baeb95389e66e58b80e25444184eb189990c11a426",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_026",
+      "pdf_sha256": "1fc1a86ffaf606dbe07f04e1430102c8a6f614c671ac1f618b1cc18336490cdc",
+      "reference_sha256": "22b12135c9ecb403855c264b4268e7767e76d792ab2e2c62bb1cb0bb076d6241",
+      "source_sha256": "a3c147b5c399b40e08ffa159d72c7684fa259206a7ea142c0128929235f3120c",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_027",
+      "pdf_sha256": "6005ae024604bc2bcf5ff2964fa679586eee4c6c3fa386e05d5df07c4238f285",
+      "reference_sha256": "e144b9d04b6c132ed763603ca2fd5625b41c9fa39d1dd4ad85ea0c76bb1888e0",
+      "source_sha256": "1ec0500383dca56910ee0c1cf5b37ef29bb3a5664d0aac21e89948cb25a1950b",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_028",
+      "pdf_sha256": "bde7647e1f76bd6bd2922fa66a7140266d23fa4bc295a1df8d453d7346d308ad",
+      "reference_sha256": "5a91044e09b0d8c0d407e3b6c04012efdabb4eb50f3205dbe6778064abb91927",
+      "source_sha256": "74cc243c2405b468b7a580eb572342c21fefa958edc225c68a6be4a47852ba5c",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_029",
+      "pdf_sha256": "b399fd421ad47e0ea2fb3f558e2b6639252231e96d04b6e99f683d5e74f93e7e",
+      "reference_sha256": "e72e7d3c09f24e430aeb0c988f272edd2dbe993f5311060238701b493640617e",
+      "source_sha256": "294b5a968a4c976aeb37621a35f358f7b66efa8b1a3bf7546a03e37cc7c1e63e",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_030",
+      "pdf_sha256": "c6fa6f569901ed568acaf62a8a8ddf4ae4f67582e3dddb59a7dff1889d0142e2",
+      "reference_sha256": "7292e208badcf7f30d8388c66472ee47b0df4818ed9483e4b8746bd3fe9eb3a2",
+      "source_sha256": "4dc2bc0d73ba02fc87a649235f2fe3103c9e5a41244fb352168701686efe3bf4",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_031",
+      "pdf_sha256": "d5f2c9ac4a8e6a11773bf3c1106b327ceb7cb3ec2a522765f45614b28263e5ce",
+      "reference_sha256": "add0eebaf58f8c1bab9374de4444afdd3bc93e760019c03b462215f9a9cdf889",
+      "source_sha256": "c3eedecb8fffccddad15968a9e1124fbb71571ca219e9635b86d15ed4fb05060",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_032",
+      "pdf_sha256": "5ebbbed682efd95727086c01eb8d96f7d9ecc4e3c3d248140a9eff3efc206f31",
+      "reference_sha256": "c893e1ba25488b70774c86c09d8741b803ae0ca579081a30a58b5701be54370c",
+      "source_sha256": "0bc59efda8053be08eacd2f916b6404484c1829368e62c626deff0601fdb731c",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_033",
+      "pdf_sha256": "47ed9a766ca7d7e08e0568535278ddff0dc075c98c5b206b596d5450d627909a",
+      "reference_sha256": "344a16ea195d717427bfde6f245e61238b87cd2ca4b829b9a132fed58ced28c0",
+      "source_sha256": "fe4274884816f0342fafde96b9d3283e1002b5c577ad0029d693b681948da359",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_034",
+      "pdf_sha256": "3d25836f8d93aa9d77a256f43d1c6a565ad8ec83bab65a6ddec0e631ea0d3805",
+      "reference_sha256": "697dc733a007c3ec5b2dc81301086c5d75e4fbc0ae15c70ca444d2380746b989",
+      "source_sha256": "410b6b8e1058441f345779415a510e70439e723229f5ff1b00bdccf8a8d68ed9",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_035",
+      "pdf_sha256": "f92d6e44cc2e71804467f9acfce6e0b42e9d2c588fe6eb030624b2691bf3436b",
+      "reference_sha256": "2a4f7fb143d1f3eba409054f898b31f096d76d8e30abe6d1a1558b5ff99aac14",
+      "source_sha256": "4ab648c5502d8d7268cfb690db9b8d7c168d287af791342d683b20c9c5253793",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_036",
+      "pdf_sha256": "64937ed4af19c51f1bf77a85e6c8d0a422663742eed16bb5b12cfc577c6bc034",
+      "reference_sha256": "8eef1b071a00a50cfa7e7fd8c7d087a64a8a5f5e6efe6450103cad8a2942b2c0",
+      "source_sha256": "02515dcee7b1c7cc31c3cfa4dd16204491a38e49de2d93bc74ea712398861fdf",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_037",
+      "pdf_sha256": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+      "reference_sha256": "37b04d71c8585318a9ba969c6fae21f001164b1f19cf7cf093f8161098538382",
+      "source_sha256": "110b7f2ee623527f3d13c48ea0a3b091b73a7e6b69735f3483833853aaadd000",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_038",
+      "pdf_sha256": "56b1df974fca082ecf9bdea924e4917f0fd4e13ef90a1b4a27ae9e97205337ce",
+      "reference_sha256": "6f41d2d2c8a2677fb49be4ebf34fea3d1c12e44f808a67ab1ceb50e811e71b3c",
+      "source_sha256": "ee6138528db93618d4d0fe500750f11be5d62621b2588eaa998764780fb61a5b",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_039",
+      "pdf_sha256": "b6e5d3083bfdbfb2901a3866f60abacc9fe7be95f0fd07816b5c088b8c84417b",
+      "reference_sha256": "bde9a46e20668551299ae930d05f3b10d80ffc94020fc2f7bf0d639b611bb69d",
+      "source_sha256": "b21d57d93398626f507b2227ab1e4360e2303d80129e96f5f4ffd28bcaddbb9d",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_040",
+      "pdf_sha256": "694c3fe505c42b1e9f3a70569beadb0695f47b7e25d1824ae48e6b0f8dcbe4e3",
+      "reference_sha256": "b7f91c62aadbb00506d9c64dab4d133227ae276e89869b3025b09ae7e8f1ca4a",
+      "source_sha256": "3f315fae5e18c4c6934326adbe7ed2d671746a157b1a536b3bbcd17e34976f54",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_041",
+      "pdf_sha256": "d62fed2142a6a3807099d437cd0d6f499005c95a9bac13bda226988ec143ebef",
+      "reference_sha256": "fb95a1fcea2b164b8ceaf552516aa1a624fd77de6718556b2ae080099f809c15",
+      "source_sha256": "ebab7a25ab2f4e5d63551326d87a71021917319ff50de6c1b90ad723101eee56",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_042",
+      "pdf_sha256": "705541c16fac3168f38c1126c23747f6be3ef9192a06bf69dbf95d59c7f06a0b",
+      "reference_sha256": "86dcd2a9fcb7a95829784fa2b206e94a9db276cd2cd30c64028aca04afa3d0d4",
+      "source_sha256": "bdc7daf96df5f6f2856903b03dd9dfa58552f8b662400b656108eea565177c9d",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_043",
+      "pdf_sha256": "150eb334595390e3196dd021b75a0344291777f34946c277c51277d1d53ffe34",
+      "reference_sha256": "bfc76bfbc2e11f8dd73b7058b344eda1dd56d08cae9fec963c69e197377a2944",
+      "source_sha256": "22f3e64b3f52fea7a6e8b7c4955d524600e82bc3dd1fd203fb4b61ddcc6d42d3",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_044",
+      "pdf_sha256": "4593063da594cd7b052ae1a47cbbb3f3e3763b891f515a02cef372506cba0c3b",
+      "reference_sha256": "01ae348b6e4f784b613594f61ae4d221b5cc6c09736d9a806950834d91466ea9",
+      "source_sha256": "9dea1d8735e6c36abee0a2fa1b18a9954b84219c0d03e357a375e11b16a5c566",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_045",
+      "pdf_sha256": "360820672bcd37adcdbffbd50edd51d3cf4527a6f97e50f70781ba55e30c5e4d",
+      "reference_sha256": "06c7250ee2fdde61344415efd568034e2aa93a8caf8e62ca9417ca8ab70cf6ad",
+      "source_sha256": "c79b382a418c44dd013653c6ad4cde2db61ee68a625c660c33e8f93163610c9f",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_046",
+      "pdf_sha256": "4119e53b581487746ed4b917ee904120de5752a66104f25d9acbd53c53e22e2d",
+      "reference_sha256": "335c0d4adaee7126ad437f6cdca0fbde6a978c9b194c8a1673192f4d813d1d7b",
+      "source_sha256": "2e73df382dd08d62efac495fcd3a717ac5591fd22d680946e009cec0117cdb83",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_047",
+      "pdf_sha256": "f06c92e3cf6eed14e5df9a5bf9feab8f596719a9507cde417df1d9f5a8f2d6b8",
+      "reference_sha256": "c24fb1b7a7831c5cbb5acd98d9d107dd5286eecf261418e9bdc635317e20d98c",
+      "source_sha256": "1a8fd441860c7aaebe30459b0ceb10d8ec7929176d1545a55fd23dc0d659d246",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_048",
+      "pdf_sha256": "907236d8bcdd2a308a1a12137d7e4bc7ab33acc7703b414dcaa51718a49a88e2",
+      "reference_sha256": "e8cb9f71d82cb0efc86ca1b55478c91e83168dda107b811f912bad99fabfff01",
+      "source_sha256": "2c360a5f3e1e74f83c6cc1e81ca11ce0c7078388614a21dd35ae84030a09713f",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_049",
+      "pdf_sha256": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+      "reference_sha256": "adf1e988c7426bb46ae521fce5eea7bf02d67750edff0319dbeeb3235d21e705",
+      "source_sha256": "399d6fb54c233786e5b07ccd1d8d26668e7a680f7526b37aae8005eec930c5ad",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_050",
+      "pdf_sha256": "097e94baf27afa5a092642425e7b53a67ede026bccaf3e3ef9590f44351864a6",
+      "reference_sha256": "4dd640db5875c8abc51df833fd98673f06792c040091370e63a9f08a5e8f2e8a",
+      "source_sha256": "778ac9286f59fab8fde71b3e1c44091412edaf766ec478fefc71f2d9769c96d8",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_051",
+      "pdf_sha256": "44a6e39b690ca0f672b36eb88f7ff82c379cd58539206a8eefecd856463f71c1",
+      "reference_sha256": "491ce534557483373502f7679567612b1345e4547e9a3d1c985b8deecc08930b",
+      "source_sha256": "f599930f7fb2ec964340af3b061cfc0b8d3dd424ed201b735b2ceaa4d66aaff4",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_052",
+      "pdf_sha256": "11bbd2b2ab2ecd8f1795783f76cf7440d74405cf14b2e6082cf61d50b04b9aa2",
+      "reference_sha256": "c5c7e79b31d9f47b66c7589b20a48a62d87422371d6ad6737539c1624d3f59f2",
+      "source_sha256": "513647b03b69ff071b5d4abe78af4dd821dbb75280760396741925d783020566",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_053",
+      "pdf_sha256": "f59f5989465c9121fe2f1f2d91576176894ee20715be8be4aa30f439c1d99de7",
+      "reference_sha256": "8d0be7a6e24c46a1aef64693b9d785b8594c0a5b2ae35a46498a317ac8eff344",
+      "source_sha256": "eda1211c9c029e8170b40de712e5af9559ccaff36aa7e8f8ad28e1d2a9627d1a",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_054",
+      "pdf_sha256": "6a460522d86588d4ad0d34f4d60280aaedb59ed99e899f4283143bfe3c09cbed",
+      "reference_sha256": "2fd734880bff69fea5ca7be5282f960eb196e47eb22d927ab56ae48b9c0dbcf4",
+      "source_sha256": "2a2d1c54bc186dade4af5162df96107d696c3fd372a3154bba8d8a80d2ded3fa",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_055",
+      "pdf_sha256": "9bdfa8113d644e6bbb59b6c78a1ff3fff344ca9003dc4fb4da2f257ee75bd962",
+      "reference_sha256": "25538097e28c758bd2ad259efcd62c153b7d433e0e7e2351c5b2ea3aea3b6f20",
+      "source_sha256": "0da6aa852304ace66c42687710d54e8521a3bb56dc50f20d72ded0c9bd2fa064",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_056",
+      "pdf_sha256": "c28c787fb4345a4ab3d6bda0f1b85b665b3b9b216b084f35a0f165dfe1b5c388",
+      "reference_sha256": "002ebf5cbc7ccf7408f6dfdb78211672584ad9d99435dd369da84884ea27f870",
+      "source_sha256": "968a3b5ad18a87118763887482115d0af0cbdf3e3901a01e4aeda30a54174469",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_057",
+      "pdf_sha256": "9e143f9d494d802d268f83f67477540e3334abaee80be7f36c616c3c42e183f3",
+      "reference_sha256": "843efe3f7c778375611516425a65bd65c8e6e752e8ff0491fb2e41ae95868e14",
+      "source_sha256": "8d81b108c15b822fe126c47ddd57a432441e9a9b50b0578e5abb510421821ec3",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_058",
+      "pdf_sha256": "55147c2ae1c655ca3a191151401f144e1190e7b1f70db5646c2e1ff74d0cb29a",
+      "reference_sha256": "e20847f484480fcad300eda0a2580aed949a6556a9e329f2e0b56b884a55b0c0",
+      "source_sha256": "da495a2fb7bc2b3e8fff287b7a626181d779ff9c554b1f1f044bc13c7bab188d",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_059",
+      "pdf_sha256": "f7cedf1f34124a2d54add9714abb319ba716989eaa4029cd0ab41c68cd59ffe1",
+      "reference_sha256": "af72b448009ac249145a8d422e333d4febc707f2d87e03594666b04a6c445efd",
+      "source_sha256": "c4004ddf66acc74d1a446be54164d9186cf82ae0a3ee58c0e58a1b734f0c3f84",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_060",
+      "pdf_sha256": "4b0aca1020a826546f4e6ec1f72acad2f975d1f921aab69acbf1e8f4904de7c1",
+      "reference_sha256": "82eb5092a7ea74b3a6a151df43953b50efe7c5e1a1abf16390f7cb5c5ae24120",
+      "source_sha256": "2a7946e6c96567010570b6f03d30fad55e1d794cfe25089e1f660b8846275629",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_061",
+      "pdf_sha256": "a0ef631f990bfefa140a8ecafb8ea3c608621e0202b0e743fd53abafcde78fb1",
+      "reference_sha256": "2a950611a4384fb503756c35962315d7ddaebf80bb84a5c986d0b7aea6f4d084",
+      "source_sha256": "b2eec6dc23b9e847dc10f85adcdde9931dcb55b83e306353e503011ce707b3a0",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_062",
+      "pdf_sha256": "6acb613774da9b4747975fc4c182b1c0c97b30b4041baa0b633633276c633fdb",
+      "reference_sha256": "79023676b546299215017889b17b5af3af38c8b0b8b7399c7fe7e17f4af6af3b",
+      "source_sha256": "a902e2639f03ce1f246a0ce06f13b940ca2e933bf62a6cf5e2178af1905641d3",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_063",
+      "pdf_sha256": "df5f8b0fb0c6bcc754bbba88121d843e889c896e9ad99b2964bc47235f5b3f54",
+      "reference_sha256": "8bef05ee499510fccdaf800fa897301caafe7e068c8617bf01cf40f3ee0b0206",
+      "source_sha256": "247f800e2bdcd42267dd623a19d948856d334bce078b17410c8d560a91d6f632",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_064",
+      "pdf_sha256": "98b20ef6811cb5b5391139fa256d582e5f278fc099aa9a8e754a0e243d58f8bb",
+      "reference_sha256": "f5734dfc552f51a6ed54602a7edb8b2eceb0673d1f65ce7f778963eb22f87c1d",
+      "source_sha256": "a760cfc66cea1d95aae7e960650a8eea82b012d26561254a5b7997af25940d82",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_065",
+      "pdf_sha256": "97c8f0890d3fa7f0b0b5e64021117bf13348aeda42335d31c806f231b68706d8",
+      "reference_sha256": "b75b490daaa45ce61ba7cf3d0c75a5841676538aae4461ccaf213bb016c27cd8",
+      "source_sha256": "a8a7f140e22a27f0fb91fbf31afd01bd93904ded6313bf232e2fae530cd262d7",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_066",
+      "pdf_sha256": "6e1f3ef002fbd77e65314b1de8323eea8441c1febf551ab85cf2afb68f6dc3d2",
+      "reference_sha256": "fa738bc4eb7069056ccccdb75a71917e08726ea984215add4caebc3aceb46e9b",
+      "source_sha256": "a9ab5596cb4f58c1706eda539d5705ddc038c725c0bd0bfc87cffc43d50d6d7d",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_067",
+      "pdf_sha256": "e4c9c14748d965a142e78a50ec0dd4af7230038e9c52d06300bb0bbf7f3113f6",
+      "reference_sha256": "2d7e612efdcdbc1534beed95e2055f29e285ce25a09bebc91d2c6627a357b1d3",
+      "source_sha256": "ed29aef4a82d1e50f09596c1d051e76e8bb38f97d5b5413441296d060d7b43cb",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_068",
+      "pdf_sha256": "bc55d3356b09f9eb56be650fa2b63ffa6a80d88b4e6b9937719b31bf05a58fce",
+      "reference_sha256": "ab8592ab940d75b5ed5ecab07e969b8ca2789eab79836a3d6ea33be9ad231559",
+      "source_sha256": "78cd69ccc343ecaa89046d2cc13d760f2c0c51d0a2198084e7578ea2d0f4d3f8",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_069",
+      "pdf_sha256": "2910890b973e3ed9abe057d2718aa971a8649dd2e7f3b56d937de6806e0532f9",
+      "reference_sha256": "d052109bcec0024cb15d1e066cd72c4a468bf27acf3ece4ef76ee7ffdf3947d4",
+      "source_sha256": "bd63ebd47c11450100c4ceff970f717648ca1f4d2826ddac33691b25dd5703c4",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_070",
+      "pdf_sha256": "cd371884736f2ac5bac230f7b4a12f5c30b1201929b0f6eda46d46f8330e0365",
+      "reference_sha256": "4383f546a700af1262606cd7732af6307731e98002471e1df6410a96160e469a",
+      "source_sha256": "8eae8afe08c3c70d55b2fa4005ba48904b93057bec2260abe97955b10f1bc77b",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_071",
+      "pdf_sha256": "f28148cb2363d06633465589fa7d48e87e71ca740d8b0fccec0175dfe156b4c8",
+      "reference_sha256": "857cf912c56e4a7b84c70e9abf0c678a14091e4a15a65249e002637079feba4f",
+      "source_sha256": "625b3e5b7b77994e688bad34071fc4c4a033eca1fb0b0ff493ffccf8a894e1fe",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_072",
+      "pdf_sha256": "2dc5189b3a7f62e2c382b88b500eb5ab9e8b42581ba62bd85c78a5dc9319fabe",
+      "reference_sha256": "c1d38a96bdc9ee0fc745e21c5540ba8ee408156979ea036f767fe3cc6b421ebd",
+      "source_sha256": "f8f6e883e10ddd2aea867c5274e92873293855931547f649e379341ce37ce1f6",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_073",
+      "pdf_sha256": "19681ada6d99b0665b9a59d879852c468b0cc6de9168d0f882c531da453a88a2",
+      "reference_sha256": "7523f63d8d30d9f7ea858962386074311d69a4edd03e00dab893a554b0e1c7e7",
+      "source_sha256": "d9817dd7c87b26df84cd3853dc5dffa42c0c88ae914d1a3399aa86cb29bc5ff7",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_074",
+      "pdf_sha256": "d9a6285b4bfcd2b51317cb621fe7717f25ce14e49f4db7a3a4092074ac2e7d49",
+      "reference_sha256": "c80aeaa11995b9e7c841e1ce08ce3480dffa54dae0e4abc291762a34242912aa",
+      "source_sha256": "ded543a195be30e47b2223abf0262042dcc33b468b0c9b7544dfa4e405bffd1f",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_075",
+      "pdf_sha256": "a852358a7cd82569f4d235c4d55eac3299ada46370a1d4c9e7abe14d8a573f14",
+      "reference_sha256": "7d1836a419f1388d8e44a7131c7b84d27552ec3351f282a87795dad2dfdc7201",
+      "source_sha256": "8ce762e83855a9747fc3461ba02d21dd26833f418b934a685762632577f75cca",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_076",
+      "pdf_sha256": "1387a39a832ee8fbf09c23dada4f8924e4767b5d39ed89b6b42f46ef57237994",
+      "reference_sha256": "b0565f39031d88912e4b70e5e469f2a4f7f026a1901de12fa6645913908b9d90",
+      "source_sha256": "d3492f206383745f95e83c50c89c9eab6e2d95e59529ba2964c5aba8dc36c27b",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_077",
+      "pdf_sha256": "26cba4b70e87b8d698cdb978dc5c93e2dc161ff285d34fa132a4b830e47a08ee",
+      "reference_sha256": "6ea8b7d81fe631800827cc56b83a2cf97b7233cae296a37137f75d1f402f6c08",
+      "source_sha256": "685c4c7e6d62740b0a85df9e1f4e644b173fcb5e619a092d197b932445d4ae4e",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_078",
+      "pdf_sha256": "ed312e82e0466efa1d85e88ef456813237b9b4abd251b0817f27366c500c7241",
+      "reference_sha256": "37283505b04ac8662586237cc4236685654683ecc26b399e7dd1d86d0d7e4b72",
+      "source_sha256": "728961c99987b48ed0564406b8b7db0ca9891f87c367975f7f03b34fc017680a",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_079",
+      "pdf_sha256": "23b40be6a1d93384e5f30dcbe733953f6c127fea089950f49f0f79a517ce3ecc",
+      "reference_sha256": "48cd4614e0b31e90ea35424495accee401a8c651cc4ed2a7219e38e3d5adf3b3",
+      "source_sha256": "383b20bb156cbac99caf981b8d76c864984218ca41c9f60d3f663b7a79a7b563",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_080",
+      "pdf_sha256": "6d11561375afda584a6d7611faa21ca93689d51138222644014e5481779c1cc8",
+      "reference_sha256": "74392585c58582eaa27d060c89080083ffafc9d7289349e8bcb24d523e3acc79",
+      "source_sha256": "ac8c9519e0a2d91f0e956b212a316854d2c4cc28a75525d3f840d811a1bbb032",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_081",
+      "pdf_sha256": "fc028fcef5b311fadfdc52c4ef32c12cc841bab94709310aa26a37617dab1428",
+      "reference_sha256": "bdfe30436000749354101a4c6d0fa548bc39e15e23a501e3cc8f121768a34524",
+      "source_sha256": "4058c968c01f53e4a6a9f45665a68ddfb929777d8bb26ce5b6d91998eb26c0d3",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_082",
+      "pdf_sha256": "884a8235e3ace28be771ed5b837303be0ffa548e99e6ba49824097c040b0296f",
+      "reference_sha256": "0b997980f5835ee78876e0ad723086199a341d311b37dfb785ee976b3a6f99c1",
+      "source_sha256": "25e6b9131ce0c7b6afc41528151fb5e5f97188e3fbe9dda841187fc900e4eff3",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_083",
+      "pdf_sha256": "64ba8913459e1487f1b1c837da08eb982799a223e460f96c3f296a8a862bed99",
+      "reference_sha256": "ab6cd89788febbb57759104230f576236ebecb3b9da559f4defbf88deb74d7de",
+      "source_sha256": "be77754ddbefbcdf206460708c019abf73434eab84b8b204e1ecb64c5bc110fb",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_084",
+      "pdf_sha256": "72c0e2113aa66f2c8d76009dbbf667c2e91134f5d7d6ec32028dcc83da479ff0",
+      "reference_sha256": "cdefb6fbfc24f8dad0d948a0e914036c1986ee9f2b472426fb2669400fb0f8f5",
+      "source_sha256": "bfaf2489ad695003f00c873cd47f7ad5b58639acd4b08ae24d43f2fe6e1896d9",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_085",
+      "pdf_sha256": "383ad6099b4979f0805f4fd1d00289644ce2c648af79a1adc15972c23be53678",
+      "reference_sha256": "e66e1e0018130c8ad615e86c59ccbf9cc5dbf29a4f694111b9ab16965b2dc739",
+      "source_sha256": "ae7278f47099c33cd123ec320b4cfb63e49bc89585a49e163f2df374b064d012",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_086",
+      "pdf_sha256": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+      "reference_sha256": "c484f5bbecdb59e643636583659082decd74711a8b486926658a5300080489e4",
+      "source_sha256": "80b95163ebf02f6e1170d6f8b1f983b6251c010ca79bfdd68a2ba56364d01927",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_087",
+      "pdf_sha256": "87cce5babdd78e0078f07d68ce8b836a75ebe85be3230d823eeeb0c01dce5f26",
+      "reference_sha256": "1491bd11c123b23ce344f1e2bfaa2c2fe5468df053e37627fc387cc9fb7acb28",
+      "source_sha256": "ecc7f19807e61d9fa30f407ba63234deb5fa7f9be33722b433794f7655aa01c3",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_088",
+      "pdf_sha256": "324534ee9575a29a5b441fbcfe994cf7f3aeead9838c8bb64f024fca6eba7fe9",
+      "reference_sha256": "319085f6dd57f1bf1695a4d1c343dc683f6575a61ef9158945b7e83753df63ce",
+      "source_sha256": "e3b11a612a79627a77939fb8b2d7292db76716f65301358a016c5461ce0ebca4",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_089",
+      "pdf_sha256": "e3600b2894f53122347645f4d2f2d6091badc6c840f949f24944cc96164b121c",
+      "reference_sha256": "21060c28031fabfc5f9deac5b52a558b32b8f148d2ba1fc3a1883169e3a468ac",
+      "source_sha256": "495fc8dbbd1e67d856bd3ae0f08e2d0cd6fb3d186c971a885fcd089da85800e4",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_090",
+      "pdf_sha256": "803b45d747376a53acb941fb443c9cb65c9fca0361f84ae1d204c1c15e3dbf85",
+      "reference_sha256": "ef77b7dd742005e58b9eb72667c7d4453606556f4186265a886f7c584468b0f1",
+      "source_sha256": "3b915bc00cbffe081bc6209386d807e9eebb130899b001ae17e7f840725bd3ae",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_091",
+      "pdf_sha256": "df206e2680e947a1b954cd2007e3b5287e2f01c0c76196e98702f2da196fb216",
+      "reference_sha256": "4595b10a528a075186c2ba6cdb4d05ad6236fc3d25406009cc81e8663b07e6e0",
+      "source_sha256": "3e25486e35e43036410669365c689944461815e90facd8fe94c43d8a23a317a3",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_092",
+      "pdf_sha256": "9d21c81901a454dafe882b76255021f0f7783297c13f27f7d4825856963e0ed0",
+      "reference_sha256": "c582300b98c3931471a9360807c9d05697ff224afe4862fdfe4e10e279284c98",
+      "source_sha256": "ccdc2c611b119fa3004561561474ffe7e482cfc01c87be4d108f369f4edd8a55",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_093",
+      "pdf_sha256": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+      "reference_sha256": "77c6a695057628c6cb4d1e2eedc42d3a7588e3548b5a71586865a959ca1f6994",
+      "source_sha256": "86a45290a7139612c4741e61f70c9a244850f20a8756b8fc7bd8a8ec42f9eafb",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_094",
+      "pdf_sha256": "dff4830e9b3025ab83f299892c62be9eefcb4198b228ea9b37339533a05b1ae2",
+      "reference_sha256": "259e09ba98721ae20ce6a3e4964857976ee76e13ceba7b2cfbb368cfd95e59da",
+      "source_sha256": "11aae65c1b4268c49bf4ea141bb0d7de7f789583ce149b9d6d7995d6625eac57",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_095",
+      "pdf_sha256": "97b09860078e5b019cd4a7e10d8f5ba43fb46b8c0f394114b9c7df9fc9ee2a17",
+      "reference_sha256": "ff81fd3f286d06db0e537a7e34679b022a6e74553336a3710c4ceac455d67b80",
+      "source_sha256": "222ccbc6d71f12c307556a4e6bd7fc1ed63f0e8ead3bf73a3295199f4cd767d6",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_096",
+      "pdf_sha256": "f28677ae569b4f5878b42d7fb8b825da2ffaf9b5e2336493a52b862cd00b95b5",
+      "reference_sha256": "10bf0c67c9ebdf920f569bf63abf220e6ef5686f2bf9af45c2b1f6449908173e",
+      "source_sha256": "d5f5d4196a4ba02e063a637de9fe7163c8093076ca15d4f42ad377e16eb2b279",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_097",
+      "pdf_sha256": "2b32a3b814b4ebdd41fe57aad1c280f54447a981e7e250c409246c4aec436c14",
+      "reference_sha256": "e6180ffab355e3828353d5598cb04e5ab8325ea9a0893beb40d52c23f411b430",
+      "source_sha256": "7ead99e480911d1e2cd8bff38ea05695d1b9740b71ac29b2b4b79b9affa62b0a",
+      "template_style": "economy",
+      "complexity": "complex",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_098",
+      "pdf_sha256": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+      "reference_sha256": "e65a5dfe581cd77a71d16113f73558826dc1754faf16ee011e55f300a430109c",
+      "source_sha256": "9f471c7661120dc2218b4931b5841adba390e6eee2466105507b9f4e510694d9",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_099",
+      "pdf_sha256": "3f891041a18bc38a2ba060d2c313c07440b6c5c8a3e9ff9210b1d17df2410778",
+      "reference_sha256": "9439ea4e830e62b9674ef6696c1ece0398985290ba7d60e30277527d5cee9e68",
+      "source_sha256": "b657a3fabb0a27c7db3b86a7b33cc61066a02bb68c6995df30a9a20e86536bb6",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "eligibility": "eligible"
+    },
+    {
+      "document_id": "invoice_100",
+      "pdf_sha256": "49f457a3696104ef505699af90cd00d378b824477555cda68d8ec3d432611d9c",
+      "reference_sha256": "c8cc2e57c3e622b69b8b1e1ef598d5a87c6ecf305501c91038c38d4197a40ba0",
+      "source_sha256": "2e7faa09bda9f188ed4001be1b262d9875475a9a7161ec029eead2a86f85bed9",
+      "template_style": "economy",
+      "complexity": "medium",
+      "eligibility": "eligible"
+    }
+  ],
+  "pipelines": [
+    {
+      "pipeline_id": "pypdf",
+      "options": {
+        "extraction_mode": "plain",
+        "backend_name": "pypdf",
+        "cache_mode": "bypass"
+      }
+    },
+    {
+      "pipeline_id": "pdfplumber",
+      "options": {
+        "layout": false,
+        "x_tolerance": 3.0,
+        "y_tolerance": 3.0,
+        "backend_name": "pdfplumber",
+        "cache_mode": "bypass"
+      }
+    }
+  ],
+  "timeout_seconds": 60,
+  "execution": "sequential fresh spawned worker per pair; cache reads/writes disabled",
+  "timing": "call/read/retention after backend initialization; wall includes cold startup",
+  "parser_denied_read_components": [
+    "references",
+    "ground_truth",
+    "ground_truth_backup",
+    "sources",
+    "metadata"
+  ],
+  "planned_pairs": [
+    {
+      "document_id": "invoice_001",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_002",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_003",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_004",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_005",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_006",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_007",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_008",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_009",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_010",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_011",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_012",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_013",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_014",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_015",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_016",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_017",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_018",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_019",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_020",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_021",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_022",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_023",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_024",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_025",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_026",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_027",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_028",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_029",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_030",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_031",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_032",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_033",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_034",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_035",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_036",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_037",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_038",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_039",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_040",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_041",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_042",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_043",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_044",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_045",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_046",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_047",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_048",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_049",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_050",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_051",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_052",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_053",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_054",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_055",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_056",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_057",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_058",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_059",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_060",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_061",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_062",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_063",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_064",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_065",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_066",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_067",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_068",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_069",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_070",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_071",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_072",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_073",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_074",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_075",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_076",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_077",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_078",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_079",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_080",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_081",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_082",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_083",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_084",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_085",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_086",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_087",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_088",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_089",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_090",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_091",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_092",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_093",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_094",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_095",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_096",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_097",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_098",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_099",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_100",
+      "pipeline_id": "pypdf"
+    },
+    {
+      "document_id": "invoice_001",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_002",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_003",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_004",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_005",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_006",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_007",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_008",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_009",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_010",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_011",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_012",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_013",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_014",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_015",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_016",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_017",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_018",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_019",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_020",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_021",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_022",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_023",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_024",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_025",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_026",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_027",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_028",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_029",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_030",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_031",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_032",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_033",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_034",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_035",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_036",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_037",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_038",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_039",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_040",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_041",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_042",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_043",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_044",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_045",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_046",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_047",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_048",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_049",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_050",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_051",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_052",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_053",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_054",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_055",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_056",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_057",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_058",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_059",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_060",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_061",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_062",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_063",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_064",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_065",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_066",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_067",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_068",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_069",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_070",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_071",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_072",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_073",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_074",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_075",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_076",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_077",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_078",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_079",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_080",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_081",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_082",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_083",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_084",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_085",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_086",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_087",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_088",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_089",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_090",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_091",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_092",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_093",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_094",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_095",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_096",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_097",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_098",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_099",
+      "pipeline_id": "pdfplumber"
+    },
+    {
+      "document_id": "invoice_100",
+      "pipeline_id": "pdfplumber"
+    }
+  ],
+  "files": {
+    "inputs/invoice_001.pdf": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+    "references/invoice_001.json": "cb0addd1ddb309df0b30cd3f2f916d7611fa3c323daca858a95858aab808f6d6",
+    "inputs/invoice_002.pdf": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+    "references/invoice_002.json": "e0be10de9956f9c72d569574e6febe7e3260a2826d596889e88b67d22df969bd",
+    "inputs/invoice_003.pdf": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+    "references/invoice_003.json": "152aa63f467c61fb8dc421286ed5984e59f65e1b557cf966aee7c7a3d4409dd2",
+    "inputs/invoice_004.pdf": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+    "references/invoice_004.json": "3dae7c3cd37343806cd60d0b168e4a54f30eb85a18bb4e016e840d53983d007f",
+    "inputs/invoice_005.pdf": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+    "references/invoice_005.json": "672b94013a24ca4495582b6d6c0a19714e0020e67c3ffe4ea4b4cdb1f8a4a665",
+    "inputs/invoice_006.pdf": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+    "references/invoice_006.json": "82578ac4b59ff005f4f210bac9a35b70bbfc5f37c9b5cf61fcf906c831e1c225",
+    "inputs/invoice_007.pdf": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+    "references/invoice_007.json": "54f18de3f11dbedb7d0508cbf81b9bb2175e7f080caf7371c7221e137faf25dc",
+    "inputs/invoice_008.pdf": "3ea084ec8af6079de98cbbdebe9cb43a733c17c15847f6db21647b772647c42a",
+    "references/invoice_008.json": "0665a30788a05502d7837ca8b0450c21c60a99dbf0b438cf79eef17972dfd998",
+    "inputs/invoice_009.pdf": "3396e9c3da53ece2a27dc8b702d82233c0658e3684d941ff814332990264a915",
+    "references/invoice_009.json": "27af251ff02fb9b75bb1ba9490c84d4a937ff699fbec79482ec90d43f5067b62",
+    "inputs/invoice_010.pdf": "75283a63c5d9ccc9a136eb6f96de9b1f80b4a30742d36ea849ec93eed6be7543",
+    "references/invoice_010.json": "0111a066cd109bd3f68624df25e1129add00f1dd18d261d7f7bf7a01629c0a39",
+    "inputs/invoice_011.pdf": "66e6ef089381719efdaf6ad6c4433f6c563288e8090dc886b5e71b6d116403c0",
+    "references/invoice_011.json": "e703ddfb37d809a2e1599548c2adbde8d81e3cfba76d9b3d495c08a3e9bee44a",
+    "inputs/invoice_012.pdf": "00d820df793677f7c014670e11b5e17ad6ac3210aa02ecae963d60d481245eb4",
+    "references/invoice_012.json": "73e9732b037f7fbb38c2d79362452a1747665a8a3c5af7c6580beb9696f0c479",
+    "inputs/invoice_013.pdf": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+    "references/invoice_013.json": "cb3d68310ef18e0837e85834f5301b45dbdf083e4712b667b7e1333f5991f213",
+    "inputs/invoice_014.pdf": "55d1d5128f667980b1d36dabb07b2f9dbe4cf1b441f75ce747b3447c59901856",
+    "references/invoice_014.json": "5e0bf7aa10df1bc97adf32a42aec0324b5692b00deb7016f24fa276010269967",
+    "inputs/invoice_015.pdf": "dee528c36e685b876a909fcc3d513c5cce7d57fcab7a2eb65c047c8071a2e854",
+    "references/invoice_015.json": "f3671179ff00fd03b607256dabe0102bfb28cd761b44363ae9ea941655b5a627",
+    "inputs/invoice_016.pdf": "929346d201bb12cb82c64d5114273f66a9959f77b91e558a12e72e85001ecc10",
+    "references/invoice_016.json": "c5a24beed703238ab8ea815ed210d515bdc8d8e58cac19eb053d1cb75aa1da69",
+    "inputs/invoice_017.pdf": "3d3deee9f6ed5f72a4bfe05d0ac075c622a7103d9aa657916922d74473faace3",
+    "references/invoice_017.json": "d80393cf6641da3cddd501608a0805ac4906782086ee169b0f59fafa85d5cb4b",
+    "inputs/invoice_018.pdf": "cac4d69876239e61e8d0cf87c312ce85f472b485c208214a8b785cbe4543b304",
+    "references/invoice_018.json": "12bcd2df75eca79335e90863c43429d56028bd1156e906cf0891151fc9af33b4",
+    "inputs/invoice_019.pdf": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+    "references/invoice_019.json": "6ca3ea321659ebc99c0a07131ac16d854cee62dc751f27730ba67c7c9ce2324c",
+    "inputs/invoice_020.pdf": "bafa7d22fc6bffbfc0a45078d95fb07990fccb375affc3d785348801ff8b855a",
+    "references/invoice_020.json": "9f3504db3227014f2adb7e7fd3651ac21a9597b142ccc81a7ac4cf828174ea76",
+    "inputs/invoice_021.pdf": "892502d4b309267492d5538d8ce107960f4ccadc89559ae2d691c5b6890d1aca",
+    "references/invoice_021.json": "d66b20eff35566cb4b965de7cf22207f16404277e34252a3e841b29bac6509fa",
+    "inputs/invoice_022.pdf": "68f5e47d12264cd5fac463c2336ab721fcae442bd27029efd123f178a3c21c2b",
+    "references/invoice_022.json": "547051943f9e094c330f77fb58fbe57a4df12a2f9e9a90f00998282b6724a050",
+    "inputs/invoice_023.pdf": "1c540386f722907310729f502979e37ed45a54d96293e43fdd16da71ad7e0b90",
+    "references/invoice_023.json": "c33b6abddfef677fd53910c34ca2a0d36d04131dc6b7366ab0cc3e27f19f9bcc",
+    "inputs/invoice_024.pdf": "677bfeb9bdb3dc417b443837f0f45a7ac4c3c3a2b9aeeae9343902391d1a3fd1",
+    "references/invoice_024.json": "f29557081d2342a83f6796b301adaa52a6672bfdf206da45838e5502e3bcc4d1",
+    "inputs/invoice_025.pdf": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+    "references/invoice_025.json": "23d6d36957b9b2bcd452476696f216104eb2774f43893d0cdbff71a5194d604c",
+    "inputs/invoice_026.pdf": "1fc1a86ffaf606dbe07f04e1430102c8a6f614c671ac1f618b1cc18336490cdc",
+    "references/invoice_026.json": "22b12135c9ecb403855c264b4268e7767e76d792ab2e2c62bb1cb0bb076d6241",
+    "inputs/invoice_027.pdf": "6005ae024604bc2bcf5ff2964fa679586eee4c6c3fa386e05d5df07c4238f285",
+    "references/invoice_027.json": "e144b9d04b6c132ed763603ca2fd5625b41c9fa39d1dd4ad85ea0c76bb1888e0",
+    "inputs/invoice_028.pdf": "bde7647e1f76bd6bd2922fa66a7140266d23fa4bc295a1df8d453d7346d308ad",
+    "references/invoice_028.json": "5a91044e09b0d8c0d407e3b6c04012efdabb4eb50f3205dbe6778064abb91927",
+    "inputs/invoice_029.pdf": "b399fd421ad47e0ea2fb3f558e2b6639252231e96d04b6e99f683d5e74f93e7e",
+    "references/invoice_029.json": "e72e7d3c09f24e430aeb0c988f272edd2dbe993f5311060238701b493640617e",
+    "inputs/invoice_030.pdf": "c6fa6f569901ed568acaf62a8a8ddf4ae4f67582e3dddb59a7dff1889d0142e2",
+    "references/invoice_030.json": "7292e208badcf7f30d8388c66472ee47b0df4818ed9483e4b8746bd3fe9eb3a2",
+    "inputs/invoice_031.pdf": "d5f2c9ac4a8e6a11773bf3c1106b327ceb7cb3ec2a522765f45614b28263e5ce",
+    "references/invoice_031.json": "add0eebaf58f8c1bab9374de4444afdd3bc93e760019c03b462215f9a9cdf889",
+    "inputs/invoice_032.pdf": "5ebbbed682efd95727086c01eb8d96f7d9ecc4e3c3d248140a9eff3efc206f31",
+    "references/invoice_032.json": "c893e1ba25488b70774c86c09d8741b803ae0ca579081a30a58b5701be54370c",
+    "inputs/invoice_033.pdf": "47ed9a766ca7d7e08e0568535278ddff0dc075c98c5b206b596d5450d627909a",
+    "references/invoice_033.json": "344a16ea195d717427bfde6f245e61238b87cd2ca4b829b9a132fed58ced28c0",
+    "inputs/invoice_034.pdf": "3d25836f8d93aa9d77a256f43d1c6a565ad8ec83bab65a6ddec0e631ea0d3805",
+    "references/invoice_034.json": "697dc733a007c3ec5b2dc81301086c5d75e4fbc0ae15c70ca444d2380746b989",
+    "inputs/invoice_035.pdf": "f92d6e44cc2e71804467f9acfce6e0b42e9d2c588fe6eb030624b2691bf3436b",
+    "references/invoice_035.json": "2a4f7fb143d1f3eba409054f898b31f096d76d8e30abe6d1a1558b5ff99aac14",
+    "inputs/invoice_036.pdf": "64937ed4af19c51f1bf77a85e6c8d0a422663742eed16bb5b12cfc577c6bc034",
+    "references/invoice_036.json": "8eef1b071a00a50cfa7e7fd8c7d087a64a8a5f5e6efe6450103cad8a2942b2c0",
+    "inputs/invoice_037.pdf": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+    "references/invoice_037.json": "37b04d71c8585318a9ba969c6fae21f001164b1f19cf7cf093f8161098538382",
+    "inputs/invoice_038.pdf": "56b1df974fca082ecf9bdea924e4917f0fd4e13ef90a1b4a27ae9e97205337ce",
+    "references/invoice_038.json": "6f41d2d2c8a2677fb49be4ebf34fea3d1c12e44f808a67ab1ceb50e811e71b3c",
+    "inputs/invoice_039.pdf": "b6e5d3083bfdbfb2901a3866f60abacc9fe7be95f0fd07816b5c088b8c84417b",
+    "references/invoice_039.json": "bde9a46e20668551299ae930d05f3b10d80ffc94020fc2f7bf0d639b611bb69d",
+    "inputs/invoice_040.pdf": "694c3fe505c42b1e9f3a70569beadb0695f47b7e25d1824ae48e6b0f8dcbe4e3",
+    "references/invoice_040.json": "b7f91c62aadbb00506d9c64dab4d133227ae276e89869b3025b09ae7e8f1ca4a",
+    "inputs/invoice_041.pdf": "d62fed2142a6a3807099d437cd0d6f499005c95a9bac13bda226988ec143ebef",
+    "references/invoice_041.json": "fb95a1fcea2b164b8ceaf552516aa1a624fd77de6718556b2ae080099f809c15",
+    "inputs/invoice_042.pdf": "705541c16fac3168f38c1126c23747f6be3ef9192a06bf69dbf95d59c7f06a0b",
+    "references/invoice_042.json": "86dcd2a9fcb7a95829784fa2b206e94a9db276cd2cd30c64028aca04afa3d0d4",
+    "inputs/invoice_043.pdf": "150eb334595390e3196dd021b75a0344291777f34946c277c51277d1d53ffe34",
+    "references/invoice_043.json": "bfc76bfbc2e11f8dd73b7058b344eda1dd56d08cae9fec963c69e197377a2944",
+    "inputs/invoice_044.pdf": "4593063da594cd7b052ae1a47cbbb3f3e3763b891f515a02cef372506cba0c3b",
+    "references/invoice_044.json": "01ae348b6e4f784b613594f61ae4d221b5cc6c09736d9a806950834d91466ea9",
+    "inputs/invoice_045.pdf": "360820672bcd37adcdbffbd50edd51d3cf4527a6f97e50f70781ba55e30c5e4d",
+    "references/invoice_045.json": "06c7250ee2fdde61344415efd568034e2aa93a8caf8e62ca9417ca8ab70cf6ad",
+    "inputs/invoice_046.pdf": "4119e53b581487746ed4b917ee904120de5752a66104f25d9acbd53c53e22e2d",
+    "references/invoice_046.json": "335c0d4adaee7126ad437f6cdca0fbde6a978c9b194c8a1673192f4d813d1d7b",
+    "inputs/invoice_047.pdf": "f06c92e3cf6eed14e5df9a5bf9feab8f596719a9507cde417df1d9f5a8f2d6b8",
+    "references/invoice_047.json": "c24fb1b7a7831c5cbb5acd98d9d107dd5286eecf261418e9bdc635317e20d98c",
+    "inputs/invoice_048.pdf": "907236d8bcdd2a308a1a12137d7e4bc7ab33acc7703b414dcaa51718a49a88e2",
+    "references/invoice_048.json": "e8cb9f71d82cb0efc86ca1b55478c91e83168dda107b811f912bad99fabfff01",
+    "inputs/invoice_049.pdf": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+    "references/invoice_049.json": "adf1e988c7426bb46ae521fce5eea7bf02d67750edff0319dbeeb3235d21e705",
+    "inputs/invoice_050.pdf": "097e94baf27afa5a092642425e7b53a67ede026bccaf3e3ef9590f44351864a6",
+    "references/invoice_050.json": "4dd640db5875c8abc51df833fd98673f06792c040091370e63a9f08a5e8f2e8a",
+    "inputs/invoice_051.pdf": "44a6e39b690ca0f672b36eb88f7ff82c379cd58539206a8eefecd856463f71c1",
+    "references/invoice_051.json": "491ce534557483373502f7679567612b1345e4547e9a3d1c985b8deecc08930b",
+    "inputs/invoice_052.pdf": "11bbd2b2ab2ecd8f1795783f76cf7440d74405cf14b2e6082cf61d50b04b9aa2",
+    "references/invoice_052.json": "c5c7e79b31d9f47b66c7589b20a48a62d87422371d6ad6737539c1624d3f59f2",
+    "inputs/invoice_053.pdf": "f59f5989465c9121fe2f1f2d91576176894ee20715be8be4aa30f439c1d99de7",
+    "references/invoice_053.json": "8d0be7a6e24c46a1aef64693b9d785b8594c0a5b2ae35a46498a317ac8eff344",
+    "inputs/invoice_054.pdf": "6a460522d86588d4ad0d34f4d60280aaedb59ed99e899f4283143bfe3c09cbed",
+    "references/invoice_054.json": "2fd734880bff69fea5ca7be5282f960eb196e47eb22d927ab56ae48b9c0dbcf4",
+    "inputs/invoice_055.pdf": "9bdfa8113d644e6bbb59b6c78a1ff3fff344ca9003dc4fb4da2f257ee75bd962",
+    "references/invoice_055.json": "25538097e28c758bd2ad259efcd62c153b7d433e0e7e2351c5b2ea3aea3b6f20",
+    "inputs/invoice_056.pdf": "c28c787fb4345a4ab3d6bda0f1b85b665b3b9b216b084f35a0f165dfe1b5c388",
+    "references/invoice_056.json": "002ebf5cbc7ccf7408f6dfdb78211672584ad9d99435dd369da84884ea27f870",
+    "inputs/invoice_057.pdf": "9e143f9d494d802d268f83f67477540e3334abaee80be7f36c616c3c42e183f3",
+    "references/invoice_057.json": "843efe3f7c778375611516425a65bd65c8e6e752e8ff0491fb2e41ae95868e14",
+    "inputs/invoice_058.pdf": "55147c2ae1c655ca3a191151401f144e1190e7b1f70db5646c2e1ff74d0cb29a",
+    "references/invoice_058.json": "e20847f484480fcad300eda0a2580aed949a6556a9e329f2e0b56b884a55b0c0",
+    "inputs/invoice_059.pdf": "f7cedf1f34124a2d54add9714abb319ba716989eaa4029cd0ab41c68cd59ffe1",
+    "references/invoice_059.json": "af72b448009ac249145a8d422e333d4febc707f2d87e03594666b04a6c445efd",
+    "inputs/invoice_060.pdf": "4b0aca1020a826546f4e6ec1f72acad2f975d1f921aab69acbf1e8f4904de7c1",
+    "references/invoice_060.json": "82eb5092a7ea74b3a6a151df43953b50efe7c5e1a1abf16390f7cb5c5ae24120",
+    "inputs/invoice_061.pdf": "a0ef631f990bfefa140a8ecafb8ea3c608621e0202b0e743fd53abafcde78fb1",
+    "references/invoice_061.json": "2a950611a4384fb503756c35962315d7ddaebf80bb84a5c986d0b7aea6f4d084",
+    "inputs/invoice_062.pdf": "6acb613774da9b4747975fc4c182b1c0c97b30b4041baa0b633633276c633fdb",
+    "references/invoice_062.json": "79023676b546299215017889b17b5af3af38c8b0b8b7399c7fe7e17f4af6af3b",
+    "inputs/invoice_063.pdf": "df5f8b0fb0c6bcc754bbba88121d843e889c896e9ad99b2964bc47235f5b3f54",
+    "references/invoice_063.json": "8bef05ee499510fccdaf800fa897301caafe7e068c8617bf01cf40f3ee0b0206",
+    "inputs/invoice_064.pdf": "98b20ef6811cb5b5391139fa256d582e5f278fc099aa9a8e754a0e243d58f8bb",
+    "references/invoice_064.json": "f5734dfc552f51a6ed54602a7edb8b2eceb0673d1f65ce7f778963eb22f87c1d",
+    "inputs/invoice_065.pdf": "97c8f0890d3fa7f0b0b5e64021117bf13348aeda42335d31c806f231b68706d8",
+    "references/invoice_065.json": "b75b490daaa45ce61ba7cf3d0c75a5841676538aae4461ccaf213bb016c27cd8",
+    "inputs/invoice_066.pdf": "6e1f3ef002fbd77e65314b1de8323eea8441c1febf551ab85cf2afb68f6dc3d2",
+    "references/invoice_066.json": "fa738bc4eb7069056ccccdb75a71917e08726ea984215add4caebc3aceb46e9b",
+    "inputs/invoice_067.pdf": "e4c9c14748d965a142e78a50ec0dd4af7230038e9c52d06300bb0bbf7f3113f6",
+    "references/invoice_067.json": "2d7e612efdcdbc1534beed95e2055f29e285ce25a09bebc91d2c6627a357b1d3",
+    "inputs/invoice_068.pdf": "bc55d3356b09f9eb56be650fa2b63ffa6a80d88b4e6b9937719b31bf05a58fce",
+    "references/invoice_068.json": "ab8592ab940d75b5ed5ecab07e969b8ca2789eab79836a3d6ea33be9ad231559",
+    "inputs/invoice_069.pdf": "2910890b973e3ed9abe057d2718aa971a8649dd2e7f3b56d937de6806e0532f9",
+    "references/invoice_069.json": "d052109bcec0024cb15d1e066cd72c4a468bf27acf3ece4ef76ee7ffdf3947d4",
+    "inputs/invoice_070.pdf": "cd371884736f2ac5bac230f7b4a12f5c30b1201929b0f6eda46d46f8330e0365",
+    "references/invoice_070.json": "4383f546a700af1262606cd7732af6307731e98002471e1df6410a96160e469a",
+    "inputs/invoice_071.pdf": "f28148cb2363d06633465589fa7d48e87e71ca740d8b0fccec0175dfe156b4c8",
+    "references/invoice_071.json": "857cf912c56e4a7b84c70e9abf0c678a14091e4a15a65249e002637079feba4f",
+    "inputs/invoice_072.pdf": "2dc5189b3a7f62e2c382b88b500eb5ab9e8b42581ba62bd85c78a5dc9319fabe",
+    "references/invoice_072.json": "c1d38a96bdc9ee0fc745e21c5540ba8ee408156979ea036f767fe3cc6b421ebd",
+    "inputs/invoice_073.pdf": "19681ada6d99b0665b9a59d879852c468b0cc6de9168d0f882c531da453a88a2",
+    "references/invoice_073.json": "7523f63d8d30d9f7ea858962386074311d69a4edd03e00dab893a554b0e1c7e7",
+    "inputs/invoice_074.pdf": "d9a6285b4bfcd2b51317cb621fe7717f25ce14e49f4db7a3a4092074ac2e7d49",
+    "references/invoice_074.json": "c80aeaa11995b9e7c841e1ce08ce3480dffa54dae0e4abc291762a34242912aa",
+    "inputs/invoice_075.pdf": "a852358a7cd82569f4d235c4d55eac3299ada46370a1d4c9e7abe14d8a573f14",
+    "references/invoice_075.json": "7d1836a419f1388d8e44a7131c7b84d27552ec3351f282a87795dad2dfdc7201",
+    "inputs/invoice_076.pdf": "1387a39a832ee8fbf09c23dada4f8924e4767b5d39ed89b6b42f46ef57237994",
+    "references/invoice_076.json": "b0565f39031d88912e4b70e5e469f2a4f7f026a1901de12fa6645913908b9d90",
+    "inputs/invoice_077.pdf": "26cba4b70e87b8d698cdb978dc5c93e2dc161ff285d34fa132a4b830e47a08ee",
+    "references/invoice_077.json": "6ea8b7d81fe631800827cc56b83a2cf97b7233cae296a37137f75d1f402f6c08",
+    "inputs/invoice_078.pdf": "ed312e82e0466efa1d85e88ef456813237b9b4abd251b0817f27366c500c7241",
+    "references/invoice_078.json": "37283505b04ac8662586237cc4236685654683ecc26b399e7dd1d86d0d7e4b72",
+    "inputs/invoice_079.pdf": "23b40be6a1d93384e5f30dcbe733953f6c127fea089950f49f0f79a517ce3ecc",
+    "references/invoice_079.json": "48cd4614e0b31e90ea35424495accee401a8c651cc4ed2a7219e38e3d5adf3b3",
+    "inputs/invoice_080.pdf": "6d11561375afda584a6d7611faa21ca93689d51138222644014e5481779c1cc8",
+    "references/invoice_080.json": "74392585c58582eaa27d060c89080083ffafc9d7289349e8bcb24d523e3acc79",
+    "inputs/invoice_081.pdf": "fc028fcef5b311fadfdc52c4ef32c12cc841bab94709310aa26a37617dab1428",
+    "references/invoice_081.json": "bdfe30436000749354101a4c6d0fa548bc39e15e23a501e3cc8f121768a34524",
+    "inputs/invoice_082.pdf": "884a8235e3ace28be771ed5b837303be0ffa548e99e6ba49824097c040b0296f",
+    "references/invoice_082.json": "0b997980f5835ee78876e0ad723086199a341d311b37dfb785ee976b3a6f99c1",
+    "inputs/invoice_083.pdf": "64ba8913459e1487f1b1c837da08eb982799a223e460f96c3f296a8a862bed99",
+    "references/invoice_083.json": "ab6cd89788febbb57759104230f576236ebecb3b9da559f4defbf88deb74d7de",
+    "inputs/invoice_084.pdf": "72c0e2113aa66f2c8d76009dbbf667c2e91134f5d7d6ec32028dcc83da479ff0",
+    "references/invoice_084.json": "cdefb6fbfc24f8dad0d948a0e914036c1986ee9f2b472426fb2669400fb0f8f5",
+    "inputs/invoice_085.pdf": "383ad6099b4979f0805f4fd1d00289644ce2c648af79a1adc15972c23be53678",
+    "references/invoice_085.json": "e66e1e0018130c8ad615e86c59ccbf9cc5dbf29a4f694111b9ab16965b2dc739",
+    "inputs/invoice_086.pdf": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+    "references/invoice_086.json": "c484f5bbecdb59e643636583659082decd74711a8b486926658a5300080489e4",
+    "inputs/invoice_087.pdf": "87cce5babdd78e0078f07d68ce8b836a75ebe85be3230d823eeeb0c01dce5f26",
+    "references/invoice_087.json": "1491bd11c123b23ce344f1e2bfaa2c2fe5468df053e37627fc387cc9fb7acb28",
+    "inputs/invoice_088.pdf": "324534ee9575a29a5b441fbcfe994cf7f3aeead9838c8bb64f024fca6eba7fe9",
+    "references/invoice_088.json": "319085f6dd57f1bf1695a4d1c343dc683f6575a61ef9158945b7e83753df63ce",
+    "inputs/invoice_089.pdf": "e3600b2894f53122347645f4d2f2d6091badc6c840f949f24944cc96164b121c",
+    "references/invoice_089.json": "21060c28031fabfc5f9deac5b52a558b32b8f148d2ba1fc3a1883169e3a468ac",
+    "inputs/invoice_090.pdf": "803b45d747376a53acb941fb443c9cb65c9fca0361f84ae1d204c1c15e3dbf85",
+    "references/invoice_090.json": "ef77b7dd742005e58b9eb72667c7d4453606556f4186265a886f7c584468b0f1",
+    "inputs/invoice_091.pdf": "df206e2680e947a1b954cd2007e3b5287e2f01c0c76196e98702f2da196fb216",
+    "references/invoice_091.json": "4595b10a528a075186c2ba6cdb4d05ad6236fc3d25406009cc81e8663b07e6e0",
+    "inputs/invoice_092.pdf": "9d21c81901a454dafe882b76255021f0f7783297c13f27f7d4825856963e0ed0",
+    "references/invoice_092.json": "c582300b98c3931471a9360807c9d05697ff224afe4862fdfe4e10e279284c98",
+    "inputs/invoice_093.pdf": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+    "references/invoice_093.json": "77c6a695057628c6cb4d1e2eedc42d3a7588e3548b5a71586865a959ca1f6994",
+    "inputs/invoice_094.pdf": "dff4830e9b3025ab83f299892c62be9eefcb4198b228ea9b37339533a05b1ae2",
+    "references/invoice_094.json": "259e09ba98721ae20ce6a3e4964857976ee76e13ceba7b2cfbb368cfd95e59da",
+    "inputs/invoice_095.pdf": "97b09860078e5b019cd4a7e10d8f5ba43fb46b8c0f394114b9c7df9fc9ee2a17",
+    "references/invoice_095.json": "ff81fd3f286d06db0e537a7e34679b022a6e74553336a3710c4ceac455d67b80",
+    "inputs/invoice_096.pdf": "f28677ae569b4f5878b42d7fb8b825da2ffaf9b5e2336493a52b862cd00b95b5",
+    "references/invoice_096.json": "10bf0c67c9ebdf920f569bf63abf220e6ef5686f2bf9af45c2b1f6449908173e",
+    "inputs/invoice_097.pdf": "2b32a3b814b4ebdd41fe57aad1c280f54447a981e7e250c409246c4aec436c14",
+    "references/invoice_097.json": "e6180ffab355e3828353d5598cb04e5ab8325ea9a0893beb40d52c23f411b430",
+    "inputs/invoice_098.pdf": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+    "references/invoice_098.json": "e65a5dfe581cd77a71d16113f73558826dc1754faf16ee011e55f300a430109c",
+    "inputs/invoice_099.pdf": "3f891041a18bc38a2ba060d2c313c07440b6c5c8a3e9ff9210b1d17df2410778",
+    "references/invoice_099.json": "9439ea4e830e62b9674ef6696c1ece0398985290ba7d60e30277527d5cee9e68",
+    "inputs/invoice_100.pdf": "49f457a3696104ef505699af90cd00d378b824477555cda68d8ec3d432611d9c",
+    "references/invoice_100.json": "c8cc2e57c3e622b69b8b1e1ef598d5a87c6ecf305501c91038c38d4197a40ba0",
+    "evaluation-code/invoice_extraction.py": "985c358d68169ca6cfba34c73cc42320f939f1605447356be96ddfc9df44f286",
+    "evaluation-code/invoice_task.py": "31dbb02cea0b4f4d0f49ba48dfd0716235b011776720e1670e0e94543ce422f1",
+    "offline-regrade.py": "b171dcc632b94946b23398be682a4bad50f8ca1040b5bda78f3b86f78de1bf23",
+    "task-protocol.json": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e",
+    "environment.json": "e476bfc0de761b0b09227fa705ab45194ecf6e80ab27ea20c277a0d55118d6c2"
+  }
+}

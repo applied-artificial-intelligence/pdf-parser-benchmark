@@ -149,3 +149,20 @@ implementation identity exactly matches the host. PDFsmith distribution/source
 version disagreement is preserved by a scoped local replay wheel, not corrected
 or presented as an official release. No primary scored outputs exist at this
 checkpoint. Next: execute the same frozen plan twice plus a relocated fresh run.
+
+Issue 6 CLI-path correction and frozen runtime revision 2
+The actual first CLI invocation produced one retained raw output, then failed
+before its first terminal journal row because relative output roots were compared
+with absolute retained paths. No completion or latest pointer was registered.
+The exact CLI regression was red before resolving plan/output roots and green
+afterward. Original plan/runtime and incomplete bytes remain retained. New v2
+plan has identical 200 pairs, PDFs, references and options; only execution code
+and implementation snapshot changed. Full suite: 964 passed, 18 skipped.
+The five separately labelled mechanism controls pass: two actual corrupt-input
+failures, two blank-output outcomes and a started/stopped delayed writer timeout.
+An actual eligible-input timeout control also keeps both parsers fixed denominators.
+Scored execution will use the frozen local wheel outside the live checkout. The
+shared PDFsmith registry changed under its other owner between snapshots, so the
+new artifact records its exact used bytes. Actual execution environments are now
+retained separately from preparation metadata. No primary quality result is
+registered yet. Next: two full fresh executions and a second relocated replay.
