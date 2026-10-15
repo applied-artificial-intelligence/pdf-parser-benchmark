@@ -114,6 +114,13 @@ def save_results(
             "metrics": _serialize_metrics(result.metrics),
             "error": result.error,
             "parse_time_seconds": result.parse_time_seconds,
+            "parse_outcome": result.parse_outcome,
+            "wall_time_seconds": result.wall_time_seconds,
+            "output_path": result.output_path,
+            "output_sha256": result.output_sha256,
+            "error_type": result.error_type,
+            "metric_outcomes": result.metric_outcomes,
+            "evaluation_errors": result.evaluation_errors,
         }
         serialized_results.append(serialized_result)
 
@@ -168,7 +175,14 @@ def load_results(input_path: Path) -> BenchmarkResults:
             success=result_data["success"],
             metrics=_deserialize_metrics(result_data["metrics"]),
             error=result_data.get("error"),
-            parse_time_seconds=result_data.get("parse_time_seconds", 0.0),
+            parse_time_seconds=result_data.get("parse_time_seconds"),
+            parse_outcome=result_data.get("parse_outcome", "unknown"),
+            wall_time_seconds=result_data.get("wall_time_seconds"),
+            output_path=result_data.get("output_path"),
+            output_sha256=result_data.get("output_sha256"),
+            error_type=result_data.get("error_type"),
+            metric_outcomes=result_data.get("metric_outcomes", {}),
+            evaluation_errors=result_data.get("evaluation_errors", {}),
         )
         document_results.append(doc_result)
 

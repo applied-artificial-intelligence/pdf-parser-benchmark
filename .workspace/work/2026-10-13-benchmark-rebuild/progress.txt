@@ -57,10 +57,14 @@ initialization outcomes, records started-call failure duration, and enforces a
 typed wall deadline. The delayed control proves its parse started and its writer
 process is gone before returning, so it cannot produce late output. A real
 same-stem PDF through two actual pdfplumber option sets has separate output bytes.
-This engine is not yet wired into legacy runner or the primary invoice run.
-Next bounded step: share execute_parser between legacy sequential/parallel paths,
-round-trip actual constructor options, serialize explicit outcomes/output hashes,
-then build the fixed-population immutable comparison bundle and its provenance.
+The engine is now shared by legacy sequential and parallel dispatch. Exported
+rows retain exact output paths/hashes, typed outcomes and timing. Metric errors
+remain separate from successful parsing; incompatible pairs remain visible.
+Two actual backends on a same-stem PDF retain distinct outputs, and an actual
+blank PDF retains an explicit empty outcome. Full suite: 944 passed, 18 skipped.
+The inherited local smoke module/tests were adopted to use these exact artifacts.
+Next bounded step: freeze the fixed-population comparison plan and identities,
+then retain independent prediction/grading stages in an atomic completed bundle.
 Current PDFsmith metadata: distribution 0.2.0, source declaration 0.3.0.dev0;
 record actual identity rather than hard-coding the older reviewed source version.
 Compared primary invoice outputs remain pending.

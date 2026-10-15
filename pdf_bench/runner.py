@@ -1,12 +1,17 @@
 """Benchmark runner that orchestrates parser execution and metric computation."""
 
+import hashlib
+import inspect
+import math
 import multiprocessing as mp
 import sys
-import time
+import uuid
 from dataclasses import dataclass, field
+from multiprocessing.pool import ThreadPool
 from pathlib import Path
 from typing import Any
 
+from pdf_bench.execution import execute_parser
 from pdf_bench.loader import IMAGE_CAPABLE_BACKENDS, DocumentInfo, LoadedConfig
 from pdf_bench.metrics import (
     MarkdownASTParser,
@@ -40,14 +45,12 @@ except ImportError:
 
 # Wrapper functions for AST-based metrics
 # These metrics need parsed AST objects, not raw strings
-_ast_parser = MarkdownASTParser()
-
-
 def _tree_similarity_wrapper(ground_truth: str, prediction: str) -> float:
     """Wrapper for tree_similarity that handles string parsing."""
     try:
-        gt_ast = _ast_parser.parse(ground_truth)
-        pred_ast = _ast_parser.parse(prediction)
+        parser = MarkdownASTParser()
+        gt_ast = parser.parse(ground_truth)
+        pred_ast = parser.parse(prediction)
         return tree_similarity(gt_ast, pred_ast)
     except Exception:
         # Return None on parse failure (will be converted to NaN)
@@ -57,8 +60,9 @@ def _tree_similarity_wrapper(ground_truth: str, prediction: str) -> float:
 def _element_f1_wrapper(ground_truth: str, prediction: str) -> float:
     """Wrapper for element_f1_score that handles string parsing and returns F1."""
     try:
-        gt_ast = _ast_parser.parse(ground_truth)
-        pred_ast = _ast_parser.parse(prediction)
+        parser = MarkdownASTParser()
+        gt_ast = parser.parse(ground_truth)
+        pred_ast = parser.parse(prediction)
         scores = element_f1_score(gt_ast, pred_ast)
         # element_f1_score returns a dict with 'overall' and 'per_element' keys
         f1_score: float = scores["overall"]["f1"]
@@ -132,13 +136,16 @@ def _extract_parser_init_args(parser: BaseParser) -> tuple[type[BaseParser], dic
         parser_options["cache_mode"] = parser.cache_mode
         return parser_class, parser_options
 
-    # Test parser attributes (MockParser etc.)
-    if hasattr(parser, "_name"):
-        parser_options["name"] = parser._name
-    if hasattr(parser, "_should_fail"):
-        parser_options["should_fail"] = parser._should_fail
-    if hasattr(parser, "_output_content"):
-        parser_options["output_content"] = parser._output_content
+    for name, parameter in inspect.signature(parser_class).parameters.items():
+        if parameter.kind in (parameter.VAR_POSITIONAL, parameter.VAR_KEYWORD):
+            continue
+        for attribute in (f"_{name}", name):
+            if hasattr(parser, attribute):
+                parser_options[name] = getattr(parser, attribute)
+                break
+        else:
+            if parameter.default is inspect.Parameter.empty:
+                raise ValueError(f"Cannot reconstruct required parser option: {name}")
 
     return parser_class, parser_options
 
@@ -152,7 +159,43 @@ class DocumentResult:
     success: bool
     metrics: dict[str, float]
     error: str | None = None
-    parse_time_seconds: float = 0.0
+    parse_time_seconds: float | None = None
+    parse_outcome: str = "unknown"
+    wall_time_seconds: float | None = None
+    output_path: str | None = None
+    output_sha256: str | None = None
+    error_type: str | None = None
+    metric_outcomes: dict[str, dict[str, str]] = field(default_factory=dict)
+    evaluation_errors: dict[str, str] = field(default_factory=dict)
+
+
+def _compute_metric_results(ground_truth, prediction, metrics_list) -> tuple[dict, dict, dict]:
+    metrics, outcomes, errors = {}, {}, {}
+    for name in metrics_list:
+        function = METRIC_FUNCTIONS.get(name)
+        if function is None:
+            continue
+        try:
+            score = function(ground_truth, prediction)
+            metrics[name] = score
+            if not isinstance(score, (int, float)) or isinstance(score, bool):
+                errors[name] = "Metric returned a non-numeric score"
+                outcomes[name] = {"status": "error", "reason": errors[name]}
+            elif math.isfinite(score):
+                outcomes[name] = {"status": "scored"}
+            else:
+                reason = "metric_returned_non_finite"
+                if name == "teds" and (
+                    markdown_table_to_html(ground_truth) is None
+                    or markdown_table_to_html(prediction) is None
+                ):
+                    reason = "no_markdown_table_in_reference_or_output"
+                outcomes[name] = {"status": "unavailable", "reason": reason}
+        except Exception as error:
+            metrics[name] = float("nan")
+            errors[name] = f"{type(error).__name__}: {error}"
+            outcomes[name] = {"status": "error", "reason": errors[name]}
+    return metrics, outcomes, errors
 
 
 @dataclass
@@ -177,6 +220,7 @@ def _worker_run_single(
     gt_path: Path,
     results_dir: Path,
     metrics_list: list[str],
+    timeout_seconds: float = 300,
 ) -> DocumentResult:
     """Worker function for parallel execution.
 
@@ -196,49 +240,53 @@ def _worker_run_single(
     Returns:
         DocumentResult with metrics or error information
     """
+    unknown = set(metrics_list) - set(METRIC_FUNCTIONS)
+    if unknown:
+        raise ValueError(f"Unknown required metrics: {sorted(unknown)}")
     try:
-        # Instantiate parser in worker process
-        parser = parser_class(**parser_options)
-
-        # Parse input to Markdown
-        start_time = time.time()
-        output_md_path = parser.parse(input_path, results_dir)
-        parse_time = time.time() - start_time
-
-        # Read generated and ground truth markdown
-        generated_md = output_md_path.read_text(encoding="utf-8")
-        ground_truth_md = gt_path.read_text(encoding="utf-8")
-
-        # Compute metrics
-        metrics = {}
-        for metric_name in metrics_list:
-            try:
-                metric_func = METRIC_FUNCTIONS.get(metric_name)
-                if metric_func is None:
-                    continue
-
-                score = metric_func(ground_truth_md, generated_md)
-                metrics[metric_name] = score
-
-            except Exception:
-                metrics[metric_name] = float("nan")
-
-        return DocumentResult(
-            document_id=doc_id,
-            parser_name=parser_name,
-            success=True,
-            metrics=metrics,
-            parse_time_seconds=parse_time,
+        attempt = execute_parser(
+            parser_class,
+            parser_options,
+            input_path,
+            results_dir / "attempts" / uuid.uuid4().hex,
+            timeout_seconds,
         )
-
-    except Exception as e:
+    except Exception as error:
         return DocumentResult(
             document_id=doc_id,
             parser_name=parser_name,
             success=False,
             metrics={},
-            error=str(e),
+            error=str(error),
+            error_type=type(error).__name__,
+            parse_outcome="initialization_failure",
         )
+    result = DocumentResult(
+        document_id=doc_id,
+        parser_name=parser_name,
+        success=attempt.outcome in {"success_content", "success_empty"},
+        metrics={},
+        error=attempt.error,
+        error_type=attempt.error_type,
+        parse_time_seconds=attempt.parse_time_seconds,
+        wall_time_seconds=attempt.wall_time_seconds,
+        parse_outcome=attempt.outcome,
+        output_path=str(attempt.output_path) if attempt.output_path is not None else None,
+        output_sha256=attempt.output_sha256,
+    )
+    if result.success:
+        try:
+            raw = attempt.output_path.read_bytes()
+            if hashlib.sha256(raw).hexdigest() != attempt.output_sha256:
+                raise ValueError("Output changed between parsing and metric evaluation")
+            generated = raw.decode("utf-8")
+            truth = gt_path.read_text(encoding="utf-8")
+            result.metrics, result.metric_outcomes, result.evaluation_errors = (
+                _compute_metric_results(truth, generated, metrics_list)
+            )
+        except Exception as error:
+            result.evaluation_errors["reference_or_output_read"] = str(error)
+    return result
 
 
 def _parser_supports_document(parser: BaseParser, doc: DocumentInfo) -> bool:
@@ -265,7 +313,12 @@ def _parser_supports_document(parser: BaseParser, doc: DocumentInfo) -> bool:
 class BenchmarkRunner:
     """Orchestrates benchmark execution across parsers and documents."""
 
-    def __init__(self, config: LoadedConfig, parallel_workers: int | None = None) -> None:
+    def __init__(
+        self,
+        config: LoadedConfig,
+        parallel_workers: int | None = None,
+        timeout_seconds: float = 300,
+    ) -> None:
         """Initialize runner with loaded configuration.
 
         Args:
@@ -276,6 +329,9 @@ class BenchmarkRunner:
                 N > 1 = use N parallel workers
         """
         self.config = config
+        if not math.isfinite(timeout_seconds) or timeout_seconds <= 0:
+            raise ValueError("Timeout must be positive and finite")
+        self.timeout_seconds = timeout_seconds
 
         # Determine worker count
         if parallel_workers is None:
@@ -338,12 +394,20 @@ class BenchmarkRunner:
                     tasks.append((parser, doc))
                 else:
                     skipped_image_tasks += 1
+                    results.results.append(
+                        DocumentResult(
+                            document_id=doc.doc_id,
+                            parser_name=parser.name,
+                            success=False,
+                            metrics={},
+                            parse_outcome="incompatible",
+                            error=f"Parser does not support input type {doc.input_type}",
+                        )
+                    )
+                    results.failure_count += 1
 
         if skipped_image_tasks > 0:
-            print(
-                f"→ Skipped {skipped_image_tasks} tasks: "
-                "image documents with non-image-capable parsers"
-            )
+            print(f"→ Recorded {skipped_image_tasks} incompatible input/parser pairs")
 
         if not tasks:
             return results
@@ -525,6 +589,7 @@ class BenchmarkRunner:
                     doc.ground_truth_path,
                     self.config.results_dir,
                     self.config.config.metric_config.metrics,
+                    self.timeout_seconds,
                 )
             )
 
@@ -544,7 +609,7 @@ class BenchmarkRunner:
                     total=len(tasks),
                 )
 
-                with mp.Pool(processes=self.workers) as pool:
+                with ThreadPool(processes=self.workers) as pool:
                     for result in pool.starmap(_worker_run_single, worker_args):
                         results.results.append(result)
 
@@ -563,7 +628,7 @@ class BenchmarkRunner:
                         progress.update(task_id, advance=1)
         else:
             # No progress bar, just use pool
-            with mp.Pool(processes=self.workers) as pool:
+            with ThreadPool(processes=self.workers) as pool:
                 for i, result in enumerate(pool.starmap(_worker_run_single, worker_args)):
                     results.results.append(result)
 
@@ -610,6 +675,7 @@ class BenchmarkRunner:
                     doc.ground_truth_path,
                     self.config.results_dir,
                     self.config.config.metric_config.metrics,
+                    self.timeout_seconds,
                 )
             )
 
@@ -629,13 +695,13 @@ class BenchmarkRunner:
                     total=len(tasks),
                 )
 
-                with mp.Pool(processes=self.workers) as pool:
+                with ThreadPool(processes=self.workers) as pool:
                     for result in pool.starmap(_worker_run_single, worker_args):
                         results.append(result)
                         progress.update(task_id, advance=1)
         else:
             # No progress bar, just use pool
-            with mp.Pool(processes=self.workers) as pool:
+            with ThreadPool(processes=self.workers) as pool:
                 results = pool.starmap(_worker_run_single, worker_args)
 
         return results
@@ -650,36 +716,18 @@ class BenchmarkRunner:
         Returns:
             DocumentResult with metrics or error information
         """
-        try:
-            # 1. Parse input (PDF or image) to Markdown
-            start_time = time.time()
-            output_md_path = parser.parse(doc.input_path, self.config.results_dir)
-            parse_time = time.time() - start_time
-
-            # 2. Read generated and ground truth markdown
-            generated_md = output_md_path.read_text(encoding="utf-8")
-            ground_truth_md = doc.ground_truth_path.read_text(encoding="utf-8")
-
-            # 3. Compute configured metrics
-            metrics = self._compute_metrics(ground_truth_md, generated_md)
-
-            return DocumentResult(
-                document_id=doc.doc_id,
-                parser_name=parser.name,
-                success=True,
-                metrics=metrics,
-                parse_time_seconds=parse_time,
-            )
-
-        except Exception as e:
-            # Handle any parser or metric computation failures
-            return DocumentResult(
-                document_id=doc.doc_id,
-                parser_name=parser.name,
-                success=False,
-                metrics={},
-                error=str(e),
-            )
+        parser_class, options = _extract_parser_init_args(parser)
+        return _worker_run_single(
+            parser.name,
+            parser_class,
+            options,
+            doc.doc_id,
+            doc.input_path,
+            doc.ground_truth_path,
+            self.config.results_dir,
+            self.config.config.metric_config.metrics,
+            self.timeout_seconds,
+        )
 
     def _compute_metrics(self, ground_truth: str, prediction: str) -> dict[str, float]:
         """Compute all configured metrics.
@@ -691,23 +739,6 @@ class BenchmarkRunner:
         Returns:
             Dictionary of metric names to scores
         """
-        metrics = {}
-
-        for metric_name in self.config.config.metric_config.metrics:
-            try:
-                metric_func = METRIC_FUNCTIONS.get(metric_name)
-                if metric_func is None:
-                    # Skip unknown metrics gracefully
-                    continue
-
-                # Call metric function
-                score = metric_func(ground_truth, prediction)
-
-                # All wrappers return floats directly
-                metrics[metric_name] = score
-
-            except Exception:
-                # Mark metric as N/A on failure rather than failing entire benchmark
-                metrics[metric_name] = float("nan")
-
-        return metrics
+        return _compute_metric_results(
+            ground_truth, prediction, self.config.config.metric_config.metrics
+        )[0]
