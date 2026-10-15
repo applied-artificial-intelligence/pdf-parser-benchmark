@@ -242,6 +242,15 @@ class TestGroundTruthFixture:
         assert sample_ground_truth.exists()
         assert sample_ground_truth.is_file()
 
+    def test_reference_text_matches_retained_sample_pdf(self, sample_ground_truth_text, sample_pdf):
+        import re
+
+        from pypdf import PdfReader
+
+        reference = re.sub(r"^#{1,6} ", "", sample_ground_truth_text, flags=re.MULTILINE)
+        actual = "\n".join(page.extract_text() for page in PdfReader(sample_pdf).pages)
+        assert " ".join(reference.split()) == " ".join(actual.split())
+
     def test_ground_truth_content(self, sample_ground_truth_text):
         """Ground truth should have expected content."""
         assert "PDF Bench Sample Document" in sample_ground_truth_text

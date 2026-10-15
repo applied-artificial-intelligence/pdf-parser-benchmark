@@ -2,10 +2,13 @@
 
 import json
 import math
+import os
 import platform
 import sys
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
+from typing import Any
 
 from pdf_bench.runner import BenchmarkResults, DocumentResult
 
@@ -35,11 +38,34 @@ def _serialize_metrics(metrics: dict[str, float]) -> dict[str, float | None]:
         if value is None:
             result[key] = None
         # Handle NaN values
-        elif isinstance(value, float) and math.isnan(value):
+        elif isinstance(value, float) and not math.isfinite(value):
             result[key] = None
         else:
             result[key] = value
     return result
+
+
+def write_json_atomic(output_path: Path, payload: dict[str, Any]) -> None:
+    """Validate before writing and replace only after a complete temporary-file write."""
+    serialized = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=output_path.parent,
+            prefix=f".{output_path.name}.",
+            delete=False,
+        ) as handle:
+            temporary_path = Path(handle.name)
+            handle.write(serialized)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, output_path)
+    finally:
+        if temporary_path is not None and temporary_path.exists():
+            temporary_path.unlink()
 
 
 def _deserialize_metrics(metrics: dict[str, float | None]) -> dict[str, float]:
@@ -109,12 +135,7 @@ def save_results(
         },
     }
 
-    # Ensure parent directory exists
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Write to file
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    write_json_atomic(output_path, output_data)
 
 
 def load_results(input_path: Path) -> BenchmarkResults:

@@ -447,7 +447,7 @@ class TestDocumentInfo:
 
         doc_info = DocumentInfo(
             doc_id="test",
-            pdf_path=Path("/path/to/test.pdf"),
+            input_path=Path("/path/to/test.pdf"),
             ground_truth_path=Path("/path/to/test.md"),
             metadata=metadata,
         )
