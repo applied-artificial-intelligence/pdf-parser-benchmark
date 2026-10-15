@@ -193,6 +193,14 @@ def freeze_plan(
             }
         )
     shutil.copyfile(protocol_path, output / "task-protocol.json")
+    code = output / "evaluation-code"
+    code.mkdir()
+    for name in ["invoice_extraction.py", "invoice_task.py"]:
+        shutil.copyfile(Path(__file__).parent / name, code / name)
+        files[f"evaluation-code/{name}"] = digest(code / name)
+    regrader = Path(__file__).parent / "invoice_offline.py"
+    shutil.copyfile(regrader, output / "offline-regrade.py")
+    files["offline-regrade.py"] = digest(output / "offline-regrade.py")
     write_json_atomic(output / "environment.json", environment)
     for name in ["task-protocol.json", "environment.json"]:
         files[name] = digest(output / name)
@@ -259,7 +267,13 @@ def validate_plan(directory: Path) -> dict:
         raise ValueError("Unsupported invoice document/pipeline identity")
     if plan["scope"] == "primary" and (ids != list(POPULATION) or len(actual) != 200):
         raise ValueError("Primary invoice plan must contain exactly 200 unique pairs")
-    required = {"task-protocol.json", "environment.json"}
+    required = {
+        "task-protocol.json",
+        "environment.json",
+        "offline-regrade.py",
+        "evaluation-code/invoice_extraction.py",
+        "evaluation-code/invoice_task.py",
+    }
     for row in plan["documents"]:
         doc_id = row["document_id"]
         for name, key in [

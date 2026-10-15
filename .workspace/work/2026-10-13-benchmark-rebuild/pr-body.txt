@@ -6,11 +6,11 @@ Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmar
 - [x] #2 Reconcile retained runs into one authoritative registry
 - [x] #3 Freeze and qualify independent invoice references
 - [x] #4 Establish task scoring that detects wrong associations
-- [ ] #5 Repair execution identity, cache handling and failure accounting
+- [x] #5 Repair execution identity, cache handling and failure accounting
 - [ ] #6 Execute and reproduce the fixed invoice comparison
 - [ ] #7 Execute a pinned ParseBench comparison with upstream evaluators
 - [ ] #8 Generate benchmark-fit findings, design lessons and integration export
 
-Validation so far: 921 tests passed, 18 skipped; all 32 closure items for issues 1-4 covered without waivers. Fresh public-source inspection replay, immutable 117-artifact registry, all-page invoice qualification and source/pixel replay pass. The invoice extractor is blind to answers and its complete-record grader detects actual backend header defects. Only six declared development invoices have parser outputs; primary scored comparisons are pending.
+Validation so far: 956 tests passed, 18 skipped; all 41 closure items for issues 1-5 covered without waivers. The retained registry, all-page invoice qualification, blind task scoring and isolated uncached execution pass their producing-path checks. Fixed primary populations and completed bundles validate exact artifacts and preserve earlier evidence on failure. Primary scored comparisons are pending.
 
 Original results and independent reviews are preserved. The branch includes the previously retained reconstruction baseline. No paid calls, editorial/CMS changes or public release. Issues close only after this PR is approved and merged.

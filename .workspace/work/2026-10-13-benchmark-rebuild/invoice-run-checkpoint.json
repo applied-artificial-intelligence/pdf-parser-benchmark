@@ -1,0 +1,24 @@
+{
+  "status": "frozen_before_primary_execution",
+  "plan_sha256": "31d64d00fe359d5217430d62f22b90180c539a43e63d4ed3bb1480e7fc19ad70",
+  "planned_pairs": 200,
+  "eligible_documents": 100,
+  "runtime_identity": "a876070cedbb58efba07d41fe331777f60eb76d41a05ecb592c72001702b1dc7",
+  "runtime_artifacts": {
+    "invoice-runtime-artifacts/identity-replay.json": "3d43ed62d536aca203a09bf097efed8f032379931e9a0e5a61ec3aa4d7235555",
+    "invoice-runtime-artifacts/pdf_bench-1.0.0-py3-none-any.whl": "7100025edc76020565e52d851f0a2c073fd8c8edb6fef61d607fa51e242807ce",
+    "invoice-runtime-artifacts/pdfsmith-0.2.0-py3-none-any.whl": "a37cef0e5a2f9c7bae9a57cdaef4bfa6f69bfa404e141e007a069b348a7cd123",
+    "invoice-runtime-artifacts/requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
+    "invoice-runtime-artifacts/requirements.lock": "30d0f300b1ef39acad8e6292e046830847a064b6dede346052b1f0d722fcc1f7",
+    "invoice-runtime-artifacts/runtime-provenance.json": "8e0bbbe453e64ca3a2e717ef5ca9fe591f01e07f3a1a9f40966b34d2b2a66ad8"
+  },
+  "faithful_format_control_sha256": "c76e002f74cb8f73c44d9e2965bbe84cbcbdeb87034eb25103a64c51aa86530a",
+  "faithful_control_scope": "Reference-derived supported Markdown format only; no claim about unseen PDF layouts",
+  "primary_executions": [],
+  "verification": {
+    "full_suite_passed": 961,
+    "skipped": 18,
+    "focused_actual_reproduction_tests": 16,
+    "relocated_runtime_identity_equal": true
+  }
+}

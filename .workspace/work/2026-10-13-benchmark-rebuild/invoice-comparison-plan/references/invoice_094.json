@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-38669",
+    "vendor": "Nexus Labs",
+    "due_date": "2025-10-29",
+    "grand_total": "6451000.29",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Enterprise Plan - Annual @ $38955.69/subscription",
+      "quantity": "28.98",
+      "line_total": "1128935.9"
+    },
+    {
+      "description": "Premium Support @ $1085.56/month",
+      "quantity": "44.43",
+      "line_total": "48231.43"
+    },
+    {
+      "description": "Professional Plan - Monthly @ $2015.21/subscription",
+      "quantity": "22.33",
+      "line_total": "44999.64"
+    },
+    {
+      "description": "Implementation Services @ $293.28/hour",
+      "quantity": "95.85",
+      "line_total": "28110.89"
+    },
+    {
+      "description": "Implementation Services @ $250.13/hour",
+      "quantity": "68.37",
+      "line_total": "17101.39"
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $108111.80/subscription",
+      "quantity": "43.02",
+      "line_total": "4650969.64"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-38669",
+    "vendor": "Nexus Labs",
+    "due_date": "10/29/2025",
+    "grand_total": "$6,451,000.29",
+    "records": [
+      {
+        "description": "Enterprise Plan - Annual @ $38955.69/subscription",
+        "quantity": "28.98",
+        "line_total": "$1,128,935.90"
+      },
+      {
+        "description": "Premium Support @ $1085.56/month",
+        "quantity": "44.43",
+        "line_total": "$48,231.43"
+      },
+      {
+        "description": "Professional Plan - Monthly @ $2015.21/subscription",
+        "quantity": "22.33",
+        "line_total": "$44,999.64"
+      },
+      {
+        "description": "Implementation Services @ $293.28/hour",
+        "quantity": "95.85",
+        "line_total": "$28,110.89"
+      },
+      {
+        "description": "Implementation Services @ $250.13/hour",
+        "quantity": "68.37",
+        "line_total": "$17,101.39"
+      },
+      {
+        "description": "Enterprise Plan - Annual @ $108111.80/subscription",
+        "quantity": "43.02",
+        "line_total": "$4,650,969.64"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6"
+    ]
+  },
+  "document_id": "invoice_094"
+}

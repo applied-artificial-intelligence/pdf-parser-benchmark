@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-11023",
+    "vendor": "Continental Freight",
+    "due_date": "2025-10-18",
+    "grand_total": "11816.25",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Inside Delivery @ $108.84/per stop",
+      "quantity": "27.27",
+      "line_total": "2968.07"
+    },
+    {
+      "description": "Fuel Surcharge @ $22.30/% of base",
+      "quantity": "77.19",
+      "line_total": "1721.34"
+    },
+    {
+      "description": "Pallet Exchange @ $17.59/pallet",
+      "quantity": "80.42",
+      "line_total": "1414.59"
+    },
+    {
+      "description": "Inside Delivery @ $66.94/per stop",
+      "quantity": "57.15",
+      "line_total": "3825.62"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-11023",
+    "vendor": "Continental Freight",
+    "due_date": "10/18/2025",
+    "grand_total": "$11,816.25",
+    "records": [
+      {
+        "description": "Inside Delivery @ $108.84/per stop",
+        "quantity": "27.27",
+        "line_total": "$2,968.07"
+      },
+      {
+        "description": "Fuel Surcharge @ $22.30/% of base",
+        "quantity": "77.19",
+        "line_total": "$1,721.34"
+      },
+      {
+        "description": "Pallet Exchange @ $17.59/pallet",
+        "quantity": "80.42",
+        "line_total": "$1,414.59"
+      },
+      {
+        "description": "Inside Delivery @ $66.94/per stop",
+        "quantity": "57.15",
+        "line_total": "$3,825.62"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_045"
+}

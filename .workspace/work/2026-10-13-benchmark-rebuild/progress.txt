@@ -137,3 +137,15 @@ worktree was created. No paid calls, editorial/CMS writes or public-main merge.
 
 Decisions needed
 None for local implementation. Public-main merge and paid comparisons remain gated.
+
+Issue 6 execution preparation checkpoint
+The full 100-document/200-pair plan is frozen before primary outputs, with explicit
+options and code/reference snapshots. All 100 faithful-format controls pass, scoped
+only to their reference-derived Markdown representation. Full suite: 961 passed,
+18 skipped. Six-cell development replay passes two fresh runs and offline regrade
+with original PDFs removed. A separate Python 3.13.5 environment outside the
+checkout installs hash-pinned dependencies and retained runtime wheels; its used
+implementation identity exactly matches the host. PDFsmith distribution/source
+version disagreement is preserved by a scoped local replay wheel, not corrected
+or presented as an official release. No primary scored outputs exist at this
+checkpoint. Next: execute the same frozen plan twice plus a relocated fresh run.
