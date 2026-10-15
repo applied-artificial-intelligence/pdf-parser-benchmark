@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_extraction.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_faithful_supported_representation_and_harmless_formatting_pass",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_extraction.py",
+      "old": "            roles, found = headers, True",
+      "new": "            roles, found = sorted(headers), True"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_extraction.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_ambiguous_backend_headers_cannot_be_hidden_by_duplicated_plain_text",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_extraction.py",
+      "old": "            return [{\"invalid_cells\": cells, \"reason\": \"ambiguous_line_item_headers\"}], True",
+      "new": "            continue"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_task.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_duplicate_multiplicity_and_extra_rows_are_penalized",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_task.py",
+      "old": "    expected_count, predicted_count = len(expected_rows), len(prediction[\"records\"])",
+      "new": "    expected_counts = Counter({key: 1 for key in expected_counts})\n    predicted_counts = Counter({key: 1 for key in predicted_counts})\n    matched = sum((expected_counts & predicted_counts).values())\n    expected_count, predicted_count = len(expected_counts), len(predicted_counts)"
+    }
+  }
+}

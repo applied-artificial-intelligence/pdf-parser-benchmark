@@ -1,0 +1,12 @@
+{
+ "item": "extracted-invoice-records.ordering-spacing",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_task_evaluation.py::test_actual_backend_transposed_headers_fail_while_value_tokens_remain",
+  "fixture (both runs): Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

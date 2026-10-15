@@ -1,0 +1,294 @@
+{
+  "purpose": "Declared development diagnostics only",
+  "protocol_sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e",
+  "records": [
+    {
+      "document_id": "invoice_001",
+      "parser": "pdfplumber",
+      "prediction": "invoice_001-pdfplumber.prediction.json",
+      "prediction_sha256": "31c7cdf54435ea7980c6099b1ed126279e47f2b09748b0e16c132a0d2d1d6ba2",
+      "raw_output_sha256": "603e5d7c1c87f440e20fa30698fd2c291ce3f9753816e1f3c185686ccc83389b",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 10,
+        "records_predicted": 9,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      }
+    },
+    {
+      "document_id": "invoice_001",
+      "parser": "pypdf",
+      "prediction": "invoice_001-pypdf.prediction.json",
+      "prediction_sha256": "8748c562da039b02b4364ee2160cd397a61b0de5a811b3f29458a7cdc8060617",
+      "raw_output_sha256": "a7a81056e2524cd1e5b66160eda6c1c48e649d97b9b2baaab6082436f40be13f",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 10,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_002",
+      "parser": "pdfplumber",
+      "prediction": "invoice_002-pdfplumber.prediction.json",
+      "prediction_sha256": "257ecbaf61aee66eb6a0877b2ce0682d353e2fc3b19c95c75d0be3bf82bd35e4",
+      "raw_output_sha256": "244323869ef74d70483d04dbb50814dd48122e9ac4585f9b058d29b11b92fd2b",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 8,
+        "records_expected": 8,
+        "records_predicted": 8,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_002",
+      "parser": "pypdf",
+      "prediction": "invoice_002-pypdf.prediction.json",
+      "prediction_sha256": "6c6fac19d971eeee11c914ae18d24ba3c438c54b6b058f929a6c3ee8fcfbe5a3",
+      "raw_output_sha256": "6bb250eef8e6ea04f1ef5bbc84f024700011d51b24445794b4edd82f7315c2ab",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 8,
+        "records_expected": 8,
+        "records_predicted": 8,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_003",
+      "parser": "pdfplumber",
+      "prediction": "invoice_003-pdfplumber.prediction.json",
+      "prediction_sha256": "389164c2e736d5faf5559e79c39432890e7a3f6482e13218cb5695f1d53937c2",
+      "raw_output_sha256": "fa36a75ccdbc090996a8a8d2d629742f9044c2ebbf3cc6cf5a5d2271f191b70d",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      }
+    },
+    {
+      "document_id": "invoice_003",
+      "parser": "pypdf",
+      "prediction": "invoice_003-pypdf.prediction.json",
+      "prediction_sha256": "9225f9eaa791e118c13a3136f4b9ecb2b75fab67299cfa459bcdba26b700e3bb",
+      "raw_output_sha256": "604e1a379b4c20a27403e0a83e1774df1dcd6c20754a1f844f3d5dd268224db1",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_004",
+      "parser": "pdfplumber",
+      "prediction": "invoice_004-pdfplumber.prediction.json",
+      "prediction_sha256": "4756126c786cc23f67859c08b2feeb79d3665a62f5a97dd9a79f13826d752f94",
+      "raw_output_sha256": "9a065a62baa65e3fd78e92534f07272867ed9dce8d29bf4fe6aa071c4ba276e8",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_004",
+      "parser": "pypdf",
+      "prediction": "invoice_004-pypdf.prediction.json",
+      "prediction_sha256": "3ac5b1007120965c08ebe2874efe2102db19065be1f24175457cdb40f79a81e6",
+      "raw_output_sha256": "9e13e98dced618fd18d52638d6d132d771cb05b3367e62be0eb6d3fc900b38b3",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_005",
+      "parser": "pdfplumber",
+      "prediction": "invoice_005-pdfplumber.prediction.json",
+      "prediction_sha256": "2d5dc3659d55c410070e0fadb7a891921631c7ea770f607d1f0a967d347bb2d6",
+      "raw_output_sha256": "f64410833610109da121bb2c3d5df13512d8d2695265449b6b459f4e378286c7",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_005",
+      "parser": "pypdf",
+      "prediction": "invoice_005-pypdf.prediction.json",
+      "prediction_sha256": "d1a01811c5341f770c7d5cc7ae5dcb86212740d05c9bb6c1193e0733ebfd37de",
+      "raw_output_sha256": "dc8590390ab45f41d65c001fb01bf6925aa23e93ffeeb914009c406bdb7248b3",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    },
+    {
+      "document_id": "invoice_006",
+      "parser": "pdfplumber",
+      "prediction": "invoice_006-pdfplumber.prediction.json",
+      "prediction_sha256": "4f97ce8f335b376adc2a246a81bb395cf4acf6398bb807b64c0a6bf5937abb5c",
+      "raw_output_sha256": "e1d6ecb99d3ee19481fb5b8ad487c46b3e214ad9c4cf2dd312187ef07466bff5",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      }
+    },
+    {
+      "document_id": "invoice_006",
+      "parser": "pypdf",
+      "prediction": "invoice_006-pypdf.prediction.json",
+      "prediction_sha256": "d7f182d65065d3ad50a2d2a29b6d9317e16579244ffc4cda8cbce56e8eb68933",
+      "raw_output_sha256": "219c2b5a95a289c0c41cf0867c0b9c9a843efbe7ecb7ca4d9ab8710f06936239",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": true
+      }
+    }
+  ]
+}

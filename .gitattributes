@@ -5,3 +5,5 @@
 .workspace/work/*/parsebench-inspection-artifacts.json linguist-generated=true
 .workspace/work/*/results/*.json linguist-generated=true
 .workspace/work/*/invoice-reference-evidence/** linguist-generated=true
+.workspace/work/*/invoice-development-evidence/** linguist-generated=true
+tests/fixtures/invoice_parser_outputs/*.md linguist-generated=true whitespace=-blank-at-eol

@@ -21,8 +21,20 @@ Fresh replay reproduced every source/reference/protocol identity, page pixel has
 and eligibility. Nine producing-code mutation witnesses passed correct code and
 failed real introduced errors. Issue-3 coverage: all eight items, no waivers or
 deferrals. Eight focused tests and full suite 906 passed, 18 skipped.
-Next owned work is issue #4: blind extraction and complete-record task scoring.
-No compared invoice parser outputs have been produced before qualification.
+Issue #4 is implemented: blind standard-library extractor, separate complete-record
+multiset grader, fixed denominators and explicit evaluation failure. Frozen task
+protocol revision 2 retains revision 1 and the actual backend ambiguity defect
+that prompted correction. Six declared development invoices produced twelve raw
+backend fixtures and persisted predictions; no primary comparison executed yet.
+Nineteen focused task/smoke checks pass; full suite 921 passed, 18 skipped.
+Eight producing-code mutation witnesses pass; all eight closure items covered,
+without waivers or deferrals. Standalone subprocess denies gold access, network
+and subprocesses; changed gold leaves predictions unchanged while changed/blank
+parser output changes them. Raw surfaces remain beside canonical facts.
+Next owned work is #5: execution identity, cache and failure accounting.
+Pre-repair real cache-option and changed-input/reference checkpoint defects were
+reproduced and recorded in execution-defect-reproduction.json. No code repair to
+the runner/adapter has started. Compared primary invoice outputs remain pending.
 
 Implemented
 Registry: 117 artifacts, preserved original bytes/counters/labels, observed row
