@@ -1,0 +1,211 @@
+{
+  "benchmark": {
+    "name": "SEC Filings - 5 docs, Commercial OCR (Azure, Textract, Google DocAI)",
+    "timestamp": "2026-03-10T21:31:38.647684+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "sec-great_elm-2025",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9038572595789824,
+        "chrf++": 91.13435563156473,
+        "character_error_rate": 0.0961427404210175,
+        "element_f1": 0.43206180589087395
+      },
+      "error": null,
+      "parse_time_seconds": 8.691339015960693
+    },
+    {
+      "document_id": "sec-astec_industries-2025",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8885171313792928,
+        "chrf++": 89.34521992549107,
+        "character_error_rate": 0.11148286862070723,
+        "element_f1": 0.38654039468811174
+      },
+      "error": null,
+      "parse_time_seconds": 11.52952527999878
+    },
+    {
+      "document_id": "sec-simply_good_foods-2025",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8916905789209115,
+        "chrf++": 92.6188368915021,
+        "character_error_rate": 0.10830942107908847,
+        "element_f1": 0.4526803441429517
+      },
+      "error": null,
+      "parse_time_seconds": 11.966444253921509
+    },
+    {
+      "document_id": "sec-energizer_holdings-2025",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8986501959604023,
+        "chrf++": 90.60088540645737,
+        "character_error_rate": 0.10134980403959774,
+        "element_f1": 0.3882570748479238
+      },
+      "error": null,
+      "parse_time_seconds": 13.031006574630737
+    },
+    {
+      "document_id": "sec-xtant_medical_holdings-2024",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9148727911788042,
+        "chrf++": 94.03345014044442,
+        "character_error_rate": 0.08512720882119579,
+        "element_f1": 0.4265891434992916
+      },
+      "error": null,
+      "parse_time_seconds": 15.438591480255127
+    },
+    {
+      "document_id": "sec-great_elm-2025",
+      "parser_name": "pdfsmith-aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9082933005941813,
+        "chrf++": 91.07816115697325,
+        "character_error_rate": 0.09170669940581862,
+        "element_f1": 0.4276991665051366
+      },
+      "error": null,
+      "parse_time_seconds": 140.45431685447693
+    },
+    {
+      "document_id": "sec-astec_industries-2025",
+      "parser_name": "pdfsmith-aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.889548357121407,
+        "chrf++": 89.19577126545094,
+        "character_error_rate": 0.110451642878593,
+        "element_f1": 0.3802513751228975
+      },
+      "error": null,
+      "parse_time_seconds": 171.384094953537
+    },
+    {
+      "document_id": "sec-simply_good_foods-2025",
+      "parser_name": "pdfsmith-aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8945364862600537,
+        "chrf++": 92.48490611085364,
+        "character_error_rate": 0.10546351373994638,
+        "element_f1": 0.44378179266795303
+      },
+      "error": null,
+      "parse_time_seconds": 227.53123998641968
+    },
+    {
+      "document_id": "sec-xtant_medical_holdings-2024",
+      "parser_name": "pdfsmith-aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9139310528930645,
+        "chrf++": 93.97178448818305,
+        "character_error_rate": 0.0860689471069355,
+        "element_f1": 0.4202256540786607
+      },
+      "error": null,
+      "parse_time_seconds": 288.0832712650299
+    },
+    {
+      "document_id": "sec-energizer_holdings-2025",
+      "parser_name": "pdfsmith-aws_textract",
+      "success": false,
+      "metrics": {},
+      "error": "pdfsmith aws_textract failed: PDF too large (12.9 MB). AWS Textract has 10 MB limit for synchronous API.",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "sec-great_elm-2025",
+      "parser_name": "pdfsmith-google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8899416940800027,
+        "chrf++": 91.04440709596838,
+        "character_error_rate": 0.11005830591999727,
+        "element_f1": 0.3845013343876643
+      },
+      "error": null,
+      "parse_time_seconds": 115.50170540809631
+    },
+    {
+      "document_id": "sec-astec_industries-2025",
+      "parser_name": "pdfsmith-google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8607873578523307,
+        "chrf++": 89.24682010039942,
+        "character_error_rate": 0.13921264214766926,
+        "element_f1": 0.36443962596557805
+      },
+      "error": null,
+      "parse_time_seconds": 119.55088829994202
+    },
+    {
+      "document_id": "sec-simply_good_foods-2025",
+      "parser_name": "pdfsmith-google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8782936075737265,
+        "chrf++": 92.52316453402322,
+        "character_error_rate": 0.12170639242627346,
+        "element_f1": 0.4422339064942447
+      },
+      "error": null,
+      "parse_time_seconds": 119.42209243774414
+    },
+    {
+      "document_id": "sec-energizer_holdings-2025",
+      "parser_name": "pdfsmith-google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7385558906983694,
+        "chrf++": 90.53792627771846,
+        "character_error_rate": 0.2614441093016307,
+        "element_f1": 0.3873212214920757
+      },
+      "error": null,
+      "parse_time_seconds": 128.00609230995178
+    },
+    {
+      "document_id": "sec-xtant_medical_holdings-2024",
+      "parser_name": "pdfsmith-google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44839533728319625,
+        "chrf++": 93.98950217831812,
+        "character_error_rate": 0.5516046627168038,
+        "element_f1": 0.5509461784222168
+      },
+      "error": null,
+      "parse_time_seconds": 205.400404214859
+    }
+  ],
+  "summary": {
+    "total_documents": 5,
+    "total_parsers": 3,
+    "total_results": 15,
+    "success_count": 14,
+    "failure_count": 13
+  }
+}

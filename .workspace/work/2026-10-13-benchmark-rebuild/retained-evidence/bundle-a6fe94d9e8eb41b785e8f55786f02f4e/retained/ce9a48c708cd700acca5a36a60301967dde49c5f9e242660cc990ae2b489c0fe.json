@@ -1,0 +1,47 @@
+{
+  "benchmark": {
+    "name": "Element F1 Fix Test",
+    "timestamp": "2025-11-20T19:46:19.473978+00:00",
+    "config_file": "benchmarks/test_element_f1.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pymupdf": "1.26.6"
+    }
+  },
+  "results": [
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.890495867768595,
+        "element_f1": 0.45685279187817257,
+        "tree_similarity": -0.0980392156862746
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004012584686279297
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.943373125191307,
+        "element_f1": 0.6801075268817204,
+        "tree_similarity": 0.4938775510204082
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032711029052734375
+    }
+  ],
+  "summary": {
+    "total_documents": 2,
+    "total_parsers": 1,
+    "total_results": 2,
+    "success_count": 2,
+    "failure_count": 0
+  }
+}

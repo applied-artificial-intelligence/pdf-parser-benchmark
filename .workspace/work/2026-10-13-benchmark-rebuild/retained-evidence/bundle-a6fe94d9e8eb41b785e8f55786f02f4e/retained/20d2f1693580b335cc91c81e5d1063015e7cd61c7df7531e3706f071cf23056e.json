@@ -1,0 +1,5568 @@
+{
+  "benchmark": {
+    "name": "OmniDocBench OCR Working Parsers (252 docs)",
+    "timestamp": "2025-11-23T13:34:35.044969+00:00",
+    "config_file": "benchmarks/omnidocbench_ocr_working.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "marker": "1.10.1",
+      "docling-ocr": "2.63.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9294739935351161,
+        "chrf++": 92.16723947991204
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009827613830566406
+    },
+    {
+      "document_id": "omnidoc_001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9729126832377311,
+        "chrf++": 94.65062153745342
+      },
+      "error": null,
+      "parse_time_seconds": 0.001581430435180664
+    },
+    {
+      "document_id": "omnidoc_002",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9640216855593888,
+        "chrf++": 96.6936768495249
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007250308990478516
+    },
+    {
+      "document_id": "omnidoc_003",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7948034643570953,
+        "chrf++": 95.01405297831765
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015668869018554688
+    },
+    {
+      "document_id": "omnidoc_004",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8765758438389589,
+        "chrf++": 92.16711024504991
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010368824005126953
+    },
+    {
+      "document_id": "omnidoc_005",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7619411539931219,
+        "chrf++": 73.81367998491403
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010898113250732422
+    },
+    {
+      "document_id": "omnidoc_006",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8445386634363012,
+        "chrf++": 84.55349028603331
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011157989501953125
+    },
+    {
+      "document_id": "omnidoc_007",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8909750097112521,
+        "chrf++": 87.04071307456395
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014150142669677734
+    },
+    {
+      "document_id": "omnidoc_008",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.743947236600434,
+        "chrf++": 71.04869841596162
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014681816101074219
+    },
+    {
+      "document_id": "omnidoc_009",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16742726754135773,
+        "chrf++": 44.769722981180585
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004284381866455078
+    },
+    {
+      "document_id": "omnidoc_010",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8227611940298507,
+        "chrf++": 88.3016845145261
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036263465881347656
+    },
+    {
+      "document_id": "omnidoc_011",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7327459618208516,
+        "chrf++": 75.56450365931386
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036406517028808594
+    },
+    {
+      "document_id": "omnidoc_012",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5413090128755365,
+        "chrf++": 49.27937478487968
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004482269287109375
+    },
+    {
+      "document_id": "omnidoc_013",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9277870216306157,
+        "chrf++": 91.54512207247406
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010974407196044922
+    },
+    {
+      "document_id": "omnidoc_014",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.971199416697047,
+        "chrf++": 96.43523462130895
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013501644134521484
+    },
+    {
+      "document_id": "omnidoc_015",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9629071170084439,
+        "chrf++": 93.00636569609291
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008487701416015625
+    },
+    {
+      "document_id": "omnidoc_016",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.815973651708522,
+        "chrf++": 89.27552650471199
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015726089477539062
+    },
+    {
+      "document_id": "omnidoc_017",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9359079704190633,
+        "chrf++": 93.32541396461758
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006623268127441406
+    },
+    {
+      "document_id": "omnidoc_018",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9129922188163169,
+        "chrf++": 90.8162614196336
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008795261383056641
+    },
+    {
+      "document_id": "omnidoc_019",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9470482199188823,
+        "chrf++": 93.40975352882447
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013992786407470703
+    },
+    {
+      "document_id": "omnidoc_020",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.27314578005115087,
+        "chrf++": 64.33248303198633
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011131763458251953
+    },
+    {
+      "document_id": "omnidoc_021",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.880805819809737,
+        "chrf++": 86.69103252876114
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012836456298828125
+    },
+    {
+      "document_id": "omnidoc_022",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9258632362897765,
+        "chrf++": 92.92091246234975
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009207725524902344
+    },
+    {
+      "document_id": "omnidoc_023",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7615464452516866,
+        "chrf++": 77.7654107901699
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009398460388183594
+    },
+    {
+      "document_id": "omnidoc_024",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6800847457627119,
+        "chrf++": 82.11941040736757
+      },
+      "error": null,
+      "parse_time_seconds": 0.00048422813415527344
+    },
+    {
+      "document_id": "omnidoc_025",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.969385129920247,
+        "chrf++": 95.48543692305536
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007572174072265625
+    },
+    {
+      "document_id": "omnidoc_026",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624413145539906,
+        "chrf++": 94.1128857686612
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006015300750732422
+    },
+    {
+      "document_id": "omnidoc_027",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8680614859094791,
+        "chrf++": 86.04845780855904
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006434917449951172
+    },
+    {
+      "document_id": "omnidoc_028",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9455928237129485,
+        "chrf++": 93.92661324198798
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011487007141113281
+    },
+    {
+      "document_id": "omnidoc_029",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9082089552238806,
+        "chrf++": 90.61948815654218
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003993511199951172
+    },
+    {
+      "document_id": "omnidoc_030",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8785497656465399,
+        "chrf++": 83.7114022275984
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012323856353759766
+    },
+    {
+      "document_id": "omnidoc_031",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.662647374062165,
+        "chrf++": 62.013261604401436
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012900829315185547
+    },
+    {
+      "document_id": "omnidoc_032",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1333798882681564,
+        "chrf++": 37.06927510669301
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007779598236083984
+    },
+    {
+      "document_id": "omnidoc_033",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11686143572621033,
+        "chrf++": 39.36899711733543
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004565715789794922
+    },
+    {
+      "document_id": "omnidoc_034",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7514594020873873,
+        "chrf++": 86.97488496279973
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010318756103515625
+    },
+    {
+      "document_id": "omnidoc_035",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8772308295744263,
+        "chrf++": 91.80041298458663
+      },
+      "error": null,
+      "parse_time_seconds": 0.002168416976928711
+    },
+    {
+      "document_id": "omnidoc_036",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9664441972562106,
+        "chrf++": 97.27145646751062
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016193389892578125
+    },
+    {
+      "document_id": "omnidoc_037",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525283797729618,
+        "chrf++": 93.94495415262926
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014481544494628906
+    },
+    {
+      "document_id": "omnidoc_038",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9554644808743169,
+        "chrf++": 93.06580630368666
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008449554443359375
+    },
+    {
+      "document_id": "omnidoc_039",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624630957401941,
+        "chrf++": 95.7503583304367
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013988018035888672
+    },
+    {
+      "document_id": "omnidoc_040",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603617983506252,
+        "chrf++": 92.42348475425034
+      },
+      "error": null,
+      "parse_time_seconds": 0.001953125
+    },
+    {
+      "document_id": "omnidoc_041",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9154622307062994,
+        "chrf++": 91.40203938994925
+      },
+      "error": null,
+      "parse_time_seconds": 0.002042055130004883
+    },
+    {
+      "document_id": "omnidoc_042",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.832659478885894,
+        "chrf++": 86.00863543481726
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011622905731201172
+    },
+    {
+      "document_id": "omnidoc_043",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9487599438465139,
+        "chrf++": 95.02026428509085
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017066001892089844
+    },
+    {
+      "document_id": "omnidoc_044",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9219474497681608,
+        "chrf++": 89.21450155952311
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008206367492675781
+    },
+    {
+      "document_id": "omnidoc_045",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9064406779661017,
+        "chrf++": 85.7399733731277
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009632110595703125
+    },
+    {
+      "document_id": "omnidoc_046",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49217844727694093,
+        "chrf++": 70.4530908161544
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007596015930175781
+    },
+    {
+      "document_id": "omnidoc_047",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7579780444217513,
+        "chrf++": 88.19934308822042
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010466575622558594
+    },
+    {
+      "document_id": "omnidoc_048",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5597949886104784,
+        "chrf++": 66.15762425037093
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010814666748046875
+    },
+    {
+      "document_id": "omnidoc_049",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8633744855967078,
+        "chrf++": 90.39833482655789
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007882118225097656
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9589925734581853,
+        "chrf++": 92.69712823473161
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008778572082519531
+    },
+    {
+      "document_id": "omnidoc_051",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9327385037748799,
+        "chrf++": 90.96867393902245
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006761550903320312
+    },
+    {
+      "document_id": "omnidoc_052",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8535616778356913,
+        "chrf++": 90.51019461638701
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011229515075683594
+    },
+    {
+      "document_id": "omnidoc_053",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9741007194244604,
+        "chrf++": 96.39908625104658
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010423660278320312
+    },
+    {
+      "document_id": "omnidoc_054",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9149094517489457,
+        "chrf++": 94.32729493483968
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013921260833740234
+    },
+    {
+      "document_id": "omnidoc_055",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9209739427595045,
+        "chrf++": 92.04926941738945
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019474029541015625
+    },
+    {
+      "document_id": "omnidoc_056",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9652644996813257,
+        "chrf++": 94.79715930959928
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014216899871826172
+    },
+    {
+      "document_id": "omnidoc_057",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8454608454608454,
+        "chrf++": 95.732732133225
+      },
+      "error": null,
+      "parse_time_seconds": 0.001119375228881836
+    },
+    {
+      "document_id": "omnidoc_058",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5268542199488491,
+        "chrf++": 70.67350870086351
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007309913635253906
+    },
+    {
+      "document_id": "omnidoc_059",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5624581379772271,
+        "chrf++": 74.20309443490953
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011026859283447266
+    },
+    {
+      "document_id": "omnidoc_060",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06980635907243604,
+        "chrf++": 27.035739054178297
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007069110870361328
+    },
+    {
+      "document_id": "omnidoc_061",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8455813953488373,
+        "chrf++": 83.80966174455634
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008358955383300781
+    },
+    {
+      "document_id": "omnidoc_062",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.954209065679926,
+        "chrf++": 95.81706515310317
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006093978881835938
+    },
+    {
+      "document_id": "omnidoc_063",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37525083612040133,
+        "chrf++": 65.82590105906878
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005021095275878906
+    },
+    {
+      "document_id": "omnidoc_064",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9146005509641874,
+        "chrf++": 94.9782995940688
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035572052001953125
+    },
+    {
+      "document_id": "omnidoc_065",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9292725173210161,
+        "chrf++": 89.90215008469275
+      },
+      "error": null,
+      "parse_time_seconds": 0.000766754150390625
+    },
+    {
+      "document_id": "omnidoc_066",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9071274298056156,
+        "chrf++": 93.26580986461583
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006690025329589844
+    },
+    {
+      "document_id": "omnidoc_067",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029397010803222656
+    },
+    {
+      "document_id": "omnidoc_068",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7620995228357191,
+        "chrf++": 90.27219494846298
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006127357482910156
+    },
+    {
+      "document_id": "omnidoc_069",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9799222797927462,
+        "chrf++": 97.50918576779965
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012402534484863281
+    },
+    {
+      "document_id": "omnidoc_070",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.869260017548991,
+        "chrf++": 85.98076091618707
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013475418090820312
+    },
+    {
+      "document_id": "omnidoc_071",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5778947368421052,
+        "chrf++": 61.201989648340806
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004642009735107422
+    },
+    {
+      "document_id": "omnidoc_072",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6812196812196812,
+        "chrf++": 81.86327285746793
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008904933929443359
+    },
+    {
+      "document_id": "omnidoc_073",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8001383125864454,
+        "chrf++": 81.59404036829062
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008902549743652344
+    },
+    {
+      "document_id": "omnidoc_074",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6838262139466958,
+        "chrf++": 93.44759141806625
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007677078247070312
+    },
+    {
+      "document_id": "omnidoc_075",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.28990509059534086,
+        "chrf++": 62.051948326920225
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008003711700439453
+    },
+    {
+      "document_id": "omnidoc_076",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6019509125235998,
+        "chrf++": 76.20889908841842
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011386871337890625
+    },
+    {
+      "document_id": "omnidoc_077",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7650096836668818,
+        "chrf++": 77.8729674732736
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006606578826904297
+    },
+    {
+      "document_id": "omnidoc_078",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1689844922461231,
+        "chrf++": 48.496931934882454
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010488033294677734
+    },
+    {
+      "document_id": "omnidoc_079",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6878093492208983,
+        "chrf++": 85.76994797175115
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010235309600830078
+    },
+    {
+      "document_id": "omnidoc_080",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4104938271604939,
+        "chrf++": 76.25873428189037
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016601085662841797
+    },
+    {
+      "document_id": "omnidoc_081",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5819531696173614,
+        "chrf++": 86.33487786432906
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009133815765380859
+    },
+    {
+      "document_id": "omnidoc_082",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2735727202273315,
+        "chrf++": 63.729500083515845
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008592605590820312
+    },
+    {
+      "document_id": "omnidoc_083",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6016859852476291,
+        "chrf++": 85.35144456202494
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009989738464355469
+    },
+    {
+      "document_id": "omnidoc_084",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.73137655582389,
+        "chrf++": 82.1554663227086
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011134147644042969
+    },
+    {
+      "document_id": "omnidoc_085",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8570359281437125,
+        "chrf++": 93.93604540250983
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013172626495361328
+    },
+    {
+      "document_id": "omnidoc_086",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.21579380312585683,
+        "chrf++": 57.02005756404037
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008549690246582031
+    },
+    {
+      "document_id": "omnidoc_087",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7117658849468831,
+        "chrf++": 80.70489578435497
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010159015655517578
+    },
+    {
+      "document_id": "omnidoc_088",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2874574347332577,
+        "chrf++": 61.17216273117842
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007631778717041016
+    },
+    {
+      "document_id": "omnidoc_089",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6969281404278662,
+        "chrf++": 89.83099724917685
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007748603820800781
+    },
+    {
+      "document_id": "omnidoc_090",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6957104557640751,
+        "chrf++": 88.41308598098358
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007729530334472656
+    },
+    {
+      "document_id": "omnidoc_091",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.31305817040791695,
+        "chrf++": 66.75976568929471
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006823539733886719
+    },
+    {
+      "document_id": "omnidoc_092",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40082538044880067,
+        "chrf++": 72.72075900770757
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008122920989990234
+    },
+    {
+      "document_id": "omnidoc_093",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.755861365953109,
+        "chrf++": 88.18222848210637
+      },
+      "error": null,
+      "parse_time_seconds": 0.001458883285522461
+    },
+    {
+      "document_id": "omnidoc_094",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9251484601574368,
+        "chrf++": 95.88323190639377
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013451576232910156
+    },
+    {
+      "document_id": "omnidoc_095",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7065663474692203,
+        "chrf++": 75.58187237428903
+      },
+      "error": null,
+      "parse_time_seconds": 0.000720977783203125
+    },
+    {
+      "document_id": "omnidoc_096",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040721893310546875
+    },
+    {
+      "document_id": "omnidoc_097",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9298538622129436,
+        "chrf++": 96.75544942874126
+      },
+      "error": null,
+      "parse_time_seconds": 0.002720355987548828
+    },
+    {
+      "document_id": "omnidoc_098",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6115054165110199,
+        "chrf++": 86.20975272571393
+      },
+      "error": null,
+      "parse_time_seconds": 0.00127410888671875
+    },
+    {
+      "document_id": "omnidoc_099",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8489583333333334,
+        "chrf++": 92.10382332911199
+      },
+      "error": null,
+      "parse_time_seconds": 0.000986337661743164
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844735565259582,
+        "chrf++": 96.67555577720655
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020017623901367188
+    },
+    {
+      "document_id": "omnidoc_101",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05827702702702697,
+        "chrf++": 17.223919959491685
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011103153228759766
+    },
+    {
+      "document_id": "omnidoc_102",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9824528998891762,
+        "chrf++": 96.82093259325785
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017442703247070312
+    },
+    {
+      "document_id": "omnidoc_103",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4429223744292238,
+        "chrf++": 54.55568429850104
+      },
+      "error": null,
+      "parse_time_seconds": 0.00093841552734375
+    },
+    {
+      "document_id": "omnidoc_104",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9681901279707495,
+        "chrf++": 97.97439532182355
+      },
+      "error": null,
+      "parse_time_seconds": 0.004826545715332031
+    },
+    {
+      "document_id": "omnidoc_105",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9553239017125837,
+        "chrf++": 94.44855408521177
+      },
+      "error": null,
+      "parse_time_seconds": 0.0023801326751708984
+    },
+    {
+      "document_id": "omnidoc_106",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8913551401869159,
+        "chrf++": 91.86727747006249
+      },
+      "error": null,
+      "parse_time_seconds": 0.004744291305541992
+    },
+    {
+      "document_id": "omnidoc_107",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5033050047214354,
+        "chrf++": 67.54062492636461
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007600784301757812
+    },
+    {
+      "document_id": "omnidoc_108",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8817651956702748,
+        "chrf++": 87.44070645188715
+      },
+      "error": null,
+      "parse_time_seconds": 0.0034325122833251953
+    },
+    {
+      "document_id": "omnidoc_109",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6688888888888889,
+        "chrf++": 70.86049110059338
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018107891082763672
+    },
+    {
+      "document_id": "omnidoc_110",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4415897230028101,
+        "chrf++": 70.38507656333596
+      },
+      "error": null,
+      "parse_time_seconds": 0.00118255615234375
+    },
+    {
+      "document_id": "omnidoc_111",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7777777777777778,
+        "chrf++": 90.44249143633482
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011286735534667969
+    },
+    {
+      "document_id": "omnidoc_112",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7322640345465762,
+        "chrf++": 86.09141304490751
+      },
+      "error": null,
+      "parse_time_seconds": 0.003448963165283203
+    },
+    {
+      "document_id": "omnidoc_113",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8729458917835671,
+        "chrf++": 92.12713015298493
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016303062438964844
+    },
+    {
+      "document_id": "omnidoc_114",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8103638368246968,
+        "chrf++": 92.61529948101914
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009701251983642578
+    },
+    {
+      "document_id": "omnidoc_115",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9131156613171002,
+        "chrf++": 91.520032636589
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011649131774902344
+    },
+    {
+      "document_id": "omnidoc_116",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.008116883116883078,
+        "chrf++": 1.0489205987829875
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012505054473876953
+    },
+    {
+      "document_id": "omnidoc_117",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8889652014652014,
+        "chrf++": 93.83442352183697
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016803741455078125
+    },
+    {
+      "document_id": "omnidoc_118",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8339582217461168,
+        "chrf++": 84.43124984036812
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020914077758789062
+    },
+    {
+      "document_id": "omnidoc_119",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9275737196068288,
+        "chrf++": 93.82038032259939
+      },
+      "error": null,
+      "parse_time_seconds": 0.00189971923828125
+    },
+    {
+      "document_id": "omnidoc_120",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37421383647798745,
+        "chrf++": 72.30386815222866
+      },
+      "error": null,
+      "parse_time_seconds": 0.00072479248046875
+    },
+    {
+      "document_id": "omnidoc_121",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7281553398058253,
+        "chrf++": 88.6696384934687
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008232593536376953
+    },
+    {
+      "document_id": "omnidoc_122",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8550903119868637,
+        "chrf++": 87.50928009233321
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008859634399414062
+    },
+    {
+      "document_id": "omnidoc_123",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8291970802919708,
+        "chrf++": 92.8166959482801
+      },
+      "error": null,
+      "parse_time_seconds": 0.00081634521484375
+    },
+    {
+      "document_id": "omnidoc_124",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8691860465116279,
+        "chrf++": 86.31727628071066
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005784034729003906
+    },
+    {
+      "document_id": "omnidoc_125",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.657074340527578,
+        "chrf++": 69.06887427382001
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011229515075683594
+    },
+    {
+      "document_id": "omnidoc_126",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7661188369152971,
+        "chrf++": 88.5848821960407
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004572868347167969
+    },
+    {
+      "document_id": "omnidoc_127",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9360284318080853,
+        "chrf++": 94.32553883561965
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008063316345214844
+    },
+    {
+      "document_id": "omnidoc_128",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9500604107933951,
+        "chrf++": 93.88910622469923
+      },
+      "error": null,
+      "parse_time_seconds": 0.002068758010864258
+    },
+    {
+      "document_id": "omnidoc_129",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9352409638554217,
+        "chrf++": 94.27234086555339
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011081695556640625
+    },
+    {
+      "document_id": "omnidoc_130",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9058962264150944,
+        "chrf++": 90.43086760095022
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011365413665771484
+    },
+    {
+      "document_id": "omnidoc_131",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8722397476340694,
+        "chrf++": 90.55291629020164
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011584758758544922
+    },
+    {
+      "document_id": "omnidoc_132",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9392782789729355,
+        "chrf++": 97.29441256950658
+      },
+      "error": null,
+      "parse_time_seconds": 0.0025103092193603516
+    },
+    {
+      "document_id": "omnidoc_133",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5446153846153846,
+        "chrf++": 80.17087723028669
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016322135925292969
+    },
+    {
+      "document_id": "omnidoc_134",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9016216216216216,
+        "chrf++": 90.87910365254498
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012655258178710938
+    },
+    {
+      "document_id": "omnidoc_135",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8162962962962963,
+        "chrf++": 87.18832300107334
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009222030639648438
+    },
+    {
+      "document_id": "omnidoc_136",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9788029925187033,
+        "chrf++": 95.94242964634599
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012464523315429688
+    },
+    {
+      "document_id": "omnidoc_137",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8584905660377359,
+        "chrf++": 92.86573453397105
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011415481567382812
+    },
+    {
+      "document_id": "omnidoc_138",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.287376638680218,
+        "chrf++": 54.956344525762255
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008540153503417969
+    },
+    {
+      "document_id": "omnidoc_139",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2556317335945152,
+        "chrf++": 46.39613639446157
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015799999237060547
+    },
+    {
+      "document_id": "omnidoc_140",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8734177215189873,
+        "chrf++": 92.71610646345788
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018320083618164062
+    },
+    {
+      "document_id": "omnidoc_141",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9047427652733119,
+        "chrf++": 90.29665467175359
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012466907501220703
+    },
+    {
+      "document_id": "omnidoc_142",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5428766655278442,
+        "chrf++": 83.25373711268637
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012545585632324219
+    },
+    {
+      "document_id": "omnidoc_143",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603630862329804,
+        "chrf++": 95.07815563165614
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022287368774414062
+    },
+    {
+      "document_id": "omnidoc_144",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8980667838312829,
+        "chrf++": 97.41500752782653
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008702278137207031
+    },
+    {
+      "document_id": "omnidoc_145",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9619071024821824,
+        "chrf++": 94.83686224664454
+      },
+      "error": null,
+      "parse_time_seconds": 0.001180410385131836
+    },
+    {
+      "document_id": "omnidoc_146",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9037187977585328,
+        "chrf++": 94.14584286377706
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009195804595947266
+    },
+    {
+      "document_id": "omnidoc_147",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9079229122055674,
+        "chrf++": 94.46538774145779
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008924007415771484
+    },
+    {
+      "document_id": "omnidoc_148",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9676511954992968,
+        "chrf++": 91.5090428027656
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015521049499511719
+    },
+    {
+      "document_id": "omnidoc_149",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.657956235394094,
+        "chrf++": 83.81153948068096
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012450218200683594
+    },
+    {
+      "document_id": "omnidoc_150",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9742730805306177,
+        "chrf++": 94.60300523135157
+      },
+      "error": null,
+      "parse_time_seconds": 0.002436399459838867
+    },
+    {
+      "document_id": "omnidoc_151",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.981951871657754,
+        "chrf++": 96.45335352980271
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021164417266845703
+    },
+    {
+      "document_id": "omnidoc_152",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.982296277011195,
+        "chrf++": 97.62326906208492
+      },
+      "error": null,
+      "parse_time_seconds": 0.002428770065307617
+    },
+    {
+      "document_id": "omnidoc_153",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9753464818763327,
+        "chrf++": 94.18006419324772
+      },
+      "error": null,
+      "parse_time_seconds": 0.002121448516845703
+    },
+    {
+      "document_id": "omnidoc_154",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98052122514777,
+        "chrf++": 96.28921402849961
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020952224731445312
+    },
+    {
+      "document_id": "omnidoc_155",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.982803543512246,
+        "chrf++": 97.252302946944
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017766952514648438
+    },
+    {
+      "document_id": "omnidoc_156",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9760159893404398,
+        "chrf++": 94.6871577088373
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019350051879882812
+    },
+    {
+      "document_id": "omnidoc_157",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9753846153846154,
+        "chrf++": 96.8611444679201
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017056465148925781
+    },
+    {
+      "document_id": "omnidoc_158",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.676650133536818,
+        "chrf++": 81.67000662205949
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012798309326171875
+    },
+    {
+      "document_id": "omnidoc_159",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7254318046456224,
+        "chrf++": 88.77568848186566
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014586448669433594
+    },
+    {
+      "document_id": "omnidoc_160",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759900648544225,
+        "chrf++": 95.39746660475582
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015535354614257812
+    },
+    {
+      "document_id": "omnidoc_161",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9723635363673863,
+        "chrf++": 94.61311170125471
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018496513366699219
+    },
+    {
+      "document_id": "omnidoc_162",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9721433400946585,
+        "chrf++": 94.55081381669481
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016391277313232422
+    },
+    {
+      "document_id": "omnidoc_163",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9724222252411358,
+        "chrf++": 93.05085044945939
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017910003662109375
+    },
+    {
+      "document_id": "omnidoc_164",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9787008863606297,
+        "chrf++": 95.83095308408075
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018725395202636719
+    },
+    {
+      "document_id": "omnidoc_165",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9738624052004333,
+        "chrf++": 94.0141509677928
+      },
+      "error": null,
+      "parse_time_seconds": 0.0030450820922851562
+    },
+    {
+      "document_id": "omnidoc_166",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.97294725394236,
+        "chrf++": 94.11603244773254
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020830631256103516
+    },
+    {
+      "document_id": "omnidoc_167",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9105497771173848,
+        "chrf++": 87.68214014856342
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022046566009521484
+    },
+    {
+      "document_id": "omnidoc_168",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9485912671918815,
+        "chrf++": 94.97622189783219
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017971992492675781
+    },
+    {
+      "document_id": "omnidoc_169",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887213114754099,
+        "chrf++": 98.6682282424958
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016944408416748047
+    },
+    {
+      "document_id": "omnidoc_170",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9645569620253165,
+        "chrf++": 93.25456855076469
+      },
+      "error": null,
+      "parse_time_seconds": 0.001626729965209961
+    },
+    {
+      "document_id": "omnidoc_171",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9574120789434635,
+        "chrf++": 91.83435385631302
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016531944274902344
+    },
+    {
+      "document_id": "omnidoc_172",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9081517352703793,
+        "chrf++": 87.48773845576335
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016293525695800781
+    },
+    {
+      "document_id": "omnidoc_173",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8976776671905011,
+        "chrf++": 84.17029775496424
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017516613006591797
+    },
+    {
+      "document_id": "omnidoc_174",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9661274014155713,
+        "chrf++": 93.95101416607399
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015664100646972656
+    },
+    {
+      "document_id": "omnidoc_175",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7877397148008523,
+        "chrf++": 89.09803645679872
+      },
+      "error": null,
+      "parse_time_seconds": 0.001394033432006836
+    },
+    {
+      "document_id": "omnidoc_176",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638147807421037,
+        "chrf++": 93.07652263460147
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017826557159423828
+    },
+    {
+      "document_id": "omnidoc_177",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8551260504201681,
+        "chrf++": 92.45067152185317
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016944408416748047
+    },
+    {
+      "document_id": "omnidoc_178",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9652173913043478,
+        "chrf++": 93.62869794447965
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015492439270019531
+    },
+    {
+      "document_id": "omnidoc_179",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8882534095908491,
+        "chrf++": 88.43696239229736
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017337799072265625
+    },
+    {
+      "document_id": "omnidoc_180",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603608933589706,
+        "chrf++": 91.32565707160055
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017681121826171875
+    },
+    {
+      "document_id": "omnidoc_181",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8792713922620728,
+        "chrf++": 91.20546984842855
+      },
+      "error": null,
+      "parse_time_seconds": 0.002313375473022461
+    },
+    {
+      "document_id": "omnidoc_182",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9789324027400801,
+        "chrf++": 95.81571691878206
+      },
+      "error": null,
+      "parse_time_seconds": 0.0023903846740722656
+    },
+    {
+      "document_id": "omnidoc_183",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8917316164012199,
+        "chrf++": 93.76812034191848
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014145374298095703
+    },
+    {
+      "document_id": "omnidoc_184",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9705667008346757,
+        "chrf++": 94.24821741543253
+      },
+      "error": null,
+      "parse_time_seconds": 0.002515554428100586
+    },
+    {
+      "document_id": "omnidoc_185",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16123019571295438,
+        "chrf++": 43.641073299008895
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006134510040283203
+    },
+    {
+      "document_id": "omnidoc_186",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6048387096774194,
+        "chrf++": 63.31339107838051
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002772808074951172
+    },
+    {
+      "document_id": "omnidoc_187",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9769094138543517,
+        "chrf++": 99.07894632794289
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002639293670654297
+    },
+    {
+      "document_id": "omnidoc_188",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9985855728429985,
+        "chrf++": 99.93727898642533
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045299530029296875
+    },
+    {
+      "document_id": "omnidoc_189",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.28194297782470956,
+        "chrf++": 58.11251724132443
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004925727844238281
+    },
+    {
+      "document_id": "omnidoc_190",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3049001814882033,
+        "chrf++": 53.2082136355706
+      },
+      "error": null,
+      "parse_time_seconds": 0.00027251243591308594
+    },
+    {
+      "document_id": "omnidoc_191",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9075804776739356,
+        "chrf++": 86.51485855226623
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004169940948486328
+    },
+    {
+      "document_id": "omnidoc_192",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648551903677188,
+        "chrf++": 93.87643635618493
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039696693420410156
+    },
+    {
+      "document_id": "omnidoc_193",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8867924528301887,
+        "chrf++": 81.91423259706094
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002703666687011719
+    },
+    {
+      "document_id": "omnidoc_194",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4840047393364929,
+        "chrf++": 70.51203815070096
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002543926239013672
+    },
+    {
+      "document_id": "omnidoc_195",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47161878065872465,
+        "chrf++": 69.64543865317833
+      },
+      "error": null,
+      "parse_time_seconds": 0.00025177001953125
+    },
+    {
+      "document_id": "omnidoc_196",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8183619550858653,
+        "chrf++": 87.59199389678307
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005192756652832031
+    },
+    {
+      "document_id": "omnidoc_197",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.09845031905195989,
+        "chrf++": 28.769702522553757
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002887248992919922
+    },
+    {
+      "document_id": "omnidoc_198",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9019384264538198,
+        "chrf++": 91.13372455925544
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035190582275390625
+    },
+    {
+      "document_id": "omnidoc_199",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8773534158149543,
+        "chrf++": 87.45234996788352
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003147125244140625
+    },
+    {
+      "document_id": "omnidoc_200",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19716574245224894,
+        "chrf++": 47.167949551159
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002593994140625
+    },
+    {
+      "document_id": "omnidoc_201",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7805540467137425,
+        "chrf++": 76.1969655343843
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033736228942871094
+    },
+    {
+      "document_id": "omnidoc_202",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.949955713020372,
+        "chrf++": 97.13572392079267
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003845691680908203
+    },
+    {
+      "document_id": "omnidoc_203",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8193384223918575,
+        "chrf++": 81.82729656369521
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003154277801513672
+    },
+    {
+      "document_id": "omnidoc_204",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.673494983277592,
+        "chrf++": 80.66757940692526
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033211708068847656
+    },
+    {
+      "document_id": "omnidoc_205",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6172927002126152,
+        "chrf++": 74.52299963465515
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029158592224121094
+    },
+    {
+      "document_id": "omnidoc_206",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9077797202797203,
+        "chrf++": 92.93634530136345
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047016143798828125
+    },
+    {
+      "document_id": "omnidoc_207",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8998393144081414,
+        "chrf++": 86.04930787961483
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003790855407714844
+    },
+    {
+      "document_id": "omnidoc_208",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6330532212885154,
+        "chrf++": 75.3646883789072
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002925395965576172
+    },
+    {
+      "document_id": "omnidoc_209",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7924242424242425,
+        "chrf++": 79.90813118251262
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002994537353515625
+    },
+    {
+      "document_id": "omnidoc_210",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9154698399671728,
+        "chrf++": 89.21225314383292
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004401206970214844
+    },
+    {
+      "document_id": "omnidoc_211",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9338781575037147,
+        "chrf++": 94.23821926407079
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047206878662109375
+    },
+    {
+      "document_id": "omnidoc_212",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9141011022424933,
+        "chrf++": 85.55891851877217
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004496574401855469
+    },
+    {
+      "document_id": "omnidoc_213",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8443775100401607,
+        "chrf++": 75.19936444615138
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003771781921386719
+    },
+    {
+      "document_id": "omnidoc_214",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41730279898218825,
+        "chrf++": 70.1384742163478
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005095005035400391
+    },
+    {
+      "document_id": "omnidoc_215",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5494761350407451,
+        "chrf++": 75.71190177948198
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003056526184082031
+    },
+    {
+      "document_id": "omnidoc_216",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7601270849880858,
+        "chrf++": 65.31953063193134
+      },
+      "error": null,
+      "parse_time_seconds": 0.000331878662109375
+    },
+    {
+      "document_id": "omnidoc_217",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8203556100551809,
+        "chrf++": 82.10080590986756
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032019615173339844
+    },
+    {
+      "document_id": "omnidoc_218",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.621939736346516,
+        "chrf++": 76.08978243272858
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003802776336669922
+    },
+    {
+      "document_id": "omnidoc_219",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6893039049235994,
+        "chrf++": 79.33040390341718
+      },
+      "error": null,
+      "parse_time_seconds": 0.000667572021484375
+    },
+    {
+      "document_id": "omnidoc_220",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8782608695652174,
+        "chrf++": 86.41482646670042
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005896091461181641
+    },
+    {
+      "document_id": "omnidoc_221",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6772151898734178,
+        "chrf++": 83.6190418306362
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041365623474121094
+    },
+    {
+      "document_id": "omnidoc_222",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8564061880206267,
+        "chrf++": 86.8312979374522
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043272972106933594
+    },
+    {
+      "document_id": "omnidoc_223",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.722963644730787,
+        "chrf++": 74.11657514490054
+      },
+      "error": null,
+      "parse_time_seconds": 0.000431060791015625
+    },
+    {
+      "document_id": "omnidoc_224",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6692861820563196,
+        "chrf++": 84.17426768868845
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003993511199951172
+    },
+    {
+      "document_id": "omnidoc_225",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7328552218735993,
+        "chrf++": 82.51347600455475
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005021095275878906
+    },
+    {
+      "document_id": "omnidoc_226",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48885077186963977,
+        "chrf++": 89.16834089532372
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003941059112548828
+    },
+    {
+      "document_id": "omnidoc_227",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9401330376940134,
+        "chrf++": 95.30257647336312
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046944618225097656
+    },
+    {
+      "document_id": "omnidoc_228",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7745358090185677,
+        "chrf++": 86.51838239679721
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003857612609863281
+    },
+    {
+      "document_id": "omnidoc_229",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7980402830702231,
+        "chrf++": 74.05303347985733
+      },
+      "error": null,
+      "parse_time_seconds": 0.000514984130859375
+    },
+    {
+      "document_id": "omnidoc_230",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.685251798561151,
+        "chrf++": 92.4516132307426
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002696514129638672
+    },
+    {
+      "document_id": "omnidoc_231",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8400602409638555,
+        "chrf++": 83.26665276253425
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004069805145263672
+    },
+    {
+      "document_id": "omnidoc_232",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8463667820069204,
+        "chrf++": 89.51633737458089
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003025531768798828
+    },
+    {
+      "document_id": "omnidoc_233",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.75,
+        "chrf++": 82.14053185741506
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004439353942871094
+    },
+    {
+      "document_id": "omnidoc_234",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8917835671342685,
+        "chrf++": 85.182311021725
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004658699035644531
+    },
+    {
+      "document_id": "omnidoc_235",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7891549683457197,
+        "chrf++": 83.30824607517843
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004520416259765625
+    },
+    {
+      "document_id": "omnidoc_236",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8772032902467685,
+        "chrf++": 86.15699121487359
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004322528839111328
+    },
+    {
+      "document_id": "omnidoc_237",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8218503937007874,
+        "chrf++": 88.28835409763491
+      },
+      "error": null,
+      "parse_time_seconds": 0.000614166259765625
+    },
+    {
+      "document_id": "omnidoc_238",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7485998755444929,
+        "chrf++": 81.0155080885797
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004703998565673828
+    },
+    {
+      "document_id": "omnidoc_239",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8085277554304103,
+        "chrf++": 83.58190129682053
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004436969757080078
+    },
+    {
+      "document_id": "omnidoc_240",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8597550150896502,
+        "chrf++": 92.09209604067458
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006046295166015625
+    },
+    {
+      "document_id": "omnidoc_241",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8857083159214375,
+        "chrf++": 87.81613587044556
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012319087982177734
+    },
+    {
+      "document_id": "omnidoc_242",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7327935222672064,
+        "chrf++": 81.06582569002369
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009107589721679688
+    },
+    {
+      "document_id": "omnidoc_243",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8146417445482866,
+        "chrf++": 81.68256356163619
+      },
+      "error": null,
+      "parse_time_seconds": 0.001131296157836914
+    },
+    {
+      "document_id": "omnidoc_244",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8630286493860846,
+        "chrf++": 82.6366839306762
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006568431854248047
+    },
+    {
+      "document_id": "omnidoc_245",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8779513888888889,
+        "chrf++": 83.84590190169354
+      },
+      "error": null,
+      "parse_time_seconds": 0.000989675521850586
+    },
+    {
+      "document_id": "omnidoc_246",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.827575175943698,
+        "chrf++": 84.47374730651619
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005512237548828125
+    },
+    {
+      "document_id": "omnidoc_247",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8055183498526655,
+        "chrf++": 82.91615426910333
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005273818969726562
+    },
+    {
+      "document_id": "omnidoc_248",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8949090909090909,
+        "chrf++": 88.84117075036679
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043845176696777344
+    },
+    {
+      "document_id": "omnidoc_249",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7937720329024677,
+        "chrf++": 81.29395423514316
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044989585876464844
+    },
+    {
+      "document_id": "omnidoc_250",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7786628047308713,
+        "chrf++": 83.07932503339278
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005118846893310547
+    },
+    {
+      "document_id": "omnidoc_251",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8914512922465209,
+        "chrf++": 87.75747998934155
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005786418914794922
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8683514545988833,
+        "chrf++": 82.0279838234245
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009584426879882812
+    },
+    {
+      "document_id": "omnidoc_001",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9636711281070746,
+        "chrf++": 93.90511362564872
+      },
+      "error": null,
+      "parse_time_seconds": 12.440155982971191
+    },
+    {
+      "document_id": "omnidoc_002",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9302908726178536,
+        "chrf++": 82.19262334161688
+      },
+      "error": null,
+      "parse_time_seconds": 6.2604851722717285
+    },
+    {
+      "document_id": "omnidoc_003",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6580547112462006,
+        "chrf++": 73.43374488952963
+      },
+      "error": null,
+      "parse_time_seconds": 6.076396942138672
+    },
+    {
+      "document_id": "omnidoc_004",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8524590163934427,
+        "chrf++": 86.82216727277499
+      },
+      "error": null,
+      "parse_time_seconds": 9.741891384124756
+    },
+    {
+      "document_id": "omnidoc_005",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7462743599541459,
+        "chrf++": 67.91274543074141
+      },
+      "error": null,
+      "parse_time_seconds": 8.256615161895752
+    },
+    {
+      "document_id": "omnidoc_006",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8211185140318998,
+        "chrf++": 78.2549859610957
+      },
+      "error": null,
+      "parse_time_seconds": 8.26410698890686
+    },
+    {
+      "document_id": "omnidoc_007",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7912728214424447,
+        "chrf++": 75.02755553625899
+      },
+      "error": null,
+      "parse_time_seconds": 11.127485275268555
+    },
+    {
+      "document_id": "omnidoc_008",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.606361663048923,
+        "chrf++": 56.99275242108413
+      },
+      "error": null,
+      "parse_time_seconds": 13.418126344680786
+    },
+    {
+      "document_id": "omnidoc_009",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8062330623306233,
+        "chrf++": 72.40408729184622
+      },
+      "error": null,
+      "parse_time_seconds": 3.8439111709594727
+    },
+    {
+      "document_id": "omnidoc_010",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8059701492537313,
+        "chrf++": 73.05453529644555
+      },
+      "error": null,
+      "parse_time_seconds": 3.8212430477142334
+    },
+    {
+      "document_id": "omnidoc_011",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7008928571428572,
+        "chrf++": 61.24791708100711
+      },
+      "error": null,
+      "parse_time_seconds": 4.927938461303711
+    },
+    {
+      "document_id": "omnidoc_012",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.450107296137339,
+        "chrf++": 39.37996199023447
+      },
+      "error": null,
+      "parse_time_seconds": 4.161421060562134
+    },
+    {
+      "document_id": "omnidoc_013",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8961730449251248,
+        "chrf++": 85.36723568297532
+      },
+      "error": null,
+      "parse_time_seconds": 8.564377546310425
+    },
+    {
+      "document_id": "omnidoc_014",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9041195771053591,
+        "chrf++": 86.96028595962112
+      },
+      "error": null,
+      "parse_time_seconds": 8.013341188430786
+    },
+    {
+      "document_id": "omnidoc_015",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4929706601466992,
+        "chrf++": 84.02914784789884
+      },
+      "error": null,
+      "parse_time_seconds": 7.383012294769287
+    },
+    {
+      "document_id": "omnidoc_016",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6386903389439704,
+        "chrf++": 73.64405621398551
+      },
+      "error": null,
+      "parse_time_seconds": 9.241793155670166
+    },
+    {
+      "document_id": "omnidoc_017",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8258011503697618,
+        "chrf++": 83.64387258132268
+      },
+      "error": null,
+      "parse_time_seconds": 6.7085607051849365
+    },
+    {
+      "document_id": "omnidoc_018",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7880216929969347,
+        "chrf++": 83.26736444213226
+      },
+      "error": null,
+      "parse_time_seconds": 9.209628105163574
+    },
+    {
+      "document_id": "omnidoc_019",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8172600270392069,
+        "chrf++": 75.82861798288792
+      },
+      "error": null,
+      "parse_time_seconds": 8.333118200302124
+    },
+    {
+      "document_id": "omnidoc_020",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.26316710411198596,
+        "chrf++": 59.5052203208679
+      },
+      "error": null,
+      "parse_time_seconds": 9.021114349365234
+    },
+    {
+      "document_id": "omnidoc_021",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5609960828203693,
+        "chrf++": 52.616275899220334
+      },
+      "error": null,
+      "parse_time_seconds": 11.005752563476562
+    },
+    {
+      "document_id": "omnidoc_022",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9204468517264726,
+        "chrf++": 92.07930156620812
+      },
+      "error": null,
+      "parse_time_seconds": 6.1112120151519775
+    },
+    {
+      "document_id": "omnidoc_023",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6491956408925792,
+        "chrf++": 65.16593283534885
+      },
+      "error": null,
+      "parse_time_seconds": 5.668886661529541
+    },
+    {
+      "document_id": "omnidoc_024",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.771186440677966,
+        "chrf++": 75.13856142851162
+      },
+      "error": null,
+      "parse_time_seconds": 4.49837589263916
+    },
+    {
+      "document_id": "omnidoc_025",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8536269430051814,
+        "chrf++": 81.48031315123141
+      },
+      "error": null,
+      "parse_time_seconds": 7.036660194396973
+    },
+    {
+      "document_id": "omnidoc_026",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.954225352112676,
+        "chrf++": 92.83853185691034
+      },
+      "error": null,
+      "parse_time_seconds": 5.8875062465667725
+    },
+    {
+      "document_id": "omnidoc_027",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.856532877882152,
+        "chrf++": 83.69067871046806
+      },
+      "error": null,
+      "parse_time_seconds": 6.1847569942474365
+    },
+    {
+      "document_id": "omnidoc_028",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8375585023400935,
+        "chrf++": 78.51326145495432
+      },
+      "error": null,
+      "parse_time_seconds": 9.480361700057983
+    },
+    {
+      "document_id": "omnidoc_029",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8671641791044776,
+        "chrf++": 82.59362652269374
+      },
+      "error": null,
+      "parse_time_seconds": 4.630312919616699
+    },
+    {
+      "document_id": "omnidoc_030",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7646815550041357,
+        "chrf++": 72.52530429485493
+      },
+      "error": null,
+      "parse_time_seconds": 9.127690553665161
+    },
+    {
+      "document_id": "omnidoc_031",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6739013933547695,
+        "chrf++": 58.74088114276916
+      },
+      "error": null,
+      "parse_time_seconds": 10.52991533279419
+    },
+    {
+      "document_id": "omnidoc_032",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12429378531073443,
+        "chrf++": 34.681080296768634
+      },
+      "error": null,
+      "parse_time_seconds": 6.69638729095459
+    },
+    {
+      "document_id": "omnidoc_033",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11803422553751641,
+        "chrf++": 38.74216636996642
+      },
+      "error": null,
+      "parse_time_seconds": 6.3849778175354
+    },
+    {
+      "document_id": "omnidoc_034",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6734362307067425,
+        "chrf++": 77.23590785075886
+      },
+      "error": null,
+      "parse_time_seconds": 9.480730772018433
+    },
+    {
+      "document_id": "omnidoc_035",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7628126281262813,
+        "chrf++": 76.51233639557347
+      },
+      "error": null,
+      "parse_time_seconds": 7.8733954429626465
+    },
+    {
+      "document_id": "omnidoc_036",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.901060070671378,
+        "chrf++": 87.71160251397848
+      },
+      "error": null,
+      "parse_time_seconds": 8.540969371795654
+    },
+    {
+      "document_id": "omnidoc_037",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9120227038183695,
+        "chrf++": 86.03026109075705
+      },
+      "error": null,
+      "parse_time_seconds": 6.7223920822143555
+    },
+    {
+      "document_id": "omnidoc_038",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9183060109289618,
+        "chrf++": 83.79769126135595
+      },
+      "error": null,
+      "parse_time_seconds": 6.616811752319336
+    },
+    {
+      "document_id": "omnidoc_039",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8542808941374948,
+        "chrf++": 81.95473289580983
+      },
+      "error": null,
+      "parse_time_seconds": 8.721345663070679
+    },
+    {
+      "document_id": "omnidoc_040",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.741711847835748,
+        "chrf++": 77.32751527563909
+      },
+      "error": null,
+      "parse_time_seconds": 15.207079887390137
+    },
+    {
+      "document_id": "omnidoc_041",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8461958003817834,
+        "chrf++": 79.93233082524395
+      },
+      "error": null,
+      "parse_time_seconds": 9.07918119430542
+    },
+    {
+      "document_id": "omnidoc_042",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6221922731356694,
+        "chrf++": 67.40561916353059
+      },
+      "error": null,
+      "parse_time_seconds": 7.983776330947876
+    },
+    {
+      "document_id": "omnidoc_043",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9286382779597566,
+        "chrf++": 91.49114652055587
+      },
+      "error": null,
+      "parse_time_seconds": 7.143061876296997
+    },
+    {
+      "document_id": "omnidoc_044",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9160226687274601,
+        "chrf++": 87.92191496083841
+      },
+      "error": null,
+      "parse_time_seconds": 7.116407871246338
+    },
+    {
+      "document_id": "omnidoc_045",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8282485875706215,
+        "chrf++": 76.73102084272013
+      },
+      "error": null,
+      "parse_time_seconds": 6.6591315269470215
+    },
+    {
+      "document_id": "omnidoc_046",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6386473429951691,
+        "chrf++": 66.8419455687111
+      },
+      "error": null,
+      "parse_time_seconds": 6.764936923980713
+    },
+    {
+      "document_id": "omnidoc_047",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8186592523941921,
+        "chrf++": 81.57926257885796
+      },
+      "error": null,
+      "parse_time_seconds": 5.842730283737183
+    },
+    {
+      "document_id": "omnidoc_048",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4843287995269071,
+        "chrf++": 44.863710608861915
+      },
+      "error": null,
+      "parse_time_seconds": 6.2984490394592285
+    },
+    {
+      "document_id": "omnidoc_049",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6772046589018303,
+        "chrf++": 87.33006543096697
+      },
+      "error": null,
+      "parse_time_seconds": 5.263047695159912
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8902163383919922,
+        "chrf++": 77.52807108778985
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008747577667236328
+    },
+    {
+      "document_id": "omnidoc_051",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.929523141654979,
+        "chrf++": 84.28970655957612
+      },
+      "error": null,
+      "parse_time_seconds": 6.1015331745147705
+    },
+    {
+      "document_id": "omnidoc_052",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7381484239265326,
+        "chrf++": 72.84565759918186
+      },
+      "error": null,
+      "parse_time_seconds": 7.861923694610596
+    },
+    {
+      "document_id": "omnidoc_053",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8763119983535707,
+        "chrf++": 85.80786309562126
+      },
+      "error": null,
+      "parse_time_seconds": 9.14692735671997
+    },
+    {
+      "document_id": "omnidoc_054",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8799376299376299,
+        "chrf++": 86.47151409092827
+      },
+      "error": null,
+      "parse_time_seconds": 6.660310506820679
+    },
+    {
+      "document_id": "omnidoc_055",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8292154312960555,
+        "chrf++": 85.14847404766967
+      },
+      "error": null,
+      "parse_time_seconds": 5.0268166065216064
+    },
+    {
+      "document_id": "omnidoc_056",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8645634161886552,
+        "chrf++": 82.40835254702876
+      },
+      "error": null,
+      "parse_time_seconds": 8.811413526535034
+    },
+    {
+      "document_id": "omnidoc_057",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3786093786093786,
+        "chrf++": 80.4729445037342
+      },
+      "error": null,
+      "parse_time_seconds": 7.098995208740234
+    },
+    {
+      "document_id": "omnidoc_058",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5248538011695907,
+        "chrf++": 69.93968717972851
+      },
+      "error": null,
+      "parse_time_seconds": 5.225974798202515
+    },
+    {
+      "document_id": "omnidoc_059",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.21818883954431356,
+        "chrf++": 69.8558402404411
+      },
+      "error": null,
+      "parse_time_seconds": 8.686448574066162
+    },
+    {
+      "document_id": "omnidoc_060",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06143197058187322,
+        "chrf++": 24.79439200713002
+      },
+      "error": null,
+      "parse_time_seconds": 8.344255685806274
+    },
+    {
+      "document_id": "omnidoc_061",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48465116279069764,
+        "chrf++": 63.3603632756956
+      },
+      "error": null,
+      "parse_time_seconds": 4.298482179641724
+    },
+    {
+      "document_id": "omnidoc_062",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7659574468085106,
+        "chrf++": 73.89621081352085
+      },
+      "error": null,
+      "parse_time_seconds": 6.6949708461761475
+    },
+    {
+      "document_id": "omnidoc_063",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3851590106007067,
+        "chrf++": 65.20863531858741
+      },
+      "error": null,
+      "parse_time_seconds": 4.424795389175415
+    },
+    {
+      "document_id": "omnidoc_064",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9505813953488372,
+        "chrf++": 96.65119468265166
+      },
+      "error": null,
+      "parse_time_seconds": 3.657806158065796
+    },
+    {
+      "document_id": "omnidoc_065",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8706697459584296,
+        "chrf++": 76.96393884300188
+      },
+      "error": null,
+      "parse_time_seconds": 3.7816035747528076
+    },
+    {
+      "document_id": "omnidoc_066",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.91415313225058,
+        "chrf++": 89.63480167981733
+      },
+      "error": null,
+      "parse_time_seconds": 4.329307317733765
+    },
+    {
+      "document_id": "omnidoc_067",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 3.503927230834961
+    },
+    {
+      "document_id": "omnidoc_068",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7218614718614719,
+        "chrf++": 81.06803403151281
+      },
+      "error": null,
+      "parse_time_seconds": 7.295742750167847
+    },
+    {
+      "document_id": "omnidoc_069",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8839169909208819,
+        "chrf++": 81.57240891808202
+      },
+      "error": null,
+      "parse_time_seconds": 4.498245477676392
+    },
+    {
+      "document_id": "omnidoc_070",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8213947617544967,
+        "chrf++": 72.47407917191457
+      },
+      "error": null,
+      "parse_time_seconds": 4.3502326011657715
+    },
+    {
+      "document_id": "omnidoc_071",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6060606060606061,
+        "chrf++": 45.30894624870689
+      },
+      "error": null,
+      "parse_time_seconds": 3.843512535095215
+    },
+    {
+      "document_id": "omnidoc_072",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6257267441860466,
+        "chrf++": 73.05477549131885
+      },
+      "error": null,
+      "parse_time_seconds": 6.640214443206787
+    },
+    {
+      "document_id": "omnidoc_073",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7814661134163209,
+        "chrf++": 77.02170717826635
+      },
+      "error": null,
+      "parse_time_seconds": 5.448708772659302
+    },
+    {
+      "document_id": "omnidoc_074",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6308485329103886,
+        "chrf++": 73.12496941471032
+      },
+      "error": null,
+      "parse_time_seconds": 7.5995683670043945
+    },
+    {
+      "document_id": "omnidoc_075",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3007066213033237,
+        "chrf++": 64.74301181288608
+      },
+      "error": null,
+      "parse_time_seconds": 6.045135498046875
+    },
+    {
+      "document_id": "omnidoc_076",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6845437616387338,
+        "chrf++": 74.09853975819942
+      },
+      "error": null,
+      "parse_time_seconds": 5.826023817062378
+    },
+    {
+      "document_id": "omnidoc_077",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7469335054874112,
+        "chrf++": 64.82850055363178
+      },
+      "error": null,
+      "parse_time_seconds": 4.0838377475738525
+    },
+    {
+      "document_id": "omnidoc_078",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1559854897218863,
+        "chrf++": 37.02986410300041
+      },
+      "error": null,
+      "parse_time_seconds": 10.009204149246216
+    },
+    {
+      "document_id": "omnidoc_079",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7636798088410992,
+        "chrf++": 83.8419166593524
+      },
+      "error": null,
+      "parse_time_seconds": 7.431262254714966
+    },
+    {
+      "document_id": "omnidoc_080",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3410852713178295,
+        "chrf++": 68.31460649797778
+      },
+      "error": null,
+      "parse_time_seconds": 5.525913953781128
+    },
+    {
+      "document_id": "omnidoc_081",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6015883520847121,
+        "chrf++": 82.65342513599373
+      },
+      "error": null,
+      "parse_time_seconds": 6.285729885101318
+    },
+    {
+      "document_id": "omnidoc_082",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2543581616481775,
+        "chrf++": 59.848592460388815
+      },
+      "error": null,
+      "parse_time_seconds": 9.498178958892822
+    },
+    {
+      "document_id": "omnidoc_083",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5660705414803775,
+        "chrf++": 72.99721262130208
+      },
+      "error": null,
+      "parse_time_seconds": 7.445444583892822
+    },
+    {
+      "document_id": "omnidoc_084",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5590518145584225,
+        "chrf++": 65.15060722948037
+      },
+      "error": null,
+      "parse_time_seconds": 9.383946657180786
+    },
+    {
+      "document_id": "omnidoc_085",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3168155970755483,
+        "chrf++": 84.2198196339508
+      },
+      "error": null,
+      "parse_time_seconds": 5.802145481109619
+    },
+    {
+      "document_id": "omnidoc_086",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.20606237248615566,
+        "chrf++": 54.72217570954392
+      },
+      "error": null,
+      "parse_time_seconds": 8.143102407455444
+    },
+    {
+      "document_id": "omnidoc_087",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6294642857142857,
+        "chrf++": 66.3408989361879
+      },
+      "error": null,
+      "parse_time_seconds": 8.460679531097412
+    },
+    {
+      "document_id": "omnidoc_088",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.22821715817694366,
+        "chrf++": 41.65026865011381
+      },
+      "error": null,
+      "parse_time_seconds": 6.790703535079956
+    },
+    {
+      "document_id": "omnidoc_089",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6280359028511088,
+        "chrf++": 83.28728503164035
+      },
+      "error": null,
+      "parse_time_seconds": 7.0900397300720215
+    },
+    {
+      "document_id": "omnidoc_090",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6272560816113,
+        "chrf++": 81.5748107047306
+      },
+      "error": null,
+      "parse_time_seconds": 6.411446809768677
+    },
+    {
+      "document_id": "omnidoc_091",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.28410182516810756,
+        "chrf++": 61.86202061218009
+      },
+      "error": null,
+      "parse_time_seconds": 7.693172216415405
+    },
+    {
+      "document_id": "omnidoc_092",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3517534537725824,
+        "chrf++": 63.60488241740229
+      },
+      "error": null,
+      "parse_time_seconds": 8.66897439956665
+    },
+    {
+      "document_id": "omnidoc_093",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8992718446601942,
+        "chrf++": 94.137661053481
+      },
+      "error": null,
+      "parse_time_seconds": 5.4463701248168945
+    },
+    {
+      "document_id": "omnidoc_094",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7768786127167631,
+        "chrf++": 77.88464652858916
+      },
+      "error": null,
+      "parse_time_seconds": 8.962487936019897
+    },
+    {
+      "document_id": "omnidoc_095",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.655933214072749,
+        "chrf++": 72.86955838613548
+      },
+      "error": null,
+      "parse_time_seconds": 5.360563516616821
+    },
+    {
+      "document_id": "omnidoc_096",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 4.07211971282959
+    },
+    {
+      "document_id": "omnidoc_097",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8140230867892262,
+        "chrf++": 88.6085502767912
+      },
+      "error": null,
+      "parse_time_seconds": 6.604429006576538
+    },
+    {
+      "document_id": "omnidoc_098",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6239181746656176,
+        "chrf++": 85.8568742548981
+      },
+      "error": null,
+      "parse_time_seconds": 5.60549521446228
+    },
+    {
+      "document_id": "omnidoc_099",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41889880952380953,
+        "chrf++": 46.609451690549704
+      },
+      "error": null,
+      "parse_time_seconds": 5.359433650970459
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8789435069699193,
+        "chrf++": 82.0136657291097
+      },
+      "error": null,
+      "parse_time_seconds": 0.002233743667602539
+    },
+    {
+      "document_id": "omnidoc_101",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06939163498098855,
+        "chrf++": 23.707085139885614
+      },
+      "error": null,
+      "parse_time_seconds": 4.5199384689331055
+    },
+    {
+      "document_id": "omnidoc_102",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8966413063648172,
+        "chrf++": 80.65094197180666
+      },
+      "error": null,
+      "parse_time_seconds": 6.311985969543457
+    },
+    {
+      "document_id": "omnidoc_103",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8255813953488372,
+        "chrf++": 85.05618766725348
+      },
+      "error": null,
+      "parse_time_seconds": 4.814685106277466
+    },
+    {
+      "document_id": "omnidoc_104",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6297408937288772,
+        "chrf++": 82.08964331939923
+      },
+      "error": null,
+      "parse_time_seconds": 5.365339517593384
+    },
+    {
+      "document_id": "omnidoc_105",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9324116743471582,
+        "chrf++": 84.98241484542028
+      },
+      "error": null,
+      "parse_time_seconds": 4.2319557666778564
+    },
+    {
+      "document_id": "omnidoc_106",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8574766355140186,
+        "chrf++": 80.76626612001428
+      },
+      "error": null,
+      "parse_time_seconds": 4.143914461135864
+    },
+    {
+      "document_id": "omnidoc_107",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4371980676328503,
+        "chrf++": 43.58168357874958
+      },
+      "error": null,
+      "parse_time_seconds": 3.8760874271392822
+    },
+    {
+      "document_id": "omnidoc_108",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6273938384679434,
+        "chrf++": 71.02438777299281
+      },
+      "error": null,
+      "parse_time_seconds": 5.920938730239868
+    },
+    {
+      "document_id": "omnidoc_109",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5488888888888889,
+        "chrf++": 57.62863330231449
+      },
+      "error": null,
+      "parse_time_seconds": 5.173322677612305
+    },
+    {
+      "document_id": "omnidoc_110",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4018475750577367,
+        "chrf++": 60.27718171227996
+      },
+      "error": null,
+      "parse_time_seconds": 5.1935484409332275
+    },
+    {
+      "document_id": "omnidoc_111",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7106598984771574,
+        "chrf++": 72.95871200070229
+      },
+      "error": null,
+      "parse_time_seconds": 3.3915154933929443
+    },
+    {
+      "document_id": "omnidoc_112",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6858789625360231,
+        "chrf++": 63.85340212927203
+      },
+      "error": null,
+      "parse_time_seconds": 3.8608310222625732
+    },
+    {
+      "document_id": "omnidoc_113",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8509496284062759,
+        "chrf++": 79.31357596709339
+      },
+      "error": null,
+      "parse_time_seconds": 7.178199768066406
+    },
+    {
+      "document_id": "omnidoc_114",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43238840013033564,
+        "chrf++": 62.06377919351947
+      },
+      "error": null,
+      "parse_time_seconds": 8.071370363235474
+    },
+    {
+      "document_id": "omnidoc_115",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4528301886792453,
+        "chrf++": 45.9948901662746
+      },
+      "error": null,
+      "parse_time_seconds": 4.877549171447754
+    },
+    {
+      "document_id": "omnidoc_116",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.008338892595063374,
+        "chrf++": 1.1664463119759128
+      },
+      "error": null,
+      "parse_time_seconds": 5.078068971633911
+    },
+    {
+      "document_id": "omnidoc_117",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6847930702598652,
+        "chrf++": 78.24569373037849
+      },
+      "error": null,
+      "parse_time_seconds": 7.555560827255249
+    },
+    {
+      "document_id": "omnidoc_118",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7611140867702196,
+        "chrf++": 70.09496384745854
+      },
+      "error": null,
+      "parse_time_seconds": 5.454805135726929
+    },
+    {
+      "document_id": "omnidoc_119",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8898085876875323,
+        "chrf++": 85.32194529350637
+      },
+      "error": null,
+      "parse_time_seconds": 5.163344383239746
+    },
+    {
+      "document_id": "omnidoc_120",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3304924242424242,
+        "chrf++": 64.27694975213552
+      },
+      "error": null,
+      "parse_time_seconds": 6.012180328369141
+    },
+    {
+      "document_id": "omnidoc_121",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5876718034152437,
+        "chrf++": 62.69884668392839
+      },
+      "error": null,
+      "parse_time_seconds": 6.511809825897217
+    },
+    {
+      "document_id": "omnidoc_122",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5354095563139931,
+        "chrf++": 56.210359323892064
+      },
+      "error": null,
+      "parse_time_seconds": 7.5782082080841064
+    },
+    {
+      "document_id": "omnidoc_123",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7328031809145129,
+        "chrf++": 75.73692833246236
+      },
+      "error": null,
+      "parse_time_seconds": 9.08032774925232
+    },
+    {
+      "document_id": "omnidoc_124",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7073643410852712,
+        "chrf++": 68.24984457449143
+      },
+      "error": null,
+      "parse_time_seconds": 5.890504360198975
+    },
+    {
+      "document_id": "omnidoc_125",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.33333333333333337,
+        "chrf++": 28.57696982399617
+      },
+      "error": null,
+      "parse_time_seconds": 6.138124465942383
+    },
+    {
+      "document_id": "omnidoc_126",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7631224764468372,
+        "chrf++": 70.56154845085504
+      },
+      "error": null,
+      "parse_time_seconds": 4.233037948608398
+    },
+    {
+      "document_id": "omnidoc_127",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6392714349178144,
+        "chrf++": 62.39043881196354
+      },
+      "error": null,
+      "parse_time_seconds": 6.042291641235352
+    },
+    {
+      "document_id": "omnidoc_128",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9058581706063721,
+        "chrf++": 85.58036261436834
+      },
+      "error": null,
+      "parse_time_seconds": 6.920354843139648
+    },
+    {
+      "document_id": "omnidoc_129",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6120481927710844,
+        "chrf++": 59.29067167877653
+      },
+      "error": null,
+      "parse_time_seconds": 6.851604700088501
+    },
+    {
+      "document_id": "omnidoc_130",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7962096972680286,
+        "chrf++": 73.37392326415959
+      },
+      "error": null,
+      "parse_time_seconds": 6.993267297744751
+    },
+    {
+      "document_id": "omnidoc_131",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6882067851373183,
+        "chrf++": 66.1526402902906
+      },
+      "error": null,
+      "parse_time_seconds": 4.0079665184021
+    },
+    {
+      "document_id": "omnidoc_132",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.003122831367106227,
+        "chrf++": 0.09143668426266607
+      },
+      "error": null,
+      "parse_time_seconds": 6.477892637252808
+    },
+    {
+      "document_id": "omnidoc_133",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5625524769101595,
+        "chrf++": 77.25179369196889
+      },
+      "error": null,
+      "parse_time_seconds": 6.547416925430298
+    },
+    {
+      "document_id": "omnidoc_134",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8951205832865956,
+        "chrf++": 87.41214274106235
+      },
+      "error": null,
+      "parse_time_seconds": 5.153461456298828
+    },
+    {
+      "document_id": "omnidoc_135",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7355915065722953,
+        "chrf++": 78.41148423157625
+      },
+      "error": null,
+      "parse_time_seconds": 4.775188207626343
+    },
+    {
+      "document_id": "omnidoc_136",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4387401574803149,
+        "chrf++": 46.24100693471836
+      },
+      "error": null,
+      "parse_time_seconds": 7.614548683166504
+    },
+    {
+      "document_id": "omnidoc_137",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9250936329588015,
+        "chrf++": 94.12080087381489
+      },
+      "error": null,
+      "parse_time_seconds": 4.404537677764893
+    },
+    {
+      "document_id": "omnidoc_138",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7878916172734971,
+        "chrf++": 76.43775417457579
+      },
+      "error": null,
+      "parse_time_seconds": 5.324964761734009
+    },
+    {
+      "document_id": "omnidoc_139",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4778296382730455,
+        "chrf++": 66.06460790500584
+      },
+      "error": null,
+      "parse_time_seconds": 5.1288957595825195
+    },
+    {
+      "document_id": "omnidoc_140",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8699059561128526,
+        "chrf++": 84.57766947978789
+      },
+      "error": null,
+      "parse_time_seconds": 4.011540412902832
+    },
+    {
+      "document_id": "omnidoc_141",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7262861736334405,
+        "chrf++": 68.28573326250537
+      },
+      "error": null,
+      "parse_time_seconds": 6.130706310272217
+    },
+    {
+      "document_id": "omnidoc_142",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3943445857080228,
+        "chrf++": 66.43429960061566
+      },
+      "error": null,
+      "parse_time_seconds": 9.532002925872803
+    },
+    {
+      "document_id": "omnidoc_143",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9292336217552534,
+        "chrf++": 89.4470229092604
+      },
+      "error": null,
+      "parse_time_seconds": 6.965498685836792
+    },
+    {
+      "document_id": "omnidoc_144",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9272388059701493,
+        "chrf++": 96.47760715429106
+      },
+      "error": null,
+      "parse_time_seconds": 2.772481679916382
+    },
+    {
+      "document_id": "omnidoc_145",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8127304005898255,
+        "chrf++": 73.01193121406197
+      },
+      "error": null,
+      "parse_time_seconds": 7.567091703414917
+    },
+    {
+      "document_id": "omnidoc_146",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8984461709211986,
+        "chrf++": 89.81323185783808
+      },
+      "error": null,
+      "parse_time_seconds": 6.337977647781372
+    },
+    {
+      "document_id": "omnidoc_147",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9431754874651811,
+        "chrf++": 94.66209056110787
+      },
+      "error": null,
+      "parse_time_seconds": 5.890617847442627
+    },
+    {
+      "document_id": "omnidoc_148",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8316924519456165,
+        "chrf++": 75.15968874699139
+      },
+      "error": null,
+      "parse_time_seconds": 8.35654592514038
+    },
+    {
+      "document_id": "omnidoc_149",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5864060417592181,
+        "chrf++": 69.86688324766057
+      },
+      "error": null,
+      "parse_time_seconds": 7.639791250228882
+    },
+    {
+      "document_id": "omnidoc_150",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7352271204609406,
+        "chrf++": 74.19324785836596
+      },
+      "error": null,
+      "parse_time_seconds": 9.690771579742432
+    },
+    {
+      "document_id": "omnidoc_151",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8090909090909091,
+        "chrf++": 76.09133361386137
+      },
+      "error": null,
+      "parse_time_seconds": 8.422664642333984
+    },
+    {
+      "document_id": "omnidoc_152",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7815673001822442,
+        "chrf++": 76.55812569184712
+      },
+      "error": null,
+      "parse_time_seconds": 8.638671398162842
+    },
+    {
+      "document_id": "omnidoc_153",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7045575692963753,
+        "chrf++": 74.2489905375879
+      },
+      "error": null,
+      "parse_time_seconds": 11.620190858840942
+    },
+    {
+      "document_id": "omnidoc_154",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7741805480924234,
+        "chrf++": 75.41070447887469
+      },
+      "error": null,
+      "parse_time_seconds": 8.674793243408203
+    },
+    {
+      "document_id": "omnidoc_155",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8320739968733716,
+        "chrf++": 76.28810733861377
+      },
+      "error": null,
+      "parse_time_seconds": 9.283987998962402
+    },
+    {
+      "document_id": "omnidoc_156",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.871419053964024,
+        "chrf++": 74.64553885781963
+      },
+      "error": null,
+      "parse_time_seconds": 8.999116897583008
+    },
+    {
+      "document_id": "omnidoc_157",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7067558528428093,
+        "chrf++": 75.94558489553637
+      },
+      "error": null,
+      "parse_time_seconds": 9.94794511795044
+    },
+    {
+      "document_id": "omnidoc_158",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44737410849362436,
+        "chrf++": 65.6734333603793
+      },
+      "error": null,
+      "parse_time_seconds": 11.82528805732727
+    },
+    {
+      "document_id": "omnidoc_159",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6229173750425026,
+        "chrf++": 73.04387063217901
+      },
+      "error": null,
+      "parse_time_seconds": 9.6184401512146
+    },
+    {
+      "document_id": "omnidoc_160",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7242997102249207,
+        "chrf++": 75.8052887569762
+      },
+      "error": null,
+      "parse_time_seconds": 9.056254625320435
+    },
+    {
+      "document_id": "omnidoc_161",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.873092259040286,
+        "chrf++": 75.06329320780638
+      },
+      "error": null,
+      "parse_time_seconds": 8.160882949829102
+    },
+    {
+      "document_id": "omnidoc_162",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.867342799188641,
+        "chrf++": 74.56096130625927
+      },
+      "error": null,
+      "parse_time_seconds": 8.740923166275024
+    },
+    {
+      "document_id": "omnidoc_163",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8600733595978807,
+        "chrf++": 74.24549195056332
+      },
+      "error": null,
+      "parse_time_seconds": 12.066412925720215
+    },
+    {
+      "document_id": "omnidoc_164",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8710146844820743,
+        "chrf++": 75.22490069712863
+      },
+      "error": null,
+      "parse_time_seconds": 9.029895067214966
+    },
+    {
+      "document_id": "omnidoc_165",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7735644637053087,
+        "chrf++": 74.0920276799967
+      },
+      "error": null,
+      "parse_time_seconds": 9.51273512840271
+    },
+    {
+      "document_id": "omnidoc_166",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8616095704187058,
+        "chrf++": 74.02615858603946
+      },
+      "error": null,
+      "parse_time_seconds": 10.459255695343018
+    },
+    {
+      "document_id": "omnidoc_167",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.834575260804769,
+        "chrf++": 71.11600984759974
+      },
+      "error": null,
+      "parse_time_seconds": 7.5642783641815186
+    },
+    {
+      "document_id": "omnidoc_168",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7863294600136705,
+        "chrf++": 76.63580317152436
+      },
+      "error": null,
+      "parse_time_seconds": 7.819127082824707
+    },
+    {
+      "document_id": "omnidoc_169",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8668852459016394,
+        "chrf++": 77.38581363913234
+      },
+      "error": null,
+      "parse_time_seconds": 8.472880601882935
+    },
+    {
+      "document_id": "omnidoc_170",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8757087436586094,
+        "chrf++": 75.70642892211168
+      },
+      "error": null,
+      "parse_time_seconds": 8.356731653213501
+    },
+    {
+      "document_id": "omnidoc_171",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8680813177029233,
+        "chrf++": 74.13638274980357
+      },
+      "error": null,
+      "parse_time_seconds": 7.9872941970825195
+    },
+    {
+      "document_id": "omnidoc_172",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7675544794188862,
+        "chrf++": 74.0168063675238
+      },
+      "error": null,
+      "parse_time_seconds": 7.167068243026733
+    },
+    {
+      "document_id": "omnidoc_173",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7698286521815934,
+        "chrf++": 72.32870745218393
+      },
+      "error": null,
+      "parse_time_seconds": 10.12877082824707
+    },
+    {
+      "document_id": "omnidoc_174",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8742837883383889,
+        "chrf++": 76.55366761648088
+      },
+      "error": null,
+      "parse_time_seconds": 7.837158203125
+    },
+    {
+      "document_id": "omnidoc_175",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6444524495677233,
+        "chrf++": 73.53938764069069
+      },
+      "error": null,
+      "parse_time_seconds": 10.285123586654663
+    },
+    {
+      "document_id": "omnidoc_176",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8764182766022692,
+        "chrf++": 74.89669697630555
+      },
+      "error": null,
+      "parse_time_seconds": 9.210663557052612
+    },
+    {
+      "document_id": "omnidoc_177",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8691620300118024,
+        "chrf++": 75.15779470010501
+      },
+      "error": null,
+      "parse_time_seconds": 7.9129109382629395
+    },
+    {
+      "document_id": "omnidoc_178",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8161551381890365,
+        "chrf++": 75.69440780610292
+      },
+      "error": null,
+      "parse_time_seconds": 7.829327821731567
+    },
+    {
+      "document_id": "omnidoc_179",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8188870654930628,
+        "chrf++": 73.6262203963711
+      },
+      "error": null,
+      "parse_time_seconds": 9.574944972991943
+    },
+    {
+      "document_id": "omnidoc_180",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.867918946901346,
+        "chrf++": 74.03705874663258
+      },
+      "error": null,
+      "parse_time_seconds": 9.233435869216919
+    },
+    {
+      "document_id": "omnidoc_181",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7655350106092755,
+        "chrf++": 72.21930224080943
+      },
+      "error": null,
+      "parse_time_seconds": 10.424036502838135
+    },
+    {
+      "document_id": "omnidoc_182",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6412046012666408,
+        "chrf++": 76.06523581387988
+      },
+      "error": null,
+      "parse_time_seconds": 10.071455240249634
+    },
+    {
+      "document_id": "omnidoc_183",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6551094890510949,
+        "chrf++": 76.76031367884568
+      },
+      "error": null,
+      "parse_time_seconds": 10.873811483383179
+    },
+    {
+      "document_id": "omnidoc_184",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7998242788109533,
+        "chrf++": 75.74996163853025
+      },
+      "error": null,
+      "parse_time_seconds": 9.94856882095337
+    },
+    {
+      "document_id": "omnidoc_185",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.131697869593286,
+        "chrf++": 23.73981148211155
+      },
+      "error": null,
+      "parse_time_seconds": 4.948178291320801
+    },
+    {
+      "document_id": "omnidoc_186",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6829268292682926,
+        "chrf++": 61.36009089598543
+      },
+      "error": null,
+      "parse_time_seconds": 3.9239885807037354
+    },
+    {
+      "document_id": "omnidoc_187",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.955595026642984,
+        "chrf++": 97.15465981631282
+      },
+      "error": null,
+      "parse_time_seconds": 3.885504961013794
+    },
+    {
+      "document_id": "omnidoc_188",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9985855728429985,
+        "chrf++": 99.93727898642533
+      },
+      "error": null,
+      "parse_time_seconds": 4.3639349937438965
+    },
+    {
+      "document_id": "omnidoc_189",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1725852272727273,
+        "chrf++": 40.96201979756884
+      },
+      "error": null,
+      "parse_time_seconds": 8.112926244735718
+    },
+    {
+      "document_id": "omnidoc_190",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2925925925925926,
+        "chrf++": 44.810117590080004
+      },
+      "error": null,
+      "parse_time_seconds": 4.031244993209839
+    },
+    {
+      "document_id": "omnidoc_191",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7542402215299412,
+        "chrf++": 64.81299633060922
+      },
+      "error": null,
+      "parse_time_seconds": 6.183338403701782
+    },
+    {
+      "document_id": "omnidoc_192",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9376631853785901,
+        "chrf++": 86.31740426055465
+      },
+      "error": null,
+      "parse_time_seconds": 7.447937726974487
+    },
+    {
+      "document_id": "omnidoc_193",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8279773156899811,
+        "chrf++": 77.01070593210792
+      },
+      "error": null,
+      "parse_time_seconds": 5.838008642196655
+    },
+    {
+      "document_id": "omnidoc_194",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4483568075117371,
+        "chrf++": 53.335269888960525
+      },
+      "error": null,
+      "parse_time_seconds": 4.921246528625488
+    },
+    {
+      "document_id": "omnidoc_195",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6523388116308471,
+        "chrf++": 60.261790226222836
+      },
+      "error": null,
+      "parse_time_seconds": 4.155061960220337
+    },
+    {
+      "document_id": "omnidoc_196",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6044327573253193,
+        "chrf++": 46.98607979648449
+      },
+      "error": null,
+      "parse_time_seconds": 4.663495302200317
+    },
+    {
+      "document_id": "omnidoc_197",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6038543897216274,
+        "chrf++": 71.11321517038458
+      },
+      "error": null,
+      "parse_time_seconds": 3.65871524810791
+    },
+    {
+      "document_id": "omnidoc_198",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8734321550741163,
+        "chrf++": 86.55542958311977
+      },
+      "error": null,
+      "parse_time_seconds": 5.531574964523315
+    },
+    {
+      "document_id": "omnidoc_199",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8558364712210866,
+        "chrf++": 82.54356900578277
+      },
+      "error": null,
+      "parse_time_seconds": 5.028085947036743
+    },
+    {
+      "document_id": "omnidoc_200",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.536779324055666,
+        "chrf++": 66.50142314899112
+      },
+      "error": null,
+      "parse_time_seconds": 3.3039441108703613
+    },
+    {
+      "document_id": "omnidoc_201",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.77539175856065,
+        "chrf++": 64.54934419472431
+      },
+      "error": null,
+      "parse_time_seconds": 4.6131391525268555
+    },
+    {
+      "document_id": "omnidoc_202",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9289226642825212,
+        "chrf++": 94.36888122324164
+      },
+      "error": null,
+      "parse_time_seconds": 5.744354009628296
+    },
+    {
+      "document_id": "omnidoc_203",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7918978912319645,
+        "chrf++": 73.37091273661525
+      },
+      "error": null,
+      "parse_time_seconds": 6.442838668823242
+    },
+    {
+      "document_id": "omnidoc_204",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7324660633484164,
+        "chrf++": 65.12751514938064
+      },
+      "error": null,
+      "parse_time_seconds": 5.715556383132935
+    },
+    {
+      "document_id": "omnidoc_205",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6377079482439927,
+        "chrf++": 61.489168776184755
+      },
+      "error": null,
+      "parse_time_seconds": 4.2291669845581055
+    },
+    {
+      "document_id": "omnidoc_206",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9553781117895725,
+        "chrf++": 93.0796681237902
+      },
+      "error": null,
+      "parse_time_seconds": 6.747148036956787
+    },
+    {
+      "document_id": "omnidoc_207",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9105516871987145,
+        "chrf++": 85.85903356994805
+      },
+      "error": null,
+      "parse_time_seconds": 6.5546205043792725
+    },
+    {
+      "document_id": "omnidoc_208",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6903225806451613,
+        "chrf++": 61.551954800889064
+      },
+      "error": null,
+      "parse_time_seconds": 4.4756760597229
+    },
+    {
+      "document_id": "omnidoc_209",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.631175468483816,
+        "chrf++": 62.40961945351643
+      },
+      "error": null,
+      "parse_time_seconds": 4.393653631210327
+    },
+    {
+      "document_id": "omnidoc_210",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8859253180139516,
+        "chrf++": 86.05440346937706
+      },
+      "error": null,
+      "parse_time_seconds": 6.637921571731567
+    },
+    {
+      "document_id": "omnidoc_211",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9115898959881129,
+        "chrf++": 90.10398258925328
+      },
+      "error": null,
+      "parse_time_seconds": 5.046003580093384
+    },
+    {
+      "document_id": "omnidoc_212",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8931965032307108,
+        "chrf++": 80.0872976316707
+      },
+      "error": null,
+      "parse_time_seconds": 6.515053987503052
+    },
+    {
+      "document_id": "omnidoc_213",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6114457831325302,
+        "chrf++": 49.6635820276013
+      },
+      "error": null,
+      "parse_time_seconds": 4.900277376174927
+    },
+    {
+      "document_id": "omnidoc_214",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6716791979949874,
+        "chrf++": 67.24790314762944
+      },
+      "error": null,
+      "parse_time_seconds": 4.191459894180298
+    },
+    {
+      "document_id": "omnidoc_215",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4965986394557823,
+        "chrf++": 43.82107822549244
+      },
+      "error": null,
+      "parse_time_seconds": 3.6956846714019775
+    },
+    {
+      "document_id": "omnidoc_216",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7323272438443209,
+        "chrf++": 58.906921319014096
+      },
+      "error": null,
+      "parse_time_seconds": 4.218184471130371
+    },
+    {
+      "document_id": "omnidoc_217",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8413886997957795,
+        "chrf++": 73.54744029505844
+      },
+      "error": null,
+      "parse_time_seconds": 4.761380195617676
+    },
+    {
+      "document_id": "omnidoc_218",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8279785809906292,
+        "chrf++": 76.76764296960066
+      },
+      "error": null,
+      "parse_time_seconds": 6.265010833740234
+    },
+    {
+      "document_id": "omnidoc_219",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7598039215686274,
+        "chrf++": 70.71139347215572
+      },
+      "error": null,
+      "parse_time_seconds": 5.902593612670898
+    },
+    {
+      "document_id": "omnidoc_220",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6903820816864294,
+        "chrf++": 56.2754099672807
+      },
+      "error": null,
+      "parse_time_seconds": 8.020840883255005
+    },
+    {
+      "document_id": "omnidoc_221",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7988032909498878,
+        "chrf++": 77.6594745647285
+      },
+      "error": null,
+      "parse_time_seconds": 5.289934396743774
+    },
+    {
+      "document_id": "omnidoc_222",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9095117845117845,
+        "chrf++": 81.81781624198501
+      },
+      "error": null,
+      "parse_time_seconds": 7.872386693954468
+    },
+    {
+      "document_id": "omnidoc_223",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8401448525607863,
+        "chrf++": 74.43129505160691
+      },
+      "error": null,
+      "parse_time_seconds": 8.287956953048706
+    },
+    {
+      "document_id": "omnidoc_224",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7776243093922652,
+        "chrf++": 72.94829488874335
+      },
+      "error": null,
+      "parse_time_seconds": 6.768538475036621
+    },
+    {
+      "document_id": "omnidoc_225",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7980022197558269,
+        "chrf++": 70.77678588941858
+      },
+      "error": null,
+      "parse_time_seconds": 6.101274251937866
+    },
+    {
+      "document_id": "omnidoc_226",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4854202401372213,
+        "chrf++": 83.33240610563365
+      },
+      "error": null,
+      "parse_time_seconds": 5.128674030303955
+    },
+    {
+      "document_id": "omnidoc_227",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.549234135667396,
+        "chrf++": 90.99728057924638
+      },
+      "error": null,
+      "parse_time_seconds": 5.8913373947143555
+    },
+    {
+      "document_id": "omnidoc_228",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2236503856041131,
+        "chrf++": 71.96784321519863
+      },
+      "error": null,
+      "parse_time_seconds": 4.104900121688843
+    },
+    {
+      "document_id": "omnidoc_229",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7275522755227553,
+        "chrf++": 61.27781932679353
+      },
+      "error": null,
+      "parse_time_seconds": 4.974188566207886
+    },
+    {
+      "document_id": "omnidoc_230",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48747591522157996,
+        "chrf++": 87.75610100825165
+      },
+      "error": null,
+      "parse_time_seconds": 3.9991252422332764
+    },
+    {
+      "document_id": "omnidoc_231",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.822053482997689,
+        "chrf++": 71.96533059713943
+      },
+      "error": null,
+      "parse_time_seconds": 8.131664752960205
+    },
+    {
+      "document_id": "omnidoc_232",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8489542989930287,
+        "chrf++": 77.96965902179346
+      },
+      "error": null,
+      "parse_time_seconds": 5.729452133178711
+    },
+    {
+      "document_id": "omnidoc_233",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7527366387636831,
+        "chrf++": 66.1179169035274
+      },
+      "error": null,
+      "parse_time_seconds": 10.143578290939331
+    },
+    {
+      "document_id": "omnidoc_234",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8300258843830889,
+        "chrf++": 70.85794971965156
+      },
+      "error": null,
+      "parse_time_seconds": 7.911193370819092
+    },
+    {
+      "document_id": "omnidoc_235",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.734475374732334,
+        "chrf++": 64.943028156363
+      },
+      "error": null,
+      "parse_time_seconds": 5.867228031158447
+    },
+    {
+      "document_id": "omnidoc_236",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7764013626509756,
+        "chrf++": 67.42719681776309
+      },
+      "error": null,
+      "parse_time_seconds": 6.48722767829895
+    },
+    {
+      "document_id": "omnidoc_237",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7368541380887059,
+        "chrf++": 68.02782557618218
+      },
+      "error": null,
+      "parse_time_seconds": 6.712023735046387
+    },
+    {
+      "document_id": "omnidoc_238",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7917293233082707,
+        "chrf++": 70.08473551103663
+      },
+      "error": null,
+      "parse_time_seconds": 5.785416126251221
+    },
+    {
+      "document_id": "omnidoc_239",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8218721599515298,
+        "chrf++": 72.98851399516137
+      },
+      "error": null,
+      "parse_time_seconds": 6.400416135787964
+    },
+    {
+      "document_id": "omnidoc_240",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8656181564801911,
+        "chrf++": 79.14338682414622
+      },
+      "error": null,
+      "parse_time_seconds": 8.44872260093689
+    },
+    {
+      "document_id": "omnidoc_241",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8179407865665047,
+        "chrf++": 72.2012699072806
+      },
+      "error": null,
+      "parse_time_seconds": 8.141377449035645
+    },
+    {
+      "document_id": "omnidoc_242",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7275408956824886,
+        "chrf++": 62.219984978892406
+      },
+      "error": null,
+      "parse_time_seconds": 6.448798894882202
+    },
+    {
+      "document_id": "omnidoc_243",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8020442930153322,
+        "chrf++": 70.2908927213883
+      },
+      "error": null,
+      "parse_time_seconds": 7.338328123092651
+    },
+    {
+      "document_id": "omnidoc_244",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.649272882805817,
+        "chrf++": 64.73209731319294
+      },
+      "error": null,
+      "parse_time_seconds": 6.784832000732422
+    },
+    {
+      "document_id": "omnidoc_245",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7728723404255319,
+        "chrf++": 66.33066837019241
+      },
+      "error": null,
+      "parse_time_seconds": 7.52286958694458
+    },
+    {
+      "document_id": "omnidoc_246",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7282882882882883,
+        "chrf++": 64.58827023178647
+      },
+      "error": null,
+      "parse_time_seconds": 6.1524975299835205
+    },
+    {
+      "document_id": "omnidoc_247",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5402504472271914,
+        "chrf++": 61.190974799609144
+      },
+      "error": null,
+      "parse_time_seconds": 5.939148426055908
+    },
+    {
+      "document_id": "omnidoc_248",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7993079584775087,
+        "chrf++": 66.34894298350046
+      },
+      "error": null,
+      "parse_time_seconds": 5.30021071434021
+    },
+    {
+      "document_id": "omnidoc_249",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8243870112657389,
+        "chrf++": 72.45194418249726
+      },
+      "error": null,
+      "parse_time_seconds": 5.839468955993652
+    },
+    {
+      "document_id": "omnidoc_250",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7480609788713559,
+        "chrf++": 67.8087166456483
+      },
+      "error": null,
+      "parse_time_seconds": 6.514896631240845
+    },
+    {
+      "document_id": "omnidoc_251",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5705445544554455,
+        "chrf++": 64.20354844032997
+      },
+      "error": null,
+      "parse_time_seconds": 6.846761226654053
+    }
+  ],
+  "summary": {
+    "total_documents": 252,
+    "total_parsers": 2,
+    "total_results": 504,
+    "success_count": 504,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "benchmark": {
+    "name": "TEDS Fix Verification",
+    "timestamp": "2025-11-20T19:47:06.672828+00:00",
+    "config_file": "benchmarks/test_teds_fix.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pymupdf": "1.26.6",
+      "pdfplumber": "0.11.8"
+    }
+  },
+  "results": [
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.890495867768595
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002751350402832031
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.943373125191307
+      },
+      "error": null,
+      "parse_time_seconds": 0.00018715858459472656
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.5858895705521472
+      },
+      "error": null,
+      "parse_time_seconds": 0.00024819374084472656
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.8278985507246377
+      },
+      "error": null,
+      "parse_time_seconds": 0.00017118453979492188
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.6805555555555556
+      },
+      "error": null,
+      "parse_time_seconds": 0.00014710426330566406
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "teds": 1.0,
+        "edit_similarity": 0.7724268177525968
+      },
+      "error": null,
+      "parse_time_seconds": 0.0001595020294189453
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "teds": null,
+        "edit_similarity": 0.9396138996138996
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002951622009277344
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "teds": 1.0,
+        "edit_similarity": 0.2710997442455243
+      },
+      "error": null,
+      "parse_time_seconds": 0.00018596649169921875
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "teds": 1.0,
+        "edit_similarity": 0.6396825396825396
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020742416381835938
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "teds": 1.0,
+        "edit_similarity": 0.32727272727272727
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020742416381835938
+    }
+  ],
+  "summary": {
+    "total_documents": 5,
+    "total_parsers": 2,
+    "total_results": 10,
+    "success_count": 10,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/inventory.py",
+  "fixture": "Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "test": "tests/test_run_registry.py::test_original_commercial_counters_do_not_override_observed_attempts",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/inventory.py",
+      "old": "\"failure_count\": sum(r.get(\"success\") is False for r in valid),",
+      "new": "\"failure_count\": 0,"
+    }
+  }
+}

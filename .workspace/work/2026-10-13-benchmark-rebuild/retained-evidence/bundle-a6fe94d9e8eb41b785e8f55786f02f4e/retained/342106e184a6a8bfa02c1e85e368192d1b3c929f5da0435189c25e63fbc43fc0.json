@@ -1,0 +1,192 @@
+{
+  "benchmark": {
+    "name": "Commercial Quick Test",
+    "timestamp": "2025-11-23T22:26:35.186866+00:00",
+    "config_file": "benchmarks/commercial_quick.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "aws_textract": "1.40.73",
+      "azure_document_intelligence": "1.0.2",
+      "google_document_ai": "1.0.0",
+      "databricks": "1.0.0",
+      "landing_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9317147192716236,
+        "chrf++": 96.74571926454749
+      },
+      "error": null,
+      "parse_time_seconds": 0.00026702880859375
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9142091152815013,
+        "chrf++": 91.81981250414219
+      },
+      "error": null,
+      "parse_time_seconds": 0.00018858909606933594
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9051151893791488,
+        "chrf++": 97.20090179481302
+      },
+      "error": null,
+      "parse_time_seconds": 0.0001735687255859375
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9319213313161876,
+        "chrf++": 96.60264634251958
+      },
+      "error": null,
+      "parse_time_seconds": 0.00019621849060058594
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9145888594164456,
+        "chrf++": 91.40806185215258
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004413127899169922
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9055501460564752,
+        "chrf++": 97.19129535786769
+      },
+      "error": null,
+      "parse_time_seconds": 0.000156402587890625
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486590038314177,
+        "chrf++": 98.03191503564351
+      },
+      "error": null,
+      "parse_time_seconds": 1.9327671527862549
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9397849462365592,
+        "chrf++": 95.1603543552051
+      },
+      "error": null,
+      "parse_time_seconds": 1.841658353805542
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9170470331414964,
+        "chrf++": 97.71887378503881
+      },
+      "error": null,
+      "parse_time_seconds": 2.1899702548980713
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9546850998463902,
+        "chrf++": 99.49699792169189
+      },
+      "error": null,
+      "parse_time_seconds": 4.115046739578247
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.942442173211404,
+        "chrf++": 96.79810722352357
+      },
+      "error": null,
+      "parse_time_seconds": 4.0805933475494385
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9191321499013807,
+        "chrf++": 98.33142837091768
+      },
+      "error": null,
+      "parse_time_seconds": 8.482896566390991
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "landing_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8644184445973847,
+        "chrf++": 95.68125696130137
+      },
+      "error": null,
+      "parse_time_seconds": 5.783432245254517
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "landing_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8584409373505499,
+        "chrf++": 88.82175843983846
+      },
+      "error": null,
+      "parse_time_seconds": 5.791611194610596
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "landing_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7799654576856649,
+        "chrf++": 91.43378817145134
+      },
+      "error": null,
+      "parse_time_seconds": 7.434957981109619
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 5,
+    "total_results": 15,
+    "success_count": 15,
+    "failure_count": 0
+  }
+}

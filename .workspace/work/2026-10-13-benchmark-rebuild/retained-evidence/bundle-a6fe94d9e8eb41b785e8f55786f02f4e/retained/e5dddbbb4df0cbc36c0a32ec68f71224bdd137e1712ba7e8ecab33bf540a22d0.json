@@ -1,0 +1,3543 @@
+{
+  "benchmark": {
+    "name": "SEC Filings Quality Screen - All 89 Documents",
+    "timestamp": "2026-03-10T14:19:01.738098+00:00",
+    "config_file": "benchmarks/sec_filings_screen_all.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfsmith-pypdfium2": "0.3.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "sec-american_express-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6648449345078559,
+        "chrf++": 83.75921065898355
+      },
+      "error": null,
+      "parse_time_seconds": 0.00727391242980957
+    },
+    {
+      "document_id": "sec-aecom-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7312628265250216,
+        "chrf++": 85.0489281870004
+      },
+      "error": null,
+      "parse_time_seconds": 0.05939626693725586
+    },
+    {
+      "document_id": "sec-merck-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9065411252758029,
+        "chrf++": 90.10419430748827
+      },
+      "error": null,
+      "parse_time_seconds": 0.008651494979858398
+    },
+    {
+      "document_id": "sec-jpmorgan_chase-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5755696246539128,
+        "chrf++": 75.42196364106817
+      },
+      "error": null,
+      "parse_time_seconds": 0.04797053337097168
+    },
+    {
+      "document_id": "sec-transdigm-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8589120068325782,
+        "chrf++": 88.57420171222363
+      },
+      "error": null,
+      "parse_time_seconds": 0.006340503692626953
+    },
+    {
+      "document_id": "sec-td_synnex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8998672433947834,
+        "chrf++": 90.87169120719092
+      },
+      "error": null,
+      "parse_time_seconds": 0.015686750411987305
+    },
+    {
+      "document_id": "sec-boeing-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.606469053571129,
+        "chrf++": 83.07204751578826
+      },
+      "error": null,
+      "parse_time_seconds": 0.010195255279541016
+    },
+    {
+      "document_id": "sec-ibm-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.15745866144605192,
+        "chrf++": 41.74144491138503
+      },
+      "error": null,
+      "parse_time_seconds": 0.004662752151489258
+    },
+    {
+      "document_id": "sec-agilent_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8265089829470861,
+        "chrf++": 88.2164126213079
+      },
+      "error": null,
+      "parse_time_seconds": 0.002926349639892578
+    },
+    {
+      "document_id": "sec-johnson_johnson-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3610706477978909,
+        "chrf++": 71.05372532687714
+      },
+      "error": null,
+      "parse_time_seconds": 0.008112907409667969
+    },
+    {
+      "document_id": "sec-metlife-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3488767257450399,
+        "chrf++": 38.24997564546359
+      },
+      "error": null,
+      "parse_time_seconds": 0.07158088684082031
+    },
+    {
+      "document_id": "sec-mcdonalds-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01511332522808373,
+        "chrf++": 3.73283006556058
+      },
+      "error": null,
+      "parse_time_seconds": 0.005848407745361328
+    },
+    {
+      "document_id": "sec-citigroup-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5639382917232442,
+        "chrf++": 77.72299699153334
+      },
+      "error": null,
+      "parse_time_seconds": 0.00995182991027832
+    },
+    {
+      "document_id": "sec-analog_devices-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02139965297860036,
+        "chrf++": 5.412202016244573
+      },
+      "error": null,
+      "parse_time_seconds": 0.0034780502319335938
+    },
+    {
+      "document_id": "sec-microsoft-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5528439073165374,
+        "chrf++": 64.4325861667057
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012254714965820312
+    },
+    {
+      "document_id": "sec-pfizer-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.889670488760453,
+        "chrf++": 88.76531409436085
+      },
+      "error": null,
+      "parse_time_seconds": 0.011198997497558594
+    },
+    {
+      "document_id": "sec-procter_gamble-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7734691182971004,
+        "chrf++": 86.33558315771063
+      },
+      "error": null,
+      "parse_time_seconds": 0.006731986999511719
+    },
+    {
+      "document_id": "sec-berkshire_hathaway-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7775590410518418,
+        "chrf++": 84.11710090374372
+      },
+      "error": null,
+      "parse_time_seconds": 0.0030486583709716797
+    },
+    {
+      "document_id": "sec-exxonmobil-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.528762342701127,
+        "chrf++": 76.23799000846981
+      },
+      "error": null,
+      "parse_time_seconds": 0.021698474884033203
+    },
+    {
+      "document_id": "sec-synopsys-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8952129846883239,
+        "chrf++": 89.18750262429074
+      },
+      "error": null,
+      "parse_time_seconds": 0.05124616622924805
+    },
+    {
+      "document_id": "sec-salesforce-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05888214362454458,
+        "chrf++": 6.583121719513644
+      },
+      "error": null,
+      "parse_time_seconds": 0.006093025207519531
+    },
+    {
+      "document_id": "sec-adient-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9061080004007436,
+        "chrf++": 90.0397612326011
+      },
+      "error": null,
+      "parse_time_seconds": 0.015043973922729492
+    },
+    {
+      "document_id": "sec-hewlett_packard_enterprise-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8761038473639582,
+        "chrf++": 89.52703774752219
+      },
+      "error": null,
+      "parse_time_seconds": 0.008296489715576172
+    },
+    {
+      "document_id": "sec-fastenal-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7301396429055627,
+        "chrf++": 86.12368457829017
+      },
+      "error": null,
+      "parse_time_seconds": 0.02069711685180664
+    },
+    {
+      "document_id": "sec-blackrock-2023",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4361486330542792,
+        "chrf++": 72.25527396112999
+      },
+      "error": null,
+      "parse_time_seconds": 0.0036721229553222656
+    },
+    {
+      "document_id": "sec-cencora-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6042049753525163,
+        "chrf++": 66.08969991811725
+      },
+      "error": null,
+      "parse_time_seconds": 0.006045341491699219
+    },
+    {
+      "document_id": "sec-mccormick-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8481348989623156,
+        "chrf++": 87.94162970538505
+      },
+      "error": null,
+      "parse_time_seconds": 0.011576414108276367
+    },
+    {
+      "document_id": "sec-nvidia-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47886068241785507,
+        "chrf++": 78.22094068416328
+      },
+      "error": null,
+      "parse_time_seconds": 0.08646726608276367
+    },
+    {
+      "document_id": "sec-becton_dickinson-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8709360680776783,
+        "chrf++": 89.4351474323608
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013020038604736328
+    },
+    {
+      "document_id": "sec-ashland-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8224047810681543,
+        "chrf++": 86.53367665714039
+      },
+      "error": null,
+      "parse_time_seconds": 0.0072193145751953125
+    },
+    {
+      "document_id": "sec-jacobs_solutions-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9079347556299757,
+        "chrf++": 91.62157264455483
+      },
+      "error": null,
+      "parse_time_seconds": 0.0023488998413085938
+    },
+    {
+      "document_id": "sec-woodward-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8448331653738408,
+        "chrf++": 85.24977996793075
+      },
+      "error": null,
+      "parse_time_seconds": 0.02294921875
+    },
+    {
+      "document_id": "sec-3m-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5392165657471779,
+        "chrf++": 81.15079746413625
+      },
+      "error": null,
+      "parse_time_seconds": 0.009324789047241211
+    },
+    {
+      "document_id": "sec-pepsico-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6482942613465907,
+        "chrf++": 80.43690764224726
+      },
+      "error": null,
+      "parse_time_seconds": 0.003653287887573242
+    },
+    {
+      "document_id": "sec-conocophillips-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6476160736590415,
+        "chrf++": 80.0427642875232
+      },
+      "error": null,
+      "parse_time_seconds": 0.0079498291015625
+    },
+    {
+      "document_id": "sec-capital_one-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5624479448103261,
+        "chrf++": 75.6410489895463
+      },
+      "error": null,
+      "parse_time_seconds": 0.013587713241577148
+    },
+    {
+      "document_id": "sec-wells_fargo-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1004388679594711,
+        "chrf++": 31.35558742766664
+      },
+      "error": null,
+      "parse_time_seconds": 0.016231536865234375
+    },
+    {
+      "document_id": "sec-honeywell-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5539632746303533,
+        "chrf++": 78.19914076564416
+      },
+      "error": null,
+      "parse_time_seconds": 0.016659021377563477
+    },
+    {
+      "document_id": "sec-toro-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.87200793796739,
+        "chrf++": 92.15048654645015
+      },
+      "error": null,
+      "parse_time_seconds": 0.045717716217041016
+    },
+    {
+      "document_id": "sec-valvoline-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8827236357725988,
+        "chrf++": 89.63700872733527
+      },
+      "error": null,
+      "parse_time_seconds": 0.005281686782836914
+    },
+    {
+      "document_id": "sec-raymond_james_financial-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.07325762804339164,
+        "chrf++": 8.704985124013795
+      },
+      "error": null,
+      "parse_time_seconds": 0.050557613372802734
+    },
+    {
+      "document_id": "sec-ciena-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.820206305631811,
+        "chrf++": 85.79715992983387
+      },
+      "error": null,
+      "parse_time_seconds": 0.002494335174560547
+    },
+    {
+      "document_id": "sec-walt_disney-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8880571959405877,
+        "chrf++": 87.7123128116274
+      },
+      "error": null,
+      "parse_time_seconds": 0.01601409912109375
+    },
+    {
+      "document_id": "sec-rockwell_automation-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40649151053864163,
+        "chrf++": 71.74065503726335
+      },
+      "error": null,
+      "parse_time_seconds": 0.00487208366394043
+    },
+    {
+      "document_id": "sec-abm_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8627072195516421,
+        "chrf++": 88.0743992372228
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016603469848632812
+    },
+    {
+      "document_id": "sec-fair_isaac-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8691661606698442,
+        "chrf++": 89.6498378583202
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015540122985839844
+    },
+    {
+      "document_id": "sec-nordson-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8121769798012184,
+        "chrf++": 85.4197453563811
+      },
+      "error": null,
+      "parse_time_seconds": 0.002798318862915039
+    },
+    {
+      "document_id": "sec-hormel_foods-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7929500041150044,
+        "chrf++": 84.29880291907313
+      },
+      "error": null,
+      "parse_time_seconds": 0.020917654037475586
+    },
+    {
+      "document_id": "sec-aramark-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02049880497806411,
+        "chrf++": 2.874656219499536
+      },
+      "error": null,
+      "parse_time_seconds": 0.007596492767333984
+    },
+    {
+      "document_id": "sec-post_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8646080616736543,
+        "chrf++": 90.10242885762632
+      },
+      "error": null,
+      "parse_time_seconds": 0.01876235008239746
+    },
+    {
+      "document_id": "sec-truist_financial-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04296001373097691,
+        "chrf++": 3.588040244808355
+      },
+      "error": null,
+      "parse_time_seconds": 0.017032623291015625
+    },
+    {
+      "document_id": "sec-bank_of_america-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.672329074828022,
+        "chrf++": 73.42750871642284
+      },
+      "error": null,
+      "parse_time_seconds": 0.037988901138305664
+    },
+    {
+      "document_id": "sec-amazon-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.664076014663361,
+        "chrf++": 84.72224355235764
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013260841369628906
+    },
+    {
+      "document_id": "sec-heico-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.026402035461218887,
+        "chrf++": 2.2321213902694454
+      },
+      "error": null,
+      "parse_time_seconds": 0.0042896270751953125
+    },
+    {
+      "document_id": "sec-chevron-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5685033853105406,
+        "chrf++": 65.84882053703369
+      },
+      "error": null,
+      "parse_time_seconds": 0.03222489356994629
+    },
+    {
+      "document_id": "sec-coca_cola-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8093461413230694,
+        "chrf++": 89.37365731314655
+      },
+      "error": null,
+      "parse_time_seconds": 0.015069723129272461
+    },
+    {
+      "document_id": "sec-f5-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8749677125742611,
+        "chrf++": 90.97139528420846
+      },
+      "error": null,
+      "parse_time_seconds": 0.013011932373046875
+    },
+    {
+      "document_id": "sec-autoliv-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8140889365949822,
+        "chrf++": 89.07688364693774
+      },
+      "error": null,
+      "parse_time_seconds": 0.012829303741455078
+    },
+    {
+      "document_id": "sec-dolby_laboratories-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8628545560499311,
+        "chrf++": 89.57424483191329
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011539459228515625
+    },
+    {
+      "document_id": "sec-prudential_financial-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4537907459406666,
+        "chrf++": 67.34855405613992
+      },
+      "error": null,
+      "parse_time_seconds": 0.0036859512329101562
+    },
+    {
+      "document_id": "sec-accenture-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44855461748176206,
+        "chrf++": 73.23348480170225
+      },
+      "error": null,
+      "parse_time_seconds": 0.009629011154174805
+    },
+    {
+      "document_id": "sec-alphabet-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5504241080942841,
+        "chrf++": 74.19182695234721
+      },
+      "error": null,
+      "parse_time_seconds": 0.006134510040283203
+    },
+    {
+      "document_id": "sec-state_street-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03303557957360015,
+        "chrf++": 2.8362026944261913
+      },
+      "error": null,
+      "parse_time_seconds": 0.04133105278015137
+    },
+    {
+      "document_id": "sec-micron_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9202940928536807,
+        "chrf++": 91.59619835606094
+      },
+      "error": null,
+      "parse_time_seconds": 0.015143871307373047
+    },
+    {
+      "document_id": "sec-acuity_de-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1745372683199643,
+        "chrf++": 45.6382607798741
+      },
+      "error": null,
+      "parse_time_seconds": 0.02225208282470703
+    },
+    {
+      "document_id": "sec-morgan_stanley-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06008713775848451,
+        "chrf++": 4.674137410821201
+      },
+      "error": null,
+      "parse_time_seconds": 0.003068685531616211
+    },
+    {
+      "document_id": "sec-goldman_sachs-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06042171486822856,
+        "chrf++": 3.1692609440344013
+      },
+      "error": null,
+      "parse_time_seconds": 0.02256464958190918
+    },
+    {
+      "document_id": "sec-keysight_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8281650127643512,
+        "chrf++": 87.1156016314473
+      },
+      "error": null,
+      "parse_time_seconds": 0.005396127700805664
+    },
+    {
+      "document_id": "sec-costco_wholesale_new-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01819276839686823,
+        "chrf++": 1.6746440730479544
+      },
+      "error": null,
+      "parse_time_seconds": 0.02324223518371582
+    },
+    {
+      "document_id": "sec-emerson_electric-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02624483783570508,
+        "chrf++": 2.5662544803875913
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021941661834716797
+    },
+    {
+      "document_id": "sec-walmart-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8785874400108319,
+        "chrf++": 90.18080330945531
+      },
+      "error": null,
+      "parse_time_seconds": 0.015475273132324219
+    },
+    {
+      "document_id": "sec-atmos_energy-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02621925265468883,
+        "chrf++": 2.0306599193929245
+      },
+      "error": null,
+      "parse_time_seconds": 0.003802776336669922
+    },
+    {
+      "document_id": "sec-warner_music-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01942839737354929,
+        "chrf++": 1.6515817975464289
+      },
+      "error": null,
+      "parse_time_seconds": 0.008919000625610352
+    },
+    {
+      "document_id": "sec-qualcomm-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9427259904481453,
+        "chrf++": 93.87646945771426
+      },
+      "error": null,
+      "parse_time_seconds": 0.0027730464935302734
+    },
+    {
+      "document_id": "sec-nike-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.42109331272155437,
+        "chrf++": 74.08994328750506
+      },
+      "error": null,
+      "parse_time_seconds": 0.008403778076171875
+    },
+    {
+      "document_id": "sec-horton_d_r-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5416374960770587,
+        "chrf++": 79.35176538747318
+      },
+      "error": null,
+      "parse_time_seconds": 0.004929065704345703
+    },
+    {
+      "document_id": "sec-johnsonntrols_international-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5157486079726462,
+        "chrf++": 79.11118554630099
+      },
+      "error": null,
+      "parse_time_seconds": 0.014325857162475586
+    },
+    {
+      "document_id": "sec-toll_brothers-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47799439605314886,
+        "chrf++": 51.58826894433331
+      },
+      "error": null,
+      "parse_time_seconds": 0.013957023620605469
+    },
+    {
+      "document_id": "sec-intel-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3565941634833205,
+        "chrf++": 73.18736882013549
+      },
+      "error": null,
+      "parse_time_seconds": 0.011753320693969727
+    },
+    {
+      "document_id": "sec-starbucks-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8689197801006417,
+        "chrf++": 87.34023527234835
+      },
+      "error": null,
+      "parse_time_seconds": 0.006577968597412109
+    },
+    {
+      "document_id": "sec-air_products_chemicals-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8608093549177243,
+        "chrf++": 89.059690434947
+      },
+      "error": null,
+      "parse_time_seconds": 0.011487483978271484
+    },
+    {
+      "document_id": "sec-tennectivity-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8236392936473753,
+        "chrf++": 82.55995381886446
+      },
+      "error": null,
+      "parse_time_seconds": 0.0040760040283203125
+    },
+    {
+      "document_id": "sec-intuit-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.22675513225707078,
+        "chrf++": 57.7051898811784
+      },
+      "error": null,
+      "parse_time_seconds": 0.020952463150024414
+    },
+    {
+      "document_id": "sec-us_bancorp-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16187417024259998,
+        "chrf++": 48.195307795944416
+      },
+      "error": null,
+      "parse_time_seconds": 0.020499229431152344
+    },
+    {
+      "document_id": "sec-caterpillar-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4186515498143911,
+        "chrf++": 67.95630796335726
+      },
+      "error": null,
+      "parse_time_seconds": 0.011613845825195312
+    },
+    {
+      "document_id": "sec-applied_materials-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8771651896748929,
+        "chrf++": 89.33848535172324
+      },
+      "error": null,
+      "parse_time_seconds": 0.08824968338012695
+    },
+    {
+      "document_id": "sec-abbvie-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41391594674212884,
+        "chrf++": 75.93467516452021
+      },
+      "error": null,
+      "parse_time_seconds": 0.005000591278076172
+    },
+    {
+      "document_id": "sec-deere-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7440542632585914,
+        "chrf++": 75.9621223189568
+      },
+      "error": null,
+      "parse_time_seconds": 0.01306295394897461
+    },
+    {
+      "document_id": "sec-visa-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7957064160725859,
+        "chrf++": 87.70038265118754
+      },
+      "error": null,
+      "parse_time_seconds": 0.02736520767211914
+    },
+    {
+      "document_id": "sec-ab_private_credit_investors-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7204052928404637,
+        "chrf++": 79.63785328009708
+      },
+      "error": null,
+      "parse_time_seconds": 1.455575704574585
+    },
+    {
+      "document_id": "sec-badger_meter-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7455300995563501,
+        "chrf++": 87.47560917119588
+      },
+      "error": null,
+      "parse_time_seconds": 0.07465672492980957
+    },
+    {
+      "document_id": "sec-techtarget-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.917460493621639,
+        "chrf++": 91.43958603876413
+      },
+      "error": null,
+      "parse_time_seconds": 0.6891653537750244
+    },
+    {
+      "document_id": "sec-kyndryl_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5223617423124594,
+        "chrf++": 73.81794265351135
+      },
+      "error": null,
+      "parse_time_seconds": 0.14150285720825195
+    },
+    {
+      "document_id": "sec-society_passorporated-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8768882487811742,
+        "chrf++": 90.26064228501556
+      },
+      "error": null,
+      "parse_time_seconds": 0.15333986282348633
+    },
+    {
+      "document_id": "sec-mueller_water_products-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8352154730349751,
+        "chrf++": 89.45837169264061
+      },
+      "error": null,
+      "parse_time_seconds": 0.13374114036560059
+    },
+    {
+      "document_id": "sec-scansource-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.699439843191678,
+        "chrf++": 79.65133435898042
+      },
+      "error": null,
+      "parse_time_seconds": 0.23922228813171387
+    },
+    {
+      "document_id": "sec-therapeuticsmd-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1678162855264974,
+        "chrf++": 49.62015391083621
+      },
+      "error": null,
+      "parse_time_seconds": 0.10194206237792969
+    },
+    {
+      "document_id": "sec-adtran_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6007753666695257,
+        "chrf++": 85.23520782762215
+      },
+      "error": null,
+      "parse_time_seconds": 0.21190547943115234
+    },
+    {
+      "document_id": "sec-eqt-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9187035591584873,
+        "chrf++": 91.27400386442802
+      },
+      "error": null,
+      "parse_time_seconds": 0.2519516944885254
+    },
+    {
+      "document_id": "sec-array_digital_infrastructure-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.39490165945457734,
+        "chrf++": 73.18947196142712
+      },
+      "error": null,
+      "parse_time_seconds": 0.1416025161743164
+    },
+    {
+      "document_id": "sec-mistras-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02196748550390637,
+        "chrf++": 2.390200291015996
+      },
+      "error": null,
+      "parse_time_seconds": 0.5826826095581055
+    },
+    {
+      "document_id": "sec-keen_vision_acquisition-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9061382400773764,
+        "chrf++": 94.2448686373754
+      },
+      "error": null,
+      "parse_time_seconds": 0.06411433219909668
+    },
+    {
+      "document_id": "sec-capstone_holding-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8581894854594362,
+        "chrf++": 90.35766273891672
+      },
+      "error": null,
+      "parse_time_seconds": 0.06927871704101562
+    },
+    {
+      "document_id": "sec-incannex_healthcare-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9559946075761769,
+        "chrf++": 96.14556010579413
+      },
+      "error": null,
+      "parse_time_seconds": 0.16041254997253418
+    },
+    {
+      "document_id": "sec-automatic_data_processing-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.20813725197926825,
+        "chrf++": 55.10228123556864
+      },
+      "error": null,
+      "parse_time_seconds": 0.5736722946166992
+    },
+    {
+      "document_id": "sec-renx_enterprises-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.953050810647103,
+        "chrf++": 95.8317547060295
+      },
+      "error": null,
+      "parse_time_seconds": 0.15716195106506348
+    },
+    {
+      "document_id": "sec-xtant_medical_holdings-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9213833912959654,
+        "chrf++": 93.97180861186114
+      },
+      "error": null,
+      "parse_time_seconds": 0.2157590389251709
+    },
+    {
+      "document_id": "sec-newton_golfmpany-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8792910833290283,
+        "chrf++": 94.49483547122848
+      },
+      "error": null,
+      "parse_time_seconds": 0.10400080680847168
+    },
+    {
+      "document_id": "sec-cal_maine_foods-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9487189904085861,
+        "chrf++": 99.66575479178046
+      },
+      "error": null,
+      "parse_time_seconds": 0.06196880340576172
+    },
+    {
+      "document_id": "sec-soluna_holdings-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8606422415563976,
+        "chrf++": 91.52020023807984
+      },
+      "error": null,
+      "parse_time_seconds": 0.22795939445495605
+    },
+    {
+      "document_id": "sec-stanley_black_decker-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7942334837353948,
+        "chrf++": 87.95298953340031
+      },
+      "error": null,
+      "parse_time_seconds": 0.25649380683898926
+    },
+    {
+      "document_id": "sec-stepstone-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9264411825428107,
+        "chrf++": 93.97418705764628
+      },
+      "error": null,
+      "parse_time_seconds": 0.6974227428436279
+    },
+    {
+      "document_id": "sec-construction_partners-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4644088752255564,
+        "chrf++": 80.22793543247882
+      },
+      "error": null,
+      "parse_time_seconds": 0.3205382823944092
+    },
+    {
+      "document_id": "sec-rocket_lab-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7382947059724685,
+        "chrf++": 84.52528522513104
+      },
+      "error": null,
+      "parse_time_seconds": 0.24068689346313477
+    },
+    {
+      "document_id": "sec-genasys-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9230636130005844,
+        "chrf++": 92.32424014822507
+      },
+      "error": null,
+      "parse_time_seconds": 0.18291759490966797
+    },
+    {
+      "document_id": "sec-muncylumbia_financial-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6839047541117749,
+        "chrf++": 82.44516511693584
+      },
+      "error": null,
+      "parse_time_seconds": 0.19197559356689453
+    },
+    {
+      "document_id": "sec-korn_ferry-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.880023367627037,
+        "chrf++": 89.02811928440767
+      },
+      "error": null,
+      "parse_time_seconds": 0.18053650856018066
+    },
+    {
+      "document_id": "sec-v_f-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8804696837857737,
+        "chrf++": 89.71234215530045
+      },
+      "error": null,
+      "parse_time_seconds": 0.24091124534606934
+    },
+    {
+      "document_id": "sec-amcon_distributing-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8284065732777419,
+        "chrf++": 88.16477453771034
+      },
+      "error": null,
+      "parse_time_seconds": 0.18619561195373535
+    },
+    {
+      "document_id": "sec-maximus-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9021246928932224,
+        "chrf++": 89.12752284126442
+      },
+      "error": null,
+      "parse_time_seconds": 0.1342601776123047
+    },
+    {
+      "document_id": "sec-plexus-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.019150945189766677,
+        "chrf++": 1.340854558659304
+      },
+      "error": null,
+      "parse_time_seconds": 0.08450984954833984
+    },
+    {
+      "document_id": "sec-realpha_tech-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19429135477502668,
+        "chrf++": 52.035392158719375
+      },
+      "error": null,
+      "parse_time_seconds": 0.12590503692626953
+    },
+    {
+      "document_id": "sec-belpointe_prep_llc-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.70213864068901,
+        "chrf++": 88.90661816060343
+      },
+      "error": null,
+      "parse_time_seconds": 0.1687028408050537
+    },
+    {
+      "document_id": "sec-avnet-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7921445348924132,
+        "chrf++": 82.59333113319346
+      },
+      "error": null,
+      "parse_time_seconds": 0.08624458312988281
+    },
+    {
+      "document_id": "sec-gsi_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6140626453680205,
+        "chrf++": 82.52378867873583
+      },
+      "error": null,
+      "parse_time_seconds": 0.1590421199798584
+    },
+    {
+      "document_id": "sec-niocorp_developments-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8002440877882198,
+        "chrf++": 89.95759122295371
+      },
+      "error": null,
+      "parse_time_seconds": 0.20481252670288086
+    },
+    {
+      "document_id": "sec-resourcesnnection-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4195195969269935,
+        "chrf++": 61.32298374982204
+      },
+      "error": null,
+      "parse_time_seconds": 0.10023212432861328
+    },
+    {
+      "document_id": "sec-knightscope-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1203004105535238,
+        "chrf++": 35.77428438384273
+      },
+      "error": null,
+      "parse_time_seconds": 0.1222982406616211
+    },
+    {
+      "document_id": "sec-lensar-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12781988890527451,
+        "chrf++": 34.94723045424287
+      },
+      "error": null,
+      "parse_time_seconds": 0.11321210861206055
+    },
+    {
+      "document_id": "sec-syra_health-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.94382036117217,
+        "chrf++": 94.49705912754105
+      },
+      "error": null,
+      "parse_time_seconds": 0.07302236557006836
+    },
+    {
+      "document_id": "sec-helmerich_payne-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.911914590262821,
+        "chrf++": 91.07646979201014
+      },
+      "error": null,
+      "parse_time_seconds": 0.16110014915466309
+    },
+    {
+      "document_id": "sec-paychex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7931255290976579,
+        "chrf++": 85.74346914424711
+      },
+      "error": null,
+      "parse_time_seconds": 0.12085795402526855
+    },
+    {
+      "document_id": "sec-haymaker_acquisition_4-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9160978913262867,
+        "chrf++": 93.87079210448474
+      },
+      "error": null,
+      "parse_time_seconds": 0.16614222526550293
+    },
+    {
+      "document_id": "sec-oculus-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8698841085886648,
+        "chrf++": 89.56744314886939
+      },
+      "error": null,
+      "parse_time_seconds": 0.09191274642944336
+    },
+    {
+      "document_id": "sec-estee_laudermpanies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8619830335138976,
+        "chrf++": 87.32311648406686
+      },
+      "error": null,
+      "parse_time_seconds": 0.22193145751953125
+    },
+    {
+      "document_id": "sec-kentucky_first_federal_bancorp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.21935803823914235,
+        "chrf++": 60.606982758206975
+      },
+      "error": null,
+      "parse_time_seconds": 0.11847329139709473
+    },
+    {
+      "document_id": "sec-orion_energy_systems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.905688600451131,
+        "chrf++": 90.36844464271732
+      },
+      "error": null,
+      "parse_time_seconds": 0.1979990005493164
+    },
+    {
+      "document_id": "sec-sandisk-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9346854508557285,
+        "chrf++": 93.17285540567403
+      },
+      "error": null,
+      "parse_time_seconds": 0.1439046859741211
+    },
+    {
+      "document_id": "sec-sonder_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03367468561470188,
+        "chrf++": 13.514507613746648
+      },
+      "error": null,
+      "parse_time_seconds": 0.3712501525878906
+    },
+    {
+      "document_id": "sec-take_two_interactive_software-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4746735789154001,
+        "chrf++": 77.98933578132
+      },
+      "error": null,
+      "parse_time_seconds": 1.0206193923950195
+    },
+    {
+      "document_id": "sec-egain-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8360318367134956,
+        "chrf++": 86.64965308856804
+      },
+      "error": null,
+      "parse_time_seconds": 0.13054323196411133
+    },
+    {
+      "document_id": "sec-northern_technologies_international-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5673622062844237,
+        "chrf++": 83.43279428215412
+      },
+      "error": null,
+      "parse_time_seconds": 0.21987557411193848
+    },
+    {
+      "document_id": "sec-byrna_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5609883692637112,
+        "chrf++": 83.2331143560198
+      },
+      "error": null,
+      "parse_time_seconds": 0.07332658767700195
+    },
+    {
+      "document_id": "sec-energizer_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9157512033517189,
+        "chrf++": 90.76464006003452
+      },
+      "error": null,
+      "parse_time_seconds": 0.2595033645629883
+    },
+    {
+      "document_id": "sec-catheter_precision-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.013797413314409757,
+        "chrf++": 2.0088197032989097
+      },
+      "error": null,
+      "parse_time_seconds": 0.13550829887390137
+    },
+    {
+      "document_id": "sec-universal_va-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.051781248882710296,
+        "chrf++": 2.560860141735856
+      },
+      "error": null,
+      "parse_time_seconds": 0.1505451202392578
+    },
+    {
+      "document_id": "sec-u_s_gold-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02140032105428491,
+        "chrf++": 1.4540237192267915
+      },
+      "error": null,
+      "parse_time_seconds": 0.23250651359558105
+    },
+    {
+      "document_id": "sec-cns_pharmaceuticals-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.18885434537131374,
+        "chrf++": 53.438015006201375
+      },
+      "error": null,
+      "parse_time_seconds": 0.1414964199066162
+    },
+    {
+      "document_id": "sec-urgent_ly-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1696710798918727,
+        "chrf++": 50.00459512268204
+      },
+      "error": null,
+      "parse_time_seconds": 0.24500298500061035
+    },
+    {
+      "document_id": "sec-rare_element_resources-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.914920155015985,
+        "chrf++": 93.59743579201935
+      },
+      "error": null,
+      "parse_time_seconds": 0.13186264038085938
+    },
+    {
+      "document_id": "sec-gold_com-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8934124436136059,
+        "chrf++": 88.67251299921483
+      },
+      "error": null,
+      "parse_time_seconds": 0.14216017723083496
+    },
+    {
+      "document_id": "sec-stride-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8960717697751954,
+        "chrf++": 90.447046930046
+      },
+      "error": null,
+      "parse_time_seconds": 0.15167474746704102
+    },
+    {
+      "document_id": "sec-inspire_veterinary_partners-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8461906089449998,
+        "chrf++": 89.62595045649358
+      },
+      "error": null,
+      "parse_time_seconds": 0.11755609512329102
+    },
+    {
+      "document_id": "sec-great_elm-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9042722026633357,
+        "chrf++": 90.84557574440552
+      },
+      "error": null,
+      "parse_time_seconds": 0.10393810272216797
+    },
+    {
+      "document_id": "sec-golden_matrix-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.019934886412964814,
+        "chrf++": 1.837667776888838
+      },
+      "error": null,
+      "parse_time_seconds": 1.157879114151001
+    },
+    {
+      "document_id": "sec-vail_resorts-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04706571241034874,
+        "chrf++": 1.6629606132079355
+      },
+      "error": null,
+      "parse_time_seconds": 0.2289876937866211
+    },
+    {
+      "document_id": "sec-autozone-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4580932575764167,
+        "chrf++": 73.88694487380685
+      },
+      "error": null,
+      "parse_time_seconds": 0.18591928482055664
+    },
+    {
+      "document_id": "sec-coherent-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9102805269061635,
+        "chrf++": 90.25390128325506
+      },
+      "error": null,
+      "parse_time_seconds": 0.13512539863586426
+    },
+    {
+      "document_id": "sec-lamb_weston_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4955614112135851,
+        "chrf++": 78.23905962912127
+      },
+      "error": null,
+      "parse_time_seconds": 0.15429329872131348
+    },
+    {
+      "document_id": "sec-fuller_h_b-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7197268785956457,
+        "chrf++": 82.14983324150373
+      },
+      "error": null,
+      "parse_time_seconds": 0.3613152503967285
+    },
+    {
+      "document_id": "sec-blaize_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8258135396976299,
+        "chrf++": 93.77259960738479
+      },
+      "error": null,
+      "parse_time_seconds": 0.12847232818603516
+    },
+    {
+      "document_id": "sec-kontoor_brands-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 8.08820905641161e-05,
+        "chrf++": 0.006569248740090644
+      },
+      "error": null,
+      "parse_time_seconds": 1.6324970722198486
+    },
+    {
+      "document_id": "sec-nu_ride-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1815932305743554,
+        "chrf++": 46.78276777433177
+      },
+      "error": null,
+      "parse_time_seconds": 0.07969832420349121
+    },
+    {
+      "document_id": "sec-digital_turbine-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9354106563864281,
+        "chrf++": 93.11172125581328
+      },
+      "error": null,
+      "parse_time_seconds": 0.17190861701965332
+    },
+    {
+      "document_id": "sec-hoth_therapeutics-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.923013690738644,
+        "chrf++": 92.20445906087035
+      },
+      "error": null,
+      "parse_time_seconds": 0.11451244354248047
+    },
+    {
+      "document_id": "sec-tilray_brands-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8173221945297207,
+        "chrf++": 85.95155955335177
+      },
+      "error": null,
+      "parse_time_seconds": 0.150404691696167
+    },
+    {
+      "document_id": "sec-genelux-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12466801857787668,
+        "chrf++": 42.04235014465984
+      },
+      "error": null,
+      "parse_time_seconds": 0.502575159072876
+    },
+    {
+      "document_id": "sec-capstone_green_energy_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8724772800868493,
+        "chrf++": 90.96205724761226
+      },
+      "error": null,
+      "parse_time_seconds": 0.24066472053527832
+    },
+    {
+      "document_id": "sec-signing_day_sports-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.020191704151204415,
+        "chrf++": 20.097239441685417
+      },
+      "error": null,
+      "parse_time_seconds": 0.1902933120727539
+    },
+    {
+      "document_id": "sec-aqua_metals-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02297654644290914,
+        "chrf++": 0.9175992201295575
+      },
+      "error": null,
+      "parse_time_seconds": 0.08212661743164062
+    },
+    {
+      "document_id": "sec-devvstream-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.017273784045107377,
+        "chrf++": 1.7447887674290155
+      },
+      "error": null,
+      "parse_time_seconds": 0.1291666030883789
+    },
+    {
+      "document_id": "sec-new_horizon_aircraft-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8797622131628103,
+        "chrf++": 92.05725005106123
+      },
+      "error": null,
+      "parse_time_seconds": 0.09888291358947754
+    },
+    {
+      "document_id": "sec-koss-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8943613872656903,
+        "chrf++": 92.94476861495717
+      },
+      "error": null,
+      "parse_time_seconds": 0.10776710510253906
+    },
+    {
+      "document_id": "sec-tamboran_resources-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02858284581098014,
+        "chrf++": 1.4247272787393288
+      },
+      "error": null,
+      "parse_time_seconds": 0.27097368240356445
+    },
+    {
+      "document_id": "sec-bioxcel_therapeutics-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9202525706733174,
+        "chrf++": 93.36847198564415
+      },
+      "error": null,
+      "parse_time_seconds": 0.4821782112121582
+    },
+    {
+      "document_id": "sec-celanese-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7811045113113413,
+        "chrf++": 86.92955790300954
+      },
+      "error": null,
+      "parse_time_seconds": 0.30754661560058594
+    },
+    {
+      "document_id": "sec-conagra_brands-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8496793375555761,
+        "chrf++": 85.8662381568616
+      },
+      "error": null,
+      "parse_time_seconds": 0.16904497146606445
+    },
+    {
+      "document_id": "sec-ibex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02602478036288658,
+        "chrf++": 1.946619672113668
+      },
+      "error": null,
+      "parse_time_seconds": 0.14231419563293457
+    },
+    {
+      "document_id": "sec-odysight_ai-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7477155376355146,
+        "chrf++": 89.92208377246645
+      },
+      "error": null,
+      "parse_time_seconds": 0.1807267665863037
+    },
+    {
+      "document_id": "sec-kimball_electronics-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0555892708743384,
+        "chrf++": 10.721303132695494
+      },
+      "error": null,
+      "parse_time_seconds": 0.14293956756591797
+    },
+    {
+      "document_id": "sec-vyne_therapeutics-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6942569870483981,
+        "chrf++": 85.6304027451084
+      },
+      "error": null,
+      "parse_time_seconds": 0.29113197326660156
+    },
+    {
+      "document_id": "sec-axil_brands-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8697325244786884,
+        "chrf++": 89.96129154739256
+      },
+      "error": null,
+      "parse_time_seconds": 0.10904073715209961
+    },
+    {
+      "document_id": "sec-cantor_fitzgeraldome_trust-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9447118551167464,
+        "chrf++": 94.1250887518681
+      },
+      "error": null,
+      "parse_time_seconds": 0.1877448558807373
+    },
+    {
+      "document_id": "sec-forum_markets-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.07635816385754413,
+        "chrf++": 25.877106071959822
+      },
+      "error": null,
+      "parse_time_seconds": 0.2301499843597412
+    },
+    {
+      "document_id": "sec-jack_henry_associates-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6000487151382292,
+        "chrf++": 77.32991087745629
+      },
+      "error": null,
+      "parse_time_seconds": 0.21796274185180664
+    },
+    {
+      "document_id": "sec-simply_good_foods-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9053755445710456,
+        "chrf++": 92.8131221835055
+      },
+      "error": null,
+      "parse_time_seconds": 0.21072602272033691
+    },
+    {
+      "document_id": "sec-lite_strategy-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9484675567671698,
+        "chrf++": 94.63012346242738
+      },
+      "error": null,
+      "parse_time_seconds": 0.09226536750793457
+    },
+    {
+      "document_id": "sec-lumentum_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5104868808121644,
+        "chrf++": 79.95776133689829
+      },
+      "error": null,
+      "parse_time_seconds": 1.3290374279022217
+    },
+    {
+      "document_id": "sec-quest_resource_holding-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9334308343606801,
+        "chrf++": 93.74062323277376
+      },
+      "error": null,
+      "parse_time_seconds": 0.3784055709838867
+    },
+    {
+      "document_id": "sec-grid_dynamics_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5104354800198363,
+        "chrf++": 82.64119225421102
+      },
+      "error": null,
+      "parse_time_seconds": 0.19233036041259766
+    },
+    {
+      "document_id": "sec-brown_forman-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7270067032778897,
+        "chrf++": 85.56459229434758
+      },
+      "error": null,
+      "parse_time_seconds": 0.48706865310668945
+    },
+    {
+      "document_id": "sec-caseys_general_stores-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.017081409090528132,
+        "chrf++": 4.3416252301071525
+      },
+      "error": null,
+      "parse_time_seconds": 0.12704777717590332
+    },
+    {
+      "document_id": "sec-amcor-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03366567201373183,
+        "chrf++": 7.416770612113075
+      },
+      "error": null,
+      "parse_time_seconds": 0.2547430992126465
+    },
+    {
+      "document_id": "sec-worthington_enterprises-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8401346353080158,
+        "chrf++": 85.97675094945386
+      },
+      "error": null,
+      "parse_time_seconds": 0.5290844440460205
+    },
+    {
+      "document_id": "sec-xwell-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16137954355496287,
+        "chrf++": 40.57107809812534
+      },
+      "error": null,
+      "parse_time_seconds": 0.12479209899902344
+    },
+    {
+      "document_id": "sec-dolphin_entertainment-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11978969743701195,
+        "chrf++": 36.14803324768525
+      },
+      "error": null,
+      "parse_time_seconds": 0.35618042945861816
+    },
+    {
+      "document_id": "sec-key_tronic-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9108894265958272,
+        "chrf++": 92.26459219101473
+      },
+      "error": null,
+      "parse_time_seconds": 0.2106640338897705
+    },
+    {
+      "document_id": "sec-cabot-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7908263200376496,
+        "chrf++": 85.71749372617784
+      },
+      "error": null,
+      "parse_time_seconds": 0.14257049560546875
+    },
+    {
+      "document_id": "sec-citius_pharmaceuticals-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14823502854616766,
+        "chrf++": 46.221475958904676
+      },
+      "error": null,
+      "parse_time_seconds": 0.15755629539489746
+    },
+    {
+      "document_id": "sec-netscout_systems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.882758504918536,
+        "chrf++": 91.42346496085307
+      },
+      "error": null,
+      "parse_time_seconds": 0.45188450813293457
+    },
+    {
+      "document_id": "sec-matson-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7661360582990677,
+        "chrf++": 81.47336490853816
+      },
+      "error": null,
+      "parse_time_seconds": 0.49399709701538086
+    },
+    {
+      "document_id": "sec-forestar-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47535490064576325,
+        "chrf++": 78.69314618793962
+      },
+      "error": null,
+      "parse_time_seconds": 0.3443429470062256
+    },
+    {
+      "document_id": "sec-hancock_parkorateome-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01843414014196454,
+        "chrf++": 1.6377843388073028
+      },
+      "error": null,
+      "parse_time_seconds": 0.19383955001831055
+    },
+    {
+      "document_id": "sec-wave_life_sciences-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7767863141189766,
+        "chrf++": 92.39540602844079
+      },
+      "error": null,
+      "parse_time_seconds": 0.36838316917419434
+    },
+    {
+      "document_id": "sec-enerpac_tool-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.037765514039401094,
+        "chrf++": 8.225373463001725
+      },
+      "error": null,
+      "parse_time_seconds": 0.09247589111328125
+    },
+    {
+      "document_id": "sec-sr_bancorp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.860594699950116,
+        "chrf++": 84.94192189213219
+      },
+      "error": null,
+      "parse_time_seconds": 0.1469438076019287
+    },
+    {
+      "document_id": "sec-franklinvey-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5627482380548443,
+        "chrf++": 81.92687302556158
+      },
+      "error": null,
+      "parse_time_seconds": 0.39191651344299316
+    },
+    {
+      "document_id": "sec-cannae_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4874304910448266,
+        "chrf++": 80.75195892280279
+      },
+      "error": null,
+      "parse_time_seconds": 0.33075428009033203
+    },
+    {
+      "document_id": "sec-bitmine_immersion_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8835443728106642,
+        "chrf++": 91.85570461912147
+      },
+      "error": null,
+      "parse_time_seconds": 0.07558035850524902
+    },
+    {
+      "document_id": "sec-marchex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19691438106766856,
+        "chrf++": 44.68210760732859
+      },
+      "error": null,
+      "parse_time_seconds": 0.054342031478881836
+    },
+    {
+      "document_id": "sec-nutanix-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5118871203696898,
+        "chrf++": 80.39847543946078
+      },
+      "error": null,
+      "parse_time_seconds": 0.21730661392211914
+    },
+    {
+      "document_id": "sec-thor_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03259662932687457,
+        "chrf++": 3.68120099759218
+      },
+      "error": null,
+      "parse_time_seconds": 0.13602304458618164
+    },
+    {
+      "document_id": "sec-peloton_interactive-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.018722804102070723,
+        "chrf++": 1.1700168514745695
+      },
+      "error": null,
+      "parse_time_seconds": 0.17311835289001465
+    },
+    {
+      "document_id": "sec-zymeworks-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5953792786132666,
+        "chrf++": 88.32429231144164
+      },
+      "error": null,
+      "parse_time_seconds": 0.46317100524902344
+    },
+    {
+      "document_id": "sec-brightview_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9216445011234591,
+        "chrf++": 92.89090823347546
+      },
+      "error": null,
+      "parse_time_seconds": 0.28932714462280273
+    },
+    {
+      "document_id": "sec-kestra_medical_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9714800495476896,
+        "chrf++": 97.4112475884778
+      },
+      "error": null,
+      "parse_time_seconds": 0.16923761367797852
+    },
+    {
+      "document_id": "sec-clearsign_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05906782558507917,
+        "chrf++": 21.150543125686493
+      },
+      "error": null,
+      "parse_time_seconds": 0.1825571060180664
+    },
+    {
+      "document_id": "sec-bioaffinity_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.17842623234174637,
+        "chrf++": 51.76302536917421
+      },
+      "error": null,
+      "parse_time_seconds": 0.18471455574035645
+    },
+    {
+      "document_id": "sec-envue_medical-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8242462137930727,
+        "chrf++": 93.81033326531895
+      },
+      "error": null,
+      "parse_time_seconds": 0.4268784523010254
+    },
+    {
+      "document_id": "sec-first_bancorp_me-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7608812951528346,
+        "chrf++": 82.66381914894431
+      },
+      "error": null,
+      "parse_time_seconds": 0.2994379997253418
+    },
+    {
+      "document_id": "sec-astronova-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8890964132455712,
+        "chrf++": 91.22202485216302
+      },
+      "error": null,
+      "parse_time_seconds": 0.13138175010681152
+    },
+    {
+      "document_id": "sec-gen_digital-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12996617806454547,
+        "chrf++": 41.05090841991765
+      },
+      "error": null,
+      "parse_time_seconds": 0.24138736724853516
+    },
+    {
+      "document_id": "sec-agnc_investment-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7694721984025282,
+        "chrf++": 84.54720538470791
+      },
+      "error": null,
+      "parse_time_seconds": 0.24765801429748535
+    },
+    {
+      "document_id": "sec-artelo_biosciences-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7993611067224472,
+        "chrf++": 85.91632805566012
+      },
+      "error": null,
+      "parse_time_seconds": 0.12358736991882324
+    },
+    {
+      "document_id": "sec-kewaunee_scientific-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05253417385808301,
+        "chrf++": 7.69694761967329
+      },
+      "error": null,
+      "parse_time_seconds": 0.08457374572753906
+    },
+    {
+      "document_id": "sec-fabrinet-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02280509161243105,
+        "chrf++": 1.3484217880727107
+      },
+      "error": null,
+      "parse_time_seconds": 0.2067105770111084
+    },
+    {
+      "document_id": "sec-twin_hospitality-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586329321592905,
+        "chrf++": 95.69023481377221
+      },
+      "error": null,
+      "parse_time_seconds": 0.17423057556152344
+    },
+    {
+      "document_id": "sec-bank_of_new_york_mellon-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06719743479264817,
+        "chrf++": 22.936117364562424
+      },
+      "error": null,
+      "parse_time_seconds": 0.5819740295410156
+    },
+    {
+      "document_id": "sec-humana-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6343463408115196,
+        "chrf++": 66.65482723866484
+      },
+      "error": null,
+      "parse_time_seconds": 0.18063616752624512
+    },
+    {
+      "document_id": "sec-concentrix-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5602451472838949,
+        "chrf++": 81.91209121682786
+      },
+      "error": null,
+      "parse_time_seconds": 0.4559178352355957
+    },
+    {
+      "document_id": "sec-pioneer_power_solutions-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8161652326734455,
+        "chrf++": 86.61888076762715
+      },
+      "error": null,
+      "parse_time_seconds": 0.21231579780578613
+    },
+    {
+      "document_id": "sec-nuburu-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3046053436349503,
+        "chrf++": 67.53212621820954
+      },
+      "error": null,
+      "parse_time_seconds": 0.14483904838562012
+    },
+    {
+      "document_id": "sec-kennametal-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8031783504226222,
+        "chrf++": 86.50152502748992
+      },
+      "error": null,
+      "parse_time_seconds": 0.1329178810119629
+    },
+    {
+      "document_id": "sec-idacorp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8590471702415517,
+        "chrf++": 88.5548038244626
+      },
+      "error": null,
+      "parse_time_seconds": 0.40456652641296387
+    },
+    {
+      "document_id": "sec-allegro_microsystems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9128090223975208,
+        "chrf++": 92.10432943463888
+      },
+      "error": null,
+      "parse_time_seconds": 0.10428571701049805
+    },
+    {
+      "document_id": "sec-clorox-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.21703936241254707,
+        "chrf++": 29.197934254798735
+      },
+      "error": null,
+      "parse_time_seconds": 0.057188987731933594
+    },
+    {
+      "document_id": "sec-jupiter_neurosciences-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.025499425947187127,
+        "chrf++": 0.9302451620792139
+      },
+      "error": null,
+      "parse_time_seconds": 0.2542147636413574
+    },
+    {
+      "document_id": "sec-carpenter_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8648378139865258,
+        "chrf++": 86.02392496079626
+      },
+      "error": null,
+      "parse_time_seconds": 0.19009757041931152
+    },
+    {
+      "document_id": "sec-astec_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9052377201978594,
+        "chrf++": 89.44031936919943
+      },
+      "error": null,
+      "parse_time_seconds": 0.19179511070251465
+    },
+    {
+      "document_id": "sec-dragonfly_energy_holdings-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7416938710445133,
+        "chrf++": 88.70215563524194
+      },
+      "error": null,
+      "parse_time_seconds": 0.33017611503601074
+    },
+    {
+      "document_id": "sec-moog-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.765223796111274,
+        "chrf++": 76.74776748103963
+      },
+      "error": null,
+      "parse_time_seconds": 0.1520991325378418
+    },
+    {
+      "document_id": "sec-owlet-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04448500501395969,
+        "chrf++": 1.9983265557047227
+      },
+      "error": null,
+      "parse_time_seconds": 0.21324658393859863
+    },
+    {
+      "document_id": "sec-worthington_steel-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8853716427232979,
+        "chrf++": 90.07681118725145
+      },
+      "error": null,
+      "parse_time_seconds": 0.2529938220977783
+    },
+    {
+      "document_id": "sec-plug_power-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.506356611283677,
+        "chrf++": 81.65271801168365
+      },
+      "error": null,
+      "parse_time_seconds": 0.37342238426208496
+    },
+    {
+      "document_id": "sec-ennis-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6576226056041954,
+        "chrf++": 83.2023187643843
+      },
+      "error": null,
+      "parse_time_seconds": 0.15163016319274902
+    },
+    {
+      "document_id": "sec-monro-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8531360362615055,
+        "chrf++": 89.68845799931124
+      },
+      "error": null,
+      "parse_time_seconds": 0.1413435935974121
+    },
+    {
+      "document_id": "sec-lantern_pharma-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.08490564537545464,
+        "chrf++": 27.07230671745068
+      },
+      "error": null,
+      "parse_time_seconds": 0.20100641250610352
+    },
+    {
+      "document_id": "sec-pyxus_international-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8922664646958736,
+        "chrf++": 89.25752799000048
+      },
+      "error": null,
+      "parse_time_seconds": 0.14449644088745117
+    },
+    {
+      "document_id": "sec-ainos-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8413200268810093,
+        "chrf++": 91.83235439827669
+      },
+      "error": null,
+      "parse_time_seconds": 0.12107372283935547
+    },
+    {
+      "document_id": "sec-lightstone_value_plus_reit_ii-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8632259714761736,
+        "chrf++": 92.27278328929414
+      },
+      "error": null,
+      "parse_time_seconds": 0.07254409790039062
+    },
+    {
+      "document_id": "sec-liquidity_services-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7164169304917508,
+        "chrf++": 87.20910323916054
+      },
+      "error": null,
+      "parse_time_seconds": 0.39827609062194824
+    },
+    {
+      "document_id": "sec-greeneunty_bancorp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.07078485393565426,
+        "chrf++": 6.824971322516774
+      },
+      "error": null,
+      "parse_time_seconds": 0.06046700477600098
+    },
+    {
+      "document_id": "sec-binah_capital-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9145096190501133,
+        "chrf++": 91.81611358791884
+      },
+      "error": null,
+      "parse_time_seconds": 0.18070459365844727
+    },
+    {
+      "document_id": "sec-mission_produce-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.022437098353584206,
+        "chrf++": 1.2858908698157863
+      },
+      "error": null,
+      "parse_time_seconds": 0.09125471115112305
+    },
+    {
+      "document_id": "sec-eplus-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7519608635885825,
+        "chrf++": 84.98247591120652
+      },
+      "error": null,
+      "parse_time_seconds": 0.16864347457885742
+    },
+    {
+      "document_id": "sec-caci_international-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8085743152456575,
+        "chrf++": 88.72458169451487
+      },
+      "error": null,
+      "parse_time_seconds": 0.32031679153442383
+    },
+    {
+      "document_id": "sec-amtech_systems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8727020865198696,
+        "chrf++": 89.5640121316416
+      },
+      "error": null,
+      "parse_time_seconds": 0.07823538780212402
+    },
+    {
+      "document_id": "sec-embecta-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04965975111951659,
+        "chrf++": 6.66782781359963
+      },
+      "error": null,
+      "parse_time_seconds": 0.12186717987060547
+    },
+    {
+      "document_id": "sec-movano-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9211795124635953,
+        "chrf++": 91.57504291385243
+      },
+      "error": null,
+      "parse_time_seconds": 0.1443183422088623
+    },
+    {
+      "document_id": "sec-lam_research-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16061038823653861,
+        "chrf++": 50.962654215387545
+      },
+      "error": null,
+      "parse_time_seconds": 1.1313152313232422
+    },
+    {
+      "document_id": "sec-innovage_holding-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02632576241451845,
+        "chrf++": 1.4378879815241792
+      },
+      "error": null,
+      "parse_time_seconds": 0.17040634155273438
+    },
+    {
+      "document_id": "sec-osi_systems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8254695416079643,
+        "chrf++": 87.00228674263121
+      },
+      "error": null,
+      "parse_time_seconds": 0.18762516975402832
+    },
+    {
+      "document_id": "sec-bassett_furniture_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6145205619092053,
+        "chrf++": 67.79726854211357
+      },
+      "error": null,
+      "parse_time_seconds": 0.08189105987548828
+    },
+    {
+      "document_id": "sec-home_federal_bancorp_of_louisiana-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.708099317991765,
+        "chrf++": 77.4907431675895
+      },
+      "error": null,
+      "parse_time_seconds": 0.1558518409729004
+    },
+    {
+      "document_id": "sec-fedex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8997931955341509,
+        "chrf++": 90.90006595817428
+      },
+      "error": null,
+      "parse_time_seconds": 0.3257162570953369
+    },
+    {
+      "document_id": "sec-uranium_energy-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.030411310618936316,
+        "chrf++": 1.9853696210517051
+      },
+      "error": null,
+      "parse_time_seconds": 0.39199042320251465
+    },
+    {
+      "document_id": "sec-qorvo-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9022767115374166,
+        "chrf++": 92.0421901155909
+      },
+      "error": null,
+      "parse_time_seconds": 0.16439175605773926
+    },
+    {
+      "document_id": "sec-new_jersey_resources-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04998577575477403,
+        "chrf++": 6.130559219036842
+      },
+      "error": null,
+      "parse_time_seconds": 0.26201558113098145
+    },
+    {
+      "document_id": "sec-steris-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8953720749145936,
+        "chrf++": 89.221065308429
+      },
+      "error": null,
+      "parse_time_seconds": 0.45746493339538574
+    },
+    {
+      "document_id": "sec-lennar_new-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7936200256196705,
+        "chrf++": 87.6085832920591
+      },
+      "error": null,
+      "parse_time_seconds": 0.24942803382873535
+    },
+    {
+      "document_id": "sec-taylor_devices-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4966380709482958,
+        "chrf++": 65.71779789652953
+      },
+      "error": null,
+      "parse_time_seconds": 0.051253557205200195
+    },
+    {
+      "document_id": "sec-mercury_systems-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.887896895505668,
+        "chrf++": 92.1003449972018
+      },
+      "error": null,
+      "parse_time_seconds": 0.21361899375915527
+    },
+    {
+      "document_id": "sec-iqvia_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9143732253807718,
+        "chrf++": 90.67415270272036
+      },
+      "error": null,
+      "parse_time_seconds": 0.4954347610473633
+    },
+    {
+      "document_id": "sec-r_f_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03200182573102861,
+        "chrf++": 0.9417183473850024
+      },
+      "error": null,
+      "parse_time_seconds": 0.1724691390991211
+    },
+    {
+      "document_id": "sec-rmr-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8270855839784836,
+        "chrf++": 87.44141770590952
+      },
+      "error": null,
+      "parse_time_seconds": 0.21545648574829102
+    },
+    {
+      "document_id": "sec-bgc-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6672153164679138,
+        "chrf++": 89.03867905918341
+      },
+      "error": null,
+      "parse_time_seconds": 0.5044689178466797
+    },
+    {
+      "document_id": "sec-crown_crafts-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7814456777204029,
+        "chrf++": 86.8726667114762
+      },
+      "error": null,
+      "parse_time_seconds": 0.11374711990356445
+    },
+    {
+      "document_id": "sec-tao_synergies-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9292564298825121,
+        "chrf++": 94.26167543151664
+      },
+      "error": null,
+      "parse_time_seconds": 0.17107462882995605
+    },
+    {
+      "document_id": "sec-plus_therapeutics-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.08190740638620642,
+        "chrf++": 31.05366109095346
+      },
+      "error": null,
+      "parse_time_seconds": 0.41631293296813965
+    },
+    {
+      "document_id": "sec-daktronics_sd-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 5.458098180310955e-06,
+        "chrf++": 0.0009978842880484567
+      },
+      "error": null,
+      "parse_time_seconds": 2.538966417312622
+    },
+    {
+      "document_id": "sec-satellogic-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9295444886755744,
+        "chrf++": 94.893492947085
+      },
+      "error": null,
+      "parse_time_seconds": 0.16767215728759766
+    },
+    {
+      "document_id": "sec-anteris_technologies_global-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5603383282213696,
+        "chrf++": 86.46713385406461
+      },
+      "error": null,
+      "parse_time_seconds": 0.1888589859008789
+    },
+    {
+      "document_id": "sec-mind_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8902849968149044,
+        "chrf++": 88.97408142894702
+      },
+      "error": null,
+      "parse_time_seconds": 0.07636451721191406
+    },
+    {
+      "document_id": "sec-universal_technical_institute-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0198741464955855,
+        "chrf++": 1.4875742829054006
+      },
+      "error": null,
+      "parse_time_seconds": 0.14936542510986328
+    },
+    {
+      "document_id": "sec-winchester_bancorp_md-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8683051996753414,
+        "chrf++": 86.44391543464921
+      },
+      "error": null,
+      "parse_time_seconds": 0.1661231517791748
+    },
+    {
+      "document_id": "sec-general_mills-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43582609229164593,
+        "chrf++": 81.82022939048086
+      },
+      "error": null,
+      "parse_time_seconds": 0.612299919128418
+    },
+    {
+      "document_id": "sec-netapp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8994632265337758,
+        "chrf++": 89.88053969586413
+      },
+      "error": null,
+      "parse_time_seconds": 0.33131957054138184
+    },
+    {
+      "document_id": "sec-palisade_bio-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9582698115399134,
+        "chrf++": 95.92145179551797
+      },
+      "error": null,
+      "parse_time_seconds": 0.13306832313537598
+    },
+    {
+      "document_id": "sec-blacksky_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.040914327849209675,
+        "chrf++": 3.601452826731665
+      },
+      "error": null,
+      "parse_time_seconds": 2.8900413513183594
+    },
+    {
+      "document_id": "sec-sonic_automotive-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.876305260783084,
+        "chrf++": 86.5943854985983
+      },
+      "error": null,
+      "parse_time_seconds": 0.2933690547943115
+    },
+    {
+      "document_id": "sec-global_interactive_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8746479977012095,
+        "chrf++": 92.57440810234041
+      },
+      "error": null,
+      "parse_time_seconds": 0.11846923828125
+    },
+    {
+      "document_id": "sec-national_beverage-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.025643558488254947,
+        "chrf++": 4.177956778540404
+      },
+      "error": null,
+      "parse_time_seconds": 0.14328575134277344
+    },
+    {
+      "document_id": "sec-pathward_financial-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8517785430904342,
+        "chrf++": 86.2900146052768
+      },
+      "error": null,
+      "parse_time_seconds": 0.26020288467407227
+    },
+    {
+      "document_id": "sec-csw_industrials-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5277594126843109,
+        "chrf++": 80.56937638599379
+      },
+      "error": null,
+      "parse_time_seconds": 1.2180814743041992
+    },
+    {
+      "document_id": "sec-peraso-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8636538115046258,
+        "chrf++": 89.62663765982974
+      },
+      "error": null,
+      "parse_time_seconds": 0.1520097255706787
+    },
+    {
+      "document_id": "sec-h_r_block-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.05174281349812526,
+        "chrf++": 7.28371982509126
+      },
+      "error": null,
+      "parse_time_seconds": 0.1323080062866211
+    },
+    {
+      "document_id": "sec-myr-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.874871216532767,
+        "chrf++": 90.61551172111625
+      },
+      "error": null,
+      "parse_time_seconds": 0.3021230697631836
+    },
+    {
+      "document_id": "sec-riverview_bancorp-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8271679178033093,
+        "chrf++": 83.5722332701923
+      },
+      "error": null,
+      "parse_time_seconds": 0.21418142318725586
+    },
+    {
+      "document_id": "sec-novabay_pharmaceuticals-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9063988965978433,
+        "chrf++": 90.15536172301866
+      },
+      "error": null,
+      "parse_time_seconds": 0.15284347534179688
+    },
+    {
+      "document_id": "sec-sanuwave_health-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9363805297634585,
+        "chrf++": 93.39608572685852
+      },
+      "error": null,
+      "parse_time_seconds": 0.18727707862854004
+    },
+    {
+      "document_id": "sec-kkr_real_estate_finance_trust-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.03321546687507748,
+        "chrf++": 2.6984006986477413
+      },
+      "error": null,
+      "parse_time_seconds": 0.3953981399536133
+    },
+    {
+      "document_id": "sec-j_j_snack_foods-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8681213632585204,
+        "chrf++": 86.15159165901223
+      },
+      "error": null,
+      "parse_time_seconds": 0.24187803268432617
+    },
+    {
+      "document_id": "sec-lesaka_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.15243003790944332,
+        "chrf++": 45.504686038737766
+      },
+      "error": null,
+      "parse_time_seconds": 0.3890511989593506
+    },
+    {
+      "document_id": "sec-flexsteel_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8727624126067492,
+        "chrf++": 87.69033165245405
+      },
+      "error": null,
+      "parse_time_seconds": 0.10919952392578125
+    },
+    {
+      "document_id": "sec-izea_worldwide-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0727508409773081,
+        "chrf++": 6.188781815610792
+      },
+      "error": null,
+      "parse_time_seconds": 0.2823781967163086
+    },
+    {
+      "document_id": "sec-scotts_miracle_gro-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04981627593335869,
+        "chrf++": 3.179984481879703
+      },
+      "error": null,
+      "parse_time_seconds": 1.5721096992492676
+    },
+    {
+      "document_id": "sec-genuine_parts-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8045243820666373,
+        "chrf++": 87.66394219185976
+      },
+      "error": null,
+      "parse_time_seconds": 0.37548327445983887
+    },
+    {
+      "document_id": "sec-john_wiley_sons-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8835625853394793,
+        "chrf++": 89.38472262384361
+      },
+      "error": null,
+      "parse_time_seconds": 0.47059082984924316
+    },
+    {
+      "document_id": "sec-alumis-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14452719199954844,
+        "chrf++": 45.70851205552975
+      },
+      "error": null,
+      "parse_time_seconds": 0.7131791114807129
+    },
+    {
+      "document_id": "sec-lucky_strike_entertainment-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8948759497972957,
+        "chrf++": 88.63152012110189
+      },
+      "error": null,
+      "parse_time_seconds": 0.1690664291381836
+    },
+    {
+      "document_id": "sec-braemar_hotels_resorts-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16324689105712675,
+        "chrf++": 48.00013518856249
+      },
+      "error": null,
+      "parse_time_seconds": 0.8477423191070557
+    },
+    {
+      "document_id": "sec-destination_xl-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.24923865578127968,
+        "chrf++": 52.01822971484802
+      },
+      "error": null,
+      "parse_time_seconds": 0.2715427875518799
+    },
+    {
+      "document_id": "sec-dt_cloud_star_acquisition-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8041366087941669,
+        "chrf++": 93.65745007372713
+      },
+      "error": null,
+      "parse_time_seconds": 0.527491569519043
+    },
+    {
+      "document_id": "sec-sonnet_biotherapeutics_holdings-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7523392641373627,
+        "chrf++": 90.34284732115484
+      },
+      "error": null,
+      "parse_time_seconds": 0.36757397651672363
+    },
+    {
+      "document_id": "sec-aeries_technology-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8695963095588274,
+        "chrf++": 90.76504302351077
+      },
+      "error": null,
+      "parse_time_seconds": 0.39333271980285645
+    },
+    {
+      "document_id": "sec-twin_disc-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6845834293381765,
+        "chrf++": 82.55823377968045
+      },
+      "error": null,
+      "parse_time_seconds": 0.1745450496673584
+    },
+    {
+      "document_id": "sec-kearny_financial-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04608164754931576,
+        "chrf++": 1.8535645398350806
+      },
+      "error": null,
+      "parse_time_seconds": 0.27798008918762207
+    },
+    {
+      "document_id": "sec-seneca_foods-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2534537813735709,
+        "chrf++": 57.205466181221134
+      },
+      "error": null,
+      "parse_time_seconds": 0.1371021270751953
+    },
+    {
+      "document_id": "sec-endo_lp-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9357718020417406,
+        "chrf++": 93.41499093940546
+      },
+      "error": null,
+      "parse_time_seconds": 0.4747161865234375
+    },
+    {
+      "document_id": "sec-semileds-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7941946056112681,
+        "chrf++": 87.59088363407739
+      },
+      "error": null,
+      "parse_time_seconds": 0.4837489128112793
+    }
+  ],
+  "summary": {
+    "total_documents": 320,
+    "total_parsers": 1,
+    "total_results": 320,
+    "success_count": 320,
+    "failure_count": 0
+  }
+}

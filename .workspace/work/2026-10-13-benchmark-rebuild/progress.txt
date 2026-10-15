@@ -9,9 +9,17 @@ Milestone
 Eight issues are open in GitHub milestone 1, mapped in issues.json. Owner branch:
 codex/benchmark-rebuild. Current owner: this PDF-Bench reconstruction chat.
 Issue #1 is implemented; its closing footer takes effect only after approved public-main merge.
-The next implementation is #2, the retained-run registry.
+Issue #2 is implemented with a versioned retained-evidence bundle and closing footer.
+The next implementation is #3, independent invoice references and qualification.
 
 Implemented
+Registry: 117 artifacts, preserved original bytes/counters/labels, observed row
+counts and disagreements, explicit metric IDs/common-success diagnostics, current
+config/document candidates separated from historical identity, and unknown
+provenance. Central annotations replace the old hard-coded SLATE. Completion
+manifest and verified immutable bundles precede atomic latest-pointer replacement.
+Failure/tampering controls and actual runner duplicate/unavailable-score paths pass.
+
 Pinned complete annotation/source-metadata acquisition, byte-verified inventory,
 source inspection tooling, dated observations and benchmark-fit assessment.
 169,011 annotation rows, 2,553 group/input cases, 2,078 exact input paths and
@@ -32,7 +40,9 @@ Baseline test repairs are committed as a9ef338: missing sample reference restore
 and checked against its actual PDF; DOCX tests build templates; obsolete absent
 arXiv-builder tests now exercise the retained downloader against local HTTP;
 loader/metadata tests follow actual documented interfaces. Atomic persistence
-prerequisite retained from independent review. Final full suite: 889 passed, 18 skipped. Owned-file lint/format pass.
+prerequisite retained from independent review. Final issue-2 full suite: 898 passed, 18 skipped. Thirteen focused inventory/registry
+tests pass; all eight issue-2 closure items covered without waivers or deferrals.
+Owned-file lint/format pass. Draft milestone PR is #9; checkboxes 1-2 implemented.
 
 Preservation
 Original review packet, reports, retained results and inherited dirty work remain

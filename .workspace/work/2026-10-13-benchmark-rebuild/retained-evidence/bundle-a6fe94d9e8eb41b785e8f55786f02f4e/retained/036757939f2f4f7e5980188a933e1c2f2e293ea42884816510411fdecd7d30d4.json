@@ -1,0 +1,1073 @@
+{
+  "benchmark": {
+    "name": "CUAD Unstructured Benchmark",
+    "timestamp": "2025-11-22T23:17:21.787462+00:00",
+    "config_file": "benchmarks/cuad_75docs_unstructured.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "cuad_000",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9684940138626339,
+        "chrf++": 94.62575478588201,
+        "character_error_rate": 0.0315059861373661,
+        "element_f1": 0.4,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.191206693649292
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9699709689125439,
+        "chrf++": 94.97748488168605,
+        "character_error_rate": 0.03002903108745615,
+        "element_f1": 0.8241042345276872,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5684001445770264
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9823110399030031,
+        "chrf++": 95.83574941399584,
+        "character_error_rate": 0.01768896009699699,
+        "element_f1": 0.8807947019867549,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.21119403839111328
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9721308519938363,
+        "chrf++": 95.13989146886252,
+        "character_error_rate": 0.027869148006163663,
+        "element_f1": 0.7790077900779008,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.6575736999511719
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854025957857387,
+        "chrf++": 96.04606421339463,
+        "character_error_rate": 0.01459740421426126,
+        "element_f1": 0.7216494845360826,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.15175390243530273
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.987416683190214,
+        "chrf++": 96.74635011181785,
+        "character_error_rate": 0.012583316809786008,
+        "element_f1": 0.7260726072607261,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.28812217712402344
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985326165916025,
+        "chrf++": 96.23975451266469,
+        "character_error_rate": 0.014673834083975011,
+        "element_f1": 0.5301837270341208,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.31314539909362793
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9615082956259426,
+        "chrf++": 93.11288949158748,
+        "character_error_rate": 0.038491704374057314,
+        "element_f1": 0.5906040268456376,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.1150050163269043
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9780746831106544,
+        "chrf++": 95.31244878229458,
+        "character_error_rate": 0.021925316889345667,
+        "element_f1": 0.4180180180180181,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8936502933502197
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844925642021972,
+        "chrf++": 96.59025672869983,
+        "character_error_rate": 0.015507435797802819,
+        "element_f1": 0.485207100591716,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.13802456855773926
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9781902854637453,
+        "chrf++": 95.39939440287826,
+        "character_error_rate": 0.021809714536254726,
+        "element_f1": 0.7625946657886072,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7763941287994385
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581086433293727,
+        "chrf++": 92.54649592417401,
+        "character_error_rate": 0.0418913566706273,
+        "element_f1": 0.25157232704402516,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.18143868446350098
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880675422138837,
+        "chrf++": 96.77889612463146,
+        "character_error_rate": 0.011932457786116324,
+        "element_f1": 0.3555555555555555,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.07172918319702148
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9706638368116968,
+        "chrf++": 94.4890736682311,
+        "character_error_rate": 0.029336163188303267,
+        "element_f1": 0.723314606741573,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.651759147644043
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9637313905606588,
+        "chrf++": 95.0501995739122,
+        "character_error_rate": 0.03626860943934115,
+        "element_f1": 0.8636363636363635,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.047480106353759766
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9775015537600994,
+        "chrf++": 95.74923375219748,
+        "character_error_rate": 0.02249844623990056,
+        "element_f1": 0.6826722338204593,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5224752426147461
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9751370137682128,
+        "chrf++": 95.92040466764134,
+        "character_error_rate": 0.024862986231787194,
+        "element_f1": 0.2568807339449541,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0454249382019043
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9695916957913903,
+        "chrf++": 93.57758034857115,
+        "character_error_rate": 0.030408304208609755,
+        "element_f1": 0.49581239530988275,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.21511006355285645
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9685788079688091,
+        "chrf++": 93.58337971938248,
+        "character_error_rate": 0.03142119203119088,
+        "element_f1": 0.25,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.2601189613342285
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.937246572697432,
+        "chrf++": 92.4878251675888,
+        "character_error_rate": 0.06275342730256807,
+        "element_f1": 0.6086956521739131,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.25641584396362305
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881674308534241,
+        "chrf++": 96.58065589347123,
+        "character_error_rate": 0.01183256914657595,
+        "element_f1": 0.6666666666666666,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.044014930725097656
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.989844123678917,
+        "chrf++": 96.77501492280422,
+        "character_error_rate": 0.010155876321082944,
+        "element_f1": 0.85,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.6570188999176025
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.979217470586439,
+        "chrf++": 95.38438400455674,
+        "character_error_rate": 0.020782529413560992,
+        "element_f1": 0.6712401055408971,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.2734568119049072
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9501076812634601,
+        "chrf++": 91.6813240969659,
+        "character_error_rate": 0.04989231873653984,
+        "element_f1": 0.4489795918367347,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.03832578659057617
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9622494298403553,
+        "chrf++": 93.98602250173018,
+        "character_error_rate": 0.0377505701596447,
+        "element_f1": 0.7519999999999999,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.14425110816955566
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9752355283752017,
+        "chrf++": 95.30626226524868,
+        "character_error_rate": 0.024764471624798313,
+        "element_f1": 0.3669123669123669,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9044928550720215
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8964928909952606,
+        "chrf++": 86.70721460886503,
+        "character_error_rate": 0.10350710900473933,
+        "element_f1": 0.53125,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.056961774826049805
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9774177148035986,
+        "chrf++": 94.45138929277367,
+        "character_error_rate": 0.022582285196401337,
+        "element_f1": 0.9513178979941428,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 2.271056890487671
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.972073677956031,
+        "chrf++": 94.70297401396572,
+        "character_error_rate": 0.027926322043969103,
+        "element_f1": 0.3636363636363636,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.023782968521118164
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9800090982612212,
+        "chrf++": 95.24774696829628,
+        "character_error_rate": 0.01999090173877881,
+        "element_f1": 0.7692307692307693,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.20658230781555176
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9756686131776124,
+        "chrf++": 95.94521214788537,
+        "character_error_rate": 0.024331386822387543,
+        "element_f1": 0.3644922663080027,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.2011592388153076
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9848591343056288,
+        "chrf++": 97.12148500102022,
+        "character_error_rate": 0.015140865694371229,
+        "element_f1": 0.5980392156862745,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.22904610633850098
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9640438230988272,
+        "chrf++": 94.70547323137663,
+        "character_error_rate": 0.035956176901172796,
+        "element_f1": 0.8341511285574092,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.3727724552154541
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9701259265874788,
+        "chrf++": 94.88176213113442,
+        "character_error_rate": 0.029874073412521213,
+        "element_f1": 0.7142857142857143,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.12436652183532715
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9332203389830509,
+        "chrf++": 93.18939848001244,
+        "character_error_rate": 0.06677966101694915,
+        "element_f1": 0.8148148148148148,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.02980947494506836
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9235159817351598,
+        "chrf++": 87.75077196067603,
+        "character_error_rate": 0.07648401826484018,
+        "element_f1": 0.3943661971830986,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.05947518348693848
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9815271885846509,
+        "chrf++": 96.41351551519078,
+        "character_error_rate": 0.018472811415349018,
+        "element_f1": 0.6033898305084746,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.4671907424926758
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9836255002536497,
+        "chrf++": 95.96026146562637,
+        "character_error_rate": 0.016374499746350264,
+        "element_f1": 0.6666666666666665,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.17274904251098633
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9824561403508771,
+        "chrf++": 96.450958180459,
+        "character_error_rate": 0.017543859649122806,
+        "element_f1": 0.7499999999999999,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.16931653022766113
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9782762087332264,
+        "chrf++": 95.9494443870518,
+        "character_error_rate": 0.02172379126677365,
+        "element_f1": 0.7650747708634829,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7571854591369629
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98128014387313,
+        "chrf++": 98.07387297742068,
+        "character_error_rate": 0.01871985612686994,
+        "element_f1": 0.9551122194513716,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.87180495262146
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9619966905681191,
+        "chrf++": 94.0410476665187,
+        "character_error_rate": 0.03800330943188086,
+        "element_f1": 0.25742574257425743,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.12028622627258301
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9753239506479013,
+        "chrf++": 96.26205134432227,
+        "character_error_rate": 0.024676049352098703,
+        "element_f1": 0.5567010309278351,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.1045382022857666
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9313949402670415,
+        "chrf++": 90.1055355138796,
+        "character_error_rate": 0.06860505973295854,
+        "element_f1": 0.20168067226890757,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.06826257705688477
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.974244272739596,
+        "chrf++": 96.15424221230873,
+        "character_error_rate": 0.025755727260403958,
+        "element_f1": 0.4390243902439025,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.08877038955688477
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9807249639541649,
+        "chrf++": 99.0506350033235,
+        "character_error_rate": 0.0194051135784863,
+        "element_f1": 0.38266068759342303,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5834558010101318
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9829683698296837,
+        "chrf++": 96.2292267304025,
+        "character_error_rate": 0.0170316301703163,
+        "element_f1": 0.8771929824561403,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.20738005638122559
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9822329012826153,
+        "chrf++": 96.25551357255183,
+        "character_error_rate": 0.01776709871738468,
+        "element_f1": 0.6285714285714286,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.22926640510559082
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9693514543778385,
+        "chrf++": 94.86640232629573,
+        "character_error_rate": 0.030648545622161516,
+        "element_f1": 0.7642276422764227,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8212642669677734
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9793464052287582,
+        "chrf++": 95.96810107290118,
+        "character_error_rate": 0.02065359477124183,
+        "element_f1": 0.5428571428571428,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.06430554389953613
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9846856920608683,
+        "chrf++": 96.45921519406609,
+        "character_error_rate": 0.015314307939131702,
+        "element_f1": 0.817891373801917,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.478243350982666
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9687009427854298,
+        "chrf++": 93.39927590912762,
+        "character_error_rate": 0.03129905721457016,
+        "element_f1": 0.947103274559194,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7370960712432861
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9794561014963946,
+        "chrf++": 96.15402762576663,
+        "character_error_rate": 0.020543898503605374,
+        "element_f1": 0.8172317104256945,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.4495484828948975
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9865659109991604,
+        "chrf++": 96.75989936637136,
+        "character_error_rate": 0.01343408900083963,
+        "element_f1": 0.7941176470588235,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.3128790855407715
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9780067486141238,
+        "chrf++": 96.93622566233219,
+        "character_error_rate": 0.021993251385876114,
+        "element_f1": 0.2528735632183908,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.114532470703125
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9799543737611728,
+        "chrf++": 95.3327198988236,
+        "character_error_rate": 0.02004562623882718,
+        "element_f1": 0.8695652173913044,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.1538679599761963
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852878916172735,
+        "chrf++": 96.67317227781584,
+        "character_error_rate": 0.014712108382726503,
+        "element_f1": 0.6169154228855722,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.20386791229248047
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9356218938222032,
+        "chrf++": 89.98605919181875,
+        "character_error_rate": 0.0643781061777968,
+        "element_f1": 0.32573289902280134,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.2245328426361084
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.970505849398583,
+        "chrf++": 93.81757612226548,
+        "character_error_rate": 0.029494150601417038,
+        "element_f1": 0.75,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.08053827285766602
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9781745847315046,
+        "chrf++": 99.48582957903159,
+        "character_error_rate": 0.021960754971099346,
+        "element_f1": 0.38251366120218583,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 2.4603376388549805
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.962381674384297,
+        "chrf++": 92.4276662241574,
+        "character_error_rate": 0.03761832561570299,
+        "element_f1": 0.547008547008547,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.12081646919250488
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9831666152558057,
+        "chrf++": 94.75919767743105,
+        "character_error_rate": 0.016833384744194244,
+        "element_f1": 0.4266666666666667,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.10666537284851074
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9838043934517979,
+        "chrf++": 95.46763015903521,
+        "character_error_rate": 0.016195606548202044,
+        "element_f1": 0.6909090909090909,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.17861580848693848
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9838199085473092,
+        "chrf++": 96.42117849470054,
+        "character_error_rate": 0.01618009145269082,
+        "element_f1": 0.62,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5427470207214355
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9493183165382335,
+        "chrf++": 96.44492493658578,
+        "character_error_rate": 0.05068168346176645,
+        "element_f1": 0.9285714285714286,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.03792548179626465
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9682330310524869,
+        "chrf++": 95.33143983303455,
+        "character_error_rate": 0.031766968947513054,
+        "element_f1": 0.7490347490347491,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.09663677215576172
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9372307692307692,
+        "chrf++": 92.52494722564238,
+        "character_error_rate": 0.06276923076923077,
+        "element_f1": 0.42372881355932207,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.04548335075378418
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9623031835421216,
+        "chrf++": 93.97791335885402,
+        "character_error_rate": 0.0376968164578784,
+        "element_f1": 0.6184738955823292,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.10732173919677734
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9810912016835329,
+        "chrf++": 96.24210098682231,
+        "character_error_rate": 0.018908798316467055,
+        "element_f1": 0.6593406593406593,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.17297625541687012
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.979579379612674,
+        "chrf++": 97.14402658004651,
+        "character_error_rate": 0.020420620387325897,
+        "element_f1": 0.20645161290322583,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.09897565841674805
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9765357193250388,
+        "chrf++": 97.2028936000749,
+        "character_error_rate": 0.0234642806749612,
+        "element_f1": 0.10175054704595185,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.594271183013916
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9678762033655933,
+        "chrf++": 93.24539207704272,
+        "character_error_rate": 0.03212379663440668,
+        "element_f1": 0.3167848699763593,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.425797700881958
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9859129162092938,
+        "chrf++": 96.30076303325212,
+        "character_error_rate": 0.014087083790706183,
+        "element_f1": 0.16666666666666669,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.032961368560791016
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.965635428880671,
+        "chrf++": 94.00749299843838,
+        "character_error_rate": 0.034364571119328946,
+        "element_f1": 0.5483870967741935,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.055666208267211914
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9794790844514601,
+        "chrf++": 94.95406160234829,
+        "character_error_rate": 0.020520915548539857,
+        "element_f1": 0.5405405405405406,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.06548285484313965
+    }
+  ],
+  "summary": {
+    "total_documents": 75,
+    "total_parsers": 1,
+    "total_results": 75,
+    "success_count": 75,
+    "failure_count": 0
+  }
+}

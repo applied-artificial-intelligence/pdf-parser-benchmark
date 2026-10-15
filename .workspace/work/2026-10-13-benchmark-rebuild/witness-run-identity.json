@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/inventory.py",
+  "fixture": "Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "test": "tests/test_run_registry.py::test_actual_generator_publishes_complete_bundle_without_changing_retained_bytes",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/inventory.py",
+      "old": "return hashlib.sha256(data).hexdigest()",
+      "new": "return hashlib.sha256(b\"constant\").hexdigest()"
+    }
+  }
+}

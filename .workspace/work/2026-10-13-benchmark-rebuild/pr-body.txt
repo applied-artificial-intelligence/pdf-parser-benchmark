@@ -1,0 +1,16 @@
+Assess whether ParseBench fits meaningful business workloads, then reconstruct the retained evidence and execute reproducible public and task-specific comparisons. The first implemented step inventories all pinned annotations and inspects 43 predeclared source pages.
+
+Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example`
+
+- [x] #1 Assess ParseBench coverage against meaningful business workloads
+- [ ] #2 Reconcile retained runs into one authoritative registry
+- [ ] #3 Freeze and qualify independent invoice references
+- [ ] #4 Establish task scoring that detects wrong associations
+- [ ] #5 Repair execution identity, cache handling and failure accounting
+- [ ] #6 Execute and reproduce the fixed invoice comparison
+- [ ] #7 Execute a pinned ParseBench comparison with upstream evaluators
+- [ ] #8 Generate benchmark-fit findings, design lessons and integration export
+
+Validation so far: 889 tests passed, 18 skipped; seven ParseBench-focused tests; eight issue-1 verification items covered without waivers; fresh acquisition/inventory/source-inspection replay passed.
+
+Original results and independent reviews are preserved. The branch includes the previously retained reconstruction baseline. No paid calls, editorial/CMS changes or public release. Issues close only after this PR is approved and merged.

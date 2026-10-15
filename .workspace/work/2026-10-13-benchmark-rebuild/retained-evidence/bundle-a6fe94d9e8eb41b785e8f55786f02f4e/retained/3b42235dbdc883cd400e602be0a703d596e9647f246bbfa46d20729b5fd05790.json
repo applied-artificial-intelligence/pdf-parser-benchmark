@@ -1,0 +1,84 @@
+{
+  "benchmark": {
+    "name": "Commercial Parsers - AWS/Azure Test",
+    "timestamp": "2025-11-23T19:55:07.558122+00:00",
+    "config_file": "benchmarks/commercial_test_aws_azure.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "aws_textract": "1.40.73",
+      "azure_document_intelligence": "1.0.2"
+    }
+  },
+  "results": [
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.887396694214876
+      },
+      "error": null,
+      "parse_time_seconds": 2.0947232246398926
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9260161363982341
+      },
+      "error": null,
+      "parse_time_seconds": 5.1587042808532715
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5858895705521472
+      },
+      "error": null,
+      "parse_time_seconds": 1.4662411212921143
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.887396694214876
+      },
+      "error": null,
+      "parse_time_seconds": 3.4403202533721924
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.816339161380164
+      },
+      "error": null,
+      "parse_time_seconds": 3.470323085784912
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5858895705521472
+      },
+      "error": null,
+      "parse_time_seconds": 2.404188632965088
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 2,
+    "total_results": 6,
+    "success_count": 6,
+    "failure_count": 0
+  }
+}

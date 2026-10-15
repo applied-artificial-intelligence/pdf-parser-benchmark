@@ -1,0 +1,1123 @@
+{
+  "benchmark": {
+    "name": "Invoice Benchmark - Databricks Only",
+    "timestamp": "2025-11-24T00:28:46.042146+00:00",
+    "config_file": "benchmarks/invoices_databricks.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "databricks": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "invoice_001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4764267990074442,
+        "chrf++": 64.98330350591003
+      },
+      "error": null,
+      "parse_time_seconds": 23.127079963684082
+    },
+    {
+      "document_id": "invoice_002",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6093163035311795,
+        "chrf++": 72.83477657164329
+      },
+      "error": null,
+      "parse_time_seconds": 9.107230186462402
+    },
+    {
+      "document_id": "invoice_003",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7009174311926605,
+        "chrf++": 81.52901829683368
+      },
+      "error": null,
+      "parse_time_seconds": 9.39628005027771
+    },
+    {
+      "document_id": "invoice_004",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5358565737051793,
+        "chrf++": 77.59652989576215
+      },
+      "error": null,
+      "parse_time_seconds": 8.65500807762146
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6170026292725679,
+        "chrf++": 72.24291638873925
+      },
+      "error": null,
+      "parse_time_seconds": 8.450419664382935
+    },
+    {
+      "document_id": "invoice_006",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.671862182116489,
+        "chrf++": 78.10439949364235
+      },
+      "error": null,
+      "parse_time_seconds": 13.612804412841797
+    },
+    {
+      "document_id": "invoice_007",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5201958384332925,
+        "chrf++": 71.10303352841989
+      },
+      "error": null,
+      "parse_time_seconds": 10.597864627838135
+    },
+    {
+      "document_id": "invoice_008",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6274131274131274,
+        "chrf++": 74.26612739519848
+      },
+      "error": null,
+      "parse_time_seconds": 8.33419394493103
+    },
+    {
+      "document_id": "invoice_009",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.673616680032077,
+        "chrf++": 78.41941710675701
+      },
+      "error": null,
+      "parse_time_seconds": 8.472491264343262
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5286059629331185,
+        "chrf++": 74.90775903396396
+      },
+      "error": null,
+      "parse_time_seconds": 9.020868301391602
+    },
+    {
+      "document_id": "invoice_011",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5192958700067705,
+        "chrf++": 63.465955753043055
+      },
+      "error": null,
+      "parse_time_seconds": 6.758977174758911
+    },
+    {
+      "document_id": "invoice_012",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6740196078431373,
+        "chrf++": 79.29076272121898
+      },
+      "error": null,
+      "parse_time_seconds": 8.376857280731201
+    },
+    {
+      "document_id": "invoice_013",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5584192439862543,
+        "chrf++": 76.67245763856972
+      },
+      "error": null,
+      "parse_time_seconds": 7.0268144607543945
+    },
+    {
+      "document_id": "invoice_014",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5067453625632378,
+        "chrf++": 70.0607065004139
+      },
+      "error": null,
+      "parse_time_seconds": 7.300579071044922
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7290886392009988,
+        "chrf++": 84.42476432134178
+      },
+      "error": null,
+      "parse_time_seconds": 7.751993179321289
+    },
+    {
+      "document_id": "invoice_016",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4897435897435898,
+        "chrf++": 69.85880129771876
+      },
+      "error": null,
+      "parse_time_seconds": 10.339712142944336
+    },
+    {
+      "document_id": "invoice_017",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5434108527131782,
+        "chrf++": 72.28667511303576
+      },
+      "error": null,
+      "parse_time_seconds": 7.829601049423218
+    },
+    {
+      "document_id": "invoice_018",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6847195357833655,
+        "chrf++": 80.34398286659746
+      },
+      "error": null,
+      "parse_time_seconds": 8.314947605133057
+    },
+    {
+      "document_id": "invoice_019",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49970708845928524,
+        "chrf++": 69.42325451144032
+      },
+      "error": null,
+      "parse_time_seconds": 9.95471739768982
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4955185659411011,
+        "chrf++": 66.14754267197283
+      },
+      "error": null,
+      "parse_time_seconds": 6.594942808151245
+    },
+    {
+      "document_id": "invoice_021",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.674757281553398,
+        "chrf++": 78.20530463392646
+      },
+      "error": null,
+      "parse_time_seconds": 9.347447633743286
+    },
+    {
+      "document_id": "invoice_022",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5609756097560976,
+        "chrf++": 77.67885742122716
+      },
+      "error": null,
+      "parse_time_seconds": 8.739659547805786
+    },
+    {
+      "document_id": "invoice_023",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6066398390342052,
+        "chrf++": 70.90169201259555
+      },
+      "error": null,
+      "parse_time_seconds": 8.270424127578735
+    },
+    {
+      "document_id": "invoice_024",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.689622641509434,
+        "chrf++": 80.4691728046347
+      },
+      "error": null,
+      "parse_time_seconds": 8.378929615020752
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5276220976781425,
+        "chrf++": 72.59343186515963
+      },
+      "error": null,
+      "parse_time_seconds": 6.509889841079712
+    },
+    {
+      "document_id": "invoice_026",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7060702875399361,
+        "chrf++": 80.74142631165367
+      },
+      "error": null,
+      "parse_time_seconds": 5.44474720954895
+    },
+    {
+      "document_id": "invoice_027",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7367149758454106,
+        "chrf++": 83.83015682771438
+      },
+      "error": null,
+      "parse_time_seconds": 6.142562389373779
+    },
+    {
+      "document_id": "invoice_028",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4723796033994334,
+        "chrf++": 69.11729835896978
+      },
+      "error": null,
+      "parse_time_seconds": 8.820318222045898
+    },
+    {
+      "document_id": "invoice_029",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5355569540591567,
+        "chrf++": 65.79333479253218
+      },
+      "error": null,
+      "parse_time_seconds": 6.720385789871216
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6661129568106312,
+        "chrf++": 77.81856814879953
+      },
+      "error": null,
+      "parse_time_seconds": 5.942573547363281
+    },
+    {
+      "document_id": "invoice_031",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4868217054263566,
+        "chrf++": 69.54347405695303
+      },
+      "error": null,
+      "parse_time_seconds": 8.08225154876709
+    },
+    {
+      "document_id": "invoice_032",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6697435897435897,
+        "chrf++": 80.34534399986188
+      },
+      "error": null,
+      "parse_time_seconds": 5.937664985656738
+    },
+    {
+      "document_id": "invoice_033",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6863905325443787,
+        "chrf++": 79.9232259093901
+      },
+      "error": null,
+      "parse_time_seconds": 6.31758713722229
+    },
+    {
+      "document_id": "invoice_034",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5286624203821656,
+        "chrf++": 70.31328671041386
+      },
+      "error": null,
+      "parse_time_seconds": 9.260437488555908
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6928406466512702,
+        "chrf++": 79.07030265580003
+      },
+      "error": null,
+      "parse_time_seconds": 6.368176698684692
+    },
+    {
+      "document_id": "invoice_036",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6652470187393527,
+        "chrf++": 77.97682549232557
+      },
+      "error": null,
+      "parse_time_seconds": 6.701807022094727
+    },
+    {
+      "document_id": "invoice_037",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5526706231454006,
+        "chrf++": 72.76404627124757
+      },
+      "error": null,
+      "parse_time_seconds": 8.625258684158325
+    },
+    {
+      "document_id": "invoice_038",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4849230769230769,
+        "chrf++": 65.26151440898653
+      },
+      "error": null,
+      "parse_time_seconds": 6.317474603652954
+    },
+    {
+      "document_id": "invoice_039",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7243994943109988,
+        "chrf++": 84.28082070970181
+      },
+      "error": null,
+      "parse_time_seconds": 7.582718849182129
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5016857720836143,
+        "chrf++": 66.38393586034115
+      },
+      "error": null,
+      "parse_time_seconds": 10.074253559112549
+    },
+    {
+      "document_id": "invoice_041",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5408560311284047,
+        "chrf++": 67.63535080999458
+      },
+      "error": null,
+      "parse_time_seconds": 7.108778476715088
+    },
+    {
+      "document_id": "invoice_042",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6959008579599619,
+        "chrf++": 80.49990339643574
+      },
+      "error": null,
+      "parse_time_seconds": 6.457319736480713
+    },
+    {
+      "document_id": "invoice_043",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5593719332679097,
+        "chrf++": 76.65327184608437
+      },
+      "error": null,
+      "parse_time_seconds": 7.37416672706604
+    },
+    {
+      "document_id": "invoice_044",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6174168297455969,
+        "chrf++": 72.76544581471876
+      },
+      "error": null,
+      "parse_time_seconds": 7.227760553359985
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.725231175693527,
+        "chrf++": 83.78843935184044
+      },
+      "error": null,
+      "parse_time_seconds": 4.477243185043335
+    },
+    {
+      "document_id": "invoice_046",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5016202203499676,
+        "chrf++": 67.19843220899905
+      },
+      "error": null,
+      "parse_time_seconds": 8.87153959274292
+    },
+    {
+      "document_id": "invoice_047",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.543138866064092,
+        "chrf++": 72.92566573934822
+      },
+      "error": null,
+      "parse_time_seconds": 6.853136777877808
+    },
+    {
+      "document_id": "invoice_048",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.602536997885835,
+        "chrf++": 77.85015249021757
+      },
+      "error": null,
+      "parse_time_seconds": 6.442806959152222
+    },
+    {
+      "document_id": "invoice_049",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5692599620493359,
+        "chrf++": 77.2191299737947
+      },
+      "error": null,
+      "parse_time_seconds": 7.724730968475342
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5525990099009901,
+        "chrf++": 66.7610586987417
+      },
+      "error": null,
+      "parse_time_seconds": 7.26603102684021
+    },
+    {
+      "document_id": "invoice_051",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5459140690817186,
+        "chrf++": 77.39043152039487
+      },
+      "error": null,
+      "parse_time_seconds": 9.040297985076904
+    },
+    {
+      "document_id": "invoice_052",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.575487012987013,
+        "chrf++": 69.14785610638484
+      },
+      "error": null,
+      "parse_time_seconds": 7.827836036682129
+    },
+    {
+      "document_id": "invoice_053",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.691588785046729,
+        "chrf++": 80.94743791110513
+      },
+      "error": null,
+      "parse_time_seconds": 7.200390577316284
+    },
+    {
+      "document_id": "invoice_054",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.503030303030303,
+        "chrf++": 70.96736338699435
+      },
+      "error": null,
+      "parse_time_seconds": 8.662793397903442
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5839460784313726,
+        "chrf++": 70.78045690393486
+      },
+      "error": null,
+      "parse_time_seconds": 7.597763299942017
+    },
+    {
+      "document_id": "invoice_056",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.713170731707317,
+        "chrf++": 82.46998643177128
+      },
+      "error": null,
+      "parse_time_seconds": 8.676564693450928
+    },
+    {
+      "document_id": "invoice_057",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5342560553633218,
+        "chrf++": 74.15108148783432
+      },
+      "error": null,
+      "parse_time_seconds": 8.912432193756104
+    },
+    {
+      "document_id": "invoice_058",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.519320843091335,
+        "chrf++": 67.5615657981736
+      },
+      "error": null,
+      "parse_time_seconds": 7.216708421707153
+    },
+    {
+      "document_id": "invoice_059",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6214135759272219,
+        "chrf++": 77.41280549611832
+      },
+      "error": null,
+      "parse_time_seconds": 7.657915353775024
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5385756676557863,
+        "chrf++": 74.13190029814905
+      },
+      "error": null,
+      "parse_time_seconds": 7.555829048156738
+    },
+    {
+      "document_id": "invoice_061",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5425126903553299,
+        "chrf++": 67.02035367053494
+      },
+      "error": null,
+      "parse_time_seconds": 7.339531421661377
+    },
+    {
+      "document_id": "invoice_062",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6887232059645852,
+        "chrf++": 80.38756170140591
+      },
+      "error": null,
+      "parse_time_seconds": 7.6785500049591064
+    },
+    {
+      "document_id": "invoice_063",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.532806324110672,
+        "chrf++": 74.76467723715976
+      },
+      "error": null,
+      "parse_time_seconds": 8.090392351150513
+    },
+    {
+      "document_id": "invoice_064",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.600265604249668,
+        "chrf++": 72.00029805529547
+      },
+      "error": null,
+      "parse_time_seconds": 6.434783458709717
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6758286176232822,
+        "chrf++": 79.32495905711762
+      },
+      "error": null,
+      "parse_time_seconds": 7.577987432479858
+    },
+    {
+      "document_id": "invoice_066",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.551098376313276,
+        "chrf++": 78.49855564728658
+      },
+      "error": null,
+      "parse_time_seconds": 5.215502738952637
+    },
+    {
+      "document_id": "invoice_067",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6175329712955779,
+        "chrf++": 73.87186146727352
+      },
+      "error": null,
+      "parse_time_seconds": 5.920483112335205
+    },
+    {
+      "document_id": "invoice_068",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7335722819593787,
+        "chrf++": 83.8834864119594
+      },
+      "error": null,
+      "parse_time_seconds": 6.882187604904175
+    },
+    {
+      "document_id": "invoice_069",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5078665827564506,
+        "chrf++": 68.71786049751269
+      },
+      "error": null,
+      "parse_time_seconds": 7.985744953155518
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5568720379146919,
+        "chrf++": 68.72857075313142
+      },
+      "error": null,
+      "parse_time_seconds": 6.387468576431274
+    },
+    {
+      "document_id": "invoice_071",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6135014836795252,
+        "chrf++": 76.48098412340664
+      },
+      "error": null,
+      "parse_time_seconds": 7.166234970092773
+    },
+    {
+      "document_id": "invoice_072",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5209742895805143,
+        "chrf++": 72.76868082631628
+      },
+      "error": null,
+      "parse_time_seconds": 9.539801836013794
+    },
+    {
+      "document_id": "invoice_073",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5615942028985508,
+        "chrf++": 70.47542523080482
+      },
+      "error": null,
+      "parse_time_seconds": 7.56834864616394
+    },
+    {
+      "document_id": "invoice_074",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6770462633451957,
+        "chrf++": 79.35494244781745
+      },
+      "error": null,
+      "parse_time_seconds": 9.970590353012085
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5422535211267605,
+        "chrf++": 75.60906545417586
+      },
+      "error": null,
+      "parse_time_seconds": 9.169742107391357
+    },
+    {
+      "document_id": "invoice_076",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6116071428571428,
+        "chrf++": 73.8918494862285
+      },
+      "error": null,
+      "parse_time_seconds": 6.526339530944824
+    },
+    {
+      "document_id": "invoice_077",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6815286624203822,
+        "chrf++": 82.65257539905019
+      },
+      "error": null,
+      "parse_time_seconds": 8.546709060668945
+    },
+    {
+      "document_id": "invoice_078",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5120999219359875,
+        "chrf++": 72.38368727107778
+      },
+      "error": null,
+      "parse_time_seconds": 7.201461553573608
+    },
+    {
+      "document_id": "invoice_079",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6649590163934427,
+        "chrf++": 77.45591537300298
+      },
+      "error": null,
+      "parse_time_seconds": 7.6383490562438965
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5697211155378485,
+        "chrf++": 77.67352938390759
+      },
+      "error": null,
+      "parse_time_seconds": 6.4296581745147705
+    },
+    {
+      "document_id": "invoice_081",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5311004784688995,
+        "chrf++": 75.32465442971805
+      },
+      "error": null,
+      "parse_time_seconds": 9.27396273612976
+    },
+    {
+      "document_id": "invoice_082",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5698051948051948,
+        "chrf++": 75.88306392033553
+      },
+      "error": null,
+      "parse_time_seconds": 5.537442207336426
+    },
+    {
+      "document_id": "invoice_083",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6493301812450749,
+        "chrf++": 75.15947116430381
+      },
+      "error": null,
+      "parse_time_seconds": 6.758914470672607
+    },
+    {
+      "document_id": "invoice_084",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5219619326500732,
+        "chrf++": 74.00808384962953
+      },
+      "error": null,
+      "parse_time_seconds": 8.561930418014526
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5003494060097834,
+        "chrf++": 67.25154887382969
+      },
+      "error": null,
+      "parse_time_seconds": 8.2322678565979
+    },
+    {
+      "document_id": "invoice_086",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5166880616174583,
+        "chrf++": 70.20943739047226
+      },
+      "error": null,
+      "parse_time_seconds": 8.404399394989014
+    },
+    {
+      "document_id": "invoice_087",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5968063872255489,
+        "chrf++": 71.85865893667902
+      },
+      "error": null,
+      "parse_time_seconds": 10.846333026885986
+    },
+    {
+      "document_id": "invoice_088",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6520719311962471,
+        "chrf++": 76.80873174494025
+      },
+      "error": null,
+      "parse_time_seconds": 7.17231297492981
+    },
+    {
+      "document_id": "invoice_089",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.566943674976916,
+        "chrf++": 80.07116200085873
+      },
+      "error": null,
+      "parse_time_seconds": 8.379242420196533
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5598566308243728,
+        "chrf++": 69.89584225343802
+      },
+      "error": null,
+      "parse_time_seconds": 7.7273969650268555
+    },
+    {
+      "document_id": "invoice_091",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6981740064446831,
+        "chrf++": 81.15403994928063
+      },
+      "error": null,
+      "parse_time_seconds": 7.388221263885498
+    },
+    {
+      "document_id": "invoice_092",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.506258692628651,
+        "chrf++": 70.88862810408448
+      },
+      "error": null,
+      "parse_time_seconds": 9.783955097198486
+    },
+    {
+      "document_id": "invoice_093",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5547169811320755,
+        "chrf++": 67.74648214138057
+      },
+      "error": null,
+      "parse_time_seconds": 7.5606300830841064
+    },
+    {
+      "document_id": "invoice_094",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6253716551040635,
+        "chrf++": 77.59198970969128
+      },
+      "error": null,
+      "parse_time_seconds": 5.727619647979736
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4849420849420849,
+        "chrf++": 69.60548177599763
+      },
+      "error": null,
+      "parse_time_seconds": 8.131160736083984
+    },
+    {
+      "document_id": "invoice_096",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5390835579514826,
+        "chrf++": 66.90681557007564
+      },
+      "error": null,
+      "parse_time_seconds": 6.808794260025024
+    },
+    {
+      "document_id": "invoice_097",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6731078904991948,
+        "chrf++": 78.5923446969031
+      },
+      "error": null,
+      "parse_time_seconds": 7.20459246635437
+    },
+    {
+      "document_id": "invoice_098",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4994103773584906,
+        "chrf++": 70.4046096018649
+      },
+      "error": null,
+      "parse_time_seconds": 8.948490142822266
+    },
+    {
+      "document_id": "invoice_099",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6040201005025125,
+        "chrf++": 70.95424984102975
+      },
+      "error": null,
+      "parse_time_seconds": 6.2409751415252686
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5266055045871559,
+        "chrf++": 73.09533658875303
+      },
+      "error": null,
+      "parse_time_seconds": 4.940282583236694
+    }
+  ],
+  "summary": {
+    "total_documents": 100,
+    "total_parsers": 1,
+    "total_results": 100,
+    "success_count": 100,
+    "failure_count": 0
+  }
+}

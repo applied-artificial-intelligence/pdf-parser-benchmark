@@ -1,0 +1,56 @@
+{
+  "benchmark": {
+    "name": "Databricks Parser Test",
+    "timestamp": "2025-11-23T21:56:22.123692+00:00",
+    "config_file": "benchmarks/databricks_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "databricks": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9546850998463902,
+        "chrf++": 99.49699792169189
+      },
+      "error": null,
+      "parse_time_seconds": 5.259474992752075
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.942442173211404,
+        "chrf++": 96.79810722352357
+      },
+      "error": null,
+      "parse_time_seconds": 4.773429870605469
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9194948697711128,
+        "chrf++": 98.32281388906024
+      },
+      "error": null,
+      "parse_time_seconds": 7.433471441268921
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 1,
+    "total_results": 3,
+    "success_count": 3,
+    "failure_count": 0
+  }
+}

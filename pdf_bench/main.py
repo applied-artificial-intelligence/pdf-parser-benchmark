@@ -6,6 +6,7 @@ import typer
 from rich.console import Console
 from rich.table import Table
 
+from pdf_bench.inventory import build_inventory, save_inventory
 from pdf_bench.loader import PARSER_REGISTRY, load_benchmark_config
 from pdf_bench.persistence import load_results, save_results
 from pdf_bench.report_generator import generate_html_report
@@ -18,6 +19,16 @@ app = typer.Typer(
 )
 
 console = Console()
+
+
+def _status_style(status: str) -> str:
+    if status == "publishable":
+        return "bold green"
+    if status == "valid_internal":
+        return "green"
+    if status == "archive_only":
+        return "yellow"
+    return "red"
 
 
 def version_callback(show_version: bool) -> None:
@@ -290,6 +301,109 @@ def report(
     except FileNotFoundError as e:
         console.print(f"[red]Error:[/red] File not found: {e}")
         raise typer.Exit(code=1) from e
+    except Exception as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise typer.Exit(code=1) from e
+
+
+@app.command()
+def inventory(
+    repo_root: Path = typer.Option(
+        Path("."), "--repo-root", help="Repository root to scan", exists=True, file_okay=False
+    ),
+    output: Path | None = typer.Option(
+        None, "--output", "-o", help="Optional path to save inventory JSON"
+    ),
+) -> None:
+    """Inventory corpora, benchmark configs, and result artifacts."""
+    try:
+        snapshot = build_inventory(repo_root)
+
+        console.print(f"\n[bold cyan]Repository inventory:[/bold cyan] {snapshot.repo_root}")
+        console.print(f"Generated: {snapshot.generated_at}")
+
+        summary_table = Table(show_header=True, header_style="bold magenta")
+        summary_table.add_column("Category", style="cyan")
+        summary_table.add_column("Total", justify="right")
+        summary_table.add_column("Valid", justify="right")
+        summary_table.add_column("Draft", justify="right")
+        summary_table.add_column("Archive", justify="right")
+
+        for category in ["corpora", "benchmarks", "results"]:
+            counts = snapshot.summary[category]
+            summary_table.add_row(
+                category,
+                str(counts["total"]),
+                str(counts["valid_internal"] + counts["publishable"]),
+                str(counts["draft"]),
+                str(counts["archive_only"]),
+            )
+
+        console.print(summary_table)
+
+        if snapshot.corpora:
+            corpus_table = Table(show_header=True, header_style="bold magenta")
+            corpus_table.add_column("Corpus", style="cyan")
+            corpus_table.add_column("Status")
+            corpus_table.add_column("Counts", style="white")
+            corpus_table.add_column("Issues", justify="right")
+
+            for record in snapshot.corpora:
+                corpus_table.add_row(
+                    record.corpus_id,
+                    f"[{_status_style(record.status)}]{record.status}[/{_status_style(record.status)}]",
+                    f"{record.input_count}/{record.ground_truth_count}/{record.metadata_count}",
+                    str(len(record.issues)),
+                )
+
+            console.print("\n[bold cyan]Corpora[/bold cyan]")
+            console.print(corpus_table)
+
+        if snapshot.benchmarks:
+            benchmark_table = Table(show_header=True, header_style="bold magenta")
+            benchmark_table.add_column("Benchmark", style="cyan")
+            benchmark_table.add_column("Status")
+            benchmark_table.add_column("Parsers", justify="right")
+            benchmark_table.add_column("Metrics", justify="right")
+            benchmark_table.add_column("Issues", justify="right")
+
+            for record in snapshot.benchmarks:
+                benchmark_table.add_row(
+                    record.name,
+                    f"[{_status_style(record.status)}]{record.status}[/{_status_style(record.status)}]",
+                    str(record.parser_count),
+                    str(record.metric_count),
+                    str(len(record.issues)),
+                )
+
+            console.print("\n[bold cyan]Benchmarks[/bold cyan]")
+            console.print(benchmark_table)
+
+        if snapshot.results:
+            result_table = Table(show_header=True, header_style="bold magenta")
+            result_table.add_column("Result", style="cyan")
+            result_table.add_column("Status")
+            result_table.add_column("Cost Class", style="white")
+            result_table.add_column("Failures", justify="right")
+            result_table.add_column("Issues", justify="right")
+
+            for record in snapshot.results:
+                failures = record.failure_count if record.failure_count is not None else "-"
+                result_table.add_row(
+                    Path(record.path).name,
+                    f"[{_status_style(record.status)}]{record.status}[/{_status_style(record.status)}]",
+                    record.cost_class,
+                    str(failures),
+                    str(len(record.issues)),
+                )
+
+            console.print("\n[bold cyan]Results[/bold cyan]")
+            console.print(result_table)
+
+        if output:
+            save_inventory(snapshot, output)
+            console.print(f"\n[green]✓[/green] Inventory saved to {output}")
+
     except Exception as e:
         console.print(f"[red]Error:[/red] {e}")
         raise typer.Exit(code=1) from e
