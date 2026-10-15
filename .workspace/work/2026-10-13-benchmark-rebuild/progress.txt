@@ -50,6 +50,17 @@ No closing footer for #5 yet. Rich planned-attempt identities, exclusive outputs
 typed timeout enforcement, stage outcomes and atomic run completion remain.
 No reusable checkpoint is accepted; offline regrading will use retained immutable
 raw/prediction artifacts without reparsing.
+A shared isolated-call engine now passes seven focused checks and full suite
+937 passed, 18 skipped. It spawns a fresh worker per exclusive attempt directory,
+retains and verifies the exact returned bytes, distinguishes content/empty/error/
+initialization outcomes, records started-call failure duration, and enforces a
+typed wall deadline. The delayed control proves its parse started and its writer
+process is gone before returning, so it cannot produce late output. A real
+same-stem PDF through two actual pdfplumber option sets has separate output bytes.
+This engine is not yet wired into legacy runner or the primary invoice run.
+Next bounded step: share execute_parser between legacy sequential/parallel paths,
+round-trip actual constructor options, serialize explicit outcomes/output hashes,
+then build the fixed-population immutable comparison bundle and its provenance.
 Current PDFsmith metadata: distribution 0.2.0, source declaration 0.3.0.dev0;
 record actual identity rather than hard-coding the older reviewed source version.
 Compared primary invoice outputs remain pending.
