@@ -1,40 +1,19 @@
-PDF-Bench reconstruction - October 14, 2026
+PDF-Bench reconstruction - October 15, 2026
 
-Current milestone
-Both external reports returned and reconciled. Spec/plan revision 2 adopts bounded
-correctness changes; registry work and non-scored repairs can start. Strong scored
-run claims remain gated on qualified references, frozen extraction/grading and
-actual failure/atomicity regressions.
+Scope confirmed by Stefan with a framing correction: assess whether ParseBench
+represents meaningful business documents/tasks, use a matching subset when it does,
+and justify internal evaluation only where distribution/task mismatch requires it.
+Do not invent marginal gaps or a global percentage of business coverage.
 
-Confirmed direction
-Practical parser selection plus teaching teams how to design an internal benchmark
-for their own use case. Our preserved history and new invoice example demonstrate
-selection, reference truth, task/grader design, failures and operating conditions.
-ParseBench is prior art to reuse/acknowledge, not a universal leaderboard to imitate.
+Spec/plan revision 3 retains both independent reviews and introduces a coverage
+assessment and executable native ParseBench comparison. Eight ordered issues now
+cover fit assessment, registry, references, task scoring, execution repair, invoice
+comparison, public comparison and report/export. Original review packet is frozen.
 
-Changes
-Recorded review-dispositions.txt and amended spec.md/plan.md while preserving the
-original reviewed packet and verbatim reports. Moved the stray configuration survey
-into docs/archive with a historical notice and unchanged original body.
-Pre-run inventory: 100 invoices, 182 pages, six source template/complexity cells,
-696 source rows, three schemas. Current DOCX extraction reproduces all 100 backup
-references and none of the current references; historical run truth remains unknown.
-No benchmark source, old results, website or editorial manuscript modified.
+Eight issues are materialized in GitHub milestone 1. Plan shape, terms, premises,
+claims and closure checks pass. Current owner branch: codex/benchmark-rebuild.
+Implementation starts with issue #1: pinned annotations and source-page assessment.
+Inherited dirty work is preserved and deliberately unstaged.
+No paid calls, editorial/CMS writes or public-main merge are authorized.
 
-Checks
-48 focused tests passed with warnings as errors during original packet preparation;
-they do not validate revision-2 implementation. Terms, plan shape, premises, claims
-and closure are rechecked for revision 2. Source-inventory tooling lint/format pass.
-Prior comparison hash and five mirrored checkpoint files
-match the independently reviewed revision d9305d6100e5288fa2fc255e088bfd8e22664b98.
-Inherited repository-wide checks are not green: 183 lint findings, 19 format files,
-one whitespace finding. These are retained in baseline-checks.json for the reviewed
-implementation scope. Dirty inherited work is preserved and deliberately unstaged.
-
-Next owner step
-Implement the registry using actual retained contradictions as red fixtures, then
-qualify every rendition and freeze the task/extractor before scored execution.
-The reference and layout inventory is unscored evidence, not a new parser ranking.
-
-Decisions needed
-None for the current milestone. Spending/release choices are deferred.
+Decisions needed: none for local implementation.

@@ -1,6 +1,9 @@
-# Plan: PDF-Bench reconstruction and internal-benchmark design demonstration
+# Plan: Evaluate benchmark fit and reconstruct practical parser evidence
 
-Revision 2 incorporates the returned GPT and Fable reports, with exact dispositions
+Revision 3 incorporates Stefan's October 15 scope confirmation. Assess ParseBench
+coverage before choosing a relevant public subset or justifying custom evaluation.
+The existing invoice example demonstrates a specific task without presuming a
+public-benchmark gap. Revision 2 incorporated GPT and Fable reports, with dispositions
 in `review-dispositions.txt`. This decomposes `spec.md`, seeded by the commission and Stefan's
 October 14 decision to focus on practical parser selection and teaching teams how
 to design their own document benchmark. The first deliverable is this plan and a
@@ -11,8 +14,8 @@ protocol, complete attempt accounting and actual regression evidence.
 
 ## Gating and implementation boundaries
 
-Snapshot retained evidence and define the task schema -> qualify references and
-freeze extractor/grader -> repair execution/provenance -> execute the comparison
+Assess public-benchmark fit and snapshot retained evidence -> qualify references and
+freeze extractor/grader -> repair execution/provenance -> execute both comparisons
 -> generate an inspectable report and export. The ordered issues below define one
 engineering milestone. Later research coverage and release approvals are separate.
 The first invoice run is a worked example, not all-family project completion.
@@ -55,7 +58,67 @@ not a hidden milestone dependency.
 
 ### Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example`
 
-**Issue 1 - Reconcile retained runs into one authoritative registry**
+**Issue 1 - Assess ParseBench coverage against meaningful business workloads**
+
+Inventory all five annotation groups at pinned code/data revisions and reconcile
+page, document and case counts with launch/current primary sources. Preserve source
+URLs, revision IDs, file hashes and original domain/type labels. Inspect actual
+source pages and rules across declared domains, document forms and dimensions.
+Build a traceable workload-fit matrix covering reports, contracts/policies,
+transactional records/forms, presentations and technical documents, including
+language, scan/digital form, multipage context and downstream information needs.
+These are practical workload categories, not a representative survey of business.
+Unknown labels or uninspected documents stay unknown, not absent. Separate source
+availability, annotation presence and whether the metric tests the needed behavior.
+
+For each substantive coverage claim retain document/case IDs, annotation pointers,
+inspection evidence and relevant evaluator behavior. Distinguish present, partial,
+not observed and unknown. A gap requires inspection of the plausible matching
+strata and a consequential business task; no marginal examples are manufactured.
+Assess source rights and limits separately from code licensing. Recommend direct
+use, matched subset, or additional internal task/data with reasons. Do not claim a
+percentage of all business workloads without a defined weighted population.
+Select and freeze the first public-run subset only after this assessment. The
+invoice comparison remains a controlled teaching example, not proof that ParseBench
+omits invoice processing. Acceptance criteria 22-24 apply.
+
+Files: proposed `pdf_bench/parsebench.py`, `tests/test_parsebench.py`, pinned
+assessment manifest and project-local `parsebench-coverage.md` in this work unit.
+Keep downloaded originals outside version control; commit reproducible acquisition
+instructions, hashes, derived inventory and inspection records. Existing upstream
+annotation/evaluation methods remain authoritative.
+
+Verify: acquire the full pinned annotation inventory, reconcile independent unique
+source counts and inspect stratified real pages. Test identity across groups,
+page/document/case counting, unknown labels and preservation of source attributes
+through the real acquisition/inventory path. Corrupt or changed downloads must
+leave prior valid assessment artifacts intact. `uv run pytest tests/test_parsebench.py -q`
+must pass with producing-code mutation witnesses. The fit report cites exact
+inspected evidence and makes no unsupported global coverage percentage.
+
+### Premises
+
+Input: public benchmark cases
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | One upstream annotated case within a capability group; source documents and pages may be shared across cases/groups. | definitional |
+| absent-record | Missing labels or observations mean unknown coverage; absence in this inventory alone does not establish workload exclusion. | definitional |
+| ordering-spacing | File order and repeated annotations do not determine prevalence; document/page identity and declared sampling do. | empirical |
+| entity-identity | Pinned dataset revision, group, case ID, source path/pages and hashes distinguish source documents from annotations. | empirical |
+| known-at | Original annotations precede parser execution; inspection and fit judgments are dated before subset selection and scores. | definitional |
+| institution | Upstream annotation/evaluator definitions govern public metrics; the explicitly defined business workload governs relevance. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| public-inventory-faithful | The inventory accounts for every pinned annotated case without counting shared sources as independent documents. | A group is omitted, one case is silently lost, or page fragments are counted as whole independent documents. |
+| benchmark-fit-evidenced | Recommendations distinguish observed coverage from uncertainty and justify additional evaluation with a meaningful task mismatch. | A missing type label is treated as proof of absence, a documented capability is ignored, or global prevalence is invented. |
+
+Closes: public-benchmark-cases.record, public-benchmark-cases.absent-record, public-benchmark-cases.ordering-spacing, public-benchmark-cases.entity-identity, public-benchmark-cases.known-at, public-benchmark-cases.institution, public-inventory-faithful, benchmark-fit-evidenced
+
+**Issue 2 - Reconcile retained runs into one authoritative registry**
 
 Returned reviews and dispositions authorize this issue. Extend the existing inventory and
 replace the story generator's independently maintained SLATE with registry-backed
@@ -107,10 +170,10 @@ Input: retained artifacts
 
 Closes: retained-artifacts.record, retained-artifacts.absent-record, retained-artifacts.ordering-spacing, retained-artifacts.entity-identity, retained-artifacts.known-at, retained-artifacts.institution, retained-artifacts-accounted, historical-claims-scoped
 
-**Issue 2 - Freeze and qualify independent invoice references**
+**Issue 3 - Freeze and qualify independent invoice references**
 
 Can begin after snapshotting retained inputs; exhaustive historical recovery in
-Issue 1 need not finish first. Define the controlled invoice-to-records use case
+Issue 2 need not finish first. Define the controlled invoice-to-records use case
 and public schema first. Use the fixed 100 retained invoice IDs. Inspect actual DOCX
 paragraph/table source and metadata, not the current PDF-extracted ground_truth
 directory, to establish field and line-item references before parser execution.
@@ -172,9 +235,9 @@ Input: invoice sources
 
 Closes: invoice-sources.record, invoice-sources.absent-record, invoice-sources.ordering-spacing, invoice-sources.entity-identity, invoice-sources.known-at, invoice-sources.institution, references-independent, reference-generation-preserves
 
-**Issue 3 - Establish task scoring that detects wrong associations**
+**Issue 4 - Establish task scoring that detects wrong associations**
 
-Depends on Issue 2. Specify one downstream extractor over actual parser Markdown/text
+Depends on Issue 3. Specify one downstream extractor over actual parser Markdown/text
 and one independent grader over its extracted fields/records. Keep extraction
 blind to all source/metadata/document-ID answer lookups; persist predictions before
 grading. Version and freeze normalization, required fields, row
@@ -235,9 +298,9 @@ Input: extracted invoice records
 
 Closes: extracted-invoice-records.record, extracted-invoice-records.absent-record, extracted-invoice-records.ordering-spacing, extracted-invoice-records.entity-identity, extracted-invoice-records.known-at, extracted-invoice-records.institution, task-checks-association, extractor-blind
 
-**Issue 4 - Repair execution identity, cache handling and failure accounting**
+**Issue 5 - Repair execution identity, cache handling and failure accounting**
 
-Depends on Issue 1; can be designed while Issues 2-3 qualify truth, but execution
+Depends on Issue 2; can be designed while Issues 3-4 qualify truth, but execution
 of the scored run depends on all three. Extend existing runner/adapter/persistence
 to record backend versions/options/source identity, cache/checkpoint mode, planned
 attempts, empty outputs, failures/timeouts and duration boundaries. The scored
@@ -311,9 +374,9 @@ Input: parser attempts
 
 Closes: parser-attempts.record, parser-attempts.absent-record, parser-attempts.ordering-spacing, parser-attempts.entity-identity, parser-attempts.known-at, parser-attempts.institution, execution-not-silent-replay, failures-visible, bundle-atomic
 
-**Issue 5 - Execute and reproduce the fixed invoice comparison**
+**Issue 6 - Execute and reproduce the fixed invoice comparison**
 
-Depends on Issues 2-4. Execute all 100 frozen invoice inputs with pypdf and
+Depends on Issues 3-5. Execute all 100 frozen invoice inputs with pypdf and
 pdfplumber on shared bytes, sequentially and without paid calls. Record exactly
 200 unique planned primary pairs per execution, plus separately labelled actual corrupt, empty and
 enforced-timeout controls. Fixed source fields and line-item records determine the
@@ -384,9 +447,60 @@ Input: invoice comparison
 
 Closes: invoice-comparison.record, invoice-comparison.absent-record, invoice-comparison.ordering-spacing, invoice-comparison.entity-identity, invoice-comparison.known-at, invoice-comparison.institution, invoice-results-reproducible
 
-**Issue 6 - Generate benchmark-design lessons, appendix and integration export**
+**Issue 7 - Execute a pinned ParseBench comparison with upstream evaluators**
 
-Depends on Issues 1 and 5. Generate the appendix and structured export from the
+Depends on Issues 1 and 5. Use the assessment to freeze relevant public cases,
+initially targeting 30 content-faithfulness and 20 table cases. Publish selection
+rules, IDs, source/page hashes, strata, exclusions and fit limitations before
+parser execution. Use suitable local configurations on identical input bytes.
+Integrate pinned upstream test-case/output interfaces and native deterministic
+content/table evaluation, preserving normalization and metric versions. Do not
+reimplement a similar score and label it ParseBench. Confirm source rights/access
+and dependencies first. No paid parsing, normalization or judge calls.
+
+Retain planned/actual attempts, failures, output-format limitations, denominator
+and detailed upstream metrics per case. Report each dimension separately. Repeat
+and offline regrade using retained outputs and pinned dependencies. No equivalence
+to the published full leaderboard or claims across unexecuted dimensions. Compare
+public-case findings with the separately defined invoice task only where the
+measured quantities support the comparison. Integration failure is an explicit
+finding rather than a substituted metric. Acceptance criteria 22-24 apply.
+
+Files: extend `pdf_bench/parsebench.py`, shared execution/provenance surfaces,
+`tests/test_parsebench.py`, immutable run artifacts and replay protocol.
+
+Verify: execute two local parsers through real adapters and native upstream
+scoring; independently enumerate every planned pair and recompute selected metrics
+with upstream evaluators. Persist predictions before grading and deny reference
+access to parser execution. Regrade relocated retained outputs with network and
+parser calls unavailable. `uv run pytest tests/test_parsebench.py -q` must detect
+missing attempts, changed native score/protocol identities and stale source bytes.
+
+### Premises
+
+Input: public comparison
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | One frozen case/pipeline attempt with native per-dimension metrics and execution evidence. | definitional |
+| absent-record | Missing required output is failed or incomplete, never silently excluded from the planned denominator. | definitional |
+| ordering-spacing | Selection precedes scores and comparative metrics use matching case populations. | empirical |
+| entity-identity | Case/source/output, pipeline and upstream evaluator revision hashes identify each measurement. | empirical |
+| known-at | Fit/eligibility and protocol freeze precede inference; scores derive from retained outputs afterward. | definitional |
+| institution | Pinned upstream evaluator defines ParseBench metric semantics; our declared subset limits interpretation. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| native-public-comparison | Local results use the actual pinned upstream evaluators on identical selected inputs with inspectable failures. | A proxy metric replaces upstream scoring, reference data leaks into parsing or failed cases disappear. |
+| public-results-regrade | Retained outputs reproduce deterministic per-case native scores under the frozen evaluation protocol. | Regrading reads changed inputs, uses different normalization or requires live parser/API access. |
+
+Closes: public-comparison.record, public-comparison.absent-record, public-comparison.ordering-spacing, public-comparison.entity-identity, public-comparison.known-at, public-comparison.institution, native-public-comparison, public-results-regrade
+
+**Issue 8 - Generate benchmark-fit findings, design lessons and integration export**
+
+Depends on Issues 1, 2, 6 and 7. Generate the appendix and structured export from the
 authoritative registry and qualified run. Write a project-local technical report
 whose worked example teaches internal-benchmark design: define the team's task
 and distribution, assess corpus fit, choose and validate reference truth, freeze
@@ -400,8 +514,9 @@ lessons and untested recommendations; include actionable reproducible instructio
 
 Include all retained families in their tiers, plus bounded next protocols below.
 Explain why semantic metrics and dataset size alone do not establish use-case fit.
-Acknowledge ParseBench without inventing gaps in its capabilities or duplicating
-its broad leaderboard. Assess ExtractBench's schema/value/record/failure contracts
+Use the full coverage assessment and actual ParseBench comparison to explain
+when its relevant subset suffices and when meaningful task/distribution mismatch
+requires additional evaluation. Do not presume gaps or duplicate its leaderboard. Assess ExtractBench's schema/value/record/failure contracts
 against this invoice-specific protocol without importing its generic assignment
 framework or executing another benchmark. Record reusable upstream interfaces/metrics and what still
 requires local tasks/references. Link the checked retained benchmark-interpretation
@@ -412,7 +527,7 @@ technical report and example protocol; one concise `integration-handoff.txt`.
 Export claim objects link run/artifact hashes/JSON pointers, input/reference
 provenance, denominators, versions/options/cache/time boundaries, tier and supported
 interpretation. Consumer renderers receive paths/hashes rather than hidden absolute
-runtime dependencies. Acceptance criteria 18-21 apply.
+runtime dependencies. Acceptance criteria 18-24 apply.
 
 Verify: every reported number regenerates from source-linked rows; independently
 recompute selected numerator/denominator pairs and test stale/missing/tampered
@@ -452,7 +567,7 @@ call, large download or model installation is assumed available.
 | Track | Fixed candidate inputs and task | Reference and comparison | Completion and gate |
 |---|---|---|---|
 | Scans/OCR | Twenty qualified invoices selected by source metadata across observed templates/complexities, rendered as image-only PDFs at 150 and 300 dpi; same field/row recovery task. | Reuse independently qualified source facts; keep paired digital/raster hashes. Compare the no-OCR baseline with two installed local OCR-capable configurations after actual capability/version checks. | Report paired task recovery, OCR omissions, empties/timeouts and page counts. If suitable local models are absent, prepare the exact model/download/resource request instead of claiming OCR coverage. |
-| Complex tables/charts | Thirty pinned ParseBench table examples selected by reference-defined header/merge/multipage categories, plus a separately scoped ten-chart probe. | Assess reuse of pinned upstream GriTS/record matching and chart rules with declared normalization/applicability; inspect annotations before outputs. Compare two suitable available local configurations on shared inputs. | Scores distinguish detected, recovered, wrong associations and unsupported reference forms. No access to annotated answers during extraction. Document source/license/annotation limits. Chart incapability is a measured outcome, not exclusion. |
+| Complex tables/charts | Additional pinned ParseBench table categories beyond the executed subset, plus a separately scoped ten-chart probe. | Assess reuse of pinned upstream GriTS/record matching and chart rules with declared normalization/applicability; inspect annotations before outputs. Compare two suitable available local configurations on shared inputs. | Scores distinguish detected, recovered, wrong associations and unsupported reference forms. No access to annotated answers during extraction. Document source/license/annotation limits. Chart incapability is a measured outcome, not exclusion. |
 | Presentations/decks | Qualify the ten retained synthetic source-first investor decks; task is slide-boundary/title/bullet ordering and exact chart/table facts where source truth exists. | Preserve PPTX/PDF pair identity; independently qualify rendering and source references. Compare two suitable local parsers. Keep public legacy decks as a distinct directional track. | Report source/template realism and task failures; do not call the synthetic ten-deck result representative of corporate presentations. Resolve missing pairs before strong scores. |
 | arXiv | Qualify the ten retained academic inputs and exact source revisions; task is reading order and equation/table recovery on those papers. | Audit LaTeX/Pandoc source-to-PDF agreement and unsupported formulas; compare two suitable local configurations. Never use HTML from another paper revision as exact truth. | Separate equation/text/structure denominators and source-coverage gaps. Technical-paper conclusions remain separate from business-invoice recommendations. |
 | Cloud/frontier | Choose one of the qualified task protocols only after a specific remaining decision requires paid comparison. | Exact provider/model/SDK/config/prompt, shared frozen inputs, retries/cache policy and cost accounting. Inspect a one-document pilot first. | Stefan approves maximum total spend and stop rules before calls. Report failures and actual costs; no historical paid pilot becomes a current winner. |

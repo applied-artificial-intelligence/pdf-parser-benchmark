@@ -2,7 +2,10 @@
 
 Alignment brief: `start-here.txt` in this work unit, commissioned by Stefan on
 October 14, 2026, with practical parser selection confirmed and internal-benchmark
-design emphasized in this conversation. Revision 2 incorporates the returned
+design emphasized in this conversation. Revision 3 incorporates Stefan's October 15 confirmation: assess whether public
+benchmark documents and tasks fit meaningful business workloads, reuse matching
+subsets where they do, and build internal evaluation only where needed. It adds
+an executable ParseBench comparison. Revision 2 incorporated the returned
 `fable-01.md` and `gpt-01.md` reviews, with specific dispositions recorded in
 `review-dispositions.txt`. Both recommend bounded revision. This specification
 does not claim that reconstruction or public release has occurred. The original
@@ -10,10 +13,11 @@ review packet remains unchanged; Git preserves its specification and plan.
 
 ## Objective
 
-An engineering team can use demonstrated benchmark-design decisions to build an
-internal document-parser evaluation for its own use case, reproduce our declared
-document-family/task comparison, and inspect the references, failures, operating
-conditions and claim limits through a technical report and versioned evidence export.
+An engineering team can judge whether ParseBench covers its document distribution
+and downstream task, select a relevant public subset when suitable, and establish
+what internal evaluation is necessary when it is not. Reproducible comparisons and
+retained project experience demonstrate the decision, supported by inspectable
+references, failures, operating conditions and a versioned technical evidence export.
 
 ## Terms
 
@@ -245,11 +249,52 @@ that ParseBench lacks reproducibility or operational features.
     that manuscript or promising a website change. Consulting relevance follows
     from the demonstrated evaluation work; no causal business-impact claim is made.
 
+22. The first milestone includes a reproducible comparison on a frozen ParseBench
+    subset chosen after the coverage assessment, initially targeting 30 content-
+    faithfulness cases and 20 table cases. Freeze exact case IDs,
+    document/page counts, source strata and hashes fixed before parser execution.
+    Selection uses source/reference attributes, never candidate-parser performance.
+    Suitable local parsers run on identical bytes; upstream deterministic evaluators
+    and declared normalization score the outputs rather than a reimplementation
+    labelled as ParseBench. Pin code, data, annotation and evaluator versions and
+    report any adaptation. Retain failures, missing/unsupported outputs and exact
+    metric denominators. The scored dimensions remain separate; this subset is
+    not a reproduction of the full five-dimension leaderboard. No paid parser or
+    judge/normalization call is authorized. Verify dataset access/source rights and
+    dependency compatibility before execution; a failed integration is reported
+    precisely rather than silently substituting a different metric.
+23. The report compares decisions informed by the ParseBench subset with the
+    custom invoice task, explaining which capabilities and error types transfer,
+    which references/metrics can be reused, and which use-case-specific data and
+    acceptance rules remain necessary. Explain material agreement, disagreement
+    or inability to compare; a ranking reversal is not required. Assess the related
+    ExtractBench schema/value/record contract as prior art. The contribution is the
+    worked decision about whether a public benchmark represents the use case,
+    whether a matching subset suffices, or whether additional internal evaluation
+    is needed. A custom benchmark is not presumed necessary.
+
+24. Before selecting the ParseBench run subset, assess the pinned full annotation
+    inventory and inspect source documents across its declared domains, document
+    families and capability dimensions. Map meaningful business workloads to
+    document properties and downstream tasks, with counts and traceable examples.
+    Distinguish present, partially represented, not observed and unknown coverage;
+    document-type names alone do not prove task coverage. Any proposed gap must
+    concern a consequential workload and survive inspection of relevant examples
+    and upstream evaluation rules. Do not manufacture marginal omissions to justify
+    this project. Recommend using ParseBench directly or a matching subset when
+    it fits. Additional internal data/tasks require a stated mismatch. No percentage
+    of all business use cases is asserted without a defined representative workload
+    population and weights. Record source and annotation rights separately from
+    code licensing. Assessment uncertainty stays visible and can motivate targeted
+    inspection rather than a claim of absence.
+
 ## In scope
 
 - Benchmark-design lessons and a worked internal-evaluation protocol grounded in
   actual preserved and newly executed evidence, supporting practical parser
   selection and Applied AI's consulting work.
+- An executable, pinned ParseBench content/table reference comparison within the
+  first milestone, using upstream evaluators and shared local-parser inputs.
 - Existing-code reconciliation, registry/appendix generation and reproducible
   evidence tooling, with preserving error behavior and actual-pipeline regressions.
 - A consequential local structured-document comparison and project-local technical
@@ -350,8 +395,9 @@ that ParseBench lacks reproducibility or operational features.
   them by recorded source inspection and explicit new renditions, preserving the
   fixed population. An unresolved truth disagreement blocks strong affected
   scores, not preservation of the run's diagnostic evidence.
-- Current OCR/model availability, ParseBench dependency compatibility and licenses
-  require bounded checks in follow-on work. No downloads or paid runs are assumed.
+- ParseBench subset access/source rights and dependency compatibility require
+  bounded checks before the first reference comparison. Broader OCR/model and
+  other-dimension coverage remain follow-on work. No paid runs are assumed.
 - Cloud/frontier comparison is deferred. Stefan must approve the exact inputs,
   provider/model/configuration and spend ceiling before those calls.
 

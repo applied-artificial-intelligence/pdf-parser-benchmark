@@ -1,0 +1,55 @@
+{
+  "repo": "applied-artificial-intelligence/pdf-parser-benchmark",
+  "milestone": "rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example",
+  "milestone_number": 1,
+  "issues": [
+    {
+      "plan_issue": 1,
+      "number": 1,
+      "title": "Assess ParseBench coverage against meaningful business workloads",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/1"
+    },
+    {
+      "plan_issue": 2,
+      "number": 2,
+      "title": "Reconcile retained runs into one authoritative registry",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/2"
+    },
+    {
+      "plan_issue": 3,
+      "number": 3,
+      "title": "Freeze and qualify independent invoice references",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/3"
+    },
+    {
+      "plan_issue": 4,
+      "number": 4,
+      "title": "Establish task scoring that detects wrong associations",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/4"
+    },
+    {
+      "plan_issue": 5,
+      "number": 5,
+      "title": "Repair execution identity, cache handling and failure accounting",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/5"
+    },
+    {
+      "plan_issue": 6,
+      "number": 6,
+      "title": "Execute and reproduce the fixed invoice comparison",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/6"
+    },
+    {
+      "plan_issue": 7,
+      "number": 7,
+      "title": "Execute a pinned ParseBench comparison with upstream evaluators",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/7"
+    },
+    {
+      "plan_issue": 8,
+      "number": 8,
+      "title": "Generate benchmark-fit findings, design lessons and integration export",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/8"
+    }
+  ]
+}
