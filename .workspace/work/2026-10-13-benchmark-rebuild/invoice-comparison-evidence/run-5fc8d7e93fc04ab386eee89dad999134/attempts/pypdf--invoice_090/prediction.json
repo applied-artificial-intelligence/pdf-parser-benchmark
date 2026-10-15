@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-58567",
+    "vendor": "Cloud Solutions",
+    "due_date": "2025-10-31",
+    "grand_total": "10771262.22",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-58567"
+    ],
+    "due_date": [
+      "October 31, 2025"
+    ],
+    "grand_total": [
+      "$10,771,262.22"
+    ],
+    "vendor": [
+      "Cloud Solutions"
+    ]
+  },
+  "records": [
+    {
+      "description": "Professional Plan - Monthly (subscription)",
+      "quantity": "99.12",
+      "unit_price": "1854.45",
+      "line_total": "183813.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional Plan -\nMonthly\n(subscription)",
+        "quantity": "99.12",
+        "unit_price": "$1,854.45",
+        "line_total": "$183,813.08"
+      }
+    },
+    {
+      "description": "Implementation Services (hour)",
+      "quantity": "96.07",
+      "unit_price": "288.84",
+      "line_total": "27748.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation\nServices (hour)",
+        "quantity": "96.07",
+        "unit_price": "$288.84",
+        "line_total": "$27,748.86"
+      }
+    },
+    {
+      "description": "Implementation Services (hour)",
+      "quantity": "8.78",
+      "unit_price": "324.28",
+      "line_total": "2847.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation\nServices (hour)",
+        "quantity": "8.78",
+        "unit_price": "$324.28",
+        "line_total": "$2,847.18"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual (subscription)",
+      "quantity": "82.42",
+      "unit_price": "66105.98",
+      "line_total": "5448454.87",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan -\nAnnual\n(subscription)",
+        "quantity": "82.42",
+        "unit_price": "$66,105.98",
+        "line_total": "$5,448,454.87"
+      }
+    },
+    {
+      "description": "Premium Support (month)",
+      "quantity": "46.52",
+      "unit_price": "3612.55",
+      "line_total": "168055.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium Support\n(month)",
+        "quantity": "46.52",
+        "unit_price": "$3,612.55",
+        "line_total": "$168,055.83"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual (subscription)",
+      "quantity": "33.66",
+      "unit_price": "117680.83",
+      "line_total": "3961136.74",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan -\nAnnual\n(subscription)",
+        "quantity": "33.66",
+        "unit_price": "$117,680.83",
+        "line_total": "$3,961,136.74"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

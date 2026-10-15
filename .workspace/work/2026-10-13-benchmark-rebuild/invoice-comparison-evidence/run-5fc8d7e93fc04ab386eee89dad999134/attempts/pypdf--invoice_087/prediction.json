@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-73630",
+    "vendor": "Standard Industries",
+    "due_date": "2025-10-29",
+    "grand_total": "713051.04",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-73630"
+    ],
+    "due_date": [
+      "October 29, 2025"
+    ],
+    "grand_total": [
+      "$713,051.04"
+    ],
+    "vendor": [
+      "Standard Industries"
+    ]
+  },
+  "records": [
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "93.67",
+      "unit_price": "2356.26",
+      "line_total": "220710.87",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling\n(each)",
+        "quantity": "93.67",
+        "unit_price": "$2,356.26",
+        "line_total": "$220,710.87"
+      }
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "23.33",
+      "unit_price": "1247.11",
+      "line_total": "29095.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling\n(each)",
+        "quantity": "23.33",
+        "unit_price": "$1,247.11",
+        "line_total": "$29,095.08"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "49.91",
+      "unit_price": "6.98",
+      "line_total": "348.37",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "49.91",
+        "unit_price": "$6.98",
+        "line_total": "$348.37"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "26.54",
+      "unit_price": "77.76",
+      "line_total": "2063.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "26.54",
+        "unit_price": "$77.76",
+        "line_total": "$2,063.75"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "55.11",
+      "unit_price": "4.34",
+      "line_total": "239.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "55.11",
+        "unit_price": "$4.34",
+        "line_total": "$239.18"
+      }
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "87.13",
+      "unit_price": "4433.06",
+      "line_total": "386252.52",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling\n(each)",
+        "quantity": "87.13",
+        "unit_price": "$4,433.06",
+        "line_total": "$386,252.52"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "16.24",
+      "unit_price": "50.62",
+      "line_total": "822.07",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "16.24",
+        "unit_price": "$50.62",
+        "line_total": "$822.07"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "52.71",
+      "unit_price": "3.84",
+      "line_total": "202.41",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "52.71",
+        "unit_price": "$3.84",
+        "line_total": "$202.41"
+      }
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "75.67",
+      "unit_price": "103.72",
+      "line_total": "7848.49",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining\n(hour)",
+        "quantity": "75.67",
+        "unit_price": "$103.72",
+        "line_total": "$7,848.49"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "20.55",
+      "unit_price": "31.41",
+      "line_total": "645.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "20.55",
+        "unit_price": "$31.41",
+        "line_total": "$645.48"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

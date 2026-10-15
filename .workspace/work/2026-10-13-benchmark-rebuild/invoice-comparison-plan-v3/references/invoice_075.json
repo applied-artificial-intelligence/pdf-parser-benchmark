@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-28221",
+    "vendor": "Digital Systems",
+    "due_date": "2025-11-30",
+    "grand_total": "9985915.56",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Network Engineer",
+      "quantity": "98.02",
+      "unit": "hour",
+      "unit_price": "232.24",
+      "line_total": "22764.16"
+    },
+    {
+      "description": "Network Engineer",
+      "quantity": "94.59",
+      "unit": "hour",
+      "unit_price": "208.43",
+      "line_total": "19715.39"
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "37.45",
+      "unit": "hour",
+      "unit_price": "279.42",
+      "line_total": "10464.28"
+    },
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "55.8",
+      "unit": "project",
+      "unit_price": "83663.71",
+      "line_total": "4668435.02"
+    },
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "64.37",
+      "unit": "project",
+      "unit_price": "61479.18",
+      "line_total": "3957414.82"
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "40.93",
+      "unit": "hour",
+      "unit_price": "158.79",
+      "line_total": "6499.27"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-28221",
+    "vendor": "Digital Systems",
+    "due_date": "November 30, 2025",
+    "grand_total": "$9,985,915.56",
+    "records": [
+      {
+        "description": "Network Engineer",
+        "quantity": "98.02",
+        "unit": "hour",
+        "unit_price": "$232.24",
+        "line_total": "$22,764.16"
+      },
+      {
+        "description": "Network Engineer",
+        "quantity": "94.59",
+        "unit": "hour",
+        "unit_price": "$208.43",
+        "line_total": "$19,715.39"
+      },
+      {
+        "description": "Senior Consultant",
+        "quantity": "37.45",
+        "unit": "hour",
+        "unit_price": "$279.42",
+        "line_total": "$10,464.28"
+      },
+      {
+        "description": "Cloud Migration Services",
+        "quantity": "55.80",
+        "unit": "project",
+        "unit_price": "$83,663.71",
+        "line_total": "$4,668,435.02"
+      },
+      {
+        "description": "Cloud Migration Services",
+        "quantity": "64.37",
+        "unit": "project",
+        "unit_price": "$61,479.18",
+        "line_total": "$3,957,414.82"
+      },
+      {
+        "description": "Systems Analyst",
+        "quantity": "40.93",
+        "unit": "hour",
+        "unit_price": "$158.79",
+        "line_total": "$6,499.27"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6"
+    ]
+  },
+  "document_id": "invoice_075"
+}

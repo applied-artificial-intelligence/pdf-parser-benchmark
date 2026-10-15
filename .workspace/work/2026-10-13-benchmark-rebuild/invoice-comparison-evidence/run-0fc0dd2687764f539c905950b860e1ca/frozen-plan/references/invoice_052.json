@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-46924",
+    "vendor": "Alliance CPA",
+    "due_date": "2025-11-17",
+    "grand_total": "1346643.64",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Payroll Processing (month)",
+      "quantity": "77.87",
+      "unit_price": "606.83",
+      "line_total": "47253.85"
+    },
+    {
+      "description": "Tax Preparation - Corporate (return)",
+      "quantity": "33.35",
+      "unit_price": "12545.35",
+      "line_total": "418387.42"
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "96.17",
+      "unit_price": "299.28",
+      "line_total": "28781.76"
+    },
+    {
+      "description": "Tax Preparation - Corporate (return)",
+      "quantity": "69.08",
+      "unit_price": "8917.82",
+      "line_total": "616043.01"
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "54.24",
+      "unit_price": "216.39",
+      "line_total": "11736.99"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-46924",
+    "vendor": "Alliance CPA",
+    "due_date": "November 17, 2025",
+    "grand_total": "$1,346,643.64",
+    "records": [
+      {
+        "description": "Payroll Processing (month)",
+        "quantity": "77.87",
+        "unit_price": "$606.83",
+        "line_total": "$47,253.85"
+      },
+      {
+        "description": "Tax Preparation - Corporate (return)",
+        "quantity": "33.35",
+        "unit_price": "$12,545.35",
+        "line_total": "$418,387.42"
+      },
+      {
+        "description": "Financial Planning (hour)",
+        "quantity": "96.17",
+        "unit_price": "$299.28",
+        "line_total": "$28,781.76"
+      },
+      {
+        "description": "Tax Preparation - Corporate (return)",
+        "quantity": "69.08",
+        "unit_price": "$8,917.82",
+        "line_total": "$616,043.01"
+      },
+      {
+        "description": "Financial Planning (hour)",
+        "quantity": "54.24",
+        "unit_price": "$216.39",
+        "line_total": "$11,736.99"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5"
+    ]
+  },
+  "document_id": "invoice_052"
+}

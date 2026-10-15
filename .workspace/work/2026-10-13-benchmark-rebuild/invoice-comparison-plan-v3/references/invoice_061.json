@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-76927",
+    "vendor": "Catalyst Media",
+    "due_date": "2025-09-19",
+    "grand_total": "3171264.94",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Video Production (day)",
+      "quantity": "20.51",
+      "unit_price": "4085.64",
+      "line_total": "83796.48"
+    },
+    {
+      "description": "Media Buy - Digital (campaign)",
+      "quantity": "29.69",
+      "unit_price": "47593.26",
+      "line_total": "1413043.89"
+    },
+    {
+      "description": "Media Buy - Digital (campaign)",
+      "quantity": "22.49",
+      "unit_price": "9234.31",
+      "line_total": "207679.63"
+    },
+    {
+      "description": "Graphic Design (hour)",
+      "quantity": "71.66",
+      "unit_price": "162.68",
+      "line_total": "11657.65"
+    },
+    {
+      "description": "Social Media Management (month)",
+      "quantity": "29.28",
+      "unit_price": "2626.81",
+      "line_total": "76913"
+    },
+    {
+      "description": "Video Production (day)",
+      "quantity": "29.02",
+      "unit_price": "2812.64",
+      "line_total": "81622.81"
+    },
+    {
+      "description": "Social Media Management (month)",
+      "quantity": "62.29",
+      "unit_price": "7555.65",
+      "line_total": "470641.44"
+    },
+    {
+      "description": "Social Media Management (month)",
+      "quantity": "71.84",
+      "unit_price": "4139.28",
+      "line_total": "297365.88"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-76927",
+    "vendor": "Catalyst Media",
+    "due_date": "September 19, 2025",
+    "grand_total": "$3,171,264.94",
+    "records": [
+      {
+        "description": "Video Production (day)",
+        "quantity": "20.51",
+        "unit_price": "$4,085.64",
+        "line_total": "$83,796.48"
+      },
+      {
+        "description": "Media Buy - Digital (campaign)",
+        "quantity": "29.69",
+        "unit_price": "$47,593.26",
+        "line_total": "$1,413,043.89"
+      },
+      {
+        "description": "Media Buy - Digital (campaign)",
+        "quantity": "22.49",
+        "unit_price": "$9,234.31",
+        "line_total": "$207,679.63"
+      },
+      {
+        "description": "Graphic Design (hour)",
+        "quantity": "71.66",
+        "unit_price": "$162.68",
+        "line_total": "$11,657.65"
+      },
+      {
+        "description": "Social Media Management (month)",
+        "quantity": "29.28",
+        "unit_price": "$2,626.81",
+        "line_total": "$76,913.00"
+      },
+      {
+        "description": "Video Production (day)",
+        "quantity": "29.02",
+        "unit_price": "$2,812.64",
+        "line_total": "$81,622.81"
+      },
+      {
+        "description": "Social Media Management (month)",
+        "quantity": "62.29",
+        "unit_price": "$7,555.65",
+        "line_total": "$470,641.44"
+      },
+      {
+        "description": "Social Media Management (month)",
+        "quantity": "71.84",
+        "unit_price": "$4,139.28",
+        "line_total": "$297,365.88"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8"
+    ]
+  },
+  "document_id": "invoice_061"
+}

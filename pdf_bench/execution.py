@@ -6,6 +6,7 @@ import multiprocessing as mp
 import os
 import signal
 import sys
+import sysconfig
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -39,12 +40,22 @@ def _parser_child(
     started = None
     try:
         if denied_read_components:
+            library_roots = tuple(
+                {
+                    Path(sysconfig.get_path(name)).resolve()
+                    for name in ["stdlib", "purelib", "platlib"]
+                }
+            )
 
             def deny_answers(event, arguments):
                 if event == "open" and isinstance(arguments[0], (str, bytes, os.PathLike)):
                     path = Path(os.fsdecode(arguments[0])).resolve()
-                    if set(path.parts) & set(denied_read_components):
-                        raise PermissionError("Reference/source access denied during parsing")
+                    if set(path.parts) & set(denied_read_components) and not any(
+                        path.is_relative_to(root) for root in library_roots
+                    ):
+                        raise PermissionError(
+                            f"Reference/source access denied during parsing: {path}"
+                        )
 
             sys.addaudithook(deny_answers)
         parser = parser_class(**options)

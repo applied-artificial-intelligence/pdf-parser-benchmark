@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-70863",
+    "vendor": "Summit Construction",
+    "due_date": "2025-09-24",
+    "grand_total": "37227.71",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "5.66",
+      "unit_price": "542.92",
+      "line_total": "3072.93"
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "49.94",
+      "unit_price": "82.75",
+      "line_total": "4132.54"
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "76.64",
+      "unit_price": "83.43",
+      "line_total": "6394.08"
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "85.1",
+      "unit_price": "6.67",
+      "line_total": "567.62"
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "33.82",
+      "unit_price": "4.62",
+      "line_total": "156.25"
+    },
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "15.61",
+      "unit_price": "113.7",
+      "line_total": "1774.86"
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "66.96",
+      "unit_price": "119.66",
+      "line_total": "8012.43"
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "78.36",
+      "unit_price": "121.92",
+      "line_total": "9553.65"
+    },
+    {
+      "description": "General Labor (hour)",
+      "quantity": "11.23",
+      "unit_price": "48.62",
+      "line_total": "546"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-70863",
+    "vendor": "Summit Construction",
+    "due_date": "September 24, 2025",
+    "grand_total": "$37,227.71",
+    "records": [
+      {
+        "description": "Equipment Rental (day)",
+        "quantity": "5.66",
+        "unit_price": "$542.92",
+        "line_total": "$3,072.93"
+      },
+      {
+        "description": "Skilled Carpentry (hour)",
+        "quantity": "49.94",
+        "unit_price": "$82.75",
+        "line_total": "$4,132.54"
+      },
+      {
+        "description": "Electrical Work (hour)",
+        "quantity": "76.64",
+        "unit_price": "$83.43",
+        "line_total": "$6,394.08"
+      },
+      {
+        "description": "Materials - Lumber (board ft)",
+        "quantity": "85.10",
+        "unit_price": "$6.67",
+        "line_total": "$567.62"
+      },
+      {
+        "description": "Materials - Lumber (board ft)",
+        "quantity": "33.82",
+        "unit_price": "$4.62",
+        "line_total": "$156.25"
+      },
+      {
+        "description": "Plumbing (hour)",
+        "quantity": "15.61",
+        "unit_price": "$113.70",
+        "line_total": "$1,774.86"
+      },
+      {
+        "description": "Electrical Work (hour)",
+        "quantity": "66.96",
+        "unit_price": "$119.66",
+        "line_total": "$8,012.43"
+      },
+      {
+        "description": "Materials - Concrete (cu yd)",
+        "quantity": "78.36",
+        "unit_price": "$121.92",
+        "line_total": "$9,553.65"
+      },
+      {
+        "description": "General Labor (hour)",
+        "quantity": "11.23",
+        "unit_price": "$48.62",
+        "line_total": "$546.00"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_029"
+}

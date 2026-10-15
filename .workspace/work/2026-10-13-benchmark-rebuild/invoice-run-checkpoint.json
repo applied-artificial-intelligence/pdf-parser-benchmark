@@ -1,27 +1,26 @@
 {
-  "status": "frozen_revision_2_before_completed_primary_execution",
-  "plan": "invoice-comparison-plan-v2/plan.json",
-  "plan_sha256": "cc9c40438d3d146b74b0091b872eb8a21b75e11b89c81d950e1c32c91be8e4a5",
-  "supersedes_plan_sha256": "31d64d00fe359d5217430d62f22b90180c539a43e63d4ed3bb1480e7fc19ad70",
-  "population_and_options_unchanged": true,
+  "status": "frozen_revision_3_before_suitable_primary_comparison",
+  "plan": "invoice-comparison-plan-v3/plan.json",
+  "plan_sha256": "44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684",
+  "prior_diagnostic": "invoice-integration-diagnostics-v2.json",
   "planned_pairs": 200,
   "eligible_documents": 100,
-  "runtime_identity": "4b159c81edfb3816738e7fde759d3aedb37e2744e23fdccd1722b40eaf2b4c27",
+  "runtime_identity": "e4d6618ce5a610511d14b492fad56a135f1c30574e18b1d2a2d72f555089cf80",
   "runtime_artifacts": {
-    "invoice-runtime-artifacts-v2/identity-replay.json": "23d4e2aef6778922c446da71242289b65c2786e9728a6f764e24ab29d65341b1",
-    "invoice-runtime-artifacts-v2/pdf_bench-1.0.0-py3-none-any.whl": "3ae07f0dc96dc0884ef0a50ca92876010f607ef9fc0553c9d68d5bdda77946ab",
-    "invoice-runtime-artifacts-v2/pdfsmith-0.2.0-py3-none-any.whl": "656ac6b42d523be346c451e635d5ff4be97aafd03f01ab18c4bd92d6fdadc6bb",
-    "invoice-runtime-artifacts-v2/requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
-    "invoice-runtime-artifacts-v2/requirements.lock": "b2234829be818ddca61f8b174a271edcca05d242a77fce7b16bfb93eb15db57c",
-    "invoice-runtime-artifacts-v2/runtime-provenance.json": "dc3510409943822659dbe32817def5c50224e63091ef673f087d3ac96c6c982a"
+    "invoice-runtime-artifacts-v3/cold-dependency-replay.txt": "2df594e5e93df032c2cf09b7eaa85b9e6c3828ce68eaa5451bdd852ae8dcb422",
+    "invoice-runtime-artifacts-v3/identity-replay.json": "bb19f12f2862e994e49f28e3894d3a4b0fdc57f48c9aac3b201a8e334d3fb2a9",
+    "invoice-runtime-artifacts-v3/pdf_bench-1.0.0-py3-none-any.whl": "d46ff0ff3d30cc58b0cead334ce6333540e6d6afd8564996f58fbdb3807db904",
+    "invoice-runtime-artifacts-v3/pdfsmith-0.2.0-py3-none-any.whl": "656ac6b42d523be346c451e635d5ff4be97aafd03f01ab18c4bd92d6fdadc6bb",
+    "invoice-runtime-artifacts-v3/requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
+    "invoice-runtime-artifacts-v3/requirements.lock": "b2234829be818ddca61f8b174a271edcca05d242a77fce7b16bfb93eb15db57c",
+    "invoice-runtime-artifacts-v3/runtime-provenance.json": "dc3510409943822659dbe32817def5c50224e63091ef673f087d3ac96c6c982a",
+    "invoice-runtime-artifacts-v3/source-checkouts.json": "c44715c4f19910640a3d32048abf1dce86417ce143216ef9afe44e0ea534cf09"
   },
-  "faithful_format_control_sha256": "272de5ed2cc1a23c235b1696d5ad0d21d0ffb0fb2d5350035260d8c02a7f2c0f",
-  "completed_primary_executions": [],
-  "interrupted_execution": "invoice-cli-path-defect.json",
   "verification": {
-    "full_suite_passed": 964,
+    "full_suite_passed": 965,
     "skipped": 18,
-    "cli_relative_paths_red_then_green": true,
-    "actual_mechanism_controls": 5
-  }
+    "cold_dependency_red_then_green": true,
+    "answer_access_still_denied": true
+  },
+  "completed_revision_3_executions": []
 }

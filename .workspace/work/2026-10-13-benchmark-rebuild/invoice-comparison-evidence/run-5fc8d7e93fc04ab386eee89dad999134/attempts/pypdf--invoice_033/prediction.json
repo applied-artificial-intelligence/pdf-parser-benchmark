@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-49364",
+    "vendor": "Design Design Group",
+    "due_date": "2025-10-30",
+    "grand_total": "48957.46",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-49364"
+    ],
+    "due_date": [
+      "10/30/2025"
+    ],
+    "grand_total": [
+      "$48,957.46"
+    ],
+    "vendor": [
+      "Design Design Group"
+    ]
+  },
+  "records": [
+    {
+      "description": "Construction Documents @ $40.81/% of project",
+      "quantity": "71.51",
+      "line_total": "2918.32",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Construction Documents @\n$40.81/% of project",
+        "quantity": "71.51",
+        "line_total": "$2,918.32"
+      }
+    },
+    {
+      "description": "Schematic Design @ $15.95/% of project",
+      "quantity": "75.17",
+      "line_total": "1198.96",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Schematic Design @ $15.95/%\nof project",
+        "quantity": "75.17",
+        "line_total": "$1,198.96"
+      }
+    },
+    {
+      "description": "CAD Technician @ $107.10/hour",
+      "quantity": "89.84",
+      "line_total": "9621.86",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CAD Technician @\n$107.10/hour",
+        "quantity": "89.84",
+        "line_total": "$9,621.86"
+      }
+    },
+    {
+      "description": "Project Architect @ $189.10/hour",
+      "quantity": "99.35",
+      "line_total": "18787.08",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Architect @\n$189.10/hour",
+        "quantity": "99.35",
+        "line_total": "$18,787.08"
+      }
+    },
+    {
+      "description": "Construction Documents @ $41.09/% of project",
+      "quantity": "5.46",
+      "line_total": "224.35",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Construction Documents @\n$41.09/% of project",
+        "quantity": "5.46",
+        "line_total": "$224.35"
+      }
+    },
+    {
+      "description": "CAD Technician @ $127.31/hour",
+      "quantity": "29.8",
+      "line_total": "3793.84",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CAD Technician @\n$127.31/hour",
+        "quantity": "29.80",
+        "line_total": "$3,793.84"
+      }
+    },
+    {
+      "description": "Site Visits @ $270.09/visit",
+      "quantity": "14.5",
+      "line_total": "3916.3",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Site Visits @ $270.09/visit",
+        "quantity": "14.50",
+        "line_total": "$3,916.30"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

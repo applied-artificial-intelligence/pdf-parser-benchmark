@@ -166,3 +166,19 @@ shared PDFsmith registry changed under its other owner between snapshots, so the
 new artifact records its exact used bytes. Actual execution environments are now
 retained separately from preparation metadata. No primary quality result is
 registered yet. Next: two full fresh executions and a second relocated replay.
+
+Issue 6 read-policy correction and frozen runtime revision 3
+Both v2 full 200-pair runs completed and reproduce exactly, but all pdfplumber
+calls failed because our read policy blocked the legitimate standard-library
+importlib.metadata._adapters dependency in the clean installation. These runs
+are diagnostic integration evidence, not a parser-quality comparison. Raw bytes,
+empty recovery, all eligible denominators, timings and exact failures are retained.
+The actual cold dependency regression was red before permitting installed runtime
+libraries, and green afterward; the existing answer-read denial still passes.
+An outside-checkout cold replay now returns actual pdfplumber invoice content and
+tables. Full suite: 965 passed, 18 skipped. New v3 plan retains the identical 200
+pairs, PDF/reference bytes, extractor/grader and options; it uses the same frozen
+PDFsmith v2 wheel and an updated benchmark wheel. All 100 faithful-format controls
+still pass within their stated scope. Source checkout revisions, dirty used paths
+and exact snapshot equality are recorded. Next: execute v3 twice and a relocated
+fresh replay, then audit failures and close issue 6. No paid calls or release.

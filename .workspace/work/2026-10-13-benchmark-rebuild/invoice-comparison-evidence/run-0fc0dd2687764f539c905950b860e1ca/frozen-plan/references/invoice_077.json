@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-50966",
+    "vendor": "Green Landscaping",
+    "due_date": "2025-10-12",
+    "grand_total": "84157.29",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Tree Trimming @ $146.67/hour",
+      "quantity": "19.68",
+      "line_total": "2886.47"
+    },
+    {
+      "description": "Snow Removal @ $253.74/push",
+      "quantity": "10.78",
+      "line_total": "2735.32"
+    },
+    {
+      "description": "Snow Removal @ $226.22/push",
+      "quantity": "82.1",
+      "line_total": "18572.66"
+    },
+    {
+      "description": "Fall Cleanup @ $705.04/service",
+      "quantity": "65.75",
+      "line_total": "46356.38"
+    },
+    {
+      "description": "Fertilization Treatment @ $196.81/application",
+      "quantity": "23.32",
+      "line_total": "4589.61"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-50966",
+    "vendor": "Green Landscaping",
+    "due_date": "10/12/2025",
+    "grand_total": "$84,157.29",
+    "records": [
+      {
+        "description": "Tree Trimming @ $146.67/hour",
+        "quantity": "19.68",
+        "line_total": "$2,886.47"
+      },
+      {
+        "description": "Snow Removal @ $253.74/push",
+        "quantity": "10.78",
+        "line_total": "$2,735.32"
+      },
+      {
+        "description": "Snow Removal @ $226.22/push",
+        "quantity": "82.10",
+        "line_total": "$18,572.66"
+      },
+      {
+        "description": "Fall Cleanup @ $705.04/service",
+        "quantity": "65.75",
+        "line_total": "$46,356.38"
+      },
+      {
+        "description": "Fertilization Treatment @ $196.81/application",
+        "quantity": "23.32",
+        "line_total": "$4,589.61"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5"
+    ]
+  },
+  "document_id": "invoice_077"
+}

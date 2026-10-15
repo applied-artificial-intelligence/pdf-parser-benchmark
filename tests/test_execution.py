@@ -45,6 +45,33 @@ class ControlledBackend(BaseParser):
         return target
 
 
+class ColdMetadataPdfplumber(PdfsmithAdapter):
+    """Force the real backend to encounter the cold standard-library import path."""
+
+    def _get_backend(self):
+        import importlib.metadata
+        import sys
+
+        backend = super()._get_backend()
+        sys.modules.pop("importlib.metadata._adapters", None)
+        importlib.metadata.__dict__.pop("_adapters", None)
+        return backend
+
+
+def test_real_pdfplumber_cold_dependency_reads_are_allowed_beside_answer_denial(tmp_path):
+    result = execute_parser(
+        ColdMetadataPdfplumber,
+        {"backend_name": "pdfplumber", "cache_mode": "bypass"},
+        SOURCE,
+        tmp_path / "cold-metadata",
+        30,
+        denied_read_components=("references", "sources", "metadata"),
+    )
+    assert result.outcome == "success_content", result.error
+    assert "INV-98034" in result.output_path.read_text()
+    assert "| Description |" in result.output_path.read_text()
+
+
 def test_actual_adapter_retains_exact_output_bytes_and_success_content(tmp_path):
     result = execute_parser(
         PdfsmithAdapter,

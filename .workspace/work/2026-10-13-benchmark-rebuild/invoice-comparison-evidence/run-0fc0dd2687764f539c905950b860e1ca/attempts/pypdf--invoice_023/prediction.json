@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-67565",
+    "vendor": "Elite Development",
+    "due_date": "2025-11-28",
+    "grand_total": "11060.76",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-67565"
+    ],
+    "due_date": [
+      "November 28, 2025"
+    ],
+    "grand_total": [
+      "$11,060.76"
+    ],
+    "vendor": [
+      "Elite Development"
+    ]
+  },
+  "records": [
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "53.29",
+      "unit_price": "73.34",
+      "line_total": "3908.29",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "53.29",
+        "unit_price": "$73.34",
+        "line_total": "$3,908.29"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "62.44",
+      "unit_price": "86.95",
+      "line_total": "5429.16",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "62.44",
+        "unit_price": "$86.95",
+        "line_total": "$5,429.16"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "3.68",
+      "unit_price": "76.89",
+      "line_total": "282.96",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "3.68",
+        "unit_price": "$76.89",
+        "line_total": "$282.96"
+      }
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "6.3",
+      "unit_price": "113.77",
+      "line_total": "716.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electrical Work\n(hour)",
+        "quantity": "6.30",
+        "unit_price": "$113.77",
+        "line_total": "$716.75"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

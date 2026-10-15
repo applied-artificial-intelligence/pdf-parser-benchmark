@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-13361",
+    "vendor": "Summit Development",
+    "due_date": "2025-11-03",
+    "grand_total": "40820.31",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-13361"
+    ],
+    "due_date": [
+      "November 03, 2025"
+    ],
+    "grand_total": [
+      "$40,820.31"
+    ],
+    "vendor": [
+      "Summit Development"
+    ]
+  },
+  "records": [
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "4.21",
+      "unit_price": "7.67",
+      "line_total": "32.29",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "4.21",
+        "unit_price": "$7.67",
+        "line_total": "$32.29"
+      }
+    },
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "30.96",
+      "unit_price": "326.22",
+      "line_total": "10099.77",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(day)",
+        "quantity": "30.96",
+        "unit_price": "$326.22",
+        "line_total": "$10,099.77"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "9.03",
+      "unit_price": "122.64",
+      "line_total": "1107.44",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "9.03",
+        "unit_price": "$122.64",
+        "line_total": "$1,107.44"
+      }
+    },
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "54.69",
+      "unit_price": "104.98",
+      "line_total": "5741.36",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing (hour)",
+        "quantity": "54.69",
+        "unit_price": "$104.98",
+        "line_total": "$5,741.36"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "57.42",
+      "unit_price": "136.95",
+      "line_total": "7863.67",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "57.42",
+        "unit_price": "$136.95",
+        "line_total": "$7,863.67"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "50.08",
+      "unit_price": "75.13",
+      "line_total": "3762.51",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "50.08",
+        "unit_price": "$75.13",
+        "line_total": "$3,762.51"
+      }
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "89.69",
+      "unit_price": "101.68",
+      "line_total": "9119.68",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electrical Work\n(hour)",
+        "quantity": "89.69",
+        "unit_price": "$101.68",
+        "line_total": "$9,119.68"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

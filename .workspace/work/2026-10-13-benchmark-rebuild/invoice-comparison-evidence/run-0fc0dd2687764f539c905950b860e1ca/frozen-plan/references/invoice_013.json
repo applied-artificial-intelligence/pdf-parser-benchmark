@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-75764",
+    "vendor": "Data Cloud",
+    "due_date": "2025-12-13",
+    "grand_total": "8245766.8",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "38.76",
+      "unit": "subscription",
+      "unit_price": "76247.96",
+      "line_total": "2955370.93"
+    },
+    {
+      "description": "Implementation Services",
+      "quantity": "60.12",
+      "unit": "hour",
+      "unit_price": "255.35",
+      "line_total": "15351.64"
+    },
+    {
+      "description": "Implementation Services",
+      "quantity": "36.58",
+      "unit": "hour",
+      "unit_price": "348.18",
+      "line_total": "12736.42"
+    },
+    {
+      "description": "API Usage",
+      "quantity": "62",
+      "unit": "per 1000 calls",
+      "unit_price": "3.53",
+      "line_total": "218.86"
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "67.3",
+      "unit": "subscription",
+      "unit_price": "70173.05",
+      "line_total": "4722646.26"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-75764",
+    "vendor": "Data Cloud",
+    "due_date": "December 13, 2025",
+    "grand_total": "$8,245,766.80",
+    "records": [
+      {
+        "description": "Enterprise Plan - Annual",
+        "quantity": "38.76",
+        "unit": "subscription",
+        "unit_price": "$76,247.96",
+        "line_total": "$2,955,370.93"
+      },
+      {
+        "description": "Implementation Services",
+        "quantity": "60.12",
+        "unit": "hour",
+        "unit_price": "$255.35",
+        "line_total": "$15,351.64"
+      },
+      {
+        "description": "Implementation Services",
+        "quantity": "36.58",
+        "unit": "hour",
+        "unit_price": "$348.18",
+        "line_total": "$12,736.42"
+      },
+      {
+        "description": "API Usage",
+        "quantity": "62.00",
+        "unit": "per 1000 calls",
+        "unit_price": "$3.53",
+        "line_total": "$218.86"
+      },
+      {
+        "description": "Enterprise Plan - Annual",
+        "quantity": "67.30",
+        "unit": "subscription",
+        "unit_price": "$70,173.05",
+        "line_total": "$4,722,646.26"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5"
+    ]
+  },
+  "document_id": "invoice_013"
+}

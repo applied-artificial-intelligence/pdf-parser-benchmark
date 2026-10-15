@@ -1,0 +1,33 @@
+{
+  "pdf_bench": {
+    "observed_git_head": "b9c421609d78e8e00544014ca35b21a475452e37",
+    "observed_branch": "codex/benchmark-rebuild",
+    "dirty_used_paths": [
+      " M pdf_bench/execution.py"
+    ],
+    "file_matches_artifact": {
+      "execution.py": true,
+      "systems/pdfsmith_adapter.py": true,
+      "systems/base_parser.py": true,
+      "invoice_comparison.py": true
+    },
+    "binding": "Checkout state matches every used source file"
+  },
+  "pdfsmith": {
+    "observed_git_head": "00030a39714c7c4a7ef02cfd07292cb9b1f85f3f",
+    "observed_branch": "codex/pdfsmith-update-2026-10-14",
+    "dirty_used_paths": [],
+    "file_matches_artifact": {
+      "__init__.py": true,
+      "api.py": true,
+      "_inputs.py": true,
+      "errors.py": true,
+      "config.py": true,
+      "backends/__init__.py": true,
+      "backends/registry.py": false,
+      "backends/pypdf_backend.py": true,
+      "backends/pdfplumber_backend.py": true
+    },
+    "binding": "Current checkout differs; retained wheel defines used source, original source revision unresolved"
+  }
+}
