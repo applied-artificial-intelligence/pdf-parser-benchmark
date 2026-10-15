@@ -1,0 +1,182 @@
+External review dispositions - October 14, 2026
+
+Decision
+Both returned reports recommend bounded revision and support the worked
+internal-benchmark design contribution. Retain the six issues and two required
+local parsers. Spec/plan revision 2 adopts concrete correctness contracts below.
+Registry work and non-scored execution repair can proceed. Scored-run claims still
+require reference qualification, a frozen extractor/task, failure-accounting tests
+and valid completed bundles. Paper changes are not runtime verification. No new
+external review round, corpus, paid run, agent or release is required.
+
+Review evidence
+fable-01.md SHA-256:
+de50c3381f885f0f2a35108f96d297b0803a47961bb480f0fd8d1dcec5aa892f
+gpt-01.md SHA-256:
+215fc26c6ce501e5227f44cd95c070a61c91747d162e7b137dfb7ab8dfff0c84
+Reports are retained verbatim. GPT identifies itself as GPT-6 Astra Pro; Fable's
+file is the supplied second review, with no API model snapshot attestation. Neither
+reviewer ran project tests/parsers. GPT independently checked packet/document bytes
+and primary sources; Fable reports one web search. The reviewed packet is unchanged:
+aa33a7e48c92d50e923d8e919addcdd872a87e11242952a36dd0eb7a9174f0d5.
+
+Correctness dispositions (GPT finding / Fable finding)
+
+1. G1 / F3, exact reference qualification: accepted with corrections, Issues 2/4.
+   Bind source/PDF/reference/protocol hashes and reject stale qualification after
+   any member changes. Review every retained rendered page and task association;
+   PyMuPDF presence is qualification-only and cannot prove visible content or
+   association. Producer/timestamp checks are clues, not an attestation that a
+   PDF was rendered from that DOCX. Grade displayed transcription, not corrected
+   arithmetic. Rerendering produces a new explicit rendition. Runtime qualification
+   and the stale-PDF regression remain pending.
+
+2. G2 / F1, record semantics: accepted with an evidence-driven adjustment, Issues 2/3.
+   Decimal strings, original surfaces, printed currency markers, fixed aliases,
+   exact full-record multiset matching, duplicate multiplicity and missing/extra
+   counts replace loose normalization. The fixed four-value tuple proposed by
+   Fable is not a universal reference schema for this corpus: 32 economy documents
+   have Description/Qty/Amount columns, with price/unit embedded in description;
+   34 small-business sources have Description/Qty/Rate/Amount and 34 enterprise
+   sources have five columns including Unit. Preserve each displayed-column contract.
+   Do not impute a missing column or identify '$' as USD from metadata country.
+   Paper contract is amended; literal association/duplicate regressions remain pending.
+
+3. G3 / F2/C, extraction blindness and attribution: accepted, Issue 3.
+   Separate prediction from grading, persist predictions first, forbid source,
+   metadata, document-ID lookup and expected-value constants, and test in a separate
+   process with answer files unavailable. Vary gold labels/values/record counts;
+   prediction bytes cannot change. Vary parser content; predictions must change.
+   Development uses smoke inputs plus invoice_001 through invoice_006 (one per
+   observed source template/complexity cell), and is disclosed. Faithful-input
+   controls measure supported representations; they are not a universal extraction
+   ceiling. Audit disagreements and shared failures, with mixed/unknown causes allowed.
+   No demonstrated answer-value leakage is attributed to the old five-label grader.
+
+4. G4 / F4, primary denominators and attempt ledger: accepted, Issues 3/4/5.
+   Persist exactly 200 unique primary pairs before initialization/filtering; retries
+   and controls do not fill missing pairs. Task success uses all frozen eligible
+   documents, with failed/empty/timed-out parses as zero task outcomes. Separate
+   document-macro, field-micro and record precision/recall/F1 denominators. Keep
+   common-success results secondary. Add asymmetric eligible failure/timeout and
+   all-failed parser witnesses. Old reference-ineligible corrupt controls do not
+   prove this contract. Ledger/status/denominator repairs remain pending.
+
+5. G5 / F4/C, metric stages and timeout: accepted, Issue 4.
+   Reject unknown required metrics, separate parse/prediction/grading outcomes,
+   invalidate affected aggregates on required grader failure, and record optional
+   diagnostic unavailability reasons. Typed enforced timeout differs from an
+   ordinary error containing 'exceeded'. Monotonic timing covers started error
+   paths; timed-out workers must stop before finalization. A completed parse can
+   remain parse-successful while grading fails; the old success_count assertion
+   is not alone a parsing defect. Delayed test backends are mechanism controls,
+   not parser-capability evidence. Producing-path regressions remain pending.
+
+6. G6 / F6/G, checkpoints: accepted with bounded implementation, Issue 4.
+   The scored run disables reuse. Any reusable checkpoint needs protocol/population
+   identity, unique membership and foreign-row rejection before importing state.
+   A manifest hash plus explicit pair validation is sufficient; no generic framework.
+   Historical formats remain readable, but incomplete identity prevents verified
+   resumption. Corrected truth can regrade outputs but cannot reuse old grades.
+
+7. G7 / F5/G, cache identity and real adapter: accepted, Issue 4.
+   The scored run must use the actual PdfsmithAdapter with read/write bypass, not
+   rely on FreshLocalParser. Safe ordinary reuse includes actual implementation,
+   dependencies and canonical options or remains disabled. Use stage-specific
+   identities. Current pypdf/pdfplumber backend constructors both take no options;
+   do not invent an option witness. Test implementation/version identity and real
+   supported configurable backends when needed. Do not migrate old cache entries.
+   No sibling PDFsmith API/release-metadata change is needed to identify this run.
+
+8. G8 / F-H, output ownership: accepted, Issue 4.
+   Full dispatch inspection confirms parallel workers receive the common results
+   directory; adapters write by input stem. This supports a concrete collision
+   risk, not demonstrated historical contamination. Use exclusive attempt namespaces
+   and retain actual returned bytes; test same stems/configurations/concurrent
+   dispatch and equality of graded, hashed and exported bytes. Runtime witness pending.
+
+9. G9 / F10/G, atomic bundles: accepted, Issues 2/4/6.
+   New incomplete directory, required-artifact/hash/outcome/pair validation,
+   completion manifest last, final directory then atomic registry-pointer update.
+   Readers validate the contract, not only a complete flag. Preserve prior bundle
+   and registry bytes on intermediate errors/interruption. Parser failure is a
+   legitimate completed outcome; missing output for a successful attempt is not.
+   Preserve the reviewed single-file writer. No database/transaction service or
+   power-loss durability claim. Fault-injection evidence remains pending.
+
+10. G10 / F7-9/F-F, historical authority: accepted with claim-specific limits, Issue 1.
+    Preserve original counters/tier labels alongside independently derived counts
+    and current dispositions; freeze inventory boundary before new exports. Use
+    real inconsistent summaries and source descriptions as red fixtures. SEC ARS
+    PDFs versus 10-K HTML may differ semantically; parser-dependent overlap selection
+    does not bound ground-truth noise. Restrict/demote unsupported strong claims,
+    preserving the observations and diagnostic uses. The one-parser full screen
+    cannot reveal other parsers' counterfactual ranking. Any selection-effect demo
+    on the new run is explicitly hypothetical and may show no change, never an
+    assertion that filtering must reverse ranks. No historical fresh-latency claim
+    is inferred from the small recorded duration. Registry repair remains pending.
+
+11. G11 / F6/G, relocation/repetition: accepted with a stricter isolation boundary,
+    Issues 4/5. Offline grading must work without parser imports, original source
+    paths, network or caches. Fresh relocated execution separately needs retrievable
+    immutable source/package bytes plus declared dependencies; a copy to another
+    directory using the same editable install is insufficient. Compare per-document
+    normalized predictions/outcomes as well as aggregates; do not require equal
+    durations. Best-effort Git metadata may be unavailable. Mismatched implementation
+    fails reproducibility validation with a precise report, not silent success.
+
+12. G12 / F2/D, usefulness/exposure: accepted, Issues 2/3/6.
+    Concrete controlled invoice-to-record pipeline decision, observed layout/task
+    diversity, declared development exposure, faithful-input positives, failure
+    attribution and conditional selection/tie/integration-failure outcomes. Metadata
+    source cells do not prove visual diversity or independent population samples.
+    Real-vendor sampling and confidence/latency ranking studies remain follow-ons.
+
+Additional dispositions and verification scope
+- F-D optional pymupdf4llm third parser: defer until the required pair and contract
+  work. Availability alone does not justify increasing scope. It remains a useful
+  later representation comparison; no new download or spending is authorized.
+  The inspected pdfplumber backend already calls extract_tables and emits Markdown
+  tables as well as text; the required pair is not two plain-text-only outputs.
+- G contribution / F-E: acknowledge ExtractBench. Its pinned README describes
+  schema-guided JSON, one-to-one record alignment, exact normalization and retained
+  failure denominators. Keep a small invoice-specific exact multiset contract;
+  upstream Hungarian assignment is unnecessary here. TableRecordMatch/GTRM reuse
+  belongs to the complex-table follow-on. No benchmark was executed or scores reused.
+- F-F lint statement: the October 13 report explicitly reports focused checks;
+  later whole-repo failures do not contradict that scope. Keep old report unchanged
+  and record inherited baseline failures separately. Remove unconditional global
+  formatting from the plan; relevant hygiene repairs remain in implementation scope.
+- F-F smoke domain 'pandoc': retain the original evidence bytes; registry can record
+  the source label and separately derived invoice family, without rewriting history.
+- F/C source mutation: label mutated source input as input-corruption/qualification
+  control, not proof of converter behavior. Tests of true converter or parser defects
+  must change the actual producing path. Formal terms/closure checks verify document
+  completeness, not scientific validity or runtime behavior.
+
+Fresh owner evidence, not new parser scores
+pre-run-source-inventory.json: 100 documents, 182 pages (18 one-page, 82 two-page),
+six observed template/complexity cells, 696 source line items, no merges detected,
+all PDF producer strings LibreOffice 24.2. Source and metadata line counts agree.
+reference-reconstruction-check.json: current retained DOCX extractor reproduces
+100/100 backup references and 0/100 current references. This establishes current
+byte agreement, not historical generator identity or qualification of rendered PDFs.
+The invoice source generator was not rerun; compared parsers were not executed.
+
+ExtractBench bounded source assessment
+Observed revision: 0e7647997211867060a645ac82deb9f7bc4a3b3f.
+Primary README: https://github.com/run-llama/ExtractBench/tree/0e7647997211867060a645ac82deb9f7bc4a3b3f
+Compared contracts: public JSON Schema versus our fixed fields/displayed-column
+records; global one-to-one assignment versus exact multiset matching; date/string
+normalization versus explicit synthetic conventions; failed-document zeros versus
+our fixed-eligible task denominator. This is a README/interface assessment, not
+implementation validation, license clearance, provider evaluation or score replication.
+
+Stray configuration survey
+Moved to docs/archive/parser-configuration-reference-2025-12-14.md with a historical
+notice; original body and SHA-256 are preserved. The abandoned path has no source
+repository, only this document and IDE metadata. It is not a current API contract.
+
+Next actions
+No user action is required. This owner proceeds with registry implementation and
+the gated source/reference/task work. Spending and public release remain deferred.

@@ -1,9 +1,10 @@
 PDF-Bench reconstruction - October 14, 2026
 
 Current milestone
-Review preparation complete. First engineering milestone is reconciled evidence
-and a reproducible internal-benchmark example; substantial implementation awaits
-actual returned GPT/Claude reviews and disposition of correctness blockers.
+Both external reports returned and reconciled. Spec/plan revision 2 adopts bounded
+correctness changes; registry work and non-scored repairs can start. Strong scored
+run claims remain gated on qualified references, frozen extraction/grading and
+actual failure/atomicity regressions.
 
 Confirmed direction
 Practical parser selection plus teaching teams how to design an internal benchmark
@@ -12,23 +13,28 @@ selection, reference truth, task/grader design, failures and operating condition
 ParseBench is prior art to reuse/acknowledge, not a universal leaderboard to imitate.
 
 Changes
-Created spec.md, six-issue plan.md, external-review packet with exact code/evidence
-hashes, separate reviewer prompts, baseline-checks.json and integration-handoff.txt.
+Recorded review-dispositions.txt and amended spec.md/plan.md while preserving the
+original reviewed packet and verbatim reports. Moved the stray configuration survey
+into docs/archive with a historical notice and unchanged original body.
+Pre-run inventory: 100 invoices, 182 pages, six source template/complexity cells,
+696 source rows, three schemas. Current DOCX extraction reproduces all 100 backup
+references and none of the current references; historical run truth remains unknown.
 No benchmark source, old results, website or editorial manuscript modified.
 
 Checks
-48 focused tests passed with warnings as errors (fresh packet preparation run).
-Terms, plan shape, premises, claims and closure checks passed. Packet builder lint
-and formatting passed. Prior comparison hash and five mirrored checkpoint files
+48 focused tests passed with warnings as errors during original packet preparation;
+they do not validate revision-2 implementation. Terms, plan shape, premises, claims
+and closure are rechecked for revision 2. Source-inventory tooling lint/format pass.
+Prior comparison hash and five mirrored checkpoint files
 match the independently reviewed revision d9305d6100e5288fa2fc255e088bfd8e22664b98.
 Inherited repository-wide checks are not green: 183 lint findings, 19 format files,
 one whitespace finding. These are retained in baseline-checks.json for the reviewed
 implementation scope. Dirty inherited work is preserved and deliberately unstaged.
 
 Next owner step
-Reconcile actual external reports, then begin the reviewed registry/reference/task
-and execution repairs. No report is assumed returned and no new parser ranking exists.
+Implement the registry using actual retained contradictions as red fixtures, then
+qualify every rendition and freeze the task/extractor before scored execution.
+The reference and layout inventory is unscored evidence, not a new parser ranking.
 
 Decisions needed
-Stefan submits external-review-packet.txt to GPT and Claude using review-gpt.txt
-and review-claude.txt and returns both reports. Spending/release choices are deferred.
+None for the current milestone. Spending/release choices are deferred.

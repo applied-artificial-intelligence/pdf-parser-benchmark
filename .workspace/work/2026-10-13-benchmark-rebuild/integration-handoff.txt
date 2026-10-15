@@ -7,10 +7,13 @@ Stefan confirmed practical parser selection and then emphasized a worked lesson
 in constructing an internal benchmark that fits the team's actual use case.
 
 Current milestone
-Specification, six-issue plan and self-contained external-review packet prepared.
+Specification, six-issue plan and self-contained external-review packet prepared;
+returned GPT/Fable reports are reconciled in review-dispositions.txt and revision 2.
 The first implementation milestone is "Reconciled evidence and a reproducible
-internal-benchmark example". Actual GPT and Claude reviews are pending. After
-their correctness findings are resolved, the owner reconciles historical runs,
+internal-benchmark example". Both reports recommend bounded revision. The owner
+adopted exact rendition qualification, extraction isolation, displayed-column
+multiset records, fixed eligible denominators, stage-specific failures, cache and
+checkpoint identity, exclusive outputs and atomic bundle completion. The owner reconciles historical runs,
 qualifies independent truth, repairs execution identity/failure accounting, runs
 all 100 retained source invoices with pypdf and pdfplumber, and generates the
 report/export. The earlier three-variant invoice diagnostic is preserved separately
@@ -53,11 +56,15 @@ The review-input manifest confirms the five mirrored checkpoint files match that
 revision and records whole-file hashes for the actual code/evidence excerpts.
 
 Fresh verification
-48 focused runner/persistence/local-evaluation tests passed with warnings as errors.
+48 focused runner/persistence/local-evaluation tests passed with warnings as errors
+during original packet preparation; no revision-2 implementation is validated yet.
 Spec terms, plan shape, premises, claims and closure checks passed. The packet
 builder passes focused Ruff checks. Repository-wide baseline has 183 lint findings,
 19 files requiring formatting and one inherited diff whitespace finding; these
-are recorded, not falsely reported repaired. No reconstruction comparison executed.
+are recorded, not falsely reported repaired. Source inventory records 182 retained
+pages and three line-item schemas. Current DOCX extraction matches 100 backup
+references and zero current references, without proving historical identity or
+qualifying the rendered PDFs. No reconstruction comparison executed.
 
 Integration boundary
 The retained "What LLM and agent benchmark scores actually tell you" article gives
@@ -68,5 +75,6 @@ website copy or approval to restore an old results page. Paid calls, release,
 publication, scheduling, public-main merge and deployment remain unapproved.
 
 Next actions
-Stefan submits the packet with the respective prompts to GPT and Claude and returns
-both reports. No website/editorial implementation or spending decision is needed.
+No new user action is required. This owner proceeds with the reviewed registry and
+gated reference/task work. Spending, public release and website implementation
+remain separately owned and deferred.

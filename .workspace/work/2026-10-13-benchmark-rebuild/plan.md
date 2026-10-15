@@ -1,15 +1,18 @@
 # Plan: PDF-Bench reconstruction and internal-benchmark design demonstration
 
-This decomposes `spec.md`, seeded by the reconstruction commission and Stefan's
+Revision 2 incorporates the returned GPT and Fable reports, with exact dispositions
+in `review-dispositions.txt`. This decomposes `spec.md`, seeded by the commission and Stefan's
 October 14 decision to focus on practical parser selection and teaching teams how
 to design their own document benchmark. The first deliverable is this plan and a
-self-contained review packet. No substantial implementation starts before actual
-GPT and Claude reports are returned and correctness blockers are disposed.
+self-contained review packet. Both reports recommend bounded revision. Registry
+work and non-scored execution repair can proceed under the amended contract.
+Scored-run closure requires qualified references, a frozen blind task/extractor
+protocol, complete attempt accounting and actual regression evidence.
 
 ## Gating and implementation boundaries
 
-Registry reconciliation -> qualify source references -> establish the downstream
-task contract -> repair execution/provenance -> execute a consequential comparison
+Snapshot retained evidence and define the task schema -> qualify references and
+freeze extractor/grader -> repair execution/provenance -> execute the comparison
 -> generate an inspectable report and export. The ordered issues below define one
 engineering milestone. Later research coverage and release approvals are separate.
 The first invoice run is a worked example, not all-family project completion.
@@ -28,7 +31,7 @@ merge, paid call or website/editorial write is included.
 
 ## Review dispositions and progress
 
-Before Issue 1, retain both returned reviews unchanged and record each finding,
+Both returned reviews are retained unchanged. `review-dispositions.txt` records each finding,
 severity, affected acceptance criterion/issue, disposition and evidence required.
 Resolve correctness blockers before the dependent issue. Testable alternatives
 can be adopted; optional extensions go to later scope without restarting planning.
@@ -44,21 +47,23 @@ to exist now. Show red/green for actual producing-code defects, not source-strin
 assertions or artificial records that the pipeline cannot produce. Timing remains
 descriptive until a repeat protocol and resource boundaries justify comparison.
 
-Run focused checks per issue, `uv run ruff format .` and `uv run ruff check .` at
-implementation checkpoints, and inspect owned diffs. Preserve unrelated work while
-fixing observed hygiene under the reviewed scope. Before code changes, inventory
-the inherited lint/test baseline and identify ownership. Do not run global
-formatting over another worker's dirty files during review preparation.
+Format and lint owned files, run non-mutating repository-wide checks, and inspect
+owned diffs at checkpoints. Preserve unrelated dirty work. Record inherited findings
+separately from new regressions and repair relevant inherited defects as those files
+enter reviewed scope. Global formatting or cleanup of another worker's files is
+not a hidden milestone dependency.
 
 ### Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example`
 
 **Issue 1 - Reconcile retained runs into one authoritative registry**
 
-Depends on actual external review dispositions. Extend the existing inventory and
+Returned reviews and dispositions authorize this issue. Extend the existing inventory and
 replace the story generator's independently maintained SLATE with registry-backed
 selection. Reconcile result/config links, checkpoints and merges, input/reference
 availability, historical selection, backend and wrapper identity, cache/timing
 unknowns and metric coverage. Keep all families and claimed historical values.
+Freeze the inventory input boundary before generating new exports. Preserve
+original counters/labels beside independently derived counts and claim dispositions.
 Record conflicting descriptions without asserting the entire old run is false.
 Do not reconstruct a past version from today's config. Establish an artifact
 classification and claim-specific tier with reasons and evidence paths.
@@ -68,7 +73,10 @@ result schemas as necessary; proposed `tests/test_run_registry.py`; generated
 registry/appendix under a new versioned evidence directory. Retained results stay
 unchanged. Acceptance criteria 2-5 and historical parts of 12-14 apply.
 
-Verify: reproduce generator means with uneven metric coverage and the real SEC
+Verify: use the real SEC commercial summary (15 rows, 14 actual successes/one
+failure versus declared 14 successes/13 failures), screening title "All 89" versus
+320 rows, and invoice reference-description disagreement as red fixtures.
+Reproduce generator means with uneven metric coverage and the real SEC
 selection/reference-description disagreements. The repaired generator must expose
 eligible/scored IDs and missing provenance instead of silently ranking unequal
 subsets. `uv run pytest tests/test_inventory.py tests/test_run_registry.py -q`
@@ -101,10 +109,15 @@ Closes: retained-artifacts.record, retained-artifacts.absent-record, retained-ar
 
 **Issue 2 - Freeze and qualify independent invoice references**
 
-Depends on Issue 1. Use the fixed 100 retained invoice IDs. Inspect actual DOCX
+Can begin after snapshotting retained inputs; exhaustive historical recovery in
+Issue 1 need not finish first. Define the controlled invoice-to-records use case
+and public schema first. Use the fixed 100 retained invoice IDs. Inspect actual DOCX
 paragraph/table source and metadata, not the current PDF-extracted ground_truth
 directory, to establish field and line-item references before parser execution.
-Freeze a manifest containing all source/PDF/reference hashes and applicability.
+The unscored pre-run inventory records 182 pages, six source template/complexity
+cells, 696 rows, three header schemas and no observed merges. Economy description
+retains embedded price/unit text rather than inventing a separate column.
+Freeze a manifest containing source/PDF/reference/protocol hashes and applicability.
 Resolve date, currency, rounding, totals, duplicate rows and header identity by
 inspecting source and rendered PDFs. Source-DOCX order is not automatically PDF
 reading order. Text similarity remains diagnostic with that limit stated.
@@ -116,6 +129,12 @@ historical reference cannot be retroactively promoted by a new one. Where rerend
 is needed, preserve the old PDF and identify the new rendition/converter version.
 Do not rerun random/date-dependent source generators to pretend to recover old
 truth. Make all disagreements and independent qualification evidence inspectable.
+Current DOCX extraction reproduces all 100 backup references and none of the 100
+current references (reference-reconstruction-check.json); historical bytes actually
+used remain unknown. Qualify each rendition with unscored PyMuPDF diagnostics plus
+all-page rendered review and task-association checks. Producer/timestamps cannot
+establish content identity. Changed source/PDF/reference/protocol bytes invalidate
+qualification. Displayed transcription truth is distinct from arithmetic accuracy.
 
 Files: extend existing invoice builder/reference mechanisms where suitable;
 proposed `tests/test_invoice_reference_qualification.py`; frozen run manifest,
@@ -126,8 +145,9 @@ Verify: introduce a real generator/converter defect that changes rendered totals
 or drops source table content. The actual reference qualification pipeline must
 reject the disagreement while preserving valid prior output, and pass on the
 correct rendition. Run `uv run pytest tests/test_invoice_reference_qualification.py -q`.
-Inspect rendered examples across all observed regions/templates/complexities and
-each discrepancy. Every one of the 100 inputs has an eligibility decision before
+Replace an already-qualified PDF through actual finalization; stale qualification
+must fail. Inspect all rendered pages, observed source/layout cells and discrepancies.
+Every one of the 100 inputs has an eligibility decision before
 parser execution. Unresolved truth blocks a strong affected comparison.
 
 ### Premises
@@ -156,15 +176,26 @@ Closes: invoice-sources.record, invoice-sources.absent-record, invoice-sources.o
 
 Depends on Issue 2. Specify one downstream extractor over actual parser Markdown/text
 and one independent grader over its extracted fields/records. Keep extraction
-blind to expected values. Version and freeze normalization, required fields, row
+blind to all source/metadata/document-ID answer lookups; persist predictions before
+grading. Version and freeze normalization, required fields, row
 matching, extra/missing row penalties and all-fields/all-records document success.
 Test semantic correctness separately from edit similarity/chrF++. Reuse a pinned
 established record metric only if its input semantics match; do not implement a
-new generic TableRecordMatch framework to satisfy this one invoice task.
+new generic TableRecordMatch framework to satisfy this one invoice task. Use exact
+multiset matching of complete displayed-column records, preserving duplicates,
+currency markers, units and Decimal values. Do not repair wrong associations to
+maximize a score. Initial development IDs are invoice_001 through invoice_006,
+the first observed example of each source template/complexity cell, plus smoke
+fixtures. Freeze the extractor before scoring; later changes version the protocol
+and require comparable regrading. These retained inputs are not an unseen test set.
 
 No structured rows from an otherwise completed parser is zero task recovery for
 eligible records. Unsupported reference semantics is distinct from unsupported
 parser capability. Report downstream extractor limitations alongside parser scores.
+Run a faithful parser-independent representation control with its supported-format
+scope stated. Audit disagreements and a stratified sample of shared failures, at
+least 40 failure cases if available; allow mixed/unknown attribution rather than
+inventing a sole parser cause.
 Make formatting-only acceptable changes pass while wrong values, shifted headers,
 ambiguous duplicates and omissions fail. Acceptance criteria 9, 11 and 16 apply.
 
@@ -176,8 +207,11 @@ labels/values, transpose headers, drop/duplicate rows or corrupt an amount. The
 task check must fail for those errors even when value tokens remain present, and
 pass for correct output and declared harmless formatting. Run
 `uv run pytest tests/test_invoice_task_evaluation.py tests/test_local_evaluation.py -q`.
-Demonstrate extractor blindness by withholding the reference until extraction ends;
-change reference facts and confirm the extracted prediction does not change.
+Demonstrate blindness in a subprocess with gold references, metadata, DOCX,
+original paths and answer constants inaccessible. Change gold labels, facts and
+row counts; prediction bytes cannot change. Blank/corrupt actual parser output;
+predictions must change appropriately. Grader tests use independent literal
+predictions; extractor positives use faithful representations and real outputs.
 
 ### Premises
 
@@ -207,16 +241,27 @@ Depends on Issue 1; can be designed while Issues 2-3 qualify truth, but executio
 of the scored run depends on all three. Extend existing runner/adapter/persistence
 to record backend versions/options/source identity, cache/checkpoint mode, planned
 attempts, empty outputs, failures/timeouts and duration boundaries. The scored
-run explicitly bypasses cache reads/writes and checkpoint reuse. Normal cached
+run uses the actual PdfsmithAdapter with explicit bypass of cache reads/writes and
+checkpoint reuse. Normal cached
 operation must still distinguish output-affecting options/backend identity. Any
 reusable checkpoint must validate matching protocol/inputs/references, not only
 parser name and doc_id. Unknown old cache timing stays unknown.
 
-Keep separate parser output locations, including same-stem inputs and worker
+Persist/hash exactly 200 unique planned pairs before capability filtering and
+initialization. Separate parse/prediction/grading outcomes. Reject unknown required
+metrics before execution; required grader exceptions invalidate affected claims,
+and optional unavailability carries a reason. Empty output and enforced typed
+timeout have explicit outcomes; error-text substrings do not classify timeout.
+Started-call error duration uses a monotonic clock. Missing terminal rows are
+incomplete. Keep exclusive output locations per attempt, including same-stem inputs and worker
 execution. Record failed durations correctly rather than default zero. Use existing
 atomic writer and validate bundle completeness before registering a completed run.
 Keep an incomplete attempt journal for interruption/failure, without overwriting
-old evidence. Report both PDFsmith metadata versions and exact used backend source;
+old evidence. Stop timed-out work before it can mutate finalized output. Validate
+checkpoint protocol/population identity, foreign/duplicate membership and counters
+before import; unsafe reuse stays disabled until repaired. Stage-specific identities
+allow corrected truth to trigger regrading without unnecessary reparsing.
+Report both PDFsmith metadata versions and exact used backend source;
 resolve local dependency identity without editing that sibling's API/metadata.
 
 Files: runner, loader, adapter, cache and persistence where needed; existing runner,
@@ -232,7 +277,16 @@ outcomes. Inject serializer and I/O failure through producing code and verify
 old completed artifacts remain byte-identical. Run
 `uv run pytest tests/test_runner.py tests/test_local_evaluation.py tests/test_run_provenance.py -q`
 plus focused existing cache/persistence tests discovered during implementation.
-No fixture that only mocks the new logic establishes closure.
+Test changed PDF/reference bytes and extractor/metric definitions under the same
+IDs, foreign/duplicate checkpoints, same-stem/configuration collisions through
+parallel dispatch, and equality of graded/hashed/exported bytes. A controlled
+delayed backend tests the timeout mechanism, not parser quality; an ordinary error
+containing "exceeded" must not be classified as timeout. Finalization uses a new
+incomplete directory, validated hashes/outcomes/pairs and completion manifest last,
+then directory finalization and atomic registry-pointer replacement. Inject errors
+after intermediate generation, at output writing, before completion and before
+registry replacement, including missing required artifacts despite valid JSON.
+No transaction service or fixture that only mocks new logic establishes closure.
 
 ### Premises
 
@@ -260,8 +314,8 @@ Closes: parser-attempts.record, parser-attempts.absent-record, parser-attempts.o
 **Issue 5 - Execute and reproduce the fixed invoice comparison**
 
 Depends on Issues 2-4. Execute all 100 frozen invoice inputs with pypdf and
-pdfplumber on shared bytes, sequentially and without paid calls. Record at least
-200 planned primary pairs, plus separately labelled actual corrupt, empty and
+pdfplumber on shared bytes, sequentially and without paid calls. Record exactly
+200 unique planned primary pairs per execution, plus separately labelled actual corrupt, empty and
 enforced-timeout controls. Fixed source fields and line-item records determine the
 task score; real parser outputs determine the predictions. Control expectations
 come from their producing paths, not benchmark-wide averages.
@@ -272,11 +326,20 @@ timed-out and empty attempts as unsuccessful on eligible inputs. Report paired
 quality on matching ID sets and common-success diagnostics separately. Report
 historical/new evidence separately, backend/configuration identity, hardware,
 resource/time boundaries and individual timings without claiming a speed winner.
+Freeze document task, field micro and record precision/recall/F1 denominators as
+defined by the specification. An asymmetric eligible-input failure/timeout and an
+all-failed parser must not remove inputs or inflate scores. Required evaluation
+failure invalidates an affected aggregate rather than removing its hard examples.
 
 Run a second fresh execution over the frozen inputs and offline regrade retained
-outputs; input/reference hashes and deterministic aggregates must match or a
+outputs; input/reference hashes, per-document normalized predictions/outcomes and
+deterministic aggregates must match or a
 precise nondeterminism finding must remain unresolved. Exercise replay from a
 different directory with declared dependencies, not absolute local checkout paths.
+Offline grading forbids parser imports, original answer paths, network and ambient
+cache access. Fresh relocation separately uses retrievable immutable backend source
+or package artifacts and checks versions/hashes; hashes alone cannot rebuild code.
+Duration equality is not required, and mismatched implementation is not reproduction.
 Strong comparison closure requires resolving reference gaps, not quietly lowering
 the denominator. Acceptance criteria 6-14 and 17 apply.
 
@@ -329,13 +392,18 @@ whose worked example teaches internal-benchmark design: define the team's task
 and distribution, assess corpus fit, choose and validate reference truth, freeze
 extraction/scoring, retain failures, and interpret results within operating limits.
 Use actual historical selection/reference/cache mistakes and new counterexamples
-to show which conclusions change. Distinguish observed findings, historical
+to show which conclusions change. Report the six observed source template/complexity
+cells and independently inspected layouts rather than treating 100 fills as 100
+independent layout trials. State a conditional pipeline decision, tie or integration
+failure from the measured task. Distinguish observed findings, historical
 lessons and untested recommendations; include actionable reproducible instructions.
 
 Include all retained families in their tiers, plus bounded next protocols below.
 Explain why semantic metrics and dataset size alone do not establish use-case fit.
 Acknowledge ParseBench without inventing gaps in its capabilities or duplicating
-its broad leaderboard. Record reusable upstream interfaces/metrics and what still
+its broad leaderboard. Assess ExtractBench's schema/value/record/failure contracts
+against this invoice-specific protocol without importing its generic assignment
+framework or executing another benchmark. Record reusable upstream interfaces/metrics and what still
 requires local tasks/references. Link the checked retained benchmark-interpretation
 article for editorial context, with no manuscript/CMS changes.
 
@@ -395,5 +463,4 @@ not reuse the pypdfium2 score threshold as a new impartial selection rule.
 
 ## Next actions
 
-Stefan submits the review packet to GPT and Claude and returns both reports.
-No spending, publication or deployment decision is needed for review preparation.
+No new user decision is required. Paid comparisons and public release remain deferred.

@@ -2,10 +2,11 @@
 
 Alignment brief: `start-here.txt` in this work unit, commissioned by Stefan on
 October 14, 2026, with practical parser selection confirmed and internal-benchmark
-design emphasized in this conversation. This specification describes the proposed end state. It does
-not claim that the reconstruction, external specification review, or public
-release has occurred. The commission authorizes this specification, plan, and
-review packet without a second exhaustive alignment interview.
+design emphasized in this conversation. Revision 2 incorporates the returned
+`fable-01.md` and `gpt-01.md` reviews, with specific dispositions recorded in
+`review-dispositions.txt`. Both recommend bounded revision. This specification
+does not claim that reconstruction or public release has occurred. The original
+review packet remains unchanged; Git preserves its specification and plan.
 
 ## Objective
 
@@ -76,44 +77,90 @@ that ParseBench lacks reproducibility or operational features.
    represented as a parser-independent sample or an exact visual reference.
 6. The first consequential run uses all 100 retained invoice source documents as
    its fixed population, with pypdf and pdfplumber as the required local baseline
-   parsers. Every parser receives the same frozen PDFs and references. Selection
+   parsers. Parsers receive the same frozen PDFs; only the grader receives
+   qualified references. The illustrative decision is selecting a configured
+   local pipeline for controlled born-digital invoice-to-record extraction. Selection
    and reference eligibility are established before parser execution. No document
    is removed because an evaluated parser performs poorly.
-7. The invoice references identify invoice number, vendor, due date, totals and
-   line-item records including their headers and values from retained DOCX source
+7. The invoice references identify invoice number, vendor, due date, displayed
+   grand total and currency marker, and line-item records including their displayed
+   headers and values from retained DOCX source
    content, with metadata used as a cross-check rather than an unquestioned oracle.
    They are distinct from the existing PDF-extracted reference directory. Source,
    metadata and PDF disagreement is recorded and resolved before a strong claim.
    When a source must be rendered again, it creates a separately identified new
    rendition and run; it never silently replaces a retained PDF.
-8. A reference qualification record covers all 100 sources and PDF renditions,
-   including visibility, truncation, content alignment and pagination concerns.
-   Qualification cannot use a compared parser's score as its inclusion rule.
-   Rendered spot checks cover each region, source template and complexity present,
-   and every detected disagreement. Any unresolved reference makes its task score
-   unavailable and remains visible in the fixed-population coverage denominator.
-   The milestone cannot claim a strong 100-document comparison while such gaps
-   remain unresolved.
-9. A fixed downstream extractor is declared, versioned and held constant across
-   parsers. Its input is exclusively the actual parser output. Exact field and
-   header/value associations, missing and extra records, and document task success
-   are reported separately from text similarity. It cannot read reference values
-   while extracting. Numeric/date normalization is specified and cannot equate
-   different amounts, dates or headers. Unsupported table forms have explicit
-    unavailable status when the reference contract itself cannot describe them,
-    not manufactured scores. A parser that drops an eligible table has failed the
-    recovery task; its capability cannot remove that task from the denominator.
-10. The run contains at least 200 planned primary attempts, plus separately marked
-    corrupt, empty-output and enforced-timeout controls. It records success with
-    content, success with empty content, parser failure, timeout, and any attempt
-    that could not start. Interrupted execution records incomplete work rather
-    than reporting completion. Controls do not inflate the primary population.
-11. Coverage and task success use the fixed reference-eligible population, retaining
-    parser failures/timeouts/empty outputs as unsuccessful task outcomes. Every
+8. A reference qualification record covers every source/PDF/reference combination
+   and binds its decision to their hashes and the qualification-protocol hash.
+   Changing any member invalidates the decision. PyMuPDF is an unscored mechanical
+   text-presence instrument; it cannot establish associations or visible layout.
+   Review all 182 retained rendered pages for clipping, overflow, continuation,
+   and task-relevant field/record associations. Close-read mechanical misses and
+   every observed template/complexity combination. Record exact pages and verdicts.
+   Producer strings and timestamps are provenance clues, not proof of source/PDF
+   identity. Truth means the facts visibly displayed, even if their arithmetic is
+   wrong. Qualification cannot use either compared parser's score or silently
+   correct document arithmetic. Any unresolved truth remains unavailable and
+   visible in reference coverage against all 100 documents; it blocks a strong
+   affected comparison. Rerendered documents have explicit new rendition identity.
+9. A frozen invoice-specific contract precedes scored execution. Required fields
+   are invoice number, vendor identity, due date, displayed grand total and printed
+   currency marker. Records preserve description, quantity, displayed unit,
+   displayed unit price and line total where those columns actually exist.
+   Economy invoices have no separate unit-price column; embedded price/unit text
+   stays in their description, and no price is imputed from arithmetic.
+   Header aliases are Description->description, Quantity/Qty->quantity,
+   Unit->unit, Unit Price/Rate->unit_price, and Amount->line_total. Missing-column
+   applicability is fixed from source schemas
+   before outputs, not chosen to improve grades. Match complete normalized records
+   as a multiset, preserving duplicate multiplicity and missing/extra counts.
+   No fuzzy assignment repairs wrong associations. Use Decimal strings, preserving
+   signs, currency markers and unit meaning; never score source metadata floats as
+   exact truth. Keep original surfaces beside canonical values. Numeric dates use
+   the documented synthetic source MM/DD/YYYY convention; unsupported/ambiguous
+   representations return ambiguity instead of consulting reference metadata.
+   Extraction takes only parser output and the fixed public schema, without
+   document-ID lookup, source/metadata/reference access or answer constants.
+   Persist prediction bytes before grading. An isolated subprocess test removes
+   all answer-bearing files and proves predictions depend on parser output rather
+   than gold labels, values or record counts. Development fixtures are the smoke
+   variants and at most ten declared retained IDs chosen by source structure;
+   freeze the extractor before scoring. Later changes require a new protocol and
+   comparable regrading. A parser-independent faithful-input control measures
+   extraction on supported representations, not a universal extractor ceiling.
+   Inspect parser disagreements and a stratified sample of shared failures, with
+   at least 40 reviewed failures if more than 40 exist. Classify reference gaps,
+   lost/misassociated parser content, unsupported extractor representations and
+   evaluation defects, permitting mixed/unknown causes. A parser dropping an
+   eligible record scores unsuccessful recovery, not reference unavailability.
+10. Before execution or capability filtering, atomically write and hash exactly
+    200 unique planned primary input/pipeline pairs plus separately marked corrupt,
+    empty-output and enforced-timeout controls. Retries have separate attempt IDs
+    and cannot satisfy the primary count. Record parse, prediction and grading
+    outcomes separately. Parse outcomes distinguish success_content, success_empty,
+    parser_failure, enforced_timeout, incompatible, initialization_failure and
+    not_started; whitespace-only output is empty. Timeout comes from its enforcing
+    mechanism and typed exception, never an error-message substring. A metric or
+    grader exception is an evaluation failure, not a parser failure or reference
+    gap. Reject unknown required metrics before any attempt. Planned pairs absent
+    from the terminal journal remain incomplete. Old empty status stays unknown
+    when raw output bytes are absent. Stop timed-out work before finalizing output.
+11. Primary document task success is correct required fields and all records
+    divided by the frozen reference-eligible document count, including parser
+    failures/timeouts/empty outputs as zero task outcomes. Field micro-accuracy
+    divides correct eligible fields by all eligible expected fields; record recall
+    and precision report matched/expected and matched/predicted multiplicities;
+    record F1 is twice the matched count divided by expected plus predicted counts,
+    with unavailable zero-denominator precision explicit. Document-macro scores
+    and record micro-scores are named separately. Required evaluation failures
+    invalidate an affected aggregate rather than dropping difficult documents.
+    Every
     quality metric also reports its exact eligible and scored document IDs and
     numerator/denominator. A paired comparison uses identical IDs; any common
     successful subset is a secondary diagnostic with its selection disclosed.
-    No aggregate ranks parsers on different scored subsets without that disclosure.
+    Unequal-subset means remain inspectable diagnostics, never the primary ranking.
+    An asymmetric failure/timeout on an eligible document and an all-failed parser
+    must leave the primary population and denominators unchanged.
 12. Parser/backend package versions, PDFsmith distribution and declared source
     versions, source revision/dirty-state information, implementation hashes,
     dependency snapshot, options, extractor, grader and normalizer identity are
@@ -121,12 +168,23 @@ that ParseBench lacks reproducibility or operational features.
     unresolved with actual implementation identity preserved. This project does
     not change PDFsmith's API or release metadata on its owner's behalf.
 13. New measurements distinguish fresh execution, cached replay and checkpoint
-    reuse. Cache identity includes all output-affecting backend/options/source
-    information, or the run explicitly bypasses both reads and writes. A changed
+    reuse. The scored run uses the actual PdfsmithAdapter with cache mode bypass,
+    proving both reads and writes are disabled. Normal reuse includes actual backend
+    package/source/dependency identity and canonical output-affecting options or is
+    disabled until safe. Do not invent options for no-argument local constructors.
+    Parsed-output identity is input/parser identity; prediction identity adds the
+    extractor/schema; grade identity adds qualified truth and grader/normalizer.
+    Corrected references allow explicit regrading, not reuse of old grades. A changed
     option, backend identity, input or reference cannot silently reuse an unrelated
     checkpoint or output. Historical durations with unknown cache provenance are
     marked unsuitable for current latency comparisons.
-14. Successful and failed call durations have declared boundaries; unavailable
+    Any reusable checkpoint validates full protocol/population identity, membership
+    and unique pairs before importing rows/counters; old formats remain readable,
+    but incomplete identity prevents verified resumption. Attempt output namespaces
+    include run, input and pipeline identity, and retain the exact returned bytes
+    that were graded rather than a guessed path or mutable cache link.
+14. Successful and failed started-call durations use a monotonic clock with declared
+    boundaries and error-path accounting; unavailable
     historical failure duration is null. Fresh timing includes declared cold/import
     effects. A single execution yields observations, not an advertised latency
     ranking. Any later latency comparison requires repeats, warmup policy, hardware
@@ -136,6 +194,13 @@ that ParseBench lacks reproducibility or operational features.
     operation retains useful diagnostics under an explicitly incomplete run and
     cannot register a partial bundle as complete. A deliberate I/O/serialization
     failure reproduces that contract through the actual producing pipeline.
+    Write only into a new run-owned incomplete directory; validate artifact hashes,
+    outcome consistency and exact pair membership; write the completion manifest
+    last, then finalize the directory and atomically replace the registry pointer.
+    Readers verify manifest hashes and required outputs, not only a status flag.
+    A fully accounted parser failure is compatible with completion; a missing
+    required output from a successful attempt is not. Preserve valid registry
+    bytes on errors and interruption. Power-loss durability is not claimed.
 16. Regression checks fail when the actual producing code emits each identified
     defect, then pass after repair. Checks cover selection, reference/output
     separation, cache/options identity, checkpoint compatibility, denominator
@@ -143,10 +208,15 @@ that ParseBench lacks reproducibility or operational features.
     atomic export preservation. Existing CLI and readable historical result formats
     continue to work. Focused tests and lint run before checkpoint closure.
 17. A second execution of the frozen run protocol produces the same input/reference
-    hashes and deterministic task aggregates, or records a precise nondeterminism
-    explanation. Offline regrading of retained parser outputs reproduces aggregates
-    without parsing or paid calls. A relocation exercise checks that the replay does
-    not depend on workstation-specific absolute paths or live PDFsmith checkout.
+    hashes, per-document normalized predictions/outcomes and task aggregates, or
+    records a precise nondeterminism explanation. Duration equality is not required.
+    Offline regrading runs with parser imports, original checkout/reference paths,
+    network and ambient caches unavailable, using only the retained output/prediction,
+    truth and frozen grading dependencies. Fresh relocated execution separately uses
+    retrievable immutable parser source/package artifacts and declared dependencies;
+    source hashes alone are not a dependency package. Bundle-relative paths and
+    best-effort Git metadata preserve replay outside a checkout. A different
+    implementation is reported as a mismatch, not identical reproduction.
 18. The generated report/export lets a visitor find a document-family/task result,
     inspect failures and example outputs, identify why an alternative parser changes
     the outcome, and reproduce or regrade it. Each numerical statement resolves to
@@ -272,9 +342,10 @@ that ParseBench lacks reproducibility or operational features.
   and instruction in building use-case-specific internal benchmarks. External
   reviewers may challenge whether the proposed demonstration serves that goal;
   full ParseBench replication is not the default reconstruction scope.
-- External reviews are not yet returned. Stefan submits the packet; this owner
-  retains/disposes reports and resolves correctness blockers. This blocks substantial
-  reconstruction implementation, not the review deliverables.
+- Returned reviews are retained with hashes and dispositions. Registry work and
+  non-scored execution repairs can proceed. Strong scored-run claims remain gated
+  on the frozen task protocol, complete rendition qualification, extraction isolation,
+  eligible-failure regressions, and completed bundle/attempt validation.
 - Reference qualification may find source/PDF disagreements. This owner resolves
   them by recorded source inspection and explicit new renditions, preserving the
   fixed population. An unresolved truth disagreement blocks strong affected
@@ -286,5 +357,4 @@ that ParseBench lacks reproducibility or operational features.
 
 ## Next actions
 
-Stefan submits the completed review packet to GPT and Claude and returns both
-reports before affected reconstruction implementation begins.
+No new user decision is required. Paid comparisons and public release remain deferred.
