@@ -1,0 +1,12 @@
+{
+ "item": "invoice-sources.ordering-spacing",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_reference_qualification.py::test_displayed_total_and_duplicate_source_rows_are_not_arithmetically_repaired",
+  "fixture (both runs): Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Khan-Rhodes
+document_id: invoice_055
+due_date: '2025-11-11'
+generated_at: '2025-11-18T16:46:20.251931'
+industry: legal
+invoice_date: '2025-11-11'
+invoice_number: INV-63409
+line_item_count: 10
+payment_terms: Due on Receipt
+region: UK
+subtotal: 137101.92
+tax_amount: 27420.38
+template_style: small_business
+total: 164522.3
+vendor:
+  country: United Kingdom
+  name: Thompson Legal Group
+corpus: business
+source_url: generated://invoice_055
+domain: invoices
+doc_id: invoice_055

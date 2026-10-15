@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-82338",
+    "vendor": "Direct Supply",
+    "due_date": "2025-10-18",
+    "grand_total": "296234.97",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Furniture - Office @ $2050.98/each",
+      "quantity": "77.93",
+      "line_total": "159832.87"
+    },
+    {
+      "description": "Cleaning Supplies @ $107.28/case",
+      "quantity": "78.31",
+      "line_total": "8401.1"
+    },
+    {
+      "description": "Office Supplies - Bulk @ $120.73/case",
+      "quantity": "3.04",
+      "line_total": "367.02"
+    },
+    {
+      "description": "Electronics - Various @ $1504.53/each",
+      "quantity": "29.8",
+      "line_total": "44834.99"
+    },
+    {
+      "description": "Break Room Supplies @ $61.72/case",
+      "quantity": "65.42",
+      "line_total": "4037.72"
+    },
+    {
+      "description": "Break Room Supplies @ $168.81/case",
+      "quantity": "51.76",
+      "line_total": "8737.61"
+    },
+    {
+      "description": "Break Room Supplies @ $166.87/case",
+      "quantity": "1.76",
+      "line_total": "293.69"
+    },
+    {
+      "description": "Electronics - Various @ $641.36/each",
+      "quantity": "56.06",
+      "line_total": "35954.64"
+    },
+    {
+      "description": "Shipping & Handling @ $147.72/order",
+      "quantity": "71.2",
+      "line_total": "10517.66"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-82338",
+    "vendor": "Direct Supply",
+    "due_date": "10/18/2025",
+    "grand_total": "$296,234.97",
+    "records": [
+      {
+        "description": "Furniture - Office @ $2050.98/each",
+        "quantity": "77.93",
+        "line_total": "$159,832.87"
+      },
+      {
+        "description": "Cleaning Supplies @ $107.28/case",
+        "quantity": "78.31",
+        "line_total": "$8,401.10"
+      },
+      {
+        "description": "Office Supplies - Bulk @ $120.73/case",
+        "quantity": "3.04",
+        "line_total": "$367.02"
+      },
+      {
+        "description": "Electronics - Various @ $1504.53/each",
+        "quantity": "29.80",
+        "line_total": "$44,834.99"
+      },
+      {
+        "description": "Break Room Supplies @ $61.72/case",
+        "quantity": "65.42",
+        "line_total": "$4,037.72"
+      },
+      {
+        "description": "Break Room Supplies @ $168.81/case",
+        "quantity": "51.76",
+        "line_total": "$8,737.61"
+      },
+      {
+        "description": "Break Room Supplies @ $166.87/case",
+        "quantity": "1.76",
+        "line_total": "$293.69"
+      },
+      {
+        "description": "Electronics - Various @ $641.36/each",
+        "quantity": "56.06",
+        "line_total": "$35,954.64"
+      },
+      {
+        "description": "Shipping & Handling @ $147.72/order",
+        "quantity": "71.20",
+        "line_total": "$10,517.66"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_012"
+}

@@ -4,3 +4,4 @@
 .workspace/work/*/parsebench-assessment.json linguist-generated=true
 .workspace/work/*/parsebench-inspection-artifacts.json linguist-generated=true
 .workspace/work/*/results/*.json linguist-generated=true
+.workspace/work/*/invoice-reference-evidence/** linguist-generated=true

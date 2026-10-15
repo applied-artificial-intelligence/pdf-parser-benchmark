@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Jones, Young and Mayer
+document_id: invoice_023
+due_date: '2025-11-28'
+generated_at: '2025-11-18T16:45:34.668115'
+industry: construction
+invoice_date: '2025-10-29'
+invoice_number: INV-67565
+line_item_count: 4
+payment_terms: Net 30
+region: US
+subtotal: 10337.16
+tax_amount: 723.6
+template_style: small_business
+total: 11060.76
+vendor:
+  country: USA
+  name: Elite Development
+corpus: business
+source_url: generated://invoice_023
+domain: invoices
+doc_id: invoice_023

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Rowland and Sons
+document_id: invoice_080
+due_date: '2025-08-21'
+generated_at: '2025-11-18T16:46:57.362395'
+industry: medical
+invoice_date: '2025-08-21'
+invoice_number: INV-27105
+line_item_count: 6
+payment_terms: Due on Receipt
+region: CA
+subtotal: 344801.99
+tax_amount: 44824.26
+template_style: economy
+total: 389626.25
+vendor:
+  country: Canada
+  name: Advanced P.C.
+corpus: business
+source_url: generated://invoice_080
+domain: invoices
+doc_id: invoice_080

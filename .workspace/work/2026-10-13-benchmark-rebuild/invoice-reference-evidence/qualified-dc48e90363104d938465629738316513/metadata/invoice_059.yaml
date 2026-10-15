@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Jenkins, Palmer and Kirk
+document_id: invoice_059
+due_date: '2025-10-28'
+generated_at: '2025-11-18T16:46:26.149352'
+industry: legal
+invoice_date: '2025-10-28'
+invoice_number: INV-57697
+line_item_count: 10
+payment_terms: Due on Receipt
+region: UK
+subtotal: 197756.18
+tax_amount: 39551.24
+template_style: economy
+total: 237307.42
+vendor:
+  country: United Kingdom
+  name: Anderson LLP
+corpus: business
+source_url: generated://invoice_059
+domain: invoices
+doc_id: invoice_059

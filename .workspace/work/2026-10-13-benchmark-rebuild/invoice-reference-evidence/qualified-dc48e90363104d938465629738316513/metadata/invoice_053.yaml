@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Rose, Reid and Ryan
+document_id: invoice_053
+due_date: '2025-10-15'
+generated_at: '2025-11-18T16:46:17.158306'
+industry: marketing
+invoice_date: '2025-09-15'
+invoice_number: INV-12039
+line_item_count: 7
+payment_terms: 50% Deposit, 50% on Completion
+region: UK
+subtotal: 156421.1
+tax_amount: 31284.22
+template_style: economy
+total: 187705.32
+vendor:
+  country: United Kingdom
+  name: Bright Studios
+corpus: business
+source_url: generated://invoice_053
+domain: invoices
+doc_id: invoice_053

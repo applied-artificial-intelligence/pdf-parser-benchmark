@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Rivera, Santos and Young
+document_id: invoice_066
+due_date: '2025-11-23'
+generated_at: '2025-11-18T16:46:36.467066'
+industry: construction
+invoice_date: '2025-10-24'
+invoice_number: INV-59562
+line_item_count: 4
+payment_terms: Net 30
+region: CA
+subtotal: 22640.21
+tax_amount: 1132.01
+template_style: enterprise
+total: 23772.22
+vendor:
+  country: Canada
+  name: Apex Construction
+corpus: business
+source_url: generated://invoice_066
+domain: invoices
+doc_id: invoice_066

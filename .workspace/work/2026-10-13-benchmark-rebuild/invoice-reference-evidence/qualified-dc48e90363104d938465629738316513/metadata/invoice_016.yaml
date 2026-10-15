@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Glenn, Stanley and Edwards
+document_id: invoice_016
+due_date: '2025-09-23'
+generated_at: '2025-11-18T16:45:24.873929'
+industry: it_consulting
+invoice_date: '2025-08-24'
+invoice_number: INV-82517
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 4629839.94
+tax_amount: 379646.88
+template_style: enterprise
+total: 5009486.82
+vendor:
+  country: USA
+  name: Quantum Consulting
+corpus: business
+source_url: generated://invoice_016
+domain: invoices
+doc_id: invoice_016

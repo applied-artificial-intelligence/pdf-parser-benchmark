@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: Spain
+  name: Paffrath Wagner AG & Co. KG
+document_id: invoice_036
+due_date: '2025-12-06'
+generated_at: '2025-11-18T16:45:52.320016'
+industry: manufacturing
+invoice_date: '2025-11-06'
+invoice_number: INV-39480
+line_item_count: 9
+payment_terms: Net 30
+region: EU
+subtotal: 200923.31
+tax_amount: 40184.66
+template_style: economy
+total: 241107.97
+vendor:
+  country: Netherlands
+  name: United Manufacturing
+corpus: business
+source_url: generated://invoice_036
+domain: invoices
+doc_id: invoice_036

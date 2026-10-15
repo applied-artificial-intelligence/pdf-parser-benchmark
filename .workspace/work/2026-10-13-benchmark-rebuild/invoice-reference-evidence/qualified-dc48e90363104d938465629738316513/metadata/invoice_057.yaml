@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: United Kingdom
+  name: Green LLC
+document_id: invoice_057
+due_date: '2025-10-04'
+generated_at: '2025-11-18T16:46:23.192961'
+industry: marketing
+invoice_date: '2025-09-04'
+invoice_number: INV-16178
+line_item_count: 8
+payment_terms: 50% Deposit, 50% on Completion
+region: UK
+subtotal: 597574.86
+tax_amount: 119514.97
+template_style: enterprise
+total: 717089.83
+vendor:
+  country: United Kingdom
+  name: Vision Media
+corpus: business
+source_url: generated://invoice_057
+domain: invoices
+doc_id: invoice_057

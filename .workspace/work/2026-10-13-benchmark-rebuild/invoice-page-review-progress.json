@@ -626,6 +626,568 @@
           "image_sha256": "cbf354323875541d0820f21f24e8ab00f57a99977232684d7925b156151b7d70"
         }
       ]
+    },
+    {
+      "sheet": "sheet-25.png",
+      "sha256": "49241fbd4c359162cbd44105a2cb1ef0c02ce36d5352ef1bc24c37a3ad942fc2",
+      "pages": [
+        {
+          "document_id": "invoice_054",
+          "page": 1,
+          "image_sha256": "6ea8e78f873e47e8a9640deef6074584335262fa592596479b3013a31981b6ce"
+        },
+        {
+          "document_id": "invoice_054",
+          "page": 2,
+          "image_sha256": "d3e2752e82f2312d7f691366b94e7758e8e5dc8e09180d9e8e6dd8649d75cd9e"
+        },
+        {
+          "document_id": "invoice_055",
+          "page": 1,
+          "image_sha256": "0d04cd6fd0262f3a9a8a0e5f61b03cee0fc3f9600e0b7894a4654bd0e2a780d6"
+        },
+        {
+          "document_id": "invoice_055",
+          "page": 2,
+          "image_sha256": "ca3ea76ad796a7994f7f13136b7034b80c5faeefaabf70c656d42056483e4e16"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-26.png",
+      "sha256": "9768e99c6c456b28290cf9a58389c8d3dfeeb626fb0324a7164d146c237e53fe",
+      "pages": [
+        {
+          "document_id": "invoice_056",
+          "page": 1,
+          "image_sha256": "170a2ac86916899878f5ff9b7bcc201497948c1011b58d101a78df27ee67a5a6"
+        },
+        {
+          "document_id": "invoice_057",
+          "page": 1,
+          "image_sha256": "6e8795e588f1ff31369c6776f2926f850bd36c40de7a1970c3586fe47d4cf3b1"
+        },
+        {
+          "document_id": "invoice_057",
+          "page": 2,
+          "image_sha256": "d6a2cd4a17f6b037f742b67a0b66cecc12cb54ae4ca472b7b0579eefad023c7b"
+        },
+        {
+          "document_id": "invoice_058",
+          "page": 1,
+          "image_sha256": "8d885139321391e9cc5e2713549c1765a8ea911dedd25ff3ae2d2e29e79cc8e4"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-27.png",
+      "sha256": "4361696158cb159fa55a01a60d6877b185586f4e01097e92049c6b443cad8d8d",
+      "pages": [
+        {
+          "document_id": "invoice_058",
+          "page": 2,
+          "image_sha256": "da2e0b2b7609e24a8ad82b6accbad4fa37ea9e301b367974887d7713e4c7adf0"
+        },
+        {
+          "document_id": "invoice_059",
+          "page": 1,
+          "image_sha256": "f6434526c7bf2706222df2f21a9876ccc97281cd232c9310f9cb1237d9e0723a"
+        },
+        {
+          "document_id": "invoice_059",
+          "page": 2,
+          "image_sha256": "d69fe391567b20fbaf350c390a479a1397958fb3de26a979b3219f529dd91f9e"
+        },
+        {
+          "document_id": "invoice_060",
+          "page": 1,
+          "image_sha256": "61d44ad75bee37bf465da0d6b5f9bb0b95ba462cb9ea70d88e63a60c71903995"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-28.png",
+      "sha256": "2160ca188369d962d3b28c2c761bebcb866ffb2049f795669064c113c917b983",
+      "pages": [
+        {
+          "document_id": "invoice_060",
+          "page": 2,
+          "image_sha256": "617da90423a40a2dd9205689b0a80c2b43991d8f57fbd971e14fbd348e5cef15"
+        },
+        {
+          "document_id": "invoice_061",
+          "page": 1,
+          "image_sha256": "c92056e91ab72c68bf8d9a92f6435e28c031080f342e446f70f34b131efc3988"
+        },
+        {
+          "document_id": "invoice_061",
+          "page": 2,
+          "image_sha256": "0f1e12b891af422247d20a35ffd0512489a20b58bfda0dff892ed7dd6b2c2be8"
+        },
+        {
+          "document_id": "invoice_062",
+          "page": 1,
+          "image_sha256": "484db9a5218bad4938518f6e53b0f54c36feb1f4486749c8d104c318a138d877"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-29.png",
+      "sha256": "b93c9c39cfedf220fa9c1322ea1fa22fb16c2482f3d8ecfaf1789a91eb6b7418",
+      "pages": [
+        {
+          "document_id": "invoice_063",
+          "page": 1,
+          "image_sha256": "4ca55df6a5842f2bf1a0ed5efa10d86439d700759ae6c1e7f471c2a72a5ba5d4"
+        },
+        {
+          "document_id": "invoice_063",
+          "page": 2,
+          "image_sha256": "bb19b7443b4c193b2234d56a6b76ce07c7c29d71fe4d973251a4355fe10ff03c"
+        },
+        {
+          "document_id": "invoice_064",
+          "page": 1,
+          "image_sha256": "7216a115b476e63c54ce9ef83958b434f18703801ea67664c39a689e749c5db0"
+        },
+        {
+          "document_id": "invoice_064",
+          "page": 2,
+          "image_sha256": "b1406ad53f8ea4c64daece0b126e3fe854c5ed505319dd35d17eac68f80d60c9"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-30.png",
+      "sha256": "feb616ec9cf6640e887309bf6aaaf2bc8818c9e5dbdcec5ec06f6a7553e4dfb7",
+      "pages": [
+        {
+          "document_id": "invoice_065",
+          "page": 1,
+          "image_sha256": "5c219289cbd97f7300e2c00a80706011339f8b73922898af2d56ad0603c11f5f"
+        },
+        {
+          "document_id": "invoice_065",
+          "page": 2,
+          "image_sha256": "14108843ccf38d0612f0077afe98d34fbec091ae7d6509c21c0e95427e65c8f7"
+        },
+        {
+          "document_id": "invoice_066",
+          "page": 1,
+          "image_sha256": "33ffa4e2f81bd72adc9aed4e2bb971948eb3b4be6ebc93f03a43a7337736d110"
+        },
+        {
+          "document_id": "invoice_066",
+          "page": 2,
+          "image_sha256": "d53efddf1d59414122627bc9785162a6455d597aec0e046e6a86e90d0fb35958"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-31.png",
+      "sha256": "e158f907a94263c6211638f7a5bc313b73d966b2658987ac774a759203ffc944",
+      "pages": [
+        {
+          "document_id": "invoice_067",
+          "page": 1,
+          "image_sha256": "0e236b71238c86b80f11d759accc7fdbc1e0b4e85d240a06d249bf52cc0819c6"
+        },
+        {
+          "document_id": "invoice_067",
+          "page": 2,
+          "image_sha256": "944a562100635b4c7973969f286f391cffd11d8a1fa3d144c4a2e7320dc154be"
+        },
+        {
+          "document_id": "invoice_068",
+          "page": 1,
+          "image_sha256": "c690d6c290b5c77679e46d17268721fad2d4c53721f93ec95146a7f82a13b106"
+        },
+        {
+          "document_id": "invoice_069",
+          "page": 1,
+          "image_sha256": "db1cb0e82b8b2d9ef984d22032ef9d164bbb97915bde323cf95d77a620e870c0"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-32.png",
+      "sha256": "74fc89ed09de868b6ca1c7a32e9780aace249a289e7ead7c0076e72ce2dc7e33",
+      "pages": [
+        {
+          "document_id": "invoice_069",
+          "page": 2,
+          "image_sha256": "9639655709b207914abed1a72fdeddb0de983f0e6daf3df3ca4dcdde5b27bb09"
+        },
+        {
+          "document_id": "invoice_070",
+          "page": 1,
+          "image_sha256": "bf4241a549098914d269b781219fb4ea468958b35fb2f11c6bb89a0729ea189f"
+        },
+        {
+          "document_id": "invoice_070",
+          "page": 2,
+          "image_sha256": "947b1f588c2d79739c20857e8328203ce80fdbd9b59d4b7b9c9861ecbe9d2683"
+        },
+        {
+          "document_id": "invoice_071",
+          "page": 1,
+          "image_sha256": "768aa9e55d919f3811730807251b6bf3901e8f2bdf4594dda5977f973cdff5f4"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-33.png",
+      "sha256": "aa271c72743e5fb1719b94c0bfbd270f82eaacc66530682a1ddc55795ecaeec7",
+      "pages": [
+        {
+          "document_id": "invoice_071",
+          "page": 2,
+          "image_sha256": "987276b46505589b4560d8153c14e200b30f70e3d1d886c4e46449c34a4397d6"
+        },
+        {
+          "document_id": "invoice_072",
+          "page": 1,
+          "image_sha256": "1661508072aacce58a72c77091e9e7c8ce2b77ff1963304c27229cf786ab07ad"
+        },
+        {
+          "document_id": "invoice_072",
+          "page": 2,
+          "image_sha256": "08b49a11647614e4f9a3cad391c4209af35c0c5a7c0b4c57265bf47f52232d05"
+        },
+        {
+          "document_id": "invoice_073",
+          "page": 1,
+          "image_sha256": "9e39fdcf60d6e98f1cbccb22f6c6636cc07ebbbf0e0cd003dd63c9309ecc77cf"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-34.png",
+      "sha256": "a3819d330195dce469b0c78c7ce0c704ab04a4b78778b605c40657097a9b1cd1",
+      "pages": [
+        {
+          "document_id": "invoice_073",
+          "page": 2,
+          "image_sha256": "f0b020af70e8c759d2528ae9297da55c0f6a5887396c9c4418f3dea4256f662c"
+        },
+        {
+          "document_id": "invoice_074",
+          "page": 1,
+          "image_sha256": "8ec8df47258661f3aeea6686970e32abea02c5d4c87bfc0c42f43b55f5dfa23a"
+        },
+        {
+          "document_id": "invoice_074",
+          "page": 2,
+          "image_sha256": "79553167ebe98fb59bef0c4cabe1a3fd84ecbbaa54eecdf42a36b0a9e7b13350"
+        },
+        {
+          "document_id": "invoice_075",
+          "page": 1,
+          "image_sha256": "634e6ed97520ad2540491579e675c8e6a34d97885e887dc8ed04ec84556bdade"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-35.png",
+      "sha256": "fe939e38e16cee0aa7fb63ce89c6680098129aa225bad57a496e1fdbfc6c25f2",
+      "pages": [
+        {
+          "document_id": "invoice_075",
+          "page": 2,
+          "image_sha256": "6eeb88db32f54bf86b71e7b6f063ede2101f40d975ad0527d8a4d0f7e9699ec3"
+        },
+        {
+          "document_id": "invoice_076",
+          "page": 1,
+          "image_sha256": "79c9c66c8b50643b24446ed64e83762b35b3a4b12fcc10bc25956b5fbd3de802"
+        },
+        {
+          "document_id": "invoice_076",
+          "page": 2,
+          "image_sha256": "193f2e2c1c810ff61c47bdb0bf105900cc337d09c806ef568ee15ad258d83e32"
+        },
+        {
+          "document_id": "invoice_077",
+          "page": 1,
+          "image_sha256": "97541f3e47cf2bc80d06b95f5e2e01749641c261c286d947cbdb73fbdf4ee523"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-36.png",
+      "sha256": "68289b2973f356683edc409e1e74b736bb7ca4715b76c27c30e2af18c7898230",
+      "pages": [
+        {
+          "document_id": "invoice_078",
+          "page": 1,
+          "image_sha256": "db6b0e3de702c908fdba11bc19ffcf624ad7419465a276ef80587556f0e36f6a"
+        },
+        {
+          "document_id": "invoice_078",
+          "page": 2,
+          "image_sha256": "b701aa18b599e4b2cdebee98dc44f66625e53919e4c96fd5b496e7dab61787ff"
+        },
+        {
+          "document_id": "invoice_079",
+          "page": 1,
+          "image_sha256": "bff5dcf58b00650b9153a9f95ce7392ce06e525d933d48259639dd55c6a4e6c5"
+        },
+        {
+          "document_id": "invoice_079",
+          "page": 2,
+          "image_sha256": "7c4a933e21c0cbf134a096bf95e3385c0c9f4796eb2d4bad9b803ce0e74388d2"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-37.png",
+      "sha256": "5c75db03a594daf6599e49986a9b5fb08d5ff11d009b71d6c7be36d84212914a",
+      "pages": [
+        {
+          "document_id": "invoice_080",
+          "page": 1,
+          "image_sha256": "2ebc2cb6899efd76f1b210e2cbc17680cd88aa41bd320a0874c72b935e01b46b"
+        },
+        {
+          "document_id": "invoice_081",
+          "page": 1,
+          "image_sha256": "6382ee7be4f3620fb8965bdb4105c8d1ebcf9e242565bb92bdae266b615e9815"
+        },
+        {
+          "document_id": "invoice_081",
+          "page": 2,
+          "image_sha256": "4946adbded46bd5568caebbc0d8875afcb697355562a5f37a314e1ba21090851"
+        },
+        {
+          "document_id": "invoice_082",
+          "page": 1,
+          "image_sha256": "8370a323d75455df726ebfdcbffb6bcf66bec8f7d76d5e34a267000cbe4148f2"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-38.png",
+      "sha256": "1e19870ae43c8f4a8a9ca55e37be1565c20cad80cfd49582188989c324a883ea",
+      "pages": [
+        {
+          "document_id": "invoice_082",
+          "page": 2,
+          "image_sha256": "3e84f9ddd94c164f4458044e07334eb887b310f6492a149995b6430125b21439"
+        },
+        {
+          "document_id": "invoice_083",
+          "page": 1,
+          "image_sha256": "d39b9f52f0944401445f42fe5c116aee01b1766ccf98272d020ec0d9456dff84"
+        },
+        {
+          "document_id": "invoice_083",
+          "page": 2,
+          "image_sha256": "38177a92d9a7a346f3b155591c7eb6e53934006c3b219894029269bbc1d1cc57"
+        },
+        {
+          "document_id": "invoice_084",
+          "page": 1,
+          "image_sha256": "e6f69e714ec954452ab82a17ee2a34b72499393e2b0c0ff3fccdeaa22778f7c0"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-39.png",
+      "sha256": "3517dd1dd1e8a6c30dac15fb3e99401f4fb40320461e75c2523a741f38c7f936",
+      "pages": [
+        {
+          "document_id": "invoice_084",
+          "page": 2,
+          "image_sha256": "80f6dcddc4b46685ae87e694eadf9add005bf8c05b338b4553b6bf3ff49381db"
+        },
+        {
+          "document_id": "invoice_085",
+          "page": 1,
+          "image_sha256": "5ee90f46b88a22d4e8a8ec6476e64e414f0bcbdc2578e0bf741c25c95f4bf3b3"
+        },
+        {
+          "document_id": "invoice_085",
+          "page": 2,
+          "image_sha256": "2068515c83650175f9c76373a80585cf99418b54c97759f9ceccd1606869f8bd"
+        },
+        {
+          "document_id": "invoice_086",
+          "page": 1,
+          "image_sha256": "9e2836d3ce9b2465dc4456c233b609706a6508fb1dd45967fc799f17d1566e26"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-40.png",
+      "sha256": "b9e5eef7ace86eefe30a5260122c07b2ed5ce4c84c0063016296c744471d6fe7",
+      "pages": [
+        {
+          "document_id": "invoice_086",
+          "page": 2,
+          "image_sha256": "edc96b59853d6ec94819ed00d0b6400aef94f776afbcb784d3566d7dcc9e5c65"
+        },
+        {
+          "document_id": "invoice_087",
+          "page": 1,
+          "image_sha256": "64ef2c93df817b8addc82a368dab0a5f1b46e6c90152be92a1d6cab3506e66fe"
+        },
+        {
+          "document_id": "invoice_087",
+          "page": 2,
+          "image_sha256": "ab756a590cf42f8e3fb5012f3c31ff346082a250d75a7c3f4fa2dbf49df46a9d"
+        },
+        {
+          "document_id": "invoice_088",
+          "page": 1,
+          "image_sha256": "6a198ccb43e278bf1c36a2805c58a4f602659d7ad95aff55830bad996cac9a30"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-41.png",
+      "sha256": "5951abcb320017df9ca4e8c6272b1d7b5f57e86312d3dc83098335d4f39970b7",
+      "pages": [
+        {
+          "document_id": "invoice_088",
+          "page": 2,
+          "image_sha256": "6026d1f69be9291681037e52df94a2bccc51f46e1fdf7846040ddd9717aa4f88"
+        },
+        {
+          "document_id": "invoice_089",
+          "page": 1,
+          "image_sha256": "5577ee82e2f95efa5b810a3314dd76818cf6ce362c6f3631444e6073a5388eef"
+        },
+        {
+          "document_id": "invoice_089",
+          "page": 2,
+          "image_sha256": "14f7b7e1d3faec40def90dc55891e33e0774bed3fa55cf5d9a1f14c6faa428b3"
+        },
+        {
+          "document_id": "invoice_090",
+          "page": 1,
+          "image_sha256": "2f4a02cb8f88436d6824feccfdca0b35220c47b5ec9420bc8bc3d4684627245c"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-42.png",
+      "sha256": "e69341b03bcba994d273b3c18e86b724bbd9c616a021a527afb151419a914208",
+      "pages": [
+        {
+          "document_id": "invoice_090",
+          "page": 2,
+          "image_sha256": "2121157002430f5c19dc0685e2ace07cb4582bf876530f5582ed1d40f91e6873"
+        },
+        {
+          "document_id": "invoice_091",
+          "page": 1,
+          "image_sha256": "c2affdd5434b09bcd5d9349e64457308f75f250f17a884dd67857a30e833b293"
+        },
+        {
+          "document_id": "invoice_092",
+          "page": 1,
+          "image_sha256": "243dd13b69becf925132d26746c8c7c1ad62f1bdfa3638c4c20bf065182ee344"
+        },
+        {
+          "document_id": "invoice_092",
+          "page": 2,
+          "image_sha256": "a11ed1b2498e668be993c4729e14d9830135e17e41296aff1ffc01ec98dac71c"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-43.png",
+      "sha256": "c8464ef235d2e5ea70ac47ee8d9e3809fe8810524c6eb9876f10029a95d98592",
+      "pages": [
+        {
+          "document_id": "invoice_093",
+          "page": 1,
+          "image_sha256": "5795d60e0fb5ebe4dfd77c6dc4282ad3017c89a128b8eb51b5c692c020b425ad"
+        },
+        {
+          "document_id": "invoice_093",
+          "page": 2,
+          "image_sha256": "2228447bd216e9e7ae14b76f81d7fd2dad7f16a974254e034c562679fd881d48"
+        },
+        {
+          "document_id": "invoice_094",
+          "page": 1,
+          "image_sha256": "c4243fc54d6e5b3f1eadde0f68a297dc05944e15a4c684714f8a60abf3bd8cd0"
+        },
+        {
+          "document_id": "invoice_095",
+          "page": 1,
+          "image_sha256": "b8bcc833ba88d0e8d47f10d63daafc5e211411a7c23811fb0cb6f73d2ea7378e"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-44.png",
+      "sha256": "9ea1be02cdc42ba103afb830b0fc0c833eec27e477ab02417bb7dd5e58abe585",
+      "pages": [
+        {
+          "document_id": "invoice_095",
+          "page": 2,
+          "image_sha256": "3c4ab43ead12e5f9053d9a923a2d29e1a8cfbd31e6231f8a8ec4317b7978b499"
+        },
+        {
+          "document_id": "invoice_096",
+          "page": 1,
+          "image_sha256": "e01a43cd85dc1deec8e22f51bfdec54365e096f32076a420b906f47ef3d9ba57"
+        },
+        {
+          "document_id": "invoice_096",
+          "page": 2,
+          "image_sha256": "d40ee5c8e5af8b69e79a6864c004c9bd63f512ef5fa657c4410a09dd4a83d16d"
+        },
+        {
+          "document_id": "invoice_097",
+          "page": 1,
+          "image_sha256": "61894539bf93fc668a5d0e27a8aed35e580c5b7cc1dba28501f9c35fc6e22867"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-45.png",
+      "sha256": "a57e7542457787c326470d8e839586b0bca60899b43995b7d92ac43c067a516c",
+      "pages": [
+        {
+          "document_id": "invoice_097",
+          "page": 2,
+          "image_sha256": "a0c6d475aae9b908925ad2112438d5f1188ad1131d07f886e4184f5531071e33"
+        },
+        {
+          "document_id": "invoice_098",
+          "page": 1,
+          "image_sha256": "9b2c8cce40bb0ac16291da741c05b30607412b3cecd4b9e17cba407c971a371b"
+        },
+        {
+          "document_id": "invoice_098",
+          "page": 2,
+          "image_sha256": "f3e06175872f789e7e84113e0bf236e8d4bf5f505ba7b7279aed2b92afe13442"
+        },
+        {
+          "document_id": "invoice_099",
+          "page": 1,
+          "image_sha256": "fde971de92096815607f092331138bd962dc640a411d0833bdfe7e3e82a3bbe5"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-46.png",
+      "sha256": "4a5dd3f1a4b754aaa03be9cf20fe5d9c4a88b6b53be6946c0b1b43ef60196468",
+      "pages": [
+        {
+          "document_id": "invoice_099",
+          "page": 2,
+          "image_sha256": "cc5ade28065dc203a0039a812bc1a0820801907a35fab8bc115c0ebcf3425773"
+        },
+        {
+          "document_id": "invoice_100",
+          "page": 1,
+          "image_sha256": "fe2a662fcba59f5bf103d0eb47af334d502411a970cce7e7db452c17e05c2236"
+        }
+      ]
     }
   ],
   "observations": {
@@ -681,9 +1243,56 @@
     "invoice_050": "Ten small-business rows continue 4+6; total 41,544.07 second page. Headerless continuation and all source fields inspected.",
     "invoice_051": "Five enterprise rows and total 150,893.70 first page, terms/tax ID/notes second; source fields and columns visible.",
     "invoice_052": "Five small-business rows continue 4+1, total 1,346,643.64 on second page. Fields and units visible.",
-    "invoice_053": "Seven economy rows and total 187,705.32 first page, note only second; source fields and embedded units visible."
+    "invoice_053": "Seven economy rows and total 187,705.32 first page, note only second; source fields and embedded units visible.",
+    "invoice_054": "Eight enterprise rows first page, total 168,757.30 second; source fields and associations visible.",
+    "invoice_055": "Ten small-business rows continue 4+6, total 164,522.30 second; all source fields visible.",
+    "invoice_056": "Single-page economy six-row invoice, total 1,119,045.12. Source fields and embedded units visible.",
+    "invoice_057": "Eight enterprise rows first page, total 717,089.83 second; source fields visible.",
+    "invoice_058": "Nine small-business rows continue 4+5, total 37,214.68 second; source fields/units visible.",
+    "invoice_059": "Ten economy rows continue 9+1, total 237,307.42 second; all fields and embedded prices visible.",
+    "invoice_060": "Seven enterprise rows first page, total 654,711.49 second. Both pages inspected; source fields visible.",
+    "invoice_061": "Eight small-business records across two pages. Record 5 Social Media Management (month) continues in description cell across the page break, with numeric cells on page 1. Total 3,171,264.94 second; all letters/associations visible.",
+    "invoice_062": "Single-page seven-row economy invoice, total 30,522.23; source fields and embedded units visible.",
+    "invoice_063": "Six enterprise rows first page, total 69,349.70 second; all source fields and columns visible.",
+    "invoice_064": "Nine small-business records across two pages. Fifth Bookkeeping Services (month) row splits inside the description across pages, numeric cells on page 1. Full text visible; total 432,617.44 second.",
+    "invoice_065": "Nine economy rows first page, total 3,865,494.25 second; source fields/embedded units visible.",
+    "invoice_066": "Four enterprise rows and total 23,772.22 first page, tax ID/notes second. Fields/units visible.",
+    "invoice_067": "Seven small-business records on two pages. Fifth Systems Analyst (hour) description splits before (hour), numeric cells remain first page. All text and total 2,638,443.31 visible.",
+    "invoice_068": "Single-page four-row economy invoice, total 379,963.52; fields/units visible. Note says This is not a bill, reflecting synthetic content limitation.",
+    "invoice_069": "Ten enterprise rows first page, total 211,594.35 second; source fields/associations visible.",
+    "invoice_070": "Six small-business rows continue 5+1, total 35,056.40 second; all fields/units visible.",
+    "invoice_071": "Ten economy rows first page, total 8,258,708.53 second; source fields and embedded units visible.",
+    "invoice_072": "Eight enterprise rows first page, total 128,000.24 second; fields/units visible.",
+    "invoice_073": "Seven small-business records across two pages. Fifth Fertilization Treatment description ends with (application) at top of page 2, numeric cells first page. Full text visible and total 101,478.12 second.",
+    "invoice_074": "Eight economy rows and total 91,543.74 first page, note second; all fields/units visible.",
+    "invoice_075": "Six enterprise rows and total 9,985,915.56 first page, terms/tax ID/notes second. Source fields/associations visible.",
+    "invoice_076": "Seven small-business records across pages. Fifth Physical Therapy description continues with (session) on page 2, numeric cells first page. All text visible; total 342,521.16 second.",
+    "invoice_077": "Single-page five-row economy invoice, total 84,157.29; source fields/units visible.",
+    "invoice_078": "Seven enterprise rows and total 54,370.74 first page, terms/tax ID/notes second; source fields visible.",
+    "invoice_079": "Four small-business rows first page, total 2,701,379.11 second. Source fields/units visible.",
+    "invoice_080": "Single-page economy six-row invoice, total 389,626.25; source fields/units visible.",
+    "invoice_081": "Six enterprise rows and total 33,649.26 first page, terms/tax ID/notes second; all fields/units visible.",
+    "invoice_082": "Seven small-business rows continue 4+3; total 317,562.92 second page, source fields/associations visible.",
+    "invoice_083": "Ten economy rows first page, total 99,452.01 second; source fields/embedded units visible.",
+    "invoice_084": "Seven enterprise rows first page, total 141,771.83 second; fields/associations visible.",
+    "invoice_085": "Seven small-business records across two pages. Fifth Fertilization Treatment (application) row splits after Fertilization, numeric cells first page; remaining text visible on second. Total 111,548.02 second.",
+    "invoice_086": "Nine enterprise rows first page, total 717,742.45 second. Rows 1 and 4 Implementation Services split as Implementatio / n Services within each cell, all letters visible.",
+    "invoice_087": "Ten small-business rows continue 4+6, total 713,051.04 second; source fields and associations visible.",
+    "invoice_088": "Ten economy rows first page, total 32,941.18 second; source fields/units visible.",
+    "invoice_089": "Four enterprise rows and total 13,998.32 first page, tax ID/notes second; all source fields visible.",
+    "invoice_090": "Six small-business rows continue 4+2, total 10,771,262.22 second; fields/units visible.",
+    "invoice_091": "Single-page economy six-row invoice, total 530,364.54; source fields and units visible.",
+    "invoice_092": "Eight enterprise rows first page, total 19,904.27 second; fields/associations visible.",
+    "invoice_093": "Six small-business records across two pages. Final Breakfast Buffet (per person) description continues with (per person) at top of second page; numeric cells first. Full text and total 51,183.23 visible.",
+    "invoice_094": "Single-page economy six-row invoice, total 6,451,000.29; source fields/units visible.",
+    "invoice_095": "Six enterprise rows and total 143,687.21 first page, tax ID/notes second; fields/associations visible.",
+    "invoice_096": "Eight small-business rows continue 4+4; total 18,436.08 second, all fields/units visible.",
+    "invoice_097": "Nine economy rows first page, total 172,202.15 second; fields/embedded units visible.",
+    "invoice_098": "Ten enterprise records across two pages. Rows 2 and 8 Implementation Services show Implementatio / n Services within cells. Final Enterprise Plan - Annual row splits after Enterprise Plan, with - Annual at top of second page. Full descriptions, numeric associations and total 4,030,479.51 visible.",
+    "invoice_099": "Four small-business rows first page, total 17,373.70 second; fields/units visible.",
+    "invoice_100": "Single-page economy six-row invoice, total 19,469.79; fields/embedded units visible."
   },
-  "status": "Partial visual review only; all 100 references remain unqualified.",
+  "status": "All 46 sheets and 182 physical pages visually inspected by the coding agent; no human review is claimed. No unresolved source-to-rendition mismatch found. Qualification decisions and validation still pending.",
   "prior_render_record": "data_exports/invoice-reference-inspection-01/render-artifacts.json",
   "identity_check": "Source, PDF, reference and every page image match the earlier inspected render. Qualification protocol became stricter before any eligibility decision; existing page observations concern unchanged pixels/facts only."
 }

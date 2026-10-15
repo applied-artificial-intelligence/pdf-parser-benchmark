@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Pineda-Carrillo
+document_id: invoice_085
+due_date: '2025-10-11'
+generated_at: '2025-11-18T16:47:04.774611'
+industry: landscaping
+invoice_date: '2025-09-26'
+invoice_number: INV-36279
+line_item_count: 7
+payment_terms: Net 15
+region: CA
+subtotal: 99596.45
+tax_amount: 11951.57
+template_style: small_business
+total: 111548.02
+vendor:
+  country: Canada
+  name: Elite Inc
+corpus: business
+source_url: generated://invoice_085
+domain: invoices
+doc_id: invoice_085

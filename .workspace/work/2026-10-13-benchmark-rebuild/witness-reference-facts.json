@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/invoice_references.py",
+  "fixture": "Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "test": "tests/test_invoice_reference_qualification.py::test_source_fields_and_fractional_records_match_inspected_templates",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_references.py",
+      "old": "\"grand_total\": decimal_string(total),",
+      "new": "\"grand_total\": \"0\","
+    }
+  }
+}

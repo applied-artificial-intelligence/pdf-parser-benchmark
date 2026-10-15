@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Marshall and Sons
+document_id: invoice_073
+due_date: '2025-09-18'
+generated_at: '2025-11-18T16:46:46.591940'
+industry: landscaping
+invoice_date: '2025-09-03'
+invoice_number: INV-86860
+line_item_count: 7
+payment_terms: Net 15
+region: CA
+subtotal: 90605.46
+tax_amount: 10872.66
+template_style: small_business
+total: 101478.12
+vendor:
+  country: Canada
+  name: Green Lawn Care
+corpus: business
+source_url: generated://invoice_073
+domain: invoices
+doc_id: invoice_073

@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: United Kingdom
+  name: Reed-Parker
+document_id: invoice_058
+due_date: '2025-12-03'
+generated_at: '2025-11-18T16:46:24.757935'
+industry: property_mgmt
+invoice_date: '2025-11-18'
+invoice_number: INV-10338
+line_item_count: 9
+payment_terms: Net 15
+region: UK
+subtotal: 31012.23
+tax_amount: 6202.45
+template_style: small_business
+total: 37214.68
+vendor:
+  country: United Kingdom
+  name: Elite Real Estate
+corpus: business
+source_url: generated://invoice_058
+domain: invoices
+doc_id: invoice_058

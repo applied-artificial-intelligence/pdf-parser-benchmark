@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: New Zealand
+  name: Thomas, Diaz and Pope
+document_id: invoice_089
+due_date: '2025-12-14'
+generated_at: '2025-11-18T16:47:10.595647'
+industry: catering
+invoice_date: '2025-11-14'
+invoice_number: INV-28471
+line_item_count: 4
+payment_terms: 50% Deposit, Balance Due Day of Event
+region: APAC
+subtotal: 12172.45
+tax_amount: 1825.87
+template_style: enterprise
+total: 13998.32
+vendor:
+  country: Singapore
+  name: Tasteful Culinary
+corpus: business
+source_url: generated://invoice_089
+domain: invoices
+doc_id: invoice_089

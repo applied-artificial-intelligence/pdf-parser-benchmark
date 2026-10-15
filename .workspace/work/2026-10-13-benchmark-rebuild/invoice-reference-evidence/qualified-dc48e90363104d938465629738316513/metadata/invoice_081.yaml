@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Paul-Boone
+document_id: invoice_081
+due_date: '2025-11-10'
+generated_at: '2025-11-18T16:46:58.740069'
+industry: landscaping
+invoice_date: '2025-10-26'
+invoice_number: INV-81454
+line_item_count: 6
+payment_terms: Net 15
+region: CA
+subtotal: 30043.98
+tax_amount: 3605.28
+template_style: enterprise
+total: 33649.26
+vendor:
+  country: Canada
+  name: Quality Grounds Maintenance
+corpus: business
+source_url: generated://invoice_081
+domain: invoices
+doc_id: invoice_081

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Mcgrath, Wagner and Humphrey
+document_id: invoice_082
+due_date: '2025-11-23'
+generated_at: '2025-11-18T16:47:00.132920'
+industry: construction
+invoice_date: '2025-10-24'
+invoice_number: INV-85892
+line_item_count: 7
+payment_terms: Net 30
+region: CA
+subtotal: 302440.88
+tax_amount: 15122.04
+template_style: small_business
+total: 317562.92
+vendor:
+  country: Canada
+  name: Elite Construction
+corpus: business
+source_url: generated://invoice_082
+domain: invoices
+doc_id: invoice_082

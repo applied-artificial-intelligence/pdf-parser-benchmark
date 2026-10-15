@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Netherlands
+  name: Sauer Klemt AG
+document_id: invoice_037
+due_date: '2025-12-05'
+generated_at: '2025-11-18T16:45:53.678579'
+industry: saas
+invoice_date: '2025-11-05'
+invoice_number: INV-54966
+line_item_count: 7
+payment_terms: Net 30
+region: EU
+subtotal: 1092755.25
+tax_amount: 240406.16
+template_style: enterprise
+total: 1333161.41
+vendor:
+  country: Netherlands
+  name: Stream Solutions
+corpus: business
+source_url: generated://invoice_037
+domain: invoices
+doc_id: invoice_037

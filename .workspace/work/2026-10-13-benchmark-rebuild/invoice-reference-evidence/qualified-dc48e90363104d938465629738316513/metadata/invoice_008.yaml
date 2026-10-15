@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Simon, Hudson and Lamb
+document_id: invoice_008
+due_date: '2025-11-03'
+generated_at: '2025-11-18T16:45:13.380685'
+industry: manufacturing
+invoice_date: '2025-10-04'
+invoice_number: INV-34407
+line_item_count: 4
+payment_terms: Net 30
+region: US
+subtotal: 3049.63
+tax_amount: 213.47
+template_style: small_business
+total: 3263.1
+vendor:
+  country: USA
+  name: Standard Manufacturing
+corpus: business
+source_url: generated://invoice_008
+domain: invoices
+doc_id: invoice_008

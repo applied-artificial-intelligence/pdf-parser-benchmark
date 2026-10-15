@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Jordan LLC
+document_id: invoice_061
+due_date: '2025-09-19'
+generated_at: '2025-11-18T16:46:29.042325'
+industry: marketing
+invoice_date: '2025-08-20'
+invoice_number: INV-76927
+line_item_count: 8
+payment_terms: 50% Deposit, 50% on Completion
+region: UK
+subtotal: 2642720.78
+tax_amount: 528544.16
+template_style: small_business
+total: 3171264.94
+vendor:
+  country: United Kingdom
+  name: Catalyst Media
+corpus: business
+source_url: generated://invoice_061
+domain: invoices
+doc_id: invoice_061

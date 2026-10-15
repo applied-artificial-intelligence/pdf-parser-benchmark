@@ -10,17 +10,19 @@ Eight issues are open in GitHub milestone 1, mapped in issues.json. Owner branch
 codex/benchmark-rebuild. Current owner: this PDF-Bench reconstruction chat.
 Issue #1 is implemented; its closing footer takes effect only after approved public-main merge.
 Issue #2 is implemented with a versioned retained-evidence bundle and closing footer.
-Issue #3 is in progress: source-derived reference preparation and strict qualification
-mechanisms implemented. All 100 refs and 696 records prepared; every reference
-remains unqualified pending all-page visual review. Rendered 182 pages in 46
-inspection sheets. Sheets 1-24 reviewed (invoices 001-053 fully); continue at sheet 25.
-Visible mechanical misses so far are wrapping within words, after a printed
-hyphen, or a single cell continued across a page break; resolutions recorded. See invoice-page-review-progress.json.
-Eight focused reference tests pass, including a real converter that changes
-the printed total and a failed finalization preserving earlier qualified output.
-Current full suite: 906 passed, 18 skipped. Source/protocol/input byte binding,
-metadata-as-cross-check and exact Decimal transcription are implemented. No
-compared invoice parser outputs exist yet. No closing footer for #3 yet.
+Issue #3 is implemented: all 100 source-derived references and 696 records qualified
+against all 182 rendered physical pages. Agent visual review is explicit; no human
+adjudication is claimed. Ten mechanical-miss documents resolved as visible word
+wraps, hyphen wraps or cell/page continuations. All original source/PDF/metadata
+and both historical reference directories match the pre-run byte inventory.
+Immutable qualified bundle, per-document judgments, render hashes and replay
+are retained in invoice-reference-evidence and related invoice-*.json files.
+Fresh replay reproduced every source/reference/protocol identity, page pixel hash
+and eligibility. Nine producing-code mutation witnesses passed correct code and
+failed real introduced errors. Issue-3 coverage: all eight items, no waivers or
+deferrals. Eight focused tests and full suite 906 passed, 18 skipped.
+Next owned work is issue #4: blind extraction and complete-record task scoring.
+No compared invoice parser outputs have been produced before qualification.
 
 Implemented
 Registry: 117 artifacts, preserved original bytes/counters/labels, observed row

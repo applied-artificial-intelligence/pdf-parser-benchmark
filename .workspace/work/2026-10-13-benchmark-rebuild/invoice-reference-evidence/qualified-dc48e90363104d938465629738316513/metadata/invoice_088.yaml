@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Singapore
+  name: Evans Ltd
+document_id: invoice_088
+due_date: '2025-11-22'
+generated_at: '2025-11-18T16:47:09.060395'
+industry: freight
+invoice_date: '2025-11-07'
+invoice_number: INV-67687
+line_item_count: 10
+payment_terms: Net 15
+region: APAC
+subtotal: 30221.27
+tax_amount: 2719.91
+template_style: economy
+total: 32941.18
+vendor:
+  country: Australia
+  name: Global Logistics
+corpus: business
+source_url: generated://invoice_088
+domain: invoices
+doc_id: invoice_088

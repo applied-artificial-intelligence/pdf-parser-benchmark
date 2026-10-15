@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Ortega Group
+document_id: invoice_067
+due_date: '2025-12-04'
+generated_at: '2025-11-18T16:46:37.884683'
+industry: it_consulting
+invoice_date: '2025-11-04'
+invoice_number: INV-83903
+line_item_count: 7
+payment_terms: Net 30
+region: CA
+subtotal: 2294797.4
+tax_amount: 343645.91
+template_style: small_business
+total: 2638443.31
+vendor:
+  country: Canada
+  name: Quantum IT Solutions
+corpus: business
+source_url: generated://invoice_067
+domain: invoices
+doc_id: invoice_067

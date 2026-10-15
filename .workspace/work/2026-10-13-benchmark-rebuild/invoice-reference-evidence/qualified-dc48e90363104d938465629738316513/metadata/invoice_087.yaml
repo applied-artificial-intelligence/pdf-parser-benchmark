@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: New Zealand
+  name: Moon-Espinoza
+document_id: invoice_087
+due_date: '2025-10-29'
+generated_at: '2025-11-18T16:47:07.675052'
+industry: manufacturing
+invoice_date: '2025-09-29'
+invoice_number: INV-73630
+line_item_count: 10
+payment_terms: Net 30
+region: APAC
+subtotal: 648228.22
+tax_amount: 64822.82
+template_style: small_business
+total: 713051.04
+vendor:
+  country: Australia
+  name: Standard Industries
+corpus: business
+source_url: generated://invoice_087
+domain: invoices
+doc_id: invoice_087

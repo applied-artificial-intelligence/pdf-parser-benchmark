@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: USA
+  name: Houston-Zimmerman
+document_id: invoice_018
+due_date: '2025-12-14'
+generated_at: '2025-11-18T16:45:27.711104'
+industry: retail
+invoice_date: '2025-11-14'
+invoice_number: INV-77598
+line_item_count: 7
+payment_terms: Net 30
+region: US
+subtotal: 172771.66
+tax_amount: 12094.02
+template_style: economy
+total: 184865.68
+vendor:
+  country: USA
+  name: Quality Supply
+corpus: business
+source_url: generated://invoice_018
+domain: invoices
+doc_id: invoice_018

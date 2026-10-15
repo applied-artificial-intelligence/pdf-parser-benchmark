@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Williams Ltd
+document_id: invoice_060
+due_date: '2025-10-30'
+generated_at: '2025-11-18T16:46:27.626096'
+industry: accounting
+invoice_date: '2025-10-30'
+invoice_number: INV-45819
+line_item_count: 7
+payment_terms: Due on Receipt
+region: UK
+subtotal: 545592.91
+tax_amount: 109118.58
+template_style: enterprise
+total: 654711.49
+vendor:
+  country: United Kingdom
+  name: Alliance CPA
+corpus: business
+source_url: generated://invoice_060
+domain: invoices
+doc_id: invoice_060

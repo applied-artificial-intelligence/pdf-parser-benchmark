@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Cherry LLC
+document_id: invoice_014
+due_date: '2025-11-17'
+generated_at: '2025-11-18T16:45:22.067350'
+industry: manufacturing
+invoice_date: '2025-10-18'
+invoice_number: INV-29667
+line_item_count: 5
+payment_terms: Net 30
+region: US
+subtotal: 355951.89
+tax_amount: 31394.96
+template_style: small_business
+total: 387346.85
+vendor:
+  country: USA
+  name: Standard Corp
+corpus: business
+source_url: generated://invoice_014
+domain: invoices
+doc_id: invoice_014

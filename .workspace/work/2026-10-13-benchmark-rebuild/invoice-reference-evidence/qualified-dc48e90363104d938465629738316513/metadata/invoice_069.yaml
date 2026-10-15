@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Sullivan-Edwards
+document_id: invoice_069
+due_date: '2025-10-17'
+generated_at: '2025-11-18T16:46:40.768720'
+industry: landscaping
+invoice_date: '2025-10-02'
+invoice_number: INV-18719
+line_item_count: 10
+payment_terms: Net 15
+region: CA
+subtotal: 188923.53
+tax_amount: 22670.82
+template_style: enterprise
+total: 211594.35
+vendor:
+  country: Canada
+  name: Green Inc
+corpus: business
+source_url: generated://invoice_069
+domain: invoices
+doc_id: invoice_069

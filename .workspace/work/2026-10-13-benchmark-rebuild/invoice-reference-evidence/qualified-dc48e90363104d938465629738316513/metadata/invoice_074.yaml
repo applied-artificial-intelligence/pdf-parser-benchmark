@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Carlson Group
+document_id: invoice_074
+due_date: '2025-11-26'
+generated_at: '2025-11-18T16:46:48.146409'
+industry: construction
+invoice_date: '2025-10-27'
+invoice_number: INV-88718
+line_item_count: 8
+payment_terms: Net 30
+region: CA
+subtotal: 87184.51
+tax_amount: 4359.23
+template_style: economy
+total: 91543.74
+vendor:
+  country: Canada
+  name: Apex Contractors
+corpus: business
+source_url: generated://invoice_074
+domain: invoices
+doc_id: invoice_074

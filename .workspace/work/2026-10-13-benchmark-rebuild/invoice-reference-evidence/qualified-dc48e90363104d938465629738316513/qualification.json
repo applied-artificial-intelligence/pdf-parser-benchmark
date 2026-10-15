@@ -1,0 +1,3504 @@
+{
+  "reviewer": "Codex coding agent, visual source-rendition review; no human review claimed",
+  "reviewed_at": "2026-10-15",
+  "method": "Inspected all 182 physical PDF page images in 46 source-labeled sheets, at 1600x2400 pixels; checked fields, printed dollar amounts, line-item counts, header roles, row associations, text wrapping and page continuations. PyMuPDF presence is an unscored cross-check. No evaluated parser output was used. This is agent qualification of controlled synthetic templates, not independently human-adjudicated real invoice truth.",
+  "documents": [
+    {
+      "document_id": "invoice_001",
+      "source_sha256": "f791c722ce3ddbd44142c41be6fc8cd8e8d28cc3bed786c0a26fe141467abcb8",
+      "pdf_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "reference_sha256": "cb0addd1ddb309df0b30cd3f2f916d7611fa3c323daca858a95858aab808f6d6",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: all 10 rows visible. The final row continues on page 2 without a repeated header; total and due/vendor fields agree with source.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_001-page-1.png",
+          "sha256": "05138608d04cd2cba68d0c244cac5611dac91ab6ec01fbdc3a61dea6a8e92174"
+        },
+        {
+          "page": 2,
+          "image": "invoice_001-page-2.png",
+          "sha256": "99ac3672e3e48ebecaa68db8d22224d423e44fa5cd7d77d6e8b152f06467740d"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_002",
+      "source_sha256": "06360a8360c4cadee927d88b0585743a9b09f46bde94f987b80c0026f5ee2e1e",
+      "pdf_sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+      "reference_sha256": "e0be10de9956f9c72d569574e6febe7e3260a2826d596889e88b67d22df969bd",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: eight rows continue 4+4 across pages, with total on page 2; source fields and associations agree.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_002-page-1.png",
+          "sha256": "5080563e7175d3c45e24a3be4ccd8313ba50152542bb5661937dc29fa79305a0"
+        },
+        {
+          "page": 2,
+          "image": "invoice_002-page-2.png",
+          "sha256": "b70e1a5086a7c792540a1bb9b7f0ef5b8390dd374b7853895cc77cfa6f807a7f"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_003",
+      "source_sha256": "691c54302cf097b39cd0ea903be5a6a8fd76df32c6d0422f704e40c88174d8b2",
+      "pdf_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "reference_sha256": "152aa63f467c61fb8dc421286ed5984e59f65e1b557cf966aee7c7a3d4409dd2",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "One-page economy layout inspected; seven rows, embedded price/unit text retained as description and no separate unit-price column.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_003-page-1.png",
+          "sha256": "5fd7216bf9e8f9fc9777856461031a2dd63399c54ec082cbe99a5c5d45cbcf64"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_004",
+      "source_sha256": "e75f6c9c0aaf5832a751964c010ec90e079249655fdc315c842902407e944c96",
+      "pdf_sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+      "reference_sha256": "3dae7c3cd37343806cd60d0b168e4a54f30eb85a18bb4e016e840d53983d007f",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: four rows and total on page 1, notes on page 2; no clipping observed.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_004-page-1.png",
+          "sha256": "0cc81a92401cb48d70ed9ce56a8f56af42df0cd8101bc1cf0f928e2fe880acbf"
+        },
+        {
+          "page": 2,
+          "image": "invoice_004-page-2.png",
+          "sha256": "3323a69a67dee17d763403d061f6e6e956b2e2ba6ca981f67fc1c06cffeef2bc"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_005",
+      "source_sha256": "6250b2a88a1c3affdefcd651cad46757611ebbfed32ad0eebea81a5e0a9f1017",
+      "pdf_sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+      "reference_sha256": "672b94013a24ca4495582b6d6c0a19714e0020e67c3ffe4ea4b4cdb1f8a4a665",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: five rows on page 1, total/notes on page 2; source facts and units agree.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_005-page-1.png",
+          "sha256": "1bc7b712eb0339a96f26e4bc6b7dbe735ea0e263f0953625c0a6b65522a6bcd1"
+        },
+        {
+          "page": 2,
+          "image": "invoice_005-page-2.png",
+          "sha256": "13c2b1af7a06d2513c46649645b2093f36396f633a6498bbc4af7bca1b5306ab"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_006",
+      "source_sha256": "f70a1aa37c7e6941d2d9f92cf07f5d4f467bddcdb9634c58c6275ccd535a902d",
+      "pdf_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "reference_sha256": "82578ac4b59ff005f4f210bac9a35b70bbfc5f37c9b5cf61fcf906c831e1c225",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: nine rows on page 1, total on page 2; embedded price/unit text remains description.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_006-page-1.png",
+          "sha256": "9c0ef149850185e218ba29ad561b1f5869ecfa4f7f1a27cbe533a528d3122e70"
+        },
+        {
+          "page": 2,
+          "image": "invoice_006-page-2.png",
+          "sha256": "c2f294d3fb55f0286bf29190f96111cf6d7baeb98202009b83a4bebdc5ddd98c"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_007",
+      "source_sha256": "dc7e65ce214f652ccea8b70c6e2677a1c4d532a3b95c0ade50238179e3b75c23",
+      "pdf_sha256": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+      "reference_sha256": "54f18de3f11dbedb7d0508cbf81b9bb2175e7f080caf7371c7221e137faf25dc",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Both pages reviewed. Nine rows on page 1; total 9,822,354.44 on page 2. Implementation Services wraps inside Implementation with every letter visible.",
+      "mechanical_resolutions": {
+        "record/0/description": {
+          "explanation": "Both pages reviewed. Nine rows on page 1; total 9,822,354.44 on page 2. Implementation Services wraps inside Implementation with every letter visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_007-page-1.png",
+          "sha256": "a2c310b9df701bd5381ba9499e77f2186c783f8bf3074c1e3ecc661c2ce890a3"
+        },
+        {
+          "page": 2,
+          "image": "invoice_007-page-2.png",
+          "sha256": "19cff4b535209cc341387dd84b4719635f91e60215cf8805262ef86b6adfef08"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_008",
+      "source_sha256": "a6ed78d19890a90801d169c6727e51369d65aa295ae6829fee2ea9560d675c08",
+      "pdf_sha256": "3ea084ec8af6079de98cbbdebe9cb43a733c17c15847f6db21647b772647c42a",
+      "reference_sha256": "0665a30788a05502d7837ca8b0450c21c60a99dbf0b438cf79eef17972dfd998",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four rows on first page; total 3,263.10 on second. Description/Qty/Rate/Amount and fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_008-page-1.png",
+          "sha256": "c13fa0c08d611d829a2da788169eb2c49a073500a086f81a3f667cd63205510d"
+        },
+        {
+          "page": 2,
+          "image": "invoice_008-page-2.png",
+          "sha256": "67dd77f279f3de59eae890d056a75bcaeb50ecf352df06a1ebd184bc728af87b"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_009",
+      "source_sha256": "09ba12ecac205fe0258bc7188332b1a5b23871dbe7d74ed94f80a678076629a5",
+      "pdf_sha256": "3396e9c3da53ece2a27dc8b702d82233c0658e3684d941ff814332990264a915",
+      "reference_sha256": "27af251ff02fb9b75bb1ba9490c84d4a937ff699fbec79482ec90d43f5067b62",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows on first page; total 164,609.24 on second. Embedded prices/units and due-on-receipt date visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_009-page-1.png",
+          "sha256": "7d95497d508870a28781ef723cc10fae9d94154444cc0844f4d023188886d20e"
+        },
+        {
+          "page": 2,
+          "image": "invoice_009-page-2.png",
+          "sha256": "180fd478f5f757dc756226370cb2bedc33bf17985268078cfd732a493a090503"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_010",
+      "source_sha256": "c4f6341e68abcb25ce42757271ebbe27305d482a393810ec51fc44dade1183c8",
+      "pdf_sha256": "75283a63c5d9ccc9a136eb6f96de9b1f80b4a30742d36ea849ec93eed6be7543",
+      "reference_sha256": "0111a066cd109bd3f68624df25e1129add00f1dd18d261d7f7bf7a01629c0a39",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Six enterprise rows and total 975,893.42 on first page; terms/notes only second. No clipping observed.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_010-page-1.png",
+          "sha256": "e7e16c16ea9b7d4f3ec2b9ba6944a2449a719e4e88d6f89c9b15e529e47e3b00"
+        },
+        {
+          "page": 2,
+          "image": "invoice_010-page-2.png",
+          "sha256": "16ef48da4ffcd01f35b9b88afd7ba5c399e97d90b08022ed121ae898b51fc4cd"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_011",
+      "source_sha256": "9576ae50d3ab9a39ec4e0cd2f0d66c81d5de9afaa63e35672e805880cb98f060",
+      "pdf_sha256": "66e6ef089381719efdaf6ad6c4433f6c563288e8090dc886b5e71b6d116403c0",
+      "reference_sha256": "e703ddfb37d809a2e1599548c2adbde8d81e3cfba76d9b3d495c08a3e9bee44a",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven rows continue 5+2 across pages without repeated header; total 40,820.31 and source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_011-page-1.png",
+          "sha256": "a04caf0d0158bb042c2114a5761eaa7d51193e0a07bcda574b24ea0f92c28d07"
+        },
+        {
+          "page": 2,
+          "image": "invoice_011-page-2.png",
+          "sha256": "22dc9446de0d11a8c7c4a2135d003db61ecae14d2641062c554e3041e90a4326"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_012",
+      "source_sha256": "0e6dfbd5e86d2fa6758f71212191b955b3ba070a9e90e97cfa63f28015c00174",
+      "pdf_sha256": "00d820df793677f7c014670e11b5e17ad6ac3210aa02ecae963d60d481245eb4",
+      "reference_sha256": "73e9732b037f7fbb38c2d79362452a1747665a8a3c5af7c6580beb9696f0c479",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows first page, total 296,234.97 second. Three-column schema and embedded prices/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_012-page-1.png",
+          "sha256": "ea2281664ae7b65b0e20e96918c8a094cb8d22dfd5295fcd4cf5f4eb21fd02f5"
+        },
+        {
+          "page": 2,
+          "image": "invoice_012-page-2.png",
+          "sha256": "cf140be33846a27d98566f7ecf7df637c74e09cb89dcc3dc7f87579cc42e5537"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_013",
+      "source_sha256": "d9bcf518ea5f2e3f247554d396038d3cb448a5f5f16d8d8f0c325e8381f28abc",
+      "pdf_sha256": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+      "reference_sha256": "cb3d68310ef18e0837e85834f5301b45dbdf083e4712b667b7e1333f5991f213",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Five enterprise rows and total 8,245,766.80 first page, notes second. Rows 2 and 3 show Implementatio followed by n Services inside the same cells; all characters visible.",
+      "mechanical_resolutions": {
+        "record/1/description": {
+          "explanation": "Five enterprise rows and total 8,245,766.80 first page, notes second. Rows 2 and 3 show Implementatio followed by n Services inside the same cells; all characters visible.",
+          "pages": [
+            1
+          ]
+        },
+        "record/2/description": {
+          "explanation": "Five enterprise rows and total 8,245,766.80 first page, notes second. Rows 2 and 3 show Implementatio followed by n Services inside the same cells; all characters visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_013-page-1.png",
+          "sha256": "db18abd5c0d105247c3d76579026db88ce121db81ad8727ac206e535de8c1122"
+        },
+        {
+          "page": 2,
+          "image": "invoice_013-page-2.png",
+          "sha256": "631f3eac19dc0df81810d0e5c876a692a35ea0123535727c8ac4bbfa73976dc6"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_014",
+      "source_sha256": "0faf4010c7d3b2ab85f2819edd470503308357b508cc85b57f9a6c6064cfb7c1",
+      "pdf_sha256": "55d1d5128f667980b1d36dabb07b2f9dbe4cf1b441f75ce747b3447c59901856",
+      "reference_sha256": "5e0bf7aa10df1bc97adf32a42aec0324b5692b00deb7016f24fa276010269967",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Five small-business rows continue 4+1; total 387,346.85 second page. Headerless continuation retains column associations.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_014-page-1.png",
+          "sha256": "2230948ef22b127daaeac93978670c35fce6f935ec4f1e09e615a87c716e853a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_014-page-2.png",
+          "sha256": "ecfff02022c90d67fc1d6e4a7a86f935ec81c0c836bafe7ffae82cf904478306"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_015",
+      "source_sha256": "69814327e4f15ca6a039716824a7e0e66997a1c5607378ab4ab1c822fbcec4f8",
+      "pdf_sha256": "dee528c36e685b876a909fcc3d513c5cce7d57fcab7a2eb65c047c8071a2e854",
+      "reference_sha256": "f3671179ff00fd03b607256dabe0102bfb28cd761b44363ae9ea941655b5a627",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page four-row economy invoice; total 93,927.11 and due 10/13/2025 visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_015-page-1.png",
+          "sha256": "935486660aaf75ca2a5d0e7cacd413b746d6af5ba2a29d8f858690b8a1975dda"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_016",
+      "source_sha256": "c2eef0ef7b087cd069d16a98c98394349b0ebceecb0282d42b602d6318ff0cb3",
+      "pdf_sha256": "929346d201bb12cb82c64d5114273f66a9959f77b91e558a12e72e85001ecc10",
+      "reference_sha256": "c5a24beed703238ab8ea815ed210d515bdc8d8e58cac19eb053d1cb75aa1da69",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Nine enterprise rows first page; total 5,009,486.82 second. Columns, all fields and continuation inspected.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_016-page-1.png",
+          "sha256": "14f581539b638b83c84e1a7e25cbede6a6c6fbc827329144d3b8a7c407700285"
+        },
+        {
+          "page": 2,
+          "image": "invoice_016-page-2.png",
+          "sha256": "4af113c0273c369431a301174d85a1c29fb01bd3430144ee9e02df164ee56e64"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_017",
+      "source_sha256": "0c08cb64bcadc4358460b6de545a242be8ecbff802bcc2a2396195da461b8a7d",
+      "pdf_sha256": "3d3deee9f6ed5f72a4bfe05d0ac075c622a7103d9aa657916922d74473faace3",
+      "reference_sha256": "d80393cf6641da3cddd501608a0805ac4906782086ee169b0f59fafa85d5cb4b",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business rows continue 4+3, with total 212,362.43 on second page and no repeated header.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_017-page-1.png",
+          "sha256": "00e41c921c35852aabad70e7b21fabb1d7d8b3d2e9f3a775ed39ce4c71f2712e"
+        },
+        {
+          "page": 2,
+          "image": "invoice_017-page-2.png",
+          "sha256": "fed85847c7fd9982563eb57b875f7ded338194566a3a7677a08d2d325277b4c4"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_018",
+      "source_sha256": "fe8e1515a9a4ddaec3e2ad16993cd229515554a1faf1d9ebcdbbf2b598a7706f",
+      "pdf_sha256": "cac4d69876239e61e8d0cf87c312ce85f472b485c208214a8b785cbe4543b304",
+      "reference_sha256": "12bcd2df75eca79335e90863c43429d56028bd1156e906cf0891151fc9af33b4",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy layout with seven rows, total 184,865.68; embedded prices/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_018-page-1.png",
+          "sha256": "6bb63fee19834c6e05ba7182fed1acd6cf76348d092dd7db077413935b999814"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_019",
+      "source_sha256": "42e13e4fb8040102bc6d412c5733178068c0272cabc32173d44ae2843f2eb528",
+      "pdf_sha256": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+      "reference_sha256": "6ca3ea321659ebc99c0a07131ac16d854cee62dc751f27730ba67c7c9ce2324c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Ten enterprise rows first page; total 3,039,970.58 second. Row 6 shows Implementatio then n Services in one cell, all letters visible.",
+      "mechanical_resolutions": {
+        "record/5/description": {
+          "explanation": "Ten enterprise rows first page; total 3,039,970.58 second. Row 6 shows Implementatio then n Services in one cell, all letters visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_019-page-1.png",
+          "sha256": "99b842252f0cf9ab1242224121a57b913177db2644e4ee1c56121e300853ba8f"
+        },
+        {
+          "page": 2,
+          "image": "invoice_019-page-2.png",
+          "sha256": "d19febcc4a517758885b8cd9789cc382ffe9a9b213b8007aef6ec25959b1de14"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_020",
+      "source_sha256": "f15cb21224eb4fdfaa0491ca1efabdf4ca621d8b592f8a5b5a545ad6953068b1",
+      "pdf_sha256": "bafa7d22fc6bffbfc0a45078d95fb07990fccb375affc3d785348801ff8b855a",
+      "reference_sha256": "9f3504db3227014f2adb7e7fd3651ac21a9597b142ccc81a7ac4cf828174ea76",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business rows continue 4+5, total 28,300.03 on second page. Column positions and source fields agree.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_020-page-1.png",
+          "sha256": "0097117b45fdac9c2da4f12c92a5666b92c70e33265eb3595e5a8059fc3c7b4a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_020-page-2.png",
+          "sha256": "b61d2b507825cc219d9273ed95ddbf5a6550bc84345911b85eef1e4c2821e480"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_021",
+      "source_sha256": "5666f54a2b0c55e4535e88a72c5a42081978811e1e337cf2773b9ce7e02186ae",
+      "pdf_sha256": "892502d4b309267492d5538d8ce107960f4ccadc89559ae2d691c5b6890d1aca",
+      "reference_sha256": "d66b20eff35566cb4b965de7cf22207f16404277e34252a3e841b29bac6509fa",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows first page, total 137,639.49 second; due-on-receipt date visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_021-page-1.png",
+          "sha256": "e1acc37dd435bda555bfc1f01a2c56eb6b1ca2ac270dff6ea8ce8b633fb13d4d"
+        },
+        {
+          "page": 2,
+          "image": "invoice_021-page-2.png",
+          "sha256": "89fbf6f5a18e2b415fb0168ef17e1f289da8afb1a4ece9ca45775e1f8d6297ca"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_022",
+      "source_sha256": "869c12ee1e056addb83f022d72de404f7602f20c3ef0664fc89fa31fd8d2e145",
+      "pdf_sha256": "68f5e47d12264cd5fac463c2336ab721fcae442bd27029efd123f178a3c21c2b",
+      "reference_sha256": "547051943f9e094c330f77fb58fbe57a4df12a2f9e9a90f00998282b6724a050",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Both pages reviewed: five enterprise rows and total first page, only terms/notes second; all source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_022-page-1.png",
+          "sha256": "ce40e2398faa9277c2043d5289ce4947c4e335e387c9a982b515c7d347945600"
+        },
+        {
+          "page": 2,
+          "image": "invoice_022-page-2.png",
+          "sha256": "31ded08541fa07e78751afcd64f99e2f9597a40498395a56249d3310907990cd"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_023",
+      "source_sha256": "cb2abe651be01bd302fcb5c25c2610793278a14a2fc7b2329b702de23f4a1a7f",
+      "pdf_sha256": "1c540386f722907310729f502979e37ed45a54d96293e43fdd16da71ad7e0b90",
+      "reference_sha256": "c33b6abddfef677fd53910c34ca2a0d36d04131dc6b7366ab0cc3e27f19f9bcc",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four rows first page, total 11,060.76 second; small-business headers/fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_023-page-1.png",
+          "sha256": "66e0e6db5f8cd5b3809b331784a5fe25cb4f73efb5abc995ac892bdab9bff7b7"
+        },
+        {
+          "page": 2,
+          "image": "invoice_023-page-2.png",
+          "sha256": "99e626a5fcc98238d30f3202e6d0128174da055d34254efea5b5b2513bad60f0"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_024",
+      "source_sha256": "75007058a9a092194d9433897e4341421cf532a53e7f0c6a16840bfceb197646",
+      "pdf_sha256": "677bfeb9bdb3dc417b443837f0f45a7ac4c3c3a2b9aeeae9343902391d1a3fd1",
+      "reference_sha256": "f29557081d2342a83f6796b301adaa52a6672bfdf206da45838e5502e3bcc4d1",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page seven-row economy invoice; total 322,971.81 and source fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_024-page-1.png",
+          "sha256": "0f9640643759c418d27dd86e1e3cedb22709d85f0eab7515094d33f7d61ec0b7"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_025",
+      "source_sha256": "62a2e507b21ff9473e76e5baeb95389e66e58b80e25444184eb189990c11a426",
+      "pdf_sha256": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+      "reference_sha256": "23d6d36957b9b2bcd452476696f216104eb2774f43893d0cdbff71a5194d604c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: five enterprise rows plus total 8,583,551.54 first, terms/notes second. Final description shows Implementatio then n Services, all letters visible.",
+      "mechanical_resolutions": {
+        "record/4/description": {
+          "explanation": "Both pages inspected: five enterprise rows plus total 8,583,551.54 first, terms/notes second. Final description shows Implementatio then n Services, all letters visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_025-page-1.png",
+          "sha256": "90dab0ae4f3d1e7f875b9a750cd3511162b365ec3c85fabcb9d26fd4c7add1da"
+        },
+        {
+          "page": 2,
+          "image": "invoice_025-page-2.png",
+          "sha256": "199ec641d4b63dcf6942ca045200913d86b7c84bea6841135ea4419788be9519"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_026",
+      "source_sha256": "a3c147b5c399b40e08ffa159d72c7684fa259206a7ea142c0128929235f3120c",
+      "pdf_sha256": "1fc1a86ffaf606dbe07f04e1430102c8a6f614c671ac1f618b1cc18336490cdc",
+      "reference_sha256": "22b12135c9ecb403855c264b4268e7767e76d792ab2e2c62bb1cb0bb076d6241",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 10,107.06 second; fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_026-page-1.png",
+          "sha256": "1d02bc1482e6ae273862147e59858d683b3f7a1114628411154dc25564079ea3"
+        },
+        {
+          "page": 2,
+          "image": "invoice_026-page-2.png",
+          "sha256": "c5c75823e06ad5598a86b8555b6ba7608373d8d26e197c56bffdff58ef402adf"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_027",
+      "source_sha256": "1ec0500383dca56910ee0c1cf5b37ef29bb3a5664d0aac21e89948cb25a1950b",
+      "pdf_sha256": "6005ae024604bc2bcf5ff2964fa679586eee4c6c3fa386e05d5df07c4238f285",
+      "reference_sha256": "e144b9d04b6c132ed763603ca2fd5625b41c9fa39d1dd4ad85ea0c76bb1888e0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page four-row economy invoice, total 37,934.75; fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_027-page-1.png",
+          "sha256": "ccf36d25a28ee31a66681a1d4640fcfec4d36ebc7f6e4dda948d8447aea99d45"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_028",
+      "source_sha256": "74cc243c2405b468b7a580eb572342c21fefa958edc225c68a6be4a47852ba5c",
+      "pdf_sha256": "bde7647e1f76bd6bd2922fa66a7140266d23fa4bc295a1df8d453d7346d308ad",
+      "reference_sha256": "5a91044e09b0d8c0d407e3b6c04012efdabb4eb50f3205dbe6778064abb91927",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows first page; tax/total 105,149.50 second. All source fields/column associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_028-page-1.png",
+          "sha256": "42accba26c78955d1df77ba29bd9637774356f066adc13a81319a7444cc830b7"
+        },
+        {
+          "page": 2,
+          "image": "invoice_028-page-2.png",
+          "sha256": "14e49bb9b1d61784908dded47d70fc0eacbae4889e147a065bcc0798e67c0ef6"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_029",
+      "source_sha256": "294b5a968a4c976aeb37621a35f358f7b66efa8b1a3bf7546a03e37cc7c1e63e",
+      "pdf_sha256": "b399fd421ad47e0ea2fb3f558e2b6639252231e96d04b6e99f683d5e74f93e7e",
+      "reference_sha256": "e72e7d3c09f24e430aeb0c988f272edd2dbe993f5311060238701b493640617e",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business rows continue 4+5, total 37,227.71 on second; fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_029-page-1.png",
+          "sha256": "8edccf9390766b619f14b112cee8a16e047b5da3a21808f258757cb2f29098fe"
+        },
+        {
+          "page": 2,
+          "image": "invoice_029-page-2.png",
+          "sha256": "d0ec2bdaccc1c53fe0ac74ab9f4a6e08ae4101cb59fec3ac927c22df5d2ea956"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_030",
+      "source_sha256": "4dc2bc0d73ba02fc87a649235f2fe3103c9e5a41244fb352168701686efe3bf4",
+      "pdf_sha256": "c6fa6f569901ed568acaf62a8a8ddf4ae4f67582e3dddb59a7dff1889d0142e2",
+      "reference_sha256": "7292e208badcf7f30d8388c66472ee47b0df4818ed9483e4b8746bd3fe9eb3a2",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows first page, total 139,909.62 second; source fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_030-page-1.png",
+          "sha256": "1eb287adf978318f5af2cf83f1479b8e3792afce6fa7b765877fc5da9dc3b57b"
+        },
+        {
+          "page": 2,
+          "image": "invoice_030-page-2.png",
+          "sha256": "d5ed66130d38456305f01290e5421e885eacf2e3d815e709c454c8285cd70b24"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_031",
+      "source_sha256": "c3eedecb8fffccddad15968a9e1124fbb71571ca219e9635b86d15ed4fb05060",
+      "pdf_sha256": "d5f2c9ac4a8e6a11773bf3c1106b327ceb7cb3ec2a522765f45614b28263e5ce",
+      "reference_sha256": "add0eebaf58f8c1bab9374de4444afdd3bc93e760019c03b462215f9a9cdf889",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Seven enterprise rows and total 22,063.66 first page, terms/tax ID/notes second. Dollar marker retained despite European addresses.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_031-page-1.png",
+          "sha256": "da8788dd8bce6ce1c7b15c6416137f18eef882c10bb6f59e8bd40fd347b50b02"
+        },
+        {
+          "page": 2,
+          "image": "invoice_031-page-2.png",
+          "sha256": "ad7e711918ac21e99332555400050767e25e038218b1df58138ec8c9a4ffdb21"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_032",
+      "source_sha256": "0bc59efda8053be08eacd2f916b6404484c1829368e62c626deff0601fdb731c",
+      "pdf_sha256": "5ebbbed682efd95727086c01eb8d96f7d9ecc4e3c3d248140a9eff3efc206f31",
+      "reference_sha256": "c893e1ba25488b70774c86c09d8741b803ae0ca579081a30a58b5701be54370c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 144,893.71 second. All source fields visible; dollar marker not inferred from address.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_032-page-1.png",
+          "sha256": "395fa066552c24cc3e04ded3b11afddcd19c8895cb873c91f177a1d1e964820b"
+        },
+        {
+          "page": 2,
+          "image": "invoice_032-page-2.png",
+          "sha256": "c8bba1b2a7c6ae0bd2a2ee28bcc85ae3be3fcf0df6fcb3a098afe7789abc3b53"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_033",
+      "source_sha256": "fe4274884816f0342fafde96b9d3283e1002b5c577ad0029d693b681948da359",
+      "pdf_sha256": "47ed9a766ca7d7e08e0568535278ddff0dc075c98c5b206b596d5450d627909a",
+      "reference_sha256": "344a16ea195d717427bfde6f245e61238b87cd2ca4b829b9a132fed58ced28c0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy seven-row invoice, total 48,957.46; units include percent of project, preserved in description.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_033-page-1.png",
+          "sha256": "a81532af5b718cf40c014b63ef049ff3a3f9abb5f4651314b29656b6d10e1c2d"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_034",
+      "source_sha256": "410b6b8e1058441f345779415a510e70439e723229f5ff1b00bdccf8a8d68ed9",
+      "pdf_sha256": "3d25836f8d93aa9d77a256f43d1c6a565ad8ec83bab65a6ddec0e631ea0d3805",
+      "reference_sha256": "697dc733a007c3ec5b2dc81301086c5d75e4fbc0ae15c70ca444d2380746b989",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows and subtotal first page, VAT/total 6,010.35 second. No clipping or missing rows observed.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_034-page-1.png",
+          "sha256": "5041927e781cafd183a0b50b17cf0095eadf478cedce3f8f8f1446db2fe7e82b"
+        },
+        {
+          "page": 2,
+          "image": "invoice_034-page-2.png",
+          "sha256": "742756c326f94bb3039d1d926e36b067d50e2c47b69ab2793617522241459f16"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_035",
+      "source_sha256": "4ab648c5502d8d7268cfb690db9b8d7c168d287af791342d683b20c9c5253793",
+      "pdf_sha256": "f92d6e44cc2e71804467f9acfce6e0b42e9d2c588fe6eb030624b2691bf3436b",
+      "reference_sha256": "2a4f7fb143d1f3eba409054f898b31f096d76d8e30abe6d1a1558b5ff99aac14",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 8,355.34 second. Freight units and fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_035-page-1.png",
+          "sha256": "a8335a9ac59ec973a70148243b7f5017921cc70390bf655bb2085c5c6b7f86e2"
+        },
+        {
+          "page": 2,
+          "image": "invoice_035-page-2.png",
+          "sha256": "effb1b9604c566ce0b2888bf259c5d4da2eddfa7964511100fede74f8294ce5b"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_036",
+      "source_sha256": "02515dcee7b1c7cc31c3cfa4dd16204491a38e49de2d93bc74ea712398861fdf",
+      "pdf_sha256": "64937ed4af19c51f1bf77a85e6c8d0a422663742eed16bb5b12cfc577c6bc034",
+      "reference_sha256": "8eef1b071a00a50cfa7e7fd8c7d087a64a8a5f5e6efe6450103cad8a2942b2c0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows and total 241,107.97 first page, purchase-order note second. Source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_036-page-1.png",
+          "sha256": "9ea0b52cac3970c97a788dc88e4511171bff41acb6b3b5bf379ac330e503b41f"
+        },
+        {
+          "page": 2,
+          "image": "invoice_036-page-2.png",
+          "sha256": "387fd67c3d6d996207d9bb6158bd1868929ab9b2eff91448f7c21e508c04ec77"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_037",
+      "source_sha256": "110b7f2ee623527f3d13c48ea0a3b091b73a7e6b69735f3483833853aaadd000",
+      "pdf_sha256": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+      "reference_sha256": "37b04d71c8585318a9ba969c6fae21f001164b1f19cf7cf093f8161098538382",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Seven enterprise rows first page, total 1,333,161.41 second. Row 5 Implementation split as Implementatio / n Services within the same cell; complete text visible.",
+      "mechanical_resolutions": {
+        "record/4/description": {
+          "explanation": "Seven enterprise rows first page, total 1,333,161.41 second. Row 5 Implementation split as Implementatio / n Services within the same cell; complete text visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_037-page-1.png",
+          "sha256": "39f0937228e6da7b84698f2f09e73a1d269bb07ad46a7b1d08a4f01702eabc7e"
+        },
+        {
+          "page": 2,
+          "image": "invoice_037-page-2.png",
+          "sha256": "c0e5ee160fbdd3b26a003c6a774ae30025ca9c9c91470f9990300bde83e2535e"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_038",
+      "source_sha256": "ee6138528db93618d4d0fe500750f11be5d62621b2588eaa998764780fb61a5b",
+      "pdf_sha256": "56b1df974fca082ecf9bdea924e4917f0fd4e13ef90a1b4a27ae9e97205337ce",
+      "reference_sha256": "6f41d2d2c8a2677fb49be4ebf34fea3d1c12e44f808a67ab1ceb50e811e71b3c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business rows continue 4+5; total 61,476.41 second, percent-of-project units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_038-page-1.png",
+          "sha256": "8d3204d95cfd9d0b36c8094d66319f99ff3da6edbf489fa0ab8d0321a984629d"
+        },
+        {
+          "page": 2,
+          "image": "invoice_038-page-2.png",
+          "sha256": "8a51be3c008e7ba9ad4fee3cb5feb8dbc9b02f73bbd4c863c00b61eeeda6239d"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_039",
+      "source_sha256": "b21d57d93398626f507b2227ab1e4360e2303d80129e96f5f4ffd28bcaddbb9d",
+      "pdf_sha256": "b6e5d3083bfdbfb2901a3866f60abacc9fe7be95f0fd07816b5c088b8c84417b",
+      "reference_sha256": "bde9a46e20668551299ae930d05f3b10d80ffc94020fc2f7bf0d639b611bb69d",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy four-row invoice, total 14,899.61; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_039-page-1.png",
+          "sha256": "02410f3ae55b269993d64642eaf2592da7714d4812b7a147e34c745705f96c0e"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_040",
+      "source_sha256": "3f315fae5e18c4c6934326adbe7ed2d671746a157b1a536b3bbcd17e34976f54",
+      "pdf_sha256": "694c3fe505c42b1e9f3a70569beadb0695f47b7e25d1824ae48e6b0f8dcbe4e3",
+      "reference_sha256": "b7f91c62aadbb00506d9c64dab4d133227ae276e89869b3025b09ae7e8f1ca4a",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows and total 31,926.15 first page, terms/tax ID/notes second. No clipping observed.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_040-page-1.png",
+          "sha256": "6ae8a559eaee06027429138613cc00111fc3e210c60f51da1802f58c9c2a6f00"
+        },
+        {
+          "page": 2,
+          "image": "invoice_040-page-2.png",
+          "sha256": "51b881e4bb744ea1de085003c09cd66dfd68b65f69602561babd0244161f2864"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_041",
+      "source_sha256": "ebab7a25ab2f4e5d63551326d87a71021917319ff50de6c1b90ad723101eee56",
+      "pdf_sha256": "d62fed2142a6a3807099d437cd0d6f499005c95a9bac13bda226988ec143ebef",
+      "reference_sha256": "fb95a1fcea2b164b8ceaf552516aa1a624fd77de6718556b2ae080099f809c15",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business rows continue 4+5; total 279,029.42 second and source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_041-page-1.png",
+          "sha256": "ec21dc78b814468a74ff832571418bddaf2df8c24100d9f7906498a01b5ddcd3"
+        },
+        {
+          "page": 2,
+          "image": "invoice_041-page-2.png",
+          "sha256": "2df285ba8fa4047336dd7e8ac9ef3e51c737a1d4939cd40196029179c80f0a99"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_042",
+      "source_sha256": "bdc7daf96df5f6f2856903b03dd9dfa58552f8b662400b656108eea565177c9d",
+      "pdf_sha256": "705541c16fac3168f38c1126c23747f6be3ef9192a06bf69dbf95d59c7f06a0b",
+      "reference_sha256": "86dcd2a9fcb7a95829784fa2b206e94a9db276cd2cd30c64028aca04afa3d0d4",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page seven-row economy invoice, total 9,189,004.88; embedded prices/units and source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_042-page-1.png",
+          "sha256": "22f3b3632c134f0ee495c3a936b278a6d17332581a14e82735e626b02e4b88b0"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_043",
+      "source_sha256": "22f3e64b3f52fea7a6e8b7c4955d524600e82bc3dd1fd203fb4b61ddcc6d42d3",
+      "pdf_sha256": "150eb334595390e3196dd021b75a0344291777f34946c277c51277d1d53ffe34",
+      "reference_sha256": "bfc76bfbc2e11f8dd73b7058b344eda1dd56d08cae9fec963c69e197377a2944",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Four enterprise rows and total 23,275.15 on first page, tax ID/notes second; fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_043-page-1.png",
+          "sha256": "5991bbdc8c43730dbed4598c990883fb14336411e23befa8314db50c052f980a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_043-page-2.png",
+          "sha256": "62bdb181e95dae520df81d7fd725e967cd426d98f8174f0caef51af146bef531"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_044",
+      "source_sha256": "9dea1d8735e6c36abee0a2fa1b18a9954b84219c0d03e357a375e11b16a5c566",
+      "pdf_sha256": "4593063da594cd7b052ae1a47cbbb3f3e3763b891f515a02cef372506cba0c3b",
+      "reference_sha256": "01ae348b6e4f784b613594f61ae4d221b5cc6c09736d9a806950834d91466ea9",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 15,529.71 second. Source fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_044-page-1.png",
+          "sha256": "84d3a48aa61054c98c069ac7c9803448b163ff4e8d5565c550a294f921666d95"
+        },
+        {
+          "page": 2,
+          "image": "invoice_044-page-2.png",
+          "sha256": "983beb9571f0bc072da7f33acdaaa3a605e4b6c4987384adee2b70f5fffa61e9"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_045",
+      "source_sha256": "c79b382a418c44dd013653c6ad4cde2db61ee68a625c660c33e8f93163610c9f",
+      "pdf_sha256": "360820672bcd37adcdbffbd50edd51d3cf4527a6f97e50f70781ba55e30c5e4d",
+      "reference_sha256": "06c7250ee2fdde61344415efd568034e2aa93a8caf8e62ca9417ca8ab70cf6ad",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy four-row invoice, total 11,816.25; all source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_045-page-1.png",
+          "sha256": "e78bf00522add38f9f6fae32d6d56944b960e792b0011c02ce4a9bc007685bf3"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_046",
+      "source_sha256": "2e73df382dd08d62efac495fcd3a717ac5591fd22d680946e009cec0117cdb83",
+      "pdf_sha256": "4119e53b581487746ed4b917ee904120de5752a66104f25d9acbd53c53e22e2d",
+      "reference_sha256": "335c0d4adaee7126ad437f6cdca0fbde6a978c9b194c8a1673192f4d813d1d7b",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Ten enterprise rows first page, total 380,898.71 second. Source fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_046-page-1.png",
+          "sha256": "3084cfe8f7cf68ff05238dff2dee4e88d0f075cba8513bf59a33f77587127262"
+        },
+        {
+          "page": 2,
+          "image": "invoice_046-page-2.png",
+          "sha256": "7511d7be609c154df671378d0c5dbeca05e93152a7bb791b067a0b1bc4d4e937"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_047",
+      "source_sha256": "1a8fd441860c7aaebe30459b0ceb10d8ec7929176d1545a55fd23dc0d659d246",
+      "pdf_sha256": "f06c92e3cf6eed14e5df9a5bf9feab8f596719a9507cde417df1d9f5a8f2d6b8",
+      "reference_sha256": "c24fb1b7a7831c5cbb5acd98d9d107dd5286eecf261418e9bdc635317e20d98c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Both pages inspected: six records. API Usage (per 1000 is on page 1 with quantity 38.58, price 2.96, amount 114.20; calls) continues in the same column at top of page 2 before final Premium Support row. Full description retained across page break. Total 1,693,885.51 on second page.",
+      "mechanical_resolutions": {
+        "record/4/description": {
+          "explanation": "Both pages inspected: six records. API Usage (per 1000 is on page 1 with quantity 38.58, price 2.96, amount 114.20; calls) continues in the same column at top of page 2 before final Premium Support row. Full description retained across page break. Total 1,693,885.51 on second page.",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_047-page-1.png",
+          "sha256": "28ae1557e3e9cb6dcb207171b2f1572afd6e0b618cddd331ab98dbc24400b662"
+        },
+        {
+          "page": 2,
+          "image": "invoice_047-page-2.png",
+          "sha256": "6ba3dd86e343211ae06cf9287af0c57698d8a7dad5ce83707c3582192be2c256"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_048",
+      "source_sha256": "2c360a5f3e1e74f83c6cc1e81ca11ce0c7078388614a21dd35ae84030a09713f",
+      "pdf_sha256": "907236d8bcdd2a308a1a12137d7e4bc7ab33acc7703b414dcaa51718a49a88e2",
+      "reference_sha256": "e8cb9f71d82cb0efc86ca1b55478c91e83168dda107b811f912bad99fabfff01",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page six-row economy invoice, total 76,364.52; all fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_048-page-1.png",
+          "sha256": "59eca3e891698df4fdba932eafcf0af8089f08acdbf84b98878aea52a4338406"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_049",
+      "source_sha256": "399d6fb54c233786e5b07ccd1d8d26668e7a680f7526b37aae8005eec930c5ad",
+      "pdf_sha256": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+      "reference_sha256": "adf1e988c7426bb46ae521fce5eea7bf02d67750edff0319dbeeb3235d21e705",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Four enterprise rows and total 21,977.12 first page; notes/tax ID second. Rows 1 and 3 have Brochures - Tri- on one line and fold on the next; printed hyphen and all letters visible.",
+      "mechanical_resolutions": {
+        "record/0/description": {
+          "explanation": "Four enterprise rows and total 21,977.12 first page; notes/tax ID second. Rows 1 and 3 have Brochures - Tri- on one line and fold on the next; printed hyphen and all letters visible.",
+          "pages": [
+            1
+          ]
+        },
+        "record/2/description": {
+          "explanation": "Four enterprise rows and total 21,977.12 first page; notes/tax ID second. Rows 1 and 3 have Brochures - Tri- on one line and fold on the next; printed hyphen and all letters visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_049-page-1.png",
+          "sha256": "1673bf3e291b7b321e68181172b7104a5946d9587a3befa09b4ab898b9f1b264"
+        },
+        {
+          "page": 2,
+          "image": "invoice_049-page-2.png",
+          "sha256": "1a6412bab52155ee38811e1904426a85a32bbe66291ddcdf3022e284cf302ea5"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_050",
+      "source_sha256": "778ac9286f59fab8fde71b3e1c44091412edaf766ec478fefc71f2d9769c96d8",
+      "pdf_sha256": "097e94baf27afa5a092642425e7b53a67ede026bccaf3e3ef9590f44351864a6",
+      "reference_sha256": "4dd640db5875c8abc51df833fd98673f06792c040091370e63a9f08a5e8f2e8a",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Ten small-business rows continue 4+6; total 41,544.07 second page. Headerless continuation and all source fields inspected.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_050-page-1.png",
+          "sha256": "86e6cfa21561309b3df27a76b3c3e7694f3a8febec7fbd04d9c400b09c633803"
+        },
+        {
+          "page": 2,
+          "image": "invoice_050-page-2.png",
+          "sha256": "47835c6b36550bf371e830be07887f781da920c8d70bcd8118eddee2f875cd71"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_051",
+      "source_sha256": "f599930f7fb2ec964340af3b061cfc0b8d3dd424ed201b735b2ceaa4d66aaff4",
+      "pdf_sha256": "44a6e39b690ca0f672b36eb88f7ff82c379cd58539206a8eefecd856463f71c1",
+      "reference_sha256": "491ce534557483373502f7679567612b1345e4547e9a3d1c985b8deecc08930b",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Five enterprise rows and total 150,893.70 first page, terms/tax ID/notes second; source fields and columns visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_051-page-1.png",
+          "sha256": "0f59c4d789962784366147df2f164554477972f8e7c3fc5bac171c2df52c5568"
+        },
+        {
+          "page": 2,
+          "image": "invoice_051-page-2.png",
+          "sha256": "c01f8cfbbde2b929c73337c786f6ffae33faae45dab88265969d53c092d78b2f"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_052",
+      "source_sha256": "513647b03b69ff071b5d4abe78af4dd821dbb75280760396741925d783020566",
+      "pdf_sha256": "11bbd2b2ab2ecd8f1795783f76cf7440d74405cf14b2e6082cf61d50b04b9aa2",
+      "reference_sha256": "c5c7e79b31d9f47b66c7589b20a48a62d87422371d6ad6737539c1624d3f59f2",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Five small-business rows continue 4+1, total 1,346,643.64 on second page. Fields and units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_052-page-1.png",
+          "sha256": "d90dbbe67116df2fca67634c419ea72e4ee8d09c6dc85e9b7258a9fc62dddf41"
+        },
+        {
+          "page": 2,
+          "image": "invoice_052-page-2.png",
+          "sha256": "2914a2736e56e714836b8420487ff294b6470bf9a3703630927b78b04b543347"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_053",
+      "source_sha256": "eda1211c9c029e8170b40de712e5af9559ccaff36aa7e8f8ad28e1d2a9627d1a",
+      "pdf_sha256": "f59f5989465c9121fe2f1f2d91576176894ee20715be8be4aa30f439c1d99de7",
+      "reference_sha256": "8d0be7a6e24c46a1aef64693b9d785b8594c0a5b2ae35a46498a317ac8eff344",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Seven economy rows and total 187,705.32 first page, note only second; source fields and embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_053-page-1.png",
+          "sha256": "102aa879d1c8128475f43b80abf8a73598086482ad5e4ebf9623d6107475baab"
+        },
+        {
+          "page": 2,
+          "image": "invoice_053-page-2.png",
+          "sha256": "cbf354323875541d0820f21f24e8ab00f57a99977232684d7925b156151b7d70"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_054",
+      "source_sha256": "2a2d1c54bc186dade4af5162df96107d696c3fd372a3154bba8d8a80d2ded3fa",
+      "pdf_sha256": "6a460522d86588d4ad0d34f4d60280aaedb59ed99e899f4283143bfe3c09cbed",
+      "reference_sha256": "2fd734880bff69fea5ca7be5282f960eb196e47eb22d927ab56ae48b9c0dbcf4",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows first page, total 168,757.30 second; source fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_054-page-1.png",
+          "sha256": "6ea8e78f873e47e8a9640deef6074584335262fa592596479b3013a31981b6ce"
+        },
+        {
+          "page": 2,
+          "image": "invoice_054-page-2.png",
+          "sha256": "d3e2752e82f2312d7f691366b94e7758e8e5dc8e09180d9e8e6dd8649d75cd9e"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_055",
+      "source_sha256": "0da6aa852304ace66c42687710d54e8521a3bb56dc50f20d72ded0c9bd2fa064",
+      "pdf_sha256": "9bdfa8113d644e6bbb59b6c78a1ff3fff344ca9003dc4fb4da2f257ee75bd962",
+      "reference_sha256": "25538097e28c758bd2ad259efcd62c153b7d433e0e7e2351c5b2ea3aea3b6f20",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Ten small-business rows continue 4+6, total 164,522.30 second; all source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_055-page-1.png",
+          "sha256": "0d04cd6fd0262f3a9a8a0e5f61b03cee0fc3f9600e0b7894a4654bd0e2a780d6"
+        },
+        {
+          "page": 2,
+          "image": "invoice_055-page-2.png",
+          "sha256": "ca3ea76ad796a7994f7f13136b7034b80c5faeefaabf70c656d42056483e4e16"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_056",
+      "source_sha256": "968a3b5ad18a87118763887482115d0af0cbdf3e3901a01e4aeda30a54174469",
+      "pdf_sha256": "c28c787fb4345a4ab3d6bda0f1b85b665b3b9b216b084f35a0f165dfe1b5c388",
+      "reference_sha256": "002ebf5cbc7ccf7408f6dfdb78211672584ad9d99435dd369da84884ea27f870",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy six-row invoice, total 1,119,045.12. Source fields and embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_056-page-1.png",
+          "sha256": "170a2ac86916899878f5ff9b7bcc201497948c1011b58d101a78df27ee67a5a6"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_057",
+      "source_sha256": "8d81b108c15b822fe126c47ddd57a432441e9a9b50b0578e5abb510421821ec3",
+      "pdf_sha256": "9e143f9d494d802d268f83f67477540e3334abaee80be7f36c616c3c42e183f3",
+      "reference_sha256": "843efe3f7c778375611516425a65bd65c8e6e752e8ff0491fb2e41ae95868e14",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows first page, total 717,089.83 second; source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_057-page-1.png",
+          "sha256": "6e8795e588f1ff31369c6776f2926f850bd36c40de7a1970c3586fe47d4cf3b1"
+        },
+        {
+          "page": 2,
+          "image": "invoice_057-page-2.png",
+          "sha256": "d6a2cd4a17f6b037f742b67a0b66cecc12cb54ae4ca472b7b0579eefad023c7b"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_058",
+      "source_sha256": "da495a2fb7bc2b3e8fff287b7a626181d779ff9c554b1f1f044bc13c7bab188d",
+      "pdf_sha256": "55147c2ae1c655ca3a191151401f144e1190e7b1f70db5646c2e1ff74d0cb29a",
+      "reference_sha256": "e20847f484480fcad300eda0a2580aed949a6556a9e329f2e0b56b884a55b0c0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business rows continue 4+5, total 37,214.68 second; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_058-page-1.png",
+          "sha256": "8d885139321391e9cc5e2713549c1765a8ea911dedd25ff3ae2d2e29e79cc8e4"
+        },
+        {
+          "page": 2,
+          "image": "invoice_058-page-2.png",
+          "sha256": "da2e0b2b7609e24a8ad82b6accbad4fa37ea9e301b367974887d7713e4c7adf0"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_059",
+      "source_sha256": "c4004ddf66acc74d1a446be54164d9186cf82ae0a3ee58c0e58a1b734f0c3f84",
+      "pdf_sha256": "f7cedf1f34124a2d54add9714abb319ba716989eaa4029cd0ab41c68cd59ffe1",
+      "reference_sha256": "af72b448009ac249145a8d422e333d4febc707f2d87e03594666b04a6c445efd",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Ten economy rows continue 9+1, total 237,307.42 second; all fields and embedded prices visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_059-page-1.png",
+          "sha256": "f6434526c7bf2706222df2f21a9876ccc97281cd232c9310f9cb1237d9e0723a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_059-page-2.png",
+          "sha256": "d69fe391567b20fbaf350c390a479a1397958fb3de26a979b3219f529dd91f9e"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_060",
+      "source_sha256": "2a7946e6c96567010570b6f03d30fad55e1d794cfe25089e1f660b8846275629",
+      "pdf_sha256": "4b0aca1020a826546f4e6ec1f72acad2f975d1f921aab69acbf1e8f4904de7c1",
+      "reference_sha256": "82eb5092a7ea74b3a6a151df43953b50efe7c5e1a1abf16390f7cb5c5ae24120",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Seven enterprise rows first page, total 654,711.49 second. Both pages inspected; source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_060-page-1.png",
+          "sha256": "61d44ad75bee37bf465da0d6b5f9bb0b95ba462cb9ea70d88e63a60c71903995"
+        },
+        {
+          "page": 2,
+          "image": "invoice_060-page-2.png",
+          "sha256": "617da90423a40a2dd9205689b0a80c2b43991d8f57fbd971e14fbd348e5cef15"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_061",
+      "source_sha256": "b2eec6dc23b9e847dc10f85adcdde9931dcb55b83e306353e503011ce707b3a0",
+      "pdf_sha256": "a0ef631f990bfefa140a8ecafb8ea3c608621e0202b0e743fd53abafcde78fb1",
+      "reference_sha256": "2a950611a4384fb503756c35962315d7ddaebf80bb84a5c986d0b7aea6f4d084",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Eight small-business records across two pages. Record 5 Social Media Management (month) continues in description cell across the page break, with numeric cells on page 1. Total 3,171,264.94 second; all letters/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_061-page-1.png",
+          "sha256": "c92056e91ab72c68bf8d9a92f6435e28c031080f342e446f70f34b131efc3988"
+        },
+        {
+          "page": 2,
+          "image": "invoice_061-page-2.png",
+          "sha256": "0f1e12b891af422247d20a35ffd0512489a20b58bfda0dff892ed7dd6b2c2be8"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_062",
+      "source_sha256": "a902e2639f03ce1f246a0ce06f13b940ca2e933bf62a6cf5e2178af1905641d3",
+      "pdf_sha256": "6acb613774da9b4747975fc4c182b1c0c97b30b4041baa0b633633276c633fdb",
+      "reference_sha256": "79023676b546299215017889b17b5af3af38c8b0b8b7399c7fe7e17f4af6af3b",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page seven-row economy invoice, total 30,522.23; source fields and embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_062-page-1.png",
+          "sha256": "484db9a5218bad4938518f6e53b0f54c36feb1f4486749c8d104c318a138d877"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_063",
+      "source_sha256": "247f800e2bdcd42267dd623a19d948856d334bce078b17410c8d560a91d6f632",
+      "pdf_sha256": "df5f8b0fb0c6bcc754bbba88121d843e889c896e9ad99b2964bc47235f5b3f54",
+      "reference_sha256": "8bef05ee499510fccdaf800fa897301caafe7e068c8617bf01cf40f3ee0b0206",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Six enterprise rows first page, total 69,349.70 second; all source fields and columns visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_063-page-1.png",
+          "sha256": "4ca55df6a5842f2bf1a0ed5efa10d86439d700759ae6c1e7f471c2a72a5ba5d4"
+        },
+        {
+          "page": 2,
+          "image": "invoice_063-page-2.png",
+          "sha256": "bb19b7443b4c193b2234d56a6b76ce07c7c29d71fe4d973251a4355fe10ff03c"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_064",
+      "source_sha256": "a760cfc66cea1d95aae7e960650a8eea82b012d26561254a5b7997af25940d82",
+      "pdf_sha256": "98b20ef6811cb5b5391139fa256d582e5f278fc099aa9a8e754a0e243d58f8bb",
+      "reference_sha256": "f5734dfc552f51a6ed54602a7edb8b2eceb0673d1f65ce7f778963eb22f87c1d",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Nine small-business records across two pages. Fifth Bookkeeping Services (month) row splits inside the description across pages, numeric cells on page 1. Full text visible; total 432,617.44 second.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_064-page-1.png",
+          "sha256": "7216a115b476e63c54ce9ef83958b434f18703801ea67664c39a689e749c5db0"
+        },
+        {
+          "page": 2,
+          "image": "invoice_064-page-2.png",
+          "sha256": "b1406ad53f8ea4c64daece0b126e3fe854c5ed505319dd35d17eac68f80d60c9"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_065",
+      "source_sha256": "a8a7f140e22a27f0fb91fbf31afd01bd93904ded6313bf232e2fae530cd262d7",
+      "pdf_sha256": "97c8f0890d3fa7f0b0b5e64021117bf13348aeda42335d31c806f231b68706d8",
+      "reference_sha256": "b75b490daaa45ce61ba7cf3d0c75a5841676538aae4461ccaf213bb016c27cd8",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows first page, total 3,865,494.25 second; source fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_065-page-1.png",
+          "sha256": "5c219289cbd97f7300e2c00a80706011339f8b73922898af2d56ad0603c11f5f"
+        },
+        {
+          "page": 2,
+          "image": "invoice_065-page-2.png",
+          "sha256": "14108843ccf38d0612f0077afe98d34fbec091ae7d6509c21c0e95427e65c8f7"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_066",
+      "source_sha256": "a9ab5596cb4f58c1706eda539d5705ddc038c725c0bd0bfc87cffc43d50d6d7d",
+      "pdf_sha256": "6e1f3ef002fbd77e65314b1de8323eea8441c1febf551ab85cf2afb68f6dc3d2",
+      "reference_sha256": "fa738bc4eb7069056ccccdb75a71917e08726ea984215add4caebc3aceb46e9b",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Four enterprise rows and total 23,772.22 first page, tax ID/notes second. Fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_066-page-1.png",
+          "sha256": "33ffa4e2f81bd72adc9aed4e2bb971948eb3b4be6ebc93f03a43a7337736d110"
+        },
+        {
+          "page": 2,
+          "image": "invoice_066-page-2.png",
+          "sha256": "d53efddf1d59414122627bc9785162a6455d597aec0e046e6a86e90d0fb35958"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_067",
+      "source_sha256": "ed29aef4a82d1e50f09596c1d051e76e8bb38f97d5b5413441296d060d7b43cb",
+      "pdf_sha256": "e4c9c14748d965a142e78a50ec0dd4af7230038e9c52d06300bb0bbf7f3113f6",
+      "reference_sha256": "2d7e612efdcdbc1534beed95e2055f29e285ce25a09bebc91d2c6627a357b1d3",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business records on two pages. Fifth Systems Analyst (hour) description splits before (hour), numeric cells remain first page. All text and total 2,638,443.31 visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_067-page-1.png",
+          "sha256": "0e236b71238c86b80f11d759accc7fdbc1e0b4e85d240a06d249bf52cc0819c6"
+        },
+        {
+          "page": 2,
+          "image": "invoice_067-page-2.png",
+          "sha256": "944a562100635b4c7973969f286f391cffd11d8a1fa3d144c4a2e7320dc154be"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_068",
+      "source_sha256": "78cd69ccc343ecaa89046d2cc13d760f2c0c51d0a2198084e7578ea2d0f4d3f8",
+      "pdf_sha256": "bc55d3356b09f9eb56be650fa2b63ffa6a80d88b4e6b9937719b31bf05a58fce",
+      "reference_sha256": "ab8592ab940d75b5ed5ecab07e969b8ca2789eab79836a3d6ea33be9ad231559",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page four-row economy invoice, total 379,963.52; fields/units visible. Note says This is not a bill, reflecting synthetic content limitation.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_068-page-1.png",
+          "sha256": "c690d6c290b5c77679e46d17268721fad2d4c53721f93ec95146a7f82a13b106"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_069",
+      "source_sha256": "bd63ebd47c11450100c4ceff970f717648ca1f4d2826ddac33691b25dd5703c4",
+      "pdf_sha256": "2910890b973e3ed9abe057d2718aa971a8649dd2e7f3b56d937de6806e0532f9",
+      "reference_sha256": "d052109bcec0024cb15d1e066cd72c4a468bf27acf3ece4ef76ee7ffdf3947d4",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Ten enterprise rows first page, total 211,594.35 second; source fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_069-page-1.png",
+          "sha256": "db1cb0e82b8b2d9ef984d22032ef9d164bbb97915bde323cf95d77a620e870c0"
+        },
+        {
+          "page": 2,
+          "image": "invoice_069-page-2.png",
+          "sha256": "9639655709b207914abed1a72fdeddb0de983f0e6daf3df3ca4dcdde5b27bb09"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_070",
+      "source_sha256": "8eae8afe08c3c70d55b2fa4005ba48904b93057bec2260abe97955b10f1bc77b",
+      "pdf_sha256": "cd371884736f2ac5bac230f7b4a12f5c30b1201929b0f6eda46d46f8330e0365",
+      "reference_sha256": "4383f546a700af1262606cd7732af6307731e98002471e1df6410a96160e469a",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Six small-business rows continue 5+1, total 35,056.40 second; all fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_070-page-1.png",
+          "sha256": "bf4241a549098914d269b781219fb4ea468958b35fb2f11c6bb89a0729ea189f"
+        },
+        {
+          "page": 2,
+          "image": "invoice_070-page-2.png",
+          "sha256": "947b1f588c2d79739c20857e8328203ce80fdbd9b59d4b7b9c9861ecbe9d2683"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_071",
+      "source_sha256": "625b3e5b7b77994e688bad34071fc4c4a033eca1fb0b0ff493ffccf8a894e1fe",
+      "pdf_sha256": "f28148cb2363d06633465589fa7d48e87e71ca740d8b0fccec0175dfe156b4c8",
+      "reference_sha256": "857cf912c56e4a7b84c70e9abf0c678a14091e4a15a65249e002637079feba4f",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Ten economy rows first page, total 8,258,708.53 second; source fields and embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_071-page-1.png",
+          "sha256": "768aa9e55d919f3811730807251b6bf3901e8f2bdf4594dda5977f973cdff5f4"
+        },
+        {
+          "page": 2,
+          "image": "invoice_071-page-2.png",
+          "sha256": "987276b46505589b4560d8153c14e200b30f70e3d1d886c4e46449c34a4397d6"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_072",
+      "source_sha256": "f8f6e883e10ddd2aea867c5274e92873293855931547f649e379341ce37ce1f6",
+      "pdf_sha256": "2dc5189b3a7f62e2c382b88b500eb5ab9e8b42581ba62bd85c78a5dc9319fabe",
+      "reference_sha256": "c1d38a96bdc9ee0fc745e21c5540ba8ee408156979ea036f767fe3cc6b421ebd",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows first page, total 128,000.24 second; fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_072-page-1.png",
+          "sha256": "1661508072aacce58a72c77091e9e7c8ce2b77ff1963304c27229cf786ab07ad"
+        },
+        {
+          "page": 2,
+          "image": "invoice_072-page-2.png",
+          "sha256": "08b49a11647614e4f9a3cad391c4209af35c0c5a7c0b4c57265bf47f52232d05"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_073",
+      "source_sha256": "d9817dd7c87b26df84cd3853dc5dffa42c0c88ae914d1a3399aa86cb29bc5ff7",
+      "pdf_sha256": "19681ada6d99b0665b9a59d879852c468b0cc6de9168d0f882c531da453a88a2",
+      "reference_sha256": "7523f63d8d30d9f7ea858962386074311d69a4edd03e00dab893a554b0e1c7e7",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business records across two pages. Fifth Fertilization Treatment description ends with (application) at top of page 2, numeric cells first page. Full text visible and total 101,478.12 second.",
+      "mechanical_resolutions": {
+        "record/4/description": {
+          "explanation": "Seven small-business records across two pages. Fifth Fertilization Treatment description ends with (application) at top of page 2, numeric cells first page. Full text visible and total 101,478.12 second.",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_073-page-1.png",
+          "sha256": "9e39fdcf60d6e98f1cbccb22f6c6636cc07ebbbf0e0cd003dd63c9309ecc77cf"
+        },
+        {
+          "page": 2,
+          "image": "invoice_073-page-2.png",
+          "sha256": "f0b020af70e8c759d2528ae9297da55c0f6a5887396c9c4418f3dea4256f662c"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_074",
+      "source_sha256": "ded543a195be30e47b2223abf0262042dcc33b468b0c9b7544dfa4e405bffd1f",
+      "pdf_sha256": "d9a6285b4bfcd2b51317cb621fe7717f25ce14e49f4db7a3a4092074ac2e7d49",
+      "reference_sha256": "c80aeaa11995b9e7c841e1ce08ce3480dffa54dae0e4abc291762a34242912aa",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Eight economy rows and total 91,543.74 first page, note second; all fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_074-page-1.png",
+          "sha256": "8ec8df47258661f3aeea6686970e32abea02c5d4c87bfc0c42f43b55f5dfa23a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_074-page-2.png",
+          "sha256": "79553167ebe98fb59bef0c4cabe1a3fd84ecbbaa54eecdf42a36b0a9e7b13350"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_075",
+      "source_sha256": "8ce762e83855a9747fc3461ba02d21dd26833f418b934a685762632577f75cca",
+      "pdf_sha256": "a852358a7cd82569f4d235c4d55eac3299ada46370a1d4c9e7abe14d8a573f14",
+      "reference_sha256": "7d1836a419f1388d8e44a7131c7b84d27552ec3351f282a87795dad2dfdc7201",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Six enterprise rows and total 9,985,915.56 first page, terms/tax ID/notes second. Source fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_075-page-1.png",
+          "sha256": "634e6ed97520ad2540491579e675c8e6a34d97885e887dc8ed04ec84556bdade"
+        },
+        {
+          "page": 2,
+          "image": "invoice_075-page-2.png",
+          "sha256": "6eeb88db32f54bf86b71e7b6f063ede2101f40d975ad0527d8a4d0f7e9699ec3"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_076",
+      "source_sha256": "d3492f206383745f95e83c50c89c9eab6e2d95e59529ba2964c5aba8dc36c27b",
+      "pdf_sha256": "1387a39a832ee8fbf09c23dada4f8924e4767b5d39ed89b6b42f46ef57237994",
+      "reference_sha256": "b0565f39031d88912e4b70e5e469f2a4f7f026a1901de12fa6645913908b9d90",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business records across pages. Fifth Physical Therapy description continues with (session) on page 2, numeric cells first page. All text visible; total 342,521.16 second.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_076-page-1.png",
+          "sha256": "79c9c66c8b50643b24446ed64e83762b35b3a4b12fcc10bc25956b5fbd3de802"
+        },
+        {
+          "page": 2,
+          "image": "invoice_076-page-2.png",
+          "sha256": "193f2e2c1c810ff61c47bdb0bf105900cc337d09c806ef568ee15ad258d83e32"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_077",
+      "source_sha256": "685c4c7e6d62740b0a85df9e1f4e644b173fcb5e619a092d197b932445d4ae4e",
+      "pdf_sha256": "26cba4b70e87b8d698cdb978dc5c93e2dc161ff285d34fa132a4b830e47a08ee",
+      "reference_sha256": "6ea8b7d81fe631800827cc56b83a2cf97b7233cae296a37137f75d1f402f6c08",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 5,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page five-row economy invoice, total 84,157.29; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_077-page-1.png",
+          "sha256": "97541f3e47cf2bc80d06b95f5e2e01749641c261c286d947cbdb73fbdf4ee523"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_078",
+      "source_sha256": "728961c99987b48ed0564406b8b7db0ca9891f87c367975f7f03b34fc017680a",
+      "pdf_sha256": "ed312e82e0466efa1d85e88ef456813237b9b4abd251b0817f27366c500c7241",
+      "reference_sha256": "37283505b04ac8662586237cc4236685654683ecc26b399e7dd1d86d0d7e4b72",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Seven enterprise rows and total 54,370.74 first page, terms/tax ID/notes second; source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_078-page-1.png",
+          "sha256": "db6b0e3de702c908fdba11bc19ffcf624ad7419465a276ef80587556f0e36f6a"
+        },
+        {
+          "page": 2,
+          "image": "invoice_078-page-2.png",
+          "sha256": "b701aa18b599e4b2cdebee98dc44f66625e53919e4c96fd5b496e7dab61787ff"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_079",
+      "source_sha256": "383b20bb156cbac99caf981b8d76c864984218ca41c9f60d3f663b7a79a7b563",
+      "pdf_sha256": "23b40be6a1d93384e5f30dcbe733953f6c127fea089950f49f0f79a517ce3ecc",
+      "reference_sha256": "48cd4614e0b31e90ea35424495accee401a8c651cc4ed2a7219e38e3d5adf3b3",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 2,701,379.11 second. Source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_079-page-1.png",
+          "sha256": "bff5dcf58b00650b9153a9f95ce7392ce06e525d933d48259639dd55c6a4e6c5"
+        },
+        {
+          "page": 2,
+          "image": "invoice_079-page-2.png",
+          "sha256": "7c4a933e21c0cbf134a096bf95e3385c0c9f4796eb2d4bad9b803ce0e74388d2"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_080",
+      "source_sha256": "ac8c9519e0a2d91f0e956b212a316854d2c4cc28a75525d3f840d811a1bbb032",
+      "pdf_sha256": "6d11561375afda584a6d7611faa21ca93689d51138222644014e5481779c1cc8",
+      "reference_sha256": "74392585c58582eaa27d060c89080083ffafc9d7289349e8bcb24d523e3acc79",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy six-row invoice, total 389,626.25; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_080-page-1.png",
+          "sha256": "2ebc2cb6899efd76f1b210e2cbc17680cd88aa41bd320a0874c72b935e01b46b"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_081",
+      "source_sha256": "4058c968c01f53e4a6a9f45665a68ddfb929777d8bb26ce5b6d91998eb26c0d3",
+      "pdf_sha256": "fc028fcef5b311fadfdc52c4ef32c12cc841bab94709310aa26a37617dab1428",
+      "reference_sha256": "bdfe30436000749354101a4c6d0fa548bc39e15e23a501e3cc8f121768a34524",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Six enterprise rows and total 33,649.26 first page, terms/tax ID/notes second; all fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_081-page-1.png",
+          "sha256": "6382ee7be4f3620fb8965bdb4105c8d1ebcf9e242565bb92bdae266b615e9815"
+        },
+        {
+          "page": 2,
+          "image": "invoice_081-page-2.png",
+          "sha256": "4946adbded46bd5568caebbc0d8875afcb697355562a5f37a314e1ba21090851"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_082",
+      "source_sha256": "25e6b9131ce0c7b6afc41528151fb5e5f97188e3fbe9dda841187fc900e4eff3",
+      "pdf_sha256": "884a8235e3ace28be771ed5b837303be0ffa548e99e6ba49824097c040b0296f",
+      "reference_sha256": "0b997980f5835ee78876e0ad723086199a341d311b37dfb785ee976b3a6f99c1",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business rows continue 4+3; total 317,562.92 second page, source fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_082-page-1.png",
+          "sha256": "8370a323d75455df726ebfdcbffb6bcf66bec8f7d76d5e34a267000cbe4148f2"
+        },
+        {
+          "page": 2,
+          "image": "invoice_082-page-2.png",
+          "sha256": "3e84f9ddd94c164f4458044e07334eb887b310f6492a149995b6430125b21439"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_083",
+      "source_sha256": "be77754ddbefbcdf206460708c019abf73434eab84b8b204e1ecb64c5bc110fb",
+      "pdf_sha256": "64ba8913459e1487f1b1c837da08eb982799a223e460f96c3f296a8a862bed99",
+      "reference_sha256": "ab6cd89788febbb57759104230f576236ebecb3b9da559f4defbf88deb74d7de",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Ten economy rows first page, total 99,452.01 second; source fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_083-page-1.png",
+          "sha256": "d39b9f52f0944401445f42fe5c116aee01b1766ccf98272d020ec0d9456dff84"
+        },
+        {
+          "page": 2,
+          "image": "invoice_083-page-2.png",
+          "sha256": "38177a92d9a7a346f3b155591c7eb6e53934006c3b219894029269bbc1d1cc57"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_084",
+      "source_sha256": "bfaf2489ad695003f00c873cd47f7ad5b58639acd4b08ae24d43f2fe6e1896d9",
+      "pdf_sha256": "72c0e2113aa66f2c8d76009dbbf667c2e91134f5d7d6ec32028dcc83da479ff0",
+      "reference_sha256": "cdefb6fbfc24f8dad0d948a0e914036c1986ee9f2b472426fb2669400fb0f8f5",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Seven enterprise rows first page, total 141,771.83 second; fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_084-page-1.png",
+          "sha256": "e6f69e714ec954452ab82a17ee2a34b72499393e2b0c0ff3fccdeaa22778f7c0"
+        },
+        {
+          "page": 2,
+          "image": "invoice_084-page-2.png",
+          "sha256": "80f6dcddc4b46685ae87e694eadf9add005bf8c05b338b4553b6bf3ff49381db"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_085",
+      "source_sha256": "ae7278f47099c33cd123ec320b4cfb63e49bc89585a49e163f2df374b064d012",
+      "pdf_sha256": "383ad6099b4979f0805f4fd1d00289644ce2c648af79a1adc15972c23be53678",
+      "reference_sha256": "e66e1e0018130c8ad615e86c59ccbf9cc5dbf29a4f694111b9ab16965b2dc739",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 7,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Seven small-business records across two pages. Fifth Fertilization Treatment (application) row splits after Fertilization, numeric cells first page; remaining text visible on second. Total 111,548.02 second.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_085-page-1.png",
+          "sha256": "5ee90f46b88a22d4e8a8ec6476e64e414f0bcbdc2578e0bf741c25c95f4bf3b3"
+        },
+        {
+          "page": 2,
+          "image": "invoice_085-page-2.png",
+          "sha256": "2068515c83650175f9c76373a80585cf99418b54c97759f9ceccd1606869f8bd"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_086",
+      "source_sha256": "80b95163ebf02f6e1170d6f8b1f983b6251c010ca79bfdd68a2ba56364d01927",
+      "pdf_sha256": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+      "reference_sha256": "c484f5bbecdb59e643636583659082decd74711a8b486926658a5300080489e4",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Nine enterprise rows first page, total 717,742.45 second. Rows 1 and 4 Implementation Services split as Implementatio / n Services within each cell, all letters visible.",
+      "mechanical_resolutions": {
+        "record/0/description": {
+          "explanation": "Nine enterprise rows first page, total 717,742.45 second. Rows 1 and 4 Implementation Services split as Implementatio / n Services within each cell, all letters visible.",
+          "pages": [
+            1
+          ]
+        },
+        "record/3/description": {
+          "explanation": "Nine enterprise rows first page, total 717,742.45 second. Rows 1 and 4 Implementation Services split as Implementatio / n Services within each cell, all letters visible.",
+          "pages": [
+            1
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_086-page-1.png",
+          "sha256": "9e2836d3ce9b2465dc4456c233b609706a6508fb1dd45967fc799f17d1566e26"
+        },
+        {
+          "page": 2,
+          "image": "invoice_086-page-2.png",
+          "sha256": "edc96b59853d6ec94819ed00d0b6400aef94f776afbcb784d3566d7dcc9e5c65"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_087",
+      "source_sha256": "ecc7f19807e61d9fa30f407ba63234deb5fa7f9be33722b433794f7655aa01c3",
+      "pdf_sha256": "87cce5babdd78e0078f07d68ce8b836a75ebe85be3230d823eeeb0c01dce5f26",
+      "reference_sha256": "1491bd11c123b23ce344f1e2bfaa2c2fe5468df053e37627fc387cc9fb7acb28",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Ten small-business rows continue 4+6, total 713,051.04 second; source fields and associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_087-page-1.png",
+          "sha256": "64ef2c93df817b8addc82a368dab0a5f1b46e6c90152be92a1d6cab3506e66fe"
+        },
+        {
+          "page": 2,
+          "image": "invoice_087-page-2.png",
+          "sha256": "ab756a590cf42f8e3fb5012f3c31ff346082a250d75a7c3f4fa2dbf49df46a9d"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_088",
+      "source_sha256": "e3b11a612a79627a77939fb8b2d7292db76716f65301358a016c5461ce0ebca4",
+      "pdf_sha256": "324534ee9575a29a5b441fbcfe994cf7f3aeead9838c8bb64f024fca6eba7fe9",
+      "reference_sha256": "319085f6dd57f1bf1695a4d1c343dc683f6575a61ef9158945b7e83753df63ce",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Ten economy rows first page, total 32,941.18 second; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_088-page-1.png",
+          "sha256": "6a198ccb43e278bf1c36a2805c58a4f602659d7ad95aff55830bad996cac9a30"
+        },
+        {
+          "page": 2,
+          "image": "invoice_088-page-2.png",
+          "sha256": "6026d1f69be9291681037e52df94a2bccc51f46e1fdf7846040ddd9717aa4f88"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_089",
+      "source_sha256": "495fc8dbbd1e67d856bd3ae0f08e2d0cd6fb3d186c971a885fcd089da85800e4",
+      "pdf_sha256": "e3600b2894f53122347645f4d2f2d6091badc6c840f949f24944cc96164b121c",
+      "reference_sha256": "21060c28031fabfc5f9deac5b52a558b32b8f148d2ba1fc3a1883169e3a468ac",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Four enterprise rows and total 13,998.32 first page, tax ID/notes second; all source fields visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_089-page-1.png",
+          "sha256": "5577ee82e2f95efa5b810a3314dd76818cf6ce362c6f3631444e6073a5388eef"
+        },
+        {
+          "page": 2,
+          "image": "invoice_089-page-2.png",
+          "sha256": "14f7b7e1d3faec40def90dc55891e33e0774bed3fa55cf5d9a1f14c6faa428b3"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_090",
+      "source_sha256": "3b915bc00cbffe081bc6209386d807e9eebb130899b001ae17e7f840725bd3ae",
+      "pdf_sha256": "803b45d747376a53acb941fb443c9cb65c9fca0361f84ae1d204c1c15e3dbf85",
+      "reference_sha256": "ef77b7dd742005e58b9eb72667c7d4453606556f4186265a886f7c584468b0f1",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Six small-business rows continue 4+2, total 10,771,262.22 second; fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_090-page-1.png",
+          "sha256": "2f4a02cb8f88436d6824feccfdca0b35220c47b5ec9420bc8bc3d4684627245c"
+        },
+        {
+          "page": 2,
+          "image": "invoice_090-page-2.png",
+          "sha256": "2121157002430f5c19dc0685e2ace07cb4582bf876530f5582ed1d40f91e6873"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_091",
+      "source_sha256": "3e25486e35e43036410669365c689944461815e90facd8fe94c43d8a23a317a3",
+      "pdf_sha256": "df206e2680e947a1b954cd2007e3b5287e2f01c0c76196e98702f2da196fb216",
+      "reference_sha256": "4595b10a528a075186c2ba6cdb4d05ad6236fc3d25406009cc81e8663b07e6e0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy six-row invoice, total 530,364.54; source fields and units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_091-page-1.png",
+          "sha256": "c2affdd5434b09bcd5d9349e64457308f75f250f17a884dd67857a30e833b293"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_092",
+      "source_sha256": "ccdc2c611b119fa3004561561474ffe7e482cfc01c87be4d108f369f4edd8a55",
+      "pdf_sha256": "9d21c81901a454dafe882b76255021f0f7783297c13f27f7d4825856963e0ed0",
+      "reference_sha256": "c582300b98c3931471a9360807c9d05697ff224afe4862fdfe4e10e279284c98",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Eight enterprise rows first page, total 19,904.27 second; fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_092-page-1.png",
+          "sha256": "243dd13b69becf925132d26746c8c7c1ad62f1bdfa3638c4c20bf065182ee344"
+        },
+        {
+          "page": 2,
+          "image": "invoice_092-page-2.png",
+          "sha256": "a11ed1b2498e668be993c4729e14d9830135e17e41296aff1ffc01ec98dac71c"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_093",
+      "source_sha256": "86a45290a7139612c4741e61f70c9a244850f20a8756b8fc7bd8a8ec42f9eafb",
+      "pdf_sha256": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+      "reference_sha256": "77c6a695057628c6cb4d1e2eedc42d3a7588e3548b5a71586865a959ca1f6994",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Six small-business records across two pages. Final Breakfast Buffet (per person) description continues with (per person) at top of second page; numeric cells first. Full text and total 51,183.23 visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_093-page-1.png",
+          "sha256": "5795d60e0fb5ebe4dfd77c6dc4282ad3017c89a128b8eb51b5c692c020b425ad"
+        },
+        {
+          "page": 2,
+          "image": "invoice_093-page-2.png",
+          "sha256": "2228447bd216e9e7ae14b76f81d7fd2dad7f16a974254e034c562679fd881d48"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_094",
+      "source_sha256": "11aae65c1b4268c49bf4ea141bb0d7de7f789583ce149b9d6d7995d6625eac57",
+      "pdf_sha256": "dff4830e9b3025ab83f299892c62be9eefcb4198b228ea9b37339533a05b1ae2",
+      "reference_sha256": "259e09ba98721ae20ce6a3e4964857976ee76e13ceba7b2cfbb368cfd95e59da",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy six-row invoice, total 6,451,000.29; source fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_094-page-1.png",
+          "sha256": "c4243fc54d6e5b3f1eadde0f68a297dc05944e15a4c684714f8a60abf3bd8cd0"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_095",
+      "source_sha256": "222ccbc6d71f12c307556a4e6bd7fc1ed63f0e8ead3bf73a3295199f4cd767d6",
+      "pdf_sha256": "97b09860078e5b019cd4a7e10d8f5ba43fb46b8c0f394114b9c7df9fc9ee2a17",
+      "reference_sha256": "ff81fd3f286d06db0e537a7e34679b022a6e74553336a3710c4ceac455d67b80",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Six enterprise rows and total 143,687.21 first page, tax ID/notes second; fields/associations visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_095-page-1.png",
+          "sha256": "b8bcc833ba88d0e8d47f10d63daafc5e211411a7c23811fb0cb6f73d2ea7378e"
+        },
+        {
+          "page": 2,
+          "image": "invoice_095-page-2.png",
+          "sha256": "3c4ab43ead12e5f9053d9a923a2d29e1a8cfbd31e6231f8a8ec4317b7978b499"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_096",
+      "source_sha256": "d5f5d4196a4ba02e063a637de9fe7163c8093076ca15d4f42ad377e16eb2b279",
+      "pdf_sha256": "f28677ae569b4f5878b42d7fb8b825da2ffaf9b5e2336493a52b862cd00b95b5",
+      "reference_sha256": "10bf0c67c9ebdf920f569bf63abf220e6ef5686f2bf9af45c2b1f6449908173e",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 8,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Eight small-business rows continue 4+4; total 18,436.08 second, all fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_096-page-1.png",
+          "sha256": "e01a43cd85dc1deec8e22f51bfdec54365e096f32076a420b906f47ef3d9ba57"
+        },
+        {
+          "page": 2,
+          "image": "invoice_096-page-2.png",
+          "sha256": "d40ee5c8e5af8b69e79a6864c004c9bd63f512ef5fa657c4410a09dd4a83d16d"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_097",
+      "source_sha256": "7ead99e480911d1e2cd8bff38ea05695d1b9740b71ac29b2b4b79b9affa62b0a",
+      "pdf_sha256": "2b32a3b814b4ebdd41fe57aad1c280f54447a981e7e250c409246c4aec436c14",
+      "reference_sha256": "e6180ffab355e3828353d5598cb04e5ab8325ea9a0893beb40d52c23f411b430",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 9,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Nine economy rows first page, total 172,202.15 second; fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_097-page-1.png",
+          "sha256": "61894539bf93fc668a5d0e27a8aed35e580c5b7cc1dba28501f9c35fc6e22867"
+        },
+        {
+          "page": 2,
+          "image": "invoice_097-page-2.png",
+          "sha256": "a0c6d475aae9b908925ad2112438d5f1188ad1131d07f886e4184f5531071e33"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_098",
+      "source_sha256": "9f471c7661120dc2218b4931b5841adba390e6eee2466105507b9f4e510694d9",
+      "pdf_sha256": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+      "reference_sha256": "e65a5dfe581cd77a71d16113f73558826dc1754faf16ee011e55f300a430109c",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 10,
+      "observed_headers": [
+        "Description",
+        "Quantity",
+        "Unit",
+        "Unit Price",
+        "Amount"
+      ],
+      "notes": "Ten enterprise records across two pages. Rows 2 and 8 Implementation Services show Implementatio / n Services within cells. Final Enterprise Plan - Annual row splits after Enterprise Plan, with - Annual at top of second page. Full descriptions, numeric associations and total 4,030,479.51 visible.",
+      "mechanical_resolutions": {
+        "record/1/description": {
+          "explanation": "Ten enterprise records across two pages. Rows 2 and 8 Implementation Services show Implementatio / n Services within cells. Final Enterprise Plan - Annual row splits after Enterprise Plan, with - Annual at top of second page. Full descriptions, numeric associations and total 4,030,479.51 visible.",
+          "pages": [
+            1
+          ]
+        },
+        "record/7/description": {
+          "explanation": "Ten enterprise records across two pages. Rows 2 and 8 Implementation Services show Implementatio / n Services within cells. Final Enterprise Plan - Annual row splits after Enterprise Plan, with - Annual at top of second page. Full descriptions, numeric associations and total 4,030,479.51 visible.",
+          "pages": [
+            1
+          ]
+        },
+        "record/9/description": {
+          "explanation": "Ten enterprise records across two pages. Rows 2 and 8 Implementation Services show Implementatio / n Services within cells. Final Enterprise Plan - Annual row splits after Enterprise Plan, with - Annual at top of second page. Full descriptions, numeric associations and total 4,030,479.51 visible.",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      },
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_098-page-1.png",
+          "sha256": "9b2c8cce40bb0ac16291da741c05b30607412b3cecd4b9e17cba407c971a371b"
+        },
+        {
+          "page": 2,
+          "image": "invoice_098-page-2.png",
+          "sha256": "f3e06175872f789e7e84113e0bf236e8d4bf5f505ba7b7279aed2b92afe13442"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_099",
+      "source_sha256": "b657a3fabb0a27c7db3b86a7b33cc61066a02bb68c6995df30a9a20e86536bb6",
+      "pdf_sha256": "3f891041a18bc38a2ba060d2c313c07440b6c5c8a3e9ff9210b1d17df2410778",
+      "reference_sha256": "9439ea4e830e62b9674ef6696c1ece0398985290ba7d60e30277527d5cee9e68",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1,
+        2
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 4,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Rate",
+        "Amount"
+      ],
+      "notes": "Four small-business rows first page, total 17,373.70 second; fields/units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_099-page-1.png",
+          "sha256": "fde971de92096815607f092331138bd962dc640a411d0833bdfe7e3e82a3bbe5"
+        },
+        {
+          "page": 2,
+          "image": "invoice_099-page-2.png",
+          "sha256": "cc5ade28065dc203a0039a812bc1a0820801907a35fab8bc115c0ebcf3425773"
+        }
+      ]
+    },
+    {
+      "document_id": "invoice_100",
+      "source_sha256": "2e7faa09bda9f188ed4001be1b262d9875475a9a7161ec029eead2a86f85bed9",
+      "pdf_sha256": "49f457a3696104ef505699af90cd00d378b824477555cda68d8ec3d432611d9c",
+      "reference_sha256": "c8cc2e57c3e622b69b8b1e1ef598d5a87c6ecf305501c91038c38d4197a40ba0",
+      "protocol_sha256": "60599fc80afcf46755734c02d033f05208deeb8a8e039d77448280b5d485e8b9",
+      "verdict": "eligible",
+      "reviewed_pages": [
+        1
+      ],
+      "layout_checked": true,
+      "associations_checked": true,
+      "observed_record_count": 6,
+      "observed_headers": [
+        "Description",
+        "Qty",
+        "Amount"
+      ],
+      "notes": "Single-page economy six-row invoice, total 19,469.79; fields/embedded units visible.",
+      "mechanical_resolutions": {},
+      "rendered_pages": [
+        {
+          "page": 1,
+          "image": "invoice_100-page-1.png",
+          "sha256": "fe2a662fcba59f5bf103d0eb47af334d502411a970cce7e7db452c17e05c2236"
+        }
+      ]
+    }
+  ]
+}
