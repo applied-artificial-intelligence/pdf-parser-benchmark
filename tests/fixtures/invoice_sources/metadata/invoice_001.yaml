@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: White, Brown and Riley
+document_id: invoice_001
+due_date: '2025-09-20'
+generated_at: '2025-11-18T16:45:03.153557'
+industry: saas
+invoice_date: '2025-08-21'
+invoice_number: INV-98034
+line_item_count: 10
+payment_terms: Net 30
+region: US
+subtotal: 19116623.31
+tax_amount: 1567563.11
+template_style: enterprise
+total: 20684186.42
+vendor:
+  country: USA
+  name: Cloud Cloud
+corpus: business
+source_url: generated://invoice_001
+domain: invoices
+doc_id: invoice_001

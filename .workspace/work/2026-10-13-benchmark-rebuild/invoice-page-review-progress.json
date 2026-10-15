@@ -1,0 +1,97 @@
+{
+  "bundle": "data_exports/invoice-references/draft-78179e3bbd6e486da4bad30d1bca9287",
+  "rendered": "data_exports/invoice-reference-inspection-02/render-artifacts.json",
+  "sheets": "data_exports/invoice-reference-sheets-01/sheets.json",
+  "reviewed_sheets": [
+    {
+      "sheet": "sheet-01.png",
+      "sha256": "f49bee14a12637fee3778589bb7dc1513e6ad10511c76ff74e8716cb45574940",
+      "pages": [
+        {
+          "document_id": "invoice_001",
+          "page": 1,
+          "image_sha256": "05138608d04cd2cba68d0c244cac5611dac91ab6ec01fbdc3a61dea6a8e92174"
+        },
+        {
+          "document_id": "invoice_001",
+          "page": 2,
+          "image_sha256": "99ac3672e3e48ebecaa68db8d22224d423e44fa5cd7d77d6e8b152f06467740d"
+        },
+        {
+          "document_id": "invoice_002",
+          "page": 1,
+          "image_sha256": "5080563e7175d3c45e24a3be4ccd8313ba50152542bb5661937dc29fa79305a0"
+        },
+        {
+          "document_id": "invoice_002",
+          "page": 2,
+          "image_sha256": "b70e1a5086a7c792540a1bb9b7f0ef5b8390dd374b7853895cc77cfa6f807a7f"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-02.png",
+      "sha256": "335a5526ff02f1bcb6c7d04c2bbbddda418ca0e74c9c55e772de68a6638eecee",
+      "pages": [
+        {
+          "document_id": "invoice_003",
+          "page": 1,
+          "image_sha256": "5fd7216bf9e8f9fc9777856461031a2dd63399c54ec082cbe99a5c5d45cbcf64"
+        },
+        {
+          "document_id": "invoice_004",
+          "page": 1,
+          "image_sha256": "0cc81a92401cb48d70ed9ce56a8f56af42df0cd8101bc1cf0f928e2fe880acbf"
+        },
+        {
+          "document_id": "invoice_004",
+          "page": 2,
+          "image_sha256": "3323a69a67dee17d763403d061f6e6e956b2e2ba6ca981f67fc1c06cffeef2bc"
+        },
+        {
+          "document_id": "invoice_005",
+          "page": 1,
+          "image_sha256": "1bc7b712eb0339a96f26e4bc6b7dbe735ea0e263f0953625c0a6b65522a6bcd1"
+        }
+      ]
+    },
+    {
+      "sheet": "sheet-03.png",
+      "sha256": "c8e38f224e5a6091a30bfcc86004b222722f79abe468066799ec26f3d827c3a2",
+      "pages": [
+        {
+          "document_id": "invoice_005",
+          "page": 2,
+          "image_sha256": "13c2b1af7a06d2513c46649645b2093f36396f633a6498bbc4af7bca1b5306ab"
+        },
+        {
+          "document_id": "invoice_006",
+          "page": 1,
+          "image_sha256": "9c0ef149850185e218ba29ad561b1f5869ecfa4f7f1a27cbe533a528d3122e70"
+        },
+        {
+          "document_id": "invoice_006",
+          "page": 2,
+          "image_sha256": "c2f294d3fb55f0286bf29190f96111cf6d7baeb98202009b83a4bebdc5ddd98c"
+        },
+        {
+          "document_id": "invoice_007",
+          "page": 1,
+          "image_sha256": "a2c310b9df701bd5381ba9499e77f2186c783f8bf3074c1e3ecc661c2ce890a3"
+        }
+      ]
+    }
+  ],
+  "observations": {
+    "invoice_001": "Both pages inspected: all 10 rows visible. The final row continues on page 2 without a repeated header; total and due/vendor fields agree with source.",
+    "invoice_002": "Both pages inspected: eight rows continue 4+4 across pages, with total on page 2; source fields and associations agree.",
+    "invoice_003": "One-page economy layout inspected; seven rows, embedded price/unit text retained as description and no separate unit-price column.",
+    "invoice_004": "Both pages inspected: four rows and total on page 1, notes on page 2; no clipping observed.",
+    "invoice_005": "Both pages inspected: five rows on page 1, total/notes on page 2; source facts and units agree.",
+    "invoice_006": "Both pages inspected: nine rows on page 1, total on page 2; embedded price/unit text remains description.",
+    "invoice_007_partial": "Page 1 inspected: Implementation Services wraps inside Implementation (Implementatio followed by n Services). All characters visible, not missing/clipped. Page 2 still pending."
+  },
+  "status": "Partial visual review only; all 100 references remain unqualified.",
+  "prior_render_record": "data_exports/invoice-reference-inspection-01/render-artifacts.json",
+  "identity_check": "Source, PDF, reference and every page image match the earlier inspected render. Qualification protocol became stricter before any eligibility decision; existing page observations concern unchanged pixels/facts only."
+}

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Skinner PLC
+document_id: invoice_004
+due_date: '2025-12-15'
+generated_at: '2025-11-18T16:45:07.538317'
+industry: it_consulting
+invoice_date: '2025-11-15'
+invoice_number: INV-22581
+line_item_count: 4
+payment_terms: Net 30
+region: US
+subtotal: 86009.33
+tax_amount: 7586.02
+template_style: enterprise
+total: 93595.35
+vendor:
+  country: USA
+  name: Quantum IT Solutions
+corpus: business
+source_url: generated://invoice_004
+domain: invoices
+doc_id: invoice_004

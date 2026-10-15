@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Barnett, Evans and Castillo
+document_id: invoice_003
+due_date: '2025-08-21'
+generated_at: '2025-11-18T16:45:06.109566'
+industry: legal
+invoice_date: '2025-08-21'
+invoice_number: INV-43945
+line_item_count: 7
+payment_terms: Due on Receipt
+region: US
+subtotal: 157752.62
+tax_amount: 11042.68
+template_style: economy
+total: 168795.3
+vendor:
+  country: USA
+  name: Morgan LLP
+corpus: business
+source_url: generated://invoice_003
+domain: invoices
+doc_id: invoice_003

@@ -10,7 +10,16 @@ Eight issues are open in GitHub milestone 1, mapped in issues.json. Owner branch
 codex/benchmark-rebuild. Current owner: this PDF-Bench reconstruction chat.
 Issue #1 is implemented; its closing footer takes effect only after approved public-main merge.
 Issue #2 is implemented with a versioned retained-evidence bundle and closing footer.
-The next implementation is #3, independent invoice references and qualification.
+Issue #3 is in progress: source-derived reference preparation and strict qualification
+mechanisms implemented. All 100 refs and 696 records prepared; every reference
+remains unqualified pending all-page visual review. Rendered 182 pages in 46
+inspection sheets. Sheets 1-3 reviewed (six development IDs fully, invoice_007
+page 1); continue at sheet 4. See invoice-page-review-progress.json.
+Eight focused reference tests pass, including a real converter that changes
+the printed total and a failed finalization preserving earlier qualified output.
+Current full suite: 906 passed, 18 skipped. Source/protocol/input byte binding,
+metadata-as-cross-check and exact Decimal transcription are implemented. No
+compared invoice parser outputs exist yet. No closing footer for #3 yet.
 
 Implemented
 Registry: 117 artifacts, preserved original bytes/counters/labels, observed row

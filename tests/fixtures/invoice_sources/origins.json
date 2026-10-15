@@ -1,0 +1,74 @@
+{
+  "docx/invoice_001.docx": {
+    "source": "corpus/business/invoices/docx/invoice_001.docx",
+    "sha256": "f791c722ce3ddbd44142c41be6fc8cd8e8d28cc3bed786c0a26fe141467abcb8"
+  },
+  "pdfs/invoice_001.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_001.pdf",
+    "sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a"
+  },
+  "metadata/invoice_001.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_001.yaml",
+    "sha256": "4fa717a65eb4abc53d43d53ad7aef3b81b9171a57ae200a60880cb76f2c70d71"
+  },
+  "docx/invoice_002.docx": {
+    "source": "corpus/business/invoices/docx/invoice_002.docx",
+    "sha256": "06360a8360c4cadee927d88b0585743a9b09f46bde94f987b80c0026f5ee2e1e"
+  },
+  "pdfs/invoice_002.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_002.pdf",
+    "sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7"
+  },
+  "metadata/invoice_002.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_002.yaml",
+    "sha256": "a88123687e29f7deba8b67cbd95dba6b4210ecf99d4df2d89bf85a79d152e24b"
+  },
+  "docx/invoice_003.docx": {
+    "source": "corpus/business/invoices/docx/invoice_003.docx",
+    "sha256": "691c54302cf097b39cd0ea903be5a6a8fd76df32c6d0422f704e40c88174d8b2"
+  },
+  "pdfs/invoice_003.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_003.pdf",
+    "sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36"
+  },
+  "metadata/invoice_003.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_003.yaml",
+    "sha256": "80229c5046613ac14f25ade3915fbfd407c37f68930ccd2b00a2865e0b171dff"
+  },
+  "docx/invoice_004.docx": {
+    "source": "corpus/business/invoices/docx/invoice_004.docx",
+    "sha256": "e75f6c9c0aaf5832a751964c010ec90e079249655fdc315c842902407e944c96"
+  },
+  "pdfs/invoice_004.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_004.pdf",
+    "sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676"
+  },
+  "metadata/invoice_004.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_004.yaml",
+    "sha256": "4c6911cafbfd234e2d584b6b0daab89509351f7bb2d0cbf918cfdab3c142b9c2"
+  },
+  "docx/invoice_005.docx": {
+    "source": "corpus/business/invoices/docx/invoice_005.docx",
+    "sha256": "6250b2a88a1c3affdefcd651cad46757611ebbfed32ad0eebea81a5e0a9f1017"
+  },
+  "pdfs/invoice_005.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_005.pdf",
+    "sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b"
+  },
+  "metadata/invoice_005.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_005.yaml",
+    "sha256": "2c290b685f5d921499d2db4eee2d9c427d457ff0cdd9b385869034f08bc5a553"
+  },
+  "docx/invoice_006.docx": {
+    "source": "corpus/business/invoices/docx/invoice_006.docx",
+    "sha256": "f70a1aa37c7e6941d2d9f92cf07f5d4f467bddcdb9634c58c6275ccd535a902d"
+  },
+  "pdfs/invoice_006.pdf": {
+    "source": "corpus/business/invoices/pdfs/invoice_006.pdf",
+    "sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044"
+  },
+  "metadata/invoice_006.yaml": {
+    "source": "corpus/business/invoices/metadata/invoice_006.yaml",
+    "sha256": "eacb059a0afd96fe6127865fb32ad5f33fbd1848dbf795617e31f5fa145f69b7"
+  }
+}
