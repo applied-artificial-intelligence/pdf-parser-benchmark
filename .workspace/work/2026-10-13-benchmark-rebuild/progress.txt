@@ -1,19 +1,44 @@
 PDF-Bench reconstruction - October 15, 2026
 
-Scope confirmed by Stefan with a framing correction: assess whether ParseBench
-represents meaningful business documents/tasks, use a matching subset when it does,
-and justify internal evaluation only where distribution/task mismatch requires it.
-Do not invent marginal gaps or a global percentage of business coverage.
+Scope confirmed
+Assess whether ParseBench represents meaningful business documents/tasks, reuse a
+matching subset when it does, and justify internal evaluation only for a stated
+mismatch. Do not invent marginal gaps or a global business-coverage percentage.
 
-Spec/plan revision 3 retains both independent reviews and introduces a coverage
-assessment and executable native ParseBench comparison. Eight ordered issues now
-cover fit assessment, registry, references, task scoring, execution repair, invoice
-comparison, public comparison and report/export. Original review packet is frozen.
+Milestone
+Eight issues are open in GitHub milestone 1, mapped in issues.json. Owner branch:
+codex/benchmark-rebuild. Current owner: this PDF-Bench reconstruction chat.
+Issue #1 is implemented; its closing footer takes effect only after approved public-main merge.
+The next implementation is #2, the retained-run registry.
 
-Eight issues are materialized in GitHub milestone 1. Plan shape, terms, premises,
-claims and closure checks pass. Current owner branch: codex/benchmark-rebuild.
-Implementation starts with issue #1: pinned annotations and source-page assessment.
-Inherited dirty work is preserved and deliberately unstaged.
-No paid calls, editorial/CMS writes or public-main merge are authorized.
+Implemented
+Pinned complete annotation/source-metadata acquisition, byte-verified inventory,
+source inspection tooling, dated observations and benchmark-fit assessment.
+169,011 annotation rows, 2,553 group/input cases, 2,078 exact input paths and
+2,060 content identities; original-document lineage remains unverified. Visually
+inspected all 43 preselected source pages across document forms and all five
+annotation dimensions, including all eight text tags. ParseBench contains relevant
+financial, insurance, agreement, form, presentation and technical material.
+Recommendations default to reusing matching public cases, not inventing a corpus.
+No comparison score or business-population coverage percentage is asserted.
 
-Decisions needed: none for local implementation.
+Verification
+Seven focused tests pass. Six producing-code mutation witnesses pass correct
+code and fail the introduced real error. Issue-1 coverage passes all eight closure
+items without waivers or deferrals. Review table generated. Fresh acquisition,
+inventory, rendering and source-bound assessment replay passed in a new ignored
+output directory; original evidence remained intact.
+Baseline test repairs are committed as a9ef338: missing sample reference restored
+and checked against its actual PDF; DOCX tests build templates; obsolete absent
+arXiv-builder tests now exercise the retained downloader against local HTTP;
+loader/metadata tests follow actual documented interfaces. Atomic persistence
+prerequisite retained from independent review. Final full suite: 889 passed, 18 skipped. Owned-file lint/format pass.
+
+Preservation
+Original review packet, reports, retained results and inherited dirty work remain
+unchanged. Source assets/cache/renders are ignored local files. Existing main and
+review branches remain as reconstruction baselines owned by this chat; no temporary
+worktree was created. No paid calls, editorial/CMS writes or public-main merge.
+
+Decisions needed
+None for local implementation. Public-main merge and paid comparisons remain gated.

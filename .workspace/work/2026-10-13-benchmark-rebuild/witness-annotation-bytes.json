@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/parsebench.py",
+  "fixture": "Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "test": "tests/test_parsebench.py::test_cli_rejects_changed_annotation_bytes_before_replacing_valid_inventory",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench.py",
+      "old": "if sha256(data) != file[\"sha256\"] or len(data) != file[\"bytes\"]:",
+      "new": "if False:"
+    }
+  }
+}

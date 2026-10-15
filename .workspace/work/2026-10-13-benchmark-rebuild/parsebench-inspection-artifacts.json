@@ -1,0 +1,781 @@
+{
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "selection_sha256": "09dee3226074113c9099a89203055883bd6cef82ee3101ba367375089cb6d8a6",
+  "purpose": "Unscored source inspection; text layers do not establish visible layout or task correctness.",
+  "inputs": [
+    {
+      "index": 1,
+      "source_path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p101.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "b08f4611234bd26437aa015e10c52c57fc95d63ddc3a7224156e97d1d30b91c6",
+      "source_bytes": 183569,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1814,
+          "image_sha256": "4d411c89df28f72022c8b7c474e21499e1f9c454185993e612b353401bad4fed",
+          "image": "data_exports/parsebench/inspection/01-1.png"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "source_path": "docs/chart/Earnings-Presentation-FY24-Q4_1_p9.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "e048b630980c7a8e80ff09af8caada50063b615a2c3c68796aff4f62126f2c43",
+      "source_bytes": 2667210,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 960.0,
+          "height_points": 540.0,
+          "text_layer_characters": 526,
+          "image_sha256": "1276ba4ecbf3a8765f196fcba7fd38d05dbcd652ca7d3f366fcb8708094f2d59",
+          "image": "data_exports/parsebench/inspection/02-1.png"
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "source_path": "docs/chart/aviva-plc-annual-report-and-accounts-2024_p143.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "4dce60ba1e0fb55ff2ceecb5b54f0092498116c2e9757aab6295f8a5edd6abfe",
+      "source_bytes": 12767914,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 841.8900146484375,
+          "height_points": 594.989990234375,
+          "text_layer_characters": 2777,
+          "image_sha256": "38198c29efb1112a68c42ad54dc5a07158e7fab374bf1e38188e8ad48a9b9c50",
+          "image": "data_exports/parsebench/inspection/03-1.png"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "source_path": "docs/layout/076523s007lbl_p2.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "7882c95c298fea1614c8dd3c7ca7396cf21017a644e6d2dcae82a10289c0aa02",
+      "source_bytes": 223178,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 2163.34326171875,
+          "height_points": 936.0819091796875,
+          "text_layer_characters": 32733,
+          "image_sha256": "d479501156b776c1c654f65ccc6f9b645eb1c89cb1a331fcced69801bac44fe2",
+          "image": "data_exports/parsebench/inspection/04-1.png"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "source_path": "docs/layout/1-Integrated_Annual_Report_2019-Bursa_Malaysia_Berhad_p12.pdf",
+      "selection_reason": "Two hash-ordered hard inputs from upstream dimension",
+      "source_sha256": "09a5e51630d67ab8c550675e18aa72e85080e2e3670f12db6690eee1b5499b07",
+      "source_bytes": 56929,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.2760009765625,
+          "height_points": 841.8900146484375,
+          "text_layer_characters": 2658,
+          "image_sha256": "837e4945519c2cfa83a12fd3b84b7bcebaa40467de0fcc58f9c1f82666cc47ec",
+          "image": "data_exports/parsebench/inspection/05-1.png"
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "source_path": "docs/layout/Automated-Invoice__p3.pdf",
+      "selection_reason": "Two hash-ordered hard inputs from upstream dimension",
+      "source_sha256": "28fcae821b72775c4a0778849c80c8eced8ee09a6c04fcbc3efbec9e3740185f",
+      "source_bytes": 44539,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.2760009765625,
+          "height_points": 841.8900146484375,
+          "text_layer_characters": 2269,
+          "image_sha256": "52229b7a63c26b00e1cb3623ae782264b35614a84dc741fd98bd8ca046637671",
+          "image": "data_exports/parsebench/inspection/06-1.png"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "source_path": "docs/layout/Monroe Capital Private Credit Fund V Presentation - CTPF - 10.4.2024 Final redacted_p14.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "b46373b01146291ac33bc8b4778b94b7071a0b5da778ca46aafadfc2acefd3c3",
+      "source_bytes": 260565,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 960.0,
+          "height_points": 540.0,
+          "text_layer_characters": 1255,
+          "image_sha256": "0b7b2af32f265c842bd7459cab1753554834ece3d98505a3bc383eb365ea8f55",
+          "image": "data_exports/parsebench/inspection/07-1.png"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "source_path": "docs/layout/example_paper_p4.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "ce26cfe260934c7abac729238d28fea1028b7bc9a3ab3fae89606b84d7269386",
+      "source_bytes": 148263,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 3487,
+          "image_sha256": "c5b0a949c29b16a4beaeb1ec6beda725c6eb6341aa74d67e20cb7e3a3ed5983f",
+          "image": "data_exports/parsebench/inspection/08-1.png"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "source_path": "docs/table/0000027_page1.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "36c5e0acc5757e586791a2b3a1b67e8e434ea927fb6b72b9effd947d19bc8a50",
+      "source_bytes": 41333,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1190.550048828125,
+          "height_points": 841.8900146484375,
+          "text_layer_characters": 7112,
+          "image_sha256": "8e690a4fa55d4f0774384cc175de2b5db86d69a610e06fa325d441d3b03c9bb1",
+          "image": "data_exports/parsebench/inspection/09-1.png"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "source_path": "docs/table/1 timetable (1)_page2.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "e366c651227fb42ce9e1ac69a31b738c8188a77f5c2077ad77af8142cbc7b58e",
+      "source_bytes": 43565,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 3211,
+          "image_sha256": "6918dcdadfbbef560c761cb7e5d1a1a90a166ca11e4051a2847f518105a9b9da",
+          "image": "data_exports/parsebench/inspection/10-1.png"
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "source_path": "docs/table/2023-conocophillips-aim-presentation (1)_page7.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "898cb92b153f8b5de3e4c9347e47b132adc66eb1903f99a5c0b6d7f81993de24",
+      "source_bytes": 664283,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 960.0,
+          "height_points": 540.0,
+          "text_layer_characters": 0,
+          "image_sha256": "fc9eeb42004b31c5b02bdb7ff6258fbc33a55f422496385a56f0931ebdc190a1",
+          "image": "data_exports/parsebench/inspection/11-1.png"
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "source_path": "docs/table/2023.02.07 Walmart Settlement Agreement_page27.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "source_bytes": 164483,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 2756,
+          "image_sha256": "0cdc5aa79ecab694f38925ece6026c2742e7b3b5bcf25e771230ab294948b8ef",
+          "image": "data_exports/parsebench/inspection/12-1.png"
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "source_path": "docs/table/Apple 10-k_page22.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "7663042ad5740e9ed4e57813130b18106a1a6f74aafa3b07244ce9d9c0905e8a",
+      "source_bytes": 16971,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1894,
+          "image_sha256": "a033edfd97947ee3ac751d8466f2054da506c04e2bdb6bb5a4e766e640d393b2",
+          "image": "data_exports/parsebench/inspection/13-1.png"
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "source_path": "docs/table/Apple 10-k_page76.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "57be97190d266df823ac1d4c793eef626e4024993d2d4f127378eb33280f6978",
+      "source_bytes": 11408,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1011,
+          "image_sha256": "97e2f4c73a5ab54e94113e787b46f6a4dc63471825f181baa5368ae47a998d9e",
+          "image": "data_exports/parsebench/inspection/14-1.png"
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "source_path": "docs/table/BRWS-134565917_page1002.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "d18b18c6f9353d2e82315c6da49283abd43e1ef2176b0d64b82f49da4f9aef56",
+      "source_bytes": 509893,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 792.0,
+          "height_points": 612.0,
+          "text_layer_characters": 621,
+          "image_sha256": "a7e5363b270a980b34f61d554aa6b7b8e5cb803301b90d770eb5ffa4422825e2",
+          "image": "data_exports/parsebench/inspection/15-1.png"
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "source_path": "docs/table/BSC-Hospital-List-by-County (2)_page1.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+      "source_bytes": 7623535,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 792.0,
+          "height_points": 1224.0,
+          "text_layer_characters": 0,
+          "image_sha256": "65780acac9782acfd38951e5d526d2af470e8a3f9d1738d3d138882b310f50af",
+          "image": "data_exports/parsebench/inspection/16-1.png"
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "source_path": "docs/table/synthetic_invoice_page1.pdf",
+      "selection_reason": "Two hash-ordered hard inputs from upstream dimension",
+      "source_sha256": "af8ae6f26651c2a95f7be384dff09b2024e9b2d53ff20118b1bc16d24e7528da",
+      "source_bytes": 78073,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1296.0,
+          "height_points": 936.0,
+          "text_layer_characters": 1610,
+          "image_sha256": "c19b2eec4b330123a6fc35d186bed8eae5d2dec44c52dcc8cc796d3f896d1f45",
+          "image": "data_exports/parsebench/inspection/17-1.png"
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "source_path": "docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "selection_reason": "Two hash-ordered hard inputs from upstream dimension",
+      "source_sha256": "1d5592beeda1188a2367602de058c4396d1777e970a5411b502cfa5692a83a3e",
+      "source_bytes": 30528,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 2730,
+          "image_sha256": "9b819eaff938fceba772cbb02d6c949387c17263375d9903180108f2097d699b",
+          "image": "data_exports/parsebench/inspection/18-1.png"
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "source_path": "docs/text/text_dense__japanese.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "e7c65ee22344057d308a2ac77adbd2b76399099edfb84683318b961056f9028c",
+      "source_bytes": 1155889,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1190.6400146484375,
+          "height_points": 841.9199829101562,
+          "text_layer_characters": 0,
+          "image_sha256": "5d568868ecd0510e3d56a94ec5fc7a85dbeee3af722df53e9e6d604ac92f70a9",
+          "image": "data_exports/parsebench/inspection/19-1.png"
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "source_path": "docs/text/text_dense__navarra.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "46db6d6ff04beb16e034e6b85a919cf55c84329f795ffcf1a4b9d93fe4de73f4",
+      "source_bytes": 137002,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 805.0399780273438,
+          "height_points": 1048.8199462890625,
+          "text_layer_characters": 5163,
+          "image_sha256": "e4c53f4bbb5b829ac06f112084bc5525aeb0981a472df1d4fc763ab8f59e5723",
+          "image": "data_exports/parsebench/inspection/20-1.png"
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "source_path": "docs/text/text_handwritting__contract.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "aaf6a9fc6d70e6c3d098bab36f795e339df3d4b2cc5a26524e93ffdc2683556f",
+      "source_bytes": 435704,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.0800170898438,
+          "height_points": 841.6799926757812,
+          "text_layer_characters": 1042,
+          "image_sha256": "9326455853d065509dae9e600349593b0540c6fc5bb2c4a83a5070a06edca069",
+          "image": "data_exports/parsebench/inspection/21-1.png"
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "source_path": "docs/text/text_handwritting__manualunderline.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "02e1dd4ea4d7ec66594bffd45b5fa32ed91b00df333a37396457305d149a94d8",
+      "source_bytes": 189306,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 790.5599975585938,
+          "text_layer_characters": 0,
+          "image_sha256": "b80ab7d2707b3f66b0c25f2b1c7caf10d7c3550d1804e965e46c54bd23b34493",
+          "image": "data_exports/parsebench/inspection/22-1.png"
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "source_path": "docs/text/text_handwritting__signatures.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "dfcb60497649b0c7814cdee528e543ce5bd3ba72d4f0c16a0836234bef25d081",
+      "source_bytes": 70585,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 611.280029296875,
+          "height_points": 794.52001953125,
+          "text_layer_characters": 857,
+          "image_sha256": "b26eaaa2beb95918f62d67d091b55536eb32a89d8c67045e90003b52af73a053",
+          "image": "data_exports/parsebench/inspection/23-1.png"
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "source_path": "docs/text/text_misc__2pages.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "a5ed750d6c95f764d692d4ceca0464e87b4c1b9f428cafc991098f99775e0c75",
+      "source_bytes": 365590,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 1190.550048828125,
+          "height_points": 841.8900146484375,
+          "text_layer_characters": 9813,
+          "image_sha256": "a3470243afc0a29126fd618680eb67fb631182de9602977631480b7cfcfbbb52",
+          "image": "data_exports/parsebench/inspection/24-1.png"
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "source_path": "docs/text/text_misc__6slides.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "5d1ddf1b6eef2d406f3bc6e837508bcd80df016092e7fb6207b2c412b6ae428b",
+      "source_bytes": 21954,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.2755737304688,
+          "height_points": 841.8897705078125,
+          "text_layer_characters": 1391,
+          "image_sha256": "a99293fe9a6a45119aa62324e2833da2008b5846e906dacf28d6a0031794e7b8",
+          "image": "data_exports/parsebench/inspection/25-1.png"
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "source_path": "docs/text/text_misc__mark2.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "d79260da52319364f014730e6fb158bbcb0eef510be653cf40f8b6bbd6da5e20",
+      "source_bytes": 59561,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1653,
+          "image_sha256": "1d268c53489fd2aca93503429f565433217d71a5e26aa0763bd1222e568a7af7",
+          "image": "data_exports/parsebench/inspection/26-1.png"
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "source_path": "docs/text/text_multicolumns__10k2col.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "a4a6ad03465d0d04ada6260e0637ca0d7a294750c3ac384e84b10ee817435973",
+      "source_bytes": 73001,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 9763,
+          "image_sha256": "100834d1edd3e7d7530fe525d5857010bee83546f010af9beebb0350e00db052",
+          "image": "data_exports/parsebench/inspection/27-1.png"
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "source_path": "docs/text/text_multicolumns__4c.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "79f70841e334e6ea6179353a0131c0a84529b7adf6ae286d4c1330ba022ca382",
+      "source_bytes": 441849,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 2044,
+          "image_sha256": "d7eaf5be4244da72debc32cecb47a4561051d25e531a2fc9a3da31c46ed33629",
+          "image": "data_exports/parsebench/inspection/28-1.png"
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "source_path": "docs/text/text_multicolumns__hydro.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+      "source_bytes": 2408795,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 546.8400268554688,
+          "height_points": 739.7999877929688,
+          "text_layer_characters": 0,
+          "image_sha256": "ce17f48df34a62cfeb17dae8a2af3a5c273b01a37509f3ccb3cbde008629a8ba",
+          "image": "data_exports/parsebench/inspection/29-1.png"
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "source_path": "docs/text/text_multilang__gujarati.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "16e4b705e2476a0fd977b315937f5b90af139dee0ed308a3fec03fd0f615e3f4",
+      "source_bytes": 31077,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 510.25,
+          "height_points": 694.5,
+          "text_layer_characters": 4404,
+          "image_sha256": "dd2da8f69a760f9e0ee98ebbc59a50555f3d4c7b2ead819b362f3f0586bf0d57",
+          "image": "data_exports/parsebench/inspection/30-1.png"
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "source_path": "docs/text/text_multilang__russian.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "239aac621f1916ec98df8e7812d0b67c2914356123b5d03c2393bafc4aa5ae04",
+      "source_bytes": 860256,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 4486,
+          "image_sha256": "cd66c38b179e72331e756b9f3265261ad3efaf1b9f08e2a731133d61756305c7",
+          "image": "data_exports/parsebench/inspection/31-1.png"
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "source_path": "docs/text/text_ocr__contract.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "eadbd010ce8806411c9ba9fcd0b4373fe016ac79107096cbe75c2c2d6e7b5991",
+      "source_bytes": 152356,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.0,
+          "height_points": 842.0,
+          "text_layer_characters": 0,
+          "image_sha256": "292674582dcb94482b505eb84618a10daf17bcbb0e7957926539803db44b38e0",
+          "image": "data_exports/parsebench/inspection/32-1.png"
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "source_path": "docs/text/text_ocr__inr.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "b20288dd8b5461471524c9ff62ee4079cb6c300bffd1cd53d558f116296b802c",
+      "source_bytes": 60005,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.0800170898438,
+          "height_points": 841.6799926757812,
+          "text_layer_characters": 1385,
+          "image_sha256": "6246f34b5ebf3a64b0d34897b00365f1254ea9bb8a00beeafc851265419ef560",
+          "image": "data_exports/parsebench/inspection/33-1.png"
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "source_path": "docs/text/text_ocr__skewGazette.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "0eb8cd7f1b4c3c20136294b34712ffe8a4fb6f583471ead07807e5e84c8d3c32",
+      "source_bytes": 73217,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.2000122070312,
+          "height_points": 841.6799926757812,
+          "text_layer_characters": 0,
+          "image_sha256": "bbb60c5ab81332c2188fcc972310ca4e0a61dd6887812d4eae455600c1bc50b9",
+          "image": "data_exports/parsebench/inspection/34-1.png"
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "source_path": "docs/text/text_simple__agreement.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+      "source_bytes": 153140,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 3387,
+          "image_sha256": "22437b687f29a49c545a31aa2b9f36ad44a197c1b784146d8031d7fda53429ea",
+          "image": "data_exports/parsebench/inspection/35-1.png"
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "source_path": "docs/text/text_simple__bill.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "d46182ae62c2faaa111affbc21b98124772f50851b2c8317e8e5c658d08c9617",
+      "source_bytes": 101263,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1822,
+          "image_sha256": "f30a825bc7291e71db98b2db517e4394838d5471c328596ae897bab99c5869fd",
+          "image": "data_exports/parsebench/inspection/36-1.png"
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "source_path": "docs/text/text_simple__checkbox.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "e40f6f2e59a3414042dd7a5470224ee9b2d6899656756ac48ec9bdcb0db0d429",
+      "source_bytes": 102372,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 2527,
+          "image_sha256": "883cd6a29896be6dea110e8e45b933c406f1235b7accec3ce36644b90edda902",
+          "image": "data_exports/parsebench/inspection/37-1.png"
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "source_path": "docs/text/text_simple__contract2.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "1079e61a29a6ea86abec38a8e95b02b657e69993dae322e51a591a84aa9c3a27",
+      "source_bytes": 192386,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.2999877929688,
+          "height_points": 841.9000244140625,
+          "text_layer_characters": 3942,
+          "image_sha256": "fdd33a4317d2d69ed7f1f87f4c6330fbf806bc714cdc2a82880aed2ff2bc14e2",
+          "image": "data_exports/parsebench/inspection/38-1.png"
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "source_path": "docs/text/text_simple__minutes2.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "6ff1719f5892fd730d30543f74b652a4310205d83a08e70db791859530c135bb",
+      "source_bytes": 55739,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 595.0,
+          "height_points": 842.0,
+          "text_layer_characters": 3497,
+          "image_sha256": "57a8d0ff2da3a46afca5e4fba784a0d988b83ab0437bf6e4d0436d1cc338bf19",
+          "image": "data_exports/parsebench/inspection/39-1.png"
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "source_path": "docs/text/text_simple__order.pdf",
+      "selection_reason": "Targeted business-document candidate; filename only selects inspection, not classification",
+      "source_sha256": "fcb510057ccf4e77f6e1c03ae53114449a59e20652e606f006a2a82555b9a6ae",
+      "source_bytes": 50750,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 1985,
+          "image_sha256": "4c8e6037557c00b5af4b90842c1eed268a4b518b33d20195f3ef118750ce7da0",
+          "image": "data_exports/parsebench/inspection/40-1.png"
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "source_path": "docs/text/text_simple__sub.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "1170ae8783ba46e5788065b4bef6cdfeae1f40c18ec9842ad4799c5c8ec5c1b5",
+      "source_bytes": 82871,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 612.0,
+          "height_points": 792.0,
+          "text_layer_characters": 2084,
+          "image_sha256": "dfea064bbe1d056fed3944cb1eb481e7036dbf6e7c25fcbd32ce4c7c2cf62e1d",
+          "image": "data_exports/parsebench/inspection/41-1.png"
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "source_path": "docs/text/text_sparse__mcdo.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "9af687ab8da3cbf180d7e2a36e8ba76dbb18ff91f460ea17eee9eb23d2043590",
+      "source_bytes": 1460594,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 603.0,
+          "height_points": 783.0,
+          "text_layer_characters": 64,
+          "image_sha256": "7c802d3c9b1d02d37d0dee1e13536e139ef6f0edf0ba144645034cda3e450f2c",
+          "image": "data_exports/parsebench/inspection/42-1.png"
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "source_path": "docs/text/text_sparse__notes.pdf",
+      "selection_reason": "Two hash-ordered inputs from each upstream text tag",
+      "source_sha256": "af056e7b3692363949b207fc9626452058532c3ba5da2f2b8a2464e1c45690bb",
+      "source_bytes": 5070,
+      "page_count": 1,
+      "pages": [
+        {
+          "page": 1,
+          "width_points": 603.3599853515625,
+          "height_points": 774.0,
+          "text_layer_characters": 6,
+          "image_sha256": "7e07a65be0f92baa52c1e7120f52ed94d007b869e61eb70f5bfd06348f08c167",
+          "image": "data_exports/parsebench/inspection/43-1.png"
+        }
+      ]
+    }
+  ]
+}

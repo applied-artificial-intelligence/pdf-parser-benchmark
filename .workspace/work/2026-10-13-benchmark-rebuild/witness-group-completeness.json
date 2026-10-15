@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/parsebench.py",
+  "fixture": "Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "test": "tests/test_parsebench.py::test_missing_annotation_group_is_not_reported_as_zero_coverage",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench.py",
+      "old": "if not set(GROUPS).issubset({Path(f).stem for f in manifest[\"files\"]}):",
+      "new": "if False:"
+    }
+  }
+}
