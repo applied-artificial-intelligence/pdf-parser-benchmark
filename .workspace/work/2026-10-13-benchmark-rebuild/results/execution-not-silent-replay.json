@@ -1,0 +1,12 @@
+{
+ "item": "execution-not-silent-replay",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_run_provenance.py::test_explicit_bypass_reads_and_writes_no_adapter_cache",
+  "fixture (both runs): Actual invoice PDF with an actual stale adapter cache entry created through the retained cache writer",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

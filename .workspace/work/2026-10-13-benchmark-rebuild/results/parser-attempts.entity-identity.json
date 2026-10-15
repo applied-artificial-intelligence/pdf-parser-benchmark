@@ -1,0 +1,12 @@
+{
+ "item": "parser-attempts.entity-identity",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_comparison.py::test_backend_options_input_reference_and_protocol_have_separate_stage_identities",
+  "fixture (both runs): Actual frozen invoice PDFs run through actual local adapters; stage hashes are read from produced artifacts",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

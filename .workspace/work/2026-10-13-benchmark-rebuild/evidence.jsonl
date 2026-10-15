@@ -30,3 +30,12 @@
 {"item": "extracted-invoice-records.institution", "status": "test", "level": "test", "declaration": "witness-task-currency.json", "targets": "The grader silently replaces observed currency with the expected marker."}
 {"item": "task-checks-association", "status": "test", "level": "test", "declaration": "witness-task-associations.json", "targets": "Transposed header roles pass despite incorrect complete records."}
 {"item": "extractor-blind", "status": "test", "level": "test", "declaration": "witness-task-blind.json", "targets": "The producing extractor consults unavailable answers rather than only parser-output bytes."}
+{"item": "parser-attempts.record", "status": "test", "level": "test", "declaration": "witness-execution-empty.json", "targets": "Empty returned output is mislabeled as nonempty content."}
+{"item": "parser-attempts.absent-record", "status": "test", "level": "test", "declaration": "witness-execution-population.json", "targets": "A retained eligible invoice disappears before the primary 200-pair plan is frozen."}
+{"item": "parser-attempts.ordering-spacing", "status": "test", "level": "test", "declaration": "witness-execution-order.json", "targets": "Exported attempt order loses the actual sequential call order."}
+{"item": "parser-attempts.entity-identity", "status": "test", "level": "test", "declaration": "witness-execution-stage-options.json", "targets": "Different actual backend options share a parse-stage identity."}
+{"item": "parser-attempts.known-at", "status": "test", "level": "test", "declaration": "witness-execution-before-init.json", "targets": "Backend initialization occurs before population and implementation identity are frozen."}
+{"item": "parser-attempts.institution", "status": "test", "level": "test", "declaration": "witness-execution-timeout-type.json", "targets": "An ordinary parsing error containing exceeded is mislabeled as an enforced timeout."}
+{"item": "execution-not-silent-replay", "status": "test", "level": "test", "declaration": "witness-execution-cache-bypass.json", "targets": "Fresh adapter execution silently imports a stale cache entry."}
+{"item": "failures-visible", "status": "test", "level": "test", "declaration": "witness-execution-duration.json", "targets": "Started failed calls are recorded with a fabricated zero duration."}
+{"item": "bundle-atomic", "status": "test", "level": "test", "declaration": "witness-execution-completion.json", "targets": "A missing required prediction is registered as a completed bundle and replaces valid evidence."}

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_invoice_comparison.py::test_population_is_frozen_before_any_backend_initialization",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "    environment = runtime_identity()",
+      "new": "    PdfsmithAdapter(\"pypdf\")._get_backend()\n    environment = runtime_identity()"
+    }
+  }
+}

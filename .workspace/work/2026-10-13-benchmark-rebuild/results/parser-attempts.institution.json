@@ -1,0 +1,12 @@
+{
+ "item": "parser-attempts.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_execution.py::test_empty_failure_and_initialization_are_distinct_controls",
+  "fixture (both runs): Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

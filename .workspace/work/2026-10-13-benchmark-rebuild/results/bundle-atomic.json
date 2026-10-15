@@ -1,0 +1,12 @@
+{
+ "item": "bundle-atomic",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_comparison.py::test_deleted_required_prediction_cannot_be_published_even_if_remaining_json_is_valid",
+  "fixture (both runs): Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

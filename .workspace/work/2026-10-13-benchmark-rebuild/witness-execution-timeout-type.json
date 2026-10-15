@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/execution.py",
+  "test": "tests/test_execution.py::test_empty_failure_and_initialization_are_distinct_controls",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/execution.py",
+      "old": "outcome=terminal[\"outcome\"],",
+      "new": "outcome=\"enforced_timeout\" if \"exceeded\" in (terminal.get(\"error\") or \"\") else terminal[\"outcome\"],"
+    }
+  }
+}

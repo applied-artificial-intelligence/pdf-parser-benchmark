@@ -34,6 +34,8 @@ class ControlledBackend(BaseParser):
     def parse(self, pdf_path: Path, output_dir: Path) -> Path:
         if self.mode == "error":
             raise RuntimeError("Ordinary parsing error containing exceeded")
+        if self.mode == "answer-access":
+            (pdf_path.parent / "references" / "answer.json").read_bytes()
         if self.mode == "delay":
             (output_dir / "started").write_text("The parse call started")
             time.sleep(20)
@@ -57,6 +59,26 @@ def test_actual_adapter_retains_exact_output_bytes_and_success_content(tmp_path)
     assert Path(result.returned_path).read_bytes() == result.output_path.read_bytes()
     assert result.parse_time_seconds > 0
     assert result.wall_time_seconds >= result.parse_time_seconds
+
+
+def test_parser_worker_denies_answer_reads_before_any_reference_bytes_are_returned(tmp_path):
+    source = tmp_path / "input.pdf"
+    source.write_bytes(SOURCE.read_bytes())
+    answers = tmp_path / "references"
+    answers.mkdir()
+    (answers / "answer.json").write_text('"Secret reference facts"')
+    attempt = execute_parser(
+        ControlledBackend,
+        {"mode": "answer-access"},
+        source,
+        tmp_path / "attempt",
+        30,
+        denied_read_components=("references",),
+    )
+    assert attempt.outcome == "parser_failure"
+    assert attempt.error_type == "PermissionError"
+    assert "Reference/source access denied" in attempt.error
+    assert attempt.output_path is None
 
 
 @pytest.mark.parametrize(

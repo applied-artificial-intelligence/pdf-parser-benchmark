@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_invoice_comparison.py::test_actual_run_retains_all_pairs_outputs_stages_and_fixed_scores_after_relocation",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "\"order\": index,",
+      "new": "\"order\": 0,"
+    }
+  }
+}

@@ -5,6 +5,7 @@ import math
 import multiprocessing as mp
 import os
 import signal
+import sys
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -30,11 +31,22 @@ class ParseAttempt:
     worker_pid: int | None = None
 
 
-def _parser_child(connection, parser_class, options, input_path, directory) -> None:
+def _parser_child(
+    connection, parser_class, options, input_path, directory, denied_read_components
+) -> None:
     if os.name == "posix":
         os.setsid()
     started = None
     try:
+        if denied_read_components:
+
+            def deny_answers(event, arguments):
+                if event == "open" and isinstance(arguments[0], (str, bytes, os.PathLike)):
+                    path = Path(os.fsdecode(arguments[0])).resolve()
+                    if set(path.parts) & set(denied_read_components):
+                        raise PermissionError("Reference/source access denied during parsing")
+
+            sys.addaudithook(deny_answers)
         parser = parser_class(**options)
         if hasattr(parser, "_get_backend"):
             parser._get_backend()
@@ -103,6 +115,7 @@ def execute_parser(
     input_path: Path,
     attempt_dir: Path,
     timeout_seconds: float = 300,
+    denied_read_components: tuple[str, ...] = (),
 ) -> ParseAttempt:
     """Measure call/read/retention after initialization; wall time also includes startup."""
     if not math.isfinite(timeout_seconds) or timeout_seconds <= 0:
@@ -113,7 +126,14 @@ def execute_parser(
     receiver, sender = context.Pipe(duplex=False)
     process = context.Process(
         target=_parser_child,
-        args=(sender, parser_class, options, input_path.resolve(), attempt_dir),
+        args=(
+            sender,
+            parser_class,
+            options,
+            input_path.resolve(),
+            attempt_dir,
+            denied_read_components,
+        ),
     )
     started, parse_started = time.perf_counter(), None
     terminal = None

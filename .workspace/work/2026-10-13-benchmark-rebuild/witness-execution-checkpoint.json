@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/runner.py",
+  "test": "tests/test_run_provenance.py::test_checkpoint_resume_is_disabled_before_import_or_overwrite",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/runner.py",
+      "old": "        if checkpoint_path is not None and checkpoint_path.exists():",
+      "new": "        if False:"
+    }
+  }
+}

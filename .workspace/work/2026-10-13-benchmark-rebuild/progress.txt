@@ -69,6 +69,34 @@ Current PDFsmith metadata: distribution 0.2.0, source declaration 0.3.0.dev0;
 record actual identity rather than hard-coding the older reviewed source version.
 Compared primary invoice outputs remain pending.
 
+
+Issue 5 is implemented. All nine closure items pass the producing-mutation gate,
+without waivers or deferrals. Ten preflight witnesses also cover stale cache and
+checkpoint behavior. Full suite: 956 passed, 18 skipped. The primary invoice
+comparison has not executed yet.
+The new invoice_comparison CLI freezes exactly 200 primary pairs, input/reference
+hashes, explicit backend options, Python/dependency/source identity, cache bypass,
+timeout and measurement boundaries before backend initialization. It retains
+exclusive raw outputs, an incomplete journal, separate predictions/grades and
+stage-specific identities. Required evaluator failures invalidate aggregates;
+failed and empty attempts keep eligible denominators. Completion requires exact
+planned membership and required file hashes before directory finalization and
+atomic latest-pointer replacement. Interruption/missing-artifact controls preserve
+earlier valid bundles. Parser workers deny reads from answer/source directories.
+PDFsmith identity includes the used shared modules and selected backends, rather
+than unrelated provider files another owner is actively changing. Both distribution
+0.2.0 and source declaration 0.3.0.dev0 remain explicit; no sibling edits were made.
+Next owned work is issue 6: freeze the primary plan, execute it twice, audit task
+disagreements, and reproduce offline/relocated results with retrievable dependencies.
+An offline regrading script is being prepared and remains uncommitted until its
+actual-bundle check passes. It is not yet claimed as verified.
+ParseBench integration preparation: official code archive d423e529 was retrieved
+into ignored data_exports/parsebench/native-runtime. Its frozen lock installs a
+separate Python 3.14.3 environment; native ParseEvaluator imports and normalization
+is off. LiteParseProvider._convert_md_tables_to_html is the pinned upstream format
+conversion to reuse before native table scoring. No public cases have parser
+comparison outputs yet and no paid calls were made.
+
 Implemented
 Registry: 117 artifacts, preserved original bytes/counters/labels, observed row
 counts and disagreements, explicit metric IDs/common-success diagnostics, current

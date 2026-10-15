@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual invoice PDF with an actual stale adapter cache entry created through the retained cache writer",
+  "producer": "pdf_bench/systems/pdfsmith_adapter.py",
+  "test": "tests/test_run_provenance.py::test_explicit_bypass_reads_and_writes_no_adapter_cache",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/systems/pdfsmith_adapter.py",
+      "old": "        # Get backend and parse\n        backend = self._get_backend()",
+      "new": "        from pdf_bench.utils.caching import cache_key, get_cached\n        cached = get_cached(cache_key(input_path, self.name, self.version), Path(\".cache\"))\n        if cached is not None:\n            return cached\n        backend = self._get_backend()"
+    }
+  }
+}
