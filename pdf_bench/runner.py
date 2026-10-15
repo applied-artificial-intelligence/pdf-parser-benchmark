@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any
 
-from pdf_bench.loader import DocumentInfo, IMAGE_CAPABLE_BACKENDS, LoadedConfig
+from pdf_bench.loader import IMAGE_CAPABLE_BACKENDS, DocumentInfo, LoadedConfig
 from pdf_bench.metrics import (
     MarkdownASTParser,
     character_error_rate,
@@ -129,6 +129,8 @@ def _extract_parser_init_args(parser: BaseParser) -> tuple[type[BaseParser], dic
         parser_options["backend_name"] = parser._backend_name
         if hasattr(parser, "_kwargs") and parser._kwargs:
             parser_options.update(parser._kwargs)
+        parser_options["cache_mode"] = parser.cache_mode
+        return parser_class, parser_options
 
     # Test parser attributes (MockParser etc.)
     if hasattr(parser, "_name"):
@@ -322,7 +324,8 @@ class BenchmarkRunner:
 
         if skipped_image_tasks > 0:
             print(
-                f"→ Skipped {skipped_image_tasks} tasks: image documents with non-image-capable parsers"
+                f"→ Skipped {skipped_image_tasks} tasks: "
+                "image documents with non-image-capable parsers"
             )
 
         # Load existing checkpoint if available

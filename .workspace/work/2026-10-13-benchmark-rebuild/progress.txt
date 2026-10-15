@@ -33,8 +33,17 @@ and subprocesses; changed gold leaves predictions unchanged while changed/blank
 parser output changes them. Raw surfaces remain beside canonical facts.
 Next owned work is #5: execution identity, cache and failure accounting.
 Pre-repair real cache-option and changed-input/reference checkpoint defects were
-reproduced and recorded in execution-defect-reproduction.json. No code repair to
-the runner/adapter has started. Compared primary invoice outputs remain pending.
+reproduced and recorded in execution-defect-reproduction.json. The first repair checkpoint passes four actual adapter/worker E2E tests (all four
+were red before repair), 32 focused runner/smoke/provenance checks and full suite
+925 passed, 18 skipped. Adapter default cache mode bypass disables reads/writes;
+unsafe reuse raises explicitly. Old cache files remain unchanged. Worker arguments
+preserve cache mode and never forward the display name to backend constructors.
+Existing model-specific display names were retained while adopting the adapter.
+No closing footer for #5 yet. Checkpoint identity, planned attempts, exclusive
+outputs, typed timeout enforcement, stage outcomes and atomic run completion remain.
+Current PDFsmith metadata: distribution 0.2.0, source declaration 0.3.0.dev0;
+record actual identity rather than hard-coding the older reviewed source version.
+Compared primary invoice outputs remain pending.
 
 Implemented
 Registry: 117 artifacts, preserved original bytes/counters/labels, observed row

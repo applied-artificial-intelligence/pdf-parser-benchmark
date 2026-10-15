@@ -7,7 +7,7 @@ The adapter handles:
 - String to file conversion
 - Version tracking via pdfsmith version
 - Cost tracking forwarding for backends that support it
-- Caching integration with pdf-bench's caching system
+- Explicit uncached execution for benchmark measurements
 - Image input support for backends that support it
 """
 
@@ -29,7 +29,6 @@ except ImportError:
     PDFSMITH_IMAGE_BACKENDS = set()
 
 from pdf_bench.systems.base_parser import BaseParser
-from pdf_bench.utils.caching import cache_key, get_cached, store_cached
 
 # Image extensions supported by image-capable backends
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tiff", ".webp", ".bmp"}
@@ -50,11 +49,12 @@ class PdfsmithAdapter(BaseParser):
         >>> adapter = PdfsmithAdapter("anthropic", model="claude-3-5-haiku")
     """
 
-    def __init__(self, backend_name: str, **kwargs: Any):
+    def __init__(self, backend_name: str, *, cache_mode: str = "bypass", **kwargs: Any) -> None:
         """Initialize pdfsmith adapter.
 
         Args:
             backend_name: Name of the pdfsmith backend (e.g., "docling", "marker")
+            cache_mode: Only bypass is supported until full cache identity is verified.
             **kwargs: Additional options passed to the backend constructor
 
         Raises:
@@ -65,10 +65,19 @@ class PdfsmithAdapter(BaseParser):
                 "pdfsmith is required for PdfsmithAdapter. Install with: pip install pdfsmith"
             )
 
+        if cache_mode != "bypass":
+            raise ValueError("Adapter cache reuse is disabled until full identity is verified")
+        self.cache_mode = cache_mode
         self._backend_name = backend_name
         self._kwargs = kwargs
         self._backend = None  # Lazy initialization
         self._pdfsmith_version = getattr(pdfsmith, "__version__", "0.1.0")
+        # Build a unique name incorporating model kwarg (e.g., "pdfsmith-anthropic-claude-opus-4-6")
+        model = kwargs.get("model")
+        if model:
+            self._name = f"pdfsmith-{backend_name}-{model}"
+        else:
+            self._name = f"pdfsmith-{backend_name}"
 
     def _get_backend(self) -> Any:
         """Get or create backend instance (lazy loading)."""
@@ -92,8 +101,8 @@ class PdfsmithAdapter(BaseParser):
 
     @property
     def name(self) -> str:
-        """Return parser name with pdfsmith prefix."""
-        return f"pdfsmith-{self._backend_name}"
+        """Return parser name with pdfsmith prefix and model variant."""
+        return self._name
 
     @property
     def version(self) -> str:
@@ -133,13 +142,6 @@ class PdfsmithAdapter(BaseParser):
                 f"Image-capable backends: {sorted(PDFSMITH_IMAGE_BACKENDS)}"
             )
 
-        # Check cache first
-        cache_dir = Path(".cache")
-        key = cache_key(input_path, self.name, self.version)
-        cached = get_cached(key, cache_dir)
-        if cached is not None:
-            return cached
-
         # Get backend and parse
         backend = self._get_backend()
         try:
@@ -152,8 +154,7 @@ class PdfsmithAdapter(BaseParser):
         output_path = output_dir / f"{input_path.stem}.md"
         output_path.write_text(markdown, encoding="utf-8")
 
-        # Store in cache and return
-        return store_cached(key, output_path, cache_dir)
+        return output_path
 
     def get_cost_info(self) -> dict[str, Any] | None:
         """Get cost information if backend supports it.
