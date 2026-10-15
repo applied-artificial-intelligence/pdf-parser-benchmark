@@ -24,5 +24,12 @@
     "observed_pdfsmith_distribution_version": "0.2.0",
     "observed_pdfsmith_source_version": "0.3.0.dev0",
     "remaining": "Checkpoint identity validation, planned attempts, exclusive output namespaces, enforced typed timeout, failure timing and atomic completed-run registration."
+  },
+  "checkpoint_repair": {
+    "status": "Legacy resumption disabled; snapshots remain readable",
+    "tests": "Five new E2E checks failed before repair and pass after; full suite 930 passed, 18 skipped",
+    "policy": "No row/counter import from any preexisting checkpoint. Changed or unchanged inputs require a fresh execution destination.",
+    "duplicate_regression_fixture": "tests/fixtures/legacy_duplicate_run.json",
+    "remaining": "Complete planned-pair provenance, isolated attempts, enforced timeouts, failure durations, stage identity and atomic run publication"
   }
 }

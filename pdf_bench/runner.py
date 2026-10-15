@@ -294,16 +294,33 @@ class BenchmarkRunner:
         """Execute complete benchmark with incremental checkpointing.
 
         Uses parallel execution if workers > 1, otherwise sequential.
-        Saves checkpoints every checkpoint_interval results to allow resumption on failure.
+        Saves readable snapshots every checkpoint_interval results. Resumption is disabled
+        until snapshots carry verified execution identity.
 
         Args:
-            checkpoint_path: Optional path to save/load checkpoints. If None, no checkpointing.
+            checkpoint_path: Fresh snapshot destination. Existing files cannot be resumed.
             checkpoint_interval: Number of results between checkpoints (default: 20)
 
         Returns:
             BenchmarkResults with all parser/document combinations
         """
         import datetime
+
+        unknown = set(self.config.config.metric_config.metrics) - set(METRIC_FUNCTIONS)
+        if unknown:
+            raise ValueError(f"Unknown required metrics: {sorted(unknown)}")
+        pairs = [
+            (parser.name, doc.doc_id)
+            for parser in self.config.parser_instances
+            for doc in self.config.documents
+        ]
+        if len(set(pairs)) != len(pairs):
+            raise ValueError("Planned input/parser pairs must be unique")
+        if checkpoint_path is not None and checkpoint_path.exists():
+            raise ValueError(
+                "Checkpoint resumption is disabled: snapshots lack full execution identity. "
+                "Use a fresh output location; snapshots remain readable with load_results."
+            )
 
         results = BenchmarkResults(
             benchmark_name=self.config.config.name,
@@ -328,47 +345,21 @@ class BenchmarkRunner:
                 "image documents with non-image-capable parsers"
             )
 
-        # Load existing checkpoint if available
-        completed_tasks = set()
-        if checkpoint_path and checkpoint_path.exists():
-            try:
-                from pdf_bench.persistence import load_results
-
-                checkpoint_results = load_results(checkpoint_path)
-                results.results = checkpoint_results.results
-                results.success_count = checkpoint_results.success_count
-                results.failure_count = checkpoint_results.failure_count
-
-                # Build set of completed (parser, doc_id) pairs
-                for result in results.results:
-                    completed_tasks.add((result.parser_name, result.document_id))
-
-                print(f"✓ Loaded checkpoint: {len(completed_tasks)} tasks already complete")
-            except Exception as e:
-                print(f"⚠ Could not load checkpoint: {e}, starting fresh")
-
-        # Filter out already-completed tasks
-        remaining_tasks = []
-        for parser, doc in tasks:
-            if (parser.name, doc.doc_id) not in completed_tasks:
-                remaining_tasks.append((parser, doc))
-
-        if not remaining_tasks:
-            print("✓ All tasks already complete!")
+        if not tasks:
             return results
 
-        print(f"→ Running {len(remaining_tasks)} tasks ({len(completed_tasks)} already done)")
+        print(f"→ Running {len(tasks)} tasks")
 
         # Execute tasks (parallel or sequential)
         if self.workers == 1:
             # Sequential execution with checkpointing
             task_results = self._run_sequential_with_checkpoints(
-                remaining_tasks, results, checkpoint_path, checkpoint_interval
+                tasks, results, checkpoint_path, checkpoint_interval
             )
         else:
             # Parallel execution with checkpointing
             task_results = self._run_parallel_with_checkpoints(
-                remaining_tasks, results, checkpoint_path, checkpoint_interval
+                tasks, results, checkpoint_path, checkpoint_interval
             )
 
         # Collect results (may already be in results from checkpointing)

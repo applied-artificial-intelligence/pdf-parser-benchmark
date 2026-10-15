@@ -39,8 +39,17 @@ were red before repair), 32 focused runner/smoke/provenance checks and full suit
 unsafe reuse raises explicitly. Old cache files remain unchanged. Worker arguments
 preserve cache mode and never forward the display name to backend constructors.
 Existing model-specific display names were retained while adopting the adapter.
-No closing footer for #5 yet. Checkpoint identity, planned attempts, exclusive
-outputs, typed timeout enforcement, stage outcomes and atomic run completion remain.
+The second repair checkpoint disables legacy checkpoint resumption before row
+import and preserves readable snapshots. Duplicate planned pairs and unknown
+required metrics fail before execution. Five new E2E cases were red before repair
+and now pass; all 42 focused provenance/runner/registry tests and full suite
+930 passed, 18 skipped. A real duplicate-run artifact was captured from c16e3e9
+before the uniqueness repair, so registry regression coverage retains an actual
+historical producing error rather than fabricating an impossible current output.
+No closing footer for #5 yet. Rich planned-attempt identities, exclusive outputs,
+typed timeout enforcement, stage outcomes and atomic run completion remain.
+No reusable checkpoint is accepted; offline regrading will use retained immutable
+raw/prediction artifacts without reparsing.
 Current PDFsmith metadata: distribution 0.2.0, source declaration 0.3.0.dev0;
 record actual identity rather than hard-coding the older reviewed source version.
 Compared primary invoice outputs remain pending.

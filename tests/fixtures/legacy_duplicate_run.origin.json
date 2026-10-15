@@ -1,0 +1,8 @@
+{
+  "producer": "BenchmarkRunner with duplicate source DocumentInfo identities, before uniqueness repair",
+  "runner_source_sha256": "0a13e421329d10e68ee3b191e1c738e736175cc2a0807986b583d170ee85abfb",
+  "input_sha256": "f97f7c19710279ca127ae9652fa05554b72fa3e72400e134a16135ad546c360e",
+  "reference_sha256": "7d1d383c98d32a34bdc797fdb15718e0c2c689482aad6c45c68cffa9ae51dea2",
+  "result_sha256": "5fdc347631736c4e61c3aef2ce9fd114930733027f60383fd22a48efca40a1ef",
+  "source_revision": "c16e3e94c66886a5e2431a5688c9c2e50aa25b2b"
+}

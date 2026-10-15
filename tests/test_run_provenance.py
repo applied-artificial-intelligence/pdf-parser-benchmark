@@ -12,6 +12,36 @@ from pdf_bench.utils.caching import cache_key, store_cached
 SOURCE = Path(__file__).parent / "fixtures/invoice_sources/pdfs/invoice_001.pdf"
 
 
+def _loaded(tmp_path):
+    from pdf_bench.config import (
+        BenchmarkConfig,
+        DocumentFilter,
+        MetricConfig,
+        OutputConfig,
+        ParserConfig,
+    )
+    from pdf_bench.loader import DocumentInfo, LoadedConfig
+    from pdf_bench.utils.metadata import DocumentMetadata
+
+    source = tmp_path / "invoice.pdf"
+    source.write_bytes(SOURCE.read_bytes())
+    reference = tmp_path / "reference.md"
+    reference.write_text("Invoice INV-98034")
+    doc = DocumentInfo(
+        "invoice", source, reference, DocumentMetadata("invoice", "synthetic", "invoices")
+    )
+    config = BenchmarkConfig(
+        "Actual execution",
+        "Checkpoint controls",
+        str(tmp_path),
+        DocumentFilter(),
+        ParserConfig(["pypdf"]),
+        MetricConfig(["edit_similarity"]),
+        OutputConfig("outputs"),
+    )
+    return LoadedConfig(config, [doc], [PdfsmithAdapter("pypdf")], tmp_path / "outputs")
+
+
 def test_explicit_bypass_reads_and_writes_no_adapter_cache(tmp_path, monkeypatch):
     monkeypatch.chdir(tmp_path)
     adapter = PdfsmithAdapter("pypdf", cache_mode="bypass")
@@ -65,3 +95,43 @@ def test_real_worker_reconstructs_adapter_without_forwarding_display_name(tmp_pa
     )
     assert result.success, result.error
     assert "name" not in options
+
+
+@pytest.mark.parametrize("change", ["input", "reference", "none"])
+def test_checkpoint_resume_is_disabled_before_import_or_overwrite(tmp_path, change):
+    from pdf_bench.persistence import load_results
+    from pdf_bench.runner import BenchmarkRunner
+
+    loaded = _loaded(tmp_path)
+    checkpoint = tmp_path / "checkpoint.json"
+    first = BenchmarkRunner(loaded, parallel_workers=1).run(checkpoint_path=checkpoint)
+    assert first.success_count == 1
+    before = checkpoint.read_bytes()
+    if change == "input":
+        loaded.documents[0].input_path.write_bytes(b"corrupt changed PDF")
+    elif change == "reference":
+        loaded.documents[0].ground_truth_path.write_text("Changed reference under the same ID")
+    with pytest.raises(ValueError, match="resumption is disabled"):
+        BenchmarkRunner(loaded, parallel_workers=1).run(checkpoint_path=checkpoint)
+    assert checkpoint.read_bytes() == before
+    assert load_results(checkpoint).success_count == 1
+
+
+def test_duplicate_planned_pairs_fail_before_backend_execution(tmp_path):
+    from pdf_bench.runner import BenchmarkRunner
+
+    loaded = _loaded(tmp_path)
+    loaded.documents.append(loaded.documents[0])
+    with pytest.raises(ValueError, match="unique"):
+        BenchmarkRunner(loaded, parallel_workers=1).run()
+    assert not loaded.results_dir.exists()
+
+
+def test_unknown_required_metric_fails_before_backend_execution(tmp_path):
+    from pdf_bench.runner import BenchmarkRunner
+
+    loaded = _loaded(tmp_path)
+    loaded.config.metric_config.metrics.append("typo_metric")
+    with pytest.raises(ValueError, match="Unknown required metrics"):
+        BenchmarkRunner(loaded, parallel_workers=1).run()
+    assert not loaded.results_dir.exists()

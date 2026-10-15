@@ -239,12 +239,14 @@ def test_rows_from_actual_runner_with_repeated_document_ids_are_ambiguous(tmp_pa
         MetricConfig(["edit_similarity"]),
         OutputConfig("outputs"),
     )
-    loaded = LoadedConfig(config, [doc, doc], [PdfsmithAdapter("pypdf")], tmp_path / "outputs")
+    loaded = LoadedConfig(config, [doc], [PdfsmithAdapter("pypdf")], tmp_path / "outputs")
     loaded.results_dir.mkdir()
-    runner = BenchmarkRunner(loaded, parallel_workers=1)
-    results = runner.run()
     target = tmp_path / "results/duplicates.json"
-    save_results(results, target)
+    target.parent.mkdir()
+    legacy = ROOT / "tests/fixtures/legacy_duplicate_run.json"
+    origin = json.loads((ROOT / "tests/fixtures/legacy_duplicate_run.origin.json").read_text())
+    assert hashlib.sha256(legacy.read_bytes()).hexdigest() == origin["result_sha256"]
+    shutil.copyfile(legacy, target)
     record = _record(build_run_registry(tmp_path), "duplicates.json")
     assert record["observed"]["total_rows"] == 2
     assert record["observed"]["duplicate_pairs"] == [["duplicate", "pdfsmith-pypdf"]]

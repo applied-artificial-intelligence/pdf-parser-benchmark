@@ -1,0 +1,41 @@
+{
+  "benchmark": {
+    "name": "Repeated metadata ID",
+    "timestamp": "2026-10-15T19:57:06.027221+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "duplicate",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9716840536512668
+      },
+      "error": null,
+      "parse_time_seconds": 0.1318519115447998
+    },
+    {
+      "document_id": "duplicate",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9716840536512668
+      },
+      "error": null,
+      "parse_time_seconds": 0.0035054683685302734
+    }
+  ],
+  "summary": {
+    "total_documents": 2,
+    "total_parsers": 1,
+    "total_results": 2,
+    "success_count": 2,
+    "failure_count": 0
+  }
+}
