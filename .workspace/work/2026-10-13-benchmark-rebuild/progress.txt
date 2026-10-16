@@ -81,7 +81,7 @@ source maintenance uses current development task revision 3; primary runs retain
 Hosted CI exposed missing converter tools and tests depending on ignored local
 PDFs. Converter dependencies are now declared and discovery tests build their own
 real corpus. Focused loader suite: 23 passed, 10 skipped. A fresh full local run
-still passes 984 tests with 18 skips. Hosted revalidation is pending.
+still passes 984 tests with 18 skips. Hosted status is attached to PR #9; all checks must pass before merge.
 
 No paid calls, package release, public-main merge, publication or deployment.
 

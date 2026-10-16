@@ -23,7 +23,7 @@ Evidence: corrected invoice runs reproduce all 200 pairs across fresh/relocated 
 
 Limits: generated invoice templates, six source cells, three schemas and coding-agent visual qualification; no independent human adjudication or real-vendor accuracy estimate. Native public content/table dimensions are a purposive subset, not a full leaderboard replication. Extractor limitations affect invoice outcomes. No global business-coverage percentage or universal parser winner.
 
-Source checks: 984 local tests pass, 18 skipped; core lint/format and mypy pass. All eight issue verification gates pass without waivers. The latest hosted CI run must pass before merge review.
+Source checks: 984 local tests pass, 18 skipped; core lint/format and mypy pass. All eight issue verification gates pass without waivers. Read the latest PR checks for hosted status; all checks must pass before merge.
 
 Ownership: PDF-Bench owns evidence. Editorial and website owners own synthesis/rendering. The checked benchmark-interpretation article is identified in editorial-context.json. No manuscript/CMS changes or publication performed.
 

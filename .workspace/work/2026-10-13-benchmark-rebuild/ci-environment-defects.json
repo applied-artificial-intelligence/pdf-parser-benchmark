@@ -20,5 +20,15 @@
   "local_focused_result": {
     "passed": 23,
     "skipped": 10
+  },
+  "final_followup": {
+    "hosted_run": "38964310465",
+    "result": {
+      "passed": 954,
+      "failed": 1,
+      "skipped": 26
+    },
+    "remaining_failure": "Lightweight pipeline import eagerly loaded unused Tika in the tracked checkout. The retained working-tree availability probe already avoided that import and is now adopted.",
+    "repair": "Use importlib.util.find_spec for availability; import the SDK only when its parser is used."
   }
 }
