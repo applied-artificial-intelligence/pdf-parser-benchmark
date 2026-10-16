@@ -7,7 +7,7 @@ only for a material stated mismatch. No business-wide coverage percentage.
 
 Milestone and ownership
 Eight GitHub issues, milestone 1, draft PR #9, codex/benchmark-rebuild.
-Owner: this PDF-Bench reconstruction conversation. Issues 1-6 are implemented;
+Owner: this PDF-Bench reconstruction conversation. Issues 1-7 are implemented;
 GitHub issues remain open until approved public-main merge. Existing main and
 source-first review branches are retained reconstruction baselines owned here.
 No temporary worktree. Inherited dirty/untracked work remains preserved.
@@ -49,11 +49,22 @@ Issue 6: seven mutation-backed closure items covered, no waivers or deferrals.
 Issues 1-5: 41 closure items covered. Replay instruction check passes all 200 pairs.
 
 Current work and next milestone
-Issue 7: selection declared before outputs; 30 content and 20 table cases visually
-qualified. Additional hard tables concentrate on insurance and are deliberately
-oversampled. Native upstream evaluator/format conversion integration is in progress;
-no public comparison scores exist yet. Next: freeze public runtime/protocol and
-execute two fresh comparisons plus offline relocated native regrading.
+Issue 7: three full executions on the predeclared, visually qualified 30 content
+and 20 table cases match all 100 pairs, raw bytes and native metrics. The third
+execution rebuilt both retained runtimes outside the checkout; parser-free,
+network-free offline regrading without original PDFs also matches all 100 pairs.
+Native text-content means: pypdf 0.5992117223925929, pdfplumber 0.5709514511406883.
+Native table composite means: pypdf 0, pdfplumber 0.10676339510331187.
+Both pipelines produce content on 42/50 inputs and empty output on eight; every
+case remains scored. pypdf plain output has no table markup. This is a fixed
+business-relevant subset, not the full ParseBench leaderboard or a modern-parser
+comparison. Hard table selection deliberately oversamples insurance material.
+Nine integration checks pass; full suite 975 passed/18 skipped before the ninth
+check was added (the ninth passes in the focused run). Seven producing-mutation
+preflights pass. Issue-7 coverage passes all eight items, with no waivers or deferrals.
+Primary public bundle: parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01.
+Checkpoint: parsebench-run-checkpoint.json. Previous provider-import integration
+failure remains diagnostic, without a quality score.
 Issue 8: final technical report, evidence tiers, design lessons and versioned
 website/editorial export remain. Existing editorial/website content is read-only.
 No paid calls, package release, public-main merge, publication or deployment.

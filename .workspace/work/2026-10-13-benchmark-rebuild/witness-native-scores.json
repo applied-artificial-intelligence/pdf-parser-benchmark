@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "producer": "pdf_bench/parsebench_comparison.py",
+  "test": "tests/test_parsebench_comparison.py::test_real_outputs_use_the_actual_upstream_evaluator_in_both_dimensions",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench_comparison.py",
+      "old": "    payload = json.loads(result.stdout)",
+      "new": "    payload = json.loads(result.stdout)\n    payload[\"pairs\"][0][\"result\"][\"metrics\"][0][\"value\"] += 0.25"
+    }
+  }
+}

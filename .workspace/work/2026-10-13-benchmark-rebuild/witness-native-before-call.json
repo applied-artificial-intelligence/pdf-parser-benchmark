@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "producer": "pdf_bench/parsebench_comparison.py",
+  "test": "tests/test_parsebench_comparison.py::test_changed_source_is_rejected_before_real_backend_initialization",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench_comparison.py",
+      "old": "    plan = validate_plan(plan_root)",
+      "new": "    plan = validate_plan(plan_root, inputs=False)"
+    }
+  }
+}

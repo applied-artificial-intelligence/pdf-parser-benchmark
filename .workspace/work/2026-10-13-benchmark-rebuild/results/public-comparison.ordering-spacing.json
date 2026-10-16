@@ -1,0 +1,12 @@
+{
+ "item": "public-comparison.ordering-spacing",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench_comparison.py::test_two_fresh_public_runs_preserve_identical_pairs_outputs_and_native_scores",
+  "fixture (both runs): Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}
