@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-57789",
+    "vendor": "Express Freight",
+    "due_date": "2025-09-04",
+    "grand_total": "19904.27",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-57789"
+    ],
+    "due_date": [
+      "September 04, 2025"
+    ],
+    "grand_total": [
+      "$19,904.27"
+    ],
+    "vendor": [
+      "Express Freight"
+    ]
+  },
+  "records": [
+    {
+      "description": "Fuel Surcharge",
+      "quantity": "93.37",
+      "unit": "% of base",
+      "unit_price": "18.35",
+      "line_total": "1713.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge",
+        "quantity": "93.37",
+        "unit": "% of base",
+        "unit_price": "$18.35",
+        "line_total": "$1,713.34"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 50",
+      "quantity": "39.88",
+      "unit": "cwt",
+      "unit_price": "18.71",
+      "line_total": "746.15",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight -\nClass 50",
+        "quantity": "39.88",
+        "unit": "cwt",
+        "unit_price": "$18.71",
+        "line_total": "$746.15"
+      }
+    },
+    {
+      "description": "Residential Delivery",
+      "quantity": "34.79",
+      "unit": "per stop",
+      "unit_price": "62.66",
+      "line_total": "2179.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential\nDelivery",
+        "quantity": "34.79",
+        "unit": "per stop",
+        "unit_price": "$62.66",
+        "line_total": "$2,179.94"
+      }
+    },
+    {
+      "description": "Fuel Surcharge",
+      "quantity": "73.27",
+      "unit": "% of base",
+      "unit_price": "13.26",
+      "line_total": "971.56",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge",
+        "quantity": "73.27",
+        "unit": "% of base",
+        "unit_price": "$13.26",
+        "line_total": "$971.56"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85",
+      "quantity": "93.93",
+      "unit": "cwt",
+      "unit_price": "53.12",
+      "line_total": "4989.56",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight -\nClass 85",
+        "quantity": "93.93",
+        "unit": "cwt",
+        "unit_price": "$53.12",
+        "line_total": "$4,989.56"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85",
+      "quantity": "43.43",
+      "unit": "cwt",
+      "unit_price": "61.47",
+      "line_total": "2669.64",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight -\nClass 85",
+        "quantity": "43.43",
+        "unit": "cwt",
+        "unit_price": "$61.47",
+        "line_total": "$2,669.64"
+      }
+    },
+    {
+      "description": "Liftgate Service",
+      "quantity": "33.66",
+      "unit": "per stop",
+      "unit_price": "115.72",
+      "line_total": "3895.14",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service",
+        "quantity": "33.66",
+        "unit": "per stop",
+        "unit_price": "$115.72",
+        "line_total": "$3,895.14"
+      }
+    },
+    {
+      "description": "Pallet Exchange",
+      "quantity": "7.69",
+      "unit": "pallet",
+      "unit_price": "18.56",
+      "line_total": "142.73",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange",
+        "quantity": "7.69",
+        "unit": "pallet",
+        "unit_price": "$18.56",
+        "line_total": "$142.73"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

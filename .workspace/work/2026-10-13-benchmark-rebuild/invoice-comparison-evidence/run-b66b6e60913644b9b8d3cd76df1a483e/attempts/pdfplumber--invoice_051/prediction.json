@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-22033",
+    "vendor": "Thompson Attorneys at Law",
+    "due_date": "2025-10-04",
+    "grand_total": "150893.7",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-22033"
+    ],
+    "due_date": [
+      "October 04, 2025"
+    ],
+    "grand_total": [
+      "$150,893.70"
+    ],
+    "vendor": [
+      "Thompson Attorneys at Law"
+    ]
+  },
+  "records": [
+    {
+      "description": "Associate Legal Services",
+      "quantity": "39.75",
+      "unit": "hour",
+      "unit_price": "407.57",
+      "line_total": "16200.91",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal\nServices",
+        "quantity": "39.75",
+        "unit": "hour",
+        "unit_price": "$407.57",
+        "line_total": "$16,200.91"
+      }
+    },
+    {
+      "description": "Document Review",
+      "quantity": "4.26",
+      "unit": "hour",
+      "unit_price": "258.01",
+      "line_total": "1099.12",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Document\nReview",
+        "quantity": "4.26",
+        "unit": "hour",
+        "unit_price": "$258.01",
+        "line_total": "$1,099.12"
+      }
+    },
+    {
+      "description": "Partner Legal Services",
+      "quantity": "68.2",
+      "unit": "hour",
+      "unit_price": "784.25",
+      "line_total": "53485.85",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal\nServices",
+        "quantity": "68.20",
+        "unit": "hour",
+        "unit_price": "$784.25",
+        "line_total": "$53,485.85"
+      }
+    },
+    {
+      "description": "Legal Research",
+      "quantity": "90.77",
+      "unit": "hour",
+      "unit_price": "231.96",
+      "line_total": "21055.01",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research",
+        "quantity": "90.77",
+        "unit": "hour",
+        "unit_price": "$231.96",
+        "line_total": "$21,055.01"
+      }
+    },
+    {
+      "description": "Expert Witness Consultation",
+      "quantity": "93.67",
+      "unit": "hour",
+      "unit_price": "361.95",
+      "line_total": "33903.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness\nConsultation",
+        "quantity": "93.67",
+        "unit": "hour",
+        "unit_price": "$361.95",
+        "line_total": "$33,903.86"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

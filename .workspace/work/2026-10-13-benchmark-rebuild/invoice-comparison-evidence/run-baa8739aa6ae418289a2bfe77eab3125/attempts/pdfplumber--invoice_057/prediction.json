@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-16178",
+    "vendor": "Vision Media",
+    "due_date": "2025-10-04",
+    "grand_total": "717089.83",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-16178"
+    ],
+    "due_date": [
+      "October 04, 2025"
+    ],
+    "grand_total": [
+      "$717,089.83"
+    ],
+    "vendor": [
+      "Vision Media"
+    ]
+  },
+  "records": [
+    {
+      "description": "Creative Direction",
+      "quantity": "91.41",
+      "unit": "hour",
+      "unit_price": "205.81",
+      "line_total": "18813.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Creative\nDirection",
+        "quantity": "91.41",
+        "unit": "hour",
+        "unit_price": "$205.81",
+        "line_total": "$18,813.09"
+      }
+    },
+    {
+      "description": "Analytics & Reporting",
+      "quantity": "56.41",
+      "unit": "month",
+      "unit_price": "1869.94",
+      "line_total": "105483.32",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Analytics &\nReporting",
+        "quantity": "56.41",
+        "unit": "month",
+        "unit_price": "$1,869.94",
+        "line_total": "$105,483.32"
+      }
+    },
+    {
+      "description": "Social Media Management",
+      "quantity": "16.33",
+      "unit": "month",
+      "unit_price": "6170.25",
+      "line_total": "100760.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Social Media\nManagement",
+        "quantity": "16.33",
+        "unit": "month",
+        "unit_price": "$6,170.25",
+        "line_total": "$100,760.18"
+      }
+    },
+    {
+      "description": "Copywriting",
+      "quantity": "8.65",
+      "unit": "hour",
+      "unit_price": "164.42",
+      "line_total": "1422.23",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Copywriting",
+        "quantity": "8.65",
+        "unit": "hour",
+        "unit_price": "$164.42",
+        "line_total": "$1,422.23"
+      }
+    },
+    {
+      "description": "Graphic Design",
+      "quantity": "91.36",
+      "unit": "hour",
+      "unit_price": "158.9",
+      "line_total": "14517.1",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design",
+        "quantity": "91.36",
+        "unit": "hour",
+        "unit_price": "$158.90",
+        "line_total": "$14,517.10"
+      }
+    },
+    {
+      "description": "Video Production",
+      "quantity": "13.43",
+      "unit": "day",
+      "unit_price": "4998.3",
+      "line_total": "67127.17",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Video\nProduction",
+        "quantity": "13.43",
+        "unit": "day",
+        "unit_price": "$4,998.30",
+        "line_total": "$67,127.17"
+      }
+    },
+    {
+      "description": "Copywriting",
+      "quantity": "34.82",
+      "unit": "hour",
+      "unit_price": "165.09",
+      "line_total": "5748.43",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Copywriting",
+        "quantity": "34.82",
+        "unit": "hour",
+        "unit_price": "$165.09",
+        "line_total": "$5,748.43"
+      }
+    },
+    {
+      "description": "Video Production",
+      "quantity": "88.38",
+      "unit": "day",
+      "unit_price": "3210.04",
+      "line_total": "283703.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Video\nProduction",
+        "quantity": "88.38",
+        "unit": "day",
+        "unit_price": "$3,210.04",
+        "line_total": "$283,703.34"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

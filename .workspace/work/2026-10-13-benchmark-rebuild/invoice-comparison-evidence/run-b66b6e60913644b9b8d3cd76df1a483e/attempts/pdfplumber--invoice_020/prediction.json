@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-99703",
+    "vendor": "Global Fabrication",
+    "due_date": "2025-11-30",
+    "grand_total": "28300.03",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-99703",
+      "INV-99703"
+    ],
+    "due_date": [
+      "November 30, 2025",
+      "November 30, 2025"
+    ],
+    "grand_total": [
+      "$28,300.03"
+    ],
+    "vendor": [
+      "Global Fabrication"
+    ]
+  },
+  "records": [
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "23.81",
+      "unit_price": "81.12",
+      "line_total": "1931.47",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "23.81",
+        "unit_price": "$81.12",
+        "line_total": "$1,931.47"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "5.4",
+      "unit_price": "5.21",
+      "line_total": "28.13",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "5.40",
+        "unit_price": "$5.21",
+        "line_total": "$28.13"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "23.46",
+      "unit_price": "31.19",
+      "line_total": "731.72",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "23.46",
+        "unit_price": "$31.19",
+        "line_total": "$731.72"
+      }
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "14.14",
+      "unit_price": "106.63",
+      "line_total": "1507.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "14.14",
+        "unit_price": "$106.63",
+        "line_total": "$1,507.75"
+      }
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "97.19",
+      "unit_price": "113.88",
+      "line_total": "11068",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "97.19",
+        "unit_price": "$113.88",
+        "line_total": "$11,068.00"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "2.1",
+      "unit_price": "5.61",
+      "line_total": "11.78",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "2.10",
+        "unit_price": "$5.61",
+        "line_total": "$11.78"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "33.85",
+      "unit_price": "6.13",
+      "line_total": "207.5",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "33.85",
+        "unit_price": "$6.13",
+        "line_total": "$207.50"
+      }
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "85.96",
+      "unit_price": "105.49",
+      "line_total": "9067.92",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining\n(hour)",
+        "quantity": "85.96",
+        "unit_price": "$105.49",
+        "line_total": "$9,067.92"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "16.83",
+      "unit_price": "87.27",
+      "line_total": "1468.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "16.83",
+        "unit_price": "$87.27",
+        "line_total": "$1,468.75"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

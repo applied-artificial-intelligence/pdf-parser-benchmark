@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "producer": "pdf_bench/invoice_reproduction.py",
+  "test": "tests/test_reconstruction_export.py::test_reproduction_rejects_a_different_frozen_backend_configuration",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_reproduction.py",
+      "old": "        raise ValueError(\"Fresh executions did not use the identical frozen plan\")",
+      "new": "        return {\"matching_pairs\": []}"
+    }
+  }
+}

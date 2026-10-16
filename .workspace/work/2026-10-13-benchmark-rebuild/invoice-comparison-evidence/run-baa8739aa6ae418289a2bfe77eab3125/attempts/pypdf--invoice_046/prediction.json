@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-24429",
+    "vendor": "Standard Inc",
+    "due_date": "2025-12-17",
+    "grand_total": "380898.71",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-24429"
+    ],
+    "due_date": [
+      "December 17, 2025"
+    ],
+    "grand_total": [
+      "$380,898.71"
+    ],
+    "vendor": [
+      "Standard Inc"
+    ]
+  },
+  "records": [
+    {
+      "description": "Aluminum Extrusion",
+      "quantity": "88.13",
+      "unit": "linear ft",
+      "unit_price": "28.34",
+      "line_total": "2497.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion",
+        "quantity": "88.13",
+        "unit": "linear ft",
+        "unit_price": "$28.34",
+        "line_total": "$2,497.60"
+      }
+    },
+    {
+      "description": "Quality Inspection",
+      "quantity": "18.51",
+      "unit": "hour",
+      "unit_price": "85.86",
+      "line_total": "1589.27",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality\nInspection",
+        "quantity": "18.51",
+        "unit": "hour",
+        "unit_price": "$85.86",
+        "line_total": "$1,589.27"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion",
+      "quantity": "48.57",
+      "unit": "linear ft",
+      "unit_price": "16.01",
+      "line_total": "777.61",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion",
+        "quantity": "48.57",
+        "unit": "linear ft",
+        "unit_price": "$16.01",
+        "line_total": "$777.61"
+      }
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "37.45",
+      "unit": "hour",
+      "unit_price": "91.21",
+      "line_total": "3415.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor",
+        "quantity": "37.45",
+        "unit": "hour",
+        "unit_price": "$91.21",
+        "line_total": "$3,415.81"
+      }
+    },
+    {
+      "description": "CNC Machining",
+      "quantity": "4.38",
+      "unit": "hour",
+      "unit_price": "135.95",
+      "line_total": "595.46",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining",
+        "quantity": "4.38",
+        "unit": "hour",
+        "unit_price": "$135.95",
+        "line_total": "$595.46"
+      }
+    },
+    {
+      "description": "Custom Tooling",
+      "quantity": "83.67",
+      "unit": "each",
+      "unit_price": "3613.9",
+      "line_total": "302375.01",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling",
+        "quantity": "83.67",
+        "unit": "each",
+        "unit_price": "$3,613.90",
+        "line_total": "$302,375.01"
+      }
+    },
+    {
+      "description": "Powder Coating",
+      "quantity": "35.32",
+      "unit": "sq ft",
+      "unit_price": "3.92",
+      "line_total": "138.45",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating",
+        "quantity": "35.32",
+        "unit": "sq ft",
+        "unit_price": "$3.92",
+        "line_total": "$138.45"
+      }
+    },
+    {
+      "description": "CNC Machining",
+      "quantity": "7.49",
+      "unit": "hour",
+      "unit_price": "110.37",
+      "line_total": "826.67",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining",
+        "quantity": "7.49",
+        "unit": "hour",
+        "unit_price": "$110.37",
+        "line_total": "$826.67"
+      }
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "70",
+      "unit": "hour",
+      "unit_price": "72.22",
+      "line_total": "5055.4",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor",
+        "quantity": "70.00",
+        "unit": "hour",
+        "unit_price": "$72.22",
+        "line_total": "$5,055.40"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion",
+      "quantity": "7.06",
+      "unit": "linear ft",
+      "unit_price": "20.44",
+      "line_total": "144.31",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion",
+        "quantity": "7.06",
+        "unit": "linear ft",
+        "unit_price": "$20.44",
+        "line_total": "$144.31"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

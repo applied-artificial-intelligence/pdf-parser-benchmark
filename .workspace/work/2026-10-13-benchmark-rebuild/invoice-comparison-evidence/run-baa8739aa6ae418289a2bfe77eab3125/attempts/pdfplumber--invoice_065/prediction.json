@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-59207",
+    "vendor": null,
+    "due_date": "2025-10-07",
+    "grand_total": "3865494.25",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-59207"
+    ],
+    "due_date": [
+      "10/07/2025"
+    ],
+    "grand_total": [
+      "$3,865,494.25"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Media Buy - Digital @ $49806.11/campaign",
+      "quantity": "32.6",
+      "line_total": "1623679.19",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Media Buy - Digital @\n$49806.11/campaign",
+        "quantity": "32.60",
+        "line_total": "$1,623,679.19"
+      }
+    },
+    {
+      "description": "Social Media Management @ $7528.91/month",
+      "quantity": "99.88",
+      "line_total": "751987.53",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Social Media Management @\n$7528.91/month",
+        "quantity": "99.88",
+        "line_total": "$751,987.53"
+      }
+    },
+    {
+      "description": "Copywriting @ $112.36/hour",
+      "quantity": "34",
+      "line_total": "3820.24",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Copywriting @ $112.36/hour",
+        "quantity": "34.00",
+        "line_total": "$3,820.24"
+      }
+    },
+    {
+      "description": "Video Production @ $3302.59/day",
+      "quantity": "83.13",
+      "line_total": "274544.31",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Video Production @\n$3302.59/day",
+        "quantity": "83.13",
+        "line_total": "$274,544.31"
+      }
+    },
+    {
+      "description": "Video Production @ $3521.37/day",
+      "quantity": "36.75",
+      "line_total": "129410.35",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Video Production @\n$3521.37/day",
+        "quantity": "36.75",
+        "line_total": "$129,410.35"
+      }
+    },
+    {
+      "description": "Creative Direction @ $238.71/hour",
+      "quantity": "51.89",
+      "line_total": "12386.66",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Creative Direction @\n$238.71/hour",
+        "quantity": "51.89",
+        "line_total": "$12,386.66"
+      }
+    },
+    {
+      "description": "Video Production @ $2041.63/day",
+      "quantity": "33.47",
+      "line_total": "68333.36",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Video Production @\n$2041.63/day",
+        "quantity": "33.47",
+        "line_total": "$68,333.36"
+      }
+    },
+    {
+      "description": "Social Media Management @ $3713.34/month",
+      "quantity": "94.81",
+      "line_total": "352061.77",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Social Media Management @\n$3713.34/month",
+        "quantity": "94.81",
+        "line_total": "$352,061.77"
+      }
+    },
+    {
+      "description": "Copywriting @ $145.94/hour",
+      "quantity": "34.41",
+      "line_total": "5021.8",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Copywriting @ $145.94/hour",
+        "quantity": "34.41",
+        "line_total": "$5,021.80"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

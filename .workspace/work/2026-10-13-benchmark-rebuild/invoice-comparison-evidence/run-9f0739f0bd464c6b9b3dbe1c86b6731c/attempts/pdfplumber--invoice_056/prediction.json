@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-58934",
+    "vendor": null,
+    "due_date": "2025-08-22",
+    "grand_total": "1119045.12",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-58934"
+    ],
+    "due_date": [
+      "08/22/2025"
+    ],
+    "grand_total": [
+      "$1,119,045.12"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Payroll Processing @ $429.29/month",
+      "quantity": "63.98",
+      "line_total": "27465.97",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Payroll Processing @\n$429.29/month",
+        "quantity": "63.98",
+        "line_total": "$27,465.97"
+      }
+    },
+    {
+      "description": "Financial Planning @ $302.68/hour",
+      "quantity": "35.89",
+      "line_total": "10863.19",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial Planning @\n$302.68/hour",
+        "quantity": "35.89",
+        "line_total": "$10,863.19"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate @ $8845.03/return",
+      "quantity": "79.45",
+      "line_total": "702737.63",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation - Corporate\n@ $8845.03/return",
+        "quantity": "79.45",
+        "line_total": "$702,737.63"
+      }
+    },
+    {
+      "description": "Financial Planning @ $237.25/hour",
+      "quantity": "14.27",
+      "line_total": "3385.56",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial Planning @\n$237.25/hour",
+        "quantity": "14.27",
+        "line_total": "$3,385.56"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate @ $13045.65/return",
+      "quantity": "7.77",
+      "line_total": "101364.7",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation - Corporate\n@ $13045.65/return",
+        "quantity": "7.77",
+        "line_total": "$101,364.70"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate @ $7890.86/return",
+      "quantity": "10.99",
+      "line_total": "86720.55",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation - Corporate\n@ $7890.86/return",
+        "quantity": "10.99",
+        "line_total": "$86,720.55"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

@@ -15,8 +15,8 @@
   "variant": {
     "mutation": {
       "file": "pdf_bench/invoice_comparison.py",
-      "old": "    environment = runtime_identity()",
-      "new": "    PdfsmithAdapter(\"pypdf\")._get_backend()\n    environment = runtime_identity()"
+      "old": "    environment = runtime_identity()\n    output.mkdir(parents=True, exist_ok=False)",
+      "new": "    PdfsmithAdapter(\"pypdf\")._get_backend()\n    environment = runtime_identity()\n    output.mkdir(parents=True, exist_ok=False)"
     }
   }
 }

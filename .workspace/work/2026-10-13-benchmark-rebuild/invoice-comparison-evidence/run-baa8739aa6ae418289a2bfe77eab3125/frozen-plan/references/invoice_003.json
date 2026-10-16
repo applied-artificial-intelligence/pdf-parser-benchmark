@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-43945",
+    "vendor": "Morgan LLP",
+    "due_date": "2025-08-21",
+    "grand_total": "168795.3",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Expert Witness Consultation @ $585.07/hour",
+      "quantity": "34.66",
+      "line_total": "20278.53"
+    },
+    {
+      "description": "Partner Legal Services @ $487.18/hour",
+      "quantity": "71.52",
+      "line_total": "34843.11"
+    },
+    {
+      "description": "Associate Legal Services @ $384.46/hour",
+      "quantity": "84.9",
+      "line_total": "32640.65"
+    },
+    {
+      "description": "Associate Legal Services @ $365.13/hour",
+      "quantity": "68.82",
+      "line_total": "25128.25"
+    },
+    {
+      "description": "Paralegal Services @ $155.65/hour",
+      "quantity": "59.83",
+      "line_total": "9312.54"
+    },
+    {
+      "description": "Expert Witness Consultation @ $404.10/hour",
+      "quantity": "33.41",
+      "line_total": "13500.98"
+    },
+    {
+      "description": "Associate Legal Services @ $406.65/hour",
+      "quantity": "54.22",
+      "line_total": "22048.56"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-43945",
+    "vendor": "Morgan LLP",
+    "due_date": "08/21/2025",
+    "grand_total": "$168,795.30",
+    "records": [
+      {
+        "description": "Expert Witness Consultation @ $585.07/hour",
+        "quantity": "34.66",
+        "line_total": "$20,278.53"
+      },
+      {
+        "description": "Partner Legal Services @ $487.18/hour",
+        "quantity": "71.52",
+        "line_total": "$34,843.11"
+      },
+      {
+        "description": "Associate Legal Services @ $384.46/hour",
+        "quantity": "84.90",
+        "line_total": "$32,640.65"
+      },
+      {
+        "description": "Associate Legal Services @ $365.13/hour",
+        "quantity": "68.82",
+        "line_total": "$25,128.25"
+      },
+      {
+        "description": "Paralegal Services @ $155.65/hour",
+        "quantity": "59.83",
+        "line_total": "$9,312.54"
+      },
+      {
+        "description": "Expert Witness Consultation @ $404.10/hour",
+        "quantity": "33.41",
+        "line_total": "$13,500.98"
+      },
+      {
+        "description": "Associate Legal Services @ $406.65/hour",
+        "quantity": "54.22",
+        "line_total": "$22,048.56"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7"
+    ]
+  },
+  "document_id": "invoice_003"
+}

@@ -1,6 +1,7 @@
 """Reproduce real parser artifacts with frozen inputs and isolated offline grading."""
 
 import json
+import runpy
 import shutil
 import subprocess
 import sys
@@ -54,6 +55,27 @@ def test_reference_derived_format_control_is_separate_from_actual_parser_quality
     cells = summarize_cells(first)
     assert len(cells["pypdf"]) == len(cells["pdfplumber"]) == 6
     assert sum(cell["documents_expected"] for cell in cells["pdfplumber"].values()) == 6
+
+
+def test_hundred_invoice_fills_remain_six_source_cells_in_reporting():
+    bundle = UNIT / "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c"
+    cells = summarize_cells(bundle)
+    expected_cells = {
+        "enterprise/simple",
+        "enterprise/medium",
+        "small_business/simple",
+        "small_business/medium",
+        "economy/medium",
+        "economy/complex",
+    }
+    for name in ["pypdf", "pdfplumber"]:
+        assert set(cells[name]) == expected_cells
+        assert sum(row["documents_expected"] for row in cells[name].values()) == 100
+        assert sum(row["fields_expected"] for row in cells[name].values()) == 500
+        assert sum(row["records_expected"] for row in cells[name].values()) == 696
+        assert sorted(doc_id for row in cells[name].values() for doc_id in row["eligible_ids"]) == [
+            f"invoice_{number:03d}" for number in range(1, 101)
+        ]
 
 
 def _offline(bundle):
@@ -115,3 +137,45 @@ def test_reproduction_rejects_a_different_frozen_backend_configuration(fresh_pai
     different = comparison.execute_plan(plan, tmp_path / "different-runs")
     with pytest.raises(ValueError, match="identical frozen plan"):
         compare_runs(first, different)
+
+
+def test_partial_failure_review_cannot_replace_a_complete_source_bound_audit(fresh_pair, tmp_path):
+    _, first, _ = fresh_pair
+    script = Path(__file__).resolve().parents[1] / "scripts/build_invoice_failure_audit.py"
+    build = runpy.run_path(str(script))["build"]
+    candidate_path = tmp_path / "candidates.json"
+    candidates = build(first, candidate_path)
+    assert candidates["failed_pair_count"] == 3
+    assert all(row["review_status"] == "unreviewed" for row in candidates["entries"])
+    review = {
+        "method": "Mechanism-test annotations of the known six development outputs",
+        "candidate_sha256": comparison.digest(candidate_path),
+        "decisions": [
+            {
+                "pair_id": "pdfplumber--invoice_001",
+                "causes": ["unsupported_extractor_representation"],
+                "note": "Known final-row continuation is outside the selected Markdown table.",
+            },
+            {
+                "pair_id": "pdfplumber--invoice_003",
+                "causes": ["lost_or_misassociated_parser_content"],
+                "note": "Known FROM/TO column flattening prevents vendor assignment.",
+            },
+            {
+                "pair_id": "pdfplumber--invoice_006",
+                "causes": ["lost_or_misassociated_parser_content"],
+                "note": "Known FROM/TO column flattening prevents vendor assignment.",
+            },
+        ],
+    }
+    review_path = tmp_path / "review.json"
+    review_path.write_text(json.dumps(review))
+    final = tmp_path / "audit.json"
+    completed = build(first, final, review_path)
+    assert completed["reviewed_failure_pairs"] == 3
+    previous = final.read_bytes()
+    review["decisions"].pop()
+    review_path.write_text(json.dumps(review))
+    with pytest.raises(ValueError, match="Review is incomplete"):
+        build(first, final, review_path)
+    assert final.read_bytes() == previous

@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-57697",
+    "vendor": "Anderson LLP",
+    "due_date": "2025-10-28",
+    "grand_total": "237307.42",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Legal Research @ $228.46/hour",
+      "quantity": "79.29",
+      "line_total": "18114.59"
+    },
+    {
+      "description": "Partner Legal Services @ $500.12/hour",
+      "quantity": "69.03",
+      "line_total": "34523.28"
+    },
+    {
+      "description": "Associate Legal Services @ $291.91/hour",
+      "quantity": "41.69",
+      "line_total": "12169.73"
+    },
+    {
+      "description": "Court Filing Fees @ $89.56/filing",
+      "quantity": "31.95",
+      "line_total": "2861.44"
+    },
+    {
+      "description": "Court Filing Fees @ $144.24/filing",
+      "quantity": "39",
+      "line_total": "5625.36"
+    },
+    {
+      "description": "Associate Legal Services @ $438.37/hour",
+      "quantity": "79.65",
+      "line_total": "34916.17"
+    },
+    {
+      "description": "Paralegal Services @ $173.15/hour",
+      "quantity": "22.34",
+      "line_total": "3868.17"
+    },
+    {
+      "description": "Partner Legal Services @ $537.59/hour",
+      "quantity": "91.79",
+      "line_total": "49345.39"
+    },
+    {
+      "description": "Partner Legal Services @ $662.87/hour",
+      "quantity": "45.49",
+      "line_total": "30153.96"
+    },
+    {
+      "description": "Court Filing Fees @ $81.71/filing",
+      "quantity": "75.61",
+      "line_total": "6178.09"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-57697",
+    "vendor": "Anderson LLP",
+    "due_date": "10/28/2025",
+    "grand_total": "$237,307.42",
+    "records": [
+      {
+        "description": "Legal Research @ $228.46/hour",
+        "quantity": "79.29",
+        "line_total": "$18,114.59"
+      },
+      {
+        "description": "Partner Legal Services @ $500.12/hour",
+        "quantity": "69.03",
+        "line_total": "$34,523.28"
+      },
+      {
+        "description": "Associate Legal Services @ $291.91/hour",
+        "quantity": "41.69",
+        "line_total": "$12,169.73"
+      },
+      {
+        "description": "Court Filing Fees @ $89.56/filing",
+        "quantity": "31.95",
+        "line_total": "$2,861.44"
+      },
+      {
+        "description": "Court Filing Fees @ $144.24/filing",
+        "quantity": "39.00",
+        "line_total": "$5,625.36"
+      },
+      {
+        "description": "Associate Legal Services @ $438.37/hour",
+        "quantity": "79.65",
+        "line_total": "$34,916.17"
+      },
+      {
+        "description": "Paralegal Services @ $173.15/hour",
+        "quantity": "22.34",
+        "line_total": "$3,868.17"
+      },
+      {
+        "description": "Partner Legal Services @ $537.59/hour",
+        "quantity": "91.79",
+        "line_total": "$49,345.39"
+      },
+      {
+        "description": "Partner Legal Services @ $662.87/hour",
+        "quantity": "45.49",
+        "line_total": "$30,153.96"
+      },
+      {
+        "description": "Court Filing Fees @ $81.71/filing",
+        "quantity": "75.61",
+        "line_total": "$6,178.09"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9",
+      "table/1/row/10"
+    ]
+  },
+  "document_id": "invoice_059"
+}

@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-59207",
+    "vendor": "Bright Group",
+    "due_date": "2025-10-07",
+    "grand_total": "3865494.25",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Media Buy - Digital @ $49806.11/campaign",
+      "quantity": "32.6",
+      "line_total": "1623679.19"
+    },
+    {
+      "description": "Social Media Management @ $7528.91/month",
+      "quantity": "99.88",
+      "line_total": "751987.53"
+    },
+    {
+      "description": "Copywriting @ $112.36/hour",
+      "quantity": "34",
+      "line_total": "3820.24"
+    },
+    {
+      "description": "Video Production @ $3302.59/day",
+      "quantity": "83.13",
+      "line_total": "274544.31"
+    },
+    {
+      "description": "Video Production @ $3521.37/day",
+      "quantity": "36.75",
+      "line_total": "129410.35"
+    },
+    {
+      "description": "Creative Direction @ $238.71/hour",
+      "quantity": "51.89",
+      "line_total": "12386.66"
+    },
+    {
+      "description": "Video Production @ $2041.63/day",
+      "quantity": "33.47",
+      "line_total": "68333.36"
+    },
+    {
+      "description": "Social Media Management @ $3713.34/month",
+      "quantity": "94.81",
+      "line_total": "352061.77"
+    },
+    {
+      "description": "Copywriting @ $145.94/hour",
+      "quantity": "34.41",
+      "line_total": "5021.8"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-59207",
+    "vendor": "Bright Group",
+    "due_date": "10/07/2025",
+    "grand_total": "$3,865,494.25",
+    "records": [
+      {
+        "description": "Media Buy - Digital @ $49806.11/campaign",
+        "quantity": "32.60",
+        "line_total": "$1,623,679.19"
+      },
+      {
+        "description": "Social Media Management @ $7528.91/month",
+        "quantity": "99.88",
+        "line_total": "$751,987.53"
+      },
+      {
+        "description": "Copywriting @ $112.36/hour",
+        "quantity": "34.00",
+        "line_total": "$3,820.24"
+      },
+      {
+        "description": "Video Production @ $3302.59/day",
+        "quantity": "83.13",
+        "line_total": "$274,544.31"
+      },
+      {
+        "description": "Video Production @ $3521.37/day",
+        "quantity": "36.75",
+        "line_total": "$129,410.35"
+      },
+      {
+        "description": "Creative Direction @ $238.71/hour",
+        "quantity": "51.89",
+        "line_total": "$12,386.66"
+      },
+      {
+        "description": "Video Production @ $2041.63/day",
+        "quantity": "33.47",
+        "line_total": "$68,333.36"
+      },
+      {
+        "description": "Social Media Management @ $3713.34/month",
+        "quantity": "94.81",
+        "line_total": "$352,061.77"
+      },
+      {
+        "description": "Copywriting @ $145.94/hour",
+        "quantity": "34.41",
+        "line_total": "$5,021.80"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_065"
+}

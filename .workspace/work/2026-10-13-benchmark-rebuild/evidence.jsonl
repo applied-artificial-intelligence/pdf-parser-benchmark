@@ -39,3 +39,10 @@
 {"item": "execution-not-silent-replay", "status": "test", "level": "test", "declaration": "witness-execution-cache-bypass.json", "targets": "Fresh adapter execution silently imports a stale cache entry."}
 {"item": "failures-visible", "status": "test", "level": "test", "declaration": "witness-execution-duration.json", "targets": "Started failed calls are recorded with a fabricated zero duration."}
 {"item": "bundle-atomic", "status": "test", "level": "test", "declaration": "witness-execution-completion.json", "targets": "A missing required prediction is registered as a completed bundle and replaces valid evidence."}
+{"item": "invoice-comparison.record", "status": "test", "level": "test", "declaration": "witness-invoice-configuration.json", "targets": "Fresh comparison refuses genuinely different frozen backend options."}
+{"item": "invoice-comparison.absent-record", "status": "test", "level": "test", "declaration": "witness-invoice-fixed-denominator.json", "targets": "An eligible real execution timeout cannot shrink a parser task denominator."}
+{"item": "invoice-comparison.ordering-spacing", "status": "test", "level": "test", "declaration": "witness-execution-order.json", "targets": "Actual sequential call order remains in the attempt journal."}
+{"item": "invoice-comparison.entity-identity", "status": "test", "level": "test", "declaration": "witness-execution-stage-options.json", "targets": "Different actual backend options require distinct parse identities."}
+{"item": "invoice-comparison.known-at", "status": "test", "level": "test", "declaration": "witness-execution-before-init.json", "targets": "Population and runtime identity freeze before backend initialization."}
+{"item": "invoice-comparison.institution", "status": "test", "level": "test", "declaration": "witness-invoice-six-cells.json", "targets": "One hundred synthetic fills are reported in six source template/complexity cells."}
+{"item": "invoice-results-reproducible", "status": "test", "level": "test", "declaration": "witness-invoice-offline-predictions.json", "targets": "A wrong prediction introduced by the real producer is detected by standalone offline replay."}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-13751",
+    "vendor": "Global Inc",
+    "due_date": "2025-10-09",
+    "grand_total": "17373.7",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-13751",
+      "INV-13751"
+    ],
+    "due_date": [
+      "October 09, 2025",
+      "October 09, 2025"
+    ],
+    "grand_total": [
+      "$17,373.70"
+    ],
+    "vendor": [
+      "Global Inc"
+    ]
+  },
+  "records": [
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "72.23",
+      "unit_price": "121.45",
+      "line_total": "8772.33",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "72.23",
+        "unit_price": "$121.45",
+        "line_total": "$8,772.33"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "99.97",
+      "unit_price": "3.93",
+      "line_total": "392.88",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "99.97",
+        "unit_price": "$3.93",
+        "line_total": "$392.88"
+      }
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "72.16",
+      "unit_price": "82.43",
+      "line_total": "5948.15",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "72.16",
+        "unit_price": "$82.43",
+        "line_total": "$5,948.15"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "20.59",
+      "unit_price": "33.07",
+      "line_total": "680.91",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "20.59",
+        "unit_price": "$33.07",
+        "line_total": "$680.91"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

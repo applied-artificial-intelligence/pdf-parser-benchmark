@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-79598",
+    "vendor": "Tasteful Culinary",
+    "due_date": "2025-10-14",
+    "grand_total": "51183.23",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-79598"
+    ],
+    "due_date": [
+      "October 14, 2025"
+    ],
+    "grand_total": [
+      "$51,183.23"
+    ],
+    "vendor": [
+      "Tasteful Culinary"
+    ]
+  },
+  "records": [
+    {
+      "description": "Service Staff (hour)",
+      "quantity": "25.09",
+      "unit_price": "30.5",
+      "line_total": "765.24",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Service Staff (hour)",
+        "quantity": "25.09",
+        "unit_price": "$30.50",
+        "line_total": "$765.24"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated (per person)",
+      "quantity": "1.93",
+      "unit_price": "87.77",
+      "line_total": "169.4",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service -\nPlated (per person)",
+        "quantity": "1.93",
+        "unit_price": "$87.77",
+        "line_total": "$169.40"
+      }
+    },
+    {
+      "description": "Bar Service (hour)",
+      "quantity": "85.6",
+      "unit_price": "338.91",
+      "line_total": "29010.7",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Bar Service (hour)",
+        "quantity": "85.60",
+        "unit_price": "$338.91",
+        "line_total": "$29,010.70"
+      }
+    },
+    {
+      "description": "Equipment Rental (event)",
+      "quantity": "25.64",
+      "unit_price": "520.43",
+      "line_total": "13343.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(event)",
+        "quantity": "25.64",
+        "unit_price": "$520.43",
+        "line_total": "$13,343.83"
+      }
+    },
+    {
+      "description": "Breakfast Buffet (per person)",
+      "quantity": "33.84",
+      "unit_price": "28.56",
+      "line_total": "966.47",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Breakfast Buffet\n(per person)",
+        "quantity": "33.84",
+        "unit_price": "$28.56",
+        "line_total": "$966.47"
+      }
+    },
+    {
+      "description": "Breakfast Buffet",
+      "quantity": "99.11",
+      "unit_price": "22.95",
+      "line_total": "2274.57",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Breakfast Buffet",
+        "quantity": "99.11",
+        "unit_price": "$22.95",
+        "line_total": "$2,274.57"
+      }
+    },
+    {
+      "invalid_cells": [
+        "(per person)"
+      ]
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

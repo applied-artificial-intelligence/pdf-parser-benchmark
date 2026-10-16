@@ -1,0 +1,12 @@
+{
+ "item": "invoice-comparison.absent-record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_execution_controls.py::test_one_controlled_eligible_timeout_cannot_shrink_a_parsers_task_denominator",
+  "fixture (both runs): Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

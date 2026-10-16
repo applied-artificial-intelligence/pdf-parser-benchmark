@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-44711",
+    "vendor": "Foundation Inc",
+    "due_date": "2025-12-09",
+    "grand_total": "54370.74",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Materials - Concrete",
+      "quantity": "42.44",
+      "unit": "cu yd",
+      "unit_price": "157.89",
+      "line_total": "6700.85"
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "61.74",
+      "unit": "hour",
+      "unit_price": "126.28",
+      "line_total": "7796.53"
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "95.03",
+      "unit": "day",
+      "unit_price": "212.42",
+      "line_total": "20186.27"
+    },
+    {
+      "description": "Electrical Work",
+      "quantity": "68.39",
+      "unit": "hour",
+      "unit_price": "122.42",
+      "line_total": "8372.3"
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "34.11",
+      "unit": "hour",
+      "unit_price": "90.14",
+      "line_total": "3074.68"
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "54.5",
+      "unit": "hour",
+      "unit_price": "90.41",
+      "line_total": "4927.34"
+    },
+    {
+      "description": "General Labor",
+      "quantity": "15.59",
+      "unit": "hour",
+      "unit_price": "46.42",
+      "line_total": "723.69"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-44711",
+    "vendor": "Foundation Inc",
+    "due_date": "December 09, 2025",
+    "grand_total": "$54,370.74",
+    "records": [
+      {
+        "description": "Materials - Concrete",
+        "quantity": "42.44",
+        "unit": "cu yd",
+        "unit_price": "$157.89",
+        "line_total": "$6,700.85"
+      },
+      {
+        "description": "Plumbing",
+        "quantity": "61.74",
+        "unit": "hour",
+        "unit_price": "$126.28",
+        "line_total": "$7,796.53"
+      },
+      {
+        "description": "Equipment Rental",
+        "quantity": "95.03",
+        "unit": "day",
+        "unit_price": "$212.42",
+        "line_total": "$20,186.27"
+      },
+      {
+        "description": "Electrical Work",
+        "quantity": "68.39",
+        "unit": "hour",
+        "unit_price": "$122.42",
+        "line_total": "$8,372.30"
+      },
+      {
+        "description": "Plumbing",
+        "quantity": "34.11",
+        "unit": "hour",
+        "unit_price": "$90.14",
+        "line_total": "$3,074.68"
+      },
+      {
+        "description": "Plumbing",
+        "quantity": "54.50",
+        "unit": "hour",
+        "unit_price": "$90.41",
+        "line_total": "$4,927.34"
+      },
+      {
+        "description": "General Labor",
+        "quantity": "15.59",
+        "unit": "hour",
+        "unit_price": "$46.42",
+        "line_total": "$723.69"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7"
+    ]
+  },
+  "document_id": "invoice_078"
+}

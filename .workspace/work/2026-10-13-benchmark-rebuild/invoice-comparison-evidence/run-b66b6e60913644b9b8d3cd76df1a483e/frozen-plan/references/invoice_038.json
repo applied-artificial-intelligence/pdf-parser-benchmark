@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-88139",
+    "vendor": "Visionary AIA",
+    "due_date": "2025-11-08",
+    "grand_total": "61476.41",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Schematic Design (% of project)",
+      "quantity": "59.29",
+      "unit_price": "15.73",
+      "line_total": "932.63"
+    },
+    {
+      "description": "Site Visits (visit)",
+      "quantity": "29.54",
+      "unit_price": "831.8",
+      "line_total": "24571.37"
+    },
+    {
+      "description": "Project Architect (hour)",
+      "quantity": "16.17",
+      "unit_price": "128.25",
+      "line_total": "2073.8"
+    },
+    {
+      "description": "Design Development (% of project)",
+      "quantity": "39.19",
+      "unit_price": "26.18",
+      "line_total": "1025.99"
+    },
+    {
+      "description": "Schematic Design (% of project)",
+      "quantity": "62.1",
+      "unit_price": "17.5",
+      "line_total": "1086.75"
+    },
+    {
+      "description": "Project Architect (hour)",
+      "quantity": "97.8",
+      "unit_price": "156.91",
+      "line_total": "15345.8"
+    },
+    {
+      "description": "Construction Documents (% of project)",
+      "quantity": "80.09",
+      "unit_price": "48.21",
+      "line_total": "3861.14"
+    },
+    {
+      "description": "Design Development (% of project)",
+      "quantity": "26.48",
+      "unit_price": "29.4",
+      "line_total": "778.51"
+    },
+    {
+      "description": "Construction Documents (% of project)",
+      "quantity": "25.57",
+      "unit_price": "44.23",
+      "line_total": "1130.96"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-88139",
+    "vendor": "Visionary AIA",
+    "due_date": "November 08, 2025",
+    "grand_total": "$61,476.41",
+    "records": [
+      {
+        "description": "Schematic Design (% of project)",
+        "quantity": "59.29",
+        "unit_price": "$15.73",
+        "line_total": "$932.63"
+      },
+      {
+        "description": "Site Visits (visit)",
+        "quantity": "29.54",
+        "unit_price": "$831.80",
+        "line_total": "$24,571.37"
+      },
+      {
+        "description": "Project Architect (hour)",
+        "quantity": "16.17",
+        "unit_price": "$128.25",
+        "line_total": "$2,073.80"
+      },
+      {
+        "description": "Design Development (% of project)",
+        "quantity": "39.19",
+        "unit_price": "$26.18",
+        "line_total": "$1,025.99"
+      },
+      {
+        "description": "Schematic Design (% of project)",
+        "quantity": "62.10",
+        "unit_price": "$17.50",
+        "line_total": "$1,086.75"
+      },
+      {
+        "description": "Project Architect (hour)",
+        "quantity": "97.80",
+        "unit_price": "$156.91",
+        "line_total": "$15,345.80"
+      },
+      {
+        "description": "Construction Documents (% of project)",
+        "quantity": "80.09",
+        "unit_price": "$48.21",
+        "line_total": "$3,861.14"
+      },
+      {
+        "description": "Design Development (% of project)",
+        "quantity": "26.48",
+        "unit_price": "$29.40",
+        "line_total": "$778.51"
+      },
+      {
+        "description": "Construction Documents (% of project)",
+        "quantity": "25.57",
+        "unit_price": "$44.23",
+        "line_total": "$1,130.96"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_038"
+}

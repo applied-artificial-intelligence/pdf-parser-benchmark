@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-55665",
+    "vendor": "Complete Associates",
+    "due_date": "2025-09-27",
+    "grand_total": "342521.16",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-55665"
+    ],
+    "due_date": [
+      "September 27, 2025"
+    ],
+    "grand_total": [
+      "$342,521.16"
+    ],
+    "vendor": [
+      "Complete Associates"
+    ]
+  },
+  "records": [
+    {
+      "description": "Medical Supplies (item)",
+      "quantity": "64.43",
+      "unit_price": "149.81",
+      "line_total": "9652.26",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical Supplies\n(item)",
+        "quantity": "64.43",
+        "unit_price": "$149.81",
+        "line_total": "$9,652.26"
+      }
+    },
+    {
+      "description": "Diagnostic Imaging (procedure)",
+      "quantity": "11.95",
+      "unit_price": "1263.97",
+      "line_total": "15104.44",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Diagnostic Imaging\n(procedure)",
+        "quantity": "11.95",
+        "unit_price": "$1,263.97",
+        "line_total": "$15,104.44"
+      }
+    },
+    {
+      "description": "Specialized Procedure (procedure)",
+      "quantity": "23.75",
+      "unit_price": "3273.3",
+      "line_total": "77740.88",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Specialized\nProcedure\n(procedure)",
+        "quantity": "23.75",
+        "unit_price": "$3,273.30",
+        "line_total": "$77,740.88"
+      }
+    },
+    {
+      "description": "Medical Consultation (visit)",
+      "quantity": "29.51",
+      "unit_price": "340.78",
+      "line_total": "10056.42",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nConsultation (visit)",
+        "quantity": "29.51",
+        "unit_price": "$340.78",
+        "line_total": "$10,056.42"
+      }
+    },
+    {
+      "description": "Physical Therapy",
+      "quantity": "82.53",
+      "unit_price": "186.29",
+      "line_total": "15374.51",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Physical Therapy",
+        "quantity": "82.53",
+        "unit_price": "$186.29",
+        "line_total": "$15,374.51"
+      }
+    },
+    {
+      "description": "(session) Physical Therapy (session)",
+      "quantity": "7.6",
+      "unit_price": "172.89",
+      "line_total": "1313.96",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "(session)\nPhysical Therapy\n(session)",
+        "quantity": "7.60",
+        "unit_price": "$172.89",
+        "line_total": "$1,313.96"
+      }
+    },
+    {
+      "description": "Diagnostic Imaging (procedure)",
+      "quantity": "98.13",
+      "unit_price": "1771.87",
+      "line_total": "173873.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Diagnostic Imaging\n(procedure)",
+        "quantity": "98.13",
+        "unit_price": "$1,771.87",
+        "line_total": "$173,873.60"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

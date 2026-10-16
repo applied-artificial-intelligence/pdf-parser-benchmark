@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-88718",
+    "vendor": "Apex Contractors",
+    "due_date": "2025-11-26",
+    "grand_total": "91543.74",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-88718"
+    ],
+    "due_date": [
+      "11/26/2025"
+    ],
+    "grand_total": [
+      "$91,543.74"
+    ],
+    "vendor": [
+      "Apex Contractors"
+    ]
+  },
+  "records": [
+    {
+      "description": "Skilled Carpentry @ $73.23/hour",
+      "quantity": "71.78",
+      "line_total": "5256.45",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry @\n$73.23/hour",
+        "quantity": "71.78",
+        "line_total": "$5,256.45"
+      }
+    },
+    {
+      "description": "Skilled Carpentry @ $66.59/hour",
+      "quantity": "23.26",
+      "line_total": "1548.88",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry @\n$66.59/hour",
+        "quantity": "23.26",
+        "line_total": "$1,548.88"
+      }
+    },
+    {
+      "description": "Equipment Rental @ $772.77/day",
+      "quantity": "21.02",
+      "line_total": "16243.63",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental @\n$772.77/day",
+        "quantity": "21.02",
+        "line_total": "$16,243.63"
+      }
+    },
+    {
+      "description": "Materials - Concrete @ $178.85/cu yd",
+      "quantity": "27.25",
+      "line_total": "4873.66",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete @\n$178.85/cu yd",
+        "quantity": "27.25",
+        "line_total": "$4,873.66"
+      }
+    },
+    {
+      "description": "Materials - Concrete @ $137.43/cu yd",
+      "quantity": "30.35",
+      "line_total": "4171",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete @\n$137.43/cu yd",
+        "quantity": "30.35",
+        "line_total": "$4,171.00"
+      }
+    },
+    {
+      "description": "Equipment Rental @ $674.34/day",
+      "quantity": "56.97",
+      "line_total": "38417.15",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental @\n$674.34/day",
+        "quantity": "56.97",
+        "line_total": "$38,417.15"
+      }
+    },
+    {
+      "description": "Materials - Concrete @ $141.94/cu yd",
+      "quantity": "93.26",
+      "line_total": "13237.32",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete @\n$141.94/cu yd",
+        "quantity": "93.26",
+        "line_total": "$13,237.32"
+      }
+    },
+    {
+      "description": "Materials - Concrete @ $146.48/cu yd",
+      "quantity": "23.46",
+      "line_total": "3436.42",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete @\n$146.48/cu yd",
+        "quantity": "23.46",
+        "line_total": "$3,436.42"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

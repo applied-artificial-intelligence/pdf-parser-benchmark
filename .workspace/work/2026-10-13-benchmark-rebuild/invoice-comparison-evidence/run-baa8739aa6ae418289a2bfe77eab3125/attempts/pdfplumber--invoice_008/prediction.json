@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-34407",
+    "vendor": "Standard Manufacturing",
+    "due_date": "2025-11-03",
+    "grand_total": "3263.1",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-34407",
+      "INV-34407"
+    ],
+    "due_date": [
+      "November 03, 2025",
+      "November 03, 2025"
+    ],
+    "grand_total": [
+      "$3,263.10"
+    ],
+    "vendor": [
+      "Standard Manufacturing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "27.24",
+      "unit_price": "7.65",
+      "line_total": "208.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "27.24",
+        "unit_price": "$7.65",
+        "line_total": "$208.39"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "89.23",
+      "unit_price": "7.26",
+      "line_total": "647.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "89.23",
+        "unit_price": "$7.26",
+        "line_total": "$647.81"
+      }
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "3.23",
+      "unit_price": "108.17",
+      "line_total": "349.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining\n(hour)",
+        "quantity": "3.23",
+        "unit_price": "$108.17",
+        "line_total": "$349.39"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "85.65",
+      "unit_price": "21.53",
+      "line_total": "1844.04",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "85.65",
+        "unit_price": "$21.53",
+        "line_total": "$1,844.04"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

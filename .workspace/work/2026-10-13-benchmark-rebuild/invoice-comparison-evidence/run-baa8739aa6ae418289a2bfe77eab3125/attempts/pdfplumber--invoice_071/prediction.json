@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-50869",
+    "vendor": null,
+    "due_date": "2025-11-06",
+    "grand_total": "8258708.53",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-50869"
+    ],
+    "due_date": [
+      "11/06/2025"
+    ],
+    "grand_total": [
+      "$8,258,708.53"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Senior Consultant @ $314.60/hour",
+      "quantity": "13.78",
+      "line_total": "4335.19",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior Consultant @\n$314.60/hour",
+        "quantity": "13.78",
+        "line_total": "$4,335.19"
+      }
+    },
+    {
+      "description": "Systems Analyst @ $178.67/hour",
+      "quantity": "13",
+      "line_total": "2322.71",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst @\n$178.67/hour",
+        "quantity": "13.00",
+        "line_total": "$2,322.71"
+      }
+    },
+    {
+      "description": "Project Management @ $196.99/hour",
+      "quantity": "81.57",
+      "line_total": "16068.47",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$196.99/hour",
+        "quantity": "81.57",
+        "line_total": "$16,068.47"
+      }
+    },
+    {
+      "description": "Security Assessment @ $22577.82/assessment",
+      "quantity": "92.49",
+      "line_total": "2088222.57",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security Assessment @\n$22577.82/assessment",
+        "quantity": "92.49",
+        "line_total": "$2,088,222.57"
+      }
+    },
+    {
+      "description": "Security Assessment @ $19587.42/assessment",
+      "quantity": "9.95",
+      "line_total": "194894.83",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security Assessment @\n$19587.42/assessment",
+        "quantity": "9.95",
+        "line_total": "$194,894.83"
+      }
+    },
+    {
+      "description": "Systems Analyst @ $157.39/hour",
+      "quantity": "85.92",
+      "line_total": "13522.95",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst @\n$157.39/hour",
+        "quantity": "85.92",
+        "line_total": "$13,522.95"
+      }
+    },
+    {
+      "description": "Security Assessment @ $17262.84/assessment",
+      "quantity": "93.21",
+      "line_total": "1609069.32",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security Assessment @\n$17262.84/assessment",
+        "quantity": "93.21",
+        "line_total": "$1,609,069.32"
+      }
+    },
+    {
+      "description": "Network Engineer @ $169.32/hour",
+      "quantity": "5.99",
+      "line_total": "1014.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Network Engineer @\n$169.32/hour",
+        "quantity": "5.99",
+        "line_total": "$1,014.23"
+      }
+    },
+    {
+      "description": "Cloud Migration Services @ $53970.38/project",
+      "quantity": "15.42",
+      "line_total": "832223.26",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cloud Migration Services @\n$53970.38/project",
+        "quantity": "15.42",
+        "line_total": "$832,223.26"
+      }
+    },
+    {
+      "description": "Cloud Migration Services @ $45548.79/project",
+      "quantity": "53.16",
+      "line_total": "2421373.68",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cloud Migration Services @\n$45548.79/project",
+        "quantity": "53.16",
+        "line_total": "$2,421,373.68"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-74874",
+    "vendor": "Synergy Technology Group",
+    "due_date": "2025-10-27",
+    "grand_total": "105149.5",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Network Engineer",
+      "quantity": "48.86",
+      "unit": "hour",
+      "unit_price": "157.7",
+      "line_total": "7705.22"
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "68.64",
+      "unit": "hour",
+      "unit_price": "295.91",
+      "line_total": "20311.26"
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "3.52",
+      "unit": "hour",
+      "unit_price": "221.14",
+      "line_total": "778.41"
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "23.83",
+      "unit": "hour",
+      "unit_price": "256",
+      "line_total": "6100.48"
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "87.88",
+      "unit": "hour",
+      "unit_price": "298.83",
+      "line_total": "26261.18"
+    },
+    {
+      "description": "Project Management",
+      "quantity": "26.28",
+      "unit": "hour",
+      "unit_price": "152.36",
+      "line_total": "4004.02"
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "74.2",
+      "unit": "hour",
+      "unit_price": "214.07",
+      "line_total": "15883.99"
+    },
+    {
+      "description": "Network Engineer",
+      "quantity": "94.93",
+      "unit": "hour",
+      "unit_price": "181.46",
+      "line_total": "17226"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-74874",
+    "vendor": "Synergy Technology Group",
+    "due_date": "October 27, 2025",
+    "grand_total": "$105,149.50",
+    "records": [
+      {
+        "description": "Network Engineer",
+        "quantity": "48.86",
+        "unit": "hour",
+        "unit_price": "$157.70",
+        "line_total": "$7,705.22"
+      },
+      {
+        "description": "After-Hours Support",
+        "quantity": "68.64",
+        "unit": "hour",
+        "unit_price": "$295.91",
+        "line_total": "$20,311.26"
+      },
+      {
+        "description": "Senior Consultant",
+        "quantity": "3.52",
+        "unit": "hour",
+        "unit_price": "$221.14",
+        "line_total": "$778.41"
+      },
+      {
+        "description": "Senior Consultant",
+        "quantity": "23.83",
+        "unit": "hour",
+        "unit_price": "$256.00",
+        "line_total": "$6,100.48"
+      },
+      {
+        "description": "Senior Consultant",
+        "quantity": "87.88",
+        "unit": "hour",
+        "unit_price": "$298.83",
+        "line_total": "$26,261.18"
+      },
+      {
+        "description": "Project Management",
+        "quantity": "26.28",
+        "unit": "hour",
+        "unit_price": "$152.36",
+        "line_total": "$4,004.02"
+      },
+      {
+        "description": "Systems Analyst",
+        "quantity": "74.20",
+        "unit": "hour",
+        "unit_price": "$214.07",
+        "line_total": "$15,883.99"
+      },
+      {
+        "description": "Network Engineer",
+        "quantity": "94.93",
+        "unit": "hour",
+        "unit_price": "$181.46",
+        "line_total": "$17,226.00"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8"
+    ]
+  },
+  "document_id": "invoice_028"
+}

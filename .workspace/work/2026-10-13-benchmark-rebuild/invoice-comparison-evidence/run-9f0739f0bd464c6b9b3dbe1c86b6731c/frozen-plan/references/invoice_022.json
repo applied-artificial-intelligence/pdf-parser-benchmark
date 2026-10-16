@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-11713",
+    "vendor": "Synergy IT Solutions",
+    "due_date": "2025-12-06",
+    "grand_total": "4514385.65",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "37.31",
+      "unit": "project",
+      "unit_price": "57371.19",
+      "line_total": "2140519.1"
+    },
+    {
+      "description": "Security Assessment",
+      "quantity": "9.81",
+      "unit": "assessment",
+      "unit_price": "23855.09",
+      "line_total": "234018.43"
+    },
+    {
+      "description": "Network Engineer",
+      "quantity": "60.57",
+      "unit": "hour",
+      "unit_price": "221.5",
+      "line_total": "13416.26"
+    },
+    {
+      "description": "Security Assessment",
+      "quantity": "94.12",
+      "unit": "assessment",
+      "unit_price": "17518.58",
+      "line_total": "1648848.75"
+    },
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "11.08",
+      "unit": "project",
+      "unit_price": "11115.05",
+      "line_total": "123154.75"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-11713",
+    "vendor": "Synergy IT Solutions",
+    "due_date": "December 06, 2025",
+    "grand_total": "$4,514,385.65",
+    "records": [
+      {
+        "description": "Cloud Migration Services",
+        "quantity": "37.31",
+        "unit": "project",
+        "unit_price": "$57,371.19",
+        "line_total": "$2,140,519.10"
+      },
+      {
+        "description": "Security Assessment",
+        "quantity": "9.81",
+        "unit": "assessment",
+        "unit_price": "$23,855.09",
+        "line_total": "$234,018.43"
+      },
+      {
+        "description": "Network Engineer",
+        "quantity": "60.57",
+        "unit": "hour",
+        "unit_price": "$221.50",
+        "line_total": "$13,416.26"
+      },
+      {
+        "description": "Security Assessment",
+        "quantity": "94.12",
+        "unit": "assessment",
+        "unit_price": "$17,518.58",
+        "line_total": "$1,648,848.75"
+      },
+      {
+        "description": "Cloud Migration Services",
+        "quantity": "11.08",
+        "unit": "project",
+        "unit_price": "$11,115.05",
+        "line_total": "$123,154.75"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5"
+    ]
+  },
+  "document_id": "invoice_022"
+}

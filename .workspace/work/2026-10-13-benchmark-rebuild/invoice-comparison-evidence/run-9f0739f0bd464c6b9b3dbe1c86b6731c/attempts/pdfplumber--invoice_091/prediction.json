@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-48045",
+    "vendor": null,
+    "due_date": "2025-09-19",
+    "grand_total": "530364.54",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-48045"
+    ],
+    "due_date": [
+      "09/19/2025"
+    ],
+    "grand_total": [
+      "$530,364.54"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Quality Inspection @ $93.31/hour",
+      "quantity": "15.29",
+      "line_total": "1426.71",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection @\n$93.31/hour",
+        "quantity": "15.29",
+        "line_total": "$1,426.71"
+      }
+    },
+    {
+      "description": "Custom Tooling @ $3774.15/each",
+      "quantity": "59.25",
+      "line_total": "223618.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling @\n$3774.15/each",
+        "quantity": "59.25",
+        "line_total": "$223,618.39"
+      }
+    },
+    {
+      "description": "Powder Coating @ $5.76/sq ft",
+      "quantity": "36.3",
+      "line_total": "209.09",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating @ $5.76/sq ft",
+        "quantity": "36.30",
+        "line_total": "$209.09"
+      }
+    },
+    {
+      "description": "CNC Machining @ $96.15/hour",
+      "quantity": "44.44",
+      "line_total": "4272.91",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining @\n$96.15/hour",
+        "quantity": "44.44",
+        "line_total": "$4,272.91"
+      }
+    },
+    {
+      "description": "Quality Inspection @ $90.06/hour",
+      "quantity": "53.35",
+      "line_total": "4804.7",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection @\n$90.06/hour",
+        "quantity": "53.35",
+        "line_total": "$4,804.70"
+      }
+    },
+    {
+      "description": "Custom Tooling @ $4593.72/each",
+      "quantity": "54.91",
+      "line_total": "252241.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling @\n$4593.72/each",
+        "quantity": "54.91",
+        "line_total": "$252,241.17"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

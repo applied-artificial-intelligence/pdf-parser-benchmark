@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-35958",
+    "vendor": "Flow Cloud",
+    "due_date": "2025-10-05",
+    "grand_total": "8583551.54",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-35958"
+    ],
+    "due_date": [
+      "October 05, 2025"
+    ],
+    "grand_total": [
+      "$8,583,551.54"
+    ],
+    "vendor": [
+      "Flow Cloud"
+    ]
+  },
+  "records": [
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "57.9",
+      "unit": "subscription",
+      "unit_price": "104577.61",
+      "line_total": "6055043.62",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "57.90",
+        "unit": "subscription",
+        "unit_price": "$104,577.61",
+        "line_total": "$6,055,043.62"
+      }
+    },
+    {
+      "description": "API Usage",
+      "quantity": "49.8",
+      "unit": "per 1000 calls",
+      "unit_price": "3.46",
+      "line_total": "172.31",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage",
+        "quantity": "49.80",
+        "unit": "per 1000 calls",
+        "unit_price": "$3.46",
+        "line_total": "$172.31"
+      }
+    },
+    {
+      "description": "Additional Storage",
+      "quantity": "9.79",
+      "unit": "TB/month",
+      "unit_price": "82.2",
+      "line_total": "804.74",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Additional\nStorage",
+        "quantity": "9.79",
+        "unit": "TB/month",
+        "unit_price": "$82.20",
+        "line_total": "$804.74"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "61.12",
+      "unit": "subscription",
+      "unit_price": "29885.79",
+      "line_total": "1826619.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "61.12",
+        "unit": "subscription",
+        "unit_price": "$29,885.79",
+        "line_total": "$1,826,619.48"
+      }
+    },
+    {
+      "description": "Implementatio n Services",
+      "quantity": "56.25",
+      "unit": "hour",
+      "unit_price": "182.77",
+      "line_total": "10280.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementatio\nn Services",
+        "quantity": "56.25",
+        "unit": "hour",
+        "unit_price": "$182.77",
+        "line_total": "$10,280.81"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

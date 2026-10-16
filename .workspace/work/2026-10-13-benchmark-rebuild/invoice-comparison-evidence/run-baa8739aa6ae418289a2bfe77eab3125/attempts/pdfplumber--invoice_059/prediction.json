@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-57697",
+    "vendor": null,
+    "due_date": "2025-10-28",
+    "grand_total": "237307.42",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-57697"
+    ],
+    "due_date": [
+      "10/28/2025"
+    ],
+    "grand_total": [
+      "$237,307.42"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Legal Research @ $228.46/hour",
+      "quantity": "79.29",
+      "line_total": "18114.59",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$228.46/hour",
+        "quantity": "79.29",
+        "line_total": "$18,114.59"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $500.12/hour",
+      "quantity": "69.03",
+      "line_total": "34523.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$500.12/hour",
+        "quantity": "69.03",
+        "line_total": "$34,523.28"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $291.91/hour",
+      "quantity": "41.69",
+      "line_total": "12169.73",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$291.91/hour",
+        "quantity": "41.69",
+        "line_total": "$12,169.73"
+      }
+    },
+    {
+      "description": "Court Filing Fees @ $89.56/filing",
+      "quantity": "31.95",
+      "line_total": "2861.44",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees @\n$89.56/filing",
+        "quantity": "31.95",
+        "line_total": "$2,861.44"
+      }
+    },
+    {
+      "description": "Court Filing Fees @ $144.24/filing",
+      "quantity": "39",
+      "line_total": "5625.36",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees @\n$144.24/filing",
+        "quantity": "39.00",
+        "line_total": "$5,625.36"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $438.37/hour",
+      "quantity": "79.65",
+      "line_total": "34916.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$438.37/hour",
+        "quantity": "79.65",
+        "line_total": "$34,916.17"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $173.15/hour",
+      "quantity": "22.34",
+      "line_total": "3868.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$173.15/hour",
+        "quantity": "22.34",
+        "line_total": "$3,868.17"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $537.59/hour",
+      "quantity": "91.79",
+      "line_total": "49345.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$537.59/hour",
+        "quantity": "91.79",
+        "line_total": "$49,345.39"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $662.87/hour",
+      "quantity": "45.49",
+      "line_total": "30153.96",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$662.87/hour",
+        "quantity": "45.49",
+        "line_total": "$30,153.96"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

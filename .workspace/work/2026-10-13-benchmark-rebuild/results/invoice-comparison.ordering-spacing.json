@@ -1,0 +1,12 @@
+{
+ "item": "invoice-comparison.ordering-spacing",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_comparison.py::test_actual_run_retains_all_pairs_outputs_stages_and_fixed_scores_after_relocation",
+  "fixture (both runs): Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

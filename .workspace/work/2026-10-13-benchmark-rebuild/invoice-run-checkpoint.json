@@ -1,5 +1,5 @@
 {
-  "status": "frozen_revision_3_before_suitable_primary_comparison",
+  "status": "verified_issue_6",
   "plan": "invoice-comparison-plan-v3/plan.json",
   "plan_sha256": "44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684",
   "prior_diagnostic": "invoice-integration-diagnostics-v2.json",
@@ -17,10 +17,28 @@
     "invoice-runtime-artifacts-v3/source-checkouts.json": "c44715c4f19910640a3d32048abf1dce86417ce143216ef9afe44e0ea534cf09"
   },
   "verification": {
-    "full_suite_passed": 965,
+    "full_suite_passed": 967,
     "skipped": 18,
     "cold_dependency_red_then_green": true,
-    "answer_access_still_denied": true
+    "answer_access_still_denied": true,
+    "reviewed_failed_pairs": 61,
+    "parser_disagreement_documents": 43,
+    "shared_failure_documents": 9,
+    "identical_fresh_and_relocated_pairs": 200,
+    "offline_regraded_pairs": 200,
+    "packaged_instructions_fresh_matching_pairs": 200,
+    "issue_6_gate": {
+      "covered": 7,
+      "waived": 0,
+      "deferred": 0
+    }
   },
-  "completed_revision_3_executions": []
+  "completed_revision_3_executions": [
+    "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c",
+    "invoice-comparison-evidence/run-b66b6e60913644b9b8d3cd76df1a483e",
+    "invoice-comparison-evidence/run-baa8739aa6ae418289a2bfe77eab3125"
+  ],
+  "primary_bundle": "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c",
+  "source_execution_commit": "fbab35b1d5ffe40160f0aab2db9d03a91c57e715",
+  "replay_instruction_check": "invoice-replay-instructions-check.json"
 }

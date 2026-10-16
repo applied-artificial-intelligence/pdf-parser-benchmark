@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-51883",
+    "vendor": "Standard Fabrication",
+    "due_date": "2025-12-12",
+    "grand_total": "184646.74",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-51883",
+      "INV-51883"
+    ],
+    "due_date": [
+      "December 12, 2025",
+      "December 12, 2025"
+    ],
+    "grand_total": [
+      "$184,646.74"
+    ],
+    "vendor": [
+      "Standard Fabrication"
+    ]
+  },
+  "records": [
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "37.44",
+      "unit_price": "16.28",
+      "line_total": "609.52",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "37.44",
+        "unit_price": "$16.28",
+        "line_total": "$609.52"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "7.96",
+      "unit_price": "94.67",
+      "line_total": "753.57",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "7.96",
+        "unit_price": "$94.67",
+        "line_total": "$753.57"
+      }
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "12.22",
+      "unit_price": "99.75",
+      "line_total": "1218.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "12.22",
+        "unit_price": "$99.75",
+        "line_total": "$1,218.94"
+      }
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "73.13",
+      "unit_price": "2127.07",
+      "line_total": "155552.63",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling\n(each)",
+        "quantity": "73.13",
+        "unit_price": "$2,127.07",
+        "line_total": "$155,552.63"
+      }
+    },
+    {
+      "description": "Powder Coating (sq ft)",
+      "quantity": "5.09",
+      "unit_price": "5.88",
+      "line_total": "29.93",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating (sq\nft)",
+        "quantity": "5.09",
+        "unit_price": "$5.88",
+        "line_total": "$29.93"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "77.59",
+      "unit_price": "62.91",
+      "line_total": "4881.19",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "77.59",
+        "unit_price": "$62.91",
+        "line_total": "$4,881.19"
+      }
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "9.54",
+      "unit_price": "108.24",
+      "line_total": "1032.61",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "9.54",
+        "unit_price": "$108.24",
+        "line_total": "$1,032.61"
+      }
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "57.83",
+      "unit_price": "104.99",
+      "line_total": "6071.57",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining\n(hour)",
+        "quantity": "57.83",
+        "unit_price": "$104.99",
+        "line_total": "$6,071.57"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

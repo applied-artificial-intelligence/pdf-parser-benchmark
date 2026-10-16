@@ -1,0 +1,12 @@
+{
+ "item": "invoice-comparison.record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_reconstruction_export.py::test_reproduction_rejects_a_different_frozen_backend_configuration",
+  "fixture (both runs): Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

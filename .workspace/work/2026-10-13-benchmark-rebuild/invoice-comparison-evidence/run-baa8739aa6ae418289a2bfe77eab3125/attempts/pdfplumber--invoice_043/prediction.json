@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-44693",
+    "vendor": "Visionary Architects",
+    "due_date": "2025-10-09",
+    "grand_total": "23275.15",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-44693"
+    ],
+    "due_date": [
+      "October 09, 2025"
+    ],
+    "grand_total": [
+      "$23,275.15"
+    ],
+    "vendor": [
+      "Visionary Architects"
+    ]
+  },
+  "records": [
+    {
+      "description": "Design Development",
+      "quantity": "2.81",
+      "unit": "% of project",
+      "unit_price": "24",
+      "line_total": "67.44",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Design\nDevelopment",
+        "quantity": "2.81",
+        "unit": "% of project",
+        "unit_price": "$24.00",
+        "line_total": "$67.44"
+      }
+    },
+    {
+      "description": "Principal Architect",
+      "quantity": "49.85",
+      "unit": "hour",
+      "unit_price": "335.13",
+      "line_total": "16706.23",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Principal\nArchitect",
+        "quantity": "49.85",
+        "unit": "hour",
+        "unit_price": "$335.13",
+        "line_total": "$16,706.23"
+      }
+    },
+    {
+      "description": "Design Development",
+      "quantity": "35.62",
+      "unit": "% of project",
+      "unit_price": "33.84",
+      "line_total": "1205.38",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Design\nDevelopment",
+        "quantity": "35.62",
+        "unit": "% of project",
+        "unit_price": "$33.84",
+        "line_total": "$1,205.38"
+      }
+    },
+    {
+      "description": "Schematic Design",
+      "quantity": "78.44",
+      "unit": "% of project",
+      "unit_price": "16.02",
+      "line_total": "1256.61",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Schematic\nDesign",
+        "quantity": "78.44",
+        "unit": "% of project",
+        "unit_price": "$16.02",
+        "line_total": "$1,256.61"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

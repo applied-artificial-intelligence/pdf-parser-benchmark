@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-33354",
+    "vendor": "United Fabrication",
+    "due_date": "2025-09-24",
+    "grand_total": "143687.21",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Custom Tooling",
+      "quantity": "23.11",
+      "unit": "each",
+      "unit_price": "4622.79",
+      "line_total": "106832.68"
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "64.67",
+      "unit": "hour",
+      "unit_price": "47.35",
+      "line_total": "3062.12"
+    },
+    {
+      "description": "Powder Coating",
+      "quantity": "80.95",
+      "unit": "sq ft",
+      "unit_price": "3.65",
+      "line_total": "295.47"
+    },
+    {
+      "description": "Quality Inspection",
+      "quantity": "35.11",
+      "unit": "hour",
+      "unit_price": "88.1",
+      "line_total": "3093.19"
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "60.61",
+      "unit": "hour",
+      "unit_price": "82.16",
+      "line_total": "4979.72"
+    },
+    {
+      "description": "CNC Machining",
+      "quantity": "71.69",
+      "unit": "hour",
+      "unit_price": "93.21",
+      "line_total": "6682.22"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-33354",
+    "vendor": "United Fabrication",
+    "due_date": "September 24, 2025",
+    "grand_total": "$143,687.21",
+    "records": [
+      {
+        "description": "Custom Tooling",
+        "quantity": "23.11",
+        "unit": "each",
+        "unit_price": "$4,622.79",
+        "line_total": "$106,832.68"
+      },
+      {
+        "description": "Assembly Labor",
+        "quantity": "64.67",
+        "unit": "hour",
+        "unit_price": "$47.35",
+        "line_total": "$3,062.12"
+      },
+      {
+        "description": "Powder Coating",
+        "quantity": "80.95",
+        "unit": "sq ft",
+        "unit_price": "$3.65",
+        "line_total": "$295.47"
+      },
+      {
+        "description": "Quality Inspection",
+        "quantity": "35.11",
+        "unit": "hour",
+        "unit_price": "$88.10",
+        "line_total": "$3,093.19"
+      },
+      {
+        "description": "Assembly Labor",
+        "quantity": "60.61",
+        "unit": "hour",
+        "unit_price": "$82.16",
+        "line_total": "$4,979.72"
+      },
+      {
+        "description": "CNC Machining",
+        "quantity": "71.69",
+        "unit": "hour",
+        "unit_price": "$93.21",
+        "line_total": "$6,682.22"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6"
+    ]
+  },
+  "document_id": "invoice_095"
+}

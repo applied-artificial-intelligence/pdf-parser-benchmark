@@ -1,0 +1,22 @@
+{
+  "document_id": "invoice_018",
+  "pipeline_id": "pdfplumber",
+  "pair_id": "pdfplumber--invoice_018",
+  "order": 117,
+  "outcome": "success_content",
+  "parse_time_seconds": 0.07239661700441502,
+  "wall_time_seconds": 0.5638189259916544,
+  "output_path": "attempts/pdfplumber--invoice_018/retained-output.md",
+  "output_sha256": "027c6586a4dedeec888b81cc0bfa0e6d5c6f51167108b16b5c409cb572113188",
+  "error": null,
+  "error_type": null,
+  "returned_path": "attempts/pdfplumber--invoice_018/parser-output/invoice_018.md",
+  "worker_pid": 3232095,
+  "extractor_sha256": "985c358d68169ca6cfba34c73cc42320f939f1605447356be96ddfc9df44f286",
+  "grader_sha256": "bb24837a06ad9378d521ddf213b41bf4dda610939c780e23f46943a313a765c0",
+  "stage_identities": {
+    "parse": "4f3b0e8ef015fb0a275aad0a8adc470b58f16eb304517a8ed3d1b3bbfd888962",
+    "prediction": "227ee7cf3f38d037a998f1af20e8bdc1fe2d6e5ce02e83fd012aa98a24416489",
+    "grade": "3e241f3a3de20bf1ace013b086936b0c156899be42a35ebc3eb0b99c4cdaedb9"
+  }
+}

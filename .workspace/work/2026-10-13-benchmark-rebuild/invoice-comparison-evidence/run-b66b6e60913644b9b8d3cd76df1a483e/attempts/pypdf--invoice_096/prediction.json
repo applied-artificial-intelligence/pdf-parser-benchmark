@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-64788",
+    "vendor": "Premier Shipping",
+    "due_date": "2025-11-25",
+    "grand_total": "18436.08",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-64788"
+    ],
+    "due_date": [
+      "November 25, 2025"
+    ],
+    "grand_total": [
+      "$18,436.08"
+    ],
+    "vendor": [
+      "Premier Shipping"
+    ]
+  },
+  "records": [
+    {
+      "description": "Pallet Exchange (pallet)",
+      "quantity": "60.61",
+      "unit_price": "25.81",
+      "line_total": "1564.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange\n(pallet)",
+        "quantity": "60.61",
+        "unit_price": "$25.81",
+        "line_total": "$1,564.34"
+      }
+    },
+    {
+      "description": "Fuel Surcharge (% of base)",
+      "quantity": "42.08",
+      "unit_price": "15.33",
+      "line_total": "645.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge (%\nof base)",
+        "quantity": "42.08",
+        "unit_price": "$15.33",
+        "line_total": "$645.09"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85 (cwt)",
+      "quantity": "42.18",
+      "unit_price": "48.17",
+      "line_total": "2031.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n85 (cwt)",
+        "quantity": "42.18",
+        "unit_price": "$48.17",
+        "line_total": "$2,031.81"
+      }
+    },
+    {
+      "description": "Residential Delivery (per stop)",
+      "quantity": "32.27",
+      "unit_price": "60.25",
+      "line_total": "1944.27",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential Delivery\n(per stop)",
+        "quantity": "32.27",
+        "unit_price": "$60.25",
+        "line_total": "$1,944.27"
+      }
+    },
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "31.17",
+      "unit_price": "84.69",
+      "line_total": "2639.79",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "31.17",
+        "unit_price": "$84.69",
+        "line_total": "$2,639.79"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 50 (cwt)",
+      "quantity": "80.51",
+      "unit_price": "44.28",
+      "line_total": "3564.98",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n50 (cwt)",
+        "quantity": "80.51",
+        "unit_price": "$44.28",
+        "line_total": "$3,564.98"
+      }
+    },
+    {
+      "description": "Residential Delivery (per stop)",
+      "quantity": "67.45",
+      "unit_price": "60.04",
+      "line_total": "4049.7",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential Delivery\n(per stop)",
+        "quantity": "67.45",
+        "unit_price": "$60.04",
+        "line_total": "$4,049.70"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 50 (cwt)",
+      "quantity": "18.27",
+      "unit_price": "17.52",
+      "line_total": "320.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n50 (cwt)",
+        "quantity": "18.27",
+        "unit_price": "$17.52",
+        "line_total": "$320.09"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

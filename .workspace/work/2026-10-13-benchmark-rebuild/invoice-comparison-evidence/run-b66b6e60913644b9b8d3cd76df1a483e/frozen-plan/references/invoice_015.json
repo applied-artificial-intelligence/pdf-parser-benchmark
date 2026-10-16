@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-37661",
+    "vendor": "Wilson Legal Group",
+    "due_date": "2025-10-13",
+    "grand_total": "93927.11",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Legal Research @ $154.83/hour",
+      "quantity": "58.86",
+      "line_total": "9113.29"
+    },
+    {
+      "description": "Document Review @ $303.10/hour",
+      "quantity": "32.35",
+      "line_total": "9805.28"
+    },
+    {
+      "description": "Partner Legal Services @ $784.09/hour",
+      "quantity": "47.97",
+      "line_total": "37612.8"
+    },
+    {
+      "description": "Associate Legal Services @ $439.77/hour",
+      "quantity": "67.85",
+      "line_total": "29838.39"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-37661",
+    "vendor": "Wilson Legal Group",
+    "due_date": "10/13/2025",
+    "grand_total": "$93,927.11",
+    "records": [
+      {
+        "description": "Legal Research @ $154.83/hour",
+        "quantity": "58.86",
+        "line_total": "$9,113.29"
+      },
+      {
+        "description": "Document Review @ $303.10/hour",
+        "quantity": "32.35",
+        "line_total": "$9,805.28"
+      },
+      {
+        "description": "Partner Legal Services @ $784.09/hour",
+        "quantity": "47.97",
+        "line_total": "$37,612.80"
+      },
+      {
+        "description": "Associate Legal Services @ $439.77/hour",
+        "quantity": "67.85",
+        "line_total": "$29,838.39"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_015"
+}

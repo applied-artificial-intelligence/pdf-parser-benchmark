@@ -1,0 +1,8 @@
+{
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "architecture": "x86_64",
+  "logical_cpus": 24,
+  "cpu_model": "12th Gen Intel(R) Core(TM) i9-12900K",
+  "memory_total": "129272848 kB",
+  "measurement_limits": "No explicit CPU or memory cap; each run sequential with cold workers; OS file cache and other host activity are uncontrolled; no timing equality or speed ranking claimed"
+}

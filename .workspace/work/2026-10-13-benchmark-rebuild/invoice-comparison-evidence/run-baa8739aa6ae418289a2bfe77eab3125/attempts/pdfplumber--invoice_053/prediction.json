@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-12039",
+    "vendor": null,
+    "due_date": "2025-10-15",
+    "grand_total": "187705.32",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-12039"
+    ],
+    "due_date": [
+      "10/15/2025"
+    ],
+    "grand_total": [
+      "$187,705.32"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Analytics & Reporting @ $956.38/month",
+      "quantity": "14.42",
+      "line_total": "13791",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Analytics & Reporting @\n$956.38/month",
+        "quantity": "14.42",
+        "line_total": "$13,791.00"
+      }
+    },
+    {
+      "description": "Analytics & Reporting @ $1309.58/month",
+      "quantity": "70.31",
+      "line_total": "92076.57",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Analytics & Reporting @\n$1309.58/month",
+        "quantity": "70.31",
+        "line_total": "$92,076.57"
+      }
+    },
+    {
+      "description": "Copywriting @ $122.48/hour",
+      "quantity": "27.46",
+      "line_total": "3363.3",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Copywriting @ $122.48/hour",
+        "quantity": "27.46",
+        "line_total": "$3,363.30"
+      }
+    },
+    {
+      "description": "Graphic Design @ $149.23/hour",
+      "quantity": "4.79",
+      "line_total": "714.81",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design @\n$149.23/hour",
+        "quantity": "4.79",
+        "line_total": "$714.81"
+      }
+    },
+    {
+      "description": "Creative Direction @ $197.47/hour",
+      "quantity": "68.65",
+      "line_total": "13556.32",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Creative Direction @\n$197.47/hour",
+        "quantity": "68.65",
+        "line_total": "$13,556.32"
+      }
+    },
+    {
+      "description": "Social Media Management @ $4103.60/month",
+      "quantity": "6.3",
+      "line_total": "25852.68",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Social Media Management @\n$4103.60/month",
+        "quantity": "6.30",
+        "line_total": "$25,852.68"
+      }
+    },
+    {
+      "description": "Graphic Design @ $100.69/hour",
+      "quantity": "70.18",
+      "line_total": "7066.42",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design @\n$100.69/hour",
+        "quantity": "70.18",
+        "line_total": "$7,066.42"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

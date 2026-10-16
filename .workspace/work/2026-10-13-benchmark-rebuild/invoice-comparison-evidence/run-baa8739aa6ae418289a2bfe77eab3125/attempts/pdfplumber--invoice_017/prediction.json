@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-94489",
+    "vendor": "Apex Development",
+    "due_date": "2025-12-13",
+    "grand_total": "212362.43",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-94489",
+      "INV-94489"
+    ],
+    "due_date": [
+      "December 13, 2025",
+      "December 13, 2025"
+    ],
+    "grand_total": [
+      "$212,362.43"
+    ],
+    "vendor": [
+      "Apex Development"
+    ]
+  },
+  "records": [
+    {
+      "description": "General Labor (hour)",
+      "quantity": "88.7",
+      "unit_price": "54.93",
+      "line_total": "4872.29",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor\n(hour)",
+        "quantity": "88.70",
+        "unit_price": "$54.93",
+        "line_total": "$4,872.29"
+      }
+    },
+    {
+      "description": "Permits and Fees (lump sum)",
+      "quantity": "27.74",
+      "unit_price": "4113.49",
+      "line_total": "114108.21",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Permits and Fees\n(lump sum)",
+        "quantity": "27.74",
+        "unit_price": "$4,113.49",
+        "line_total": "$114,108.21"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "23.46",
+      "unit_price": "172.43",
+      "line_total": "4045.21",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "23.46",
+        "unit_price": "$172.43",
+        "line_total": "$4,045.21"
+      }
+    },
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "73.34",
+      "unit_price": "714.15",
+      "line_total": "52375.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(day)",
+        "quantity": "73.34",
+        "unit_price": "$714.15",
+        "line_total": "$52,375.76"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "72.8",
+      "unit_price": "151.84",
+      "line_total": "11053.95",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "72.80",
+        "unit_price": "$151.84",
+        "line_total": "$11,053.95"
+      }
+    },
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "11.02",
+      "unit_price": "799.72",
+      "line_total": "8812.91",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(day)",
+        "quantity": "11.02",
+        "unit_price": "$799.72",
+        "line_total": "$8,812.91"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "94.05",
+      "unit_price": "4.48",
+      "line_total": "421.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "94.05",
+        "unit_price": "$4.48",
+        "line_total": "$421.34"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}
