@@ -1,0 +1,11 @@
+PDF-Bench: qualified invoice and native public-subset comparisons.
+Visitor task: decide whether public benchmark documents, task, grader and
+execution conditions fit the intended workflow. Reuse a relevant public
+subset when it fits; add internal evaluation for a consequential mismatch.
+claims.json carries paths, hashes, JSON pointers, denominators and context.
+Read technical-report.md, appendix.md and replay-protocol.txt.
+Synthetic invoice and native ParseBench scores measure different tasks.
+No universal parser winner or business-coverage percentage is established.
+PDF-Bench owns source evidence; editorial/website own synthesis/rendering.
+Stefan owns public release and paid-run authorization.
+No CMS edits, publication, deployment, release or paid calls performed.

@@ -1,0 +1,84 @@
+{
+  "revision": "0e7647997211867060a645ac82deb9f7bc4a3b3f",
+  "scope": "Bounded static review of pinned source contracts, not execution or independent replication of dataset/leaderboard claims",
+  "sources": [
+    {
+      "path": "README.md",
+      "url": "https://github.com/run-llama/ExtractBench/blob/0e7647997211867060a645ac82deb9f7bc4a3b3f/README.md",
+      "sha256": "d040d004e7c9bbe696c5adfcf5474d1ad9a4814e6f0b7ac345785130bd286a74"
+    },
+    {
+      "path": "src/extract_bench/evaluation/metrics/extract/unified_evidence_metric.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/evaluation/metrics/extract/unified_evidence_metric.py",
+      "sha256": "4e705196f583a5dced023d9fd552b33b2fdde18be331783e19862f6ad521e67b"
+    },
+    {
+      "path": "src/extract_bench/evaluation/metrics/extract/array_record_match_metric.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/evaluation/metrics/extract/array_record_match_metric.py",
+      "sha256": "039cf5c18238c3ac7f7d08ecaa8cfec0b2b1fa10345f807fd1927dc1194ff7c7"
+    },
+    {
+      "path": "src/extract_bench/evaluation/metrics/field_grounding/value_compare.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/evaluation/metrics/field_grounding/value_compare.py",
+      "sha256": "672dc0bb916ace1de3c63bc70b5a7100d30bb43b1d6e3744d798d431752515af"
+    },
+    {
+      "path": "src/extract_bench/evaluation/evaluators/extract.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/evaluation/evaluators/extract.py",
+      "sha256": "ed06f4469f57759543a598963dd920b117fccf15aab025d73469896b4011de77"
+    },
+    {
+      "path": "src/extract_bench/evaluation/runner.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/evaluation/runner.py",
+      "sha256": "0ef17ce6e2ae9b734094c0db8d8c3a80f84e5d3c2df52918f110960c5fc8400d"
+    },
+    {
+      "path": "src/extract_bench/test_cases/schema.py",
+      "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/0e7647997211867060a645ac82deb9f7bc4a3b3f/src/extract_bench/test_cases/schema.py",
+      "sha256": "45c9ea8e32accf253bc6ec9aed3976dc33813e1c809f3645e4453bd3c4289a24"
+    }
+  ],
+  "upstream_reported_dataset": {
+    "documents": 370,
+    "pages": 4869,
+    "business_domains": 8,
+    "document_types": 67,
+    "verification": "README-reported, not independently enumerated here"
+  },
+  "contracts": [
+    {
+      "topic": "schema",
+      "upstream": "JSON Schema controls scalar/object/object-array structure and evaluation-side identity hints; alternate acceptable evidence readings and optional grounding.",
+      "invoice_example": "A fixed five-field and complete line-record contract over source-qualified synthetic invoices; no bounding-box grounding claim.",
+      "decision": "Reuse schema-guided public tasks when the document and decision fit. This example is not a missing-capability claim about ExtractBench."
+    },
+    {
+      "topic": "values",
+      "upstream": "Pinned unified metric recurses by schema, canonicalizes dates/whitespace and accepts declared alternate evidence values. Omitted fields use a schema default when present; otherwise missing is distinct from explicit null.",
+      "invoice_example": "Exact Decimal/sign/currency/role values, explicit date normalization and whitespace/NFKC normalization; vendor and description casefold. No semantic judge or fuzzy assignment.",
+      "decision": "Declare normalization and omission semantics for the operational task; metric names alone do not establish equivalence."
+    },
+    {
+      "topic": "records",
+      "upstream": "Global one-to-one Hungarian matching scores accepted cells and penalizes unmatched or surplus records. Nested object arrays can be aligned recursively.",
+      "invoice_example": "Multiset complete-record equality preserves duplicate counts and requires all applicable roles together; whole-document task success additionally requires all fields and no missing/extra records.",
+      "decision": "Use upstream assignment and partial-credit metrics where they fit. A complete-invoice acceptance criterion can be reported alongside them; no new generic matching framework is needed."
+    },
+    {
+      "topic": "failures",
+      "upstream": "Evaluation runner synthesizes zero-scored missing attempts and pads genuine failures in applicable bounded macro metrics; unrelated product types are excluded by applicability.",
+      "invoice_example": "Parser failures/empty/timeouts receive zero task credit on fixed eligible denominators; required evaluator failure invalidates the affected aggregate.",
+      "decision": "Keep failed attempts and evaluator errors separately inspectable. Do not silently average only successes."
+    }
+  ],
+  "documentation_disagreement": {
+    "finding": "The pinned README describes omitted keys as implicit null. The unified evidence implementation explicitly distinguishes missing from null unless a schema default applies. The legacy array_record metric retains implicit-null behavior.",
+    "support": [
+      "README.md metrics section",
+      "src/extract_bench/evaluation/metrics/extract/unified_evidence_metric.py module contract and lookup",
+      "src/extract_bench/evaluation/metrics/extract/array_record_match_metric.py scalar .get handling"
+    ],
+    "interpretation": "Pin the actual selected metric implementation before adopting its semantics; this is a static contract discrepancy, not a demonstrated leaderboard error."
+  },
+  "conclusion": "Evaluate ParseBench for parsing and ExtractBench for schema-guided extraction before constructing internal tasks. Extend only for a consequential workload/task mismatch. PDF-Bench contributes an inspectable benchmark-construction example and historical lessons; it does not establish a general coverage deficit in either public benchmark."
+}

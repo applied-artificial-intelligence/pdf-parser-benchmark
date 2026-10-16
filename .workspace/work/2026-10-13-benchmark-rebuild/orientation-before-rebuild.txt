@@ -1,0 +1,175 @@
+# PDF-Bench Project Orientation
+
+This is the entry point for agents resuming PDF-Bench work in the context of Applied AI's broader document-AI positioning. Read this before changing benchmark results, content, reports, or website exports.
+
+## Current Mission
+
+PDF-Bench should produce a useful practical benchmark story, not a narrow leaderboard and not an audit that discards imperfect evidence. The goal is to show Applied AI competence in PDF/document-intelligence work:
+
+- how hard it is to compare PDF parsers honestly,
+- what we tried across business, academic, synthetic, SEC, presentation, commercial, and frontier-parser tracks,
+- what each track can and cannot tell us,
+- how parser choice changes by document family, metric, cost, and downstream task,
+- how PDF Smith and PDF-Bench make parser evaluation operationally manageable.
+
+The intended deliverables are:
+
+- a publishable briefing for technical leaders, engineers, and business readers,
+- a meatier technical report with evidence tiers, metrics, result tables, and methodology,
+- a cleaner public benchmark/package story that supports Applied AI's sales and positioning.
+
+## What Happened
+
+The project started as an ambitious parser benchmark over business documents with ground truth. That turned out to be hard because public business PDFs rarely come with reliable source or semantic truth.
+
+Work then expanded through several tracks:
+
+- synthetic business documents, including invoices and investor-deck prototypes,
+- legal and HR corpora,
+- arXiv/academic papers using HTML and later LaTeX-derived ground truth,
+- SEC filing PDFs paired with SEC/company HTML,
+- presentation/PPTX/PDF attempts,
+- commercial parser pilots,
+- frontier/foundation-model parser pilots,
+- PDF Smith integration as a shared parser abstraction layer.
+
+The history is messy. There are many configs, result artifacts, partial runs, older assumptions, and superseded outputs. The right response is not to throw most of it away. The right response is to preserve it in evidence tiers and use limitations as part of the story.
+
+## Current Framing
+
+The benchmark's central claim is:
+
+> PDF parser benchmarking is difficult because ground truth is scarce, document types fail differently, parser outputs are heterogeneous, metrics disagree, and paid/frontier parsers are easy to misconfigure. PDF-Bench is Applied AI's practical attempt to make useful parser-selection decisions anyway.
+
+Avoid two failure modes:
+
+- Do not overclaim a universal winner from mixed evidence.
+- Do not reduce the project to "only two clean tracks matter."
+
+Use evidence tiers:
+
+- Stronger comparison: suitable for direct tables and stronger claims.
+- Directional/diagnostic: useful evidence with clear caveats.
+- Prototype: pipeline or corpus-building work that is promising but not final.
+- Historical/rerun: older runs that explain lessons and may guide future reruns.
+
+## Current Evidence Map
+
+Stronger comparison tracks:
+
+| Track | Result file | Status |
+| --- | --- | --- |
+| SEC filings subset | `results/sec_filings_47docs.json` | Real business reports, 47 docs, 12 parsers, HTML-derived ground truth. Strong baseline for born-digital report parsing. |
+| Controlled invoices | `results/invoices_100docs_fresh.json` | 100 source-first generated invoices, 6 parsers. Stronger controlled structured-document track, but not proof on arbitrary real invoices. |
+
+Directional, diagnostic, and prototype tracks:
+
+| Track | Result file | Status |
+| --- | --- | --- |
+| SEC full-corpus screen | `results/sec_filings_screen_all.json` | 320 docs, one parser. Coverage and ground-truth screening, not parser ranking. |
+| Legacy presentations | `results/presentations_30docs.json` | 30 docs, 12 parsers. Useful slide parsing stress evidence, but source quality and ground truth are uneven. |
+| Investor decks prototype | `results/business_synthetic_investor_decks_subset_refresh.json` | 10 synthetic PPTX/PDF decks, 4 parsers. Useful prototype; visual realism is not yet flagship quality. |
+| arXiv technical papers | `results/arxiv_10docs_fresh.json` | 10 docs, 16 parsers. Technical stress track with LaTeX-derived ground truth, separate from business marketing. |
+| Frontier/budget pilot | `results/frontier_unified_30docs.json` | Directional cost/quality evidence. Prompt and parser setup must be audited before model-specific headlines. |
+| Frontier premium pilot | `results/frontier_premium_300p.json` | Directional premium-model evidence. Useful for discussion, not a final paid-model leaderboard. |
+
+Historical/rerun candidates include:
+
+- `results/full_corpus_353docs.json`
+- `results/comprehensive_278docs_all_parsers.json`
+- `results/hr_34docs.json`
+- `results/invoices_100docs.json`
+- `results/sec_filings_30docs_oss_remaining.json`
+
+These are not garbage. They are project history, lessons, and rerun candidates.
+
+## Current Artifacts
+
+Repo-local orientation and status:
+
+- `AGENTS.md`: working conventions and benchmark story guidance.
+- `.agents/reference/pdfbench_benchmark_story_brief.md`: detailed agent brief for the benchmark story.
+- `docs/BENCHMARK_STATUS_REPORT.md`: current practical benchmark framing and evidence tiers.
+- `data_exports/internal_benchmark_tables.md`: generated table pack for current Tier 1 and Tier 2 results.
+- `data_exports/internal_benchmark_story.json`: generated structured data behind the table pack.
+- `scripts/build_internal_benchmark_story.py`: generator for the table pack and structured export.
+
+Content and publication artifacts:
+
+- `/home/stefan/applied-ai/content-marketing/applied-ai/briefings/pdf-parsing/draft.md`: current briefing draft.
+- `/home/stefan/applied-ai/content-marketing/applied-ai/briefings/pdf-parsing/technical-report.md`: current technical report draft.
+- `/home/stefan/applied-ai/content-marketing/applied-ai/open-source/pdf-benchmark/CONTENT_BRIEF.md`: older broad content brief; useful context, but numbers/claims may be stale.
+- `/home/stefan/applied-ai/website/content/export/insights/pdf-parsing-benchmark.md`: website export target.
+
+Older source material:
+
+- `/home/stefan/applied-ai/content-marketing/source/document-ai/pdf_parser_benchmark/`: earlier planning and benchmark-design notes.
+- `/media/stefan/drive/clients/iptiq/cip/development`: older PDF-based document-intelligence pipeline. Use as production context only, not as benchmark evidence.
+
+## Current Content Position
+
+The live briefing at `https://applied-ai.com/briefings/pdf-parsing-benchmark/` may still reflect older claims. The repo-local/current draft has been shifted toward:
+
+- benchmark difficulty as the central story,
+- evidence tiers instead of one flattened leaderboard,
+- SEC filings and invoices as stronger tracks,
+- presentations, investor decks, arXiv, and frontier/commercial pilots as useful but caveated tracks,
+- parser selection as the practical outcome.
+
+Do not assume the live site has been updated from local drafts.
+
+## Important Result Signals
+
+Use generated outputs as the source of truth, not memory. Regenerate before important edits.
+
+Current key signals from `data_exports/internal_benchmark_tables.md`:
+
+- SEC filings: top open-source parsers cluster tightly around 0.92-0.93 edit similarity. This suggests clean born-digital reports may not separate top parsers sharply.
+- Invoices: Azure Document Intelligence leads the controlled invoice track on edit similarity; parser choice matters more on structured documents.
+- Presentations: legacy deck results are useful as stress signals, but not as polished investor-deck proof.
+- Investor decks: the source-first pipeline exists and improved through visual iterations, but it is still a prototype.
+- arXiv: technically useful stress track, but separate from the business-document story.
+- Frontier/commercial pilots: useful for cost/configuration lessons; avoid expensive reruns without a concrete decision.
+
+## Reproducible Commands
+
+Generate the current result table pack:
+
+```bash
+uv run python scripts/build_internal_benchmark_story.py
+```
+
+Generate inventory:
+
+```bash
+uv run python -m pdf_bench.main inventory --repo-root . --output data_exports/inventory_latest.json
+```
+
+Run focused checks:
+
+```bash
+uv run ruff check scripts/build_internal_benchmark_story.py
+uv run pytest tests/test_inventory.py tests/test_business_suite.py
+```
+
+## How To Resume Productively
+
+1. Read `AGENTS.md`, this file, `.agents/reference/pdfbench_benchmark_story_brief.md`, and `docs/BENCHMARK_STATUS_REPORT.md`.
+2. Regenerate `data_exports/internal_benchmark_tables.md` before using result numbers.
+3. Treat `data_exports/internal_benchmark_tables.md` as the compact result appendix.
+4. Continue from the active briefing and technical report in `content-marketing/applied-ai/briefings/pdf-parsing/`.
+5. Preserve broad project history in tiers. Do not silently delete tracks because they are imperfect.
+6. When a track is weak, explain what it still teaches and what would make it stronger.
+7. Rerun parsers only when the rerun answers a concrete publication or engineering question.
+
+## Immediate Next Work
+
+The best next step is to turn the current artifacts into a coherent Applied AI positioning package:
+
+- tighten the briefing into a compelling public article,
+- turn the technical report into the appendix behind the article,
+- align PDF Smith and PDF-Bench positioning pages with the same narrative,
+- add a clear result appendix/table pack,
+- decide whether any small, cheap rerun would materially improve the story,
+- leave commercial/frontier reruns gated behind explicit cost/claim decisions.
+
