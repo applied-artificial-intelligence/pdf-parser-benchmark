@@ -169,6 +169,45 @@ class TestLoadParsers:
             load_parsers(config)
 
 
+@pytest.fixture
+def discovery_corpus(tmp_path: Path) -> Path:
+    from reportlab.pdfgen.canvas import Canvas
+
+    root = tmp_path / "corpus"
+    profiles = [
+        ("synthetic", ["text"]),
+        ("synthetic", ["text", "tables"]),
+        ("synthetic", ["text"]),
+        ("business", ["text", "tables"]),
+    ]
+    for number, (corpus, features) in enumerate(profiles):
+        directory = root / corpus
+        directory.mkdir(parents=True, exist_ok=True)
+        doc_id = f"fixture_{number}"
+        canvas = Canvas(str(directory / f"{doc_id}.pdf"))
+        canvas.drawString(72, 750, "Fixture document")
+        content = "# Fixture document\n"
+        if "tables" in features:
+            canvas.drawString(72, 720, "Item")
+            canvas.drawString(200, 720, "Quantity")
+            canvas.drawString(72, 700, "Widget")
+            canvas.drawString(200, 700, "2")
+            canvas.line(70, 715, 270, 715)
+            content += "\n| Item | Quantity |\n| --- | --- |\n| Widget | 2 |\n"
+        canvas.save()
+        (directory / f"{doc_id}.md").write_text(content)
+        save_metadata(
+            DocumentMetadata(
+                doc_id=doc_id,
+                corpus=corpus,
+                domain="pandoc" if corpus == "synthetic" else "invoices",
+                features=features,
+            ),
+            directory / f"{doc_id}.yaml",
+        )
+    return root
+
+
 class TestDiscoverDocuments:
     """Tests for discover_documents function."""
 
@@ -207,11 +246,9 @@ class TestDiscoverDocuments:
             with pytest.raises(ValueError, match="not a directory"):
                 discover_documents(file_path, config)
 
-    def test_discover_synthetic_corpus(self) -> None:
+    def test_discover_synthetic_corpus(self, discovery_corpus: Path) -> None:
         """Should discover documents from synthetic corpus."""
-        corpus_dir = Path("corpus")
-        if not corpus_dir.exists():
-            pytest.skip("Corpus directory not found")
+        corpus_dir = discovery_corpus
 
         config = BenchmarkConfig(
             name="Test",
@@ -224,15 +261,13 @@ class TestDiscoverDocuments:
         )
 
         documents = discover_documents(corpus_dir, config)
-        assert len(documents) > 0
+        assert len(documents) == 3
         assert all(isinstance(d, DocumentInfo) for d in documents)
         assert all(d.metadata.corpus == "synthetic" for d in documents)
 
-    def test_corpus_filter(self) -> None:
+    def test_corpus_filter(self, discovery_corpus: Path) -> None:
         """Should filter by corpus."""
-        corpus_dir = Path("corpus")
-        if not corpus_dir.exists():
-            pytest.skip("Corpus directory not found")
+        corpus_dir = discovery_corpus
 
         config = BenchmarkConfig(
             name="Test",
@@ -245,14 +280,13 @@ class TestDiscoverDocuments:
         )
 
         documents = discover_documents(corpus_dir, config)
+        assert len(documents) == 3
         # All should be synthetic
         assert all(d.metadata.corpus == "synthetic" for d in documents)
 
-    def test_feature_filter(self) -> None:
+    def test_feature_filter(self, discovery_corpus: Path) -> None:
         """Should filter by features."""
-        corpus_dir = Path("corpus")
-        if not corpus_dir.exists():
-            pytest.skip("Corpus directory not found")
+        corpus_dir = discovery_corpus
 
         config = BenchmarkConfig(
             name="Test",
@@ -265,14 +299,13 @@ class TestDiscoverDocuments:
         )
 
         documents = discover_documents(corpus_dir, config)
+        assert len(documents) == 2
         # All should have tables feature
         assert all("tables" in d.metadata.features for d in documents)
 
-    def test_max_documents_limit(self) -> None:
+    def test_max_documents_limit(self, discovery_corpus: Path) -> None:
         """Should respect max_documents limit."""
-        corpus_dir = Path("corpus")
-        if not corpus_dir.exists():
-            pytest.skip("Corpus directory not found")
+        corpus_dir = discovery_corpus
 
         config = BenchmarkConfig(
             name="Test",
@@ -285,7 +318,7 @@ class TestDiscoverDocuments:
         )
 
         documents = discover_documents(corpus_dir, config)
-        assert len(documents) <= 2
+        assert len(documents) == 2
 
     def test_no_documents_raises_error(self) -> None:
         """Should raise ValueError if no documents match filter."""

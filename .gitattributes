@@ -20,3 +20,4 @@ tests/fixtures/invoice_parser_outputs/*.md linguist-generated=true whitespace=-b
 .workspace/work/*/parsebench-integration-diagnostics/** linguist-generated=true
 .workspace/work/*/parsebench-runtime-artifacts/** linguist-generated=true
 .workspace/work/*/parsebench-*/**/retained-output.md whitespace=-blank-at-eol,-space-before-tab
+.workspace/work/*/orientation-before-rebuild.txt whitespace=-blank-at-eof

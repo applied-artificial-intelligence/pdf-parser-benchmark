@@ -22,6 +22,11 @@ jobs:
     - name: Set up the frozen reconstruction Python
       run: uv python install 3.13.5
 
+    - name: Install document-builder test tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y --no-install-recommends pandoc libreoffice-writer texlive-latex-base texlive-latex-recommended lmodern fonts-dejavu-core
+
     - name: Install dependencies
       run: |
         bash scripts/prepare_reconstruction_environment.sh

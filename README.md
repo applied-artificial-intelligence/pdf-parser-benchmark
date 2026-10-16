@@ -35,6 +35,8 @@ virtual-environment destination; otherwise it uses this checkout's `.venv`.
 Run tests with `uv run --no-sync pytest` after setup. CI also checks formatting,
 lint and mypy. The benchmark runtimes remain separately frozen and are not changed
 by developer setup or later dependency upgrades.
+Full builder tests also require Pandoc, LibreOffice Writer and a LaTeX PDF engine;
+the frozen benchmark replays use retained PDFs and do not need those converters.
 
 `scripts/build_internal_benchmark_story.py --qualified-report` generates a new
 verified report bundle. Without that flag it inventories current retained history.

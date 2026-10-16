@@ -16,5 +16,14 @@
     "Full reconstruction checks use declared Python 3.13.5 and pinned local parser dependencies instead of installing every heavyweight provider",
     "Minimal import compatibility remains checked on Python 3.10, 3.11 and 3.12",
     "Optional third-party modules without typing metadata are declared explicitly; strict checking remains enabled for project code"
-  ]
+  ],
+  "hosted_followup": {
+    "run": "38962910071",
+    "observed": "Core lint/format/type checks and all three minimal Python jobs pass; full tests exposed missing builder binaries and a corpus-discovery dependency on ignored local PDFs.",
+    "repair": "Declare Pandoc/LibreOffice/LaTeX tools and lightweight Tika test dependency; generate the discovery corpus inside each test instead of using local data.",
+    "focused_loader_tests": {
+      "passed": 23,
+      "skipped": 10
+    }
+  }
 }

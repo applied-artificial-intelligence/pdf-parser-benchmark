@@ -1,0 +1,24 @@
+{
+  "hosted_run": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/actions/runs/38962910071",
+  "log_sha256": "2eb70354b67957548a78aa529f060eafa3f2c503727ba196a9b54f2a261116fc",
+  "failure_categories": [
+    "Missing soffice/Pandoc/LaTeX builder binaries",
+    "Native Tika constructor test requires its lightweight SDK",
+    "Discovery tests accidentally rely on ignored local corpus PDFs"
+  ],
+  "reported_counts": {
+    "passed": 933,
+    "failed": 12,
+    "errors": 10,
+    "skipped": 26
+  },
+  "repairs": [
+    "Install converter tools in the full CI job",
+    "Declare tika==3.1.0 in developer test setup",
+    "Generate actual small PDF/metadata/reference corpus fixtures inside discovery tests"
+  ],
+  "local_focused_result": {
+    "passed": 23,
+    "skipped": 10
+  }
+}

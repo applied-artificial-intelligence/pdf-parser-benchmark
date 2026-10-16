@@ -6,3 +6,4 @@ artifacts="$repo_dir/.workspace/work/2026-10-13-benchmark-rebuild/invoice-runtim
 UV_PROJECT_ENVIRONMENT="$environment_path" uv sync --project "$repo_dir" --python 3.13.5 --extra dev --extra light
 uv pip install --python "$environment_path/bin/python" --require-hashes -r "$artifacts/requirements.lock"
 uv pip install --python "$environment_path/bin/python" --no-deps "$artifacts/pdfsmith-0.2.0-py3-none-any.whl"
+uv pip install --python "$environment_path/bin/python" "tika==3.1.0"
