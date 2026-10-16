@@ -95,10 +95,10 @@ def faithful_representation_controls(plan_directory: Path) -> dict:
 def summarize_cells(bundle: Path) -> dict:
     validate_run(bundle)
     plan = read_json(bundle / "frozen-plan/plan.json")
-    cells = {}
+    cells: dict = {}
     for pipeline in plan["pipelines"]:
         name = pipeline["pipeline_id"]
-        groups = {}
+        groups: dict[str, list[str]] = {}
         for document in plan["documents"]:
             cell = f"{document['template_style']}/{document['complexity']}"
             groups.setdefault(cell, []).append(document["document_id"])

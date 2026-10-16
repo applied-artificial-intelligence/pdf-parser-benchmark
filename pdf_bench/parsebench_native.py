@@ -8,8 +8,10 @@ import json
 import os
 import platform
 import sys
+from collections.abc import Callable
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 
 def digest(path: Path) -> str:
@@ -32,7 +34,7 @@ def identity() -> dict:
     }
 
 
-def table_converter():
+def table_converter() -> Callable[[str], str]:
     import parse_bench
 
     source = Path(parse_bench.__file__).parent / "inference/providers/parse/liteparse.py"
@@ -46,15 +48,16 @@ def table_converter():
         if isinstance(n, ast.FunctionDef) and n.name == "_convert_md_tables_to_html"
     )
     method.decorator_list = []
-    namespace = {}
+    namespace: dict[str, Any] = {}
     exec(compile(ast.Module(body=[method], type_ignores=[]), str(source), "exec"), namespace)
-    return namespace["_convert_md_tables_to_html"]
+    converter: Callable[[str], str] = namespace["_convert_md_tables_to_html"]
+    return converter
 
 
 def evaluate(bundle: Path) -> dict:
     os.environ["LLAMACLOUD_BENCH_LLM_NORMALIZATION"] = "off"
 
-    def restricted(event, arguments):
+    def restricted(event: str, arguments: tuple) -> None:
         if event.startswith("socket.") or event in {"subprocess.Popen", "os.system", "os.fork"}:
             raise PermissionError("Network and parser subprocesses are unavailable in regrading")
         if event == "import" and arguments[0].split(".")[0] in {

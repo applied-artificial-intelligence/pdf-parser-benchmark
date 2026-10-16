@@ -6,6 +6,7 @@ import json
 import re
 from collections import Counter
 from pathlib import Path, PurePosixPath
+from typing import Any
 from urllib.parse import quote
 from urllib.request import urlopen
 
@@ -26,6 +27,7 @@ def acquire_annotations(cache: Path, manifest_path: Path) -> dict:
     """Acquire immutable annotations and complete source-file metadata before publishing."""
     cache.mkdir(parents=True, exist_ok=True)
     files = {}
+    url: str | None
     for name in [*(f"{group}.jsonl" for group in GROUPS), "README.md", "eval.yaml"]:
         url = DATA_BASE + name
         with urlopen(url, timeout=90) as response:
@@ -70,7 +72,7 @@ def acquire_annotations(cache: Path, manifest_path: Path) -> dict:
 
 
 def _read_object(cache: Path, file: dict) -> bytes:
-    data = (cache / file["sha256"]).read_bytes()
+    data: bytes = (cache / file["sha256"]).read_bytes()
     if sha256(data) != file["sha256"] or len(data) != file["bytes"]:
         raise ValueError("Annotation hash/size mismatch")
     return data
@@ -92,7 +94,7 @@ def build_inventory(cache: Path, manifest: dict) -> dict:
     for group in GROUPS:
         name = f"{group}.jsonl"
         data = _read_object(cache, manifest["files"][name])
-        grouped = {}
+        grouped: dict[str, Any] = {}
         count = 0
         for line_number, line in enumerate(data.splitlines(), 1):
             row = json.loads(line)
@@ -143,7 +145,7 @@ def build_inventory(cache: Path, manifest: dict) -> dict:
         group_cases = []
         for _path, case in sorted(grouped.items()):
             line_numbers = case.pop("annotation_lines")
-            ranges = []
+            ranges: list[list[int]] = []
             for number in line_numbers:
                 if ranges and number == ranges[-1][1] + 1:
                     ranges[-1][1] = number

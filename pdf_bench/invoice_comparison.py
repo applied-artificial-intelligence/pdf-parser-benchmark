@@ -30,7 +30,7 @@ OUTCOMES = {
     "enforced_timeout",
     "incompatible",
 }
-DEFAULT_OPTIONS = {
+DEFAULT_OPTIONS: dict[str, dict] = {
     "pypdf": {"extraction_mode": "plain"},
     "pdfplumber": {"layout": False, "x_tolerance": 3.0, "y_tolerance": 3.0},
 }
@@ -45,7 +45,8 @@ def identity(value: dict) -> str:
 
 
 def read_json(path: Path) -> dict:
-    return json.loads(path.read_bytes())
+    value: dict = json.loads(path.read_bytes())
+    return value
 
 
 def runtime_identity() -> dict:
@@ -327,7 +328,7 @@ def summarize(plan: dict, rows: list[dict], grades: dict[str, dict | None]) -> d
     actual = [(r["pipeline_id"], r["document_id"]) for r in rows]
     if actual != expected or len(set(actual)) != len(actual):
         raise ValueError("Incomplete execution or duplicate/foreign terminal pairs")
-    result = {}
+    result: dict = {}
     ids = [d["document_id"] for d in plan["documents"]]
     for pipeline in plan["pipelines"]:
         name = pipeline["pipeline_id"]
@@ -383,7 +384,8 @@ def execute_plan(plan_dir: Path, output: Path) -> Path:
     staging.mkdir()
     shutil.copytree(plan_dir, staging / "frozen-plan")
     write_json_atomic(staging / "execution-environment.json", environment)
-    rows, grades = [], {}
+    rows: list[dict] = []
+    grades: dict = {}
     write_json_atomic(staging / "journal.json", {"status": "incomplete", "attempts": rows})
     started = time.perf_counter()
     for index, pair in enumerate(plan["planned_pairs"]):

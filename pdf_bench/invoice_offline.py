@@ -19,7 +19,7 @@ def regrade(bundle: Path) -> dict:
     bundle = bundle.resolve()
     standard_library = Path(sysconfig.get_path("stdlib")).resolve()
 
-    def isolated(event, arguments):
+    def isolated(event: str, arguments: tuple) -> None:
         if event == "open" and isinstance(arguments[0], (str, bytes, os.PathLike)):
             path = Path(os.fsdecode(arguments[0])).resolve()
             mode = arguments[1]
@@ -53,7 +53,8 @@ def regrade(bundle: Path) -> dict:
         return target
 
     def read(name: str) -> dict:
-        return json.loads(verified(name).read_bytes())
+        value: dict = json.loads(verified(name).read_bytes())
+        return value
 
     plan = read("frozen-plan/plan.json")
     protocol = read("frozen-plan/task-protocol.json")

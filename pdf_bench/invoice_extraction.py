@@ -10,6 +10,7 @@ import unicodedata
 from datetime import date
 from decimal import Decimal
 from pathlib import Path
+from typing import Any
 
 ALIASES = {
     "description": "description",
@@ -98,7 +99,9 @@ def record_values(cells: list[str], roles: list[str]) -> dict:
 
 
 def markdown_rows(text: str) -> tuple[list[dict], bool]:
-    rows, roles, pending = [], None, ""
+    rows: list[dict] = []
+    roles: list[str] | None = None
+    pending = ""
     found = False
     for line in text.splitlines():
         stripped = line.strip()
@@ -138,7 +141,9 @@ def markdown_rows(text: str) -> tuple[list[dict], bool]:
 
 
 def plain_rows(text: str) -> list[dict]:
-    rows, roles, description = [], None, []
+    rows: list[dict] = []
+    roles: list[str] | None = None
+    description: list[str] = []
     for line in text.splitlines():
         line = line.strip()
         if not line:
@@ -175,8 +180,9 @@ def plain_rows(text: str) -> list[dict]:
 
 def extract_invoice(text: str) -> dict:
     """Use only text, with no document identity, paths, reference facts or row counts."""
+    value: Any
     fields = dict.fromkeys(REQUIRED_FIELDS)
-    surfaces = {}
+    surfaces: dict[str, list[str]] = {}
     ambiguities = []
     clean = "\n".join(line.replace("|", " ").replace("**", "") for line in text.splitlines())
     patterns = {

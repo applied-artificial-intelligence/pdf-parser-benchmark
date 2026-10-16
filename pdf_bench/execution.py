@@ -33,7 +33,12 @@ class ParseAttempt:
 
 
 def _parser_child(
-    connection, parser_class, options, input_path, directory, denied_read_components
+    connection: Any,
+    parser_class: type[BaseParser],
+    options: dict,
+    input_path: Path,
+    directory: Path,
+    denied_read_components: tuple[str, ...],
 ) -> None:
     if os.name == "posix":
         os.setsid()
@@ -47,7 +52,7 @@ def _parser_child(
                 }
             )
 
-            def deny_answers(event, arguments):
+            def deny_answers(event: str, arguments: tuple) -> None:
                 if event == "open" and isinstance(arguments[0], (str, bytes, os.PathLike)):
                     path = Path(os.fsdecode(arguments[0])).resolve()
                     if set(path.parts) & set(denied_read_components) and not any(
@@ -94,7 +99,7 @@ def _parser_child(
         connection.close()
 
 
-def _stop_worker(process) -> None:
+def _stop_worker(process: Any) -> None:
     if process.pid is None:
         return
     if process.is_alive():

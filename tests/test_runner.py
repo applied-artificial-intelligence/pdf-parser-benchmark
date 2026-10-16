@@ -78,7 +78,7 @@ def sample_document(tmp_path: Path, sample_metadata: DocumentMetadata) -> Docume
 
     return DocumentInfo(
         doc_id="test-doc-001",
-        pdf_path=pdf_path,
+        input_path=pdf_path,
         ground_truth_path=gt_path,
         metadata=sample_metadata,
     )
@@ -271,7 +271,7 @@ class TestBenchmarkRunner:
             docs.append(
                 DocumentInfo(
                     doc_id=f"test-doc-{i:03d}",
-                    pdf_path=pdf_path,
+                    input_path=pdf_path,
                     ground_truth_path=gt_path,
                     metadata=sample_metadata,
                 )
@@ -385,8 +385,9 @@ class TestBenchmarkRunner:
         # Unknown metric should not be present (skipped)
         assert "unknown_metric_xyz" not in metrics
 
-    def test_compute_metrics_element_f1_special_handling(self, sample_config: LoadedConfig) -> None:
-        """Test that element_f1 metric failures are handled gracefully."""
+    def test_element_f1_does_not_mark_valid_markdown_as_missing(
+        self, sample_config: LoadedConfig
+    ) -> None:
         # Configure element_f1 metric
         sample_config.config.metric_config.metrics = ["element_f1"]
 
@@ -396,10 +397,10 @@ class TestBenchmarkRunner:
 
         metrics = runner._compute_metrics(gt, pred)
 
-        # element_f1 fails on simple markdown (expects specific AST structure)
-        # Should be marked as NaN rather than crashing
         assert "element_f1" in metrics
-        assert str(metrics["element_f1"]) == "nan"
+        assert metrics["element_f1"] == pytest.approx(1.0)
+        missing_heading = runner._compute_metrics(gt, "Paragraph")
+        assert missing_heading["element_f1"] < metrics["element_f1"]
 
     def test_compute_metrics_failure_handled(self, sample_config: LoadedConfig) -> None:
         """Test that metric computation failures are handled gracefully."""
@@ -486,7 +487,7 @@ class TestParallelExecution:
             docs.append(
                 DocumentInfo(
                     doc_id=f"test-doc-{i:03d}",
-                    pdf_path=pdf_path,
+                    input_path=pdf_path,
                     ground_truth_path=gt_path,
                     metadata=sample_metadata,
                 )
@@ -538,7 +539,7 @@ class TestParallelExecution:
             docs.append(
                 DocumentInfo(
                     doc_id=f"test-doc-{i:03d}",
-                    pdf_path=pdf_path,
+                    input_path=pdf_path,
                     ground_truth_path=gt_path,
                     metadata=sample_metadata,
                 )

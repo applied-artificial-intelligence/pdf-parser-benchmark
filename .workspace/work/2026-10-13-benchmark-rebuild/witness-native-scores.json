@@ -15,8 +15,8 @@
   "variant": {
     "mutation": {
       "file": "pdf_bench/parsebench_comparison.py",
-      "old": "    payload = json.loads(result.stdout)",
-      "new": "    payload = json.loads(result.stdout)\n    payload[\"pairs\"][0][\"result\"][\"metrics\"][0][\"value\"] += 0.25"
+      "old": "    payload: dict = json.loads(result.stdout)",
+      "new": "    payload: dict = json.loads(result.stdout)\n    payload[\"pairs\"][0][\"result\"][\"metrics\"][0][\"value\"] += 0.25"
     }
   }
 }

@@ -4,6 +4,8 @@ import hashlib
 import inspect
 import json
 from collections import Counter
+from collections.abc import Callable
+from typing import Any, cast
 
 from pdf_bench import invoice_extraction
 from pdf_bench.invoice_extraction import REQUIRED_FIELDS, number_value, text_value
@@ -12,6 +14,7 @@ from pdf_bench.invoice_extraction import REQUIRED_FIELDS, number_value, text_val
 def record_key(record: dict, roles: list[str]) -> tuple:
     if set(record) - {"surfaces"} != {*roles, "currency_markers"}:
         return ("invalid", json.dumps(record, sort_keys=True))
+    value: Any
     values = []
     for role in roles:
         raw = record[role]
@@ -93,7 +96,7 @@ def aggregate_grades(grades: dict[str, dict | None], eligible_ids: list[str]) ->
     if any(grade is None for grade in grades.values()):
         return {"valid": False, "reason": "evaluation_failure", "eligible_ids": eligible_ids}
     totals = {
-        key: sum(grade[key] for grade in grades.values())
+        key: sum(cast(dict, grade)[key] for grade in grades.values())
         for key in [
             "fields_correct",
             "fields_expected",
@@ -155,7 +158,10 @@ def task_protocol() -> dict:
         ).hexdigest(),
         "grader_sha256": hashlib.sha256(
             "\n".join(
-                inspect.getsource(f) for f in [record_key, grade_invoice, aggregate_grades]
+                inspect.getsource(f)
+                for f in cast(
+                    list[Callable[..., Any]], [record_key, grade_invoice, aggregate_grades]
+                )
             ).encode()
         ).hexdigest(),
     }

@@ -11,7 +11,7 @@ import uuid
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 import yaml
 
@@ -506,7 +506,7 @@ def _build_benchmark_record(
     )
 
     return BenchmarkInventoryRecord(
-        name=name,
+        name=cast(str, name),
         path=str(path),
         auto_status=auto_status,
         status=status,
@@ -710,7 +710,7 @@ def _build_result_record(
     )
 
     return ResultInventoryRecord(
-        benchmark_name=benchmark_name,
+        benchmark_name=cast(str, benchmark_name),
         path=str(path),
         auto_status=auto_status,
         status=status,
@@ -931,7 +931,7 @@ def _extract_result_parser_names(raw_results: Any) -> list[str]:
         for result in raw_results
         if isinstance(result, dict) and isinstance(result.get("parser_name"), str)
     }
-    return sorted(parser_names)
+    return sorted(cast(set[str], parser_names))
 
 
 def _collect_failed_parser_counts(raw_results: Any) -> tuple[dict[str, int], list[str]]:
@@ -965,7 +965,11 @@ def _is_result_summary_consistent(summary_data: dict[str, Any], raw_results: Any
     total_results = summary_data.get("total_results")
     success_count = summary_data.get("success_count")
     failure_count = summary_data.get("failure_count")
-    if not all(isinstance(value, int) for value in [total_results, success_count, failure_count]):
+    if not (
+        isinstance(total_results, int)
+        and isinstance(success_count, int)
+        and isinstance(failure_count, int)
+    ):
         return None
 
     return (
@@ -1077,7 +1081,7 @@ def _observed_counts(rows: list) -> dict:
 
 
 def _historical_metrics(rows: list, counts: dict) -> dict:
-    parsers = defaultdict(list)
+    parsers: dict[str, list[tuple[int, dict[str, Any]]]] = defaultdict(list)
     for index, row in enumerate(rows):
         if isinstance(row, dict) and isinstance(row.get("parser_name"), str):
             parsers[row["parser_name"]].append((index, row))
@@ -1086,19 +1090,21 @@ def _historical_metrics(rows: list, counts: dict) -> dict:
             key
             for attempts in parsers.values()
             for _, row in attempts
-            for key in (row.get("metrics") if isinstance(row.get("metrics"), dict) else {})
+            for key in (
+                cast(dict, row.get("metrics")) if isinstance(row.get("metrics"), dict) else {}
+            )
         }
     )
     result = {}
     for metric in all_metrics:
-        by_parser = {}
+        by_parser: dict[str, Any] = {}
         for parser, attempts in sorted(parsers.items()):
             values = {}
             pointers = {}
             for index, row in attempts:
-                value = (row.get("metrics") if isinstance(row.get("metrics"), dict) else {}).get(
-                    metric
-                )
+                value = (
+                    cast(dict, row.get("metrics")) if isinstance(row.get("metrics"), dict) else {}
+                ).get(metric)
                 if (
                     row.get("success") is True
                     and isinstance(value, (int, float))
@@ -1233,7 +1239,7 @@ def build_run_registry(repo_root: Path) -> dict:
     """Reconcile a frozen discovery boundary without rewriting retained evidence."""
     root = repo_root.resolve()
     paths = retained_result_paths(root)
-    frozen = []
+    frozen: list[tuple[Path, bytes | None, str | None]] = []
     for path in paths:
         try:
             if not path.resolve().is_relative_to(root):
@@ -1243,13 +1249,14 @@ def build_run_registry(repo_root: Path) -> dict:
             frozen.append((path, None, str(exc)))
     overrides_path = root / "inventory_overrides.yaml"
     observed = {}
-    overrides = {}
+    overrides: dict = {}
     if overrides_path.exists():
         data = overrides_path.read_bytes()
         observed["inventory_overrides.yaml"] = _digest(data)
         overrides = yaml.safe_load(data) or {}
     annotations = overrides.get("story", {})
-    records, indexes = [], {}
+    records: list[dict] = []
+    indexes: dict = {}
     for path, raw, read_error in frozen:
         rel = path.relative_to(root).as_posix()
         record = {
@@ -1281,8 +1288,12 @@ def build_run_registry(repo_root: Path) -> dict:
             continue
         if not isinstance(data, dict):
             continue
-        benchmark = data.get("benchmark") if isinstance(data.get("benchmark"), dict) else {}
-        environment = data.get("environment") if isinstance(data.get("environment"), dict) else {}
+        benchmark: dict = (
+            cast(dict, data.get("benchmark")) if isinstance(data.get("benchmark"), dict) else {}
+        )
+        environment: dict = (
+            cast(dict, data.get("environment")) if isinstance(data.get("environment"), dict) else {}
+        )
         rows = data.get("results")
         record.update(
             original_benchmark=benchmark,
@@ -1523,7 +1534,7 @@ def _validate_registry_bundle(bundle: Path, manifest_sha256: str) -> dict:
             raise ValueError("Registry manifest points outside bundle")
         if _digest((bundle / name).read_bytes()) != digest:
             raise ValueError("Registry artifact hash mismatch")
-    registry = json.loads((bundle / "registry.json").read_bytes())
+    registry: dict = json.loads((bundle / "registry.json").read_bytes())
     story = json.loads((bundle / "story.json").read_bytes())
     if story["registry_sha256"] != manifest["artifacts"]["registry.json"]:
         raise ValueError("Story points to another registry")

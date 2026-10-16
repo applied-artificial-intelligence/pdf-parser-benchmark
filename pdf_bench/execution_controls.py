@@ -68,6 +68,7 @@ def run_controls(source: Path, output: Path) -> dict:
     if (
         attempt.outcome != "enforced_timeout"
         or attempt.parse_time_seconds is None
+        or attempt.worker_pid is None
         or not (delayed / "parser-output/started").exists()
         or (delayed / "parser-output/late-output.md").exists()
     ):

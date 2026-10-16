@@ -367,13 +367,13 @@ def inventory(
             benchmark_table.add_column("Metrics", justify="right")
             benchmark_table.add_column("Issues", justify="right")
 
-            for record in snapshot.benchmarks:
+            for benchmark_record in snapshot.benchmarks:
                 benchmark_table.add_row(
-                    record.name,
-                    f"[{_status_style(record.status)}]{record.status}[/{_status_style(record.status)}]",
-                    str(record.parser_count),
-                    str(record.metric_count),
-                    str(len(record.issues)),
+                    benchmark_record.name,
+                    f"[{_status_style(benchmark_record.status)}]{benchmark_record.status}[/{_status_style(benchmark_record.status)}]",
+                    str(benchmark_record.parser_count),
+                    str(benchmark_record.metric_count),
+                    str(len(benchmark_record.issues)),
                 )
 
             console.print("\n[bold cyan]Benchmarks[/bold cyan]")
@@ -387,14 +387,16 @@ def inventory(
             result_table.add_column("Failures", justify="right")
             result_table.add_column("Issues", justify="right")
 
-            for record in snapshot.results:
-                failures = record.failure_count if record.failure_count is not None else "-"
+            for result_record in snapshot.results:
+                failures = (
+                    result_record.failure_count if result_record.failure_count is not None else "-"
+                )
                 result_table.add_row(
-                    Path(record.path).name,
-                    f"[{_status_style(record.status)}]{record.status}[/{_status_style(record.status)}]",
-                    record.cost_class,
+                    Path(result_record.path).name,
+                    f"[{_status_style(result_record.status)}]{result_record.status}[/{_status_style(result_record.status)}]",
+                    result_record.cost_class,
                     str(failures),
-                    str(len(record.issues)),
+                    str(len(result_record.issues)),
                 )
 
             console.print("\n[bold cyan]Results[/bold cyan]")

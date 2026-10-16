@@ -104,7 +104,7 @@ def _calculate_leaderboard(results: BenchmarkResults) -> list[dict[str, Any]]:
 
     # Sort by average score (descending)
     parser_scores.sort(
-        key=lambda x: (float(x["avg_score"]) if isinstance(x["avg_score"], int | float) else 0.0),
+        key=lambda x: float(x["avg_score"]) if isinstance(x["avg_score"], int | float) else 0.0,
         reverse=True,
     )
 

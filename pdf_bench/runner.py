@@ -9,7 +9,7 @@ import uuid
 from dataclasses import dataclass, field
 from multiprocessing.pool import ThreadPool
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from pdf_bench.execution import execute_parser
 from pdf_bench.loader import IMAGE_CAPABLE_BACKENDS, DocumentInfo, LoadedConfig
@@ -133,7 +133,7 @@ def _extract_parser_init_args(parser: BaseParser) -> tuple[type[BaseParser], dic
         parser_options["backend_name"] = parser._backend_name
         if hasattr(parser, "_kwargs") and parser._kwargs:
             parser_options.update(parser._kwargs)
-        parser_options["cache_mode"] = parser.cache_mode
+        parser_options["cache_mode"] = cast(Any, parser).cache_mode
         return parser_class, parser_options
 
     for name, parameter in inspect.signature(parser_class).parameters.items():
@@ -169,7 +169,9 @@ class DocumentResult:
     evaluation_errors: dict[str, str] = field(default_factory=dict)
 
 
-def _compute_metric_results(ground_truth, prediction, metrics_list) -> tuple[dict, dict, dict]:
+def _compute_metric_results(
+    ground_truth: str, prediction: str, metrics_list: list[str]
+) -> tuple[dict, dict, dict]:
     metrics, outcomes, errors = {}, {}, {}
     for name in metrics_list:
         function = METRIC_FUNCTIONS.get(name)
@@ -276,6 +278,8 @@ def _worker_run_single(
     )
     if result.success:
         try:
+            if attempt.output_path is None:
+                raise ValueError("Successful parsing has no retained output")
             raw = attempt.output_path.read_bytes()
             if hashlib.sha256(raw).hexdigest() != attempt.output_sha256:
                 raise ValueError("Output changed between parsing and metric evaluation")

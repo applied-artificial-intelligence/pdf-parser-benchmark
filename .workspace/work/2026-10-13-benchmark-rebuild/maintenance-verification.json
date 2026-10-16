@@ -1,0 +1,20 @@
+{
+  "scope": "Typing and CI repair following actual hosted failures; no benchmark tuning or implicit re-execution",
+  "full_suite": {
+    "passed": 984,
+    "skipped": 18
+  },
+  "core_ruff": "102 files formatted; checks pass",
+  "mypy": "47 source files pass in both existing and fresh declared environments",
+  "frozen_results": "Existing primary run plans, raw outputs, predictions, grades, runtime wheels and protocol snapshots are unchanged",
+  "current_task_protocol": "Development revision 3 records annotation-only source identity changes; primary invoice v3 runs retain development revision 2",
+  "adopted_inherited_changes": [
+    "Presentation domain entries in config.py and utils/metadata.py, preserved while formatting for CI"
+  ],
+  "ci_repair": [
+    "Replace obsolete PyMuPDFParser import with supported adapter import",
+    "Full reconstruction checks use declared Python 3.13.5 and pinned local parser dependencies instead of installing every heavyweight provider",
+    "Minimal import compatibility remains checked on Python 3.10, 3.11 and 3.12",
+    "Optional third-party modules without typing metadata are declared explicitly; strict checking remains enabled for project code"
+  ]
+}

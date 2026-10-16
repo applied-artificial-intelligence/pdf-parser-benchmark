@@ -8,10 +8,12 @@ import re
 import shutil
 import unicodedata
 import uuid
+from collections.abc import Callable
 from datetime import date
 from decimal import Decimal
 from io import BytesIO
 from pathlib import Path
+from typing import Any, cast
 
 import pymupdf
 import yaml
@@ -169,7 +171,10 @@ def extract_reference(source: Path | bytes) -> dict:
 def reference_protocol() -> dict:
     code = "\n".join(
         inspect.getsource(f)
-        for f in [normalized_text, decimal_string, source_date, extract_reference]
+        for f in cast(
+            list[Callable[..., Any]],
+            [normalized_text, decimal_string, source_date, extract_reference],
+        )
     )
     return {
         "schema_version": 1,
@@ -186,12 +191,15 @@ def reference_protocol() -> dict:
         "qualification_implementation_sha256": hashlib.sha256(
             "\n".join(
                 inspect.getsource(f)
-                for f in [
-                    mechanical_presence,
-                    validate_reference_bundle,
-                    render_reference_pages,
-                    qualify_references,
-                ]
+                for f in cast(
+                    list[Callable[..., Any]],
+                    [
+                        mechanical_presence,
+                        validate_reference_bundle,
+                        render_reference_pages,
+                        qualify_references,
+                    ],
+                )
             ).encode()
         ).hexdigest(),
         "rendering_pymupdf_version": pymupdf.VersionBind,
@@ -328,7 +336,7 @@ def prepare_references(
 
 
 def validate_reference_bundle(bundle: Path, require_qualified: bool = False) -> dict:
-    manifest = json.loads((bundle / "manifest.json").read_bytes())
+    manifest: dict = json.loads((bundle / "manifest.json").read_bytes())
     if manifest["status"] not in {"unqualified", "qualified"}:
         raise ValueError("Unknown reference bundle status")
     if require_qualified and manifest["status"] != "qualified":

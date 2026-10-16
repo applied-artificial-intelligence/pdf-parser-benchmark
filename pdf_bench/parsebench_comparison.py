@@ -165,7 +165,7 @@ def summarize(plan: dict, attempts: list, native: dict) -> dict:
     if native["protocol"] != plan["metric_protocol"]:
         raise ValueError("Native score protocol differs from the frozen plan")
     by_pair = {r["pair_id"]: r for r in native["pairs"]}
-    output = {}
+    output: dict = {}
     for pipeline in plan["pipelines"]:
         output[pipeline] = {}
         for group, metric in METRICS.items():
@@ -203,7 +203,7 @@ def native_grade(bundle: Path, evaluator_python: Path) -> dict:
     )
     if result.returncode:
         raise ValueError(f"Native evaluation failed: {result.stderr[-4000:]}")
-    payload = json.loads(result.stdout)
+    payload: dict = json.loads(result.stdout)
     if payload["protocol"] != plan["metric_protocol"]:
         raise ValueError("Changed native metric protocol")
     return payload
@@ -223,7 +223,7 @@ def execute(plan_root: Path, output: Path, evaluator_python: Path) -> Path:
     bundle.mkdir()
     shutil.copytree(plan_root, bundle / "frozen-plan")
     write_json_atomic(bundle / "execution-environment.json", environment)
-    attempts = []
+    attempts: list[dict] = []
     write_json_atomic(bundle / "journal.json", {"attempts": attempts})
     started = time.perf_counter()
     for case in plan["cases"]:

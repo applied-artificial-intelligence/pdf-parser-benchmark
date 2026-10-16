@@ -34,7 +34,15 @@ VALID_DOMAINS = {
         "presentation",
         "research_report",
     ],
-    "business": ["gov-uk", "sec-edgar", "legal", "invoices", "hr", "legal_contracts"],
+    "business": [
+        "gov-uk",
+        "sec-edgar",
+        "legal",
+        "invoices",
+        "hr",
+        "legal_contracts",
+        "presentations",
+    ],
     "synthetic": ["pandoc", "libreoffice", "tables", "lists", "multicolumn", "mixed"],
 }
 

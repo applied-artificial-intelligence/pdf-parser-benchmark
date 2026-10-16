@@ -11,7 +11,7 @@ import subprocess
 from datetime import datetime, timezone
 from importlib.metadata import version
 from pathlib import Path
-from typing import Any
+from typing import Any, cast
 
 from pdf_bench.config import (
     BenchmarkConfig,
@@ -182,7 +182,7 @@ def run_comparison(output_dir: Path) -> dict[str, Any]:
         status = "success" if result.success else "failed"
         if result.parse_outcome == "enforced_timeout":
             status = "timeout"
-        attempt = {
+        attempt: dict[str, Any] = {
             "document_id": result.document_id,
             "parser": result.parser_name,
             "status": status,
@@ -195,6 +195,8 @@ def run_comparison(output_dir: Path) -> dict[str, Any]:
             "task_metrics": None,
         }
         if result.success and result.document_id != "corrupt":
+            if output is None:
+                raise ValueError("Successful parsing has no retained output")
             attempt["task_metrics"] = grade_fields(output.read_text(encoding="utf-8"), FIELDS)
         attempts.append(attempt)
     common = [
@@ -236,7 +238,10 @@ def run_comparison(output_dir: Path) -> dict[str, Any]:
         repo / "pdf_bench/loader.py",
         repo / "pdf_bench/config.py",
         Path(pdfsmith.__file__),
-        *(Path(inspect.getfile(type(p.backend))) for p in config.parser_instances),
+        *(
+            Path(inspect.getfile(type(cast(FreshLocalParser, p).backend)))
+            for p in config.parser_instances
+        ),
     ]
     pack = {
         "schema_version": 1,
