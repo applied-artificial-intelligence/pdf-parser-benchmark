@@ -1,80 +1,30 @@
-PDF-Bench source-owner handoff - October 14, 2026
+PDF-Bench verified source milestone
 
-Acknowledgment
-The existing website/editorial owners retain their portfolio, publication and CMS
-work. This conversation owns source reconstruction, evaluation and evidence.
-Stefan confirmed practical parser selection and then emphasized a worked lesson
-in constructing an internal benchmark that fits the team's actual use case.
+Source implementation checkpoint: 998fa63194a74bebd561aaaee296ac73684f4478
+Branch: codex/benchmark-rebuild
+PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
 
-Current milestone
-Specification, six-issue plan and self-contained external-review packet prepared;
-returned GPT/Fable reports are reconciled in review-dispositions.txt and revision 2.
-The first implementation milestone is "Reconciled evidence and a reproducible
-internal-benchmark example". Both reports recommend bounded revision. The owner
-adopted exact rendition qualification, extraction isolation, displayed-column
-multiset records, fixed eligible denominators, stage-specific failures, cache and
-checkpoint identity, exclusive outputs and atomic bundle completion. The owner reconciles historical runs,
-qualifies independent truth, repairs execution identity/failure accounting, runs
-all 100 retained source invoices with pypdf and pdfplumber, and generates the
-report/export. The earlier three-variant invoice diagnostic is preserved separately
-and is not this milestone's completion evidence.
+Report bundle: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b
+Report manifest SHA256: a0eedb0326e5af20cced1447fa8748ac290b8a2b6010522884e9d5ad54c7d36d
+Technical report: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/technical-report.md
+Claim export: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/claims.json
 
-Visitor task and useful result
-An engineer designing a document pipeline can inspect a worked internal-benchmark
-protocol, see how reference errors/selection/failure denominators change conclusions,
-compare extraction of invoice fields and header-associated line items under one
-declared downstream extractor, and reproduce/regrade the evidence. The report
-explains corpus fit and what to change for the team's own permitted documents.
-This supports consulting through demonstrated evaluation practice. No real-vendor
-population accuracy, general parser winner or causal business benefit is promised.
+invoice completion: .workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json
+SHA256: f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0
+Frozen plan SHA256: 44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684
 
-Expected export contract, proposed until external review
-- Versioned run/bundle ID, schema version, actual execution dates and completeness.
-- Family, downstream task, fixed input IDs/renditions, input/source/reference/output
-  hashes, independent reference/qualification method and applicability decisions.
-- Planned/attempted/complete/empty/failed/timed-out/incomplete counts and IDs;
-  fixed-population task success and exact eligible/scored denominators per metric;
-  paired comparison and common-success diagnostic clearly distinguished.
-- Exact parser/backend/package/source identity, PDFsmith metadata/source disagreement,
-  options, extractor/grader/normalizer, cache/checkpoint mode, timeout/resource policy,
-  hardware and declared timing/cost boundary; unknown historical values remain null.
-- Source revision plus implementation hashes/dependency snapshot for dirty code;
-  retained raw outputs, frozen references, offline regrading and relocated replay.
-- Each claim resolves to run/artifact hash, JSON pointer, metric/denominator, evidence
-  tier, supported interpretation and limits. No aggregate flattens evidence families.
-- Generated appendix and project-local technical report include benchmark-design
-  decisions, historical lessons and explicit OCR/table/deck/arXiv follow-on protocols.
+public completion: .workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/completion.json
+SHA256: cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6
+Frozen plan SHA256: d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba
 
-Current inspectable review material
-Work unit: /home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/
-Files: spec.md, plan.md, external-review-packet.txt, review-gpt.txt, review-claude.txt,
-review-inputs.json, baseline-checks.json and external-review-packet.sha256.
-Packet SHA-256: aa33a7e48c92d50e923d8e919addcdd872a87e11242952a36dd0eb7a9174f0d5
-Source base: bf8285b4cf4e69295eda2391665d54d9077d4d0a, with preserved dirty source.
-Earlier reviewed revision: d9305d6100e5288fa2fc255e088bfd8e22664b98.
-The review-input manifest confirms the five mirrored checkpoint files match that
-revision and records whole-file hashes for the actual code/evidence excerpts.
+Visitor task: determine whether public benchmark documents, task, grader and operating conditions fit the intended workflow. Reuse a matching public subset when it fits; additional internal evaluation needs a consequential mismatch.
 
-Fresh verification
-48 focused runner/persistence/local-evaluation tests passed with warnings as errors
-during original packet preparation; no revision-2 implementation is validated yet.
-Spec terms, plan shape, premises, claims and closure checks passed. The packet
-builder passes focused Ruff checks. Repository-wide baseline has 183 lint findings,
-19 files requiring formatting and one inherited diff whitespace finding; these
-are recorded, not falsely reported repaired. Source inventory records 182 retained
-pages and three line-item schemas. Current DOCX extraction matches 100 backup
-references and zero current references, without proving historical identity or
-qualifying the rendered PDFs. No reconstruction comparison executed.
+Evidence: corrected invoice runs reproduce all 200 pairs across fresh/relocated executions and offline grading. Native public runs reproduce all 100 pairs across fresh/relocated executions and parser-free offline grading. All 61 failed invoice task pairs were reviewed. Every public empty outcome remains in the native denominator.
 
-Integration boundary
-The retained "What LLM and agent benchmark scores actually tell you" article gives
-the general benchmark-interpretation context. This project's worked example gives
-the document-evaluation application. Editorial receives verified new findings and
-exact immutable artifacts after execution. This handoff is not ready numerical
-website copy or approval to restore an old results page. Paid calls, release,
-publication, scheduling, public-main merge and deployment remain unapproved.
+Limits: generated invoice templates, six source cells, three schemas and coding-agent visual qualification; no independent human adjudication or real-vendor accuracy estimate. Native public content/table dimensions are a purposive subset, not a full leaderboard replication. Extractor limitations affect invoice outcomes. No global business-coverage percentage or universal parser winner.
 
-Next actions
-No new user action is required. This owner proceeds with the reviewed registry and
-gated reference/task work. Spending, public release and website implementation
-remain separately owned and deferred.
+Source checks: 984 local tests pass, 18 skipped; core lint/format and mypy pass. All eight issue verification gates pass without waivers. The latest hosted CI run must pass before merge review.
+
+Ownership: PDF-Bench owns evidence. Editorial and website owners own synthesis/rendering. The checked benchmark-interpretation article is identified in editorial-context.json. No manuscript/CMS changes or publication performed.
+
+Next user decision after hosted checks pass: approve merging PR #9 into public main to close issues #1-#8. No paid calls, release, deployment or publication is included.

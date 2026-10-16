@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Full retained qualified invoice/public bundles and historical registry through the actual report generator and consumer",
+  "producer": "pdf_bench/reconstruction_report.py",
+  "test": "tests/test_reconstruction_report.py::test_incomplete_real_failure_review_cannot_silently_drop_a_hard_pair",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/reconstruction_report.py",
+      "old": "    if (\n        audit[\"completion_sha256\"]",
+      "new": "    if False and (\n        audit[\"completion_sha256\"]"
+    }
+  }
+}

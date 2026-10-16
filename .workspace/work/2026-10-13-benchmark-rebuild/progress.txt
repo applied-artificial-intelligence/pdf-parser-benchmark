@@ -7,7 +7,7 @@ only for a material stated mismatch. No business-wide coverage percentage.
 
 Milestone and ownership
 Eight GitHub issues, milestone 1, draft PR #9, codex/benchmark-rebuild.
-Owner: this PDF-Bench reconstruction conversation. Issues 1-7 are implemented;
+Owner: this PDF-Bench reconstruction conversation. Issues 1-8 are implemented;
 GitHub issues remain open until approved public-main merge. Existing main and
 source-first review branches are retained reconstruction baselines owned here.
 No temporary worktree. Inherited dirty/untracked work remains preserved.
@@ -44,11 +44,11 @@ The 100 faithful reference-derived Markdown controls pass only their stated form
 Mechanism controls separately cover actual corrupt, blank and enforced-timeout paths.
 
 Checks
-Latest full suite: 967 passed, 18 skipped. Owned lint/format pass.
+Latest full suite: 984 passed, 18 skipped. Owned lint/format pass.
 Issue 6: seven mutation-backed closure items covered, no waivers or deferrals.
 Issues 1-5: 41 closure items covered. Replay instruction check passes all 200 pairs.
 
-Current work and next milestone
+Completed public/report milestone and remaining approval
 Issue 7: three full executions on the predeclared, visually qualified 30 content
 and 20 table cases match all 100 pairs, raw bytes and native metrics. The third
 execution rebuilt both retained runtimes outside the checkout; parser-free,
@@ -65,10 +65,26 @@ preflights pass. Issue-7 coverage passes all eight items, with no waivers or def
 Primary public bundle: parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01.
 Checkpoint: parsebench-run-checkpoint.json. Previous provider-import integration
 failure remains diagnostic, without a quality score.
-Issue 8: final technical report, evidence tiers, design lessons and versioned
-website/editorial export remain. Existing editorial/website content is read-only.
+Issue 8 is implemented: generated report, appendix, 37 source-linked claims,
+source-cell table, full failure audit, actual selection-bias counterfactual,
+pinned ExtractBench contract assessment and a project-local integration handoff.
+The report defaults to public benchmark reuse when documents/task fit. It makes
+no coverage-deficit, business-wide percentage or universal parser-winner claim.
+The retained benchmark-interpretation article was read and hashed; no editorial
+or CMS content was changed. Source checks: 984 passed, 18 skipped, core lint/format
+and mypy pass in existing and freshly installed developer environments. All eight
+issue-8 producing-mutation witnesses and its coverage gate pass without waivers.
+Report pointer: report-evidence/latest.json. Exact handoff: integration-handoff.txt.
+Current publication state: source-ready for author/editorial review; unmerged.
+CI repair preserves original scored runtime/protocol snapshots. Later annotation-only
+source maintenance uses current development task revision 3; primary runs retain 2.
+Hosted CI exposed missing converter tools and tests depending on ignored local
+PDFs. Converter dependencies are now declared and discovery tests build their own
+real corpus. Focused loader suite: 23 passed, 10 skipped. A fresh full local run
+still passes 984 tests with 18 skips. Hosted revalidation is pending.
+
 No paid calls, package release, public-main merge, publication or deployment.
 
 Decisions needed
-None for remaining local implementation. Public-main merge requires approval
-only after all eight issues are verified and the draft PR is ready for review.
+After hosted checks pass, approve public-main merge of PR #9 to close issues 1-8.
+No other user decision is needed for this source milestone.
