@@ -1,6 +1,7 @@
 """Measure the complete pinned source population without using parser scores."""
 
 import argparse
+import csv
 import hashlib
 import json
 import re
@@ -76,6 +77,44 @@ def classify(text: str) -> dict:
     }
 
 
+def build_workload_index(coverage: dict, observations: list[dict]) -> dict:
+    sources = {r["source_path"]: r for r in coverage["inputs"]}
+    reviewed: dict[str, list[dict]] = {}
+    for row in observations:
+        name = row["source_path"]
+        if name not in sources or row["source_sha256"] != sources[name]["sha256"]:
+            raise ValueError("Visual classification does not match qualified source bytes")
+        reviewed.setdefault(name, []).append(row)
+    rows = []
+    for name, source in sorted(sources.items()):
+        rows.append(
+            {
+                "source_path": name,
+                "sha256": source["sha256"],
+                "source_format": source["source_format"],
+                "page_count": source["page_count"],
+                "groups": source["groups"],
+                "tags": source["tags"],
+                "text_characters": source["text_characters"],
+                "family_candidates": list(source["family_classification"]["candidates"]),
+                "candidate_evidence": source["family_classification"]["candidates"],
+                "visual_observations": reviewed.get(name, []),
+                "classification_status": "visually_observed"
+                if name in reviewed
+                else "automatic_candidates_or_unknown",
+            }
+        )
+    return {
+        "inputs": rows,
+        "input_paths": len(rows),
+        "visually_reviewed_inputs": len(reviewed),
+        "classification_limits": (
+            "Automatic keyword candidates are retrieval aids, not verified domain prevalence. "
+            "Visual forms do not certify annotation correctness or original-document identity."
+        ),
+    }
+
+
 def inspect_source(path: Path, asset: dict, groups: list[str], tags: list[str]) -> dict:
     import pymupdf
 
@@ -105,6 +144,7 @@ def inspect_source(path: Path, asset: dict, groups: list[str], tags: list[str]) 
         }
         return {
             "source_path": asset["path"],
+            "source_format": Path(asset["path"]).suffix.lower().lstrip("."),
             "sha256": hashlib.sha256(data).hexdigest(),
             "bytes": len(data),
             "groups": sorted(groups),
@@ -179,7 +219,11 @@ def acquire_population(snapshot: Path, inventory: Path, cache: Path, output: Pat
         "summary": {
             "input_paths": len(rows),
             "unique_sha256": len({r["sha256"] for r in rows}),
-            "physical_pages_over_paths": sum(r["page_count"] for r in rows),
+            "pdf_inputs": sum(r["source_format"] == "pdf" for r in rows),
+            "image_inputs": sum(r["source_format"] != "pdf" for r in rows),
+            "physical_pdf_pages": sum(r["page_count"] for r in rows if r["source_format"] == "pdf"),
+            "page_or_image_units": sum(r["page_count"] for r in rows),
+            "page_count_note": "Image files are page-like units, excluded from physical_pdf_pages.",
             "page_counts": dict(Counter(r["page_count"] for r in rows)),
             "no_text_layer_inputs": sum(r["text_characters"] == 0 for r in rows),
             "sparse_text_layer_inputs_below_100_characters": sum(
@@ -201,14 +245,72 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--unit", type=Path, required=True)
     parser.add_argument("--cache", type=Path, required=True)
+    parser.add_argument("--index-only", action="store_true")
     args = parser.parse_args()
-    result = acquire_population(
-        args.unit / "parsebench-snapshot.json",
-        args.unit / "parsebench-inventory.json",
-        args.cache,
-        args.unit / "parsebench-source-coverage.json",
+    result = (
+        json.loads((args.unit / "parsebench-source-coverage.json").read_text())
+        if args.index_only
+        else acquire_population(
+            args.unit / "parsebench-snapshot.json",
+            args.unit / "parsebench-inventory.json",
+            args.cache,
+            args.unit / "parsebench-source-coverage.json",
+        )
     )
+    observations = []
+    for name in (
+        "parsebench-inspection-observations.json",
+        "parsebench-comparison-qualified-selection.json",
+        "coverage-sparse-review-observations.json",
+    ):
+        value = json.loads((args.unit / name).read_text())
+        for row in value.get("observations", value.get("inputs", [])):
+            observations.append(
+                {
+                    "source_path": row["source_path"],
+                    "source_sha256": row.get("source_sha256", row.get("sha256")),
+                    "form": row.get("observed_document_form", row.get("page_form_observation")),
+                    "reviewed_pages": row["reviewed_pages"],
+                }
+            )
+    index = build_workload_index(result, observations)
+    write_json_atomic(args.unit / "parsebench-workload-index.json", index)
+    target = args.unit / "parsebench-workload-index.csv"
+    temporary = target.with_suffix(".csv.incomplete")
+    with temporary.open("w", newline="", encoding="utf-8") as stream:
+        writer = csv.writer(stream, lineterminator="\n")
+        writer.writerow(
+            [
+                "source",
+                "sha256",
+                "format",
+                "pages",
+                "dimensions",
+                "tags",
+                "text_characters",
+                "family_candidates_unverified",
+                "visual_form",
+                "classification_status",
+            ]
+        )
+        for row in index["inputs"]:
+            writer.writerow(
+                [
+                    row["source_path"],
+                    row["sha256"],
+                    row["source_format"],
+                    row["page_count"],
+                    ";".join(row["groups"]),
+                    ";".join(row["tags"]),
+                    row["text_characters"],
+                    ";".join(row["family_candidates"]),
+                    "; ".join(r["form"] for r in row["visual_observations"]),
+                    row["classification_status"],
+                ]
+            )
+    temporary.replace(target)
     print(json.dumps(result["summary"], indent=2))
+    print("Visually reviewed distinct inputs:", index["visually_reviewed_inputs"])
 
 
 if __name__ == "__main__":

@@ -1,79 +1,196 @@
-# ParseBench fit assessment
+# ParseBench coverage and the PDF-Bench decision
 
-Assessment date: October 15, 2026. No candidate parser was run or scored for this assessment.
+Assessment updated October 17, 2026. Source inspection is complete for mechanical
+properties of the full pinned input population. Visual review covers 221 distinct
+inputs. Local parser executions are in progress and are not results of this report.
 
-ParseBench contains substantial material relevant to business document parsing. For a team processing financial reports, insurance material, contracts or presentation pages, the appropriate starting point is to inspect and run its relevant cases. Our earlier project rationale cannot depend on those categories being absent. Whether a selected parser satisfies a particular business process still requires a task and acceptance rule that the public score actually measures.
+## Recommendation
 
-This assessment recommends reusing ParseBench's data and native evaluation for relevant parsing capabilities. It does not establish that a company needs a new corpus. The controlled invoice exercise demonstrates how to evaluate a specified extraction task; it is not evidence that ParseBench lacks transactional documents.
+Use ParseBench as the principal ground truth and evaluator for the original
+PDFSmith parsing comparison. It directly addresses the text, tables, charts,
+meaningful formatting and localization dimensions for which this project
+previously struggled to construct references. Building another general-purpose
+corpus of synthetic invoices is not justified by this assessment.
 
-## Evidence and acquisition
+Use OmniDocBench when formula recognition and its document/layout/language slices
+matter. Use ExtractBench when the decision concerns schema-guided information
+extraction, repeated records or long-document tasks. Additional internal examples
+need a demonstrated mismatch with the relevant public documents or acceptance
+criteria. None of this establishes that one public score captures every business
+workload, or that any benchmark is the uniquely best choice for all tasks.
 
-The code revision is `d423e529ae329317bcd33c650b367acfb60e6620`; the dataset revision is `2805a1d940f95a203e0ae4b88be9934f7765b3fc`. The [pinned dataset card](https://huggingface.co/datasets/llamaindex/ParseBench/blob/2805a1d940f95a203e0ae4b88be9934f7765b3fc/README.md) and [pinned evaluator repository](https://github.com/run-llama/ParseBench/tree/d423e529ae329317bcd33c650b367acfb60e6620) describe the public benchmark. Its April launch article is a dated account, not a substitute for inspecting the current pinned files.
+## What the complete inventory establishes
 
-`parsebench-snapshot.json` records every annotation-file SHA256 and all source-file metadata returned by the paginated dataset API. `parsebench-inventory.json` groups every annotation row by dimension and exact source path, retaining line ranges, rule types, tags and upstream inference identities. Both files are in this work unit. Reproduction uses the acquisition/inventory commands below; downloaded originals stay under ignored `data_exports/parsebench/objects/`.
+The dataset revision is `2805a1d940f95a203e0ae4b88be9934f7765b3fc`; the evaluator
+revision is `d423e529ae329317bcd33c650b367acfb60e6620`. Every annotation file and
+annotated input was acquired and checked against its pinned LFS or Git identity.
+The [full workload index](parsebench-workload-index.csv) is a filterable inventory
+of all inputs, source hashes, formats, dimensions, difficulty tags, text-layer
+properties, candidate families and visual observations. Its
+[structured version](parsebench-workload-index.json) retains the content snippets
+behind automatic classification candidates. Original sources remain outside Git.
 
-Independent enumeration of those bytes gives:
-
-| Evaluation group | Group/input cases | Annotation rows |
+| Capability group | Group/input cases | Annotation rows |
 |---|---:|---:|
-| Charts | 568 | 4,864 |
+| Text recovery and reading order | 506 | 141,322 |
 | Tables | 503 | 503 |
-| Content faithfulness | 506 | 141,322 |
-| Semantic formatting | 476 | 5,997 |
+| Charts | 568 | 4,864 |
+| Meaningful formatting | 476 | 5,997 |
 | Visual grounding/layout | 500 | 16,325 |
+| Total | 2,553 | 169,011 |
 
-These are 2,553 group/input cases over 2,078 distinct input paths and 2,060 source content identities. The text groups share 507 inputs. Some source bytes also repeat across group directories. The source tree contains one additional unannotated asset, `docs/text/text_sparse__anex.pdf`. A rule row, input path, physical page and original document are different units. The upstream card reports 1,211 original documents and 2,078 pages; this inventory does not independently establish original-document lineage or the page count of every input. Its 2,078 input-path count should not silently become a verified original-document count.
+There are 2,078 input paths and 2,060 distinct acquired SHA256 identities. The
+text groups share inputs, and some identical source bytes occur in different
+folders. Cases, rule rows, input files and independent original documents are
+different counting units.
 
-The content group has 170 inputs tagged simple, 119 OCR, 97 multicolumn, 47 multilingual, 33 miscellaneous, 14 dense, 13 handwriting and 13 sparse. Preserve upstream spelling `handwritting` in machine-readable records. The card's illustrative sparse count is 14; this pinned content annotation set contains 13. Some difficulty labels overlap. Tags describe source properties, not a sampled distribution of business workloads.
+The files comprise 2,036 PDFs and 42 images: 23 JPEGs and 19 PNGs. The images all
+belong to the grounding group. There are 2,038 physical PDF pages plus the 42
+images, or 2,080 page-like units. One PDF, `docs/text/text_ocr__012-25.pdf`, contains
+three pages; all other inputs contain one page or image. The three-page Spanish
+regulatory resolution was inspected on all pages, and its content annotations
+include material from its final page. It is not merely an unannotated appendix.
+The upstream headline count of 2,078 pages should therefore be distinguished from
+our independently measured physical pages and image units. The upstream count of
+1,211 original documents remains upstream-reported; original-document lineage was
+not independently reconstructed.
 
-## What was inspected
+Of the inputs, 141 have no extractable text layer and 168 contain fewer than 100
+extracted characters. Every one of those 168 sparse inputs was reviewed visually,
+including the two additional pages of the three-page input. Missing text can mean
+a scan, an image, a pictorial instruction page or a nearly blank page. It cannot
+by itself identify the document family or establish that OCR is needed.
 
-`parsebench-inspection-selection.json` declares selection before parsing: two SHA256(path)-ordered inputs per upstream text tag and hard table/layout stratum, plus named business-document candidates. Charts have no easy/hard tags, so chart inspection uses three explicit candidates. Filenames select candidates but do not classify them. The resulting sample is 43 inputs, each containing one physical PDF page. Several pages display a two-page spread or multiple slides.
+The [source measurement](parsebench-source-coverage.json),
+[annotation inventory](parsebench-inventory.json) and
+[sparse-input observations](coverage-sparse-review-observations.json) retain the
+individual evidence. `parsebench-source-coverage-v1.json` preserves the exact
+original coverage bytes bound to the first full-run plans; its older page total
+includes images and must not be described as a PDF-only total.
 
-Every rendered page was visually reviewed, with text layers as auxiliary evidence. `parsebench-inspection-artifacts.json` binds each source SHA256 to its page/render hashes. `parsebench-inspection-observations.json` records each visible document form and the limits of that observation. `parsebench-assessment.json` joins the evidence and leaves uninspected inputs unknown. The sample establishes presence and examples, not prevalence or exhaustive annotation correctness. No translation-quality claim follows from visually identifying multilingual layouts.
+## Documents and representativeness
 
-| Meaningful workload | Inspected source evidence | What the public evaluation can help select | Remaining fit question |
-|---|---|---|---|
-| Financial reports and filings | Apple repurchase/subsidiary tables; bank regulation discussion; corporate reconciliation tables; Aviva remuneration charts | Text, table structure and header/value associations, chart data and page layout | Do the selected cases match the team's report types, units, footnotes and required errors? Whole-report extraction must retain its actual context. |
-| Insurance and regulated documents | Auto-rating factors, medical-payment rules, provider-network dot matrix, Russian insurance guidance | Dense rules, lists, marked text, tables, localization and multilingual parsing properties | Parsing accuracy does not itself score a coverage decision, premium calculation or provider-network lookup with the team's acceptance rule. |
-| Agreements, government rules and forms | Draft asset-purchase agreement with deletions; settlement formula/table; scanned procurement clauses; signed/notarized page; completed handwritten declaration | Text recovery, meaningful formatting, table association, scanned/handwritten content | Can the required legal field or clause be recovered with its operative status and needed cross-references? These inspected excerpts do not establish full-contract task accuracy. |
-| Operational and transactional records | Construction change order; synthetic crew timesheet; job-description checkboxes | Field-like layouts, row/column structure and symbol preservation | Are actual supplier forms, record schemas, scan quality and missing-field costs represented? No claim that all invoices are absent follows from this sample. |
-| Presentations and technical material | Walmart and ConocoPhillips earnings slides; private-credit investment deck; six-slide handout; ICML formatting example | Tables/charts, content order and technical page layout | Does the task require slide-level boundaries, speaker notes or facts spread across a complete deck? These page examples establish presence, not a full-deck outcome. |
+Source review confirms financial statements, regulatory and insurance tables,
+contracts, signed legal documents, government correspondence, employment and
+administrative forms, corporate memoranda, earnings presentations, technical
+publications, newspapers and handwritten material. Scanned administrative and
+legal forms occur under filenames that do not reveal their contents. Blank notes,
+cover pages and a photographed classroom poster also occur. They test parsing
+properties but are not equally informative for every business decision.
 
-Three filename checks changed the classification: `text_simple__bill.pdf` contains a legislative summary, `text_simple__contract2.pdf` contains a financial-report excerpt, and `Automated-Invoice__p3.pdf` describes an invoice workflow. The file `synthetic_invoce_page1.pdf` is a crew timesheet. Conversely, operational forms and insurance content occur under generic filenames. Missing domain labels cannot prove their absence.
+The workload index separates three facts: a capability group, automatic
+content-based family candidates, and observed visual form. Keyword matches are
+retrieval aids with retained snippets, not certified domain labels. They overlap,
+and 1,041 inputs have no candidate under the declared English keyword rules.
+Those inputs are not classified as irrelevant or absent from business use.
+Visual observations cover 221 distinct inputs; the remaining forms are explicitly
+unreviewed. We do not turn missing metadata into a coverage claim.
 
-## What the metrics establish
+The table population is concentrated in insurance-related sources. In particular,
+193 of the 503 table input paths contain SERFF in their published names. That is
+a reproducible source-name count, supported by inspected insurance examples,
+not an independently verified estimate of all insurance documents in the corpus.
+Multiple pages also come from the same reports and filing bundles. Treating every
+page as an independent business-document draw would overstate diversity.
 
-The pinned loader groups rules by `(category, pdf path)` and shares text inference between content and formatting groups. A case can hold many rules. Chart IDs can repeat across different inputs, so a global rule-ID count is incorrect. The inspection tooling preserves group, source path and rule ID together.
+The published tags identify OCR, handwriting, multilingual, dense, multicolumn,
+simple and sparse text cases, and easy/hard tables and layouts. Tags overlap.
+They describe challenge coverage, not real production frequencies. No weighted
+population supports an assertion that ParseBench covers 80%, or any other share,
+of all business use cases. A team should select and weight relevant slices using
+its actual volumes and failure consequences.
 
-Upstream evaluation distinguishes textual content, meaningful formatting, tabular structure/records, chart data and grounding. These are useful parsing outcomes. A schema-specific business result must separately define such questions as which date is the due date, which party is the vendor, which amount includes tax, and whether a record remains attached to the correct header. Matching a task may mean reusing existing annotations and metrics; it does not automatically require creating another benchmark. The related [ExtractBench](https://github.com/run-llama/ExtractBench/tree/0e7647997211867060a645ac82deb9f7bc4a3b3f) should be assessed for schema-guided extraction before proposing new generic field/record infrastructure.
+## What the ground truth measures
 
-The case-oriented public loader operates on supplied input files. In the inspected sample, long reports/contracts are represented by excerpts, spreads or handouts, rather than their complete original files. That is useful for local parsing capabilities. It does not measure our hypothetical whole-document transaction-completion rate, inter-document reconciliation or the team's business acceptance thresholds. This is a boundary of the reported measurement, not proof that the public benchmark is deficient at its stated task.
+| Requirement | ParseBench reference and score | Interpretation and boundary |
+|---|---|---|
+| Recover text and its order | Word/sentence/digit content rules, unwanted/repeated content rules and reading-order constraints; native content-faithfulness score | Useful for omissions, hallucinations and order. A mean of 0.90 is not a claim that 90% of pages are entirely correct. |
+| Recover tables | Ground-truth HTML; GriTS and TableRecordMatch composite | Tests structure and header/value associations. It does not directly implement every workflow's all-records-correct acceptance rule. |
+| Recover charts | Annotated label/value data points, with declared numeric tolerances | Tests selected chart facts. It is not pixel-perfect figure reconstruction or a test of every possible claim in a diagram. |
+| Preserve meaningful formatting | Bold, strikeout, superscript/subscript, heading hierarchy and other formatting rules | Measures supported semantic distinctions. Some available rule metrics, including italic/underline/highlight, are excluded from the headline formatting score. LaTeX-related rules do not replace a dedicated formula-recognition benchmark. |
+| Preserve localization and attribution | Region, class, content and order annotations; native grounding evaluation | Tests where an extracted element came from. It does not measure recreation of an entire editable page or the correctness of every figure's meaning. |
 
-## Decision for this reconstruction
+The upstream dataset describes machine-assisted annotation followed by human
+verification. We verified reference availability and inspected examples, not all
+169,011 annotations against the original source. The pinned JSONL rows do not
+carry per-rule verification flags; their absence cannot independently confirm or
+refute the documented review process. Annotation errors remain possible, as in
+any benchmark, but this review has not established a systematic reference defect
+that warrants replacing ParseBench.
 
-Use a matched ParseBench subset for an explicit born-digital report/table parsing question, with exact inputs frozen before parser outputs and native upstream content/table evaluators. Preserve both simple and structurally demanding suitable inputs and state exclusions such as OCR capability. A two-local-parser exercise is not a result for all five dimensions or a substitute for the public leaderboard.
+An overall mean across five dimensions assigns weights to capabilities. A team
+that never extracts chart data should not inherit that weighting automatically.
+Conversely, a parser that returns readable text while losing table associations
+cannot be selected on text similarity alone. The five dimensions should remain
+visible beside any combined score.
 
-Keep the 100 controlled invoices as a separate worked task with independently qualified source truth. They let us demonstrate field/row association errors, fixed failure denominators and the effect of scoring choices. They do not estimate performance across real suppliers, and they do not justify creating an invoice benchmark merely because invoice filenames were not found here.
+## Where other public evaluation is useful
 
-For a business evaluation, first specify the documents and decisions involved, then inspect matching public cases and rules. Use them directly where suitable. Add permitted internal documents or task annotations only for a demonstrated mismatch, such as a different supplier/scan distribution or a required field/relationship the chosen public rules do not score. Record the mismatch and its effect on the selection decision. No defined weighted population supports an estimate that ParseBench covers 80%, or any other percentage, of business use cases.
+[OmniDocBench](https://github.com/opendatalab/OmniDocBench) documents page/block
+attributes, text, table, layout, reading-order and formula references, including
+LaTeX and formula-specific evaluation. Its documented document and language slices
+complement ParseBench's enterprise-oriented parsing tasks. Formula-heavy technical
+papers are a concrete reason to inspect that evaluation rather than generate new
+formula truth here. This is a contract assessment, not a new executed OmniDocBench
+comparison.
 
-The next scored protocol will freeze its public subset after this assessment. Parser scores are not yet available. A tie, poor local performance or inability to integrate the native metric remains a valid recorded outcome.
+[ExtractBench](https://github.com/run-llama/ExtractBench) documents 370 inputs and
+4,869 pages across short, medium and long documents, with schema-guided values,
+record alignment and evidence/grounding. Its documented tasks include complete
+long lists, finding requested facts in long documents and dense forms. The README
+reports 325 real and 45 synthetic sources across eight business domains. These
+figures are upstream-reported, not independently re-enumerated in this assessment.
+They make it inappropriate to claim that public benchmarks generally omit
+long-document extraction or business forms.
 
-## Licensing and limits
+The current primary-source READMEs were acquired at pinned revisions with hashes
+in [the contract source record](benchmark-contract-sources.json). This does not
+upgrade the older static ExtractBench implementation review into a current run.
+The old source-level missing/null discrepancy is tied to its old revision; it is
+not a claim about the present leaderboard.
 
-The pinned code license and dataset-card metadata declare Apache 2.0. The annotation schema has no per-source original-publication URL, document-family, language or license fields. This assessment records the dataset source link and content identity; it does not claim independent copyright clearance for every underlying publication. Original PDFs and full annotations are not redistributed on this branch. Reduced annotation test fixtures retain Apache licensing and attribution. No paid parser or judge call was made.
+## What requires internal work
 
-## Reproduce the inventory and inspection
+Additional evaluation is warranted when an important workload is demonstrably
+unrepresented, the reference does not score the required fact/relationship, or
+the operating contract changes the decision. Examples include a team's actual
+scan degradation and document mix, an all-fields-and-records acceptance threshold,
+or required evidence links and image assets in the delivered output. First check
+whether existing ParseBench/OmniDocBench/ExtractBench cases and annotations supply
+that need. A different acceptance threshold may need a different aggregate rather
+than a new corpus.
 
-The executable `reproduce_parsebench_assessment.sh` in this work unit acquires the pinned data, rebuilds the inventory, renders the same selected inputs and validates observations against their source hashes in a fresh output directory. Run it from the existing repository environment:
+The retained invoices remain a controlled example of reference qualification and
+scoring choices. They are not evidence that ParseBench lacks invoices, and their
+few layouts do not estimate performance on real suppliers. No new synthetic
+invoice generation is part of this recommendation.
 
-```bash
-bash /home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/reproduce_parsebench_assessment.sh
-```
+## Consequence for the PDFSmith comparison
 
-For a new investigation, use new manifest/output paths instead of overwriting a completed assessment. Acquisition validates the full annotation/source inventory before atomically replacing a manifest. Inventory generation validates retained byte hashes before replacing its output. The visual observations are a dated inspection record, not an automatic consequence of running the rendering script.
+The local registry contains 19 backend families: eleven local and eight requiring
+commercial services. Model aliases are configurations, not additional independent
+parser implementations. All eleven local integrations have now returned actual
+public-input output in readiness probes, after isolated dependency/model repairs.
+Full-population executions use explicit configurations and retain every planned
+input and failure. Daytime execution is stopped, with 7,922 completed attempts
+retained in the eleven primary runs. The approved 22:00-07:00 New York queue
+will resume within a shared resource budget after a controlled timing pilot;
+no full-population winner is asserted here.
+
+The current PDFSmith API returns Markdown without a grounding sidecar. Its
+published image-capable-backend set is also empty in the frozen source snapshot.
+The 42 grounding image inputs are therefore input-contract incompatibilities;
+the missing coordinates affect grounding even on PDF inputs. Native grounding
+failure/zero-padding must be labelled as unsupported output, not a finding that
+Docling, Marker or another underlying SDK cannot locate elements. An application
+requiring coordinates cannot choose through this Markdown-only comparison alone.
+
+The useful next result is a dimension-by-dimension comparison of the actual local
+configurations, with text/OCR challenge slices, table failures, chart recovery and
+representative source/output examples. Paid providers remain uncalled and require
+an exact configuration and approved spend ceiling before execution.
 
 ## Next actions
 
-No user decision is needed. Paid comparisons and public-main publication remain outside the approved scope.
+No user decision is needed for the local assessment and executions. Paid runs and
+public-main merge remain unapproved.
