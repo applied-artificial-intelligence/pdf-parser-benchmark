@@ -1,30 +1,54 @@
-PDF-Bench verified source milestone
+PDF-Bench practical evaluation guide - October 17, 2026
 
-Source implementation checkpoint: 998fa63194a74bebd561aaaee296ac73684f4478
 Branch: codex/benchmark-rebuild
-PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
+Draft PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
+Current scope: spec.md revision 5 and the guide-centred plan.md in this work unit.
 
-Report bundle: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b
-Report manifest SHA256: a0eedb0326e5af20cced1447fa8748ac290b8a2b6010522884e9d5ad54c7d36d
-Technical report: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/technical-report.md
-Claim export: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/claims.json
+Primary reader artifact: benchmark-design-guide.md
+Title: Choosing a PDF parser: when public benchmarks are enough
+Guide SHA256: 2276fe30f77dc595255bb8ea25b26deca03e6911a0f289add7abf1463a4ad47f
+Source/check record: guide-evidence.json
+Evidence record SHA256: dc84c83aa883ebfdda4f27ba4d21c68aae0b21afde2c9c6a8c3dc6b84928381e
+All paths above are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
 
-invoice completion: .workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json
-SHA256: f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0
-Frozen plan SHA256: 44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684
+Recommendation: consult existing published evidence before repeating parser runs.
+Check matching documents, required outputs and metric semantics. New internal
+truth needs a consequential uncertainty that current evidence cannot resolve.
+No replacement general-purpose corpus or business-wide coverage percentage is
+justified by this assessment.
 
-public completion: .workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/completion.json
-SHA256: cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6
-Frozen plan SHA256: d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba
+Useful evidence: complete inventory of 2078 ParseBench input paths and 2553
+capability cases, with coding-agent visual observations on 221 inputs; pinned
+ParseBench, ExtractBench and OmniDocBench contracts; retained examples showing
+that acceptance criteria and performance-based selection change conclusions;
+source-backed PDFSmith output-contract and model-lifecycle observations.
 
-Visitor task: determine whether public benchmark documents, task, grader and operating conditions fit the intended workflow. Reuse a matching public subset when it fits; additional internal evaluation needs a consequential mismatch.
+Checks performed for this writing task: inventory recount and CSV/JSON identity
+agreement; arithmetic independently summed from 200 saved grades; all 1209 files
+bound by the invoice completion manifest hash-checked; four frozen PDFSmith
+backend files matched against the pinned Git revision; 32 local Markdown links
+and anchors checked across the guide and entry points. These were file reads,
+not fresh parsing, reference adjudication, native scoring or model profiling.
 
-Evidence: corrected invoice runs reproduce all 200 pairs across fresh/relocated executions and offline grading. Native public runs reproduce all 100 pairs across fresh/relocated executions and parser-free offline grading. All 61 failed invoice task pairs were reviewed. Every public empty outcome remains in the native denominator.
+Limits: invoice results measure two configured pipelines on generated templates,
+not arbitrary real vendors. Public corpus inspection is not an independent audit
+of every annotation. No warm speedup, reload fraction, GPU utilization, serving
+cost or new full/sample parser ranking was measured. Historical test receipts
+remain prior evidence; no new engineering coverage gate is claimed.
 
-Limits: generated invoice templates, six source cells, three schemas and coding-agent visual qualification; no independent human adjudication or real-vendor accuracy estimate. Native public content/table dimensions are a purposive subset, not a full leaderboard replication. Extractor limitations affect invoice outcomes. No global business-coverage percentage or universal parser winner.
+Preserved prior report: report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b
+Its generated report/claims remain unchanged. The guide is the current authored
+explanation; earlier experiments retain their original scope and evidence tiers.
 
-Source checks: 984 local tests pass, 18 skipped; core lint/format and mypy pass. All eight issue verification gates pass without waivers. Read the latest PR checks for hosted status; all checks must pass before merge.
+All benchmark and GPU execution is paused. The overnight automation is PAUSED,
+the service was inactive and no exact benchmark runner module was active at
+inspection. Prepared full/sample plans and lifecycle repairs remain deferred.
 
-Ownership: PDF-Bench owns evidence. Editorial and website owners own synthesis/rendering. The checked benchmark-interpretation article is identified in editorial-context.json. No manuscript/CMS changes or publication performed.
+Editorial and website owners may use this guide as source material. No sibling
+repository, CMS, editorial package, publication or deployment was changed. Issues
+#10-#12 receive delivery evidence but no closing footer or formal gate claim.
 
-Next user decision after hosted checks pass: approve merging PR #9 into public main to close issues #1-#8. No paid calls, release, deployment or publication is included.
+Next actions
+No user action is required to complete this writing delivery. Public-main merge,
+publication and any future experiment remain separate decisions; none is requested
+by this handoff.

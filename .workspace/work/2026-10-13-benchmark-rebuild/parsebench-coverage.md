@@ -2,15 +2,18 @@
 
 Assessment updated October 17, 2026. Source inspection is complete for mechanical
 properties of the full pinned input population. Visual review covers 221 distinct
-inputs. Local parser executions are in progress and are not results of this report.
+inputs. All benchmark and GPU execution is paused. Retained parser outputs are
+not a completed full-population comparison.
 
 ## Recommendation
 
-Use ParseBench as the principal ground truth and evaluator for the original
-PDFSmith parsing comparison. It directly addresses the text, tables, charts,
+Consult ParseBench's published results before commissioning another parser
+comparison. It directly addresses the text, tables, charts,
 meaningful formatting and localization dimensions for which this project
 previously struggled to construct references. Building another general-purpose
-corpus of synthetic invoices is not justified by this assessment.
+corpus of synthetic invoices is not justified by this assessment. The current
+deliverable is a [practical evaluation guide](benchmark-design-guide.md), using
+this inventory and retained experiments to explain benchmark fit and design.
 
 Use OmniDocBench when formula recognition and its document/layout/language slices
 matter. Use ExtractBench when the decision concerns schema-guided information
@@ -172,10 +175,10 @@ commercial services. Model aliases are configurations, not additional independen
 parser implementations. All eleven local integrations have now returned actual
 public-input output in readiness probes, after isolated dependency/model repairs.
 Full-population executions use explicit configurations and retain every planned
-input and failure. Daytime execution is stopped, with 7,922 completed attempts
-retained in the eleven primary runs. The approved 22:00-07:00 New York queue
-will resume within a shared resource budget after a controlled timing pilot;
-no full-population winner is asserted here.
+input and failure. There are 7,922 completed attempts retained in the eleven
+primary runs. All execution is now paused, including the overnight queue.
+The full-population comparison and prepared 208-input screen are deferred;
+neither is a prerequisite for the guide. No full-population winner is asserted.
 
 The current PDFSmith API returns Markdown without a grounding sidecar. Its
 published image-capable-backend set is also empty in the frozen source snapshot.
@@ -185,12 +188,14 @@ failure/zero-padding must be labelled as unsupported output, not a finding that
 Docling, Marker or another underlying SDK cannot locate elements. An application
 requiring coordinates cannot choose through this Markdown-only comparison alone.
 
-The useful next result is a dimension-by-dimension comparison of the actual local
-configurations, with text/OCR challenge slices, table failures, chart recovery and
-representative source/output examples. Paid providers remain uncalled and require
-an exact configuration and approved spend ceiling before execution.
+The pinned public leaderboard already reports configurations overlapping several
+local families. Repeating those runs needs an unanswered decision that published
+evidence cannot resolve, such as a consequential configuration or output-contract
+difference. A new experiment requires a specified comparison and fresh resource
+authorization. Paid providers remain uncalled and require an exact configuration
+and approved spend ceiling before execution.
 
 ## Next actions
 
-No user decision is needed for the local assessment and executions. Paid runs and
-public-main merge remain unapproved.
+No user action is required for this assessment or the guide. All benchmark and GPU
+work remains paused; paid runs and public-main merge remain unapproved.

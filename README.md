@@ -1,55 +1,59 @@
 # PDF-Bench
 
-Evaluate whether a document benchmark fits the parser decision you need to make,
-then compare configured pipelines on the relevant documents and task.
+How do you know whether a public parser benchmark supports your own document
+workflow, and when is an internal evaluation worth building?
 
-PDF-Bench contains a reconstructed evaluation example, a pinned ParseBench subset
-comparison using upstream evaluators, and an inspectable registry of earlier work.
-Its contribution is practical benchmark construction and interpretation. It does
-not establish a universal parser leaderboard or a business-coverage percentage.
+Start with [Choosing a PDF parser: when public benchmarks are enough](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
+The guide assesses what ParseBench, ExtractBench and OmniDocBench can tell you,
+then uses retained PDF-Bench experiments to explain reference qualification,
+selection bias, conflicting metrics and configuration-dependent results.
 
-Start with [project orientation](PROJECT_ORIENTATION.md) and the
-[current source status](docs/BENCHMARK_STATUS_REPORT.md). The active work unit is
-[benchmark reconstruction](.workspace/work/2026-10-13-benchmark-rebuild/plan.md).
-Its `report-evidence/latest.json` identifies the generated technical report,
-appendix, source-linked claims, replay instructions and editorial handoff.
+The [ParseBench coverage assessment](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md)
+and [filterable workload inventory](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-workload-index.csv)
+account for all 2,078 source input paths. Visual observations cover 221 inputs;
+this is not independent verification of every annotation or a measurement of
+business-wide representativeness.
 
-## Reproduce the evidence
+Published results should be reused when their documents, outputs and metrics
+support the decision. We have not established a consequential gap that justifies
+another general-purpose corpus. The retained experiments illustrate evaluation
+design; they do not establish a new universal parser ranking.
 
-The work unit's `reproduce_invoice_comparison.sh` and
-`reproduce_parsebench_comparison.sh` install retained packages in fresh directories,
-execute frozen populations and verify offline grading. Public inputs are retrieved
-from pinned source URLs and byte-verified when absent. No API keys or metered
-provider calls are needed. See `replay-protocol.txt` in the same work unit.
+## Current state
 
-The synthetic invoice result measures a parser plus a fixed extractor on qualified
-source templates. The public comparison measures native content and table scores
-on a declared subset. Those scores have different meanings. Earlier failures remain
-labelled diagnostics, and historical families remain available in evidence tiers.
+The guide and supporting work are on draft [PR #9](https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9).
+The [plan](.workspace/work/2026-10-13-benchmark-rebuild/plan.md) now centres on
+public evidence, retained design lessons and the guide. **All benchmark and GPU
+execution is paused**, including the overnight queue. Full and sampled parser
+runs are deferred. No new execution is required to read or check the guide.
 
-## Develop
+See [project orientation](PROJECT_ORIENTATION.md) for authoritative artifacts and
+[source status](docs/BENCHMARK_STATUS_REPORT.md) for verification boundaries.
+Public-main merge, publication, deployment, release and paid runs have not been
+authorized.
 
-Run `scripts/prepare_reconstruction_environment.sh` with Bash to install the tested
-local dependencies and retained PDFsmith backend wheel. It accepts an optional
-virtual-environment destination; otherwise it uses this checkout's `.venv`.
-Run tests with `uv run --no-sync pytest` after setup. CI also checks formatting,
-lint and mypy. The benchmark runtimes remain separately frozen and are not changed
-by developer setup or later dependency upgrades.
-Full builder tests also require Pandoc, LibreOffice Writer and a LaTeX PDF engine;
-the frozen benchmark replays use retained PDFs and do not need those converters.
+## Retained implementation and evidence
 
-`scripts/build_internal_benchmark_story.py --qualified-report` generates a new
-verified report bundle. Without that flag it inventories current retained history.
-The older configured runner is available through `pdfbench run`; current execution
-rejects unsafe checkpoint resumption and disables adapter cache reuse.
+The repository preserves an input/run registry, frozen comparison protocols,
+saved outputs and prior reproducibility evidence. The work unit's
+`report-evidence/latest.json` identifies the earlier generated technical report
+and source-linked claim export. Those immutable reports precede the guide.
 
-## Historical work and release status
+The invoice example measures a parser plus a fixed extractor on generated
+templates. The earlier native ParseBench comparison covers a declared content
+and table subset. Other business, legal/HR, SEC, presentation, academic and
+commercial pilots remain in their evidence tiers. The
+[historical README](docs/archive/readme-2025-11-retained.md) preserves the old
+presentation; its recommendations and prices are not current results.
 
-The registry retains business, legal/HR, SEC, invoice, presentation/deck, academic,
-commercial and frontier-parser work, including incomplete or inconsistent runs.
-The former README is preserved in
-[the historical archive](docs/archive/readme-2025-11-retained.md). Its model
-recommendations, prices and winner claims are not current evaluation results.
+## Developer reference
 
-Reconstruction work is on a draft PR. Public-main merge, publication, deployment,
-package release and paid runs require their respective authorization.
+`scripts/prepare_reconstruction_environment.sh` records developer setup, and
+the work unit's `replay-protocol.txt` describes earlier frozen replays. These
+operations install dependencies or execute comparisons and are deferred during
+the current pause. Do not run them as part of reviewing this guide.
+
+When development is separately resumed, tests use `uv run --no-sync pytest`;
+CI checks formatting, lint and mypy. Builder tests also require Pandoc,
+LibreOffice Writer and a LaTeX PDF engine. The older `pdfbench run` interface
+does not restore missing historical provenance.

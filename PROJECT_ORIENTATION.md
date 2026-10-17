@@ -1,63 +1,61 @@
 # PDF-Bench orientation
 
-Current source work is the benchmark reconstruction in
-`.workspace/work/2026-10-13-benchmark-rebuild/`. Its `spec.md` and `plan.md` record
-the approved scope; `progress.txt` records verified progress and the next step.
-Draft PR #9 contains the milestone implementation. GitHub issues remain open
-until an approved merge to public main.
+The current deliverable is [Choosing a PDF parser: when public benchmarks are enough](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
+It explains when to reuse public evidence, how to judge its fit, and what an
+internal evaluation must establish. It uses retained examples rather than a new
+general leaderboard. All benchmark and GPU execution remains paused, including
+the overnight heartbeat. Prepared full and sampled comparisons are deferred.
+
+The work unit is `.workspace/work/2026-10-13-benchmark-rebuild/`. Revision 5 of
+its `spec.md` and current `plan.md` supersede the earlier full-roster execution
+scope. `progress.txt` records the delivery/checkpoint status. Draft
+[PR #9](https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9)
+contains the work. Issues are not closed merely because a draft was delivered.
 
 ## Purpose
 
-Assess whether public benchmark documents, tasks and operating conditions fit the
-team's intended parser decision. Reuse ParseBench, ExtractBench or their relevant
-subsets when they fit. Additional internal evaluation needs a consequential
-mismatch. Do not invent marginal omissions or a business-wide coverage percentage.
+Assess whether public benchmark documents, required outputs and scoring rules
+support the intended parser decision. Consult ParseBench, ExtractBench and
+OmniDocBench before proposing new experiments. Additional evaluation needs an
+important uncertainty that existing evidence cannot resolve. Do not invent
+marginal omissions or a percentage of all business use cases.
 
-Retain the project's history as strong within a declared task, directional,
-prototype, historical and rerun evidence. Teach benchmark construction through
-actual selection, reference, cache, configuration and grading mistakes.
+Retain the project's history in its evidence tiers. Explain reference mismatch,
+parser-dependent selection, conflicting metrics, output-contract limitations
+and execution lifecycle using actual artifacts. A controlled invoice example
+does not estimate arbitrary real-vendor performance.
 
 ## Authoritative artifacts
 
-- `report-evidence/latest.json` in the work unit identifies the generated technical
-  report, appendix, claim export, replay protocol and integration handoff.
-- `invoice-run-checkpoint.json` identifies corrected primary invoice runs, their
-  frozen task/runtime and the failure audit. Earlier v2 runs are integration
-  diagnostics, not primary quality evidence.
-- `parsebench-run-checkpoint.json` identifies the executed public subset, pinned
-  native evaluation and fresh/offline reproduction evidence.
-- `retained-evidence/latest.json` identifies the immutable historical registry.
-- `parsebench-assessment.json` and the qualified selection distinguish broad fit
-  assessment from the dimensions actually executed.
+Paths below are relative to the work unit:
 
-The source-first invoice example measures a configured parser plus a fixed
-extractor on generated templates. Public parsing dimensions and invoice task
-scores have different meanings. No universal parser or paid-model winner follows.
+- `benchmark-design-guide.md` is the current authored guide;
+  `guide-evidence.json` records its source identities, checks and claim limits.
+- `parsebench-coverage.md`, `parsebench-workload-index.csv` and
+  `parsebench-source-coverage.json` cover all 2,078 input paths. Visual observations
+  cover 221 inputs, not an independent human audit of every annotation.
+- `invoice-reference-checkpoint.json`, `invoice-failure-audit.json` and
+  `invoice-selection-bias-demonstration.json` support the worked design examples.
+- `invoice-run-checkpoint.json` and `parsebench-run-checkpoint.json` identify
+  earlier executed comparisons and their historical replay evidence.
+- `report-evidence/latest.json` identifies the earlier immutable generated report,
+  appendix and claim export. `retained-evidence/latest.json` identifies the
+  historical registry. Neither is regenerated for this writing task.
+- `overnight-policy.json` disables execution; `execution-stop-20261017.json`
+  records the later cleanup of four owned Marker helper processes.
 
-## Resume and verify
+## Verification and ownership
 
-Read the current work-unit progress and checkpoints before making new runs.
-`reproduce_invoice_comparison.sh` and `reproduce_parsebench_comparison.sh` rebuild
-retained runtimes and execute the frozen protocols. New provider/library changes
-require new execution identities. Do not silently upgrade a frozen comparison.
+This writing task permits light source, JSON, hash, arithmetic and link checks.
+It does not authorize parser or native-evaluator execution, model imports,
+profiling, dependency installation or heavyweight tests. Historical replay
+instructions remain available in `replay-protocol.txt`; they are not current
+instructions to run. Do not silently upgrade a frozen comparison.
 
-`scripts/build_internal_benchmark_story.py --qualified-report` generates a new
-source-verified report/export bundle. Without that flag it builds a new registry
-from current retained artifacts. These are different operations.
+This conversation owns the project-local guide, evidence and plan. No sibling
+PDFSmith implementation, editorial package, website or CMS changes are included.
+Public-main merge, publication, release, deployment and new spending remain
+separate decisions. No user decision is required to complete the writing.
 
-The developer setup script is `scripts/prepare_reconstruction_environment.sh`.
-Tests use `uv run --no-sync pytest`. Core lint/format and mypy checks match CI.
-The older mixed-corpus runner remains available through `pdfbench run`; it does
-not restore historical provenance or accept unsafe checkpoint resumption.
-
-## Ownership and boundaries
-
-This conversation owns source implementation, evaluation and evidence. Editorial
-and website owners decide synthesis and rendering. The checked article context
-is in `editorial-context.json` in the work unit. No editorial/CMS changes, paid
-calls, package release, publication or deployment belong to this milestone.
-Stefan must approve public-main merge and any future spending cap.
-
-The prior orientation is preserved byte-for-byte as `orientation-before-rebuild.txt`
-in the work unit. Its older tier labels are historical, not current findings.
-Inherited dirty/untracked work remains preserved unless explicitly adopted.
+The prior orientation is retained as `orientation-before-rebuild.txt` in the work
+unit. Preserve unrelated dirty/untracked work unless explicitly adopted.

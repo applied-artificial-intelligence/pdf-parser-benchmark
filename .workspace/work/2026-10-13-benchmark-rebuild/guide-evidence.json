@@ -1,0 +1,288 @@
+{
+  "title": "Evidence for Choosing a PDF parser: when public benchmarks are enough",
+  "checked_at_utc": "2026-10-17T22:30:15.677224+00:00",
+  "guide": {
+    "path": "benchmark-design-guide.md",
+    "sha256": "2276fe30f77dc595255bb8ea25b26deca03e6911a0f289add7abf1463a4ad47f",
+    "type": "authored explanation"
+  },
+  "scope": "Light reads, hashes and arithmetic over existing records; no parser, grader, model import, GPU work, corpus acquisition or broad tests.",
+  "public_sources": {
+    "parsebench": {
+      "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+      "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+      "leaderboard_url": "https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/leaderboard.csv",
+      "leaderboard_sha256": "a53994f42c51a9626b72b04dadfaf097919dd350b015639a6b7d63fd338cfd1b",
+      "configuration_rows": 147,
+      "dataset_url": "https://huggingface.co/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+      "evaluator_source_url": "https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/src/parse_bench/evaluation/evaluators/parse.py",
+      "evaluator_source_sha256": "d124735bb46613155676058e4c1adf5bc5072bc559bfc7f49c61313ce662ea64"
+    },
+    "other_benchmark_contracts": [
+      {
+        "benchmark": "omnidocbench",
+        "revision": "f133a71e9e91c3621c7ce8994200a7b394a06eb3",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/opendatalab/OmniDocBench/f133a71e9e91c3621c7ce8994200a7b394a06eb3/README.md",
+        "sha256": "a799f3dabee0d8e2be9f990fc325c3fefadb8d7f8d0cf56148406547d495a3ad",
+        "retained_path": "benchmark-contract-sources/omnidocbench-README.md"
+      },
+      {
+        "benchmark": "extractbench",
+        "revision": "56b8fdd91b2cf3648caf75c717c68441ecf4d43f",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
+        "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+        "retained_path": "benchmark-contract-sources/extractbench-README.md"
+      }
+    ],
+    "pdfsmith_backends": {
+      "_process.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "6cf06fa391861bb2f32b72323286489ebc8f469cfdd3c8dc71dd1fb4873c788a",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/_process.py"
+      },
+      "docling_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "ec5b6174dd0c327096095e9a025eb3fa2e8db7cb1f58f17f0c96683f1cfab259",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/docling_backend.py"
+      },
+      "marker_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "30563697624a005d3913c7036f88810d22a09a8b211d99ce214ebae5b7b3f374",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/marker_backend.py"
+      },
+      "unstructured_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "c4544a3e439a18918f7052c378ffa6c0d53b9618e69afd6ca0fef4557570d7ab",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/unstructured_backend.py"
+      }
+    }
+  },
+  "retained_sources": [
+    {
+      "path": "parsebench-inventory.json",
+      "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb"
+    },
+    {
+      "path": "parsebench-source-coverage.json",
+      "sha256": "07e7d05b1f6eb808516b260f2d22e3d12439f612d0176a41c6885f090a1a934b"
+    },
+    {
+      "path": "parsebench-workload-index.json",
+      "sha256": "bb71376ad1ae5392ac3b9658a68a4f768a924bb06fa510e9e63417aae833b54f"
+    },
+    {
+      "path": "parsebench-workload-index.csv",
+      "sha256": "1b745f05f5387931a6a8fa927fed0a89b031c4a24f1939fd30d99ebaa985a288"
+    },
+    {
+      "path": "parsebench-coverage.md",
+      "sha256": "7946cb761cf939413978b38db4c8296dc2d1b950f498b4914ba6a0f5dc712f54"
+    },
+    {
+      "path": "benchmark-contract-sources.json",
+      "sha256": "c28156d63b656e2c34d533451d954b0848050e534ab65b2fd6f5ab6e2d4e1cba"
+    },
+    {
+      "path": "invoice-reference-checkpoint.json",
+      "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104"
+    },
+    {
+      "path": "invoice-failure-audit.json",
+      "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38"
+    },
+    {
+      "path": "invoice-selection-bias-demonstration.json",
+      "sha256": "df3d5fc4bf810f1327bfad90e30ab443bb500c878f95da224dbb4e9ce37db137"
+    },
+    {
+      "path": "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json",
+      "sha256": "f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0"
+    },
+    {
+      "path": "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+      "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867"
+    },
+    {
+      "path": "retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+      "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b"
+    },
+    {
+      "path": "execution-stop-20261017.json",
+      "sha256": "e7131a6397abdcf03d6028f4336ff26858c6d56deeb8f8257fa5f21f9202c099"
+    },
+    {
+      "path": "overnight-policy.json",
+      "sha256": "7cfd7ccfc5b7aacef0e43893a41614472a1ec3ccf687518d423918f6dd1edef7"
+    }
+  ],
+  "assertion_support": [
+    {
+      "guide_section": "Judge the documents as well as the benchmark description",
+      "kind": "retained mechanical counts and prior coding-agent visual observations",
+      "sources": [
+        "parsebench-inventory.json#/cases",
+        "parsebench-source-coverage.json#/inputs",
+        "parsebench-workload-index.json#/inputs"
+      ],
+      "independently_recounted": {
+        "input_paths": 2078,
+        "distinct_sha256": 2060,
+        "formats": {
+          "pdf": 2036,
+          "jpg": 23,
+          "png": 19
+        },
+        "group_cases": 2553,
+        "annotation_rows": 169011,
+        "physical_pdf_pages": 2038,
+        "visually_reviewed_inputs": 221,
+        "sparse_inputs": 168,
+        "no_text_inputs": 141,
+        "table_SERFF_named_paths": 193
+      },
+      "limits": "Text/family metadata is not certified domain classification. Visual coverage is not independent human reference adjudication. No business-wide percentage or systematic annotation flaw established."
+    },
+    {
+      "guide_section": "Start with the public evidence that answers your task",
+      "kind": "upstream documented contracts and published configuration rows",
+      "sources": [
+        "public_sources/parsebench",
+        "public_sources/other_benchmark_contracts"
+      ],
+      "limits": "No new native comparison, no equivalence between a family name and a configured system, no prices or contemporary quality winner asserted."
+    },
+    {
+      "guide_section": "Translate metric scores into acceptance decisions",
+      "kind": "pinned evaluator contract interpretation",
+      "sources": [
+        "parsebench-coverage.md#what-the-ground-truth-measures",
+        "public_sources/parsebench/evaluator_source_url"
+      ],
+      "limits": "Mean rule/case scores are not perfect-document acceptance rates. Chart fact scores are not general diagram semantics or pixel reconstruction."
+    },
+    {
+      "guide_section": "A retained example: changing success changes the preferred pipeline",
+      "kind": "arithmetic over saved per-attempt grade records",
+      "sources": [
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json#/files",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pypdf/task",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pdfplumber/task",
+        "invoice-reference-checkpoint.json",
+        "invoice-failure-audit.json"
+      ],
+      "limits": "Generated documents from six source template/complexity cells, fixed extractor, coding-agent qualification; no real-vendor generalization or isolated parser merit."
+    },
+    {
+      "guide_section": "References and selection can manufacture a winner",
+      "kind": "retained historical uncertainty and a deliberately biased subset of saved grades",
+      "sources": [
+        "invoice-selection-bias-demonstration.json",
+        "retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json"
+      ],
+      "limits": "The invoice selection example does not reconstruct historical SEC counterfactuals or establish that every old score is wrong."
+    },
+    {
+      "guide_section": "The interface and execution path are part of the evidence",
+      "kind": "source inspection and retained stop receipt",
+      "sources": [
+        "../../../pdf_bench/systems/pdfsmith_adapter.py",
+        "../../../pdf_bench/execution.py",
+        "public_sources/pdfsmith_backends",
+        "execution-stop-20261017.json"
+      ],
+      "limits": "Output contract and cold-call lifecycle are source observations; no measured warm speedup, reload fraction, GPU utilization or serving cost. Four orphan helper terminations do not establish the cause of all machine load."
+    },
+    {
+      "guide_section": "What an internal evaluation needs to add",
+      "kind": "recommendation",
+      "sources": [
+        "benchmark-design-guide.md"
+      ],
+      "limits": "Candidate workload mismatches require inspection; they are not new findings that public benchmarks omit those workloads."
+    }
+  ],
+  "saved_grade_arithmetic": {
+    "formula": "record_micro_f1 = 2 * sum(records_matched) / (sum(records_expected) + sum(records_predicted))",
+    "selection": "IDs whose saved pypdf grade has document_success true",
+    "grade_files_read": 200,
+    "completion_bound_files_sha256_checked": 1209,
+    "native_regrading_performed": false,
+    "results": {
+      "full_population": {
+        "pypdf": {
+          "fields_correct": 500,
+          "fields_expected": 500,
+          "records_matched": 668,
+          "records_expected": 696,
+          "records_predicted": 698,
+          "document_success": 84,
+          "documents_expected": 100,
+          "record_micro_f1": 0.9583931133428981
+        },
+        "pdfplumber": {
+          "fields_correct": 468,
+          "fields_expected": 500,
+          "records_matched": 677,
+          "records_expected": 696,
+          "records_predicted": 691,
+          "document_success": 55,
+          "documents_expected": 100,
+          "record_micro_f1": 0.9762076423936553
+        }
+      },
+      "performance_selected_population": {
+        "pypdf": {
+          "fields_correct": 420,
+          "fields_expected": 420,
+          "records_matched": 580,
+          "records_expected": 580,
+          "records_predicted": 580,
+          "document_success": 84,
+          "documents_expected": 84,
+          "record_micro_f1": 1.0
+        },
+        "pdfplumber": {
+          "fields_correct": 388,
+          "fields_expected": 420,
+          "records_matched": 575,
+          "records_expected": 580,
+          "records_predicted": 575,
+          "document_success": 48,
+          "documents_expected": 84,
+          "record_micro_f1": 0.9956709956709957
+        }
+      }
+    }
+  },
+  "local_source_code": {
+    "pdf_bench/systems/pdfsmith_adapter.py": "1342dee8baa0745820aafe258d52ddfdfb80dd982561e3bbda2db03c80abd6f6",
+    "pdf_bench/execution.py": "637ec09785bb88bfd2d39013d0a7d25d56dd92e41d40d6ee11db2976ce144a1f"
+  },
+  "pause_verification": {
+    "policy_execution_paused": true,
+    "heartbeat_status": "PAUSED",
+    "service_state_observed": "inactive",
+    "matching_exact_module_process_ids": [],
+    "prior_orphan_helper_pids_absent": true,
+    "new_benchmark_or_GPU_runs": 0
+  },
+  "delivery_limits": [
+    "This is a guide and supporting inventory, not a completed full/sample leaderboard.",
+    "Prior replay and engineering test receipts were not rerun for this writing task.",
+    "No new issue coverage gate, merge, publication, release, deployment or paid execution is claimed."
+  ],
+  "document_validation": {
+    "local_markdown_links_and_anchors_checked": 32,
+    "checked_files": [
+      ".workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md",
+      ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md",
+      "README.md",
+      "PROJECT_ORIENTATION.md",
+      "docs/BENCHMARK_STATUS_REPORT.md"
+    ],
+    "external_links": "Pinned primary-source links inspected during source review; not a new full remote availability sweep.",
+    "no_em_dashes": true
+  }
+}
