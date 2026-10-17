@@ -306,7 +306,7 @@
     },
     "worker_sha256": "ba537f8a3c9751f892c8eef596acbb5551b9e95c32c0700bb9b3853a461ddd0e"
   },
-  "harness_sha256": "178e899d2bf43db29cc923251fea01d226e6e42516e3d037537cd60b5b14a879",
+  "harness_sha256": "291dd864f873a9004c63d0b267aee3f02d008e693e97d9bd2b8bc30302b24028",
   "metrics": {
     "text_content": "content_faithfulness",
     "text_formatting": "semantic_formatting",
@@ -328,5 +328,6 @@
   "layout_policy": "Run upstream parse-to-layout cross-evaluation; native unsupported layout output failures receive zero under upstream failure policy, separately labelled unsupported capability.",
   "normalization": "off",
   "population": "All 2553 group/input cases over 2078 input paths; text inference shared across its two groups.",
-  "freeze_note": "Scope and native metric definitions predeclared; concrete all-dimension harness frozen after parsing started and before aggregate scoring."
+  "freeze_note": "Scope and native metric definitions predeclared; concrete all-dimension harness frozen after parsing started and before aggregate scoring.",
+  "resource_policy": "Native grading inherits the benchmark CPU allocation and scheduling priority recorded in resource-adjustment.json; metric definitions unchanged."
 }

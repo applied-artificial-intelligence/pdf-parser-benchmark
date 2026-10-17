@@ -27,8 +27,13 @@ def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
-def grade(unit: Path, run: Path) -> dict:
+def grade(unit: Path, run: Path, stop_at: datetime | None = None) -> dict | None:
     os.environ["LLAMACLOUD_BENCH_LLM_NORMALIZATION"] = "off"
+    resource_path = unit / "resource-adjustment.json"
+    if resource_path.exists() and hasattr(os, "sched_setaffinity"):
+        resource = json.loads(resource_path.read_text())
+        os.sched_setaffinity(0, resource["logical_cpus"])
+        os.nice(max(0, resource["benchmark_nice"] - os.getpriority(os.PRIO_PROCESS, 0)))
 
     def restricted(event: str, args: tuple) -> None:
         if event.startswith("socket.") or event in {"subprocess.Popen", "os.system", "os.fork"}:
@@ -90,6 +95,12 @@ def grade(unit: Path, run: Path) -> dict:
     sums: dict[str, float] = dict.fromkeys(METRICS, 0.0)
     counts: Counter[str] = Counter()
     for case in cases:
+        if stop_at is not None and (stop_at - datetime.now(timezone.utc)).total_seconds() < 60:
+            print(
+                "Native grading stopped at window cutoff; no partial scores published",
+                file=sys.stderr,
+            )
+            return None
         group = case.group
         source = case.file_path.relative_to(references).as_posix()
         attempt = by_source[source]
@@ -201,10 +212,12 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--unit", type=Path, required=True)
     parser.add_argument("--run", type=Path, required=True)
+    parser.add_argument("--stop-at", type=datetime.fromisoformat)
     args = parser.parse_args()
     with contextlib.redirect_stdout(sys.stderr):
-        result = grade(args.unit.resolve(), args.run.resolve())
-    print(json.dumps(result["dimensions"], indent=2))
+        result = grade(args.unit.resolve(), args.run.resolve(), args.stop_at)
+    if result is not None:
+        print(json.dumps(result["dimensions"], indent=2))
 
 
 if __name__ == "__main__":

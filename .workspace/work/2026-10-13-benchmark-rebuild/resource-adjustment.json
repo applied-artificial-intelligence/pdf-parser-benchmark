@@ -1,0 +1,35 @@
+{
+  "reason": "User reported CPU near 100%; reserve half the physical cores for other work and lower benchmark scheduling priority.",
+  "logical_cpus": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    9,
+    12,
+    13,
+    16,
+    18,
+    20,
+    22
+  ],
+  "physical_cores_reserved": 8,
+  "benchmark_nice": 10,
+  "parent_pids": [
+    2399186,
+    2406039,
+    2406302,
+    2406576,
+    2412655,
+    2413126,
+    2413629,
+    2418372,
+    2562276,
+    2562664,
+    2562869
+  ],
+  "affected_processes": 80,
+  "timing_limitation": "Resource allocation changed during execution. These runs cannot support comparative latency or throughput claims.",
+  "allocation": "Alternating physical cores, distributing performance/efficiency cores between benchmark and other work"
+}

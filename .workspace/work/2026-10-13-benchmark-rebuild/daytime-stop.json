@@ -1,0 +1,134 @@
+{
+  "stopped_at": "2026-10-17T20:55:36.319664+00:00",
+  "reason": "User requires estimated, sequential overnight execution without occupying the workstation during use. No automatic restart configured.",
+  "jobs": [
+    {
+      "backend": "pypdf",
+      "parent_pid": 2399186,
+      "child_pids": [
+        2399278,
+        2642500,
+        2642576,
+        2642829,
+        2642831
+      ]
+    },
+    {
+      "backend": "pdfplumber",
+      "parent_pid": 2406039,
+      "child_pids": [
+        2406368,
+        2642582,
+        2642617,
+        2642731
+      ]
+    },
+    {
+      "backend": "pymupdf",
+      "parent_pid": 2406302,
+      "child_pids": [
+        2406926,
+        2642412,
+        2642426,
+        2642585,
+        2642853,
+        2642830
+      ]
+    },
+    {
+      "backend": "pypdfium2",
+      "parent_pid": 2406576,
+      "child_pids": [
+        2407548,
+        2642535,
+        2642581,
+        2642584,
+        2642604
+      ]
+    },
+    {
+      "backend": "kreuzberg",
+      "parent_pid": 2412655,
+      "child_pids": [
+        2414012,
+        2642577,
+        2642762,
+        2642905
+      ]
+    },
+    {
+      "backend": "extractous",
+      "parent_pid": 2413126,
+      "child_pids": [
+        2413931,
+        2642302,
+        2642570,
+        2642681,
+        2643027,
+        2642750
+      ]
+    },
+    {
+      "backend": "pymupdf4llm",
+      "parent_pid": 2413629,
+      "child_pids": [
+        2414730,
+        2639182,
+        2640906,
+        2642317,
+        2642579,
+        2643069,
+        2642736,
+        2641779,
+        2639482
+      ]
+    },
+    {
+      "backend": "pdfminer",
+      "parent_pid": 2418372,
+      "child_pids": [
+        2420304,
+        2642589,
+        2642601,
+        2642717,
+        2642760
+      ]
+    },
+    {
+      "backend": "docling",
+      "parent_pid": 2562276,
+      "child_pids": [
+        2564857,
+        2632490,
+        2633300,
+        2633788,
+        2633385
+      ]
+    },
+    {
+      "backend": "marker",
+      "parent_pid": 2562664,
+      "child_pids": [
+        2564768,
+        2625487,
+        2626286,
+        2626651,
+        2634014,
+        2625955,
+        2632491
+      ]
+    },
+    {
+      "backend": "unstructured",
+      "parent_pid": 2562869,
+      "child_pids": [
+        2563526,
+        2640175,
+        2642178,
+        2642602,
+        2641803
+      ]
+    }
+  ],
+  "preservation": "All completed attempt JSON, retained outputs and incomplete plan directories preserved unchanged."
+}

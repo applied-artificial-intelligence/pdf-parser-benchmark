@@ -593,6 +593,8 @@ Depends on Issue 9 source identity; readiness work can overlap acquisition. Inve
 
 Files: existing comparison/evaluation modules and focused roster tests. Verify actual local parser output reaches the native evaluators, paid integrations are never initialized, parser options/identities are preserved, output-lacking capabilities remain visible, and required evaluator errors invalidate completeness. Execute the full pinned input population for available local backends. Use predeclared initialization failure policies rather than burning thousands of identical failed calls; retain unstarted membership separately. Fresh outputs and a representative offline regrade must agree.
 
+Overnight execution, approved October 17: heavy parsing and native grading run only 22:00-07:00 America/New_York. Use a single shared service limited to twelve logical CPUs, 48 GB RAM, nice 10 and at most eight concurrent calls. Run one Docling GPU call, at most two Marker and two Unstructured calls, and share remaining capacity with lightweight parsers. Compare one versus two workers on ten common, dimension-balanced PDF inputs before bulk execution; reduce concurrency if throughput improves less than 20% or failures increase. Record CPU and memory usage and revise the remaining-time estimate from actual isolated and shared throughput. Retain validated completed attempts, including failures and timeouts; never overwrite interrupted files or silently retry failures. Reserve the full enforced call deadline plus cleanup before admitting work near 07:00; the service also has a hard 07:00 limit covering descendants. Native grading shares the same budget. No paid calls.
+
 ### Premises
 
 Input: public roster execution

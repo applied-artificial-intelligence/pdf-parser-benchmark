@@ -330,6 +330,14 @@ that ParseBench lacks reproducibility or operational features.
     problem and where material additional evaluation is warranted. A green suite,
     two-parser illustration or completed issue checklist is not sufficient closure.
 
+31. Heavy parsing and grading obey the approved 22:00-07:00 New York window and
+    one shared CPU/memory/concurrent-call budget. Test actual resumption, retained
+    failure accounting, changed-output rejection and cutoff admission. Compare
+    isolated and parallel pilot throughput before bulk work and record the resource
+    policy, measured usage and revised completion estimate. On invalid identity,
+    start no new call or resume session and preserve every prior attempt. At cutoff,
+    retain incomplete evidence without publishing partial aggregate scores.
+
 ## In scope
 
 - Benchmark-design lessons and a worked internal-evaluation protocol grounded in
