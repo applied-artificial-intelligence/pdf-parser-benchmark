@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-77196",
+    "vendor": "Roberts Attorneys at Law",
+    "due_date": "2025-10-09",
+    "grand_total": "37934.75",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Expert Witness Consultation @ $333.48/hour",
+      "quantity": "41.73",
+      "line_total": "13916.12"
+    },
+    {
+      "description": "Paralegal Services @ $177.33/hour",
+      "quantity": "66.73",
+      "line_total": "11833.23"
+    },
+    {
+      "description": "Expert Witness Consultation @ $337.49/hour",
+      "quantity": "19.45",
+      "line_total": "6564.18"
+    },
+    {
+      "description": "Court Filing Fees @ $58.33/filing",
+      "quantity": "45.31",
+      "line_total": "2642.93"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-77196",
+    "vendor": "Roberts Attorneys at Law",
+    "due_date": "10/09/2025",
+    "grand_total": "$37,934.75",
+    "records": [
+      {
+        "description": "Expert Witness Consultation @ $333.48/hour",
+        "quantity": "41.73",
+        "line_total": "$13,916.12"
+      },
+      {
+        "description": "Paralegal Services @ $177.33/hour",
+        "quantity": "66.73",
+        "line_total": "$11,833.23"
+      },
+      {
+        "description": "Expert Witness Consultation @ $337.49/hour",
+        "quantity": "19.45",
+        "line_total": "$6,564.18"
+      },
+      {
+        "description": "Court Filing Fees @ $58.33/filing",
+        "quantity": "45.31",
+        "line_total": "$2,642.93"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_027"
+}

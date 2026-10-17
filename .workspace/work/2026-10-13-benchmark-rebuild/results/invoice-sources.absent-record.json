@@ -1,0 +1,12 @@
+{
+ "item": "invoice-sources.absent-record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_reference_qualification.py::test_source_gap_cannot_replace_prior_reference_snapshot",
+  "fixture (both runs): Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,7 +1,12 @@
-# PDF-Bench: Key Findings and Publication Summary
+# Historical findings and publication framing
+
+Historical record. For current source-verified findings, use `PROJECT_ORIENTATION.md`
+and the reconstruction report identified by `docs/BENCHMARK_STATUS_REPORT.md`.
+The labels and recommendations below describe the retained historical artifact;
+they are not current publication approval or current parser recommendations.
 
 **Date**: November 2025
-**Status**: Ready for Publication
+**Historical status label**: Ready for Publication (not current approval)
 **Total Documents**: 800+ across 6 corpora
 **Parsers Evaluated**: 13 open-source + 5 commercial
 

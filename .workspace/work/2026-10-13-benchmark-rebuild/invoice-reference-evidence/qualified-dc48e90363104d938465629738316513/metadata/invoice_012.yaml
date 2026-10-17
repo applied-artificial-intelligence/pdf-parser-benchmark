@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: USA
+  name: Kennedy, Brown and Lucas
+document_id: invoice_012
+due_date: '2025-10-18'
+generated_at: '2025-11-18T16:45:19.189118'
+industry: retail
+invoice_date: '2025-09-18'
+invoice_number: INV-82338
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 272977.3
+tax_amount: 23257.67
+template_style: economy
+total: 296234.97
+vendor:
+  country: USA
+  name: Direct Supply
+corpus: business
+source_url: generated://invoice_012
+domain: invoices
+doc_id: invoice_012

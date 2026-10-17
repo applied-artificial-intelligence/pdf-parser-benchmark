@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-45819",
+    "vendor": "Alliance CPA",
+    "due_date": "2025-10-30",
+    "grand_total": "654711.49",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-45819"
+    ],
+    "due_date": [
+      "October 30, 2025"
+    ],
+    "grand_total": [
+      "$654,711.49"
+    ],
+    "vendor": [
+      "Alliance CPA"
+    ]
+  },
+  "records": [
+    {
+      "description": "Financial Planning",
+      "quantity": "98.98",
+      "unit": "hour",
+      "unit_price": "205.09",
+      "line_total": "20299.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial\nPlanning",
+        "quantity": "98.98",
+        "unit": "hour",
+        "unit_price": "$205.09",
+        "line_total": "$20,299.81"
+      }
+    },
+    {
+      "description": "Tax Preparation - Individual",
+      "quantity": "51.87",
+      "unit": "return",
+      "unit_price": "1396.47",
+      "line_total": "72434.9",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation\n- Individual",
+        "quantity": "51.87",
+        "unit": "return",
+        "unit_price": "$1,396.47",
+        "line_total": "$72,434.90"
+      }
+    },
+    {
+      "description": "Audit Services",
+      "quantity": "11.79",
+      "unit": "hour",
+      "unit_price": "155.76",
+      "line_total": "1836.41",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Audit Services",
+        "quantity": "11.79",
+        "unit": "hour",
+        "unit_price": "$155.76",
+        "line_total": "$1,836.41"
+      }
+    },
+    {
+      "description": "Tax Preparation - Individual",
+      "quantity": "90.62",
+      "unit": "return",
+      "unit_price": "339.09",
+      "line_total": "30728.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation\n- Individual",
+        "quantity": "90.62",
+        "unit": "return",
+        "unit_price": "$339.09",
+        "line_total": "$30,728.34"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate",
+      "quantity": "89.46",
+      "unit": "return",
+      "unit_price": "4356.82",
+      "line_total": "389761.12",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation\n- Corporate",
+        "quantity": "89.46",
+        "unit": "return",
+        "unit_price": "$4,356.82",
+        "line_total": "$389,761.12"
+      }
+    },
+    {
+      "description": "Financial Planning",
+      "quantity": "5.01",
+      "unit": "hour",
+      "unit_price": "265.84",
+      "line_total": "1331.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial\nPlanning",
+        "quantity": "5.01",
+        "unit": "hour",
+        "unit_price": "$265.84",
+        "line_total": "$1,331.86"
+      }
+    },
+    {
+      "description": "Financial Planning",
+      "quantity": "96.96",
+      "unit": "hour",
+      "unit_price": "301.16",
+      "line_total": "29200.47",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial\nPlanning",
+        "quantity": "96.96",
+        "unit": "hour",
+        "unit_price": "$301.16",
+        "line_total": "$29,200.47"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

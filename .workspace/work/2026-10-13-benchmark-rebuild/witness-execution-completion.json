@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_invoice_comparison.py::test_deleted_required_prediction_cannot_be_published_even_if_remaining_json_is_valid",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "    validate_run(staging)",
+      "new": "    pass  # Defect: register without validating required artifacts"
+    }
+  }
+}

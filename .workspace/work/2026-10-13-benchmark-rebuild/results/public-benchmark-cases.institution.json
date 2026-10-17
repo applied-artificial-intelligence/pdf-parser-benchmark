@@ -1,0 +1,12 @@
+{
+ "item": "public-benchmark-cases.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench.py::test_unlabelled_business_domain_stays_unknown_despite_enterprise_filename",
+  "fixture (both runs): Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,0 +1,12 @@
+{
+ "item": "public-comparison.known-at",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench_comparison.py::test_changed_source_is_rejected_before_real_backend_initialization",
+  "fixture (both runs): Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-59562",
+    "vendor": "Apex Construction",
+    "due_date": "2025-11-23",
+    "grand_total": "23772.22",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-59562"
+    ],
+    "due_date": [
+      "November 23, 2025"
+    ],
+    "grand_total": [
+      "$23,772.22"
+    ],
+    "vendor": [
+      "Apex Construction"
+    ]
+  },
+  "records": [
+    {
+      "description": "Materials - Lumber",
+      "quantity": "22.27",
+      "unit": "board ft",
+      "unit_price": "3.61",
+      "line_total": "80.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials -\nLumber",
+        "quantity": "22.27",
+        "unit": "board ft",
+        "unit_price": "$3.61",
+        "line_total": "$80.39"
+      }
+    },
+    {
+      "description": "Materials - Concrete",
+      "quantity": "19.88",
+      "unit": "cu yd",
+      "unit_price": "131.41",
+      "line_total": "2612.43",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials -\nConcrete",
+        "quantity": "19.88",
+        "unit": "cu yd",
+        "unit_price": "$131.41",
+        "line_total": "$2,612.43"
+      }
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "11.11",
+      "unit": "day",
+      "unit_price": "359.82",
+      "line_total": "3997.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment\nRental",
+        "quantity": "11.11",
+        "unit": "day",
+        "unit_price": "$359.82",
+        "line_total": "$3,997.60"
+      }
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "22.1",
+      "unit": "day",
+      "unit_price": "721.71",
+      "line_total": "15949.79",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment\nRental",
+        "quantity": "22.10",
+        "unit": "day",
+        "unit_price": "$721.71",
+        "line_total": "$15,949.79"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

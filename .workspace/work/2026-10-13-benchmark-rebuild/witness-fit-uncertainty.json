@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/parsebench.py",
+  "fixture": "Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "test": "tests/test_parsebench.py::test_observed_fit_does_not_classify_uninspected_inputs_or_invent_global_coverage",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench.py",
+      "old": "{\"source_path\": path, \"coverage\": \"unknown\"}",
+      "new": "{\"source_path\": path, \"coverage\": \"present\"}"
+    }
+  }
+}

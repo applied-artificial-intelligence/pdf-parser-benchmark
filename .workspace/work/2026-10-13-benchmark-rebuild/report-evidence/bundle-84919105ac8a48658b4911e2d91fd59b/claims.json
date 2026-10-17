@@ -1,0 +1,975 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-16T20:30:34.423072+00:00",
+  "publication_state": "Source evidence ready for author/editorial review; no public release authorized",
+  "sources": [
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-evidence/qualified-dc48e90363104d938465629738316513/manifest.json",
+      "sha256": "2cff95eba5904e0933caf5e761ea836f8392f3528d484ac8914131257de6d765"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+      "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json",
+      "sha256": "f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+      "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+      "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-checkpoint.json",
+      "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+      "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-failure-audit.json",
+      "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-inventory.json",
+      "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-hardware-observation.json",
+      "sha256": "6fe85bcf91f8e9b85bce68cb59bf108ab1f99f91ce39204296e92d2e8ef42d19"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reproduction-v3.json",
+      "sha256": "5867006ae5a0f5e47d902ff1af4420e624b3e6342a2b2753484fd7ae015b2353"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-relocated-reproduction-v3.json",
+      "sha256": "17d22cf24ef47ca045623207233f8f7510b00dc48ce5e8917b48846342a3cbc2"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-offline-regrade-v3.json",
+      "sha256": "62e41ad0442e0057972b8cbc43062621dbc424fb728cd2043fedefba3d72645f"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-replay-instructions-check.json",
+      "sha256": "5c97a941d9c02f0cf1dab5aac3749895969c2671944d14048f594a2770dd46f1"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-faithful-format-control-v3.json",
+      "sha256": "e4d39e406167a85d954658bf3ca89a28c5954bcc4eb4c3280f2ff097f74fe058"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-qualified-selection.json",
+      "sha256": "534b21feb3e4f45e2c2885d253cbb92a28c5c3cf5efc2b43fa2a6cf2a8fbc61b"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-relocated-reproduction-v2.json",
+      "sha256": "de958946cd8ae2814760380815a6ed779eabcb5ad110a81ac021ac0087f9af0b"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-reproduction-v2.json",
+      "sha256": "dd85ec55e78c76ed1357461de15bdd890e8079952e12d7c62bc242717b5aedeb"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-execution-observation.json",
+      "sha256": "a0fcc8b7cce3b5329bfd41df0acb7011d28d248aa05e937cad56d49691e74031"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/extractbench-contract-assessment.json",
+      "sha256": "3b55b138eb1e85cbabc1fc342cab120311686f2f2786e46c84a1039d0c7c37fa"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/editorial-context.json",
+      "sha256": "b264838dd36c86c9034f3e24c9a913724beb2ee20624679a4fc0108e39051764"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-run-checkpoint.json",
+      "sha256": "4119d6c025741eb2495c6c452ade1490a9aa99cbb2295ac3e215459fa15fc6ac"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-run-checkpoint.json",
+      "sha256": "787aedd6decec608fff196cc1b23bafe48314fde6f1806ab01846b16d4e3493c"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/journal.json",
+      "sha256": "d48a86038d0c2787c8e6263194d037046e7c5b7d4c883d017aca06d92a1aacec"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/journal.json",
+      "sha256": "7057e5a58ba96bc509393f75d8c47ecd4b7aea5c86506b24e35f6a8d16d87f23"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/plan.json",
+      "sha256": "44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/frozen-plan/plan.json",
+      "sha256": "d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/native-results.json",
+      "sha256": "67df558c4f0d1725997f15014199168fe18efc742893b3b135a077c40695de4f"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/completion.json",
+      "sha256": "cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/manifest.json",
+      "sha256": "d151307829e85b99e0c788f8b034cb06dcf4ffe9b3ee36fab7cb746cf2e91ef1"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/technical-report.template.md",
+      "sha256": "bdd0c5b16891cd5dd366b1a83f480ff9cb54a541693eef0ffa6de040e6373f95"
+    },
+    {
+      "path": "pdf_bench/reconstruction_report.py",
+      "sha256": "8ff961f0503732b2fb63438712a1ad7b162368d9259667c9dbb0a1aaa160f992"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/task-protocol.json",
+      "sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e"
+    },
+    {
+      "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/environment.json",
+      "sha256": "7617033f4ab3b45d15213cf869fbf3c9754ccd30a3f70889820efdf4bc508b1b"
+    }
+  ],
+  "claims": [
+    {
+      "id": "invoice-pypdf-document_success",
+      "value": 84,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pypdf/task/document_success"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 100,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pypdf/task/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pypdf-fields_correct",
+      "value": 500,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pypdf/task/fields_correct"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 500,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pypdf/task/fields_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pypdf-records_matched",
+      "value": 668,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pypdf/task/records_matched"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 696,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pypdf/task/records_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pypdf-record_micro_f1",
+      "value": 0.9583931133428981,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pypdf/task/record_micro_f1"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice"
+    },
+    {
+      "id": "invoice-pypdf-records_predicted",
+      "value": 698,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pypdf/task/records_predicted"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice"
+    },
+    {
+      "id": "invoice-pdfplumber-document_success",
+      "value": 55,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pdfplumber/task/document_success"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 100,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pdfplumber/task/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pdfplumber-fields_correct",
+      "value": 468,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pdfplumber/task/fields_correct"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 500,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pdfplumber/task/fields_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pdfplumber-records_matched",
+      "value": 677,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pdfplumber/task/records_matched"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice",
+      "denominator": {
+        "value": 696,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+          "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+          "pointer": "/pdfplumber/task/records_expected"
+        }
+      }
+    },
+    {
+      "id": "invoice-pdfplumber-record_micro_f1",
+      "value": 0.9762076423936553,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pdfplumber/task/record_micro_f1"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice"
+    },
+    {
+      "id": "invoice-pdfplumber-records_predicted",
+      "value": 691,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+        "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867",
+        "pointer": "/pdfplumber/task/records_predicted"
+      },
+      "tier": "strong_within_declared_task",
+      "supported_interpretation": "Configured parser plus frozen extractor on source-qualified synthetic invoices; not real-vendor or universal parser performance",
+      "context": "invoice"
+    },
+    {
+      "id": "public-pypdf-text_content",
+      "value": 0.5992117223925929,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+        "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+        "pointer": "/pypdf/text_content/mean"
+      },
+      "tier": "qualified_public_subset",
+      "supported_interpretation": "Pinned native per-case metric mean on the fixed relevant subset; no full-leaderboard equivalence",
+      "context": "public",
+      "statistic": "unweighted_case_mean",
+      "denominator": {
+        "value": 30,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+          "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+          "pointer": "/pypdf/text_content/planned_count"
+        }
+      }
+    },
+    {
+      "id": "public-pypdf-table",
+      "value": 0.0,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+        "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+        "pointer": "/pypdf/table/mean"
+      },
+      "tier": "qualified_public_subset",
+      "supported_interpretation": "Pinned native per-case metric mean on the fixed relevant subset; no full-leaderboard equivalence",
+      "context": "public",
+      "statistic": "unweighted_case_mean",
+      "denominator": {
+        "value": 20,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+          "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+          "pointer": "/pypdf/table/planned_count"
+        }
+      }
+    },
+    {
+      "id": "public-pdfplumber-text_content",
+      "value": 0.5709514511406883,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+        "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+        "pointer": "/pdfplumber/text_content/mean"
+      },
+      "tier": "qualified_public_subset",
+      "supported_interpretation": "Pinned native per-case metric mean on the fixed relevant subset; no full-leaderboard equivalence",
+      "context": "public",
+      "statistic": "unweighted_case_mean",
+      "denominator": {
+        "value": 30,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+          "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+          "pointer": "/pdfplumber/text_content/planned_count"
+        }
+      }
+    },
+    {
+      "id": "public-pdfplumber-table",
+      "value": 0.10676339510331187,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+        "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+        "pointer": "/pdfplumber/table/mean"
+      },
+      "tier": "qualified_public_subset",
+      "supported_interpretation": "Pinned native per-case metric mean on the fixed relevant subset; no full-leaderboard equivalence",
+      "context": "public",
+      "statistic": "unweighted_case_mean",
+      "denominator": {
+        "value": 20,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/summary.json",
+          "sha256": "1c6c19c88ef63caa5ff80d4a734cf82f23ae75aa8a645d60203dc90277368937",
+          "pointer": "/pdfplumber/table/planned_count"
+        }
+      }
+    },
+    {
+      "id": "qualified-documents",
+      "value": 100,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-checkpoint.json",
+        "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104",
+        "pointer": "/documents"
+      },
+      "tier": "source_qualified",
+      "supported_interpretation": "Source-derived facts and coding-agent visual page qualification",
+      "context": "invoice"
+    },
+    {
+      "id": "qualified-physical_pages",
+      "value": 182,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-checkpoint.json",
+        "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104",
+        "pointer": "/physical_pages"
+      },
+      "tier": "source_qualified",
+      "supported_interpretation": "Source-derived facts and coding-agent visual page qualification",
+      "context": "invoice"
+    },
+    {
+      "id": "qualified-line_items",
+      "value": 696,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-checkpoint.json",
+        "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104",
+        "pointer": "/line_items"
+      },
+      "tier": "source_qualified",
+      "supported_interpretation": "Source-derived facts and coding-agent visual page qualification",
+      "context": "invoice"
+    },
+    {
+      "id": "cell-pypdf-enterprise/simple",
+      "value": 11,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/enterprise~1simple/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 19,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/enterprise~1simple/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-enterprise/simple",
+      "value": 10,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/enterprise~1simple/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 19,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/enterprise~1simple/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pypdf-small_business/simple",
+      "value": 14,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/small_business~1simple/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 19,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/small_business~1simple/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-small_business/simple",
+      "value": 16,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/small_business~1simple/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 19,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/small_business~1simple/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pypdf-economy/medium",
+      "value": 17,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/economy~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 17,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/economy~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-economy/medium",
+      "value": 0,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/economy~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 17,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/economy~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pypdf-enterprise/medium",
+      "value": 15,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/enterprise~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/enterprise~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-enterprise/medium",
+      "value": 15,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/enterprise~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/enterprise~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pypdf-small_business/medium",
+      "value": 12,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/small_business~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/small_business~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-small_business/medium",
+      "value": 14,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/small_business~1medium/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/small_business~1medium/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pypdf-economy/complex",
+      "value": 15,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pypdf/economy~1complex/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pypdf/economy~1complex/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "cell-pdfplumber-economy/complex",
+      "value": 0,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+        "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+        "pointer": "/pdfplumber/economy~1complex/document_success"
+      },
+      "tier": "source_qualified_six_cells",
+      "supported_interpretation": "Synthetic source template/complexity cell; not a real-vendor layout sample",
+      "context": "invoice",
+      "denominator": {
+        "value": 15,
+        "evidence": {
+          "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-cell-results-v3.json",
+          "sha256": "5cd2a0069be9e211d4f4d8fd907ef5babfceba242a36046b8a5f43b4a095c6c3",
+          "pointer": "/pdfplumber/economy~1complex/documents_expected"
+        }
+      }
+    },
+    {
+      "id": "retained-artifact-count",
+      "value": 117,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifact_count"
+      },
+      "tier": "historical",
+      "supported_interpretation": "Retained artifact count, not a count of independent experiments",
+      "context": null
+    },
+    {
+      "id": "audit-failed_pair_count",
+      "value": 61,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-failure-audit.json",
+        "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38",
+        "pointer": "/failed_pair_count"
+      },
+      "tier": "qualified_task_audit",
+      "supported_interpretation": "Coding-agent inspection, not independent human adjudication",
+      "context": "invoice"
+    },
+    {
+      "id": "audit-failed_document_count",
+      "value": 52,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-failure-audit.json",
+        "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38",
+        "pointer": "/failed_document_count"
+      },
+      "tier": "qualified_task_audit",
+      "supported_interpretation": "Coding-agent inspection, not independent human adjudication",
+      "context": "invoice"
+    },
+    {
+      "id": "audit-reviewed_failure_pairs",
+      "value": 61,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-failure-audit.json",
+        "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38",
+        "pointer": "/reviewed_failure_pairs"
+      },
+      "tier": "qualified_task_audit",
+      "supported_interpretation": "Coding-agent inspection, not independent human adjudication",
+      "context": "invoice"
+    },
+    {
+      "id": "parsebench-inventory-group_cases",
+      "value": 2553,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-inventory.json",
+        "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb",
+        "pointer": "/totals/group_cases"
+      },
+      "tier": "pinned_inventory",
+      "supported_interpretation": "Paths, group cases and content identities differ from independently verified original-document counts",
+      "context": null
+    },
+    {
+      "id": "parsebench-inventory-annotation_rows",
+      "value": 169011,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-inventory.json",
+        "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb",
+        "pointer": "/totals/annotation_rows"
+      },
+      "tier": "pinned_inventory",
+      "supported_interpretation": "Paths, group cases and content identities differ from independently verified original-document counts",
+      "context": null
+    },
+    {
+      "id": "parsebench-inventory-unique_input_paths",
+      "value": 2078,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-inventory.json",
+        "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb",
+        "pointer": "/totals/unique_input_paths"
+      },
+      "tier": "pinned_inventory",
+      "supported_interpretation": "Paths, group cases and content identities differ from independently verified original-document counts",
+      "context": null
+    },
+    {
+      "id": "parsebench-inventory-unique_source_content_ids",
+      "value": 2060,
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-inventory.json",
+        "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb",
+        "pointer": "/totals/unique_source_content_ids"
+      },
+      "tier": "pinned_inventory",
+      "supported_interpretation": "Paths, group cases and content identities differ from independently verified original-document counts",
+      "context": null
+    }
+  ],
+  "contexts": {
+    "invoice": {
+      "completion": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json",
+        "sha256": "f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0"
+      },
+      "plan": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/plan.json",
+        "sha256": "44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684"
+      },
+      "observed_at": "2026-10-15T21:27:57.172994+00:00",
+      "task": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/task-protocol.json",
+        "sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e"
+      },
+      "environment": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/frozen-plan/environment.json",
+        "sha256": "7617033f4ab3b45d15213cf869fbf3c9754ccd30a3f70889820efdf4bc508b1b"
+      },
+      "python": "3.13.5",
+      "backend_versions": {
+        "pypdf": "6.3.0",
+        "pdfplumber": "0.11.8",
+        "pdfminer.six": "20251107",
+        "pillow": "12.0.0",
+        "pypdfium2": "4.30.0",
+        "charset-normalizer": "3.4.4",
+        "cryptography": "46.0.3",
+        "cffi": "2.0.0",
+        "pycparser": "2.23"
+      },
+      "pdfsmith_distribution": "0.2.0",
+      "pdfsmith_source_version": "0.3.0.dev0",
+      "pipelines": [
+        {
+          "pipeline_id": "pypdf",
+          "options": {
+            "extraction_mode": "plain",
+            "backend_name": "pypdf",
+            "cache_mode": "bypass"
+          }
+        },
+        {
+          "pipeline_id": "pdfplumber",
+          "options": {
+            "layout": false,
+            "x_tolerance": 3.0,
+            "y_tolerance": 3.0,
+            "backend_name": "pdfplumber",
+            "cache_mode": "bypass"
+          }
+        }
+      ],
+      "boundaries": "Sequential isolated calls; cache bypass; parse/read/retention duration after initialization; wall duration includes startup; hardware observed, no speed winner",
+      "api_charges": 0,
+      "total_operating_cost": null,
+      "cost_unknown_reason": "No monetized hardware/energy/labor allocation was measured"
+    },
+    "public": {
+      "completion": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/completion.json",
+        "sha256": "cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6"
+      },
+      "plan": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/frozen-plan/plan.json",
+        "sha256": "d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba"
+      },
+      "observed_at": "2026-10-16T20:04:59.427046+00:00",
+      "executed_at": null,
+      "upstream_code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+      "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+      "evaluator_python": "3.14.3",
+      "evaluator_options": {
+        "enable_rule_based": true,
+        "enable_text_similarity": false,
+        "enable_teds": false,
+        "enable_grits": true,
+        "enable_header_accuracy": false,
+        "enable_structural_consistency": true,
+        "enable_table_record_match": true,
+        "enable_table_composite": true,
+        "grits_pair_workers": 1
+      },
+      "boundaries": "Same frozen parser runtime/options as invoice baselines; native evaluator and shared upstream table conversion, normalization off; all cases retained by dimension"
+    }
+  },
+  "editorial": {
+    "purpose": "Read-only contextual link to the retained benchmark-interpretation article; not permission to edit or publish",
+    "title": "What LLM and agent benchmark scores actually tell you",
+    "checked_at": "2026-10-16T20:04:59.425341+00:00",
+    "files": [
+      {
+        "repository": "content-marketing",
+        "path": "topics/evaluation-and-verification/publications/what-llm-and-agent-benchmarks-measure/brief.md",
+        "sha256": "f62b3e58e4fec49618309469c4b195ffe9ce62e90fe294dea8592cfc0c7a8f9c"
+      },
+      {
+        "repository": "content-marketing",
+        "path": "topics/evaluation-and-verification/publications/what-llm-and-agent-benchmarks-measure/draft.md",
+        "sha256": "28b1f8604307ae8e8e231cdc9d1c3fe6477a4410bb20279ac8d3c05672b0e7e9"
+      }
+    ],
+    "public_url": null,
+    "publication_state": "Retained author-review draft; no assigned public URL was verified"
+  },
+  "historical_tracks": [
+    {
+      "family": "academic_arxiv",
+      "evidence_tier": "directional",
+      "supported_interpretation": "Technical-paper text metrics; exact source-to-PDF and equation correspondence require qualification.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/63"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "investor_decks_prototype",
+      "evidence_tier": "prototype",
+      "supported_interpretation": "Synthetic PPTX/PDF prototype, limited templates and realism; no corporate-deck population claim.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/69"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "frontier_premium_pilot",
+      "evidence_tier": "historical",
+      "supported_interpretation": "Historical paid pilot; metric subsets and configuration identities must be inspected before interpreting differences.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/76"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "frontier_budget_unified",
+      "evidence_tier": "historical",
+      "supported_interpretation": "Historical paid model pilot; current provider/model/configuration and cost comparability are unverified.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/79"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "invoices_source_first",
+      "evidence_tier": "historical",
+      "supported_interpretation": "Retained DOCX extraction matches backups, not current references. The original scored reference bytes are not established; source-first independence is unverified for this run.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/85"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "legacy_presentations",
+      "evidence_tier": "directional",
+      "supported_interpretation": "Retained presentation evidence with uneven reference/source correspondence; not a full-deck task comparison.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/100"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "sec_filings_real_business",
+      "evidence_tier": "directional",
+      "supported_interpretation": "Current selection config uses pypdfium2 >= 0.90; ARS PDFs and 10-K HTML may differ. Similarity to that reference is diagnostic, not independent task correctness.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/109"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "sec_commercial_pilot",
+      "evidence_tier": "historical",
+      "supported_interpretation": "Observed rows contradict declared failure count. Preserve paid-run diagnostics and separate counters; no current paid-parser winner.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/111"
+      },
+      "current_backend_identity": null
+    },
+    {
+      "family": "sec_screening_full",
+      "evidence_tier": "directional",
+      "supported_interpretation": "One-parser screen over observed rows. Title All 89 conflicts with 320 observed document IDs; no parser ranking or impartial sample follows.",
+      "evidence": {
+        "path": ".workspace/work/2026-10-13-benchmark-rebuild/retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+        "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b",
+        "pointer": "/artifacts/115"
+      },
+      "current_backend_identity": null
+    }
+  ]
+}

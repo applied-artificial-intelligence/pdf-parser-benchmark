@@ -1,0 +1,34 @@
+Independently review the attached external-review-packet.txt with your strongest
+available Claude reasoning model. Do not rely on a GPT review or assume the plan
+is approved. This is a design/correctness challenge, not execution authority.
+
+The user wants PDF-Bench rebuilt from retained code and evidence, with ParseBench
+taken seriously. The primary contribution is practical parser selection and a
+worked example teaching teams to construct an internal benchmark for their own
+document distribution and downstream task. Preserve historical work in evidence
+tiers; neither a universal leaderboard nor limitation prose alone meets the goal.
+
+Read the complete specification, ordered plan, baseline checks, hashed code excerpts
+and retained evidence. Scrutinize reference/grader independence, source-to-PDF
+qualification, extraction blindness, normalization, line-item identity and
+applicability, all-planned-pair failure/empty/timeout accounting, matched metric
+denominators, backend/package/config/source identity, cache/checkpoint invalidation,
+atomic persistence and bundle completion, and replay in another directory.
+
+Audit the proposed red/green checks for failures caused by actual producing code,
+rather than fabricated inputs or tests comparing an implementation with itself.
+Look for missing error paths, false confidence from source-derived references,
+and cases where a fixed downstream extractor unfairly attributes its own errors
+to a parser. Challenge synthetic corpus representativeness and whether the first
+milestone sufficiently demonstrates the benchmark-design decisions promised.
+
+Return an explicit proceed/revise/block disposition, numbered severity-ranked
+findings with exact spec criteria/issues/excerpts and concrete failure scenarios,
+acceptance changes needed, and unnecessary complexity to remove. Separate blockers
+from optional extensions; propose a bounded correction rather than indefinite
+research. Assess ParseBench reuse/positioning and what is still unverified.
+
+State what you inspected and did not execute. Do not claim a runtime experiment,
+historical reconstruction or a new external review has passed without evidence.
+No paid calls, publication, deployment, public-main merge, new agents or separate
+conversations are authorized by this review request.

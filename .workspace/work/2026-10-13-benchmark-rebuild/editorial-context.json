@@ -1,0 +1,19 @@
+{
+  "purpose": "Read-only contextual link to the retained benchmark-interpretation article; not permission to edit or publish",
+  "title": "What LLM and agent benchmark scores actually tell you",
+  "checked_at": "2026-10-16T20:04:59.425341+00:00",
+  "files": [
+    {
+      "repository": "content-marketing",
+      "path": "topics/evaluation-and-verification/publications/what-llm-and-agent-benchmarks-measure/brief.md",
+      "sha256": "f62b3e58e4fec49618309469c4b195ffe9ce62e90fe294dea8592cfc0c7a8f9c"
+    },
+    {
+      "repository": "content-marketing",
+      "path": "topics/evaluation-and-verification/publications/what-llm-and-agent-benchmarks-measure/draft.md",
+      "sha256": "28b1f8604307ae8e8e231cdc9d1c3fe6477a4410bb20279ac8d3c05672b0e7e9"
+    }
+  ],
+  "public_url": null,
+  "publication_state": "Retained author-review draft; no assigned public URL was verified"
+}

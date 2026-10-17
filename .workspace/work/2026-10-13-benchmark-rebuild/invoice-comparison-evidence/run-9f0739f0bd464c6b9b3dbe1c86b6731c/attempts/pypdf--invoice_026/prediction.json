@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-47605",
+    "vendor": "Advanced Manufacturing",
+    "due_date": "2025-09-24",
+    "grand_total": "10107.06",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-47605"
+    ],
+    "due_date": [
+      "September 24, 2025"
+    ],
+    "grand_total": [
+      "$10,107.06"
+    ],
+    "vendor": [
+      "Advanced Manufacturing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "9.4",
+      "unit_price": "31.32",
+      "line_total": "294.41",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "9.40",
+        "unit_price": "$31.32",
+        "line_total": "$294.41"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "32.85",
+      "unit_price": "21.73",
+      "line_total": "713.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "32.85",
+        "unit_price": "$21.73",
+        "line_total": "$713.83"
+      }
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "68.91",
+      "unit_price": "113.86",
+      "line_total": "7846.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining\n(hour)",
+        "quantity": "68.91",
+        "unit_price": "$113.86",
+        "line_total": "$7,846.09"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "34.62",
+      "unit_price": "14.06",
+      "line_total": "486.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion (linear ft)",
+        "quantity": "34.62",
+        "unit_price": "$14.06",
+        "line_total": "$486.76"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

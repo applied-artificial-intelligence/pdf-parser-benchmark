@@ -1,0 +1,5359 @@
+{
+  "observed_at": "2026-10-15T00:58:47.662104+00:00",
+  "scope": "100 retained invoice IDs; source structure and PDF metadata only",
+  "instruments": {
+    "python-docx": "1.2.0",
+    "PyMuPDF": "1.26.6",
+    "PyYAML": "6.0.3"
+  },
+  "limitations": [
+    "Not reference qualification, semantic truth, or a scored parser comparison",
+    "PDF/DOCX timestamps and producer strings cannot establish content identity",
+    "Source table headers and metadata layout cells do not establish visual diversity",
+    "PyMuPDF is an unscored inspection instrument, not either compared parser"
+  ],
+  "summary": {
+    "documents": 100,
+    "pages": 182,
+    "page_counts": {
+      "1": 18,
+      "2": 82
+    },
+    "template_complexity_cells": {
+      "economy/complex": 15,
+      "economy/medium": 17,
+      "enterprise/medium": 15,
+      "enterprise/simple": 19,
+      "small_business/medium": 15,
+      "small_business/simple": 19
+    },
+    "line_item_header_sets": {
+      "Description, Qty, Amount": 32,
+      "Description, Qty, Rate, Amount": 34,
+      "Description, Quantity, Unit, Unit Price, Amount": 34
+    },
+    "line_items": 696,
+    "source_metadata_count_disagreements": [],
+    "documents_with_merges": [],
+    "pdf_producers": {
+      "LibreOffice 24.2": 100
+    },
+    "reference_directory_matches": 0
+  },
+  "documents": [
+    {
+      "document_id": "invoice_001",
+      "source_sha256": "f791c722ce3ddbd44142c41be6fc8cd8e8d28cc3bed786c0a26fe141467abcb8",
+      "pdf_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "metadata_sha256": "4fa717a65eb4abc53d43d53ad7aef3b81b9171a57ae200a60880cb76f2c70d71",
+      "reference_sha256": "4b66327b03354bf53f0dc1549a3d3d0b0b73c4af840b1dbb4ecc3fff3313ef7f",
+      "backup_reference_sha256": "2bbd0fb1a3b6fd8d44ebbbc56eb5c75703860f75039732da395d9e4da4912176",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 55,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164502-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_002",
+      "source_sha256": "06360a8360c4cadee927d88b0585743a9b09f46bde94f987b80c0026f5ee2e1e",
+      "pdf_sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+      "metadata_sha256": "a88123687e29f7deba8b67cbd95dba6b4210ecf99d4df2d89bf85a79d152e24b",
+      "reference_sha256": "b9f4eea16bd09c5e143fc284ebce3eac813d40ab1ed4fd6af0c43c9abf686ecd",
+      "backup_reference_sha256": "f382d836980de42fead7b84e92b4c012a1a0ebe54bf393a3133ac8a7dd506ac5",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 36,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164504-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_003",
+      "source_sha256": "691c54302cf097b39cd0ea903be5a6a8fd76df32c6d0422f704e40c88174d8b2",
+      "pdf_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "metadata_sha256": "80229c5046613ac14f25ade3915fbfd407c37f68930ccd2b00a2865e0b171dff",
+      "reference_sha256": "d99a360cae0e24c85184893870e498c14007e7c324306e9aa0b1096020162ee9",
+      "backup_reference_sha256": "811955c5be194986f2dcc6630125af991a85c54a0610a6d3fa071b6134b4d978",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164505-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_004",
+      "source_sha256": "e75f6c9c0aaf5832a751964c010ec90e079249655fdc315c842902407e944c96",
+      "pdf_sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+      "metadata_sha256": "4c6911cafbfd234e2d584b6b0daab89509351f7bb2d0cbf918cfdab3c142b9c2",
+      "reference_sha256": "0be6100540c195c48f3e8d8486adc010fd7f36e3f7f7b11f4224ff85f130bf6b",
+      "backup_reference_sha256": "59be91bc701fa24e2aabf0524a7df653d6ddd43643093e2842ad65618bf5f1f7",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 25,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164507-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_005",
+      "source_sha256": "6250b2a88a1c3affdefcd651cad46757611ebbfed32ad0eebea81a5e0a9f1017",
+      "pdf_sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+      "metadata_sha256": "2c290b685f5d921499d2db4eee2d9c427d457ff0cdd9b385869034f08bc5a553",
+      "reference_sha256": "537275715f8f09dfed4e98f595f482bd476d1e8096741a32ba49852000c3feab",
+      "backup_reference_sha256": "c73ac063ff4011658dc70b7b322ec75cf94c9cf3cf7ddd5ff19fb6504e38dfad",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164508-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_006",
+      "source_sha256": "f70a1aa37c7e6941d2d9f92cf07f5d4f467bddcdb9634c58c6275ccd535a902d",
+      "pdf_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "metadata_sha256": "eacb059a0afd96fe6127865fb32ad5f33fbd1848dbf795617e31f5fa145f69b7",
+      "reference_sha256": "9395104997f47f4702651d02ea693d515ec7814f043d5bbfed7467927df02e70",
+      "backup_reference_sha256": "37aa42a29bdb505766a7e58561d45f986345b26897ae81d95e63518965a8c978",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164510-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_007",
+      "source_sha256": "dc7e65ce214f652ccea8b70c6e2677a1c4d532a3b95c0ade50238179e3b75c23",
+      "pdf_sha256": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+      "metadata_sha256": "a32a3d18285f7c5f5709e557f2a666ddccfca21d89ef56b863c71b6bebdf28d0",
+      "reference_sha256": "b65eef05f7c2db9222fba71c042840fed9dff0ff78d0a64afff42964c50f5da5",
+      "backup_reference_sha256": "f509845cd9e2d9a64421d84daf2e9aff5c6fbd8224f44716b844cc7405cf6b89",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 50,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164511-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_008",
+      "source_sha256": "a6ed78d19890a90801d169c6727e51369d65aa295ae6829fee2ea9560d675c08",
+      "pdf_sha256": "3ea084ec8af6079de98cbbdebe9cb43a733c17c15847f6db21647b772647c42a",
+      "metadata_sha256": "dfc6b0cfee32613d84a946e634addb4bdb4336376842696906d52b5b684a5926",
+      "reference_sha256": "1569a45fa9d3776a3f2e1c883b8f1ff9113c88edff120f2c629d311f6790d4bd",
+      "backup_reference_sha256": "2faa125b7d53b0d275b373fede13b408c5fb344e4442fc981a2d0e9f4986de9d",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164512-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_009",
+      "source_sha256": "09ba12ecac205fe0258bc7188332b1a5b23871dbe7d74ed94f80a678076629a5",
+      "pdf_sha256": "3396e9c3da53ece2a27dc8b702d82233c0658e3684d941ff814332990264a915",
+      "metadata_sha256": "9e2102bd52526c47d5766ed1ce356cabce2ca3cbb0cf099f41811f01f029aeff",
+      "reference_sha256": "8cea38acf13862f05127a86bf7bb9a169a7df075a55f2a68cdfd5648573e8fb2",
+      "backup_reference_sha256": "0f90ba77c0498647c08cce64c96fdb994eb9d797d01c4e9fd12bd65710aed41f",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164514-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_010",
+      "source_sha256": "c4f6341e68abcb25ce42757271ebbe27305d482a393810ec51fc44dade1183c8",
+      "pdf_sha256": "75283a63c5d9ccc9a136eb6f96de9b1f80b4a30742d36ea849ec93eed6be7543",
+      "metadata_sha256": "eea6dc7bb9ff54a291e023529d0ea05ceb2edc1e303451ca99a3db9ebc10eb2a",
+      "reference_sha256": "b9fadad86992590cac4ba110654ed8bcde06ff309a4d94b2ebecf342ec77fca0",
+      "backup_reference_sha256": "038acc055fea919027177ad3d20c31c97a8d0d03201dc2c369b7bafec4ba4201",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 35,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164515-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_011",
+      "source_sha256": "9576ae50d3ab9a39ec4e0cd2f0d66c81d5de9afaa63e35672e805880cb98f060",
+      "pdf_sha256": "66e6ef089381719efdaf6ad6c4433f6c563288e8090dc886b5e71b6d116403c0",
+      "metadata_sha256": "f1faf9e9a2a17cce1f715018c51734de15992f02e12688d49c81c565ea43cdd3",
+      "reference_sha256": "333e96b8021a9dfe65705d3aa23e74f945f1693e511adabcb4de51c56fdd4c73",
+      "backup_reference_sha256": "ec792c5dad5e6ba7673ac1c0b4f82dff8fa637e65ef8d982269416dc7a5432be",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164517-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_012",
+      "source_sha256": "0e6dfbd5e86d2fa6758f71212191b955b3ba070a9e90e97cfa63f28015c00174",
+      "pdf_sha256": "00d820df793677f7c014670e11b5e17ad6ac3210aa02ecae963d60d481245eb4",
+      "metadata_sha256": "dc36dc285068190a811b8743d5cac6cd5a0f2478d631c141969cf8769ca74c92",
+      "reference_sha256": "23050f08d9f1821b9aaebafb2ad6f16610c8536ed5925b91e972d91d0c93adb9",
+      "backup_reference_sha256": "3ca44d891f91784405c8b84922e4c2ca56ec4c2df1f44d41c07d237c7886f3f3",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164518-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_013",
+      "source_sha256": "d9bcf518ea5f2e3f247554d396038d3cb448a5f5f16d8d8f0c325e8381f28abc",
+      "pdf_sha256": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+      "metadata_sha256": "7092a38ba6ab72f66654c8d6b3bfe9d61ad2c1bd3430a4d335635b42d31f51ca",
+      "reference_sha256": "999ac63b600ed3b98f254c425a337e364aaa20affacd2b30f4fe1ee4b15f2355",
+      "backup_reference_sha256": "0493f6938e5da9d10cc3ff25db0f91313618c8e799f3b04042459b12abb8a370",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164520-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_014",
+      "source_sha256": "0faf4010c7d3b2ab85f2819edd470503308357b508cc85b57f9a6c6064cfb7c1",
+      "pdf_sha256": "55d1d5128f667980b1d36dabb07b2f9dbe4cf1b441f75ce747b3447c59901856",
+      "metadata_sha256": "7875dc03bdd35a3c993f8a5f73e5819e93600af70b2162c7f4e0b00e9534bd31",
+      "reference_sha256": "3d961dc25680b250e18947de3208d99525182f633db10cca7e4dd389f8ab223a",
+      "backup_reference_sha256": "71237308b93bb21bc35b4e281522dc05958f7dbe6b8ea1853c563e00547bc9ce",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164521-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_015",
+      "source_sha256": "69814327e4f15ca6a039716824a7e0e66997a1c5607378ab4ab1c822fbcec4f8",
+      "pdf_sha256": "dee528c36e685b876a909fcc3d513c5cce7d57fcab7a2eb65c047c8071a2e854",
+      "metadata_sha256": "7a448f3cf930ff33dcc220e65d7f9b28ac8f0722f955fe6f107c095516bf1b55",
+      "reference_sha256": "32b30348257f1ce759530b81510d07a32e4cb718b2ceefdaaf0cea6fbe2d6ead",
+      "backup_reference_sha256": "7ed4ae486b36831f39b5f973f6bc48e86d243aaf37fb959c91772ecf52442547",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 1,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 15,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164523-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_016",
+      "source_sha256": "c2eef0ef7b087cd069d16a98c98394349b0ebceecb0282d42b602d6318ff0cb3",
+      "pdf_sha256": "929346d201bb12cb82c64d5114273f66a9959f77b91e558a12e72e85001ecc10",
+      "metadata_sha256": "dfcda357ab6fa62c61e8d140b20edcbb54ad2000badac56b414c65e836df2a3f",
+      "reference_sha256": "545f233ac7a413e1be75f263a4746b8a1786e5f17f24bac829cd69b4b7767db9",
+      "backup_reference_sha256": "b9f0e1a5d8c7feae00e992af6c156021f8624683cf8804dedc281be148901b75",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 50,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164524-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_017",
+      "source_sha256": "0c08cb64bcadc4358460b6de545a242be8ecbff802bcc2a2396195da461b8a7d",
+      "pdf_sha256": "3d3deee9f6ed5f72a4bfe05d0ac075c622a7103d9aa657916922d74473faace3",
+      "metadata_sha256": "6280d320e061e00001566c74860f813a09216d22a4ff164962cc0b1e7df57749",
+      "reference_sha256": "45bcc4e3ca2af3b53c3c53f9ae26e05373725c884d62e0504e496ec2ce39b6b2",
+      "backup_reference_sha256": "4bc58ab36748afb53e61455ea07d0385c8c636cd09e17e3bb068b2bd2edf1f37",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164525-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_018",
+      "source_sha256": "fe8e1515a9a4ddaec3e2ad16993cd229515554a1faf1d9ebcdbbf2b598a7706f",
+      "pdf_sha256": "cac4d69876239e61e8d0cf87c312ce85f472b485c208214a8b785cbe4543b304",
+      "metadata_sha256": "00b9f2301fbd8030e8de1b8a23a0c610981cebd180f10a6de177033589e69918",
+      "reference_sha256": "db6b91eb000c5d6d0064e9a20259c54f6c8ebc9f2edf8770b2ff031a2f5110c5",
+      "backup_reference_sha256": "06522dfed121cb44ea0eafcd317d19d6bde39d4090ac197719a261c55fc07b40",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "US",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164527-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_019",
+      "source_sha256": "42e13e4fb8040102bc6d412c5733178068c0272cabc32173d44ae2843f2eb528",
+      "pdf_sha256": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+      "metadata_sha256": "3cc296a0fbc04d28153fa36f3194bf31864ca7b5d47f3808f238ebfb2d43e2aa",
+      "reference_sha256": "45680f69e2d05d9bcf586c2cd6c436cd07d3c3c8b6ee04a99b91c3eb154c1da9",
+      "backup_reference_sha256": "f1b13e6a477c2f8e41d83dfa76d1c2848d78416f1f4b57e925af34e71f94cd0d",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 55,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164528-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_020",
+      "source_sha256": "f15cb21224eb4fdfaa0491ca1efabdf4ca621d8b592f8a5b5a545ad6953068b1",
+      "pdf_sha256": "bafa7d22fc6bffbfc0a45078d95fb07990fccb375affc3d785348801ff8b855a",
+      "metadata_sha256": "34f3b07bac8f6b27bcac734616211b98474bb42b6b1d2152a95c5218502da85b",
+      "reference_sha256": "f008175dd415f4a53e72e326f40b4e5b701e7235dc02684baf034db6a14ab8c5",
+      "backup_reference_sha256": "401c288c988e1cbb5e13ecdd15f02d53c63f9fb1c9f06e874fce0bc42209cec8",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164530-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_021",
+      "source_sha256": "5666f54a2b0c55e4535e88a72c5a42081978811e1e337cf2773b9ce7e02186ae",
+      "pdf_sha256": "892502d4b309267492d5538d8ce107960f4ccadc89559ae2d691c5b6890d1aca",
+      "metadata_sha256": "53043defaa5e6c1c5620c473987d92d1221b5b15294e3b5c2aa9c00a57ebc7a4",
+      "reference_sha256": "39afdf94084af67ac8cd3f8520a1f4a87baa28ef38837fa104b9cb3109e9b453",
+      "backup_reference_sha256": "2f218951cefbf474b93906b5ceacfef8fceabb0e749ff780611dd0aa75d35c78",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164531-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_022",
+      "source_sha256": "869c12ee1e056addb83f022d72de404f7602f20c3ef0664fc89fa31fd8d2e145",
+      "pdf_sha256": "68f5e47d12264cd5fac463c2336ab721fcae442bd27029efd123f178a3c21c2b",
+      "metadata_sha256": "d3a943aee9bcf774faae091db0b3e4bd93063dbf189736bf754b01da0baac70f",
+      "reference_sha256": "cb07b8a231e017b094e1adedde982cb4278cc27e3227cfe7e65d6f7d33ea6c57",
+      "backup_reference_sha256": "73f627ec4bfd43aab1547df74be8cf839c2e8a7f84418d10a9d6ba056acd8f73",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164533-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_023",
+      "source_sha256": "cb2abe651be01bd302fcb5c25c2610793278a14a2fc7b2329b702de23f4a1a7f",
+      "pdf_sha256": "1c540386f722907310729f502979e37ed45a54d96293e43fdd16da71ad7e0b90",
+      "metadata_sha256": "3e6a529e72d0c6006b3c22c5af6c12ab8ecf2a52a2958c8da68e6705b4ff3d85",
+      "reference_sha256": "34ffc58aea82a0b3150a2ac89b07928445bf185ddc883939c02d430f5e2eafe7",
+      "backup_reference_sha256": "4df250d4eb8507bd0396ed1140ec519bbdadcb9d2b5d54530e4b2bf25ed01d4a",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164534-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_024",
+      "source_sha256": "75007058a9a092194d9433897e4341421cf532a53e7f0c6a16840bfceb197646",
+      "pdf_sha256": "677bfeb9bdb3dc417b443837f0f45a7ac4c3c3a2b9aeeae9343902391d1a3fd1",
+      "metadata_sha256": "ce5090a1e00cdf706e60a87e381abaf370d7786c39e7e160c2615b57269754e0",
+      "reference_sha256": "dfdd1f4584056c1a4283331793bc8d37a32873615b0901865dc0d13ddc4b2523",
+      "backup_reference_sha256": "d64ef373b69b8207aaa68cd9fffcd46143e685abbbb9a854b17142785bbd8911",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "US",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164535-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_025",
+      "source_sha256": "62a2e507b21ff9473e76e5baeb95389e66e58b80e25444184eb189990c11a426",
+      "pdf_sha256": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+      "metadata_sha256": "4300df0fc6dc30f359f39735a24c34b4d03216ac281f87b2f902555eb58230fc",
+      "reference_sha256": "2b4b9c601d98c930a93514f9fae7f3973482ae923e64353a72b106c97f9898fc",
+      "backup_reference_sha256": "6fe4089f4726eb158540c6e867277e75c42b747811c53047102523f2bb147d68",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164537-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_026",
+      "source_sha256": "a3c147b5c399b40e08ffa159d72c7684fa259206a7ea142c0128929235f3120c",
+      "pdf_sha256": "1fc1a86ffaf606dbe07f04e1430102c8a6f614c671ac1f618b1cc18336490cdc",
+      "metadata_sha256": "f2aa760c9c04ee1724be22698e64f60c8443ba983c3713fdc49adfafd403aaf0",
+      "reference_sha256": "e5356b8ce3b1cc116e53093d04f9e39afa1423f66f0603d614decd3ecaab77a6",
+      "backup_reference_sha256": "2a02faab87e5cd58a588b7ff4398d731e9289ee6fe2ff1efcf21ec3d7499475b",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164538-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_027",
+      "source_sha256": "1ec0500383dca56910ee0c1cf5b37ef29bb3a5664d0aac21e89948cb25a1950b",
+      "pdf_sha256": "6005ae024604bc2bcf5ff2964fa679586eee4c6c3fa386e05d5df07c4238f285",
+      "metadata_sha256": "57211f7d342dbf103985112d2a43ecc6d4c3a4c745dfea1ca39b9888da4442b4",
+      "reference_sha256": "2e16665954160c99d6fc2e75916d321ef82d35deadbcfc04ed6feaf2effa7064",
+      "backup_reference_sha256": "864aff90f32c98533a6640019c15956cb2b40fffe998f7a43ea5e90502cc98bf",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 1,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 15,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164539-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_028",
+      "source_sha256": "74cc243c2405b468b7a580eb572342c21fefa958edc225c68a6be4a47852ba5c",
+      "pdf_sha256": "bde7647e1f76bd6bd2922fa66a7140266d23fa4bc295a1df8d453d7346d308ad",
+      "metadata_sha256": "eb2cab15232a96118546b25708750ec5a2c1bed2b66fef8e06f5f7cb3b623194",
+      "reference_sha256": "100305db426147d8dcfabe7994241dcfcd8f1b22986a0b317f7b85b8e820138e",
+      "backup_reference_sha256": "27aa5e0fcbe958067ee950ac9ad3223db63bc6950623f195ff9ede7241e26b23",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164540-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_029",
+      "source_sha256": "294b5a968a4c976aeb37621a35f358f7b66efa8b1a3bf7546a03e37cc7c1e63e",
+      "pdf_sha256": "b399fd421ad47e0ea2fb3f558e2b6639252231e96d04b6e99f683d5e74f93e7e",
+      "metadata_sha256": "34a41bc7daadab4f5e75dc6cb5c0bab982803ca9964f076f31be7dac239d0daf",
+      "reference_sha256": "4ab05a5cde78dfa0a327eed7326bad8211c1e03536dfad5d80e75b51c7f45505",
+      "backup_reference_sha256": "b9fd5cb4425b162fe9930d0be41a149339386cd5120d98d9a05b70b9563e0ed2",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164542-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_030",
+      "source_sha256": "4dc2bc0d73ba02fc87a649235f2fe3103c9e5a41244fb352168701686efe3bf4",
+      "pdf_sha256": "c6fa6f569901ed568acaf62a8a8ddf4ae4f67582e3dddb59a7dff1889d0142e2",
+      "metadata_sha256": "4e9b0336aa4129983c8875882e4538456ed1fec0401ac140e612b5bc19a3d0ca",
+      "reference_sha256": "33aa249376ec97b43030b7ec6b609068a41236c16e834b446e5a7b7e6c328986",
+      "backup_reference_sha256": "597b2161a20e9753bd31d58b427b657957fe2c1d0b836ebd61ce13c7e707d37f",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "US",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164543-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_031",
+      "source_sha256": "c3eedecb8fffccddad15968a9e1124fbb71571ca219e9635b86d15ed4fb05060",
+      "pdf_sha256": "d5f2c9ac4a8e6a11773bf3c1106b327ceb7cb3ec2a522765f45614b28263e5ce",
+      "metadata_sha256": "e716115c9f3ce6a54883f8c28cb977bc95ebbb086639c4155da3bb4cfd85784b",
+      "reference_sha256": "082382296c0bbad2f9adc7fa599bff5ab0a0369801a28daa3f678f103d621ec3",
+      "backup_reference_sha256": "e28cb6c536db049fa8c2f34fdba266aaa13631c1ccd2a4dea37b85ebf1b63d2f",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164545-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_032",
+      "source_sha256": "0bc59efda8053be08eacd2f916b6404484c1829368e62c626deff0601fdb731c",
+      "pdf_sha256": "5ebbbed682efd95727086c01eb8d96f7d9ecc4e3c3d248140a9eff3efc206f31",
+      "metadata_sha256": "1d292e0db4ae4c6c9048d3f066c6069f19f9951ae94404488c27b47ef130ac84",
+      "reference_sha256": "1c68ecc1c75fafe33ce9ea5aae3f63b76bee6b437bd13d09c690057d805aed19",
+      "backup_reference_sha256": "ecbfe40cab350d1280a56133bc0335657902f092f968aa416e3fd2f635fa2cec",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164546-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_033",
+      "source_sha256": "fe4274884816f0342fafde96b9d3283e1002b5c577ad0029d693b681948da359",
+      "pdf_sha256": "47ed9a766ca7d7e08e0568535278ddff0dc075c98c5b206b596d5450d627909a",
+      "metadata_sha256": "29773b9e55be57242a01a958d7dfde30bb045e3355ab66a950ab67ec3b5fc439",
+      "reference_sha256": "7e361a98557bc95932303b9152cfcbd4c0cef2f392f24b69b77c9a6b552dd45f",
+      "backup_reference_sha256": "4afa7fa44dcf3e382066712ea5e0502bd0cd0d0831cd5cec4d064b02a2149407",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164547-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_034",
+      "source_sha256": "410b6b8e1058441f345779415a510e70439e723229f5ff1b00bdccf8a8d68ed9",
+      "pdf_sha256": "3d25836f8d93aa9d77a256f43d1c6a565ad8ec83bab65a6ddec0e631ea0d3805",
+      "metadata_sha256": "89b24a282528104d137448f2b9c93ad3f096b63c949c75f12735970da4074396",
+      "reference_sha256": "903e38b34453ef97334d5ea2e8a73c70334690ff0848b2e0eda15881c46e87d7",
+      "backup_reference_sha256": "af6c2a582ff233b093380882c98602f171bf60c4b014b8af922057ef4da949d3",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164549-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_035",
+      "source_sha256": "4ab648c5502d8d7268cfb690db9b8d7c168d287af791342d683b20c9c5253793",
+      "pdf_sha256": "f92d6e44cc2e71804467f9acfce6e0b42e9d2c588fe6eb030624b2691bf3436b",
+      "metadata_sha256": "d103ee33215d53ec8e0c8e06e0f9b44f49eff8ddab2832d789b65d473d8fb721",
+      "reference_sha256": "cf9900a0ded398139e17c33bd2ad456eab53adcef46bcf6774bc1d0487f0f124",
+      "backup_reference_sha256": "803cf478c17211c8505ba3c32806b6006bbf01899fe0753f4362ae5cd7c9f881",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164550-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_036",
+      "source_sha256": "02515dcee7b1c7cc31c3cfa4dd16204491a38e49de2d93bc74ea712398861fdf",
+      "pdf_sha256": "64937ed4af19c51f1bf77a85e6c8d0a422663742eed16bb5b12cfc577c6bc034",
+      "metadata_sha256": "7e4991f3f331d0c5434c09ca64f1ed49901d9e571928ef24c3445a684160fd03",
+      "reference_sha256": "111e72a85776d91e5ca47842bac3f30dfaa3cb847e00899bae5fab2d4f33ddc0",
+      "backup_reference_sha256": "e3b78c9777274ec716ba162d3168b367d0d49ab92b8909892997515db4320ebd",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164551-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_037",
+      "source_sha256": "110b7f2ee623527f3d13c48ea0a3b091b73a7e6b69735f3483833853aaadd000",
+      "pdf_sha256": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+      "metadata_sha256": "15ac459fa6f7dc3896c90919120152e8670d6d43f250547e50a47e2b860f9097",
+      "reference_sha256": "75e8935fe7c799d05d5e9c00ae9900248077a9c0a360141d6dc51be0c90abcde",
+      "backup_reference_sha256": "2c6698b8494bce63cfeca8ab56b25f720515738b5c421207d1c3b9f09b853b4d",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164553-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_038",
+      "source_sha256": "ee6138528db93618d4d0fe500750f11be5d62621b2588eaa998764780fb61a5b",
+      "pdf_sha256": "56b1df974fca082ecf9bdea924e4917f0fd4e13ef90a1b4a27ae9e97205337ce",
+      "metadata_sha256": "f8d0642cd1904cdd85f52cef9778e1ddef8251bbdf58c8651cab86ed7f8b0bc9",
+      "reference_sha256": "58069ec8eced4e582bfd911697c1fc1bd2c9b15ff79de09de587531e0deb509e",
+      "backup_reference_sha256": "53f9baf4791d09e266b92482148828ef23fb11f6b41d9d5ec30ce0259074f598",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164554-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_039",
+      "source_sha256": "b21d57d93398626f507b2227ab1e4360e2303d80129e96f5f4ffd28bcaddbb9d",
+      "pdf_sha256": "b6e5d3083bfdbfb2901a3866f60abacc9fe7be95f0fd07816b5c088b8c84417b",
+      "metadata_sha256": "b04152de8988434a61819648443836500853ff1c0d710f05cbb4266b6cebcbc2",
+      "reference_sha256": "b2055cbef944348fae3fd8330e6262178d067e50e9cad7e68b3cc0e034ffe27c",
+      "backup_reference_sha256": "3090acd76afd4e391afc1105be6882ce3585c740ed4aa5f63b5e8c0ef605a59c",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 1,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 15,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164556-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_040",
+      "source_sha256": "3f315fae5e18c4c6934326adbe7ed2d671746a157b1a536b3bbcd17e34976f54",
+      "pdf_sha256": "694c3fe505c42b1e9f3a70569beadb0695f47b7e25d1824ae48e6b0f8dcbe4e3",
+      "metadata_sha256": "7cd94a0934da2b2ad4ea9e708f534b49fac5ee985c081182cfa7e962d2f31563",
+      "reference_sha256": "fc45f334c7bf8835c279c72573b79a21ac7751708038965d29ed39ae52589912",
+      "backup_reference_sha256": "7144d5ddbab819e1174c93f1972d0a211369ce0f256ea172dfbc5c3728041c3e",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164557-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_041",
+      "source_sha256": "ebab7a25ab2f4e5d63551326d87a71021917319ff50de6c1b90ad723101eee56",
+      "pdf_sha256": "d62fed2142a6a3807099d437cd0d6f499005c95a9bac13bda226988ec143ebef",
+      "metadata_sha256": "faeaf4e022a5e8278408220dbb28dc83478d8a9dace929861ab3e278b07c89d7",
+      "reference_sha256": "e9eca69035b5762e049985babcd3ba0ced0bc7fe623fe4189e087b1b6f95d2a3",
+      "backup_reference_sha256": "49151bd58838cd014d10863b24730bfd9bb222c6ee228ee11fb48497c67627d4",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164559-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_042",
+      "source_sha256": "bdc7daf96df5f6f2856903b03dd9dfa58552f8b662400b656108eea565177c9d",
+      "pdf_sha256": "705541c16fac3168f38c1126c23747f6be3ef9192a06bf69dbf95d59c7f06a0b",
+      "metadata_sha256": "3292221278993bd4332e4eaedc6c0bd217e284aab912f23118d57301506a3b60",
+      "reference_sha256": "0f17d446c83a1eb21e77311683ae92a3d404d3c29de863a8f64612f1a768c7cb",
+      "backup_reference_sha256": "b44bf7a484a9fdd40a73f478b9237c70805c494f720297de8b14244fd04db895",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "EU",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164600-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_043",
+      "source_sha256": "22f3e64b3f52fea7a6e8b7c4955d524600e82bc3dd1fd203fb4b61ddcc6d42d3",
+      "pdf_sha256": "150eb334595390e3196dd021b75a0344291777f34946c277c51277d1d53ffe34",
+      "metadata_sha256": "321ff597b77f0fb3efe365b069919fa56ee68972b9100f238f72f102e09a1415",
+      "reference_sha256": "c0c8673527aa52d0a9c5d2033c51fc0c36ba2d84cbd8bbc773c532c9c008acba",
+      "backup_reference_sha256": "e0390780180b5030d22b6a13f1df63bf1efc0c28e9f57db2c2e371f5e45ce97a",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 25,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164602-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_044",
+      "source_sha256": "9dea1d8735e6c36abee0a2fa1b18a9954b84219c0d03e357a375e11b16a5c566",
+      "pdf_sha256": "4593063da594cd7b052ae1a47cbbb3f3e3763b891f515a02cef372506cba0c3b",
+      "metadata_sha256": "49377ca6c030b7cabf89e64fc200c0cfa2260de649e80a388e9d4fb202f52c4b",
+      "reference_sha256": "0432ed517bceda9f89730d814d801fefa37890f371880e734f663f91303a1086",
+      "backup_reference_sha256": "a556cdfc84919916f8a7a0f476406c0d5561a853ab542058ba35d07d853a23c2",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164603-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_045",
+      "source_sha256": "c79b382a418c44dd013653c6ad4cde2db61ee68a625c660c33e8f93163610c9f",
+      "pdf_sha256": "360820672bcd37adcdbffbd50edd51d3cf4527a6f97e50f70781ba55e30c5e4d",
+      "metadata_sha256": "d1ce4631bf4836bb5f2cdb22f0cca1204b9ade394dd66c363f4698ce8ebabc57",
+      "reference_sha256": "a35bcbc14a422468fdbe60004cce2ae6a8f7c24b8932aa1d3ddb3977242bab9d",
+      "backup_reference_sha256": "a515d318c25cc8812ebf734688fa05213bea80be34078b447d0bc4f899fb8fd5",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 1,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 15,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164605-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_046",
+      "source_sha256": "2e73df382dd08d62efac495fcd3a717ac5591fd22d680946e009cec0117cdb83",
+      "pdf_sha256": "4119e53b581487746ed4b917ee904120de5752a66104f25d9acbd53c53e22e2d",
+      "metadata_sha256": "6e695d71f64df12231392e09c467f03567097ee396cfa921642f382b25efa766",
+      "reference_sha256": "ea339df784c004680bb7e76b99befaad689bcfd9ca44048ed28ff35973176642",
+      "backup_reference_sha256": "04992a81dfc0246d6faf99df855624ca85b75155b039fcb6d40bfaf8e428477c",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 55,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164606-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_047",
+      "source_sha256": "1a8fd441860c7aaebe30459b0ceb10d8ec7929176d1545a55fd23dc0d659d246",
+      "pdf_sha256": "f06c92e3cf6eed14e5df9a5bf9feab8f596719a9507cde417df1d9f5a8f2d6b8",
+      "metadata_sha256": "1116092fc8bf2cf548fe3d10b4aa7fd277a8554758ac280b0aaff27c368f2f4b",
+      "reference_sha256": "262b69501714cfabaab134ad9722bc5637960d872c0261921d9aa1118fe237c1",
+      "backup_reference_sha256": "2cc50e429575617c7d19a66c8695305ca40b8b73d5f81deb9dc7e04274364497",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 28,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164608-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_048",
+      "source_sha256": "2c360a5f3e1e74f83c6cc1e81ca11ce0c7078388614a21dd35ae84030a09713f",
+      "pdf_sha256": "907236d8bcdd2a308a1a12137d7e4bc7ab33acc7703b414dcaa51718a49a88e2",
+      "metadata_sha256": "16b07e69b4b109f449dcdb226710a93b23e02cbc1b2b4f9b4fd1b658cdf8ba44",
+      "reference_sha256": "dc526de8c767b8ed7e892fedc136dd079cbef11b1ed41fd976d93473b050a26e",
+      "backup_reference_sha256": "572a6090565fcf62fbf4c208466bec7e13634c2a84b453341659b53ad41cbfe5",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "EU",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164609-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_049",
+      "source_sha256": "399d6fb54c233786e5b07ccd1d8d26668e7a680f7526b37aae8005eec930c5ad",
+      "pdf_sha256": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+      "metadata_sha256": "44a834ec08942161addd7f21686d5be2c5614dc26388b8dcb5922302ec318eea",
+      "reference_sha256": "06a5a9bba88b2993bed741721a4440c23c30505d704ca215b4fcf9d1d058f77d",
+      "backup_reference_sha256": "0a903576e76266620e86167751d9ce4cad5706ab2730d4139a1e92a7c1d5163b",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 25,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164611-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_050",
+      "source_sha256": "778ac9286f59fab8fde71b3e1c44091412edaf766ec478fefc71f2d9769c96d8",
+      "pdf_sha256": "097e94baf27afa5a092642425e7b53a67ede026bccaf3e3ef9590f44351864a6",
+      "metadata_sha256": "94825c1e49752a4e56d1eb4db4ca2d9765e2346ca0ade850c42cc3aaa2fc42e7",
+      "reference_sha256": "47f9e3aaf935047e0983aade374f9130f784bbfd97ca0723ad9f1e6b7fab0d2e",
+      "backup_reference_sha256": "2154c85a620f84837b313833625eae327f50825332ca1e3021df30c3e3c5def2",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "EU",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 44,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164612-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_051",
+      "source_sha256": "f599930f7fb2ec964340af3b061cfc0b8d3dd424ed201b735b2ceaa4d66aaff4",
+      "pdf_sha256": "44a6e39b690ca0f672b36eb88f7ff82c379cd58539206a8eefecd856463f71c1",
+      "metadata_sha256": "adefb013c13a08e0c4c18731ff317411f2875547128759daabe462612d00029c",
+      "reference_sha256": "02734209b3ca1787afc826742eb7e768d1ec731becec39108d8318b489a1035b",
+      "backup_reference_sha256": "224ae043dfba60cd782adc25dc190fd837758d0b9e005a85a8dfb42669446299",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164614-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_052",
+      "source_sha256": "513647b03b69ff071b5d4abe78af4dd821dbb75280760396741925d783020566",
+      "pdf_sha256": "11bbd2b2ab2ecd8f1795783f76cf7440d74405cf14b2e6082cf61d50b04b9aa2",
+      "metadata_sha256": "eaf630105653646037d2cc2dd7b0b2dfed059cc422cdc79dcf79742f8aa38da1",
+      "reference_sha256": "f980aaff712ac1ee49e51dfc5ab70c904640e9084ec5f16def0b903585bc184f",
+      "backup_reference_sha256": "79386c2be480b3740f1b6a103bd169cbcfd31dee3b4c9eab1515c3b43750fd56",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164615-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_053",
+      "source_sha256": "eda1211c9c029e8170b40de712e5af9559ccaff36aa7e8f8ad28e1d2a9627d1a",
+      "pdf_sha256": "f59f5989465c9121fe2f1f2d91576176894ee20715be8be4aa30f439c1d99de7",
+      "metadata_sha256": "3d13ae90c8a27ce4581ac0069644b3ddaeb154afc53d0546b0d28e3ee7b3cdc9",
+      "reference_sha256": "55fc9a64760ca0ebc2c0a2de7f1a533dafe7fa5fada97bf2c2cef6b8fffbfb89",
+      "backup_reference_sha256": "8e2479360d72e9225a615c10faeadda97273242ec8d8cf4fd2199cd3f3aafd96",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164616-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_054",
+      "source_sha256": "2a2d1c54bc186dade4af5162df96107d696c3fd372a3154bba8d8a80d2ded3fa",
+      "pdf_sha256": "6a460522d86588d4ad0d34f4d60280aaedb59ed99e899f4283143bfe3c09cbed",
+      "metadata_sha256": "f4557a41db4a73ad3e4ffc46649a5befbe2dbd0c271afd7f1bcfa8dae0fd04b6",
+      "reference_sha256": "3eb1597cd8b909c82cc3d884f552e9a585d2cadad40eb07d039f1b20808c5ce8",
+      "backup_reference_sha256": "a91205534d85c64fbbc0f2e2ab0d3f5b64bb8f97bd02c8d727322e773aaf0f23",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164618-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_055",
+      "source_sha256": "0da6aa852304ace66c42687710d54e8521a3bb56dc50f20d72ded0c9bd2fa064",
+      "pdf_sha256": "9bdfa8113d644e6bbb59b6c78a1ff3fff344ca9003dc4fb4da2f257ee75bd962",
+      "metadata_sha256": "abc3d6cefdf533e05d5c18179422a47212f66fe3ad736b1016ca090d28e1f439",
+      "reference_sha256": "963cc87101dcdc69e94adec75072a837dd78877e0fc04ef78a90a45e5da3d0f8",
+      "backup_reference_sha256": "09fcead1545d7e00f632989fc30650e917352f467a805b437f59e6f4408f8d12",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 44,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164619-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_056",
+      "source_sha256": "968a3b5ad18a87118763887482115d0af0cbdf3e3901a01e4aeda30a54174469",
+      "pdf_sha256": "c28c787fb4345a4ab3d6bda0f1b85b665b3b9b216b084f35a0f165dfe1b5c388",
+      "metadata_sha256": "71bc900c3c34b227ba99e20bef6012fff57c9249ec44e4c9e3fb1a07d7ce5440",
+      "reference_sha256": "701947923b739b566ad9626a016ace534b25a97de1add0b46a643626de7c3c9e",
+      "backup_reference_sha256": "ff2702c1d3a946291306367ff287478a9022329c4abf6b82205941f3ee9b660b",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "UK",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164621-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_057",
+      "source_sha256": "8d81b108c15b822fe126c47ddd57a432441e9a9b50b0578e5abb510421821ec3",
+      "pdf_sha256": "9e143f9d494d802d268f83f67477540e3334abaee80be7f36c616c3c42e183f3",
+      "metadata_sha256": "cac30091cb13da207f3706d1dcec8f300dd7d6190fa20ddfa351a58d3eb327b8",
+      "reference_sha256": "a1040a12b15b8bef9af3a9f3c8264bb04c14fb3cd48f2a42452577c88c3df8e3",
+      "backup_reference_sha256": "cf69f001095f54af843f5ea78b0f811365686b4c73dd918b8f52818b948e79fd",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164622-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_058",
+      "source_sha256": "da495a2fb7bc2b3e8fff287b7a626181d779ff9c554b1f1f044bc13c7bab188d",
+      "pdf_sha256": "55147c2ae1c655ca3a191151401f144e1190e7b1f70db5646c2e1ff74d0cb29a",
+      "metadata_sha256": "683d99b01f8ded3d2ed54b9eae8165db5fb73280b6450c1c48833ae1e4f22ba0",
+      "reference_sha256": "f3cef22ec60efc2c4bc534ae322175ae94891e01cd796698b023fd381bf94055",
+      "backup_reference_sha256": "35c4a7fd99121359949c4d8bf48084e774568992e28263fd9bb92368ec51c23e",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164624-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_059",
+      "source_sha256": "c4004ddf66acc74d1a446be54164d9186cf82ae0a3ee58c0e58a1b734f0c3f84",
+      "pdf_sha256": "f7cedf1f34124a2d54add9714abb319ba716989eaa4029cd0ab41c68cd59ffe1",
+      "metadata_sha256": "c085a90ee03a22b741f68986bb1b0587a10253f99764b6283d78e8f5110e4494",
+      "reference_sha256": "a2b53eaa531c26ee0d0b885ed36d2dacc9cd1a82b2dcab71e3ffa0045f72a3ec",
+      "backup_reference_sha256": "2979b4476f0e6fb4a8cea633f1d6a869dd4367c72f9f77cda2ace0d3eab25f02",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 33,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164625-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_060",
+      "source_sha256": "2a7946e6c96567010570b6f03d30fad55e1d794cfe25089e1f660b8846275629",
+      "pdf_sha256": "4b0aca1020a826546f4e6ec1f72acad2f975d1f921aab69acbf1e8f4904de7c1",
+      "metadata_sha256": "a8335b4fcc460887ab1b07848b46adfea1e6300ce4233daab584f8a49c3dada5",
+      "reference_sha256": "db484fa8dc492631eaf15e6e793a2e4a6c7b44e03dd45dacbfc9c71016abafdc",
+      "backup_reference_sha256": "844404654856337161bd2acd4ddcfa93c5b5be0c33643e06e1132f3ef96210e3",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164627-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_061",
+      "source_sha256": "b2eec6dc23b9e847dc10f85adcdde9931dcb55b83e306353e503011ce707b3a0",
+      "pdf_sha256": "a0ef631f990bfefa140a8ecafb8ea3c608621e0202b0e743fd53abafcde78fb1",
+      "metadata_sha256": "1fde2b5e1e64dfc69fa8d5c5e0f483e8f1ab561cbeb6531eaf34c6a62deff50e",
+      "reference_sha256": "f7ec0187a0328f63991f38cdf4ab5fbfc6ff1b9bcdc1aad9d5b8b097dc8db054",
+      "backup_reference_sha256": "f466be86984424f6e159a91e8f560714b5307ec83032e841de3c7b7eab562919",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 36,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164628-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_062",
+      "source_sha256": "a902e2639f03ce1f246a0ce06f13b940ca2e933bf62a6cf5e2178af1905641d3",
+      "pdf_sha256": "6acb613774da9b4747975fc4c182b1c0c97b30b4041baa0b633633276c633fdb",
+      "metadata_sha256": "5c06d178d7db37214279574a2120fc5982384134282437fea25dc65f0e0248de",
+      "reference_sha256": "37f7b5795d1dfd79ad503a3e8e57007220258c590e0134411132e8f0395e5678",
+      "backup_reference_sha256": "dd3a68c9a8578ad5f075776d1ad1f2bef62210590cfce74214423a22a6204feb",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "UK",
+      "pages": 1,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 24,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164630-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_063",
+      "source_sha256": "247f800e2bdcd42267dd623a19d948856d334bce078b17410c8d560a91d6f632",
+      "pdf_sha256": "df5f8b0fb0c6bcc754bbba88121d843e889c896e9ad99b2964bc47235f5b3f54",
+      "metadata_sha256": "cf24b58074fd2ebed3fc398a52966b3725754c87b2526a72505ab545a76b070c",
+      "reference_sha256": "7621b9bde7362139d3cda822b3b098ab0d350c0a7c177cbf0a1a2363480141a9",
+      "backup_reference_sha256": "f9e2a317c2c3c2333736853aa8f74ec0557cbd9b91be712ca1ec6b83a243a2b0",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 35,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164631-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_064",
+      "source_sha256": "a760cfc66cea1d95aae7e960650a8eea82b012d26561254a5b7997af25940d82",
+      "pdf_sha256": "98b20ef6811cb5b5391139fa256d582e5f278fc099aa9a8e754a0e243d58f8bb",
+      "metadata_sha256": "bde20e596109dd69fd75c0d34c0e3f1c37dd4c64433b68d10268ba16de977052",
+      "reference_sha256": "e5b54e4e9c07c9cca6c9844774b92fa1c47c488ba74649b417c4118a15886661",
+      "backup_reference_sha256": "645ca2b09ab5d57e23ac4728c38ac786a430d0dad11876858c907df4ed684529",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164633-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_065",
+      "source_sha256": "a8a7f140e22a27f0fb91fbf31afd01bd93904ded6313bf232e2fae530cd262d7",
+      "pdf_sha256": "97c8f0890d3fa7f0b0b5e64021117bf13348aeda42335d31c806f231b68706d8",
+      "metadata_sha256": "07906b350f43333c90be318816b3b858636c0c206c6eac04377fc8ff2498f5e9",
+      "reference_sha256": "e8defd7c34f854863b61115e32c5c3aa9dd5f79ac9b5b48b45eec6c7580eefd5",
+      "backup_reference_sha256": "d3bec4cbc18e1670e20c34be13b46e4871fabef67a50ef45235558757f4321a8",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "UK",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164634-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_066",
+      "source_sha256": "a9ab5596cb4f58c1706eda539d5705ddc038c725c0bd0bfc87cffc43d50d6d7d",
+      "pdf_sha256": "6e1f3ef002fbd77e65314b1de8323eea8441c1febf551ab85cf2afb68f6dc3d2",
+      "metadata_sha256": "5f692afb5fc7efb9bd28a12b667b4f7ce43a07c754cd9d13ce5fb5b4f7d0e799",
+      "reference_sha256": "b4e636861416beb3915f6ab03fb135a8ed94c59fd7069117ccfd005fe16b61d8",
+      "backup_reference_sha256": "bf2e10b386f12da4e9ab542c3f5e4dfadc864db7ef7a96c86731a032c4a17889",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 25,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164636-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_067",
+      "source_sha256": "ed29aef4a82d1e50f09596c1d051e76e8bb38f97d5b5413441296d060d7b43cb",
+      "pdf_sha256": "e4c9c14748d965a142e78a50ec0dd4af7230038e9c52d06300bb0bbf7f3113f6",
+      "metadata_sha256": "b0568673a9d3d3c6806bf24be4e2e9ba9109342aad6fb4f4658b2d79cf29293b",
+      "reference_sha256": "c69209ce95e41b01c0524056b12d96f07862ec94dcf65d6c98111cd7420ddf14",
+      "backup_reference_sha256": "baab3e76b4f964a3ed6ffd251144c105a4f725a46e76723e02cc9c7f0457b31b",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164637-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_068",
+      "source_sha256": "78cd69ccc343ecaa89046d2cc13d760f2c0c51d0a2198084e7578ea2d0f4d3f8",
+      "pdf_sha256": "bc55d3356b09f9eb56be650fa2b63ffa6a80d88b4e6b9937719b31bf05a58fce",
+      "metadata_sha256": "9199bfa4616f8da3d4142f845c72ac7435336c97a89a39c16cd0800279dd724e",
+      "reference_sha256": "6e1e56998dda2b3749332a7621b5b5e3c77a5c49fb13b04fc2896fa79cb8084c",
+      "backup_reference_sha256": "49912ab46ef6f753ef73171588e23484499be1a2f4b76436909a2d2d4cbabdc5",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 1,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 15,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164638-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_069",
+      "source_sha256": "bd63ebd47c11450100c4ceff970f717648ca1f4d2826ddac33691b25dd5703c4",
+      "pdf_sha256": "2910890b973e3ed9abe057d2718aa971a8649dd2e7f3b56d937de6806e0532f9",
+      "metadata_sha256": "a09811b5a66c42c6c57c7522a951791be49bd8c3e4d006e19ca17f85eee3c330",
+      "reference_sha256": "671428c5fff25acf67d0a892007e4f015996fcbc0b340ebf6d8545256058f9c5",
+      "backup_reference_sha256": "4f97192bb65791bd864b7d91fb6d4c3e6a5369da194b15e1b386e80120d5f8a9",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 55,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164640-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_070",
+      "source_sha256": "8eae8afe08c3c70d55b2fa4005ba48904b93057bec2260abe97955b10f1bc77b",
+      "pdf_sha256": "cd371884736f2ac5bac230f7b4a12f5c30b1201929b0f6eda46d46f8330e0365",
+      "metadata_sha256": "39ebd0aa3f4f9dd5e28a8b0d8c29a992e93ec4583ec80483455560d9f265ff98",
+      "reference_sha256": "563316bafda97a2e6ea81967ccd091e373d936ba393523156c0709eeddc98c65",
+      "backup_reference_sha256": "851a77f25a868d52b31751013edeaca72fdc2a701026bf14fb532cb920a05456",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 28,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164641-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_071",
+      "source_sha256": "625b3e5b7b77994e688bad34071fc4c4a033eca1fb0b0ff493ffccf8a894e1fe",
+      "pdf_sha256": "f28148cb2363d06633465589fa7d48e87e71ca740d8b0fccec0175dfe156b4c8",
+      "metadata_sha256": "17720a3cee4f2f4b02e21728292f97215b86e0ef248a6f33b9eacdde2c568979",
+      "reference_sha256": "6308d55dd8fe5e8c31c5ddc698fb8fac57cc69a2a0473a29e6268a4b5a30cdd2",
+      "backup_reference_sha256": "6736163d51c794b1a7ddaa17b0480e556fe8224b546e87e10f282951cf96cb60",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 33,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164643-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_072",
+      "source_sha256": "f8f6e883e10ddd2aea867c5274e92873293855931547f649e379341ce37ce1f6",
+      "pdf_sha256": "2dc5189b3a7f62e2c382b88b500eb5ab9e8b42581ba62bd85c78a5dc9319fabe",
+      "metadata_sha256": "15139fece4535d2ab85ce70490735ff67f0866916a3facc9b4c2c13aeb08f027",
+      "reference_sha256": "a423d8dfbb9bb8e7c4a18ad99d806bc2376b14b4cf2252b08165078e9d7e953b",
+      "backup_reference_sha256": "249c9d213a545d9e45e8b9ddc08175317a39c66805b3b5add843554184f9c682",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164644-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_073",
+      "source_sha256": "d9817dd7c87b26df84cd3853dc5dffa42c0c88ae914d1a3399aa86cb29bc5ff7",
+      "pdf_sha256": "19681ada6d99b0665b9a59d879852c468b0cc6de9168d0f882c531da453a88a2",
+      "metadata_sha256": "f5177d1ebc1f53993d12002dab75b92cd761d8591924918487ef3d906ef11cf2",
+      "reference_sha256": "39372af2e5180f3c9f290886ba8d998fc620f52416d49afd7fc2033d15a2edb1",
+      "backup_reference_sha256": "abdbca9c8bae564dbe22819ad78804248a56272f5eca8e7b7ed000b162f4e4bb",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164646-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_074",
+      "source_sha256": "ded543a195be30e47b2223abf0262042dcc33b468b0c9b7544dfa4e405bffd1f",
+      "pdf_sha256": "d9a6285b4bfcd2b51317cb621fe7717f25ce14e49f4db7a3a4092074ac2e7d49",
+      "metadata_sha256": "84b72ffafdae590e1081e3d532aa0c5bd8f0d5adf9c83934c2b1ceb49c823e1d",
+      "reference_sha256": "172d7e8f28649c0ce496325964e55a7a2e8a3e06aa19ca1d43b30d3b6c8d6871",
+      "backup_reference_sha256": "ea3686414b9166ab9b90f7a20421337d29ae5f98ef9d51c12d104ae1ca3976ec",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 27,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164647-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_075",
+      "source_sha256": "8ce762e83855a9747fc3461ba02d21dd26833f418b934a685762632577f75cca",
+      "pdf_sha256": "a852358a7cd82569f4d235c4d55eac3299ada46370a1d4c9e7abe14d8a573f14",
+      "metadata_sha256": "69fd5ac28230bc894e0ec61e0a93752542e319dbcfda5a69744ad4ab2f2262a4",
+      "reference_sha256": "86d8c6607c072eb5f39cf471f3754c9a3d90c968814ac77986b193e81d568f23",
+      "backup_reference_sha256": "8590150cfd21124c485ab64d9ed215dbd642533ca9ce2b7fa364974966b8dc9d",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 35,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164649-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_076",
+      "source_sha256": "d3492f206383745f95e83c50c89c9eab6e2d95e59529ba2964c5aba8dc36c27b",
+      "pdf_sha256": "1387a39a832ee8fbf09c23dada4f8924e4767b5d39ed89b6b42f46ef57237994",
+      "metadata_sha256": "6c5aea3abcc69135eb627e5ffdb870525689b03395fc021e30885090330662c5",
+      "reference_sha256": "37b9ad65aabca47dfd0bf157cdc1c98806e326207803b8819b8f42351c3e27b4",
+      "backup_reference_sha256": "42960e374d1b52bb3082a695b514a60126e4e86bf9c644e03e866aaa12c4e7e7",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164650-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_077",
+      "source_sha256": "685c4c7e6d62740b0a85df9e1f4e644b173fcb5e619a092d197b932445d4ae4e",
+      "pdf_sha256": "26cba4b70e87b8d698cdb978dc5c93e2dc161ff285d34fa132a4b830e47a08ee",
+      "metadata_sha256": "99aa788f2264d0a48aab3265cdb7f14eb30ce4ceeeff113472ba5de2e8f2572f",
+      "reference_sha256": "12b2940fdfed3b214d119588ca6cdf285ff3f6890ab6ab9829ec8c02448085f1",
+      "backup_reference_sha256": "1ee6023c1dffc49bccacda61754d55d25d1363f6dd4b80ebc1ee2cd3c39e7e42",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "CA",
+      "pages": 1,
+      "source_line_items": 5,
+      "metadata_line_items": 5,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 6,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 18,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164652-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_078",
+      "source_sha256": "728961c99987b48ed0564406b8b7db0ca9891f87c367975f7f03b34fc017680a",
+      "pdf_sha256": "ed312e82e0466efa1d85e88ef456813237b9b4abd251b0817f27366c500c7241",
+      "metadata_sha256": "39f734f18a2fdac2f06b249717b5444b84e9d055cbcebcdf53cd54a4e0797e31",
+      "reference_sha256": "4fb5abbfe902d4bcdea8404dfcc25ebee838af2cd02f2e3d31de9793365640f6",
+      "backup_reference_sha256": "d796e7eef0871aea23a5962b9b1b224c78a16d863f619a0ff37ce4f9b65a7f1a",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164653-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_079",
+      "source_sha256": "383b20bb156cbac99caf981b8d76c864984218ca41c9f60d3f663b7a79a7b563",
+      "pdf_sha256": "23b40be6a1d93384e5f30dcbe733953f6c127fea089950f49f0f79a517ce3ecc",
+      "metadata_sha256": "feab118212cd1f0e232bd36a417215c2de691306e24b096bda5ed0bef4110045",
+      "reference_sha256": "0fd2d466460385f74df13b09bbb0b5ce9401e3673c0856161501f20e24f549a4",
+      "backup_reference_sha256": "86bbe54519ea445c3163ae70c0639d41244eb17acf596eb75c28a3446c21ccd1",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164655-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_080",
+      "source_sha256": "ac8c9519e0a2d91f0e956b212a316854d2c4cc28a75525d3f840d811a1bbb032",
+      "pdf_sha256": "6d11561375afda584a6d7611faa21ca93689d51138222644014e5481779c1cc8",
+      "metadata_sha256": "ae7c09093f2df611cd56c58a857dad3aab3f4cc39e63322beb2ae09f2b8f0169",
+      "reference_sha256": "137974accf76861de7f3311548e25142529aa2149bc1c92884446c6b474560e6",
+      "backup_reference_sha256": "6026309fd72b1116bb9d44161b000c457ebab60ebf030ff2614b2710e0cc4505",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164656-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_081",
+      "source_sha256": "4058c968c01f53e4a6a9f45665a68ddfb929777d8bb26ce5b6d91998eb26c0d3",
+      "pdf_sha256": "fc028fcef5b311fadfdc52c4ef32c12cc841bab94709310aa26a37617dab1428",
+      "metadata_sha256": "5799339ea2dff55518b4c72a30e3124f70e977ee4de03460f315a8d62d7e448d",
+      "reference_sha256": "721d67faed1d215ef7070707e65d8e3c358e0526b23db88f7ac7687bf90f8ec7",
+      "backup_reference_sha256": "7257c593447f1efa97539ccaea34c81ca5248693390dfbe80ac18b06cffd72a8",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 35,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164658-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_082",
+      "source_sha256": "25e6b9131ce0c7b6afc41528151fb5e5f97188e3fbe9dda841187fc900e4eff3",
+      "pdf_sha256": "884a8235e3ace28be771ed5b837303be0ffa548e99e6ba49824097c040b0296f",
+      "metadata_sha256": "6b609ec40cc1b12eb8fb7c99ecd7af669a63184f95f6cf627a9327475f929f0a",
+      "reference_sha256": "b2dc6c5d4779afd424de787e8f85f33fb3eefb4db2b41afc017c3db1ab2a2cf1",
+      "backup_reference_sha256": "6d97fbee768b4f41bda3bd7ab095904eb0644f81a107fdbf1e71b9484a33596d",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164659-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_083",
+      "source_sha256": "be77754ddbefbcdf206460708c019abf73434eab84b8b204e1ecb64c5bc110fb",
+      "pdf_sha256": "64ba8913459e1487f1b1c837da08eb982799a223e460f96c3f296a8a862bed99",
+      "metadata_sha256": "c885eb85691c91cb4b9d603d6ec56e795d41484996fcbf33e9740cbd7b5d6cf5",
+      "reference_sha256": "f57c2df1d4bf1d9aa07a22a3b19bc7b1ad2fdc7d3e171efca93ba8929119c14a",
+      "backup_reference_sha256": "51da72a38665393b1dcf4cc2d11782877d4fae9ee1a92e5314d259a7ee6fefa6",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 33,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164701-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_084",
+      "source_sha256": "bfaf2489ad695003f00c873cd47f7ad5b58639acd4b08ae24d43f2fe6e1896d9",
+      "pdf_sha256": "72c0e2113aa66f2c8d76009dbbf667c2e91134f5d7d6ec32028dcc83da479ff0",
+      "metadata_sha256": "039b423a12564676e870c5afd6bcf59be131833e0812c115124ff02a282eb88a",
+      "reference_sha256": "02eced108892e86dc3a82c89d1eec3fbabf32ab3cd149e0fd316b7d98386a9c0",
+      "backup_reference_sha256": "4b0e74eba2a40e68a3a9bdbe3cb9d37f43f59ba7725c0146aa7c17dd282ad122",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 40,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164702-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_085",
+      "source_sha256": "ae7278f47099c33cd123ec320b4cfb63e49bc89585a49e163f2df374b064d012",
+      "pdf_sha256": "383ad6099b4979f0805f4fd1d00289644ce2c648af79a1adc15972c23be53678",
+      "metadata_sha256": "935fca071bc72f28f5175ea05f7f7a7cf874c6f7cd69d534b26c5adef4294730",
+      "reference_sha256": "82caa9cd3793a123d2b6c854dc62948baced242831c212acb8a8081adf2e1706",
+      "backup_reference_sha256": "01bcb337ce16cb9beb8fd5bdf62ee0164c91589a9e462ae336ac576c2dc54d51",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "CA",
+      "pages": 2,
+      "source_line_items": 7,
+      "metadata_line_items": 7,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 8,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 32,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164704-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_086",
+      "source_sha256": "80b95163ebf02f6e1170d6f8b1f983b6251c010ca79bfdd68a2ba56364d01927",
+      "pdf_sha256": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+      "metadata_sha256": "12fbd5c08e548c6d83b2962da45ef9bafe817d8e9dc6a7596f4fc044f74ba3c0",
+      "reference_sha256": "f340efa0046b30df9cf5e613a64d2532693b9949e271abdfa50a945b0a15c327",
+      "backup_reference_sha256": "eed0647b5afa0aeec18244e5b79c298171a025fa34bafdb08727365c1b686cb8",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 50,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164705-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_087",
+      "source_sha256": "ecc7f19807e61d9fa30f407ba63234deb5fa7f9be33722b433794f7655aa01c3",
+      "pdf_sha256": "87cce5babdd78e0078f07d68ce8b836a75ebe85be3230d823eeeb0c01dce5f26",
+      "metadata_sha256": "1eb72aebfb43f2eaf53f8e04fb95a2a20cf490a8429b4a09c885700ffe02212d",
+      "reference_sha256": "001702cc193ff4643490da6ace2d68ab054c5486ecdc135378b78381a300e9e8",
+      "backup_reference_sha256": "889288911462f2dea9c3b3870f83f2b315a69f1af6c7de20f0e20ca89607f309",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 44,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164707-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_088",
+      "source_sha256": "e3b11a612a79627a77939fb8b2d7292db76716f65301358a016c5461ce0ebca4",
+      "pdf_sha256": "324534ee9575a29a5b441fbcfe994cf7f3aeead9838c8bb64f024fca6eba7fe9",
+      "metadata_sha256": "5a983d72e8e6a3ec85801730f222a60955d1486dde5118280162c04e11bc1fbe",
+      "reference_sha256": "9a8de9a173a9e5e55f479f849544743c14693917b4af202634623f632954a2fb",
+      "backup_reference_sha256": "1bdefe8127c80fbd0eeb3685eca452749cee02a34e56d2731492e54b5e14a0de",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 33,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164708-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_089",
+      "source_sha256": "495fc8dbbd1e67d856bd3ae0f08e2d0cd6fb3d186c971a885fcd089da85800e4",
+      "pdf_sha256": "e3600b2894f53122347645f4d2f2d6091badc6c840f949f24944cc96164b121c",
+      "metadata_sha256": "b18952a34cfbf5b14f43693e06fa4ba246b927909b1e7f0ba24c2e16d45175f8",
+      "reference_sha256": "1cb97c19eecff5f3ef9bc110c8dd4ac1039ea0642d10706b7a5dfa7de9a09225",
+      "backup_reference_sha256": "93eff863e9c7676f6c4caa752eb4ea132ef832da953b410f82d578fcfb099bd0",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 25,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164710-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_090",
+      "source_sha256": "3b915bc00cbffe081bc6209386d807e9eebb130899b001ae17e7f840725bd3ae",
+      "pdf_sha256": "803b45d747376a53acb941fb443c9cb65c9fca0361f84ae1d204c1c15e3dbf85",
+      "metadata_sha256": "8edad4e1c75c7b3abce7019c19aa9db316102a66f08966559bfe995b967e73d2",
+      "reference_sha256": "d6b6ea2d57cd26e79a260372a99c042e392eacbf207958f1e69e839a81eea07f",
+      "backup_reference_sha256": "cfe6638f50ee7ff18d80615e9a4f69ff1583fca7d654eee1bf5a61f6c36acb78",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 28,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164711-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_091",
+      "source_sha256": "3e25486e35e43036410669365c689944461815e90facd8fe94c43d8a23a317a3",
+      "pdf_sha256": "df206e2680e947a1b954cd2007e3b5287e2f01c0c76196e98702f2da196fb216",
+      "metadata_sha256": "0d24ad45666d99c4cfbb10ce99c3510a68d06d3a07b4db374506e4b8720febd3",
+      "reference_sha256": "5665f62db5caf01b50c427b58bf684c1c59b3780e5ca9448b027983eedf6b9f3",
+      "backup_reference_sha256": "cdd4893d91e6c968119aed1ec3f0f8f64727242ccbf2bedeac173ae86e4780e0",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "APAC",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164713-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_092",
+      "source_sha256": "ccdc2c611b119fa3004561561474ffe7e482cfc01c87be4d108f369f4edd8a55",
+      "pdf_sha256": "9d21c81901a454dafe882b76255021f0f7783297c13f27f7d4825856963e0ed0",
+      "metadata_sha256": "a687bcd1482e71b1333a62178616577baaa95cc0a21e3da5dc4508282c663eb4",
+      "reference_sha256": "89c9a14b06e4936ac9ade8fffde03f1d95bda02b75c340b3528627edc58c67ad",
+      "backup_reference_sha256": "43319326b14afc9ae64c64497b012524580c597fc50454efb7cd4f4c55921703",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 45,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164714-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_093",
+      "source_sha256": "86a45290a7139612c4741e61f70c9a244850f20a8756b8fc7bd8a8ec42f9eafb",
+      "pdf_sha256": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+      "metadata_sha256": "54ce24b9f93945f04f5acfabc7d211d2e32c2fb128bf0b79c698894c867a3f75",
+      "reference_sha256": "419a654f95deefd6f77888ebe5762867bf93465b8b32b90b0d4c86e9108b0c00",
+      "backup_reference_sha256": "d44389f7083708f757ba05eea9810a7df842ebbe13f59dd479791421c8f8a479",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 28,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164716-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_094",
+      "source_sha256": "11aae65c1b4268c49bf4ea141bb0d7de7f789583ce149b9d6d7995d6625eac57",
+      "pdf_sha256": "dff4830e9b3025ab83f299892c62be9eefcb4198b228ea9b37339533a05b1ae2",
+      "metadata_sha256": "85b652ee712de2cc4de154083ac57b3e3882a7d8bb3da8f3bfde5a4aac32454e",
+      "reference_sha256": "485eb2d9dd50f843da432ddd3d1fddddf7c6eb14c8f5cdf9bcf51f14e1c7cf3e",
+      "backup_reference_sha256": "c0b149c3a0268cce06ef6d2de30560ffcba89b8d8f28451ee0851889307b42db",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164717-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_095",
+      "source_sha256": "222ccbc6d71f12c307556a4e6bd7fc1ed63f0e8ead3bf73a3295199f4cd767d6",
+      "pdf_sha256": "97b09860078e5b019cd4a7e10d8f5ba43fb46b8c0f394114b9c7df9fc9ee2a17",
+      "metadata_sha256": "82397e727d9bafc5a3d4f2ffed4f28532afc1d1e2436804120a8a2a827bf7248",
+      "reference_sha256": "ecf04d460ba27da7923c1a49471aa3327204e4f00278059731b6a68fb63de96c",
+      "backup_reference_sha256": "a737eb88743defc2f63d39faaae127a1a23104173443fdb0f1db66c5973e7c03",
+      "template_style": "enterprise",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 35,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164719-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_096",
+      "source_sha256": "d5f5d4196a4ba02e063a637de9fe7163c8093076ca15d4f42ad377e16eb2b279",
+      "pdf_sha256": "f28677ae569b4f5878b42d7fb8b825da2ffaf9b5e2336493a52b862cd00b95b5",
+      "metadata_sha256": "163bdc6859657da68b38480b64179068dc549966eb49762e7c729dd16e1855dc",
+      "reference_sha256": "f4e322e0bc2be945bc93fb59fe42f98d174771e647a042e7cfd387b02dca398c",
+      "backup_reference_sha256": "9f9b0be4748108cbe0939701481144baf5fcd01183e610ec56d15a1d31881f4e",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 8,
+      "metadata_line_items": 8,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 9,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 36,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164720-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_097",
+      "source_sha256": "7ead99e480911d1e2cd8bff38ea05695d1b9740b71ac29b2b4b79b9affa62b0a",
+      "pdf_sha256": "2b32a3b814b4ebdd41fe57aad1c280f54447a981e7e250c409246c4aec436c14",
+      "metadata_sha256": "116979246a02bc2293ac11a0e82d6b3e1eb8f0ede3394f904f3adc0030d00ded",
+      "reference_sha256": "0043caeb8af9590e486aaee6fcfe3bdcd5fbd339c3917860d9deda0660e884b7",
+      "backup_reference_sha256": "1280e31a4a7cae45743bd819d8840d23404d0e9dd51e6e53b57150897e023b83",
+      "template_style": "economy",
+      "complexity": "complex",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 9,
+      "metadata_line_items": 9,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 10,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 30,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164722-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_098",
+      "source_sha256": "9f471c7661120dc2218b4931b5841adba390e6eee2466105507b9f4e510694d9",
+      "pdf_sha256": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+      "metadata_sha256": "1d47fe41cbcbb43843ace2d235f1f788b67eb9ab97ef336e1fed3cdf516ff2c6",
+      "reference_sha256": "ae8684b732e33a9fdf9f15b5bfd368b7b7b6527e018bf2db2bc9081b17c5052a",
+      "backup_reference_sha256": "a46f4c55c86e57e49d7cdac8c935acda7ee874f31802fae10ffd6c259ce09bb1",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 10,
+      "metadata_line_items": 10,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 11,
+          "columns": 5,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Quantity",
+            "Unit",
+            "Unit Price",
+            "Amount"
+          ],
+          "physical_cells": 55,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164723-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_099",
+      "source_sha256": "b657a3fabb0a27c7db3b86a7b33cc61066a02bb68c6995df30a9a20e86536bb6",
+      "pdf_sha256": "3f891041a18bc38a2ba060d2c313c07440b6c5c8a3e9ff9210b1d17df2410778",
+      "metadata_sha256": "246584e127b2d99f5af24065c3bd980fb4cf9f3f39f9513ab5bc1cff93beed7c",
+      "reference_sha256": "b15209a1f40ff26a9001dbaff5dbcde3c837c7f60587560a7659656a349c9d37",
+      "backup_reference_sha256": "679aad48f815e69699c86d1ff712bbf03b6ed31c74ed475a1b1559f53da7b5fc",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "region": "APAC",
+      "pages": 2,
+      "source_line_items": 4,
+      "metadata_line_items": 4,
+      "tables": [
+        {
+          "rows": 4,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 8,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 5,
+          "columns": 4,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Rate",
+            "Amount"
+          ],
+          "physical_cells": 20,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 3,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 6,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164725-05'00'",
+        "modDate": ""
+      }
+    },
+    {
+      "document_id": "invoice_100",
+      "source_sha256": "2e7faa09bda9f188ed4001be1b262d9875475a9a7161ec029eead2a86f85bed9",
+      "pdf_sha256": "49f457a3696104ef505699af90cd00d378b824477555cda68d8ec3d432611d9c",
+      "metadata_sha256": "fb1aa349bb5f13612d5e2a9be7d0201318906cff182f66f09f9ef1fc39e067b2",
+      "reference_sha256": "d128449f5ea75de1354d1c894fa5a0d04bb8c149514e48b3c2704c74836fc8d1",
+      "backup_reference_sha256": "a16e9d025bca045f95ad0fa8818963ffa358ff8b79ba6cc95278476bb4f1727d",
+      "template_style": "economy",
+      "complexity": "medium",
+      "region": "APAC",
+      "pages": 1,
+      "source_line_items": 6,
+      "metadata_line_items": 6,
+      "tables": [
+        {
+          "rows": 1,
+          "columns": 2,
+          "is_line_items": false,
+          "line_item_headers": null,
+          "physical_cells": 2,
+          "grid_spans": [],
+          "vertical_merges": 0
+        },
+        {
+          "rows": 7,
+          "columns": 3,
+          "is_line_items": true,
+          "line_item_headers": [
+            "Description",
+            "Qty",
+            "Amount"
+          ],
+          "physical_cells": 21,
+          "grid_spans": [],
+          "vertical_merges": 0
+        }
+      ],
+      "source_created": "2013-12-23 23:15:00+00:00",
+      "source_modified": "2013-12-23 23:15:00+00:00",
+      "pdf_metadata": {
+        "producer": "LibreOffice 24.2",
+        "creator": "Writer",
+        "creationDate": "D:20251118164726-05'00'",
+        "modDate": ""
+      }
+    }
+  ]
+}

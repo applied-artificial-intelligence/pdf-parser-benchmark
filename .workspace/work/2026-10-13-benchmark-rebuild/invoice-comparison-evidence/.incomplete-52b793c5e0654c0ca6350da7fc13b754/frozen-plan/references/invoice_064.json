@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-81311",
+    "vendor": "Alliance Tax Group",
+    "due_date": "2025-09-07",
+    "grand_total": "432617.44",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Audit Services (hour)",
+      "quantity": "51.27",
+      "unit_price": "336.68",
+      "line_total": "17261.58"
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "3.23",
+      "unit_price": "201.38",
+      "line_total": "650.46"
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "83.55",
+      "unit_price": "349.78",
+      "line_total": "29224.12"
+    },
+    {
+      "description": "Bookkeeping Services (month)",
+      "quantity": "43.21",
+      "unit_price": "1254.45",
+      "line_total": "54204.78"
+    },
+    {
+      "description": "Bookkeeping Services (month)",
+      "quantity": "83.09",
+      "unit_price": "1735.54",
+      "line_total": "144206.02"
+    },
+    {
+      "description": "Payroll Processing (month)",
+      "quantity": "8.51",
+      "unit_price": "469.83",
+      "line_total": "3998.25"
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "81.27",
+      "unit_price": "288.07",
+      "line_total": "23411.45"
+    },
+    {
+      "description": "Payroll Processing (month)",
+      "quantity": "61.18",
+      "unit_price": "442.69",
+      "line_total": "27083.77"
+    },
+    {
+      "description": "Tax Preparation - Corporate (return)",
+      "quantity": "27.43",
+      "unit_price": "2204.67",
+      "line_total": "60474.1"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-81311",
+    "vendor": "Alliance Tax Group",
+    "due_date": "September 07, 2025",
+    "grand_total": "$432,617.44",
+    "records": [
+      {
+        "description": "Audit Services (hour)",
+        "quantity": "51.27",
+        "unit_price": "$336.68",
+        "line_total": "$17,261.58"
+      },
+      {
+        "description": "Financial Planning (hour)",
+        "quantity": "3.23",
+        "unit_price": "$201.38",
+        "line_total": "$650.46"
+      },
+      {
+        "description": "Financial Planning (hour)",
+        "quantity": "83.55",
+        "unit_price": "$349.78",
+        "line_total": "$29,224.12"
+      },
+      {
+        "description": "Bookkeeping Services (month)",
+        "quantity": "43.21",
+        "unit_price": "$1,254.45",
+        "line_total": "$54,204.78"
+      },
+      {
+        "description": "Bookkeeping Services (month)",
+        "quantity": "83.09",
+        "unit_price": "$1,735.54",
+        "line_total": "$144,206.02"
+      },
+      {
+        "description": "Payroll Processing (month)",
+        "quantity": "8.51",
+        "unit_price": "$469.83",
+        "line_total": "$3,998.25"
+      },
+      {
+        "description": "Financial Planning (hour)",
+        "quantity": "81.27",
+        "unit_price": "$288.07",
+        "line_total": "$23,411.45"
+      },
+      {
+        "description": "Payroll Processing (month)",
+        "quantity": "61.18",
+        "unit_price": "$442.69",
+        "line_total": "$27,083.77"
+      },
+      {
+        "description": "Tax Preparation - Corporate (return)",
+        "quantity": "27.43",
+        "unit_price": "$2,204.67",
+        "line_total": "$60,474.10"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_064"
+}

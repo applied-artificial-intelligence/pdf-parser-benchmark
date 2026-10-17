@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/invoice_references.py",
+  "fixture": "Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "test": "tests/test_invoice_reference_qualification.py::test_source_gap_cannot_replace_prior_reference_snapshot",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_references.py",
+      "old": "    prepared = []",
+      "new": "    document_ids = tuple(d for d in document_ids if (corpus / \"docx\" / f\"{d}.docx\").is_file())\n    prepared = []"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+doc_id: sec-costco_wholesale_new-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/909832/000090983225000157/costannualreport2025.pdf

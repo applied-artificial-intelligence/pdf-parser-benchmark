@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-77612",
+    "vendor": "Quantum Systems",
+    "due_date": "2025-10-10",
+    "grand_total": "99452.01",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Systems Analyst @ $181.99/hour",
+      "quantity": "49.26",
+      "line_total": "8964.83"
+    },
+    {
+      "description": "Project Management @ $157.80/hour",
+      "quantity": "43.28",
+      "line_total": "6829.58"
+    },
+    {
+      "description": "Project Management @ $213.55/hour",
+      "quantity": "44.64",
+      "line_total": "9532.87"
+    },
+    {
+      "description": "Project Management @ $140.72/hour",
+      "quantity": "75.52",
+      "line_total": "10627.17"
+    },
+    {
+      "description": "Network Engineer @ $234.07/hour",
+      "quantity": "14.46",
+      "line_total": "3384.65"
+    },
+    {
+      "description": "Project Management @ $186.72/hour",
+      "quantity": "12.64",
+      "line_total": "2360.14"
+    },
+    {
+      "description": "Systems Analyst @ $141.03/hour",
+      "quantity": "81.69",
+      "line_total": "11520.74"
+    },
+    {
+      "description": "Senior Consultant @ $208.28/hour",
+      "quantity": "45.9",
+      "line_total": "9560.05"
+    },
+    {
+      "description": "Project Management @ $153.67/hour",
+      "quantity": "92.72",
+      "line_total": "14248.28"
+    },
+    {
+      "description": "Senior Consultant @ $201.50/hour",
+      "quantity": "47",
+      "line_total": "9470.5"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-77612",
+    "vendor": "Quantum Systems",
+    "due_date": "10/10/2025",
+    "grand_total": "$99,452.01",
+    "records": [
+      {
+        "description": "Systems Analyst @ $181.99/hour",
+        "quantity": "49.26",
+        "line_total": "$8,964.83"
+      },
+      {
+        "description": "Project Management @ $157.80/hour",
+        "quantity": "43.28",
+        "line_total": "$6,829.58"
+      },
+      {
+        "description": "Project Management @ $213.55/hour",
+        "quantity": "44.64",
+        "line_total": "$9,532.87"
+      },
+      {
+        "description": "Project Management @ $140.72/hour",
+        "quantity": "75.52",
+        "line_total": "$10,627.17"
+      },
+      {
+        "description": "Network Engineer @ $234.07/hour",
+        "quantity": "14.46",
+        "line_total": "$3,384.65"
+      },
+      {
+        "description": "Project Management @ $186.72/hour",
+        "quantity": "12.64",
+        "line_total": "$2,360.14"
+      },
+      {
+        "description": "Systems Analyst @ $141.03/hour",
+        "quantity": "81.69",
+        "line_total": "$11,520.74"
+      },
+      {
+        "description": "Senior Consultant @ $208.28/hour",
+        "quantity": "45.90",
+        "line_total": "$9,560.05"
+      },
+      {
+        "description": "Project Management @ $153.67/hour",
+        "quantity": "92.72",
+        "line_total": "$14,248.28"
+      },
+      {
+        "description": "Senior Consultant @ $201.50/hour",
+        "quantity": "47.00",
+        "line_total": "$9,470.50"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9",
+      "table/1/row/10"
+    ]
+  },
+  "document_id": "invoice_083"
+}

@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Ramos Ltd
+document_id: invoice_079
+due_date: '2025-10-15'
+generated_at: '2025-11-18T16:46:55.899514'
+industry: it_consulting
+invoice_date: '2025-09-15'
+invoice_number: INV-56594
+line_item_count: 4
+payment_terms: Net 30
+region: CA
+subtotal: 2349536.08
+tax_amount: 351843.03
+template_style: small_business
+total: 2701379.11
+vendor:
+  country: Canada
+  name: Pinnacle Systems
+corpus: business
+source_url: generated://invoice_079
+domain: invoices
+doc_id: invoice_079

@@ -1,0 +1,16 @@
+{
+  "python": "3.13.5",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "packages": {
+    "PyMuPDF": "1.26.6",
+    "Pillow": "12.0.0",
+    "pytest": "9.0.1"
+  },
+  "producing_files": {
+    "pdf_bench/parsebench.py": "b934ff18b5920f69f9ecea43f28453ae77f060a94f17a40b19c551a2f1e9bf6a",
+    ".workspace/work/2026-10-13-benchmark-rebuild/inspect_parsebench_sources.py": "46801e2a284939ed6dceb5da8b9aa79dfd6a47a2ca89b470470c3339f26560fb",
+    ".workspace/work/2026-10-13-benchmark-rebuild/reproduce_parsebench_assessment.sh": "c4fc4ee19ff867958d79f31597e0560b51e85e404a22a9a410e9663392d65a24"
+  },
+  "completed_replay_directory": "data_exports/parsebench/assessment-replay.iWE61T",
+  "verified": "Pinned annotation inventory, selected source bytes and source-bound observations matched; render outputs retained separately. No candidate-parser scores."
+}

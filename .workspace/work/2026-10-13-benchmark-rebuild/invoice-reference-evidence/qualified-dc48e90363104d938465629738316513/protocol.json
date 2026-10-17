@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "task": "Controlled born-digital invoice to fields and complete line-item records",
+  "header_aliases": {
+    "Description": "description",
+    "Quantity": "quantity",
+    "Qty": "quantity",
+    "Unit": "unit",
+    "Unit Price": "unit_price",
+    "Rate": "unit_price",
+    "Amount": "line_total"
+  },
+  "english_month_names": [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ],
+  "unicode_database_version": "15.1.0",
+  "numeric_date_policy": "MM/DD/YYYY, as printed by the retained synthetic generator",
+  "amount_policy": "Decimal strings from displayed source values; no arithmetic correction",
+  "currency_policy": "Printed dollar marker only; no inferred ISO currency",
+  "source_extractor_sha256": "dc0080581e65ff37f6001a0fc7a9f4d0faa5170237ead99e1001b84761b1a3ab",
+  "metadata_policy": "Cross-check only, never reference truth",
+  "reference_policy": "Source truth requires independently reviewed exact PDF rendition",
+  "qualification_implementation_sha256": "bcab5c113e84e11ba9f73df0491f27cc118b813beaa3968b3137bc48c06838fa",
+  "rendering_pymupdf_version": "1.26.6",
+  "population_scope": "Retained controlled templates; not a sample of real vendor invoices"
+}

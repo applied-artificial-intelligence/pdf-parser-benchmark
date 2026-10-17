@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-89510",
+    "vendor": "Johnson Law Offices",
+    "due_date": "2025-11-15",
+    "grand_total": "137639.49",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-89510"
+    ],
+    "due_date": [
+      "11/15/2025"
+    ],
+    "grand_total": [
+      "$137,639.49"
+    ],
+    "vendor": [
+      "Johnson Law Offices"
+    ]
+  },
+  "records": [
+    {
+      "description": "Legal Research @ $166.17/hour",
+      "quantity": "2.03",
+      "line_total": "337.33",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$166.17/hour",
+        "quantity": "2.03",
+        "line_total": "$337.33"
+      }
+    },
+    {
+      "description": "Legal Research @ $264.25/hour",
+      "quantity": "26.62",
+      "line_total": "7034.34",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$264.25/hour",
+        "quantity": "26.62",
+        "line_total": "$7,034.34"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $153.75/hour",
+      "quantity": "75.42",
+      "line_total": "11595.82",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$153.75/hour",
+        "quantity": "75.42",
+        "line_total": "$11,595.82"
+      }
+    },
+    {
+      "description": "Court Filing Fees @ $65.20/filing",
+      "quantity": "41.72",
+      "line_total": "2720.14",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees @\n$65.20/filing",
+        "quantity": "41.72",
+        "line_total": "$2,720.14"
+      }
+    },
+    {
+      "description": "Legal Research @ $241.54/hour",
+      "quantity": "84.06",
+      "line_total": "20303.85",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$241.54/hour",
+        "quantity": "84.06",
+        "line_total": "$20,303.85"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $617.46/hour",
+      "quantity": "58.69",
+      "line_total": "36238.73",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$617.46/hour",
+        "quantity": "58.69",
+        "line_total": "$36,238.73"
+      }
+    },
+    {
+      "description": "Expert Witness Consultation @ $316.85/hour",
+      "quantity": "89.33",
+      "line_total": "28304.21",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness Consultation\n@ $316.85/hour",
+        "quantity": "89.33",
+        "line_total": "$28,304.21"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $648.97/hour",
+      "quantity": "18.08",
+      "line_total": "11733.38",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$648.97/hour",
+        "quantity": "18.08",
+        "line_total": "$11,733.38"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $141.51/hour",
+      "quantity": "63.18",
+      "line_total": "8940.6",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$141.51/hour",
+        "quantity": "63.18",
+        "line_total": "$8,940.60"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

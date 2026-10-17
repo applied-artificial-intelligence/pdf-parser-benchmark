@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Johnson PLC
+document_id: invoice_013
+due_date: '2025-12-13'
+generated_at: '2025-11-18T16:45:20.597881'
+industry: saas
+invoice_date: '2025-11-13'
+invoice_number: INV-75764
+line_item_count: 5
+payment_terms: Net 30
+region: US
+subtotal: 7706324.11
+tax_amount: 539442.69
+template_style: enterprise
+total: 8245766.8
+vendor:
+  country: USA
+  name: Data Cloud
+corpus: business
+source_url: generated://invoice_013
+domain: invoices
+doc_id: invoice_013

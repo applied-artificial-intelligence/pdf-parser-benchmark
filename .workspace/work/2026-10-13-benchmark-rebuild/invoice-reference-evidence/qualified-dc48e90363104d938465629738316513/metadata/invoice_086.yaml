@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Australia
+  name: Hull, Pittman and Nguyen
+document_id: invoice_086
+due_date: '2025-11-16'
+generated_at: '2025-11-18T16:47:06.168818'
+industry: saas
+invoice_date: '2025-10-17'
+invoice_number: INV-80715
+line_item_count: 9
+payment_terms: Net 30
+region: APAC
+subtotal: 624123.87
+tax_amount: 93618.58
+template_style: enterprise
+total: 717742.45
+vendor:
+  country: New Zealand
+  name: Stream Labs
+corpus: business
+source_url: generated://invoice_086
+domain: invoices
+doc_id: invoice_086

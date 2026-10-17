@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-38669",
+    "vendor": "Nexus Labs",
+    "due_date": "2025-10-29",
+    "grand_total": "6451000.29",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-38669"
+    ],
+    "due_date": [
+      "10/29/2025"
+    ],
+    "grand_total": [
+      "$6,451,000.29"
+    ],
+    "vendor": [
+      "Nexus Labs"
+    ]
+  },
+  "records": [
+    {
+      "description": "Enterprise Plan - Annual @ $38955.69/subscription",
+      "quantity": "28.98",
+      "line_total": "1128935.9",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan - Annual @\n$38955.69/subscription",
+        "quantity": "28.98",
+        "line_total": "$1,128,935.90"
+      }
+    },
+    {
+      "description": "Premium Support @ $1085.56/month",
+      "quantity": "44.43",
+      "line_total": "48231.43",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium Support @\n$1085.56/month",
+        "quantity": "44.43",
+        "line_total": "$48,231.43"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly @ $2015.21/subscription",
+      "quantity": "22.33",
+      "line_total": "44999.64",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional Plan - Monthly @\n$2015.21/subscription",
+        "quantity": "22.33",
+        "line_total": "$44,999.64"
+      }
+    },
+    {
+      "description": "Implementation Services @ $293.28/hour",
+      "quantity": "95.85",
+      "line_total": "28110.89",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation Services @\n$293.28/hour",
+        "quantity": "95.85",
+        "line_total": "$28,110.89"
+      }
+    },
+    {
+      "description": "Implementation Services @ $250.13/hour",
+      "quantity": "68.37",
+      "line_total": "17101.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation Services @\n$250.13/hour",
+        "quantity": "68.37",
+        "line_total": "$17,101.39"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $108111.80/subscription",
+      "quantity": "43.02",
+      "line_total": "4650969.64",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan - Annual @\n$108111.80/subscription",
+        "quantity": "43.02",
+        "line_total": "$4,650,969.64"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

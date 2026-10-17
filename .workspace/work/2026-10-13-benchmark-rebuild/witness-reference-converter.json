@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/invoice_references.py",
+  "fixture": "Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "test": "tests/test_invoice_reference_qualification.py::test_converter_total_change_is_detected_from_actual_rendered_output",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_references.py",
+      "old": "        for key in row[\"mechanical\"][\"missing_surface_keys\"]:",
+      "new": "        for key in []:"
+    }
+  }
+}

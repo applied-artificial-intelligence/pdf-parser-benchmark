@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: West-Smith
+document_id: invoice_068
+due_date: '2025-09-17'
+generated_at: '2025-11-18T16:46:39.241253'
+industry: medical
+invoice_date: '2025-09-17'
+invoice_number: INV-80861
+line_item_count: 4
+payment_terms: Due on Receipt
+region: CA
+subtotal: 336250.9
+tax_amount: 43712.62
+template_style: economy
+total: 379963.52
+vendor:
+  country: Canada
+  name: Summit Associates
+corpus: business
+source_url: generated://invoice_068
+domain: invoices
+doc_id: invoice_068

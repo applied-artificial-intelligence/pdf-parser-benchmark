@@ -1,0 +1,1656 @@
+{
+  "status": "candidates_declared_before_comparison_outputs",
+  "rules": "Retain the 20 previously inspected text cases excluding periodicals, teaching presentation and blank notes page, plus all 10 inspected table cases. Fill text to 30 with the first 10 SHA256(path)-ordered uninspected business-keyword filenames. Fill tables to 20 with first 3 easy business-keyword cases and first 7 hard SERFF/FBLB/BRWS insurance candidates in SHA256(path) order. Visually inspect new candidates before final freeze. Filename candidates are not domain judgments.",
+  "business_keywords": [
+    "10k",
+    "10-k",
+    "financial",
+    "earnings",
+    "annual",
+    "letter",
+    "minutes",
+    "contract",
+    "report",
+    "insurance",
+    "settlement",
+    "bank",
+    "schedule",
+    "timetable"
+  ],
+  "limits": [
+    "Purposive business-relevant demonstration, no population weights or business coverage percentage.",
+    "Ten easy and ten hard tables deliberately oversample hard cases; additional hard cases concentrate on insurance.",
+    "Page excerpts do not measure whole-document completion or operational invoice extraction.",
+    "Local text-layer parsers have no OCR; scanned inputs remain eligible.",
+    "Charts/layout/formatting are not executed."
+  ],
+  "cases": [
+    {
+      "group": "table",
+      "source_path": "docs/table/0000027_page1.pdf",
+      "upstream_test_id": "table/0000027_page1",
+      "source_content_id": "ffc3d20499b96fb7bb68487f808288dd3226f84e",
+      "source_bytes": 41333,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/0000027_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/1 timetable (1)_page2.pdf",
+      "upstream_test_id": "table/1 timetable (1)_page2",
+      "source_content_id": "e57860dc65baeed0b45ef52bc403c7286ad0b6a5",
+      "source_bytes": 43565,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/1%20timetable%20%281%29_page2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          2,
+          2
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/2023-conocophillips-aim-presentation (1)_page7.pdf",
+      "upstream_test_id": "table/2023-conocophillips-aim-presentation (1)_page7",
+      "source_content_id": "898cb92b153f8b5de3e4c9347e47b132adc66eb1903f99a5c0b6d7f81993de24",
+      "source_bytes": 664283,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/2023-conocophillips-aim-presentation%20%281%29_page7.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          33,
+          33
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/2023.02.07 Walmart Settlement Agreement_page27.pdf",
+      "upstream_test_id": "table/2023.02.07 Walmart Settlement Agreement_page27",
+      "source_content_id": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "source_bytes": 164483,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/2023.02.07%20Walmart%20Settlement%20Agreement_page27.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          34,
+          34
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Apple 10-k_page22.pdf",
+      "upstream_test_id": "table/Apple 10-k_page22",
+      "source_content_id": "5b7845c1c2b518d526f5f9641f23d43044e2b80a",
+      "source_bytes": 16971,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Apple%2010-k_page22.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81,
+          81
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Apple 10-k_page76.pdf",
+      "upstream_test_id": "table/Apple 10-k_page76",
+      "source_content_id": "3123a40e018b2251e5c87c146576136310504bc5",
+      "source_bytes": 11408,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Apple%2010-k_page76.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          95,
+          95
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/BRWS-134565917_page1002.pdf",
+      "upstream_test_id": "table/BRWS-134565917_page1002",
+      "source_content_id": "d18b18c6f9353d2e82315c6da49283abd43e1ef2176b0d64b82f49da4f9aef56",
+      "source_bytes": 509893,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/BRWS-134565917_page1002.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          96,
+          96
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/BSC-Hospital-List-by-County (2)_page1.pdf",
+      "upstream_test_id": "table/BSC-Hospital-List-by-County (2)_page1",
+      "source_content_id": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+      "source_bytes": 7623535,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/BSC-Hospital-List-by-County%20%282%29_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          130,
+          130
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Coca Cola 10-k_page49.pdf",
+      "upstream_test_id": "table/Coca Cola 10-k_page49",
+      "source_content_id": "7cb613596c9cb40c7e8baa19c412737d83ae106baa78f5992df77699ba0b6560",
+      "source_bytes": 102401,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Coca%20Cola%2010-k_page49.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          138,
+          138
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Coca Cola 10-k_page68.pdf",
+      "upstream_test_id": "table/Coca Cola 10-k_page68",
+      "source_content_id": "2fbf8d47a6997d7940619b78d665e2310cc1da4d",
+      "source_bytes": 78204,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Coca%20Cola%2010-k_page68.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          141,
+          141
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/FBLB-134215544_page122.pdf",
+      "upstream_test_id": "table/FBLB-134215544_page122",
+      "source_content_id": "d76efd5cf6f6523f9ee3b001107c59aa8ec54575",
+      "source_bytes": 98339,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/FBLB-134215544_page122.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          161,
+          161
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Goldman Sachs 10-k_page118.pdf",
+      "upstream_test_id": "table/Goldman Sachs 10-k_page118",
+      "source_content_id": "f54fe67c122646f2a4f43a36a9c69d53b646fbbe",
+      "source_bytes": 50276,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Goldman%20Sachs%2010-k_page118.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          187,
+          187
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1377.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page1377",
+      "source_content_id": "70954a70a11e48f969ba2378862700390717076e6287b3fd51bf3f34a38ae1c5",
+      "source_bytes": 156913,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page1377.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          247,
+          247
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1433.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page1433",
+      "source_content_id": "345d2e0be962d3ef49831e77fc6efec8f5348201",
+      "source_bytes": 33475,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page1433.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          251,
+          251
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page2104.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page2104",
+      "source_content_id": "5fd6efdf09dae7f2a2af2b3853582a7746ab3474",
+      "source_bytes": 14463,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page2104.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          277,
+          277
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_Interstate_random_pages 1_page174.pdf",
+      "upstream_test_id": "table/SERFF_Interstate_random_pages 1_page174",
+      "source_content_id": "907b4bacc0e999c4012d353d1fda6b03d55dab0b8a135fd7c16ba2e3db7a7bf8",
+      "source_bytes": 104940,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_Interstate_random_pages%201_page174.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          339,
+          339
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1209.pdf",
+      "upstream_test_id": "table/SERFF_TX_random_pages 1_page1209",
+      "source_content_id": "856432aa1c1a3b4b67eb4faee637e173fa7a499cc2c37731992c09b4173903e8",
+      "source_bytes": 101214,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_TX_random_pages%201_page1209.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          369,
+          369
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page92.pdf",
+      "upstream_test_id": "table/SERFF_TX_random_pages 1_page92",
+      "source_content_id": "ed6a732c34525e06e27e49bf7c951e0d596c0682",
+      "source_bytes": 9020,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_TX_random_pages%201_page92.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          422,
+          422
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/synthetic_invoice_page1.pdf",
+      "upstream_test_id": "table/synthetic_invoice_page1",
+      "source_content_id": "06528b5f7ce545a848d2f640b3011bffe0b0b133",
+      "source_bytes": 78073,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/synthetic_invoice_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          495,
+          495
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "upstream_test_id": "table/walmart-earnings-release-fy24-q4_page13",
+      "source_content_id": "c0c46c81812be291c0d0d70e6273199784f163e5",
+      "source_bytes": 30528,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          500,
+          500
+        ]
+      ],
+      "annotation_count": 1
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__contract.pdf",
+      "upstream_test_id": "text/text_handwritting__contract",
+      "source_content_id": "aaf6a9fc6d70e6c3d098bab36f795e339df3d4b2cc5a26524e93ffdc2683556f",
+      "source_bytes": 435704,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 107,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          7576,
+          7724
+        ]
+      ],
+      "annotation_count": 149
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__manualunderline.pdf",
+      "upstream_test_id": "text/text_handwritting__manualunderline",
+      "source_content_id": "02e1dd4ea4d7ec66594bffd45b5fa32ed91b00df333a37396457305d149a94d8",
+      "source_bytes": 189306,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__manualunderline.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 44,
+        "missing_specific_word": 166,
+        "missing_word_percent": 1,
+        "order": 24,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          8559,
+          8799
+        ]
+      ],
+      "annotation_count": 241
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__signatures.pdf",
+      "upstream_test_id": "text/text_handwritting__signatures",
+      "source_content_id": "dfb3f7c762c8eeade16fbd0ad875e4ab2c52bfb3",
+      "source_bytes": 70585,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__signatures.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 39,
+        "missing_specific_word": 96,
+        "missing_word_percent": 1,
+        "order": 20,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          8928,
+          9090
+        ]
+      ],
+      "annotation_count": 163
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_misc__2pages.pdf",
+      "upstream_test_id": "text/text_misc__2pages",
+      "source_content_id": "a5ed750d6c95f764d692d4ceca0464e87b4c1b9f428cafc991098f99775e0c75",
+      "source_bytes": 365590,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_misc__2pages.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 66,
+        "missing_specific_word": 578,
+        "missing_word_percent": 1,
+        "order": 63,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "misc"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          9261,
+          9976
+        ]
+      ],
+      "annotation_count": 716
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_misc__mark2.pdf",
+      "upstream_test_id": "text/text_misc__mark2",
+      "source_content_id": "4ba38d5b4c45a7e4c4e1496d87c592a84d73c522",
+      "source_bytes": 59561,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_misc__mark2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 42,
+        "missing_specific_word": 77,
+        "missing_word_percent": 1,
+        "order": 29,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "misc"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          13486,
+          13642
+        ]
+      ],
+      "annotation_count": 157
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__10k2col.pdf",
+      "upstream_test_id": "text/text_multicolumns__10k2col",
+      "source_content_id": "6e9399644957aa7992df54a488c514c3f93b4bd6",
+      "source_bytes": 73001,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__10k2col.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 48,
+        "missing_specific_word": 355,
+        "missing_word_percent": 1,
+        "order": 40,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          16940,
+          17390
+        ]
+      ],
+      "annotation_count": 451
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__4c.pdf",
+      "upstream_test_id": "text/text_multicolumns__4c",
+      "source_content_id": "79f70841e334e6ea6179353a0131c0a84529b7adf6ae286d4c1330ba022ca382",
+      "source_bytes": 441849,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__4c.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 95,
+        "missing_specific_word": 185,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          29666,
+          29967
+        ]
+      ],
+      "annotation_count": 302
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__hydro.pdf",
+      "upstream_test_id": "text/text_multicolumns__hydro",
+      "source_content_id": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+      "source_bytes": 2408795,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__hydro.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 79,
+        "missing_specific_word": 152,
+        "missing_word_percent": 1,
+        "order": 19,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          43475,
+          43731
+        ]
+      ],
+      "annotation_count": 257
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multilang__russian.pdf",
+      "upstream_test_id": "text/text_multilang__russian",
+      "source_content_id": "239aac621f1916ec98df8e7812d0b67c2914356123b5d03c2393bafc4aa5ae04",
+      "source_bytes": 860256,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multilang__russian.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 45,
+        "missing_specific_word": 326,
+        "missing_word_percent": 1,
+        "order": 37,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multilang"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          63268,
+          63684
+        ]
+      ],
+      "annotation_count": 417
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__contract.pdf",
+      "upstream_test_id": "text/text_ocr__contract",
+      "source_content_id": "eadbd010ce8806411c9ba9fcd0b4373fe016ac79107096cbe75c2c2d6e7b5991",
+      "source_bytes": 152356,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 20,
+        "missing_specific_word": 175,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          74024,
+          74240
+        ]
+      ],
+      "annotation_count": 217
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__inr.pdf",
+      "upstream_test_id": "text/text_ocr__inr",
+      "source_content_id": "22fd2e861b75155538cc343f6810932b7b191e27",
+      "source_bytes": 60005,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__inr.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 17,
+        "missing_specific_word": 142,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          79868,
+          80046
+        ]
+      ],
+      "annotation_count": 179
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__letter.pdf",
+      "upstream_test_id": "text/text_ocr__letter",
+      "source_content_id": "e6389113029ee47e21dcaaf353abc3b29fc70e47cb645c6a221133fd61e5cce3",
+      "source_bytes": 266858,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__letter.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 127,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81136,
+          81307
+        ]
+      ],
+      "annotation_count": 172
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__letter2.pdf",
+      "upstream_test_id": "text/text_ocr__letter2",
+      "source_content_id": "7d691dcac73f7a494da21e6a601de79bde5d33db3f0fb778effda12612d93973",
+      "source_bytes": 350866,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__letter2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 33,
+        "missing_specific_word": 135,
+        "missing_word_percent": 1,
+        "order": 25,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81308,
+          81509
+        ]
+      ],
+      "annotation_count": 202
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__letterhead.pdf",
+      "upstream_test_id": "text/text_ocr__letterhead",
+      "source_content_id": "caa4861cebbee012dae3bf8177e13236bc42cac2",
+      "source_bytes": 86111,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__letterhead.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 25,
+        "missing_specific_word": 112,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81510,
+          81672
+        ]
+      ],
+      "annotation_count": 163
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__simpleletter.pdf",
+      "upstream_test_id": "text/text_ocr__simpleletter",
+      "source_content_id": "cd5153219877fedcba86e23438f4d84352457f12",
+      "source_bytes": 91482,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__simpleletter.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 20,
+        "missing_specific_word": 58,
+        "missing_word_percent": 1,
+        "order": 10,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          93443,
+          93537
+        ]
+      ],
+      "annotation_count": 95
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__skewGazette.pdf",
+      "upstream_test_id": "text/text_ocr__skewGazette",
+      "source_content_id": "9c6d4b58b17f6c3e9f972ab74584f1e036ecfd01",
+      "source_bytes": 73217,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__skewGazette.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 24,
+        "missing_specific_word": 118,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          94527,
+          94693
+        ]
+      ],
+      "annotation_count": 167
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__10k.pdf",
+      "upstream_test_id": "text/text_simple__10k",
+      "source_content_id": "b7bba765ec9f869c2b8f240b2838b4d5ef98801efc2d072ac9b5d14f401ba92c",
+      "source_bytes": 202838,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__10k.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 36,
+        "missing_specific_word": 382,
+        "missing_word_percent": 1,
+        "order": 29,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          98338,
+          98792
+        ]
+      ],
+      "annotation_count": 455
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__10k2.pdf",
+      "upstream_test_id": "text/text_simple__10k2",
+      "source_content_id": "eae2cb9c4c5a3e27353032d658e8cd642c4848f0",
+      "source_bytes": 77430,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__10k2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 41,
+        "missing_specific_word": 325,
+        "missing_word_percent": 1,
+        "order": 32,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          98793,
+          99198
+        ]
+      ],
+      "annotation_count": 406
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__agreement.pdf",
+      "upstream_test_id": "text/text_simple__agreement",
+      "source_content_id": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+      "source_bytes": 153140,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__agreement.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 15,
+        "missing_specific_word": 210,
+        "missing_word_percent": 1,
+        "order": 10,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          103327,
+          103569
+        ]
+      ],
+      "annotation_count": 243
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__att10k.pdf",
+      "upstream_test_id": "text/text_simple__att10k",
+      "source_content_id": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b",
+      "source_bytes": 120677,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__att10k.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 51,
+        "missing_specific_word": 187,
+        "missing_word_percent": 1,
+        "order": 35,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          104909,
+          105190
+        ]
+      ],
+      "annotation_count": 282
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__bill.pdf",
+      "upstream_test_id": "text/text_simple__bill",
+      "source_content_id": "d46182ae62c2faaa111affbc21b98124772f50851b2c8317e8e5c658d08c9617",
+      "source_bytes": 101263,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__bill.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 25,
+        "missing_specific_word": 152,
+        "missing_word_percent": 1,
+        "order": 18,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          105508,
+          105710
+        ]
+      ],
+      "annotation_count": 203
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__checkbox.pdf",
+      "upstream_test_id": "text/text_simple__checkbox",
+      "source_content_id": "e40f6f2e59a3414042dd7a5470224ee9b2d6899656756ac48ec9bdcb0db0d429",
+      "source_bytes": 102372,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__checkbox.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 16,
+        "missing_specific_word": 185,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          108860,
+          109080
+        ]
+      ],
+      "annotation_count": 221
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__contract.pdf",
+      "upstream_test_id": "text/text_simple__contract",
+      "source_content_id": "b9f8181701542dc02e8decf8a237ce4280ec67ca",
+      "source_bytes": 47749,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 26,
+        "missing_specific_word": 277,
+        "missing_word_percent": 1,
+        "order": 23,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          110277,
+          110610
+        ]
+      ],
+      "annotation_count": 334
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__contract2.pdf",
+      "upstream_test_id": "text/text_simple__contract2",
+      "source_content_id": "1079e61a29a6ea86abec38a8e95b02b657e69993dae322e51a591a84aa9c3a27",
+      "source_bytes": 192386,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__contract2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 18,
+        "missing_specific_word": 253,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          110611,
+          110906
+        ]
+      ],
+      "annotation_count": 296
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__financialReturnCover.pdf",
+      "upstream_test_id": "text/text_simple__financialReturnCover",
+      "source_content_id": "76547fb0d7522a83997de05814f8bdeb94da2ada",
+      "source_bytes": 17499,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__financialReturnCover.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 3,
+        "missing_specific_word": 11,
+        "missing_word_percent": 1,
+        "order": 2,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          115644,
+          115666
+        ]
+      ],
+      "annotation_count": 23
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__minutes.pdf",
+      "upstream_test_id": "text/text_simple__minutes",
+      "source_content_id": "f0a2298e45518bee1576d19d7d6a49192fcfe1d046d5e8db22af091a85d258b7",
+      "source_bytes": 143026,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__minutes.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 36,
+        "missing_specific_word": 167,
+        "missing_word_percent": 1,
+        "order": 19,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          122452,
+          122680
+        ]
+      ],
+      "annotation_count": 229
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__minutes2.pdf",
+      "upstream_test_id": "text/text_simple__minutes2",
+      "source_content_id": "a05d49f57ef65108bd20422543f12ccbe69f747b",
+      "source_bytes": 55739,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__minutes2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 30,
+        "missing_specific_word": 250,
+        "missing_word_percent": 1,
+        "order": 27,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          122681,
+          122994
+        ]
+      ],
+      "annotation_count": 314
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__order.pdf",
+      "upstream_test_id": "text/text_simple__order",
+      "source_content_id": "d19a961a16737ab4b8b0a6cf4c5c1b83890a3f7c",
+      "source_bytes": 50750,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__order.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 29,
+        "missing_specific_word": 162,
+        "missing_word_percent": 1,
+        "order": 22,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          126134,
+          126353
+        ]
+      ],
+      "annotation_count": 220
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__sub.pdf",
+      "upstream_test_id": "text/text_simple__sub",
+      "source_content_id": "49005eba9893bd9a5947805f072628cf017be852",
+      "source_bytes": 82871,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__sub.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 151,
+        "missing_word_percent": 1,
+        "order": 18,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          136833,
+          137031
+        ]
+      ],
+      "annotation_count": 199
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_sparse__mcdo.pdf",
+      "upstream_test_id": "text/text_sparse__mcdo",
+      "source_content_id": "9af687ab8da3cbf180d7e2a36e8ba76dbb18ff91f460ea17eee9eb23d2043590",
+      "source_bytes": 1460594,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_sparse__mcdo.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 6,
+        "missing_specific_word": 16,
+        "missing_word_percent": 1,
+        "order": 1,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "sparse"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          141227,
+          141257
+        ]
+      ],
+      "annotation_count": 31
+    }
+  ]
+}

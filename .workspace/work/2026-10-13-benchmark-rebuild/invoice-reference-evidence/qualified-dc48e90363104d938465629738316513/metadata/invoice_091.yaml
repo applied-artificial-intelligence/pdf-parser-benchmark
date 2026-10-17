@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: Australia
+  name: Lewis Ltd
+document_id: invoice_091
+due_date: '2025-09-19'
+generated_at: '2025-11-18T16:47:13.827214'
+industry: manufacturing
+invoice_date: '2025-08-20'
+invoice_number: INV-48045
+line_item_count: 6
+payment_terms: Net 30
+region: APAC
+subtotal: 486572.97
+tax_amount: 43791.57
+template_style: economy
+total: 530364.54
+vendor:
+  country: Australia
+  name: Global Fabrication
+corpus: business
+source_url: generated://invoice_091
+domain: invoices
+doc_id: invoice_091

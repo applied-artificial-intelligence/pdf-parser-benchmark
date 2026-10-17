@@ -1,0 +1,98 @@
+{
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "files": {
+    "chart.jsonl": {
+      "sha256": "3bb47c7b5b846da2e32020e2c874ef675be22e89f5ecd33890dd9ce4e293d768",
+      "bytes": 996,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/chart.jsonl"
+    },
+    "layout.jsonl": {
+      "sha256": "9f1723a6b7e64fcb91603e9c02605274422373f65d0bbf0faeaeae6bee57ed1f",
+      "bytes": 7315,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/layout.jsonl"
+    },
+    "table.jsonl": {
+      "sha256": "5a33ccca2a8b7ef727b52f5d8935bba6ed9e2f024dd54d41ebea0863217d004e",
+      "bytes": 27545,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/table.jsonl"
+    },
+    "text_content.jsonl": {
+      "sha256": "b8d91d5217dda29f49107ec3bd9f6d85e594992dd432808d0ddd6314f85d0136",
+      "bytes": 21563,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/text_content.jsonl"
+    },
+    "text_formatting.jsonl": {
+      "sha256": "89e1ae4e66e7b7d222ed1c76cf8ecd76f8db92c6b0b8b8036b1d464681bdda1a",
+      "bytes": 502,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/text_formatting.jsonl"
+    },
+    "README.md": {
+      "sha256": "d75907468734aa5e564910156a88adfd796b81c3624c020741aa91d4cab30a1b",
+      "bytes": 32,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/README.md"
+    },
+    "eval.yaml": {
+      "sha256": "d75907468734aa5e564910156a88adfd796b81c3624c020741aa91d4cab30a1b",
+      "bytes": 32,
+      "url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/eval.yaml"
+    }
+  },
+  "source_inventory_url": "https://huggingface.co/api/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs?recursive=true&limit=1000",
+  "assets": {
+    "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p101.pdf": {
+      "type": "file",
+      "oid": "47f510a52603104712e14ad6afbb8fa695c7876f",
+      "size": 183569,
+      "lfs": {
+        "oid": "b08f4611234bd26437aa015e10c52c57fc95d63ddc3a7224156e97d1d30b91c6",
+        "size": 183569,
+        "pointerSize": 131
+      },
+      "xetHash": "b8d5d6523517076a3fb519cf15c48cbb9f07a5c807f450ac5d5cf8668cecf4f0",
+      "path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p101.pdf"
+    },
+    "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p77.pdf": {
+      "type": "file",
+      "oid": "02e54588095d81112c43c9dabba2d42be1cef4ce",
+      "size": 376396,
+      "lfs": {
+        "oid": "0d8947e7023a905a91bc5849d77335847e596617498b7ce8c266e2c33febbb7a",
+        "size": 376396,
+        "pointerSize": 131
+      },
+      "xetHash": "cb88c5ffa38046002f6fedc92887a3d9fdfef41199ee71f5ac261365f960a2df",
+      "path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p77.pdf"
+    },
+    "docs/layout/0000027_page1.pdf": {
+      "type": "file",
+      "oid": "1d83b19e25c4f055d27091c8c1eed4db03b99680",
+      "size": 41333,
+      "path": "docs/layout/0000027_page1.pdf"
+    },
+    "docs/table/0000027_page1.pdf": {
+      "type": "file",
+      "oid": "ffc3d20499b96fb7bb68487f808288dd3226f84e",
+      "size": 41333,
+      "path": "docs/table/0000027_page1.pdf"
+    },
+    "docs/table/1 timetable (1)_page2.pdf": {
+      "type": "file",
+      "oid": "e57860dc65baeed0b45ef52bc403c7286ad0b6a5",
+      "size": 43565,
+      "path": "docs/table/1 timetable (1)_page2.pdf"
+    },
+    "docs/text/text_dense__baoutou.pdf": {
+      "type": "file",
+      "oid": "889899864f22a32ff744a0c68be0be45073dd161",
+      "size": 434799,
+      "lfs": {
+        "oid": "d0877a509d1fd7446c14e769c1519da4a9e0c1a6fe7b6df849b8591d1c5ccda2",
+        "size": 434799,
+        "pointerSize": 131
+      },
+      "xetHash": "96fdcb3a7e588fd9ac3d8398740ff987cabbaa7a2ba40a05128ab9beefe6c293",
+      "path": "docs/text/text_dense__baoutou.pdf"
+    }
+  }
+}

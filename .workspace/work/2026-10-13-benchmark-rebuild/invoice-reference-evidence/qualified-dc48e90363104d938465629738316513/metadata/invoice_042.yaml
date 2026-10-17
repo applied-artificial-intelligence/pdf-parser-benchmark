@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: Germany
+  name: Stey
+document_id: invoice_042
+due_date: '2025-10-19'
+generated_at: '2025-11-18T16:46:01.320357'
+industry: saas
+invoice_date: '2025-09-19'
+invoice_number: INV-75594
+line_item_count: 7
+payment_terms: Net 30
+region: EU
+subtotal: 7531971.21
+tax_amount: 1657033.67
+template_style: economy
+total: 9189004.88
+vendor:
+  country: Germany
+  name: Flow Technologies
+corpus: business
+source_url: generated://invoice_042
+domain: invoices
+doc_id: invoice_042

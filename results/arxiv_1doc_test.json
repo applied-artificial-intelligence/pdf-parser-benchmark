@@ -1,0 +1,35 @@
+{
+  "benchmark": {
+    "name": "Single Document Test - Google Document AI Async",
+    "timestamp": "2025-11-24T20:44:20.396332+00:00",
+    "config_file": "benchmarks/arxiv_1doc_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "google_document_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1108661439159162,
+        "chrf++": 14.11760156545725,
+        "character_error_rate": 0.8891338560840838
+      },
+      "error": null,
+      "parse_time_seconds": 60.518983602523804
+    }
+  ],
+  "summary": {
+    "total_documents": 1,
+    "total_parsers": 1,
+    "total_results": 1,
+    "success_count": 1,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,1073 @@
+{
+  "benchmark": {
+    "name": "CUAD Docling Benchmark",
+    "timestamp": "2025-11-22T19:57:55.209383+00:00",
+    "config_file": "benchmarks/cuad_75docs_docling.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "docling-fast": "2.63.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "cuad_000",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.924700693131695,
+        "chrf++": 97.23961143533955,
+        "character_error_rate": 0.07529930686830498,
+        "element_f1": 0.5466666666666666,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006532669067382812
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.788647635176001,
+        "chrf++": 92.8073308660015,
+        "character_error_rate": 0.21135236482399902,
+        "element_f1": 0.5584415584415584,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008668899536132812
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9492445040098572,
+        "chrf++": 94.68333008181449,
+        "character_error_rate": 0.05083681555416026,
+        "element_f1": 0.357487922705314,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005517005920410156
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9674230647558856,
+        "chrf++": 95.55595336707971,
+        "character_error_rate": 0.03257693524411442,
+        "element_f1": 0.712828560219694,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006873607635498047
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9561766628279748,
+        "chrf++": 97.05994671953978,
+        "character_error_rate": 0.04382333717202527,
+        "element_f1": 0.6187845303867404,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014829635620117188
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9692967069841222,
+        "chrf++": 96.80090216842756,
+        "character_error_rate": 0.030703293015877858,
+        "element_f1": 0.37671232876712324,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007197856903076172
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9653251973461184,
+        "chrf++": 96.26852490291607,
+        "character_error_rate": 0.034674802653881544,
+        "element_f1": 0.34589041095890416,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005562305450439453
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7764005054455744,
+        "chrf++": 93.80206771846707,
+        "character_error_rate": 0.22419306184012067,
+        "element_f1": 0.2351313969571231,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043392181396484375
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9365848118312281,
+        "chrf++": 96.134593607668,
+        "character_error_rate": 0.0637612359092318,
+        "element_f1": 0.2723004694835681,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009181499481201172
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9223568476456251,
+        "chrf++": 97.71223219613529,
+        "character_error_rate": 0.07764315235437494,
+        "element_f1": 0.30344827586206896,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006299018859863281
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9548815603929423,
+        "chrf++": 95.50531419049317,
+        "character_error_rate": 0.04511843960705779,
+        "element_f1": 0.8074222668004012,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005586147308349609
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9389452518051367,
+        "chrf++": 94.09998169907493,
+        "character_error_rate": 0.06105474819486336,
+        "element_f1": 0.6176700547302579,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006971359252929688
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984390243902439,
+        "chrf++": 98.50754047179761,
+        "character_error_rate": 0.015609756097560976,
+        "element_f1": 0.8169014084507044,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 7.326291561126709
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9558778445937979,
+        "chrf++": 96.57738624481826,
+        "character_error_rate": 0.044122155406202096,
+        "element_f1": 0.7577807848443844,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 2.8542652130126953
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8967374089325308,
+        "chrf++": 91.31534682959018,
+        "character_error_rate": 0.10326259106746911,
+        "element_f1": 0.3619047619047619,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.1474502086639404
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8251620349817987,
+        "chrf++": 95.87206698627408,
+        "character_error_rate": 0.1748379650182012,
+        "element_f1": 0.673841059602649,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 2.2972426414489746
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9623045047453549,
+        "chrf++": 95.91918654651198,
+        "character_error_rate": 0.0376954952546451,
+        "element_f1": 0.504950495049505,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.6195089817047119
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9693196325052843,
+        "chrf++": 96.99353639322649,
+        "character_error_rate": 0.030680367494715696,
+        "element_f1": 0.7047200878155873,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.428271770477295
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.97025679832859,
+        "chrf++": 96.94298017446098,
+        "character_error_rate": 0.029743201671410004,
+        "element_f1": 0.6493506493506493,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.8039979934692383
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8042093068159877,
+        "chrf++": 92.61660150890889,
+        "character_error_rate": 0.19579069318401235,
+        "element_f1": 0.823529411764706,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5928871631622314
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9337305624182531,
+        "chrf++": 94.83914471376106,
+        "character_error_rate": 0.06744564413548292,
+        "element_f1": 0.19672131147540983,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7116875648498535
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9678288046861179,
+        "chrf++": 97.56980851051223,
+        "character_error_rate": 0.0321711953138821,
+        "element_f1": 0.4009433962264151,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 4.386432886123657
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9532390164801575,
+        "chrf++": 94.61651560950448,
+        "character_error_rate": 0.047048610353747966,
+        "element_f1": 0.4937216136788673,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 7.2230987548828125
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9283166904422254,
+        "chrf++": 91.52629129398625,
+        "character_error_rate": 0.07214644651830582,
+        "element_f1": 0.7089947089947091,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.5539896488189697
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7828841211976334,
+        "chrf++": 92.21888081166065,
+        "character_error_rate": 0.21804105149441844,
+        "element_f1": 0.75,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.5556113719940186
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9425727735845636,
+        "chrf++": 94.7236398113832,
+        "character_error_rate": 0.0574272264154364,
+        "element_f1": 0.5365168539325842,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 4.8308117389678955
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7408002858163629,
+        "chrf++": 81.45313927740823,
+        "character_error_rate": 0.2750710900473934,
+        "element_f1": 0.6647727272727273,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9035224914550781
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7479370005972128,
+        "chrf++": 87.57098374454418,
+        "character_error_rate": 0.2556334136475165,
+        "element_f1": 0.8026650302445866,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 19.74068593978882
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9503177354130561,
+        "chrf++": 95.32151108170339,
+        "character_error_rate": 0.0510992275698158,
+        "element_f1": 0.6050420168067226,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.4681355953216553
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9720733926405176,
+        "chrf++": 97.30141763786182,
+        "character_error_rate": 0.02792660735948241,
+        "element_f1": 0.32967032967032966,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.3161678314208984
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9673092819241127,
+        "chrf++": 96.17663201001814,
+        "character_error_rate": 0.03269071807588726,
+        "element_f1": 0.39658568614576495,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 6.275136947631836
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9253499677853921,
+        "chrf++": 93.50138536997208,
+        "character_error_rate": 0.07465003221460786,
+        "element_f1": 0.3967741935483871,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.8700525760650635
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9432438019814576,
+        "chrf++": 94.60017330216093,
+        "character_error_rate": 0.057417268617577503,
+        "element_f1": 0.6007843137254902,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 3.5186614990234375
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9354291328034294,
+        "chrf++": 95.18889595903052,
+        "character_error_rate": 0.06457086719657051,
+        "element_f1": 0.5052083333333333,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.0945663452148438
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583756345177665,
+        "chrf++": 94.67389051971017,
+        "character_error_rate": 0.04169491525423729,
+        "element_f1": 0.761904761904762,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.4480624198913574
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8501807891840906,
+        "chrf++": 87.91717265878049,
+        "character_error_rate": 0.15541422048271364,
+        "element_f1": 0.4888888888888889,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9160480499267578
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8122445044350174,
+        "chrf++": 95.5114725368578,
+        "character_error_rate": 0.18775549556498264,
+        "element_f1": 0.8014268727705114,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.6766862869262695
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591623921988613,
+        "chrf++": 95.7836222539545,
+        "character_error_rate": 0.040837607801138605,
+        "element_f1": 0.3263157894736842,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.0813817977905273
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607615252642647,
+        "chrf++": 97.24860286716587,
+        "character_error_rate": 0.03923847473573524,
+        "element_f1": 0.4673913043478261,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.6427834033966064
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9750167034037478,
+        "chrf++": 96.46399312401283,
+        "character_error_rate": 0.024983296596252192,
+        "element_f1": 0.6856111862877762,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 3.905423641204834
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9208902149922341,
+        "chrf++": 94.86355658661549,
+        "character_error_rate": 0.07910978500776587,
+        "element_f1": 0.8641304347826086,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.8349380493164062
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8386621562636403,
+        "chrf++": 95.15606507335683,
+        "character_error_rate": 0.16309983452840596,
+        "element_f1": 0.8691358024691358,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7726993560791016
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9443238886477773,
+        "chrf++": 95.47375948921348,
+        "character_error_rate": 0.0556761113522227,
+        "element_f1": 0.4518828451882845,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.6423699855804443
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8858601592246452,
+        "chrf++": 85.81760465984493,
+        "character_error_rate": 0.11586437104708362,
+        "element_f1": 0.5339966832504146,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8924381732940674
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9506574488274366,
+        "chrf++": 96.31213680226551,
+        "character_error_rate": 0.04934255117256337,
+        "element_f1": 0.4090909090909091,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8558652400970459
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9544412753386982,
+        "chrf++": 96.88256319368666,
+        "character_error_rate": 0.04555872466130182,
+        "element_f1": 0.5203252032520326,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.9522719383239746
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9667772616677726,
+        "chrf++": 96.51378441549036,
+        "character_error_rate": 0.033222738332227386,
+        "element_f1": 0.40899795501022496,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.5505523681640625
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8102135436055365,
+        "chrf++": 96.22261215680395,
+        "character_error_rate": 0.18978645639446343,
+        "element_f1": 0.3251231527093596,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.1990251541137695
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9709294105004779,
+        "chrf++": 96.10381168015834,
+        "character_error_rate": 0.029070589499522088,
+        "element_f1": 0.6929577464788733,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 4.9659624099731445
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9642701525054467,
+        "chrf++": 97.0681427534681,
+        "character_error_rate": 0.03572984749455338,
+        "element_f1": 0.3269230769230769,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7481963634490967
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9787706419044842,
+        "chrf++": 97.43533616166054,
+        "character_error_rate": 0.021229358095515904,
+        "element_f1": 0.4841269841269841,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.8035151958465576
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7704522981138986,
+        "chrf++": 91.18785349029692,
+        "character_error_rate": 0.27794875433477306,
+        "element_f1": 0.3901408450704225,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 9.514385223388672
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9723213637887012,
+        "chrf++": 96.40287339546603,
+        "character_error_rate": 0.027678636211298797,
+        "element_f1": 0.8166359352591681,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 9.286759376525879
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.980352644836272,
+        "chrf++": 98.11165854830863,
+        "character_error_rate": 0.01964735516372796,
+        "element_f1": 0.4444444444444445,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9331469535827637
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7489642294450605,
+        "chrf++": 95.79186414032105,
+        "character_error_rate": 0.2592190889370933,
+        "element_f1": 0.1810699588477366,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.1043484210968018
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9650994776036457,
+        "chrf++": 97.63300797178506,
+        "character_error_rate": 0.03522944014361046,
+        "element_f1": 0.2702702702702703,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.1594626903533936
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648602878916173,
+        "chrf++": 97.07610932368588,
+        "character_error_rate": 0.03513971210838273,
+        "element_f1": 0.3604651162790698,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.2908034324645996
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7616101109172893,
+        "chrf++": 89.1910379400909,
+        "character_error_rate": 0.23838988908271072,
+        "element_f1": 0.5629290617848971,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.8601951599121094
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8101005107925523,
+        "chrf++": 94.93431118842689,
+        "character_error_rate": 0.18989948920744767,
+        "element_f1": 0.1497326203208556,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.0156335830688477
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9489982977609008,
+        "chrf++": 96.23146115291951,
+        "character_error_rate": 0.051001702239099125,
+        "element_f1": 0.5349344978165939,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 3.58056902885437
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9618489529975822,
+        "chrf++": 95.59919680614021,
+        "character_error_rate": 0.03815104700241773,
+        "element_f1": 0.6940874035989717,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.288736343383789
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595910633234919,
+        "chrf++": 97.73781050813919,
+        "character_error_rate": 0.040408936676508175,
+        "element_f1": 0.8503937007874015,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.734879732131958
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.844515181194907,
+        "chrf++": 95.45431811112861,
+        "character_error_rate": 0.15548481880509304,
+        "element_f1": 0.21141649048625794,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 2.1029670238494873
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9724029780748036,
+        "chrf++": 97.00062021448016,
+        "character_error_rate": 0.027597021925196388,
+        "element_f1": 0.7275362318840579,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.9902775287628174
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8032223983095615,
+        "chrf++": 90.02951486221014,
+        "character_error_rate": 0.22080616478956727,
+        "element_f1": 0.41958041958041964,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7420163154602051
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9681231107447101,
+        "chrf++": 96.7087969582873,
+        "character_error_rate": 0.03187688925528991,
+        "element_f1": 0.7202572347266881,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9060842990875244
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9224615384615384,
+        "chrf++": 93.73828186093066,
+        "character_error_rate": 0.07753846153846154,
+        "element_f1": 0.7829787234042553,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.6655397415161133
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9348350764279968,
+        "chrf++": 94.48592896274872,
+        "character_error_rate": 0.06516492357200322,
+        "element_f1": 0.5909090909090909,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8906211853027344
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543217899916442,
+        "chrf++": 97.0120037617944,
+        "character_error_rate": 0.04567821000835577,
+        "element_f1": 0.42452830188679247,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.1514036655426025
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9799678153265634,
+        "chrf++": 97.66340590519444,
+        "character_error_rate": 0.020032184673436548,
+        "element_f1": 0.7343283582089551,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.9958841800689697
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9807272515998373,
+        "chrf++": 97.77238236585512,
+        "character_error_rate": 0.01927274840016268,
+        "element_f1": 0.5522887979158914,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 4.179450988769531
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8113848136399683,
+        "chrf++": 97.58868911505658,
+        "character_error_rate": 0.19435152319910115,
+        "element_f1": 0.5728314238952535,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.3833916187286377
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9890789952675646,
+        "chrf++": 98.21779436985538,
+        "character_error_rate": 0.010976948408342482,
+        "element_f1": 0.0851063829787234,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 1.4222397804260254
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9526472445206098,
+        "chrf++": 94.98484915716074,
+        "character_error_rate": 0.047352755479390274,
+        "element_f1": 0.7941176470588235,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.7803843021392822
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9526873580620742,
+        "chrf++": 97.48189419365234,
+        "character_error_rate": 0.04932912391475927,
+        "element_f1": 0.10480349344978167,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.8709914684295654
+    }
+  ],
+  "summary": {
+    "total_documents": 75,
+    "total_parsers": 1,
+    "total_results": 75,
+    "success_count": 75,
+    "failure_count": 0
+  }
+}

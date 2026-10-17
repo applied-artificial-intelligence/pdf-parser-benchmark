@@ -1,0 +1,5 @@
+doc_id: sec-aramark-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/1584509/000114036125046400/ef20061775_ars.pdf

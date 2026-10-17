@@ -1,0 +1,272 @@
+{
+  "schema_version": 1,
+  "executed_at": "2026-10-13T18:35:49.191732+00:00",
+  "completed_at": "2026-10-13T18:35:49.281470+00:00",
+  "source_revision": "bf8285b4cf4e69295eda2391665d54d9077d4d0a",
+  "source_is_dirty": true,
+  "implementation_sha256": {
+    "/home/stefan/applied-ai/pdf-bench/pdf_bench/local_evaluation.py": "d8935b7d778c21259e5a1ba3c1218133826be8653a54cb5b2a58f103a7762ef8",
+    "/home/stefan/applied-ai/pdf-bench/pdf_bench/runner.py": "7f42b008aca79ed560f0033821b7b832b97068053b697f24c96fa6e75d212be9",
+    "/home/stefan/applied-ai/pdf-bench/pdf_bench/persistence.py": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+    "/home/stefan/applied-ai/pdf-bench/pdf_bench/loader.py": "89311884daaa39078f409c454e3e749b219065e9418a9892b6058897ff023431",
+    "/home/stefan/applied-ai/pdf-bench/pdf_bench/config.py": "9eeaed2746bc13099e55678d5bf1ff1d5769e1856c7bf6cada98541ba43ee74a",
+    "/home/stefan/applied-ai/pdfsmith/src/pdfsmith/__init__.py": "4ae92d4bf4672042d0a9d556e9368416fb7b3a3c24643b441d08ddf5361b2c1f",
+    "/home/stefan/applied-ai/pdfsmith/src/pdfsmith/backends/pypdf_backend.py": "5b0a490809233dfafdd867cdfacb5c98b2e3c332cb3b42cf4db80f86991ed5cd",
+    "/home/stefan/applied-ai/pdfsmith/src/pdfsmith/backends/pdfplumber_backend.py": "d72a3c066c5f18d7572b8a09b2a12a66b9766f266c11f7f441c78aaca5c40a26"
+  },
+  "versions": {
+    "pdfsmith": "0.2.0",
+    "pypdf": "6.3.0",
+    "pdfplumber": "0.11.8",
+    "reportlab": "4.4.5",
+    "PyMuPDF": "1.26.6"
+  },
+  "pdfsmith_declared_version": "0.3.0",
+  "python": "3.13.5",
+  "backend_options": {},
+  "cache_policy": "No adapter cache calls, no checkpoint reuse, each input parsed once",
+  "timeout_seconds": 15,
+  "inputs": {
+    "inline": {
+      "input_sha256": "0d7fc0e3221c4ee8d8dba20e7f3e706598ee11636c1d03c403ca5b97bf8c64b5",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "e3e6dabfd9cffd9f7defb8da62ae56addf9adf1cf449748f0bace77fe722e67f",
+      "reference_available": true
+    },
+    "columns": {
+      "input_sha256": "0d06b17b927242d56feafe4efb5ca81e9bfb70a66cd3cfa1e47227e4d6f9df59",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "70324ccdebf74ebfdcfe2eae0632c83b378338a0b2b235e0a0b6ed5b75396d54",
+      "reference_available": true
+    },
+    "raster": {
+      "input_sha256": "2b2a7b529453ee70f17debde1f86a09c164e99a44008ab967ba8adc217d301a4",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "c016383db3072e28f7c40f4539a9aab87a7b3c4ffbd227418c64b9e385c79c84",
+      "reference_available": true
+    },
+    "corrupt": {
+      "input_sha256": "dfbfeb2f386c2319948b941a5d17c9d9bae29015f7b373445fa893981f3b9741",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "f9f2bd727abc75b942b7e39a6115b197f5d2c5419f606f7555f5e21f0b4dfb64",
+      "reference_available": false
+    }
+  },
+  "attempts": [
+    {
+      "document_id": "inline",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.03860187530517578,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "columns",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.001688241958618164,
+      "output_sha256": "30e72033f43accb6cd9d5e7aa934ac8ff544d84207c35c6f77e98923c9aa9ede",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "raster",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.008038997650146484,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "corrupt",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "failed",
+      "error": "Stream has ended unexpectedly",
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0,
+      "output_sha256": null,
+      "task_metrics": null
+    },
+    {
+      "document_id": "inline",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0065898895263671875,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "columns",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.004256725311279297,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "raster",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.010208606719970703,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "corrupt",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "failed",
+      "error": "No /Root object! - Is this really a PDF?",
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0,
+      "output_sha256": null,
+      "task_metrics": null
+    }
+  ],
+  "common_valid_inputs": [
+    "inline",
+    "columns",
+    "raster"
+  ],
+  "summary": {
+    "fresh-pdfsmith-pypdf": {
+      "attempted": 4,
+      "parse_successes": 3,
+      "parse_failures": 1,
+      "timeouts": 0,
+      "common_scored_documents": 3,
+      "mean_field_accuracy": 0.3333333333333333,
+      "task_successes": 1
+    },
+    "fresh-pdfsmith-pdfplumber": {
+      "attempted": 4,
+      "parse_successes": 3,
+      "parse_failures": 1,
+      "timeouts": 0,
+      "common_scored_documents": 3,
+      "mean_field_accuracy": 0.6666666666666666,
+      "task_successes": 2
+    }
+  },
+  "limitations": [
+    "Three synthetic variants and one corrupt control; not a population estimate",
+    "The fixed label/value extractor is a baseline, not a universal invoice extractor",
+    "Raster inputs require OCR; these backends do not perform OCR",
+    "Text similarity is diagnostic; field association determines the declared task score",
+    "Timing includes local wrapper work and first-import effects, not a latency ranking",
+    "Existing SEC, invoice, presentation, arXiv and paid tracks are retained separately"
+  ]
+}

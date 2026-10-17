@@ -1,0 +1,2342 @@
+{
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "cases": [
+    {
+      "group": "table",
+      "source_path": "docs/table/0000027_page1.pdf",
+      "upstream_test_id": "table/0000027_page1",
+      "source_content_id": "ffc3d20499b96fb7bb68487f808288dd3226f84e",
+      "source_bytes": 41333,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/0000027_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          1,
+          1
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-4b72cf115166",
+      "input_sha256": "36c5e0acc5757e586791a2b3a1b67e8e434ea927fb6b72b9effd947d19bc8a50",
+      "input": "inputs/table-4b72cf115166.pdf",
+      "observed_document_form": "financial statements"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/1 timetable (1)_page2.pdf",
+      "upstream_test_id": "table/1 timetable (1)_page2",
+      "source_content_id": "e57860dc65baeed0b45ef52bc403c7286ad0b6a5",
+      "source_bytes": 43565,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/1%20timetable%20%281%29_page2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          2,
+          2
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-26316595f58f",
+      "input_sha256": "e366c651227fb42ce9e1ac69a31b738c8188a77f5c2077ad77af8142cbc7b58e",
+      "input": "inputs/table-26316595f58f.pdf",
+      "observed_document_form": "transport timetable"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/2023-conocophillips-aim-presentation (1)_page7.pdf",
+      "upstream_test_id": "table/2023-conocophillips-aim-presentation (1)_page7",
+      "source_content_id": "898cb92b153f8b5de3e4c9347e47b132adc66eb1903f99a5c0b6d7f81993de24",
+      "source_bytes": 664283,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/2023-conocophillips-aim-presentation%20%281%29_page7.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          33,
+          33
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-76c1ccd487de",
+      "input_sha256": "898cb92b153f8b5de3e4c9347e47b132adc66eb1903f99a5c0b6d7f81993de24",
+      "input": "inputs/table-76c1ccd487de.pdf",
+      "observed_document_form": "earnings presentation"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/2023.02.07 Walmart Settlement Agreement_page27.pdf",
+      "upstream_test_id": "table/2023.02.07 Walmart Settlement Agreement_page27",
+      "source_content_id": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "source_bytes": 164483,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/2023.02.07%20Walmart%20Settlement%20Agreement_page27.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          34,
+          34
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-96b9abc77533",
+      "input_sha256": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+      "input": "inputs/table-96b9abc77533.pdf",
+      "observed_document_form": "legal settlement"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Apple 10-k_page22.pdf",
+      "upstream_test_id": "table/Apple 10-k_page22",
+      "source_content_id": "5b7845c1c2b518d526f5f9641f23d43044e2b80a",
+      "source_bytes": 16971,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Apple%2010-k_page22.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81,
+          81
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-7ce868b56c95",
+      "input_sha256": "7663042ad5740e9ed4e57813130b18106a1a6f74aafa3b07244ce9d9c0905e8a",
+      "input": "inputs/table-7ce868b56c95.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Apple 10-k_page76.pdf",
+      "upstream_test_id": "table/Apple 10-k_page76",
+      "source_content_id": "3123a40e018b2251e5c87c146576136310504bc5",
+      "source_bytes": 11408,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Apple%2010-k_page76.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          95,
+          95
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-7806839f9911",
+      "input_sha256": "57be97190d266df823ac1d4c793eef626e4024993d2d4f127378eb33280f6978",
+      "input": "inputs/table-7806839f9911.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/BRWS-134565917_page1002.pdf",
+      "upstream_test_id": "table/BRWS-134565917_page1002",
+      "source_content_id": "d18b18c6f9353d2e82315c6da49283abd43e1ef2176b0d64b82f49da4f9aef56",
+      "source_bytes": 509893,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/BRWS-134565917_page1002.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          96,
+          96
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-061166d2446d",
+      "input_sha256": "d18b18c6f9353d2e82315c6da49283abd43e1ef2176b0d64b82f49da4f9aef56",
+      "input": "inputs/table-061166d2446d.pdf",
+      "observed_document_form": "insurance rating manual"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/BSC-Hospital-List-by-County (2)_page1.pdf",
+      "upstream_test_id": "table/BSC-Hospital-List-by-County (2)_page1",
+      "source_content_id": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+      "source_bytes": 7623535,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/BSC-Hospital-List-by-County%20%282%29_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          130,
+          130
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-28cd7ca7a9b4",
+      "input_sha256": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+      "input": "inputs/table-28cd7ca7a9b4.pdf",
+      "observed_document_form": "insurance provider directory"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Coca Cola 10-k_page49.pdf",
+      "upstream_test_id": "table/Coca Cola 10-k_page49",
+      "source_content_id": "7cb613596c9cb40c7e8baa19c412737d83ae106baa78f5992df77699ba0b6560",
+      "source_bytes": 102401,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Coca%20Cola%2010-k_page49.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          138,
+          138
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-478a60fe5913",
+      "input_sha256": "7cb613596c9cb40c7e8baa19c412737d83ae106baa78f5992df77699ba0b6560",
+      "input": "inputs/table-478a60fe5913.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Coca Cola 10-k_page68.pdf",
+      "upstream_test_id": "table/Coca Cola 10-k_page68",
+      "source_content_id": "2fbf8d47a6997d7940619b78d665e2310cc1da4d",
+      "source_bytes": 78204,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Coca%20Cola%2010-k_page68.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          141,
+          141
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-203916ea7736",
+      "input_sha256": "830bcd1dae655eeed5aee825784d233afa118771c173928fb427b071d4882357",
+      "input": "inputs/table-203916ea7736.pdf",
+      "observed_document_form": "financial statements"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/FBLB-134215544_page122.pdf",
+      "upstream_test_id": "table/FBLB-134215544_page122",
+      "source_content_id": "d76efd5cf6f6523f9ee3b001107c59aa8ec54575",
+      "source_bytes": 98339,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/FBLB-134215544_page122.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          161,
+          161
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-d5e780df26fe",
+      "input_sha256": "92ce4653620144b8202e7bf0e7df44f0848aa3c66716c9507792fae38f624fc8",
+      "input": "inputs/table-d5e780df26fe.pdf",
+      "observed_document_form": "insurance rating manual"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/Goldman Sachs 10-k_page118.pdf",
+      "upstream_test_id": "table/Goldman Sachs 10-k_page118",
+      "source_content_id": "f54fe67c122646f2a4f43a36a9c69d53b646fbbe",
+      "source_bytes": 50276,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Goldman%20Sachs%2010-k_page118.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "easy"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          187,
+          187
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-3e7734cdc242",
+      "input_sha256": "99ee0790d40fb94c6cccdc523f7f3b192add1088bfa97e3e4c74ea73d68ce775",
+      "input": "inputs/table-3e7734cdc242.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1377.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page1377",
+      "source_content_id": "70954a70a11e48f969ba2378862700390717076e6287b3fd51bf3f34a38ae1c5",
+      "source_bytes": 156913,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page1377.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          247,
+          247
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-e0ff48b8f0c8",
+      "input_sha256": "70954a70a11e48f969ba2378862700390717076e6287b3fd51bf3f34a38ae1c5",
+      "input": "inputs/table-e0ff48b8f0c8.pdf",
+      "observed_document_form": "insurance claims exhibit"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1433.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page1433",
+      "source_content_id": "345d2e0be962d3ef49831e77fc6efec8f5348201",
+      "source_bytes": 33475,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page1433.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          251,
+          251
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-26fb1b96ca09",
+      "input_sha256": "b452ea355c4e311a95c946378d81bf1f867e9a5c84b93af0e95d486a4e137b4d",
+      "input": "inputs/table-26fb1b96ca09.pdf",
+      "observed_document_form": "insurance rate application"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page2104.pdf",
+      "upstream_test_id": "table/SERFF_CA_random_pages 1_page2104",
+      "source_content_id": "5fd6efdf09dae7f2a2af2b3853582a7746ab3474",
+      "source_bytes": 14463,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_CA_random_pages%201_page2104.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          277,
+          277
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-eddbc130cdb5",
+      "input_sha256": "2dcfe75fd371d0974db5c4f3c29690014f27b05ea6c2c33486c4294a9d0937cf",
+      "input": "inputs/table-eddbc130cdb5.pdf",
+      "observed_document_form": "insurance rating manual"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_Interstate_random_pages 1_page174.pdf",
+      "upstream_test_id": "table/SERFF_Interstate_random_pages 1_page174",
+      "source_content_id": "907b4bacc0e999c4012d353d1fda6b03d55dab0b8a135fd7c16ba2e3db7a7bf8",
+      "source_bytes": 104940,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_Interstate_random_pages%201_page174.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          339,
+          339
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-d929fcff8553",
+      "input_sha256": "907b4bacc0e999c4012d353d1fda6b03d55dab0b8a135fd7c16ba2e3db7a7bf8",
+      "input": "inputs/table-d929fcff8553.pdf",
+      "observed_document_form": "insurance pricing exhibit"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1209.pdf",
+      "upstream_test_id": "table/SERFF_TX_random_pages 1_page1209",
+      "source_content_id": "856432aa1c1a3b4b67eb4faee637e173fa7a499cc2c37731992c09b4173903e8",
+      "source_bytes": 101214,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_TX_random_pages%201_page1209.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          369,
+          369
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-e429edddda02",
+      "input_sha256": "856432aa1c1a3b4b67eb4faee637e173fa7a499cc2c37731992c09b4173903e8",
+      "input": "inputs/table-e429edddda02.pdf",
+      "observed_document_form": "insurance experience review"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page92.pdf",
+      "upstream_test_id": "table/SERFF_TX_random_pages 1_page92",
+      "source_content_id": "ed6a732c34525e06e27e49bf7c951e0d596c0682",
+      "source_bytes": 9020,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/SERFF_TX_random_pages%201_page92.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          422,
+          422
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-7b971d4c2631",
+      "input_sha256": "0d8806ae321f90ae629745c1eee8efebb35ffa33fea7f8005e2b59d863d94aa4",
+      "input": "inputs/table-7b971d4c2631.pdf",
+      "observed_document_form": "insurance financial exhibit"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/synthetic_invoice_page1.pdf",
+      "upstream_test_id": "table/synthetic_invoice_page1",
+      "source_content_id": "06528b5f7ce545a848d2f640b3011bffe0b0b133",
+      "source_bytes": 78073,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/synthetic_invoice_page1.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          495,
+          495
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-81c6d4170a24",
+      "input_sha256": "af8ae6f26651c2a95f7be384dff09b2024e9b2d53ff20118b1bc16d24e7528da",
+      "input": "inputs/table-81c6d4170a24.pdf",
+      "observed_document_form": "operational record"
+    },
+    {
+      "group": "table",
+      "source_path": "docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "upstream_test_id": "table/walmart-earnings-release-fy24-q4_page13",
+      "source_content_id": "c0c46c81812be291c0d0d70e6273199784f163e5",
+      "source_bytes": 30528,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "expected_markdown": 1
+      },
+      "tags": [
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          500,
+          500
+        ]
+      ],
+      "annotation_count": 1,
+      "case_id": "table-9e75b4b41398",
+      "input_sha256": "1d5592beeda1188a2367602de058c4396d1777e970a5411b502cfa5692a83a3e",
+      "input": "inputs/table-9e75b4b41398.pdf",
+      "observed_document_form": "earnings report"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__contract.pdf",
+      "upstream_test_id": "text/text_handwritting__contract",
+      "source_content_id": "aaf6a9fc6d70e6c3d098bab36f795e339df3d4b2cc5a26524e93ffdc2683556f",
+      "source_bytes": 435704,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 107,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          7576,
+          7724
+        ]
+      ],
+      "annotation_count": 149,
+      "case_id": "text_content-278ea5922178",
+      "input_sha256": "aaf6a9fc6d70e6c3d098bab36f795e339df3d4b2cc5a26524e93ffdc2683556f",
+      "input": "inputs/text_content-278ea5922178.pdf",
+      "observed_document_form": "completed form"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__manualunderline.pdf",
+      "upstream_test_id": "text/text_handwritting__manualunderline",
+      "source_content_id": "02e1dd4ea4d7ec66594bffd45b5fa32ed91b00df333a37396457305d149a94d8",
+      "source_bytes": 189306,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__manualunderline.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 44,
+        "missing_specific_word": 166,
+        "missing_word_percent": 1,
+        "order": 24,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          8559,
+          8799
+        ]
+      ],
+      "annotation_count": 241,
+      "case_id": "text_content-d4b8c3f27cca",
+      "input_sha256": "02e1dd4ea4d7ec66594bffd45b5fa32ed91b00df333a37396457305d149a94d8",
+      "input": "inputs/text_content-d4b8c3f27cca.pdf",
+      "observed_document_form": "archival report"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_handwritting__signatures.pdf",
+      "upstream_test_id": "text/text_handwritting__signatures",
+      "source_content_id": "dfb3f7c762c8eeade16fbd0ad875e4ab2c52bfb3",
+      "source_bytes": 70585,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_handwritting__signatures.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 39,
+        "missing_specific_word": 96,
+        "missing_word_percent": 1,
+        "order": 20,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "handwritting",
+        "hard"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          8928,
+          9090
+        ]
+      ],
+      "annotation_count": 163,
+      "case_id": "text_content-15090b2318ec",
+      "input_sha256": "dfcb60497649b0c7814cdee528e543ce5bd3ba72d4f0c16a0836234bef25d081",
+      "input": "inputs/text_content-15090b2318ec.pdf",
+      "observed_document_form": "signed agreement"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_misc__2pages.pdf",
+      "upstream_test_id": "text/text_misc__2pages",
+      "source_content_id": "a5ed750d6c95f764d692d4ceca0464e87b4c1b9f428cafc991098f99775e0c75",
+      "source_bytes": 365590,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_misc__2pages.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 66,
+        "missing_specific_word": 578,
+        "missing_word_percent": 1,
+        "order": 63,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "misc"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          9261,
+          9976
+        ]
+      ],
+      "annotation_count": 716,
+      "case_id": "text_content-6fdf84d1ec2f",
+      "input_sha256": "a5ed750d6c95f764d692d4ceca0464e87b4c1b9f428cafc991098f99775e0c75",
+      "input": "inputs/text_content-6fdf84d1ec2f.pdf",
+      "observed_document_form": "corporate report"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_misc__mark2.pdf",
+      "upstream_test_id": "text/text_misc__mark2",
+      "source_content_id": "4ba38d5b4c45a7e4c4e1496d87c592a84d73c522",
+      "source_bytes": 59561,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_misc__mark2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 42,
+        "missing_specific_word": 77,
+        "missing_word_percent": 1,
+        "order": 29,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "misc"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          13486,
+          13642
+        ]
+      ],
+      "annotation_count": 157,
+      "case_id": "text_content-a78ab2bad3f5",
+      "input_sha256": "d79260da52319364f014730e6fb158bbcb0eef510be653cf40f8b6bbd6da5e20",
+      "input": "inputs/text_content-a78ab2bad3f5.pdf",
+      "observed_document_form": "insurance rating manual"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__10k2col.pdf",
+      "upstream_test_id": "text/text_multicolumns__10k2col",
+      "source_content_id": "6e9399644957aa7992df54a488c514c3f93b4bd6",
+      "source_bytes": 73001,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__10k2col.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 48,
+        "missing_specific_word": 355,
+        "missing_word_percent": 1,
+        "order": 40,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          16940,
+          17390
+        ]
+      ],
+      "annotation_count": 451,
+      "case_id": "text_content-98f8bee36592",
+      "input_sha256": "a4a6ad03465d0d04ada6260e0637ca0d7a294750c3ac384e84b10ee817435973",
+      "input": "inputs/text_content-98f8bee36592.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__4c.pdf",
+      "upstream_test_id": "text/text_multicolumns__4c",
+      "source_content_id": "79f70841e334e6ea6179353a0131c0a84529b7adf6ae286d4c1330ba022ca382",
+      "source_bytes": 441849,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__4c.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 95,
+        "missing_specific_word": 185,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          29666,
+          29967
+        ]
+      ],
+      "annotation_count": 302,
+      "case_id": "text_content-e1bf2fad7b00",
+      "input_sha256": "79f70841e334e6ea6179353a0131c0a84529b7adf6ae286d4c1330ba022ca382",
+      "input": "inputs/text_content-e1bf2fad7b00.pdf",
+      "observed_document_form": "organization directory"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multicolumns__hydro.pdf",
+      "upstream_test_id": "text/text_multicolumns__hydro",
+      "source_content_id": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+      "source_bytes": 2408795,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multicolumns__hydro.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 79,
+        "missing_specific_word": 152,
+        "missing_word_percent": 1,
+        "order": 19,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "multicolumns"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          43475,
+          43731
+        ]
+      ],
+      "annotation_count": 257,
+      "case_id": "text_content-8419a554e0fa",
+      "input_sha256": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+      "input": "inputs/text_content-8419a554e0fa.pdf",
+      "observed_document_form": "technical exhibition material"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_multilang__russian.pdf",
+      "upstream_test_id": "text/text_multilang__russian",
+      "source_content_id": "239aac621f1916ec98df8e7812d0b67c2914356123b5d03c2393bafc4aa5ae04",
+      "source_bytes": 860256,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_multilang__russian.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 45,
+        "missing_specific_word": 326,
+        "missing_word_percent": 1,
+        "order": 37,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "multilang"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          63268,
+          63684
+        ]
+      ],
+      "annotation_count": 417,
+      "case_id": "text_content-d69a6ac38e86",
+      "input_sha256": "239aac621f1916ec98df8e7812d0b67c2914356123b5d03c2393bafc4aa5ae04",
+      "input": "inputs/text_content-d69a6ac38e86.pdf",
+      "observed_document_form": "insurance guidance"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__contract.pdf",
+      "upstream_test_id": "text/text_ocr__contract",
+      "source_content_id": "eadbd010ce8806411c9ba9fcd0b4373fe016ac79107096cbe75c2c2d6e7b5991",
+      "source_bytes": 152356,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 20,
+        "missing_specific_word": 175,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          74024,
+          74240
+        ]
+      ],
+      "annotation_count": 217,
+      "case_id": "text_content-40952d6bde70",
+      "input_sha256": "eadbd010ce8806411c9ba9fcd0b4373fe016ac79107096cbe75c2c2d6e7b5991",
+      "input": "inputs/text_content-40952d6bde70.pdf",
+      "observed_document_form": "contract conditions"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__inr.pdf",
+      "upstream_test_id": "text/text_ocr__inr",
+      "source_content_id": "22fd2e861b75155538cc343f6810932b7b191e27",
+      "source_bytes": 60005,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__inr.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 17,
+        "missing_specific_word": 142,
+        "missing_word_percent": 1,
+        "order": 13,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          79868,
+          80046
+        ]
+      ],
+      "annotation_count": 179,
+      "case_id": "text_content-b1928b9de600",
+      "input_sha256": "b20288dd8b5461471524c9ff62ee4079cb6c300bffd1cd53d558f116296b802c",
+      "input": "inputs/text_content-b1928b9de600.pdf",
+      "observed_document_form": "government rules"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__letter.pdf",
+      "upstream_test_id": "text/text_ocr__letter",
+      "source_content_id": "e6389113029ee47e21dcaaf353abc3b29fc70e47cb645c6a221133fd61e5cce3",
+      "source_bytes": 266858,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__letter.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 127,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81136,
+          81307
+        ]
+      ],
+      "annotation_count": 172,
+      "case_id": "text_content-39fb556c731e",
+      "input_sha256": "e6389113029ee47e21dcaaf353abc3b29fc70e47cb645c6a221133fd61e5cce3",
+      "input": "inputs/text_content-39fb556c731e.pdf",
+      "observed_document_form": "employment decision"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__letterhead.pdf",
+      "upstream_test_id": "text/text_ocr__letterhead",
+      "source_content_id": "caa4861cebbee012dae3bf8177e13236bc42cac2",
+      "source_bytes": 86111,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__letterhead.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 25,
+        "missing_specific_word": 112,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          81510,
+          81672
+        ]
+      ],
+      "annotation_count": 163,
+      "case_id": "text_content-2905bb800ea5",
+      "input_sha256": "a3dd11815fb8421cacc15915acdc148f7933bcd7d08269ac9fa2691f07cbe29e",
+      "input": "inputs/text_content-2905bb800ea5.pdf",
+      "observed_document_form": "regulatory enforcement summary"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_ocr__skewGazette.pdf",
+      "upstream_test_id": "text/text_ocr__skewGazette",
+      "source_content_id": "9c6d4b58b17f6c3e9f972ab74584f1e036ecfd01",
+      "source_bytes": 73217,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_ocr__skewGazette.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 24,
+        "missing_specific_word": 118,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "hard",
+        "ocr"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          94527,
+          94693
+        ]
+      ],
+      "annotation_count": 167,
+      "case_id": "text_content-ee911edde215",
+      "input_sha256": "0eb8cd7f1b4c3c20136294b34712ffe8a4fb6f583471ead07807e5e84c8d3c32",
+      "input": "inputs/text_content-ee911edde215.pdf",
+      "observed_document_form": "government rules"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__10k.pdf",
+      "upstream_test_id": "text/text_simple__10k",
+      "source_content_id": "b7bba765ec9f869c2b8f240b2838b4d5ef98801efc2d072ac9b5d14f401ba92c",
+      "source_bytes": 202838,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__10k.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 36,
+        "missing_specific_word": 382,
+        "missing_word_percent": 1,
+        "order": 29,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          98338,
+          98792
+        ]
+      ],
+      "annotation_count": 455,
+      "case_id": "text_content-22ac978105b6",
+      "input_sha256": "b7bba765ec9f869c2b8f240b2838b4d5ef98801efc2d072ac9b5d14f401ba92c",
+      "input": "inputs/text_content-22ac978105b6.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__10k2.pdf",
+      "upstream_test_id": "text/text_simple__10k2",
+      "source_content_id": "eae2cb9c4c5a3e27353032d658e8cd642c4848f0",
+      "source_bytes": 77430,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__10k2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 41,
+        "missing_specific_word": 325,
+        "missing_word_percent": 1,
+        "order": 32,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          98793,
+          99198
+        ]
+      ],
+      "annotation_count": 406,
+      "case_id": "text_content-4898bcd0b05c",
+      "input_sha256": "f5d95f846cffc20c6f488bd7af7a2900ffead219322eda7bb7ca50141e16ada0",
+      "input": "inputs/text_content-4898bcd0b05c.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__2025-11-05-S-P-Global-Report-Charts-Enterprise-Race-to-Build-AI-Agent-Ready-Infrastructure.pdf",
+      "upstream_test_id": "text/text_simple__2025-11-05-S-P-Global-Report-Charts-Enterprise-Race-to-Build-AI-Agent-Ready-Infrastructure",
+      "source_content_id": "19b6b47e2263a35565726a1ab821f15312e2efe4",
+      "source_bytes": 42583,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__2025-11-05-S-P-Global-Report-Charts-Enterprise-Race-to-Build-AI-Agent-Ready-Infrastructure.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 45,
+        "missing_specific_word": 329,
+        "missing_word_percent": 1,
+        "order": 30,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "hard",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          100705,
+          101117
+        ]
+      ],
+      "annotation_count": 413,
+      "case_id": "text_content-a5aafb9ad2a7",
+      "input_sha256": "687b4ebe7411527a73bee5073a9d50eca781f46b0f29e97d99aa48ebaeba480c",
+      "input": "inputs/text_content-a5aafb9ad2a7.pdf",
+      "observed_document_form": "corporate press release"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__agreement.pdf",
+      "upstream_test_id": "text/text_simple__agreement",
+      "source_content_id": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+      "source_bytes": 153140,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__agreement.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 15,
+        "missing_specific_word": 210,
+        "missing_word_percent": 1,
+        "order": 10,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          103327,
+          103569
+        ]
+      ],
+      "annotation_count": 243,
+      "case_id": "text_content-946571be7f33",
+      "input_sha256": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+      "input": "inputs/text_content-946571be7f33.pdf",
+      "observed_document_form": "asset purchase agreement"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__att10k.pdf",
+      "upstream_test_id": "text/text_simple__att10k",
+      "source_content_id": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b",
+      "source_bytes": 120677,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__att10k.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 51,
+        "missing_specific_word": 187,
+        "missing_word_percent": 1,
+        "order": 35,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          104909,
+          105190
+        ]
+      ],
+      "annotation_count": 282,
+      "case_id": "text_content-a2e6ab4c9d47",
+      "input_sha256": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b",
+      "input": "inputs/text_content-a2e6ab4c9d47.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__bill.pdf",
+      "upstream_test_id": "text/text_simple__bill",
+      "source_content_id": "d46182ae62c2faaa111affbc21b98124772f50851b2c8317e8e5c658d08c9617",
+      "source_bytes": 101263,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__bill.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 25,
+        "missing_specific_word": 152,
+        "missing_word_percent": 1,
+        "order": 18,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          105508,
+          105710
+        ]
+      ],
+      "annotation_count": 203,
+      "case_id": "text_content-a7110ad90dc8",
+      "input_sha256": "d46182ae62c2faaa111affbc21b98124772f50851b2c8317e8e5c658d08c9617",
+      "input": "inputs/text_content-a7110ad90dc8.pdf",
+      "observed_document_form": "legislative summary"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__checkbox.pdf",
+      "upstream_test_id": "text/text_simple__checkbox",
+      "source_content_id": "e40f6f2e59a3414042dd7a5470224ee9b2d6899656756ac48ec9bdcb0db0d429",
+      "source_bytes": 102372,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__checkbox.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 16,
+        "missing_specific_word": 185,
+        "missing_word_percent": 1,
+        "order": 14,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          108860,
+          109080
+        ]
+      ],
+      "annotation_count": 221,
+      "case_id": "text_content-3d2495a62382",
+      "input_sha256": "e40f6f2e59a3414042dd7a5470224ee9b2d6899656756ac48ec9bdcb0db0d429",
+      "input": "inputs/text_content-3d2495a62382.pdf",
+      "observed_document_form": "job description"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__contract.pdf",
+      "upstream_test_id": "text/text_simple__contract",
+      "source_content_id": "b9f8181701542dc02e8decf8a237ce4280ec67ca",
+      "source_bytes": 47749,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__contract.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 26,
+        "missing_specific_word": 277,
+        "missing_word_percent": 1,
+        "order": 23,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          110277,
+          110610
+        ]
+      ],
+      "annotation_count": 334,
+      "case_id": "text_content-27ab025b1064",
+      "input_sha256": "cc32014e3658e2b5dae7583638dea69b9dc9ba2f5429e9100ae1a27e9da2940a",
+      "input": "inputs/text_content-27ab025b1064.pdf",
+      "observed_document_form": "retirement plan agreement"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__contract2.pdf",
+      "upstream_test_id": "text/text_simple__contract2",
+      "source_content_id": "1079e61a29a6ea86abec38a8e95b02b657e69993dae322e51a591a84aa9c3a27",
+      "source_bytes": 192386,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__contract2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_footer": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 18,
+        "missing_specific_word": 253,
+        "missing_word_percent": 1,
+        "order": 17,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          110611,
+          110906
+        ]
+      ],
+      "annotation_count": 296,
+      "case_id": "text_content-73c7d9232d59",
+      "input_sha256": "1079e61a29a6ea86abec38a8e95b02b657e69993dae322e51a591a84aa9c3a27",
+      "input": "inputs/text_content-73c7d9232d59.pdf",
+      "observed_document_form": "financial filing"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__financialReturnCover.pdf",
+      "upstream_test_id": "text/text_simple__financialReturnCover",
+      "source_content_id": "76547fb0d7522a83997de05814f8bdeb94da2ada",
+      "source_bytes": 17499,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__financialReturnCover.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 3,
+        "missing_specific_word": 11,
+        "missing_word_percent": 1,
+        "order": 2,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          115644,
+          115666
+        ]
+      ],
+      "annotation_count": 23,
+      "case_id": "text_content-f844ad04a4d1",
+      "input_sha256": "e318911b22a4a804767727f39486974b7b3dba1648379068cbc2a170cc51fb22",
+      "input": "inputs/text_content-f844ad04a4d1.pdf",
+      "observed_document_form": "municipal financial return cover"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__letter3.pdf",
+      "upstream_test_id": "text/text_simple__letter3",
+      "source_content_id": "85fda5abc064ef4dc487de9511fb30c15872155dc2316b1c748910869061122b",
+      "source_bytes": 428353,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__letter3.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 25,
+        "missing_specific_word": 181,
+        "missing_word_percent": 1,
+        "order": 18,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          119611,
+          119842
+        ]
+      ],
+      "annotation_count": 232,
+      "case_id": "text_content-6538f25d8413",
+      "input_sha256": "85fda5abc064ef4dc487de9511fb30c15872155dc2316b1c748910869061122b",
+      "input": "inputs/text_content-6538f25d8413.pdf",
+      "observed_document_form": "government correspondence"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__minutes.pdf",
+      "upstream_test_id": "text/text_simple__minutes",
+      "source_content_id": "f0a2298e45518bee1576d19d7d6a49192fcfe1d046d5e8db22af091a85d258b7",
+      "source_bytes": 143026,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__minutes.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 36,
+        "missing_specific_word": 167,
+        "missing_word_percent": 1,
+        "order": 19,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          122452,
+          122680
+        ]
+      ],
+      "annotation_count": 229,
+      "case_id": "text_content-2175062d1fe5",
+      "input_sha256": "f0a2298e45518bee1576d19d7d6a49192fcfe1d046d5e8db22af091a85d258b7",
+      "input": "inputs/text_content-2175062d1fe5.pdf",
+      "observed_document_form": "meeting minutes"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__minutes2.pdf",
+      "upstream_test_id": "text/text_simple__minutes2",
+      "source_content_id": "a05d49f57ef65108bd20422543f12ccbe69f747b",
+      "source_bytes": 55739,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__minutes2.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 30,
+        "missing_specific_word": 250,
+        "missing_word_percent": 1,
+        "order": 27,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          122681,
+          122994
+        ]
+      ],
+      "annotation_count": 314,
+      "case_id": "text_content-4145041faa82",
+      "input_sha256": "6ff1719f5892fd730d30543f74b652a4310205d83a08e70db791859530c135bb",
+      "input": "inputs/text_content-4145041faa82.pdf",
+      "observed_document_form": "meeting minutes"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__order.pdf",
+      "upstream_test_id": "text/text_simple__order",
+      "source_content_id": "d19a961a16737ab4b8b0a6cf4c5c1b83890a3f7c",
+      "source_bytes": 50750,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__order.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 29,
+        "missing_specific_word": 162,
+        "missing_word_percent": 1,
+        "order": 22,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          126134,
+          126353
+        ]
+      ],
+      "annotation_count": 220,
+      "case_id": "text_content-2b391e09c732",
+      "input_sha256": "fcb510057ccf4e77f6e1c03ae53114449a59e20652e606f006a2a82555b9a6ae",
+      "input": "inputs/text_content-2b391e09c732.pdf",
+      "observed_document_form": "construction change order"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_simple__sub.pdf",
+      "upstream_test_id": "text/text_simple__sub",
+      "source_content_id": "49005eba9893bd9a5947805f072628cf017be852",
+      "source_bytes": 82871,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_simple__sub.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 22,
+        "missing_specific_word": 151,
+        "missing_word_percent": 1,
+        "order": 18,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "simple"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          136833,
+          137031
+        ]
+      ],
+      "annotation_count": 199,
+      "case_id": "text_content-abd9dc65f651",
+      "input_sha256": "1170ae8783ba46e5788065b4bef6cdfeae1f40c18ec9842ad4799c5c8ec5c1b5",
+      "input": "inputs/text_content-abd9dc65f651.pdf",
+      "observed_document_form": "professional guidance"
+    },
+    {
+      "group": "text_content",
+      "source_path": "docs/text/text_sparse__mcdo.pdf",
+      "upstream_test_id": "text/text_sparse__mcdo",
+      "source_content_id": "9af687ab8da3cbf180d7e2a36e8ba76dbb18ff91f460ea17eee9eb23d2043590",
+      "source_bytes": 1460594,
+      "source_url": "https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/text/text_sparse__mcdo.pdf",
+      "source_document_identity": null,
+      "source_page_count": null,
+      "domain": null,
+      "language": null,
+      "rule_types": {
+        "bag_of_digit_percent": 1,
+        "is_header": 1,
+        "missing_sentence_percent": 1,
+        "missing_specific_sentence": 6,
+        "missing_specific_word": 16,
+        "missing_word_percent": 1,
+        "order": 1,
+        "too_many_sentence_occurence_percent": 1,
+        "too_many_word_occurence_percent": 1,
+        "unexpected_sentence_percent": 1,
+        "unexpected_word_percent": 1
+      },
+      "tags": [
+        "easy",
+        "sparse"
+      ],
+      "annotation_pages": [],
+      "annotation_line_ranges": [
+        [
+          141227,
+          141257
+        ]
+      ],
+      "annotation_count": 31,
+      "case_id": "text_content-d5379b20f3f1",
+      "input_sha256": "9af687ab8da3cbf180d7e2a36e8ba76dbb18ff91f460ea17eee9eb23d2043590",
+      "input": "inputs/text_content-d5379b20f3f1.pdf",
+      "observed_document_form": "catalogue cover"
+    }
+  ],
+  "pipelines": {
+    "pypdf": {
+      "extraction_mode": "plain"
+    },
+    "pdfplumber": {
+      "layout": false,
+      "x_tolerance": 3.0,
+      "y_tolerance": 3.0
+    }
+  },
+  "planned_pairs": [
+    "pypdf--table-4b72cf115166",
+    "pdfplumber--table-4b72cf115166",
+    "pypdf--table-26316595f58f",
+    "pdfplumber--table-26316595f58f",
+    "pypdf--table-76c1ccd487de",
+    "pdfplumber--table-76c1ccd487de",
+    "pypdf--table-96b9abc77533",
+    "pdfplumber--table-96b9abc77533",
+    "pypdf--table-7ce868b56c95",
+    "pdfplumber--table-7ce868b56c95",
+    "pypdf--table-7806839f9911",
+    "pdfplumber--table-7806839f9911",
+    "pypdf--table-061166d2446d",
+    "pdfplumber--table-061166d2446d",
+    "pypdf--table-28cd7ca7a9b4",
+    "pdfplumber--table-28cd7ca7a9b4",
+    "pypdf--table-478a60fe5913",
+    "pdfplumber--table-478a60fe5913",
+    "pypdf--table-203916ea7736",
+    "pdfplumber--table-203916ea7736",
+    "pypdf--table-d5e780df26fe",
+    "pdfplumber--table-d5e780df26fe",
+    "pypdf--table-3e7734cdc242",
+    "pdfplumber--table-3e7734cdc242",
+    "pypdf--table-e0ff48b8f0c8",
+    "pdfplumber--table-e0ff48b8f0c8",
+    "pypdf--table-26fb1b96ca09",
+    "pdfplumber--table-26fb1b96ca09",
+    "pypdf--table-eddbc130cdb5",
+    "pdfplumber--table-eddbc130cdb5",
+    "pypdf--table-d929fcff8553",
+    "pdfplumber--table-d929fcff8553",
+    "pypdf--table-e429edddda02",
+    "pdfplumber--table-e429edddda02",
+    "pypdf--table-7b971d4c2631",
+    "pdfplumber--table-7b971d4c2631",
+    "pypdf--table-81c6d4170a24",
+    "pdfplumber--table-81c6d4170a24",
+    "pypdf--table-9e75b4b41398",
+    "pdfplumber--table-9e75b4b41398",
+    "pypdf--text_content-278ea5922178",
+    "pdfplumber--text_content-278ea5922178",
+    "pypdf--text_content-d4b8c3f27cca",
+    "pdfplumber--text_content-d4b8c3f27cca",
+    "pypdf--text_content-15090b2318ec",
+    "pdfplumber--text_content-15090b2318ec",
+    "pypdf--text_content-6fdf84d1ec2f",
+    "pdfplumber--text_content-6fdf84d1ec2f",
+    "pypdf--text_content-a78ab2bad3f5",
+    "pdfplumber--text_content-a78ab2bad3f5",
+    "pypdf--text_content-98f8bee36592",
+    "pdfplumber--text_content-98f8bee36592",
+    "pypdf--text_content-e1bf2fad7b00",
+    "pdfplumber--text_content-e1bf2fad7b00",
+    "pypdf--text_content-8419a554e0fa",
+    "pdfplumber--text_content-8419a554e0fa",
+    "pypdf--text_content-d69a6ac38e86",
+    "pdfplumber--text_content-d69a6ac38e86",
+    "pypdf--text_content-40952d6bde70",
+    "pdfplumber--text_content-40952d6bde70",
+    "pypdf--text_content-b1928b9de600",
+    "pdfplumber--text_content-b1928b9de600",
+    "pypdf--text_content-39fb556c731e",
+    "pdfplumber--text_content-39fb556c731e",
+    "pypdf--text_content-2905bb800ea5",
+    "pdfplumber--text_content-2905bb800ea5",
+    "pypdf--text_content-ee911edde215",
+    "pdfplumber--text_content-ee911edde215",
+    "pypdf--text_content-22ac978105b6",
+    "pdfplumber--text_content-22ac978105b6",
+    "pypdf--text_content-4898bcd0b05c",
+    "pdfplumber--text_content-4898bcd0b05c",
+    "pypdf--text_content-a5aafb9ad2a7",
+    "pdfplumber--text_content-a5aafb9ad2a7",
+    "pypdf--text_content-946571be7f33",
+    "pdfplumber--text_content-946571be7f33",
+    "pypdf--text_content-a2e6ab4c9d47",
+    "pdfplumber--text_content-a2e6ab4c9d47",
+    "pypdf--text_content-a7110ad90dc8",
+    "pdfplumber--text_content-a7110ad90dc8",
+    "pypdf--text_content-3d2495a62382",
+    "pdfplumber--text_content-3d2495a62382",
+    "pypdf--text_content-27ab025b1064",
+    "pdfplumber--text_content-27ab025b1064",
+    "pypdf--text_content-73c7d9232d59",
+    "pdfplumber--text_content-73c7d9232d59",
+    "pypdf--text_content-f844ad04a4d1",
+    "pdfplumber--text_content-f844ad04a4d1",
+    "pypdf--text_content-6538f25d8413",
+    "pdfplumber--text_content-6538f25d8413",
+    "pypdf--text_content-2175062d1fe5",
+    "pdfplumber--text_content-2175062d1fe5",
+    "pypdf--text_content-4145041faa82",
+    "pdfplumber--text_content-4145041faa82",
+    "pypdf--text_content-2b391e09c732",
+    "pdfplumber--text_content-2b391e09c732",
+    "pypdf--text_content-abd9dc65f651",
+    "pdfplumber--text_content-abd9dc65f651",
+    "pypdf--text_content-d5379b20f3f1",
+    "pdfplumber--text_content-d5379b20f3f1"
+  ],
+  "runtime_identity": "e4d6618ce5a610511d14b492fad56a135f1c30574e18b1d2a2d72f555089cf80",
+  "evaluator_environment": {
+    "distributions": {
+      "Levenshtein": "0.27.3",
+      "Markdown": "3.10.2",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.19.2",
+      "RapidFuzz": "3.14.3",
+      "Unidecode": "1.4.0",
+      "anls_star": "1.0.1",
+      "annotated-doc": "0.0.4",
+      "annotated-types": "0.7.0",
+      "anyio": "4.12.1",
+      "apted": "1.0.3",
+      "attrs": "25.4.0",
+      "autoevals": "0.1.0",
+      "beautifulsoup4": "4.14.3",
+      "bleach": "6.3.0",
+      "certifi": "2026.2.25",
+      "chevron": "0.14.0",
+      "click": "8.3.1",
+      "filelock": "3.25.2",
+      "fire": "0.7.1",
+      "fsspec": "2026.2.0",
+      "fuzzysearch": "0.8.1",
+      "h11": "0.16.0",
+      "hf-xet": "1.4.2",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "huggingface_hub": "1.7.1",
+      "idna": "3.11",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "lxml": "6.0.2",
+      "markdown-it-py": "4.0.0",
+      "markdown2": "2.5.5",
+      "mdurl": "0.1.2",
+      "munkres": "1.1.4",
+      "numpy": "2.4.3",
+      "packaging": "26.0",
+      "pandas": "3.0.1",
+      "parse-bench": "1.0.5",
+      "polyleven": "0.11.0",
+      "pydantic": "2.12.5",
+      "pydantic_core": "2.41.5",
+      "python-Levenshtein": "0.27.3",
+      "python-dateutil": "2.9.0.post0",
+      "python-dotenv": "1.2.2",
+      "referencing": "0.37.0",
+      "rich": "14.3.3",
+      "rpds-py": "0.30.0",
+      "scipy": "1.17.1",
+      "shellingham": "1.5.4",
+      "six": "1.17.0",
+      "soupsieve": "2.8.3",
+      "termcolor": "3.3.0",
+      "tqdm": "4.67.3",
+      "typer": "0.24.1",
+      "typing-inspection": "0.4.2",
+      "typing_extensions": "4.15.0",
+      "webencodings": "0.5.1"
+    },
+    "python": "3.14.3",
+    "upstream_sources": {
+      "__init__.py": "f007a4fe01096fe843aac1775e8656759adb264916ff5a4add943fe5b4ae2d08",
+      "analysis/__init__.py": "c691a83c4d3698c8cacaad49ee945c7b2db66c1bb19cbbd4e6a6424aa28a7911",
+      "analysis/aggregation_report.py": "f7aec324222c47b06aedcb5b71388c3c535eb0034d251b615b28b7561f5389d6",
+      "analysis/cli.py": "183b4993fee770e2c1e10f997d1ad0b406e419ccc9257af50420e2f252e872da",
+      "analysis/comparison.py": "422e0f39b744d90947345c211e242d4c82c82d16d3991c759005dd081299556f",
+      "analysis/comparison_core.py": "f7659d1c19db463f8f5bf95c011d81e69eaba4e99cb654c8f15eab86cd6c3378",
+      "analysis/comparison_report.py": "b6ecd8b733fee77b3313ea947baa92bd8c676e8e15d8c98d7ad42fcc2a449246",
+      "analysis/detailed_report.py": "ab27a24f3f73bd02d44b9f0e0f96fdcb9228664ab12b74a41effc448a76c794d",
+      "analysis/leaderboard_report.py": "3ab08500963750689796da8ca47768e10ba9d72ba81f6a7d9f8aa7063fbfd4b3",
+      "analysis/metric_definitions.py": "747e64b6441f8463ea711b6766b876608946dd738b8900fd05f538863e1b90ab",
+      "cli.py": "731bab7a3f382dab2afe101fa671c3a8bc165d206e2535095bbd10735973cadf",
+      "data/__init__.py": "87e0c90050669aaf04fbdb5aae9487d6d2910fce498d075b130b62c8a8969eea",
+      "data/cli.py": "e18d196a9b1682987bff5575e30e3cfb85f0f4e7c554f7de217979ccc20ed870",
+      "data/download.py": "591624e23690cba054445d6108bd0f8969157074356e994b8d7cefd97c37f2d2",
+      "evaluation/__init__.py": "63b826e768d29474fffdf352fb15b708552b550020054ab29e936cfda55e1143",
+      "evaluation/cli.py": "b46847855cd2905d8d37f2bca3500038c253b51b745c4df7fa23473f48954242",
+      "evaluation/evaluators/__init__.py": "9cc986863283eded1aee981eedd8c3a11b49ce278c9d941053a88b4835dfba01",
+      "evaluation/evaluators/base.py": "fbeca1dd6f1c0d3d958e33f1cea009e912c09304e25b513d5ffd41a997f3912a",
+      "evaluation/evaluators/extract.py": "13556f9ab26f9cbef9b7a8fbe55ca900c619e9b95234c93cb74896c5ae4899f7",
+      "evaluation/evaluators/layoutdet.py": "2a81b8feeb5c1a4e47e6f01516181e11b4e573aa0b8cdbd6bf86a1002879f115",
+      "evaluation/evaluators/parse.py": "d124735bb46613155676058e4c1adf5bc5072bc559bfc7f49c61313ce662ea64",
+      "evaluation/evaluators/qa.py": "1e37f73f2373fb2638c4dbac25c6c68fa1356ba4a65e9d96b30bcf8399b88d25",
+      "evaluation/layout_adapters/__init__.py": "0ea9745a52ce7bfd72310210784f520da81c1d18b61bcb4aa61161afc9e18933",
+      "evaluation/layout_adapters/adapters.py": "97401f822c7f19a024cd5f4e94e52dfd1a3dd1e39c670a96d19410867000210b",
+      "evaluation/layout_adapters/base.py": "a2e9afe4dff142b1f1d84bed99db511abbf83639aa3aa60036b4650933aedbc4",
+      "evaluation/layout_adapters/registry.py": "c9d6375a58274f81856a6200ba56a3d31d315a8faf14078d2966a2608b922a00",
+      "evaluation/layout_label_mappers/__init__.py": "dfb74620640e899971d0f97e0664a029cd86c05dd488c9b3347e5c4c6c4336bf",
+      "evaluation/layout_label_mappers/base.py": "c4c14c265e91b51239f9da034b77f61374746a12add1d9a87abf6eb280f84a01",
+      "evaluation/layout_label_mappers/mappers.py": "67bbe8826e47380ed720bbc2ac2ad549b0f3e887d6114fe28c28f22ea747b651",
+      "evaluation/layout_label_mappers/projection.py": "e3d7f8fdc0f104ed659477503e00d1dc3c528f31aea0633bd3a5e2329fe4ac1c",
+      "evaluation/layout_label_mappers/registry.py": "81062416b17492c3aab8d937c0e22cedf1084b49ca6c8e364ab152cbc2d7de5b",
+      "evaluation/metric_aggregation.py": "ec865482995ff929db266f1386c8b6cbb84409b0a5f810c9d52c92ba7a5f9d82",
+      "evaluation/metrics/__init__.py": "f91dec76f4b36b4bbd0215d465a398c02e3793d848e392cbeece9d5cabf1cd4d",
+      "evaluation/metrics/attribution/__init__.py": "4e37124a131aba29a63b338fb60117de07fb4946fee3b7ecc736b6972775fb5a",
+      "evaluation/metrics/attribution/constants.py": "235b900e8d115c437a251a26ec86a30a668c3c94fcb8a3d899c939eb6dc7dd7e",
+      "evaluation/metrics/attribution/core.py": "1c487f6aadc280de2272a2dd013122c3e170f441d9a0eea69fabe7bf7fd2c56e",
+      "evaluation/metrics/attribution/evaluate.py": "a248c1a1b0d2db5a109f4188e974a4dc071bbc6134c505441edc50de994da3e8",
+      "evaluation/metrics/attribution/geometry.py": "262bf67dcd80d3158fd38cf1ad25d2b96f2751e6e23e3acd3d0aa8e85130ffad",
+      "evaluation/metrics/attribution/text_utils.py": "1b7b0583288c04f1efa1f0b51ad680fe019c87efd2d710f665aa00f0b8e94c78",
+      "evaluation/metrics/base.py": "2ec9a8edf90ff42e04d9e3ccbebb1fb8e9dd0b3babc3b231eaea712fffce1423",
+      "evaluation/metrics/downstream/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "evaluation/metrics/extract/__init__.py": "0d1203ecc6c7669ba256a87f3dd436cc10de6a28d78d0361bba82020e2a635c9",
+      "evaluation/metrics/extract/json_subset_match.py": "3e396e295180c9d340d984639b482ce4c0a7ed2f0dbfe764622e6be6bb6d1138",
+      "evaluation/metrics/extract/json_subset_match_metric.py": "dea2958623e6380c253d0e3d3c4e0ac6d01bd3c4421e9fd7e8a7178da77de8e1",
+      "evaluation/metrics/extract/list_unwrap.py": "917e705f2689dbec8c8d9eae7b2c7fc3fa7023c0cbfb7790e433571b1c874a5c",
+      "evaluation/metrics/extract/rule_based_metric.py": "99163bce2dfb870db9e480f52b9cfdc6e518381c457c6714052a3d75d73f74d8",
+      "evaluation/metrics/extract/test_rules.py": "471f43fbab66fd7a5f2ed17bea165cbe93493e45fb57b4cd6b18975594c5c4b0",
+      "evaluation/metrics/extract/test_types.py": "597956cca4c1677fa74ad9cfe3c5b4266ec673079f1c4d1cdd9a6ed2956289b0",
+      "evaluation/metrics/field_grounding/__init__.py": "07aea41003051abb7d42a2d787d414b466c5b495e09f454a021d69b5171d6db3",
+      "evaluation/metrics/field_grounding/core.py": "332c500b5d052700bbaf0748aba3a37d75267b9694b81cba46335df925cadb7f",
+      "evaluation/metrics/field_grounding/extract_adapter.py": "891fb071617453f166541f96ee0e2085cc796b374dfd5aa6206a81984851ecf1",
+      "evaluation/metrics/field_grounding/parse_adapter.py": "56d73cf0c508ef1f1ece0f0fb915c8232865744e88fc772b5d3090ba03c36638",
+      "evaluation/metrics/field_grounding/rule_filters.py": "45c18c4c16b49cbd72ae9d08e542d07a75703bbbfefec3810fc3324229f2ac89",
+      "evaluation/metrics/field_grounding/value_compare.py": "cb46a1469de543ea355ce38a04e26443ad747836af4d97f8c7a5c208ca94d053",
+      "evaluation/metrics/layoutdet/__init__.py": "1bf53bf7476a913e68db06f2260b34b9c02983aba3173521862b4eb8bbe5dd76",
+      "evaluation/metrics/layoutdet/classification_utils.py": "0752a46cca3bfcb978e6de7d74d6cadea3dbd2ee85ef99530e2289e490c49c21",
+      "evaluation/metrics/layoutdet/furniture.py": "aa0419c31602972a77c5710059cfb35f4d1b477e24fb3941b45be3398da24d5a",
+      "evaluation/metrics/layoutdet/iou.py": "ef108f98d86efb1c1426660693544f3b2f62a7b70afe8c970c92f31b01361731",
+      "evaluation/metrics/layoutdet/overlap.py": "a0e0a4528a8d3d0e00af4b3274f2eaa0b0fa7619496d02385e6ed06de0d91bdc",
+      "evaluation/metrics/parse/__init__.py": "88b475ab61dcb39ea34670c85f5784f53422484fa42cd3382c75a5fed245b696",
+      "evaluation/metrics/parse/_vendor_grits_reference.py": "316733abb2a836d0bfcaa07e8eaba97a863bcfc6afa2020bf6e1b28837ad9f9f",
+      "evaluation/metrics/parse/chart_json_to_html.py": "e81c718e01cf26a30b7d8059fe71f7a912a777aa9555e87fd3b30098b14df4b4",
+      "evaluation/metrics/parse/cross_page_table_consistency.py": "ee49a776e52bfeec08dc65cca669832d158468dbbafe8a70dc82fbf9aba1249e",
+      "evaluation/metrics/parse/emphasis_spans.py": "f81e068fd98581d7b68ff2361d15fa9e668e353fccfa9e5ebedc5814e5d54dc8",
+      "evaluation/metrics/parse/fast_tree_edit.py": "6b74878e45bb4de5963306bfe0a0a90af81f6bf98c84dbeb542fcc04c747f05c",
+      "evaluation/metrics/parse/grits_metric.py": "89800f623b62a729a222c69cd5d0242a6fb6cc047b0e302358cb15b97998e6bc",
+      "evaluation/metrics/parse/grits_reference_metric.py": "dab5a24dac4b1530c2633eb9b317fd5f5269ccb43ef36c3c92da0c5711ae72e5",
+      "evaluation/metrics/parse/header_accuracy_metric.py": "25bd34332672f711863a27f8e9a13d50b34bf891f04e9a4b24e35fade5bf826d",
+      "evaluation/metrics/parse/llm_normalization/__init__.py": "49a9273ea860c1a96b8dc0b042451574ea890bd0202b347ccb321d3cfd7c0ad8",
+      "evaluation/metrics/parse/llm_normalization/base.py": "3a5b2e241b34412cd6a433b18d8ed12568639ea2dfcb71e91cd050ab8b4b06fe",
+      "evaluation/metrics/parse/llm_normalization/config.py": "26096074c2ce5c5ac5c0fa323a3584d073940c905730d43406aa94d73c2ce4a5",
+      "evaluation/metrics/parse/llm_normalization/postprocess.py": "83304c7eafa58a6dbeeda7fa6ba47c766ed90082b4a51be0a16577c306cff494",
+      "evaluation/metrics/parse/llm_normalization/strategy_judge.py": "72619d3275afe267d9a5629a3fccb79524f68747c1c676c46e4e68a4149ae2fb",
+      "evaluation/metrics/parse/mermaid_graph.py": "4a68f2d61b2a67940a7a280b5b0b9ba60853f9fa0e9c9fd08ce89bd6621f4eaf",
+      "evaluation/metrics/parse/rule_based_judge_metric.py": "bf5b2a1bd016bfdbde803f6fcbf7d608dc296e719f2f94024d3ff50ddc0ad899",
+      "evaluation/metrics/parse/rule_based_metric.py": "1b788a6992fc2bfc61effda56e7e965e9324e9685140a5c4b053f912fbd2203a",
+      "evaluation/metrics/parse/rules_bag.py": "bf81b71634c231dc967057078b7ce58d4d389e9666cea9df28f00ebdbedf9016",
+      "evaluation/metrics/parse/rules_base.py": "4ec809afb53a723e032bbd64f7a28c12b005c654be15e6756c1dc9dd47bc19c7",
+      "evaluation/metrics/parse/rules_chart.py": "aff854355782736a182b0ad402bfd1a644514e02835a5fc58725b3263939da43",
+      "evaluation/metrics/parse/rules_diagram.py": "82b1c6ea33c8ae9e159091ff0a4d5f8a370e280c6a6b02844b1a03245661c459",
+      "evaluation/metrics/parse/rules_form.py": "9561a11b7e9f15689b6ac9e73a78a6644319dab3abc260c11e2a5cc138b63277",
+      "evaluation/metrics/parse/rules_formatting.py": "9590b8c12d1167243248474348ec4b8ac83d37c79f5158b4dbec38ebf433ce30",
+      "evaluation/metrics/parse/rules_heading.py": "85c314c59bdbc160a33ca1ab3b022ed25137f70f2808dbe138deaf150b6c5616",
+      "evaluation/metrics/parse/rules_list.py": "c8a4b874d7c3d02748f5c927d5eb280332fbd9b9c7e217b53b5dc4bdd681ce04",
+      "evaluation/metrics/parse/rules_page_decoration.py": "f1c9b30d3954dd8bc5ea6f0e16fe6792266dbc05a423d155189ab56c25ae36c4",
+      "evaluation/metrics/parse/rules_table.py": "8d96ac5cb3e974c1bfd3c76308d8f329bdf65918733f51cf9b035683daf5bfae",
+      "evaluation/metrics/parse/rules_text.py": "953aac2ca2907377ecb94118e388131f9b0df1b82937b2f2b88ef65aa81bf481",
+      "evaluation/metrics/parse/rules_watermark.py": "fc8f2e6ae5c9205d4e8add052b1394295bce1a5810c6290399d8df927679bea3",
+      "evaluation/metrics/parse/structural_consistency_metric.py": "1097882e40b0dcf2cc0d1ce1f25f6c9ddda26ba3548f567ebb954b6a3969a805",
+      "evaluation/metrics/parse/table_extraction.py": "ca5f3c4d0e629261462093b80f6429627815c54ce94111e820f8436d048b029c",
+      "evaluation/metrics/parse/table_merging.py": "2d36aeac2d51974efc50c131f6b9acd5aa3bdcca462a8e73d79a7c15dffe998c",
+      "evaluation/metrics/parse/table_pairing.py": "29037b2e71aae4e9b49a57714c21c71ba58013999138bde4fbedc2b442c56948",
+      "evaluation/metrics/parse/table_parsing.py": "87edb26bf97be7f7aa9a5990dbdad3e2035b80076cb10b14d3b6f7b36990000c",
+      "evaluation/metrics/parse/table_record_match_metric.py": "9fdd780d1ef0798fcb2df3f00061c821c317949f96649074079beb3397743312",
+      "evaluation/metrics/parse/table_splitting.py": "0d7a2041fea74917f36fd677cc6df91f8ae8138afbb47a55c4e638c0ca143f1b",
+      "evaluation/metrics/parse/table_title_stripping.py": "db2b46144266f53b8c26551bed90090f90732e0f7d04cf3b0be9605fc3567577",
+      "evaluation/metrics/parse/teds_metric.py": "9caee45fab51f6ab55763a02f23afc81c41734b35a47e4c7f8b2e723907e08b9",
+      "evaluation/metrics/parse/test_rules.py": "04f44e6401952ad71565c56c4f5f7663df9bf913dc63fe39c797cd72529914c3",
+      "evaluation/metrics/parse/test_types.py": "bdbe99d1cba3dfde5eb64ff24d37ffde95311a16c8720feba98dd644a80a660f",
+      "evaluation/metrics/parse/text_content_projection.py": "7c9a97e7b547935e618a84b2375c6f30b46d232bd877fdf5c0eabdac529153f4",
+      "evaluation/metrics/parse/text_similarity_metric.py": "c3e9670c5ca1ae1e4b0b42c1ac66c3f73ada7902b83afdea39db9fa704e3f830",
+      "evaluation/metrics/parse/text_v21.py": "b5ab88547e9486a3aa369d9f18b8b522e7b29e36dfeaa04fe15f34d2fb19b302",
+      "evaluation/metrics/parse/utils.py": "72a08653ab5790fafecec6312922839a780ba058c13bdf27a77cb2c6fabeec60",
+      "evaluation/metrics/qa/__init__.py": "daf8d654726d5bcc307cbfabd8bf3633b087d60690c95e5619e36770affd1618",
+      "evaluation/metrics/qa/answer_comparison.py": "8af0d46e296927ffb2866280b98cc12c05d65f79c73011fb7a74ad647f64e9da",
+      "evaluation/qa/__init__.py": "9840597c9e5482a72f230c617ece1631f9d3e6a6e7f3ff4de305bcb269be69d0",
+      "evaluation/qa/llm_service.py": "facf7979adcc7a685b1e3cb48000ff2194b49482a725a2d0e80f16692154bccb",
+      "evaluation/reports/__init__.py": "a421527ba73757259f76261d30c73a4dc275b3331226595a05fbfa5ce5c7bbab",
+      "evaluation/reports/csv.py": "b541e1eeca8cccd67d6d8fd8a236afa4e878fe46d7c9d06fd6512ecc5fb4dab5",
+      "evaluation/reports/html.py": "a8e82bb452f68ee6285ce6512c0d2a0aa166d3b062dbab2ff686ca10025d786f",
+      "evaluation/reports/markdown.py": "956fcfc39f53baa2db764994105986248c43ae626f9a96b40b6ce5031c83170c",
+      "evaluation/reports/rule_csv.py": "9900106d0bc53488075fbf9e3b86e6bfeb51d2e0eca089110a554793c92bae30",
+      "evaluation/runner.py": "5bd7b6342042d76731b811b78868fd1c338f16806b325e55d40d2dfed2ecc037",
+      "evaluation/stats.py": "aed15c0759e130ff6070d0f004590fc39da730bebc3252af715831330f5a65a0",
+      "extensions.py": "4363ca5086fc3371a4f843b8c5f15999d602bad3b67889198638d0b9601b8d0a",
+      "geometry/__init__.py": "8c62cb8bcfc6b1d56c6b262f18b94131dc3ef7cd7932da054f21ab3a8349c834",
+      "geometry/rotated_bbox.py": "63e0e52529c3cf523d6db09d1b7b96d0163197425b2dcd1294e45f12d9c0bbb0",
+      "inference/__init__.py": "2114939de6251456fe30fbdb1e25f7ef539c7968a7ba2efa6b23a964e59eedc1",
+      "inference/chunkr_layout_extraction.py": "bcfb516fdbff423ed8c333edfbc9f8ffa5c802afef33409f50a484139bd23384",
+      "inference/cli.py": "547c84ff57d64c4b5b09103dfb26e860119fad316632c197fc91f300a0fe27a0",
+      "inference/layout_extraction.py": "1d03d683255e0dd7127ac12ccdfee2b1ac2fba7fce4331d3f4f6fd555039be46",
+      "inference/pipelines.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "inference/pipelines/__init__.py": "b6fd7d61ba08a71fdfd574f9c029a357be9ea64a114ce85cd28aff9574e965f4",
+      "inference/pipelines/extract.py": "bd4249799752c7a27ee49f75dc44008a69dbbfcc1a5b2cb0b467d20cb1aab096",
+      "inference/pipelines/layout.py": "d761649ed086fddc1e9dae410b0809bd001af945c58973d30d1955b8047f4df3",
+      "inference/pipelines/parse.py": "8b565e35a3c6f2c6b3f5379c475f920ab1cce72c68a382c420b702e6c182fd13",
+      "inference/providers/__init__.py": "9f94daa1a7c54337fbfd3695f786009bb7bd5d2846ae5c9b11a093211361182b",
+      "inference/providers/base.py": "6b95a7fd3511047c71f60da2005ceca6bdd7d574aa32ea54a0043f2bcb5a6654",
+      "inference/providers/cancellation.py": "caf6088d9df925a1e62cdfe5cdcb64bbd8e643b6416797a6ceddc624aa2c7197",
+      "inference/providers/extract/__init__.py": "43a075a70436b0da40ca4f9f215d614c6add549b72fe4d381f3b4de6f737a676",
+      "inference/providers/extract/citations.py": "5ced0694ce326cbe007d10b5d4ae1164cb02ab33e48152b4ec425b87dcce840a",
+      "inference/providers/extract/extend.py": "3761f7dc0971713f006b81237c0e7ffec4b45cbbc85645ebf5081644bed22c46",
+      "inference/providers/extract/llamaextract_v2_api.py": "d6791296d52a2c2150c466ca7acfbea8724dc518a10a51da935d95bb589f1a82",
+      "inference/providers/layoutdet/__init__.py": "c6a2a04cecaec58632c79d10ac8f5745f45b1475bb9e08927dc80d47b6cc2cb0",
+      "inference/providers/layoutdet/adapters.py": "1f4c4d90c204b3ceb1680d54694432b4d93f6ac0dc5bcf97f8534d59dd67f20b",
+      "inference/providers/layoutdet/base.py": "ba23c45ff8aa959ed86d27a190ceb085c3f40f85db637d4b749a07e32f70b737",
+      "inference/providers/layoutdet/chandra.py": "68c93a7e1bc039701b5f2df745950dda1982e62fda8c18f26a06d7da010d5f02",
+      "inference/providers/layoutdet/docling.py": "c66321f902b42736813973541ad7d1a07bccda52b020bb81119afe5fead63188",
+      "inference/providers/layoutdet/dots_ocr.py": "96df33991c35f9aebb098a9c1886ebb7b4bc16d75ffc269a3e8ba606cb02bab4",
+      "inference/providers/layoutdet/layout_v3.py": "d4f194ce48a0c9abfe689b3a41a7b19545f39cc96b4edff9b9a26b4da33608ce",
+      "inference/providers/layoutdet/layout_v3_byoc.py": "d6d6206d477cb0499cbed8429c99bbac9552b93b5bd162076b819d99677e937e",
+      "inference/providers/layoutdet/paddle.py": "30e94a2abde67b37a3f867f29187f6e7275c5147cf85fbfb9cbb0d8c70e484ef",
+      "inference/providers/layoutdet/qwen3vl.py": "1e5cb8a3cf0b10eb68dda72cd113b76bfe090250948b52d43fafe9a189395c18",
+      "inference/providers/layoutdet/surya.py": "04be2f06b65e8d0ee5cf36a73ddd0d85135a23cb93bdfe399cceb18692d131b4",
+      "inference/providers/layoutdet/yolo.py": "c31408146cecdcf80b3f5188be5a816db30ba33a2d510d58a65b503970541f8e",
+      "inference/providers/parse/__init__.py": "e6482c668508af469c55cc5c78355bfa4beaf582071f04a19265c50f3077025e",
+      "inference/providers/parse/_docling_common.py": "5d07ae01d39d34b27f5e817fa43c1eba9388d68910b7ac947385a279c54da393",
+      "inference/providers/parse/_layout_utils.py": "c3fe90edd18d06a59132ebf8ec13f05076cae90895aaf7a9910cc03e7de753ab",
+      "inference/providers/parse/aeddix_alpine_ocr_kdl.py": "2d9d9fb52aa0f4501e7191dbdf09f7bfefd31e31776ab1d15c70b091accae259",
+      "inference/providers/parse/amazon_nova.py": "d5019cebf5b785ddac03dc4bd49c39261b26c0bfc41911463ada473d41fd738b",
+      "inference/providers/parse/anthropic.py": "616c29b95c33e12adccabbc0feca023c5d4a4e9cd36e5dc1ab196d1ec34c5f26",
+      "inference/providers/parse/anyformat.py": "1051122e8fee61781e96c390981638d46b522417447d56c5d670d629622faa07",
+      "inference/providers/parse/azure_document_intelligence.py": "d6a091d41865b568da6270d692ceb4d7e78ebfe5fd669c52736f0f44d13d6930",
+      "inference/providers/parse/chandra2.py": "ff2d373cf5e62021b4cb531dac2dfd2a853b71f6e890ed6f8f92d2afaebc2791",
+      "inference/providers/parse/chunkr.py": "a9567ab853e29e30ba072bb9e4088efbe4927f114a281cd0d494ab99857422cf",
+      "inference/providers/parse/cohere_parse.py": "0dc61904b5d4a1f42923bfbacc32acf3e59ee023dabddeef4c4c2ebf91f2a2e3",
+      "inference/providers/parse/databricks_ai_parse.py": "4c8d64d76aeba49ac4e31e3a6e2209888f2df4a43ad0eeb8dcbef1ffe8367f6d",
+      "inference/providers/parse/datalab.py": "19c9550aff58bd1537ae91b03a2ff181c03935ec3d574354659859860a448a4a",
+      "inference/providers/parse/deepseek.py": "5c7090fc4a64532d69a84c3bacf4a3e807886d65869f21a298bfc77a555f056b",
+      "inference/providers/parse/deepseekocr2.py": "ff7e5fa84b166391ba739c20b7a12de1f357e6c7ac8d695c43c448098347ac90",
+      "inference/providers/parse/docai.py": "91342b6b192d4b29bbe98f3d3e15bb006106365cdeafe199abe2ed2abeb1ecd0",
+      "inference/providers/parse/docling.py": "08ac002e28ed83bb00301382eb0eab88aec77bf7a9ee6246cbf53d00aa419d5d",
+      "inference/providers/parse/docling_serve.py": "153dfdb08173e6c70f03f8c0c6d2010a36cb88a1f654e1871f0e89a5b817bc0b",
+      "inference/providers/parse/dots_ocr.py": "ad42032209b5d1b42c739d0ca48392e88754729207577088cd0cfafc8f501187",
+      "inference/providers/parse/extend_parse.py": "bb2ffb7eefe6f1feebb6f07f0ad6491ec58cfdf1e124d736f186d6fecc4551fe",
+      "inference/providers/parse/falconocr.py": "d947417b78f2f134121fd1bd83ea910555fa73fadbff8beb243f3a859df7363f",
+      "inference/providers/parse/florin_parser_nano.py": "bf4babf8a473c78c466f91d17893133a932b293f6a29849961f0ed292fb3858a",
+      "inference/providers/parse/gemma4.py": "4f1c292746e99bc9e73a3b4fddc93fc49941528837354cf34145a3441fc1625c",
+      "inference/providers/parse/glm_zai.py": "06b03b3ebe9d71a3e515cb55266b240fcdbd5668b4f4d5bd636ade8d19e4eaef",
+      "inference/providers/parse/google.py": "c83a280529ef029084a62f8be6fff0afe79fc593639288e6f56cf55ceef7ea72",
+      "inference/providers/parse/google_agentic_vision.py": "983ecf02c43bca35dfa28837cac844beb96c2d07de286c5a82cbbfdb0851e786",
+      "inference/providers/parse/google_docai.py": "83c05b5bd0569a843f4afd9839d00d6edd10d661c55a79146282bb0b5f190ba7",
+      "inference/providers/parse/google_docai_layout_normalization.py": "3170455f7a91505d890d10fded91ab781ae18025ec1b9c54949b1ae5bece812e",
+      "inference/providers/parse/granite_vision.py": "57b3a747d8a09ebc9987382b261f727a2ceb8cb39fc273dd676b91e05c2d3adc",
+      "inference/providers/parse/hpd_parsing.py": "aeb105e32f73d158f4cecc812f22373c0d25bc6294dfdc69fdeec36f84781876",
+      "inference/providers/parse/hunyuanocr.py": "802aa263777632d23aa850fe534d2842e1c3f26a06e1e87e70ae92ef30828860",
+      "inference/providers/parse/infinity_parser2.py": "c7d52c609cffef9caeb1c555abb34613a54be534a86b08eaf88de71765dc5b33",
+      "inference/providers/parse/jinaocr.py": "3f0428f5e5450e5c9fa77ac13adb832c37264d128cfb38372af02f7e5193f456",
+      "inference/providers/parse/kdl_frontier_nano.py": "41eb9568cfdb406c52db6cc39c923d88e9ddd4d480be6f5b204f733163ebd7e3",
+      "inference/providers/parse/landingai.py": "485067e3eba99703b3a17241e49672146808f381b605e6b98f6c1ceb7d147d09",
+      "inference/providers/parse/lightonocr-3.py": "28388bce2ad00dfd335baf386295c261a3c6d4c50960f812b1944de77578b6cc",
+      "inference/providers/parse/liteparse.py": "4adf7802ca1e9c9aed34c000f93c8483b386332e6c3e39e02e48ba2acd4bb472",
+      "inference/providers/parse/llamaparse.py": "14837fbe86f398af3379230f0bcfdec00de88f4aee88dc3a51e212999520e6ed",
+      "inference/providers/parse/llamaparse_v2_normalization.py": "861650228018eabbe3af097dc43004834b774a8bf4699df13494d2e41c59e71b",
+      "inference/providers/parse/markitdown.py": "8ff756f4eb06205a71b284e6ed92774c1e69d5de8327973886f372377e7c1ce3",
+      "inference/providers/parse/mineru25.py": "d6d70dac6b814ab158fa736fe817cad08c710bdda6f58f717e602d98e6cd3064",
+      "inference/providers/parse/mineru2605pro.py": "67b24d8617e0b0497e67c5567bae468d629c510bebe61f87f181ab433472ef07",
+      "inference/providers/parse/mineru_diffusion.py": "11282009e53bd4a2f0c6bf2b2d9494e7577a070744292b11113cd17bf77d645e",
+      "inference/providers/parse/mistral_ocr.py": "19c2ab7eb68e6f6c318a42f57a3824ac04ff6234878ba4a8677bb827b820bc0b",
+      "inference/providers/parse/nemotron_omni.py": "3ca84722568a3275d32b391627610cb3b42bb8b6eaeeca28fe1125134d818674",
+      "inference/providers/parse/nutrient_dws.py": "78f39721eb8f215a878fbf01cb14251ff3c82ead5bc8b5e6884dfca59d383d1a",
+      "inference/providers/parse/oi_parser.py": "2f976c5439a88c4856e4fc623362d9856bac30a7e0bfaddd64099615940f7a4f",
+      "inference/providers/parse/openai.py": "2e071ca74ae18836c09d8a53f78446f25eea5bcd82fec5dc9360ad71dbf3cde1",
+      "inference/providers/parse/opendataloader.py": "1422d9bed9fad5571a8c0ce4420e1c0bfd6d06b0f663a49b52116138547cfbc5",
+      "inference/providers/parse/ovisocr2.py": "f727655f3bff2c0a0af71e84344ba50f2b4eedcccf44796a50ce22e96cdbece6",
+      "inference/providers/parse/paddleocr.py": "23eadbb074df021b3d72df208680325e82cf51a5fece2c118aa3c1e57c969e57",
+      "inference/providers/parse/pdf_inspector.py": "038973fa648ee4abbddf4c5796414f61c1fb1628727c1f0b6e8d8c077c074df8",
+      "inference/providers/parse/pulse.py": "a8763753a9383d84921437e90de5ddb3c18e2c49feb762f703c9a08c07cfa952",
+      "inference/providers/parse/pymupdf.py": "00322487616e47920fa94a544dc2c366d006533db852f7801d10447e97163e87",
+      "inference/providers/parse/pymupdf4llm.py": "c3afdb6a868122b3dbb484a282d4bb675135823d33c3b28e649e7af814cedecc",
+      "inference/providers/parse/pypdf.py": "3c11984fffc7226a11ebb57273802efb5ab6a261b9cad3ba19d595a077d2c717",
+      "inference/providers/parse/qwen.py": "be17ea5f5c580898b56f43ec4abfeb709fde71a4d8949186edcc96c8efd7553a",
+      "inference/providers/parse/rakedoc_nano.py": "6caac70aaf7e4ae516a856c4791c2292f89ae3f8b37f367badee649cf0d0d5e4",
+      "inference/providers/parse/reducto.py": "fe40441aae4a7f640ea7a077cd36db4f586943cb5a2f9ff9d1ab7151093cb042",
+      "inference/providers/parse/surya2.py": "9634534c1116d7b676a9c9515bcc367f9759671b71b188b697e8689d6374632f",
+      "inference/providers/parse/teleocr.py": "a08c3fffef686d65365d579dde4104b5e04d0492952b663a6813bafb31fa2979",
+      "inference/providers/parse/tesseract.py": "ace68861c3aa30e83c30d7618a6173846b6cb962db3b2bc416251be65de12b60",
+      "inference/providers/parse/textract.py": "8f9e2e9cbd7c71a893b473bcfa9232c6559a85bf994473f65c237f3637da0ab1",
+      "inference/providers/parse/unlimitedocr.py": "80e490e5f7881cf724d226d007190f0e4143ce134ff0b5993896aefbb999c5e9",
+      "inference/providers/parse/unstructured.py": "9fece829ebe9acd431f31872c26c67af28850a80e87e4e1e7aa5719d0f629f4d",
+      "inference/providers/parse/warp_ingest.py": "9951a52b3f8f0d121ead43b325e74c5054ff091d9b7fd779a17591b542a142de",
+      "inference/providers/parse/wevisdoc.py": "07001d75f4c4649f0ebca031734cf52d6c48e85d7c92ddef0ff5ec862daefce8",
+      "inference/providers/registry.py": "159292510faa20ce377eaad0a83608c93034ae0f56ff953d082dda6d3f925725",
+      "inference/renormalize.py": "81a0f8d3402e85113805f088867e5ef942c48492012e5e221fae2496bc954cd2",
+      "inference/runner.py": "8abe623b8fec46e8b8e1dd850dd0e02eaee2278c51e1b2001412b7126794a085",
+      "layout_label_mapping.py": "1e97b8de01f7d07c1e541b154cd780a3008f146650569884a32d72008d7fdb7b",
+      "layout_projection.py": "6699993fa4415874c9287e451a1fffd4fdd5928cb0c8f5394bf2fcb837a32efc",
+      "pipeline/__init__.py": "bad0abd5dcd7173fa7b50f5527034f327290422a3dca01751bfc2997f76245b4",
+      "pipeline/cli.py": "64df9e6931d524c421c50445813701ac552ce44e3fe0f5ecb54ff113a2ebe3f8",
+      "schemas/__init__.py": "fef11886a35ba1ffdde24743cfdb3b275cee8fc3e3968a0af94a966160606398",
+      "schemas/evaluation.py": "6c6ec220f87d6a36f99eb95832251bb6e1d796a6f27b2bfbe398f9161b91799c",
+      "schemas/extract_output.py": "236445eb93ea8465ddfd468e8a96cb793f153f52fe535169bab242f3024a3e6a",
+      "schemas/layout_detection_output.py": "3602cc019ae90e3760cc0d622df5ad0b6d5ed790f8f255b78e8eeaf18a7b9d26",
+      "schemas/layout_ontology.py": "5cd53bb7e0f26d2f98b09a6320ea73d04208f4befe28de77a3f7abbb62d428c9",
+      "schemas/metrics.py": "693009bd44cf4c6bf9e79e22cc851576901c3b400f87dd73fc5de921e077a92c",
+      "schemas/parse_output.py": "710fbef6dd79aaec7e08a552ca0cae2011b32dbe31ca047c640d09c035520c87",
+      "schemas/pipeline.py": "279dde82a1922abe1ddcfee4899df25a5c70831e2f896a2519ab8c697ec5f28d",
+      "schemas/pipeline_io.py": "455418afaafa2537c29c36024496dcf06c19c4cd9dfaf71afcfefc92af8ca9a2",
+      "schemas/product.py": "9675d519034d49c47cf1debdc5f62e96029d0283309df1c1fca00c62d0034aef",
+      "test_cases/__init__.py": "a9004489760057ba648b72530881da810e47a68f765e8bec588861e92be98b0c",
+      "test_cases/bbox_value_strict_comparator.py": "6f1654ad26d71a5ec405c95bd33f45be8d8c39e71b3c1047aa9e4dddf490be33",
+      "test_cases/extract_field_paths.py": "6d8c5b89046d21e4d36733e8a82f615a05096c6a8181ff29dbf5480d6a66e50a",
+      "test_cases/layout_attribution_generation.py": "bffdc174917958e181c491ea33176bc1718eb917d18172829438baeb82ad53eb",
+      "test_cases/loader.py": "b8e3d8f8836ea345a8d5c9c9962c44f005c184e84ab6e6dd04b9f11a731f6bd7",
+      "test_cases/parse_rule_schemas.py": "091d6829b442a9bfe8043defb0869a1669f8161fbd687ce423dd296b539eb510",
+      "test_cases/rule_filters.py": "82ee39013cd4a0c86aa5e0282ba3a078a98ccec515713f550d352bbb897a7e92",
+      "test_cases/rule_ids.py": "3ea2f8d8ca8451afb2a4c5ff414b7752cc57b251aa8af14b2c7cf60e901700b5",
+      "test_cases/schema.py": "02a988170dc3179ec85f5ef39f7cf1ad479a74fe2acac09b2924734bbc1dbea3",
+      "utils/__init__.py": "01a5684ec29baf61db24e95add8a67a67a44d203d85777f6822c0441c29ba607",
+      "utils/gemini_layout_utils.py": "14e8a89c96ee6e069eeeaf9689fa28652612088b41c165aa4b38419d72c4309a",
+      "utils/text_aggregation.py": "2a0312652ee644238fad9657f9b649c81a5ecfb3011fd0c7a96d7b7635e23787"
+    },
+    "worker_sha256": "1f069f795314ea686a3056603f6d6dd7e24c81c3a06c662d22e12246398ac188"
+  },
+  "evaluator_options": {
+    "enable_rule_based": true,
+    "enable_text_similarity": false,
+    "enable_teds": false,
+    "enable_grits": true,
+    "enable_header_accuracy": false,
+    "enable_structural_consistency": true,
+    "enable_table_record_match": true,
+    "enable_table_composite": true,
+    "grits_pair_workers": 1
+  },
+  "metric_protocol": {
+    "primary_metrics": {
+      "text_content": "content_faithfulness",
+      "table": "grits_trm_composite"
+    },
+    "normalization": "off",
+    "table_format": "pinned LiteParseProvider._convert_md_tables_to_html on both pipelines",
+    "aggregation": "Unweighted case mean within each dimension; every planned pair retained; unavailable metrics invalidate aggregate, never silently dropped",
+    "scope": [
+      "Purposive business-relevant demonstration, no population weights or business coverage percentage.",
+      "Ten easy and ten hard tables deliberately oversample hard cases; additional hard cases concentrate on insurance.",
+      "Page excerpts do not measure whole-document completion or operational invoice extraction.",
+      "Local text-layer parsers have no OCR; scanned inputs remain eligible.",
+      "Charts/layout/formatting are not executed."
+    ]
+  },
+  "timeout_seconds": 120,
+  "cache_mode": "bypass",
+  "files": {
+    "harness.py": "1331bc104bb2efa420bb5e088dd261a8801d2b8b43277c528493e3ef6f1ea2cd",
+    "native-worker.py": "1f069f795314ea686a3056603f6d6dd7e24c81c3a06c662d22e12246398ac188",
+    "environment.json": "7617033f4ab3b45d15213cf869fbf3c9754ccd30a3f70889820efdf4bc508b1b",
+    "selection.json": "534b21feb3e4f45e2c2885d253cbb92a28c5c3cf5efc2b43fa2a6cf2a8fbc61b",
+    "references/text_content.jsonl": "aa4d7b8a1efb16c39ac9e527998746af835b555f90fb68480ba8c828f2663b31",
+    "references/table.jsonl": "9e7c39fb68bfe90c9125c4176c878d9a3b27effb34ddff0e33415e27d296e5bf",
+    "inputs/text_content-e1bf2fad7b00.pdf": "79f70841e334e6ea6179353a0131c0a84529b7adf6ae286d4c1330ba022ca382",
+    "inputs/text_content-40952d6bde70.pdf": "eadbd010ce8806411c9ba9fcd0b4373fe016ac79107096cbe75c2c2d6e7b5991",
+    "inputs/text_content-15090b2318ec.pdf": "dfcb60497649b0c7814cdee528e543ce5bd3ba72d4f0c16a0836234bef25d081",
+    "inputs/text_content-2905bb800ea5.pdf": "a3dd11815fb8421cacc15915acdc148f7933bcd7d08269ac9fa2691f07cbe29e",
+    "inputs/table-3e7734cdc242.pdf": "99ee0790d40fb94c6cccdc523f7f3b192add1088bfa97e3e4c74ea73d68ce775",
+    "inputs/text_content-2175062d1fe5.pdf": "f0a2298e45518bee1576d19d7d6a49192fcfe1d046d5e8db22af091a85d258b7",
+    "inputs/text_content-d5379b20f3f1.pdf": "9af687ab8da3cbf180d7e2a36e8ba76dbb18ff91f460ea17eee9eb23d2043590",
+    "inputs/text_content-d69a6ac38e86.pdf": "239aac621f1916ec98df8e7812d0b67c2914356123b5d03c2393bafc4aa5ae04",
+    "inputs/text_content-a5aafb9ad2a7.pdf": "687b4ebe7411527a73bee5073a9d50eca781f46b0f29e97d99aa48ebaeba480c",
+    "inputs/text_content-8419a554e0fa.pdf": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+    "inputs/text_content-a2e6ab4c9d47.pdf": "8b9aecf13c2eeee86e3217e746e683495b081f3e3a9d84eae063d1205be9b62b",
+    "inputs/table-203916ea7736.pdf": "830bcd1dae655eeed5aee825784d233afa118771c173928fb427b071d4882357",
+    "inputs/table-81c6d4170a24.pdf": "af8ae6f26651c2a95f7be384dff09b2024e9b2d53ff20118b1bc16d24e7528da",
+    "inputs/table-061166d2446d.pdf": "d18b18c6f9353d2e82315c6da49283abd43e1ef2176b0d64b82f49da4f9aef56",
+    "inputs/text_content-a7110ad90dc8.pdf": "d46182ae62c2faaa111affbc21b98124772f50851b2c8317e8e5c658d08c9617",
+    "inputs/table-76c1ccd487de.pdf": "898cb92b153f8b5de3e4c9347e47b132adc66eb1903f99a5c0b6d7f81993de24",
+    "inputs/table-4b72cf115166.pdf": "36c5e0acc5757e586791a2b3a1b67e8e434ea927fb6b72b9effd947d19bc8a50",
+    "inputs/table-e429edddda02.pdf": "856432aa1c1a3b4b67eb4faee637e173fa7a499cc2c37731992c09b4173903e8",
+    "inputs/table-e0ff48b8f0c8.pdf": "70954a70a11e48f969ba2378862700390717076e6287b3fd51bf3f34a38ae1c5",
+    "inputs/table-26316595f58f.pdf": "e366c651227fb42ce9e1ac69a31b738c8188a77f5c2077ad77af8142cbc7b58e",
+    "inputs/text_content-4145041faa82.pdf": "6ff1719f5892fd730d30543f74b652a4310205d83a08e70db791859530c135bb",
+    "inputs/table-d929fcff8553.pdf": "907b4bacc0e999c4012d353d1fda6b03d55dab0b8a135fd7c16ba2e3db7a7bf8",
+    "inputs/text_content-39fb556c731e.pdf": "e6389113029ee47e21dcaaf353abc3b29fc70e47cb645c6a221133fd61e5cce3",
+    "inputs/text_content-ee911edde215.pdf": "0eb8cd7f1b4c3c20136294b34712ffe8a4fb6f583471ead07807e5e84c8d3c32",
+    "inputs/table-7806839f9911.pdf": "57be97190d266df823ac1d4c793eef626e4024993d2d4f127378eb33280f6978",
+    "inputs/text_content-946571be7f33.pdf": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+    "inputs/text_content-6538f25d8413.pdf": "85fda5abc064ef4dc487de9511fb30c15872155dc2316b1c748910869061122b",
+    "inputs/text_content-4898bcd0b05c.pdf": "f5d95f846cffc20c6f488bd7af7a2900ffead219322eda7bb7ca50141e16ada0",
+    "inputs/text_content-98f8bee36592.pdf": "a4a6ad03465d0d04ada6260e0637ca0d7a294750c3ac384e84b10ee817435973",
+    "inputs/table-96b9abc77533.pdf": "adaaf7578748ec1c215ebdfd9601a9938ec1bee918316122c56b22212a3595bc",
+    "inputs/text_content-73c7d9232d59.pdf": "1079e61a29a6ea86abec38a8e95b02b657e69993dae322e51a591a84aa9c3a27",
+    "inputs/table-478a60fe5913.pdf": "7cb613596c9cb40c7e8baa19c412737d83ae106baa78f5992df77699ba0b6560",
+    "inputs/text_content-6fdf84d1ec2f.pdf": "a5ed750d6c95f764d692d4ceca0464e87b4c1b9f428cafc991098f99775e0c75",
+    "inputs/text_content-d4b8c3f27cca.pdf": "02e1dd4ea4d7ec66594bffd45b5fa32ed91b00df333a37396457305d149a94d8",
+    "inputs/table-26fb1b96ca09.pdf": "b452ea355c4e311a95c946378d81bf1f867e9a5c84b93af0e95d486a4e137b4d",
+    "inputs/table-28cd7ca7a9b4.pdf": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+    "inputs/table-9e75b4b41398.pdf": "1d5592beeda1188a2367602de058c4396d1777e970a5411b502cfa5692a83a3e",
+    "inputs/text_content-2b391e09c732.pdf": "fcb510057ccf4e77f6e1c03ae53114449a59e20652e606f006a2a82555b9a6ae",
+    "inputs/text_content-278ea5922178.pdf": "aaf6a9fc6d70e6c3d098bab36f795e339df3d4b2cc5a26524e93ffdc2683556f",
+    "inputs/text_content-3d2495a62382.pdf": "e40f6f2e59a3414042dd7a5470224ee9b2d6899656756ac48ec9bdcb0db0d429",
+    "inputs/text_content-abd9dc65f651.pdf": "1170ae8783ba46e5788065b4bef6cdfeae1f40c18ec9842ad4799c5c8ec5c1b5",
+    "inputs/text_content-27ab025b1064.pdf": "cc32014e3658e2b5dae7583638dea69b9dc9ba2f5429e9100ae1a27e9da2940a",
+    "inputs/text_content-b1928b9de600.pdf": "b20288dd8b5461471524c9ff62ee4079cb6c300bffd1cd53d558f116296b802c",
+    "inputs/table-7b971d4c2631.pdf": "0d8806ae321f90ae629745c1eee8efebb35ffa33fea7f8005e2b59d863d94aa4",
+    "inputs/text_content-f844ad04a4d1.pdf": "e318911b22a4a804767727f39486974b7b3dba1648379068cbc2a170cc51fb22",
+    "inputs/text_content-22ac978105b6.pdf": "b7bba765ec9f869c2b8f240b2838b4d5ef98801efc2d072ac9b5d14f401ba92c",
+    "inputs/table-eddbc130cdb5.pdf": "2dcfe75fd371d0974db5c4f3c29690014f27b05ea6c2c33486c4294a9d0937cf",
+    "inputs/table-7ce868b56c95.pdf": "7663042ad5740e9ed4e57813130b18106a1a6f74aafa3b07244ce9d9c0905e8a",
+    "inputs/text_content-a78ab2bad3f5.pdf": "d79260da52319364f014730e6fb158bbcb0eef510be653cf40f8b6bbd6da5e20",
+    "inputs/table-d5e780df26fe.pdf": "92ce4653620144b8202e7bf0e7df44f0848aa3c66716c9507792fae38f624fc8"
+  }
+}

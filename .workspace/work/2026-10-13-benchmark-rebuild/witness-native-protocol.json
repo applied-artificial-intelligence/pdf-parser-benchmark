@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "producer": "pdf_bench/parsebench_comparison.py",
+  "test": "tests/test_parsebench_comparison.py::test_regrade_cannot_relabel_upstream_scores_with_a_different_protocol",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench_comparison.py",
+      "old": "    if native[\"protocol\"] != plan[\"metric_protocol\"]:",
+      "new": "    if False:"
+    }
+  }
+}

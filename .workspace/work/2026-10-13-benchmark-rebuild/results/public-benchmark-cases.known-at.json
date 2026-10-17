@@ -1,0 +1,12 @@
+{
+ "item": "public-benchmark-cases.known-at",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench.py::test_cli_rejects_changed_annotation_bytes_before_replacing_valid_inventory",
+  "fixture (both runs): Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

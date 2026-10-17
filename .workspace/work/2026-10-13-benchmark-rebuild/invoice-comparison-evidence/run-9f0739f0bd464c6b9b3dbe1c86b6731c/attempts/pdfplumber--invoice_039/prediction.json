@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-66767",
+    "vendor": null,
+    "due_date": "2025-12-01",
+    "grand_total": "14899.61",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-66767"
+    ],
+    "due_date": [
+      "12/01/2025"
+    ],
+    "grand_total": [
+      "$14,899.61"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Binding Services @ $10.64/book",
+      "quantity": "11.4",
+      "line_total": "121.3",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Binding Services @\n$10.64/book",
+        "quantity": "11.40",
+        "line_total": "$121.30"
+      }
+    },
+    {
+      "description": "Rush Production @ $32.10/% surcharge",
+      "quantity": "55.49",
+      "line_total": "1781.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Rush Production @ $32.10/%\nsurcharge",
+        "quantity": "55.49",
+        "line_total": "$1,781.23"
+      }
+    },
+    {
+      "description": "Graphic Design @ $108.64/hour",
+      "quantity": "84.23",
+      "line_total": "9150.75",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design @\n$108.64/hour",
+        "quantity": "84.23",
+        "line_total": "$9,150.75"
+      }
+    },
+    {
+      "description": "Graphic Design @ $103.57/hour",
+      "quantity": "12.17",
+      "line_total": "1260.45",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design @\n$103.57/hour",
+        "quantity": "12.17",
+        "line_total": "$1,260.45"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

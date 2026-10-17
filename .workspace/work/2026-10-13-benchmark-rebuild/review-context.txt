@@ -1,0 +1,142 @@
+PDF-Bench reconstruction review context - October 14, 2026
+
+Purpose and user decisions
+Stefan commissioned reconstruction from existing implementation and independent
+review. On October 14 he confirmed practical parser selection as the focus, then
+emphasized how teams build their own internal benchmarks: use-case fit, reference
+truth, task/grader design, failures and interpretation. Retained and newly rebuilt
+examples should demonstrate those decisions. This supports Applied AI consulting
+through demonstrated competence, not a claim that a public benchmark is useless.
+The related website/editorial article is "What LLM and agent benchmark scores
+actually tell you"; its verified path is recorded in the specification. No website
+or manuscript change is authorized here.
+
+What is reviewed
+The complete proposed specification and six-issue plan are embedded in this packet,
+along with actual code excerpts, exact input hashes and retained result summaries.
+The packet is self-contained for scope/correctness review without private-repo
+access. It is not a complete historical evidence bundle or a replication of every
+prior run. Source excerpts are explicitly partial, with line ranges and whole-file
+hashes. Historical provenance missing from raw artifacts remains missing.
+
+Prior independent review
+The coordinator independently reviewed revision
+d9305d6100e5288fa2fc255e088bfd8e22664b98 on October 13. It reports 48 focused
+passing tests, source/input/reference/output hashes and an eight-attempt smoke
+experiment. The atomic export repair and three synthetic invoice variants plus
+corrupt control are supported. That review is not a review of this new spec/plan
+or proof that the broader benchmark has been reconstructed. The retained comparison
+hash matched in this conversation:
+1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242.
+Actual GPT and Claude specification reviews are pending.
+
+Verified findings and their limits
+
+- benchmarks/sec_filings_47docs.yaml says documents were selected where pypdfium2
+  edit similarity was at least 0.90. That is parser-dependent selection. It does
+  not independently bound reference noise: parser error and reference mismatch
+  are confounded. Retain the historical numbers and explain the affected claims.
+- benchmarks/invoices_100docs_fresh.yaml describes PDF-extracted ground truth.
+  The existing story SLATE describes the same run as source-first. Both original
+  and backup reference directories and 100 DOCX/PDF/metadata files exist locally.
+  The historical extractor and exact historical reference bytes are not established
+  merely by the present directory. New references must be qualified separately.
+- The first invoice cloud-parser row records about 0.000294 seconds. That duration
+  alone cannot establish fresh cloud API latency. It suggests replay or a different
+  measurement boundary but does not prove which without historical execution data.
+- PdfsmithAdapter's cache key uses input bytes, adapter name and PDFsmith declared
+  version. Model name is included in adapter name when provided, but other options
+  and actual backend-package/source versions are omitted. Reproduce stale identity
+  through the real adapter before repairing; do not infer all old outputs are wrong.
+- BenchmarkRunner resumes by parser name and document ID without validating a
+  frozen input/reference/config identity. It defaults failed duration to zero and
+  marks empty returned output as successful parsing. Task success and coverage
+  need separate treatment rather than rewriting old success fields.
+- The story generator averages numeric values available separately for each parser
+  and does not export exact metric IDs/denominators. This can make unequal coverage
+  look directly comparable. Demonstrate with actual producer-path regression inputs.
+- Installed PDFsmith metadata is 0.2.0 while its source declares 0.3.0. Local
+  pyproject.toml also declares 0.2.0, and the installation is editable. This is an
+  unresolved packaging/source-identity disagreement; record implementation identity
+  and coordinate with the separate owner rather than silently modifying that repo.
+- The reviewed writer serializes strict JSON before atomic single-file replacement.
+  It preserves prior valid exports on serialization error. That single-file repair
+  does not by itself establish atomic multi-artifact bundle/registry completion.
+
+ParseBench primary-source assessment, observed October 14
+
+The April launch describes about 2,000 human-verified enterprise pages across
+tables, charts, content faithfulness, semantic formatting and visual grounding,
+with vendor-authored comparisons. This is substantial overlap with PDF-Bench's
+earlier motivation. It already discusses downstream semantic errors, cost and
+open evaluation; those are not sufficient novelty claims for this reconstruction.
+Source: https://www.llamaindex.ai/blog/parsebench
+
+Paper v3 (April 13) reports 2,078 pages, 1,180 documents and 169,011 test rules.
+Its references use model-generated annotation with human verification. GTRM
+combines GriTS and TableRecordMatch, with GriTS alone for marked unsupported
+record structures. TableRecordMatch targets header/value associations rather
+than only layout. These are useful methods to assess for reuse. Curated capability
+evaluation and a team's downstream use-case distribution answer related but
+different questions; dataset size alone does not resolve fit.
+Source: https://arxiv.org/html/2604.08538v3
+
+The current README differs from the launch paper: it lists 1,211 unique documents
+and 180+ pipelines, and states that evaluation is deterministic by default with
+opt-in paid chart normalization. The pinned current source includes timeout/error
+records and cross-page table/structural consistency modules. Do not claim that it
+lacks operational evidence or document continuity. No current leaderboard result
+has been rerun here; the launch scores and live software are different snapshots.
+Code snapshot: d423e529ae329317bcd33c650b367acfb60e6620
+https://github.com/run-llama/ParseBench/tree/d423e529ae329317bcd33c650b367acfb60e6620
+Dataset snapshot: 2805a1d940f95a203e0ae4b88be9934f7765b3fc
+https://huggingface.co/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc
+Code and dataset metadata report Apache-2.0; reuse still needs source-level license,
+dataset-source rights and interface/dependency checks. No dataset/model was
+downloaded and no provider, normalizer or judge was called.
+
+Proposed first milestone and open correctness choices
+
+The proposal reconciles all retained families and then uses all 100 retained
+invoice sources for a fixed local pypdf/pdfplumber comparison. It establishes new
+source truth first and evaluates fields and line-item records through one fixed
+blind downstream extractor. Poor or tied results are valid. The purpose is a
+worked internal-benchmark design example, not a new universal parser leaderboard.
+
+Challenge whether 100 retained synthetic invoices give sufficient layout/task
+variation for the worked example. Do not equate regions/industry metadata with
+visual diversity. Challenge how to qualify source-to-rendered-PDF truth independently
+of both parsers, including total rounding, pagination and missing source content.
+Is checking every source plus rendered stratified/disagreement examples enough?
+What additional visual review is required before calling the comparison strong?
+
+Challenge whether the fixed extractor fairly supports the intended use case, and
+whether reference row/field normalization is sufficiently specified before coding.
+Do not confuse downstream extraction limitations with parser inability. The paired
+common-success subset is secondary: the fixed-population primary task denominator
+must retain parser failures, empty output and timeouts.
+
+Challenge whether full cache/checkpoint repair is necessary before an explicitly
+uncached new run, or whether some repairs can be sequenced independently without
+leaving incorrect default behavior. Multi-file atomicity should protect valid prior
+evidence and prevent incomplete registration without requiring an elaborate
+transaction system. Current lint/format defects are baseline findings, not fixed
+by this documentation checkpoint.
+
+The later OCR, tables/charts, deck, academic and paid tracks have specific candidate
+protocols in the plan. They are not measured coverage or blanket spending authority.
+The project is not complete when the invoice example finishes. Reviewers should
+distinguish mandatory correctness from optional research expansion.
+
+Requested review output
+Give a clear proceed/revise/block disposition for the first milestone; numbered
+findings with exact spec criteria, issue and code/excerpt references; a falsifiable
+failure scenario and proposed acceptance change for each blocker; and a concise
+assessment of the internal-benchmark teaching/usefulness contribution. Identify
+any unsupported factual claim and any unnecessary implementation complexity.
+State what you checked and what you could not inspect. Do not invent test execution,
+runtime observations or external review that you did not perform.
+
+Next actions
+Stefan submits this packet with the model-specific prompt to GPT and Claude and
+returns both reports. This owner reconciles them before affected implementation.

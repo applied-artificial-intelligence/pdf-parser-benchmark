@@ -1,0 +1,5365 @@
+{
+  "completion_sha256": "f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0",
+  "scope": "All failed task pairs and all parser-disagreement documents; candidate differences are not causal judgments",
+  "failed_pair_count": 61,
+  "failed_document_count": 52,
+  "entries": [
+    {
+      "pair_id": "pdfplumber--invoice_001",
+      "document_id": "invoice_001",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "reference_sha256": "cb0addd1ddb309df0b30cd3f2f916d7611fa3c323daca858a95858aab808f6d6",
+      "raw_sha256": "603e5d7c1c87f440e20fa30698fd2c291ce3f9753816e1f3c185686ccc83389b",
+      "raw_path": "attempts/pdfplumber--invoice_001/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 10,
+        "records_predicted": 9,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Enterprise Plan - Annual",
+          "quantity": "84.07",
+          "unit": "subscription",
+          "unit_price": "52431.34",
+          "line_total": "4407902.75",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 2,
+          "text": "| --- | --- | --- | --- | --- |"
+        },
+        {
+          "line": 3,
+          "text": "| Enterprise Plan"
+        },
+        {
+          "line": 4,
+          "text": "- Annual | 45.87 | subscription | $71,834.13 | $3,295,031.54 |"
+        },
+        {
+          "line": 5,
+          "text": "| Enterprise Plan"
+        },
+        {
+          "line": 6,
+          "text": "- Annual | 51.89 | subscription | $79,355.54 | $4,117,758.97 |"
+        },
+        {
+          "line": 10,
+          "text": "Storage | 40.00 | TB/month | $58.66 | $2,346.40 |"
+        },
+        {
+          "line": 11,
+          "text": "| Enterprise Plan"
+        },
+        {
+          "line": 12,
+          "text": "- Annual | 82.20 | subscription | $60,082.40 | $4,938,773.28 |"
+        },
+        {
+          "line": 13,
+          "text": "| Enterprise Plan"
+        },
+        {
+          "line": 14,
+          "text": "- Annual | 16.90 | subscription | $104,112.83 | $1,759,506.83 |"
+        },
+        {
+          "line": 18,
+          "text": "Support | 27.92 | month | $1,318.28 | $36,806.38 |"
+        },
+        {
+          "line": 19,
+          "text": "| Enterprise Plan"
+        },
+        {
+          "line": 20,
+          "text": "- Annual | 5.84 | subscription | $29,876.23 | $174,477.18 |"
+        },
+        {
+          "line": 36,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 37,
+          "text": "Enterprise Plan 45.87 subscription $71,834.13 $3,295,031.54"
+        },
+        {
+          "line": 38,
+          "text": "- Annual"
+        },
+        {
+          "line": 39,
+          "text": "Enterprise Plan 51.89 subscription $79,355.54 $4,117,758.97"
+        },
+        {
+          "line": 40,
+          "text": "- Annual"
+        },
+        {
+          "line": 44,
+          "text": "Storage"
+        },
+        {
+          "line": 45,
+          "text": "Enterprise Plan 82.20 subscription $60,082.40 $4,938,773.28"
+        },
+        {
+          "line": 46,
+          "text": "- Annual"
+        },
+        {
+          "line": 47,
+          "text": "Enterprise Plan 16.90 subscription $104,112.83 $1,759,506.83"
+        },
+        {
+          "line": 48,
+          "text": "- Annual"
+        },
+        {
+          "line": 52,
+          "text": "Support"
+        },
+        {
+          "line": 53,
+          "text": "Enterprise Plan 5.84 subscription $29,876.23 $174,477.18"
+        },
+        {
+          "line": 54,
+          "text": "- Annual"
+        },
+        {
+          "line": 55,
+          "text": ""
+        },
+        {
+          "line": 56,
+          "text": "Enterprise Plan 84.07 subscription $52,431.34 $4,407,902.75"
+        },
+        {
+          "line": 57,
+          "text": "- Annual"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_003",
+      "document_id": "invoice_003",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "reference_sha256": "152aa63f467c61fb8dc421286ed5984e59f65e1b557cf966aee7c7a3d4409dd2",
+      "raw_sha256": "fa36a75ccdbc090996a8a8d2d629742f9044c2ebbf3cc6cf5a5d2271f191b70d",
+      "raw_path": "attempts/pdfplumber--invoice_003/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Morgan LLP",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 20,
+          "text": "Morgan LLP Barnett, Evans and Castillo"
+        },
+        {
+          "line": 21,
+          "text": "923 Joel Course 8789 Cummings Path Apt. 392"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_006",
+      "document_id": "invoice_006",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "reference_sha256": "82578ac4b59ff005f4f210bac9a35b70bbfc5f37c9b5cf61fcf906c831e1c225",
+      "raw_sha256": "e1d6ecb99d3ee19481fb5b8ad487c46b3e214ad9c4cf2dd312187ef07466bff5",
+      "raw_path": "attempts/pdfplumber--invoice_006/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Quality Direct",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Quality Direct Simpson PLC"
+        },
+        {
+          "line": 25,
+          "text": "109 Brian Meadow Suite 484 76672 Emily Stravenue"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_007",
+      "document_id": "invoice_007",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+      "reference_sha256": "54f18de3f11dbedb7d0508cbf81b9bb2175e7f080caf7371c7221e137faf25dc",
+      "raw_sha256": "c92d18280df025201f3d95933b31d1c2c02fb51710da4e103e47d2d5f4716d09",
+      "raw_path": "attempts/pdfplumber--invoice_007/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 8,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "59.28",
+          "unit": "hour",
+          "unit_price": "293.28",
+          "line_total": "17385.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "59.28",
+          "unit": "hour",
+          "unit_price": "293.28",
+          "line_total": "17385.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "59.28",
+            "unit": "hour",
+            "unit_price": "$293.28",
+            "line_total": "$17,385.64"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 2,
+          "text": "| --- | --- | --- | --- | --- |"
+        },
+        {
+          "line": 3,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 4,
+          "text": "n Services | 59.28 | hour | $293.28 | $17,385.64 |"
+        },
+        {
+          "line": 36,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 37,
+          "text": "Implementatio 59.28 hour $293.28 $17,385.64"
+        },
+        {
+          "line": 38,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_009",
+      "document_id": "invoice_009",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "3396e9c3da53ece2a27dc8b702d82233c0658e3684d941ff814332990264a915",
+      "reference_sha256": "27af251ff02fb9b75bb1ba9490c84d4a937ff699fbec79482ec90d43f5067b62",
+      "raw_sha256": "41390222e092f088c6cf1b7aedeb510f3ed0bd59be3e9eb382d048189a3f24a8",
+      "raw_path": "attempts/pdfplumber--invoice_009/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Wilson LLP",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Wilson LLP Hunter-Flowers"
+        },
+        {
+          "line": 25,
+          "text": "78017 Robert Station Suite 874 086 Angel Hollow"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_012",
+      "document_id": "invoice_012",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "00d820df793677f7c014670e11b5e17ad6ac3210aa02ecae963d60d481245eb4",
+      "reference_sha256": "73e9732b037f7fbb38c2d79362452a1747665a8a3c5af7c6580beb9696f0c479",
+      "raw_sha256": "fde90e9e95aa854213a972c941c8faae3688e0be6c98bf0711ad8bd41e6e7c0b",
+      "raw_path": "attempts/pdfplumber--invoice_012/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Direct Supply",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Direct Supply Kennedy, Brown and Lucas"
+        },
+        {
+          "line": 25,
+          "text": "340 Parks Groves Apt. 966 853 Robert Gateway Suite 828"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_013",
+      "document_id": "invoice_013",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+      "reference_sha256": "cb3d68310ef18e0837e85834f5301b45dbdf083e4712b667b7e1333f5991f213",
+      "raw_sha256": "ad98020c7d664a42265bf2354ce54b9bb99c9bf311b162f8c398e286e2fc133a",
+      "raw_path": "attempts/pdfplumber--invoice_013/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 3,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "60.12",
+          "unit": "hour",
+          "unit_price": "255.35",
+          "line_total": "15351.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "36.58",
+          "unit": "hour",
+          "unit_price": "348.18",
+          "line_total": "12736.42",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "60.12",
+          "unit": "hour",
+          "unit_price": "255.35",
+          "line_total": "15351.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "60.12",
+            "unit": "hour",
+            "unit_price": "$255.35",
+            "line_total": "$15,351.64"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "36.58",
+          "unit": "hour",
+          "unit_price": "348.18",
+          "line_total": "12736.42",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "36.58",
+            "unit": "hour",
+            "unit_price": "$348.18",
+            "line_total": "$12,736.42"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 4,
+          "text": "- Annual | 38.76 | subscription | $76,247.96 | $2,955,370.93 |"
+        },
+        {
+          "line": 5,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 6,
+          "text": "n Services | 60.12 | hour | $255.35 | $15,351.64 |"
+        },
+        {
+          "line": 7,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 8,
+          "text": "n Services | 36.58 | hour | $348.18 | $12,736.42 |"
+        },
+        {
+          "line": 29,
+          "text": "- Annual"
+        },
+        {
+          "line": 30,
+          "text": "Implementatio 60.12 hour $255.35 $15,351.64"
+        },
+        {
+          "line": 31,
+          "text": "n Services"
+        },
+        {
+          "line": 32,
+          "text": "Implementatio 36.58 hour $348.18 $12,736.42"
+        },
+        {
+          "line": 33,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_014",
+      "document_id": "invoice_014",
+      "pipeline_id": "pdfplumber",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "55d1d5128f667980b1d36dabb07b2f9dbe4cf1b441f75ce747b3447c59901856",
+      "reference_sha256": "5e0bf7aa10df1bc97adf32a42aec0324b5692b00deb7016f24fa276010269967",
+      "raw_sha256": "4509ded4e388ee5695e238020cda590c32e54beef1b5d7200f9b6c48f94e25f3",
+      "raw_path": "attempts/pdfplumber--invoice_014/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 5,
+        "records_predicted": 4,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Assembly Labor (hour)",
+          "quantity": "59.12",
+          "unit_price": "63.81",
+          "line_total": "3772.45",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 14,
+          "text": "(sq ft) | 38.76 | $7.64 | $296.13 |"
+        },
+        {
+          "line": 15,
+          "text": "| Assembly Labor"
+        },
+        {
+          "line": 16,
+          "text": "(hour) | 16.92 | $54.94 | $929.58 |"
+        },
+        {
+          "line": 37,
+          "text": "(sq ft)"
+        },
+        {
+          "line": 38,
+          "text": "Assembly Labor 16.92 $54.94 $929.58"
+        },
+        {
+          "line": 39,
+          "text": "(hour)"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "Assembly Labor 59.12 $63.81 $3,772.45"
+        },
+        {
+          "line": 42,
+          "text": "(hour)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_015",
+      "document_id": "invoice_015",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "dee528c36e685b876a909fcc3d513c5cce7d57fcab7a2eb65c047c8071a2e854",
+      "reference_sha256": "f3671179ff00fd03b607256dabe0102bfb28cd761b44363ae9ea941655b5a627",
+      "raw_sha256": "eb66664429e365493332e853a8f3c95a1ee73b0143bd36dbc550a279e82dc957",
+      "raw_path": "attempts/pdfplumber--invoice_015/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Wilson Legal Group",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 13,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 14,
+          "text": "Wilson Legal Group Peterson-Richards"
+        },
+        {
+          "line": 15,
+          "text": "45683 Erin Flat Apt. 565 77888 Werner Mall"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_018",
+      "document_id": "invoice_018",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "cac4d69876239e61e8d0cf87c312ce85f472b485c208214a8b785cbe4543b304",
+      "reference_sha256": "12bcd2df75eca79335e90863c43429d56028bd1156e906cf0891151fc9af33b4",
+      "raw_sha256": "027c6586a4dedeec888b81cc0bfa0e6d5c6f51167108b16b5c409cb572113188",
+      "raw_path": "attempts/pdfplumber--invoice_018/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Quality Supply",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 20,
+          "text": "Quality Supply Houston-Zimmerman"
+        },
+        {
+          "line": 21,
+          "text": "698 Nicholas Mall 1678 Lisa Vista Suite 988"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_019",
+      "document_id": "invoice_019",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+      "reference_sha256": "6ca3ea321659ebc99c0a07131ac16d854cee62dc751f27730ba67c7c9ce2324c",
+      "raw_sha256": "5d0bf0b7f1b8787d81a6b4f05b21dd312a4b9b326268aeffbbb6b55736309e6e",
+      "raw_path": "attempts/pdfplumber--invoice_019/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "70.78",
+          "unit": "hour",
+          "unit_price": "233.09",
+          "line_total": "16498.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "70.78",
+          "unit": "hour",
+          "unit_price": "233.09",
+          "line_total": "16498.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "70.78",
+            "unit": "hour",
+            "unit_price": "$233.09",
+            "line_total": "$16,498.11"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 11,
+          "text": "Plan - Monthly | 28.31 | subscription | $2,133.83 | $60,408.73 |"
+        },
+        {
+          "line": 12,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 13,
+          "text": "n Services | 70.78 | hour | $233.09 | $16,498.11 |"
+        },
+        {
+          "line": 45,
+          "text": "Plan - Monthly"
+        },
+        {
+          "line": 46,
+          "text": "Implementatio 70.78 hour $233.09 $16,498.11"
+        },
+        {
+          "line": 47,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_021",
+      "document_id": "invoice_021",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "892502d4b309267492d5538d8ce107960f4ccadc89559ae2d691c5b6890d1aca",
+      "reference_sha256": "d66b20eff35566cb4b965de7cf22207f16404277e34252a3e841b29bac6509fa",
+      "raw_sha256": "1fc09adbbd675de631c4f054f782d8a5c54682577c2e633960c933fcd9a4a240",
+      "raw_path": "attempts/pdfplumber--invoice_021/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Johnson Law Offices",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Johnson Law Offices Franco-Thomas"
+        },
+        {
+          "line": 25,
+          "text": "829 Diaz Parkways 3560 Laura Crest"
+        },
+        {
+          "line": 51,
+          "text": "TOTAL: $137,639.49"
+        },
+        {
+          "line": 52,
+          "text": "Detailed time entries available upon request. Questions? Contact billing@johnson.com"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_024",
+      "document_id": "invoice_024",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "677bfeb9bdb3dc417b443837f0f45a7ac4c3c3a2b9aeeae9343902391d1a3fd1",
+      "reference_sha256": "f29557081d2342a83f6796b301adaa52a6672bfdf206da45838e5502e3bcc4d1",
+      "raw_sha256": "41920764f70bcb1922db4959423d7336861025d81858915bd668e352314fcc6f",
+      "raw_path": "attempts/pdfplumber--invoice_024/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "National Outlet",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 20,
+          "text": "National Outlet Rodgers and Sons"
+        },
+        {
+          "line": 21,
+          "text": "372 Kyle Keys Suite 869 50244 Smith Mission Apt. 952"
+        },
+        {
+          "line": 42,
+          "text": "TOTAL: $322,971.81"
+        },
+        {
+          "line": 43,
+          "text": "Volume discounts available. Contact sales@national.com for quote."
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_025",
+      "document_id": "invoice_025",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+      "reference_sha256": "23d6d36957b9b2bcd452476696f216104eb2774f43893d0cdbff71a5194d604c",
+      "raw_sha256": "67bf1972e21339fa5bbff581f59a67e520362fae9ca900f31e09beaeb8ae39d9",
+      "raw_path": "attempts/pdfplumber--invoice_025/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "56.25",
+          "unit": "hour",
+          "unit_price": "182.77",
+          "line_total": "10280.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "56.25",
+          "unit": "hour",
+          "unit_price": "182.77",
+          "line_total": "10280.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "56.25",
+            "unit": "hour",
+            "unit_price": "$182.77",
+            "line_total": "$10,280.81"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 9,
+          "text": "- Annual | 61.12 | subscription | $29,885.79 | $1,826,619.48 |"
+        },
+        {
+          "line": 10,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 11,
+          "text": "n Services | 56.25 | hour | $182.77 | $10,280.81 |"
+        },
+        {
+          "line": 34,
+          "text": "- Annual"
+        },
+        {
+          "line": 35,
+          "text": "Implementatio 56.25 hour $182.77 $10,280.81"
+        },
+        {
+          "line": 36,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_027",
+      "document_id": "invoice_027",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "6005ae024604bc2bcf5ff2964fa679586eee4c6c3fa386e05d5df07c4238f285",
+      "reference_sha256": "e144b9d04b6c132ed763603ca2fd5625b41c9fa39d1dd4ad85ea0c76bb1888e0",
+      "raw_sha256": "61dc01dc1af64ec7669523e7a0adb4190cffeacd031b06942799ed1ade50473a",
+      "raw_path": "attempts/pdfplumber--invoice_027/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Roberts Attorneys at Law",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 13,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 14,
+          "text": "Roberts Attorneys at Law Hernandez, Smith and Potts"
+        },
+        {
+          "line": 15,
+          "text": "4318 Leslie Curve 715 Baker Pine Suite 661"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_030",
+      "document_id": "invoice_030",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "c6fa6f569901ed568acaf62a8a8ddf4ae4f67582e3dddb59a7dff1889d0142e2",
+      "reference_sha256": "7292e208badcf7f30d8388c66472ee47b0df4818ed9483e4b8746bd3fe9eb3a2",
+      "raw_sha256": "b1cf2b380c6441725737ac483c5c5f17c75bcddb34592a0f42ee0adf87b71435",
+      "raw_path": "attempts/pdfplumber--invoice_030/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Quality Outlet",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Quality Outlet Ramos LLC"
+        },
+        {
+          "line": 25,
+          "text": "031 Lowery Fork 030 Moore Dale Apt. 177"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_033",
+      "document_id": "invoice_033",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "47ed9a766ca7d7e08e0568535278ddff0dc075c98c5b206b596d5450d627909a",
+      "reference_sha256": "344a16ea195d717427bfde6f245e61238b87cd2ca4b829b9a132fed58ced28c0",
+      "raw_sha256": "953c5528fbc236e3212186a9ddb09e41ed8bf190e06768b504b875827e06da0b",
+      "raw_path": "attempts/pdfplumber--invoice_033/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Design Design Group",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 4,
+          "text": "$40.81/% of project | 71.51 | $2,918.32 |"
+        },
+        {
+          "line": 5,
+          "text": "| Schematic Design @ $15.95/%"
+        },
+        {
+          "line": 6,
+          "text": "of project | 75.17 | $1,198.96 |"
+        },
+        {
+          "line": 18,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 19,
+          "text": "Design Design Group Kobelt GmbH & Co. OHG"
+        },
+        {
+          "line": 20,
+          "text": "Lehmannallee 0 Hilma-Schweitzer-Allee 79-39"
+        },
+        {
+          "line": 26,
+          "text": "$40.81/% of project"
+        },
+        {
+          "line": 27,
+          "text": "Schematic Design @ $15.95/% 75.17 $1,198.96"
+        },
+        {
+          "line": 28,
+          "text": "of project"
+        },
+        {
+          "line": 40,
+          "text": "TOTAL: $48,957.46"
+        },
+        {
+          "line": 41,
+          "text": "Questions? Contact project lead at design@design.com"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_036",
+      "document_id": "invoice_036",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "64937ed4af19c51f1bf77a85e6c8d0a422663742eed16bb5b12cfc577c6bc034",
+      "reference_sha256": "8eef1b071a00a50cfa7e7fd8c7d087a64a8a5f5e6efe6450103cad8a2942b2c0",
+      "raw_sha256": "0c0328644a5812666ff536997c6010deb97ea47c04668f1ae12d130fdb86c590",
+      "raw_path": "attempts/pdfplumber--invoice_036/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "United Manufacturing",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 21,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 22,
+          "text": "United Manufacturing Paffrath Wagner AG & Co. KG"
+        },
+        {
+          "line": 23,
+          "text": "Geißlerplatz 335 Reinhardtstr. 6/2"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_037",
+      "document_id": "invoice_037",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+      "reference_sha256": "37b04d71c8585318a9ba969c6fae21f001164b1f19cf7cf093f8161098538382",
+      "raw_sha256": "fef0a7cacc9679cb4157186501a2062c37995377e27aaae58b9b78e3be135caa",
+      "raw_path": "attempts/pdfplumber--invoice_037/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "60.92",
+          "unit": "hour",
+          "unit_price": "242.48",
+          "line_total": "14771.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "60.92",
+          "unit": "hour",
+          "unit_price": "242.48",
+          "line_total": "14771.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "60.92",
+            "unit": "hour",
+            "unit_price": "$242.48",
+            "line_total": "$14,771.88"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 9,
+          "text": "Support | 2.26 | month | $2,280.02 | $5,152.85 |"
+        },
+        {
+          "line": 10,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 11,
+          "text": "n Services | 60.92 | hour | $242.48 | $14,771.88 |"
+        },
+        {
+          "line": 37,
+          "text": "Support"
+        },
+        {
+          "line": 38,
+          "text": "Implementatio 60.92 hour $242.48 $14,771.88"
+        },
+        {
+          "line": 39,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_039",
+      "document_id": "invoice_039",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "b6e5d3083bfdbfb2901a3866f60abacc9fe7be95f0fd07816b5c088b8c84417b",
+      "reference_sha256": "bde9a46e20668551299ae930d05f3b10d80ffc94020fc2f7bf0d639b611bb69d",
+      "raw_sha256": "47975bd5fd1ab6b622ec8f695e5aeeeabe503608c3f43b6fd65b64c8126e5c1c",
+      "raw_path": "attempts/pdfplumber--invoice_039/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Professional Publishing",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 13,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 14,
+          "text": "Professional Publishing Rohleder Drewes Stiftung & Co. KG"
+        },
+        {
+          "line": 15,
+          "text": "Bolanderweg 21/27 Köhlerstraße 24-10"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_042",
+      "document_id": "invoice_042",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "705541c16fac3168f38c1126c23747f6be3ef9192a06bf69dbf95d59c7f06a0b",
+      "reference_sha256": "86dcd2a9fcb7a95829784fa2b206e94a9db276cd2cd30c64028aca04afa3d0d4",
+      "raw_sha256": "2e5b12547f8397510563524521f01ce37958380f3907cc1ce9195ac97b327f70",
+      "raw_path": "attempts/pdfplumber--invoice_042/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Flow Technologies",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 20,
+          "text": "Flow Technologies Stey"
+        },
+        {
+          "line": 21,
+          "text": "Brudergasse 844 Benjamin-Löffler-Ring 6-3"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_045",
+      "document_id": "invoice_045",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "360820672bcd37adcdbffbd50edd51d3cf4527a6f97e50f70781ba55e30c5e4d",
+      "reference_sha256": "06c7250ee2fdde61344415efd568034e2aa93a8caf8e62ca9417ca8ab70cf6ad",
+      "raw_sha256": "7c00ab03e08e1a54a3a3732a0ca2a1c5bd45e1d1d02bd8d6bade42f3752228c0",
+      "raw_path": "attempts/pdfplumber--invoice_045/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Continental Freight",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 13,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 14,
+          "text": "Continental Freight Rosemann Pieper AG"
+        },
+        {
+          "line": 15,
+          "text": "Pohlgasse 2/6 Petros-Steckel-Platz 7/3"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_048",
+      "document_id": "invoice_048",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "907236d8bcdd2a308a1a12137d7e4bc7ab33acc7703b414dcaa51718a49a88e2",
+      "reference_sha256": "e8cb9f71d82cb0efc86ca1b55478c91e83168dda107b811f912bad99fabfff01",
+      "raw_sha256": "c20ae86325b4dccc17fe0b92120e37d810c46ad1075c1215a9325e495f2d964a",
+      "raw_path": "attempts/pdfplumber--invoice_048/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Landmark AIA",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 18,
+          "text": "Landmark AIA Mans"
+        },
+        {
+          "line": 19,
+          "text": "Holtgasse 7/5 Rebecca-Butte-Straße 8747"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_049",
+      "document_id": "invoice_049",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+      "reference_sha256": "adf1e988c7426bb46ae521fce5eea7bf02d67750edff0319dbeeb3235d21e705",
+      "raw_sha256": "19e4797844e470f3cb2736450b84fe855942c8b389bcd2919f4bdf223aab6a33",
+      "raw_path": "attempts/pdfplumber--invoice_049/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 2,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Brochures - Tri-fold",
+          "quantity": "5.34",
+          "unit": "per 1000",
+          "unit_price": "680.85",
+          "line_total": "3635.74",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Brochures - Tri-fold",
+          "quantity": "44.69",
+          "unit": "per 1000",
+          "unit_price": "284.99",
+          "line_total": "12736.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Brochures - Tri- fold",
+          "quantity": "5.34",
+          "unit": "per 1000",
+          "unit_price": "680.85",
+          "line_total": "3635.74",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Brochures - Tri-\nfold",
+            "quantity": "5.34",
+            "unit": "per 1000",
+            "unit_price": "$680.85",
+            "line_total": "$3,635.74"
+          }
+        },
+        {
+          "description": "Brochures - Tri- fold",
+          "quantity": "44.69",
+          "unit": "per 1000",
+          "unit_price": "284.99",
+          "line_total": "12736.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Brochures - Tri-\nfold",
+            "quantity": "44.69",
+            "unit": "per 1000",
+            "unit_price": "$284.99",
+            "line_total": "$12,736.20"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 2,
+          "text": "| --- | --- | --- | --- | --- |"
+        },
+        {
+          "line": 3,
+          "text": "| Brochures - Tri-"
+        },
+        {
+          "line": 4,
+          "text": "fold | 5.34 | per 1000 | $680.85 | $3,635.74 |"
+        },
+        {
+          "line": 6,
+          "text": "Production | 21.45 | % surcharge | $43.07 | $923.85 |"
+        },
+        {
+          "line": 7,
+          "text": "| Brochures - Tri-"
+        },
+        {
+          "line": 8,
+          "text": "fold | 44.69 | per 1000 | $284.99 | $12,736.20 |"
+        },
+        {
+          "line": 25,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 26,
+          "text": "Brochures - Tri- 5.34 per 1000 $680.85 $3,635.74"
+        },
+        {
+          "line": 27,
+          "text": "fold"
+        },
+        {
+          "line": 29,
+          "text": "Production"
+        },
+        {
+          "line": 30,
+          "text": "Brochures - Tri- 44.69 per 1000 $284.99 $12,736.20"
+        },
+        {
+          "line": 31,
+          "text": "fold"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_052",
+      "document_id": "invoice_052",
+      "pipeline_id": "pdfplumber",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "11bbd2b2ab2ecd8f1795783f76cf7440d74405cf14b2e6082cf61d50b04b9aa2",
+      "reference_sha256": "c5c7e79b31d9f47b66c7589b20a48a62d87422371d6ad6737539c1624d3f59f2",
+      "raw_sha256": "1752522ee9b00a9bea85f2d8c72be9b0e480042a44b6b56e35a4b4175ae21cde",
+      "raw_path": "attempts/pdfplumber--invoice_052/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 5,
+        "records_predicted": 4,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Financial Planning (hour)",
+          "quantity": "54.24",
+          "unit_price": "216.39",
+          "line_total": "11736.99",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 12,
+          "text": "Corporate (return) | 33.35 | $12,545.35 | $418,387.42 |"
+        },
+        {
+          "line": 13,
+          "text": "| Financial Planning"
+        },
+        {
+          "line": 14,
+          "text": "(hour) | 96.17 | $299.28 | $28,781.76 |"
+        },
+        {
+          "line": 37,
+          "text": "Corporate (return)"
+        },
+        {
+          "line": 38,
+          "text": "Financial Planning 96.17 $299.28 $28,781.76"
+        },
+        {
+          "line": 39,
+          "text": "(hour)"
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "Financial Planning 54.24 $216.39 $11,736.99"
+        },
+        {
+          "line": 44,
+          "text": "(hour)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_053",
+      "document_id": "invoice_053",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "f59f5989465c9121fe2f1f2d91576176894ee20715be8be4aa30f439c1d99de7",
+      "reference_sha256": "8d0be7a6e24c46a1aef64693b9d785b8594c0a5b2ae35a46498a317ac8eff344",
+      "raw_sha256": "cf3bf1f95f52260e1c33e7fe1102b88b8c100395f2c429d3fe2c609be22acaf9",
+      "raw_path": "attempts/pdfplumber--invoice_053/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Bright Studios",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 18,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 19,
+          "text": "Bright Studios Rose, Reid and Ryan"
+        },
+        {
+          "line": 20,
+          "text": "Flat 46 Studio 43t"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_056",
+      "document_id": "invoice_056",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "c28c787fb4345a4ab3d6bda0f1b85b665b3b9b216b084f35a0f165dfe1b5c388",
+      "reference_sha256": "002ebf5cbc7ccf7408f6dfdb78211672584ad9d99435dd369da84884ea27f870",
+      "raw_sha256": "d2b57ccdd6225d378e0ad0627930e9696a7db6c14c1e94a2e31810d9b09442a3",
+      "raw_path": "attempts/pdfplumber--invoice_056/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Liberty Tax Group",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 18,
+          "text": "Liberty Tax Group Brown, Mitchell and Bruce"
+        },
+        {
+          "line": 19,
+          "text": "Studio 58f Studio 44T"
+        },
+        {
+          "line": 39,
+          "text": "TOTAL: $1,119,045.12"
+        },
+        {
+          "line": 40,
+          "text": "Questions? Contact your accountant at contact@liberty.com or call (555) 123-4567"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_059",
+      "document_id": "invoice_059",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "f7cedf1f34124a2d54add9714abb319ba716989eaa4029cd0ab41c68cd59ffe1",
+      "reference_sha256": "af72b448009ac249145a8d422e333d4febc707f2d87e03594666b04a6c445efd",
+      "raw_sha256": "9823bb33d99b0c9198d1e77231378472168546d9f56e7f365b22b29a4d32a110",
+      "raw_path": "attempts/pdfplumber--invoice_059/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 10,
+        "records_predicted": 9,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Anderson LLP",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [
+        {
+          "description": "Court Filing Fees @ $81.71/filing",
+          "quantity": "75.61",
+          "line_total": "6178.09",
+          "currency_markers": {
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 8,
+          "text": "$291.91/hour | 41.69 | $12,169.73 |"
+        },
+        {
+          "line": 9,
+          "text": "| Court Filing Fees @"
+        },
+        {
+          "line": 10,
+          "text": "$89.56/filing | 31.95 | $2,861.44 |"
+        },
+        {
+          "line": 11,
+          "text": "| Court Filing Fees @"
+        },
+        {
+          "line": 12,
+          "text": "$144.24/filing | 39.00 | $5,625.36 |"
+        },
+        {
+          "line": 23,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 24,
+          "text": "Anderson LLP Jenkins, Palmer and Kirk"
+        },
+        {
+          "line": 25,
+          "text": "Studio 09 Flat 5"
+        },
+        {
+          "line": 36,
+          "text": "$291.91/hour"
+        },
+        {
+          "line": 37,
+          "text": "Court Filing Fees @ 31.95 $2,861.44"
+        },
+        {
+          "line": 38,
+          "text": "$89.56/filing"
+        },
+        {
+          "line": 39,
+          "text": "Court Filing Fees @ 39.00 $5,625.36"
+        },
+        {
+          "line": 40,
+          "text": "$144.24/filing"
+        },
+        {
+          "line": 49,
+          "text": ""
+        },
+        {
+          "line": 50,
+          "text": "Court Filing Fees @ 75.61 $6,178.09"
+        },
+        {
+          "line": 51,
+          "text": "$81.71/filing"
+        },
+        {
+          "line": 54,
+          "text": "TOTAL: $237,307.42"
+        },
+        {
+          "line": 55,
+          "text": "Detailed time entries available upon request. Questions? Contact billing@anderson.com"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_062",
+      "document_id": "invoice_062",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "6acb613774da9b4747975fc4c182b1c0c97b30b4041baa0b633633276c633fdb",
+      "reference_sha256": "79023676b546299215017889b17b5af3af38c8b0b8b7399c7fe7e17f4af6af3b",
+      "raw_sha256": "fe7c8cfa3563e4cd0bfdc18936ec57207d4733d308140ee45fa70b563b64b9fa",
+      "raw_path": "attempts/pdfplumber--invoice_062/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Premier Real Estate",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 20,
+          "text": "Premier Real Estate Gilbert and Sons"
+        },
+        {
+          "line": 21,
+          "text": "195 Emily crest 19 Pritchard stream"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_065",
+      "document_id": "invoice_065",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "97c8f0890d3fa7f0b0b5e64021117bf13348aeda42335d31c806f231b68706d8",
+      "reference_sha256": "b75b490daaa45ce61ba7cf3d0c75a5841676538aae4461ccaf213bb016c27cd8",
+      "raw_sha256": "0ede9da2935a26092dd3d601b0e87a221820a86e86f679f1ffa2c8e10278c577",
+      "raw_path": "attempts/pdfplumber--invoice_065/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Bright Group",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 21,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 22,
+          "text": "Bright Group Young Inc"
+        },
+        {
+          "line": 23,
+          "text": "659 Frost forge Studio 7"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_068",
+      "document_id": "invoice_068",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "bc55d3356b09f9eb56be650fa2b63ffa6a80d88b4e6b9937719b31bf05a58fce",
+      "reference_sha256": "ab8592ab940d75b5ed5ecab07e969b8ca2789eab79836a3d6ea33be9ad231559",
+      "raw_sha256": "73d7805fe3e4d656f9c60aaa9597583c17db9045957456524782651ac19b6ebf",
+      "raw_path": "attempts/pdfplumber--invoice_068/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Summit Associates",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 13,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 14,
+          "text": "Summit Associates West-Smith"
+        },
+        {
+          "line": 15,
+          "text": "54512 Ashley Crossing Suite 857 599 Guerrero Trail Apt. 908"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_070",
+      "document_id": "invoice_070",
+      "pipeline_id": "pdfplumber",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "cd371884736f2ac5bac230f7b4a12f5c30b1201929b0f6eda46d46f8330e0365",
+      "reference_sha256": "4383f546a700af1262606cd7732af6307731e98002471e1df6410a96160e469a",
+      "raw_sha256": "5f2c5e9b20590f607048d8d27431b0d3949ba000c00a8d186fe5c05871797602",
+      "raw_path": "attempts/pdfplumber--invoice_070/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 6,
+        "records_predicted": 5,
+        "records_missing": 1,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Equipment Rental (day)",
+          "quantity": "34.12",
+          "unit_price": "482.5",
+          "line_total": "16462.9",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 8,
+          "text": "| --- | --- | --- | --- |"
+        },
+        {
+          "line": 9,
+          "text": "| Equipment Rental"
+        },
+        {
+          "line": 10,
+          "text": "(day) | 6.42 | $295.37 | $1,896.28 |"
+        },
+        {
+          "line": 32,
+          "text": "Description Qty Rate Amount"
+        },
+        {
+          "line": 33,
+          "text": "Equipment Rental 6.42 $295.37 $1,896.28"
+        },
+        {
+          "line": 34,
+          "text": "(day)"
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "Equipment Rental 34.12 $482.50 $16,462.90"
+        },
+        {
+          "line": 44,
+          "text": "(day)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_071",
+      "document_id": "invoice_071",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "f28148cb2363d06633465589fa7d48e87e71ca740d8b0fccec0175dfe156b4c8",
+      "reference_sha256": "857cf912c56e4a7b84c70e9abf0c678a14091e4a15a65249e002637079feba4f",
+      "raw_sha256": "2ca2ee172baa1c579e47a5aad251f0d084b18fae02cf5e454c51b738ee82b7f6",
+      "raw_path": "attempts/pdfplumber--invoice_071/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 10,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Synergy Technology Group",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 25,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 26,
+          "text": "Synergy Technology Group Fox-Petersen"
+        },
+        {
+          "line": 27,
+          "text": "869 Matthew Springs 594 Gordon Plaza"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_074",
+      "document_id": "invoice_074",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "d9a6285b4bfcd2b51317cb621fe7717f25ce14e49f4db7a3a4092074ac2e7d49",
+      "reference_sha256": "c80aeaa11995b9e7c841e1ce08ce3480dffa54dae0e4abc291762a34242912aa",
+      "raw_sha256": "a8edcb98380d9660f933cb32a614da95d71eaa551f6800a61cd5c1cb5f781ad2",
+      "raw_path": "attempts/pdfplumber--invoice_074/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 8,
+        "records_expected": 8,
+        "records_predicted": 8,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Apex Contractors",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 21,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 22,
+          "text": "Apex Contractors Carlson Group"
+        },
+        {
+          "line": 23,
+          "text": "4982 Calvin Island Suite 721 24149 Jackson Passage"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_077",
+      "document_id": "invoice_077",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "26cba4b70e87b8d698cdb978dc5c93e2dc161ff285d34fa132a4b830e47a08ee",
+      "reference_sha256": "6ea8b7d81fe631800827cc56b83a2cf97b7233cae296a37137f75d1f402f6c08",
+      "raw_sha256": "e6316a54d2c058718cc8089e6dad510fd7ffbfa8b3e6cb6659c3d271288ed2a3",
+      "raw_path": "attempts/pdfplumber--invoice_077/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Green Landscaping",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 15,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 16,
+          "text": "Green Landscaping Fernandez, Wright and Rivera"
+        },
+        {
+          "line": 17,
+          "text": "8579 Walter Way 75330 Jonathon Route Suite 642"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_080",
+      "document_id": "invoice_080",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "6d11561375afda584a6d7611faa21ca93689d51138222644014e5481779c1cc8",
+      "reference_sha256": "74392585c58582eaa27d060c89080083ffafc9d7289349e8bcb24d523e3acc79",
+      "raw_sha256": "f1f7041d88558150caee8933fc6de1e62d93830f990c7e2689a5e941c28abfbc",
+      "raw_path": "attempts/pdfplumber--invoice_080/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Advanced P.C.",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 18,
+          "text": "Advanced P.C. Rowland and Sons"
+        },
+        {
+          "line": 19,
+          "text": "09750 Nguyen Cape 8118 David Brooks"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_083",
+      "document_id": "invoice_083",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "64ba8913459e1487f1b1c837da08eb982799a223e460f96c3f296a8a862bed99",
+      "reference_sha256": "ab6cd89788febbb57759104230f576236ebecb3b9da559f4defbf88deb74d7de",
+      "raw_sha256": "2c32f64847cf42c6494d33c9741bcc2d0745a09ffd9703002e89d325d26120e6",
+      "raw_path": "attempts/pdfplumber--invoice_083/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 10,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Quantum Systems",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 25,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 26,
+          "text": "Quantum Systems Richards and Sons"
+        },
+        {
+          "line": 27,
+          "text": "9466 Gary Ridge 336 Hall Street"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_086",
+      "document_id": "invoice_086",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+      "reference_sha256": "c484f5bbecdb59e643636583659082decd74711a8b486926658a5300080489e4",
+      "raw_sha256": "495c173f948216d573896c9fdea22216addf3ef7a23e4c881c10fc6408692278",
+      "raw_path": "attempts/pdfplumber--invoice_086/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "58.01",
+          "unit": "hour",
+          "unit_price": "328.45",
+          "line_total": "19053.38",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "64.8",
+          "unit": "hour",
+          "unit_price": "331.85",
+          "line_total": "21503.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "58.01",
+          "unit": "hour",
+          "unit_price": "328.45",
+          "line_total": "19053.38",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "58.01",
+            "unit": "hour",
+            "unit_price": "$328.45",
+            "line_total": "$19,053.38"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "64.8",
+          "unit": "hour",
+          "unit_price": "331.85",
+          "line_total": "21503.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "64.80",
+            "unit": "hour",
+            "unit_price": "$331.85",
+            "line_total": "$21,503.88"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 2,
+          "text": "| --- | --- | --- | --- | --- |"
+        },
+        {
+          "line": 3,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 4,
+          "text": "n Services | 58.01 | hour | $328.45 | $19,053.38 |"
+        },
+        {
+          "line": 6,
+          "text": "| API Usage | 76.30 | per 1000 calls | $1.05 | $80.12 |"
+        },
+        {
+          "line": 7,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 8,
+          "text": "n Services | 64.80 | hour | $331.85 | $21,503.88 |"
+        },
+        {
+          "line": 32,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 33,
+          "text": "Implementatio 58.01 hour $328.45 $19,053.38"
+        },
+        {
+          "line": 34,
+          "text": "n Services"
+        },
+        {
+          "line": 36,
+          "text": "API Usage 76.30 per 1000 calls $1.05 $80.12"
+        },
+        {
+          "line": 37,
+          "text": "Implementatio 64.80 hour $331.85 $21,503.88"
+        },
+        {
+          "line": 38,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_088",
+      "document_id": "invoice_088",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "324534ee9575a29a5b441fbcfe994cf7f3aeead9838c8bb64f024fca6eba7fe9",
+      "reference_sha256": "319085f6dd57f1bf1695a4d1c343dc683f6575a61ef9158945b7e83753df63ce",
+      "raw_sha256": "c948bd733b40d164316ae1f3d3bb3655168a094b914e4eeca2f7ce53721351f7",
+      "raw_path": "attempts/pdfplumber--invoice_088/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 10,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Global Logistics",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 25,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 26,
+          "text": "Global Logistics Evans Ltd"
+        },
+        {
+          "line": 27,
+          "text": "202/387 Joshua Tarn 1 Thomas Gully"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_091",
+      "document_id": "invoice_091",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "df206e2680e947a1b954cd2007e3b5287e2f01c0c76196e98702f2da196fb216",
+      "reference_sha256": "4595b10a528a075186c2ba6cdb4d05ad6236fc3d25406009cc81e8663b07e6e0",
+      "raw_sha256": "d755a4292872077f7c06c89e2ad2b87fa4fbaeca1f5d5bebea97d919356434a8",
+      "raw_path": "attempts/pdfplumber--invoice_091/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Global Fabrication",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 16,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 17,
+          "text": "Global Fabrication Lewis Ltd"
+        },
+        {
+          "line": 18,
+          "text": "Suite 856 890 Buchanan Riviera 7 Mason Basin"
+        },
+        {
+          "line": 36,
+          "text": "TOTAL: $530,364.54"
+        },
+        {
+          "line": 37,
+          "text": "Standard lead time 4-6 weeks. Contact production@global.com for rush orders."
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_093",
+      "document_id": "invoice_093",
+      "pipeline_id": "pdfplumber",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+      "reference_sha256": "77c6a695057628c6cb4d1e2eedc42d3a7588e3548b5a71586865a959ca1f6994",
+      "raw_sha256": "eb68606c91ed109132aed18f74cdd1c825a4777916f5f3a5dd168eb6b86457a7",
+      "raw_path": "attempts/pdfplumber--invoice_093/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Breakfast Buffet (per person)",
+          "quantity": "99.11",
+          "unit_price": "22.95",
+          "line_total": "2274.57",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Breakfast Buffet",
+          "quantity": "99.11",
+          "unit_price": "22.95",
+          "line_total": "2274.57",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Breakfast Buffet",
+            "quantity": "99.11",
+            "unit_price": "$22.95",
+            "line_total": "$2,274.57"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 14,
+          "text": "(event) | 25.64 | $520.43 | $13,343.83 |"
+        },
+        {
+          "line": 15,
+          "text": "| Breakfast Buffet"
+        },
+        {
+          "line": 16,
+          "text": "(per person) | 33.84 | $28.56 | $966.47 |"
+        },
+        {
+          "line": 17,
+          "text": "| Breakfast Buffet | 99.11 | $22.95 | $2,274.57 |"
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 38,
+          "text": "(event)"
+        },
+        {
+          "line": 39,
+          "text": "Breakfast Buffet 33.84 $28.56 $966.47"
+        },
+        {
+          "line": 40,
+          "text": "(per person)"
+        },
+        {
+          "line": 41,
+          "text": "Breakfast Buffet 99.11 $22.95 $2,274.57"
+        },
+        {
+          "line": 42,
+          "text": ""
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_094",
+      "document_id": "invoice_094",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "dff4830e9b3025ab83f299892c62be9eefcb4198b228ea9b37339533a05b1ae2",
+      "reference_sha256": "259e09ba98721ae20ce6a3e4964857976ee76e13ceba7b2cfbb368cfd95e59da",
+      "raw_sha256": "ea49e5e1bef029ee0d2b85291866b91cc76438113b0dd702ed162d38a8451643",
+      "raw_path": "attempts/pdfplumber--invoice_094/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Nexus Labs",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 18,
+          "text": "Nexus Labs Sparks Group"
+        },
+        {
+          "line": 19,
+          "text": "2/3 Thompson Footway 956 Davis Parkway"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_097",
+      "document_id": "invoice_097",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "complex",
+      "shared_document_failure": false,
+      "input_sha256": "2b32a3b814b4ebdd41fe57aad1c280f54447a981e7e250c409246c4aec436c14",
+      "reference_sha256": "e6180ffab355e3828353d5598cb04e5ab8325ea9a0893beb40d52c23f411b430",
+      "raw_sha256": "46f7c6f79f9139d712fe45f1b29bdd9e14e3e36bc5c71d2f538037619c75c290",
+      "raw_path": "attempts/pdfplumber--invoice_097/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Gourmet Culinary",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 22,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 23,
+          "text": "Gourmet Culinary Abbott-Martin"
+        },
+        {
+          "line": 24,
+          "text": "2/75 Elizabeth Landing 68/8 Christian Parade"
+        },
+        {
+          "line": 50,
+          "text": "TOTAL: $172,202.15"
+        },
+        {
+          "line": 51,
+          "text": "Final count due 72 hours prior to event. Contact events@gourmet.com"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_098",
+      "document_id": "invoice_098",
+      "pipeline_id": "pdfplumber",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+      "reference_sha256": "e65a5dfe581cd77a71d16113f73558826dc1754faf16ee011e55f300a430109c",
+      "raw_sha256": "96137a80690d7f249a773c8b94b95e7417e37f637fdc3e1b7405f7eb6caa8f13",
+      "raw_path": "attempts/pdfplumber--invoice_098/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 3,
+        "records_extra": 3,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "32.8",
+          "unit": "hour",
+          "unit_price": "262.59",
+          "line_total": "8612.95",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "58.07",
+          "unit": "hour",
+          "unit_price": "249.68",
+          "line_total": "14498.92",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Enterprise Plan - Annual",
+          "quantity": "30.99",
+          "unit": "subscription",
+          "unit_price": "100103.31",
+          "line_total": "3102201.58",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "32.8",
+          "unit": "hour",
+          "unit_price": "262.59",
+          "line_total": "8612.95",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "32.80",
+            "unit": "hour",
+            "unit_price": "$262.59",
+            "line_total": "$8,612.95"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "58.07",
+          "unit": "hour",
+          "unit_price": "249.68",
+          "line_total": "14498.92",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "58.07",
+            "unit": "hour",
+            "unit_price": "$249.68",
+            "line_total": "$14,498.92"
+          }
+        },
+        {
+          "description": "Enterprise Plan",
+          "quantity": "30.99",
+          "unit": "subscription",
+          "unit_price": "100103.31",
+          "line_total": "3102201.58",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Enterprise Plan",
+            "quantity": "30.99",
+            "unit": "subscription",
+            "unit_price": "$100,103.31",
+            "line_total": "$3,102,201.58"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 3,
+          "text": "| API Usage | 87.11 | per 1000 calls | $3.06 | $266.56 |"
+        },
+        {
+          "line": 4,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 5,
+          "text": "n Services | 32.80 | hour | $262.59 | $8,612.95 |"
+        },
+        {
+          "line": 15,
+          "text": "Support | 36.76 | month | $4,319.54 | $158,786.29 |"
+        },
+        {
+          "line": 16,
+          "text": "| Implementatio"
+        },
+        {
+          "line": 17,
+          "text": "n Services | 58.07 | hour | $249.68 | $14,498.92 |"
+        },
+        {
+          "line": 19,
+          "text": "Support | 39.41 | month | $3,343.65 | $131,773.25 |"
+        },
+        {
+          "line": 20,
+          "text": "| Enterprise Plan | 30.99 | subscription | $100,103.31 | $3,102,201.58 |"
+        },
+        {
+          "line": 21,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "API Usage 87.11 per 1000 calls $3.06 $266.56"
+        },
+        {
+          "line": 38,
+          "text": "Implementatio 32.80 hour $262.59 $8,612.95"
+        },
+        {
+          "line": 39,
+          "text": "n Services"
+        },
+        {
+          "line": 49,
+          "text": "Support"
+        },
+        {
+          "line": 50,
+          "text": "Implementatio 58.07 hour $249.68 $14,498.92"
+        },
+        {
+          "line": 51,
+          "text": "n Services"
+        },
+        {
+          "line": 53,
+          "text": "Support"
+        },
+        {
+          "line": 54,
+          "text": "Enterprise Plan 30.99 subscription $100,103.31 $3,102,201.58"
+        },
+        {
+          "line": 55,
+          "text": ""
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pdfplumber--invoice_100",
+      "document_id": "invoice_100",
+      "pipeline_id": "pdfplumber",
+      "template_style": "economy",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "49f457a3696104ef505699af90cd00d378b824477555cda68d8ec3d432611d9c",
+      "reference_sha256": "c8cc2e57c3e622b69b8b1e1ef598d5a87c6ecf305501c91038c38d4197a40ba0",
+      "raw_sha256": "67f34d5824d86173392da00467c86b4895e5e2ae702e466fa136d4e548f4e477",
+      "raw_path": "attempts/pdfplumber--invoice_100/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": false,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 4,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 0,
+        "records_extra": 0,
+        "document_success": false
+      },
+      "field_differences": {
+        "vendor": {
+          "expected": "Swift Freight",
+          "predicted": null,
+          "surfaces": []
+        }
+      },
+      "missing_records": [],
+      "extra_records": [],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "FROM: TO:"
+        },
+        {
+          "line": 18,
+          "text": "Swift Freight Campbell, Alexander and Torres"
+        },
+        {
+          "line": 19,
+          "text": "916 Stephen View 724 Meghan Esplanade"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_007",
+      "document_id": "invoice_007",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "c016a30f2461d0b5e0f150eaa4877af58fc7a6bcf2614c3e7301ee4493782353",
+      "reference_sha256": "54f18de3f11dbedb7d0508cbf81b9bb2175e7f080caf7371c7221e137faf25dc",
+      "raw_sha256": "4b2359b1f042be01d2e03cfb90f2b9e783f42dd799cb6c27d1ac3cfe3b342879",
+      "raw_path": "attempts/pypdf--invoice_007/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 8,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "59.28",
+          "unit": "hour",
+          "unit_price": "293.28",
+          "line_total": "17385.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "59.28",
+          "unit": "hour",
+          "unit_price": "293.28",
+          "line_total": "17385.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "59.28",
+            "unit": "hour",
+            "unit_price": "$293.28",
+            "line_total": "$17,385.64"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 18,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 19,
+          "text": "Implementatio"
+        },
+        {
+          "line": 20,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_013",
+      "document_id": "invoice_013",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "516a8157b57649314065d3c8abcf28b26cee207b056a48e6a7d9596d23c3adc6",
+      "reference_sha256": "cb3d68310ef18e0837e85834f5301b45dbdf083e4712b667b7e1333f5991f213",
+      "raw_sha256": "722f7a2dee26965a2c3282a6d23b64253a0f8c256cb7519ae537c0c4a06c95a3",
+      "raw_path": "attempts/pypdf--invoice_013/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 3,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "60.12",
+          "unit": "hour",
+          "unit_price": "255.35",
+          "line_total": "15351.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "36.58",
+          "unit": "hour",
+          "unit_price": "348.18",
+          "line_total": "12736.42",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "60.12",
+          "unit": "hour",
+          "unit_price": "255.35",
+          "line_total": "15351.64",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "60.12",
+            "unit": "hour",
+            "unit_price": "$255.35",
+            "line_total": "$15,351.64"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "36.58",
+          "unit": "hour",
+          "unit_price": "348.18",
+          "line_total": "12736.42",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "36.58",
+            "unit": "hour",
+            "unit_price": "$348.18",
+            "line_total": "$12,736.42"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 21,
+          "text": "38.76 subscription $76,247.96 $2,955,370.93"
+        },
+        {
+          "line": 22,
+          "text": "Implementatio"
+        },
+        {
+          "line": 23,
+          "text": "n Services"
+        },
+        {
+          "line": 24,
+          "text": "60.12 hour $255.35 $15,351.64"
+        },
+        {
+          "line": 25,
+          "text": "Implementatio"
+        },
+        {
+          "line": 26,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_019",
+      "document_id": "invoice_019",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "4ab21065b3310ba4d403b2d4d257e21f5e02494ac9e434e0e694ba421524e4f9",
+      "reference_sha256": "6ca3ea321659ebc99c0a07131ac16d854cee62dc751f27730ba67c7c9ce2324c",
+      "raw_sha256": "8fc2940217ade5c71a89ab00810b7a02e901ec537abc536f53c1227370f53370",
+      "raw_path": "attempts/pypdf--invoice_019/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 9,
+        "records_expected": 10,
+        "records_predicted": 10,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "70.78",
+          "unit": "hour",
+          "unit_price": "233.09",
+          "line_total": "16498.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "70.78",
+          "unit": "hour",
+          "unit_price": "233.09",
+          "line_total": "16498.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "70.78",
+            "unit": "hour",
+            "unit_price": "$233.09",
+            "line_total": "$16,498.11"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 31,
+          "text": "28.31 subscription $2,133.83 $60,408.73"
+        },
+        {
+          "line": 32,
+          "text": "Implementatio"
+        },
+        {
+          "line": 33,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_025",
+      "document_id": "invoice_025",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "26296420198e578ccac72bb1f61d6a0a14ba2eeedc2180f29d42eeb7f685b545",
+      "reference_sha256": "23d6d36957b9b2bcd452476696f216104eb2774f43893d0cdbff71a5194d604c",
+      "raw_sha256": "21d08611cb86a7ca7e4028e3967a50d2a3e6c3cff4fab3f11bbe81f5d0ce42e2",
+      "raw_path": "attempts/pypdf--invoice_025/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 5,
+        "records_predicted": 5,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "56.25",
+          "unit": "hour",
+          "unit_price": "182.77",
+          "line_total": "10280.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "56.25",
+          "unit": "hour",
+          "unit_price": "182.77",
+          "line_total": "10280.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "56.25",
+            "unit": "hour",
+            "unit_price": "$182.77",
+            "line_total": "$10,280.81"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 28,
+          "text": "61.12 subscription $29,885.79 $1,826,619.48"
+        },
+        {
+          "line": 29,
+          "text": "Implementatio"
+        },
+        {
+          "line": 30,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_037",
+      "document_id": "invoice_037",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "14a4f44f1fea134ae428723991dc0a3f7e1a04127338acea5ce572da07266ff7",
+      "reference_sha256": "37b04d71c8585318a9ba969c6fae21f001164b1f19cf7cf093f8161098538382",
+      "raw_sha256": "51992c3aa77e9929394cc669dfe2b8fa40e8a69f40fc70aa8735fef1dd80f2b1",
+      "raw_path": "attempts/pypdf--invoice_037/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 1,
+        "records_extra": 1,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "60.92",
+          "unit": "hour",
+          "unit_price": "242.48",
+          "line_total": "14771.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "60.92",
+          "unit": "hour",
+          "unit_price": "242.48",
+          "line_total": "14771.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "60.92",
+            "unit": "hour",
+            "unit_price": "$242.48",
+            "line_total": "$14,771.88"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 27,
+          "text": "2.26 month $2,280.02 $5,152.85"
+        },
+        {
+          "line": 28,
+          "text": "Implementatio"
+        },
+        {
+          "line": 29,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_047",
+      "document_id": "invoice_047",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "f06c92e3cf6eed14e5df9a5bf9feab8f596719a9507cde417df1d9f5a8f2d6b8",
+      "reference_sha256": "c24fb1b7a7831c5cbb5acd98d9d107dd5286eecf261418e9bdc635317e20d98c",
+      "raw_sha256": "8c9d652b21b5b4840f3daa4680a842d8099c15a4ad1984a1c8af6816ee8137b4",
+      "raw_path": "attempts/pypdf--invoice_047/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 4,
+        "records_expected": 6,
+        "records_predicted": 6,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "API Usage (per 1000 calls)",
+          "quantity": "38.58",
+          "unit_price": "2.96",
+          "line_total": "114.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Premium Support (month)",
+          "quantity": "90.48",
+          "unit_price": "4594.66",
+          "line_total": "415724.84",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "API Usage (per 1000",
+          "quantity": "38.58",
+          "unit_price": "2.96",
+          "line_total": "114.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "API Usage (per 1000",
+            "quantity": "38.58",
+            "unit_price": "$2.96",
+            "line_total": "$114.20"
+          }
+        },
+        {
+          "description": "calls) Premium Support (month)",
+          "quantity": "90.48",
+          "unit_price": "4594.66",
+          "line_total": "415724.84",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "calls)\nPremium Support\n(month)",
+            "quantity": "90.48",
+            "unit_price": "$4,594.66",
+            "line_total": "$415,724.84"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 14,
+          "text": "Description Qty Rate Amount"
+        },
+        {
+          "line": 15,
+          "text": "Premium Support "
+        },
+        {
+          "line": 16,
+          "text": "(month)"
+        },
+        {
+          "line": 27,
+          "text": "11.72 $80,970.20 $948,970.74"
+        },
+        {
+          "line": 28,
+          "text": "API Usage (per 1000 38.58 $2.96 $114.20"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "calls)"
+        },
+        {
+          "line": 31,
+          "text": "Premium Support "
+        },
+        {
+          "line": 32,
+          "text": "(month)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_049",
+      "document_id": "invoice_049",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "543ce2a18609b5bfcb90a3d1410e8ef3c11832ca79a8eeb2a7143f3a76f33363",
+      "reference_sha256": "adf1e988c7426bb46ae521fce5eea7bf02d67750edff0319dbeeb3235d21e705",
+      "raw_sha256": "ec46387fb7957689a062be1a7eae89e5e924967e4e8c65b1b6355a94123130a2",
+      "raw_path": "attempts/pypdf--invoice_049/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 2,
+        "records_expected": 4,
+        "records_predicted": 4,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Brochures - Tri-fold",
+          "quantity": "5.34",
+          "unit": "per 1000",
+          "unit_price": "680.85",
+          "line_total": "3635.74",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Brochures - Tri-fold",
+          "quantity": "44.69",
+          "unit": "per 1000",
+          "unit_price": "284.99",
+          "line_total": "12736.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Brochures - Tri- fold",
+          "quantity": "5.34",
+          "unit": "per 1000",
+          "unit_price": "680.85",
+          "line_total": "3635.74",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Brochures - Tri-\nfold",
+            "quantity": "5.34",
+            "unit": "per 1000",
+            "unit_price": "$680.85",
+            "line_total": "$3,635.74"
+          }
+        },
+        {
+          "description": "Brochures - Tri- fold",
+          "quantity": "44.69",
+          "unit": "per 1000",
+          "unit_price": "284.99",
+          "line_total": "12736.2",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Brochures - Tri-\nfold",
+            "quantity": "44.69",
+            "unit": "per 1000",
+            "unit_price": "$284.99",
+            "line_total": "$12,736.20"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 18,
+          "text": "Brochures - Tri-"
+        },
+        {
+          "line": 19,
+          "text": "fold"
+        },
+        {
+          "line": 23,
+          "text": "21.45 % surcharge $43.07 $923.85"
+        },
+        {
+          "line": 24,
+          "text": "Brochures - Tri-"
+        },
+        {
+          "line": 25,
+          "text": "fold"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_061",
+      "document_id": "invoice_061",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "a0ef631f990bfefa140a8ecafb8ea3c608621e0202b0e743fd53abafcde78fb1",
+      "reference_sha256": "2a950611a4384fb503756c35962315d7ddaebf80bb84a5c986d0b7aea6f4d084",
+      "raw_sha256": "f5ebd8d4219da34325c87745bb67b44ca6cd43597803f4ca007b45c635fca504",
+      "raw_path": "attempts/pypdf--invoice_061/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 6,
+        "records_expected": 8,
+        "records_predicted": 8,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Social Media Management (month)",
+          "quantity": "29.28",
+          "unit_price": "2626.81",
+          "line_total": "76913",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Video Production (day)",
+          "quantity": "29.02",
+          "unit_price": "2812.64",
+          "line_total": "81622.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Social Media",
+          "quantity": "29.28",
+          "unit_price": "2626.81",
+          "line_total": "76913",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Social Media",
+            "quantity": "29.28",
+            "unit_price": "$2,626.81",
+            "line_total": "$76,913.00"
+          }
+        },
+        {
+          "description": "Management (month) Video Production (day)",
+          "quantity": "29.02",
+          "unit_price": "2812.64",
+          "line_total": "81622.81",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Management\n(month)\nVideo Production\n(day)",
+            "quantity": "29.02",
+            "unit_price": "$2,812.64",
+            "line_total": "$81,622.81"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 15,
+          "text": "Description Qty Rate Amount"
+        },
+        {
+          "line": 16,
+          "text": "Video Production "
+        },
+        {
+          "line": 17,
+          "text": "(day)"
+        },
+        {
+          "line": 27,
+          "text": "71.66 $162.68 $11,657.65"
+        },
+        {
+          "line": 28,
+          "text": "Social Media 29.28 $2,626.81 $76,913.00"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "Management "
+        },
+        {
+          "line": 31,
+          "text": "(month)"
+        },
+        {
+          "line": 32,
+          "text": "Video Production "
+        },
+        {
+          "line": 33,
+          "text": "(day)"
+        },
+        {
+          "line": 34,
+          "text": "29.02 $2,812.64 $81,622.81"
+        },
+        {
+          "line": 35,
+          "text": "Social Media "
+        },
+        {
+          "line": 36,
+          "text": "Management "
+        },
+        {
+          "line": 37,
+          "text": "(month)"
+        },
+        {
+          "line": 38,
+          "text": "62.29 $7,555.65 $470,641.44"
+        },
+        {
+          "line": 39,
+          "text": "Social Media "
+        },
+        {
+          "line": 40,
+          "text": "Management "
+        },
+        {
+          "line": 41,
+          "text": "(month)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_064",
+      "document_id": "invoice_064",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "98b20ef6811cb5b5391139fa256d582e5f278fc099aa9a8e754a0e243d58f8bb",
+      "reference_sha256": "f5734dfc552f51a6ed54602a7edb8b2eceb0673d1f65ce7f778963eb22f87c1d",
+      "raw_sha256": "b4bfca3e941029f1e80ad693fb0d1d4feaa0ac02c2e9aeb6145adb848d4dd69e",
+      "raw_path": "attempts/pypdf--invoice_064/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Bookkeeping Services (month)",
+          "quantity": "83.09",
+          "unit_price": "1735.54",
+          "line_total": "144206.02",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Payroll Processing (month)",
+          "quantity": "8.51",
+          "unit_price": "469.83",
+          "line_total": "3998.25",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Bookkeeping",
+          "quantity": "83.09",
+          "unit_price": "1735.54",
+          "line_total": "144206.02",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Bookkeeping",
+            "quantity": "83.09",
+            "unit_price": "$1,735.54",
+            "line_total": "$144,206.02"
+          }
+        },
+        {
+          "description": "Services (month) Payroll Processing (month)",
+          "quantity": "8.51",
+          "unit_price": "469.83",
+          "line_total": "3998.25",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Services (month)\nPayroll Processing\n(month)",
+            "quantity": "8.51",
+            "unit_price": "$469.83",
+            "line_total": "$3,998.25"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 15,
+          "text": "Description Qty Rate Amount"
+        },
+        {
+          "line": 16,
+          "text": "Audit Services "
+        },
+        {
+          "line": 17,
+          "text": "(hour)"
+        },
+        {
+          "line": 24,
+          "text": "83.55 $349.78 $29,224.12"
+        },
+        {
+          "line": 25,
+          "text": "Bookkeeping "
+        },
+        {
+          "line": 26,
+          "text": "Services (month)"
+        },
+        {
+          "line": 27,
+          "text": "43.21 $1,254.45 $54,204.78"
+        },
+        {
+          "line": 28,
+          "text": "Bookkeeping 83.09 $1,735.54 $144,206.02"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "Services (month)"
+        },
+        {
+          "line": 31,
+          "text": "Payroll Processing "
+        },
+        {
+          "line": 32,
+          "text": "(month)"
+        },
+        {
+          "line": 36,
+          "text": "81.27 $288.07 $23,411.45"
+        },
+        {
+          "line": 37,
+          "text": "Payroll Processing "
+        },
+        {
+          "line": 38,
+          "text": "(month)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_067",
+      "document_id": "invoice_067",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "e4c9c14748d965a142e78a50ec0dd4af7230038e9c52d06300bb0bbf7f3113f6",
+      "reference_sha256": "2d7e612efdcdbc1534beed95e2055f29e285ce25a09bebc91d2c6627a357b1d3",
+      "raw_sha256": "65a115ede98a5a93c70dfd1c565c3a1b2f4b11b107655ab2470010295e44b60e",
+      "raw_path": "attempts/pypdf--invoice_067/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Systems Analyst (hour)",
+          "quantity": "79.36",
+          "unit_price": "204.03",
+          "line_total": "16191.82",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Security Assessment (assessment)",
+          "quantity": "49.52",
+          "unit_price": "7153.91",
+          "line_total": "354261.62",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Systems Analyst",
+          "quantity": "79.36",
+          "unit_price": "204.03",
+          "line_total": "16191.82",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Systems Analyst",
+            "quantity": "79.36",
+            "unit_price": "$204.03",
+            "line_total": "$16,191.82"
+          }
+        },
+        {
+          "description": "(hour) Security Assessment (assessment)",
+          "quantity": "49.52",
+          "unit_price": "7153.91",
+          "line_total": "354261.62",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "(hour)\nSecurity\nAssessment\n(assessment)",
+            "quantity": "49.52",
+            "unit_price": "$7,153.91",
+            "line_total": "$354,261.62"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 14,
+          "text": "Description Qty Rate Amount"
+        },
+        {
+          "line": 15,
+          "text": "Systems Analyst "
+        },
+        {
+          "line": 16,
+          "text": "(hour)"
+        },
+        {
+          "line": 17,
+          "text": "94.72 $148.47 $14,063.08"
+        },
+        {
+          "line": 18,
+          "text": "Project "
+        },
+        {
+          "line": 19,
+          "text": "Management (hour)"
+        },
+        {
+          "line": 20,
+          "text": "73.59 $141.05 $10,379.87"
+        },
+        {
+          "line": 21,
+          "text": "Security "
+        },
+        {
+          "line": 22,
+          "text": "Assessment "
+        },
+        {
+          "line": 25,
+          "text": "After-Hours "
+        },
+        {
+          "line": 26,
+          "text": "Support (hour)"
+        },
+        {
+          "line": 27,
+          "text": "36.92 $235.75 $8,703.89"
+        },
+        {
+          "line": 28,
+          "text": "Systems Analyst 79.36 $204.03 $16,191.82"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "(hour)"
+        },
+        {
+          "line": 31,
+          "text": "Security "
+        },
+        {
+          "line": 32,
+          "text": "Assessment "
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_073",
+      "document_id": "invoice_073",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "19681ada6d99b0665b9a59d879852c468b0cc6de9168d0f882c531da453a88a2",
+      "reference_sha256": "7523f63d8d30d9f7ea858962386074311d69a4edd03e00dab893a554b0e1c7e7",
+      "raw_sha256": "daf0a4f4575978002d14f43952e69740fb1abb84c1fa8d9cdea720e21f38757a",
+      "raw_path": "attempts/pypdf--invoice_073/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Fertilization Treatment (application)",
+          "quantity": "6.83",
+          "unit_price": "128.62",
+          "line_total": "878.47",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Fall Cleanup (service)",
+          "quantity": "97.99",
+          "unit_price": "479.48",
+          "line_total": "46984.25",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Fertilization Treatment",
+          "quantity": "6.83",
+          "unit_price": "128.62",
+          "line_total": "878.47",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Fertilization\nTreatment",
+            "quantity": "6.83",
+            "unit_price": "$128.62",
+            "line_total": "$878.47"
+          }
+        },
+        {
+          "description": "(application) Fall Cleanup (service)",
+          "quantity": "97.99",
+          "unit_price": "479.48",
+          "line_total": "46984.25",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "(application)\nFall Cleanup\n(service)",
+            "quantity": "97.99",
+            "unit_price": "$479.48",
+            "line_total": "$46,984.25"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 2,
+          "text": "Green Lawn Care"
+        },
+        {
+          "line": 3,
+          "text": "88279 Simmons Fall Suite 775"
+        },
+        {
+          "line": 4,
+          "text": "South Karentown, QC L2G 9R8"
+        },
+        {
+          "line": 26,
+          "text": "54.36 $86.39 $4,696.16"
+        },
+        {
+          "line": 27,
+          "text": "Fertilization "
+        },
+        {
+          "line": 28,
+          "text": "Treatment "
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "(application)"
+        },
+        {
+          "line": 32,
+          "text": "Fall Cleanup "
+        },
+        {
+          "line": 33,
+          "text": "(service)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_076",
+      "document_id": "invoice_076",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "medium",
+      "shared_document_failure": false,
+      "input_sha256": "1387a39a832ee8fbf09c23dada4f8924e4767b5d39ed89b6b42f46ef57237994",
+      "reference_sha256": "b0565f39031d88912e4b70e5e469f2a4f7f026a1901de12fa6645913908b9d90",
+      "raw_sha256": "fd577966033f0d5d8244aacb6da686e9b432ea1add6d857843c66f61dc9cebc3",
+      "raw_path": "attempts/pypdf--invoice_076/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Physical Therapy (session)",
+          "quantity": "82.53",
+          "unit_price": "186.29",
+          "line_total": "15374.51",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Physical Therapy (session)",
+          "quantity": "7.6",
+          "unit_price": "172.89",
+          "line_total": "1313.96",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Physical Therapy",
+          "quantity": "82.53",
+          "unit_price": "186.29",
+          "line_total": "15374.51",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Physical Therapy",
+            "quantity": "82.53",
+            "unit_price": "$186.29",
+            "line_total": "$15,374.51"
+          }
+        },
+        {
+          "description": "(session) Physical Therapy (session)",
+          "quantity": "7.6",
+          "unit_price": "172.89",
+          "line_total": "1313.96",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "(session)\nPhysical Therapy\n(session)",
+            "quantity": "7.60",
+            "unit_price": "$172.89",
+            "line_total": "$1,313.96"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 27,
+          "text": "29.51 $340.78 $10,056.42"
+        },
+        {
+          "line": 28,
+          "text": "Physical Therapy 82.53 $186.29 $15,374.51"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "(session)"
+        },
+        {
+          "line": 31,
+          "text": "Physical Therapy "
+        },
+        {
+          "line": 32,
+          "text": "(session)"
+        },
+        {
+          "line": 33,
+          "text": "7.60 $172.89 $1,313.96"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_085",
+      "document_id": "invoice_085",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": false,
+      "input_sha256": "383ad6099b4979f0805f4fd1d00289644ce2c648af79a1adc15972c23be53678",
+      "reference_sha256": "e66e1e0018130c8ad615e86c59ccbf9cc5dbf29a4f694111b9ab16965b2dc739",
+      "raw_sha256": "7448c9853d4c96f33b85b4dcc45d30827c72ce8d762d9314ad197d47634fdc5c",
+      "raw_path": "attempts/pypdf--invoice_085/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 7,
+        "records_predicted": 7,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Fertilization Treatment (application)",
+          "quantity": "95.32",
+          "unit_price": "177.54",
+          "line_total": "16923.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Fall Cleanup (service)",
+          "quantity": "63",
+          "unit_price": "238.68",
+          "line_total": "15036.84",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Fertilization",
+          "quantity": "95.32",
+          "unit_price": "177.54",
+          "line_total": "16923.11",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Fertilization",
+            "quantity": "95.32",
+            "unit_price": "$177.54",
+            "line_total": "$16,923.11"
+          }
+        },
+        {
+          "description": "Treatment (application) Fall Cleanup (service)",
+          "quantity": "63",
+          "unit_price": "238.68",
+          "line_total": "15036.84",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Treatment\n(application)\nFall Cleanup\n(service)",
+            "quantity": "63.00",
+            "unit_price": "$238.68",
+            "line_total": "$15,036.84"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 17,
+          "text": "84.56 $166.32 $14,064.02"
+        },
+        {
+          "line": 18,
+          "text": "Fertilization "
+        },
+        {
+          "line": 19,
+          "text": "Treatment "
+        },
+        {
+          "line": 20,
+          "text": "(application)"
+        },
+        {
+          "line": 24,
+          "text": "79.46 $114.30 $9,082.28"
+        },
+        {
+          "line": 25,
+          "text": "Fall Cleanup "
+        },
+        {
+          "line": 26,
+          "text": "(service)"
+        },
+        {
+          "line": 27,
+          "text": "91.26 $238.75 $21,788.32"
+        },
+        {
+          "line": 28,
+          "text": "Fertilization 95.32 $177.54 $16,923.11"
+        },
+        {
+          "line": 29,
+          "text": ""
+        },
+        {
+          "line": 30,
+          "text": "Treatment "
+        },
+        {
+          "line": 31,
+          "text": "(application)"
+        },
+        {
+          "line": 32,
+          "text": "Fall Cleanup "
+        },
+        {
+          "line": 33,
+          "text": "(service)"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_086",
+      "document_id": "invoice_086",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "cd1d557f02f994e7cc2ac5ab3659b0e05f36a63f13a260044759561675a3a443",
+      "reference_sha256": "c484f5bbecdb59e643636583659082decd74711a8b486926658a5300080489e4",
+      "raw_sha256": "73e939ce34e77281cb40baf33b530b2bbd8adce9d8d095fcffb74126f7851e72",
+      "raw_path": "attempts/pypdf--invoice_086/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 9,
+        "records_predicted": 9,
+        "records_missing": 2,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "58.01",
+          "unit": "hour",
+          "unit_price": "328.45",
+          "line_total": "19053.38",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "64.8",
+          "unit": "hour",
+          "unit_price": "331.85",
+          "line_total": "21503.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "58.01",
+          "unit": "hour",
+          "unit_price": "328.45",
+          "line_total": "19053.38",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "58.01",
+            "unit": "hour",
+            "unit_price": "$328.45",
+            "line_total": "$19,053.38"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "64.8",
+          "unit": "hour",
+          "unit_price": "331.85",
+          "line_total": "21503.88",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "64.80",
+            "unit": "hour",
+            "unit_price": "$331.85",
+            "line_total": "$21,503.88"
+          }
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 18,
+          "text": "Description Quantity Unit Unit Price Amount"
+        },
+        {
+          "line": 19,
+          "text": "Implementatio"
+        },
+        {
+          "line": 20,
+          "text": "n Services"
+        },
+        {
+          "line": 23,
+          "text": "API Usage 76.30 per 1000 calls $1.05 $80.12"
+        },
+        {
+          "line": 24,
+          "text": "Implementatio"
+        },
+        {
+          "line": 25,
+          "text": "n Services"
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_093",
+      "document_id": "invoice_093",
+      "pipeline_id": "pypdf",
+      "template_style": "small_business",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "2649db34f596b2d0ea344ad2eee4fa649f99c112e4c3ed6ec599140f739a7879",
+      "reference_sha256": "77c6a695057628c6cb4d1e2eedc42d3a7588e3548b5a71586865a959ca1f6994",
+      "raw_sha256": "b4940252f67bb19475bb12f99e93671e690f60dd78c034340cab814737ebc630",
+      "raw_path": "attempts/pypdf--invoice_093/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 5,
+        "records_expected": 6,
+        "records_predicted": 7,
+        "records_missing": 1,
+        "records_extra": 2,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Breakfast Buffet (per person)",
+          "quantity": "99.11",
+          "unit_price": "22.95",
+          "line_total": "2274.57",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Breakfast Buffet",
+          "quantity": "99.11",
+          "unit_price": "22.95",
+          "line_total": "2274.57",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Breakfast Buffet",
+            "quantity": "99.11",
+            "unit_price": "$22.95",
+            "line_total": "$2,274.57"
+          }
+        },
+        {
+          "invalid_cells": [
+            "(per person)"
+          ]
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 22,
+          "text": "25.64 $520.43 $13,343.83"
+        },
+        {
+          "line": 23,
+          "text": "Breakfast Buffet "
+        },
+        {
+          "line": 24,
+          "text": "(per person)"
+        },
+        {
+          "line": 25,
+          "text": "33.84 $28.56 $966.47"
+        },
+        {
+          "line": 26,
+          "text": "Breakfast Buffet 99.11 $22.95 $2,274.57"
+        },
+        {
+          "line": 27,
+          "text": ""
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    },
+    {
+      "pair_id": "pypdf--invoice_098",
+      "document_id": "invoice_098",
+      "pipeline_id": "pypdf",
+      "template_style": "enterprise",
+      "complexity": "simple",
+      "shared_document_failure": true,
+      "input_sha256": "feaba19b03160f269753b57c00a70e009d23d9887e3308a28cb402e44db5736a",
+      "reference_sha256": "e65a5dfe581cd77a71d16113f73558826dc1754faf16ee011e55f300a430109c",
+      "raw_sha256": "d5eae7a0fd022ff53cdbb6c2d21b8aab5c24dd6f7a4e06a11eb7369f94219092",
+      "raw_path": "attempts/pypdf--invoice_098/retained-output.md",
+      "grade": {
+        "correct_fields": {
+          "invoice_number": true,
+          "vendor": true,
+          "due_date": true,
+          "grand_total": true,
+          "currency_marker": true
+        },
+        "fields_correct": 5,
+        "fields_expected": 5,
+        "records_matched": 7,
+        "records_expected": 10,
+        "records_predicted": 11,
+        "records_missing": 3,
+        "records_extra": 4,
+        "document_success": false
+      },
+      "field_differences": {},
+      "missing_records": [
+        {
+          "description": "Implementation Services",
+          "quantity": "32.8",
+          "unit": "hour",
+          "unit_price": "262.59",
+          "line_total": "8612.95",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Implementation Services",
+          "quantity": "58.07",
+          "unit": "hour",
+          "unit_price": "249.68",
+          "line_total": "14498.92",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        },
+        {
+          "description": "Enterprise Plan - Annual",
+          "quantity": "30.99",
+          "unit": "subscription",
+          "unit_price": "100103.31",
+          "line_total": "3102201.58",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          }
+        }
+      ],
+      "extra_records": [
+        {
+          "description": "Implementatio n Services",
+          "quantity": "32.8",
+          "unit": "hour",
+          "unit_price": "262.59",
+          "line_total": "8612.95",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "32.80",
+            "unit": "hour",
+            "unit_price": "$262.59",
+            "line_total": "$8,612.95"
+          }
+        },
+        {
+          "description": "Implementatio n Services",
+          "quantity": "58.07",
+          "unit": "hour",
+          "unit_price": "249.68",
+          "line_total": "14498.92",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Implementatio\nn Services",
+            "quantity": "58.07",
+            "unit": "hour",
+            "unit_price": "$249.68",
+            "line_total": "$14,498.92"
+          }
+        },
+        {
+          "description": "Enterprise Plan",
+          "quantity": "30.99",
+          "unit": "subscription",
+          "unit_price": "100103.31",
+          "line_total": "3102201.58",
+          "currency_markers": {
+            "unit_price": "$",
+            "line_total": "$"
+          },
+          "surfaces": {
+            "description": "Enterprise Plan",
+            "quantity": "30.99",
+            "unit": "subscription",
+            "unit_price": "$100,103.31",
+            "line_total": "$3,102,201.58"
+          }
+        },
+        {
+          "invalid_cells": [
+            "- Annual"
+          ]
+        }
+      ],
+      "raw_excerpts": [
+        {
+          "line": 19,
+          "text": "API Usage 87.11 per 1000 calls $3.06 $266.56"
+        },
+        {
+          "line": 20,
+          "text": "Implementatio"
+        },
+        {
+          "line": 21,
+          "text": "n Services"
+        },
+        {
+          "line": 37,
+          "text": "36.76 month $4,319.54 $158,786.29"
+        },
+        {
+          "line": 38,
+          "text": "Implementatio"
+        },
+        {
+          "line": 39,
+          "text": "n Services"
+        },
+        {
+          "line": 43,
+          "text": "39.41 month $3,343.65 $131,773.25"
+        },
+        {
+          "line": 44,
+          "text": "Enterprise Plan 30.99 subscription $100,103.31 $3,102,201.58"
+        },
+        {
+          "line": 45,
+          "text": ""
+        }
+      ],
+      "review_status": "unreviewed",
+      "cause": null,
+      "review_note": null
+    }
+  ]
+}

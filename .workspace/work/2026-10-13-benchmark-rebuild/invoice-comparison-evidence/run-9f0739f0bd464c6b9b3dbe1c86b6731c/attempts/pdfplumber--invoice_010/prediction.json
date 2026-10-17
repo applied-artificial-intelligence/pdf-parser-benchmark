@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-41693",
+    "vendor": "Synergy Services",
+    "due_date": "2025-11-08",
+    "grand_total": "975893.42",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-41693"
+    ],
+    "due_date": [
+      "November 08, 2025"
+    ],
+    "grand_total": [
+      "$975,893.42"
+    ],
+    "vendor": [
+      "Synergy Services"
+    ]
+  },
+  "records": [
+    {
+      "description": "Senior Consultant",
+      "quantity": "39.75",
+      "unit": "hour",
+      "unit_price": "194.4",
+      "line_total": "7727.4",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior\nConsultant",
+        "quantity": "39.75",
+        "unit": "hour",
+        "unit_price": "$194.40",
+        "line_total": "$7,727.40"
+      }
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "60.32",
+      "unit": "hour",
+      "unit_price": "331.13",
+      "line_total": "19973.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "After-Hours\nSupport",
+        "quantity": "60.32",
+        "unit": "hour",
+        "unit_price": "$331.13",
+        "line_total": "$19,973.76"
+      }
+    },
+    {
+      "description": "Security Assessment",
+      "quantity": "43.82",
+      "unit": "assessment",
+      "unit_price": "18598.62",
+      "line_total": "814991.53",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment",
+        "quantity": "43.82",
+        "unit": "assessment",
+        "unit_price": "$18,598.62",
+        "line_total": "$814,991.53"
+      }
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "73.83",
+      "unit": "hour",
+      "unit_price": "135.29",
+      "line_total": "9988.46",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst",
+        "quantity": "73.83",
+        "unit": "hour",
+        "unit_price": "$135.29",
+        "line_total": "$9,988.46"
+      }
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "92.52",
+      "unit": "hour",
+      "unit_price": "362.06",
+      "line_total": "33497.79",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "After-Hours\nSupport",
+        "quantity": "92.52",
+        "unit": "hour",
+        "unit_price": "$362.06",
+        "line_total": "$33,497.79"
+      }
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "36.37",
+      "unit": "hour",
+      "unit_price": "307.79",
+      "line_total": "11194.32",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior\nConsultant",
+        "quantity": "36.37",
+        "unit": "hour",
+        "unit_price": "$307.79",
+        "line_total": "$11,194.32"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

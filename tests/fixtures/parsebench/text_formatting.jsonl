@@ -1,0 +1,2 @@
+{"pdf": "docs/text/text_dense__baoutou.pdf", "category": "text_formatting", "id": "text_dense__baoutou_is_title_0", "type": "is_title", "rule": "{\"text\": \"BAOTOU 包头\", \"level\": 1}", "page": null, "expected_markdown": null, "tags": ["dense", "hard"]}
+{"pdf": "docs/text/text_dense__baoutou.pdf", "category": "text_formatting", "id": "text_dense__baoutou_is_title_1", "type": "is_title", "rule": "{\"text\": \"Population:\"}", "page": null, "expected_markdown": null, "tags": ["dense", "hard"]}

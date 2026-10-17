@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: New Zealand
+  name: Lewis-Fuentes
+document_id: invoice_095
+due_date: '2025-09-24'
+generated_at: '2025-11-18T16:47:19.639755'
+industry: manufacturing
+invoice_date: '2025-08-25'
+invoice_number: INV-33354
+line_item_count: 6
+payment_terms: Net 30
+region: APAC
+subtotal: 124945.4
+tax_amount: 18741.81
+template_style: enterprise
+total: 143687.21
+vendor:
+  country: Australia
+  name: United Fabrication
+corpus: business
+source_url: generated://invoice_095
+domain: invoices
+doc_id: invoice_095

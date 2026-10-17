@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_task.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_actual_backend_transposed_headers_fail_while_value_tokens_remain",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_task.py",
+      "old": "    return tuple(values)",
+      "new": "    return tuple(sorted(str(v) for _, v in values))"
+    }
+  }
+}

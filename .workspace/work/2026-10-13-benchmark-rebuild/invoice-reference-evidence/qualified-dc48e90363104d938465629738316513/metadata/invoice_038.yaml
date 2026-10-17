@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Italy
+  name: Rogge KG
+document_id: invoice_038
+due_date: '2025-11-08'
+generated_at: '2025-11-18T16:45:55.116867'
+industry: architecture
+invoice_date: '2025-10-09'
+invoice_number: INV-88139
+line_item_count: 9
+payment_terms: Net 30
+region: EU
+subtotal: 50806.95
+tax_amount: 10669.46
+template_style: small_business
+total: 61476.41
+vendor:
+  country: Netherlands
+  name: Visionary AIA
+corpus: business
+source_url: generated://invoice_038
+domain: invoices
+doc_id: invoice_038

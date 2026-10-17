@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/invoice_references.py",
+  "fixture": "Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "test": "tests/test_invoice_reference_qualification.py::test_reference_generation_ignores_wrong_metadata_and_old_extraction",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_references.py",
+      "old": "\"eligibility\": \"unqualified\",",
+      "new": "\"eligibility\": \"eligible\","
+    }
+  }
+}

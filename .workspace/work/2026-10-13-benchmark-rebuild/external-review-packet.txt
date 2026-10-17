@@ -1,0 +1,4002 @@
+PDF-Bench external specification/plan review packet
+
+Prepared from explicit source allowlists; excludes credentials, private contacts, production dumps, client documents and unrelated project reports.
+
+
+===== COMPLETE start-here.txt; SHA-256 ed34d77a436b421b1198b40a4e6e83eb5927524b00a17dbcc22fc455f0930b3b =====
+
+Own PDF-Bench reconstruction in this dedicated project conversation.
+Start in /home/stefan/applied-ai/pdf-bench/, not a new worktree or repository.
+Work unit: /home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/.
+
+Read AGENTS.md, PROJECT_ORIENTATION.md and
+.workspace/reference/pdfbench_benchmark_story_brief.md completely. Read the
+existing .workspace/issues/2026-10-09-document-ai-public-reconstruction.md and
+.workspace/work/2026-10-13-local-parser-evaluation/technical-report.md.
+
+Starting review branch: codex/source-first-pdf-evaluation-2026-10-13.
+Revision: d9305d6100e5288fa2fc255e088bfd8e22664b98.
+Its changes were mirrored into the dirty main checkout. Inspect before editing;
+do not replay patches blindly, reset, stash or switch another worker's checkout.
+
+The existing checkpoint fixes atomic export persistence and compares pypdf and
+pdfplumber on three synthetic invoice variants plus a corrupt control. The
+coordinator independently passed 48 focused tests and recorded hashes. It does
+not repair the broad benchmark's inconsistent histories, references or coverage.
+
+End product: a reproducible, practical document-parser evaluation with useful
+results by document family and downstream task, plus an inspectable technical
+report and evidence export suitable for later website/editorial integration.
+
+The first reviewed implementation milestone must reconcile the retained runs,
+configs, input/reference generators, backend versions and cache behavior. Use one
+authoritative run registry and generated appendix, extending existing mechanisms.
+Preserve SEC, controlled invoices, presentations/decks, arXiv and commercial pilots
+in evidence tiers instead of deleting them or flattening them into one leaderboard.
+
+Repair and execute a consequential born-digital or structured-document comparison
+on shared inputs using at least two suitable available local parsers. Independently
+specify reference truth. Resolve parser-dependent selection, PDF/HTML mismatch,
+unknown reconstructed invoice references and cached latency for the chosen run.
+Explicitly record failed, empty and timed-out attempts and metric denominators.
+Reconcile PDFsmith metadata/source-version disagreement. Preserve valid artifacts
+on failed generation. The existing smoke experiment alone is not milestone closure.
+
+Scans/OCR, complex tables, decks and other families need explicit follow-on scope,
+not vague promises. Current cloud/frontier comparisons require a specified run,
+provider versions and Stefan-approved spending cap. Continue local work without
+paid calls. PDFsmith API changes belong to its own owner; do not silently rebuild
+that separate library here.
+
+Read the retained editorial package for context, not as permission to rewrite it:
+/home/stefan/applied-ai/content-marketing/topics/data-and-knowledge-systems/publications/pdf-parsing/.
+Your ownership is source implementation, evaluation, evidence and the project-local
+plan/progress. Hand verified findings to editorial; do not edit website CMS.
+
+Read the independent coordinator review first:
+/home/stefan/applied-ai/content-marketing/.workspace/work/2026-10-13-publication-and-project-recovery/independent-review.txt
+The initial internal-agent batch is finished. Its outputs are starting evidence,
+not proof that these projects were rebuilt. Stefan wants ongoing work owned by
+this visible conversation, with external review of the specification and plan.
+Do not launch child agents or other conversations. Do not publish, schedule,
+deploy, merge public main, make paid calls or perform production actions.
+
+Your first deliverable is a project-local work unit containing spec.md, plan.md
+and an external review packet. Use the applicable alignment workflow, seeded by
+this commission and verified existing state. Ask only for genuinely missing
+choices; do not repeat an exhaustive field inventory or assume old results are
+false. Define the usable end product and observable acceptance tests, failure
+behavior, preservation requirements and the first implementation milestone.
+
+Before substantial rebuilding, prepare one self-contained external-review packet
+with the specification, plan, relevant code/evidence excerpts, known defects,
+exact revisions and open choices. Prepare separate reviewer prompts for a strong
+GPT model and Claude, for Stefan to submit. Ask them to challenge task scope,
+reference/grader independence, reproducibility, provenance, test coverage,
+failure/atomicity behavior, usefulness and unnecessary complexity. Do not claim
+external review occurred until actual reports return. Exclude secrets, private
+contacts, production dumps and confidential documents from the packet.
+
+Reconcile the returned reviews into the plan with specific dispositions. Resolve
+correctness blockers before executing the affected milestone; distinguish a real
+blocker from a preference. Do not restart planning merely because reviewers
+suggest optional extensions. Keep the initial engineering milestone separate
+from later research coverage and exact-copy/release approvals.
+
+Execute reviewed milestones with tests that fail on defects in the actual
+producing pipeline and pass after repair. Retain old results and generate new,
+versioned evidence. A passing unit suite or one synthetic fixture is not project
+completion. Report working code, reproducible runs and what the evidence supports.
+
+Keep visible progress in this conversation and one compact progress.txt in the
+work unit: current milestone, changes, checks, next step and decisions needed.
+Commit owned checkpoints and verify backups under repository visibility rules.
+Preserve existing staged/dirty work and unrelated workers. Do not create a second
+editorial calendar or manage other projects. Content-marketing owns synthesis,
+publication planning and public approval. Send it exact paths/revisions/hashes
+and a short milestone handoff, not a stream of status messages.
+
+
+
+===== COMPLETE review-context.txt; SHA-256 2700e124c821fc9b7c18b0acf5237f660ed024f3e1932a699284fa1740b61826 =====
+
+PDF-Bench reconstruction review context - October 14, 2026
+
+Purpose and user decisions
+Stefan commissioned reconstruction from existing implementation and independent
+review. On October 14 he confirmed practical parser selection as the focus, then
+emphasized how teams build their own internal benchmarks: use-case fit, reference
+truth, task/grader design, failures and interpretation. Retained and newly rebuilt
+examples should demonstrate those decisions. This supports Applied AI consulting
+through demonstrated competence, not a claim that a public benchmark is useless.
+The related website/editorial article is "What LLM and agent benchmark scores
+actually tell you"; its verified path is recorded in the specification. No website
+or manuscript change is authorized here.
+
+What is reviewed
+The complete proposed specification and six-issue plan are embedded in this packet,
+along with actual code excerpts, exact input hashes and retained result summaries.
+The packet is self-contained for scope/correctness review without private-repo
+access. It is not a complete historical evidence bundle or a replication of every
+prior run. Source excerpts are explicitly partial, with line ranges and whole-file
+hashes. Historical provenance missing from raw artifacts remains missing.
+
+Prior independent review
+The coordinator independently reviewed revision
+d9305d6100e5288fa2fc255e088bfd8e22664b98 on October 13. It reports 48 focused
+passing tests, source/input/reference/output hashes and an eight-attempt smoke
+experiment. The atomic export repair and three synthetic invoice variants plus
+corrupt control are supported. That review is not a review of this new spec/plan
+or proof that the broader benchmark has been reconstructed. The retained comparison
+hash matched in this conversation:
+1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242.
+Actual GPT and Claude specification reviews are pending.
+
+Verified findings and their limits
+
+- benchmarks/sec_filings_47docs.yaml says documents were selected where pypdfium2
+  edit similarity was at least 0.90. That is parser-dependent selection. It does
+  not independently bound reference noise: parser error and reference mismatch
+  are confounded. Retain the historical numbers and explain the affected claims.
+- benchmarks/invoices_100docs_fresh.yaml describes PDF-extracted ground truth.
+  The existing story SLATE describes the same run as source-first. Both original
+  and backup reference directories and 100 DOCX/PDF/metadata files exist locally.
+  The historical extractor and exact historical reference bytes are not established
+  merely by the present directory. New references must be qualified separately.
+- The first invoice cloud-parser row records about 0.000294 seconds. That duration
+  alone cannot establish fresh cloud API latency. It suggests replay or a different
+  measurement boundary but does not prove which without historical execution data.
+- PdfsmithAdapter's cache key uses input bytes, adapter name and PDFsmith declared
+  version. Model name is included in adapter name when provided, but other options
+  and actual backend-package/source versions are omitted. Reproduce stale identity
+  through the real adapter before repairing; do not infer all old outputs are wrong.
+- BenchmarkRunner resumes by parser name and document ID without validating a
+  frozen input/reference/config identity. It defaults failed duration to zero and
+  marks empty returned output as successful parsing. Task success and coverage
+  need separate treatment rather than rewriting old success fields.
+- The story generator averages numeric values available separately for each parser
+  and does not export exact metric IDs/denominators. This can make unequal coverage
+  look directly comparable. Demonstrate with actual producer-path regression inputs.
+- Installed PDFsmith metadata is 0.2.0 while its source declares 0.3.0. Local
+  pyproject.toml also declares 0.2.0, and the installation is editable. This is an
+  unresolved packaging/source-identity disagreement; record implementation identity
+  and coordinate with the separate owner rather than silently modifying that repo.
+- The reviewed writer serializes strict JSON before atomic single-file replacement.
+  It preserves prior valid exports on serialization error. That single-file repair
+  does not by itself establish atomic multi-artifact bundle/registry completion.
+
+ParseBench primary-source assessment, observed October 14
+
+The April launch describes about 2,000 human-verified enterprise pages across
+tables, charts, content faithfulness, semantic formatting and visual grounding,
+with vendor-authored comparisons. This is substantial overlap with PDF-Bench's
+earlier motivation. It already discusses downstream semantic errors, cost and
+open evaluation; those are not sufficient novelty claims for this reconstruction.
+Source: https://www.llamaindex.ai/blog/parsebench
+
+Paper v3 (April 13) reports 2,078 pages, 1,180 documents and 169,011 test rules.
+Its references use model-generated annotation with human verification. GTRM
+combines GriTS and TableRecordMatch, with GriTS alone for marked unsupported
+record structures. TableRecordMatch targets header/value associations rather
+than only layout. These are useful methods to assess for reuse. Curated capability
+evaluation and a team's downstream use-case distribution answer related but
+different questions; dataset size alone does not resolve fit.
+Source: https://arxiv.org/html/2604.08538v3
+
+The current README differs from the launch paper: it lists 1,211 unique documents
+and 180+ pipelines, and states that evaluation is deterministic by default with
+opt-in paid chart normalization. The pinned current source includes timeout/error
+records and cross-page table/structural consistency modules. Do not claim that it
+lacks operational evidence or document continuity. No current leaderboard result
+has been rerun here; the launch scores and live software are different snapshots.
+Code snapshot: d423e529ae329317bcd33c650b367acfb60e6620
+https://github.com/run-llama/ParseBench/tree/d423e529ae329317bcd33c650b367acfb60e6620
+Dataset snapshot: 2805a1d940f95a203e0ae4b88be9934f7765b3fc
+https://huggingface.co/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc
+Code and dataset metadata report Apache-2.0; reuse still needs source-level license,
+dataset-source rights and interface/dependency checks. No dataset/model was
+downloaded and no provider, normalizer or judge was called.
+
+Proposed first milestone and open correctness choices
+
+The proposal reconciles all retained families and then uses all 100 retained
+invoice sources for a fixed local pypdf/pdfplumber comparison. It establishes new
+source truth first and evaluates fields and line-item records through one fixed
+blind downstream extractor. Poor or tied results are valid. The purpose is a
+worked internal-benchmark design example, not a new universal parser leaderboard.
+
+Challenge whether 100 retained synthetic invoices give sufficient layout/task
+variation for the worked example. Do not equate regions/industry metadata with
+visual diversity. Challenge how to qualify source-to-rendered-PDF truth independently
+of both parsers, including total rounding, pagination and missing source content.
+Is checking every source plus rendered stratified/disagreement examples enough?
+What additional visual review is required before calling the comparison strong?
+
+Challenge whether the fixed extractor fairly supports the intended use case, and
+whether reference row/field normalization is sufficiently specified before coding.
+Do not confuse downstream extraction limitations with parser inability. The paired
+common-success subset is secondary: the fixed-population primary task denominator
+must retain parser failures, empty output and timeouts.
+
+Challenge whether full cache/checkpoint repair is necessary before an explicitly
+uncached new run, or whether some repairs can be sequenced independently without
+leaving incorrect default behavior. Multi-file atomicity should protect valid prior
+evidence and prevent incomplete registration without requiring an elaborate
+transaction system. Current lint/format defects are baseline findings, not fixed
+by this documentation checkpoint.
+
+The later OCR, tables/charts, deck, academic and paid tracks have specific candidate
+protocols in the plan. They are not measured coverage or blanket spending authority.
+The project is not complete when the invoice example finishes. Reviewers should
+distinguish mandatory correctness from optional research expansion.
+
+Requested review output
+Give a clear proceed/revise/block disposition for the first milestone; numbered
+findings with exact spec criteria, issue and code/excerpt references; a falsifiable
+failure scenario and proposed acceptance change for each blocker; and a concise
+assessment of the internal-benchmark teaching/usefulness contribution. Identify
+any unsupported factual claim and any unnecessary implementation complexity.
+State what you checked and what you could not inspect. Do not invent test execution,
+runtime observations or external review that you did not perform.
+
+Next actions
+Stefan submits this packet with the model-specific prompt to GPT and Claude and
+returns both reports. This owner reconciles them before affected implementation.
+
+
+===== COMPLETE spec.md; SHA-256 d9e8b576afc35a351c625b202ce3314b857d392c75b7ea10dce2249bc0a8d82c =====
+
+# Spec: Reconstruct a reproducible, practical document-parser evaluation
+
+Alignment brief: `start-here.txt` in this work unit, commissioned by Stefan on
+October 14, 2026, with practical parser selection confirmed and internal-benchmark
+design emphasized in this conversation. This specification describes the proposed end state. It does
+not claim that the reconstruction, external specification review, or public
+release has occurred. The commission authorizes this specification, plan, and
+review packet without a second exhaustive alignment interview.
+
+## Objective
+
+An engineering team can use demonstrated benchmark-design decisions to build an
+internal document-parser evaluation for its own use case, reproduce our declared
+document-family/task comparison, and inspect the references, failures, operating
+conditions and claim limits through a technical report and versioned evidence export.
+
+## Terms
+
+Context: pdf-bench, document-parser-evaluation
+
+| Term | Readings | Status | Basis |
+|---|---|---|---|
+| Reconstruction | A new report over old numbers; or repaired producing code and new reproducible evidence | resolved-by-author | The commission requires working code, a consequential comparison, and preserved historical evidence. |
+| Shared inputs | Same document names; or identical input bytes for every compared parser | resolved-by-author | The commission requires a comparison on shared inputs. Document identity includes input hashes and rendition, not filenames alone. |
+| Independent reference | Another parser's output; or source/annotation truth established before evaluated outputs | resolved-by-author | The commission requires independently specified truth and resolution of reconstructed invoice references. Evaluated output cannot define or repair its own reference. |
+| Evidence tier | A permanent quality label for a corpus; or the claims a particular run can support | resolved-by-author | Preserve strong, directional, prototype, historical, and rerun-candidate evidence as the commission requests. Tier depends on run and claim. |
+| Attempt and denominator | Successful rows only; or every planned input/parser pair with an explicit outcome | resolved-by-author | The commission requires failed, empty and timed-out attempts and metric denominators. Missing historical rows remain unknown, not assumed failures or successes. |
+| Version | Wrapper version alone; or backend package, implementation, configuration and provider identity | resolved-by-author | The commission requires backend versions, cache behavior, and reconciliation of PDFsmith distribution/source disagreement. Unknown historical values remain unknown. |
+| Fresh timing | Duration of any adapter call; or uncached parsing with the measured boundary declared | resolved-by-author | The commission requires cached latency to be resolved. Cache replay and failed-call default zero are not fresh parser latency. |
+| Completion | A passing suite or smoke fixture; or reviewed reconstruction with executed comparison and inspectable export | resolved-by-author | The commission explicitly excludes closure on the earlier smoke experiment alone. |
+
+## Why
+
+The withdrawn benchmark has useful retained work, but its current descriptions
+can imply reference independence and comparable performance that the producing
+artifacts do not establish. Engineers need useful bounded conclusions, with the
+conditions that change parser selection visible beside each result.
+
+ParseBench changes the justification for this work. Its enterprise corpus and
+semantic metrics already address much of the earlier motivation. PDF-Bench must
+acknowledge that work and demonstrate an additional practical use rather than
+claim novelty for enterprise documents or semantic correctness. Stefan confirmed
+practical parser selection as the focus and emphasized teaching teams how to build
+their own benchmarks. The report must explain decisions about corpus fit, reference
+truth, task/grader design, failure accounting and interpretation through worked
+examples, including mistakes from the retained work. A broad public benchmark does
+not establish performance on a team's distribution or downstream task merely by
+containing many pages. The material supports Applied AI's document-evaluation
+consulting capability through demonstrated methods and evidence. It does not assert
+that ParseBench lacks reproducibility or operational features.
+
+## Acceptance criteria
+
+1. Two self-contained external reviews, one from a strong GPT model and one from
+   Claude, assess this specification and plan. Actual returned reports are retained
+   with hashes and dispositions. Correctness blockers are resolved before the
+   affected implementation starts. Optional extensions do not reset planning.
+2. One authoritative run registry accounts for every result artifact discovered
+   under the retained results inventory and the reviewed local evaluation. Each
+   artifact is classified as a run, checkpoint, derived/merged export, diagnostic,
+   or unrecognized artifact; none silently disappears. The registry generates the
+   appendix and evidence export rather than competing with a second hand-maintained
+   list. Provenance coverage is a count with an explicit denominator.
+3. Each registered run links available config, document IDs and renditions, input
+   and reference hashes, reference method, generating code, raw outputs, backend
+   identity, cache policy, run date and metric definitions. Missing historical
+   information has a named unknown and affected claims. Today's config or files
+   are never asserted to be the bytes used historically without evidence.
+4. SEC, controlled invoices, presentations, synthetic decks, arXiv, commercial and
+   frontier pilots, and other retained families remain separately addressable.
+   Existing results are not rewritten. Current report labels are reconciled with
+   producing evidence, preserving useful diagnostic claims when stronger claims
+   cannot be supported.
+5. The SEC subset's pypdfium2-dependent selection and possible PDF/HTML content
+   mismatch are disclosed and tested where evidence permits. That subset is not
+   represented as a parser-independent sample or an exact visual reference.
+6. The first consequential run uses all 100 retained invoice source documents as
+   its fixed population, with pypdf and pdfplumber as the required local baseline
+   parsers. Every parser receives the same frozen PDFs and references. Selection
+   and reference eligibility are established before parser execution. No document
+   is removed because an evaluated parser performs poorly.
+7. The invoice references identify invoice number, vendor, due date, totals and
+   line-item records including their headers and values from retained DOCX source
+   content, with metadata used as a cross-check rather than an unquestioned oracle.
+   They are distinct from the existing PDF-extracted reference directory. Source,
+   metadata and PDF disagreement is recorded and resolved before a strong claim.
+   When a source must be rendered again, it creates a separately identified new
+   rendition and run; it never silently replaces a retained PDF.
+8. A reference qualification record covers all 100 sources and PDF renditions,
+   including visibility, truncation, content alignment and pagination concerns.
+   Qualification cannot use a compared parser's score as its inclusion rule.
+   Rendered spot checks cover each region, source template and complexity present,
+   and every detected disagreement. Any unresolved reference makes its task score
+   unavailable and remains visible in the fixed-population coverage denominator.
+   The milestone cannot claim a strong 100-document comparison while such gaps
+   remain unresolved.
+9. A fixed downstream extractor is declared, versioned and held constant across
+   parsers. Its input is exclusively the actual parser output. Exact field and
+   header/value associations, missing and extra records, and document task success
+   are reported separately from text similarity. It cannot read reference values
+   while extracting. Numeric/date normalization is specified and cannot equate
+   different amounts, dates or headers. Unsupported table forms have explicit
+    unavailable status when the reference contract itself cannot describe them,
+    not manufactured scores. A parser that drops an eligible table has failed the
+    recovery task; its capability cannot remove that task from the denominator.
+10. The run contains at least 200 planned primary attempts, plus separately marked
+    corrupt, empty-output and enforced-timeout controls. It records success with
+    content, success with empty content, parser failure, timeout, and any attempt
+    that could not start. Interrupted execution records incomplete work rather
+    than reporting completion. Controls do not inflate the primary population.
+11. Coverage and task success use the fixed reference-eligible population, retaining
+    parser failures/timeouts/empty outputs as unsuccessful task outcomes. Every
+    quality metric also reports its exact eligible and scored document IDs and
+    numerator/denominator. A paired comparison uses identical IDs; any common
+    successful subset is a secondary diagnostic with its selection disclosed.
+    No aggregate ranks parsers on different scored subsets without that disclosure.
+12. Parser/backend package versions, PDFsmith distribution and declared source
+    versions, source revision/dirty-state information, implementation hashes,
+    dependency snapshot, options, extractor, grader and normalizer identity are
+    recorded. A disagreement in PDFsmith metadata is explained or explicitly
+    unresolved with actual implementation identity preserved. This project does
+    not change PDFsmith's API or release metadata on its owner's behalf.
+13. New measurements distinguish fresh execution, cached replay and checkpoint
+    reuse. Cache identity includes all output-affecting backend/options/source
+    information, or the run explicitly bypasses both reads and writes. A changed
+    option, backend identity, input or reference cannot silently reuse an unrelated
+    checkpoint or output. Historical durations with unknown cache provenance are
+    marked unsuitable for current latency comparisons.
+14. Successful and failed call durations have declared boundaries; unavailable
+    historical failure duration is null. Fresh timing includes declared cold/import
+    effects. A single execution yields observations, not an advertised latency
+    ranking. Any later latency comparison requires repeats, warmup policy, hardware
+    and resource context, and correctly configured comparable work.
+15. Invalid reference generation, JSON serialization, validation, or publication of
+    a run bundle leaves prior valid artifacts byte-for-byte intact. A failed new
+    operation retains useful diagnostics under an explicitly incomplete run and
+    cannot register a partial bundle as complete. A deliberate I/O/serialization
+    failure reproduces that contract through the actual producing pipeline.
+16. Regression checks fail when the actual producing code emits each identified
+    defect, then pass after repair. Checks cover selection, reference/output
+    separation, cache/options identity, checkpoint compatibility, denominator
+    accounting, empty outputs, timeout classification, output collisions and
+    atomic export preservation. Existing CLI and readable historical result formats
+    continue to work. Focused tests and lint run before checkpoint closure.
+17. A second execution of the frozen run protocol produces the same input/reference
+    hashes and deterministic task aggregates, or records a precise nondeterminism
+    explanation. Offline regrading of retained parser outputs reproduces aggregates
+    without parsing or paid calls. A relocation exercise checks that the replay does
+    not depend on workstation-specific absolute paths or live PDFsmith checkout.
+18. The generated report/export lets a visitor find a document-family/task result,
+    inspect failures and example outputs, identify why an alternative parser changes
+    the outcome, and reproduce or regrade it. Each numerical statement resolves to
+    run ID, immutable artifact/hash and JSON pointer, metric and denominator,
+    evidence tier, and supported/unsupported interpretation. The report identifies
+    how extractor behavior affects the comparison rather than attributing every
+    failure to the parser.
+19. OCR/scans, complex tables/charts, decks and academic papers have bounded follow-on
+    protocols with input selection, reference needs, task, parser eligibility,
+    acceptance and spending gate. They are not implied coverage of the first run.
+    ParseBench reuse is assessed against pinned code/data, license and interface
+    requirements; neither its aggregate scores nor this project's historical scores
+    are presented as results measured in this reconstruction.
+20. The report contains a worked internal-benchmark design example: a declared
+    use case and document distribution; why the inputs fit or fail to fit it;
+    alternatives for establishing references; a task and fixed extractor/grader;
+    concrete examples of how selection, reference noise and missing failures change
+    conclusions; and instructions for applying the protocol to a team's permitted
+    documents. These instructions reuse the existing benchmark surface and avoid
+    creating a speculative general-purpose framework. The report distinguishes
+    demonstrated decisions, historical lessons and untested recommendations.
+21. The editorial handoff identifies the relationship to the retained article
+    `what-llm-and-agent-benchmarks-measure`: public benchmark scores are conditional
+    on data, configuration and scoring, and internal evaluation requires an explicit
+    use-case contract. It supplies usable findings/examples rather than rewriting
+    that manuscript or promising a website change. Consulting relevance follows
+    from the demonstrated evaluation work; no causal business-impact claim is made.
+
+## In scope
+
+- Benchmark-design lessons and a worked internal-evaluation protocol grounded in
+  actual preserved and newly executed evidence, supporting practical parser
+  selection and Applied AI's consulting work.
+- Existing-code reconciliation, registry/appendix generation and reproducible
+  evidence tooling, with preserving error behavior and actual-pipeline regressions.
+- A consequential local structured-document comparison and project-local technical
+  report suitable for later editorial and website integration.
+- ParseBench-informed scope and reuse assessment, with a dated primary-source
+  account separating its launch paper from current software/data.
+- Bounded follow-on research protocols; progress, review dispositions and handoff.
+
+## Out of scope
+
+- A universal leaderboard, a claim to outperform ParseBench, or contemporary
+  cloud/frontier results inferred from old runs.
+- Paid calls, including judge/normalization calls or free-credit APIs without
+  explicit provider/run and Stefan-approved spending authority.
+- Source public-main merge/release, article publication, scheduling, production
+  deployment, website CMS changes, or rewriting retained editorial manuscripts.
+- New agents or chats, production/confidential documents, or changes to PDFsmith's
+  separate API/packaging ownership.
+- A new UI, generalized workflow framework, exhaustive new corpus collection or
+  all-family rerun in the first engineering milestone.
+
+## Constraints
+
+- Work in this existing checkout and work unit. Preserve inherited staged/dirty
+  work; do not reset, stash, replay a review-branch patch blindly, or switch another
+  worker's checkout. Own changes must be reviewable apart from inherited changes.
+- Local, unpaid execution first. Use uv, existing parser abstractions and atomic
+  persistence. Extend inventory and story exports instead of maintaining a parallel
+  benchmark database or new parser framework.
+- Keep progress compact in `progress.txt`; version owned checkpoints according to
+  verified repository visibility. This repository is PUBLIC as checked on October
+  14, 2026. Public-main merge remains unapproved. No secrets or confidential
+  evidence enter a review packet or public branch.
+- Specifications and plans can be revised after review; raw retained evidence and
+  original experimental checkpoints cannot be overwritten by those revisions.
+- No minimum performance score is needed for a valid comparison. A tied or poor
+  result is acceptable if the protocol and export meet the contract.
+
+## Environment / prior art
+
+- `PROJECT_ORIENTATION.md` and `.workspace/reference/pdfbench_benchmark_story_brief.md`
+  establish the practical mission and preservation requirements.
+- `.workspace/issues/2026-10-09-document-ai-public-reconstruction.md` specifies
+  claim provenance, reproducibility and editorial boundaries.
+- `pdf_bench/inventory.py` already inventories corpora/configs/results and flags
+  missing configs/versions and inconsistent counts. `inventory_overrides.yaml`
+  contains current classifications to reconcile, not trust blindly.
+- `scripts/build_internal_benchmark_story.py` already generates the story JSON and
+  appendix. Its hard-coded SLATE and means over each parser's available numeric
+  rows need reconciliation with claims, common inputs and metric coverage.
+- `pdf_bench/runner.py`, `loader.py`, `systems/pdfsmith_adapter.py` and
+  `utils/caching.py` provide execution, aliasing, checkpoints and cached parsing.
+  `persistence.py` contains the already reviewed atomic writer.
+- `builders/generate_invoice_corpus.py`, `builders/invoice/`, and the retained
+  `corpus/business/invoices/{docx,pdfs,metadata,ground_truth,ground_truth_backup}`
+  provide 100 source documents and competing reference artifacts. LibreOffice is
+  available, but source/PDF/reference alignment still requires qualification.
+- Starting independently reviewed revision is
+  `d9305d6100e5288fa2fc255e088bfd8e22664b98` on
+  `codex/source-first-pdf-evaluation-2026-10-13`. Its changes are mirrored in this
+  dirty checkout; checked-out base is `bf8285b4cf4e69295eda2391665d54d9077d4d0a`.
+- The earlier run is `.workspace/work/2026-10-13-local-parser-evaluation/run-03/`.
+  Its comparison SHA-256 is
+  `1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242`.
+  The coordinator reports 48 focused passing tests for that bounded checkpoint;
+  that is prior evidence, not a fresh run or review of this reconstruction plan.
+- External prior art: [ParseBench launch](https://www.llamaindex.ai/blog/parsebench),
+  [paper v3](https://arxiv.org/html/2604.08538v3),
+  [code snapshot](https://github.com/run-llama/ParseBench/tree/d423e529ae329317bcd33c650b367acfb60e6620),
+  [dataset snapshot](https://huggingface.co/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc).
+- Related retained editorial work is
+  `/home/stefan/applied-ai/content-marketing/topics/evaluation-and-verification/publications/what-llm-and-agent-benchmarks-measure/{brief.md,draft.md}`.
+  Website integration is owned through the existing specification at
+  `/home/stefan/applied-ai/website/.workspace/work/2026-10-13-project-restoration/spec.md`.
+
+## Existing surface (must not break)
+
+- Original corpora, source/reference versions, raw results, parser outputs and
+  historical run chronology remain available with their existing bytes.
+- Existing BenchmarkRunner, CLI config/aliases, inventory and result loading
+  remain usable. New fields distinguish unknown old values from measured new ones.
+- The atomic persistence repair and reviewed local experiment remain preserved.
+- Editorial artifacts under content-marketing and website production remain owned
+  by their existing conversations. This owner supplies exact exports and limits.
+- No unrelated inherited change is included in an owned checkpoint by accident.
+
+## Open questions
+
+- Positioning is resolved by Stefan's October 14 replies: practical parser selection
+  and instruction in building use-case-specific internal benchmarks. External
+  reviewers may challenge whether the proposed demonstration serves that goal;
+  full ParseBench replication is not the default reconstruction scope.
+- External reviews are not yet returned. Stefan submits the packet; this owner
+  retains/disposes reports and resolves correctness blockers. This blocks substantial
+  reconstruction implementation, not the review deliverables.
+- Reference qualification may find source/PDF disagreements. This owner resolves
+  them by recorded source inspection and explicit new renditions, preserving the
+  fixed population. An unresolved truth disagreement blocks strong affected
+  scores, not preservation of the run's diagnostic evidence.
+- Current OCR/model availability, ParseBench dependency compatibility and licenses
+  require bounded checks in follow-on work. No downloads or paid runs are assumed.
+- Cloud/frontier comparison is deferred. Stefan must approve the exact inputs,
+  provider/model/configuration and spend ceiling before those calls.
+
+## Next actions
+
+Stefan submits the completed review packet to GPT and Claude and returns both
+reports before affected reconstruction implementation begins.
+
+
+===== COMPLETE plan.md; SHA-256 dbaadeb702c1815d7e522a4fd452db0749c5b6f2f7fbfb17884e508bc64ed4ee =====
+
+# Plan: PDF-Bench reconstruction and internal-benchmark design demonstration
+
+This decomposes `spec.md`, seeded by the reconstruction commission and Stefan's
+October 14 decision to focus on practical parser selection and teaching teams how
+to design their own document benchmark. The first deliverable is this plan and a
+self-contained review packet. No substantial implementation starts before actual
+GPT and Claude reports are returned and correctness blockers are disposed.
+
+## Gating and implementation boundaries
+
+Registry reconciliation -> qualify source references -> establish the downstream
+task contract -> repair execution/provenance -> execute a consequential comparison
+-> generate an inspectable report and export. The ordered issues below define one
+engineering milestone. Later research coverage and release approvals are separate.
+The first invoice run is a worked example, not all-family project completion.
+
+Reuse `pdf_bench/inventory.py`, the existing story generator, BenchmarkRunner,
+PDFsmith adapter, caching utilities and atomic persistence. Prefer extending these
+surfaces over a second runner, database or parser abstraction. The smoke wrapper
+is prior evidence and a useful failure example, not the new architecture.
+
+Existing checked-out base is `bf8285b4cf4e69295eda2391665d54d9077d4d0a`.
+Reviewed checkpoint is `d9305d6100e5288fa2fc255e088bfd8e22664b98`.
+Dirty inherited files and untracked corpora are preserved. Exact implementation
+and evidence hashes, rather than this base label alone, define the review input.
+An owned checkpoint must not stage inherited changes incidentally. No source-main
+merge, paid call or website/editorial write is included.
+
+## Review dispositions and progress
+
+Before Issue 1, retain both returned reviews unchanged and record each finding,
+severity, affected acceptance criterion/issue, disposition and evidence required.
+Resolve correctness blockers before the dependent issue. Testable alternatives
+can be adopted; optional extensions go to later scope without restarting planning.
+Record explicit unresolved disagreements. `progress.txt` records current milestone,
+changes, actual checks, next owner action and decisions needed. A review requested
+or a prior coordinator check is never recorded as a returned specification review.
+
+## Verification policy
+
+Reproduce defects through existing CLI/generator/runner paths before repairs.
+The specific proposed test files below will be created by their issues, not assumed
+to exist now. Show red/green for actual producing-code defects, not source-string
+assertions or artificial records that the pipeline cannot produce. Timing remains
+descriptive until a repeat protocol and resource boundaries justify comparison.
+
+Run focused checks per issue, `uv run ruff format .` and `uv run ruff check .` at
+implementation checkpoints, and inspect owned diffs. Preserve unrelated work while
+fixing observed hygiene under the reviewed scope. Before code changes, inventory
+the inherited lint/test baseline and identify ownership. Do not run global
+formatting over another worker's dirty files during review preparation.
+
+### Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example`
+
+**Issue 1 - Reconcile retained runs into one authoritative registry**
+
+Depends on actual external review dispositions. Extend the existing inventory and
+replace the story generator's independently maintained SLATE with registry-backed
+selection. Reconcile result/config links, checkpoints and merges, input/reference
+availability, historical selection, backend and wrapper identity, cache/timing
+unknowns and metric coverage. Keep all families and claimed historical values.
+Record conflicting descriptions without asserting the entire old run is false.
+Do not reconstruct a past version from today's config. Establish an artifact
+classification and claim-specific tier with reasons and evidence paths.
+
+Files: existing inventory, story generator, inventory overrides, configuration and
+result schemas as necessary; proposed `tests/test_run_registry.py`; generated
+registry/appendix under a new versioned evidence directory. Retained results stay
+unchanged. Acceptance criteria 2-5 and historical parts of 12-14 apply.
+
+Verify: reproduce generator means with uneven metric coverage and the real SEC
+selection/reference-description disagreements. The repaired generator must expose
+eligible/scored IDs and missing provenance instead of silently ranking unequal
+subsets. `uv run pytest tests/test_inventory.py tests/test_run_registry.py -q`
+must pass, including unreadable/unknown schema, duplicate IDs, invalid summary,
+missing config, checkpoint classification and failed regeneration preserving the
+previous appendix. Registry coverage equals the independently enumerated retained
+artifact set. Raw artifact hashes remain unchanged.
+
+### Premises
+
+Input: retained artifacts
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | One discovered artifact, classified separately from the run it may describe; a result row identifies an input/parser attempt. | definitional |
+| absent-record | Missing rows are unknown unless a recorded manifest proves the pair was planned; absence is never success. | definitional |
+| ordering-spacing | Directory or JSON row order supplies no ranking or chronology; documented timestamps and derivation links do. | definitional |
+| entity-identity | Run/artifact hash, rendition/input identity and backend/config identity distinguish apparently equal filenames. | definitional |
+| known-at | Only provenance available from retained bytes or recorded history describes a past run; current observations are separately dated. | definitional |
+| institution | The recorded producing pipeline/config and this specification govern interpretation; orientation tier labels are hypotheses. | empirical |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| retained-artifacts-accounted | Every retained artifact is addressable with explicit kind, provenance gaps and claim tier. | Discovery silently misses a file, merges overwrite chronology, or an override conceals missing references. |
+| historical-claims-scoped | Historical comparisons expose selection, reference and metric/timing limits beside results. | A generator averages unequal rows or labels a present-day source as the historical source. |
+
+Closes: retained-artifacts.record, retained-artifacts.absent-record, retained-artifacts.ordering-spacing, retained-artifacts.entity-identity, retained-artifacts.known-at, retained-artifacts.institution, retained-artifacts-accounted, historical-claims-scoped
+
+**Issue 2 - Freeze and qualify independent invoice references**
+
+Depends on Issue 1. Use the fixed 100 retained invoice IDs. Inspect actual DOCX
+paragraph/table source and metadata, not the current PDF-extracted ground_truth
+directory, to establish field and line-item references before parser execution.
+Freeze a manifest containing all source/PDF/reference hashes and applicability.
+Resolve date, currency, rounding, totals, duplicate rows and header identity by
+inspecting source and rendered PDFs. Source-DOCX order is not automatically PDF
+reading order. Text similarity remains diagnostic with that limit stated.
+
+Compare available source/backup/PDF-extracted reference versions and report what
+can be established about their generators. Retained DOCX source is authoritative
+for the new semantic references only after rendition qualification. An unknown
+historical reference cannot be retroactively promoted by a new one. Where rerendering
+is needed, preserve the old PDF and identify the new rendition/converter version.
+Do not rerun random/date-dependent source generators to pretend to recover old
+truth. Make all disagreements and independent qualification evidence inspectable.
+
+Files: extend existing invoice builder/reference mechanisms where suitable;
+proposed `tests/test_invoice_reference_qualification.py`; frozen run manifest,
+semantic references and qualification record in a new run bundle. No original
+source/reference is overwritten. Acceptance criteria 6-8 and 15 apply.
+
+Verify: introduce a real generator/converter defect that changes rendered totals
+or drops source table content. The actual reference qualification pipeline must
+reject the disagreement while preserving valid prior output, and pass on the
+correct rendition. Run `uv run pytest tests/test_invoice_reference_qualification.py -q`.
+Inspect rendered examples across all observed regions/templates/complexities and
+each discrepancy. Every one of the 100 inputs has an eligibility decision before
+parser execution. Unresolved truth blocks a strong affected comparison.
+
+### Premises
+
+Input: invoice sources
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | One retained DOCX/PDF invoice rendition plus source-derived field and line-item facts and a qualification record. | definitional |
+| absent-record | Missing or inconsistent source truth is an explicit reference gap, not an inferred parser error or reason to hide the document. | definitional |
+| ordering-spacing | Source table order carries row association; harmless formatting is normalized only under the frozen contract. | empirical |
+| entity-identity | Invoice ID plus DOCX, rendition and reference hashes; repeated item descriptions do not collapse distinct rows. | definitional |
+| known-at | References, applicability and input set are frozen before evaluated parser outputs exist. | definitional |
+| institution | Source semantics and displayed PDF content decide truth; metadata and old extraction are cross-checks rather than independent oracles. | empirical |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| references-independent | New task truth is established from qualified sources without evaluated-output leakage. | Reference builder reads parser outputs, a PDF rendition disagrees, or metadata is assumed correct without inspection. |
+| reference-generation-preserves | Failed qualification or generation preserves existing valid references and inputs. | Conversion writes over an original PDF or validation occurs after replacing the completed bundle. |
+
+Closes: invoice-sources.record, invoice-sources.absent-record, invoice-sources.ordering-spacing, invoice-sources.entity-identity, invoice-sources.known-at, invoice-sources.institution, references-independent, reference-generation-preserves
+
+**Issue 3 - Establish task scoring that detects wrong associations**
+
+Depends on Issue 2. Specify one downstream extractor over actual parser Markdown/text
+and one independent grader over its extracted fields/records. Keep extraction
+blind to expected values. Version and freeze normalization, required fields, row
+matching, extra/missing row penalties and all-fields/all-records document success.
+Test semantic correctness separately from edit similarity/chrF++. Reuse a pinned
+established record metric only if its input semantics match; do not implement a
+new generic TableRecordMatch framework to satisfy this one invoice task.
+
+No structured rows from an otherwise completed parser is zero task recovery for
+eligible records. Unsupported reference semantics is distinct from unsupported
+parser capability. Report downstream extractor limitations alongside parser scores.
+Make formatting-only acceptable changes pass while wrong values, shifted headers,
+ambiguous duplicates and omissions fail. Acceptance criteria 9, 11 and 16 apply.
+
+Files: extend the existing task-evaluation mechanism, proposed
+`tests/test_invoice_task_evaluation.py`, frozen extractor/grader protocol and hashes.
+
+Verify: use real produced parser outputs and producing-path mutations that reorder
+labels/values, transpose headers, drop/duplicate rows or corrupt an amount. The
+task check must fail for those errors even when value tokens remain present, and
+pass for correct output and declared harmless formatting. Run
+`uv run pytest tests/test_invoice_task_evaluation.py tests/test_local_evaluation.py -q`.
+Demonstrate extractor blindness by withholding the reference until extraction ends;
+change reference facts and confirm the extracted prediction does not change.
+
+### Premises
+
+Input: extracted invoice records
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A prediction contains label/value fields and header-associated line-item records extracted solely from parser output. | definitional |
+| absent-record | Missing eligible field or row is a task error; missing reference truth is separately unavailable. | definitional |
+| ordering-spacing | Whitespace/currency/date normalization is fixed before execution; row reordering may preserve record semantics but header/value swaps do not. | empirical |
+| entity-identity | Run, input and parser/config hashes identify prediction; source row multiplicity remains meaningful even for equal descriptions. | definitional |
+| known-at | Predictions precede access to truth for grading; the fixed extraction/normalization contract precedes scored execution. | definitional |
+| institution | The declared downstream task and independently frozen source facts define acceptance, not a parser's preferred representation. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| task-checks-association | Task scoring rejects wrong field/record associations without rejecting declared harmless representation changes. | A value-token check passes transposed headers or normalization equates different amounts. |
+| extractor-blind | Expected answers cannot affect extracted predictions. | Extractor reads source metadata or uses grader truth as a parsing hint. |
+
+Closes: extracted-invoice-records.record, extracted-invoice-records.absent-record, extracted-invoice-records.ordering-spacing, extracted-invoice-records.entity-identity, extracted-invoice-records.known-at, extracted-invoice-records.institution, task-checks-association, extractor-blind
+
+**Issue 4 - Repair execution identity, cache handling and failure accounting**
+
+Depends on Issue 1; can be designed while Issues 2-3 qualify truth, but execution
+of the scored run depends on all three. Extend existing runner/adapter/persistence
+to record backend versions/options/source identity, cache/checkpoint mode, planned
+attempts, empty outputs, failures/timeouts and duration boundaries. The scored
+run explicitly bypasses cache reads/writes and checkpoint reuse. Normal cached
+operation must still distinguish output-affecting options/backend identity. Any
+reusable checkpoint must validate matching protocol/inputs/references, not only
+parser name and doc_id. Unknown old cache timing stays unknown.
+
+Keep separate parser output locations, including same-stem inputs and worker
+execution. Record failed durations correctly rather than default zero. Use existing
+atomic writer and validate bundle completeness before registering a completed run.
+Keep an incomplete attempt journal for interruption/failure, without overwriting
+old evidence. Report both PDFsmith metadata versions and exact used backend source;
+resolve local dependency identity without editing that sibling's API/metadata.
+
+Files: runner, loader, adapter, cache and persistence where needed; existing runner,
+cache/persistence tests and proposed `tests/test_run_provenance.py`. Acceptance
+criteria 10-16 apply.
+
+Verify: reproduce stale-cache behavior by changing a real backend option and
+submitting the same PDF through the existing adapter; reproduce incompatible
+checkpoint reuse through the actual runner. After repair, cached and fresh paths
+agree for matched identity and differ or reject when identity changes. Actual
+empty/corrupt inputs and an enforced delayed backend control must record distinct
+outcomes. Inject serializer and I/O failure through producing code and verify
+old completed artifacts remain byte-identical. Run
+`uv run pytest tests/test_runner.py tests/test_local_evaluation.py tests/test_run_provenance.py -q`
+plus focused existing cache/persistence tests discovered during implementation.
+No fixture that only mocks the new logic establishes closure.
+
+### Premises
+
+Input: parser attempts
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | One planned input/parser/config pair with an explicit execution mode, terminal outcome or incomplete status, and artifact/timing evidence. | definitional |
+| absent-record | A planned but absent terminal record means incomplete execution, never a completed success; old manifests may not establish planned work. | definitional |
+| ordering-spacing | Execution order and cold/warm effects are recorded; parallel completion order does not change identity or aggregates. | empirical |
+| entity-identity | Input/reference/protocol, backend/options and implementation identities decide cache and checkpoint compatibility. | empirical |
+| known-at | Manifest/backend identity exists before execution; output/outcome/timing becomes known at completion or interruption and is recorded then. | definitional |
+| institution | This run protocol decides applicability, timeout, completion and timing boundaries; PDFsmith's actual installed backend decides implementation identity. | empirical |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| execution-not-silent-replay | Fresh work cannot silently read unrelated cached/checkpoint output. | Cache ignores a backend option/version or a checkpoint accepts changed input/reference bytes. |
+| failures-visible | Every planned pair has inspectable terminal or incomplete status, with empty output distinct from failure and unavailable timing distinct from zero. | Exception paths omit records, timeout is inferred only from arbitrary error text, or empty output is counted as task success. |
+| bundle-atomic | A failed generation cannot replace a previously valid completed bundle or register an incomplete one as complete. | Registry switches before all artifacts validate or a partial file replaces its previous version. |
+
+Closes: parser-attempts.record, parser-attempts.absent-record, parser-attempts.ordering-spacing, parser-attempts.entity-identity, parser-attempts.known-at, parser-attempts.institution, execution-not-silent-replay, failures-visible, bundle-atomic
+
+**Issue 5 - Execute and reproduce the fixed invoice comparison**
+
+Depends on Issues 2-4. Execute all 100 frozen invoice inputs with pypdf and
+pdfplumber on shared bytes, sequentially and without paid calls. Record at least
+200 planned primary pairs, plus separately labelled actual corrupt, empty and
+enforced-timeout controls. Fixed source fields and line-item records determine the
+task score; real parser outputs determine the predictions. Control expectations
+come from their producing paths, not benchmark-wide averages.
+
+Export planned, attempted, complete/nonempty, empty, failed, timed-out, incomplete,
+reference-eligible and scored counts/IDs. Primary task success includes failed,
+timed-out and empty attempts as unsuccessful on eligible inputs. Report paired
+quality on matching ID sets and common-success diagnostics separately. Report
+historical/new evidence separately, backend/configuration identity, hardware,
+resource/time boundaries and individual timings without claiming a speed winner.
+
+Run a second fresh execution over the frozen inputs and offline regrade retained
+outputs; input/reference hashes and deterministic aggregates must match or a
+precise nondeterminism finding must remain unresolved. Exercise replay from a
+different directory with declared dependencies, not absolute local checkout paths.
+Strong comparison closure requires resolving reference gaps, not quietly lowering
+the denominator. Acceptance criteria 6-14 and 17 apply.
+
+Files: versioned manifest, outputs, attempt journal, run result, replay instructions
+and environment snapshot; proposed `tests/test_reconstruction_export.py` integration
+checks using the actual run producing path. Do not overwrite run-03 or old results.
+
+Verify: execute the frozen CLI protocol into new run directories; audit every
+planned pair and metric denominator from independent artifact enumeration; compare
+two fresh runs and a replay. Run `uv run pytest tests/test_reconstruction_export.py -q`.
+The reported result is allowed to be a tie, poor performance or a constrained
+extractor failure. No score target or favorable finding is required.
+
+### Premises
+
+Input: invoice comparison
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A frozen input/parser attempt with task and diagnostic metrics and a source-linked reference decision. | definitional |
+| absent-record | Missing planned attempts remain incomplete; absent applicable metrics expose a reason and denominator, never fabricated zero or success. | definitional |
+| ordering-spacing | Fixed population and task apply to both parsers; comparable scores use identical IDs and timing cold/order context remains explicit. | empirical |
+| entity-identity | Run ID and artifact hashes identify primary population separately from controls and any rerendered input. | definitional |
+| known-at | Eligibility is frozen before outputs; reported observations derive only from recorded executed attempts and qualified truth. | empirical |
+| institution | Frozen protocol defines population and scores; the retained corpus cannot stand for all real vendors or current paid parsers. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false | Kind |
+|---|---|---|---|
+| invoice-results-reproducible | Reported task/coverage aggregates and per-attempt duration observations reproduce from the actual run artifacts under declared boundaries. | Failed calls disappear, regrading reads new references, timing is cache replay, or relocated replay uses a different backend. | measured |
+
+### Measured: invoice-results-reproducible
+
+| Question | Answer |
+|---|---|
+| limiter | Counts are bounded by fixed planned/eligible inputs; timing observations depend on backend parsing and declared machine conditions, verified during the run rather than asserted from code. |
+| alternatives | Cache replay, cold imports, downstream extractor behavior, source mismatch, failed fast calls and machine contention can alter apparent performance; each is recorded or tested separately. |
+| work-happened | Retain input/output hashes, terminal attempt records and semantic prediction checks; regrade used outputs and confirm both parsers actually ran with cache reads/writes disabled. |
+| configured-alike | Identical PDF bytes/reference/task/normalization, fixed per-parser versions/options, sequential uncached mode and declared timeout/resource limits; report configuration comparisons rather than isolated algorithm merit. |
+| within-limits | Successes cannot exceed eligible/planned counts; scored IDs are subsets of eligible IDs; positive call durations and total sequential wall time must reconcile with declared measurement regions. No speedup claim follows from single-call observations. |
+
+Closes: invoice-comparison.record, invoice-comparison.absent-record, invoice-comparison.ordering-spacing, invoice-comparison.entity-identity, invoice-comparison.known-at, invoice-comparison.institution, invoice-results-reproducible
+
+**Issue 6 - Generate benchmark-design lessons, appendix and integration export**
+
+Depends on Issues 1 and 5. Generate the appendix and structured export from the
+authoritative registry and qualified run. Write a project-local technical report
+whose worked example teaches internal-benchmark design: define the team's task
+and distribution, assess corpus fit, choose and validate reference truth, freeze
+extraction/scoring, retain failures, and interpret results within operating limits.
+Use actual historical selection/reference/cache mistakes and new counterexamples
+to show which conclusions change. Distinguish observed findings, historical
+lessons and untested recommendations; include actionable reproducible instructions.
+
+Include all retained families in their tiers, plus bounded next protocols below.
+Explain why semantic metrics and dataset size alone do not establish use-case fit.
+Acknowledge ParseBench without inventing gaps in its capabilities or duplicating
+its broad leaderboard. Record reusable upstream interfaces/metrics and what still
+requires local tasks/references. Link the checked retained benchmark-interpretation
+article for editorial context, with no manuscript/CMS changes.
+
+Files: existing story/export generator and inventory-driven outputs; project-local
+technical report and example protocol; one concise `integration-handoff.txt`.
+Export claim objects link run/artifact hashes/JSON pointers, input/reference
+provenance, denominators, versions/options/cache/time boundaries, tier and supported
+interpretation. Consumer renderers receive paths/hashes rather than hidden absolute
+runtime dependencies. Acceptance criteria 18-21 apply.
+
+Verify: every reported number regenerates from source-linked rows; independently
+recompute selected numerator/denominator pairs and test stale/missing/tampered
+artifacts through the actual generator. `uv run pytest tests/test_reconstruction_export.py tests/test_inventory.py -q`
+must pass. Review the report against actual results and run the documented replay
+from its instructions. Export preservation and unknown/null handling remain tested.
+Handoff identifies exact commit, bundle hashes, visitor task and claim limits.
+
+### Premises
+
+Input: report evidence
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A report/export claim with run/artifact/JSON-pointer provenance, exact population, task/metric, tier and limitation. | definitional |
+| absent-record | Missing evidence prevents that numerical claim; diagnostic history and supported non-numerical lessons remain usable. | definitional |
+| ordering-spacing | Families and task protocols are separate sections; no global rank or undated mixing of old and new numbers. | definitional |
+| entity-identity | A claim's run ID, source/artifact hashes and pointer identify the underlying measurement, not a display name. | empirical |
+| known-at | Claims are dated by actual executed evidence; author review and publication state remain separate. | definitional |
+| institution | Source owner verifies evidence; editorial and website owners decide synthesis/rendering; Stefan owns public release and spending approval. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| report-inspectable | An engineer can inspect and reproduce each declared result and understand the decision it informs. | Numbers lack matching pointers/denominators, instructions fail offline, or failures are visible only in hidden artifacts. |
+| design-lessons-demonstrated | The worked example explains internal-benchmark design through actual decisions and counterexamples. | The report offers only limitation prose, presents a template as validated on real vendors, or invents an operational result. |
+
+Closes: report-evidence.record, report-evidence.absent-record, report-evidence.ordering-spacing, report-evidence.entity-identity, report-evidence.known-at, report-evidence.institution, report-inspectable, design-lessons-demonstrated
+
+## Bounded follow-on scope, separate from the first engineering milestone
+
+The following are protocols to qualify, not promised October results. Each gets
+its own reviewed input/reference/configuration manifest before execution. No paid
+call, large download or model installation is assumed available.
+
+| Track | Fixed candidate inputs and task | Reference and comparison | Completion and gate |
+|---|---|---|---|
+| Scans/OCR | Twenty qualified invoices selected by source metadata across observed templates/complexities, rendered as image-only PDFs at 150 and 300 dpi; same field/row recovery task. | Reuse independently qualified source facts; keep paired digital/raster hashes. Compare the no-OCR baseline with two installed local OCR-capable configurations after actual capability/version checks. | Report paired task recovery, OCR omissions, empties/timeouts and page counts. If suitable local models are absent, prepare the exact model/download/resource request instead of claiming OCR coverage. |
+| Complex tables/charts | Thirty pinned ParseBench table examples selected by reference-defined header/merge/multipage categories, plus a separately scoped ten-chart probe. | Assess reuse of pinned upstream GriTS/record matching and chart rules with declared normalization/applicability; inspect annotations before outputs. Compare two suitable available local configurations on shared inputs. | Scores distinguish detected, recovered, wrong associations and unsupported reference forms. No access to annotated answers during extraction. Document source/license/annotation limits. Chart incapability is a measured outcome, not exclusion. |
+| Presentations/decks | Qualify the ten retained synthetic source-first investor decks; task is slide-boundary/title/bullet ordering and exact chart/table facts where source truth exists. | Preserve PPTX/PDF pair identity; independently qualify rendering and source references. Compare two suitable local parsers. Keep public legacy decks as a distinct directional track. | Report source/template realism and task failures; do not call the synthetic ten-deck result representative of corporate presentations. Resolve missing pairs before strong scores. |
+| arXiv | Qualify the ten retained academic inputs and exact source revisions; task is reading order and equation/table recovery on those papers. | Audit LaTeX/Pandoc source-to-PDF agreement and unsupported formulas; compare two suitable local configurations. Never use HTML from another paper revision as exact truth. | Separate equation/text/structure denominators and source-coverage gaps. Technical-paper conclusions remain separate from business-invoice recommendations. |
+| Cloud/frontier | Choose one of the qualified task protocols only after a specific remaining decision requires paid comparison. | Exact provider/model/SDK/config/prompt, shared frozen inputs, retries/cache policy and cost accounting. Inspect a one-document pilot first. | Stefan approves maximum total spend and stop rules before calls. Report failures and actual costs; no historical paid pilot becomes a current winner. |
+
+SEC follow-on can use a parser-independent source/provenance rule over the retained
+catalog, audited PDF/HTML spans and a fixed information-extraction task. It does
+not reuse the pypdfium2 score threshold as a new impartial selection rule.
+
+## Next actions
+
+Stefan submits the review packet to GPT and Claude and returns both reports.
+No spending, publication or deployment decision is needed for review preparation.
+
+
+===== EXACT REVIEW INPUT MANIFEST =====
+{
+  "prepared_at": "2026-10-14T23:15:32.908526+00:00",
+  "base_revision": "bf8285b4cf4e69295eda2391665d54d9077d4d0a",
+  "branch": "main",
+  "origin_main_observed": "6a6b01a9482b4b019d1267fb672a76629bdc2fcf",
+  "reviewed_revision": "d9305d6100e5288fa2fc255e088bfd8e22664b98",
+  "source_identity_warning": "Dirty working tree: base revision alone does not version inputs",
+  "tracked_diff_sha256": "d5299bc656107d2c669bd2429f981dada3bbff7d031cd3d95a2239e70838799f",
+  "inputs": {
+    "pdf_bench/persistence.py": {
+      "sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "bytes": 5863
+    },
+    "pdf_bench/systems/pdfsmith_adapter.py": {
+      "sha256": "a6dc60a2c3336ddec3f04a5979cffa8a8b5c6b9252076c89baeb9d4bfe050c0a",
+      "bytes": 6256
+    },
+    "pdf_bench/utils/caching.py": {
+      "sha256": "ac6b0b6a12b4262dc2b7f33bbf34ad7d12ab810dfbcbd70e34c0f9a621b95bed",
+      "bytes": 14740
+    },
+    "pdf_bench/runner.py": {
+      "sha256": "7f42b008aca79ed560f0033821b7b832b97068053b697f24c96fa6e75d212be9",
+      "bytes": 25342
+    },
+    "pdf_bench/inventory.py": {
+      "sha256": "90c87281bd9a7788bb88302829b000dfcab02ee84a1004e819d8cf17b90b169a",
+      "bytes": 34968
+    },
+    "scripts/build_internal_benchmark_story.py": {
+      "sha256": "d9580283c1bd0115aeb494305d38c6e9fcd52f50304da21fd85e82d8aa9a2f09",
+      "bytes": 14532
+    },
+    "pdf_bench/local_evaluation.py": {
+      "sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "bytes": 11455
+    },
+    "tests/test_local_evaluation.py": {
+      "sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "bytes": 3127
+    },
+    "builders/generate_invoice_corpus.py": {
+      "sha256": "997e9689fb40bdd8e8099924df9a39c18bb1a1a042e432e36028faf69bdc7388",
+      "bytes": 15033
+    },
+    "builders/invoice/data_generators.py": {
+      "sha256": "8cc8e11193446111d201e87182b2d54ccc3e93b43db041827eb8244afbc2d280",
+      "bytes": 13697
+    },
+    "benchmarks/sec_filings_47docs.yaml": {
+      "sha256": "5f3a0b63762522d38809c0f28686b35b553ae3c98b48855d5a5a8661d61a1182",
+      "bytes": 2364
+    },
+    "benchmarks/invoices_100docs_fresh.yaml": {
+      "sha256": "545b5386b7faf9e889ba6c1e75100c1fcac4097180174aa9043a885026713d58",
+      "bytes": 2127
+    },
+    ".workspace/work/2026-10-13-local-parser-evaluation/technical-report.md": {
+      "sha256": "6b4aca6ee26956f155d2c16d4e1f1297d825f0987fa08e13e8bb6276e9b34821",
+      "bytes": 6413
+    },
+    "results/sec_filings_47docs.json": {
+      "sha256": "ad41db79a24444d579cfa8dcc5cef8b5e38f2ac6be984ffff76638bb9afdd5dc",
+      "bytes": 225700
+    },
+    "results/invoices_100docs_fresh.json": {
+      "sha256": "e246ef2645072c6ee9b298bbac5b31fbdc93a26f586c2f848231067e63e3694c",
+      "bytes": 175538
+    },
+    "results/presentations_30docs.json": {
+      "sha256": "1a001008d74788f09ac3fb7fa143b5984674c1b17759aa2dc12a2b60d9af1a7b",
+      "bytes": 149262
+    },
+    "results/business_synthetic_investor_decks_subset_refresh.json": {
+      "sha256": "4446bc0835951ac265158d06b1925ca559adfe05636ee4bc2945bb9140345891",
+      "bytes": 16354
+    },
+    "results/arxiv_10docs_fresh.json": {
+      "sha256": "7ae67448f5584c8e31d747c8d74af736ae851ee6676a20aafa54386aeb7b9efb",
+      "bytes": 56077
+    },
+    "results/frontier_unified_30docs.json": {
+      "sha256": "f1a0b447aae8760cd39f9b10e7c7fce0f5c3a54e9793ccf6c3d2f311e6597db3",
+      "bytes": 42003
+    },
+    "results/frontier_premium_300p.json": {
+      "sha256": "05aca40921b6c6eecf99bb1a4fd116f3e50e82f180360ac2e84ef8c8b1a79f7a",
+      "bytes": 29490
+    },
+    "results/sec_filings_screen_all.json": {
+      "sha256": "e5dddbbb4df0cbc36c0a32ec68f71224bdd137e1712ba7e8ecab33bf540a22d0",
+      "bytes": 98750
+    },
+    "results/sec_filings_commercial_5docs.json": {
+      "sha256": "6d15752d84b0c4768d287135c26fde51bf4fa43208600b229c2f64117c422f14",
+      "bytes": 6776
+    },
+    ".workspace/work/2026-10-13-local-parser-evaluation/run-03/comparison.json": {
+      "sha256": "1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242",
+      "bytes": 9732
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/start-here.txt": {
+      "sha256": "ed34d77a436b421b1198b40a4e6e83eb5927524b00a17dbcc22fc455f0930b3b",
+      "bytes": 5926
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/review-context.txt": {
+      "sha256": "2700e124c821fc9b7c18b0acf5237f660ed024f3e1932a699284fa1740b61826",
+      "bytes": 9329
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/spec.md": {
+      "sha256": "d9e8b576afc35a351c625b202ce3314b857d392c75b7ea10dce2249bc0a8d82c",
+      "bytes": 21264
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/plan.md": {
+      "sha256": "dbaadeb702c1815d7e522a4fd452db0749c5b6f2f7fbfb17884e508bc64ed4ee",
+      "bytes": 30635
+    }
+  },
+  "reviewed_checkpoint_matches": {
+    "pdf_bench/local_evaluation.py": {
+      "reviewed_sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "working_sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "matches": true
+    },
+    "pdf_bench/persistence.py": {
+      "reviewed_sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "working_sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "matches": true
+    },
+    "pdf_bench/systems/tika_parser.py": {
+      "reviewed_sha256": "a371c2036045c0e31b586d3c2dd44f46f46b0176631ecef8bcda4fb2ce2237c9",
+      "working_sha256": "a371c2036045c0e31b586d3c2dd44f46f46b0176631ecef8bcda4fb2ce2237c9",
+      "matches": true
+    },
+    "tests/test_runner.py": {
+      "reviewed_sha256": "7a570892db114370f835cd7856fe1d12c99f248861fff0808c56f7e2c8c668e2",
+      "working_sha256": "7a570892db114370f835cd7856fe1d12c99f248861fff0808c56f7e2c8c668e2",
+      "matches": true
+    },
+    "tests/test_local_evaluation.py": {
+      "reviewed_sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "working_sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "matches": true
+    }
+  },
+  "observed_package_versions": {
+    "pdfsmith": "0.2.0",
+    "pypdf": "6.3.0",
+    "pdfplumber": "0.11.8",
+    "PyMuPDF": "1.26.6",
+    "pymupdf4llm": "0.2.2",
+    "reportlab": "4.4.5"
+  },
+  "observed_pdfsmith_source_declared_version": "0.3.0",
+  "observed_pdfsmith_project_version": "0.2.0",
+  "pdfsmith_source_sha256": "4ae92d4bf4672042d0a9d556e9368416fb7b3a3c24643b441d08ddf5361b2c1f",
+  "pdfsmith_project_sha256": "010b306ed4d60f0d64e5577b8c948187d3061d24ff3f6b72bd912a6269181a3f",
+  "pdfsmith_version_note": "Editable metadata/project version and source declaration disagree; recorded explicitly",
+  "external_code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "external_dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "prior_smoke_comparison_sha256": "1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242",
+  "new_specification_reviews": "pending; none returned"
+}
+
+===== FRESH BASELINE CHECKS =====
+
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-W",
+    "error",
+    "tests/test_runner.py",
+    "tests/test_persistence.py",
+    "tests/test_local_evaluation.py",
+    "-q"
+  ],
+  "exit_code": 0,
+  "stdout": "................................................                         [100%]\n48 passed in 1.08s\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "verification",
+    "terms",
+    "check",
+    "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/spec.md"
+  ],
+  "exit_code": 0,
+  "stdout": "terms check: ok\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "python",
+    "/home/stefan/.codex/skills/decompose/check_plan.py",
+    "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/plan.md"
+  ],
+  "exit_code": 0,
+  "stdout": "check_plan: OK /home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/plan.md\n  milestone: rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example\n  issues:    6\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "verification",
+    "premises",
+    "check",
+    "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/plan.md"
+  ],
+  "exit_code": 0,
+  "stdout": "premises check: ok\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "verification",
+    "claims",
+    "list",
+    "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/plan.md"
+  ],
+  "exit_code": 0,
+  "stdout": "issue 1\tretained-artifacts-accounted\tEvery retained artifact is addressable with explicit kind, provenance gaps and claim tier.\tDiscovery silently misses a file, merges overwrite chronology, or an override conceals missing references.\nissue 1\thistorical-claims-scoped\tHistorical comparisons expose selection, reference and metric/timing limits beside results.\tA generator averages unequal rows or labels a present-day source as the historical source.\nissue 2\treferences-independent\tNew task truth is established from qualified sources without evaluated-output leakage.\tReference builder reads parser outputs, a PDF rendition disagrees, or metadata is assumed correct without inspection.\nissue 2\treference-generation-preserves\tFailed qualification or generation preserves existing valid references and inputs.\tConversion writes over an original PDF or validation occurs after replacing the completed bundle.\nissue 3\ttask-checks-association\tTask scoring rejects wrong field/record associations without rejecting declared harmless representation changes.\tA value-token check passes transposed headers or normalization equates different amounts.\nissue 3\textractor-blind\tExpected answers cannot affect extracted predictions.\tExtractor reads source metadata or uses grader truth as a parsing hint.\nissue 4\texecution-not-silent-replay\tFresh work cannot silently read unrelated cached/checkpoint output.\tCache ignores a backend option/version or a checkpoint accepts changed input/reference bytes.\nissue 4\tfailures-visible\tEvery planned pair has inspectable terminal or incomplete status, with empty output distinct from failure and unavailable timing distinct from zero.\tException paths omit records, timeout is inferred only from arbitrary error text, or empty output is counted as task success.\nissue 4\tbundle-atomic\tA failed generation cannot replace a previously valid completed bundle or register an incomplete one as complete.\tRegistry switches before all artifacts validate or a partial file replaces its previous version.\nissue 5\tinvoice-results-reproducible\tReported task/coverage aggregates and per-attempt duration observations reproduce from the actual run artifacts under declared boundaries.\tFailed calls disappear, regrading reads new references, timing is cache replay, or relocated replay uses a different backend.\nissue 6\treport-inspectable\tAn engineer can inspect and reproduce each declared result and understand the decision it informs.\tNumbers lack matching pointers/denominators, instructions fail offline, or failures are visible only in hidden artifacts.\nissue 6\tdesign-lessons-demonstrated\tThe worked example explains internal-benchmark design through actual decisions and counterexamples.\tThe report offers only limitation prose, presents a template as validated on real vendors, or invents an operational result.\nclaims list: ok\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "verification",
+    "closure",
+    "check",
+    "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/plan.md"
+  ],
+  "exit_code": 0,
+  "stdout": "closure check: ok\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "ruff",
+    "format",
+    "--check",
+    "."
+  ],
+  "exit_code": 1,
+  "stdout": "Would reformat: builders/build_pptx_corpus.py\nWould reformat: builders/build_sec_corpus.py\nWould reformat: builders/business_suite/__init__.py\nWould reformat: builders/business_suite/families/__init__.py\nWould reformat: builders/business_suite/families/investor_deck.py\nWould reformat: builders/business_suite/render_pptx.py\nWould reformat: builders/expand_sec_catalog.py\nWould reformat: builders/generate_invoice_corpus.py\nWould reformat: builders/generate_systematic_corpus.py\nWould reformat: builders/hr/resume_templates.py\nWould reformat: builders/improved_txt_to_markdown.py\nWould reformat: builders/legal/contract_templates.py\nWould reformat: builders/legal/data_generators.py\nWould reformat: pdf_bench/config.py\nWould reformat: pdf_bench/report_generator.py\nWould reformat: pdf_bench/utils/metadata.py\nWould reformat: scripts/build_coverage_db.py\nWould reformat: scripts/find_ars_10k_pairs.py\nWould reformat: scripts/run_pdfsmith_agentic_lab.py\n19 files would be reformatted, 130 files already formatted\n",
+  "stderr": ""
+}
+
+
+{
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "ruff",
+    "check",
+    ".",
+    "--output-format",
+    "json"
+  ],
+  "exit_code": 1,
+  "inherited_lint_findings": 183,
+  "counts_by_rule": {
+    "F401": 4,
+    "E501": 127,
+    "B007": 3,
+    "F541": 17,
+    "F841": 5,
+    "I001": 4,
+    "N806": 19,
+    "UP015": 1,
+    "C401": 2,
+    "E402": 1
+  },
+  "note": "Complete locations retained in baseline-checks.json; no source repair yet"
+}
+
+
+{
+  "command": [
+    "git",
+    "diff",
+    "--check"
+  ],
+  "exit_code": 2,
+  "stdout": "docs/PDFSMITH_INTEGRATION_STATUS.md:94: new blank line at EOF.\n",
+  "stderr": ""
+}
+
+
+
+===== RETAINED TRACK SUMMARIES, NOT NEW RUNS =====
+
+[
+  {
+    "artifact": "results/sec_filings_47docs.json",
+    "sha256": "ad41db79a24444d579cfa8dcc5cef8b5e38f2ac6be984ffff76638bb9afdd5dc",
+    "benchmark": {
+      "name": "SEC Filings - 47 Annual Reports (GT quality >= 0.90)",
+      "timestamp": "2026-03-10T15:06:38.551898+00:00",
+      "config_file": "benchmarks/sec_filings_47docs.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pdfsmith-pypdfium2": "0.3.0",
+        "pdfsmith-pymupdf": "0.3.0",
+        "pdfsmith-kreuzberg": "0.3.0",
+        "pdfsmith-marker": "0.3.0",
+        "pdfsmith-docling": "0.3.0",
+        "pdfsmith-pypdf": "0.3.0",
+        "pdfsmith-pdfplumber": "0.3.0",
+        "pdfsmith-pdfminer": "0.3.0",
+        "pdfsmith-pymupdf4llm": "0.3.0",
+        "pdfsmith-extractous": "0.3.0",
+        "pdfsmith-unstructured": "0.3.0",
+        "tika": "3.1.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 47,
+      "total_parsers": 12,
+      "total_results": 564,
+      "success_count": 564,
+      "failure_count": 0
+    },
+    "actual_rows": 564,
+    "rows_by_parser": {
+      "pdfsmith-pypdfium2": 47,
+      "pdfsmith-pymupdf": 47,
+      "pdfsmith-kreuzberg": 47,
+      "pdfsmith-marker": 47,
+      "pdfsmith-docling": 47,
+      "pdfsmith-pypdf": 47,
+      "pdfsmith-pdfplumber": 47,
+      "pdfsmith-pdfminer": 47,
+      "pdfsmith-pymupdf4llm": 47,
+      "pdfsmith-extractous": 47,
+      "pdfsmith-unstructured": 47,
+      "tika": 47
+    },
+    "success_rows": 564,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "sec-adient-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9061080004007436,
+        "chrf++": 90.0397612326011,
+        "character_error_rate": 0.0938919995992564,
+        "element_f1": 0.29306880964339527
+      },
+      "error": null,
+      "parse_time_seconds": 0.048450469970703125
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/invoices_100docs_fresh.json",
+    "sha256": "e246ef2645072c6ee9b298bbac5b31fbdc93a26f586c2f848231067e63e3694c",
+    "benchmark": {
+      "name": "Invoice Benchmark - Fresh Ground Truth",
+      "timestamp": "2025-11-23T23:52:01.210257+00:00",
+      "config_file": "benchmarks/invoices_100docs_fresh.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "aws_textract": "1.40.73",
+        "azure_document_intelligence": "1.0.2",
+        "google_document_ai": "1.0.0",
+        "marker": "1.10.1",
+        "docling-fast": "2.63.0",
+        "pymupdf4llm": "1.26.6"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 100,
+      "total_parsers": 6,
+      "total_results": 600,
+      "success_count": 600,
+      "failure_count": 0
+    },
+    "actual_rows": 600,
+    "rows_by_parser": {
+      "aws_textract": 100,
+      "azure_document_intelligence": 100,
+      "google_document_ai": 100,
+      "marker": 100,
+      "docling-fast": 100,
+      "pymupdf4llm": 100
+    },
+    "success_rows": 600,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "invoice_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6576,
+        "chrf++": 90.47668127701255
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002942085266113281
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/presentations_30docs.json",
+    "sha256": "1a001008d74788f09ac3fb7fa143b5984674c1b17759aa2dc12a2b60d9af1a7b",
+    "benchmark": {
+      "name": "Presentations - 30 PPTX-derived PDFs (LoC .gov dataset)",
+      "timestamp": "2026-03-11T05:31:23.356315+00:00",
+      "config_file": "benchmarks/presentations_30docs.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pdfsmith-pypdfium2": "0.3.0",
+        "pdfsmith-pymupdf": "0.3.0",
+        "pdfsmith-kreuzberg": "0.3.0",
+        "pdfsmith-marker": "0.3.0",
+        "pdfsmith-docling": "0.3.0",
+        "pdfsmith-pypdf": "0.3.0",
+        "pdfsmith-pdfplumber": "0.3.0",
+        "pdfsmith-pdfminer": "0.3.0",
+        "pdfsmith-pymupdf4llm": "0.3.0",
+        "pdfsmith-extractous": "0.3.0",
+        "pdfsmith-unstructured": "0.3.0",
+        "tika": "3.1.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 30,
+      "total_parsers": 12,
+      "total_results": 360,
+      "success_count": 360,
+      "failure_count": 0
+    },
+    "actual_rows": 360,
+    "rows_by_parser": {
+      "pdfsmith-pypdfium2": 30,
+      "pdfsmith-pymupdf": 30,
+      "pdfsmith-kreuzberg": 30,
+      "pdfsmith-marker": 30,
+      "pdfsmith-docling": 30,
+      "pdfsmith-pypdf": 30,
+      "pdfsmith-pdfplumber": 30,
+      "pdfsmith-pdfminer": 30,
+      "pdfsmith-pymupdf4llm": 30,
+      "pdfsmith-extractous": 30,
+      "pdfsmith-unstructured": 30,
+      "tika": 30
+    },
+    "success_rows": 360,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8204032741066081,
+        "chrf++": 90.79647000513107,
+        "character_error_rate": 0.19791437497249967,
+        "element_f1": 0.39723320158102765
+      },
+      "error": null,
+      "parse_time_seconds": 0.08438658714294434
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/business_synthetic_investor_decks_subset_refresh.json",
+    "sha256": "4446bc0835951ac265158d06b1925ca559adfe05636ee4bc2945bb9140345891",
+    "benchmark": {
+      "name": "Synthetic Business Suite - Investor Decks (Subset)",
+      "timestamp": "2026-03-31T20:59:31.978105+00:00",
+      "config_file": "/tmp/business_synthetic_investor_decks_subset.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pdfsmith-pypdfium2": "0.3.0",
+        "pdfsmith-pdfplumber": "0.3.0",
+        "pdfsmith-pymupdf": "0.3.0",
+        "pdfsmith-pypdf": "0.3.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 10,
+      "total_parsers": 4,
+      "total_results": 40,
+      "success_count": 40,
+      "failure_count": 0
+    },
+    "actual_rows": 40,
+    "rows_by_parser": {
+      "pdfsmith-pypdfium2": 10,
+      "pdfsmith-pdfplumber": 10,
+      "pdfsmith-pymupdf": 10,
+      "pdfsmith-pypdf": 10
+    },
+    "success_rows": 40,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "investor_deck_001",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7229268292682927,
+        "chrf++": 72.56483097291311,
+        "character_error_rate": 0.27707317073170734,
+        "element_f1": 0.45695364238410596
+      },
+      "error": null,
+      "parse_time_seconds": 0.014993667602539062
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/arxiv_10docs_fresh.json",
+    "sha256": "7ae67448f5584c8e31d747c8d74af736ae851ee6676a20aafa54386aeb7b9efb",
+    "benchmark": {
+      "name": "Academic Papers - 10 Diverse arXiv Papers",
+      "timestamp": "2025-11-24T21:41:04.630045+00:00",
+      "config_file": "benchmarks/arxiv_10docs.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pypdfium2": "4.30.0",
+        "pymupdf": "1.26.6",
+        "marker": "1.10.1",
+        "docling-fast": "2.63.0",
+        "pdfplumber": "0.11.8",
+        "pymupdf4llm": "1.26.6",
+        "kreuzberg": "3.21.0",
+        "pdfminer": "20251107",
+        "pypdf": "6.3.0",
+        "unstructured": "0.18.20",
+        "extractous": "0.3.0",
+        "tika": "3.1.0",
+        "aws_textract": "1.40.73",
+        "azure_document_intelligence": "1.0.2",
+        "google_document_ai": "1.0.0",
+        "databricks": "1.0.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 10,
+      "total_parsers": 16,
+      "total_results": 160,
+      "success_count": 160,
+      "failure_count": 0
+    },
+    "actual_rows": 160,
+    "rows_by_parser": {
+      "pypdfium2": 10,
+      "pymupdf": 10,
+      "marker": 10,
+      "docling-fast": 10,
+      "pdfplumber": 10,
+      "pymupdf4llm": 10,
+      "kreuzberg": 10,
+      "pdfminer": 10,
+      "pypdf": 10,
+      "unstructured": 10,
+      "extractous": 10,
+      "tika": 10,
+      "aws_textract": 10,
+      "azure_document_intelligence": 10,
+      "google_document_ai": 10,
+      "databricks": 10
+    },
+    "success_rows": 160,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "arxiv-2409.06598",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.17651481822181336,
+        "chrf++": 22.813810832489736,
+        "character_error_rate": 0.8234851817781866
+      },
+      "error": null,
+      "parse_time_seconds": 0.08204913139343262
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/frontier_unified_30docs.json",
+    "sha256": "f1a0b447aae8760cd39f9b10e7c7fce0f5c3a54e9793ccf6c3d2f311e6597db3",
+    "benchmark": {
+      "name": "frontier_unified_30docs",
+      "timestamp": "2025-11-30T00:41:23.308667+00:00",
+      "config_file": "benchmarks/frontier_unified_30docs.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "llamaparse": "0.6.x",
+        "gemini_gemini_2_0_flash": "1.0.0",
+        "openai_gpt_4o_mini": "1.0.0",
+        "anthropic_claude_3_5_haiku": "1.0.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 30,
+      "total_parsers": 4,
+      "total_results": 120,
+      "success_count": 120,
+      "failure_count": 0
+    },
+    "actual_rows": 120,
+    "rows_by_parser": {
+      "llamaparse": 30,
+      "gemini_gemini_2_0_flash": 30,
+      "openai_gpt_4o_mini": 30,
+      "anthropic_claude_3_5_haiku": 30
+    },
+    "success_rows": 120,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.933920704845815,
+        "chrf++": 96.21516477704013,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 7.474195241928101
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/frontier_premium_300p.json",
+    "sha256": "05aca40921b6c6eecf99bb1a4fd116f3e50e82f180360ac2e84ef8c8b1a79f7a",
+    "benchmark": {
+      "name": "frontier_premium_300p",
+      "timestamp": "2025-11-30T20:46:00.856816+00:00",
+      "config_file": "benchmarks/frontier_premium_300p.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "gemini_gemini_3_pro_preview": "1.0.0",
+        "openai_gpt_5_1": "1.0.0",
+        "anthropic_claude_sonnet_4_5": "1.0.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 28,
+      "total_parsers": 3,
+      "total_results": 84,
+      "success_count": 84,
+      "failure_count": 0
+    },
+    "actual_rows": 84,
+    "rows_by_parser": {
+      "gemini_gemini_3_pro_preview": 28,
+      "openai_gpt_5_1": 28,
+      "anthropic_claude_sonnet_4_5": 28
+    },
+    "success_rows": 84,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9177489177489178,
+        "chrf++": 82.72273440971043,
+        "tree_similarity": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 15.88297700881958
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/sec_filings_screen_all.json",
+    "sha256": "e5dddbbb4df0cbc36c0a32ec68f71224bdd137e1712ba7e8ecab33bf540a22d0",
+    "benchmark": {
+      "name": "SEC Filings Quality Screen - All 89 Documents",
+      "timestamp": "2026-03-10T14:19:01.738098+00:00",
+      "config_file": "benchmarks/sec_filings_screen_all.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pdfsmith-pypdfium2": "0.3.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 320,
+      "total_parsers": 1,
+      "total_results": 320,
+      "success_count": 320,
+      "failure_count": 0
+    },
+    "actual_rows": 320,
+    "rows_by_parser": {
+      "pdfsmith-pypdfium2": 320
+    },
+    "success_rows": 320,
+    "failure_rows": 0,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "sec-american_express-2024",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6648449345078559,
+        "chrf++": 83.75921065898355
+      },
+      "error": null,
+      "parse_time_seconds": 0.00727391242980957
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  },
+  {
+    "artifact": "results/sec_filings_commercial_5docs.json",
+    "sha256": "6d15752d84b0c4768d287135c26fde51bf4fa43208600b229c2f64117c422f14",
+    "benchmark": {
+      "name": "SEC Filings - 5 docs, Commercial OCR (Azure, Textract, Google DocAI)",
+      "timestamp": "2026-03-10T21:31:38.647684+00:00",
+      "config_file": "benchmarks/sec_filings_commercial_5docs.yaml"
+    },
+    "environment": {
+      "python_version": "3.13.5",
+      "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+      "parser_versions": {
+        "pdfsmith-azure_document_intelligence": "0.3.0",
+        "pdfsmith-aws_textract": "0.3.0",
+        "pdfsmith-google_document_ai": "0.3.0"
+      }
+    },
+    "declared_summary": {
+      "total_documents": 5,
+      "total_parsers": 3,
+      "total_results": 15,
+      "success_count": 14,
+      "failure_count": 13
+    },
+    "actual_rows": 15,
+    "rows_by_parser": {
+      "pdfsmith-azure_document_intelligence": 5,
+      "pdfsmith-aws_textract": 5,
+      "pdfsmith-google_document_ai": 5
+    },
+    "success_rows": 14,
+    "failure_rows": 1,
+    "first_row_pointer": "/results/0",
+    "first_row": {
+      "document_id": "sec-great_elm-2025",
+      "parser_name": "pdfsmith-azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9038572595789824,
+        "chrf++": 91.13435563156473,
+        "character_error_rate": 0.0961427404210175,
+        "element_f1": 0.43206180589087395
+      },
+      "error": null,
+      "parse_time_seconds": 8.691339015960693
+    },
+    "provenance_note": "Recorded historical fields, not independently reconstructed truth"
+  }
+]
+
+===== INDEPENDENTLY REVIEWED SMOKE COMPARISON =====
+
+{
+  "executed_at": "2026-10-13T18:41:51.706897+00:00",
+  "versions": {
+    "pdfsmith": "0.2.0",
+    "pypdf": "6.3.0",
+    "pdfplumber": "0.11.8",
+    "reportlab": "4.4.5",
+    "PyMuPDF": "1.26.6"
+  },
+  "pdfsmith_declared_version": "0.3.0",
+  "cache_policy": "No adapter cache calls, no checkpoint reuse, each input parsed once",
+  "inputs": {
+    "inline": {
+      "input_sha256": "0d7fc0e3221c4ee8d8dba20e7f3e706598ee11636c1d03c403ca5b97bf8c64b5",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "e3e6dabfd9cffd9f7defb8da62ae56addf9adf1cf449748f0bace77fe722e67f",
+      "reference_available": true
+    },
+    "columns": {
+      "input_sha256": "0d06b17b927242d56feafe4efb5ca81e9bfb70a66cd3cfa1e47227e4d6f9df59",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "70324ccdebf74ebfdcfe2eae0632c83b378338a0b2b235e0a0b6ed5b75396d54",
+      "reference_available": true
+    },
+    "raster": {
+      "input_sha256": "b48cc24ad37603ab22a185f7e2571b5d1d4f778815eeb38a7ca9f25972a11d63",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "c016383db3072e28f7c40f4539a9aab87a7b3c4ffbd227418c64b9e385c79c84",
+      "reference_available": true
+    },
+    "corrupt": {
+      "input_sha256": "dfbfeb2f386c2319948b941a5d17c9d9bae29015f7b373445fa893981f3b9741",
+      "text_reference_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "field_reference_sha256": "f9f2bd727abc75b942b7e39a6115b197f5d2c5419f606f7555f5e21f0b4dfb64",
+      "reference_available": false
+    }
+  },
+  "attempts": [
+    {
+      "document_id": "inline",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.04151606559753418,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "columns",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0013904571533203125,
+      "output_sha256": "30e72033f43accb6cd9d5e7aa934ac8ff544d84207c35c6f77e98923c9aa9ede",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "raster",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0006194114685058594,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "corrupt",
+      "parser": "fresh-pdfsmith-pypdf",
+      "status": "failed",
+      "error": "Stream has ended unexpectedly",
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": null,
+      "output_sha256": null,
+      "task_metrics": null
+    },
+    {
+      "document_id": "inline",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0043756961822509766,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "columns",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.003927946090698242,
+      "output_sha256": "fd8689ca37384d3b58e03daf764e88d64b5fb1c8230168b806f389c8ab1d68a3",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": "INV-2026-013",
+          "Vendor": "Example Components",
+          "Total": "1275.40",
+          "Currency": "USD",
+          "Due date": "2026-11-12"
+        },
+        "correct_fields": {
+          "Invoice ID": true,
+          "Vendor": true,
+          "Total": true,
+          "Currency": true,
+          "Due date": true
+        },
+        "field_accuracy": 1.0,
+        "all_fields_correct": true
+      }
+    },
+    {
+      "document_id": "raster",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "success",
+      "error": null,
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": 0.0013422966003417969,
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "task_metrics": {
+        "extracted_fields": {
+          "Invoice ID": null,
+          "Vendor": null,
+          "Total": null,
+          "Currency": null,
+          "Due date": null
+        },
+        "correct_fields": {
+          "Invoice ID": false,
+          "Vendor": false,
+          "Total": false,
+          "Currency": false,
+          "Due date": false
+        },
+        "field_accuracy": 0.0,
+        "all_fields_correct": false
+      }
+    },
+    {
+      "document_id": "corrupt",
+      "parser": "fresh-pdfsmith-pdfplumber",
+      "status": "failed",
+      "error": "No /Root object! - Is this really a PDF?",
+      "execution_mode": "fresh-uncached",
+      "parse_time_seconds": null,
+      "output_sha256": null,
+      "task_metrics": null
+    }
+  ],
+  "summary": {
+    "fresh-pdfsmith-pypdf": {
+      "attempted": 4,
+      "parse_successes": 3,
+      "parse_failures": 1,
+      "timeouts": 0,
+      "common_scored_documents": 3,
+      "mean_field_accuracy": 0.3333333333333333,
+      "task_successes": 1
+    },
+    "fresh-pdfsmith-pdfplumber": {
+      "attempted": 4,
+      "parse_successes": 3,
+      "parse_failures": 1,
+      "timeouts": 0,
+      "common_scored_documents": 3,
+      "mean_field_accuracy": 0.6666666666666666,
+      "task_successes": 2
+    }
+  },
+  "limitations": [
+    "Three synthetic variants and one corrupt control; not a population estimate",
+    "The fixed label/value extractor is a baseline, not a universal invoice extractor",
+    "Raster inputs require OCR; these backends do not perform OCR",
+    "Text similarity is diagnostic; field association determines the declared task score",
+    "Timing includes local wrapper work and first-import effects, not a latency ranking",
+    "Existing SEC, invoice, presentation, arXiv and paid tracks are retained separately"
+  ]
+}
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/persistence.py =====
+
+Lines 25-69; partial, not the entire file
+
+25: def _serialize_metrics(metrics: dict[str, float]) -> dict[str, float | None]:
+
+26:     """
+
+27:     Convert metrics dict, handling NaN values by converting to None.
+
+28:
+
+29:     Args:
+
+30:         metrics: Dictionary of metric name -> float value (may contain NaN or None)
+
+31:
+
+32:     Returns:
+
+33:         Dictionary with NaN values converted to None for JSON serialization
+
+34:     """
+
+35:     result: dict[str, float | None] = {}
+
+36:     for key, value in metrics.items():
+
+37:         # Handle None values (shouldn't happen but be defensive)
+
+38:         if value is None:
+
+39:             result[key] = None
+
+40:         # Handle NaN values
+
+41:         elif isinstance(value, float) and not math.isfinite(value):
+
+42:             result[key] = None
+
+43:         else:
+
+44:             result[key] = value
+
+45:     return result
+
+46:
+
+47:
+
+48: def write_json_atomic(output_path: Path, payload: dict[str, Any]) -> None:
+
+49:     """Validate before writing and replace only after a complete temporary-file write."""
+
+50:     serialized = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False)
+
+51:     output_path.parent.mkdir(parents=True, exist_ok=True)
+
+52:     temporary_path = None
+
+53:     try:
+
+54:         with tempfile.NamedTemporaryFile(
+
+55:             mode="w",
+
+56:             encoding="utf-8",
+
+57:             dir=output_path.parent,
+
+58:             prefix=f".{output_path.name}.",
+
+59:             delete=False,
+
+60:         ) as handle:
+
+61:             temporary_path = Path(handle.name)
+
+62:             handle.write(serialized)
+
+63:             handle.flush()
+
+64:             os.fsync(handle.fileno())
+
+65:         os.replace(temporary_path, output_path)
+
+66:     finally:
+
+67:         if temporary_path is not None and temporary_path.exists():
+
+68:             temporary_path.unlink()
+
+69:
+
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/systems/pdfsmith_adapter.py =====
+
+Lines 65-108; partial, not the entire file
+
+65:                 "pdfsmith is required for PdfsmithAdapter. Install with: pip install pdfsmith"
+
+66:             )
+
+67:
+
+68:         self._backend_name = backend_name
+
+69:         self._kwargs = kwargs
+
+70:         self._backend = None  # Lazy initialization
+
+71:         self._pdfsmith_version = getattr(pdfsmith, "__version__", "0.1.0")
+
+72:         # Build a unique name incorporating model kwarg (e.g., "pdfsmith-anthropic-claude-opus-4-6")
+
+73:         model = kwargs.get("model")
+
+74:         if model:
+
+75:             self._name = f"pdfsmith-{backend_name}-{model}"
+
+76:         else:
+
+77:             self._name = f"pdfsmith-{backend_name}"
+
+78:
+
+79:     def _get_backend(self) -> Any:
+
+80:         """Get or create backend instance (lazy loading)."""
+
+81:         if self._backend is None:
+
+82:             # Get backend class from registry
+
+83:             from pdfsmith.backends.registry import BACKEND_REGISTRY
+
+84:
+
+85:             if self._backend_name not in BACKEND_REGISTRY:
+
+86:                 raise ValueError(
+
+87:                     f"Unknown pdfsmith backend: {self._backend_name}. "
+
+88:                     f"Available: {list(BACKEND_REGISTRY.keys())}"
+
+89:                 )
+
+90:
+
+91:             backend_info = BACKEND_REGISTRY[self._backend_name]
+
+92:             backend_class = backend_info.loader()
+
+93:
+
+94:             # Instantiate with kwargs (for model selection etc.)
+
+95:             self._backend = backend_class(**self._kwargs)
+
+96:
+
+97:         return self._backend
+
+98:
+
+99:     @property
+
+100:     def name(self) -> str:
+
+101:         """Return parser name with pdfsmith prefix and model variant."""
+
+102:         return self._name
+
+103:
+
+104:     @property
+
+105:     def version(self) -> str:
+
+106:         """Return pdfsmith version."""
+
+107:         return self._pdfsmith_version
+
+108:
+
+Lines 114-162; partial, not the entire file
+
+114:     def parse(self, input_path: Path, output_dir: Path) -> Path:
+
+115:         """Parse a PDF or image file using pdfsmith backend.
+
+116:
+
+117:         Args:
+
+118:             input_path: Path to input file (PDF or image)
+
+119:             output_dir: Directory for output markdown file
+
+120:
+
+121:         Returns:
+
+122:             Path to generated markdown file
+
+123:
+
+124:         Raises:
+
+125:             FileNotFoundError: If input file doesn't exist
+
+126:             ValueError: If image input provided but backend doesn't support it
+
+127:             RuntimeError: If parsing fails
+
+128:         """
+
+129:         if not input_path.exists():
+
+130:             raise FileNotFoundError(f"Input file not found: {input_path}")
+
+131:
+
+132:         # Check if this is an image file
+
+133:         is_image = input_path.suffix.lower() in IMAGE_EXTENSIONS
+
+134:
+
+135:         # Validate image support
+
+136:         if is_image and not self.supports_images:
+
+137:             raise ValueError(
+
+138:                 f"Backend '{self._backend_name}' does not support image inputs. "
+
+139:                 f"Image-capable backends: {sorted(PDFSMITH_IMAGE_BACKENDS)}"
+
+140:             )
+
+141:
+
+142:         # Check cache first
+
+143:         cache_dir = Path(".cache")
+
+144:         key = cache_key(input_path, self.name, self.version)
+
+145:         cached = get_cached(key, cache_dir)
+
+146:         if cached is not None:
+
+147:             return cached
+
+148:
+
+149:         # Get backend and parse
+
+150:         backend = self._get_backend()
+
+151:         try:
+
+152:             markdown = backend.parse(input_path)
+
+153:         except Exception as e:
+
+154:             raise RuntimeError(f"pdfsmith {self._backend_name} failed: {e}") from e
+
+155:
+
+156:         # Write to output directory
+
+157:         output_dir.mkdir(parents=True, exist_ok=True)
+
+158:         output_path = output_dir / f"{input_path.stem}.md"
+
+159:         output_path.write_text(markdown, encoding="utf-8")
+
+160:
+
+161:         # Store in cache and return
+
+162:         return store_cached(key, output_path, cache_dir)
+
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/utils/caching.py =====
+
+Lines 102-135; partial, not the entire file
+
+102:
+
+103:     Examples:
+
+104:         >>> pdf = Path("document.pdf")
+
+105:         >>> key = cache_key(pdf, "marker", "0.2.0")
+
+106:         >>> key
+
+107:         'marker-0.2.0-a1b2c3d4e5f6g7h8'
+
+108:     """
+
+109:     pdf_hash = _hash_file(pdf_path)
+
+110:     # Use first 16 characters of hash for brevity
+
+111:     return f"{parser_name.lower()}-{parser_version}-{pdf_hash[:16]}"
+
+112:
+
+113:
+
+114: def _get_parser_cache_dir(cache_dir: Path, cache_key_str: str) -> Path:
+
+115:     """Extract parser name from cache key and return parser cache directory.
+
+116:
+
+117:     Args:
+
+118:         cache_dir: Root cache directory.
+
+119:         cache_key_str: Cache key string.
+
+120:
+
+121:     Returns:
+
+122:         Path to parser-specific cache directory.
+
+123:     """
+
+124:     # Extract parser name from cache key (first component before first dash)
+
+125:     parser_name = cache_key_str.split("-")[0]
+
+126:     return cache_dir / parser_name
+
+127:
+
+128:
+
+129: def _load_stats(cache_dir: Path) -> dict[str, Any]:
+
+130:     """Load cache statistics from disk.
+
+131:
+
+132:     Args:
+
+133:         cache_dir: Root cache directory.
+
+134:
+
+135:     Returns:
+
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/runner.py =====
+
+Lines 170-235; partial, not the entire file
+
+170:     parser_name: str,
+
+171:     parser_class: type[BaseParser],
+
+172:     parser_options: dict[str, Any],
+
+173:     doc_id: str,
+
+174:     input_path: Path,
+
+175:     gt_path: Path,
+
+176:     results_dir: Path,
+
+177:     metrics_list: list[str],
+
+178: ) -> DocumentResult:
+
+179:     """Worker function for parallel execution.
+
+180:
+
+181:     This function is designed to be called by multiprocessing workers.
+
+182:     It recreates the parser instance and runs a single benchmark.
+
+183:
+
+184:     Args:
+
+185:         parser_name: Name of the parser
+
+186:         parser_class: Parser class to instantiate
+
+187:         parser_options: Options to pass to parser constructor
+
+188:         doc_id: Document ID
+
+189:         input_path: Path to input file (PDF or image)
+
+190:         gt_path: Path to ground truth markdown
+
+191:         results_dir: Directory to save parser output
+
+192:         metrics_list: List of metric names to compute
+
+193:
+
+194:     Returns:
+
+195:         DocumentResult with metrics or error information
+
+196:     """
+
+197:     try:
+
+198:         # Instantiate parser in worker process
+
+199:         parser = parser_class(**parser_options)
+
+200:
+
+201:         # Parse input to Markdown
+
+202:         start_time = time.time()
+
+203:         output_md_path = parser.parse(input_path, results_dir)
+
+204:         parse_time = time.time() - start_time
+
+205:
+
+206:         # Read generated and ground truth markdown
+
+207:         generated_md = output_md_path.read_text(encoding="utf-8")
+
+208:         ground_truth_md = gt_path.read_text(encoding="utf-8")
+
+209:
+
+210:         # Compute metrics
+
+211:         metrics = {}
+
+212:         for metric_name in metrics_list:
+
+213:             try:
+
+214:                 metric_func = METRIC_FUNCTIONS.get(metric_name)
+
+215:                 if metric_func is None:
+
+216:                     continue
+
+217:
+
+218:                 score = metric_func(ground_truth_md, generated_md)
+
+219:                 metrics[metric_name] = score
+
+220:
+
+221:             except Exception:
+
+222:                 metrics[metric_name] = float("nan")
+
+223:
+
+224:         return DocumentResult(
+
+225:             document_id=doc_id,
+
+226:             parser_name=parser_name,
+
+227:             success=True,
+
+228:             metrics=metrics,
+
+229:             parse_time_seconds=parse_time,
+
+230:         )
+
+231:
+
+232:     except Exception as e:
+
+233:         return DocumentResult(
+
+234:             document_id=doc_id,
+
+235:             parser_name=parser_name,
+
+Lines 300-350; partial, not the entire file
+
+300:
+
+301:         Returns:
+
+302:             BenchmarkResults with all parser/document combinations
+
+303:         """
+
+304:         import datetime
+
+305:
+
+306:         results = BenchmarkResults(
+
+307:             benchmark_name=self.config.config.name,
+
+308:             timestamp=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+
+309:             total_documents=len(self.config.documents),
+
+310:             total_parsers=len(self.config.parser_instances),
+
+311:         )
+
+312:
+
+313:         # Build list of all tasks, filtering incompatible parser/document pairs
+
+314:         tasks = []
+
+315:         skipped_image_tasks = 0
+
+316:         for parser in self.config.parser_instances:
+
+317:             for doc in self.config.documents:
+
+318:                 if _parser_supports_document(parser, doc):
+
+319:                     tasks.append((parser, doc))
+
+320:                 else:
+
+321:                     skipped_image_tasks += 1
+
+322:
+
+323:         if skipped_image_tasks > 0:
+
+324:             print(
+
+325:                 f"→ Skipped {skipped_image_tasks} tasks: image documents with non-image-capable parsers"
+
+326:             )
+
+327:
+
+328:         # Load existing checkpoint if available
+
+329:         completed_tasks = set()
+
+330:         if checkpoint_path and checkpoint_path.exists():
+
+331:             try:
+
+332:                 from pdf_bench.persistence import load_results
+
+333:
+
+334:                 checkpoint_results = load_results(checkpoint_path)
+
+335:                 results.results = checkpoint_results.results
+
+336:                 results.success_count = checkpoint_results.success_count
+
+337:                 results.failure_count = checkpoint_results.failure_count
+
+338:
+
+339:                 # Build set of completed (parser, doc_id) pairs
+
+340:                 for result in results.results:
+
+341:                     completed_tasks.add((result.parser_name, result.document_id))
+
+342:
+
+343:                 print(f"✓ Loaded checkpoint: {len(completed_tasks)} tasks already complete")
+
+344:             except Exception as e:
+
+345:                 print(f"⚠ Could not load checkpoint: {e}, starting fresh")
+
+346:
+
+347:         # Filter out already-completed tasks
+
+348:         remaining_tasks = []
+
+349:         for parser, doc in tasks:
+
+350:             if (parser.name, doc.doc_id) not in completed_tasks:
+
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/inventory.py =====
+
+Lines 566-653; partial, not the entire file
+
+566:     if not isinstance(benchmark_data, dict):
+
+567:         benchmark_data = {}
+
+568:     if not isinstance(summary_data, dict):
+
+569:         summary_data = {}
+
+570:     if not isinstance(environment_data, dict):
+
+571:         environment_data = {}
+
+572:     raw_results = data.get("results") if isinstance(data, dict) else None
+
+573:
+
+574:     benchmark_name = (
+
+575:         benchmark_data.get("name") if isinstance(benchmark_data.get("name"), str) else path.stem
+
+576:     )
+
+577:     config_file = (
+
+578:         benchmark_data.get("config_file")
+
+579:         if isinstance(benchmark_data.get("config_file"), str)
+
+580:         else None
+
+581:     )
+
+582:     config_exists = _config_path_exists(repo_root, config_file)
+
+583:     benchmark_config_status = _lookup_benchmark_status(repo_root, config_file, benchmark_statuses)
+
+584:     parser_versions = environment_data.get("parser_versions", {})
+
+585:     parser_versions_count = len(parser_versions) if isinstance(parser_versions, dict) else 0
+
+586:     parser_names = _extract_result_parser_names(raw_results)
+
+587:     cost_class = _classify_cost_class(parser_names or list(parser_versions.keys()))
+
+588:     failed_parser_counts, parsers_failed_all_tasks = _collect_failed_parser_counts(raw_results)
+
+589:
+
+590:     if not recognized_schema:
+
+591:         issues.append(
+
+592:             InventoryIssue(
+
+593:                 "unrecognized_result_schema",
+
+594:                 "JSON file does not match the benchmark result schema",
+
+595:                 severity="error",
+
+596:             )
+
+597:         )
+
+598:     if is_checkpoint:
+
+599:         issues.append(
+
+600:             InventoryIssue(
+
+601:                 "checkpoint_artifact", "Checkpoint artifact should not be treated as canonical"
+
+602:             )
+
+603:         )
+
+604:     if is_archived:
+
+605:         issues.append(
+
+606:             InventoryIssue("archived_result", "Archived artifact kept for reference only")
+
+607:         )
+
+608:     if not config_file:
+
+609:         issues.append(
+
+610:             InventoryIssue(
+
+611:                 "missing_config_file",
+
+612:                 "Result file does not record benchmark config",
+
+613:                 severity="error",
+
+614:             )
+
+615:         )
+
+616:     elif not config_exists:
+
+617:         issues.append(
+
+618:             InventoryIssue(
+
+619:                 "missing_config_path",
+
+620:                 f"Referenced config file not found: {config_file}",
+
+621:                 severity="error",
+
+622:             )
+
+623:         )
+
+624:     elif benchmark_config_status == STATUS_ARCHIVE_ONLY:
+
+625:         issues.append(
+
+626:             InventoryIssue(
+
+627:                 "benchmark_config_archive_only",
+
+628:                 f"Referenced benchmark config is marked {STATUS_ARCHIVE_ONLY}",
+
+629:             )
+
+630:         )
+
+631:     elif benchmark_config_status == STATUS_DRAFT:
+
+632:         issues.append(
+
+633:             InventoryIssue(
+
+634:                 "benchmark_config_draft",
+
+635:                 "Referenced benchmark config is still draft",
+
+636:                 severity="error",
+
+637:             )
+
+638:         )
+
+639:     if parser_versions_count == 0:
+
+640:         issues.append(
+
+641:             InventoryIssue(
+
+642:                 "missing_parser_versions", "No parser versions recorded", severity="error"
+
+643:             )
+
+644:         )
+
+645:     if "git_commit" not in environment_data and "commit_sha" not in environment_data:
+
+646:         issues.append(InventoryIssue("missing_commit_sha", "No commit SHA recorded for this run"))
+
+647:
+
+648:     failure_count = summary_data.get("failure_count") if isinstance(summary_data, dict) else None
+
+649:     total_results = summary_data.get("total_results") if isinstance(summary_data, dict) else None
+
+650:     summary_consistent = _is_result_summary_consistent(summary_data, raw_results)
+
+651:     if summary_consistent is False:
+
+652:         issues.append(
+
+653:             InventoryIssue(
+
+
+===== ACTUAL SOURCE EXCERPTS: scripts/build_internal_benchmark_story.py =====
+
+Lines 44-71; partial, not the entire file
+
+44:
+
+45: SLATE = [
+
+46:     SlateEntry(
+
+47:         track_id="sec_filings_real_business",
+
+48:         title="SEC Filings: Real Business Reports",
+
+49:         result_path="results/sec_filings_47docs.json",
+
+50:         source="Real 10-K/10-Q style filings with HTML-derived ground truth",
+
+51:         status="tier_1_stronger_comparison",
+
+52:         primary_metric="edit_similarity",
+
+53:         use_in_story=True,
+
+54:         caveat=(
+
+55:             "Best current open-source comparison track. Ground truth is derived from SEC HTML, "
+
+56:             "so it is strong for text/order but not a perfect visual-layout oracle."
+
+57:         ),
+
+58:     ),
+
+59:     SlateEntry(
+
+60:         track_id="invoices_source_first",
+
+61:         title="Invoices: Source-First Controlled Business Documents",
+
+62:         result_path="results/invoices_100docs_fresh.json",
+
+63:         source="Synthetic source-first invoice PDFs with generated text ground truth",
+
+64:         status="tier_1_stronger_comparison_with_caveat",
+
+65:         primary_metric="edit_similarity",
+
+66:         use_in_story=True,
+
+67:         caveat=(
+
+68:             "Useful for controlled invoice extraction sanity checks. It does not prove performance "
+
+69:             "on arbitrary real vendor invoices."
+
+70:         ),
+
+71:     ),
+
+Lines 201-266; partial, not the entire file
+
+201: def summarize_entry(entry: SlateEntry) -> dict[str, Any]:
+
+202:     path = ROOT / entry.result_path
+
+203:     data = load_json(path)
+
+204:     results = data.get("results", [])
+
+205:     by_parser: dict[str, list[dict[str, Any]]] = defaultdict(list)
+
+206:
+
+207:     for row in results:
+
+208:         parser_name = row.get("parser_name") or row.get("parser")
+
+209:         if parser_name:
+
+210:             by_parser[parser_name].append(row)
+
+211:
+
+212:     parser_rows = []
+
+213:     for parser_name, rows in by_parser.items():
+
+214:         metric_values: dict[str, list[float]] = defaultdict(list)
+
+215:         parse_times = []
+
+216:         successes = 0
+
+217:         for row in rows:
+
+218:             if row.get("success"):
+
+219:                 successes += 1
+
+220:             parse_time = row.get("parse_time_seconds")
+
+221:             if is_number(parse_time):
+
+222:                 parse_times.append(float(parse_time))
+
+223:             for metric_name, metric_value in (row.get("metrics") or {}).items():
+
+224:                 if is_number(metric_value):
+
+225:                     metric_values[metric_name].append(float(metric_value))
+
+226:
+
+227:         averages = {name: mean_or_none(values) for name, values in metric_values.items()}
+
+228:         parser_rows.append(
+
+229:             {
+
+230:                 "parser": parser_name,
+
+231:                 "display_name": parser_display_name(parser_name),
+
+232:                 "tasks": len(rows),
+
+233:                 "successes": successes,
+
+234:                 "success_rate": successes / len(rows) if rows else None,
+
+235:                 "avg_parse_time_seconds": mean_or_none(parse_times),
+
+236:                 "metrics": averages,
+
+237:             }
+
+238:         )
+
+239:
+
+240:     primary = entry.primary_metric
+
+241:     reverse = HIGHER_IS_BETTER[primary]
+
+242:     parser_rows.sort(
+
+243:         key=lambda row: (
+
+244:             row["metrics"].get(primary) is not None,
+
+245:             row["metrics"].get(primary) if row["metrics"].get(primary) is not None else 0,
+
+246:         ),
+
+247:         reverse=reverse,
+
+248:     )
+
+249:
+
+250:     for rank, row in enumerate(parser_rows, start=1):
+
+251:         row["rank"] = rank
+
+252:
+
+253:     return {
+
+254:         "track_id": entry.track_id,
+
+255:         "title": entry.title,
+
+256:         "result_path": entry.result_path,
+
+257:         "source": entry.source,
+
+258:         "status": entry.status,
+
+259:         "primary_metric": entry.primary_metric,
+
+260:         "use_in_story": entry.use_in_story,
+
+261:         "caveat": entry.caveat,
+
+262:         "summary": data.get("summary", {}),
+
+263:         "benchmark": data.get("benchmark", {}),
+
+264:         "parsers": parser_rows,
+
+265:     }
+
+266:
+
+
+===== ACTUAL SOURCE EXCERPTS: pdf_bench/local_evaluation.py =====
+
+Lines 44-85; partial, not the entire file
+
+44: def build_documents(directory: Path) -> list[DocumentInfo]:
+
+45:     """Render explicit semantic references before any parser sees an input."""
+
+46:     import pymupdf
+
+47:     from reportlab.pdfgen.canvas import Canvas
+
+48:
+
+49:     directory.mkdir(parents=True, exist_ok=False)
+
+50:     reference = "Invoice summary\n" + "\n".join(f"{k}: {v}" for k, v in FIELDS.items())
+
+51:     for doc_id in ("inline", "columns"):
+
+52:         canvas = Canvas(str(directory / f"{doc_id}.pdf"), invariant=1)
+
+53:         canvas.setFont("Helvetica", 12)
+
+54:         canvas.drawString(60, 760, "Invoice summary")
+
+55:         for index, (label, value) in enumerate(FIELDS.items()):
+
+56:             y = 720 - 30 * index
+
+57:             text = f"{label}: {value}" if doc_id == "inline" else f"{label}:"
+
+58:             canvas.drawString(60, y, text)
+
+59:         if doc_id == "columns":
+
+60:             for index, value in enumerate(FIELDS.values()):
+
+61:                 canvas.drawString(220, 720 - 30 * index, value)
+
+62:         canvas.save()
+
+63:
+
+64:     with pymupdf.open(directory / "inline.pdf") as source:
+
+65:         image = source[0].get_pixmap(dpi=144).tobytes("png")
+
+66:         with pymupdf.open() as raster:
+
+67:             page = raster.new_page(width=source[0].rect.width, height=source[0].rect.height)
+
+68:             page.insert_image(page.rect, stream=image)
+
+69:             raster.save(directory / "raster.pdf", deflate=True, no_new_id=True)
+
+70:     (directory / "corrupt.pdf").write_bytes(b"%PDF-1.7\ntruncated upload\n")
+
+71:
+
+72:     documents = []
+
+73:     for doc_id in DOCUMENT_IDS:
+
+74:         (directory / f"{doc_id}.md").write_text(reference, encoding="utf-8")
+
+75:         fields = FIELDS if doc_id != "corrupt" else None
+
+76:         (directory / f"{doc_id}.json").write_text(
+
+77:             json.dumps({"document_id": doc_id, "fields": fields}, indent=2), encoding="utf-8"
+
+78:         )
+
+79:         documents.append(
+
+80:             DocumentInfo(
+
+81:                 doc_id=doc_id,
+
+82:                 input_path=directory / f"{doc_id}.pdf",
+
+83:                 ground_truth_path=directory / f"{doc_id}.md",
+
+84:                 metadata=DocumentMetadata(doc_id=doc_id, corpus="synthetic", domain="pandoc"),
+
+85:             )
+
+Lines 141-156; partial, not the entire file
+
+141: def grade_fields(text: str, expected: dict[str, str]) -> dict[str, Any]:
+
+142:     """Check label/value associations, not mere occurrence of expected value tokens."""
+
+143:     actual = {}
+
+144:     for label in expected:
+
+145:         matches = re.findall(rf"(?m)^{re.escape(label)}:[ \t]*(.+)$", text)
+
+146:         values = {value.strip() for value in matches}
+
+147:         actual[label] = next(iter(values)) if len(values) == 1 else None
+
+148:     correct = {key: actual[key] == value for key, value in expected.items()}
+
+149:     return {
+
+150:         "extracted_fields": actual,
+
+151:         "correct_fields": correct,
+
+152:         "field_accuracy": sum(correct.values()) / len(expected),
+
+153:         "all_fields_correct": all(correct.values()),
+
+154:     }
+
+155:
+
+156:
+
+Lines 181-225; partial, not the entire file
+
+181:         output = config.results_dir / result.parser_name / f"{result.document_id}.md"
+
+182:         status = "success" if result.success else "failed"
+
+183:         if result.error and "exceeded" in result.error:
+
+184:             status = "timeout"
+
+185:         attempt = {
+
+186:             "document_id": result.document_id,
+
+187:             "parser": result.parser_name,
+
+188:             "status": status,
+
+189:             "error": result.error,
+
+190:             "execution_mode": "fresh-uncached",
+
+191:             "parse_time_seconds": result.parse_time_seconds if result.success else None,
+
+192:             "output_sha256": file_hash(output) if result.success else None,
+
+193:             "task_metrics": None,
+
+194:         }
+
+195:         if result.success and result.document_id != "corrupt":
+
+196:             attempt["task_metrics"] = grade_fields(output.read_text(encoding="utf-8"), FIELDS)
+
+197:         attempts.append(attempt)
+
+198:     common = [
+
+199:         doc_id
+
+200:         for doc_id in DOCUMENT_IDS
+
+201:         if doc_id != "corrupt"
+
+202:         and all(
+
+203:             any(
+
+204:                 a["document_id"] == doc_id and a["parser"] == p.name and a["status"] == "success"
+
+205:                 for a in attempts
+
+206:             )
+
+207:             for p in config.parser_instances
+
+208:         )
+
+209:     ]
+
+210:     summary = {}
+
+211:     for parser in config.parser_instances:
+
+212:         rows = [a for a in attempts if a["parser"] == parser.name]
+
+213:         comparable = [a["task_metrics"] for a in rows if a["document_id"] in common]
+
+214:         summary[parser.name] = {
+
+215:             "attempted": len(rows),
+
+216:             "parse_successes": sum(a["status"] == "success" for a in rows),
+
+217:             "parse_failures": sum(a["status"] == "failed" for a in rows),
+
+218:             "timeouts": sum(a["status"] == "timeout" for a in rows),
+
+219:             "common_scored_documents": len(comparable),
+
+220:             "mean_field_accuracy": (
+
+221:                 sum(a["field_accuracy"] for a in comparable) / len(comparable)
+
+222:                 if comparable
+
+223:                 else None
+
+224:             ),
+
+225:             "task_successes": sum(a["all_fields_correct"] for a in comparable),
+
+Lines 239-272; partial, not the entire file
+
+239:         "schema_version": 1,
+
+240:         "executed_at": results.timestamp,
+
+241:         "completed_at": datetime.now(timezone.utc).isoformat(),
+
+242:         "source_revision": subprocess.check_output(
+
+243:             ["git", "rev-parse", "HEAD"], cwd=repo, text=True
+
+244:         ).strip(),
+
+245:         "source_is_dirty": bool(
+
+246:             subprocess.check_output(["git", "status", "--porcelain"], cwd=repo, text=True).strip()
+
+247:         ),
+
+248:         "implementation_sha256": {str(p): file_hash(p) for p in implementation_paths},
+
+249:         "versions": {
+
+250:             p: version(p) for p in ("pdfsmith", "pypdf", "pdfplumber", "reportlab", "PyMuPDF")
+
+251:         },
+
+252:         "pdfsmith_declared_version": pdfsmith.__version__,
+
+253:         "python": platform.python_version(),
+
+254:         "backend_options": {},
+
+255:         "cache_policy": "No adapter cache calls, no checkpoint reuse, each input parsed once",
+
+256:         "timeout_seconds": 15,
+
+257:         "inputs": inputs,
+
+258:         "attempts": attempts,
+
+259:         "common_valid_inputs": common,
+
+260:         "summary": summary,
+
+261:         "limitations": [
+
+262:             "Three synthetic variants and one corrupt control; not a population estimate",
+
+263:             "The fixed label/value extractor is a baseline, not a universal invoice extractor",
+
+264:             "Raster inputs require OCR; these backends do not perform OCR",
+
+265:             "Text similarity is diagnostic; field association determines the declared task score",
+
+266:             "Timing includes local wrapper work and first-import effects, not a latency ranking",
+
+267:             "Existing SEC, invoice, presentation, arXiv and paid tracks are retained separately",
+
+268:         ],
+
+269:     }
+
+270:     write_json_atomic(output_dir / "comparison.json", pack)
+
+271:     return pack
+
+272:
+
+
+===== ACTUAL SOURCE EXCERPTS: tests/test_local_evaluation.py =====
+
+Lines 1-80; partial, not the entire file
+
+1: import json
+
+2: import subprocess
+
+3: import sys
+
+4: from pathlib import Path
+
+5:
+
+6: import pytest
+
+7:
+
+8: from pdf_bench.local_evaluation import (
+
+9:     FIELDS,
+
+10:     build_documents,
+
+11:     grade_fields,
+
+12:     loaded_config,
+
+13:     run_comparison,
+
+14: )
+
+15: from pdf_bench.persistence import save_results
+
+16: from pdf_bench.runner import METRIC_FUNCTIONS, BenchmarkRunner
+
+17:
+
+18:
+
+19: def test_lightweight_pipeline_does_not_load_unused_tika() -> None:
+
+20:     completed = subprocess.run(
+
+21:         [
+
+22:             sys.executable,
+
+23:             "-Werror",
+
+24:             "-c",
+
+25:             "import sys; from pdf_bench.local_evaluation import FreshLocalParser; "
+
+26:             "assert 'tika' not in sys.modules",
+
+27:         ],
+
+28:         capture_output=True,
+
+29:         text=True,
+
+30:         check=False,
+
+31:     )
+
+32:     assert completed.returncode == 0, completed.stderr
+
+33:
+
+34:
+
+35: def test_bad_metric_produced_by_runner_does_not_truncate_previous_export(
+
+36:     tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+
+37: ) -> None:
+
+38:     documents = build_documents(tmp_path / "inputs")[:1]
+
+39:     config = loaded_config(documents, tmp_path / "outputs")
+
+40:     config.parser_instances = config.parser_instances[:1]
+
+41:     good_results = BenchmarkRunner(config, parallel_workers=1).run()
+
+42:     destination = tmp_path / "results.json"
+
+43:     save_results(good_results, destination)
+
+44:     original = destination.read_bytes()
+
+45:     monkeypatch.setitem(METRIC_FUNCTIONS, "edit_similarity", lambda reference, prediction: object())
+
+46:     bad_results = BenchmarkRunner(config, parallel_workers=1).run()
+
+47:     assert bad_results.success_count == 1
+
+48:     with pytest.raises(TypeError):
+
+49:         save_results(bad_results, destination)
+
+50:     assert destination.read_bytes() == original
+
+51:     assert not list(tmp_path.glob(".results.json.*"))
+
+52:
+
+53:
+
+54: def test_real_parsers_keep_failures_and_empty_outputs_in_task_denominators(tmp_path: Path) -> None:
+
+55:     pack = run_comparison(tmp_path / "run")
+
+56:     assert len(pack["attempts"]) == 8
+
+57:     assert pack["common_valid_inputs"] == ["inline", "columns", "raster"]
+
+58:     for parser in pack["summary"].values():
+
+59:         assert parser["attempted"] == 4
+
+60:         assert parser["parse_successes"] == 3
+
+61:         assert parser["parse_failures"] == 1
+
+62:         assert parser["common_scored_documents"] == 3
+
+63:     for attempt in pack["attempts"]:
+
+64:         if attempt["document_id"] == "corrupt":
+
+65:             assert attempt["status"] == "failed"
+
+66:             assert attempt["task_metrics"] is None
+
+67:         if attempt["document_id"] == "raster":
+
+68:             assert attempt["status"] == "success"
+
+69:             assert attempt["task_metrics"]["field_accuracy"] == 0
+
+70:     raw = json.loads((tmp_path / "run/runner-results.json").read_text())
+
+71:     assert all(row["metrics"].get("teds") is None for row in raw["results"])
+
+72:
+
+73:
+
+74: def test_field_grader_rejects_values_without_correct_label_associations(tmp_path: Path) -> None:
+
+75:     documents = build_documents(tmp_path / "inputs")
+
+76:     config = loaded_config(documents[1:2], tmp_path / "outputs")
+
+77:     actual = config.parser_instances[0].parse(documents[1].input_path, config.results_dir)
+
+78:     text = actual.read_text()
+
+79:     assert all(value in text for value in FIELDS.values())
+
+80:     assert grade_fields(text, FIELDS)["field_accuracy"] == 0
+
+
+===== ACTUAL SOURCE EXCERPTS: builders/generate_invoice_corpus.py =====
+
+Lines 78-124; partial, not the entire file
+
+78: def extract_ground_truth_from_docx(docx_path: Path) -> str:
+
+79:     """Extract plain text ground truth from DOCX invoice.
+
+80:
+
+81:     Args:
+
+82:         docx_path: Path to DOCX file
+
+83:
+
+84:     Returns:
+
+85:         Markdown-formatted ground truth text
+
+86:     """
+
+87:     doc = Document(str(docx_path))
+
+88:
+
+89:     # Extract text from all paragraphs
+
+90:     paragraphs = []
+
+91:     for para in doc.paragraphs:
+
+92:         text = para.text.strip()
+
+93:         if text:
+
+94:             # Detect headings by font size or bold
+
+95:             is_heading = False
+
+96:             if para.runs:
+
+97:                 first_run = para.runs[0]
+
+98:                 if first_run.bold and first_run.font.size and first_run.font.size.pt >= 12:
+
+99:                     is_heading = True
+
+100:
+
+101:             if is_heading:
+
+102:                 paragraphs.append(f"\n## {text}\n")
+
+103:             else:
+
+104:                 paragraphs.append(text)
+
+105:
+
+106:     # Extract text from tables
+
+107:     for table in doc.tables:
+
+108:         rows = []
+
+109:         for row in table.rows:
+
+110:             cells = [cell.text.strip() for cell in row.cells]
+
+111:             rows.append(" | ".join(cells))
+
+112:
+
+113:         if rows:
+
+114:             paragraphs.append("\n")
+
+115:             # First row as header
+
+116:             paragraphs.append(rows[0])
+
+117:             paragraphs.append("---")
+
+118:             # Remaining rows
+
+119:             for row in rows[1:]:
+
+120:                 paragraphs.append(row)
+
+121:             paragraphs.append("")
+
+122:
+
+123:     return "\n".join(paragraphs)
+
+124:
+
+Lines 253-311; partial, not the entire file
+
+253:         invoice_date=invoice_date,
+
+254:         due_date=due_date,
+
+255:         vendor=vendor,
+
+256:         customer=customer,
+
+257:         line_items=line_items,
+
+258:         tax_result=tax_result,
+
+259:         payment_terms=payment_terms,
+
+260:         notes=notes,
+
+261:         po_number=po_number,
+
+262:     )
+
+263:
+
+264:     # Save DOCX
+
+265:     docx_path = output_dirs["docx"] / f"{invoice_code}.docx"
+
+266:     doc.save(str(docx_path))
+
+267:     logger.info(f"  Saved DOCX: {docx_path}")
+
+268:
+
+269:     # Convert to PDF
+
+270:     pdf_path = output_dirs["pdfs"] / f"{invoice_code}.pdf"
+
+271:     convert_docx_to_pdf(docx_path, pdf_path)
+
+272:     logger.info(f"  Converted to PDF: {pdf_path}")
+
+273:
+
+274:     # Extract ground truth
+
+275:     ground_truth_text = extract_ground_truth_from_docx(docx_path)
+
+276:     ground_truth_path = output_dirs["ground_truth"] / f"{invoice_code}.md"
+
+277:     ground_truth_path.write_text(ground_truth_text, encoding="utf-8")
+
+278:     logger.info(f"  Extracted ground truth: {ground_truth_path}")
+
+279:
+
+280:     # Create metadata
+
+281:     metadata = {
+
+282:         "document_id": invoice_code,
+
+283:         "region": region,
+
+284:         "industry": industry_key,
+
+285:         "complexity": complexity,
+
+286:         "template_style": template_style,
+
+287:         "invoice_number": invoice_number,
+
+288:         "invoice_date": invoice_date.strftime("%Y-%m-%d"),
+
+289:         "due_date": due_date.strftime("%Y-%m-%d"),
+
+290:         "vendor": {
+
+291:             "name": vendor.name,
+
+292:             "country": vendor.country,
+
+293:         },
+
+294:         "customer": {
+
+295:             "name": customer.name,
+
+296:             "country": customer.country,
+
+297:         },
+
+298:         "line_item_count": len(line_items),
+
+299:         "subtotal": float(tax_result.subtotal),
+
+300:         "tax_amount": float(tax_result.tax_amount),
+
+301:         "total": float(tax_result.total),
+
+302:         "payment_terms": payment_terms,
+
+303:         "generated_at": datetime.now().isoformat(),
+
+304:     }
+
+305:
+
+306:     metadata_path = output_dirs["metadata"] / f"{invoice_code}.yaml"
+
+307:     with open(metadata_path, "w") as f:
+
+308:         yaml.dump(metadata, f, default_flow_style=False, allow_unicode=True)
+
+309:     logger.info(f"  Created metadata: {metadata_path}")
+
+310:
+
+311:     return docx_path, pdf_path, ground_truth_path
+
+
+===== ACTUAL SOURCE EXCERPTS: builders/invoice/data_generators.py =====
+
+Lines 184-195; partial, not the entire file
+
+184:     def generate_invoice_date(self, days_ago_range: tuple[int, int] = (0, 90)) -> datetime:
+
+185:         """Generate invoice date within specified range.
+
+186:
+
+187:         Args:
+
+188:             days_ago_range: Tuple of (min_days_ago, max_days_ago)
+
+189:
+
+190:         Returns:
+
+191:             datetime object
+
+192:         """
+
+193:         days_ago = random.randint(*days_ago_range)
+
+194:         return datetime.now() - timedelta(days=days_ago)
+
+195:
+
+
+===== ACTUAL SOURCE EXCERPTS: benchmarks/sec_filings_47docs.yaml =====
+
+Lines 1-8; partial, not the entire file
+
+1: name: "SEC Filings - 47 Annual Reports (GT quality >= 0.90)"
+
+2: description: >
+
+3:   ARS annual report PDFs benchmarked against 10-K iXBRL HTML ground truth.
+
+4:   Selected from 320 screened documents where pypdfium2 edit_similarity >= 0.90,
+
+5:   ensuring ground truth noise < 10% — below the typical inter-parser spread.
+
+6:
+
+7: corpus_dir: ../corpus
+
+8:
+
+Lines 65-91; partial, not the entire file
+
+65:   parsers:
+
+66:     - pypdfium2
+
+67:     - pymupdf
+
+68:     - kreuzberg
+
+69:     - marker
+
+70:     - docling
+
+71:     - pypdf
+
+72:     - pdfplumber
+
+73:     - pdfminer
+
+74:     - pymupdf4llm
+
+75:     - extractous
+
+76:     - unstructured
+
+77:     - tika
+
+78:
+
+79:   parser_options: {}
+
+80:
+
+81: metric_config:
+
+82:   metrics:
+
+83:     - edit_similarity
+
+84:     - chrf++
+
+85:     - character_error_rate
+
+86:     - element_f1
+
+87:
+
+88: output_config:
+
+89:   results_dir: results
+
+90:   save_format: json
+
+91:   generate_report: false
+
+
+===== ACTUAL SOURCE EXCERPTS: benchmarks/invoices_100docs_fresh.yaml =====
+
+Lines 1-7; partial, not the entire file
+
+1: name: Invoice Benchmark - Fresh Ground Truth
+
+2: description: Invoice benchmark with PDF-extracted ground truth (100 docs, all parsers)
+
+3: corpus_dir: /home/stefan/applied-ai/pdf-bench/corpus
+
+4: document_filter:
+
+5:   include_doc_ids:
+
+6:   - invoice_001
+
+7:   - invoice_002
+
+Lines 106-123; partial, not the entire file
+
+106: parser_config:
+
+107:   parsers:
+
+108:   - aws_textract
+
+109:   - azure_document_intelligence
+
+110:   - google_document_ai
+
+111:   - marker
+
+112:   - docling
+
+113:   - pymupdf4llm
+
+114: metric_config:
+
+115:   metrics:
+
+116:   - edit_similarity
+
+117:   - chrf++
+
+118:   aggregate: true
+
+119: output_config:
+
+120:   results_dir: results
+
+121:   save_format: json
+
+122:   verbose: true
+
+123: parallel_workers: 1
+
+
+===== ACTUAL SOURCE EXCERPTS: .workspace/work/2026-10-13-local-parser-evaluation/technical-report.md =====
+
+Lines 1-91; partial, not the entire file
+
+1: # PDF text extraction can succeed while invoice extraction fails
+
+2:
+
+3: Review draft. This resource reports a bounded local experiment executed on
+
+4: October 13, 2026. It does not update the historical parser leaderboard or
+
+5: authorize publication of the withdrawn benchmark article.
+
+6:
+
+7: ## What was tested
+
+8:
+
+9: A downstream invoice workflow needs the right value associated with each field,
+
+10: not a bag of text containing all the expected values. This comparison tests that
+
+11: distinction with source-first documents and a fixed label/value extractor. It
+
+12: also checks whether empty parser outputs and broken files remain visible in
+
+13: the evaluation rather than disappearing from the denominator.
+
+14:
+
+15: The independent source specifies five fields: invoice identifier, vendor, total,
+
+16: currency and due date. The renderer produces an inline PDF, a two-column PDF
+
+17: with labels written before values in the PDF content stream, and an image-only
+
+18: copy of the inline PDF. A deliberately truncated upload is a separate failure
+
+19: control. The PDFs contain fictional data. The semantic and text references are
+
+20: written before either parser runs, without reconstructing them from extraction.
+
+21:
+
+22: Installed PDFsmith backends call pypdf 6.3.0 and pdfplumber 0.11.8. The existing
+
+23: BenchmarkRunner performs eight sequential attempts, with no checkpoint reuse
+
+24: and no adapter-cache reads or writes. A local wrapper enforces a 15-second
+
+25: timeout and gives each parser its own output directory. No network request,
+
+26: paid parser, downloaded model or production document is needed.
+
+27:
+
+28: ## Field associations distinguish these controlled inputs
+
+29:
+
+30: | Input | pypdf correct fields | pdfplumber correct fields |
+
+31: | --- | --- | --- |
+
+32: | Inline labels and values | 5/5 | 5/5 |
+
+33: | Labels and values in separate columns | 0/5 | 5/5 |
+
+34: | Image-only PDF | 0/5 | 0/5 |
+
+35: | Truncated PDF | Parser failure; unscored | Parser failure; unscored |
+
+36:
+
+37: Both parsers extracted every value token from the two-column PDF. pypdf returned
+
+38: the labels as a group, followed by the values. pdfplumber returned each label
+
+39: beside its corresponding value. The declared downstream extractor could use
+
+40: the latter representation and rejected the former. A different extractor could
+
+41: recover some associations from pypdf output, so this is a pipeline comparison,
+
+42: not proof that pypdf can never process such documents.
+
+43:
+
+44: On the two-column input, pypdf's ChrF++ text score was 78.7524, but none of the
+
+45: five label/value associations passed the task check. pdfplumber's output matched
+
+46: the text reference and all five associations. The task result depends on the
+
+47: document layout, parser configuration and downstream extractor together.
+
+48:
+
+49: Both calls on the image-only PDF completed successfully and returned empty
+
+50: text. Those inputs score zero for field recovery, not missing data or parser
+
+51: exceptions. Neither tested backend performs OCR. Both parsers rejected the
+
+52: truncated upload, and those two attempts remain in the failure counts.
+
+53:
+
+54: Each parser therefore attempted four inputs, completed three, rejected one and
+
+55: timed out on none. The common scored subset contains the three valid inputs.
+
+56: pypdf completed the entire field task on one of those three; pdfplumber did so
+
+57: on two. These hand-selected variants cannot estimate performance on real vendor
+
+58: invoices. TEDS is unavailable on these non-table outputs and is exported as
+
+59: null, never a fabricated table score. Failed-call duration is unknown in the
+
+60: runner and is explicitly null in the comparison pack. Successful timings
+
+61: include local wrapper and first-import effects and are not latency rankings.
+
+62:
+
+63: ## The export writer now preserves earlier valid results
+
+64:
+
+65: The old persistence function opened the destination before serializing it.
+
+66: Injecting an unserializable return value into the actual metric producer caused
+
+67: BenchmarkRunner to produce a bad result, and saving it truncated an earlier
+
+68: valid export. The regression test failed on that producing path before repair.
+
+69:
+
+70: The repaired writer serializes strict JSON first, writes a temporary sibling,
+
+71: flushes it and atomically replaces the destination. Invalid generation leaves
+
+72: the original bytes unchanged. Nonfinite metric values serialize as null. The
+
+73: same writer saves both runner results and the structured comparison pack.
+
+74:
+
+75: Focused checks also exposed outdated runner fixtures that still used the old
+
+76: `pdf_path` constructor argument and a test that expected valid Markdown to fail
+
+77: element-F1 scoring. Those tests now exercise the current contract. Lightweight
+
+78: comparisons no longer import the unused Tika package at startup; a subprocess
+
+79: test first reproduced that import-time warning and now passes with warnings
+
+80: treated as errors.
+
+81:
+
+82: The focused runner, persistence and new comparison suites passed: 48 tests,
+
+83: without warnings. Ruff formatting and focused lint passed.
+
+84:
+
+85: ## Inspect or rerun the experiment
+
+86:
+
+87: Run from `/home/stefan/applied-ai/pdf-bench` into a new directory:
+
+88:
+
+89: ```bash
+
+90: uv run python -m pdf_bench.local_evaluation --output .workspace/work/2026-10-13-local-parser-evaluation/run-04
+
+91: ```

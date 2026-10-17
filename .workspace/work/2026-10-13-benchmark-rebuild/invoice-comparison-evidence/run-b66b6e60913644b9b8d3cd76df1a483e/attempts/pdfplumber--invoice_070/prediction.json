@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-16650",
+    "vendor": "Cornerstone Construction",
+    "due_date": "2025-10-04",
+    "grand_total": "35056.4",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-16650",
+      "INV-16650"
+    ],
+    "due_date": [
+      "October 04, 2025",
+      "October 04, 2025"
+    ],
+    "grand_total": [
+      "$35,056.40"
+    ],
+    "vendor": [
+      "Cornerstone Construction"
+    ]
+  },
+  "records": [
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "6.42",
+      "unit_price": "295.37",
+      "line_total": "1896.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(day)",
+        "quantity": "6.42",
+        "unit_price": "$295.37",
+        "line_total": "$1,896.28"
+      }
+    },
+    {
+      "description": "General Labor (hour)",
+      "quantity": "58.49",
+      "unit_price": "58.82",
+      "line_total": "3440.38",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor\n(hour)",
+        "quantity": "58.49",
+        "unit_price": "$58.82",
+        "line_total": "$3,440.38"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "89.32",
+      "unit_price": "3.59",
+      "line_total": "320.66",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "89.32",
+        "unit_price": "$3.59",
+        "line_total": "$320.66"
+      }
+    },
+    {
+      "description": "General Labor (hour)",
+      "quantity": "99.25",
+      "unit_price": "59.62",
+      "line_total": "5917.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor\n(hour)",
+        "quantity": "99.25",
+        "unit_price": "$59.62",
+        "line_total": "$5,917.28"
+      }
+    },
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "40.53",
+      "unit_price": "131.99",
+      "line_total": "5349.55",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing (hour)",
+        "quantity": "40.53",
+        "unit_price": "$131.99",
+        "line_total": "$5,349.55"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

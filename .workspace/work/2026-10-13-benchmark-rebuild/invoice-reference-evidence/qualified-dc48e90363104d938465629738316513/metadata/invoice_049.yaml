@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Spain
+  name: Ring Schleich AG & Co. KGaA
+document_id: invoice_049
+due_date: '2025-11-07'
+generated_at: '2025-11-18T16:46:11.508671'
+industry: printing
+invoice_date: '2025-10-08'
+invoice_number: INV-34503
+line_item_count: 4
+payment_terms: 50% Deposit, 50% on Completion
+region: EU
+subtotal: 18162.91
+tax_amount: 3814.21
+template_style: enterprise
+total: 21977.12
+vendor:
+  country: France
+  name: Creative Graphics
+corpus: business
+source_url: generated://invoice_049
+domain: invoices
+doc_id: invoice_049

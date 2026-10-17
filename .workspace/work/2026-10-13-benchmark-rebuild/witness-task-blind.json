@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_extraction.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_extractor_subprocess_has_no_access_to_answers_and_predictions_depend_on_output",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_extraction.py",
+      "old": "    fields = dict.fromkeys(REQUIRED_FIELDS)",
+      "new": "    Path(\"../answers/gold.json\").read_bytes()\n    fields = dict.fromkeys(REQUIRED_FIELDS)"
+    }
+  }
+}

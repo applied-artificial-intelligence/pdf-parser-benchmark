@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Williams-Medina
+document_id: invoice_002
+due_date: '2025-12-12'
+generated_at: '2025-11-18T16:45:04.582137'
+industry: manufacturing
+invoice_date: '2025-11-12'
+invoice_number: INV-51883
+line_item_count: 8
+payment_terms: Net 30
+region: US
+subtotal: 170149.96
+tax_amount: 14496.78
+template_style: small_business
+total: 184646.74
+vendor:
+  country: USA
+  name: Standard Fabrication
+corpus: business
+source_url: generated://invoice_002
+domain: invoices
+doc_id: invoice_002

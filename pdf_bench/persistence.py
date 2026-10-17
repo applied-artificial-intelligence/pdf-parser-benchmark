@@ -1,13 +1,19 @@
 """Result persistence for PDF-Bench benchmark results."""
 
+from __future__ import annotations
+
 import json
 import math
+import os
 import platform
 import sys
+import tempfile
 from dataclasses import dataclass
 from pathlib import Path
+from typing import TYPE_CHECKING, Any
 
-from pdf_bench.runner import BenchmarkResults, DocumentResult
+if TYPE_CHECKING:
+    from pdf_bench.runner import BenchmarkResults
 
 
 @dataclass
@@ -35,11 +41,34 @@ def _serialize_metrics(metrics: dict[str, float]) -> dict[str, float | None]:
         if value is None:
             result[key] = None
         # Handle NaN values
-        elif isinstance(value, float) and math.isnan(value):
+        elif isinstance(value, float) and not math.isfinite(value):
             result[key] = None
         else:
             result[key] = value
     return result
+
+
+def write_json_atomic(output_path: Path, payload: dict[str, Any]) -> None:
+    """Validate before writing and replace only after a complete temporary-file write."""
+    serialized = json.dumps(payload, indent=2, ensure_ascii=False, allow_nan=False)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    temporary_path = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=output_path.parent,
+            prefix=f".{output_path.name}.",
+            delete=False,
+        ) as handle:
+            temporary_path = Path(handle.name)
+            handle.write(serialized)
+            handle.flush()
+            os.fsync(handle.fileno())
+        os.replace(temporary_path, output_path)
+    finally:
+        if temporary_path is not None and temporary_path.exists():
+            temporary_path.unlink()
 
 
 def _deserialize_metrics(metrics: dict[str, float | None]) -> dict[str, float]:
@@ -88,6 +117,13 @@ def save_results(
             "metrics": _serialize_metrics(result.metrics),
             "error": result.error,
             "parse_time_seconds": result.parse_time_seconds,
+            "parse_outcome": result.parse_outcome,
+            "wall_time_seconds": result.wall_time_seconds,
+            "output_path": result.output_path,
+            "output_sha256": result.output_sha256,
+            "error_type": result.error_type,
+            "metric_outcomes": result.metric_outcomes,
+            "evaluation_errors": result.evaluation_errors,
         }
         serialized_results.append(serialized_result)
 
@@ -109,12 +145,7 @@ def save_results(
         },
     }
 
-    # Ensure parent directory exists
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-
-    # Write to file
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(output_data, f, indent=2, ensure_ascii=False)
+    write_json_atomic(output_path, output_data)
 
 
 def load_results(input_path: Path) -> BenchmarkResults:
@@ -132,6 +163,8 @@ def load_results(input_path: Path) -> BenchmarkResults:
         json.JSONDecodeError: If file is not valid JSON
         KeyError: If required fields are missing
     """
+    from pdf_bench.runner import BenchmarkResults, DocumentResult
+
     with open(input_path, encoding="utf-8") as f:
         data = json.load(f)
 
@@ -147,7 +180,14 @@ def load_results(input_path: Path) -> BenchmarkResults:
             success=result_data["success"],
             metrics=_deserialize_metrics(result_data["metrics"]),
             error=result_data.get("error"),
-            parse_time_seconds=result_data.get("parse_time_seconds", 0.0),
+            parse_time_seconds=result_data.get("parse_time_seconds"),
+            parse_outcome=result_data.get("parse_outcome", "unknown"),
+            wall_time_seconds=result_data.get("wall_time_seconds"),
+            output_path=result_data.get("output_path"),
+            output_sha256=result_data.get("output_sha256"),
+            error_type=result_data.get("error_type"),
+            metric_outcomes=result_data.get("metric_outcomes", {}),
+            evaluation_errors=result_data.get("evaluation_errors", {}),
         )
         document_results.append(doc_result)
 

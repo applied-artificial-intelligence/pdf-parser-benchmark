@@ -1,0 +1,1033 @@
+{
+  "benchmark": {
+    "name": "frontier_premium_300p",
+    "timestamp": "2025-11-30T20:46:00.856816+00:00",
+    "config_file": "benchmarks/frontier_premium_300p.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "gemini_gemini_3_pro_preview": "1.0.0",
+      "openai_gpt_5_1": "1.0.0",
+      "anthropic_claude_sonnet_4_5": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9177489177489178,
+        "chrf++": 82.72273440971043,
+        "tree_similarity": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 15.88297700881958
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8818181818181818,
+        "chrf++": 82.54877346762909,
+        "tree_similarity": 0.8205128205128205
+      },
+      "error": null,
+      "parse_time_seconds": 71.80823683738708
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9418960244648318,
+        "chrf++": 86.10240562607818,
+        "tree_similarity": 0.875
+      },
+      "error": null,
+      "parse_time_seconds": 15.593889951705933
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9240837696335078,
+        "chrf++": 86.84984929209448,
+        "tree_similarity": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 14.290633916854858
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6901840490797546,
+        "chrf++": 69.26031402514413,
+        "tree_similarity": 0.6730769230769231
+      },
+      "error": null,
+      "parse_time_seconds": 47.62061834335327
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9555555555555556,
+        "chrf++": 89.38187690574946,
+        "tree_similarity": 0.6956521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 9.323363780975342
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9715909090909091,
+        "chrf++": 93.21261053207456,
+        "tree_similarity": 0.7307692307692308
+      },
+      "error": null,
+      "parse_time_seconds": 8.0811128616333
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9339622641509434,
+        "chrf++": 78.0657732340898,
+        "tree_similarity": 0.8108108108108107
+      },
+      "error": null,
+      "parse_time_seconds": 9.566617250442505
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9106359649122807,
+        "chrf++": 90.81263715283534,
+        "tree_similarity": 0.3398058252427184
+      },
+      "error": null,
+      "parse_time_seconds": 22.056743383407593
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9793314162473041,
+        "chrf++": 97.63442501107043,
+        "tree_similarity": 0.0357142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 30.345760345458984
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9453929199096158,
+        "chrf++": 93.77793178886796,
+        "tree_similarity": 0.0449438202247191
+      },
+      "error": null,
+      "parse_time_seconds": 43.10916543006897
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7965308370044053,
+        "chrf++": 88.59791747564023,
+        "tree_similarity": 0.2698412698412699
+      },
+      "error": null,
+      "parse_time_seconds": 25.62872838973999
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5442089488332262,
+        "chrf++": 78.42004143718695,
+        "tree_similarity": 0.33333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 32.464115142822266
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8861885002963841,
+        "chrf++": 87.07105246371425,
+        "tree_similarity": 0.24691358024691357
+      },
+      "error": null,
+      "parse_time_seconds": 29.72553253173828
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.918241965973535,
+        "chrf++": 92.22567727854346,
+        "tree_similarity": 0.45614035087719296
+      },
+      "error": null,
+      "parse_time_seconds": 35.642911195755005
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8803073967339097,
+        "chrf++": 90.34393491436624,
+        "tree_similarity": 0.3620689655172413
+      },
+      "error": null,
+      "parse_time_seconds": 32.581181049346924
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8899579073962718,
+        "chrf++": 90.24009971054713,
+        "tree_similarity": 0.4820717131474104
+      },
+      "error": null,
+      "parse_time_seconds": 25.973196029663086
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9816135084427767,
+        "chrf++": 97.49848560890626,
+        "tree_similarity": 0.6083333333333334
+      },
+      "error": null,
+      "parse_time_seconds": 39.08188772201538
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9522194065233385,
+        "chrf++": 94.29437066520019,
+        "tree_similarity": 0.45894263217097864
+      },
+      "error": null,
+      "parse_time_seconds": 101.73621439933777
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.898989566533917,
+        "chrf++": 88.94848232392711,
+        "tree_similarity": 0.4136645962732919
+      },
+      "error": null,
+      "parse_time_seconds": 98.24482703208923
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9340912835722525,
+        "chrf++": 93.03406525047907,
+        "tree_similarity": 0.11170212765957444
+      },
+      "error": null,
+      "parse_time_seconds": 51.4201295375824
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9314381882705887,
+        "chrf++": 94.06446032206215,
+        "tree_similarity": 0.13008130081300817
+      },
+      "error": null,
+      "parse_time_seconds": 89.71038627624512
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "tree_similarity": 0.0007945967421533195
+      },
+      "error": null,
+      "parse_time_seconds": 274.66162943840027
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9244645550527903,
+        "chrf++": 89.14494648849688,
+        "tree_similarity": 0.10906862745098034
+      },
+      "error": null,
+      "parse_time_seconds": 60.182961225509644
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96494216802654,
+        "chrf++": 96.33831211724329,
+        "tree_similarity": 0.6149425287356323
+      },
+      "error": null,
+      "parse_time_seconds": 41.890764474868774
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9538898969303579,
+        "chrf++": 95.93796471839174,
+        "tree_similarity": 0.23171521035598708
+      },
+      "error": null,
+      "parse_time_seconds": 197.87602639198303
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9431894131800561,
+        "chrf++": 94.0447675147845,
+        "tree_similarity": 0.33532934131736525
+      },
+      "error": null,
+      "parse_time_seconds": 36.51275825500488
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "gemini_gemini_3_pro_preview",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525332845870274,
+        "chrf++": 94.71100199866606,
+        "tree_similarity": 0.48201438848920863
+      },
+      "error": null,
+      "parse_time_seconds": 100.90304803848267
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9035087719298246,
+        "chrf++": 94.22435305539993,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 4.888185024261475
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7876106194690266,
+        "chrf++": 82.55921434025353,
+        "tree_similarity": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 4.178395748138428
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8802395209580838,
+        "chrf++": 92.03922335364585,
+        "tree_similarity": 0.9074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 5.197633266448975
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8909090909090909,
+        "chrf++": 93.77236678745163,
+        "tree_similarity": 0.8571428571428572
+      },
+      "error": null,
+      "parse_time_seconds": 5.089524745941162
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7423312883435582,
+        "chrf++": 79.81594572606811,
+        "tree_similarity": 0.7115384615384616
+      },
+      "error": null,
+      "parse_time_seconds": 3.204857110977173
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9733333333333334,
+        "chrf++": 98.89698236906894,
+        "tree_similarity": 0.6956521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 2.6468942165374756
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9715909090909091,
+        "chrf++": 93.21261053207456,
+        "tree_similarity": 0.7307692307692308
+      },
+      "error": null,
+      "parse_time_seconds": 2.8057782649993896
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9716981132075472,
+        "chrf++": 98.81351236915309,
+        "tree_similarity": 0.8108108108108107
+      },
+      "error": null,
+      "parse_time_seconds": 2.9224436283111572
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8632573652028905,
+        "chrf++": 93.0092296966514,
+        "tree_similarity": 0.4579439252336449
+      },
+      "error": null,
+      "parse_time_seconds": 11.071690082550049
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9666424945612763,
+        "chrf++": 98.52359724397044,
+        "tree_similarity": 0.040000000000000036
+      },
+      "error": null,
+      "parse_time_seconds": 9.911863803863525
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9439287506271952,
+        "chrf++": 95.94466453911504,
+        "tree_similarity": 0.05676855895196509
+      },
+      "error": null,
+      "parse_time_seconds": 18.69610095024109
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9496213368455713,
+        "chrf++": 93.86594849529098,
+        "tree_similarity": 0.34065934065934067
+      },
+      "error": null,
+      "parse_time_seconds": 9.259074687957764
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9293139293139293,
+        "chrf++": 90.14788903548134,
+        "tree_similarity": 0.4219653179190751
+      },
+      "error": null,
+      "parse_time_seconds": 6.533267021179199
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9243336199484093,
+        "chrf++": 93.66004403609416,
+        "tree_similarity": 0.28260869565217395
+      },
+      "error": null,
+      "parse_time_seconds": 7.731174945831299
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9767332180474768,
+        "chrf++": 96.72261645981426,
+        "tree_similarity": 0.4105960264900662
+      },
+      "error": null,
+      "parse_time_seconds": 9.652208805084229
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8687005213361653,
+        "chrf++": 92.04978738771905,
+        "tree_similarity": 0.4140625
+      },
+      "error": null,
+      "parse_time_seconds": 25.530504941940308
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8898461538461538,
+        "chrf++": 89.2999416622821,
+        "tree_similarity": 0.5207373271889402
+      },
+      "error": null,
+      "parse_time_seconds": 9.178469181060791
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9395872420262664,
+        "chrf++": 93.10426303622005,
+        "tree_similarity": 0.009345794392523366
+      },
+      "error": null,
+      "parse_time_seconds": 36.08434867858887
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.962642033842884,
+        "chrf++": 96.3991927421014,
+        "tree_similarity": 0.6771771771771772
+      },
+      "error": null,
+      "parse_time_seconds": 52.6397590637207
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8877332718954678,
+        "chrf++": 89.54287233419093,
+        "tree_similarity": 0.5464725643896977
+      },
+      "error": null,
+      "parse_time_seconds": 54.270771741867065
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9480968858131488,
+        "chrf++": 95.78431080574754,
+        "tree_similarity": 0.10796915167095111
+      },
+      "error": null,
+      "parse_time_seconds": 14.506176233291626
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9567298702270093,
+        "chrf++": 95.43751166376344,
+        "tree_similarity": 0.1581818181818182
+      },
+      "error": null,
+      "parse_time_seconds": 24.409194946289062
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9040761613864426,
+        "chrf++": 90.58012737438337,
+        "tree_similarity": 0.018275725069527238
+      },
+      "error": null,
+      "parse_time_seconds": 98.46104550361633
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9236199095022625,
+        "chrf++": 89.253887787594,
+        "tree_similarity": 0.1330845771144279
+      },
+      "error": null,
+      "parse_time_seconds": 21.84321403503418
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9733643189131213,
+        "chrf++": 96.55232991470845,
+        "tree_similarity": 0.5580357142857143
+      },
+      "error": null,
+      "parse_time_seconds": 12.138883590698242
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9592210853177201,
+        "chrf++": 96.67663224909668,
+        "tree_similarity": 0.25994318181818177
+      },
+      "error": null,
+      "parse_time_seconds": 109.6018500328064
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9338323753508889,
+        "chrf++": 94.08176190530703,
+        "tree_similarity": 0.28671328671328666
+      },
+      "error": null,
+      "parse_time_seconds": 8.025360107421875
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "openai_gpt_5_1",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9420223623678519,
+        "chrf++": 92.60457319619051,
+        "tree_similarity": 0.5059952038369304
+      },
+      "error": null,
+      "parse_time_seconds": 29.821654319763184
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9074889867841409,
+        "chrf++": 94.30572483936629,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 4.350201606750488
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8657407407407407,
+        "chrf++": 84.19124359414603,
+        "tree_similarity": 0.8205128205128205
+      },
+      "error": null,
+      "parse_time_seconds": 7.85650372505188
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8909090909090909,
+        "chrf++": 92.24964868194107,
+        "tree_similarity": 0.9074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 16.20990800857544
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8932291666666666,
+        "chrf++": 93.8185830321341,
+        "tree_similarity": 0.8571428571428572
+      },
+      "error": null,
+      "parse_time_seconds": 4.542349815368652
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.803680981595092,
+        "chrf++": 81.18589916288899,
+        "tree_similarity": 0.9074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 4.3698999881744385
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9555555555555556,
+        "chrf++": 89.38187690574946,
+        "tree_similarity": 0.050000000000000044
+      },
+      "error": null,
+      "parse_time_seconds": 3.7207257747650146
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9715909090909091,
+        "chrf++": 93.21261053207456,
+        "tree_similarity": 0.7307692307692308
+      },
+      "error": null,
+      "parse_time_seconds": 3.956378936767578
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9295774647887324,
+        "chrf++": 78.0657732340898,
+        "tree_similarity": 0.02941176470588236
+      },
+      "error": null,
+      "parse_time_seconds": 4.213883638381958
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.851457399103139,
+        "chrf++": 93.25865170779092,
+        "tree_similarity": 0.5051546391752577
+      },
+      "error": null,
+      "parse_time_seconds": 7.871841907501221
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.989647657101344,
+        "chrf++": 98.9632359692677,
+        "tree_similarity": 0.044117647058823484
+      },
+      "error": null,
+      "parse_time_seconds": 12.240234375
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9559549424123529,
+        "chrf++": 94.45015153824015,
+        "tree_similarity": 0.0444444444444444
+      },
+      "error": null,
+      "parse_time_seconds": 51.49359607696533
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.764378478664193,
+        "chrf++": 88.98976898619264,
+        "tree_similarity": 0.33333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 17.55009889602661
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8599421779633794,
+        "chrf++": 90.09765733461153,
+        "tree_similarity": 0.5789473684210527
+      },
+      "error": null,
+      "parse_time_seconds": 21.861916303634644
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8781512605042017,
+        "chrf++": 93.41727214471477,
+        "tree_similarity": 0.2303370786516854
+      },
+      "error": null,
+      "parse_time_seconds": 20.73243522644043
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96609375,
+        "chrf++": 96.7482518682734,
+        "tree_similarity": 0.445859872611465
+      },
+      "error": null,
+      "parse_time_seconds": 36.762640953063965
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8559077809798271,
+        "chrf++": 92.38826098878266,
+        "tree_similarity": 0.5217391304347826
+      },
+      "error": null,
+      "parse_time_seconds": 32.86289858818054
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9029126213592233,
+        "chrf++": 91.17572178858336,
+        "tree_similarity": 0.5
+      },
+      "error": null,
+      "parse_time_seconds": 30.390251636505127
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9877673545966229,
+        "chrf++": 98.14994392109425,
+        "tree_similarity": 0.7173913043478262
+      },
+      "error": null,
+      "parse_time_seconds": 73.90655541419983
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.36669255293059755,
+        "chrf++": 41.95814200796596,
+        "tree_similarity": 0.3282312925170068
+      },
+      "error": null,
+      "parse_time_seconds": 90.9594304561615
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5320080308067011,
+        "chrf++": 57.35008298231161,
+        "tree_similarity": 0.44228274967574577
+      },
+      "error": null,
+      "parse_time_seconds": 113.49639916419983
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9432361179766025,
+        "chrf++": 95.00047703144492,
+        "tree_similarity": 0.12068965517241381
+      },
+      "error": null,
+      "parse_time_seconds": 74.07333993911743
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7120685141553535,
+        "chrf++": 75.0065800308016,
+        "tree_similarity": 0.26792452830188684
+      },
+      "error": null,
+      "parse_time_seconds": 111.35927271842957
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14928494949411109,
+        "chrf++": 17.776965143952616,
+        "tree_similarity": 0.09813269765593957
+      },
+      "error": null,
+      "parse_time_seconds": 114.02891159057617
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9295324283559577,
+        "chrf++": 90.47998515764105,
+        "tree_similarity": 0.14064516129032256
+      },
+      "error": null,
+      "parse_time_seconds": 115.65251564979553
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9751769871852316,
+        "chrf++": 96.42891850343969,
+        "tree_similarity": 0.6615384615384615
+      },
+      "error": null,
+      "parse_time_seconds": 58.37019348144531
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1585701191567369,
+        "chrf++": 18.861256485481906,
+        "tree_similarity": 0.48469387755102045
+      },
+      "error": null,
+      "parse_time_seconds": 100.22578620910645
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9399812859243417,
+        "chrf++": 94.1874558773337,
+        "tree_similarity": 0.3706293706293706
+      },
+      "error": null,
+      "parse_time_seconds": 36.48828482627869
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "anthropic_claude_sonnet_4_5",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5318831307314993,
+        "chrf++": 57.537185977014985,
+        "tree_similarity": 0.4520383693045563
+      },
+      "error": null,
+      "parse_time_seconds": 103.89692616462708
+    }
+  ],
+  "summary": {
+    "total_documents": 28,
+    "total_parsers": 3,
+    "total_results": 84,
+    "success_count": 84,
+    "failure_count": 0
+  }
+}

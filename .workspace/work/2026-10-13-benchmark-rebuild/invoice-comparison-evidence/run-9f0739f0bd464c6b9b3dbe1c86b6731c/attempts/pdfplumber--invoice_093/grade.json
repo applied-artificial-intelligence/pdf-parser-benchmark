@@ -1,0 +1,20 @@
+{
+  "grade": {
+    "correct_fields": {
+      "invoice_number": true,
+      "vendor": true,
+      "due_date": true,
+      "grand_total": true,
+      "currency_marker": true
+    },
+    "fields_correct": 5,
+    "fields_expected": 5,
+    "records_matched": 5,
+    "records_expected": 6,
+    "records_predicted": 6,
+    "records_missing": 1,
+    "records_extra": 1,
+    "document_success": false
+  },
+  "evaluation_error": null
+}

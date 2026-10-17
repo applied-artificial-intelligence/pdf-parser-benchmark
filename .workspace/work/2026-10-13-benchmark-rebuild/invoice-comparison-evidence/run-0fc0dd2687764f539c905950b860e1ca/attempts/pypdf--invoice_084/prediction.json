@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-47725",
+    "vendor": "Integrated Medical Group",
+    "due_date": "2025-11-17",
+    "grand_total": "141771.83",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-47725"
+    ],
+    "due_date": [
+      "November 17, 2025"
+    ],
+    "grand_total": [
+      "$141,771.83"
+    ],
+    "vendor": [
+      "Integrated Medical Group"
+    ]
+  },
+  "records": [
+    {
+      "description": "Laboratory Services",
+      "quantity": "82.65",
+      "unit": "panel",
+      "unit_price": "446.22",
+      "line_total": "36880.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory\nServices",
+        "quantity": "82.65",
+        "unit": "panel",
+        "unit_price": "$446.22",
+        "line_total": "$36,880.08"
+      }
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "15.8",
+      "unit": "item",
+      "unit_price": "30.8",
+      "line_total": "486.64",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nSupplies",
+        "quantity": "15.80",
+        "unit": "item",
+        "unit_price": "$30.80",
+        "line_total": "$486.64"
+      }
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "9.39",
+      "unit": "item",
+      "unit_price": "150.75",
+      "line_total": "1415.54",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nSupplies",
+        "quantity": "9.39",
+        "unit": "item",
+        "unit_price": "$150.75",
+        "line_total": "$1,415.54"
+      }
+    },
+    {
+      "description": "Specialized Procedure",
+      "quantity": "88.73",
+      "unit": "procedure",
+      "unit_price": "721.84",
+      "line_total": "64048.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Specialized\nProcedure",
+        "quantity": "88.73",
+        "unit": "procedure",
+        "unit_price": "$721.84",
+        "line_total": "$64,048.86"
+      }
+    },
+    {
+      "description": "Physical Therapy",
+      "quantity": "46.62",
+      "unit": "session",
+      "unit_price": "165.13",
+      "line_total": "7698.36",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Physical\nTherapy",
+        "quantity": "46.62",
+        "unit": "session",
+        "unit_price": "$165.13",
+        "line_total": "$7,698.36"
+      }
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "76.39",
+      "unit": "item",
+      "unit_price": "57.61",
+      "line_total": "4400.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nSupplies",
+        "quantity": "76.39",
+        "unit": "item",
+        "unit_price": "$57.61",
+        "line_total": "$4,400.83"
+      }
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "87.42",
+      "unit": "item",
+      "unit_price": "120.47",
+      "line_total": "10531.49",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nSupplies",
+        "quantity": "87.42",
+        "unit": "item",
+        "unit_price": "$120.47",
+        "line_total": "$10,531.49"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

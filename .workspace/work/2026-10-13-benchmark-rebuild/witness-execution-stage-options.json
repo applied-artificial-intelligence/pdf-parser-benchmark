@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen invoice PDFs run through actual local adapters; stage hashes are read from produced artifacts",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_invoice_comparison.py::test_backend_options_input_reference_and_protocol_have_separate_stage_identities",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "\"pipeline\": pipeline,",
+      "new": "\"pipeline\": pipeline[\"pipeline_id\"],"
+    }
+  }
+}

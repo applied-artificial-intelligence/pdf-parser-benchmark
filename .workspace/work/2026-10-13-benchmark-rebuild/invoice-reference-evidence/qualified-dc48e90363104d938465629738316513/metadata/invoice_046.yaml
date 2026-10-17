@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: France
+  name: Geisler
+document_id: invoice_046
+due_date: '2025-12-17'
+generated_at: '2025-11-18T16:46:06.934770'
+industry: manufacturing
+invoice_date: '2025-11-17'
+invoice_number: INV-24429
+line_item_count: 10
+payment_terms: Net 30
+region: EU
+subtotal: 317415.59
+tax_amount: 63483.12
+template_style: enterprise
+total: 380898.71
+vendor:
+  country: Netherlands
+  name: Standard Inc
+corpus: business
+source_url: generated://invoice_046
+domain: invoices
+doc_id: invoice_046

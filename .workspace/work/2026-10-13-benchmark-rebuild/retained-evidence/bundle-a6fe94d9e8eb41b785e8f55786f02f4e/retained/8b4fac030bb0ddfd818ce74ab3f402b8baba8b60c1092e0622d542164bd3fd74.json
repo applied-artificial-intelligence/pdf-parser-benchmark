@@ -1,0 +1,395 @@
+{
+  "benchmark": {
+    "name": "Synthetic Docling Validation",
+    "timestamp": "2025-11-22T20:21:47.781609+00:00",
+    "config_file": "benchmarks/synthetic_docling_validation.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "docling-fast": "2.63.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.904109589041096,
+        "chrf++": 91.18871091630484,
+        "character_error_rate": 0.1012396694214876
+      },
+      "error": null,
+      "parse_time_seconds": 4.136031150817871
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.943079505569968,
+        "chrf++": 93.63091223952398,
+        "character_error_rate": 0.05771313631440508
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004904270172119141
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.804177545691906,
+        "chrf++": 90.36258361424981,
+        "character_error_rate": 0.23006134969325154
+      },
+      "error": null,
+      "parse_time_seconds": 0.4015684127807617
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9078726968174204,
+        "chrf++": 91.87578181126406,
+        "character_error_rate": 0.09963768115942029
+      },
+      "error": null,
+      "parse_time_seconds": 0.37192702293395996
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7777777777777778,
+        "chrf++": 84.2799441958481,
+        "character_error_rate": 0.24074074074074073
+      },
+      "error": null,
+      "parse_time_seconds": 0.35314321517944336
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9656289364765162,
+        "chrf++": 97.88734258760805,
+        "character_error_rate": 0.03523335178011437
+      },
+      "error": null,
+      "parse_time_seconds": 0.46830224990844727
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9365750528541226,
+        "chrf++": 94.62280121405236,
+        "character_error_rate": 0.06342494714587738
+      },
+      "error": null,
+      "parse_time_seconds": 0.25504422187805176
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8879310344827587,
+        "chrf++": 83.7819230223068,
+        "character_error_rate": 0.1262135922330097
+      },
+      "error": null,
+      "parse_time_seconds": 0.24830842018127441
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8725663716814159,
+        "chrf++": 89.86013592495252,
+        "character_error_rate": 0.13688212927756654
+      },
+      "error": null,
+      "parse_time_seconds": 0.3642733097076416
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9376344086021505,
+        "chrf++": 92.29580689539705,
+        "character_error_rate": 0.06352683461117196
+      },
+      "error": null,
+      "parse_time_seconds": 0.001707315444946289
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8522946394138065,
+        "chrf++": 93.80088472969348,
+        "character_error_rate": 0.16388532306375694
+      },
+      "error": null,
+      "parse_time_seconds": 0.8629086017608643
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6585956416464891,
+        "chrf++": 88.61814893492969,
+        "character_error_rate": 0.3810810810810811
+      },
+      "error": null,
+      "parse_time_seconds": 0.3613545894622803
+    },
+    {
+      "document_id": "25_column_academic",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9267326732673268,
+        "chrf++": 92.89093105518454,
+        "character_error_rate": 0.07326732673267326
+      },
+      "error": null,
+      "parse_time_seconds": 0.9236507415771484
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8683544303797468,
+        "chrf++": 93.24828012421126,
+        "character_error_rate": 0.14730878186968838
+      },
+      "error": null,
+      "parse_time_seconds": 0.3993244171142578
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8546511627906976,
+        "chrf++": 91.45213928036917,
+        "character_error_rate": 0.16233766233766234
+      },
+      "error": null,
+      "parse_time_seconds": 0.38609743118286133
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9358974358974359,
+        "chrf++": 92.57899688236623,
+        "character_error_rate": 0.0684931506849315
+      },
+      "error": null,
+      "parse_time_seconds": 0.2633960247039795
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9688385269121813,
+        "chrf++": 93.09293311362774,
+        "character_error_rate": 0.031791907514450865
+      },
+      "error": null,
+      "parse_time_seconds": 0.2544240951538086
+    },
+    {
+      "document_id": "18_list_nested_3level",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9071618037135278,
+        "chrf++": 85.36621653807653,
+        "character_error_rate": 0.1023391812865497
+      },
+      "error": null,
+      "parse_time_seconds": 0.2655203342437744
+    },
+    {
+      "document_id": "28_mixed_technical_docs",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8656987295825771,
+        "chrf++": 90.45296143964775,
+        "character_error_rate": 0.15195071868583163
+      },
+      "error": null,
+      "parse_time_seconds": 0.38353991508483887
+    },
+    {
+      "document_id": "23_column_mixed_width",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9389312977099237,
+        "chrf++": 92.70431410450094,
+        "character_error_rate": 0.061068702290076333
+      },
+      "error": null,
+      "parse_time_seconds": 0.3723311424255371
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9523076923076923,
+        "chrf++": 97.80464408898538,
+        "character_error_rate": 0.04889589905362776
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015575885772705078
+    },
+    {
+      "document_id": "26_column_brochure",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8692307692307693,
+        "chrf++": 84.75420070953598,
+        "character_error_rate": 0.13076923076923078
+      },
+      "error": null,
+      "parse_time_seconds": 0.25611305236816406
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9232804232804233,
+        "chrf++": 92.32689828760876,
+        "character_error_rate": 0.07671957671957672
+      },
+      "error": null,
+      "parse_time_seconds": 0.2602660655975342
+    },
+    {
+      "document_id": "22_column_three_column",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8131868131868132,
+        "chrf++": 80.48510867079295,
+        "character_error_rate": 0.18681318681318682
+      },
+      "error": null,
+      "parse_time_seconds": 0.9331254959106445
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7787234042553192,
+        "chrf++": 88.35281879154068,
+        "character_error_rate": 0.24528301886792453
+      },
+      "error": null,
+      "parse_time_seconds": 0.388840913772583
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9864575908766928,
+        "chrf++": 98.69309198243982,
+        "character_error_rate": 0.013652694610778443
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045752525329589844
+    },
+    {
+      "document_id": "29_mixed_policy_doc",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9107468123861566,
+        "chrf++": 92.10594608304223,
+        "character_error_rate": 0.09722222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.394092321395874
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9226036912085731,
+        "chrf++": 98.02317953166296,
+        "character_error_rate": 0.07776669990029911
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018312931060791016
+    },
+    {
+      "document_id": "30_mixed_meeting_minutes",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8175074183976261,
+        "chrf++": 91.79886365077523,
+        "character_error_rate": 0.19743178170144463
+      },
+      "error": null,
+      "parse_time_seconds": 0.3814103603363037
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8832116788321168,
+        "chrf++": 82.18842333356953,
+        "character_error_rate": 0.12834224598930483
+      },
+      "error": null,
+      "parse_time_seconds": 0.2677476406097412
+    },
+    {
+      "document_id": "20_list_with_paragraphs",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9696969696969697,
+        "chrf++": 97.94329185496082,
+        "character_error_rate": 0.03125
+      },
+      "error": null,
+      "parse_time_seconds": 0.27019596099853516
+    }
+  ],
+  "summary": {
+    "total_documents": 31,
+    "total_parsers": 1,
+    "total_results": 31,
+    "success_count": 31,
+    "failure_count": 0
+  }
+}

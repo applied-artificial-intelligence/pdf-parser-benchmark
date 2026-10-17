@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/parsebench.py",
+  "fixture": "Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "test": "tests/test_parsebench.py::test_unlabelled_business_domain_stays_unknown_despite_enterprise_filename",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench.py",
+      "old": "\"domain\": None,",
+      "new": "\"domain\": \"not observed\","
+    }
+  }
+}

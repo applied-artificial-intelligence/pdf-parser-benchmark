@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-28471",
+    "vendor": "Tasteful Culinary",
+    "due_date": "2025-12-14",
+    "grand_total": "13998.32",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "22.42",
+      "unit": "per person",
+      "unit_price": "108.92",
+      "line_total": "2441.99"
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "2.87",
+      "unit": "per person",
+      "unit_price": "60.36",
+      "line_total": "173.23"
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "80.33",
+      "unit": "per person",
+      "unit_price": "80.87",
+      "line_total": "6496.29"
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "48.06",
+      "unit": "per person",
+      "unit_price": "63.69",
+      "line_total": "3060.94"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-28471",
+    "vendor": "Tasteful Culinary",
+    "due_date": "December 14, 2025",
+    "grand_total": "$13,998.32",
+    "records": [
+      {
+        "description": "Dinner Service - Plated",
+        "quantity": "22.42",
+        "unit": "per person",
+        "unit_price": "$108.92",
+        "line_total": "$2,441.99"
+      },
+      {
+        "description": "Dinner Service - Plated",
+        "quantity": "2.87",
+        "unit": "per person",
+        "unit_price": "$60.36",
+        "line_total": "$173.23"
+      },
+      {
+        "description": "Dinner Service - Plated",
+        "quantity": "80.33",
+        "unit": "per person",
+        "unit_price": "$80.87",
+        "line_total": "$6,496.29"
+      },
+      {
+        "description": "Dinner Service - Plated",
+        "quantity": "48.06",
+        "unit": "per person",
+        "unit_price": "$63.69",
+        "line_total": "$3,060.94"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_089"
+}

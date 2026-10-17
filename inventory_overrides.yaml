@@ -1,0 +1,160 @@
+results:
+  results/arxiv_10docs_full.json:
+    status: archive_only
+    note: Historical mixed commercial run with service-limit and parser-adapter failures.
+  results/synthetic_missing_parsers.json:
+    status: archive_only
+    note: Historical synthetic gap-fill run with widespread Marker output-path failures.
+story:
+  results/sec_filings_47docs.json:
+    family: sec_filings_real_business
+    title: 'SEC Filings: Real Business Reports'
+    historical_description:
+      track_id: sec_filings_real_business
+      title: 'SEC Filings: Real Business Reports'
+      result_path: results/sec_filings_47docs.json
+      source: Real 10-K/10-Q style filings with HTML-derived ground truth
+      status: tier_1_stronger_comparison
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Best current open-source comparison track. Ground truth is derived from SEC HTML, so
+        it is strong for text/order but not a perfect visual-layout oracle.
+    evidence_tier: directional
+    supported_interpretation: Current selection config uses pypdfium2 >= 0.90; ARS PDFs and 10-K HTML
+      may differ. Similarity to that reference is diagnostic, not independent task correctness.
+    supporting_evidence_paths:
+    - benchmarks/sec_filings_47docs.yaml
+    - builders/build_sec_corpus.py
+  results/invoices_100docs_fresh.json:
+    family: invoices_source_first
+    title: 'Invoices: Source-First Controlled Business Documents'
+    historical_description:
+      track_id: invoices_source_first
+      title: 'Invoices: Source-First Controlled Business Documents'
+      result_path: results/invoices_100docs_fresh.json
+      source: Synthetic source-first invoice PDFs with generated text ground truth
+      status: tier_1_stronger_comparison_with_caveat
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Useful for controlled invoice extraction sanity checks. It does not prove performance
+        on arbitrary real vendor invoices.
+    evidence_tier: historical
+    supported_interpretation: Retained DOCX extraction matches backups, not current references. The
+      original scored reference bytes are not established; source-first independence is unverified
+      for this run.
+    supporting_evidence_paths:
+    - .workspace/work/2026-10-13-benchmark-rebuild/reference-reconstruction-check.json
+    - .workspace/work/2026-10-13-benchmark-rebuild/pre-run-source-inventory.json
+    - benchmarks/invoices_100docs_fresh.yaml
+  results/presentations_30docs.json:
+    family: legacy_presentations
+    title: 'Legacy Presentations: Source-Based Caveat Track'
+    historical_description:
+      track_id: legacy_presentations
+      title: 'Legacy Presentations: Source-Based Caveat Track'
+      result_path: results/presentations_30docs.json
+      source: Public presentation PDFs paired with source artifacts
+      status: tier_2_directional
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Useful slide parsing stress evidence, but source quality and ground truth are uneven.
+        Use as directional evidence, not as a polished investor-deck benchmark.
+    evidence_tier: directional
+    supported_interpretation: Retained presentation evidence with uneven reference/source correspondence;
+      not a full-deck task comparison.
+  results/business_synthetic_investor_decks_subset_refresh.json:
+    family: investor_decks_prototype
+    title: 'Investor Decks: Source-First Prototype'
+    historical_description:
+      track_id: investor_decks_prototype
+      title: 'Investor Decks: Source-First Prototype'
+      result_path: results/business_synthetic_investor_decks_subset_refresh.json
+      source: Synthetic PPTX-to-PDF investor-style decks with source-derived ground truth
+      status: tier_2_prototype
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Promising source-first deck generation prototype. Use for parser stress testing and
+        pipeline development; visual realism is not yet flagship quality.
+    evidence_tier: prototype
+    supported_interpretation: Synthetic PPTX/PDF prototype, limited templates and realism; no corporate-deck
+      population claim.
+  results/arxiv_10docs_fresh.json:
+    family: academic_arxiv
+    title: 'Academic Papers: Technical Track'
+    historical_description:
+      track_id: academic_arxiv
+      title: 'Academic Papers: Technical Track'
+      result_path: results/arxiv_10docs_fresh.json
+      source: arXiv PDFs with LaTeX-derived ground truth
+      status: tier_2_technical_track
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Valuable technical stress track for equations, papers, and layout complexity. Separate
+        from the business-document marketing story.
+    evidence_tier: directional
+    supported_interpretation: Technical-paper text metrics; exact source-to-PDF and equation correspondence
+      require qualification.
+  results/frontier_unified_30docs.json:
+    family: frontier_budget_unified
+    title: 'Frontier/Budget Parser Pilot: Unified 30-Document Set'
+    historical_description:
+      track_id: frontier_budget_unified
+      title: 'Frontier/Budget Parser Pilot: Unified 30-Document Set'
+      result_path: results/frontier_unified_30docs.json
+      source: Mixed 30-document pilot across frontier/budget parser options
+      status: tier_2_directional_paid_model_pilot
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Directional model/parser evidence. Use for cost-quality discussion only after noting
+        prompt/config sensitivity and limited sample size.
+    evidence_tier: historical
+    supported_interpretation: Historical paid model pilot; current provider/model/configuration and
+      cost comparability are unverified.
+  results/frontier_premium_300p.json:
+    family: frontier_premium_pilot
+    title: Frontier Premium Parser Pilot
+    historical_description:
+      track_id: frontier_premium_pilot
+      title: Frontier Premium Parser Pilot
+      result_path: results/frontier_premium_300p.json
+      source: Premium model/parser pilot on a constrained page budget
+      status: tier_2_directional_paid_model_pilot
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Directional premium-model evidence. Model-specific winner claims require prompt, configuration,
+        and cost audit before being used as headlines.
+    evidence_tier: historical
+    supported_interpretation: Historical paid pilot; metric subsets and configuration identities must
+      be inspected before interpreting differences.
+  results/sec_filings_screen_all.json:
+    family: sec_screening_full
+    title: SEC Full-Corpus Screen
+    historical_description:
+      track_id: sec_screening_full
+      title: SEC Full-Corpus Screen
+      result_path: results/sec_filings_screen_all.json
+      source: All 320 SEC filings through one baseline parser
+      status: tier_2_screening_only
+      primary_metric: edit_similarity
+      use_in_story: true
+      caveat: Useful as coverage proof and ground-truth screening, but it is a one-parser screen rather
+        than a parser comparison.
+    evidence_tier: directional
+    supported_interpretation: One-parser screen over observed rows. Title All 89 conflicts with 320
+      observed document IDs; no parser ranking or impartial sample follows.
+  results/sec_filings_commercial_5docs.json:
+    family: sec_commercial_pilot
+    title: SEC Commercial Parser Pilot
+    historical_description:
+      track_id: sec_commercial_pilot
+      title: SEC Commercial Parser Pilot
+      result_path: results/sec_filings_commercial_5docs.json
+      source: Small paid-parser SEC pilot
+      status: tier_3_historical_diagnostic
+      primary_metric: edit_similarity
+      use_in_story: false
+      caveat: Too small and internally inconsistent for claims. Keep as a lesson in paid-parser experiment
+        design and avoid rerunning paid parsers without a concrete decision.
+    evidence_tier: historical
+    supported_interpretation: Observed rows contradict declared failure count. Preserve paid-run diagnostics
+      and separate counters; no current paid-parser winner.

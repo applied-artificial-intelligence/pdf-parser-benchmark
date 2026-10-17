@@ -1,0 +1,301 @@
+{
+  "benchmark": {
+    "name": "Academic Papers - 5 arXiv Papers",
+    "timestamp": "2026-02-24T12:22:34.310944+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.39",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5198279491585212,
+        "chrf++": 79.3492998086783,
+        "character_error_rate": 0.6467027325251721,
+        "latex_f1": 0.02985074626865672,
+        "element_f1": 0.47350664814447313
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011234283447265625
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45712876546020187,
+        "chrf++": 41.97556636649945,
+        "character_error_rate": 0.5428712345397981,
+        "latex_f1": 0.0,
+        "element_f1": 0.4607129168263702
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018796920776367188
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1878513604677311,
+        "chrf++": 54.00129905509501,
+        "character_error_rate": 2.928023105571179,
+        "latex_f1": 0.0,
+        "element_f1": 0.2576411673286133
+      },
+      "error": null,
+      "parse_time_seconds": 0.0042285919189453125
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4623414376321353,
+        "chrf++": 74.71710853381425,
+        "character_error_rate": 0.7786124832566743,
+        "latex_f1": 0.0,
+        "element_f1": 0.4119798811156837
+      },
+      "error": null,
+      "parse_time_seconds": 0.002088785171508789
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3625424770129505,
+        "chrf++": 54.742349284099056,
+        "character_error_rate": 0.6374575229870495,
+        "latex_f1": 0.0,
+        "element_f1": 0.6307437317064569
+      },
+      "error": null,
+      "parse_time_seconds": 0.012936592102050781
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5137210731107926,
+        "chrf++": 78.69928421514817,
+        "character_error_rate": 0.6550244440698226,
+        "latex_f1": 0.02985074626865672,
+        "element_f1": 0.32027437013586596
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008692741394042969
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45549738219895286,
+        "chrf++": 42.07139960743363,
+        "character_error_rate": 0.5445026178010471,
+        "latex_f1": 0.0,
+        "element_f1": 0.5192557334487234
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004909038543701172
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.18755879378926188,
+        "chrf++": 54.068362378671075,
+        "character_error_rate": 2.92108130019508,
+        "latex_f1": 0.0,
+        "element_f1": 0.21895880754827815
+      },
+      "error": null,
+      "parse_time_seconds": 0.004024505615234375
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4601623549790328,
+        "chrf++": 74.8313645721828,
+        "character_error_rate": 0.7818867336163458,
+        "latex_f1": 0.0,
+        "element_f1": 0.3020807427671392
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018432140350341797
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.35985657608374955,
+        "chrf++": 54.821459646341964,
+        "character_error_rate": 0.6401434239162505,
+        "latex_f1": 0.0,
+        "element_f1": 0.523482505178921
+      },
+      "error": null,
+      "parse_time_seconds": 0.00725245475769043
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49213602763940223,
+        "chrf++": 77.95513182330694,
+        "character_error_rate": 0.7749613032750456,
+        "latex_f1": 0.07894736842105264,
+        "element_f1": 0.3961437335670464
+      },
+      "error": null,
+      "parse_time_seconds": 177.89296293258667
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6433340921162456,
+        "chrf++": 65.20182219413626,
+        "character_error_rate": 0.35666590788375446,
+        "latex_f1": 0.15813953488372093,
+        "element_f1": 0.6778947368421053
+      },
+      "error": null,
+      "parse_time_seconds": 270.2922668457031
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19338787617817332,
+        "chrf++": 55.19216951550673,
+        "character_error_rate": 2.98986597755314,
+        "latex_f1": 0.07518796992481203,
+        "element_f1": 0.3025326474079937
+      },
+      "error": null,
+      "parse_time_seconds": 112.7527334690094
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4493326285185675,
+        "chrf++": 76.24029001127906,
+        "character_error_rate": 0.8859398586827875,
+        "latex_f1": 0.13469985358711564,
+        "element_f1": 0.39601328903654487
+      },
+      "error": null,
+      "parse_time_seconds": 222.34090638160706
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3517238985480584,
+        "chrf++": 57.721824014772785,
+        "character_error_rate": 0.6482761014519416,
+        "latex_f1": 0.3867212761370985,
+        "element_f1": 0.7723794269442961
+      },
+      "error": null,
+      "parse_time_seconds": 704.6354279518127
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4928078095874322,
+        "chrf++": 78.14530258800026,
+        "character_error_rate": 0.7213989057638963,
+        "latex_f1": 0.02985074626865672,
+        "element_f1": 0.4682873332114787
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015921592712402344
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40860459822444795,
+        "chrf++": 40.56389331743097,
+        "character_error_rate": 0.591395401775552,
+        "latex_f1": 0.0,
+        "element_f1": 0.32625482625482627
+      },
+      "error": null,
+      "parse_time_seconds": 0.002449512481689453
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19645184219879164,
+        "chrf++": 58.23828282356437,
+        "character_error_rate": 2.7494616300575108,
+        "latex_f1": 0.0,
+        "element_f1": 0.3909249563699826
+      },
+      "error": null,
+      "parse_time_seconds": 0.00922083854675293
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4654602576789677,
+        "chrf++": 74.88457558017906,
+        "character_error_rate": 0.7886053252634637,
+        "latex_f1": 0.0,
+        "element_f1": 0.5514675485737909
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022382736206054688
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.36959218596514365,
+        "chrf++": 54.557992976275514,
+        "character_error_rate": 0.6304078140348564,
+        "latex_f1": 0.001333333333333333,
+        "element_f1": 0.646341152797942
+      },
+      "error": null,
+      "parse_time_seconds": 0.00882577896118164
+    }
+  ],
+  "summary": {
+    "total_documents": 5,
+    "total_parsers": 4,
+    "total_results": 20,
+    "success_count": 20,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,1 @@
+Reduced, unchanged annotation rows from llamaindex/ParseBench, dataset revision 2805a1d940f95a203e0ae4b88be9934f7765b3fc. LlamaIndex contributors, Apache License 2.0. Group files contain selected rows; manifest records their derived hashes. Source document files are not redistributed.

@@ -1,0 +1,12 @@
+{
+ "item": "retained-artifacts.ordering-spacing",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_run_registry.py::test_unequal_metric_populations_are_explicit_and_do_not_create_primary_ranks",
+  "fixture (both runs): Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

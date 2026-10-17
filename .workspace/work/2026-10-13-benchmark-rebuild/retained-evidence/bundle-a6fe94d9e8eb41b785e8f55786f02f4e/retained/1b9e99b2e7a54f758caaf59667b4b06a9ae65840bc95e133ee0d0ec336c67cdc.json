@@ -1,0 +1,246 @@
+{
+  "benchmark": {
+    "name": "Academic Papers - 5 arXiv Papers",
+    "timestamp": "2025-11-23T19:16:59.941676+00:00",
+    "config_file": "benchmarks/academic_5docs.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pypdfium2": "4.30.0",
+      "pymupdf": "1.26.6",
+      "marker": "1.10.1",
+      "docling-fast": "2.63.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2750923826757351,
+        "chrf++": 32.33514407806218,
+        "character_error_rate": 0.7249076173242649
+      },
+      "error": null,
+      "parse_time_seconds": 0.09339427947998047
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3625424770129505,
+        "chrf++": 54.742349284099056,
+        "character_error_rate": 0.6374575229870495
+      },
+      "error": null,
+      "parse_time_seconds": 0.5281422138214111
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.38532292526073064,
+        "chrf++": 45.9606092826638,
+        "character_error_rate": 0.6146770747392694
+      },
+      "error": null,
+      "parse_time_seconds": 0.23390960693359375
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2609342607170937,
+        "chrf++": 29.342744616140898,
+        "character_error_rate": 0.7390657392829063
+      },
+      "error": null,
+      "parse_time_seconds": 0.24782037734985352
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2098756170385152,
+        "chrf++": 22.176416084046185,
+        "character_error_rate": 0.7901243829614848
+      },
+      "error": null,
+      "parse_time_seconds": 0.06242203712463379
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.27308526938302935,
+        "chrf++": 32.06961988357961,
+        "character_error_rate": 0.7269147306169707
+      },
+      "error": null,
+      "parse_time_seconds": 0.061684370040893555
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.35985657608374955,
+        "chrf++": 54.821459646341964,
+        "character_error_rate": 0.6401434239162505
+      },
+      "error": null,
+      "parse_time_seconds": 0.277606725692749
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.38370036597491064,
+        "chrf++": 46.03420657065814,
+        "character_error_rate": 0.6162996340250894
+      },
+      "error": null,
+      "parse_time_seconds": 0.13102030754089355
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.26030688922268275,
+        "chrf++": 29.328490660175387,
+        "character_error_rate": 0.7396931107773173
+      },
+      "error": null,
+      "parse_time_seconds": 0.1053919792175293
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.20768503653468173,
+        "chrf++": 22.17533589973712,
+        "character_error_rate": 0.7923149634653183
+      },
+      "error": null,
+      "parse_time_seconds": 0.013982295989990234
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Marker execution failed with exit code 1\nstdout: \nstderr: \nRecognizing Layout:   0%|          | 0/27 [00:00<?, ?it/s]\nRecognizing Layout:   4%|▎         | 1/27 [00:05<02:26,  5.64s/it]\nRecognizing Layout:  15%|█▍        | 4/27 [00:07<00:33,  1.44s/it]\nRecognizing Layout:  26%|██▌       | 7/27 [00:08<00:18,  1.08it/s]\nRecognizing Layout:  41%|████      | 11/27 [00:10<00:10,  1.47it/s]\nRecognizing Layout:  48%|████▊     | 13/27 [00:10<00:07,  1.95it/s]\nRecognizing Layout:  52%|█████▏    | 14/27 [00:12<00:09,  1.41it/s]\nRecognizing Layout:  56%|█████▌    | 15/27 [00:12<00:07,  1.58it/s]\nRecognizing Layout:  59%|█████▉    | 16/27 [00:12<00:06,  1.62it/s]\nRecognizing Layout:  63%|██████▎   | 17/27 [00:14<00:09,  1.06it/s]\nRecognizing Layout:  74%|███████▍  | 20/27 [00:15<00:03,  1.95it/s]\nRecognizing Layout:  78%|███████▊  | 21/27 [00:15<00:02,  2.19it/s]\nRecognizing Layout:  81%|████████▏ | 22/27 [00:15<00:02,  2.45it/s]\nRecognizing Layout:  93%|█████████▎| 25/27 [00:16<00:00,  3.12it/s]\nRecognizing Layout:  96%|█████████▋| 26/27 [00:16<00:00,  2.97it/s]\nRecognizing Layout: 100%|██████████| 27/27 [00:17<00:00,  2.40it/s]\nRecognizing Layout: 100%|██████████| 27/27 [00:17<00:00,  1.55it/s]\n\nRunning OCR Error Detection:   0%|          | 0/2 [00:00<?, ?it/s]\nRunning OCR Error Detection:  50%|█████     | 1/2 [00:00<00:00,  7.14it/s]\nRunning OCR Error Detection: 100%|██████████| 2/2 [00:00<00:00, 10.31it/s]\n\nDetecting bboxes:   0%|          | 0/1 [00:00<?, ?it/s]\nDetecting bboxes: 100%|██████████| 1/1 [00:01<00:00,  1.83s/it]\nDetecting bboxes: 100%|██████████| 1/1 [00:01<00:00,  1.83s/it]\n\nRecognizing Text:   0%|          | 0/103 [00:00<?, ?it/s]Traceback (most recent call last):\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/bin/marker_single\", line 10, in <module>\n    sys.exit(convert_single_cli())\n             ~~~~~~~~~~~~~~~~~~^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1462, in __call__\n    return self.main(*args, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1383, in main\n    rv = self.invoke(ctx)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1246, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 814, in invoke\n    return callback(*args, **kwargs)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/scripts/convert_single.py\", line 38, in convert_single_cli\n    rendered = converter(fpath)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 195, in __call__\n    document = self.build_document(temp_path)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 182, in build_document\n    document = DocumentBuilder(self.config)(\n        provider, layout_builder, line_builder, ocr_builder\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/document.py\", line 36, in __call__\n    ocr_builder(document, provider)\n    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/ocr.py\", line 87, in __call__\n    self.ocr_extraction(\n    ~~~~~~~~~~~~~~~~~~~^\n        document,\n        ^^^^^^^^^\n    ...<4 lines>...\n        block_original_texts,\n        ^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/ocr.py\", line 178, in ocr_extraction\n    recognition_results: List[OCRResult] = self.recognition_model(\n                                           ~~~~~~~~~~~~~~~~~~~~~~^\n        images=images,\n        ^^^^^^^^^^^^^^\n    ...<8 lines>...\n        max_tokens=2048\n        ^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/recognition/__init__.py\", line 431, in __call__\n    predicted_tokens, batch_bboxes, scores, _ = self.foundation_predictor.prediction_loop(\n                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        images=flat[\"slices\"],\n        ^^^^^^^^^^^^^^^^^^^^^^\n    ...<8 lines>...\n        tqdm_desc=\"Recognizing Text\"\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 780, in prediction_loop\n    updated_inputs, outputs, merge_idxs = self.prefill(\n                                          ~~~~~~~~~~~~^\n        current_inputs, max_lookahead_tokens=0\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 556, in prefill\n    image_embeddings = self.model.get_image_embeddings(\n        pixel_values=image_tiles,\n    ...<3 lines>...\n        max_batch_size=self.kv_cache.max_batch_size,\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/__init__.py\", line 258, in get_image_embeddings\n    chunk_embeddings = self.vision_encoder.embed_images(\n        image_batch=chunk_pixels.unsqueeze(0).to(device=self.device),\n        grid_thw=chunk_grid_thw.unsqueeze(0).to(device=self.device),\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 798, in embed_images\n    return super().forward(\n           ~~~~~~~~~~~~~~~^\n        hidden_states=image_batch,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        grid_thw=grid_thw,\n        ^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 765, in forward\n    hidden_states = blk(\n        hidden_states,\n        cu_seqlens=cu_seqlens,\n        position_embeddings=position_embeddings,\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py\", line 1775, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py\", line 1786, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 595, in forward\n    hidden_states = hidden_states + self.attn(\n                                    ~~~~~~~~~^\n        self.norm1(hidden_states),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<2 lines>...\n        position_embeddings=position_embeddings,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py\", line 1775, in _wrapped_call_impl\n    return self._call_impl(*args, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py\", line 1786, in _call_impl\n    return forward_call(*args, **kwargs)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 539, in forward\n    q, k = apply_rotary_pos_emb_vision(q, k, cos, sin)\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 333, in apply_rotary_pos_emb_vision\n    k_embed = (k * cos) + (rotate_half(k) * sin)\n                           ~~~~~~~~~~~~~~~^~~~~\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 152.00 MiB. GPU 0 has a total capacity of 23.55 GiB of which 54.69 MiB is free. Including non-PyTorch memory, this process has 6.63 GiB memory in use. Process 104059 has 6.10 GiB memory in use. Process 104091 has 6.50 GiB memory in use. Process 104041 has 1.22 GiB memory in use. Process 104040 has 1.47 GiB memory in use. Process 104039 has 476.00 MiB memory in use. Of the allocated memory 6.18 GiB is allocated by PyTorch, and 138.91 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n\nRecognizing Text:   0%|          | 0/103 [00:03<?, ?it/s]\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Marker processing timed out after 300 seconds: Command '['/home/stefan/applied-ai/pdf-bench/.venv/bin/marker_single', '/home/stefan/applied-ai/pdf-bench/corpus/academic/pdfs/2303.18223.pdf', '--output_dir', '/home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp']' timed out after 300 seconds",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.38125277654375833,
+        "chrf++": 47.16954314700011,
+        "character_error_rate": 0.6187472234562417
+      },
+      "error": null,
+      "parse_time_seconds": 201.9680941104889
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Marker execution failed with exit code 1\nstdout: \nstderr: \nRecognizing Layout:   0%|          | 0/100 [00:00<?, ?it/s]Traceback (most recent call last):\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/bin/marker_single\", line 10, in <module>\n    sys.exit(convert_single_cli())\n             ~~~~~~~~~~~~~~~~~~^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1462, in __call__\n    return self.main(*args, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1383, in main\n    rv = self.invoke(ctx)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1246, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 814, in invoke\n    return callback(*args, **kwargs)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/scripts/convert_single.py\", line 38, in convert_single_cli\n    rendered = converter(fpath)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 195, in __call__\n    document = self.build_document(temp_path)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 182, in build_document\n    document = DocumentBuilder(self.config)(\n        provider, layout_builder, line_builder, ocr_builder\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/document.py\", line 33, in __call__\n    layout_builder(document, provider)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/layout.py\", line 56, in __call__\n    layout_results = self.surya_layout(document.pages)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/layout.py\", line 88, in surya_layout\n    layout_results = self.layout_model(\n        [p.get_image(highres=False) for p in pages],\n        batch_size=int(self.get_batch_size()),\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/layout/__init__.py\", line 51, in __call__\n    self.foundation_predictor.prediction_loop(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        images=images,\n        ^^^^^^^^^^^^^^\n    ...<7 lines>...\n        tqdm_desc=\"Recognizing Layout\"\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 780, in prediction_loop\n    updated_inputs, outputs, merge_idxs = self.prefill(\n                                          ~~~~~~~~~~~~^\n        current_inputs, max_lookahead_tokens=0\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 556, in prefill\n    image_embeddings = self.model.get_image_embeddings(\n        pixel_values=image_tiles,\n    ...<3 lines>...\n        max_batch_size=self.kv_cache.max_batch_size,\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/__init__.py\", line 258, in get_image_embeddings\n    chunk_embeddings = self.vision_encoder.embed_images(\n        image_batch=chunk_pixels.unsqueeze(0).to(device=self.device),\n        grid_thw=chunk_grid_thw.unsqueeze(0).to(device=self.device),\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 798, in embed_images\n    return super().forward(\n           ~~~~~~~~~~~~~~~^\n        hidden_states=image_batch,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^\n        grid_thw=grid_thw,\n        ^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/common/surya/encoder/__init__.py\", line 744, in forward\n    position_embeddings = (emb.cos(), emb.sin())\n                           ~~~~~~~^^\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 23.55 GiB of which 20.69 MiB is free. Process 104057 has 6.42 GiB memory in use. Process 104059 has 3.51 GiB memory in use. Including non-PyTorch memory, this process has 4.04 GiB memory in use. Process 104091 has 6.10 GiB memory in use. Process 104041 has 1.65 GiB memory in use. Process 104040 has 702.00 MiB memory in use. Of the allocated memory 3.69 GiB is allocated by PyTorch, and 44.81 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n\nRecognizing Layout:   0%|          | 0/100 [00:03<?, ?it/s]\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Marker execution failed with exit code 1\nstdout: \nstderr: Traceback (most recent call last):\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/bin/marker_single\", line 10, in <module>\n    sys.exit(convert_single_cli())\n             ~~~~~~~~~~~~~~~~~~^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1462, in __call__\n    return self.main(*args, **kwargs)\n           ~~~~~~~~~^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1383, in main\n    rv = self.invoke(ctx)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 1246, in invoke\n    return ctx.invoke(self.callback, **ctx.params)\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/click/core.py\", line 814, in invoke\n    return callback(*args, **kwargs)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/scripts/convert_single.py\", line 38, in convert_single_cli\n    rendered = converter(fpath)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 195, in __call__\n    document = self.build_document(temp_path)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/converters/pdf.py\", line 182, in build_document\n    document = DocumentBuilder(self.config)(\n        provider, layout_builder, line_builder, ocr_builder\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/document.py\", line 33, in __call__\n    layout_builder(document, provider)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/layout.py\", line 56, in __call__\n    layout_results = self.surya_layout(document.pages)\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/marker/builders/layout.py\", line 88, in surya_layout\n    layout_results = self.layout_model(\n        [p.get_image(highres=False) for p in pages],\n        batch_size=int(self.get_batch_size()),\n    )\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/layout/__init__.py\", line 51, in __call__\n    self.foundation_predictor.prediction_loop(\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        images=images,\n        ^^^^^^^^^^^^^^\n    ...<7 lines>...\n        tqdm_desc=\"Recognizing Layout\"\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 746, in prediction_loop\n    self.setup_cache(\n    ~~~~~~~~~~~~~~~~^\n        batch_size,\n        ^^^^^^^^^^^\n        max_cache_len=max_image_tokens + max_sliding_window + self.extra_token_count.get(settings.TORCH_DEVICE_MODEL, 0),\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        max_sliding_window=max_sliding_window,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/__init__.py\", line 154, in setup_cache\n    self.kv_cache = kv_cache_cls(\n                    ~~~~~~~~~~~~^\n        self.model.config,\n        ^^^^^^^^^^^^^^^^^^\n    ...<4 lines>...\n        dtype=self.model.dtype,\n        ^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/home/stefan/applied-ai/pdf-bench/.venv/lib/python3.13/site-packages/surya/foundation/cache/dynamic_ops.py\", line 52, in __init__\n    new_layer_key_cache = torch.zeros(\n        cache_shape, dtype=self._dtype, device=device\n    )\ntorch.OutOfMemoryError: CUDA out of memory. Tried to allocate 12.00 MiB. GPU 0 has a total capacity of 23.55 GiB of which 25.69 MiB is free. Process 104057 has 6.42 GiB memory in use. Process 104059 has 3.51 GiB memory in use. Process 104095 has 3.51 GiB memory in use. Process 104091 has 3.51 GiB memory in use. Including non-PyTorch memory, this process has 3.81 GiB memory in use. Process 104041 has 1.62 GiB memory in use. Of the allocated memory 3.48 GiB is allocated by PyTorch, and 37.43 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2732100639919022,
+        "chrf++": 32.66252617378081,
+        "character_error_rate": 0.7267899360080978
+      },
+      "error": null,
+      "parse_time_seconds": 54.43491077423096
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "docling-fast",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Docling: CUDA out of memory. Tried to allocate 20.00 MiB. GPU 0 has a total capacity of 23.55 GiB of which 24.69 MiB is free. Process 104057 has 6.42 GiB memory in use. Process 104059 has 3.51 GiB memory in use. Process 104095 has 4.04 GiB memory in use. Process 104091 has 6.10 GiB memory in use. Process 104041 has 1.65 GiB memory in use. Including non-PyTorch memory, this process has 702.00 MiB memory in use. Of the allocated memory 445.08 MiB is allocated by PyTorch, and 2.92 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.39001713524147996,
+        "chrf++": 46.3823566942143,
+        "character_error_rate": 0.60998286475852
+      },
+      "error": null,
+      "parse_time_seconds": 38.49575686454773
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2616340212300905,
+        "chrf++": 29.024602436682812,
+        "character_error_rate": 0.7383659787699095
+      },
+      "error": null,
+      "parse_time_seconds": 37.512338161468506
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.18657444222719022,
+        "chrf++": 21.605858630065715,
+        "character_error_rate": 0.8134255577728098
+      },
+      "error": null,
+      "parse_time_seconds": 11.362312316894531
+    }
+  ],
+  "summary": {
+    "total_documents": 5,
+    "total_parsers": 4,
+    "total_results": 20,
+    "success_count": 15,
+    "failure_count": 5
+  }
+}

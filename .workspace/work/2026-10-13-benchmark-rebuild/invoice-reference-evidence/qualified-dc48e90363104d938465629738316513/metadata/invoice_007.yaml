@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Moran, Harper and Rose
+document_id: invoice_007
+due_date: '2025-11-26'
+generated_at: '2025-11-18T16:45:11.878371'
+industry: saas
+invoice_date: '2025-10-27'
+invoice_number: INV-28365
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 9051192.81
+tax_amount: 771161.63
+template_style: enterprise
+total: 9822354.44
+vendor:
+  country: USA
+  name: Cloud Software
+corpus: business
+source_url: generated://invoice_007
+domain: invoices
+doc_id: invoice_007

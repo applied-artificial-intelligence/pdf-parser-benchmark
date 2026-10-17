@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-67565",
+    "vendor": "Elite Development",
+    "due_date": "2025-11-28",
+    "grand_total": "11060.76",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "53.29",
+      "unit_price": "73.34",
+      "line_total": "3908.29"
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "62.44",
+      "unit_price": "86.95",
+      "line_total": "5429.16"
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "3.68",
+      "unit_price": "76.89",
+      "line_total": "282.96"
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "6.3",
+      "unit_price": "113.77",
+      "line_total": "716.75"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-67565",
+    "vendor": "Elite Development",
+    "due_date": "November 28, 2025",
+    "grand_total": "$11,060.76",
+    "records": [
+      {
+        "description": "Skilled Carpentry (hour)",
+        "quantity": "53.29",
+        "unit_price": "$73.34",
+        "line_total": "$3,908.29"
+      },
+      {
+        "description": "Skilled Carpentry (hour)",
+        "quantity": "62.44",
+        "unit_price": "$86.95",
+        "line_total": "$5,429.16"
+      },
+      {
+        "description": "Skilled Carpentry (hour)",
+        "quantity": "3.68",
+        "unit_price": "$76.89",
+        "line_total": "$282.96"
+      },
+      {
+        "description": "Electrical Work (hour)",
+        "quantity": "6.30",
+        "unit_price": "$113.77",
+        "line_total": "$716.75"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_023"
+}

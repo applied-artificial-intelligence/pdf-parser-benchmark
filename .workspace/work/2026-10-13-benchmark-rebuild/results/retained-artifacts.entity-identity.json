@@ -1,0 +1,12 @@
+{
+ "item": "retained-artifacts.entity-identity",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_run_registry.py::test_actual_generator_publishes_complete_bundle_without_changing_retained_bytes",
+  "fixture (both runs): Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

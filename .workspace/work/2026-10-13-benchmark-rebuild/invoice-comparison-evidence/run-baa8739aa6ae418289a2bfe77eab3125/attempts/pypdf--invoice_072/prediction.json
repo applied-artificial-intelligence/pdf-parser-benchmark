@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-84686",
+    "vendor": "Premier Medical Group",
+    "due_date": "2025-10-20",
+    "grand_total": "128000.24",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-84686"
+    ],
+    "due_date": [
+      "October 20, 2025"
+    ],
+    "grand_total": [
+      "$128,000.24"
+    ],
+    "vendor": [
+      "Premier Medical Group"
+    ]
+  },
+  "records": [
+    {
+      "description": "Medical Consultation",
+      "quantity": "56.42",
+      "unit": "visit",
+      "unit_price": "303.86",
+      "line_total": "17143.78",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nConsultation",
+        "quantity": "56.42",
+        "unit": "visit",
+        "unit_price": "$303.86",
+        "line_total": "$17,143.78"
+      }
+    },
+    {
+      "description": "Medical Consultation",
+      "quantity": "96.57",
+      "unit": "visit",
+      "unit_price": "233.51",
+      "line_total": "22550.06",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nConsultation",
+        "quantity": "96.57",
+        "unit": "visit",
+        "unit_price": "$233.51",
+        "line_total": "$22,550.06"
+      }
+    },
+    {
+      "description": "Medical Consultation",
+      "quantity": "14.32",
+      "unit": "visit",
+      "unit_price": "311.09",
+      "line_total": "4454.81",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nConsultation",
+        "quantity": "14.32",
+        "unit": "visit",
+        "unit_price": "$311.09",
+        "line_total": "$4,454.81"
+      }
+    },
+    {
+      "description": "Physical Therapy",
+      "quantity": "32.39",
+      "unit": "session",
+      "unit_price": "173.74",
+      "line_total": "5627.44",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Physical\nTherapy",
+        "quantity": "32.39",
+        "unit": "session",
+        "unit_price": "$173.74",
+        "line_total": "$5,627.44"
+      }
+    },
+    {
+      "description": "Medical Consultation",
+      "quantity": "28.41",
+      "unit": "visit",
+      "unit_price": "262.72",
+      "line_total": "7463.88",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical\nConsultation",
+        "quantity": "28.41",
+        "unit": "visit",
+        "unit_price": "$262.72",
+        "line_total": "$7,463.88"
+      }
+    },
+    {
+      "description": "Laboratory Services",
+      "quantity": "71.29",
+      "unit": "panel",
+      "unit_price": "341.79",
+      "line_total": "24366.21",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory\nServices",
+        "quantity": "71.29",
+        "unit": "panel",
+        "unit_price": "$341.79",
+        "line_total": "$24,366.21"
+      }
+    },
+    {
+      "description": "Laboratory Services",
+      "quantity": "46.27",
+      "unit": "panel",
+      "unit_price": "152.08",
+      "line_total": "7036.74",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory\nServices",
+        "quantity": "46.27",
+        "unit": "panel",
+        "unit_price": "$152.08",
+        "line_total": "$7,036.74"
+      }
+    },
+    {
+      "description": "Laboratory Services",
+      "quantity": "90.13",
+      "unit": "panel",
+      "unit_price": "273.29",
+      "line_total": "24631.63",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory\nServices",
+        "quantity": "90.13",
+        "unit": "panel",
+        "unit_price": "$273.29",
+        "line_total": "$24,631.63"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

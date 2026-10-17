@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/inventory.py",
+  "fixture": "Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "test": "tests/test_run_registry.py::test_unequal_metric_populations_are_explicit_and_do_not_create_primary_ranks",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/inventory.py",
+      "old": "\"primary_ranking\": None,",
+      "new": "\"primary_ranking\": sorted(by_parser),"
+    }
+  }
+}

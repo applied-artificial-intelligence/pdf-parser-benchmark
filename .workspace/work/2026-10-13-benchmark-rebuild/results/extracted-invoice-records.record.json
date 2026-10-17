@@ -1,0 +1,12 @@
+{
+ "item": "extracted-invoice-records.record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_task_evaluation.py::test_ambiguous_backend_headers_cannot_be_hidden_by_duplicated_plain_text",
+  "fixture (both runs): Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

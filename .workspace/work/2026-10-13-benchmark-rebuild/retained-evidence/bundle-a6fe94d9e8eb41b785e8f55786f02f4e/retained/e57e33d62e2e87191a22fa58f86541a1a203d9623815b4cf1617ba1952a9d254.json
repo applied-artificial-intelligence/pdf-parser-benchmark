@@ -1,0 +1,3175 @@
+{
+  "benchmark": {
+    "name": "CUAD Additional Parsers Benchmark",
+    "timestamp": "2025-11-22T20:49:08.770368+00:00",
+    "config_file": "benchmarks/cuad_75docs_additional.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pymupdf4llm": "1.26.6",
+      "pypdf2": "3.0.1",
+      "extractous": "0.3.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "cuad_000",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586956521739131,
+        "chrf++": 96.13286648001733,
+        "character_error_rate": 0.04190296156269691,
+        "element_f1": 0.33207547169811324,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011186599731445312
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9636311741377238,
+        "chrf++": 96.28872993800135,
+        "character_error_rate": 0.036606386839240355,
+        "element_f1": 0.35798255593477435,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047135353088378906
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9756623931623931,
+        "chrf++": 97.65215649310309,
+        "character_error_rate": 0.024660618788836686,
+        "element_f1": 0.21173104434907009,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036716461181640625
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9809817641276137,
+        "chrf++": 97.95968472549663,
+        "character_error_rate": 0.01901823587238631,
+        "element_f1": 0.4083305638639637,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006458759307861328
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9809249984542138,
+        "chrf++": 98.09329519360116,
+        "character_error_rate": 0.019203834542002553,
+        "element_f1": 0.2419928825622776,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004191398620605469
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9771380440995097,
+        "chrf++": 98.34748142451906,
+        "character_error_rate": 0.02318380794045422,
+        "element_f1": 0.12687427912341406,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044417381286621094
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683179268389034,
+        "chrf++": 97.5043587282999,
+        "character_error_rate": 0.032366377709977884,
+        "element_f1": 0.10712313638873551,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005123615264892578
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9666349470679196,
+        "chrf++": 97.42010214976273,
+        "character_error_rate": 0.033846153846153845,
+        "element_f1": 0.22546419098143236,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004119873046875
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9565895523569743,
+        "chrf++": 97.94173182650961,
+        "character_error_rate": 0.04472340494950978,
+        "element_f1": 0.12741194486983157,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009057521820068359
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.977160192482042,
+        "chrf++": 97.55140857292774,
+        "character_error_rate": 0.02313751810378325,
+        "element_f1": 0.10512129380053908,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044465065002441406
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9613247349180549,
+        "chrf++": 96.10425216532266,
+        "character_error_rate": 0.039051298154972804,
+        "element_f1": 0.4364488558036946,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005738735198974609
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9685281662249032,
+        "chrf++": 96.52718051771745,
+        "character_error_rate": 0.03147183377509673,
+        "element_f1": 0.5560975609756097,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004298686981201172
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9834188415495576,
+        "chrf++": 98.20363890271024,
+        "character_error_rate": 0.01673545966228893,
+        "element_f1": 0.38904109589041097,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044083595275878906
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9720336490381787,
+        "chrf++": 96.69473676174756,
+        "character_error_rate": 0.028027355264709352,
+        "element_f1": 0.44251375615406885,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005092620849609375
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759887005649718,
+        "chrf++": 98.01179164477296,
+        "character_error_rate": 0.024231865695280328,
+        "element_f1": 0.1787709497206704,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007836818695068359
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.975226163156449,
+        "chrf++": 97.13780442962165,
+        "character_error_rate": 0.0248246470744917,
+        "element_f1": 0.23910171730515195,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009362697601318359
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.972730918326427,
+        "chrf++": 97.45225274954204,
+        "character_error_rate": 0.027269081673573052,
+        "element_f1": 0.40419947506561676,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003769397735595703
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9617190924460958,
+        "chrf++": 96.00918130614761,
+        "character_error_rate": 0.03838185128602223,
+        "element_f1": 0.2927908005307386,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003788471221923828
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9705693651603139,
+        "chrf++": 97.44316412128022,
+        "character_error_rate": 0.029430634839686116,
+        "element_f1": 0.3645320197044335,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004000663757324219
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9611894188067195,
+        "chrf++": 95.3686247945614,
+        "character_error_rate": 0.038810581193280555,
+        "element_f1": 0.48623853211009177,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003685951232910156
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9756701631701632,
+        "chrf++": 98.01301978352186,
+        "character_error_rate": 0.024700488093477295,
+        "element_f1": 0.12121212121212122,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003275871276855469
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9709319517118137,
+        "chrf++": 96.67918861037195,
+        "character_error_rate": 0.02962895014447553,
+        "element_f1": 0.1322099805573558,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004513263702392578
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.978536779564937,
+        "chrf++": 97.98609700728963,
+        "character_error_rate": 0.021637562109836802,
+        "element_f1": 0.29482598914913327,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005877017974853516
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9474060822898032,
+        "chrf++": 92.28024229027424,
+        "character_error_rate": 0.052763819095477386,
+        "element_f1": 0.6226415094339622,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003540515899658203
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9348650067059303,
+        "chrf++": 93.07628421296434,
+        "character_error_rate": 0.06703877085583963,
+        "element_f1": 0.5109211775878443,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00030875205993652344
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9677596023062387,
+        "chrf++": 97.20217006449752,
+        "character_error_rate": 0.0323726877730709,
+        "element_f1": 0.2762342594443334,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005290508270263672
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8862497680460196,
+        "chrf++": 86.25423877290851,
+        "character_error_rate": 0.1162085308056872,
+        "element_f1": 0.5955334987593052,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004220008850097656
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9233392518737302,
+        "chrf++": 94.593045461406,
+        "character_error_rate": 0.07940493821702513,
+        "element_f1": 0.6935101496518004,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007064342498779297
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9518072289156626,
+        "chrf++": 91.41216973871909,
+        "character_error_rate": 0.049910873440285206,
+        "element_f1": 0.5074626865671642,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004105567932128906
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9789544975668489,
+        "chrf++": 98.58977184590233,
+        "character_error_rate": 0.021204003234937322,
+        "element_f1": 0.13104013104013107,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000362396240234375
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9820405450315719,
+        "chrf++": 98.56072925823311,
+        "character_error_rate": 0.018011892381942778,
+        "element_f1": 0.19322278298485943,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00112152099609375
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9717948717948718,
+        "chrf++": 96.75937797497102,
+        "character_error_rate": 0.028671000995724245,
+        "element_f1": 0.20905349794238678,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004780292510986328
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9777988401420104,
+        "chrf++": 98.087012925134,
+        "character_error_rate": 0.022233304911597678,
+        "element_f1": 0.4590542099192618,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004279613494873047
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.939845941493388,
+        "chrf++": 96.27426372289952,
+        "character_error_rate": 0.06032865946235599,
+        "element_f1": 0.2198581560283688,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004229545593261719
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.892542372881356,
+        "chrf++": 88.76565399316083,
+        "character_error_rate": 0.10745762711864407,
+        "element_f1": 0.406015037593985,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00031828880310058594
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8806353280924114,
+        "chrf++": 90.26390808125777,
+        "character_error_rate": 0.12133072407045009,
+        "element_f1": 0.4813895781637717,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00433349609375
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9707569132928283,
+        "chrf++": 97.47697262630052,
+        "character_error_rate": 0.029791747011183957,
+        "element_f1": 0.4310249307479224,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033783912658691406
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9739033870072182,
+        "chrf++": 97.39437827888902,
+        "character_error_rate": 0.02649230595795051,
+        "element_f1": 0.11186113789778206,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037550926208496094
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.970415807187059,
+        "chrf++": 96.59789366066089,
+        "character_error_rate": 0.03016215617909126,
+        "element_f1": 0.13310580204778155,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003886222839355469
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9709382630787066,
+        "chrf++": 96.40199705683979,
+        "character_error_rate": 0.029429211911556258,
+        "element_f1": 0.2752871433864394,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005495548248291016
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9771724025177798,
+        "chrf++": 97.85662589367917,
+        "character_error_rate": 0.022827597482220224,
+        "element_f1": 0.4527260179434093,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039315223693847656
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9614172372568199,
+        "chrf++": 95.31123713576058,
+        "character_error_rate": 0.03916161059018202,
+        "element_f1": 0.47398843930635837,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003917217254638672
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9701713299642549,
+        "chrf++": 98.12617967152548,
+        "character_error_rate": 0.030008060016120032,
+        "element_f1": 0.24215246636771298,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004425048828125
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9303408292340126,
+        "chrf++": 91.84967266426446,
+        "character_error_rate": 0.06965917076598735,
+        "element_f1": 0.4180790960451977,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003294944763183594
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9823354908306364,
+        "chrf++": 99.064854096859,
+        "character_error_rate": 0.0177578961637522,
+        "element_f1": 0.16836734693877553,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039005279541015625
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9741123888916788,
+        "chrf++": 97.71963213847727,
+        "character_error_rate": 0.026255475196088417,
+        "element_f1": 0.18627450980392157,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008966922760009766
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.978712220762155,
+        "chrf++": 98.30150314272277,
+        "character_error_rate": 0.021499668214996683,
+        "element_f1": 0.13814274750575598,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004324913024902344
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9781428092524305,
+        "chrf++": 98.26179103182317,
+        "character_error_rate": 0.022065044502352027,
+        "element_f1": 0.14386792452830188,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041413307189941406
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9686655953085793,
+        "chrf++": 96.16858629656893,
+        "character_error_rate": 0.03142904004841328,
+        "element_f1": 0.36021756021756024,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005781650543212891
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9851110143665651,
+        "chrf++": 99.50844363369627,
+        "character_error_rate": 0.014901960784313726,
+        "element_f1": 0.1806853582554517,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018880367279052734
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9796863977425768,
+        "chrf++": 97.93662288053655,
+        "character_error_rate": 0.020532516570243246,
+        "element_f1": 0.14072229140722292,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038552284240722656
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8637662669048227,
+        "chrf++": 96.50953975140702,
+        "character_error_rate": 0.14205638974377166,
+        "element_f1": 0.2924990576705616,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005431175231933594
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9909995197440478,
+        "chrf++": 99.50648198595391,
+        "character_error_rate": 0.009000480255952237,
+        "element_f1": 0.5420514714936585,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006420612335205078
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9900180346432915,
+        "chrf++": 99.9722244346957,
+        "character_error_rate": 0.009991603694374475,
+        "element_f1": 0.12863070539419086,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0078122615814208984
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.963522974642584,
+        "chrf++": 96.40789707426522,
+        "character_error_rate": 0.03735839961436491,
+        "element_f1": 0.07142857142857144,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00034499168395996094
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9623301542880289,
+        "chrf++": 96.53294528031769,
+        "character_error_rate": 0.03825872321328397,
+        "element_f1": 0.12211981566820278,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004372596740722656
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.975919645186538,
+        "chrf++": 98.33016195883651,
+        "character_error_rate": 0.0244231583403895,
+        "element_f1": 0.11713665943600869,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004146099090576172
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8992199585294408,
+        "chrf++": 91.81195390420055,
+        "character_error_rate": 0.10078004147055919,
+        "element_f1": 0.4324324324324324,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044155120849609375
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9745424969499796,
+        "chrf++": 98.09740339486743,
+        "character_error_rate": 0.025786785302356237,
+        "element_f1": 0.12873563218390804,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005550384521484375
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9692425599497687,
+        "chrf++": 97.8364195677547,
+        "character_error_rate": 0.031154716698778503,
+        "element_f1": 0.16731380162372045,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004410743713378906
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9562714355707986,
+        "chrf++": 95.91214242885536,
+        "character_error_rate": 0.04388804655165349,
+        "element_f1": 0.236328125,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003209114074707031
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9828358208955223,
+        "chrf++": 99.65091950052151,
+        "character_error_rate": 0.01722998281408364,
+        "element_f1": 0.28399518652226236,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002727508544921875
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9747455448640011,
+        "chrf++": 98.20044661635907,
+        "character_error_rate": 0.025430250454736254,
+        "element_f1": 0.08785046728971962,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038433074951171875
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9903710868800563,
+        "chrf++": 99.49997446386705,
+        "character_error_rate": 0.009628913119943721,
+        "element_f1": 0.3671970624235006,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042319297790527344
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8949405584738734,
+        "chrf++": 91.42069960717521,
+        "character_error_rate": 0.11262596324836989,
+        "element_f1": 0.2382978723404256,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004754066467285156
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9818631492168178,
+        "chrf++": 98.15947268791389,
+        "character_error_rate": 0.018136850783182192,
+        "element_f1": 0.39858906525573196,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003097057342529297
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9637608214213811,
+        "chrf++": 95.10343866093746,
+        "character_error_rate": 0.036923076923076927,
+        "element_f1": 0.5966101694915253,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003871917724609375
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9785082174462706,
+        "chrf++": 97.85323621638788,
+        "character_error_rate": 0.021491782553729456,
+        "element_f1": 0.29143897996357016,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002925395965576172
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9833410315627406,
+        "chrf++": 99.01856464901219,
+        "character_error_rate": 0.016742487543713058,
+        "element_f1": 0.18840579710144928,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004131793975830078
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9738083347206037,
+        "chrf++": 98.12954256368383,
+        "character_error_rate": 0.02619166527939626,
+        "element_f1": 0.30651340996168586,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00031280517578125
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9745603041143417,
+        "chrf++": 97.72622719827879,
+        "character_error_rate": 0.02543969588565832,
+        "element_f1": 0.44258224705152077,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035572052001953125
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.972498148668318,
+        "chrf++": 97.76245442786,
+        "character_error_rate": 0.02750185133168203,
+        "element_f1": 0.39314145744029394,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035572052001953125
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881365212630042,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011891694109037688,
+        "element_f1": 0.03636363636363636,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003304481506347656
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9711373680887526,
+        "chrf++": 97.38999533260605,
+        "character_error_rate": 0.028862631911247407,
+        "element_f1": 0.43401759530791795,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002288818359375
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9357993730407523,
+        "chrf++": 93.34676119274008,
+        "character_error_rate": 0.06735069718495133,
+        "element_f1": 0.0510204081632653,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003268718719482422
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9818840579710145,
+        "chrf++": 99.20606026150118,
+        "character_error_rate": 0.018115942028985508,
+        "element_f1": 0.23478260869565215,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035953521728515625
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8371243441526226,
+        "chrf++": 97.4120120019197,
+        "character_error_rate": 0.16381395911455182,
+        "element_f1": 0.3409090909090909,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003924369812011719
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856020092233746,
+        "chrf++": 99.21799866530169,
+        "character_error_rate": 0.014397990776625458,
+        "element_f1": 0.1787974683544304,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045680999755859375
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.97727404151969,
+        "chrf++": 98.0591164668664,
+        "character_error_rate": 0.022725958480309952,
+        "element_f1": 0.38104906937394245,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006306171417236328
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9870210713062965,
+        "chrf++": 99.37626282143471,
+        "character_error_rate": 0.012978928693703509,
+        "element_f1": 0.17766497461928935,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032639503479003906
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887164806383335,
+        "chrf++": 99.83259341699508,
+        "character_error_rate": 0.011302106370971432,
+        "element_f1": 0.12580414581844174,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004482269287109375
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9877653658300691,
+        "chrf++": 99.82365307331081,
+        "character_error_rate": 0.012252409317642501,
+        "element_f1": 0.13215258855585832,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004620552062988281
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683257918552036,
+        "chrf++": 96.13835812096112,
+        "character_error_rate": 0.03167420814479638,
+        "element_f1": 0.16666666666666666,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045371055603027344
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855625703518818,
+        "chrf++": 99.15639009296899,
+        "character_error_rate": 0.01443742964811824,
+        "element_f1": 0.1111494649637556,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008947849273681641
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9878225265610109,
+        "chrf++": 99.529991955936,
+        "character_error_rate": 0.012186937016496521,
+        "element_f1": 0.12935323383084577,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000446319580078125
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9808505847918567,
+        "chrf++": 98.31117112340574,
+        "character_error_rate": 0.01914941520814324,
+        "element_f1": 0.49059185768046526,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006015300750732422
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9731895317307985,
+        "chrf++": 97.6978796696456,
+        "character_error_rate": 0.026810468269201474,
+        "element_f1": 0.39238845144356954,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003991127014160156
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9906941838649156,
+        "chrf++": 99.89392454502297,
+        "character_error_rate": 0.009305816135084428,
+        "element_f1": 0.25889967637540456,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004019737243652344
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9769484730574225,
+        "chrf++": 97.93839490253285,
+        "character_error_rate": 0.023051526942577526,
+        "element_f1": 0.41709053916581895,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004532337188720703
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9859043395628762,
+        "chrf++": 99.13531317797101,
+        "character_error_rate": 0.014095660437123852,
+        "element_f1": 0.19631901840490798,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007104873657226562
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8351416141347776,
+        "chrf++": 98.06003482845854,
+        "character_error_rate": 0.16485838586522242,
+        "element_f1": 0.2371054657428791,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005185604095458984
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9699238069776768,
+        "chrf++": 97.90965532973692,
+        "character_error_rate": 0.030076193022323217,
+        "element_f1": 0.4824561403508772,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033211708068847656
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9697381914069857,
+        "chrf++": 97.43136951663804,
+        "character_error_rate": 0.030261808593014253,
+        "element_f1": 0.30025445292620867,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002887248992919922
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9701909947850692,
+        "chrf++": 97.7860345841972,
+        "character_error_rate": 0.029809005214930823,
+        "element_f1": 0.25039619651347067,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003638267517089844
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8202355667117204,
+        "chrf++": 95.97762749684907,
+        "character_error_rate": 0.1797644332882796,
+        "element_f1": 0.35,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039577484130859375
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9867256637168141,
+        "chrf++": 99.56433830050686,
+        "character_error_rate": 0.013311640289897944,
+        "element_f1": 0.11764705882352941,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005104541778564453
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886813956991923,
+        "chrf++": 99.70819733489883,
+        "character_error_rate": 0.011322164053439566,
+        "element_f1": 0.17603330359797797,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005548000335693359
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9839594121213971,
+        "chrf++": 99.39198374012554,
+        "character_error_rate": 0.016040587878602807,
+        "element_f1": 0.21149289099526067,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006177425384521484
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9633883704235463,
+        "chrf++": 95.59218655809022,
+        "character_error_rate": 0.0366116295764537,
+        "element_f1": 0.6344086021505375,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003495216369628906
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8273916696675069,
+        "chrf++": 95.6581478553551,
+        "character_error_rate": 0.1726083303324931,
+        "element_f1": 0.47289504036908875,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003154277801513672
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9797013518331631,
+        "chrf++": 98.01236424006306,
+        "character_error_rate": 0.02029864816683688,
+        "element_f1": 0.32621450363764376,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004799365997314453
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9040758293838862,
+        "chrf++": 89.30726461894577,
+        "character_error_rate": 0.09592417061611375,
+        "element_f1": 0.6457142857142856,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004317760467529297
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8389107912349867,
+        "chrf++": 97.92841093579855,
+        "character_error_rate": 0.1631203165410376,
+        "element_f1": 0.7307547878332707,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007703304290771484
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9768270944741533,
+        "chrf++": 99.22650258192154,
+        "character_error_rate": 0.023172905525846704,
+        "element_f1": 0.46808510638297873,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040721893310546875
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9859987868985038,
+        "chrf++": 99.63181817756622,
+        "character_error_rate": 0.014001213101496159,
+        "element_f1": 0.10863757791629564,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003020763397216797
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9846181164406366,
+        "chrf++": 99.34849282785652,
+        "character_error_rate": 0.015398768098552116,
+        "element_f1": 0.15820543093270364,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005602836608886719
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862544965343784,
+        "chrf++": 99.79063445945854,
+        "character_error_rate": 0.013764423358519299,
+        "element_f1": 0.2873303167420815,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004398822784423828
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9741791212857349,
+        "chrf++": 98.00891214407221,
+        "character_error_rate": 0.02582087871426503,
+        "element_f1": 0.28215767634854777,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043320655822753906
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9780744842368492,
+        "chrf++": 98.52068459002979,
+        "character_error_rate": 0.021925515763150844,
+        "element_f1": 0.22100954979536153,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004634857177734375
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9684745762711864,
+        "chrf++": 97.11511588931742,
+        "character_error_rate": 0.03152542372881356,
+        "element_f1": 0.3243243243243243,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003867149353027344
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9417808219178082,
+        "chrf++": 93.69752221676299,
+        "character_error_rate": 0.05821917808219178,
+        "element_f1": 0.35777126099706746,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002980232238769531
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8444465869649055,
+        "chrf++": 99.53076592030587,
+        "character_error_rate": 0.15555341303509448,
+        "element_f1": 0.3035343035343035,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036025047302246094
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9866816837955793,
+        "chrf++": 99.49445897508049,
+        "character_error_rate": 0.013330702891607012,
+        "element_f1": 0.11125158027812894,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000347137451171875
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879904809341967,
+        "chrf++": 99.65314081441942,
+        "character_error_rate": 0.012009519065803309,
+        "element_f1": 0.15577889447236182,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004050731658935547
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9820477436355348,
+        "chrf++": 98.57627999404606,
+        "character_error_rate": 0.01795225636446515,
+        "element_f1": 0.3376036171816127,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005688667297363281
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9735142646938608,
+        "chrf++": 97.73784166229387,
+        "character_error_rate": 0.02648573530613913,
+        "element_f1": 0.305439330543933,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003712177276611328
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.850328587075575,
+        "chrf++": 97.85973115387334,
+        "character_error_rate": 0.1507446221731936,
+        "element_f1": 0.31438127090301005,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004341602325439453
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9857849196538937,
+        "chrf++": 99.67268507365092,
+        "character_error_rate": 0.01426002852005704,
+        "element_f1": 0.21445221445221443,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004150867462158203
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9260365425158117,
+        "chrf++": 91.84967266426446,
+        "character_error_rate": 0.07396345748418834,
+        "element_f1": 0.3713850837138508,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003199577331542969
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854542994384683,
+        "chrf++": 99.58809249129422,
+        "character_error_rate": 0.014572319371018029,
+        "element_f1": 0.2153846153846154,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003345012664794922
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9794536184460848,
+        "chrf++": 99.44449489760727,
+        "character_error_rate": 0.020627482937761028,
+        "element_f1": 0.24076029567053855,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004220008850097656
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9864631718646317,
+        "chrf++": 99.41744430561782,
+        "character_error_rate": 0.013536828135368282,
+        "element_f1": 0.14708691499522447,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044989585876464844
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8444140507722587,
+        "chrf++": 98.51430089389847,
+        "character_error_rate": 0.15783952079596603,
+        "element_f1": 0.11873350923482849,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000400543212890625
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9746452426602418,
+        "chrf++": 97.65872753409832,
+        "character_error_rate": 0.025354757339758272,
+        "element_f1": 0.3657331136738056,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005297660827636719
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9871023965141612,
+        "chrf++": 99.59762937995382,
+        "character_error_rate": 0.01289760348583878,
+        "element_f1": 0.18181818181818182,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038909912109375
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883805727065,
+        "chrf++": 99.63420259970334,
+        "character_error_rate": 0.011619427293499927,
+        "element_f1": 0.13866231647634583,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004928112030029297
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9769846830626779,
+        "chrf++": 98.56623814482275,
+        "character_error_rate": 0.023015316937322065,
+        "element_f1": 0.2044525215810995,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006048679351806641
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860898527790927,
+        "chrf++": 99.55035978727595,
+        "character_error_rate": 0.013910147220907373,
+        "element_f1": 0.31383310465261316,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006158351898193359
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9907640638119227,
+        "chrf++": 99.9722244346957,
+        "character_error_rate": 0.009235936188077247,
+        "element_f1": 0.09958506224066391,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004050731658935547
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9824908556694849,
+        "chrf++": 99.15630429436364,
+        "character_error_rate": 0.017594601108700893,
+        "element_f1": 0.10723860589812333,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032138824462890625
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9839560192976551,
+        "chrf++": 98.88274620446762,
+        "character_error_rate": 0.01604398070234489,
+        "element_f1": 0.11647727272727272,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004284381866455078
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881503425291612,
+        "chrf++": 99.64878241805587,
+        "character_error_rate": 0.011854360711261643,
+        "element_f1": 0.11325611325611327,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.002338886260986328
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.81440279103446,
+        "chrf++": 92.27191285081581,
+        "character_error_rate": 0.18559720896553994,
+        "element_f1": 0.38873239436619716,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004730224609375
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8533531059482616,
+        "chrf++": 97.57076147401598,
+        "character_error_rate": 0.14664689405173834,
+        "element_f1": 0.11170212765957448,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003902912139892578
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844602013660134,
+        "chrf++": 99.43458238556497,
+        "character_error_rate": 0.015619446678763164,
+        "element_f1": 0.14103653355989804,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004410743713378906
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9632012457484735,
+        "chrf++": 96.77740766984829,
+        "character_error_rate": 0.03679875425152645,
+        "element_f1": 0.24400871459694987,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003414154052734375
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9846648746309434,
+        "chrf++": 99.98938726682857,
+        "character_error_rate": 0.015335125369056537,
+        "element_f1": 0.16183574879227053,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003609657287597656
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.858962346000347,
+        "chrf++": 99.92059433769037,
+        "character_error_rate": 0.14215754862179936,
+        "element_f1": 0.08008429926238146,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039505958557128906
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885244460077383,
+        "chrf++": 99.59108073365078,
+        "character_error_rate": 0.011475553992261696,
+        "element_f1": 0.253889234598631,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004620552062988281
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9701183431952662,
+        "chrf++": 98.1618864918466,
+        "character_error_rate": 0.02993479549496147,
+        "element_f1": 0.3612903225806452,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047206878662109375
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9791701016762847,
+        "chrf++": 98.31574107624557,
+        "character_error_rate": 0.020829898323715308,
+        "element_f1": 0.3807763401109058,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003612041473388672
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9725128205128205,
+        "chrf++": 98.17852131311676,
+        "character_error_rate": 0.027487179487179488,
+        "element_f1": 0.3983739837398374,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004050731658935547
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9747155499367889,
+        "chrf++": 97.98870719087189,
+        "character_error_rate": 0.025284450063211124,
+        "element_f1": 0.2857142857142857,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000377655029296875
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9872806610342587,
+        "chrf++": 99.71008276146935,
+        "character_error_rate": 0.012719338965741343,
+        "element_f1": 0.1640625,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004074573516845703
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9715887020698074,
+        "chrf++": 98.24242545815251,
+        "character_error_rate": 0.028411297930192553,
+        "element_f1": 0.25938566552901027,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003440380096435547
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9700865696665865,
+        "chrf++": 97.9814476892432,
+        "character_error_rate": 0.02991343033341357,
+        "element_f1": 0.375284306292646,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004031658172607422
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8045542683836324,
+        "chrf++": 97.83175267337877,
+        "character_error_rate": 0.2007609611603381,
+        "element_f1": 0.2619647355163728,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040268898010253906
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9895814293547798,
+        "chrf++": 100.0,
+        "character_error_rate": 0.010428100987925357,
+        "element_f1": 0.035398230088495575,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035762786865234375
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9704158022909715,
+        "chrf++": 97.3554697777344,
+        "character_error_rate": 0.029584197709028592,
+        "element_f1": 0.2934131736526946,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003559589385986328
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9869771112865036,
+        "chrf++": 99.8674809766819,
+        "character_error_rate": 0.013022888713496448,
+        "element_f1": 0.10638297872340426,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003535747528076172
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856647763074984,
+        "chrf++": 99.2558338011466,
+        "character_error_rate": 0.014335223692501575,
+        "element_f1": 0.3876651982378854,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003731250762939453
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8407977500907221,
+        "chrf++": 98.36388153340161,
+        "character_error_rate": 0.15920224990927787,
+        "element_f1": 0.3558421851289833,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040793418884277344
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9866373076009758,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013402039534934072,
+        "element_f1": 0.22999222999222999,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004343986511230469
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9823117820539422,
+        "chrf++": 98.2225100933897,
+        "character_error_rate": 0.017688217946057738,
+        "element_f1": 0.41614208633093525,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006844997406005859
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880481807712659,
+        "chrf++": 99.47383553256383,
+        "character_error_rate": 0.011951819228734166,
+        "element_f1": 0.22194513715710723,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046896934509277344
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988633770027845,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01139362140231533,
+        "element_f1": 0.15636105188343996,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046515464782714844
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9796955937839739,
+        "chrf++": 99.94326962579328,
+        "character_error_rate": 0.020501396354948586,
+        "element_f1": 0.12780421481985044,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004773139953613281
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9770758122743682,
+        "chrf++": 99.42504457612561,
+        "character_error_rate": 0.022986425339366515,
+        "element_f1": 0.22674418604651161,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004425048828125
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9868270985401459,
+        "chrf++": 99.72428430745903,
+        "character_error_rate": 0.013189448441247002,
+        "element_f1": 0.13862045984671775,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007989406585693359
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885698158470331,
+        "chrf++": 99.82036161053519,
+        "character_error_rate": 0.011445123458970646,
+        "element_f1": 0.1260096930533118,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.002471446990966797
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841389280593442,
+        "chrf++": 98.46340180386461,
+        "character_error_rate": 0.015861071940655773,
+        "element_f1": 0.5404574940252646,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005578994750976562
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.981659202388569,
+        "chrf++": 97.79701590479158,
+        "character_error_rate": 0.01834079761143101,
+        "element_f1": 0.5843989769820972,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005085468292236328
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9930956848030019,
+        "chrf++": 99.89392454502297,
+        "character_error_rate": 0.006904315196998124,
+        "element_f1": 0.45954692556634297,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00048279762268066406
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9823369885626695,
+        "chrf++": 98.21022100063679,
+        "character_error_rate": 0.017663011437330504,
+        "element_f1": 0.5160418777440053,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005452632904052734
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9832358057883915,
+        "chrf++": 99.18701567337271,
+        "character_error_rate": 0.016788089958821667,
+        "element_f1": 0.19393939393939394,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006563663482666016
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8390926041019267,
+        "chrf++": 98.45445155034889,
+        "character_error_rate": 0.16090739589807335,
+        "element_f1": 0.25628318584070797,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004782676696777344
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9763400614891057,
+        "chrf++": 97.94066195630685,
+        "character_error_rate": 0.023659938510894266,
+        "element_f1": 0.5652173913043478,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003337860107421875
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9688592177134128,
+        "chrf++": 97.50951529196095,
+        "character_error_rate": 0.03114078228658728,
+        "element_f1": 0.3338376197680282,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003237724304199219
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9735963281622715,
+        "chrf++": 97.79735776541791,
+        "character_error_rate": 0.026403671837728463,
+        "element_f1": 0.40625000000000006,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039076805114746094
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8250627534273025,
+        "chrf++": 95.97762749684907,
+        "character_error_rate": 0.17493724657269744,
+        "element_f1": 0.5196078431372548,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038361549377441406
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.987468671679198,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012572104718236948,
+        "element_f1": 0.1518987341772152,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002903938293457031
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9858867417547659,
+        "chrf++": 99.78495745801631,
+        "character_error_rate": 0.014178913779886122,
+        "element_f1": 0.1738636363636364,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004119873046875
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9869127648529213,
+        "chrf++": 99.5029523980991,
+        "character_error_rate": 0.013087235147078711,
+        "element_f1": 0.3295824696476162,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006844997406005859
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9680545585068198,
+        "chrf++": 95.65400616175278,
+        "character_error_rate": 0.03194544149318019,
+        "element_f1": 0.6984126984126985,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004203319549560547
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8316048198549247,
+        "chrf++": 96.60128513613512,
+        "character_error_rate": 0.16858720441723682,
+        "element_f1": 0.5124884366327475,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036263465881347656
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98011228010805,
+        "chrf++": 98.01271107039192,
+        "character_error_rate": 0.019887719891950036,
+        "element_f1": 0.32333100721097935,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005681514739990234
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.909952606635071,
+        "chrf++": 89.31770068723422,
+        "character_error_rate": 0.09004739336492891,
+        "element_f1": 0.6703910614525139,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042128562927246094
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8411759860934702,
+        "chrf++": 98.92557790902588,
+        "character_error_rate": 0.16197528681005327,
+        "element_f1": 0.7099803119794034,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007529258728027344
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9857397504456328,
+        "chrf++": 99.22650258192154,
+        "character_error_rate": 0.0142602495543672,
+        "element_f1": 0.6938775510204082,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003707408905029297
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985257737163629,
+        "chrf++": 99.76810501102045,
+        "character_error_rate": 0.014759401536595228,
+        "element_f1": 0.14035087719298248,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029921531677246094
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9863851661791014,
+        "chrf++": 99.57664315189584,
+        "character_error_rate": 0.013630020709454354,
+        "element_f1": 0.2102785406041585,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005810260772705078
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862841801149794,
+        "chrf++": 99.95168323507859,
+        "character_error_rate": 0.013764423358519299,
+        "element_f1": 0.2752688172043011,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044345855712890625
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9797937547257839,
+        "chrf++": 98.14609313938894,
+        "character_error_rate": 0.020206245274216123,
+        "element_f1": 0.4718435091879076,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004391670227050781
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.982629275698848,
+        "chrf++": 98.94332800159683,
+        "character_error_rate": 0.017370724301152093,
+        "element_f1": 0.25203252032520324,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004353523254394531
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9779661016949153,
+        "chrf++": 97.8095431633091,
+        "character_error_rate": 0.022033898305084745,
+        "element_f1": 0.4778761061946903,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003762245178222656
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9510763209393347,
+        "chrf++": 93.87652170265872,
+        "character_error_rate": 0.04892367906066536,
+        "element_f1": 0.5388888888888889,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032210350036621094
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8498920918760599,
+        "chrf++": 99.68476750598317,
+        "character_error_rate": 0.15021210952564598,
+        "element_f1": 0.5186666666666667,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003204345703125
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884345893012916,
+        "chrf++": 99.92211221259521,
+        "character_error_rate": 0.011583338030550701,
+        "element_f1": 0.14427860696517414,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004100799560546875
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887161900547596,
+        "chrf++": 99.79784998410453,
+        "character_error_rate": 0.011290054789971775,
+        "element_f1": 0.19597989949748743,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004203319549560547
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854134014374294,
+        "chrf++": 98.7530129786847,
+        "character_error_rate": 0.014586598562570639,
+        "element_f1": 0.37327304697312236,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005991458892822266
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9806466116242949,
+        "chrf++": 98.16913732314757,
+        "character_error_rate": 0.01935338837570506,
+        "element_f1": 0.4508591065292097,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037384033203125
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8537782680639824,
+        "chrf++": 97.94526495641259,
+        "character_error_rate": 0.14622173193601765,
+        "element_f1": 0.5333333333333333,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003941059112548828
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9870804228225258,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012958025916051831,
+        "element_f1": 0.24324324324324326,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004744529724121094
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9349086437104708,
+        "chrf++": 91.84967266426446,
+        "character_error_rate": 0.06509135628952917,
+        "element_f1": 0.5743589743589743,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038933753967285156
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9864069791032664,
+        "chrf++": 99.8615805991349,
+        "character_error_rate": 0.013623424156161041,
+        "element_f1": 0.23076923076923075,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047135353088378906
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9825123277921813,
+        "chrf++": 99.6642677628256,
+        "character_error_rate": 0.01752062748293776,
+        "element_f1": 0.24076029567053855,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040721893310546875
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882194324109275,
+        "chrf++": 99.82777495521582,
+        "character_error_rate": 0.01178942711789427,
+        "element_f1": 0.17045454545454544,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.000453948974609375
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8457522064272721,
+        "chrf++": 99.87722735596336,
+        "character_error_rate": 0.15496294290838947,
+        "element_f1": 0.11972522080471049,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044798851013183594
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9788474698972349,
+        "chrf++": 97.74460166412314,
+        "character_error_rate": 0.021152530102765098,
+        "element_f1": 0.4242313323572474,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005457401275634766
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9869281045751634,
+        "chrf++": 99.59762937995382,
+        "character_error_rate": 0.013071895424836602,
+        "element_f1": 0.1829652996845426,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003829002380371094
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98950233281493,
+        "chrf++": 99.76123635443115,
+        "character_error_rate": 0.01050123972969031,
+        "element_f1": 0.18270008084074377,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042247772216796875
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9805359261817473,
+        "chrf++": 99.2124958787212,
+        "character_error_rate": 0.019494283864444663,
+        "element_f1": 0.32839610664409646,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005865097045898438
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9918563792847296,
+        "chrf++": 99.6505561702837,
+        "character_error_rate": 0.008143620715270411,
+        "element_f1": 0.5484674806877647,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006661415100097656
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9907660020986359,
+        "chrf++": 99.9722244346957,
+        "character_error_rate": 0.009235936188077247,
+        "element_f1": 0.12863070539419086,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003809928894042969
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9864256111478167,
+        "chrf++": 99.91669978780287,
+        "character_error_rate": 0.013617739214268499,
+        "element_f1": 0.10389610389610389,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004563331604003906
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9850584587800232,
+        "chrf++": 99.7203534121193,
+        "character_error_rate": 0.014959422566288941,
+        "element_f1": 0.14304993252361672,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043511390686035156
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884784102320173,
+        "chrf++": 99.8451366336873,
+        "character_error_rate": 0.01153683319220999,
+        "element_f1": 0.13775510204081634,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004980564117431641
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.816509232136392,
+        "chrf++": 93.030640436404,
+        "character_error_rate": 0.18349076786360793,
+        "element_f1": 0.3602094240837696,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004792213439941406
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8561952338055852,
+        "chrf++": 100.0,
+        "character_error_rate": 0.14466963255890591,
+        "element_f1": 0.11570247933884298,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003516674041748047
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9878612015637683,
+        "chrf++": 99.95054782213946,
+        "character_error_rate": 0.012168203670102322,
+        "element_f1": 0.16814473217453,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003743171691894531
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624226529525058,
+        "chrf++": 96.81222083642315,
+        "character_error_rate": 0.03757734704749416,
+        "element_f1": 0.25937834941050375,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040149688720703125
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9869563301458599,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013043669854140042,
+        "element_f1": 0.28502415458937197,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004260540008544922
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8574566756163047,
+        "chrf++": 99.92059433769037,
+        "character_error_rate": 0.14299706170421156,
+        "element_f1": 0.09523809523809523,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037598609924316406
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9909719779575565,
+        "chrf++": 99.60801613017168,
+        "character_error_rate": 0.009028022042443429,
+        "element_f1": 0.36877688998156116,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004894733428955078
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9729491326080565,
+        "chrf++": 99.43511299494732,
+        "character_error_rate": 0.027267338470657973,
+        "element_f1": 0.32,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045108795166015625
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9833470733718055,
+        "chrf++": 98.34710781715796,
+        "character_error_rate": 0.016652926628194557,
+        "element_f1": 0.4072072072072072,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003387928009033203
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9821538461538462,
+        "chrf++": 98.5448101027702,
+        "character_error_rate": 0.017846153846153845,
+        "element_f1": 0.704,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003864765167236328
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.980059763245604,
+        "chrf++": 98.21626702715746,
+        "character_error_rate": 0.019940236754396046,
+        "element_f1": 0.29856115107913667,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00028634071350097656
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.987017001545595,
+        "chrf++": 99.73486557186305,
+        "character_error_rate": 0.012997864636524,
+        "element_f1": 0.2028608582574772,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004000663757324219
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.974862660229732,
+        "chrf++": 98.24242545815251,
+        "character_error_rate": 0.02513733977026802,
+        "element_f1": 0.573134328358209,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003154277801513672
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9766353200919647,
+        "chrf++": 97.9814476892432,
+        "character_error_rate": 0.023364679908035292,
+        "element_f1": 0.6422902494331066,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041031837463378906
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8081753994797474,
+        "chrf++": 97.83175267337877,
+        "character_error_rate": 0.1977222236408672,
+        "element_f1": 0.39371069182389934,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033974647521972656
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883169039795546,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011708744968898645,
+        "element_f1": 0.03508771929824561,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003459453582763672
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9751059799765491,
+        "chrf++": 97.44299464025524,
+        "character_error_rate": 0.02489402002345089,
+        "element_f1": 0.4314868804664723,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00027251243591308594
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9876348329387004,
+        "chrf++": 99.8674809766819,
+        "character_error_rate": 0.012365167061299658,
+        "element_f1": 0.10638297872340426,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00027179718017578125
+    }
+  ],
+  "summary": {
+    "total_documents": 75,
+    "total_parsers": 3,
+    "total_results": 225,
+    "success_count": 225,
+    "failure_count": 0
+  }
+}

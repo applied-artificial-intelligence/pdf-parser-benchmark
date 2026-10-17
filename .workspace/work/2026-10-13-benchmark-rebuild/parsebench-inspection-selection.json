@@ -1,0 +1,179 @@
+{
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "purpose": "Pre-score coverage inspection, not a prevalence estimate or parser-performance sample",
+  "selection_rule": "Two SHA256(path)-ordered inputs per text tag and hard table/chart/layout stratum, plus explicit business-name candidates. Names do not classify content. No parser outputs or scores consulted.",
+  "inputs": [
+    {
+      "path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p101.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/chart/Earnings-Presentation-FY24-Q4_1_p9.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/chart/aviva-plc-annual-report-and-accounts-2024_p143.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/layout/076523s007lbl_p2.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/layout/1-Integrated_Annual_Report_2019-Bursa_Malaysia_Berhad_p12.pdf",
+      "reason": "Two hash-ordered hard inputs from upstream dimension"
+    },
+    {
+      "path": "docs/layout/Automated-Invoice__p3.pdf",
+      "reason": "Two hash-ordered hard inputs from upstream dimension"
+    },
+    {
+      "path": "docs/layout/Monroe Capital Private Credit Fund V Presentation - CTPF - 10.4.2024 Final redacted_p14.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/layout/example_paper_p4.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/0000027_page1.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/1 timetable (1)_page2.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/2023-conocophillips-aim-presentation (1)_page7.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/2023.02.07 Walmart Settlement Agreement_page27.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/Apple 10-k_page22.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/Apple 10-k_page76.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/BRWS-134565917_page1002.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/BSC-Hospital-List-by-County (2)_page1.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/table/synthetic_invoice_page1.pdf",
+      "reason": "Two hash-ordered hard inputs from upstream dimension"
+    },
+    {
+      "path": "docs/table/walmart-earnings-release-fy24-q4_page13.pdf",
+      "reason": "Two hash-ordered hard inputs from upstream dimension"
+    },
+    {
+      "path": "docs/text/text_dense__japanese.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_dense__navarra.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_handwritting__contract.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_handwritting__manualunderline.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_handwritting__signatures.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_misc__2pages.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_misc__6slides.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_misc__mark2.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_multicolumns__10k2col.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_multicolumns__4c.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_multicolumns__hydro.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_multilang__gujarati.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_multilang__russian.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_ocr__contract.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_ocr__inr.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_ocr__skewGazette.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_simple__agreement.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_simple__bill.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_simple__checkbox.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_simple__contract2.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_simple__minutes2.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_simple__order.pdf",
+      "reason": "Targeted business-document candidate; filename only selects inspection, not classification"
+    },
+    {
+      "path": "docs/text/text_simple__sub.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_sparse__mcdo.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    },
+    {
+      "path": "docs/text/text_sparse__notes.pdf",
+      "reason": "Two hash-ordered inputs from each upstream text tag"
+    }
+  ]
+}

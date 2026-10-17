@@ -1,0 +1,38 @@
+[
+  {
+    "parent_pid": 2399328,
+    "backend": "docling",
+    "child_pids": [
+      2400376,
+      2546296,
+      2549804,
+      2550319,
+      2546741
+    ],
+    "reason": "Restart with a predeclared dimension-interleaved order so slow integrations cover all capabilities early; preserve incomplete original attempts without quality aggregates."
+  },
+  {
+    "parent_pid": 2413388,
+    "backend": "marker",
+    "child_pids": [
+      2414648,
+      2531357,
+      2560103,
+      2560455,
+      2531507
+    ],
+    "reason": "Restart with a predeclared dimension-interleaved order so slow integrations cover all capabilities early; preserve incomplete original attempts without quality aggregates."
+  },
+  {
+    "parent_pid": 2418706,
+    "backend": "unstructured",
+    "child_pids": [
+      2420652,
+      2554835,
+      2558079,
+      2559041,
+      2555517
+    ],
+    "reason": "Restart with a predeclared dimension-interleaved order so slow integrations cover all capabilities early; preserve incomplete original attempts without quality aggregates."
+  }
+]

@@ -1,0 +1,15 @@
+[
+  {
+    "backend": "pypdf",
+    "input": "data_exports/parsebench/sources/docs/chart/10k_2024_p27.pdf",
+    "outcome": "parser_failure",
+    "parse_time_seconds": 0.000468316997285001,
+    "wall_time_seconds": 1.278492121000454,
+    "output_path": null,
+    "output_sha256": null,
+    "error": "Input file not found: /home/stefan/applied-ai/pdf-bench/data_exports/parsebench/sources/docs/chart/10k_2024_p27.pdf",
+    "error_type": "FileNotFoundError",
+    "returned_path": null,
+    "worker_pid": 2367679
+  }
+]

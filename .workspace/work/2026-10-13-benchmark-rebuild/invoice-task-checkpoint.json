@@ -1,0 +1,28 @@
+{
+  "status": "implemented",
+  "protocol_sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e",
+  "development_documents": 6,
+  "development_parser_outputs": 12,
+  "primary_comparison_executed": false,
+  "tests": {
+    "full_passed": 921,
+    "full_skipped": 18,
+    "focused_task_plus_local_smoke": 19,
+    "producing_mutation_witnesses_preflight_passed": 8
+  },
+  "controls": [
+    "Faithful independent representation with literal grading facts",
+    "Actual backend transposes headers while retaining value tokens",
+    "Actual backend duplicates header labels with redundant plain text",
+    "Standalone extraction denies answer files, network and subprocesses",
+    "Field/value swaps, record swaps, duplicate multiplicity, omissions and extras",
+    "Signs, currency markers, units and unrounded Decimal precision"
+  ],
+  "limits": [
+    "Markdown tables take precedence over duplicated plain text, so omitted structured continuation rows remain an integration limitation",
+    "Merged FROM/TO text is ambiguous; no answer lookup repairs vendor identity",
+    "Within-word wraps are not semantically repaired",
+    "Retained development corpus is not a held-out test set"
+  ],
+  "coverage": "All eight issue-4 closure items covered; no waivers or deferrals"
+}

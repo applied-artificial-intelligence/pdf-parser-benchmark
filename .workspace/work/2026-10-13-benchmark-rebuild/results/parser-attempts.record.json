@@ -1,0 +1,12 @@
+{
+ "item": "parser-attempts.record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_run_provenance.py::test_actual_blank_pdf_is_success_empty_with_retained_empty_bytes",
+  "fixture (both runs): Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

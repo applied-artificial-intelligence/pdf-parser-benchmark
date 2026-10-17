@@ -1,0 +1,44 @@
+name: "Premium LLMs on arXiv (short papers)"
+description: "Test GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5 on hard academic documents"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - arxiv
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - arxiv-2401.06244
+    - arxiv-2302.14852
+    - arxiv-2409.06598
+    - arxiv-2408.16000
+    - arxiv-2302.00722
+    - arxiv-2403.09313
+  max_documents: null
+
+parser_config:
+  parsers:
+    - gpt_5_1
+    - gemini_3_pro
+    - claude_sonnet_4_5
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - tree_similarity
+    - element_f1
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 1
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 600

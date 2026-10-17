@@ -1,0 +1,82 @@
+{
+  "benchmark": {
+    "name": "Academic Papers - Pandoc Ground Truth Test",
+    "timestamp": "2026-02-01T17:55:09.915458+00:00",
+    "config_file": "benchmarks/academic_pandoc_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-94-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfsmith-pypdfium2": "0.3.0",
+      "pdfsmith-pymupdf": "0.3.0",
+      "pdfsmith-marker": "0.3.0",
+      "pdfsmith-docling": "0.3.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2098756170385152,
+        "chrf++": 22.176416084046185,
+        "character_error_rate": 0.7901243829614848,
+        "latex_f1": 0.0,
+        "element_f1": 0.3569776407093292
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010390281677246094
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.20768503653468173,
+        "chrf++": 22.17533589973712,
+        "character_error_rate": 0.7923149634653183,
+        "latex_f1": 0.0,
+        "element_f1": 0.4024390243902439
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009520053863525391
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.30040960854626475,
+        "chrf++": 31.11422121999582,
+        "character_error_rate": 0.6995903914537352,
+        "latex_f1": 0.11940298507462686,
+        "element_f1": 0.7446808510638299
+      },
+      "error": null,
+      "parse_time_seconds": 0.000942230224609375
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.18657444222719022,
+        "chrf++": 21.605858630065715,
+        "character_error_rate": 0.8134255577728098,
+        "latex_f1": 0.0,
+        "element_f1": 0.34476003917727716
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008335113525390625
+    }
+  ],
+  "summary": {
+    "total_documents": 1,
+    "total_parsers": 4,
+    "total_results": 4,
+    "success_count": 4,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+ "item": "public-comparison.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench_comparison.py::test_regrade_cannot_relabel_upstream_scores_with_a_different_protocol",
+  "fixture (both runs): Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

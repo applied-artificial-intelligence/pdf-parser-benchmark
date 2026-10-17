@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Ellis-Miller
+document_id: invoice_078
+due_date: '2025-12-09'
+generated_at: '2025-11-18T16:46:54.215493'
+industry: construction
+invoice_date: '2025-11-09'
+invoice_number: INV-44711
+line_item_count: 7
+payment_terms: Net 30
+region: CA
+subtotal: 51781.66
+tax_amount: 2589.08
+template_style: enterprise
+total: 54370.74
+vendor:
+  country: Canada
+  name: Foundation Inc
+corpus: business
+source_url: generated://invoice_078
+domain: invoices
+doc_id: invoice_078

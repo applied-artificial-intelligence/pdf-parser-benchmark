@@ -1,0 +1,15 @@
+name: SEC Filings (ARS Annual Reports)
+description: Annual Report to Stockholders (ARS) PDFs paired with 10-K iXBRL HTML
+  ground truth
+document_count: 89
+domain: financial
+source: SEC EDGAR
+features:
+- financial_statements
+- tables
+- sec_filings
+- annual_reports
+- multi_column
+- charts
+- designed_layout
+ground_truth_method: 10-K iXBRL HTML converted to Markdown via BeautifulSoup

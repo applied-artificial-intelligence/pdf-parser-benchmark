@@ -1,0 +1,5251 @@
+{
+  "benchmark": {
+    "name": "HR Documents Benchmark",
+    "timestamp": "2025-11-23T18:08:11.459664+00:00",
+    "config_file": "benchmarks/hr_34docs.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "docling-fast": "2.63.0",
+      "pymupdf4llm": "1.26.6",
+      "pdfplumber": "0.11.8",
+      "pymupdf": "1.26.6",
+      "pypdfium2": "4.30.0",
+      "pypdf": "6.3.0",
+      "pdfminer": "20251107",
+      "kreuzberg": "3.21.0",
+      "marker": "1.10.1",
+      "tika": "3.1.0",
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "resume_017",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9557799442896936,
+        "chrf++": 92.34511767566971,
+        "character_error_rate": 0.04529243937232525,
+        "tree_similarity": 0.2520325203252033,
+        "element_f1": 0.5816326530612245
+      },
+      "error": null,
+      "parse_time_seconds": 3.136042594909668
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9631901840490797,
+        "chrf++": 93.11426521747345,
+        "character_error_rate": 0.037383177570093455,
+        "tree_similarity": 0.3571428571428571,
+        "element_f1": 0.6588235294117647
+      },
+      "error": null,
+      "parse_time_seconds": 0.32909727096557617
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5231638418079096,
+        "chrf++": 89.61861937952537,
+        "character_error_rate": 0.5255292652552926,
+        "tree_similarity": 0.29508196721311475,
+        "element_f1": 0.5652173913043478
+      },
+      "error": null,
+      "parse_time_seconds": 0.48809099197387695
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9485320768394345,
+        "chrf++": 92.01787830429004,
+        "character_error_rate": 0.05288640595903166,
+        "tree_similarity": 0.20661157024793386,
+        "element_f1": 0.5208333333333334
+      },
+      "error": null,
+      "parse_time_seconds": 0.3726367950439453
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9506043089858118,
+        "chrf++": 91.90908673104559,
+        "character_error_rate": 0.051142546245919476,
+        "tree_similarity": 0.28971962616822433,
+        "element_f1": 0.5903614457831324
+      },
+      "error": null,
+      "parse_time_seconds": 0.3718233108520508
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9464697738809414,
+        "chrf++": 91.59754030663564,
+        "character_error_rate": 0.05547584887613582,
+        "tree_similarity": 0.2432432432432432,
+        "element_f1": 0.5730337078651685
+      },
+      "error": null,
+      "parse_time_seconds": 0.4807264804840088
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9392857142857143,
+        "chrf++": 91.10644217065754,
+        "character_error_rate": 0.06362275449101797,
+        "tree_similarity": 0.22784810126582278,
+        "element_f1": 0.5925925925925926
+      },
+      "error": null,
+      "parse_time_seconds": 0.38066792488098145
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8170731707317074,
+        "chrf++": 84.6197201893238,
+        "character_error_rate": 0.18292682926829268,
+        "tree_similarity": 0.390625,
+        "element_f1": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 0.3073446750640869
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9679376083188909,
+        "chrf++": 93.10540383770956,
+        "character_error_rate": 0.03265666372462489,
+        "tree_similarity": 0.6065573770491803,
+        "element_f1": 0.7586206896551724
+      },
+      "error": null,
+      "parse_time_seconds": 0.3197927474975586
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9523809523809523,
+        "chrf++": 92.67978454273363,
+        "character_error_rate": 0.04934070608251808,
+        "tree_similarity": 0.3412698412698413,
+        "element_f1": 0.5894736842105263
+      },
+      "error": null,
+      "parse_time_seconds": 0.4087986946105957
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9470899470899471,
+        "chrf++": 92.2931715546225,
+        "character_error_rate": 0.055305910819218804,
+        "tree_similarity": 0.31976744186046513,
+        "element_f1": 0.5793650793650793
+      },
+      "error": null,
+      "parse_time_seconds": 1.398446798324585
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5655671761866452,
+        "chrf++": 90.64018857192198,
+        "character_error_rate": 0.48,
+        "tree_similarity": 0.3414634146341463,
+        "element_f1": 0.5811965811965811
+      },
+      "error": null,
+      "parse_time_seconds": 0.45659899711608887
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578503688092729,
+        "chrf++": 92.99012252559268,
+        "character_error_rate": 0.04333694474539545,
+        "tree_similarity": 0.42391304347826086,
+        "element_f1": 0.6323529411764706
+      },
+      "error": null,
+      "parse_time_seconds": 0.3781721591949463
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6131984585741811,
+        "chrf++": 87.20790739690803,
+        "character_error_rate": 0.39189848706686187,
+        "tree_similarity": 0.29508196721311475,
+        "element_f1": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 0.37990236282348633
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7378691983122363,
+        "chrf++": 91.72591833627364,
+        "character_error_rate": 0.2782754759238522,
+        "tree_similarity": 0.31775700934579443,
+        "element_f1": 0.617283950617284
+      },
+      "error": null,
+      "parse_time_seconds": 0.6859791278839111
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9537943696450428,
+        "chrf++": 93.4989333620851,
+        "character_error_rate": 0.04789089755788138,
+        "tree_similarity": 0.29824561403508776,
+        "element_f1": 0.5669291338582677
+      },
+      "error": null,
+      "parse_time_seconds": 0.6463079452514648
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5945465323058684,
+        "chrf++": 90.35313661121111,
+        "character_error_rate": 0.43539147040101844,
+        "tree_similarity": 0.21590909090909094,
+        "element_f1": 0.5652173913043479
+      },
+      "error": null,
+      "parse_time_seconds": 0.5374786853790283
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638439581351094,
+        "chrf++": 92.40413308191187,
+        "character_error_rate": 0.0369290573372206,
+        "tree_similarity": 0.5625,
+        "element_f1": 0.7472527472527472
+      },
+      "error": null,
+      "parse_time_seconds": 0.4199862480163574
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5812837432513498,
+        "chrf++": 90.27957214421366,
+        "character_error_rate": 0.44801026957637996,
+        "tree_similarity": 0.1807228915662651,
+        "element_f1": 0.5820895522388059
+      },
+      "error": null,
+      "parse_time_seconds": 0.4736912250518799
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9602272727272727,
+        "chrf++": 93.63116391594451,
+        "character_error_rate": 0.040840140023337225,
+        "tree_similarity": 0.4736842105263158,
+        "element_f1": 0.7228915662650601
+      },
+      "error": null,
+      "parse_time_seconds": 0.3242359161376953
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6407922912205568,
+        "chrf++": 84.9569191540569,
+        "character_error_rate": 0.3678728070175439,
+        "tree_similarity": 0.2578125,
+        "element_f1": 0.572972972972973
+      },
+      "error": null,
+      "parse_time_seconds": 1.4044415950775146
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9190040970690199,
+        "chrf++": 88.65545308116373,
+        "character_error_rate": 0.08336036328251703,
+        "tree_similarity": 0.2954545454545454,
+        "element_f1": 0.5597014925373134
+      },
+      "error": null,
+      "parse_time_seconds": 0.4629547595977783
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5921356977640709,
+        "chrf++": 90.18387072871066,
+        "character_error_rate": 0.4371900826446281,
+        "tree_similarity": 0.27956989247311825,
+        "element_f1": 0.5777777777777777
+      },
+      "error": null,
+      "parse_time_seconds": 0.5009982585906982
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9364326375711575,
+        "chrf++": 90.873607220332,
+        "character_error_rate": 0.06643529995042141,
+        "tree_similarity": 0.1578947368421053,
+        "element_f1": 0.5573770491803278
+      },
+      "error": null,
+      "parse_time_seconds": 0.3972456455230713
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515923566878981,
+        "chrf++": 91.20300602617166,
+        "character_error_rate": 0.050032916392363395,
+        "tree_similarity": 0.4651162790697675,
+        "element_f1": 0.6666666666666665
+      },
+      "error": null,
+      "parse_time_seconds": 0.42342686653137207
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9612903225806452,
+        "chrf++": 93.49456571580073,
+        "character_error_rate": 0.03970223325062035,
+        "tree_similarity": 0.5373134328358209,
+        "element_f1": 0.7010309278350515
+      },
+      "error": null,
+      "parse_time_seconds": 0.3520522117614746
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535822401614531,
+        "chrf++": 91.59679431721995,
+        "character_error_rate": 0.047520661157024795,
+        "tree_similarity": 0.3666666666666667,
+        "element_f1": 0.6593406593406593
+      },
+      "error": null,
+      "parse_time_seconds": 0.40018701553344727
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486309668039739,
+        "chrf++": 92.207922480905,
+        "character_error_rate": 0.05353535353535353,
+        "tree_similarity": 0.24154589371980673,
+        "element_f1": 0.5625
+      },
+      "error": null,
+      "parse_time_seconds": 0.4891784191131592
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9547677261613692,
+        "chrf++": 92.7949464239544,
+        "character_error_rate": 0.04673684210526316,
+        "tree_similarity": 0.3798449612403101,
+        "element_f1": 0.6178010471204188
+      },
+      "error": null,
+      "parse_time_seconds": 0.4198293685913086
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9494324045407637,
+        "chrf++": 92.42447245992564,
+        "character_error_rate": 0.0525,
+        "tree_similarity": 0.22448979591836737,
+        "element_f1": 0.559322033898305
+      },
+      "error": null,
+      "parse_time_seconds": 0.5765211582183838
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9539575788929125,
+        "chrf++": 93.24297138477635,
+        "character_error_rate": 0.04774678111587983,
+        "tree_similarity": 0.35238095238095235,
+        "element_f1": 0.6114649681528662
+      },
+      "error": null,
+      "parse_time_seconds": 1.3494467735290527
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9511834319526628,
+        "chrf++": 91.70252645552216,
+        "character_error_rate": 0.04929051530993279,
+        "tree_similarity": 0.29850746268656714,
+        "element_f1": 0.6060606060606062
+      },
+      "error": null,
+      "parse_time_seconds": 0.39392733573913574
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9596690796277145,
+        "chrf++": 91.6325435539195,
+        "character_error_rate": 0.0410958904109589,
+        "tree_similarity": 0.5454545454545454,
+        "element_f1": 0.7088607594936709
+      },
+      "error": null,
+      "parse_time_seconds": 0.4149742126464844
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "docling-fast",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7007874015748031,
+        "chrf++": 91.93281340371463,
+        "character_error_rate": 0.3292079207920792,
+        "tree_similarity": 0.4576271186440678,
+        "element_f1": 0.6829268292682927
+      },
+      "error": null,
+      "parse_time_seconds": 0.5417323112487793
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9463733241663802,
+        "chrf++": 89.88720721311768,
+        "character_error_rate": 0.05563480741797432,
+        "tree_similarity": 0.33678756476683935,
+        "element_f1": 0.45599999999999996
+      },
+      "error": null,
+      "parse_time_seconds": 0.10300302505493164
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9284294234592445,
+        "chrf++": 86.82716554614545,
+        "character_error_rate": 0.07476635514018691,
+        "tree_similarity": 0.3764705882352941,
+        "element_f1": 0.490566037735849
+      },
+      "error": null,
+      "parse_time_seconds": 0.026502132415771484
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5644171779141105,
+        "chrf++": 79.48431230757117,
+        "character_error_rate": 0.44209215442092153,
+        "tree_similarity": 0.3846153846153846,
+        "element_f1": 0.5346534653465346
+      },
+      "error": null,
+      "parse_time_seconds": 0.015963077545166016
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9386809269162211,
+        "chrf++": 88.44880339909747,
+        "character_error_rate": 0.06405959031657356,
+        "tree_similarity": 0.32352941176470584,
+        "element_f1": 0.45977011494252873
+      },
+      "error": null,
+      "parse_time_seconds": 0.06302237510681152
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9296430419037766,
+        "chrf++": 86.84519208893728,
+        "character_error_rate": 0.07399347116430903,
+        "tree_similarity": 0.3092105263157895,
+        "element_f1": 0.46766169154228854
+      },
+      "error": null,
+      "parse_time_seconds": 0.047727108001708984
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9322111010009099,
+        "chrf++": 87.98615227969775,
+        "character_error_rate": 0.07125777140124342,
+        "tree_similarity": 0.27544910179640714,
+        "element_f1": 0.45739910313901344
+      },
+      "error": null,
+      "parse_time_seconds": 0.07717490196228027
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9228295819935691,
+        "chrf++": 88.56718018819572,
+        "character_error_rate": 0.08083832335329341,
+        "tree_similarity": 0.29439252336448596,
+        "element_f1": 0.46808510638297873
+      },
+      "error": null,
+      "parse_time_seconds": 0.1179513931274414
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6702269692923899,
+        "chrf++": 77.66541843142743,
+        "character_error_rate": 0.3346883468834688,
+        "tree_similarity": 0.36986301369863017,
+        "element_f1": 0.5263157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.0176393985748291
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9385665529010239,
+        "chrf++": 88.01836788731883,
+        "character_error_rate": 0.06354810238305383,
+        "tree_similarity": 0.44705882352941173,
+        "element_f1": 0.5046728971962616
+      },
+      "error": null,
+      "parse_time_seconds": 0.062436580657958984
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9447626841243862,
+        "chrf++": 90.5592140674803,
+        "character_error_rate": 0.057422373458102936,
+        "tree_similarity": 0.30625,
+        "element_f1": 0.45871559633027525
+      },
+      "error": null,
+      "parse_time_seconds": 0.08550739288330078
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9476841052982339,
+        "chrf++": 90.38093300146188,
+        "character_error_rate": 0.05426892499135845,
+        "tree_similarity": 0.32367149758454106,
+        "element_f1": 0.47058823529411764
+      },
+      "error": null,
+      "parse_time_seconds": 0.10583209991455078
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5975715524718126,
+        "chrf++": 82.10593593355199,
+        "character_error_rate": 0.41244444444444445,
+        "tree_similarity": 0.3369565217391305,
+        "element_f1": 0.49180327868852464
+      },
+      "error": null,
+      "parse_time_seconds": 0.022841930389404297
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.946101517530089,
+        "chrf++": 90.09193521134785,
+        "character_error_rate": 0.05579631635969664,
+        "tree_similarity": 0.3688524590163934,
+        "element_f1": 0.4720496894409938
+      },
+      "error": null,
+      "parse_time_seconds": 0.07088494300842285
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6298394711992445,
+        "chrf++": 83.82114560256458,
+        "character_error_rate": 0.3826256710590532,
+        "tree_similarity": 0.3012048192771084,
+        "element_f1": 0.4380952380952381
+      },
+      "error": null,
+      "parse_time_seconds": 0.03989291191101074
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.748654467168999,
+        "chrf++": 82.2427485615166,
+        "character_error_rate": 0.261478163493841,
+        "tree_similarity": 0.30666666666666664,
+        "element_f1": 0.44897959183673464
+      },
+      "error": null,
+      "parse_time_seconds": 0.0353703498840332
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9474809160305343,
+        "chrf++": 90.70235856964513,
+        "character_error_rate": 0.0545512210593086,
+        "tree_similarity": 0.3004694835680751,
+        "element_f1": 0.45454545454545453
+      },
+      "error": null,
+      "parse_time_seconds": 0.592087984085083
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6311881188118812,
+        "chrf++": 82.54639202497384,
+        "character_error_rate": 0.37937619350732016,
+        "tree_similarity": 0.3414634146341463,
+        "element_f1": 0.48148148148148157
+      },
+      "error": null,
+      "parse_time_seconds": 0.0372622013092041
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9317757009345794,
+        "chrf++": 86.17962697056481,
+        "character_error_rate": 0.07094266277939747,
+        "tree_similarity": 0.43181818181818177,
+        "element_f1": 0.5045045045045046
+      },
+      "error": null,
+      "parse_time_seconds": 0.054147958755493164
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6235146966854284,
+        "chrf++": 81.92915704313447,
+        "character_error_rate": 0.386392811296534,
+        "tree_similarity": 0.3467741935483871,
+        "element_f1": 0.48447204968944096
+      },
+      "error": null,
+      "parse_time_seconds": 0.03206348419189453
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9272930648769575,
+        "chrf++": 85.76529786936248,
+        "character_error_rate": 0.07584597432905485,
+        "tree_similarity": 0.38961038961038963,
+        "element_f1": 0.5102040816326531
+      },
+      "error": null,
+      "parse_time_seconds": 0.023313522338867188
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6353003721424775,
+        "chrf++": 82.00464603496047,
+        "character_error_rate": 0.37609649122807015,
+        "tree_similarity": 0.30718954248366015,
+        "element_f1": 0.45
+      },
+      "error": null,
+      "parse_time_seconds": 0.03675699234008789
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9383411580594679,
+        "chrf++": 90.49060009615214,
+        "character_error_rate": 0.06389879987025625,
+        "tree_similarity": 0.3288888888888889,
+        "element_f1": 0.476510067114094
+      },
+      "error": null,
+      "parse_time_seconds": 0.11736917495727539
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6231766612641816,
+        "chrf++": 78.0844733181808,
+        "character_error_rate": 0.384297520661157,
+        "tree_similarity": 0.36111111111111116,
+        "element_f1": 0.5034965034965035
+      },
+      "error": null,
+      "parse_time_seconds": 0.024566650390625
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9351325757575758,
+        "chrf++": 88.18554782724145,
+        "character_error_rate": 0.06792265741199802,
+        "tree_similarity": 0.3006134969325154,
+        "element_f1": 0.4722222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.052001953125
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9457215836526182,
+        "chrf++": 89.99628693553814,
+        "character_error_rate": 0.05595786701777485,
+        "tree_similarity": 0.39830508474576276,
+        "element_f1": 0.48979591836734687
+      },
+      "error": null,
+      "parse_time_seconds": 0.05858302116394043
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9393455706304868,
+        "chrf++": 88.38294419845619,
+        "character_error_rate": 0.06286186931348221,
+        "tree_similarity": 0.40909090909090906,
+        "element_f1": 0.5043478260869565
+      },
+      "error": null,
+      "parse_time_seconds": 0.062067270278930664
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9279368213228035,
+        "chrf++": 86.79151717929979,
+        "character_error_rate": 0.07541322314049587,
+        "tree_similarity": 0.34883720930232553,
+        "element_f1": 0.49090909090909085
+      },
+      "error": null,
+      "parse_time_seconds": 0.027083873748779297
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9445520581113801,
+        "chrf++": 90.42797922280857,
+        "character_error_rate": 0.057828282828282826,
+        "tree_similarity": 0.26515151515151514,
+        "element_f1": 0.4456521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 0.12337183952331543
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9413904607922393,
+        "chrf++": 89.18366322277367,
+        "character_error_rate": 0.061052631578947365,
+        "tree_similarity": 0.3254437869822485,
+        "element_f1": 0.4622222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.08482146263122559
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9346494213750851,
+        "chrf++": 88.47803576480676,
+        "character_error_rate": 0.06857142857142857,
+        "tree_similarity": 0.28181818181818186,
+        "element_f1": 0.4452054794520548
+      },
+      "error": null,
+      "parse_time_seconds": 0.06626152992248535
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9437274135260713,
+        "chrf++": 89.97592315886028,
+        "character_error_rate": 0.05847639484978541,
+        "tree_similarity": 0.3023255813953488,
+        "element_f1": 0.47457627118644075
+      },
+      "error": null,
+      "parse_time_seconds": 0.0669393539428711
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9319484240687679,
+        "chrf++": 87.18358999936339,
+        "character_error_rate": 0.07094846900672143,
+        "tree_similarity": 0.3660714285714286,
+        "element_f1": 0.48175182481751827
+      },
+      "error": null,
+      "parse_time_seconds": 0.03640007972717285
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9436475409836066,
+        "chrf++": 88.96358379563696,
+        "character_error_rate": 0.05795574288724974,
+        "tree_similarity": 0.44594594594594594,
+        "element_f1": 0.5217391304347826
+      },
+      "error": null,
+      "parse_time_seconds": 0.04462385177612305
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7318840579710144,
+        "chrf++": 83.01314413874213,
+        "character_error_rate": 0.2747524752475248,
+        "tree_similarity": 0.4,
+        "element_f1": 0.5333333333333333
+      },
+      "error": null,
+      "parse_time_seconds": 0.016070127487182617
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625534950071326,
+        "chrf++": 94.41463426138661,
+        "character_error_rate": 0.037446504992867335,
+        "tree_similarity": 0.5304347826086957,
+        "element_f1": 0.7422680412371134
+      },
+      "error": null,
+      "parse_time_seconds": 0.03998589515686035
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543094496365524,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04569055036344756,
+        "tree_similarity": 0.4716981132075472,
+        "element_f1": 0.6904761904761905
+      },
+      "error": null,
+      "parse_time_seconds": 0.016619443893432617
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5927770859277708,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40722291407222916,
+        "tree_similarity": 0.46153846153846156,
+        "element_f1": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.014341115951538086
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638733705772812,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.036126629422718805,
+        "tree_similarity": 0.5867768595041323,
+        "element_f1": 0.7722772277227722
+      },
+      "error": null,
+      "parse_time_seconds": 0.038880348205566406
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581066376496191,
+        "chrf++": 93.68362834777301,
+        "character_error_rate": 0.041893362350380846,
+        "tree_similarity": 0.5894736842105264,
+        "element_f1": 0.7792207792207793
+      },
+      "error": null,
+      "parse_time_seconds": 0.0285794734954834
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9612625538020086,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03873744619799139,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.03112626075744629
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607035928143712,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03929640718562874,
+        "tree_similarity": 0.6488549618320612,
+        "element_f1": 0.8073394495412846
+      },
+      "error": null,
+      "parse_time_seconds": 0.040331363677978516
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6951219512195121,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3048780487804878,
+        "tree_similarity": 0.43999999999999995,
+        "element_f1": 0.6486486486486486
+      },
+      "error": null,
+      "parse_time_seconds": 0.013130664825439453
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9541041482789056,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.04589585172109444,
+        "tree_similarity": 0.38181818181818183,
+        "element_f1": 0.627906976744186
+      },
+      "error": null,
+      "parse_time_seconds": 0.018799543380737305
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583333333333334,
+        "chrf++": 93.77185730889481,
+        "character_error_rate": 0.04168438962143769,
+        "tree_similarity": 0.5544554455445545,
+        "element_f1": 0.7674418604651163
+      },
+      "error": null,
+      "parse_time_seconds": 0.03460192680358887
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595575527134462,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.04044244728655375,
+        "tree_similarity": 0.6046511627906976,
+        "element_f1": 0.7889908256880735
+      },
+      "error": null,
+      "parse_time_seconds": 0.04058241844177246
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6151111111111112,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.3848888888888889,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.723404255319149
+      },
+      "error": null,
+      "parse_time_seconds": 0.018517732620239258
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9604550379198267,
+        "chrf++": 93.97047581036183,
+        "character_error_rate": 0.03954496208017335,
+        "tree_similarity": 0.49350649350649356,
+        "element_f1": 0.71875
+      },
+      "error": null,
+      "parse_time_seconds": 0.027828693389892578
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6534895070766227,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.34651049292337727,
+        "tree_similarity": 0.5869565217391304,
+        "element_f1": 0.7763157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.02963709831237793
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7805151175811871,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.21948488241881298,
+        "tree_similarity": 0.5909090909090908,
+        "element_f1": 0.7746478873239437
+      },
+      "error": null,
+      "parse_time_seconds": 0.02829265594482422
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9613557174532784,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03869330796067238,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.04542803764343262
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6537237428389561,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34627625716104393,
+        "tree_similarity": 0.5641025641025641,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.02456068992614746
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9504373177842566,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.04956268221574344,
+        "tree_similarity": 0.4385964912280702,
+        "element_f1": 0.6590909090909092
+      },
+      "error": null,
+      "parse_time_seconds": 0.01764535903930664
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.644415917843389,
+        "chrf++": 91.46889676857934,
+        "character_error_rate": 0.355584082156611,
+        "tree_similarity": 0.5641025641025641,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.023660898208618164
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9498249708284714,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.050175029171528586,
+        "tree_similarity": 0.4901960784313726,
+        "element_f1": 0.6923076923076923
+      },
+      "error": null,
+      "parse_time_seconds": 0.01723337173461914
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6600877192982456,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3399122807017544,
+        "tree_similarity": 0.6,
+        "element_f1": 0.7808219178082192
+      },
+      "error": null,
+      "parse_time_seconds": 0.028633832931518555
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956957928802589,
+        "chrf++": 93.44887969198828,
+        "character_error_rate": 0.043139798897178075,
+        "tree_similarity": 0.6028368794326241,
+        "element_f1": 0.7983193277310925
+      },
+      "error": null,
+      "parse_time_seconds": 0.04477524757385254
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6479338842975206,
+        "chrf++": 89.05909942492687,
+        "character_error_rate": 0.35206611570247937,
+        "tree_similarity": 0.4722222222222222,
+        "element_f1": 0.7090909090909091
+      },
+      "error": null,
+      "parse_time_seconds": 0.019603252410888672
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578582052553297,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.0421417947446703,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.03077244758605957
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545753785385122,
+        "chrf++": 93.265143704101,
+        "character_error_rate": 0.04542462146148782,
+        "tree_similarity": 0.4794520547945206,
+        "element_f1": 0.7
+      },
+      "error": null,
+      "parse_time_seconds": 0.02584075927734375
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545078577336642,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.045492142266335814,
+        "tree_similarity": 0.4576271186440678,
+        "element_f1": 0.6739130434782609
+      },
+      "error": null,
+      "parse_time_seconds": 0.019037485122680664
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535123966942148,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04648760330578512,
+        "tree_similarity": 0.5272727272727273,
+        "element_f1": 0.7209302325581395
+      },
+      "error": null,
+      "parse_time_seconds": 0.016550779342651367
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9608040201005025,
+        "chrf++": 93.86805213121913,
+        "character_error_rate": 0.03939393939393939,
+        "tree_similarity": 0.6242424242424243,
+        "element_f1": 0.8041958041958043
+      },
+      "error": null,
+      "parse_time_seconds": 0.0550537109375
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591578947368421,
+        "chrf++": 93.96692079709985,
+        "character_error_rate": 0.040842105263157895,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.75
+      },
+      "error": null,
+      "parse_time_seconds": 0.07329392433166504
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.04,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.043802738189697266
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9576180257510729,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.04238197424892704,
+        "tree_similarity": 0.5764705882352941,
+        "element_f1": 0.7714285714285715
+      },
+      "error": null,
+      "parse_time_seconds": 0.029064416885375977
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958924570575056,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.041075429424943986,
+        "tree_similarity": 0.4328358208955224,
+        "element_f1": 0.6603773584905661
+      },
+      "error": null,
+      "parse_time_seconds": 0.020516395568847656
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515279241306639,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.04847207586933614,
+        "tree_similarity": 0.4285714285714286,
+        "element_f1": 0.6578947368421053
+      },
+      "error": null,
+      "parse_time_seconds": 0.01761651039123535
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7512376237623762,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.24876237623762376,
+        "tree_similarity": 0.41666666666666663,
+        "element_f1": 0.6285714285714287
+      },
+      "error": null,
+      "parse_time_seconds": 0.016582489013671875
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625534950071326,
+        "chrf++": 94.41463426138661,
+        "character_error_rate": 0.037446504992867335,
+        "tree_similarity": 0.3561643835616438,
+        "element_f1": 0.6101694915254238
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006177425384521484
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543094496365524,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04569055036344756,
+        "tree_similarity": 0.3090909090909091,
+        "element_f1": 0.6170212765957447
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004706382751464844
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5940224159402241,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40597758405977585,
+        "tree_similarity": 0.22033898305084743,
+        "element_f1": 0.5416666666666666
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005230903625488281
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638733705772812,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.036126629422718805,
+        "tree_similarity": 0.3943661971830986,
+        "element_f1": 0.6554621848739496
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005028247833251953
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581066376496191,
+        "chrf++": 93.68362834777301,
+        "character_error_rate": 0.041893362350380846,
+        "tree_similarity": 0.40740740740740744,
+        "element_f1": 0.6593406593406593
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004372596740722656
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9612625538020086,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03873744619799139,
+        "tree_similarity": 0.4098360655737705,
+        "element_f1": 0.6666666666666666
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003943443298339844
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607035928143712,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03929640718562874,
+        "tree_similarity": 0.4125,
+        "element_f1": 0.6616541353383458
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003898143768310547
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6964769647696477,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3035230352303523,
+        "tree_similarity": 0.19999999999999996,
+        "element_f1": 0.5333333333333333
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003561973571777344
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9541041482789056,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.04589585172109444,
+        "tree_similarity": 0.22033898305084743,
+        "element_f1": 0.5510204081632654
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004591941833496094
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583333333333334,
+        "chrf++": 93.77185730889481,
+        "character_error_rate": 0.04168438962143769,
+        "tree_similarity": 0.3623188405797102,
+        "element_f1": 0.6055045871559633
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036644935607910156
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595575527134462,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.04044244728655375,
+        "tree_similarity": 0.3764705882352941,
+        "element_f1": 0.6277372262773723
+      },
+      "error": null,
+      "parse_time_seconds": 0.00054931640625
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.616,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.384,
+        "tree_similarity": 0.2727272727272727,
+        "element_f1": 0.5573770491803278
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047588348388671875
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9604550379198267,
+        "chrf++": 93.97047581036183,
+        "character_error_rate": 0.03954496208017335,
+        "tree_similarity": 0.326530612244898,
+        "element_f1": 0.5897435897435898
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003960132598876953
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6539775500244022,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.34602244997559783,
+        "tree_similarity": 0.3793103448275862,
+        "element_f1": 0.6276595744680851
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004138946533203125
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7810750279955208,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.21892497200447927,
+        "tree_similarity": 0.36363636363636365,
+        "element_f1": 0.6179775280898876
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006480216979980469
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9613557174532784,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03869330796067238,
+        "tree_similarity": 0.3707865168539326,
+        "element_f1": 0.6197183098591549
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003981590270996094
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6543602800763845,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34563971992361553,
+        "tree_similarity": 0.32608695652173914,
+        "element_f1": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004889965057373047
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9504373177842566,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.04956268221574344,
+        "tree_similarity": 0.2542372881355932,
+        "element_f1": 0.58
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004334449768066406
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6450577663671373,
+        "chrf++": 91.46889676857934,
+        "character_error_rate": 0.35494223363286265,
+        "tree_similarity": 0.32608695652173914,
+        "element_f1": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002911090850830078
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9498249708284714,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.050175029171528586,
+        "tree_similarity": 0.2941176470588235,
+        "element_f1": 0.6136363636363636
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035309791564941406
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6606359649122807,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3393640350877193,
+        "tree_similarity": 0.3620689655172413,
+        "element_f1": 0.6129032258064516
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003681182861328125
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956957928802589,
+        "chrf++": 93.44887969198828,
+        "character_error_rate": 0.043139798897178075,
+        "tree_similarity": 0.3664921465968587,
+        "element_f1": 0.625
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042724609375
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6487603305785123,
+        "chrf++": 89.05909942492687,
+        "character_error_rate": 0.3512396694214876,
+        "tree_similarity": 0.23863636363636365,
+        "element_f1": 0.557142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005605220794677734
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578582052553297,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.0421417947446703,
+        "tree_similarity": 0.4126984126984127,
+        "element_f1": 0.6538461538461537
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006415843963623047
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545753785385122,
+        "chrf++": 93.265143704101,
+        "character_error_rate": 0.04542462146148782,
+        "tree_similarity": 0.3111111111111111,
+        "element_f1": 0.5833333333333334
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004937648773193359
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545078577336642,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.045492142266335814,
+        "tree_similarity": 0.2615384615384615,
+        "element_f1": 0.5740740740740741
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003979206085205078
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535123966942148,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04648760330578512,
+        "tree_similarity": 0.33333333333333337,
+        "element_f1": 0.6326530612244898
+      },
+      "error": null,
+      "parse_time_seconds": 0.00034499168395996094
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9608040201005025,
+        "chrf++": 93.86805213121913,
+        "character_error_rate": 0.03939393939393939,
+        "tree_similarity": 0.3872340425531915,
+        "element_f1": 0.6216216216216216
+      },
+      "error": null,
+      "parse_time_seconds": 0.00038695335388183594
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591578947368421,
+        "chrf++": 93.96692079709985,
+        "character_error_rate": 0.040842105263157895,
+        "tree_similarity": 0.35820895522388063,
+        "element_f1": 0.6111111111111112
+      },
+      "error": null,
+      "parse_time_seconds": 0.00074005126953125
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.04,
+        "tree_similarity": 0.3928571428571429,
+        "element_f1": 0.6423357664233577
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003752708435058594
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9576180257510729,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.04238197424892704,
+        "tree_similarity": 0.36363636363636365,
+        "element_f1": 0.6136363636363636
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004153251647949219
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958924570575056,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.041075429424943986,
+        "tree_similarity": 0.28358208955223885,
+        "element_f1": 0.603448275862069
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003802776336669922
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515279241306639,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.04847207586933614,
+        "tree_similarity": 0.24528301886792447,
+        "element_f1": 0.5681818181818181
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040602684020996094
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7524752475247525,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.24752475247524752,
+        "tree_similarity": 0.18367346938775508,
+        "element_f1": 0.5365853658536585
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004277229309082031
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625534950071326,
+        "chrf++": 94.34254179682185,
+        "character_error_rate": 0.037446504992867335,
+        "tree_similarity": 0.5478260869565217,
+        "element_f1": 0.7499999999999999
+      },
+      "error": null,
+      "parse_time_seconds": 0.00417017936706543
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543094496365524,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04569055036344756,
+        "tree_similarity": 0.4716981132075472,
+        "element_f1": 0.6904761904761905
+      },
+      "error": null,
+      "parse_time_seconds": 0.002238035202026367
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5927770859277708,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40722291407222916,
+        "tree_similarity": 0.46153846153846156,
+        "element_f1": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021169185638427734
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638733705772812,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.036126629422718805,
+        "tree_similarity": 0.5867768595041323,
+        "element_f1": 0.7722772277227722
+      },
+      "error": null,
+      "parse_time_seconds": 0.003281116485595703
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581066376496191,
+        "chrf++": 93.54596722441744,
+        "character_error_rate": 0.041893362350380846,
+        "tree_similarity": 0.5894736842105264,
+        "element_f1": 0.7894736842105263
+      },
+      "error": null,
+      "parse_time_seconds": 0.0029952526092529297
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9612625538020086,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03873744619799139,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.003278970718383789
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607035928143712,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03929640718562874,
+        "tree_similarity": 0.6488549618320612,
+        "element_f1": 0.8073394495412846
+      },
+      "error": null,
+      "parse_time_seconds": 0.0032782554626464844
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6951219512195121,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3048780487804878,
+        "tree_similarity": 0.43999999999999995,
+        "element_f1": 0.6486486486486486
+      },
+      "error": null,
+      "parse_time_seconds": 0.00202178955078125
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9541041482789056,
+        "chrf++": 93.10025616946189,
+        "character_error_rate": 0.04589585172109444,
+        "tree_similarity": 0.4181818181818182,
+        "element_f1": 0.6428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021071434020996094
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583156103785623,
+        "chrf++": 93.68336919091188,
+        "character_error_rate": 0.04168438962143769,
+        "tree_similarity": 0.5742574257425743,
+        "element_f1": 0.7764705882352942
+      },
+      "error": null,
+      "parse_time_seconds": 0.0030961036682128906
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595575527134462,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.04044244728655375,
+        "tree_similarity": 0.6046511627906976,
+        "element_f1": 0.7889908256880735
+      },
+      "error": null,
+      "parse_time_seconds": 0.0033583641052246094
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6151111111111112,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.3848888888888889,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.723404255319149
+      },
+      "error": null,
+      "parse_time_seconds": 0.002382516860961914
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9604550379198267,
+        "chrf++": 93.83647395117583,
+        "character_error_rate": 0.03954496208017335,
+        "tree_similarity": 0.5064935064935066,
+        "element_f1": 0.7301587301587302
+      },
+      "error": null,
+      "parse_time_seconds": 0.002743959426879883
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6534895070766227,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.34651049292337727,
+        "tree_similarity": 0.5869565217391304,
+        "element_f1": 0.7763157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.0029449462890625
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7805151175811871,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.21948488241881298,
+        "tree_similarity": 0.5909090909090908,
+        "element_f1": 0.7746478873239437
+      },
+      "error": null,
+      "parse_time_seconds": 0.0027108192443847656
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9613557174532784,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03869330796067238,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.003294706344604492
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6537237428389561,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34627625716104393,
+        "tree_similarity": 0.5641025641025641,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.002674579620361328
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9504373177842566,
+        "chrf++": 92.36144079116943,
+        "character_error_rate": 0.04956268221574344,
+        "tree_similarity": 0.4736842105263158,
+        "element_f1": 0.6744186046511628
+      },
+      "error": null,
+      "parse_time_seconds": 0.002207040786743164
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.644415917843389,
+        "chrf++": 91.31000880551932,
+        "character_error_rate": 0.355584082156611,
+        "tree_similarity": 0.5769230769230769,
+        "element_f1": 0.75
+      },
+      "error": null,
+      "parse_time_seconds": 0.002897024154663086
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9498249708284714,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.050175029171528586,
+        "tree_similarity": 0.4901960784313726,
+        "element_f1": 0.6923076923076923
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021228790283203125
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6600877192982456,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3399122807017544,
+        "tree_similarity": 0.6,
+        "element_f1": 0.7808219178082192
+      },
+      "error": null,
+      "parse_time_seconds": 0.002893209457397461
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9569439948203302,
+        "chrf++": 93.38119480217921,
+        "character_error_rate": 0.043139798897178075,
+        "tree_similarity": 0.6099290780141844,
+        "element_f1": 0.8050847457627119
+      },
+      "error": null,
+      "parse_time_seconds": 0.0034770965576171875
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6479338842975206,
+        "chrf++": 88.84068615527639,
+        "character_error_rate": 0.35206611570247937,
+        "tree_similarity": 0.48611111111111116,
+        "element_f1": 0.7222222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.0025942325592041016
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578582052553297,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.0421417947446703,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.002834320068359375
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545753785385122,
+        "chrf++": 93.09898666727028,
+        "character_error_rate": 0.04542462146148782,
+        "tree_similarity": 0.4931506849315068,
+        "element_f1": 0.7118644067796611
+      },
+      "error": null,
+      "parse_time_seconds": 0.0023534297943115234
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545078577336642,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.045492142266335814,
+        "tree_similarity": 0.4576271186440678,
+        "element_f1": 0.6739130434782609
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022525787353515625
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535123966942148,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04648760330578512,
+        "tree_similarity": 0.5272727272727273,
+        "element_f1": 0.7209302325581395
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022017955780029297
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607941693892939,
+        "chrf++": 93.80557136453179,
+        "character_error_rate": 0.03939393939393939,
+        "tree_similarity": 0.6303030303030304,
+        "element_f1": 0.8098591549295775
+      },
+      "error": null,
+      "parse_time_seconds": 0.0040891170501708984
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591578947368421,
+        "chrf++": 93.8801053642145,
+        "character_error_rate": 0.040842105263157895,
+        "tree_similarity": 0.5523809523809524,
+        "element_f1": 0.7586206896551724
+      },
+      "error": null,
+      "parse_time_seconds": 0.002957582473754883
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.04,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.0031309127807617188
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9576180257510729,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.04238197424892704,
+        "tree_similarity": 0.5764705882352941,
+        "element_f1": 0.7714285714285715
+      },
+      "error": null,
+      "parse_time_seconds": 0.0029768943786621094
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958924570575056,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.041075429424943986,
+        "tree_similarity": 0.4328358208955224,
+        "element_f1": 0.6603773584905661
+      },
+      "error": null,
+      "parse_time_seconds": 0.0025582313537597656
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515279241306639,
+        "chrf++": 92.50615889374707,
+        "character_error_rate": 0.04847207586933614,
+        "tree_similarity": 0.4693877551020408,
+        "element_f1": 0.6756756756756757
+      },
+      "error": null,
+      "parse_time_seconds": 0.002629995346069336
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7512376237623762,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.24876237623762376,
+        "tree_similarity": 0.41666666666666663,
+        "element_f1": 0.6285714285714287
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021016597747802734
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625534950071326,
+        "chrf++": 94.41463426138661,
+        "character_error_rate": 0.037446504992867335,
+        "tree_similarity": 0.5304347826086957,
+        "element_f1": 0.7422680412371134
+      },
+      "error": null,
+      "parse_time_seconds": 0.008893489837646484
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543094496365524,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04569055036344756,
+        "tree_similarity": 0.4716981132075472,
+        "element_f1": 0.6904761904761905
+      },
+      "error": null,
+      "parse_time_seconds": 0.0038864612579345703
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5927770859277708,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40722291407222916,
+        "tree_similarity": 0.46153846153846156,
+        "element_f1": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.0037720203399658203
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638733705772812,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.036126629422718805,
+        "tree_similarity": 0.5867768595041323,
+        "element_f1": 0.7722772277227722
+      },
+      "error": null,
+      "parse_time_seconds": 0.00887155532836914
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581066376496191,
+        "chrf++": 93.68362834777301,
+        "character_error_rate": 0.041893362350380846,
+        "tree_similarity": 0.5894736842105264,
+        "element_f1": 0.7792207792207793
+      },
+      "error": null,
+      "parse_time_seconds": 0.014648914337158203
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9612625538020086,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03873744619799139,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.007236480712890625
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607035928143712,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03929640718562874,
+        "tree_similarity": 0.6488549618320612,
+        "element_f1": 0.8073394495412846
+      },
+      "error": null,
+      "parse_time_seconds": 0.008359670639038086
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6951219512195121,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3048780487804878,
+        "tree_similarity": 0.43999999999999995,
+        "element_f1": 0.6486486486486486
+      },
+      "error": null,
+      "parse_time_seconds": 0.003763914108276367
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9541041482789056,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.04589585172109444,
+        "tree_similarity": 0.38181818181818183,
+        "element_f1": 0.627906976744186
+      },
+      "error": null,
+      "parse_time_seconds": 0.004278421401977539
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583333333333334,
+        "chrf++": 93.77185730889481,
+        "character_error_rate": 0.04168438962143769,
+        "tree_similarity": 0.5544554455445545,
+        "element_f1": 0.7674418604651163
+      },
+      "error": null,
+      "parse_time_seconds": 0.007053852081298828
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595575527134462,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.04044244728655375,
+        "tree_similarity": 0.6046511627906976,
+        "element_f1": 0.7889908256880735
+      },
+      "error": null,
+      "parse_time_seconds": 0.008925914764404297
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6151111111111112,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.3848888888888889,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.723404255319149
+      },
+      "error": null,
+      "parse_time_seconds": 0.0044078826904296875
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9604550379198267,
+        "chrf++": 93.97047581036183,
+        "character_error_rate": 0.03954496208017335,
+        "tree_similarity": 0.49350649350649356,
+        "element_f1": 0.71875
+      },
+      "error": null,
+      "parse_time_seconds": 0.006310224533081055
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6534895070766227,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.34651049292337727,
+        "tree_similarity": 0.5869565217391304,
+        "element_f1": 0.7763157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.007069110870361328
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7805151175811871,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.21948488241881298,
+        "tree_similarity": 0.5909090909090908,
+        "element_f1": 0.7746478873239437
+      },
+      "error": null,
+      "parse_time_seconds": 0.0064241886138916016
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9613557174532784,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03869330796067238,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.008608341217041016
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6537237428389561,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34627625716104393,
+        "tree_similarity": 0.5641025641025641,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.0063130855560302734
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9504373177842566,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.04956268221574344,
+        "tree_similarity": 0.4385964912280702,
+        "element_f1": 0.6590909090909092
+      },
+      "error": null,
+      "parse_time_seconds": 0.004395961761474609
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.644415917843389,
+        "chrf++": 91.46889676857934,
+        "character_error_rate": 0.355584082156611,
+        "tree_similarity": 0.5641025641025641,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.005708217620849609
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9498249708284714,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.050175029171528586,
+        "tree_similarity": 0.4901960784313726,
+        "element_f1": 0.6923076923076923
+      },
+      "error": null,
+      "parse_time_seconds": 0.003699064254760742
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6600877192982456,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3399122807017544,
+        "tree_similarity": 0.6,
+        "element_f1": 0.7808219178082192
+      },
+      "error": null,
+      "parse_time_seconds": 0.0062503814697265625
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956957928802589,
+        "chrf++": 93.44887969198828,
+        "character_error_rate": 0.043139798897178075,
+        "tree_similarity": 0.6028368794326241,
+        "element_f1": 0.7983193277310925
+      },
+      "error": null,
+      "parse_time_seconds": 0.00928807258605957
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6479338842975206,
+        "chrf++": 89.05909942492687,
+        "character_error_rate": 0.35206611570247937,
+        "tree_similarity": 0.4722222222222222,
+        "element_f1": 0.7090909090909091
+      },
+      "error": null,
+      "parse_time_seconds": 0.005284547805786133
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578582052553297,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.0421417947446703,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.8
+      },
+      "error": null,
+      "parse_time_seconds": 0.013912677764892578
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545753785385122,
+        "chrf++": 93.265143704101,
+        "character_error_rate": 0.04542462146148782,
+        "tree_similarity": 0.4794520547945206,
+        "element_f1": 0.7
+      },
+      "error": null,
+      "parse_time_seconds": 0.005545377731323242
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545078577336642,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.045492142266335814,
+        "tree_similarity": 0.4576271186440678,
+        "element_f1": 0.6739130434782609
+      },
+      "error": null,
+      "parse_time_seconds": 0.004019498825073242
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535123966942148,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04648760330578512,
+        "tree_similarity": 0.5272727272727273,
+        "element_f1": 0.7209302325581395
+      },
+      "error": null,
+      "parse_time_seconds": 0.0040552616119384766
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9608040201005025,
+        "chrf++": 93.86805213121913,
+        "character_error_rate": 0.03939393939393939,
+        "tree_similarity": 0.6242424242424243,
+        "element_f1": 0.8041958041958043
+      },
+      "error": null,
+      "parse_time_seconds": 0.009994983673095703
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591578947368421,
+        "chrf++": 93.96692079709985,
+        "character_error_rate": 0.040842105263157895,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.75
+      },
+      "error": null,
+      "parse_time_seconds": 0.007495880126953125
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.96,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.04,
+        "tree_similarity": 0.5954198473282443,
+        "element_f1": 0.7857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.007996559143066406
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9576180257510729,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.04238197424892704,
+        "tree_similarity": 0.5764705882352941,
+        "element_f1": 0.7714285714285715
+      },
+      "error": null,
+      "parse_time_seconds": 0.005845546722412109
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958924570575056,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.041075429424943986,
+        "tree_similarity": 0.4328358208955224,
+        "element_f1": 0.6603773584905661
+      },
+      "error": null,
+      "parse_time_seconds": 0.004302501678466797
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515279241306639,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.04847207586933614,
+        "tree_similarity": 0.4285714285714286,
+        "element_f1": 0.6578947368421053
+      },
+      "error": null,
+      "parse_time_seconds": 0.003957509994506836
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7512376237623762,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.24876237623762376,
+        "tree_similarity": 0.41666666666666663,
+        "element_f1": 0.6285714285714287
+      },
+      "error": null,
+      "parse_time_seconds": 0.004149198532104492
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595497713682729,
+        "chrf++": 94.5214302717038,
+        "character_error_rate": 0.04101283880171184,
+        "tree_similarity": 0.4355828220858896,
+        "element_f1": 0.5599999999999999
+      },
+      "error": null,
+      "parse_time_seconds": 0.022528409957885742
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9533195020746887,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04672897196261682,
+        "tree_similarity": 0.4383561643835616,
+        "element_f1": 0.5681818181818181
+      },
+      "error": null,
+      "parse_time_seconds": 0.010103464126586914
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5828144458281445,
+        "chrf++": 88.82192924990578,
+        "character_error_rate": 0.41718555417185554,
+        "tree_similarity": 0.388235294117647,
+        "element_f1": 0.5319148936170213
+      },
+      "error": null,
+      "parse_time_seconds": 0.009544849395751953
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9599117322545053,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.04059590316573557,
+        "tree_similarity": 0.41420118343195267,
+        "element_f1": 0.5619047619047619
+      },
+      "error": null,
+      "parse_time_seconds": 0.024225950241088867
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9548872180451128,
+        "chrf++": 93.84479029824523,
+        "character_error_rate": 0.04570184983677911,
+        "tree_similarity": 0.42307692307692313,
+        "element_f1": 0.5679012345679012
+      },
+      "error": null,
+      "parse_time_seconds": 0.016144514083862305
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9552941176470588,
+        "chrf++": 94.2151966373067,
+        "character_error_rate": 0.04543280726924916,
+        "tree_similarity": 0.40689655172413797,
+        "element_f1": 0.5555555555555556
+      },
+      "error": null,
+      "parse_time_seconds": 0.019253253936767578
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9534115920763022,
+        "chrf++": 94.29266510509974,
+        "character_error_rate": 0.04752994011976048,
+        "tree_similarity": 0.37823834196891193,
+        "element_f1": 0.5423728813559322
+      },
+      "error": null,
+      "parse_time_seconds": 0.022231340408325195
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6883468834688347,
+        "chrf++": 87.23324876590347,
+        "character_error_rate": 0.3116531165311653,
+        "tree_similarity": 0.42105263157894735,
+        "element_f1": 0.5581395348837209
+      },
+      "error": null,
+      "parse_time_seconds": 0.009252071380615234
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9558693733451015,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.0441306266548985,
+        "tree_similarity": 0.513157894736842,
+        "element_f1": 0.5777777777777778
+      },
+      "error": null,
+      "parse_time_seconds": 0.0113983154296875
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9529362765514369,
+        "chrf++": 93.89777431979567,
+        "character_error_rate": 0.04806465333900468,
+        "tree_similarity": 0.4025974025974026,
+        "element_f1": 0.532608695652174
+      },
+      "error": null,
+      "parse_time_seconds": 0.021028518676757812
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9533152909336942,
+        "chrf++": 94.0281526425259,
+        "character_error_rate": 0.047701348081576216,
+        "tree_similarity": 0.3877551020408163,
+        "element_f1": 0.5338983050847458
+      },
+      "error": null,
+      "parse_time_seconds": 0.023661375045776367
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6017777777777777,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.3982222222222222,
+        "tree_similarity": 0.33018867924528306,
+        "element_f1": 0.5000000000000001
+      },
+      "error": null,
+      "parse_time_seconds": 0.012237548828125
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9571963616907437,
+        "chrf++": 94.132347517746,
+        "character_error_rate": 0.04333694474539545,
+        "tree_similarity": 0.4464285714285714,
+        "element_f1": 0.5522388059701493
+      },
+      "error": null,
+      "parse_time_seconds": 0.0163421630859375
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6422645192776965,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.35773548072230354,
+        "tree_similarity": 0.33757961783439494,
+        "element_f1": 0.5056179775280899
+      },
+      "error": null,
+      "parse_time_seconds": 0.01933121681213379
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7687569988801792,
+        "chrf++": 91.96790319943146,
+        "character_error_rate": 0.23124300111982082,
+        "tree_similarity": 0.3517241379310345,
+        "element_f1": 0.5180722891566265
+      },
+      "error": null,
+      "parse_time_seconds": 0.016414880752563477
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9564811936586882,
+        "chrf++": 94.23388936177558,
+        "character_error_rate": 0.044402156676181415,
+        "tree_similarity": 0.4117647058823529,
+        "element_f1": 0.5517241379310345
+      },
+      "error": null,
+      "parse_time_seconds": 0.033905029296875
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6460852959898153,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.3539147040101846,
+        "tree_similarity": 0.38983050847457623,
+        "element_f1": 0.5507246376811593
+      },
+      "error": null,
+      "parse_time_seconds": 0.01470804214477539
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543245869776482,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.0456754130223518,
+        "tree_similarity": 0.5428571428571429,
+        "element_f1": 0.6136363636363638
+      },
+      "error": null,
+      "parse_time_seconds": 0.011833429336547852
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.634788189987163,
+        "chrf++": 91.66407717542963,
+        "character_error_rate": 0.365211810012837,
+        "tree_similarity": 0.36220472440944884,
+        "element_f1": 0.5277777777777778
+      },
+      "error": null,
+      "parse_time_seconds": 0.014984130859375
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9533255542590432,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.046674445740956826,
+        "tree_similarity": 0.540983606557377,
+        "element_f1": 0.6153846153846154
+      },
+      "error": null,
+      "parse_time_seconds": 0.009687185287475586
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6474780701754386,
+        "chrf++": 91.5616599536675,
+        "character_error_rate": 0.35252192982456143,
+        "tree_similarity": 0.3312101910828026,
+        "element_f1": 0.5
+      },
+      "error": null,
+      "parse_time_seconds": 0.017671585083007812
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9488151658767773,
+        "chrf++": 94.12245857893686,
+        "character_error_rate": 0.05254622121310412,
+        "tree_similarity": 0.3489361702127659,
+        "element_f1": 0.5073529411764706
+      },
+      "error": null,
+      "parse_time_seconds": 0.027367591857910156
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6363636363636364,
+        "chrf++": 88.32414110543618,
+        "character_error_rate": 0.36363636363636365,
+        "tree_similarity": 0.3629032258064516,
+        "element_f1": 0.5147058823529412
+      },
+      "error": null,
+      "parse_time_seconds": 0.014791250228881836
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9508993680116675,
+        "chrf++": 93.72492105851519,
+        "character_error_rate": 0.05007436787307883,
+        "tree_similarity": 0.39072847682119205,
+        "element_f1": 0.5434782608695652
+      },
+      "error": null,
+      "parse_time_seconds": 0.018254756927490234
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9505851755526658,
+        "chrf++": 93.65709652014324,
+        "character_error_rate": 0.050032916392363395,
+        "tree_similarity": 0.4285714285714286,
+        "element_f1": 0.5384615384615384
+      },
+      "error": null,
+      "parse_time_seconds": 0.01406240463256836
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.955482275350371,
+        "chrf++": 93.47785908479145,
+        "character_error_rate": 0.04466501240694789,
+        "tree_similarity": 0.5189873417721519,
+        "element_f1": 0.5833333333333334
+      },
+      "error": null,
+      "parse_time_seconds": 0.01134634017944336
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545923632610939,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.045454545454545456,
+        "tree_similarity": 0.4925373134328358,
+        "element_f1": 0.6046511627906977
+      },
+      "error": null,
+      "parse_time_seconds": 0.00989675521850586
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525215252152521,
+        "chrf++": 94.16261333590653,
+        "character_error_rate": 0.04873737373737374,
+        "tree_similarity": 0.3547169811320755,
+        "element_f1": 0.5159235668789809
+      },
+      "error": null,
+      "parse_time_seconds": 0.03030228614807129
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9560530679933665,
+        "chrf++": 94.0915628833453,
+        "character_error_rate": 0.04463157894736842,
+        "tree_similarity": 0.43243243243243246,
+        "element_f1": 0.5604395604395606
+      },
+      "error": null,
+      "parse_time_seconds": 0.01978015899658203
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9524475524475524,
+        "chrf++": 94.45194062772121,
+        "character_error_rate": 0.04857142857142857,
+        "tree_similarity": 0.36585365853658536,
+        "element_f1": 0.5245901639344261
+      },
+      "error": null,
+      "parse_time_seconds": 0.023145437240600586
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525816649104321,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.048283261802575105,
+        "tree_similarity": 0.4193548387096774,
+        "element_f1": 0.5466666666666666
+      },
+      "error": null,
+      "parse_time_seconds": 0.0184786319732666
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9604182225541449,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.039581777445855115,
+        "tree_similarity": 0.48863636363636365,
+        "element_f1": 0.5925925925925927
+      },
+      "error": null,
+      "parse_time_seconds": 0.012961864471435547
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9526813880126183,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.04741833508956796,
+        "tree_similarity": 0.5074626865671642,
+        "element_f1": 0.575
+      },
+      "error": null,
+      "parse_time_seconds": 0.011262893676757812
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7487623762376238,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.25123762376237624,
+        "tree_similarity": 0.4626865671641791,
+        "element_f1": 0.5897435897435898
+      },
+      "error": null,
+      "parse_time_seconds": 0.00977182388305664
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9629101283880172,
+        "chrf++": 94.34254179682185,
+        "character_error_rate": 0.037089871611982884,
+        "tree_similarity": 0.5478260869565217,
+        "element_f1": 0.7395833333333333
+      },
+      "error": null,
+      "parse_time_seconds": 0.01135873794555664
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9543094496365524,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.04569055036344756,
+        "tree_similarity": 0.4716981132075472,
+        "element_f1": 0.6904761904761905
+      },
+      "error": null,
+      "parse_time_seconds": 0.011741876602172852
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5927770859277708,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40722291407222916,
+        "tree_similarity": 0.46153846153846156,
+        "element_f1": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.005408287048339844
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.964245810055866,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.035754189944134075,
+        "tree_similarity": 0.5867768595041323,
+        "element_f1": 0.7623762376237625
+      },
+      "error": null,
+      "parse_time_seconds": 0.010836601257324219
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586507072905331,
+        "chrf++": 93.54596722441744,
+        "character_error_rate": 0.041349292709466814,
+        "tree_similarity": 0.6105263157894737,
+        "element_f1": 0.7763157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.009240865707397461
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607843137254902,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.0392156862745098,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.788235294117647
+      },
+      "error": null,
+      "parse_time_seconds": 0.008453607559204102
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603293413173652,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03967065868263473,
+        "tree_similarity": 0.6488549618320612,
+        "element_f1": 0.7981651376146789
+      },
+      "error": null,
+      "parse_time_seconds": 0.010653972625732422
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6951219512195121,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3048780487804878,
+        "tree_similarity": 0.43999999999999995,
+        "element_f1": 0.6486486486486486
+      },
+      "error": null,
+      "parse_time_seconds": 0.0063304901123046875
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9541041482789056,
+        "chrf++": 93.10025616946189,
+        "character_error_rate": 0.04589585172109444,
+        "tree_similarity": 0.4181818181818182,
+        "element_f1": 0.6428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.005752086639404297
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9587409612930667,
+        "chrf++": 93.68336919091188,
+        "character_error_rate": 0.04125903870693322,
+        "tree_similarity": 0.5841584158415842,
+        "element_f1": 0.7647058823529412
+      },
+      "error": null,
+      "parse_time_seconds": 0.008531332015991211
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9599032146560663,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.040096785343933634,
+        "tree_similarity": 0.6124031007751938,
+        "element_f1": 0.7798165137614678
+      },
+      "error": null,
+      "parse_time_seconds": 0.00810551643371582
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6151111111111112,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.3848888888888889,
+        "tree_similarity": 0.5333333333333333,
+        "element_f1": 0.723404255319149
+      },
+      "error": null,
+      "parse_time_seconds": 0.007419586181640625
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9599133261105092,
+        "chrf++": 93.83647395117583,
+        "character_error_rate": 0.04008667388949079,
+        "tree_similarity": 0.5064935064935066,
+        "element_f1": 0.7142857142857143
+      },
+      "error": null,
+      "parse_time_seconds": 0.0061817169189453125
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6539775500244022,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.34602244997559783,
+        "tree_similarity": 0.5869565217391304,
+        "element_f1": 0.7631578947368421
+      },
+      "error": null,
+      "parse_time_seconds": 0.008579730987548828
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7799552071668533,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.2200447928331467,
+        "tree_similarity": 0.5909090909090908,
+        "element_f1": 0.7605633802816902
+      },
+      "error": null,
+      "parse_time_seconds": 0.025455474853515625
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.961660329531052,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03837614969869965,
+        "tree_similarity": 0.6030534351145038,
+        "element_f1": 0.7767857142857144
+      },
+      "error": null,
+      "parse_time_seconds": 0.009743213653564453
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6530872056015277,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34691279439847234,
+        "tree_similarity": 0.5384615384615384,
+        "element_f1": 0.7213114754098361
+      },
+      "error": null,
+      "parse_time_seconds": 0.007929325103759766
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9504373177842566,
+        "chrf++": 92.36144079116943,
+        "character_error_rate": 0.04956268221574344,
+        "tree_similarity": 0.4736842105263158,
+        "element_f1": 0.6744186046511628
+      },
+      "error": null,
+      "parse_time_seconds": 0.00718379020690918
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6437740693196405,
+        "chrf++": 91.31000880551932,
+        "character_error_rate": 0.35622593068035946,
+        "tree_similarity": 0.5512820512820513,
+        "element_f1": 0.7333333333333333
+      },
+      "error": null,
+      "parse_time_seconds": 0.007273197174072266
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9498249708284714,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.050175029171528586,
+        "tree_similarity": 0.4901960784313726,
+        "element_f1": 0.6923076923076923
+      },
+      "error": null,
+      "parse_time_seconds": 0.007296323776245117
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6606359649122807,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3393640350877193,
+        "tree_similarity": 0.6,
+        "element_f1": 0.7671232876712328
+      },
+      "error": null,
+      "parse_time_seconds": 0.007741451263427734
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9575639779721412,
+        "chrf++": 93.38119480217921,
+        "character_error_rate": 0.04249108011676938,
+        "tree_similarity": 0.6312056737588653,
+        "element_f1": 0.788135593220339
+      },
+      "error": null,
+      "parse_time_seconds": 0.009533405303955078
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6471074380165289,
+        "chrf++": 88.84068615527639,
+        "character_error_rate": 0.3528925619834711,
+        "tree_similarity": 0.5138888888888888,
+        "element_f1": 0.7037037037037037
+      },
+      "error": null,
+      "parse_time_seconds": 0.005982160568237305
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9573624194348042,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.042637580565195836,
+        "tree_similarity": 0.6310679611650485,
+        "element_f1": 0.788235294117647
+      },
+      "error": null,
+      "parse_time_seconds": 0.009300947189331055
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9539170506912442,
+        "chrf++": 93.09898666727028,
+        "character_error_rate": 0.04608294930875576,
+        "tree_similarity": 0.4794520547945206,
+        "element_f1": 0.6949152542372881
+      },
+      "error": null,
+      "parse_time_seconds": 0.009013652801513672
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9545078577336642,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.045492142266335814,
+        "tree_similarity": 0.4576271186440678,
+        "element_f1": 0.6739130434782609
+      },
+      "error": null,
+      "parse_time_seconds": 0.0061206817626953125
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535123966942148,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04648760330578512,
+        "tree_similarity": 0.5272727272727273,
+        "element_f1": 0.7209302325581395
+      },
+      "error": null,
+      "parse_time_seconds": 0.007058858871459961
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607744531053558,
+        "chrf++": 93.80557136453179,
+        "character_error_rate": 0.03939393939393939,
+        "tree_similarity": 0.6363636363636364,
+        "element_f1": 0.795774647887324
+      },
+      "error": null,
+      "parse_time_seconds": 0.009122133255004883
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595789473684211,
+        "chrf++": 93.8801053642145,
+        "character_error_rate": 0.04042105263157895,
+        "tree_similarity": 0.5619047619047619,
+        "element_f1": 0.7471264367816092
+      },
+      "error": null,
+      "parse_time_seconds": 0.006317615509033203
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603571428571429,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.03964285714285714,
+        "tree_similarity": 0.6030534351145038,
+        "element_f1": 0.7767857142857144
+      },
+      "error": null,
+      "parse_time_seconds": 0.009937286376953125
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9570815450643777,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.04291845493562232,
+        "tree_similarity": 0.5764705882352941,
+        "element_f1": 0.7571428571428572
+      },
+      "error": null,
+      "parse_time_seconds": 0.007937908172607422
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958924570575056,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.041075429424943986,
+        "tree_similarity": 0.4328358208955224,
+        "element_f1": 0.6603773584905661
+      },
+      "error": null,
+      "parse_time_seconds": 0.007430553436279297
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9515279241306639,
+        "chrf++": 92.50615889374707,
+        "character_error_rate": 0.04847207586933614,
+        "tree_similarity": 0.4693877551020408,
+        "element_f1": 0.6756756756756757
+      },
+      "error": null,
+      "parse_time_seconds": 0.007857799530029297
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7512376237623762,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.24876237623762376,
+        "tree_similarity": 0.41666666666666663,
+        "element_f1": 0.6285714285714287
+      },
+      "error": null,
+      "parse_time_seconds": 0.006950855255126953
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9548563611491108,
+        "chrf++": 90.4908599859126,
+        "character_error_rate": 0.047075606276747506,
+        "tree_similarity": 0.3372781065088757,
+        "element_f1": 0.5546218487394958
+      },
+      "error": null,
+      "parse_time_seconds": 9.081990718841553
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9353574926542605,
+        "chrf++": 87.20169711669347,
+        "character_error_rate": 0.06853582554517133,
+        "tree_similarity": 0.33766233766233766,
+        "element_f1": 0.6153846153846154
+      },
+      "error": null,
+      "parse_time_seconds": 9.262693643569946
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5833333333333333,
+        "chrf++": 82.91346965002676,
+        "character_error_rate": 0.43586550435865506,
+        "tree_similarity": 0.3866666666666667,
+        "element_f1": 0.6597938144329897
+      },
+      "error": null,
+      "parse_time_seconds": 8.958352088928223
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9449964513839603,
+        "chrf++": 88.91072607656065,
+        "character_error_rate": 0.05772811918063315,
+        "tree_similarity": 0.3015873015873016,
+        "element_f1": 0.5405405405405405
+      },
+      "error": null,
+      "parse_time_seconds": 7.521624326705933
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9361811631497684,
+        "chrf++": 87.62296986032698,
+        "character_error_rate": 0.06746463547334058,
+        "tree_similarity": 0.326530612244898,
+        "element_f1": 0.5572139303482587
+      },
+      "error": null,
+      "parse_time_seconds": 8.772685289382935
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9396551724137931,
+        "chrf++": 89.09493682083527,
+        "character_error_rate": 0.06360593017694882,
+        "tree_similarity": 0.26582278481012656,
+        "element_f1": 0.5429864253393665
+      },
+      "error": null,
+      "parse_time_seconds": 8.54020619392395
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9365079365079365,
+        "chrf++": 88.05393053132339,
+        "character_error_rate": 0.06736526946107785,
+        "tree_similarity": 0.29107981220657275,
+        "element_f1": 0.5170068027210885
+      },
+      "error": null,
+      "parse_time_seconds": 9.164396524429321
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6792698826597132,
+        "chrf++": 83.23755913621825,
+        "character_error_rate": 0.3333333333333333,
+        "tree_similarity": 0.4558823529411765,
+        "element_f1": 0.6818181818181818
+      },
+      "error": null,
+      "parse_time_seconds": 8.941826105117798
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9500846023688663,
+        "chrf++": 89.74946285729804,
+        "character_error_rate": 0.05207413945278023,
+        "tree_similarity": 0.43999999999999995,
+        "element_f1": 0.6534653465346534
+      },
+      "error": null,
+      "parse_time_seconds": 8.415797472000122
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9539527302363489,
+        "chrf++": 90.45717321046024,
+        "character_error_rate": 0.04806465333900468,
+        "tree_similarity": 0.3092105263157895,
+        "element_f1": 0.5462962962962963
+      },
+      "error": null,
+      "parse_time_seconds": 9.745893001556396
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.948582729070534,
+        "chrf++": 88.98740748122151,
+        "character_error_rate": 0.05392326304873833,
+        "tree_similarity": 0.3004926108374384,
+        "element_f1": 0.519298245614035
+      },
+      "error": null,
+      "parse_time_seconds": 9.058269500732422
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.573743922204214,
+        "chrf++": 84.60780297611802,
+        "character_error_rate": 0.46755555555555556,
+        "tree_similarity": 0.3055555555555556,
+        "element_f1": 0.5072463768115942
+      },
+      "error": null,
+      "parse_time_seconds": 8.836419582366943
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956386292834891,
+        "chrf++": 90.97643485300752,
+        "character_error_rate": 0.04550379198266522,
+        "tree_similarity": 0.3486238532110092,
+        "element_f1": 0.6013071895424837
+      },
+      "error": null,
+      "parse_time_seconds": 9.411772727966309
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5960439560439561,
+        "chrf++": 86.63033471047909,
+        "character_error_rate": 0.4485114690092728,
+        "tree_similarity": 0.26136363636363635,
+        "element_f1": 0.4588744588744589
+      },
+      "error": null,
+      "parse_time_seconds": 8.720810651779175
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7187182095625636,
+        "chrf++": 86.22634173100766,
+        "character_error_rate": 0.30963045912653975,
+        "tree_similarity": 0.27544910179640714,
+        "element_f1": 0.4657534246575342
+      },
+      "error": null,
+      "parse_time_seconds": 9.452510356903076
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9538134305682163,
+        "chrf++": 90.60792259434882,
+        "character_error_rate": 0.04820805581985411,
+        "tree_similarity": 0.2727272727272727,
+        "element_f1": 0.5390070921985816
+      },
+      "error": null,
+      "parse_time_seconds": 9.491752624511719
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6379731379731379,
+        "chrf++": 85.98020381306803,
+        "character_error_rate": 0.377466581795035,
+        "tree_similarity": 0.3771929824561403,
+        "element_f1": 0.605263157894737
+      },
+      "error": null,
+      "parse_time_seconds": 8.533432960510254
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9373271889400921,
+        "chrf++": 86.45649500647667,
+        "character_error_rate": 0.06608357628765792,
+        "tree_similarity": 0.426829268292683,
+        "element_f1": 0.6238532110091743
+      },
+      "error": null,
+      "parse_time_seconds": 8.880362510681152
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6256948733786287,
+        "chrf++": 84.31007234227519,
+        "character_error_rate": 0.3889602053915276,
+        "tree_similarity": 0.3504273504273504,
+        "element_f1": 0.5769230769230769
+      },
+      "error": null,
+      "parse_time_seconds": 9.935181379318237
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9239956568946797,
+        "chrf++": 85.63466800545275,
+        "character_error_rate": 0.08168028004667445,
+        "tree_similarity": 0.4025974025974026,
+        "element_f1": 0.6138613861386139
+      },
+      "error": null,
+      "parse_time_seconds": 8.790799617767334
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49652635880670204,
+        "chrf++": 80.2361099722446,
+        "character_error_rate": 0.6754385964912281,
+        "tree_similarity": 0.23364485981308414,
+        "element_f1": 0.39393939393939387
+      },
+      "error": null,
+      "parse_time_seconds": 10.304494619369507
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.929874213836478,
+        "chrf++": 87.11566331866283,
+        "character_error_rate": 0.07233214401556926,
+        "tree_similarity": 0.31390134529147984,
+        "element_f1": 0.5206349206349207
+      },
+      "error": null,
+      "parse_time_seconds": 10.142228126525879
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6030651340996169,
+        "chrf++": 83.95437166071835,
+        "character_error_rate": 0.428099173553719,
+        "tree_similarity": 0.3771929824561403,
+        "element_f1": 0.5714285714285714
+      },
+      "error": null,
+      "parse_time_seconds": 9.79629898071289
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9346710219318712,
+        "chrf++": 87.34388695356688,
+        "character_error_rate": 0.06941001487357462,
+        "tree_similarity": 0.31547619047619047,
+        "element_f1": 0.5194805194805194
+      },
+      "error": null,
+      "parse_time_seconds": 9.806931018829346
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9477987421383648,
+        "chrf++": 88.32115786172649,
+        "character_error_rate": 0.05464121132323897,
+        "tree_similarity": 0.39449541284403666,
+        "element_f1": 0.5771812080536913
+      },
+      "error": null,
+      "parse_time_seconds": 8.931071043014526
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9500792393026941,
+        "chrf++": 89.69382324516592,
+        "character_error_rate": 0.052109181141439205,
+        "tree_similarity": 0.40740740740740744,
+        "element_f1": 0.6306306306306306
+      },
+      "error": null,
+      "parse_time_seconds": 8.518174171447754
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Marker: Marker did not generate expected output file: /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_009/resume_009.md\nstdout: \nstderr: \nRecognizing Layout:   0%|          | 0/1 [00:00<?, ?it/s]\nRecognizing Layout: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]\nRecognizing Layout: 100%|██████████| 1/1 [00:00<00:00,  1.17it/s]\n\nRunning OCR Error Detection:   0%|          | 0/1 [00:00<?, ?it/s]\nRunning OCR Error Detection: 100%|██████████| 1/1 [00:00<00:00,  9.09it/s]\nRunning OCR Error Detection: 100%|██████████| 1/1 [00:00<00:00,  9.07it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n2025-11-23 13:13:41,686 [INFO] marker: Saved markdown to /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_009\n2025-11-23 13:13:41,686 [INFO] marker: Total time: 1.073176622390747\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Marker: Marker did not generate expected output file: /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_034/resume_034.md\nstdout: \nstderr: \nRecognizing Layout:   0%|          | 0/3 [00:00<?, ?it/s]\nRecognizing Layout:  33%|███▎      | 1/3 [00:01<00:03,  1.67s/it]\nRecognizing Layout:  67%|██████▋   | 2/3 [00:01<00:00,  1.17it/s]\nRecognizing Layout: 100%|██████████| 3/3 [00:02<00:00,  1.50it/s]\n\nRunning OCR Error Detection:   0%|          | 0/1 [00:00<?, ?it/s]\nRunning OCR Error Detection: 100%|██████████| 1/1 [00:00<00:00, 10.28it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n2025-11-23 13:13:51,627 [INFO] marker: Saved markdown to /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_034\n2025-11-23 13:13:51,627 [INFO] marker: Total time: 2.327977418899536\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9502607300441236,
+        "chrf++": 89.39793868286395,
+        "character_error_rate": 0.05221052631578947,
+        "tree_similarity": 0.3395061728395061,
+        "element_f1": 0.5535714285714286
+      },
+      "error": null,
+      "parse_time_seconds": 9.870651245117188
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9414749661705006,
+        "chrf++": 89.2861600977959,
+        "character_error_rate": 0.061785714285714284,
+        "tree_similarity": 0.2682926829268293,
+        "element_f1": 0.5296167247386759
+      },
+      "error": null,
+      "parse_time_seconds": 9.76828932762146
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Marker: Marker did not generate expected output file: /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_010/resume_010.md\nstdout: \nstderr: \nRecognizing Layout:   0%|          | 0/2 [00:00<?, ?it/s]\nRecognizing Layout:  50%|█████     | 1/2 [00:01<00:01,  1.29s/it]\nRecognizing Layout: 100%|██████████| 2/2 [00:01<00:00,  1.40it/s]\nRecognizing Layout: 100%|██████████| 2/2 [00:01<00:00,  1.25it/s]\n\nRunning OCR Error Detection:   0%|          | 0/1 [00:00<?, ?it/s]\nRunning OCR Error Detection: 100%|██████████| 1/1 [00:00<00:00, 11.60it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n\nDetecting bboxes: 0it [00:00, ?it/s]\nDetecting bboxes: 0it [00:00, ?it/s]\n2025-11-23 13:14:20,622 [INFO] marker: Saved markdown to /home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp/resume_010\n2025-11-23 13:14:20,623 [INFO] marker: Total time: 1.8257324695587158\n",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9450392576730906,
+        "chrf++": 88.63739308079852,
+        "character_error_rate": 0.05750560119492158,
+        "tree_similarity": 0.38541666666666663,
+        "element_f1": 0.6356589147286822
+      },
+      "error": null,
+      "parse_time_seconds": 8.6114501953125
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9438314944834504,
+        "chrf++": 87.59792180548492,
+        "character_error_rate": 0.059009483667017915,
+        "tree_similarity": 0.4285714285714286,
+        "element_f1": 0.6382978723404256
+      },
+      "error": null,
+      "parse_time_seconds": 8.387909650802612
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7443249701314217,
+        "chrf++": 84.2722527566375,
+        "character_error_rate": 0.26485148514851486,
+        "tree_similarity": 0.40909090909090906,
+        "element_f1": 0.6590909090909091
+      },
+      "error": null,
+      "parse_time_seconds": 8.224505186080933
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9673527324343506,
+        "chrf++": 94.41463426138661,
+        "character_error_rate": 0.03281027104136947,
+        "tree_similarity": 0.6616541353383458,
+        "element_f1": 0.8041237113402062
+      },
+      "error": null,
+      "parse_time_seconds": 0.0348362922668457
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595015576323987,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.040498442367601244,
+        "tree_similarity": 0.5967741935483871,
+        "element_f1": 0.7380952380952381
+      },
+      "error": null,
+      "parse_time_seconds": 0.011002302169799805
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5952677459526774,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40473225404732255,
+        "tree_similarity": 0.5,
+        "element_f1": 0.7435897435897436
+      },
+      "error": null,
+      "parse_time_seconds": 0.008740901947021484
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.965925925925926,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.03426443202979516,
+        "tree_similarity": 0.5734265734265734,
+        "element_f1": 0.7326732673267328
+      },
+      "error": null,
+      "parse_time_seconds": 0.008907556533813477
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9615592853275582,
+        "chrf++": 93.68362834777301,
+        "character_error_rate": 0.03862894450489663,
+        "tree_similarity": 0.5833333333333333,
+        "element_f1": 0.7402597402597402
+      },
+      "error": null,
+      "parse_time_seconds": 0.007737159729003906
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625059326056004,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03778096604495457,
+        "tree_similarity": 0.5847457627118644,
+        "element_f1": 0.7411764705882353
+      },
+      "error": null,
+      "parse_time_seconds": 0.008361339569091797
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.962208225268618,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03817365269461078,
+        "tree_similarity": 0.5906040268456376,
+        "element_f1": 0.7522935779816514
+      },
+      "error": null,
+      "parse_time_seconds": 0.0074520111083984375
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6978319783197833,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3021680216802168,
+        "tree_similarity": 0.5357142857142857,
+        "element_f1": 0.7297297297297298
+      },
+      "error": null,
+      "parse_time_seconds": 0.007613182067871094
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9629302736098853,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.037069726390114736,
+        "tree_similarity": 0.6984126984126984,
+        "element_f1": 0.7441860465116279
+      },
+      "error": null,
+      "parse_time_seconds": 0.005922794342041016
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9637436762225969,
+        "chrf++": 93.77185730889481,
+        "character_error_rate": 0.03658017864738409,
+        "tree_similarity": 0.7105263157894737,
+        "element_f1": 0.8372093023255814
+      },
+      "error": null,
+      "parse_time_seconds": 0.007784605026245117
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9643835616438357,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.035948842032492226,
+        "tree_similarity": 0.6853146853146853,
+        "element_f1": 0.8256880733944955
+      },
+      "error": null,
+      "parse_time_seconds": 0.008333683013916016
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.616,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.384,
+        "tree_similarity": 0.5522388059701493,
+        "element_f1": 0.7659574468085107
+      },
+      "error": null,
+      "parse_time_seconds": 0.0068206787109375
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9664683612763656,
+        "chrf++": 93.97047581036183,
+        "character_error_rate": 0.03358613217768147,
+        "tree_similarity": 0.7011494252873562,
+        "element_f1": 0.7968749999999999
+      },
+      "error": null,
+      "parse_time_seconds": 0.008130788803100586
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6525134211810639,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.3474865788189361,
+        "tree_similarity": 0.5137614678899083,
+        "element_f1": 0.7236842105263159
+      },
+      "error": null,
+      "parse_time_seconds": 0.007398366928100586
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7793952967525196,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.2206047032474804,
+        "tree_similarity": 0.5148514851485149,
+        "element_f1": 0.732394366197183
+      },
+      "error": null,
+      "parse_time_seconds": 0.007173061370849609
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9660697455230914,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03425309229305423,
+        "tree_similarity": 0.6917808219178082,
+        "element_f1": 0.8392857142857144
+      },
+      "error": null,
+      "parse_time_seconds": 0.010452985763549805
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6543602800763845,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34563971992361553,
+        "tree_similarity": 0.5227272727272727,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.007721900939941406
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591836734693877,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.04081632653061224,
+        "tree_similarity": 0.671875,
+        "element_f1": 0.7727272727272727
+      },
+      "error": null,
+      "parse_time_seconds": 0.006181001663208008
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6450577663671373,
+        "chrf++": 91.46889676857934,
+        "character_error_rate": 0.35494223363286265,
+        "tree_similarity": 0.5227272727272727,
+        "element_f1": 0.7377049180327869
+      },
+      "error": null,
+      "parse_time_seconds": 0.006070613861083984
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9568261376896149,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.043173862310385065,
+        "tree_similarity": 0.6140350877192983,
+        "element_f1": 0.7435897435897436
+      },
+      "error": null,
+      "parse_time_seconds": 0.0073511600494384766
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6595394736842105,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3404605263157895,
+        "tree_similarity": 0.5192307692307692,
+        "element_f1": 0.7260273972602739
+      },
+      "error": null,
+      "parse_time_seconds": 0.0076141357421875
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624759461193072,
+        "chrf++": 93.44887969198828,
+        "character_error_rate": 0.03795004865390853,
+        "tree_similarity": 0.7032258064516129,
+        "element_f1": 0.8319327731092437
+      },
+      "error": null,
+      "parse_time_seconds": 0.0073659420013427734
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6495867768595041,
+        "chrf++": 89.05909942492687,
+        "character_error_rate": 0.3504132231404959,
+        "tree_similarity": 0.49382716049382713,
+        "element_f1": 0.7272727272727273
+      },
+      "error": null,
+      "parse_time_seconds": 0.010128021240234375
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9601965601965602,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.04015865146256817,
+        "tree_similarity": 0.6120689655172413,
+        "element_f1": 0.7647058823529412
+      },
+      "error": null,
+      "parse_time_seconds": 0.009534835815429688
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9611586570111916,
+        "chrf++": 93.265143704101,
+        "character_error_rate": 0.038841342988808425,
+        "tree_similarity": 0.6904761904761905,
+        "element_f1": 0.7833333333333332
+      },
+      "error": null,
+      "parse_time_seconds": 0.010069847106933594
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9636062861869313,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.036393713813068655,
+        "tree_similarity": 0.734375,
+        "element_f1": 0.7826086956521738
+      },
+      "error": null,
+      "parse_time_seconds": 0.0067751407623291016
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586776859504132,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04132231404958678,
+        "tree_similarity": 0.5806451612903225,
+        "element_f1": 0.7441860465116279
+      },
+      "error": null,
+      "parse_time_seconds": 0.007124900817871094
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648466716529543,
+        "chrf++": 93.86805213121913,
+        "character_error_rate": 0.035606060606060606,
+        "tree_similarity": 0.7010869565217391,
+        "element_f1": 0.8461538461538461
+      },
+      "error": null,
+      "parse_time_seconds": 0.008199930191040039
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9644202595228129,
+        "chrf++": 93.96692079709985,
+        "character_error_rate": 0.035789473684210524,
+        "tree_similarity": 0.6666666666666667,
+        "element_f1": 0.8068181818181818
+      },
+      "error": null,
+      "parse_time_seconds": 0.006535768508911133
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625176803394625,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.03785714285714286,
+        "tree_similarity": 0.6168831168831168,
+        "element_f1": 0.7678571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.008882999420166016
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9632000000000001,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.03701716738197425,
+        "tree_similarity": 0.7173913043478262,
+        "element_f1": 0.8428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.013405561447143555
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648991784914115,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.0351008215085885,
+        "tree_similarity": 0.5949367088607596,
+        "element_f1": 0.7358490566037736
+      },
+      "error": null,
+      "parse_time_seconds": 0.013372421264648438
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9599578503688093,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.040042149631190724,
+        "tree_similarity": 0.7090909090909091,
+        "element_f1": 0.7631578947368423
+      },
+      "error": null,
+      "parse_time_seconds": 0.008770227432250977
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7561881188118812,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.2438118811881188,
+        "tree_similarity": 0.6346153846153846,
+        "element_f1": 0.7714285714285715
+      },
+      "error": null,
+      "parse_time_seconds": 0.0074155330657958984
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.964808362369338,
+        "chrf++": 94.75347289973107,
+        "character_error_rate": 0.03601997146932953,
+        "tree_similarity": 0.3935483870967742,
+        "element_f1": 0.6604651162790698
+      },
+      "error": null,
+      "parse_time_seconds": 0.24251341819763184
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9592252803261978,
+        "chrf++": 93.10433486870818,
+        "character_error_rate": 0.04153686396677051,
+        "tree_similarity": 0.37142857142857144,
+        "element_f1": 0.6451612903225807
+      },
+      "error": null,
+      "parse_time_seconds": 0.017266511917114258
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6014943960149439,
+        "chrf++": 86.29018322213899,
+        "character_error_rate": 0.398505603985056,
+        "tree_similarity": 0.3375,
+        "element_f1": 0.5825242718446603
+      },
+      "error": null,
+      "parse_time_seconds": 0.015357255935668945
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607700690156193,
+        "chrf++": 93.9081682848846,
+        "character_error_rate": 0.04022346368715084,
+        "tree_similarity": 0.3132530120481928,
+        "element_f1": 0.5789473684210525
+      },
+      "error": null,
+      "parse_time_seconds": 0.03307676315307617
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9632196162046909,
+        "chrf++": 93.87791576652577,
+        "character_error_rate": 0.03754080522306855,
+        "tree_similarity": 0.3697478991596639,
+        "element_f1": 0.6900584795321638
+      },
+      "error": null,
+      "parse_time_seconds": 0.025488615036010742
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9633458646616542,
+        "chrf++": 94.11179054602422,
+        "character_error_rate": 0.03730272596843615,
+        "tree_similarity": 0.29850746268656714,
+        "element_f1": 0.6424870466321243
+      },
+      "error": null,
+      "parse_time_seconds": 0.027506589889526367
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.960146252285192,
+        "chrf++": 94.0979263262737,
+        "character_error_rate": 0.0407934131736527,
+        "tree_similarity": 0.3121387283236994,
+        "element_f1": 0.6341463414634146
+      },
+      "error": null,
+      "parse_time_seconds": 0.034445762634277344
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7046070460704608,
+        "chrf++": 84.97163756854317,
+        "character_error_rate": 0.2953929539295393,
+        "tree_similarity": 0.3116883116883117,
+        "element_f1": 0.56
+      },
+      "error": null,
+      "parse_time_seconds": 0.013597726821899414
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9686684073107049,
+        "chrf++": 94.68439780235084,
+        "character_error_rate": 0.03177405119152692,
+        "tree_similarity": 0.5217391304347826,
+        "element_f1": 0.7472527472527473
+      },
+      "error": null,
+      "parse_time_seconds": 0.01819467544555664
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9671107410491258,
+        "chrf++": 95.04062012143002,
+        "character_error_rate": 0.033602722245852826,
+        "tree_similarity": 0.39855072463768115,
+        "element_f1": 0.6494845360824743
+      },
+      "error": null,
+      "parse_time_seconds": 0.029930591583251953
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9639244774106541,
+        "chrf++": 94.82881073136828,
+        "character_error_rate": 0.03698582786035257,
+        "tree_similarity": 0.37142857142857144,
+        "element_f1": 0.6477732793522267
+      },
+      "error": null,
+      "parse_time_seconds": 0.03551030158996582
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6204444444444445,
+        "chrf++": 88.57850446820883,
+        "character_error_rate": 0.37955555555555553,
+        "tree_similarity": 0.34375,
+        "element_f1": 0.5984251968503937
+      },
+      "error": null,
+      "parse_time_seconds": 0.018488645553588867
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9664358018114012,
+        "chrf++": 94.93613152345833,
+        "character_error_rate": 0.03412784398699892,
+        "tree_similarity": 0.42307692307692313,
+        "element_f1": 0.6619718309859154
+      },
+      "error": null,
+      "parse_time_seconds": 0.024767398834228516
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6538648517258143,
+        "chrf++": 90.7510982299947,
+        "character_error_rate": 0.3474865788189361,
+        "tree_similarity": 0.363013698630137,
+        "element_f1": 0.5846153846153846
+      },
+      "error": null,
+      "parse_time_seconds": 0.028049945831298828
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7777158774373258,
+        "chrf++": 89.78356162008114,
+        "character_error_rate": 0.22340425531914893,
+        "tree_similarity": 0.3525179856115108,
+        "element_f1": 0.572972972972973
+      },
+      "error": null,
+      "parse_time_seconds": 0.0263216495513916
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9638107021342407,
+        "chrf++": 94.54578281100092,
+        "character_error_rate": 0.037107516650808754,
+        "tree_similarity": 0.3204419889502762,
+        "element_f1": 0.6070038910505836
+      },
+      "error": null,
+      "parse_time_seconds": 0.035567283630371094
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6549968173138129,
+        "chrf++": 89.39587110633799,
+        "character_error_rate": 0.3450031826861871,
+        "tree_similarity": 0.31092436974789917,
+        "element_f1": 0.5660377358490566
+      },
+      "error": null,
+      "parse_time_seconds": 0.022001266479492188
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581351094196003,
+        "chrf++": 93.11726944755591,
+        "character_error_rate": 0.042759961127308066,
+        "tree_similarity": 0.44285714285714284,
+        "element_f1": 0.6526315789473685
+      },
+      "error": null,
+      "parse_time_seconds": 0.016513586044311523
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6450577663671373,
+        "chrf++": 89.36011087306332,
+        "character_error_rate": 0.35494223363286265,
+        "tree_similarity": 0.3445378151260504,
+        "element_f1": 0.5859872611464968
+      },
+      "error": null,
+      "parse_time_seconds": 0.023557186126708984
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586206896551724,
+        "chrf++": 92.99281715141912,
+        "character_error_rate": 0.042007001166861145,
+        "tree_similarity": 0.3650793650793651,
+        "element_f1": 0.6666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.014062881469726562
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6617324561403508,
+        "chrf++": 89.09471783941775,
+        "character_error_rate": 0.33826754385964913,
+        "tree_similarity": 0.3287671232876712,
+        "element_f1": 0.5714285714285714
+      },
+      "error": null,
+      "parse_time_seconds": 0.02504420280456543
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9651678277390754,
+        "chrf++": 95.19218301942848,
+        "character_error_rate": 0.03567953292247811,
+        "tree_similarity": 0.37948717948717947,
+        "element_f1": 0.6315789473684211
+      },
+      "error": null,
+      "parse_time_seconds": 0.039795875549316406
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6545454545454545,
+        "chrf++": 85.81952636797827,
+        "character_error_rate": 0.34545454545454546,
+        "tree_similarity": 0.31355932203389836,
+        "element_f1": 0.5882352941176471
+      },
+      "error": null,
+      "parse_time_seconds": 0.02781391143798828
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9593023255813954,
+        "chrf++": 93.87811292829632,
+        "character_error_rate": 0.04164600892414477,
+        "tree_similarity": 0.31343283582089554,
+        "element_f1": 0.631578947368421
+      },
+      "error": null,
+      "parse_time_seconds": 0.02770519256591797
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9618863049095607,
+        "chrf++": 94.5002457819317,
+        "character_error_rate": 0.038841342988808425,
+        "tree_similarity": 0.4444444444444444,
+        "element_f1": 0.6870229007633588
+      },
+      "error": null,
+      "parse_time_seconds": 0.023702383041381836
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9642567018683996,
+        "chrf++": 94.24109755409081,
+        "character_error_rate": 0.036393713813068655,
+        "tree_similarity": 0.4657534246575342,
+        "element_f1": 0.6599999999999999
+      },
+      "error": null,
+      "parse_time_seconds": 0.01976466178894043
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9583756345177665,
+        "chrf++": 92.64232736648619,
+        "character_error_rate": 0.042355371900826444,
+        "tree_similarity": 0.3188405797101449,
+        "element_f1": 0.6185567010309277
+      },
+      "error": null,
+      "parse_time_seconds": 0.016566038131713867
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9635378171963538,
+        "chrf++": 94.73758664340801,
+        "character_error_rate": 0.03737373737373737,
+        "tree_similarity": 0.3482142857142857,
+        "element_f1": 0.639751552795031
+      },
+      "error": null,
+      "parse_time_seconds": 0.050609588623046875
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9633744855967078,
+        "chrf++": 94.67428873907154,
+        "character_error_rate": 0.03747368421052632,
+        "tree_similarity": 0.3802816901408451,
+        "element_f1": 0.6428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.03105783462524414
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9627307558342041,
+        "chrf++": 94.25670577219503,
+        "character_error_rate": 0.038214285714285715,
+        "tree_similarity": 0.33149171270718236,
+        "element_f1": 0.6294820717131474
+      },
+      "error": null,
+      "parse_time_seconds": 0.03572797775268555
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9673855865334035,
+        "chrf++": 94.98648291693068,
+        "character_error_rate": 0.033261802575107295,
+        "tree_similarity": 0.41509433962264153,
+        "element_f1": 0.7096774193548387
+      },
+      "error": null,
+      "parse_time_seconds": 0.026805877685546875
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603815113719736,
+        "chrf++": 93.25686380719007,
+        "character_error_rate": 0.040328603435399554,
+        "tree_similarity": 0.37777777777777777,
+        "element_f1": 0.6050420168067228
+      },
+      "error": null,
+      "parse_time_seconds": 0.019829511642456055
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9627714581178903,
+        "chrf++": 93.86967475217727,
+        "character_error_rate": 0.037934668071654375,
+        "tree_similarity": 0.47540983606557374,
+        "element_f1": 0.6829268292682927
+      },
+      "error": null,
+      "parse_time_seconds": 0.01621246337890625
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7586633663366337,
+        "chrf++": 90.01341184217777,
+        "character_error_rate": 0.24133663366336633,
+        "tree_similarity": 0.41538461538461535,
+        "element_f1": 0.6352941176470589
+      },
+      "error": null,
+      "parse_time_seconds": 0.014220237731933594
+    }
+  ],
+  "summary": {
+    "total_documents": 34,
+    "total_parsers": 11,
+    "total_results": 374,
+    "success_count": 371,
+    "failure_count": 3
+  }
+}

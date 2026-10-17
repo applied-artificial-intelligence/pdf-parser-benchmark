@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-75594",
+    "vendor": "Flow Technologies",
+    "due_date": "2025-10-19",
+    "grand_total": "9189004.88",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-75594"
+    ],
+    "due_date": [
+      "10/19/2025"
+    ],
+    "grand_total": [
+      "$9,189,004.88"
+    ],
+    "vendor": [
+      "Flow Technologies"
+    ]
+  },
+  "records": [
+    {
+      "description": "API Usage @ $3.02/per 1000 calls",
+      "quantity": "67.9",
+      "line_total": "205.06",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage @ $3.02/per 1000\ncalls",
+        "quantity": "67.90",
+        "line_total": "$205.06"
+      }
+    },
+    {
+      "description": "Implementation Services @ $250.98/hour",
+      "quantity": "18.74",
+      "line_total": "4703.37",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation Services @\n$250.98/hour",
+        "quantity": "18.74",
+        "line_total": "$4,703.37"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $45105.00/subscription",
+      "quantity": "71.88",
+      "line_total": "3242147.4",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan - Annual @\n$45105.00/subscription",
+        "quantity": "71.88",
+        "line_total": "$3,242,147.40"
+      }
+    },
+    {
+      "description": "Implementation Services @ $289.52/hour",
+      "quantity": "56.33",
+      "line_total": "16308.66",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation Services @\n$289.52/hour",
+        "quantity": "56.33",
+        "line_total": "$16,308.66"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $49789.90/subscription",
+      "quantity": "85",
+      "line_total": "4232141.5",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan - Annual @\n$49789.90/subscription",
+        "quantity": "85.00",
+        "line_total": "$4,232,141.50"
+      }
+    },
+    {
+      "description": "API Usage @ $2.31/per 1000 calls",
+      "quantity": "40.94",
+      "line_total": "94.57",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage @ $2.31/per 1000\ncalls",
+        "quantity": "40.94",
+        "line_total": "$94.57"
+      }
+    },
+    {
+      "description": "Premium Support @ $3590.39/month",
+      "quantity": "10.13",
+      "line_total": "36370.65",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium Support @\n$3590.39/month",
+        "quantity": "10.13",
+        "line_total": "$36,370.65"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-57715",
+    "vendor": "Nexus Labs",
+    "due_date": "2025-10-31",
+    "grand_total": "1693885.51",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-57715"
+    ],
+    "due_date": [
+      "October 31, 2025"
+    ],
+    "grand_total": [
+      "$1,693,885.51"
+    ],
+    "vendor": [
+      "Nexus Labs"
+    ]
+  },
+  "records": [
+    {
+      "description": "Premium Support (month)",
+      "quantity": "4.63",
+      "unit_price": "2983.52",
+      "line_total": "13813.7",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium Support\n(month)",
+        "quantity": "4.63",
+        "unit_price": "$2,983.52",
+        "line_total": "$13,813.70"
+      }
+    },
+    {
+      "description": "Implementation Services (hour)",
+      "quantity": "34.34",
+      "unit_price": "224.26",
+      "line_total": "7701.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation\nServices (hour)",
+        "quantity": "34.34",
+        "unit_price": "$224.26",
+        "line_total": "$7,701.09"
+      }
+    },
+    {
+      "description": "Additional Storage (TB/month)",
+      "quantity": "30.68",
+      "unit_price": "68.65",
+      "line_total": "2106.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Additional Storage\n(TB/month)",
+        "quantity": "30.68",
+        "unit_price": "$68.65",
+        "line_total": "$2,106.18"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual (subscription)",
+      "quantity": "11.72",
+      "unit_price": "80970.2",
+      "line_total": "948970.74",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan -\nAnnual\n(subscription)",
+        "quantity": "11.72",
+        "unit_price": "$80,970.20",
+        "line_total": "$948,970.74"
+      }
+    },
+    {
+      "description": "API Usage (per 1000",
+      "quantity": "38.58",
+      "unit_price": "2.96",
+      "line_total": "114.2",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage (per 1000",
+        "quantity": "38.58",
+        "unit_price": "$2.96",
+        "line_total": "$114.20"
+      }
+    },
+    {
+      "description": "calls) Premium Support (month)",
+      "quantity": "90.48",
+      "unit_price": "4594.66",
+      "line_total": "415724.84",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "calls)\nPremium Support\n(month)",
+        "quantity": "90.48",
+        "unit_price": "$4,594.66",
+        "line_total": "$415,724.84"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

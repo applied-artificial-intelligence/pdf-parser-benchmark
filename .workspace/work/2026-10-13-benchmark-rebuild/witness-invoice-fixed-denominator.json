@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_execution_controls.py::test_one_controlled_eligible_timeout_cannot_shrink_a_parsers_task_denominator",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "                {r[\"document_id\"]: grades[r[\"pair_id\"]] for r in selected}, ids",
+      "new": "                {r[\"document_id\"]: grades[r[\"pair_id\"]] for r in selected if r[\"outcome\"] == \"success_content\"}, [r[\"document_id\"] for r in selected if r[\"outcome\"] == \"success_content\"]"
+    }
+  }
+}

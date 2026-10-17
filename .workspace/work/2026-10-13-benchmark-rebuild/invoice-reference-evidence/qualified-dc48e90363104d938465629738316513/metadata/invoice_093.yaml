@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: New Zealand
+  name: Watson-Martinez
+document_id: invoice_093
+due_date: '2025-10-14'
+generated_at: '2025-11-18T16:47:16.698431'
+industry: catering
+invoice_date: '2025-09-14'
+invoice_number: INV-79598
+line_item_count: 6
+payment_terms: 50% Deposit, Balance Due Day of Event
+region: APAC
+subtotal: 46530.21
+tax_amount: 4653.02
+template_style: small_business
+total: 51183.23
+vendor:
+  country: New Zealand
+  name: Tasteful Culinary
+corpus: business
+source_url: generated://invoice_093
+domain: invoices
+doc_id: invoice_093

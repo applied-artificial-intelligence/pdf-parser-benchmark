@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-86860",
+    "vendor": "Green Lawn Care",
+    "due_date": "2025-09-18",
+    "grand_total": "101478.12",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-86860"
+    ],
+    "due_date": [
+      "September 18, 2025"
+    ],
+    "grand_total": [
+      "$101,478.12"
+    ],
+    "vendor": [
+      "Green Lawn Care"
+    ]
+  },
+  "records": [
+    {
+      "description": "Irrigation Maintenance (visit)",
+      "quantity": "51.58",
+      "unit_price": "246.34",
+      "line_total": "12706.22",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance (visit)",
+        "quantity": "51.58",
+        "unit_price": "$246.34",
+        "line_total": "$12,706.22"
+      }
+    },
+    {
+      "description": "Mulch Installation (cu yd)",
+      "quantity": "35.51",
+      "unit_price": "87.95",
+      "line_total": "3123.1",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Mulch Installation\n(cu yd)",
+        "quantity": "35.51",
+        "unit_price": "$87.95",
+        "line_total": "$3,123.10"
+      }
+    },
+    {
+      "description": "Tree Trimming (hour)",
+      "quantity": "46.7",
+      "unit_price": "83.76",
+      "line_total": "3911.59",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tree Trimming\n(hour)",
+        "quantity": "46.70",
+        "unit_price": "$83.76",
+        "line_total": "$3,911.59"
+      }
+    },
+    {
+      "description": "Tree Trimming (hour)",
+      "quantity": "54.36",
+      "unit_price": "86.39",
+      "line_total": "4696.16",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tree Trimming\n(hour)",
+        "quantity": "54.36",
+        "unit_price": "$86.39",
+        "line_total": "$4,696.16"
+      }
+    },
+    {
+      "description": "Fertilization Treatment",
+      "quantity": "6.83",
+      "unit_price": "128.62",
+      "line_total": "878.47",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fertilization\nTreatment",
+        "quantity": "6.83",
+        "unit_price": "$128.62",
+        "line_total": "$878.47"
+      }
+    },
+    {
+      "description": "(application) Fall Cleanup (service)",
+      "quantity": "97.99",
+      "unit_price": "479.48",
+      "line_total": "46984.25",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "(application)\nFall Cleanup\n(service)",
+        "quantity": "97.99",
+        "unit_price": "$479.48",
+        "line_total": "$46,984.25"
+      }
+    },
+    {
+      "description": "Snow Removal (push)",
+      "quantity": "85.93",
+      "unit_price": "213.03",
+      "line_total": "18305.67",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Snow Removal\n(push)",
+        "quantity": "85.93",
+        "unit_price": "$213.03",
+        "line_total": "$18,305.67"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

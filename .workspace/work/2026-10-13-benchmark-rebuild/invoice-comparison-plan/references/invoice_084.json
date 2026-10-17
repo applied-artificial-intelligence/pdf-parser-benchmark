@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-47725",
+    "vendor": "Integrated Medical Group",
+    "due_date": "2025-11-17",
+    "grand_total": "141771.83",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Laboratory Services",
+      "quantity": "82.65",
+      "unit": "panel",
+      "unit_price": "446.22",
+      "line_total": "36880.08"
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "15.8",
+      "unit": "item",
+      "unit_price": "30.8",
+      "line_total": "486.64"
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "9.39",
+      "unit": "item",
+      "unit_price": "150.75",
+      "line_total": "1415.54"
+    },
+    {
+      "description": "Specialized Procedure",
+      "quantity": "88.73",
+      "unit": "procedure",
+      "unit_price": "721.84",
+      "line_total": "64048.86"
+    },
+    {
+      "description": "Physical Therapy",
+      "quantity": "46.62",
+      "unit": "session",
+      "unit_price": "165.13",
+      "line_total": "7698.36"
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "76.39",
+      "unit": "item",
+      "unit_price": "57.61",
+      "line_total": "4400.83"
+    },
+    {
+      "description": "Medical Supplies",
+      "quantity": "87.42",
+      "unit": "item",
+      "unit_price": "120.47",
+      "line_total": "10531.49"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-47725",
+    "vendor": "Integrated Medical Group",
+    "due_date": "November 17, 2025",
+    "grand_total": "$141,771.83",
+    "records": [
+      {
+        "description": "Laboratory Services",
+        "quantity": "82.65",
+        "unit": "panel",
+        "unit_price": "$446.22",
+        "line_total": "$36,880.08"
+      },
+      {
+        "description": "Medical Supplies",
+        "quantity": "15.80",
+        "unit": "item",
+        "unit_price": "$30.80",
+        "line_total": "$486.64"
+      },
+      {
+        "description": "Medical Supplies",
+        "quantity": "9.39",
+        "unit": "item",
+        "unit_price": "$150.75",
+        "line_total": "$1,415.54"
+      },
+      {
+        "description": "Specialized Procedure",
+        "quantity": "88.73",
+        "unit": "procedure",
+        "unit_price": "$721.84",
+        "line_total": "$64,048.86"
+      },
+      {
+        "description": "Physical Therapy",
+        "quantity": "46.62",
+        "unit": "session",
+        "unit_price": "$165.13",
+        "line_total": "$7,698.36"
+      },
+      {
+        "description": "Medical Supplies",
+        "quantity": "76.39",
+        "unit": "item",
+        "unit_price": "$57.61",
+        "line_total": "$4,400.83"
+      },
+      {
+        "description": "Medical Supplies",
+        "quantity": "87.42",
+        "unit": "item",
+        "unit_price": "$120.47",
+        "line_total": "$10,531.49"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7"
+    ]
+  },
+  "document_id": "invoice_084"
+}

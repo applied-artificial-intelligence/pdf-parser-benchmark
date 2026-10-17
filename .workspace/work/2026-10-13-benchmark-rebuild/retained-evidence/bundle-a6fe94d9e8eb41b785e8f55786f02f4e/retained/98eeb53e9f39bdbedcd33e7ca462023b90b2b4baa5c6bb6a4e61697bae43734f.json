@@ -1,0 +1,53 @@
+{
+  "benchmark": {
+    "name": "Google Document AI - Quick Test",
+    "timestamp": "2025-11-23T20:49:45.087682+00:00",
+    "config_file": "benchmarks/commercial_google_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "google_document_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486590038314177
+      },
+      "error": null,
+      "parse_time_seconds": 1.9664251804351807
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9530560806553245
+      },
+      "error": null,
+      "parse_time_seconds": 2.599613904953003
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8697012802275961
+      },
+      "error": null,
+      "parse_time_seconds": 2.7640533447265625
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 1,
+    "total_results": 3,
+    "success_count": 3,
+    "failure_count": 0
+  }
+}

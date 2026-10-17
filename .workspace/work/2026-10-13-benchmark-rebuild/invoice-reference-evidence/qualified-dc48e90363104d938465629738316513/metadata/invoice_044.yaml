@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: France
+  name: Ullmann AG
+document_id: invoice_044
+due_date: '2025-11-23'
+generated_at: '2025-11-18T16:46:04.048413'
+industry: printing
+invoice_date: '2025-10-24'
+invoice_number: INV-67176
+line_item_count: 4
+payment_terms: 50% Deposit, 50% on Completion
+region: EU
+subtotal: 12834.47
+tax_amount: 2695.24
+template_style: small_business
+total: 15529.71
+vendor:
+  country: France
+  name: Creative Printing
+corpus: business
+source_url: generated://invoice_044
+domain: invoices
+doc_id: invoice_044

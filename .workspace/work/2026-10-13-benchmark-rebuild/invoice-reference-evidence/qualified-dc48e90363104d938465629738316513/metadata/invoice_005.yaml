@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Rojas, Ramos and Fields
+document_id: invoice_005
+due_date: '2025-10-06'
+generated_at: '2025-11-18T16:45:08.968126'
+industry: construction
+invoice_date: '2025-09-06'
+invoice_number: INV-80900
+line_item_count: 5
+payment_terms: Net 30
+region: US
+subtotal: 123411.12
+tax_amount: 10798.47
+template_style: small_business
+total: 134209.59
+vendor:
+  country: USA
+  name: Summit Contractors
+corpus: business
+source_url: generated://invoice_005
+domain: invoices
+doc_id: invoice_005

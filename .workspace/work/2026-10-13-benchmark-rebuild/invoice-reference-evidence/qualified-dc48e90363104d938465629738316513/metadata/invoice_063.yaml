@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: United Kingdom
+  name: Lewis Group
+document_id: invoice_063
+due_date: '2025-11-09'
+generated_at: '2025-11-18T16:46:32.042228'
+industry: legal
+invoice_date: '2025-11-09'
+invoice_number: INV-62954
+line_item_count: 6
+payment_terms: Due on Receipt
+region: UK
+subtotal: 57791.42
+tax_amount: 11558.28
+template_style: enterprise
+total: 69349.7
+vendor:
+  country: United Kingdom
+  name: Johnson Law Offices
+corpus: business
+source_url: generated://invoice_063
+domain: invoices
+doc_id: invoice_063

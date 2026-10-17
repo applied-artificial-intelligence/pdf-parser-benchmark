@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Bowers-Zamora
+document_id: invoice_084
+due_date: '2025-11-17'
+generated_at: '2025-11-18T16:47:03.272728'
+industry: medical
+invoice_date: '2025-11-17'
+invoice_number: INV-47725
+line_item_count: 7
+payment_terms: Due on Receipt
+region: CA
+subtotal: 125461.8
+tax_amount: 16310.03
+template_style: enterprise
+total: 141771.83
+vendor:
+  country: Canada
+  name: Integrated Medical Group
+corpus: business
+source_url: generated://invoice_084
+domain: invoices
+doc_id: invoice_084

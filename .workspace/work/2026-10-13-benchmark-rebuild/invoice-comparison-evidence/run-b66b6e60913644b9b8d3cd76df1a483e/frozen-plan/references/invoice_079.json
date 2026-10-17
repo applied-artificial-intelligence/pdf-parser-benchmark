@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-56594",
+    "vendor": "Pinnacle Systems",
+    "due_date": "2025-10-15",
+    "grand_total": "2701379.11",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "After-Hours Support (hour)",
+      "quantity": "85.34",
+      "unit_price": "346.15",
+      "line_total": "29540.44"
+    },
+    {
+      "description": "Systems Analyst (hour)",
+      "quantity": "98.96",
+      "unit_price": "125.2",
+      "line_total": "12389.79"
+    },
+    {
+      "description": "Security Assessment (assessment)",
+      "quantity": "6.89",
+      "unit_price": "23601.11",
+      "line_total": "162611.65"
+    },
+    {
+      "description": "Security Assessment (assessment)",
+      "quantity": "93.42",
+      "unit_price": "22960.76",
+      "line_total": "2144994.2"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-56594",
+    "vendor": "Pinnacle Systems",
+    "due_date": "October 15, 2025",
+    "grand_total": "$2,701,379.11",
+    "records": [
+      {
+        "description": "After-Hours Support (hour)",
+        "quantity": "85.34",
+        "unit_price": "$346.15",
+        "line_total": "$29,540.44"
+      },
+      {
+        "description": "Systems Analyst (hour)",
+        "quantity": "98.96",
+        "unit_price": "$125.20",
+        "line_total": "$12,389.79"
+      },
+      {
+        "description": "Security Assessment (assessment)",
+        "quantity": "6.89",
+        "unit_price": "$23,601.11",
+        "line_total": "$162,611.65"
+      },
+      {
+        "description": "Security Assessment (assessment)",
+        "quantity": "93.42",
+        "unit_price": "$22,960.76",
+        "line_total": "$2,144,994.20"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_079"
+}

@@ -1,0 +1,207 @@
+{
+  "calls_in_full_matrix": 22858,
+  "runs": [
+    {
+      "run": "docling-13c7ef3eb8554d53918dee18bdd0aafa",
+      "backend": "docling",
+      "completed": 16,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 16
+      },
+      "mean_seconds_contended": 73.94808512999975,
+      "median_seconds_contended": 83.17045473800135,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "docling-3b0c3cb78a55424cae9daa48d81e7d9f",
+      "backend": "docling",
+      "completed": 8,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 7,
+        "parser_failure": 1
+      },
+      "mean_seconds_contended": 96.34863854862533,
+      "median_seconds_contended": 97.30042869449971,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "extractous-974a75a9eda64503a874eae8ef12a317",
+      "backend": "extractous",
+      "completed": 751,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 716,
+        "parser_failure": 34,
+        "success_empty": 1
+      },
+      "mean_seconds_contended": 5.61014989841539,
+      "median_seconds_contended": 5.62418730599893,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "kreuzberg-e6c08da7f480478abeac09057092f1ab",
+      "backend": "kreuzberg",
+      "completed": 839,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 802,
+        "parser_failure": 35,
+        "success_empty": 2
+      },
+      "mean_seconds_contended": 5.0226748475458916,
+      "median_seconds_contended": 4.9550884349991975,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "marker-28a37f30d4604393b75e51b32af579f3",
+      "backend": "marker",
+      "completed": 7,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 7
+      },
+      "mean_seconds_contended": 151.72849071542856,
+      "median_seconds_contended": 149.4254799800001,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "marker-64aada83e3d344369386694fd93377f4",
+      "backend": "marker",
+      "completed": 4,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 2,
+        "enforced_timeout": 2
+      },
+      "mean_seconds_contended": 172.51041224975052,
+      "median_seconds_contended": 173.33973163500195,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pdfminer-ff33a6b3ad8b41b186f18a5148b93717",
+      "backend": "pdfminer",
+      "completed": 1127,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 1076,
+        "parser_failure": 42,
+        "success_empty": 9
+      },
+      "mean_seconds_contended": 3.6557094505954586,
+      "median_seconds_contended": 3.3440934600002947,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pdfplumber-e2d58e3d7924488eac4c1aed9620bf8e",
+      "backend": "pdfplumber",
+      "completed": 1077,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 1027,
+        "parser_failure": 42,
+        "success_empty": 8
+      },
+      "mean_seconds_contended": 4.000992050236808,
+      "median_seconds_contended": 3.659648240001843,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pymupdf-a2fdbe5a5f6d4960b5c7a80a50e41a17",
+      "backend": "pymupdf",
+      "completed": 923,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 883,
+        "parser_failure": 35,
+        "success_empty": 5
+      },
+      "mean_seconds_contended": 4.656154360183107,
+      "median_seconds_contended": 4.531704306999018,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pymupdf4llm-bd7bdb80b24a4776a8b85ba647174925",
+      "backend": "pymupdf4llm",
+      "completed": 380,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 375,
+        "success_empty": 5
+      },
+      "mean_seconds_contended": 11.012008401849974,
+      "median_seconds_contended": 10.95667123900057,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pypdf-9a29e22fbd3c483c95cf6d9b15230b36",
+      "backend": "pypdf",
+      "completed": 1309,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 1257,
+        "parser_failure": 42,
+        "success_empty": 10
+      },
+      "mean_seconds_contended": 3.3502431634820224,
+      "median_seconds_contended": 3.2392766420016414,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "pypdfium2-212c10fe83b44e83a0fa0859d7c797be",
+      "backend": "pypdfium2",
+      "completed": 1486,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 1431,
+        "parser_failure": 42,
+        "success_empty": 13
+      },
+      "mean_seconds_contended": 2.88423386283242,
+      "median_seconds_contended": 2.8126924589978444,
+      "workers": 4,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "unstructured-bc2190ae5cab492488b77a9cbdf173bb",
+      "backend": "unstructured",
+      "completed": 23,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 23
+      },
+      "mean_seconds_contended": 48.54659306495634,
+      "median_seconds_contended": 46.34796850099883,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    },
+    {
+      "run": "unstructured-f2c7980b25db43e7bcc73bf598d81b4a",
+      "backend": "unstructured",
+      "completed": 18,
+      "planned": 2078,
+      "outcomes": {
+        "success_content": 15,
+        "success_empty": 2,
+        "parser_failure": 1
+      },
+      "mean_seconds_contended": 48.45395573061069,
+      "median_seconds_contended": 48.347436530997584,
+      "workers": 2,
+      "limitation": "Contended timings, changed CPU allocation and source-order bias; not a reliable isolated completion forecast."
+    }
+  ],
+  "status": "All parser jobs stopped; no overnight restart yet scheduled"
+}

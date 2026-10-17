@@ -9,7 +9,12 @@ document_filter:
   corpora: []
   features: []
   exclude_doc_ids: []
-  include_doc_ids: []
+  include_doc_ids:
+    - arxiv-2302.13971
+    - arxiv-2302.14852
+    - arxiv-2303.08774
+    - arxiv-2303.17564
+    - arxiv-2303.18223
   max_documents: null
 
 parser_config:
@@ -26,6 +31,8 @@ metric_config:
     - edit_similarity
     - chrf++
     - character_error_rate
+    - latex_f1
+    - element_f1
 
 output:
   format: json
@@ -33,6 +40,7 @@ output:
   checkpointing: true
   checkpoint_interval: 5
 
+parallel_workers: 1
+
 execution:
-  parallel_workers: 1
   timeout_seconds: 300

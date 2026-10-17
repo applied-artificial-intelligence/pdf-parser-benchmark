@@ -1,0 +1,30 @@
+PDF-Bench verified source milestone
+
+Source implementation checkpoint: 998fa63194a74bebd561aaaee296ac73684f4478
+Branch: codex/benchmark-rebuild
+PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
+
+Report bundle: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b
+Report manifest SHA256: a0eedb0326e5af20cced1447fa8748ac290b8a2b6010522884e9d5ad54c7d36d
+Technical report: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/technical-report.md
+Claim export: .workspace/work/2026-10-13-benchmark-rebuild/report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b/claims.json
+
+invoice completion: .workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json
+SHA256: f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0
+Frozen plan SHA256: 44bf9fb10f231588e3caf577a2a707d1112781531cb371a62e68fa63c0ef2684
+
+public completion: .workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/completion.json
+SHA256: cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6
+Frozen plan SHA256: d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba
+
+Visitor task: determine whether public benchmark documents, task, grader and operating conditions fit the intended workflow. Reuse a matching public subset when it fits; additional internal evaluation needs a consequential mismatch.
+
+Evidence: corrected invoice runs reproduce all 200 pairs across fresh/relocated executions and offline grading. Native public runs reproduce all 100 pairs across fresh/relocated executions and parser-free offline grading. All 61 failed invoice task pairs were reviewed. Every public empty outcome remains in the native denominator.
+
+Limits: generated invoice templates, six source cells, three schemas and coding-agent visual qualification; no independent human adjudication or real-vendor accuracy estimate. Native public content/table dimensions are a purposive subset, not a full leaderboard replication. Extractor limitations affect invoice outcomes. No global business-coverage percentage or universal parser winner.
+
+Source checks: 984 local tests pass, 18 skipped; core lint/format and mypy pass. All eight issue verification gates pass without waivers. Read the latest PR checks for hosted status; all checks must pass before merge.
+
+Ownership: PDF-Bench owns evidence. Editorial and website owners own synthesis/rendering. The checked benchmark-interpretation article is identified in editorial-context.json. No manuscript/CMS changes or publication performed.
+
+Next user decision after hosted checks pass: approve merging PR #9 into public main to close issues #1-#8. No paid calls, release, deployment or publication is included.

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Franco-Thomas
+document_id: invoice_021
+due_date: '2025-11-15'
+generated_at: '2025-11-18T16:45:32.003669'
+industry: legal
+invoice_date: '2025-11-15'
+invoice_number: INV-89510
+line_item_count: 9
+payment_terms: Due on Receipt
+region: US
+subtotal: 127208.4
+tax_amount: 10431.09
+template_style: economy
+total: 137639.49
+vendor:
+  country: USA
+  name: Johnson Law Offices
+corpus: business
+source_url: generated://invoice_021
+domain: invoices
+doc_id: invoice_021

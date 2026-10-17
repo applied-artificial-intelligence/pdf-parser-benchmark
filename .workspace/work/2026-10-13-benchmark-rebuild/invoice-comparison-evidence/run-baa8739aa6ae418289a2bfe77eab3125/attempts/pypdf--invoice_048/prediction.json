@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-29112",
+    "vendor": "Landmark AIA",
+    "due_date": "2025-10-29",
+    "grand_total": "76364.52",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-29112"
+    ],
+    "due_date": [
+      "10/29/2025"
+    ],
+    "grand_total": [
+      "$76,364.52"
+    ],
+    "vendor": [
+      "Landmark AIA"
+    ]
+  },
+  "records": [
+    {
+      "description": "Principal Architect @ $295.07/hour",
+      "quantity": "54.57",
+      "line_total": "16101.97",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Principal Architect @\n$295.07/hour",
+        "quantity": "54.57",
+        "line_total": "$16,101.97"
+      }
+    },
+    {
+      "description": "CAD Technician @ $94.46/hour",
+      "quantity": "60.04",
+      "line_total": "5671.38",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CAD Technician @\n$94.46/hour",
+        "quantity": "60.04",
+        "line_total": "$5,671.38"
+      }
+    },
+    {
+      "description": "Construction Documents @ $46.43/% of project",
+      "quantity": "23.87",
+      "line_total": "1108.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Construction Documents @\n$46.43/% of project",
+        "quantity": "23.87",
+        "line_total": "$1,108.28"
+      }
+    },
+    {
+      "description": "Principal Architect @ $383.45/hour",
+      "quantity": "62.74",
+      "line_total": "24057.65",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Principal Architect @\n$383.45/hour",
+        "quantity": "62.74",
+        "line_total": "$24,057.65"
+      }
+    },
+    {
+      "description": "Schematic Design @ $21.60/% of project",
+      "quantity": "73.18",
+      "line_total": "1580.69",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Schematic Design @ $21.60/%\nof project",
+        "quantity": "73.18",
+        "line_total": "$1,580.69"
+      }
+    },
+    {
+      "description": "Project Architect @ $182.39/hour",
+      "quantity": "80",
+      "line_total": "14591.2",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Architect @\n$182.39/hour",
+        "quantity": "80.00",
+        "line_total": "$14,591.20"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/execution.py",
+  "test": "tests/test_execution.py::test_corrupt_pdf_records_started_failure_time_from_actual_pypdf",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/execution.py",
+      "old": "parse_time_seconds=terminal[\"parse_time_seconds\"],",
+      "new": "parse_time_seconds=0.0 if terminal[\"parse_time_seconds\"] is not None else None,"
+    }
+  }
+}

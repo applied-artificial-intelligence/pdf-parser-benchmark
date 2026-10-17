@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-59562",
+    "vendor": "Apex Construction",
+    "due_date": "2025-11-23",
+    "grand_total": "23772.22",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Materials - Lumber",
+      "quantity": "22.27",
+      "unit": "board ft",
+      "unit_price": "3.61",
+      "line_total": "80.39"
+    },
+    {
+      "description": "Materials - Concrete",
+      "quantity": "19.88",
+      "unit": "cu yd",
+      "unit_price": "131.41",
+      "line_total": "2612.43"
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "11.11",
+      "unit": "day",
+      "unit_price": "359.82",
+      "line_total": "3997.6"
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "22.1",
+      "unit": "day",
+      "unit_price": "721.71",
+      "line_total": "15949.79"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-59562",
+    "vendor": "Apex Construction",
+    "due_date": "November 23, 2025",
+    "grand_total": "$23,772.22",
+    "records": [
+      {
+        "description": "Materials - Lumber",
+        "quantity": "22.27",
+        "unit": "board ft",
+        "unit_price": "$3.61",
+        "line_total": "$80.39"
+      },
+      {
+        "description": "Materials - Concrete",
+        "quantity": "19.88",
+        "unit": "cu yd",
+        "unit_price": "$131.41",
+        "line_total": "$2,612.43"
+      },
+      {
+        "description": "Equipment Rental",
+        "quantity": "11.11",
+        "unit": "day",
+        "unit_price": "$359.82",
+        "line_total": "$3,997.60"
+      },
+      {
+        "description": "Equipment Rental",
+        "quantity": "22.10",
+        "unit": "day",
+        "unit_price": "$721.71",
+        "line_total": "$15,949.79"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_066"
+}

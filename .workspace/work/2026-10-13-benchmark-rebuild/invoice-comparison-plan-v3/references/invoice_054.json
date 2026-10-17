@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-53248",
+    "vendor": "Elite Management",
+    "due_date": "2025-09-30",
+    "grand_total": "168757.3",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Maintenance Coordination",
+      "quantity": "4.71",
+      "unit": "hour",
+      "unit_price": "82.24",
+      "line_total": "387.35"
+    },
+    {
+      "description": "Eviction Processing",
+      "quantity": "59.23",
+      "unit": "case",
+      "unit_price": "1872.68",
+      "line_total": "110918.84"
+    },
+    {
+      "description": "Maintenance Coordination",
+      "quantity": "10.96",
+      "unit": "hour",
+      "unit_price": "76.88",
+      "line_total": "842.6"
+    },
+    {
+      "description": "Maintenance Coordination",
+      "quantity": "13.2",
+      "unit": "hour",
+      "unit_price": "85.28",
+      "line_total": "1125.7"
+    },
+    {
+      "description": "Property Inspection",
+      "quantity": "81.13",
+      "unit": "inspection",
+      "unit_price": "135.59",
+      "line_total": "11000.42"
+    },
+    {
+      "description": "Tenant Screening",
+      "quantity": "94.25",
+      "unit": "application",
+      "unit_price": "52.16",
+      "line_total": "4916.08"
+    },
+    {
+      "description": "Leasing Fee - New Tenant",
+      "quantity": "98.78",
+      "unit": "% of annual rent",
+      "unit_price": "57.17",
+      "line_total": "5647.25"
+    },
+    {
+      "description": "Tenant Screening",
+      "quantity": "90.74",
+      "unit": "application",
+      "unit_price": "63.84",
+      "line_total": "5792.84"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-53248",
+    "vendor": "Elite Management",
+    "due_date": "September 30, 2025",
+    "grand_total": "$168,757.30",
+    "records": [
+      {
+        "description": "Maintenance Coordination",
+        "quantity": "4.71",
+        "unit": "hour",
+        "unit_price": "$82.24",
+        "line_total": "$387.35"
+      },
+      {
+        "description": "Eviction Processing",
+        "quantity": "59.23",
+        "unit": "case",
+        "unit_price": "$1,872.68",
+        "line_total": "$110,918.84"
+      },
+      {
+        "description": "Maintenance Coordination",
+        "quantity": "10.96",
+        "unit": "hour",
+        "unit_price": "$76.88",
+        "line_total": "$842.60"
+      },
+      {
+        "description": "Maintenance Coordination",
+        "quantity": "13.20",
+        "unit": "hour",
+        "unit_price": "$85.28",
+        "line_total": "$1,125.70"
+      },
+      {
+        "description": "Property Inspection",
+        "quantity": "81.13",
+        "unit": "inspection",
+        "unit_price": "$135.59",
+        "line_total": "$11,000.42"
+      },
+      {
+        "description": "Tenant Screening",
+        "quantity": "94.25",
+        "unit": "application",
+        "unit_price": "$52.16",
+        "line_total": "$4,916.08"
+      },
+      {
+        "description": "Leasing Fee - New Tenant",
+        "quantity": "98.78",
+        "unit": "% of annual rent",
+        "unit_price": "$57.17",
+        "line_total": "$5,647.25"
+      },
+      {
+        "description": "Tenant Screening",
+        "quantity": "90.74",
+        "unit": "application",
+        "unit_price": "$63.84",
+        "line_total": "$5,792.84"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8"
+    ]
+  },
+  "document_id": "invoice_054"
+}

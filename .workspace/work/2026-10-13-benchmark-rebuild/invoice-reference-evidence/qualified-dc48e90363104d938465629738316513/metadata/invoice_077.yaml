@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: Canada
+  name: Fernandez, Wright and Rivera
+document_id: invoice_077
+due_date: '2025-10-12'
+generated_at: '2025-11-18T16:46:52.614057'
+industry: landscaping
+invoice_date: '2025-09-27'
+invoice_number: INV-50966
+line_item_count: 5
+payment_terms: Net 15
+region: CA
+subtotal: 75140.44
+tax_amount: 9016.85
+template_style: economy
+total: 84157.29
+vendor:
+  country: Canada
+  name: Green Landscaping
+corpus: business
+source_url: generated://invoice_077
+domain: invoices
+doc_id: invoice_077

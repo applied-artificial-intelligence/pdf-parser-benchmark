@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "files": {
+    "claims.json": "226eb39058c8317950c406b87482a8ad9df50e5bcd4aaaf04e7262152e04e500",
+    "technical-report.md": "d9798a34a3055d9631c3fde8ae88a23d2d11d43228fd1f8e9bd1e65ebaa4f6bc",
+    "replay-protocol.txt": "c1f61c1047b24e4af2b2018870e785394248b829abff6bd7fa9a6e4c35f05dbd",
+    "selection-bias.json": "9fb6382c895db5ade02a1656b51fbca6d4433aae7fea15e52d296c5b26046de0",
+    "appendix.md": "8d250006e0f1df1bf0d4d21f321c4617d60f3aa90937d877da60ee08022b9c26",
+    "integration-handoff.txt": "d1ff15af1dc07bb1ddf1471465cc6d4dbf85b35b0b2cc1bc37235b277e6dd1c4"
+  }
+}

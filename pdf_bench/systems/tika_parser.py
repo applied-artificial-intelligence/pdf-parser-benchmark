@@ -4,12 +4,11 @@ Apache Tika is a content detection and analysis framework that
 supports 1000+ file formats including PDFs.
 """
 
+from importlib.util import find_spec
 from pathlib import Path
 
 try:
-    import tika  # noqa: F401
-
-    TIKA_AVAILABLE = True
+    TIKA_AVAILABLE = find_spec("tika") is not None
 except ImportError:
     TIKA_AVAILABLE = False
 

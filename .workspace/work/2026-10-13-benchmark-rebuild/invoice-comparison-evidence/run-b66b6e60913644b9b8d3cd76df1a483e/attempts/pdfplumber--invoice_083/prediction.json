@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-77612",
+    "vendor": null,
+    "due_date": "2025-10-10",
+    "grand_total": "99452.01",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-77612"
+    ],
+    "due_date": [
+      "10/10/2025"
+    ],
+    "grand_total": [
+      "$99,452.01"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Systems Analyst @ $181.99/hour",
+      "quantity": "49.26",
+      "line_total": "8964.83",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst @\n$181.99/hour",
+        "quantity": "49.26",
+        "line_total": "$8,964.83"
+      }
+    },
+    {
+      "description": "Project Management @ $157.80/hour",
+      "quantity": "43.28",
+      "line_total": "6829.58",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$157.80/hour",
+        "quantity": "43.28",
+        "line_total": "$6,829.58"
+      }
+    },
+    {
+      "description": "Project Management @ $213.55/hour",
+      "quantity": "44.64",
+      "line_total": "9532.87",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$213.55/hour",
+        "quantity": "44.64",
+        "line_total": "$9,532.87"
+      }
+    },
+    {
+      "description": "Project Management @ $140.72/hour",
+      "quantity": "75.52",
+      "line_total": "10627.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$140.72/hour",
+        "quantity": "75.52",
+        "line_total": "$10,627.17"
+      }
+    },
+    {
+      "description": "Network Engineer @ $234.07/hour",
+      "quantity": "14.46",
+      "line_total": "3384.65",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Network Engineer @\n$234.07/hour",
+        "quantity": "14.46",
+        "line_total": "$3,384.65"
+      }
+    },
+    {
+      "description": "Project Management @ $186.72/hour",
+      "quantity": "12.64",
+      "line_total": "2360.14",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$186.72/hour",
+        "quantity": "12.64",
+        "line_total": "$2,360.14"
+      }
+    },
+    {
+      "description": "Systems Analyst @ $141.03/hour",
+      "quantity": "81.69",
+      "line_total": "11520.74",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst @\n$141.03/hour",
+        "quantity": "81.69",
+        "line_total": "$11,520.74"
+      }
+    },
+    {
+      "description": "Senior Consultant @ $208.28/hour",
+      "quantity": "45.9",
+      "line_total": "9560.05",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior Consultant @\n$208.28/hour",
+        "quantity": "45.90",
+        "line_total": "$9,560.05"
+      }
+    },
+    {
+      "description": "Project Management @ $153.67/hour",
+      "quantity": "92.72",
+      "line_total": "14248.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Management @\n$153.67/hour",
+        "quantity": "92.72",
+        "line_total": "$14,248.28"
+      }
+    },
+    {
+      "description": "Senior Consultant @ $201.50/hour",
+      "quantity": "47",
+      "line_total": "9470.5",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior Consultant @\n$201.50/hour",
+        "quantity": "47.00",
+        "line_total": "$9,470.50"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

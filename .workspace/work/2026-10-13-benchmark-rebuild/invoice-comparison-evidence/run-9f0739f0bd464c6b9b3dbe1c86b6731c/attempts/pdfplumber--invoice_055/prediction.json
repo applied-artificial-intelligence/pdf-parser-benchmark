@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-63409",
+    "vendor": "Thompson Legal Group",
+    "due_date": "2025-11-11",
+    "grand_total": "164522.3",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-63409",
+      "INV-63409"
+    ],
+    "due_date": [
+      "November 11, 2025",
+      "November 11, 2025"
+    ],
+    "grand_total": [
+      "$164,522.30"
+    ],
+    "vendor": [
+      "Thompson Legal Group"
+    ]
+  },
+  "records": [
+    {
+      "description": "Legal Research (hour)",
+      "quantity": "24.78",
+      "unit_price": "150.04",
+      "line_total": "3717.99",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research\n(hour)",
+        "quantity": "24.78",
+        "unit_price": "$150.04",
+        "line_total": "$3,717.99"
+      }
+    },
+    {
+      "description": "Paralegal Services (hour)",
+      "quantity": "94.1",
+      "unit_price": "133.96",
+      "line_total": "12605.64",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services\n(hour)",
+        "quantity": "94.10",
+        "unit_price": "$133.96",
+        "line_total": "$12,605.64"
+      }
+    },
+    {
+      "description": "Partner Legal Services (hour)",
+      "quantity": "60.08",
+      "unit_price": "659.51",
+      "line_total": "39623.36",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal\nServices (hour)",
+        "quantity": "60.08",
+        "unit_price": "$659.51",
+        "line_total": "$39,623.36"
+      }
+    },
+    {
+      "description": "Associate Legal Services (hour)",
+      "quantity": "74.58",
+      "unit_price": "289.8",
+      "line_total": "21613.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal\nServices (hour)",
+        "quantity": "74.58",
+        "unit_price": "$289.80",
+        "line_total": "$21,613.28"
+      }
+    },
+    {
+      "description": "Paralegal Services (hour)",
+      "quantity": "65.42",
+      "unit_price": "141.68",
+      "line_total": "9268.71",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services\n(hour)",
+        "quantity": "65.42",
+        "unit_price": "$141.68",
+        "line_total": "$9,268.71"
+      }
+    },
+    {
+      "description": "Court Filing Fees (filing)",
+      "quantity": "52.33",
+      "unit_price": "286.98",
+      "line_total": "15017.66",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees\n(filing)",
+        "quantity": "52.33",
+        "unit_price": "$286.98",
+        "line_total": "$15,017.66"
+      }
+    },
+    {
+      "description": "Legal Research (hour)",
+      "quantity": "90.26",
+      "unit_price": "159.71",
+      "line_total": "14415.42",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research\n(hour)",
+        "quantity": "90.26",
+        "unit_price": "$159.71",
+        "line_total": "$14,415.42"
+      }
+    },
+    {
+      "description": "Paralegal Services (hour)",
+      "quantity": "15.87",
+      "unit_price": "195.9",
+      "line_total": "3108.93",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services\n(hour)",
+        "quantity": "15.87",
+        "unit_price": "$195.90",
+        "line_total": "$3,108.93"
+      }
+    },
+    {
+      "description": "Court Filing Fees (filing)",
+      "quantity": "21.94",
+      "unit_price": "346.53",
+      "line_total": "7602.87",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees\n(filing)",
+        "quantity": "21.94",
+        "unit_price": "$346.53",
+        "line_total": "$7,602.87"
+      }
+    },
+    {
+      "description": "Associate Legal Services (hour)",
+      "quantity": "24.74",
+      "unit_price": "409.38",
+      "line_total": "10128.06",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal\nServices (hour)",
+        "quantity": "24.74",
+        "unit_price": "$409.38",
+        "line_total": "$10,128.06"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

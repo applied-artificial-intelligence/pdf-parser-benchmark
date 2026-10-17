@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Canada
+  name: Jensen Inc
+document_id: invoice_070
+due_date: '2025-10-04'
+generated_at: '2025-11-18T16:46:42.257507'
+industry: construction
+invoice_date: '2025-09-04'
+invoice_number: INV-16650
+line_item_count: 6
+payment_terms: Net 30
+region: CA
+subtotal: 33387.05
+tax_amount: 1669.35
+template_style: small_business
+total: 35056.4
+vendor:
+  country: Canada
+  name: Cornerstone Construction
+corpus: business
+source_url: generated://invoice_070
+domain: invoices
+doc_id: invoice_070

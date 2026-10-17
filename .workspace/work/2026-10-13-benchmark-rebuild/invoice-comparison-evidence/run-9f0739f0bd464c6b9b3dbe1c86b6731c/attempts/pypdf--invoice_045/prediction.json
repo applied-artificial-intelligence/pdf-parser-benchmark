@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-11023",
+    "vendor": "Continental Freight",
+    "due_date": "2025-10-18",
+    "grand_total": "11816.25",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-11023"
+    ],
+    "due_date": [
+      "10/18/2025"
+    ],
+    "grand_total": [
+      "$11,816.25"
+    ],
+    "vendor": [
+      "Continental Freight"
+    ]
+  },
+  "records": [
+    {
+      "description": "Inside Delivery @ $108.84/per stop",
+      "quantity": "27.27",
+      "line_total": "2968.07",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $108.84/per\nstop",
+        "quantity": "27.27",
+        "line_total": "$2,968.07"
+      }
+    },
+    {
+      "description": "Fuel Surcharge @ $22.30/% of base",
+      "quantity": "77.19",
+      "line_total": "1721.34",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge @ $22.30/% of\nbase",
+        "quantity": "77.19",
+        "line_total": "$1,721.34"
+      }
+    },
+    {
+      "description": "Pallet Exchange @ $17.59/pallet",
+      "quantity": "80.42",
+      "line_total": "1414.59",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange @\n$17.59/pallet",
+        "quantity": "80.42",
+        "line_total": "$1,414.59"
+      }
+    },
+    {
+      "description": "Inside Delivery @ $66.94/per stop",
+      "quantity": "57.15",
+      "line_total": "3825.62",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $66.94/per\nstop",
+        "quantity": "57.15",
+        "line_total": "$3,825.62"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

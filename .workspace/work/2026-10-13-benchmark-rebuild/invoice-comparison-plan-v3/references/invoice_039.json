@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-66767",
+    "vendor": "Professional Publishing",
+    "due_date": "2025-12-01",
+    "grand_total": "14899.61",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Binding Services @ $10.64/book",
+      "quantity": "11.4",
+      "line_total": "121.3"
+    },
+    {
+      "description": "Rush Production @ $32.10/% surcharge",
+      "quantity": "55.49",
+      "line_total": "1781.23"
+    },
+    {
+      "description": "Graphic Design @ $108.64/hour",
+      "quantity": "84.23",
+      "line_total": "9150.75"
+    },
+    {
+      "description": "Graphic Design @ $103.57/hour",
+      "quantity": "12.17",
+      "line_total": "1260.45"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-66767",
+    "vendor": "Professional Publishing",
+    "due_date": "12/01/2025",
+    "grand_total": "$14,899.61",
+    "records": [
+      {
+        "description": "Binding Services @ $10.64/book",
+        "quantity": "11.40",
+        "line_total": "$121.30"
+      },
+      {
+        "description": "Rush Production @ $32.10/% surcharge",
+        "quantity": "55.49",
+        "line_total": "$1,781.23"
+      },
+      {
+        "description": "Graphic Design @ $108.64/hour",
+        "quantity": "84.23",
+        "line_total": "$9,150.75"
+      },
+      {
+        "description": "Graphic Design @ $103.57/hour",
+        "quantity": "12.17",
+        "line_total": "$1,260.45"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_039"
+}

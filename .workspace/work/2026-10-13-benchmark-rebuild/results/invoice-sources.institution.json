@@ -1,0 +1,12 @@
+{
+ "item": "invoice-sources.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_reference_qualification.py::test_reference_generation_ignores_wrong_metadata_and_old_extraction",
+  "fixture (both runs): Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

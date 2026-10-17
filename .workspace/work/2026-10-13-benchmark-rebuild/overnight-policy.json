@@ -1,0 +1,115 @@
+{
+  "window": "22:00-07:00",
+  "timezone": "America/New_York",
+  "cpus": [
+    0,
+    1,
+    4,
+    5,
+    8,
+    9,
+    12,
+    13,
+    16,
+    18,
+    20,
+    22
+  ],
+  "max_calls": 8,
+  "memory_gb": 48,
+  "nice": 10,
+  "sample": "overnight-timing-sample.json",
+  "native_python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/native-evaluator/bin/python",
+  "jobs": [
+    {
+      "backend": "docling",
+      "run": "docling-3b0c3cb78a55424cae9daa48d81e7d9f",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 1,
+      "priority": 0,
+      "plan_sha256": "2e5045703d46e442c7108adfa397c49b7f8f746562c91c0eb814f6bd9368be13"
+    },
+    {
+      "backend": "marker",
+      "run": "marker-64aada83e3d344369386694fd93377f4",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
+      "workers": 2,
+      "priority": 1,
+      "plan_sha256": "c1837620e985a63236d70fe87f19edfd8c15fdcfa3d8add52da3caf78550748c"
+    },
+    {
+      "backend": "unstructured",
+      "run": "unstructured-f2c7980b25db43e7bcc73bf598d81b4a",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 2,
+      "plan_sha256": "5a1f35cd46a934c243c0af59e527967c7e7d6697d421670acf29ac77abce1290"
+    },
+    {
+      "backend": "pymupdf4llm",
+      "run": "pymupdf4llm-bd7bdb80b24a4776a8b85ba647174925",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 3,
+      "plan_sha256": "c22d01873d4427fd9698b3ad1dbe039ac8cdf2b82c191dc0d5ffcf20d922221a"
+    },
+    {
+      "backend": "extractous",
+      "run": "extractous-974a75a9eda64503a874eae8ef12a317",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "0869ce3c4fa96ed8f87eaded636c384621829426a424ac59c71709989a3d8e8d"
+    },
+    {
+      "backend": "kreuzberg",
+      "run": "kreuzberg-e6c08da7f480478abeac09057092f1ab",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "4221c9dec8ca6e5e5924c46a8450ede612696822d59c34609476e6a6c3644c40"
+    },
+    {
+      "backend": "pdfminer",
+      "run": "pdfminer-ff33a6b3ad8b41b186f18a5148b93717",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "1b6505fef1df15f94c0845298aa0173fbed1cf701830d1dbe8f6ceb47d5d6a52"
+    },
+    {
+      "backend": "pdfplumber",
+      "run": "pdfplumber-e2d58e3d7924488eac4c1aed9620bf8e",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "77acb6a5c9f547d77c272405449f1cc7e99ba167a2b37402d5aa86cbfd49a76a"
+    },
+    {
+      "backend": "pymupdf",
+      "run": "pymupdf-a2fdbe5a5f6d4960b5c7a80a50e41a17",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "0b7215583e1f319e1b9a54a298483746b66b581ba9c24451fca2f32b2966d2cf"
+    },
+    {
+      "backend": "pypdf",
+      "run": "pypdf-9a29e22fbd3c483c95cf6d9b15230b36",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "54b134cf36fd089d792df8614acca7d0c8d90d66fbec73bdbd159600ad03d172"
+    },
+    {
+      "backend": "pypdfium2",
+      "run": "pypdfium2-212c10fe83b44e83a0fa0859d7c797be",
+      "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+      "workers": 2,
+      "priority": 4,
+      "plan_sha256": "d57e997ea8ee2efa923ecf2d902de239b0327b3d3898e87bc7012b2c71f2b035"
+    }
+  ],
+  "approved_by": "Stefan, October 17: overnight window and efficient bounded parallel execution",
+  "timing_policy": "Ten shared dimension-balanced PDF inputs, one worker versus two where eligible. Reduce to one if speedup is below 1.2 or failures increase. Small pilot is a planning estimate, not a latency ranking."
+}

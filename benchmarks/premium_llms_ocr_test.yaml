@@ -1,0 +1,38 @@
+name: "Premium LLMs OCR Test"
+description: "Test if GPT-5.1, Gemini 3 Pro, Claude Sonnet 4.5 can handle scanned docs"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - omnidocbench
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - omnidoc_000
+  max_documents: 1
+
+parser_config:
+  parsers:
+    - gpt_5_1
+    - gemini_3_pro
+    - claude_sonnet_4_5
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - tree_similarity
+    - chrf++
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 1
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 300

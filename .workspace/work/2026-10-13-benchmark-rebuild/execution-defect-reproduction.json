@@ -1,0 +1,35 @@
+{
+  "cache": {
+    "reproduced": true,
+    "first_layout_false_sha256": "603e5d7c1c87f440e20fa30698fd2c291ce3f9753816e1f3c185686ccc83389b",
+    "returned_layout_true_sha256": "603e5d7c1c87f440e20fa30698fd2c291ce3f9753816e1f3c185686ccc83389b",
+    "fresh_layout_true_sha256": "d4e112e16ded2e4aac61deb020d9d130337cf35a43999492da02088b34f45736",
+    "error": "Real adapter returns layout=False bytes for layout=True under the same input/name/version"
+  },
+  "checkpoint": {
+    "reproduced": true,
+    "changed_input_sha256": "b5e23c3bb5d6d3fb998af23ed023388e331ffb823b04dfb57310d087a9a1237d",
+    "changed_reference_sha256": "742ab4516bf012b1e5c65c2ebc79f4d920034745977bd5cc74f41801ff00fc86",
+    "stale_success_count": 1,
+    "error": "Actual runner imports earlier success after input and reference bytes change under the same IDs"
+  },
+  "adapter_source_sha256": "a6dc60a2c3336ddec3f04a5979cffa8a8b5c6b9252076c89baeb9d4bfe050c0a",
+  "runner_source_sha256": "7f42b008aca79ed560f0033821b7b832b97068053b697f24c96fa6e75d212be9",
+  "scope": "Pre-repair real end-to-end observations for issue 5; temporary PDFs and cache are in ignored data_exports/execution-defect-reproduction",
+  "repair_checkpoint": {
+    "status": "partial",
+    "actual_tests": "Four E2E tests failed before the repair and pass after it. Full suite 925 passed, 18 skipped.",
+    "cache_policy": "Actual adapter defaults to bypass, disables both reads and writes, and rejects cache reuse until full compatibility is verified. Existing cache bytes are preserved.",
+    "worker_reconstruction": "Backend options include explicit cache mode; display name is not forwarded to constructors.",
+    "observed_pdfsmith_distribution_version": "0.2.0",
+    "observed_pdfsmith_source_version": "0.3.0.dev0",
+    "remaining": "Checkpoint identity validation, planned attempts, exclusive output namespaces, enforced typed timeout, failure timing and atomic completed-run registration."
+  },
+  "checkpoint_repair": {
+    "status": "Legacy resumption disabled; snapshots remain readable",
+    "tests": "Five new E2E checks failed before repair and pass after; full suite 930 passed, 18 skipped",
+    "policy": "No row/counter import from any preexisting checkpoint. Changed or unchanged inputs require a fresh execution destination.",
+    "duplicate_regression_fixture": "tests/fixtures/legacy_duplicate_run.json",
+    "remaining": "Complete planned-pair provenance, isolated attempts, enforced timeouts, failure durations, stage identity and atomic run publication"
+  }
+}

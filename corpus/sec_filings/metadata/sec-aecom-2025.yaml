@@ -1,0 +1,5 @@
+doc_id: sec-aecom-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/868857/000086885726000008/aecom2025_arx10k.pdf

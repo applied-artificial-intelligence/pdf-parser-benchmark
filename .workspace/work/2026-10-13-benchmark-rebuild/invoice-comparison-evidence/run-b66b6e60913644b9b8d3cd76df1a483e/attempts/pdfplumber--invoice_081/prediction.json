@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-81454",
+    "vendor": "Quality Grounds Maintenance",
+    "due_date": "2025-11-10",
+    "grand_total": "33649.26",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-81454"
+    ],
+    "due_date": [
+      "November 10, 2025"
+    ],
+    "grand_total": [
+      "$33,649.26"
+    ],
+    "vendor": [
+      "Quality Grounds Maintenance"
+    ]
+  },
+  "records": [
+    {
+      "description": "Tree Trimming",
+      "quantity": "81.92",
+      "unit": "hour",
+      "unit_price": "101.35",
+      "line_total": "8302.59",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tree Trimming",
+        "quantity": "81.92",
+        "unit": "hour",
+        "unit_price": "$101.35",
+        "line_total": "$8,302.59"
+      }
+    },
+    {
+      "description": "Snow Removal",
+      "quantity": "25.1",
+      "unit": "push",
+      "unit_price": "90.93",
+      "line_total": "2282.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Snow Removal",
+        "quantity": "25.10",
+        "unit": "push",
+        "unit_price": "$90.93",
+        "line_total": "$2,282.34"
+      }
+    },
+    {
+      "description": "Weekly Mowing Service",
+      "quantity": "3.69",
+      "unit": "month",
+      "unit_price": "409.68",
+      "line_total": "1511.72",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Weekly Mowing\nService",
+        "quantity": "3.69",
+        "unit": "month",
+        "unit_price": "$409.68",
+        "line_total": "$1,511.72"
+      }
+    },
+    {
+      "description": "Irrigation Maintenance",
+      "quantity": "64.84",
+      "unit": "visit",
+      "unit_price": "240.44",
+      "line_total": "15590.13",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance",
+        "quantity": "64.84",
+        "unit": "visit",
+        "unit_price": "$240.44",
+        "line_total": "$15,590.13"
+      }
+    },
+    {
+      "description": "Fall Cleanup",
+      "quantity": "2.75",
+      "unit": "service",
+      "unit_price": "470.1",
+      "line_total": "1292.78",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fall Cleanup",
+        "quantity": "2.75",
+        "unit": "service",
+        "unit_price": "$470.10",
+        "line_total": "$1,292.78"
+      }
+    },
+    {
+      "description": "Mulch Installation",
+      "quantity": "9.15",
+      "unit": "cu yd",
+      "unit_price": "116.33",
+      "line_total": "1064.42",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Mulch\nInstallation",
+        "quantity": "9.15",
+        "unit": "cu yd",
+        "unit_price": "$116.33",
+        "line_total": "$1,064.42"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

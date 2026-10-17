@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "unicode_database_version": "15.1.0",
+  "required_fields": [
+    "invoice_number",
+    "vendor",
+    "due_date",
+    "grand_total",
+    "currency_marker"
+  ],
+  "development_ids": [
+    "invoice_001",
+    "invoice_002",
+    "invoice_003",
+    "invoice_004",
+    "invoice_005",
+    "invoice_006"
+  ],
+  "header_aliases": {
+    "description": "description",
+    "quantity": "quantity",
+    "qty": "quantity",
+    "unit": "unit",
+    "unit price": "unit_price",
+    "rate": "unit_price",
+    "amount": "line_total"
+  },
+  "normalization": "NFKC and whitespace; vendor/description casefold; exact units, signs and currency markers; Decimal strings without rounding; printed MM/DD/YYYY or English month dates",
+  "record_matching": "Complete associated records as a multiset; duplicates retain multiplicity",
+  "representation_policy": "Prefer Markdown line-item tables when present, suppressing duplicated linear text. Reuse headers for Markdown page continuations; concatenate description-only rows. Otherwise consume linear description-before-values rows under displayed header roles.",
+  "limits": "No OCR or semantic repair. Merged FROM/TO text is ambiguous. Within-word wraps, values followed by description fragments and missing headers may defeat extraction. This is a configured pipeline test on retained templates, not an unseen test set.",
+  "denominators": "Eligible documents and five fields per document stay fixed, including failures, empty outputs and timeouts as zero recovery. Grader exceptions invalidate aggregates.",
+  "extractor_sha256": "576a53c6cefb695d954f116b8bf8f9f999a3990f691adf5a6b228a932dc0546a",
+  "grader_sha256": "72f74bfd96554cab7b9553471b0b1bc19616ddc69b5ad09b70b5c951d5bcbd50",
+  "change_reason": "Typing and CI maintenance only; primary v3 invoice runs retain protocol revision 2 and frozen evaluator bytes. No new primary comparison is implied.",
+  "development_revision": 3,
+  "frozen_at": "2026-10-16T20:22:11.651324+00:00",
+  "development_policy": "Typing maintenance after the primary comparison, with no scoring-rule tuning. The scored primary v3 bundles retain development revision 2 and their frozen evaluator snapshots.",
+  "prior_protocol": "invoice-task-protocol.v2.json",
+  "prior_protocol_sha256": "d04d64db971f59d8120f57fa89bb0fee21c3f5ad7c416ae0557cbc959898cd7e"
+}

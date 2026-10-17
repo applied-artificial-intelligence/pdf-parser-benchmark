@@ -1,0 +1,192 @@
+{
+  "benchmark": {
+    "name": "Commercial Parsers - Sample Test",
+    "timestamp": "2025-11-23T20:13:59.678735+00:00",
+    "config_file": "benchmarks/commercial_sample_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "aws_textract": "1.40.73",
+      "azure_document_intelligence": "1.0.2"
+    }
+  },
+  "results": [
+    {
+      "document_id": "cuad_000",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9663799843627834,
+        "chrf++": 99.18719754765269,
+        "character_error_rate": 0.03386893509766856
+      },
+      "error": null,
+      "parse_time_seconds": 4.593584299087524
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525674367969034,
+        "chrf++": 96.5519622788519,
+        "character_error_rate": 0.04743256320309665
+      },
+      "error": null,
+      "parse_time_seconds": 48.873491048812866
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.437744714173845,
+        "chrf++": 73.49082352755642,
+        "character_error_rate": 0.562255285826155
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006723403930664062
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19470385546011082,
+        "chrf++": 31.637789810028,
+        "character_error_rate": 0.8052961445398892
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011799335479736328
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1810229710873381,
+        "chrf++": 21.402239157114288,
+        "character_error_rate": 0.8189770289126619
+      },
+      "error": null,
+      "parse_time_seconds": 16.07820701599121
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44379683597002495,
+        "chrf++": 87.36462930431492,
+        "character_error_rate": 0.5888921539817807
+      },
+      "error": null,
+      "parse_time_seconds": 3.284761905670166
+    },
+    {
+      "document_id": "omnidoc_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.25530918176139916,
+        "chrf++": 92.8680077368665,
+        "character_error_rate": 0.7598789037603569
+      },
+      "error": null,
+      "parse_time_seconds": 4.678518772125244
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8372715816005041,
+        "chrf++": 87.70751127924783,
+        "character_error_rate": 0.1627284183994959
+      },
+      "error": null,
+      "parse_time_seconds": 3.509369373321533
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01694992137413809,
+        "chrf++": 1.8966030719189717,
+        "character_error_rate": 0.9830500786258619
+      },
+      "error": null,
+      "parse_time_seconds": 3.520153760910034
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5787000783085356,
+        "chrf++": 79.45745429896431,
+        "character_error_rate": 0.42129992169146435
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003421306610107422
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0278465303632216,
+        "chrf++": 3.4619684246989824,
+        "character_error_rate": 0.9721534696367784
+      },
+      "error": null,
+      "parse_time_seconds": 3.649169921875
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.047382556377440044,
+        "chrf++": 5.50824556991105,
+        "character_error_rate": 0.95261744362256
+      },
+      "error": null,
+      "parse_time_seconds": 3.5018210411071777
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.826193724420191,
+        "chrf++": 90.7188171497572,
+        "character_error_rate": 0.18718777549221274
+      },
+      "error": null,
+      "parse_time_seconds": 2.5902209281921387
+    },
+    {
+      "document_id": "omnidoc_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9601873536299765,
+        "chrf++": 96.44075795000698,
+        "character_error_rate": 0.04063097514340344
+      },
+      "error": null,
+      "parse_time_seconds": 2.625335931777954
+    }
+  ],
+  "summary": {
+    "total_documents": 7,
+    "total_parsers": 2,
+    "total_results": 14,
+    "success_count": 14,
+    "failure_count": 0
+  }
+}

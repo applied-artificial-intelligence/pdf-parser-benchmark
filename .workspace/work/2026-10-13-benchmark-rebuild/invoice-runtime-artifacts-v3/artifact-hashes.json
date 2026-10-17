@@ -1,0 +1,10 @@
+{
+  "cold-dependency-replay.txt": "2df594e5e93df032c2cf09b7eaa85b9e6c3828ce68eaa5451bdd852ae8dcb422",
+  "identity-replay.json": "bb19f12f2862e994e49f28e3894d3a4b0fdc57f48c9aac3b201a8e334d3fb2a9",
+  "pdf_bench-1.0.0-py3-none-any.whl": "d46ff0ff3d30cc58b0cead334ce6333540e6d6afd8564996f58fbdb3807db904",
+  "pdfsmith-0.2.0-py3-none-any.whl": "656ac6b42d523be346c451e635d5ff4be97aafd03f01ab18c4bd92d6fdadc6bb",
+  "requirements-pins.in": "34d5e4060b4780d0609de1409e4d0b6274a748ffbf5cbc59117b95e674c39c61",
+  "requirements.lock": "b2234829be818ddca61f8b174a271edcca05d242a77fce7b16bfb93eb15db57c",
+  "runtime-provenance.json": "dc3510409943822659dbe32817def5c50224e63091ef673f087d3ac96c6c982a",
+  "source-checkouts.json": "c44715c4f19910640a3d32048abf1dce86417ce143216ef9afe44e0ea534cf09"
+}

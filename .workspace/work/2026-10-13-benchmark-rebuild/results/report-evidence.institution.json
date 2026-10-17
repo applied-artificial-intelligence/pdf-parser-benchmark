@@ -1,0 +1,12 @@
+{
+ "item": "report-evidence.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_reconstruction_report.py::test_historical_tracks_cannot_be_promoted_to_new_qualified_results",
+  "fixture (both runs): Full retained qualified invoice/public bundles and historical registry through the actual report generator and consumer",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-98034",
+    "vendor": "Cloud Cloud",
+    "due_date": "2025-09-20",
+    "grand_total": "20684186.42",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-98034"
+    ],
+    "due_date": [
+      "September 20, 2025"
+    ],
+    "grand_total": [
+      "$20,684,186.42"
+    ],
+    "vendor": [
+      "Cloud Cloud"
+    ]
+  },
+  "records": [
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "45.87",
+      "unit": "subscription",
+      "unit_price": "71834.13",
+      "line_total": "3295031.54",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "45.87",
+        "unit": "subscription",
+        "unit_price": "$71,834.13",
+        "line_total": "$3,295,031.54"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "51.89",
+      "unit": "subscription",
+      "unit_price": "79355.54",
+      "line_total": "4117758.97",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "51.89",
+        "unit": "subscription",
+        "unit_price": "$79,355.54",
+        "line_total": "$4,117,758.97"
+      }
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "85.38",
+      "unit": "month",
+      "unit_price": "2961.43",
+      "line_total": "252846.89",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium\nSupport",
+        "quantity": "85.38",
+        "unit": "month",
+        "unit_price": "$2,961.43",
+        "line_total": "$252,846.89"
+      }
+    },
+    {
+      "description": "Additional Storage",
+      "quantity": "40",
+      "unit": "TB/month",
+      "unit_price": "58.66",
+      "line_total": "2346.4",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Additional\nStorage",
+        "quantity": "40.00",
+        "unit": "TB/month",
+        "unit_price": "$58.66",
+        "line_total": "$2,346.40"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "82.2",
+      "unit": "subscription",
+      "unit_price": "60082.4",
+      "line_total": "4938773.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "82.20",
+        "unit": "subscription",
+        "unit_price": "$60,082.40",
+        "line_total": "$4,938,773.28"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "16.9",
+      "unit": "subscription",
+      "unit_price": "104112.83",
+      "line_total": "1759506.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "16.90",
+        "unit": "subscription",
+        "unit_price": "$104,112.83",
+        "line_total": "$1,759,506.83"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "77.46",
+      "unit": "subscription",
+      "unit_price": "1693.43",
+      "line_total": "131173.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional\nPlan - Monthly",
+        "quantity": "77.46",
+        "unit": "subscription",
+        "unit_price": "$1,693.43",
+        "line_total": "$131,173.09"
+      }
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "27.92",
+      "unit": "month",
+      "unit_price": "1318.28",
+      "line_total": "36806.38",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium\nSupport",
+        "quantity": "27.92",
+        "unit": "month",
+        "unit_price": "$1,318.28",
+        "line_total": "$36,806.38"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "5.84",
+      "unit": "subscription",
+      "unit_price": "29876.23",
+      "line_total": "174477.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "5.84",
+        "unit": "subscription",
+        "unit_price": "$29,876.23",
+        "line_total": "$174,477.18"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

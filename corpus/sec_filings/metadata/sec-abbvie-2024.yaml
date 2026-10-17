@@ -1,0 +1,5 @@
+doc_id: sec-abbvie-2024
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/1551152/000110465925027375/tm252086d2_ars.pdf

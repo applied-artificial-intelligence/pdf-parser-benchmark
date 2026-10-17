@@ -1,0 +1,95 @@
+name: "SEC Filings - 47 Annual Reports (GT quality >= 0.90)"
+description: >
+  ARS annual report PDFs benchmarked against 10-K iXBRL HTML ground truth.
+  Selected from 320 screened documents where pypdfium2 edit_similarity >= 0.90,
+  ensuring ground truth noise < 10% — below the typical inter-parser spread.
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - sec-adient-2025
+    - sec-allegro_microsystems-2025
+    - sec-astec_industries-2025
+    - sec-binah_capital-2024
+    - sec-bioxcel_therapeutics-2024
+    - sec-brightview_holdings-2025
+    - sec-cal_maine_foods-2025
+    - sec-cantor_fitzgeraldome_trust-2024
+    - sec-coherent-2025
+    - sec-digital_turbine-2025
+    - sec-endo_lp-2024
+    - sec-energizer_holdings-2025
+    - sec-eqt-2025
+    - sec-genasys-2025
+    - sec-great_elm-2025
+    - sec-haymaker_acquisition_4-2024
+    - sec-helmerich_payne-2025
+    - sec-hoth_therapeutics-2024
+    - sec-incannex_healthcare-2025
+    - sec-iqvia_holdings-2025
+    - sec-jacobs_solutions-2025
+    - sec-keen_vision_acquisition-2024
+    - sec-kestra_medical_technologies-2025
+    - sec-key_tronic-2025
+    - sec-lite_strategy-2025
+    - sec-maximus-2025
+    - sec-merck-2024
+    - sec-micron_technology-2025
+    - sec-movano-2025
+    - sec-novabay_pharmaceuticals-2025
+    - sec-orion_energy_systems-2025
+    - sec-palisade_bio-2024
+    - sec-qorvo-2025
+    - sec-qualcomm-2025
+    - sec-quest_resource_holding-2024
+    - sec-rare_element_resources-2024
+    - sec-renx_enterprises-2024
+    - sec-sandisk-2025
+    - sec-sanuwave_health-2024
+    - sec-satellogic-2024
+    - sec-simply_good_foods-2025
+    - sec-stepstone-2025
+    - sec-syra_health-2024
+    - sec-tao_synergies-2024
+    - sec-techtarget-2025
+    - sec-twin_hospitality-2024
+    - sec-xtant_medical_holdings-2024
+  max_documents: null
+
+parser_config:
+  parsers:
+    - pypdfium2
+    - pymupdf
+    - kreuzberg
+    - marker
+    - docling
+    - pypdf
+    - pdfplumber
+    - pdfminer
+    - pymupdf4llm
+    - extractous
+    - unstructured
+    - tika
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - element_f1
+
+output_config:
+  results_dir: results
+  save_format: json
+  generate_report: false
+  save_predictions: false
+  verbose: true
+
+parallel_workers: 1

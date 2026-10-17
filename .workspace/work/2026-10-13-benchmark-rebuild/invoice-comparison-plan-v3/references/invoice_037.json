@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-54966",
+    "vendor": "Stream Solutions",
+    "due_date": "2025-12-05",
+    "grand_total": "1333161.41",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Premium Support",
+      "quantity": "16.23",
+      "unit": "month",
+      "unit_price": "2323.68",
+      "line_total": "37713.33"
+    },
+    {
+      "description": "API Usage",
+      "quantity": "41.71",
+      "unit": "per 1000 calls",
+      "unit_price": "4.66",
+      "line_total": "194.37"
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "95.94",
+      "unit": "subscription",
+      "unit_price": "971.55",
+      "line_total": "93210.51"
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "2.26",
+      "unit": "month",
+      "unit_price": "2280.02",
+      "line_total": "5152.85"
+    },
+    {
+      "description": "Implementation Services",
+      "quantity": "60.92",
+      "unit": "hour",
+      "unit_price": "242.48",
+      "line_total": "14771.88"
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "12.76",
+      "unit": "subscription",
+      "unit_price": "45969.38",
+      "line_total": "586569.29"
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "82.76",
+      "unit": "month",
+      "unit_price": "4291.24",
+      "line_total": "355143.02"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-54966",
+    "vendor": "Stream Solutions",
+    "due_date": "December 05, 2025",
+    "grand_total": "$1,333,161.41",
+    "records": [
+      {
+        "description": "Premium Support",
+        "quantity": "16.23",
+        "unit": "month",
+        "unit_price": "$2,323.68",
+        "line_total": "$37,713.33"
+      },
+      {
+        "description": "API Usage",
+        "quantity": "41.71",
+        "unit": "per 1000 calls",
+        "unit_price": "$4.66",
+        "line_total": "$194.37"
+      },
+      {
+        "description": "Professional Plan - Monthly",
+        "quantity": "95.94",
+        "unit": "subscription",
+        "unit_price": "$971.55",
+        "line_total": "$93,210.51"
+      },
+      {
+        "description": "Premium Support",
+        "quantity": "2.26",
+        "unit": "month",
+        "unit_price": "$2,280.02",
+        "line_total": "$5,152.85"
+      },
+      {
+        "description": "Implementation Services",
+        "quantity": "60.92",
+        "unit": "hour",
+        "unit_price": "$242.48",
+        "line_total": "$14,771.88"
+      },
+      {
+        "description": "Enterprise Plan - Annual",
+        "quantity": "12.76",
+        "unit": "subscription",
+        "unit_price": "$45,969.38",
+        "line_total": "$586,569.29"
+      },
+      {
+        "description": "Premium Support",
+        "quantity": "82.76",
+        "unit": "month",
+        "unit_price": "$4,291.24",
+        "line_total": "$355,143.02"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7"
+    ]
+  },
+  "document_id": "invoice_037"
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "invoice_078",
+  "pipeline_id": "pypdf",
+  "pair_id": "pypdf--invoice_078",
+  "order": 77,
+  "outcome": "success_content",
+  "parse_time_seconds": 0.05880878897733055,
+  "wall_time_seconds": 0.4799895450123586,
+  "output_path": "attempts/pypdf--invoice_078/retained-output.md",
+  "output_sha256": "3b630b971a75a611ba55bc0003f5a45dcf59bdec107fc91a94a99ccbf1114d4f",
+  "error": null,
+  "error_type": null,
+  "returned_path": "attempts/pypdf--invoice_078/parser-output/invoice_078.md",
+  "worker_pid": 3176992,
+  "extractor_sha256": "985c358d68169ca6cfba34c73cc42320f939f1605447356be96ddfc9df44f286",
+  "grader_sha256": "bb24837a06ad9378d521ddf213b41bf4dda610939c780e23f46943a313a765c0",
+  "stage_identities": {
+    "parse": "0d3b4b8d4a8a9aa205a4715b93562c7231a42fbee9f1da6add2547c184a1b795",
+    "prediction": "1bbefcebeb0a04e53088e9ec7a40820f747cb860e398a162f4ddf3000b0381f0",
+    "grade": "69a28754fb6a7e41e327a68b56bf9c6911c65e50dec5387de1e545982e62cd24"
+  }
+}

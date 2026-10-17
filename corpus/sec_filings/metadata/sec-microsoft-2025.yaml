@@ -1,0 +1,5 @@
+doc_id: sec-microsoft-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/789019/000119312525245177/d61995dars.pdf

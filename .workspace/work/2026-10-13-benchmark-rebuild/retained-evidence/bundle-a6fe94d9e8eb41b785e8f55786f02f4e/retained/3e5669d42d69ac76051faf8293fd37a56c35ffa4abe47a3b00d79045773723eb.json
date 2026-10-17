@@ -1,0 +1,5832 @@
+{
+  "benchmark": {
+    "name": "Business Corpora - Fill Gaps",
+    "timestamp": "2025-11-23T19:34:26.909727+00:00",
+    "config_file": "benchmarks/business_fill_gaps.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "extractous": "0.3.0",
+      "pypdf2": "3.0.1"
+    }
+  },
+  "results": [
+    {
+      "document_id": "invoice_064",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5592417061611374,
+        "chrf++": 79.18800515499129,
+        "character_error_rate": 0.44075829383886256
+      },
+      "error": null,
+      "parse_time_seconds": 0.21642374992370605
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6022099447513812,
+        "chrf++": 80.69289915661669,
+        "character_error_rate": 0.39779005524861877
+      },
+      "error": null,
+      "parse_time_seconds": 0.18424749374389648
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5134596211365903,
+        "chrf++": 78.26291939100616,
+        "character_error_rate": 0.4865403788634098
+      },
+      "error": null,
+      "parse_time_seconds": 0.12061595916748047
+    },
+    {
+      "document_id": "invoice_019",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6238830219333875,
+        "chrf++": 78.75259114328375,
+        "character_error_rate": 0.3761169780666125
+      },
+      "error": null,
+      "parse_time_seconds": 0.09894371032714844
+    },
+    {
+      "document_id": "invoice_051",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46153846153846156,
+        "chrf++": 82.3154558122405,
+        "character_error_rate": 0.5384615384615384
+      },
+      "error": null,
+      "parse_time_seconds": 0.11798238754272461
+    },
+    {
+      "document_id": "invoice_036",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44050343249427915,
+        "chrf++": 85.96371631895994,
+        "character_error_rate": 0.5594965675057209
+      },
+      "error": null,
+      "parse_time_seconds": 0.07667231559753418
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6225528582615505,
+        "chrf++": 79.45745429896431,
+        "character_error_rate": 0.3774471417384495
+      },
+      "error": null,
+      "parse_time_seconds": 0.09099054336547852
+    },
+    {
+      "document_id": "invoice_031",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49519743863393806,
+        "chrf++": 78.62131710253757,
+        "character_error_rate": 0.5048025613660619
+      },
+      "error": null,
+      "parse_time_seconds": 0.08763790130615234
+    },
+    {
+      "document_id": "invoice_011",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5777777777777777,
+        "chrf++": 79.55700941589772,
+        "character_error_rate": 0.4222222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.09493255615234375
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5231431646932185,
+        "chrf++": 80.25416765890682,
+        "character_error_rate": 0.47685683530678147
+      },
+      "error": null,
+      "parse_time_seconds": 0.09082579612731934
+    },
+    {
+      "document_id": "invoice_086",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5376246600181324,
+        "chrf++": 78.1718925966852,
+        "character_error_rate": 0.46237533998186764
+      },
+      "error": null,
+      "parse_time_seconds": 0.09582209587097168
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5589307411907655,
+        "chrf++": 79.20845198233724,
+        "character_error_rate": 0.44106925880923453
+      },
+      "error": null,
+      "parse_time_seconds": 0.08974647521972656
+    },
+    {
+      "document_id": "invoice_061",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5834165834165834,
+        "chrf++": 79.66215462861665,
+        "character_error_rate": 0.4165834165834166
+      },
+      "error": null,
+      "parse_time_seconds": 0.08956408500671387
+    },
+    {
+      "document_id": "invoice_087",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5990521327014218,
+        "chrf++": 78.85390201012858,
+        "character_error_rate": 0.4009478672985782
+      },
+      "error": null,
+      "parse_time_seconds": 0.09117555618286133
+    },
+    {
+      "document_id": "invoice_081",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4772004241781548,
+        "chrf++": 80.72759789815723,
+        "character_error_rate": 0.5227995758218452
+      },
+      "error": null,
+      "parse_time_seconds": 0.08730268478393555
+    },
+    {
+      "document_id": "invoice_057",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47875354107648727,
+        "chrf++": 79.40549905818337,
+        "character_error_rate": 0.5212464589235127
+      },
+      "error": null,
+      "parse_time_seconds": 0.08242058753967285
+    },
+    {
+      "document_id": "invoice_078",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.459830866807611,
+        "chrf++": 78.91586332242406,
+        "character_error_rate": 0.540169133192389
+      },
+      "error": null,
+      "parse_time_seconds": 0.21808695793151855
+    },
+    {
+      "document_id": "invoice_003",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41686460807600945,
+        "chrf++": 87.46043484594473,
+        "character_error_rate": 0.5831353919239906
+      },
+      "error": null,
+      "parse_time_seconds": 0.18717050552368164
+    },
+    {
+      "document_id": "invoice_097",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44288793103448276,
+        "chrf++": 86.7020677441392,
+        "character_error_rate": 0.5571120689655172
+      },
+      "error": null,
+      "parse_time_seconds": 0.12133193016052246
+    },
+    {
+      "document_id": "invoice_072",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4935424354243543,
+        "chrf++": 79.52984004877341,
+        "character_error_rate": 0.5064575645756457
+      },
+      "error": null,
+      "parse_time_seconds": 0.09058856964111328
+    },
+    {
+      "document_id": "invoice_083",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4423076923076923,
+        "chrf++": 85.83649036682755,
+        "character_error_rate": 0.5576923076923077
+      },
+      "error": null,
+      "parse_time_seconds": 0.10191798210144043
+    },
+    {
+      "document_id": "invoice_099",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4978601997146933,
+        "chrf++": 79.65720638016273,
+        "character_error_rate": 0.5021398002853067
+      },
+      "error": null,
+      "parse_time_seconds": 0.09716343879699707
+    },
+    {
+      "document_id": "invoice_024",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3925925925925926,
+        "chrf++": 86.98251009989808,
+        "character_error_rate": 0.6074074074074074
+      },
+      "error": null,
+      "parse_time_seconds": 0.08161258697509766
+    },
+    {
+      "document_id": "invoice_017",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6033333333333333,
+        "chrf++": 79.82005970460665,
+        "character_error_rate": 0.39666666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.10346794128417969
+    },
+    {
+      "document_id": "invoice_093",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5614035087719298,
+        "chrf++": 79.49627909653071,
+        "character_error_rate": 0.43859649122807015
+      },
+      "error": null,
+      "parse_time_seconds": 0.08986091613769531
+    },
+    {
+      "document_id": "invoice_067",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.61596548004315,
+        "chrf++": 79.29336944239088,
+        "character_error_rate": 0.38403451995685006
+      },
+      "error": null,
+      "parse_time_seconds": 0.09471821784973145
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6017937219730942,
+        "chrf++": 79.86791761962611,
+        "character_error_rate": 0.39820627802690584
+      },
+      "error": null,
+      "parse_time_seconds": 0.09215831756591797
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2587064676616916,
+        "chrf++": 87.25986327661023,
+        "character_error_rate": 0.7412935323383084
+      },
+      "error": null,
+      "parse_time_seconds": 0.08954572677612305
+    },
+    {
+      "document_id": "invoice_079",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5769745649263722,
+        "chrf++": 80.7673790115245,
+        "character_error_rate": 0.42302543507362783
+      },
+      "error": null,
+      "parse_time_seconds": 0.09024190902709961
+    },
+    {
+      "document_id": "invoice_076",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5630252100840336,
+        "chrf++": 79.81904787680519,
+        "character_error_rate": 0.4369747899159664
+      },
+      "error": null,
+      "parse_time_seconds": 0.09494400024414062
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2711598746081505,
+        "chrf++": 87.90710546576564,
+        "character_error_rate": 0.7288401253918495
+      },
+      "error": null,
+      "parse_time_seconds": 0.08380556106567383
+    },
+    {
+      "document_id": "invoice_071",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4690873405299313,
+        "chrf++": 86.71705068021774,
+        "character_error_rate": 0.5309126594700687
+      },
+      "error": null,
+      "parse_time_seconds": 0.08214306831359863
+    },
+    {
+      "document_id": "invoice_092",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5210325047801148,
+        "chrf++": 79.24296639077191,
+        "character_error_rate": 0.4789674952198853
+      },
+      "error": null,
+      "parse_time_seconds": 0.24437451362609863
+    },
+    {
+      "document_id": "invoice_033",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43725743855109966,
+        "chrf++": 86.54050822780796,
+        "character_error_rate": 0.5627425614489003
+      },
+      "error": null,
+      "parse_time_seconds": 0.17341256141662598
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.36190476190476195,
+        "chrf++": 87.10271866060123,
+        "character_error_rate": 0.638095238095238
+      },
+      "error": null,
+      "parse_time_seconds": 0.11819076538085938
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5224327018943171,
+        "chrf++": 79.86455981764368,
+        "character_error_rate": 0.47756729810568294
+      },
+      "error": null,
+      "parse_time_seconds": 0.08132386207580566
+    },
+    {
+      "document_id": "invoice_004",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4955185659411011,
+        "chrf++": 81.33319941607057,
+        "character_error_rate": 0.5044814340588989
+      },
+      "error": null,
+      "parse_time_seconds": 0.10532283782958984
+    },
+    {
+      "document_id": "invoice_018",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41475826972010177,
+        "chrf++": 86.6344232098823,
+        "character_error_rate": 0.5852417302798982
+      },
+      "error": null,
+      "parse_time_seconds": 0.0893697738647461
+    },
+    {
+      "document_id": "invoice_054",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5339449541284403,
+        "chrf++": 79.66446283763838,
+        "character_error_rate": 0.46605504587155966
+      },
+      "error": null,
+      "parse_time_seconds": 0.08996129035949707
+    },
+    {
+      "document_id": "invoice_063",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46218487394957986,
+        "chrf++": 80.76634651622993,
+        "character_error_rate": 0.5378151260504201
+      },
+      "error": null,
+      "parse_time_seconds": 0.09277105331420898
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6083254493850521,
+        "chrf++": 79.01796378130209,
+        "character_error_rate": 0.391674550614948
+      },
+      "error": null,
+      "parse_time_seconds": 0.09611821174621582
+    },
+    {
+      "document_id": "invoice_048",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3587994542974079,
+        "chrf++": 86.91346489576085,
+        "character_error_rate": 0.6412005457025921
+      },
+      "error": null,
+      "parse_time_seconds": 0.08928060531616211
+    },
+    {
+      "document_id": "invoice_046",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.56,
+        "chrf++": 76.28609560824414,
+        "character_error_rate": 0.44
+      },
+      "error": null,
+      "parse_time_seconds": 0.10055088996887207
+    },
+    {
+      "document_id": "invoice_006",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47807017543859653,
+        "chrf++": 86.41643309856605,
+        "character_error_rate": 0.5219298245614035
+      },
+      "error": null,
+      "parse_time_seconds": 0.0926065444946289
+    },
+    {
+      "document_id": "invoice_049",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37090909090909085,
+        "chrf++": 82.22011553688048,
+        "character_error_rate": 0.6290909090909091
+      },
+      "error": null,
+      "parse_time_seconds": 0.0825042724609375
+    },
+    {
+      "document_id": "invoice_042",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3997524752475248,
+        "chrf++": 86.79528533587887,
+        "character_error_rate": 0.6002475247524752
+      },
+      "error": null,
+      "parse_time_seconds": 0.0909879207611084
+    },
+    {
+      "document_id": "invoice_022",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.541036717062635,
+        "chrf++": 82.11827539590664,
+        "character_error_rate": 0.458963282937365
+      },
+      "error": null,
+      "parse_time_seconds": 0.08689212799072266
+    },
+    {
+      "document_id": "invoice_091",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.33101529902642557,
+        "chrf++": 86.72646676411094,
+        "character_error_rate": 0.6689847009735744
+      },
+      "error": null,
+      "parse_time_seconds": 0.07992005348205566
+    },
+    {
+      "document_id": "invoice_038",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6353646353646354,
+        "chrf++": 78.95490546729307,
+        "character_error_rate": 0.3646353646353646
+      },
+      "error": null,
+      "parse_time_seconds": 0.24374961853027344
+    },
+    {
+      "document_id": "invoice_041",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.577822990844354,
+        "chrf++": 78.60196265377807,
+        "character_error_rate": 0.422177009155646
+      },
+      "error": null,
+      "parse_time_seconds": 0.17402076721191406
+    },
+    {
+      "document_id": "invoice_029",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.591816367265469,
+        "chrf++": 78.96036319141334,
+        "character_error_rate": 0.40818363273453095
+      },
+      "error": null,
+      "parse_time_seconds": 0.11239790916442871
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49740932642487046,
+        "chrf++": 80.94029750099013,
+        "character_error_rate": 0.5025906735751295
+      },
+      "error": null,
+      "parse_time_seconds": 0.08581209182739258
+    },
+    {
+      "document_id": "invoice_069",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5491949910554561,
+        "chrf++": 77.15680410988831,
+        "character_error_rate": 0.45080500894454384
+      },
+      "error": null,
+      "parse_time_seconds": 0.10450577735900879
+    },
+    {
+      "document_id": "invoice_013",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5398230088495575,
+        "chrf++": 81.23140244108804,
+        "character_error_rate": 0.46017699115044247
+      },
+      "error": null,
+      "parse_time_seconds": 0.09439635276794434
+    },
+    {
+      "document_id": "invoice_074",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43262411347517726,
+        "chrf++": 86.52449440864042,
+        "character_error_rate": 0.5673758865248227
+      },
+      "error": null,
+      "parse_time_seconds": 0.08071351051330566
+    },
+    {
+      "document_id": "invoice_034",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5191740412979351,
+        "chrf++": 78.75979868788282,
+        "character_error_rate": 0.4808259587020649
+      },
+      "error": null,
+      "parse_time_seconds": 0.09811162948608398
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4755555555555555,
+        "chrf++": 79.75083616874153,
+        "character_error_rate": 0.5244444444444445
+      },
+      "error": null,
+      "parse_time_seconds": 0.09459280967712402
+    },
+    {
+      "document_id": "invoice_052",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5543345543345544,
+        "chrf++": 80.6621504371617,
+        "character_error_rate": 0.4456654456654457
+      },
+      "error": null,
+      "parse_time_seconds": 0.09134960174560547
+    },
+    {
+      "document_id": "invoice_047",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5593824228028503,
+        "chrf++": 79.21616825287686,
+        "character_error_rate": 0.44061757719714967
+      },
+      "error": null,
+      "parse_time_seconds": 0.09499144554138184
+    },
+    {
+      "document_id": "invoice_096",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6063492063492064,
+        "chrf++": 79.37114501977776,
+        "character_error_rate": 0.39365079365079364
+      },
+      "error": null,
+      "parse_time_seconds": 0.09816479682922363
+    },
+    {
+      "document_id": "invoice_053",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.34596577017114916,
+        "chrf++": 87.28847752023768,
+        "character_error_rate": 0.6540342298288508
+      },
+      "error": null,
+      "parse_time_seconds": 0.08582115173339844
+    },
+    {
+      "document_id": "invoice_059",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45508982035928147,
+        "chrf++": 86.63188093096517,
+        "character_error_rate": 0.5449101796407185
+      },
+      "error": null,
+      "parse_time_seconds": 0.09777140617370605
+    },
+    {
+      "document_id": "invoice_028",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5531496062992126,
+        "chrf++": 78.4728205241579,
+        "character_error_rate": 0.4468503937007874
+      },
+      "error": null,
+      "parse_time_seconds": 0.07548308372497559
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4907010014306151,
+        "chrf++": 79.74094438871171,
+        "character_error_rate": 0.5092989985693849
+      },
+      "error": null,
+      "parse_time_seconds": 0.08107924461364746
+    },
+    {
+      "document_id": "invoice_066",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40556900726392253,
+        "chrf++": 82.53427087610898,
+        "character_error_rate": 0.5944309927360775
+      },
+      "error": null,
+      "parse_time_seconds": 0.21548175811767578
+    },
+    {
+      "document_id": "invoice_068",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2664670658682635,
+        "chrf++": 88.41112766752931,
+        "character_error_rate": 0.7335329341317365
+      },
+      "error": null,
+      "parse_time_seconds": 0.19149088859558105
+    },
+    {
+      "document_id": "invoice_009",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4673097534833869,
+        "chrf++": 86.63985671705535,
+        "character_error_rate": 0.5326902465166131
+      },
+      "error": null,
+      "parse_time_seconds": 0.10830426216125488
+    },
+    {
+      "document_id": "invoice_027",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.30271084337349397,
+        "chrf++": 88.37083140823748,
+        "character_error_rate": 0.697289156626506
+      },
+      "error": null,
+      "parse_time_seconds": 0.10160064697265625
+    },
+    {
+      "document_id": "invoice_088",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.469017094017094,
+        "chrf++": 86.01901204115022,
+        "character_error_rate": 0.530982905982906
+      },
+      "error": null,
+      "parse_time_seconds": 0.10167121887207031
+    },
+    {
+      "document_id": "invoice_073",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5380374862183022,
+        "chrf++": 79.10432414088852,
+        "character_error_rate": 0.4619625137816979
+      },
+      "error": null,
+      "parse_time_seconds": 0.09785628318786621
+    },
+    {
+      "document_id": "invoice_062",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4736842105263158,
+        "chrf++": 87.20537105328509,
+        "character_error_rate": 0.5263157894736842
+      },
+      "error": null,
+      "parse_time_seconds": 0.07972288131713867
+    },
+    {
+      "document_id": "invoice_044",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5690834473324213,
+        "chrf++": 80.64821578733647,
+        "character_error_rate": 0.43091655266757867
+      },
+      "error": null,
+      "parse_time_seconds": 0.09428286552429199
+    },
+    {
+      "document_id": "invoice_089",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40882694541231124,
+        "chrf++": 83.30149169627367,
+        "character_error_rate": 0.5911730545876888
+      },
+      "error": null,
+      "parse_time_seconds": 0.08579778671264648
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5183129855715871,
+        "chrf++": 81.42076745164265,
+        "character_error_rate": 0.4816870144284129
+      },
+      "error": null,
+      "parse_time_seconds": 0.09584259986877441
+    },
+    {
+      "document_id": "invoice_043",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47044025157232705,
+        "chrf++": 81.54321442430617,
+        "character_error_rate": 0.529559748427673
+      },
+      "error": null,
+      "parse_time_seconds": 0.09342479705810547
+    },
+    {
+      "document_id": "invoice_084",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48166501486620417,
+        "chrf++": 79.94053837376165,
+        "character_error_rate": 0.5183349851337958
+      },
+      "error": null,
+      "parse_time_seconds": 0.10338521003723145
+    },
+    {
+      "document_id": "invoice_037",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5191146881287727,
+        "chrf++": 79.22002414714419,
+        "character_error_rate": 0.48088531187122735
+      },
+      "error": null,
+      "parse_time_seconds": 0.08740043640136719
+    },
+    {
+      "document_id": "invoice_012",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4793028322440087,
+        "chrf++": 86.5907983473401,
+        "character_error_rate": 0.5206971677559913
+      },
+      "error": null,
+      "parse_time_seconds": 0.0879814624786377
+    },
+    {
+      "document_id": "invoice_002",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5691657866948258,
+        "chrf++": 79.2295726576776,
+        "character_error_rate": 0.43083421330517424
+      },
+      "error": null,
+      "parse_time_seconds": 0.08681488037109375
+    },
+    {
+      "document_id": "invoice_058",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6279961649089165,
+        "chrf++": 79.90370074767674,
+        "character_error_rate": 0.3720038350910834
+      },
+      "error": null,
+      "parse_time_seconds": 0.08081960678100586
+    },
+    {
+      "document_id": "invoice_032",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5180722891566265,
+        "chrf++": 80.90151974608946,
+        "character_error_rate": 0.4819277108433735
+      },
+      "error": null,
+      "parse_time_seconds": 0.21538257598876953
+    },
+    {
+      "document_id": "invoice_016",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5831111111111111,
+        "chrf++": 78.62254880937327,
+        "character_error_rate": 0.41688888888888886
+      },
+      "error": null,
+      "parse_time_seconds": 0.18560075759887695
+    },
+    {
+      "document_id": "invoice_077",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3125,
+        "chrf++": 87.81091439748148,
+        "character_error_rate": 0.6875
+      },
+      "error": null,
+      "parse_time_seconds": 0.11600375175476074
+    },
+    {
+      "document_id": "invoice_082",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5892070484581498,
+        "chrf++": 80.10609055455681,
+        "character_error_rate": 0.4107929515418502
+      },
+      "error": null,
+      "parse_time_seconds": 0.09996390342712402
+    },
+    {
+      "document_id": "invoice_026",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5157894736842106,
+        "chrf++": 81.08911850151685,
+        "character_error_rate": 0.4842105263157895
+      },
+      "error": null,
+      "parse_time_seconds": 0.10226082801818848
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4547486033519553,
+        "chrf++": 86.21655672652552,
+        "character_error_rate": 0.5452513966480447
+      },
+      "error": null,
+      "parse_time_seconds": 0.09377622604370117
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5343980343980343,
+        "chrf++": 80.72178890437176,
+        "character_error_rate": 0.4656019656019656
+      },
+      "error": null,
+      "parse_time_seconds": 0.08537006378173828
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.42025862068965514,
+        "chrf++": 86.6409048542291,
+        "character_error_rate": 0.5797413793103449
+      },
+      "error": null,
+      "parse_time_seconds": 0.10009956359863281
+    },
+    {
+      "document_id": "invoice_098",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5611156685808039,
+        "chrf++": 77.86732481486813,
+        "character_error_rate": 0.4388843314191961
+      },
+      "error": null,
+      "parse_time_seconds": 0.0947268009185791
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5318918918918919,
+        "chrf++": 79.31883757317469,
+        "character_error_rate": 0.4681081081081081
+      },
+      "error": null,
+      "parse_time_seconds": 0.08927416801452637
+    },
+    {
+      "document_id": "invoice_023",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.51994301994302,
+        "chrf++": 79.80845844545578,
+        "character_error_rate": 0.48005698005698005
+      },
+      "error": null,
+      "parse_time_seconds": 0.09505820274353027
+    },
+    {
+      "document_id": "invoice_021",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3959007551240561,
+        "chrf++": 86.52684085537176,
+        "character_error_rate": 0.6040992448759439
+      },
+      "error": null,
+      "parse_time_seconds": 0.09111785888671875
+    },
+    {
+      "document_id": "invoice_094",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3962025316455696,
+        "chrf++": 87.62978463528637,
+        "character_error_rate": 0.6037974683544304
+      },
+      "error": null,
+      "parse_time_seconds": 0.09051108360290527
+    },
+    {
+      "document_id": "invoice_007",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5904920767306088,
+        "chrf++": 79.64506362523812,
+        "character_error_rate": 0.40950792326939117
+      },
+      "error": null,
+      "parse_time_seconds": 0.0909721851348877
+    },
+    {
+      "document_id": "invoice_008",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.512,
+        "chrf++": 81.03712436108886,
+        "character_error_rate": 0.488
+      },
+      "error": null,
+      "parse_time_seconds": 0.08769702911376953
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.353887399463807,
+        "chrf++": 87.09842942456764,
+        "character_error_rate": 0.646112600536193
+      },
+      "error": null,
+      "parse_time_seconds": 0.07721853256225586
+    },
+    {
+      "document_id": "invoice_014",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5294117647058824,
+        "chrf++": 79.93148277346125,
+        "character_error_rate": 0.47058823529411764
+      },
+      "error": null,
+      "parse_time_seconds": 0.21705317497253418
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5960975609756097,
+        "chrf++": 79.59639730499686,
+        "character_error_rate": 0.40390243902439027
+      },
+      "error": null,
+      "parse_time_seconds": 0.18738508224487305
+    },
+    {
+      "document_id": "invoice_039",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.23089171974522293,
+        "chrf++": 87.78855093609721,
+        "character_error_rate": 0.7691082802547771
+      },
+      "error": null,
+      "parse_time_seconds": 0.10834002494812012
+    },
+    {
+      "document_id": "invoice_056",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.36159600997506236,
+        "chrf++": 87.96728149132143,
+        "character_error_rate": 0.6384039900249376
+      },
+      "error": null,
+      "parse_time_seconds": 0.08563661575317383
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9673527324343506,
+        "chrf++": 94.41463426138661,
+        "character_error_rate": 0.03281027104136947
+      },
+      "error": null,
+      "parse_time_seconds": 0.1098175048828125
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595015576323987,
+        "chrf++": 93.39629210934514,
+        "character_error_rate": 0.040498442367601244
+      },
+      "error": null,
+      "parse_time_seconds": 0.09692740440368652
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5952677459526774,
+        "chrf++": 88.63510482733933,
+        "character_error_rate": 0.40473225404732255
+      },
+      "error": null,
+      "parse_time_seconds": 0.08495378494262695
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.965925925925926,
+        "chrf++": 94.66446168948124,
+        "character_error_rate": 0.03426443202979516
+      },
+      "error": null,
+      "parse_time_seconds": 0.09533095359802246
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9615592853275582,
+        "chrf++": 93.68362834777301,
+        "character_error_rate": 0.03862894450489663
+      },
+      "error": null,
+      "parse_time_seconds": 0.0956110954284668
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625059326056004,
+        "chrf++": 94.07342654752058,
+        "character_error_rate": 0.03778096604495457
+      },
+      "error": null,
+      "parse_time_seconds": 0.09367012977600098
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.962208225268618,
+        "chrf++": 93.95887538568121,
+        "character_error_rate": 0.03817365269461078
+      },
+      "error": null,
+      "parse_time_seconds": 0.0908360481262207
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6978319783197833,
+        "chrf++": 88.03627936267249,
+        "character_error_rate": 0.3021680216802168
+      },
+      "error": null,
+      "parse_time_seconds": 0.09622025489807129
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9629302736098853,
+        "chrf++": 93.28047033474681,
+        "character_error_rate": 0.037069726390114736
+      },
+      "error": null,
+      "parse_time_seconds": 0.07886600494384766
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9637436762225969,
+        "chrf++": 93.77185730889481,
+        "character_error_rate": 0.03658017864738409
+      },
+      "error": null,
+      "parse_time_seconds": 0.09203124046325684
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9643835616438357,
+        "chrf++": 93.92555965120954,
+        "character_error_rate": 0.035948842032492226
+      },
+      "error": null,
+      "parse_time_seconds": 0.08437371253967285
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.616,
+        "chrf++": 90.389246175089,
+        "character_error_rate": 0.384
+      },
+      "error": null,
+      "parse_time_seconds": 0.07533836364746094
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9664683612763656,
+        "chrf++": 93.97047581036183,
+        "character_error_rate": 0.03358613217768147
+      },
+      "error": null,
+      "parse_time_seconds": 0.2471024990081787
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6525134211810639,
+        "chrf++": 92.97365412434938,
+        "character_error_rate": 0.3474865788189361
+      },
+      "error": null,
+      "parse_time_seconds": 0.16875457763671875
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7793952967525196,
+        "chrf++": 92.2935579408582,
+        "character_error_rate": 0.2206047032474804
+      },
+      "error": null,
+      "parse_time_seconds": 0.14360451698303223
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9660697455230914,
+        "chrf++": 94.13889625383679,
+        "character_error_rate": 0.03425309229305423
+      },
+      "error": null,
+      "parse_time_seconds": 0.10253071784973145
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6543602800763845,
+        "chrf++": 91.83143697356032,
+        "character_error_rate": 0.34563971992361553
+      },
+      "error": null,
+      "parse_time_seconds": 0.10142707824707031
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591836734693877,
+        "chrf++": 92.6032933553583,
+        "character_error_rate": 0.04081632653061224
+      },
+      "error": null,
+      "parse_time_seconds": 0.08822941780090332
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6450577663671373,
+        "chrf++": 91.46889676857934,
+        "character_error_rate": 0.35494223363286265
+      },
+      "error": null,
+      "parse_time_seconds": 0.08939051628112793
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9568261376896149,
+        "chrf++": 92.61538133902918,
+        "character_error_rate": 0.043173862310385065
+      },
+      "error": null,
+      "parse_time_seconds": 0.0961921215057373
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6595394736842105,
+        "chrf++": 91.71737772138118,
+        "character_error_rate": 0.3404605263157895
+      },
+      "error": null,
+      "parse_time_seconds": 0.09315109252929688
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624759461193072,
+        "chrf++": 93.44887969198828,
+        "character_error_rate": 0.03795004865390853
+      },
+      "error": null,
+      "parse_time_seconds": 0.08897042274475098
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6495867768595041,
+        "chrf++": 89.05909942492687,
+        "character_error_rate": 0.3504132231404959
+      },
+      "error": null,
+      "parse_time_seconds": 0.08434724807739258
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9601965601965602,
+        "chrf++": 93.42825627440206,
+        "character_error_rate": 0.04015865146256817
+      },
+      "error": null,
+      "parse_time_seconds": 0.08457040786743164
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9611586570111916,
+        "chrf++": 93.265143704101,
+        "character_error_rate": 0.038841342988808425
+      },
+      "error": null,
+      "parse_time_seconds": 0.08974981307983398
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9636062861869313,
+        "chrf++": 93.22804896136324,
+        "character_error_rate": 0.036393713813068655
+      },
+      "error": null,
+      "parse_time_seconds": 0.07872796058654785
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9586776859504132,
+        "chrf++": 93.1444999541917,
+        "character_error_rate": 0.04132231404958678
+      },
+      "error": null,
+      "parse_time_seconds": 0.08356952667236328
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648466716529543,
+        "chrf++": 93.86805213121913,
+        "character_error_rate": 0.035606060606060606
+      },
+      "error": null,
+      "parse_time_seconds": 0.07237815856933594
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9644202595228129,
+        "chrf++": 93.96692079709985,
+        "character_error_rate": 0.035789473684210524
+      },
+      "error": null,
+      "parse_time_seconds": 0.08901119232177734
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9625176803394625,
+        "chrf++": 94.04968367216327,
+        "character_error_rate": 0.03785714285714286
+      },
+      "error": null,
+      "parse_time_seconds": 0.08485984802246094
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9632000000000001,
+        "chrf++": 93.52363709219381,
+        "character_error_rate": 0.03701716738197425
+      },
+      "error": null,
+      "parse_time_seconds": 0.08599519729614258
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9648991784914115,
+        "chrf++": 94.21750038454539,
+        "character_error_rate": 0.0351008215085885
+      },
+      "error": null,
+      "parse_time_seconds": 0.0815591812133789
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9599578503688093,
+        "chrf++": 92.77038319630641,
+        "character_error_rate": 0.040042149631190724
+      },
+      "error": null,
+      "parse_time_seconds": 0.0791482925415039
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7561881188118812,
+        "chrf++": 90.59609415685505,
+        "character_error_rate": 0.2438118811881188
+      },
+      "error": null,
+      "parse_time_seconds": 0.07774233818054199
+    },
+    {
+      "document_id": "legal_emp_033",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9857738533235222,
+        "chrf++": 99.92096764670659,
+        "character_error_rate": 0.014313919052319843
+      },
+      "error": null,
+      "parse_time_seconds": 0.0748453140258789
+    },
+    {
+      "document_id": "legal_saas_005",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984083982390789,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01602454824411865
+      },
+      "error": null,
+      "parse_time_seconds": 0.09175896644592285
+    },
+    {
+      "document_id": "legal_svc_100",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853672004417449,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014726312864684635
+      },
+      "error": null,
+      "parse_time_seconds": 0.08866262435913086
+    },
+    {
+      "document_id": "legal_nda_066",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861761426978818,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013898229096615108
+      },
+      "error": null,
+      "parse_time_seconds": 0.08656072616577148
+    },
+    {
+      "document_id": "legal_nda_078",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862252832703844,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013848559303104758
+      },
+      "error": null,
+      "parse_time_seconds": 0.10236716270446777
+    },
+    {
+      "document_id": "legal_emp_052",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852709100473435,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014822657490735839
+      },
+      "error": null,
+      "parse_time_seconds": 0.1086878776550293
+    },
+    {
+      "document_id": "legal_cons_086",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985520784680056,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01456082667919211
+      },
+      "error": null,
+      "parse_time_seconds": 0.07904720306396484
+    },
+    {
+      "document_id": "legal_saas_024",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841714756801319,
+        "chrf++": 99.93418817230418,
+        "character_error_rate": 0.01593625498007968
+      },
+      "error": null,
+      "parse_time_seconds": 0.09445571899414062
+    },
+    {
+      "document_id": "legal_nda_065",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860171402796571,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014058956916099773
+      },
+      "error": null,
+      "parse_time_seconds": 0.08988165855407715
+    },
+    {
+      "document_id": "legal_svc_093",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852161785216178,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014883459702330806
+      },
+      "error": null,
+      "parse_time_seconds": 0.0817403793334961
+    },
+    {
+      "document_id": "legal_emp_044",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855892949047864,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014500258933195235
+      },
+      "error": null,
+      "parse_time_seconds": 0.0837256908416748
+    },
+    {
+      "document_id": "legal_nda_071",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861884606816663,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013885778275475923
+      },
+      "error": null,
+      "parse_time_seconds": 0.08640718460083008
+    },
+    {
+      "document_id": "legal_saas_019",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984092792046396,
+        "chrf++": 100.0,
+        "character_error_rate": 0.016010673782521682
+      },
+      "error": null,
+      "parse_time_seconds": 0.08781814575195312
+    },
+    {
+      "document_id": "legal_nda_075",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862068965517241,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013867143815701186
+      },
+      "error": null,
+      "parse_time_seconds": 0.07972335815429688
+    },
+    {
+      "document_id": "legal_emp_059",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985874330248417,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014208721215090642
+      },
+      "error": null,
+      "parse_time_seconds": 0.07654953002929688
+    },
+    {
+      "document_id": "legal_nda_061",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.986220917099616,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01385419032477856
+      },
+      "error": null,
+      "parse_time_seconds": 0.07685160636901855
+    },
+    {
+      "document_id": "legal_cons_083",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862085652068715,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013868613138686132
+      },
+      "error": null,
+      "parse_time_seconds": 0.0908961296081543
+    },
+    {
+      "document_id": "legal_emp_041",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855421686746988,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014541929229277752
+      },
+      "error": null,
+      "parse_time_seconds": 0.08770012855529785
+    },
+    {
+      "document_id": "legal_emp_031",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855558421459891,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014534129249935116
+      },
+      "error": null,
+      "parse_time_seconds": 0.10118818283081055
+    },
+    {
+      "document_id": "legal_emp_036",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9851586489252815,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014933058702368692
+      },
+      "error": null,
+      "parse_time_seconds": 0.10379695892333984
+    },
+    {
+      "document_id": "legal_cons_089",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861442904921166,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013932260389142446
+      },
+      "error": null,
+      "parse_time_seconds": 0.10973620414733887
+    },
+    {
+      "document_id": "legal_svc_091",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853685987619584,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014730878186968839
+      },
+      "error": null,
+      "parse_time_seconds": 0.08134293556213379
+    },
+    {
+      "document_id": "legal_emp_035",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852679705359411,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014822386915410171
+      },
+      "error": null,
+      "parse_time_seconds": 0.08481526374816895
+    },
+    {
+      "document_id": "legal_saas_016",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841455273698264,
+        "chrf++": 99.93405958977397,
+        "character_error_rate": 0.01596370357923038
+      },
+      "error": null,
+      "parse_time_seconds": 0.0908970832824707
+    },
+    {
+      "document_id": "legal_cons_082",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861246348588121,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013953488372093023
+      },
+      "error": null,
+      "parse_time_seconds": 0.08939242362976074
+    },
+    {
+      "document_id": "legal_saas_027",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984468532599903,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015630087919244546
+      },
+      "error": null,
+      "parse_time_seconds": 0.08598470687866211
+    },
+    {
+      "document_id": "legal_emp_047",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853056940435582,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014787430683918669
+      },
+      "error": null,
+      "parse_time_seconds": 0.08302187919616699
+    },
+    {
+      "document_id": "legal_nda_006",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860830527497194,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01399232678853532
+      },
+      "error": null,
+      "parse_time_seconds": 0.09208178520202637
+    },
+    {
+      "document_id": "legal_cons_007",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861794331225111,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013895430993876589
+      },
+      "error": null,
+      "parse_time_seconds": 0.08942580223083496
+    },
+    {
+      "document_id": "legal_nda_068",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862333559016023,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013841615611527115
+      },
+      "error": null,
+      "parse_time_seconds": 0.09020090103149414
+    },
+    {
+      "document_id": "legal_nda_076",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860548807917229,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014020805065581185
+      },
+      "error": null,
+      "parse_time_seconds": 0.0871889591217041
+    },
+    {
+      "document_id": "legal_cons_087",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9863267670915411,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01374650512581547
+      },
+      "error": null,
+      "parse_time_seconds": 0.08007502555847168
+    },
+    {
+      "document_id": "legal_saas_007",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9838517763046065,
+        "chrf++": 99.95113270311514,
+        "character_error_rate": 0.01626155426223896
+      },
+      "error": null,
+      "parse_time_seconds": 0.0939950942993164
+    },
+    {
+      "document_id": "legal_emp_049",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854088050314466,
+        "chrf++": 99.91935752990814,
+        "character_error_rate": 0.014683544303797468
+      },
+      "error": null,
+      "parse_time_seconds": 0.08103609085083008
+    },
+    {
+      "document_id": "legal_nda_067",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861328561842988,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013941983359568248
+      },
+      "error": null,
+      "parse_time_seconds": 0.08657503128051758
+    },
+    {
+      "document_id": "legal_cons_084",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860308285163777,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014046984742068298
+      },
+      "error": null,
+      "parse_time_seconds": 0.09784340858459473
+    },
+    {
+      "document_id": "legal_emp_046",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856115107913669,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014477766287487074
+      },
+      "error": null,
+      "parse_time_seconds": 0.1102747917175293
+    },
+    {
+      "document_id": "legal_svc_092",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854423292273237,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014656144306651634
+      },
+      "error": null,
+      "parse_time_seconds": 0.08643627166748047
+    },
+    {
+      "document_id": "legal_saas_008",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9843909060061079,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015715749914588316
+      },
+      "error": null,
+      "parse_time_seconds": 0.08448481559753418
+    },
+    {
+      "document_id": "legal_nda_063",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860108303249098,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014065335753176044
+      },
+      "error": null,
+      "parse_time_seconds": 0.08134746551513672
+    },
+    {
+      "document_id": "legal_saas_022",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9842642227217707,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01584537698067212
+      },
+      "error": null,
+      "parse_time_seconds": 0.08870339393615723
+    },
+    {
+      "document_id": "legal_saas_021",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9845510138397168,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015546558704453442
+      },
+      "error": null,
+      "parse_time_seconds": 0.09171819686889648
+    },
+    {
+      "document_id": "legal_svc_095",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853833425261996,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014714047751249307
+      },
+      "error": null,
+      "parse_time_seconds": 0.0864570140838623
+    },
+    {
+      "document_id": "legal_emp_003",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853244078269825,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014766839378238342
+      },
+      "error": null,
+      "parse_time_seconds": 0.09521245956420898
+    },
+    {
+      "document_id": "legal_svc_097",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853954257371177,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014701803051317614
+      },
+      "error": null,
+      "parse_time_seconds": 0.09775090217590332
+    },
+    {
+      "document_id": "legal_svc_098",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985244040862656,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014857142857142857
+      },
+      "error": null,
+      "parse_time_seconds": 0.0944674015045166
+    },
+    {
+      "document_id": "legal_saas_018",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9839672522599352,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01614288167611197
+      },
+      "error": null,
+      "parse_time_seconds": 0.08666181564331055
+    },
+    {
+      "document_id": "legal_svc_094",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854586129753915,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01463963963963964
+      },
+      "error": null,
+      "parse_time_seconds": 0.08497977256774902
+    },
+    {
+      "document_id": "legal_saas_012",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841986455981941,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01591187270501836
+      },
+      "error": null,
+      "parse_time_seconds": 0.08964157104492188
+    },
+    {
+      "document_id": "legal_saas_003",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841537424140256,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015953835709436523
+      },
+      "error": null,
+      "parse_time_seconds": 0.091522216796875
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9842202450898103,
+        "chrf++": 99.93360556690556,
+        "character_error_rate": 0.015889114266396213
+      },
+      "error": null,
+      "parse_time_seconds": 0.09704279899597168
+    },
+    {
+      "document_id": "legal_emp_056",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856482607638044,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014436016638120872
+      },
+      "error": null,
+      "parse_time_seconds": 0.11890673637390137
+    },
+    {
+      "document_id": "legal_emp_045",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855613642021409,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01452541948409717
+      },
+      "error": null,
+      "parse_time_seconds": 0.09694814682006836
+    },
+    {
+      "document_id": "legal_emp_048",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9858445297504799,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014237451737451737
+      },
+      "error": null,
+      "parse_time_seconds": 0.08973002433776855
+    },
+    {
+      "document_id": "legal_emp_040",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9858983710187211,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014184397163120567
+      },
+      "error": null,
+      "parse_time_seconds": 0.09433388710021973
+    },
+    {
+      "document_id": "legal_nda_080",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861048857014791,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013970256872465074
+      },
+      "error": null,
+      "parse_time_seconds": 0.09108519554138184
+    },
+    {
+      "document_id": "legal_svc_009",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854219231847491,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01467682754727632
+      },
+      "error": null,
+      "parse_time_seconds": 0.08662128448486328
+    },
+    {
+      "document_id": "legal_emp_050",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9851832596828698,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014909756735547999
+      },
+      "error": null,
+      "parse_time_seconds": 0.0827171802520752
+    },
+    {
+      "document_id": "legal_emp_060",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9851458885941644,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014953271028037384
+      },
+      "error": null,
+      "parse_time_seconds": 0.09849166870117188
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9843588862151942,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015749394254067153
+      },
+      "error": null,
+      "parse_time_seconds": 0.09892129898071289
+    },
+    {
+      "document_id": "legal_emp_042",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855217174238642,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014565544952285283
+      },
+      "error": null,
+      "parse_time_seconds": 0.08069896697998047
+    },
+    {
+      "document_id": "legal_nda_077",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861730597680642,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01390134529147982
+      },
+      "error": null,
+      "parse_time_seconds": 0.08447384834289551
+    },
+    {
+      "document_id": "legal_nda_072",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861678004535147,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013907888736890105
+      },
+      "error": null,
+      "parse_time_seconds": 0.07920408248901367
+    },
+    {
+      "document_id": "legal_emp_032",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853508095605242,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01474010861132661
+      },
+      "error": null,
+      "parse_time_seconds": 0.07781624794006348
+    },
+    {
+      "document_id": "legal_saas_030",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844458846403111,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01565302462090331
+      },
+      "error": null,
+      "parse_time_seconds": 0.08832216262817383
+    },
+    {
+      "document_id": "legal_emp_038",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.985423473234481,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014664981036662453
+      },
+      "error": null,
+      "parse_time_seconds": 0.09093070030212402
+    },
+    {
+      "document_id": "legal_cons_008",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854014598540146,
+        "chrf++": 99.86926670850741,
+        "character_error_rate": 0.01468298109010011
+      },
+      "error": null,
+      "parse_time_seconds": 0.09635281562805176
+    },
+    {
+      "document_id": "legal_emp_039",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854090672225118,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014682747771368642
+      },
+      "error": null,
+      "parse_time_seconds": 0.1076822280883789
+    },
+    {
+      "document_id": "legal_emp_053",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855072463768116,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014580191050779286
+      },
+      "error": null,
+      "parse_time_seconds": 0.09568190574645996
+    },
+    {
+      "document_id": "legal_saas_013",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9842233009708737,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015886871508379887
+      },
+      "error": null,
+      "parse_time_seconds": 0.09118413925170898
+    },
+    {
+      "document_id": "legal_saas_023",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841269841269842,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015984542420516425
+      },
+      "error": null,
+      "parse_time_seconds": 0.0911715030670166
+    },
+    {
+      "document_id": "legal_nda_074",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861959719393528,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013879408418657566
+      },
+      "error": null,
+      "parse_time_seconds": 0.0934298038482666
+    },
+    {
+      "document_id": "legal_cons_081",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9857831325301205,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014296098861158226
+      },
+      "error": null,
+      "parse_time_seconds": 0.0871274471282959
+    },
+    {
+      "document_id": "legal_emp_043",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9857397504456328,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014347937483986677
+      },
+      "error": null,
+      "parse_time_seconds": 0.08399438858032227
+    },
+    {
+      "document_id": "legal_emp_037",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852229299363058,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014867982568572162
+      },
+      "error": null,
+      "parse_time_seconds": 0.07928156852722168
+    },
+    {
+      "document_id": "legal_svc_010",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856353591160221,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014460511679644048
+      },
+      "error": null,
+      "parse_time_seconds": 0.09082412719726562
+    },
+    {
+      "document_id": "legal_emp_054",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9854959854959855,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014594735470419598
+      },
+      "error": null,
+      "parse_time_seconds": 0.08863019943237305
+    },
+    {
+      "document_id": "legal_svc_096",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855233853006682,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014573991031390135
+      },
+      "error": null,
+      "parse_time_seconds": 0.09044384956359863
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984334653124462,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01577396429190501
+      },
+      "error": null,
+      "parse_time_seconds": 0.08872032165527344
+    },
+    {
+      "document_id": "legal_saas_025",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9842205652852436,
+        "chrf++": 99.95148210486352,
+        "character_error_rate": 0.01589242053789731
+      },
+      "error": null,
+      "parse_time_seconds": 0.08317065238952637
+    },
+    {
+      "document_id": "legal_saas_011",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841001353179973,
+        "chrf++": 99.95202118203358,
+        "character_error_rate": 0.01601090103900528
+      },
+      "error": null,
+      "parse_time_seconds": 0.0844266414642334
+    },
+    {
+      "document_id": "legal_emp_051",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856754754260311,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014409937888198757
+      },
+      "error": null,
+      "parse_time_seconds": 0.09184432029724121
+    },
+    {
+      "document_id": "legal_cons_085",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861294583883752,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013944223107569721
+      },
+      "error": null,
+      "parse_time_seconds": 0.10546064376831055
+    },
+    {
+      "document_id": "legal_saas_029",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9843184559710495,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015790386951240673
+      },
+      "error": null,
+      "parse_time_seconds": 0.12747764587402344
+    },
+    {
+      "document_id": "legal_saas_004",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9839786381842457,
+        "chrf++": 100.0,
+        "character_error_rate": 0.016129032258064516
+      },
+      "error": null,
+      "parse_time_seconds": 0.09558558464050293
+    },
+    {
+      "document_id": "legal_svc_099",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9855860756051129,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014508623049548317
+      },
+      "error": null,
+      "parse_time_seconds": 0.07418155670166016
+    },
+    {
+      "document_id": "legal_saas_009",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984335092797548,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01577232984741985
+      },
+      "error": null,
+      "parse_time_seconds": 0.09695124626159668
+    },
+    {
+      "document_id": "legal_saas_028",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841573816155988,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015953716690042075
+      },
+      "error": null,
+      "parse_time_seconds": 0.09535455703735352
+    },
+    {
+      "document_id": "legal_nda_069",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861646631889317,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013911060433295324
+      },
+      "error": null,
+      "parse_time_seconds": 0.08004522323608398
+    },
+    {
+      "document_id": "legal_emp_055",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9852747830660005,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014818735115109817
+      },
+      "error": null,
+      "parse_time_seconds": 0.07424640655517578
+    },
+    {
+      "document_id": "legal_emp_057",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9858225372769494,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014261126137201869
+      },
+      "error": null,
+      "parse_time_seconds": 0.07886981964111328
+    },
+    {
+      "document_id": "legal_nda_005",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861834654586636,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013892051924390799
+      },
+      "error": null,
+      "parse_time_seconds": 0.08633971214294434
+    },
+    {
+      "document_id": "legal_nda_070",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862466725820763,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013826940231935772
+      },
+      "error": null,
+      "parse_time_seconds": 0.09203529357910156
+    },
+    {
+      "document_id": "legal_saas_017",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841135710664188,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015994555045091032
+      },
+      "error": null,
+      "parse_time_seconds": 0.09408426284790039
+    },
+    {
+      "document_id": "legal_saas_006",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9840743198407432,
+        "chrf++": 99.93412394378363,
+        "character_error_rate": 0.01603206412825651
+      },
+      "error": null,
+      "parse_time_seconds": 0.08814048767089844
+    },
+    {
+      "document_id": "legal_saas_026",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844338008894971,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015673441267654152
+      },
+      "error": null,
+      "parse_time_seconds": 0.07761240005493164
+    },
+    {
+      "document_id": "legal_cons_088",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860517435320585,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014023976475910428
+      },
+      "error": null,
+      "parse_time_seconds": 0.09492349624633789
+    },
+    {
+      "document_id": "legal_emp_004",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9853683148335015,
+        "chrf++": 99.83861912470954,
+        "character_error_rate": 0.014728288471305232
+      },
+      "error": null,
+      "parse_time_seconds": 0.07810020446777344
+    },
+    {
+      "document_id": "legal_saas_002",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9841836734693877,
+        "chrf++": 100.0,
+        "character_error_rate": 0.015924657534246576
+      },
+      "error": null,
+      "parse_time_seconds": 0.1103522777557373
+    },
+    {
+      "document_id": "legal_nda_064",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9860892977339017,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013986013986013986
+      },
+      "error": null,
+      "parse_time_seconds": 0.1011662483215332
+    },
+    {
+      "document_id": "legal_nda_079",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9859728506787331,
+        "chrf++": 100.0,
+        "character_error_rate": 0.014103730664240218
+      },
+      "error": null,
+      "parse_time_seconds": 0.09522271156311035
+    },
+    {
+      "document_id": "legal_emp_058",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9851586489252815,
+        "chrf++": 99.92003631769933,
+        "character_error_rate": 0.014936904455318053
+      },
+      "error": null,
+      "parse_time_seconds": 0.08636665344238281
+    },
+    {
+      "document_id": "legal_cons_090",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9862511457378552,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013821700069108501
+      },
+      "error": null,
+      "parse_time_seconds": 0.0845022201538086
+    },
+    {
+      "document_id": "legal_saas_015",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.984375,
+        "chrf++": 99.95401832663879,
+        "character_error_rate": 0.01573456473405165
+      },
+      "error": null,
+      "parse_time_seconds": 0.09939765930175781
+    },
+    {
+      "document_id": "legal_nda_073",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9861297539149888,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013945119208277103
+      },
+      "error": null,
+      "parse_time_seconds": 0.0938730239868164
+    },
+    {
+      "document_id": "legal_nda_062",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9863375936535919,
+        "chrf++": 100.0,
+        "character_error_rate": 0.013735046521931768
+      },
+      "error": null,
+      "parse_time_seconds": 0.08469295501708984
+    },
+    {
+      "document_id": "legal_saas_014",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844331641285956,
+        "chrf++": 99.95383958687619,
+        "character_error_rate": 0.015675583574714602
+      },
+      "error": null,
+      "parse_time_seconds": 0.08550286293029785
+    },
+    {
+      "document_id": "legal_emp_034",
+      "parser_name": "extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856719367588933,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01441351888667992
+      },
+      "error": null,
+      "parse_time_seconds": 0.08232498168945312
+    },
+    {
+      "document_id": "invoice_064",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5639810426540284,
+        "chrf++": 76.91178115997018,
+        "character_error_rate": 0.43601895734597157
+      },
+      "error": null,
+      "parse_time_seconds": 0.007625579833984375
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.605524861878453,
+        "chrf++": 78.58807279857498,
+        "character_error_rate": 0.39447513812154694
+      },
+      "error": null,
+      "parse_time_seconds": 0.0049016475677490234
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5114656031904288,
+        "chrf++": 74.71071503062483,
+        "character_error_rate": 0.4885343968095713
+      },
+      "error": null,
+      "parse_time_seconds": 0.005684852600097656
+    },
+    {
+      "document_id": "invoice_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6271324126726239,
+        "chrf++": 75.7358888309059,
+        "character_error_rate": 0.3728675873273761
+      },
+      "error": null,
+      "parse_time_seconds": 0.006074666976928711
+    },
+    {
+      "document_id": "invoice_051",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46262188515709646,
+        "chrf++": 79.83993461323449,
+        "character_error_rate": 0.5373781148429035
+      },
+      "error": null,
+      "parse_time_seconds": 0.005375862121582031
+    },
+    {
+      "document_id": "invoice_036",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4519450800915332,
+        "chrf++": 84.24343615855668,
+        "character_error_rate": 0.5480549199084668
+      },
+      "error": null,
+      "parse_time_seconds": 0.004103422164916992
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.624902114330462,
+        "chrf++": 75.77324190287692,
+        "character_error_rate": 0.375097885669538
+      },
+      "error": null,
+      "parse_time_seconds": 0.008527994155883789
+    },
+    {
+      "document_id": "invoice_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49413020277481323,
+        "chrf++": 75.65697208625366,
+        "character_error_rate": 0.5058697972251868
+      },
+      "error": null,
+      "parse_time_seconds": 0.0055599212646484375
+    },
+    {
+      "document_id": "invoice_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5833333333333333,
+        "chrf++": 77.76252598217425,
+        "character_error_rate": 0.4166666666666667
+      },
+      "error": null,
+      "parse_time_seconds": 0.0051953792572021484
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5252960172228203,
+        "chrf++": 77.90877709851829,
+        "character_error_rate": 0.4747039827771798
+      },
+      "error": null,
+      "parse_time_seconds": 0.00528264045715332
+    },
+    {
+      "document_id": "invoice_086",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5421577515865821,
+        "chrf++": 76.42798767147421,
+        "character_error_rate": 0.457842248413418
+      },
+      "error": null,
+      "parse_time_seconds": 0.00644993782043457
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5613608748481167,
+        "chrf++": 77.52382882098152,
+        "character_error_rate": 0.43863912515188336
+      },
+      "error": null,
+      "parse_time_seconds": 0.0048944950103759766
+    },
+    {
+      "document_id": "invoice_061",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5944055944055944,
+        "chrf++": 77.56652892974888,
+        "character_error_rate": 0.40559440559440557
+      },
+      "error": null,
+      "parse_time_seconds": 0.005293607711791992
+    },
+    {
+      "document_id": "invoice_087",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6056872037914691,
+        "chrf++": 76.35034761420503,
+        "character_error_rate": 0.3943127962085308
+      },
+      "error": null,
+      "parse_time_seconds": 0.0055294036865234375
+    },
+    {
+      "document_id": "invoice_081",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4793213149522799,
+        "chrf++": 79.2242518177373,
+        "character_error_rate": 0.5206786850477201
+      },
+      "error": null,
+      "parse_time_seconds": 0.0060155391693115234
+    },
+    {
+      "document_id": "invoice_057",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4796978281397545,
+        "chrf++": 76.7774306323547,
+        "character_error_rate": 0.5203021718602455
+      },
+      "error": null,
+      "parse_time_seconds": 0.005718231201171875
+    },
+    {
+      "document_id": "invoice_078",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4608879492600423,
+        "chrf++": 77.25641507604095,
+        "character_error_rate": 0.5391120507399577
+      },
+      "error": null,
+      "parse_time_seconds": 0.005381107330322266
+    },
+    {
+      "document_id": "invoice_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.42755344418052255,
+        "chrf++": 85.71814986573727,
+        "character_error_rate": 0.5724465558194775
+      },
+      "error": null,
+      "parse_time_seconds": 0.0032300949096679688
+    },
+    {
+      "document_id": "invoice_097",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4482758620689655,
+        "chrf++": 84.98981868775996,
+        "character_error_rate": 0.5517241379310345
+      },
+      "error": null,
+      "parse_time_seconds": 0.0041046142578125
+    },
+    {
+      "document_id": "invoice_072",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5,
+        "chrf++": 76.68377157916301,
+        "character_error_rate": 0.5
+      },
+      "error": null,
+      "parse_time_seconds": 0.00590825080871582
+    },
+    {
+      "document_id": "invoice_083",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4551282051282052,
+        "chrf++": 83.7254704114687,
+        "character_error_rate": 0.5448717948717948
+      },
+      "error": null,
+      "parse_time_seconds": 0.004753828048706055
+    },
+    {
+      "document_id": "invoice_099",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5092724679029957,
+        "chrf++": 78.11724180782464,
+        "character_error_rate": 0.49072753209700426
+      },
+      "error": null,
+      "parse_time_seconds": 0.003955841064453125
+    },
+    {
+      "document_id": "invoice_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4037037037037037,
+        "chrf++": 85.04801843665992,
+        "character_error_rate": 0.5962962962962963
+      },
+      "error": null,
+      "parse_time_seconds": 0.0032477378845214844
+    },
+    {
+      "document_id": "invoice_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6077777777777778,
+        "chrf++": 77.71267205783617,
+        "character_error_rate": 0.39222222222222225
+      },
+      "error": null,
+      "parse_time_seconds": 0.004483222961425781
+    },
+    {
+      "document_id": "invoice_093",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5742690058479532,
+        "chrf++": 78.56209771939258,
+        "character_error_rate": 0.4257309941520468
+      },
+      "error": null,
+      "parse_time_seconds": 0.005346536636352539
+    },
+    {
+      "document_id": "invoice_067",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6245954692556634,
+        "chrf++": 77.35525589520921,
+        "character_error_rate": 0.37540453074433655
+      },
+      "error": null,
+      "parse_time_seconds": 0.0049321651458740234
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6071748878923766,
+        "chrf++": 77.16887677016308,
+        "character_error_rate": 0.39282511210762333
+      },
+      "error": null,
+      "parse_time_seconds": 0.0057528018951416016
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2669983416252073,
+        "chrf++": 85.58179439556581,
+        "character_error_rate": 0.7330016583747927
+      },
+      "error": null,
+      "parse_time_seconds": 0.003162860870361328
+    },
+    {
+      "document_id": "invoice_079",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5876840696117804,
+        "chrf++": 79.11033132208786,
+        "character_error_rate": 0.41231593038821956
+      },
+      "error": null,
+      "parse_time_seconds": 0.004302501678466797
+    },
+    {
+      "document_id": "invoice_076",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5651260504201681,
+        "chrf++": 77.91337810232297,
+        "character_error_rate": 0.43487394957983194
+      },
+      "error": null,
+      "parse_time_seconds": 0.004859447479248047
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.27899686520376177,
+        "chrf++": 86.4658380729174,
+        "character_error_rate": 0.7210031347962382
+      },
+      "error": null,
+      "parse_time_seconds": 0.0031762123107910156
+    },
+    {
+      "document_id": "invoice_071",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47890088321884206,
+        "chrf++": 84.64269315982415,
+        "character_error_rate": 0.521099116781158
+      },
+      "error": null,
+      "parse_time_seconds": 0.008887529373168945
+    },
+    {
+      "document_id": "invoice_092",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5229445506692161,
+        "chrf++": 77.16224047235436,
+        "character_error_rate": 0.4770554493307839
+      },
+      "error": null,
+      "parse_time_seconds": 0.011365652084350586
+    },
+    {
+      "document_id": "invoice_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44631306597671405,
+        "chrf++": 84.87945582428196,
+        "character_error_rate": 0.553686934023286
+      },
+      "error": null,
+      "parse_time_seconds": 0.003499269485473633
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37414965986394555,
+        "chrf++": 85.31997356697804,
+        "character_error_rate": 0.6258503401360545
+      },
+      "error": null,
+      "parse_time_seconds": 0.003465414047241211
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5254237288135593,
+        "chrf++": 77.20465008330706,
+        "character_error_rate": 0.4745762711864407
+      },
+      "error": null,
+      "parse_time_seconds": 0.005754709243774414
+    },
+    {
+      "document_id": "invoice_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4967989756722151,
+        "chrf++": 78.80018847391588,
+        "character_error_rate": 0.5032010243277849
+      },
+      "error": null,
+      "parse_time_seconds": 0.0054683685302734375
+    },
+    {
+      "document_id": "invoice_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4274809160305344,
+        "chrf++": 84.67361158731256,
+        "character_error_rate": 0.5725190839694656
+      },
+      "error": null,
+      "parse_time_seconds": 0.003175973892211914
+    },
+    {
+      "document_id": "invoice_054",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5385321100917431,
+        "chrf++": 76.16952362621329,
+        "character_error_rate": 0.4614678899082569
+      },
+      "error": null,
+      "parse_time_seconds": 0.007771968841552734
+    },
+    {
+      "document_id": "invoice_063",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46638655462184875,
+        "chrf++": 78.88071865030908,
+        "character_error_rate": 0.5336134453781513
+      },
+      "error": null,
+      "parse_time_seconds": 0.005139350891113281
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6149479659413435,
+        "chrf++": 76.4841739306563,
+        "character_error_rate": 0.38505203405865657
+      },
+      "error": null,
+      "parse_time_seconds": 0.00499415397644043
+    },
+    {
+      "document_id": "invoice_048",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3669849931787176,
+        "chrf++": 85.10976515700777,
+        "character_error_rate": 0.6330150068212824
+      },
+      "error": null,
+      "parse_time_seconds": 0.003133535385131836
+    },
+    {
+      "document_id": "invoice_046",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5590697674418605,
+        "chrf++": 73.59295900068055,
+        "character_error_rate": 0.4409302325581395
+      },
+      "error": null,
+      "parse_time_seconds": 0.006026268005371094
+    },
+    {
+      "document_id": "invoice_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48793859649122806,
+        "chrf++": 84.33569261397305,
+        "character_error_rate": 0.5120614035087719
+      },
+      "error": null,
+      "parse_time_seconds": 0.003900766372680664
+    },
+    {
+      "document_id": "invoice_049",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37575757575757573,
+        "chrf++": 81.03340369999601,
+        "character_error_rate": 0.6242424242424243
+      },
+      "error": null,
+      "parse_time_seconds": 0.005372524261474609
+    },
+    {
+      "document_id": "invoice_042",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4071782178217822,
+        "chrf++": 84.90802877876907,
+        "character_error_rate": 0.5928217821782178
+      },
+      "error": null,
+      "parse_time_seconds": 0.003370523452758789
+    },
+    {
+      "document_id": "invoice_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5431965442764579,
+        "chrf++": 79.73515723814648,
+        "character_error_rate": 0.45680345572354214
+      },
+      "error": null,
+      "parse_time_seconds": 0.005178928375244141
+    },
+    {
+      "document_id": "invoice_091",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.34075104311543813,
+        "chrf++": 85.23537381970677,
+        "character_error_rate": 0.6592489568845619
+      },
+      "error": null,
+      "parse_time_seconds": 0.003312826156616211
+    },
+    {
+      "document_id": "invoice_038",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6463536463536463,
+        "chrf++": 76.79484308684663,
+        "character_error_rate": 0.35364635364635366
+      },
+      "error": null,
+      "parse_time_seconds": 0.005353212356567383
+    },
+    {
+      "document_id": "invoice_041",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5849440488301119,
+        "chrf++": 76.12178532672888,
+        "character_error_rate": 0.4150559511698881
+      },
+      "error": null,
+      "parse_time_seconds": 0.005433320999145508
+    },
+    {
+      "document_id": "invoice_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5968063872255489,
+        "chrf++": 76.82199320791976,
+        "character_error_rate": 0.4031936127744511
+      },
+      "error": null,
+      "parse_time_seconds": 0.0050771236419677734
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49948186528497407,
+        "chrf++": 77.91525687005486,
+        "character_error_rate": 0.5005181347150259
+      },
+      "error": null,
+      "parse_time_seconds": 0.005689859390258789
+    },
+    {
+      "document_id": "invoice_069",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5474060822898033,
+        "chrf++": 74.42524123254101,
+        "character_error_rate": 0.4525939177101968
+      },
+      "error": null,
+      "parse_time_seconds": 0.006421804428100586
+    },
+    {
+      "document_id": "invoice_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.538716814159292,
+        "chrf++": 78.51609050955886,
+        "character_error_rate": 0.461283185840708
+      },
+      "error": null,
+      "parse_time_seconds": 0.0052509307861328125
+    },
+    {
+      "document_id": "invoice_074",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4444444444444444,
+        "chrf++": 84.66082315540255,
+        "character_error_rate": 0.5555555555555556
+      },
+      "error": null,
+      "parse_time_seconds": 0.003835916519165039
+    },
+    {
+      "document_id": "invoice_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5290068829891839,
+        "chrf++": 77.4427815253693,
+        "character_error_rate": 0.47099311701081614
+      },
+      "error": null,
+      "parse_time_seconds": 0.005831718444824219
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4722222222222222,
+        "chrf++": 77.00369127568199,
+        "character_error_rate": 0.5277777777777778
+      },
+      "error": null,
+      "parse_time_seconds": 0.005646944046020508
+    },
+    {
+      "document_id": "invoice_052",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5555555555555556,
+        "chrf++": 78.85249232739874,
+        "character_error_rate": 0.4444444444444444
+      },
+      "error": null,
+      "parse_time_seconds": 0.004453420639038086
+    },
+    {
+      "document_id": "invoice_047",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5641330166270784,
+        "chrf++": 77.42973522974738,
+        "character_error_rate": 0.4358669833729216
+      },
+      "error": null,
+      "parse_time_seconds": 0.004810810089111328
+    },
+    {
+      "document_id": "invoice_096",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6169312169312169,
+        "chrf++": 77.20952656261291,
+        "character_error_rate": 0.38306878306878306
+      },
+      "error": null,
+      "parse_time_seconds": 0.005320310592651367
+    },
+    {
+      "document_id": "invoice_053",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3520782396088019,
+        "chrf++": 85.78379860071625,
+        "character_error_rate": 0.6479217603911981
+      },
+      "error": null,
+      "parse_time_seconds": 0.004191160202026367
+    },
+    {
+      "document_id": "invoice_059",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4660678642714571,
+        "chrf++": 84.62469189888036,
+        "character_error_rate": 0.5339321357285429
+      },
+      "error": null,
+      "parse_time_seconds": 0.00438237190246582
+    },
+    {
+      "document_id": "invoice_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5580708661417323,
+        "chrf++": 75.72140727341191,
+        "character_error_rate": 0.4419291338582677
+      },
+      "error": null,
+      "parse_time_seconds": 0.006148576736450195
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49928469241773965,
+        "chrf++": 78.10220692416699,
+        "character_error_rate": 0.5007153075822603
+      },
+      "error": null,
+      "parse_time_seconds": 0.0043468475341796875
+    },
+    {
+      "document_id": "invoice_066",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.410411622276029,
+        "chrf++": 81.02289402039766,
+        "character_error_rate": 0.589588377723971
+      },
+      "error": null,
+      "parse_time_seconds": 0.005741119384765625
+    },
+    {
+      "document_id": "invoice_068",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2739520958083832,
+        "chrf++": 87.02705466199293,
+        "character_error_rate": 0.7260479041916168
+      },
+      "error": null,
+      "parse_time_seconds": 0.002835512161254883
+    },
+    {
+      "document_id": "invoice_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4790996784565916,
+        "chrf++": 84.54734462563329,
+        "character_error_rate": 0.5209003215434084
+      },
+      "error": null,
+      "parse_time_seconds": 0.004177093505859375
+    },
+    {
+      "document_id": "invoice_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3117469879518072,
+        "chrf++": 86.98671913195592,
+        "character_error_rate": 0.6882530120481928
+      },
+      "error": null,
+      "parse_time_seconds": 0.003277301788330078
+    },
+    {
+      "document_id": "invoice_088",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47970085470085466,
+        "chrf++": 84.07397006388676,
+        "character_error_rate": 0.5202991452991453
+      },
+      "error": null,
+      "parse_time_seconds": 0.005031585693359375
+    },
+    {
+      "document_id": "invoice_073",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5490628445424477,
+        "chrf++": 77.26221767036326,
+        "character_error_rate": 0.45093715545755236
+      },
+      "error": null,
+      "parse_time_seconds": 0.004996776580810547
+    },
+    {
+      "document_id": "invoice_062",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48347613219094243,
+        "chrf++": 85.37930517903149,
+        "character_error_rate": 0.5165238678090576
+      },
+      "error": null,
+      "parse_time_seconds": 0.0036249160766601562
+    },
+    {
+      "document_id": "invoice_044",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5800273597811217,
+        "chrf++": 79.26557251350835,
+        "character_error_rate": 0.41997264021887826
+      },
+      "error": null,
+      "parse_time_seconds": 0.004083156585693359
+    },
+    {
+      "document_id": "invoice_089",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4123112659698026,
+        "chrf++": 81.53331291951706,
+        "character_error_rate": 0.5876887340301974
+      },
+      "error": null,
+      "parse_time_seconds": 0.0048503875732421875
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5194228634850167,
+        "chrf++": 79.36307504522105,
+        "character_error_rate": 0.48057713651498335
+      },
+      "error": null,
+      "parse_time_seconds": 0.008496522903442383
+    },
+    {
+      "document_id": "invoice_043",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4729559748427673,
+        "chrf++": 78.99317032833433,
+        "character_error_rate": 0.5270440251572327
+      },
+      "error": null,
+      "parse_time_seconds": 0.009235858917236328
+    },
+    {
+      "document_id": "invoice_084",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48761149653121905,
+        "chrf++": 77.0595378373056,
+        "character_error_rate": 0.512388503468781
+      },
+      "error": null,
+      "parse_time_seconds": 0.012174606323242188
+    },
+    {
+      "document_id": "invoice_037",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5221327967806841,
+        "chrf++": 76.47570216314315,
+        "character_error_rate": 0.4778672032193159
+      },
+      "error": null,
+      "parse_time_seconds": 0.008499383926391602
+    },
+    {
+      "document_id": "invoice_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4912854030501089,
+        "chrf++": 84.68380900645721,
+        "character_error_rate": 0.5087145969498911
+      },
+      "error": null,
+      "parse_time_seconds": 0.0040283203125
+    },
+    {
+      "document_id": "invoice_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5755015839493136,
+        "chrf++": 76.81298907121953,
+        "character_error_rate": 0.4244984160506864
+      },
+      "error": null,
+      "parse_time_seconds": 0.005462646484375
+    },
+    {
+      "document_id": "invoice_058",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6356663470757431,
+        "chrf++": 77.4879738482188,
+        "character_error_rate": 0.36433365292425696
+      },
+      "error": null,
+      "parse_time_seconds": 0.0056056976318359375
+    },
+    {
+      "document_id": "invoice_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5234270414993307,
+        "chrf++": 79.32111272526889,
+        "character_error_rate": 0.47657295850066933
+      },
+      "error": null,
+      "parse_time_seconds": 0.0052220821380615234
+    },
+    {
+      "document_id": "invoice_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5857777777777777,
+        "chrf++": 75.37096397400907,
+        "character_error_rate": 0.4142222222222222
+      },
+      "error": null,
+      "parse_time_seconds": 0.006318092346191406
+    },
+    {
+      "document_id": "invoice_077",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3210227272727273,
+        "chrf++": 86.30437864281654,
+        "character_error_rate": 0.6789772727272727
+      },
+      "error": null,
+      "parse_time_seconds": 0.003347635269165039
+    },
+    {
+      "document_id": "invoice_082",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5958149779735683,
+        "chrf++": 78.37315848362257,
+        "character_error_rate": 0.4041850220264317
+      },
+      "error": null,
+      "parse_time_seconds": 0.006010532379150391
+    },
+    {
+      "document_id": "invoice_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5184210526315789,
+        "chrf++": 79.6320723476284,
+        "character_error_rate": 0.48157894736842105
+      },
+      "error": null,
+      "parse_time_seconds": 0.004589557647705078
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4659217877094972,
+        "chrf++": 84.2539118679179,
+        "character_error_rate": 0.5340782122905028
+      },
+      "error": null,
+      "parse_time_seconds": 0.004755735397338867
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5417690417690417,
+        "chrf++": 79.42306089125394,
+        "character_error_rate": 0.4582309582309582
+      },
+      "error": null,
+      "parse_time_seconds": 0.004756450653076172
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4267241379310345,
+        "chrf++": 85.0683541406288,
+        "character_error_rate": 0.5732758620689655
+      },
+      "error": null,
+      "parse_time_seconds": 0.004584550857543945
+    },
+    {
+      "document_id": "invoice_098",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5660377358490566,
+        "chrf++": 74.67338343562612,
+        "character_error_rate": 0.4339622641509434
+      },
+      "error": null,
+      "parse_time_seconds": 0.00695490837097168
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5383783783783784,
+        "chrf++": 77.40231210672133,
+        "character_error_rate": 0.4616216216216216
+      },
+      "error": null,
+      "parse_time_seconds": 0.005159139633178711
+    },
+    {
+      "document_id": "invoice_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5284900284900285,
+        "chrf++": 78.13888628871378,
+        "character_error_rate": 0.47150997150997154
+      },
+      "error": null,
+      "parse_time_seconds": 0.004824638366699219
+    },
+    {
+      "document_id": "invoice_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40668824163969797,
+        "chrf++": 84.39690068193593,
+        "character_error_rate": 0.593311758360302
+      },
+      "error": null,
+      "parse_time_seconds": 0.004271030426025391
+    },
+    {
+      "document_id": "invoice_094",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40506329113924056,
+        "chrf++": 85.75839301399661,
+        "character_error_rate": 0.5949367088607594
+      },
+      "error": null,
+      "parse_time_seconds": 0.0038559436798095703
+    },
+    {
+      "document_id": "invoice_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5963302752293578,
+        "chrf++": 76.89960591815758,
+        "character_error_rate": 0.4036697247706422
+      },
+      "error": null,
+      "parse_time_seconds": 0.0065860748291015625
+    },
+    {
+      "document_id": "invoice_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.516,
+        "chrf++": 79.6455997414477,
+        "character_error_rate": 0.484
+      },
+      "error": null,
+      "parse_time_seconds": 0.005408048629760742
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3646112600536193,
+        "chrf++": 85.34741901566363,
+        "character_error_rate": 0.6353887399463807
+      },
+      "error": null,
+      "parse_time_seconds": 0.0037305355072021484
+    },
+    {
+      "document_id": "invoice_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5345268542199488,
+        "chrf++": 78.1368711994913,
+        "character_error_rate": 0.46547314578005117
+      },
+      "error": null,
+      "parse_time_seconds": 0.004636526107788086
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6019512195121951,
+        "chrf++": 77.24605806405185,
+        "character_error_rate": 0.3980487804878049
+      },
+      "error": null,
+      "parse_time_seconds": 0.005916595458984375
+    },
+    {
+      "document_id": "invoice_039",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2372611464968153,
+        "chrf++": 86.34716407493444,
+        "character_error_rate": 0.7627388535031847
+      },
+      "error": null,
+      "parse_time_seconds": 0.0032739639282226562
+    },
+    {
+      "document_id": "invoice_056",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3728179551122195,
+        "chrf++": 86.19771639427893,
+        "character_error_rate": 0.6271820448877805
+      },
+      "error": null,
+      "parse_time_seconds": 0.004022121429443359
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9700427960057061,
+        "chrf++": 93.41247630151312,
+        "character_error_rate": 0.029957203994293864
+      },
+      "error": null,
+      "parse_time_seconds": 0.007035493850708008
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595015576323987,
+        "chrf++": 92.71158113385995,
+        "character_error_rate": 0.040498442367601244
+      },
+      "error": null,
+      "parse_time_seconds": 0.004495859146118164
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5965130759651307,
+        "chrf++": 88.18427655825445,
+        "character_error_rate": 0.40348692403486924
+      },
+      "error": null,
+      "parse_time_seconds": 0.00501704216003418
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9705772811918063,
+        "chrf++": 93.78288496955417,
+        "character_error_rate": 0.02942271880819367
+      },
+      "error": null,
+      "parse_time_seconds": 0.010665416717529297
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9657236126224157,
+        "chrf++": 92.73343392106308,
+        "character_error_rate": 0.03427638737758433
+      },
+      "error": null,
+      "parse_time_seconds": 0.006339073181152344
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9693926351028216,
+        "chrf++": 93.04787610699319,
+        "character_error_rate": 0.030607364897178385
+      },
+      "error": null,
+      "parse_time_seconds": 0.007778644561767578
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.969685628742515,
+        "chrf++": 92.81545834165861,
+        "character_error_rate": 0.03031437125748503
+      },
+      "error": null,
+      "parse_time_seconds": 0.007283449172973633
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6978319783197833,
+        "chrf++": 87.70664758528682,
+        "character_error_rate": 0.3021680216802168
+      },
+      "error": null,
+      "parse_time_seconds": 0.0044841766357421875
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9593998234774934,
+        "chrf++": 92.58201962186543,
+        "character_error_rate": 0.04060017652250662
+      },
+      "error": null,
+      "parse_time_seconds": 0.004750967025756836
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.968098681412165,
+        "chrf++": 92.53043643276577,
+        "character_error_rate": 0.031901318587834966
+      },
+      "error": null,
+      "parse_time_seconds": 0.0066070556640625
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9692360871068095,
+        "chrf++": 92.6914922920435,
+        "character_error_rate": 0.03076391289319046
+      },
+      "error": null,
+      "parse_time_seconds": 0.008228540420532227
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6204444444444445,
+        "chrf++": 89.72675797112011,
+        "character_error_rate": 0.37955555555555553
+      },
+      "error": null,
+      "parse_time_seconds": 0.004448890686035156
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9680390032502708,
+        "chrf++": 92.96751133337399,
+        "character_error_rate": 0.031960996749729145
+      },
+      "error": null,
+      "parse_time_seconds": 0.0063037872314453125
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6573938506588579,
+        "chrf++": 92.47503784357764,
+        "character_error_rate": 0.34260614934114203
+      },
+      "error": null,
+      "parse_time_seconds": 0.006365060806274414
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7849944008958567,
+        "chrf++": 91.74959762685528,
+        "character_error_rate": 0.21500559910414332
+      },
+      "error": null,
+      "parse_time_seconds": 0.006533622741699219
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9708214398985093,
+        "chrf++": 92.86030608543533,
+        "character_error_rate": 0.029178560101490645
+      },
+      "error": null,
+      "parse_time_seconds": 0.00780797004699707
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6575429662635264,
+        "chrf++": 91.33138008314882,
+        "character_error_rate": 0.34245703373647357
+      },
+      "error": null,
+      "parse_time_seconds": 0.005972623825073242
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956268221574344,
+        "chrf++": 91.83302463363037,
+        "character_error_rate": 0.043731778425655975
+      },
+      "error": null,
+      "parse_time_seconds": 0.003742218017578125
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6482670089858793,
+        "chrf++": 90.94564634826425,
+        "character_error_rate": 0.35173299101412064
+      },
+      "error": null,
+      "parse_time_seconds": 0.005259037017822266
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9556592765460911,
+        "chrf++": 91.85213500271901,
+        "character_error_rate": 0.044340723453908985
+      },
+      "error": null,
+      "parse_time_seconds": 0.003106832504272461
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6644736842105263,
+        "chrf++": 91.18608800011806,
+        "character_error_rate": 0.3355263157894737
+      },
+      "error": null,
+      "parse_time_seconds": 0.0056667327880859375
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9675640609795654,
+        "chrf++": 92.08125696890549,
+        "character_error_rate": 0.032435939020434644
+      },
+      "error": null,
+      "parse_time_seconds": 0.008205413818359375
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6512396694214876,
+        "chrf++": 88.66856835506026,
+        "character_error_rate": 0.3487603305785124
+      },
+      "error": null,
+      "parse_time_seconds": 0.0044443607330322266
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9672781358453149,
+        "chrf++": 92.190493397766,
+        "character_error_rate": 0.03272186415468518
+      },
+      "error": null,
+      "parse_time_seconds": 0.005817413330078125
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624753127057275,
+        "chrf++": 92.26003737208899,
+        "character_error_rate": 0.037524687294272545
+      },
+      "error": null,
+      "parse_time_seconds": 0.005239963531494141
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9611248966087675,
+        "chrf++": 92.32302668973334,
+        "character_error_rate": 0.03887510339123242
+      },
+      "error": null,
+      "parse_time_seconds": 0.0040705204010009766
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9597107438016529,
+        "chrf++": 92.34854070563986,
+        "character_error_rate": 0.040289256198347105
+      },
+      "error": null,
+      "parse_time_seconds": 0.004009246826171875
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9712121212121212,
+        "chrf++": 92.44148767713145,
+        "character_error_rate": 0.02878787878787879
+      },
+      "error": null,
+      "parse_time_seconds": 0.009403467178344727
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9675789473684211,
+        "chrf++": 92.8939978833269,
+        "character_error_rate": 0.03242105263157895
+      },
+      "error": null,
+      "parse_time_seconds": 0.007410526275634766
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9689285714285715,
+        "chrf++": 92.83766917477078,
+        "character_error_rate": 0.031071428571428573
+      },
+      "error": null,
+      "parse_time_seconds": 0.007391214370727539
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.967274678111588,
+        "chrf++": 92.30222623105074,
+        "character_error_rate": 0.03272532188841202
+      },
+      "error": null,
+      "parse_time_seconds": 0.005874156951904297
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9626587005227782,
+        "chrf++": 93.7253004867687,
+        "character_error_rate": 0.037341299477221805
+      },
+      "error": null,
+      "parse_time_seconds": 0.003911495208740234
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578503688092729,
+        "chrf++": 91.94992558096538,
+        "character_error_rate": 0.04214963119072708
+      },
+      "error": null,
+      "parse_time_seconds": 0.0033559799194335938
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.754950495049505,
+        "chrf++": 90.12474551972025,
+        "character_error_rate": 0.24504950495049505
+      },
+      "error": null,
+      "parse_time_seconds": 0.003275156021118164
+    },
+    {
+      "document_id": "legal_emp_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886475814412635,
+        "chrf++": 99.92096764670659,
+        "character_error_rate": 0.011352418558736426
+      },
+      "error": null,
+      "parse_time_seconds": 0.006557464599609375
+    },
+    {
+      "document_id": "legal_saas_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885782475281282,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011421752471871804
+      },
+      "error": null,
+      "parse_time_seconds": 0.009619951248168945
+    },
+    {
+      "document_id": "legal_svc_100",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9877743817727146,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012225618227285358
+      },
+      "error": null,
+      "parse_time_seconds": 0.0070896148681640625
+    },
+    {
+      "document_id": "legal_nda_066",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887917507285362,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011208249271463798
+      },
+      "error": null,
+      "parse_time_seconds": 0.007636070251464844
+    },
+    {
+      "document_id": "legal_nda_078",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888318070136252,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011168192986374805
+      },
+      "error": null,
+      "parse_time_seconds": 0.007213115692138672
+    },
+    {
+      "document_id": "legal_emp_052",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988353626257279,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011646373742721016
+      },
+      "error": null,
+      "parse_time_seconds": 0.006697893142700195
+    },
+    {
+      "document_id": "legal_cons_086",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882573978393612,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011742602160638797
+      },
+      "error": null,
+      "parse_time_seconds": 0.0072705745697021484
+    },
+    {
+      "document_id": "legal_saas_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885458167330677,
+        "chrf++": 99.93418817230418,
+        "character_error_rate": 0.011454183266932271
+      },
+      "error": null,
+      "parse_time_seconds": 0.009538650512695312
+    },
+    {
+      "document_id": "legal_nda_065",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886621315192744,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011337868480725623
+      },
+      "error": null,
+      "parse_time_seconds": 0.008351564407348633
+    },
+    {
+      "document_id": "legal_svc_093",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879247402415052,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012075259758494805
+      },
+      "error": null,
+      "parse_time_seconds": 0.0069882869720458984
+    },
+    {
+      "document_id": "legal_emp_044",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886069394096323,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011393060590367685
+      },
+      "error": null,
+      "parse_time_seconds": 0.006791114807128906
+    },
+    {
+      "document_id": "legal_nda_071",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888017917133258,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011198208286674132
+      },
+      "error": null,
+      "parse_time_seconds": 0.007930517196655273
+    },
+    {
+      "document_id": "legal_saas_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883255503669113,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011674449633088725
+      },
+      "error": null,
+      "parse_time_seconds": 0.009280681610107422
+    },
+    {
+      "document_id": "legal_nda_075",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888168195034668,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011183180496533215
+      },
+      "error": null,
+      "parse_time_seconds": 0.0073320865631103516
+    },
+    {
+      "document_id": "legal_emp_059",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887310142087212,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011268985791278784
+      },
+      "error": null,
+      "parse_time_seconds": 0.007091045379638672
+    },
+    {
+      "document_id": "legal_nda_061",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888712241653418,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011128775834658187
+      },
+      "error": null,
+      "parse_time_seconds": 0.007893800735473633
+    },
+    {
+      "document_id": "legal_cons_083",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888077858880778,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01119221411192214
+      },
+      "error": null,
+      "parse_time_seconds": 0.0070095062255859375
+    },
+    {
+      "document_id": "legal_emp_041",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883664566165778,
+        "chrf++": 100.0,
+        "character_error_rate": 0.0116335433834222
+      },
+      "error": null,
+      "parse_time_seconds": 0.0070993900299072266
+    },
+    {
+      "document_id": "legal_emp_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885803270179081,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011419672982091877
+      },
+      "error": null,
+      "parse_time_seconds": 0.0074579715728759766
+    },
+    {
+      "document_id": "legal_emp_036",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881565396498455,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01184346035015448
+      },
+      "error": null,
+      "parse_time_seconds": 0.0069005489349365234
+    },
+    {
+      "document_id": "legal_cons_089",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887100648570742,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011289935142925775
+      },
+      "error": null,
+      "parse_time_seconds": 0.007340669631958008
+    },
+    {
+      "document_id": "legal_svc_091",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881019830028328,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01189801699716714
+      },
+      "error": null,
+      "parse_time_seconds": 0.0069580078125
+    },
+    {
+      "document_id": "legal_emp_035",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882443138257092,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011755686174290826
+      },
+      "error": null,
+      "parse_time_seconds": 0.007000923156738281
+    },
+    {
+      "document_id": "legal_saas_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885733490169719,
+        "chrf++": 99.93405958977397,
+        "character_error_rate": 0.011426650983028062
+      },
+      "error": null,
+      "parse_time_seconds": 0.010778665542602539
+    },
+    {
+      "document_id": "legal_cons_082",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887392900856793,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011260709914320686
+      },
+      "error": null,
+      "parse_time_seconds": 0.00853276252746582
+    },
+    {
+      "document_id": "legal_saas_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886030608922175,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011396939107782481
+      },
+      "error": null,
+      "parse_time_seconds": 0.010262012481689453
+    },
+    {
+      "document_id": "legal_emp_047",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883813044626353,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011618695537364668
+      },
+      "error": null,
+      "parse_time_seconds": 0.006955146789550781
+    },
+    {
+      "document_id": "legal_nda_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887158654931166,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011284134506883321
+      },
+      "error": null,
+      "parse_time_seconds": 0.007192134857177734
+    },
+    {
+      "document_id": "legal_cons_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988695242581253,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011304757418747056
+      },
+      "error": null,
+      "parse_time_seconds": 0.010968208312988281
+    },
+    {
+      "document_id": "legal_nda_068",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988881325164511,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011118674835488994
+      },
+      "error": null,
+      "parse_time_seconds": 0.0069844722747802734
+    },
+    {
+      "document_id": "legal_nda_076",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886928991406604,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011307100859339666
+      },
+      "error": null,
+      "parse_time_seconds": 0.006755352020263672
+    },
+    {
+      "document_id": "legal_cons_087",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888164026095061,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011183597390493943
+      },
+      "error": null,
+      "parse_time_seconds": 0.0069713592529296875
+    },
+    {
+      "document_id": "legal_saas_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883601506333447,
+        "chrf++": 99.95113270311514,
+        "character_error_rate": 0.011639849366655255
+      },
+      "error": null,
+      "parse_time_seconds": 0.008807897567749023
+    },
+    {
+      "document_id": "legal_emp_049",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883544303797468,
+        "chrf++": 99.91935752990814,
+        "character_error_rate": 0.011645569620253165
+      },
+      "error": null,
+      "parse_time_seconds": 0.009392499923706055
+    },
+    {
+      "document_id": "legal_nda_067",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887564650326063,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011243534967393748
+      },
+      "error": null,
+      "parse_time_seconds": 0.0066051483154296875
+    },
+    {
+      "document_id": "legal_cons_084",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886170985710826,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011382901428917413
+      },
+      "error": null,
+      "parse_time_seconds": 0.0062770843505859375
+    },
+    {
+      "document_id": "legal_emp_046",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886246122026887,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011375387797311272
+      },
+      "error": null,
+      "parse_time_seconds": 0.006360769271850586
+    },
+    {
+      "document_id": "legal_svc_092",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881623449830891,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011837655016910935
+      },
+      "error": null,
+      "parse_time_seconds": 0.005980730056762695
+    },
+    {
+      "document_id": "legal_saas_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885548343013324,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011445165698667577
+      },
+      "error": null,
+      "parse_time_seconds": 0.00875401496887207
+    },
+    {
+      "document_id": "legal_nda_063",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886569872958257,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011343012704174229
+      },
+      "error": null,
+      "parse_time_seconds": 0.006549358367919922
+    },
+    {
+      "document_id": "legal_saas_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885077485634686,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01149225143653143
+      },
+      "error": null,
+      "parse_time_seconds": 0.010846853256225586
+    },
+    {
+      "document_id": "legal_saas_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988663967611336,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011336032388663968
+      },
+      "error": null,
+      "parse_time_seconds": 0.009238004684448242
+    },
+    {
+      "document_id": "legal_svc_095",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880621876735147,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011937812326485286
+      },
+      "error": null,
+      "parse_time_seconds": 0.006226778030395508
+    },
+    {
+      "document_id": "legal_emp_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883419689119171,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011658031088082901
+      },
+      "error": null,
+      "parse_time_seconds": 0.0062427520751953125
+    },
+    {
+      "document_id": "legal_svc_097",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880721220527046,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011927877947295423
+      },
+      "error": null,
+      "parse_time_seconds": 0.00600123405456543
+    },
+    {
+      "document_id": "legal_svc_098",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012
+      },
+      "error": null,
+      "parse_time_seconds": 0.006184816360473633
+    },
+    {
+      "document_id": "legal_saas_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884939034861755,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011506096513824489
+      },
+      "error": null,
+      "parse_time_seconds": 0.008757591247558594
+    },
+    {
+      "document_id": "legal_svc_094",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881756756756757,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011824324324324325
+      },
+      "error": null,
+      "parse_time_seconds": 0.006266355514526367
+    },
+    {
+      "document_id": "legal_saas_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884595208952615,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01154047910473859
+      },
+      "error": null,
+      "parse_time_seconds": 0.008346319198608398
+    },
+    {
+      "document_id": "legal_saas_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882892057026477,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011710794297352342
+      },
+      "error": null,
+      "parse_time_seconds": 0.009932994842529297
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883367139959433,
+        "chrf++": 99.93360556690556,
+        "character_error_rate": 0.011663286004056795
+      },
+      "error": null,
+      "parse_time_seconds": 0.008494138717651367
+    },
+    {
+      "document_id": "legal_emp_056",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885001223391241,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011499877660875948
+      },
+      "error": null,
+      "parse_time_seconds": 0.0066986083984375
+    },
+    {
+      "document_id": "legal_emp_045",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884798397195091,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01152016028049086
+      },
+      "error": null,
+      "parse_time_seconds": 0.006123781204223633
+    },
+    {
+      "document_id": "legal_emp_048",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886583011583011,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011341698841698842
+      },
+      "error": null,
+      "parse_time_seconds": 0.006576061248779297
+    },
+    {
+      "document_id": "legal_emp_040",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887503056982148,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011249694301785278
+      },
+      "error": null,
+      "parse_time_seconds": 0.0061762332916259766
+    },
+    {
+      "document_id": "legal_nda_080",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887336638125281,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011266336187471835
+      },
+      "error": null,
+      "parse_time_seconds": 0.006339550018310547
+    },
+    {
+      "document_id": "legal_svc_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881456392887383,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011854360711261643
+      },
+      "error": null,
+      "parse_time_seconds": 0.012962102890014648
+    },
+    {
+      "document_id": "legal_emp_050",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882291394193042,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01177086058069579
+      },
+      "error": null,
+      "parse_time_seconds": 0.007205009460449219
+    },
+    {
+      "document_id": "legal_emp_060",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879839786381842,
+        "chrf++": 100.0,
+        "character_error_rate": 0.012016021361815754
+      },
+      "error": null,
+      "parse_time_seconds": 0.006075382232666016
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885773624091381,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01142263759086189
+      },
+      "error": null,
+      "parse_time_seconds": 0.008800029754638672
+    },
+    {
+      "document_id": "legal_emp_042",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884480160723255,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011551983927674536
+      },
+      "error": null,
+      "parse_time_seconds": 0.006323575973510742
+    },
+    {
+      "document_id": "legal_nda_077",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887892376681614,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011210762331838564
+      },
+      "error": null,
+      "parse_time_seconds": 0.006769895553588867
+    },
+    {
+      "document_id": "legal_nda_072",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988828089375285,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011171910624715002
+      },
+      "error": null,
+      "parse_time_seconds": 0.006581544876098633
+    },
+    {
+      "document_id": "legal_emp_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883630721489527,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011636927851047323
+      },
+      "error": null,
+      "parse_time_seconds": 0.006394624710083008
+    },
+    {
+      "document_id": "legal_saas_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885863362139247,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01141366378607533
+      },
+      "error": null,
+      "parse_time_seconds": 0.008633852005004883
+    },
+    {
+      "document_id": "legal_emp_038",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883691529709229,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011630847029077117
+      },
+      "error": null,
+      "parse_time_seconds": 0.007943391799926758
+    },
+    {
+      "document_id": "legal_cons_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879866518353726,
+        "chrf++": 99.86926670850741,
+        "character_error_rate": 0.012013348164627364
+      },
+      "error": null,
+      "parse_time_seconds": 0.006643533706665039
+    },
+    {
+      "document_id": "legal_emp_039",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884635553224961,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011536444677503933
+      },
+      "error": null,
+      "parse_time_seconds": 0.0063397884368896484
+    },
+    {
+      "document_id": "legal_emp_053",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884364002011061,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011563599798893917
+      },
+      "error": null,
+      "parse_time_seconds": 0.006268978118896484
+    },
+    {
+      "document_id": "legal_saas_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884776536312849,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011522346368715084
+      },
+      "error": null,
+      "parse_time_seconds": 0.008672475814819336
+    },
+    {
+      "document_id": "legal_saas_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884068153873178,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011593184612682241
+      },
+      "error": null,
+      "parse_time_seconds": 0.008344173431396484
+    },
+    {
+      "document_id": "legal_nda_074",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888509670079636,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011149032992036406
+      },
+      "error": null,
+      "parse_time_seconds": 0.006620883941650391
+    },
+    {
+      "document_id": "legal_cons_081",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883692755027865,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011630724497213472
+      },
+      "error": null,
+      "parse_time_seconds": 0.00681304931640625
+    },
+    {
+      "document_id": "legal_emp_043",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887266205482962,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011273379451703817
+      },
+      "error": null,
+      "parse_time_seconds": 0.0068204402923583984
+    },
+    {
+      "document_id": "legal_emp_037",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98820815175596,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01179184824403999
+      },
+      "error": null,
+      "parse_time_seconds": 0.006197214126586914
+    },
+    {
+      "document_id": "legal_svc_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883203559510567,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01167964404894327
+      },
+      "error": null,
+      "parse_time_seconds": 0.006101846694946289
+    },
+    {
+      "document_id": "legal_emp_054",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885327078446703,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011467292155329685
+      },
+      "error": null,
+      "parse_time_seconds": 0.00668787956237793
+    },
+    {
+      "document_id": "legal_svc_096",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882286995515696,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011771300448430493
+      },
+      "error": null,
+      "parse_time_seconds": 0.00608062744140625
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885595423816953,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011440457618304731
+      },
+      "error": null,
+      "parse_time_seconds": 0.008613348007202148
+    },
+    {
+      "document_id": "legal_saas_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884736290604261,
+        "chrf++": 99.95148210486352,
+        "character_error_rate": 0.011526370939573873
+      },
+      "error": null,
+      "parse_time_seconds": 0.008475780487060547
+    },
+    {
+      "document_id": "legal_saas_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882473173224323,
+        "chrf++": 99.95202118203358,
+        "character_error_rate": 0.011752682677567705
+      },
+      "error": null,
+      "parse_time_seconds": 0.008710622787475586
+    },
+    {
+      "document_id": "legal_emp_051",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885714285714285,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.006228923797607422
+    },
+    {
+      "document_id": "legal_cons_085",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887118193891102,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011288180610889775
+      },
+      "error": null,
+      "parse_time_seconds": 0.0067708492279052734
+    },
+    {
+      "document_id": "legal_saas_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885476314419573,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011452368558042686
+      },
+      "error": null,
+      "parse_time_seconds": 0.008552074432373047
+    },
+    {
+      "document_id": "legal_saas_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884072580645161,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011592741935483871
+      },
+      "error": null,
+      "parse_time_seconds": 0.00906682014465332
+    },
+    {
+      "document_id": "legal_svc_099",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882288529975363,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011771147002463728
+      },
+      "error": null,
+      "parse_time_seconds": 0.005948305130004883
+    },
+    {
+      "document_id": "legal_saas_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885136293502486,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011486370649751415
+      },
+      "error": null,
+      "parse_time_seconds": 0.008737325668334961
+    },
+    {
+      "document_id": "legal_saas_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988429172510519,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011570827489481066
+      },
+      "error": null,
+      "parse_time_seconds": 0.008383750915527344
+    },
+    {
+      "document_id": "legal_nda_069",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888255416191563,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011174458380843785
+      },
+      "error": null,
+      "parse_time_seconds": 0.00799250602722168
+    },
+    {
+      "document_id": "legal_emp_055",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883567081238422,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011643291876157714
+      },
+      "error": null,
+      "parse_time_seconds": 0.006540060043334961
+    },
+    {
+      "document_id": "legal_emp_057",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886894516842881,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011310548315711827
+      },
+      "error": null,
+      "parse_time_seconds": 0.0064029693603515625
+    },
+    {
+      "document_id": "legal_nda_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888408107492599,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01115918925074015
+      },
+      "error": null,
+      "parse_time_seconds": 0.006786823272705078
+    },
+    {
+      "document_id": "legal_nda_070",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888492417484389,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011150758251561105
+      },
+      "error": null,
+      "parse_time_seconds": 0.006713390350341797
+    },
+    {
+      "document_id": "legal_saas_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882593159775396,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01174068402246044
+      },
+      "error": null,
+      "parse_time_seconds": 0.008818626403808594
+    },
+    {
+      "document_id": "legal_saas_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988309953239813,
+        "chrf++": 99.93412394378363,
+        "character_error_rate": 0.01169004676018704
+      },
+      "error": null,
+      "parse_time_seconds": 0.008830785751342773
+    },
+    {
+      "document_id": "legal_saas_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886324491904926,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011367550809507406
+      },
+      "error": null,
+      "parse_time_seconds": 0.008753299713134766
+    },
+    {
+      "document_id": "legal_cons_088",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886903415516851,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011309658448314861
+      },
+      "error": null,
+      "parse_time_seconds": 0.006474494934082031
+    },
+    {
+      "document_id": "legal_emp_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883189436262062,
+        "chrf++": 99.83861912470954,
+        "character_error_rate": 0.011681056373793804
+      },
+      "error": null,
+      "parse_time_seconds": 0.008095026016235352
+    },
+    {
+      "document_id": "legal_saas_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883561643835617,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011643835616438357
+      },
+      "error": null,
+      "parse_time_seconds": 0.008407831192016602
+    },
+    {
+      "document_id": "legal_nda_064",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887209564628919,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011279043537108053
+      },
+      "error": null,
+      "parse_time_seconds": 0.006761789321899414
+    },
+    {
+      "document_id": "legal_nda_079",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886260236578708,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011373976342129208
+      },
+      "error": null,
+      "parse_time_seconds": 0.006440877914428711
+    },
+    {
+      "document_id": "legal_emp_058",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881534895699202,
+        "chrf++": 99.92003631769933,
+        "character_error_rate": 0.011846510430079836
+      },
+      "error": null,
+      "parse_time_seconds": 0.00617218017578125
+    },
+    {
+      "document_id": "legal_cons_090",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887122782768947,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011287721723105276
+      },
+      "error": null,
+      "parse_time_seconds": 0.0060138702392578125
+    },
+    {
+      "document_id": "legal_saas_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885411322045493,
+        "chrf++": 99.95401832663879,
+        "character_error_rate": 0.011458867795450658
+      },
+      "error": null,
+      "parse_time_seconds": 0.00832676887512207
+    },
+    {
+      "document_id": "legal_nda_073",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887539361223572,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011246063877642825
+      },
+      "error": null,
+      "parse_time_seconds": 0.008081674575805664
+    },
+    {
+      "document_id": "legal_nda_062",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9889233495790872,
+        "chrf++": 100.0,
+        "character_error_rate": 0.011076650420912717
+      },
+      "error": null,
+      "parse_time_seconds": 0.007144451141357422
+    },
+    {
+      "document_id": "legal_saas_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885840858749361,
+        "chrf++": 99.95383958687619,
+        "character_error_rate": 0.011415914125063894
+      },
+      "error": null,
+      "parse_time_seconds": 0.008778095245361328
+    },
+    {
+      "document_id": "legal_emp_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885685884691849,
+        "chrf++": 100.0,
+        "character_error_rate": 0.01143141153081511
+      },
+      "error": null,
+      "parse_time_seconds": 0.008047103881835938
+    }
+  ],
+  "summary": {
+    "total_documents": 242,
+    "total_parsers": 2,
+    "total_results": 484,
+    "success_count": 484,
+    "failure_count": 0
+  }
+}

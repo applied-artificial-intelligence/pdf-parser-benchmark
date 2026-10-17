@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-97651",
+    "vendor": "Express Transport",
+    "due_date": "2025-10-23",
+    "grand_total": "8355.34",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-97651",
+      "INV-97651"
+    ],
+    "due_date": [
+      "October 23, 2025",
+      "October 23, 2025"
+    ],
+    "grand_total": [
+      "$8,355.34"
+    ],
+    "vendor": [
+      "Express Transport"
+    ]
+  },
+  "records": [
+    {
+      "description": "LTL Freight - Class 50 (cwt)",
+      "quantity": "50.82",
+      "unit_price": "25.92",
+      "line_total": "1317.25",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n50 (cwt)",
+        "quantity": "50.82",
+        "unit_price": "$25.92",
+        "line_total": "$1,317.25"
+      }
+    },
+    {
+      "description": "Pallet Exchange (pallet)",
+      "quantity": "48.81",
+      "unit_price": "20.39",
+      "line_total": "995.24",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange\n(pallet)",
+        "quantity": "48.81",
+        "unit_price": "$20.39",
+        "line_total": "$995.24"
+      }
+    },
+    {
+      "description": "Pallet Exchange (pallet)",
+      "quantity": "1.31",
+      "unit_price": "28.61",
+      "line_total": "37.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange\n(pallet)",
+        "quantity": "1.31",
+        "unit_price": "$28.61",
+        "line_total": "$37.48"
+      }
+    },
+    {
+      "description": "Inside Delivery (per stop)",
+      "quantity": "72.83",
+      "unit_price": "64.14",
+      "line_total": "4671.32",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery (per\nstop)",
+        "quantity": "72.83",
+        "unit_price": "$64.14",
+        "line_total": "$4,671.32"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-16712",
+    "vendor": "Express Freight",
+    "due_date": "2025-10-31",
+    "grand_total": "41544.07",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-16712",
+      "INV-16712"
+    ],
+    "due_date": [
+      "October 31, 2025",
+      "October 31, 2025"
+    ],
+    "grand_total": [
+      "$41,544.07"
+    ],
+    "vendor": [
+      "Express Freight"
+    ]
+  },
+  "records": [
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "66.99",
+      "unit_price": "99.32",
+      "line_total": "6653.45",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "66.99",
+        "unit_price": "$99.32",
+        "line_total": "$6,653.45"
+      }
+    },
+    {
+      "description": "Pallet Exchange (pallet)",
+      "quantity": "93.92",
+      "unit_price": "17.27",
+      "line_total": "1622",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange\n(pallet)",
+        "quantity": "93.92",
+        "unit_price": "$17.27",
+        "line_total": "$1,622.00"
+      }
+    },
+    {
+      "description": "Fuel Surcharge (% of base)",
+      "quantity": "88.02",
+      "unit_price": "12.3",
+      "line_total": "1082.65",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge (%\nof base)",
+        "quantity": "88.02",
+        "unit_price": "$12.30",
+        "line_total": "$1,082.65"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85 (cwt)",
+      "quantity": "40.13",
+      "unit_price": "25.9",
+      "line_total": "1039.37",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n85 (cwt)",
+        "quantity": "40.13",
+        "unit_price": "$25.90",
+        "line_total": "$1,039.37"
+      }
+    },
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "97.64",
+      "unit_price": "101.86",
+      "line_total": "9945.61",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "97.64",
+        "unit_price": "$101.86",
+        "line_total": "$9,945.61"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 50 (cwt)",
+      "quantity": "71.06",
+      "unit_price": "20.65",
+      "line_total": "1467.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class\n50 (cwt)",
+        "quantity": "71.06",
+        "unit_price": "$20.65",
+        "line_total": "$1,467.39"
+      }
+    },
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "72.21",
+      "unit_price": "114.38",
+      "line_total": "8259.38",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "72.21",
+        "unit_price": "$114.38",
+        "line_total": "$8,259.38"
+      }
+    },
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "26.21",
+      "unit_price": "94.3",
+      "line_total": "2471.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "26.21",
+        "unit_price": "$94.30",
+        "line_total": "$2,471.60"
+      }
+    },
+    {
+      "description": "Pallet Exchange (pallet)",
+      "quantity": "85.9",
+      "unit_price": "15.27",
+      "line_total": "1311.69",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange\n(pallet)",
+        "quantity": "85.90",
+        "unit_price": "$15.27",
+        "line_total": "$1,311.69"
+      }
+    },
+    {
+      "description": "Liftgate Service (per stop)",
+      "quantity": "10.42",
+      "unit_price": "101.52",
+      "line_total": "1057.84",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service (per\nstop)",
+        "quantity": "10.42",
+        "unit_price": "$101.52",
+        "line_total": "$1,057.84"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Singapore
+  name: Sparks Group
+document_id: invoice_094
+due_date: '2025-10-29'
+generated_at: '2025-11-18T16:47:18.174589'
+industry: saas
+invoice_date: '2025-09-29'
+invoice_number: INV-38669
+line_item_count: 6
+payment_terms: Net 30
+region: APAC
+subtotal: 5918348.89
+tax_amount: 532651.4
+template_style: economy
+total: 6451000.29
+vendor:
+  country: Singapore
+  name: Nexus Labs
+corpus: business
+source_url: generated://invoice_094
+domain: invoices
+doc_id: invoice_094

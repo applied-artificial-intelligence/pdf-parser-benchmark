@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Warren-Hopkins
+document_id: invoice_017
+due_date: '2025-12-13'
+generated_at: '2025-11-18T16:45:26.379579'
+industry: construction
+invoice_date: '2025-11-13'
+invoice_number: INV-94489
+line_item_count: 7
+payment_terms: Net 30
+region: US
+subtotal: 195689.67
+tax_amount: 16672.76
+template_style: small_business
+total: 212362.43
+vendor:
+  country: USA
+  name: Apex Development
+corpus: business
+source_url: generated://invoice_017
+domain: invoices
+doc_id: invoice_017

@@ -16,7 +16,11 @@ from pathlib import Path
 from typing import Any
 
 import yaml
-from arxiv_client import ArxivClient, ArxivClientError
+
+if __package__:
+    from .arxiv_client import ArxivClient, ArxivClientError
+else:
+    from arxiv_client import ArxivClient, ArxivClientError
 
 # Configure logging
 logging.basicConfig(

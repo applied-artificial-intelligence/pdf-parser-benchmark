@@ -1,0 +1,63 @@
+| Invoice Number: | INV-51883 |
+| --- | --- |
+| Invoice Date: | November 12, 2025 |
+| Payment Due: | December 12, 2025 |
+| Payment Terms: | Net 30 |
+
+| Description | Qty | Rate | Amount |
+| --- | --- | --- | --- |
+| Aluminum
+Extrusion (linear ft) | 37.44 | $16.28 | $609.52 |
+| Assembly Labor
+(hour) | 7.96 | $94.67 | $753.57 |
+| Quality Inspection
+(hour) | 12.22 | $99.75 | $1,218.94 |
+| Custom Tooling
+(each) | 73.13 | $2,127.07 | $155,552.63 |
+
+Invoice
+Standard Fabrication
+01120 Wilson Place
+Greenmouth, MP 45066
+(710)813-6396x4996 | billing@standardfabrication.com
+Invoice Number: INV-51883
+Invoice Date: November 12, 2025
+Payment Due: December 12, 2025
+Payment Terms: Net 30
+Bill To:
+Williams-Medina
+034 Michael Trail
+South Mackenzie, MS 29974
+Description Qty Rate Amount
+Aluminum 37.44 $16.28 $609.52
+Extrusion (linear ft)
+Assembly Labor 7.96 $94.67 $753.57
+(hour)
+Quality Inspection 12.22 $99.75 $1,218.94
+(hour)
+Custom Tooling 73.13 $2,127.07 $155,552.63
+(each)
+
+| Powder Coating (sq
+ft) | 5.09 | $5.88 | $29.93 |
+| --- | --- | --- | --- |
+| Assembly Labor
+(hour) | 77.59 | $62.91 | $4,881.19 |
+| Quality Inspection
+(hour) | 9.54 | $108.24 | $1,032.61 |
+| CNC Machining
+(hour) | 57.83 | $104.99 | $6,071.57 |
+
+Powder Coating (sq 5.09 $5.88 $29.93
+ft)
+Assembly Labor 77.59 $62.91 $4,881.19
+(hour)
+Quality Inspection 9.54 $108.24 $1,032.61
+(hour)
+CNC Machining 57.83 $104.99 $6,071.57
+(hour)
+Subtotal: $170,149.96
+NY Sales Tax (8.52%): $14,496.78
+Total: $184,646.74
+All materials conform to ASTM standards. Certifications
+available upon request.

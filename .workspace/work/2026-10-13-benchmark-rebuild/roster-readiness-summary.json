@@ -1,0 +1,92 @@
+{
+  "local_backends_with_actual_output": 11,
+  "ready": {
+    "marker": {
+      "probe": "roster-readiness/probe-4467f87f696745ecb7054802201b6604/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "cb8ac56a64371c78bd2671a86290d18d5893081ae7b1cbc5071b7cc9adf6bcc8",
+      "runtime_plan_sha256": "e6cde7623b8d34cabd05536c31de93e3a20c923ed1e0835e4918e8ba9b542895"
+    },
+    "pypdf": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "b3cd0532040bc353c27218849b7e5ff01e797908adb8b09e2ed27781486bbd49",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "pdfplumber": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "286b5c1eaf883c4908a95905144a6d6fb88e81494daf381782948b05c9ec98d0",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "pymupdf": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "9bb8b2fee53c388f800e29930685613f9b38dc8abfd1fc54988cc3f78c130f94",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "pymupdf4llm": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "6694f293dc02e261efb1a2eedb24f4951191004161b7637e296eef0fd7e19f5f",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "pdfminer": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "9fd5eab274f2d9a70ad5492f0fc22e758b316d3e7430b9302b627c4518fbb3f2",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "pypdfium2": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "f71cfe32c6b3e18714c8e48809fa1c9d5f96065451b481798695f63fa6499329",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "kreuzberg": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "4ea7e0fd2b5d43ed2426704d688b63b2922662b5fcdce98db50205722ca189b5",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "extractous": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "29cc7252884cafaad882d3b247182ecd9ae2f31c4f973c010ea38052a8f76383",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "docling": {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "320177de4a015b7302e8554de7b38e67852a23674b9e8f9d2ac7ade3be700cfa",
+      "runtime_plan_sha256": "eb4854946e171ff210fb3e4fca0b43b1a4323e3ea9a368c8781c73ae79ed4b59"
+    },
+    "unstructured": {
+      "probe": "roster-readiness/probe-a29aa55e0c5047e690e908278e7003f3/results.json",
+      "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+      "output_sha256": "1bbef14a0fdf9beec7c3e0dab4e5bfb39e5c0b0e92d77632fd9b280c3b2ff794",
+      "runtime_plan_sha256": "27af9975876230f861b54a5ac93b7387fd53cb6377b44cb5650507c37ab4ba08"
+    }
+  },
+  "diagnostics": [
+    {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "backend": "unstructured",
+      "outcome": "parser_failure",
+      "error": "pdfsmith unstructured failed: Unstructured requires the en_core_web_sm 3.8.0 spaCy model. Preinstall it before parsing; PDFsmith does not install it implicitly."
+    },
+    {
+      "probe": "roster-readiness/probe-70aba446ad48464eaf2c3a367391d30e/results.json",
+      "backend": "marker",
+      "outcome": "parser_failure",
+      "error": "pdfsmith marker failed: Marker runtime requires marker-pdf==2.0.0"
+    },
+    {
+      "probe": "roster-readiness/probe-f3a560fe6ca64c5499b28b35e12c8fb6/results.json",
+      "backend": "pypdf",
+      "outcome": "parser_failure",
+      "error": "Input file not found: /home/stefan/applied-ai/pdf-bench/data_exports/parsebench/sources/docs/chart/10k_2024_p27.pdf"
+    }
+  ],
+  "limits": "Readiness establishes a successful actual call, not accuracy, all-input compatibility or model suitability. Commercial backends not called."
+}

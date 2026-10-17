@@ -1,0 +1,55 @@
+PDF-Bench reconstruction replay
+
+Purpose
+Reproduce the frozen configured-pipeline comparisons and independently regrade
+retained outputs. These are local runs with no API keys or metered provider calls.
+
+Requirements
+Use the repository checkout, uv, disk space for temporary environments and network
+access for hash-locked public packages. ParseBench input PDFs are not automatically
+redistributed here: missing inputs are retrieved from pinned Hugging Face URLs and
+verified against the qualified SHA256 before parsing. Original third-party rights
+were not independently cleared. The pinned dataset README declares Apache-2.0.
+Invoice inputs are retained with the qualified synthetic example.
+
+Invoice replay
+Run reproduce_invoice_comparison.sh in this work unit. It installs the retained
+PDFsmith/benchmark wheels with pinned dependencies into a fresh directory, executes
+every planned pair, compares actual bytes/predictions/outcomes/grades with the
+primary v3 run, and regrades after removing copied input PDFs. It writes
+verification.json and the actual result bundle, then removes its environments.
+Pass --output-parent followed by a directory to choose where fresh evidence goes.
+Default output is the repository's ignored data_exports directory.
+
+Public replay
+Run reproduce_parsebench_comparison.sh in this work unit. It installs separate
+frozen parser and native-evaluator environments, reconstructs every frozen source,
+executes the planned public pairs, compares native metrics and outputs, then
+regrades a relocated retained bundle without input PDFs, parser imports, network
+or parser subprocesses. It writes verification.json and the actual run bundle,
+then removes its environments. It accepts the same --output-parent option.
+The Python driver was executed successfully outside the checkout; the shell file
+only resolves the driver and selects the declared Python version.
+
+Inspect without reparsing
+invoice-run-checkpoint.json and parsebench-run-checkpoint.json identify primary
+bundles, exact completion/plan hashes, retained packages and reproduction proofs.
+Invoice frozen-plan/offline-regrade.py runs with isolated Python and site loading
+disabled, using only retained raw output/predictions/references. The public bundle
+retains native-worker.py and upstream source identity; regrading uses the pinned
+native evaluator environment, not a proxy score. Both paths reject changed bytes.
+
+Interpretation
+Fresh parse durations may differ. The acceptance target is exact frozen population,
+implementation, raw outputs, semantic predictions, outcomes and deterministic
+grades. Timing excludes or includes regions exactly as recorded in each plan.
+The synthetic invoice task and native public dimensions have different score units.
+No paid comparison, package release, main-branch merge or publication is performed.
+
+Generate the report
+Run scripts/build_internal_benchmark_story.py with --qualified-report from the
+repository's uv environment. It verifies the retained registry, qualified runs,
+failure audit and claim sources before creating a new report-evidence bundle and
+atomically changing latest.json. The previous valid bundle remains on failure.
+claims.json supplies repository-relative evidence paths, SHA256, JSON pointers,
+denominators, provenance contexts, tiers and supported interpretations.

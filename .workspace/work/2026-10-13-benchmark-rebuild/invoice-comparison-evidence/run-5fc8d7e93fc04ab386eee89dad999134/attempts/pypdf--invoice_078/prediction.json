@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-44711",
+    "vendor": "Foundation Inc",
+    "due_date": "2025-12-09",
+    "grand_total": "54370.74",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-44711"
+    ],
+    "due_date": [
+      "December 09, 2025"
+    ],
+    "grand_total": [
+      "$54,370.74"
+    ],
+    "vendor": [
+      "Foundation Inc"
+    ]
+  },
+  "records": [
+    {
+      "description": "Materials - Concrete",
+      "quantity": "42.44",
+      "unit": "cu yd",
+      "unit_price": "157.89",
+      "line_total": "6700.85",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials -\nConcrete",
+        "quantity": "42.44",
+        "unit": "cu yd",
+        "unit_price": "$157.89",
+        "line_total": "$6,700.85"
+      }
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "61.74",
+      "unit": "hour",
+      "unit_price": "126.28",
+      "line_total": "7796.53",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing",
+        "quantity": "61.74",
+        "unit": "hour",
+        "unit_price": "$126.28",
+        "line_total": "$7,796.53"
+      }
+    },
+    {
+      "description": "Equipment Rental",
+      "quantity": "95.03",
+      "unit": "day",
+      "unit_price": "212.42",
+      "line_total": "20186.27",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment\nRental",
+        "quantity": "95.03",
+        "unit": "day",
+        "unit_price": "$212.42",
+        "line_total": "$20,186.27"
+      }
+    },
+    {
+      "description": "Electrical Work",
+      "quantity": "68.39",
+      "unit": "hour",
+      "unit_price": "122.42",
+      "line_total": "8372.3",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electrical Work",
+        "quantity": "68.39",
+        "unit": "hour",
+        "unit_price": "$122.42",
+        "line_total": "$8,372.30"
+      }
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "34.11",
+      "unit": "hour",
+      "unit_price": "90.14",
+      "line_total": "3074.68",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing",
+        "quantity": "34.11",
+        "unit": "hour",
+        "unit_price": "$90.14",
+        "line_total": "$3,074.68"
+      }
+    },
+    {
+      "description": "Plumbing",
+      "quantity": "54.5",
+      "unit": "hour",
+      "unit_price": "90.41",
+      "line_total": "4927.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing",
+        "quantity": "54.50",
+        "unit": "hour",
+        "unit_price": "$90.41",
+        "line_total": "$4,927.34"
+      }
+    },
+    {
+      "description": "General Labor",
+      "quantity": "15.59",
+      "unit": "hour",
+      "unit_price": "46.42",
+      "line_total": "723.69",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor",
+        "quantity": "15.59",
+        "unit": "hour",
+        "unit_price": "$46.42",
+        "line_total": "$723.69"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

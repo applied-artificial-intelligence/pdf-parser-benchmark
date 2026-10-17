@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-29667",
+    "vendor": "Standard Corp",
+    "due_date": "2025-11-17",
+    "grand_total": "387346.85",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-29667"
+    ],
+    "due_date": [
+      "November 17, 2025"
+    ],
+    "grand_total": [
+      "$387,346.85"
+    ],
+    "vendor": [
+      "Standard Corp"
+    ]
+  },
+  "records": [
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "34.38",
+      "unit_price": "111.3",
+      "line_total": "3826.49",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection\n(hour)",
+        "quantity": "34.38",
+        "unit_price": "$111.30",
+        "line_total": "$3,826.49"
+      }
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "94.54",
+      "unit_price": "3671.75",
+      "line_total": "347127.24",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling\n(each)",
+        "quantity": "94.54",
+        "unit_price": "$3,671.75",
+        "line_total": "$347,127.24"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "38.76",
+      "unit_price": "7.64",
+      "line_total": "296.13",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch\n(sq ft)",
+        "quantity": "38.76",
+        "unit_price": "$7.64",
+        "line_total": "$296.13"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "16.92",
+      "unit_price": "54.94",
+      "line_total": "929.58",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "16.92",
+        "unit_price": "$54.94",
+        "line_total": "$929.58"
+      }
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "59.12",
+      "unit_price": "63.81",
+      "line_total": "3772.45",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor\n(hour)",
+        "quantity": "59.12",
+        "unit_price": "$63.81",
+        "line_total": "$3,772.45"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

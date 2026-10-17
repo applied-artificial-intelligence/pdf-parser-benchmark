@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_reconstruction_export.py::test_relocated_offline_regrade_needs_no_input_pdfs_parser_imports_or_original_paths",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "            prediction = extract_invoice(raw.decode(\"utf-8\"))",
+      "new": "            prediction = extract_invoice(raw.decode(\"utf-8\"))\n            prediction[\"fields\"][\"grand_total\"] = \"0\""
+    }
+  }
+}

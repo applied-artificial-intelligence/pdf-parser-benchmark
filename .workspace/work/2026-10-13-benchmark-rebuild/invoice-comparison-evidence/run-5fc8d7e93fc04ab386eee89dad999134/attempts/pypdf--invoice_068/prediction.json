@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-80861",
+    "vendor": "Summit Associates",
+    "due_date": "2025-09-17",
+    "grand_total": "379963.52",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-80861"
+    ],
+    "due_date": [
+      "09/17/2025"
+    ],
+    "grand_total": [
+      "$379,963.52"
+    ],
+    "vendor": [
+      "Summit Associates"
+    ]
+  },
+  "records": [
+    {
+      "description": "Laboratory Services @ $74.60/panel",
+      "quantity": "50.57",
+      "line_total": "3772.52",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory Services @\n$74.60/panel",
+        "quantity": "50.57",
+        "line_total": "$3,772.52"
+      }
+    },
+    {
+      "description": "Physical Therapy @ $117.23/session",
+      "quantity": "19.37",
+      "line_total": "2270.75",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Physical Therapy @\n$117.23/session",
+        "quantity": "19.37",
+        "line_total": "$2,270.75"
+      }
+    },
+    {
+      "description": "Specialized Procedure @ $3353.89/procedure",
+      "quantity": "94.16",
+      "line_total": "315802.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Specialized Procedure @\n$3353.89/procedure",
+        "quantity": "94.16",
+        "line_total": "$315,802.28"
+      }
+    },
+    {
+      "description": "Diagnostic Imaging @ $351.35/procedure",
+      "quantity": "41",
+      "line_total": "14405.35",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Diagnostic Imaging @\n$351.35/procedure",
+        "quantity": "41.00",
+        "line_total": "$14,405.35"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

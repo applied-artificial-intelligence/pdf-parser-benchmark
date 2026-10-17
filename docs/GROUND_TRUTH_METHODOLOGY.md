@@ -1,6 +1,6 @@
 # Ground Truth Methodology and Metric Limitations
 
-*Last Updated: 2025-11-22*
+*Last Updated: 2026-02-01*
 
 ## Overview
 
@@ -93,6 +93,26 @@ Each "line" contains multiple merged paragraphs and section definitions.
 1. Ground truth lacks proper structure (flattened at source)
 2. Parsers producing better structure score WORSE
 3. Parsers producing wall-of-text score HIGHER (match flattened ground truth)
+
+### arXiv Academic Papers (5 documents)
+
+**Source**: arXiv papers with LaTeX source available via `https://arxiv.org/e-print/XXXX.XXXXX`.
+
+**Original Method**: ar5iv (LaTeX→HTML service) converted to Markdown. This introduced CSS class annotations (`{.ltx_creator}`, `{.ltx_tag}`), verbose internal links, and table formatting artifacts that inflated the ground truth by ~62% and penalized all parsers equally.
+
+**Improved Method** (2026-02-01): Pandoc conversion directly from LaTeX source:
+```bash
+pandoc paper.tex -o ground_truth.md --wrap=none
+```
+For multi-file LaTeX, flatten first with `latexpand main.tex > combined.tex`.
+
+**Quality**: Pandoc output is faithful to LaTeX structure. Equations use clean `$...$` and `$$...$$` delimiters. Section hierarchy matches `\section{}` commands. Some Pandoc-specific markup remains (heading IDs, fenced divs for theorem environments, cross-reference attributes) that could be stripped for even cleaner comparison.
+
+**Impact**: Switching to Pandoc ground truth improved all parser scores by 88-119% on text similarity metrics. Parser rankings unchanged. LaTeX F1 metric now functional (Marker: 15.8% F1; all others: 0%).
+
+**Status**: 1 of 5 papers converted (2302.14852). Remaining 4 need `latexpand` for multi-file LaTeX. See `docs/METHODOLOGY_COMPARISON.md` for full details.
+
+**Implication for Metrics**: Element F1 and latex_f1 are now meaningful for arXiv papers. Edit similarity and ChrF++ give realistic (not suppressed) scores.
 
 ### OmniDocBench (193 documents)
 
@@ -201,6 +221,8 @@ Both have 3 headings → perfect match, despite completely wrong hierarchy.
 | **Synthetic** | YES | Element F1 | Ground truth is perfect by construction |
 | **CUAD** | NO | edit_similarity | Source text is flattened; structure metrics inverted |
 | **OmniDocBench** | YES | Element F1, TEDS | Human-annotated ground truth |
+| **arXiv (Pandoc)** | CAUTION | edit_similarity, latex_f1 | LaTeX-derived; equation metrics meaningful, but Pandoc markup (heading IDs, fenced divs) not yet normalized |
+| **arXiv (ar5iv)** | CAUTION | edit_similarity only | CSS artifacts suppress all scores ~50%; avoid for structure/equation metrics |
 
 **For CUAD benchmark rankings:**
 - Use **edit_similarity only** for ranking

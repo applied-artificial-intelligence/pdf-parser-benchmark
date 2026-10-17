@@ -1,0 +1,38 @@
+Review the attached external-review-packet.txt using your strongest available
+reasoning-capable GPT model. This is a specification/plan review, not a request
+to execute paid providers, change repositories, publish, or start other agents.
+
+PDF-Bench previously produced inconsistent benchmark histories and was withdrawn.
+We are reconstructing practical parser evaluation and a worked demonstration of
+how an engineering team designs its own use-case-specific internal benchmark.
+ParseBench is established prior art to acknowledge/reuse where suitable. We do
+not need another universal leaderboard or a report consisting only of caveats.
+
+Read the entire packet: confirmed intent, spec, plan, baseline checks, hashes,
+actual producing-code excerpts and retained summaries. Challenge task scope and
+usefulness, source/PDF/reference agreement and independence, extractor/grader
+separation, population/paired metric denominators, cache/checkpoint identity,
+backend/version provenance, fresh timing, actual-pipeline red/green coverage,
+failure/atomicity behavior, replay/relocation and unnecessary complexity.
+
+In particular, try to construct concrete failures where the proposed checks accept
+the wrong field/row association, use reference answers during extraction, suppress
+failed inputs, validate a changed PDF with a stale reference, reuse stale outputs,
+or register a partial bundle as complete. Distinguish actual demonstrated defects
+from plausible risks and preferences. Challenge whether the fixed 100-invoice
+example teaches benchmark design without claiming general vendor-invoice accuracy.
+
+Return:
+1. Proceed, revise, or block for the first engineering milestone, with reasons.
+2. Numbered findings: severity, exact spec criterion/issue/excerpt, how the error
+   would arise through the real producing pipeline, and the acceptance change
+   needed before implementation or before a strong result claim.
+3. Necessary additions/removals to the plan, separating correctness from optional
+   follow-on research. Do not restart planning for preferences.
+4. Assess the contribution after ParseBench and the internal-benchmark design
+   lesson. State any source or current-version claim you cannot verify.
+5. State what you inspected, assumptions and what was not executed.
+
+Do not infer fresh execution from old test reports. No tests, parsing benchmark,
+paid calls, model judges or returned specification reviews have occurred simply
+because this packet describes their intended behavior.
