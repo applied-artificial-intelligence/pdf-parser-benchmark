@@ -1,5 +1,7 @@
 """Result persistence for PDF-Bench benchmark results."""
 
+from __future__ import annotations
+
 import json
 import math
 import os
@@ -8,9 +10,10 @@ import sys
 import tempfile
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
-from pdf_bench.runner import BenchmarkResults, DocumentResult
+if TYPE_CHECKING:
+    from pdf_bench.runner import BenchmarkResults
 
 
 @dataclass
@@ -160,6 +163,8 @@ def load_results(input_path: Path) -> BenchmarkResults:
         json.JSONDecodeError: If file is not valid JSON
         KeyError: If required fields are missing
     """
+    from pdf_bench.runner import BenchmarkResults, DocumentResult
+
     with open(input_path, encoding="utf-8") as f:
         data = json.load(f)
 

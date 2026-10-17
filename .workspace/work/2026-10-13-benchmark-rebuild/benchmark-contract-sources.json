@@ -1,0 +1,16 @@
+[
+  {
+    "benchmark": "omnidocbench",
+    "revision": "f133a71e9e91c3621c7ce8994200a7b394a06eb3",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/opendatalab/OmniDocBench/f133a71e9e91c3621c7ce8994200a7b394a06eb3/README.md",
+    "sha256": "a799f3dabee0d8e2be9f990fc325c3fefadb8d7f8d0cf56148406547d495a3ad"
+  },
+  {
+    "benchmark": "extractbench",
+    "revision": "56b8fdd91b2cf3648caf75c717c68441ecf4d43f",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
+    "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8"
+  }
+]
