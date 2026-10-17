@@ -89,6 +89,20 @@ def grade(unit: Path, run: Path, stop_at: datetime | None = None) -> dict | None
     cases = _load_jsonl_dataset(references)
     if len(cases) != len(inventory["cases"]):
         raise ValueError("Upstream loader did not preserve every dimension case")
+    if plan.get("selection_sha256"):
+        selection = unit / "parsebench-screening-selection.json"
+        if digest(selection) != plan["selection_sha256"]:
+            raise ValueError("Screening population changed")
+        cases = [
+            case
+            for case in cases
+            if case.file_path.relative_to(references).as_posix() in expected_inputs
+        ]
+    if (
+        len(cases) != plan["case_count"]
+        or dict(Counter(c.group for c in cases)) != plan["dimension_cases"]
+    ):
+        raise ValueError("Native case selection differs from declared population")
     evaluator = ParseEvaluator(**protocol["options"])
     convert = table_converter()
     rows = []

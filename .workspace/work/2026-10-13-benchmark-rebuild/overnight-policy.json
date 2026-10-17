@@ -23,93 +23,111 @@
   "jobs": [
     {
       "backend": "docling",
-      "run": "docling-3b0c3cb78a55424cae9daa48d81e7d9f",
+      "run": "sample-208-docling-41edd0d1f7c84013b26779a25301f644",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 1,
       "priority": 0,
-      "plan_sha256": "2e5045703d46e442c7108adfa397c49b7f8f746562c91c0eb814f6bd9368be13"
+      "plan_sha256": "975ba4f644402be8e2f20dddf2092bd88b451a4f81bb20f498ec53087370e1ee"
     },
     {
       "backend": "marker",
-      "run": "marker-64aada83e3d344369386694fd93377f4",
+      "run": "sample-208-marker-d98b6a1c471c4763adf05a6f69c20f37",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
       "workers": 2,
       "priority": 1,
-      "plan_sha256": "c1837620e985a63236d70fe87f19edfd8c15fdcfa3d8add52da3caf78550748c"
+      "plan_sha256": "3d4afb4bc5e7da15287da8147cdd36e6b753feeadf0d8eda7969cfa8e025a890",
+      "hold_reason": "Current frozen integration forces CPU and resolves llama-server by PATH, where no binary is available in the overnight environment. Born-digital readiness output did not qualify scanned-PDF OCR. Repair and validate OCR/GPU execution before a bulk Marker run."
     },
     {
       "backend": "unstructured",
-      "run": "unstructured-f2c7980b25db43e7bcc73bf598d81b4a",
+      "run": "sample-208-unstructured-04f65a4dd74648cea24679852cbf2a8d",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 2,
-      "plan_sha256": "5a1f35cd46a934c243c0af59e527967c7e7d6697d421670acf29ac77abce1290"
+      "plan_sha256": "b3356dfb4490fee3cc665655c082eae09ebbb3212b5e43a2f17a44aaf66f0afa"
     },
     {
       "backend": "pymupdf4llm",
-      "run": "pymupdf4llm-bd7bdb80b24a4776a8b85ba647174925",
+      "run": "sample-208-pymupdf4llm-d0aef1e7a77d4147b2d44137dfc56cfc",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 3,
-      "plan_sha256": "c22d01873d4427fd9698b3ad1dbe039ac8cdf2b82c191dc0d5ffcf20d922221a"
+      "plan_sha256": "54d2ee177d645c70251f534c5f52f3bb016a3878a4542f428f5f5bdd8908ae64"
     },
     {
       "backend": "extractous",
-      "run": "extractous-974a75a9eda64503a874eae8ef12a317",
+      "run": "sample-208-extractous-f4f762f79ce8423dbe6cdfcc4d1042af",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "0869ce3c4fa96ed8f87eaded636c384621829426a424ac59c71709989a3d8e8d"
+      "plan_sha256": "7f5dbb9d8fa121e5c730907a92d87eafeaa069308dac388287b4e8deec9dfd81"
     },
     {
       "backend": "kreuzberg",
-      "run": "kreuzberg-e6c08da7f480478abeac09057092f1ab",
+      "run": "sample-208-kreuzberg-842c4ad3d10545b983e1c34aeffe7fb3",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "4221c9dec8ca6e5e5924c46a8450ede612696822d59c34609476e6a6c3644c40"
+      "plan_sha256": "e8903bf109b7d36e2065070d6770d7a2e2f860dfe0833e6b04051d1f2a7fcab2"
     },
     {
       "backend": "pdfminer",
-      "run": "pdfminer-ff33a6b3ad8b41b186f18a5148b93717",
+      "run": "sample-208-pdfminer-a3ee03c20b644c318d5bc5deb3758464",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "1b6505fef1df15f94c0845298aa0173fbed1cf701830d1dbe8f6ceb47d5d6a52"
+      "plan_sha256": "36ec5011798d783dca3486404a703a3a765056376bd4d9819a8c6db3aeb64a6e"
     },
     {
       "backend": "pdfplumber",
-      "run": "pdfplumber-e2d58e3d7924488eac4c1aed9620bf8e",
+      "run": "sample-208-pdfplumber-c4175eedfd9c4a6e822af082a629bcf3",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "77acb6a5c9f547d77c272405449f1cc7e99ba167a2b37402d5aa86cbfd49a76a"
+      "plan_sha256": "784d894f30c1a617b4905b0e0994f6fb728c80f43d7634b51cbf2e098f73cacc"
     },
     {
       "backend": "pymupdf",
-      "run": "pymupdf-a2fdbe5a5f6d4960b5c7a80a50e41a17",
+      "run": "sample-208-pymupdf-dc0216cf93c9463886ea10237aee4acc",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "0b7215583e1f319e1b9a54a298483746b66b581ba9c24451fca2f32b2966d2cf"
+      "plan_sha256": "46a7fade67e28c1c4964f5c7ccbf3738b079d1f6c6f3cc14dd69723a49332241"
     },
     {
       "backend": "pypdf",
-      "run": "pypdf-9a29e22fbd3c483c95cf6d9b15230b36",
+      "run": "sample-208-pypdf-a8cde918cf224a278e633b0dda7a7892",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "54b134cf36fd089d792df8614acca7d0c8d90d66fbec73bdbd159600ad03d172"
+      "plan_sha256": "0e4bf561a4881696120ae1502d5fd26eb370b1c54a3be7e9f3fb6720f2b5e41f"
     },
     {
       "backend": "pypdfium2",
-      "run": "pypdfium2-212c10fe83b44e83a0fa0859d7c797be",
+      "run": "sample-208-pypdfium2-4d7d1411fe154b34beb7f61d9203198b",
       "python": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
       "workers": 2,
       "priority": 4,
-      "plan_sha256": "d57e997ea8ee2efa923ecf2d902de239b0327b3d3898e87bc7012b2c71f2b035"
+      "plan_sha256": "f826167be5422d60eafb9609418a47580b34f624b812bdedb409a8fb39189e79"
     }
   ],
   "approved_by": "Stefan, October 17: overnight window and efficient bounded parallel execution",
-  "timing_policy": "Ten shared dimension-balanced PDF inputs, one worker versus two where eligible. Reduce to one if speedup is below 1.2 or failures increase. Small pilot is a planning estimate, not a latency ranking."
+  "timing_policy": "Ten shared dimension-balanced PDF inputs, one worker versus two where eligible. Reduce to one if speedup is below 1.2 or failures increase. Small pilot is a planning estimate, not a latency ranking.",
+  "screening_selection": "parsebench-screening-selection.json",
+  "full_population_policy": "Deferred until the screen identifies an unresolved decision",
+  "reused_attempts": {
+    "docling": 3,
+    "marker": 1,
+    "unstructured": 4,
+    "pymupdf4llm": 34,
+    "extractous": 76,
+    "kreuzberg": 85,
+    "pdfminer": 114,
+    "pdfplumber": 109,
+    "pymupdf": 93,
+    "pypdf": 131,
+    "pypdfium2": 149
+  },
+  "execution_paused": true,
+  "pause_reason": "Stefan postponed local GPU work and requested a concept establishing value beyond existing public benchmarks. No automatic benchmark or test execution."
 }

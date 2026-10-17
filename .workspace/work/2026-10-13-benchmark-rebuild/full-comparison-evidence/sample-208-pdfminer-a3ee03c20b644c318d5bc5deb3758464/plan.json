@@ -1,0 +1,1448 @@
+{
+  "protocol": "parsebench-pdfsmith-screen-v1",
+  "backend": "pdfminer",
+  "options": {
+    "char_margin": 2.0,
+    "line_margin": 0.5,
+    "word_margin": 0.1,
+    "detect_vertical": false,
+    "all_texts": false
+  },
+  "runtime": {
+    "python": "3.13.5 (main, Jul 23 2025, 00:37:22) [Clang 20.1.4 ]",
+    "executable": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/roster-runtime/bin/python",
+    "pdfsmith_source_version": "0.3.0.dev0",
+    "pdfsmith_sources": {
+      "__init__.py": "0e80deb8f7ce0f3d1ec0e7d101c4fde9bbe2c8d6765fe70b91c3e1581b7f0c85",
+      "_documents.py": "b39cb73aa71abbe9f9fbc30a4a3c4273f59571df6ff949ca4abe7f51a51c0128",
+      "_inputs.py": "290e4e6445d991ef15c91c1ef4b5c9d78f55854e1280056c25f9fecab968dcde",
+      "api.py": "1d02da4ec120a6d165b79df7b52f80ae0e42b6873bd00e7609fd35ef91f39b04",
+      "backends/__init__.py": "725c9d317d633bd11bfaa51369ccc8cb4aef0dbc1443cc0e68566394182761ae",
+      "backends/_cleanup.py": "d90ecf5dee5d0e2d050d906a18e8632ff2b40b702fecaaec8d180dc2aacee1f0",
+      "backends/_process.py": "6cf06fa391861bb2f32b72323286489ebc8f469cfdd3c8dc71dd1fb4873c788a",
+      "backends/anthropic_backend.py": "cf77871df872a806270f74a88889bc6b6b966fc0b6822ad9b41be1099cc7fd76",
+      "backends/aws_textract_backend.py": "99d51fbbe4b6dd0939cc745a34cdc890942498eb04fa2a174c7998ebfe233bdd",
+      "backends/azure_document_intelligence_backend.py": "a125fe13dfafd4536b5f2b6907207630dcaabd2a3fc2f57d0a4df6d2d9f150e8",
+      "backends/databricks_backend.py": "d5517b630d38fcbe5c460414876167fde7bf9db0ada11f8e26ba047d6c767d3f",
+      "backends/docling_backend.py": "ec5b6174dd0c327096095e9a025eb3fa2e8db7cb1f58f17f0c96683f1cfab259",
+      "backends/extractous_backend.py": "6a7e6d91a2f271d56c843d09081a7ccd80cf49bde855badf790cf0d3cdd54a02",
+      "backends/gemini_backend.py": "07fb8ff03f51e9abe182ffabbc209d355d950aaeff5325e9cc453d4d88c089a3",
+      "backends/google_document_ai_backend.py": "77a3211c3ffa91157f1852b13abe9d81aceed8b42205e223b81536f1511d6845",
+      "backends/kreuzberg_backend.py": "787e9db8fa4d68d01ff8a85a8193ad997380558fa1aec23861a48d4679c6335e",
+      "backends/llamaparse_backend.py": "e870e0e66f4db0e9484f92f04985b39a9c813ed1b34464f316ca6fb3bd65c920",
+      "backends/marker_backend.py": "30563697624a005d3913c7036f88810d22a09a8b211d99ce214ebae5b7b3f374",
+      "backends/openai_backend.py": "b1b783311b71c0ae09c8a6d0c81c548f4af3e083d846f053bdf6a6fd34c7c493",
+      "backends/pdfminer_backend.py": "b7f8c456c1ebcf3cd6ae7187c42df629f9ba32641eb80472468f963418b5b31c",
+      "backends/pdfplumber_backend.py": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "backends/pymupdf4llm_backend.py": "d8099c436913e52ce8baa4ac3a33a8d9de1c672ba0e5612bb86347220de29666",
+      "backends/pymupdf_backend.py": "dd935443a5cf9afdaf1cc253e10f6945d9a9ee526c432f1022e36ccc970e97bc",
+      "backends/pypdf_backend.py": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "backends/pypdfium2_backend.py": "13c2cc8dd24349f9d47b26f1ed381f9748c5d89c33666c47a9e5d18413e425e7",
+      "backends/registry.py": "f15f6973c002816302ba605958cd3c7b009f2105ed5e5586ae245039808032e5",
+      "backends/unstructured_backend.py": "c4544a3e439a18918f7052c378ffa6c0d53b9618e69afd6ca0fef4557570d7ab",
+      "cli.py": "d8895db341df23586d8f44d3255a55195db2fbbfeb57d5177d385f8aeab10bce",
+      "config.py": "19e569e7c294e02522e64254fba138cd533c597277289e07993f31e793f750ff",
+      "errors.py": "ccab96b4200637d55e7ec9fb4d65986e159b0a035c717061afb6bd234b07524d"
+    },
+    "distributions": {
+      "Deprecated": "1.3.1",
+      "Faker": "40.43.0",
+      "Jinja2": "3.1.6",
+      "Levenshtein": "0.27.3",
+      "MarkupSafe": "3.0.4",
+      "PyJWT": "2.10.1",
+      "PyMuPDF": "1.28.2",
+      "PyPDF2": "3.0.1",
+      "PyYAML": "6.0.3",
+      "Pygments": "2.21.0",
+      "RapidFuzz": "3.14.6",
+      "SQLAlchemy": "2.0.44",
+      "accelerate": "1.15.0",
+      "aiofiles": "25.1.0",
+      "aiohappyeyeballs": "2.6.1",
+      "aiohttp": "3.13.2",
+      "aiosignal": "1.4.0",
+      "aiosqlite": "0.21.0",
+      "annotated-doc": "0.0.5",
+      "annotated-types": "0.8.0",
+      "anthropic": "0.46.0",
+      "antlr4-python3-runtime": "4.9.3",
+      "anyio": "4.15.1",
+      "attrs": "26.1.0",
+      "azure-ai-documentintelligence": "1.0.2",
+      "azure-core": "1.36.0",
+      "backoff": "2.2.1",
+      "banks": "2.2.0",
+      "beautifulsoup4": "4.15.0",
+      "blis": "1.3.3",
+      "boto3": "1.40.73",
+      "boto3-stubs": "1.41.2",
+      "botocore": "1.40.73",
+      "botocore-stubs": "1.41.2.post1",
+      "cachetools": "6.2.2",
+      "catalogue": "2.0.10",
+      "certifi": "2026.7.22",
+      "cffi": "2.1.1",
+      "cfgv": "3.5.0",
+      "chardetng_py": "0.3.5",
+      "charset-normalizer": "3.5.2",
+      "click": "8.5.0",
+      "cloudpathlib": "0.26.0",
+      "colorama": "0.4.6",
+      "coloredlogs": "15.0.1",
+      "colorlog": "6.12.0",
+      "confection": "1.3.3",
+      "contourpy": "1.4.0",
+      "coverage": "7.12.0",
+      "cryptography": "50.0.2",
+      "cuda-bindings": "13.4.4",
+      "cuda-pathfinder": "1.8.3",
+      "cuda-toolkit": "13.0.3.0",
+      "cycler": "0.12.1",
+      "cymem": "2.0.13",
+      "databricks-sdk": "0.73.0",
+      "dataclasses-json": "0.6.7",
+      "datasets": "4.4.1",
+      "defusedxml": "0.7.1",
+      "dill": "0.4.1",
+      "dirtyjson": "1.0.8",
+      "distlib": "0.4.0",
+      "distro": "1.9.0",
+      "doclang": "0.7.3",
+      "docling": "2.139.0",
+      "docling-core": "2.101.1",
+      "docling-ibm-models": "4.0.3",
+      "docling-parse": "7.22.3",
+      "docling-slim": "2.139.0",
+      "docxtpl": "0.20.2",
+      "einops": "0.8.1",
+      "emoji": "2.16.0",
+      "en_core_web_sm": "3.8.0",
+      "et_xmlfile": "2.0.0",
+      "extractous": "0.3.0",
+      "filelock": "3.32.7",
+      "filetype": "1.2.0",
+      "flatbuffers": "25.12.19",
+      "fonttools": "4.67.0",
+      "frozenlist": "1.8.0",
+      "fsspec": "2026.9.0",
+      "ftfy": "6.3.1",
+      "google-api-core": "2.42.0",
+      "google-auth": "2.62.0",
+      "google-cloud-core": "2.5.0",
+      "google-cloud-documentai": "3.7.0",
+      "google-cloud-storage": "3.6.0",
+      "google-cloud-vision": "3.16.0",
+      "google-crc32c": "1.7.1",
+      "google-genai": "1.52.0",
+      "google-resumable-media": "2.8.0",
+      "googleapis-common-protos": "1.75.5",
+      "greenlet": "3.2.4",
+      "griffe": "1.15.0",
+      "grpcio": "1.84.0",
+      "grpcio-status": "1.84.0",
+      "h11": "0.16.0",
+      "hf-xet": "1.7.0",
+      "html-to-markdown": "2.9.1",
+      "html5lib": "1.1",
+      "httpcore": "1.0.9",
+      "httpx": "0.28.1",
+      "httpx-sse": "0.4.3",
+      "huggingface-hub": "1.33.0",
+      "huggingface_hub": "1.33.0",
+      "humanfriendly": "10.0",
+      "identify": "2.6.15",
+      "idna": "3.20",
+      "iniconfig": "2.3.0",
+      "installer": "0.7.0",
+      "isodate": "0.7.2",
+      "jiter": "0.12.0",
+      "jmespath": "1.0.1",
+      "joblib": "1.5.2",
+      "jsonlines": "4.0.0",
+      "jsonref": "1.1.0",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "kiwisolver": "1.5.1",
+      "kreuzberg": "4.10.4",
+      "landingai-ade": "0.21.2",
+      "langcodes": "3.5.1",
+      "langdetect": "1.0.9",
+      "language_data": "1.3.0",
+      "latex2mathml": "3.81.1",
+      "llama-cloud": "0.1.44",
+      "llama-cloud-services": "0.6.83",
+      "llama-index-core": "0.14.8",
+      "llama-index-instrumentation": "0.4.2",
+      "llama-index-workflows": "2.11.5",
+      "llama-parse": "0.6.83",
+      "llvmlite": "0.50.0",
+      "lxml": "6.1.3",
+      "mail-parser": "4.8.0",
+      "marisa-trie": "1.3.1",
+      "markdown-it-py": "4.2.0",
+      "markdown2": "2.5.4",
+      "markdownify": "1.2.2",
+      "marker-pdf": "1.10.1",
+      "marko": "2.2.4",
+      "marshmallow": "3.26.1",
+      "matplotlib": "3.11.2",
+      "mcp": "1.22.0",
+      "mdurl": "0.1.2",
+      "mistune": "3.1.4",
+      "ml_dtypes": "0.6.0",
+      "mpire": "2.10.2",
+      "mpmath": "1.3.0",
+      "msgspec": "0.19.0",
+      "multidict": "6.7.0",
+      "multiprocess": "0.70.19",
+      "murmurhash": "1.0.15",
+      "mypy": "1.18.2",
+      "mypy_extensions": "1.1.0",
+      "nest-asyncio": "1.6.0",
+      "networkx": "3.7",
+      "nh3": "0.3.7",
+      "nltk": "3.9.2",
+      "nodeenv": "1.9.1",
+      "numba": "0.68.0",
+      "numpy": "2.5.4",
+      "nvidia-cublas": "13.1.1.3",
+      "nvidia-cublas-cu12": "12.8.4.1",
+      "nvidia-cuda-cupti": "13.0.85",
+      "nvidia-cuda-cupti-cu12": "12.8.90",
+      "nvidia-cuda-nvrtc": "13.0.88",
+      "nvidia-cuda-nvrtc-cu12": "12.8.93",
+      "nvidia-cuda-runtime": "13.0.96",
+      "nvidia-cuda-runtime-cu12": "12.8.90",
+      "nvidia-cudnn-cu12": "9.10.2.21",
+      "nvidia-cudnn-cu13": "9.24.0.43",
+      "nvidia-cufft": "12.0.0.61",
+      "nvidia-cufft-cu12": "11.3.3.83",
+      "nvidia-cufile": "1.15.1.6",
+      "nvidia-cufile-cu12": "1.13.1.3",
+      "nvidia-curand": "10.4.0.35",
+      "nvidia-curand-cu12": "10.3.9.90",
+      "nvidia-cusolver": "12.0.4.66",
+      "nvidia-cusolver-cu12": "11.7.3.90",
+      "nvidia-cusparse": "12.6.3.3",
+      "nvidia-cusparse-cu12": "12.5.8.93",
+      "nvidia-cusparselt-cu12": "0.7.1",
+      "nvidia-cusparselt-cu13": "0.8.1",
+      "nvidia-nccl-cu12": "2.27.5",
+      "nvidia-nccl-cu13": "2.30.7",
+      "nvidia-nvjitlink": "13.4.92",
+      "nvidia-nvjitlink-cu12": "12.8.93",
+      "nvidia-nvshmem-cu12": "3.3.20",
+      "nvidia-nvshmem-cu13": "3.4.5",
+      "nvidia-nvtx": "13.0.85",
+      "nvidia-nvtx-cu12": "12.8.90",
+      "olefile": "0.47",
+      "omegaconf": "2.4.0",
+      "onnx": "1.23.2",
+      "onnxruntime": "1.31.0",
+      "openai": "1.109.1",
+      "opencv-python": "5.0.0.93",
+      "opencv-python-headless": "5.0.0.93",
+      "openpyxl": "3.1.5",
+      "opentelemetry-api": "1.45.1",
+      "packaging": "26.3",
+      "pandas": "3.0.6",
+      "pathspec": "0.12.1",
+      "pdf-bench": "1.0.0",
+      "pdf2image": "1.17.0",
+      "pdfminer.six": "20260107",
+      "pdfplumber": "0.11.8",
+      "pdfsmith": "0.2.0",
+      "pdftext": "0.6.3",
+      "pi_heif": "1.4.0",
+      "pikepdf": "10.17.0",
+      "pillow": "12.3.0",
+      "platformdirs": "4.5.0",
+      "playa-pdf": "0.7.2",
+      "pluggy": "1.7.0",
+      "polars": "1.35.2",
+      "polars-runtime-32": "1.35.2",
+      "polyfactory": "3.3.0",
+      "portalocker": "3.2.0",
+      "pre_commit": "4.4.0",
+      "preshed": "3.0.13",
+      "propcache": "0.4.1",
+      "proto-plus": "1.29.0",
+      "protobuf": "7.36.2",
+      "psutil": "7.2.2",
+      "pyarrow": "22.0.0",
+      "pyasn1": "0.6.4",
+      "pyasn1_modules": "0.4.2",
+      "pyclipper": "1.4.0",
+      "pycparser": "3.11",
+      "pydantic": "2.14.1",
+      "pydantic-settings": "2.16.0",
+      "pydantic_core": "2.50.1",
+      "pylatexenc": "2.11",
+      "pymupdf": "1.28.2",
+      "pymupdf-layout": "1.28.2",
+      "pymupdf4llm": "1.28.2",
+      "pyparsing": "3.3.3",
+      "pypdf": "6.21.1",
+      "pypdfium2": "5.14.0",
+      "pytest": "9.0.1",
+      "pytest-cov": "7.0.0",
+      "python-Levenshtein": "0.27.3",
+      "python-calamine": "0.5.4",
+      "python-dateutil": "2.9.0.post0",
+      "python-docx": "1.2.0",
+      "python-dotenv": "1.2.4",
+      "python-iso639": "2026.7.23",
+      "python-magic": "0.4.27",
+      "python-multipart": "0.0.20",
+      "python-oxmsg": "0.0.2",
+      "python-pptx": "1.0.2",
+      "pytz": "2025.2",
+      "rapidocr": "3.10.0",
+      "referencing": "0.37.0",
+      "regex": "2026.9.29",
+      "reportlab": "4.4.5",
+      "requests": "2.34.2",
+      "requests-toolbelt": "1.0.0",
+      "rich": "15.0.0",
+      "rpds-py": "2026.9.1",
+      "rsa": "4.9.1",
+      "rtree": "1.4.1",
+      "s3transfer": "0.14.0",
+      "sacrebleu": "2.5.1",
+      "safetensors": "0.8.0",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.18.1",
+      "seaborn": "0.13.2",
+      "semchunk": "3.2.5",
+      "setuptools": "84.0.0",
+      "shapely": "2.2.0",
+      "shellingham": "1.5.4",
+      "six": "1.17.0",
+      "smart_open": "8.0.4",
+      "sniffio": "1.3.1",
+      "soupsieve": "3.0.3",
+      "spacy": "3.8.16",
+      "spacy-legacy": "3.0.12",
+      "spacy-loggers": "1.0.5",
+      "srsly": "2.5.4",
+      "sse-starlette": "3.0.3",
+      "starlette": "0.50.0",
+      "surya-ocr": "0.17.0",
+      "sympy": "1.14.0",
+      "tabulate": "0.10.0",
+      "tenacity": "9.1.2",
+      "thinc": "8.3.13",
+      "threadpoolctl": "3.6.0",
+      "tika": "3.1.0",
+      "tiktoken": "0.12.0",
+      "timm": "1.0.30",
+      "tokenizers": "0.23.3",
+      "torch": "2.14.1",
+      "torchvision": "0.29.1",
+      "tqdm": "4.70.1",
+      "transformers": "5.20.1",
+      "tree-sitter": "0.26.0",
+      "tree-sitter-c": "0.24.2",
+      "tree-sitter-java": "0.23.5",
+      "tree-sitter-javascript": "0.25.0",
+      "tree-sitter-python": "0.25.0",
+      "tree-sitter-typescript": "0.23.2",
+      "triton": "3.8.0",
+      "typer": "0.26.8",
+      "types-PyYAML": "6.0.12.20250915",
+      "types-awscrt": "0.29.0",
+      "types-boto3": "1.41.2",
+      "types-requests": "2.32.4.20250913",
+      "types-s3transfer": "0.15.0",
+      "typing-inspect": "0.9.0",
+      "typing-inspection": "0.4.4",
+      "typing_extensions": "4.16.0",
+      "tzdata": "2025.2",
+      "unstructured": "0.27.28",
+      "unstructured-client": "0.46.2",
+      "unstructured.pytesseract": "0.3.15",
+      "unstructured_inference": "1.6.13",
+      "urllib3": "2.8.0",
+      "uvicorn": "0.38.0",
+      "virtualenv": "20.35.4",
+      "wasabi": "1.1.3",
+      "wcwidth": "0.2.14",
+      "weasel": "1.0.0",
+      "webencodings": "0.6.1",
+      "websockets": "16.1.1",
+      "wrapt": "2.5.1",
+      "xlsxwriter": "3.2.9",
+      "xxhash": "3.6.0",
+      "yarl": "1.22.0",
+      "zss": "1.2.0"
+    }
+  },
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "coverage_sha256": "5617d80ce3665aa8ab7d573c5a247ad7109716b080d7d1e8e658de8a09b3ed70",
+  "inventory_sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb",
+  "input_root": "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/sources",
+  "inputs": [
+    {
+      "source_path": "docs/chart/TSLA-Q4-2024-Update_p27.pdf",
+      "sha256": "6a173e624082372fd6cd4fac0397f879e81e10f2fa6663229c90399a37bee0b8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/chapter_10_p2.pdf",
+      "sha256": "4d8e896f444d60d81c6b640fcdc7aae61914b4b43091865a25c400a47b65eff8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page905.pdf",
+      "sha256": "2aa639a1b0f38b094a7354c1873f2fd83a96055ca2183acfd3e02ed42a10c74c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__minutes2.pdf",
+      "sha256": "6ff1719f5892fd730d30543f74b652a4310205d83a08e70db791859530c135bb",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__hydro.pdf",
+      "sha256": "65b98e3cc6b9f0409bc1b754d81bce102489d022e0e5f9e4d1af8e24e98ce1f2",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Renewables2025_1_p30.pdf",
+      "sha256": "3e00c07bd5e2e22c796eb8bf56af5681f164fa2ca71a68328e7ba70855c80ff0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2024-sustainability-report-web_p5.pdf",
+      "sha256": "b64811a54def0ca7d9bc1a540cf6c294f2a267a5a2c8cf85f28ccba81bde4c50",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page408.pdf",
+      "sha256": "079e38823f1682cba09fe250d72b6531369dd3021ad6a6e599ee8decf076814e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__data.pdf",
+      "sha256": "03741a139da7dc0af51c81a132f1a31b4625d2371b25dbb32d5ae7b4aaae7f9c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__italian.pdf",
+      "sha256": "ad42b8bd568ba257cfb9cc58dbb477559b75a6403d94db19f312dcc230c69e09",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/andritz-financial-report-2024-e-data_p15.pdf",
+      "sha256": "f746362aa9445279424137aa914edb2cfc339054f45da76a139eedfcb9621c1e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2562.png",
+      "sha256": "a397e85fd83f5005a683c5b8c2d428cebdf7ccb2c0a01e36c1d311721adb4cce",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/203924_fb04e77929bf4bbc93dbd659653a4f01_page25.pdf",
+      "sha256": "9e4b38ce4098b0ca2d91bffb9b08004093024cb4d3b8e0800988b736e6659017",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__ blockoftext.pdf",
+      "sha256": "2faf855cfe06f7a0771c9275908c35dfdf8653778f1455ae449d8200c379c0b2",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__3cf.pdf",
+      "sha256": "1eb2e6e47719fb2d45a7862f6a3ba0485914f2506d0b408664f0a4bffbb74c14",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/pdf_61c93ea643bc_p10.pdf",
+      "sha256": "7b7a8228b97aeeb82acccf0ab30e32a3b6cae47e611c479c284851fbc87f8767",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/clinical-trial-results-ebc_p3.pdf",
+      "sha256": "60216558ecefe49c28198809817ab98f8c53e2e2263a6e47d168fe517f881ddb",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page2104.pdf",
+      "sha256": "2dcfe75fd371d0974db5c4f3c29690014f27b05ea6c2c33486c4294a9d0937cf",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__greek.pdf",
+      "sha256": "f36c12a29b75a416c7e3e47df7a01529d3ed950b2aee774eba1010d306148ab1",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__eu.pdf",
+      "sha256": "b98b3f9e8d57fd1c226e82f3ea540195400e9a27278ca8fdf8513e7ccefe6175",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/us-global-outsourcing-survey-2024-report_p14.pdf",
+      "sha256": "a29e67f4d19be4efc328f0346cd48821004ab3bd6834bcb6bf8d098983b006e0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/signify-annual-report-2021_p22.pdf",
+      "sha256": "053eb2c3ddc4cbddbb58f2d49199170cb9222c11bf8d05114d3708ba6d524430",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/gallagherre-reinsurance-market-report-2024_page20.pdf",
+      "sha256": "ad01251aa2bac781e67acc678d56a5d55b52195f3231f5405dd35dc026a7bfdf",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__bluecol.pdf",
+      "sha256": "4740b12eeeb140c65dfdd42e0f7e7d44783ef81d0a80d15645daf4337911f1ef",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__letterhead.pdf",
+      "sha256": "a3dd11815fb8421cacc15915acdc148f7933bcd7d08269ac9fa2691f07cbe29e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/tdr2023ch1_en_p5.pdf",
+      "sha256": "32081fc631a30d8e7a073a8c76343753f78180db05057e2b43e86bd6385fe9f9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/pdf_211245533966_p49.pdf",
+      "sha256": "fe2fc4bdf7f322acc639b8ddba5297ad3b8bc2b2e6e3afffee3af20c07bc8869",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/bls-Feb-2026_page16.pdf",
+      "sha256": "4b5594fb4ab0c92f22cc1aff25462357f109c385f289e98ae2f6107406abe1d3",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__article.pdf",
+      "sha256": "907d6dc90882843f242f8f82996e89c1b7df2eafa74fc1ac8b52d2345ab34d4d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__4g.pdf",
+      "sha256": "0a167efc3bfad4079f850dea1f6473aa1793944652c9bdda1c5a8aed81523dd2",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/deloitte-2025-global-automotive-consumer-study-january-2025_p24.pdf",
+      "sha256": "4fe134e50483c24f69b692074c9388cf22a65fcb497f131481c46074def84191",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2031426764.jpg",
+      "sha256": "d74e7773add2d6f6676a0d874e8ff2458c57c51bf9b4d9209f0d4d03ba59692d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_Interstate_random_pages 1_page224.pdf",
+      "sha256": "c3b9000cc2b8b93c53993abda296914586e04848a875e27f8c43169bd3a0f60d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__notes.pdf",
+      "sha256": "601de805fb195e26d2ef4388e027916492b823faa7a7e02d4917e606ababd50c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__allcaps.pdf",
+      "sha256": "9759c1ae5410b404a67820459e5e524928596b1dfb88f14884ca57bb2a025eb6",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/aviva-plc-annual-report-and-accounts-2024_p143.pdf",
+      "sha256": "4dce60ba1e0fb55ff2ceecb5b54f0092498116c2e9757aab6295f8a5edd6abfe",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/solvay-2023-ENG_p85.pdf",
+      "sha256": "219747b407793da2f8012fa59f0c0d091a6546f005041dd7a3833021b12d1e03",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1197.pdf",
+      "sha256": "b45c30046f8346435912cb7e72833daacbcb04502b651611275e1d9dc8c599f5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__intro.pdf",
+      "sha256": "e38f60e340482b39ce5bc0a8f042029dfc74d58da0ac1e3181a15da87bb45e37",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__opcw.pdf",
+      "sha256": "b09ff829d0a0db603f7a9ff47874648f16078a39e6ccf5ce27a3c6efcb66db61",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/World_Inequality_Report_2026_p119.pdf",
+      "sha256": "f78e482f9a34bf7e0b6b0126b87d9ed4f0a1b926274527c7589bdbb8c30dad46",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/ar2024e_p37.pdf",
+      "sha256": "29f947dee76059fc07fc683454300a2528ab5f06b77fc868dd525ce50f874797",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/Victoria Secret 10-k_page55.pdf",
+      "sha256": "72ae453c445602edb0c57917e8d431975cb30a244c6acaf57be7cdc8cbcc91a7",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__tridimensional.pdf",
+      "sha256": "9064e7d05052cb89ffcdebb01544997415c66d2b64e66293ffa9993b1622867d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_misc__atlantic.pdf",
+      "sha256": "10968eaf727b1b5a9c47abc09ab9647765d34086418bd5743fb4bfdbbba8a8e6",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p116.pdf",
+      "sha256": "e72746018e80ac6c1f19b777aa4b8e6c06d6f706dfee294874e39e80e695277a",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/symbicort-turbuhaler-product-monograph-en_p54.pdf",
+      "sha256": "38b4122db747627f44e4166803c5853238f6846e004ba69bceea521ff98dbc7a",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page2893.pdf",
+      "sha256": "fe1d7d25098c47bc749ac76509537701d1927b1cccfb7f97f9d7a131b8e58761",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_misc__dash.pdf",
+      "sha256": "a8a0a7186619b7a99e88458c719f581043ea1665426925a9578f27325d932837",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__santacruz.pdf",
+      "sha256": "e5c4b8b5fe4cb8dc1eb5567acf8968c86978b36743269400e23a01d1e11de191",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p210.pdf",
+      "sha256": "5a98d4646b27e417945e6001888ab0029e91e14b9da698b9bd752b9a789da210",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/Collapse_appendix_updated_April-2025_compressed_p20.pdf",
+      "sha256": "2439d8479f51482d0cdf85b42f23e78e4431c8ed81cb6ce6b6362a51021d5c6c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/1634690602_page10.pdf",
+      "sha256": "ded0520fcfd453636e03189753d11f1d9a2c6b3376c185042f781c0698d95bd0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__agreement.pdf",
+      "sha256": "c563e471664735e3313085d679be9b4f5eff91b3f4ff3427387e77de39a5865f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__energy.pdf",
+      "sha256": "e5724b4dc856d536c56712e3d6c2ac13f7d5a63e945dbf10aac1c17aa19107ce",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2025-EIS_p71.pdf",
+      "sha256": "1cd47d5025eedfefea0378ef34ac51f5633fcac1a2cfde45721d324aacaba4c1",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/attic.pdf",
+      "sha256": "5f9d35f7b109740dfd3aaec8f7d371a74153ba19047dd6dbc19d2e8ab8365943",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/245804406-CV-Nevers-signé-EX_page60.pdf",
+      "sha256": "4ce662ba74f6a38f23cc6fa4ed6d29f168ad1d7c45bd25452331cb3bf91a9321",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__plowlist.pdf",
+      "sha256": "4f0c2c120e5d4d81e9a64b826ee75f716177e21d24b60f7d3a6d569954ec4187",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_misc__012-headline-certificate-fluidpower-group-uk-limited.pdf",
+      "sha256": "36e8339ac87dc83e49c0871b6c895561ae0c02aa185fa3ee32edbfcd65a63d42",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/TRS241_Web_p88.pdf",
+      "sha256": "364cf36c78d8493093e33eb160fd4082420637cff3402b56ee76651f7b54a46e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2308.11272v1_p1.pdf",
+      "sha256": "3b3ee0ef8fe3da1945d28593b3a00b9025e3ffc0a79c35a3002bba922cffc4cc",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/FBLB-134215544_page19.pdf",
+      "sha256": "7a153f94fe4013fd361527e25b80680fffe49d52d51590558a9cd6b6ea6460a7",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__redacted.pdf",
+      "sha256": "322345555706f7fe28c07edd95958cefc9581d5dc259723fb27f223606d4d6b8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__pap_2col.pdf",
+      "sha256": "bb7a4e48d91f05555c94c7a9bca6c2d79778fd9d1d4f4a1e83ebbd7c9ec7a225",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Unit4-PSO-SPI-2023-Infographic-BR230203INT_p1.pdf",
+      "sha256": "074afe2cf2e013b553ef1e9bd4c5d8acbd28be48bd674e72e0facd1936b105eb",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/Official Statement_2025_0_p89.pdf",
+      "sha256": "1dfabe6b2fdf362f6d5f67d96f006173ba6589faab2480f40543a55ca5ae905f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/Coca Cola 10-k_page50.pdf",
+      "sha256": "58eeafa4a6e56ea9f57c9da5261554f7b3eff24d873d3ade5c1c893529efe811",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_handwritting__degraded.pdf",
+      "sha256": "767cb51575a44f427bd160c78a3757dc4d86c92f8b1cfc7c98232e70bcad6a51",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__agent.pdf",
+      "sha256": "a370a286b1a5fb5e0b636b6fac926172c273484546e3b4cab8860b8a41eb8ee6",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/employment_and_social_developments_in_europe_esde_2024_report_p80.pdf",
+      "sha256": "f35efa8a1def982613e1a2113905c77c1bda40a7711a907a86ea979070a370a1",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/Apple_Environmental_Progress_Report_2025_p15.pdf",
+      "sha256": "a5a5e8b06f92cb84331e508130d80741ecbb9092ecd182009df94232e6424183",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/Home Depot 10-k unrestricted_page58.pdf",
+      "sha256": "d62558fd3161a2598909e6fa2d23b0a913fd58cf5a0c19b2c61579972eac6b57",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__data.pdf",
+      "sha256": "ed296297288d04c49355e19570684caca2790666e8d24e5f07d1b8a8a25b5563",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multilang__thailayout.pdf",
+      "sha256": "4539fd93f31e9c2df215b1138f039215d8fc9069ba69639246d92822130f1794",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/She-figures_p105.pdf",
+      "sha256": "f0b5605d36a246c24760a5625a7eb6731afad682cbeeb427bf81be3422d2f2ee",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/novartis-integrated-report-2021_p8.pdf",
+      "sha256": "80261312088064062a9783831f60bfe80538f8ece10cb5474d4d4108a4695511",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/FBLB-134215544_page162.pdf",
+      "sha256": "30a4cbde395f7032bc32f60c60710d3d2b8cee23273940b903967e2d5ace6d7c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__blurry2.pdf",
+      "sha256": "1ce132b01fcc64078d159cf4e5c082f95f665e985e793b1047d1a2ec78e3c3d8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__10k2col.pdf",
+      "sha256": "a4a6ad03465d0d04ada6260e0637ca0d7a294750c3ac384e84b10ee817435973",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Economic_and_Market_Report-Full_year-2024_p16.pdf",
+      "sha256": "1f99a12d7484a62eaf4292e1c29df0673b7b636fb408cc08b70836a7fa0d1547",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/CEJ Lincoln Max Income illustration att1_p28.pdf",
+      "sha256": "3e67c465f1e1505bb2909d9fd0cfc22c9caade3b1f3a487ad9835896bdb33426",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_Interstate_random_pages 1_page276.pdf",
+      "sha256": "f0d755b2c5df9b9dc1a0a0904a223e41daf40c4758b5f8b27d3b297cf25cef56",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_handwritting__impossible.pdf",
+      "sha256": "2f576b834a3674be9317e80d9998313c1902c3f1b89d2115abe8cbd96bcd2cdc",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__3colP.pdf",
+      "sha256": "02cc9b0f2cb93e1c8c2cce23f79f71b6e1c3a096d7a380df4b8034825e8a872a",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/sri-sigma-natural-catastrophes-1-2025_p27.pdf",
+      "sha256": "5eda54eda83952ab10dc4251d2ca768b3d6fa4d40404aaa8f5913cb44f8236de",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/ir2025e_all_p43.pdf",
+      "sha256": "002a142d6400cdf2ee59cfdd8f318de2dfa1961802591a26e469a915ef8f1a33",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/AZ LIC Rate Tables 2.0.v2_page101.pdf",
+      "sha256": "04d58483161748bb4e01973d72ad32930685bece82aca92a7b1143afc25c2da4",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_dense__tableofcontent.pdf",
+      "sha256": "0a327a7d1c9bc00d1af5101fc1971cee4b82bf1d12b6d9fd6c50f55e7464849d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_sparse__cover2.pdf",
+      "sha256": "08204bf7bcfdc1924beec07a6db2235b06031e666d2a4dce7e9d7fc733e9cfa8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2025-EIS_p49.pdf",
+      "sha256": "f89799e893831218e68f19460015086011cac99b6613edab416c7afb1d2ccba5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/delltechnologies-fy24-esg-report_p14.pdf",
+      "sha256": "cf4cd43ee4badf300bc7c3053dbf2d556aaf4a5d523159f6b82c6c9497e6d56f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/AZ LIC Rate Tables 2.0.v2_page105.pdf",
+      "sha256": "08e3d3190263faf7022285af6cea4b91f359a42aa2ef2bd450014246fa173ef8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__boldwords.pdf",
+      "sha256": "0229921eb0813ff988686c9aa05ce46a1e94bfa18eca6187801163c03515ae6c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__scaninfile.pdf",
+      "sha256": "e555c8e9d91eaabc497d4b26532e442943ef3bdb0bb2b0eb2cbf17ec0c3842c7",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/sri-sigma-natural-catastrophes-1-2025_p28.pdf",
+      "sha256": "29b2b358052c02b880ef5f88cff9e1b73b0e3ff09dad4e25b308b61a698ac82b",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/itc-sustainability-integrated-report-2023_p28.pdf",
+      "sha256": "859cbe0e46b85323b3b9aaec05a60332327a0e6712a22dad257633c40247ef86",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/BRWS-134565917_page938.pdf",
+      "sha256": "f88ffa71ba69f603b77ef4e373f93df294fc8814fc3d51dc215dfa0a91595587",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__genius.pdf",
+      "sha256": "bd6a58c77bffac961e201ff6d50d7db0058c76e036dfdb901b9a59e2528b0a0a",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__phd.pdf",
+      "sha256": "40745fef0f238512d3914206ff60db972adb5eaa0711bd5e25cf5ad1746ca811",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Whatnextfortheglobalcarindustry_p36.pdf",
+      "sha256": "69e3af5d7e79990be1b7f354c8f7071b0a0e36e8eb45ec64c38ae6a7310b5fa0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/Annual-Report-FY-2023-24_p37.pdf",
+      "sha256": "24410f8c080e5051593b537ebc1869b4144f39a5fbbf6e426b86a358651b5757",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/fqr-retail-blackrock-global-allocation-fund-inc_page8.pdf",
+      "sha256": "5038f51707bc943ef2ab149cbe997cbd72c96c8bec5eac01d26166dc54a4cdd8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_ocr__orientedtex.pdf",
+      "sha256": "696862eff87647ac67ddddb71baf300f80205c4d5224ebbec7b1c2e99856338d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__3colpres.pdf",
+      "sha256": "16eed63b9358f882688a0be862617c636e7e0a41522e93555cdd14b8ee8d1a38",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2024_healthatglance_rep_en_p197.pdf",
+      "sha256": "302e1c2e8864609e454645a5763539fb66329544775680720f558393a4bdaeb5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2024-SSI-Report_p40.pdf",
+      "sha256": "3732cbcc222c579504cb5009c26c7fd12d9ae7d058668f46b89c88eada22a054",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/BRWS-134565917_page6.pdf",
+      "sha256": "70e22af4e105a6e7c3b5e9253cdb2b565a2a929126ea57d43cdf0243be4ccd3c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__encar.pdf",
+      "sha256": "c2fdbc4b9a42db40a820ac18cb02c9478c93e54fe6161db582f2824596c619f9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__program.pdf",
+      "sha256": "d334e1ced3cc22bcb1e8a8af64feaef016eb86bf6ac22dbaba1cfbb7147b8850",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p48.pdf",
+      "sha256": "ee903c3633a86ccb1633d87db737de61328901fd3599de02158077c650fc4657",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/3m-2025-global-impact-report_p26.pdf",
+      "sha256": "f3d607d652c790669402502506b514c1ab7ea21025e56a88a3a413bd97a3c903",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/drill angle hierarchical table header_page7.pdf",
+      "sha256": "47fc749dabac27d7a5a1d27f600c888b9a1066cfe20d1ca2071759e85d07254d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__2colfr.pdf",
+      "sha256": "32e8ed3f37dfbda0f30272428e2b079d37365d9ad7b92228f12f179e8d3d5c0c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__law2col.pdf",
+      "sha256": "122bf7e68d565c98441c4923f9e3f0bf914455b1dc96d433b19fa91aa4f764e1",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2024_healthatglance_rep_en_p115.pdf",
+      "sha256": "fc265f194a57af971e7a2bb9423de8e76440e39105baa1018d5c4b1a291f2e4b",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/74fafafa-7295-410c-ad46-248be0f7adb7_p13.pdf",
+      "sha256": "eab3d3587e5d00963fd2ed78b04dda2ec312ba5c975212cee3594ea9646de4ac",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SYK.2010.page_26.pdf_136878_page1.pdf",
+      "sha256": "430e8497297f33f69ddfaf2f18935d27a678ac9c527e5552961688cf58e106e5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__smithville.pdf",
+      "sha256": "936af69cc3dc93579dcf32e76c91731b1356218b5b0f17c70047937f7f03571e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_misc__mangle.pdf",
+      "sha256": "ed624d4ef2992dfece22f39a5ee6b90efa76df4645d1627e42ccb19f345c8bd3",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Renewables2025_1_p81.pdf",
+      "sha256": "d81834d9e0634ecae2c230146c7976dd778e21a076d2fdf170ee9c396a619c55",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/OECD_LABOUR_PRODUCTIVITY_FORECAST_AUT_JPN_NOR_NZL_SVN_000076.png",
+      "sha256": "7f0bd7ef58ab88e6ae2ce082d0ba769448b0e2e81004a3ae1451061a217ccb0a",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/1657221585_page26.pdf",
+      "sha256": "4ffeaade780cd51fc5b8375017ac9843214933264b95a629915971f9d093803d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_simple__strikeout.pdf",
+      "sha256": "dc999fc455560530a799a53407b75a9d19e513de36565ccacc3beda099f55ac2",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/text/text_multicolumns__3colchinese.pdf",
+      "sha256": "8d07ed620f57296ca4036e4f42805153bf188c02152541daa04ce412363f06de",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2024-ltra_corrected_july_2025_p27.pdf",
+      "sha256": "b5dcb6bc50e9ef1064fcd7be747f376848d561155e1c935324be774156808bf5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/20190601_ECR_UKPB_081_p1.pdf",
+      "sha256": "3fb12a66f2bf735113d2ee12b3e9da3711fec142c86d7b11689f471b2b61cc85",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page179.pdf",
+      "sha256": "ca3ec68a2ae9cf642c5bc63aa6dc1fc98f7c4377c1ccebbd609eeedd3da972eb",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/World_Inequality_Report_2026_p198.pdf",
+      "sha256": "f455d4711ea3b8181dec8a32630811cac00b1ee337f9d9d0feb6e10da37472ad",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/20240402_072920_TS0U_5JAN8NIL1XY3DOFS.1_p6.pdf",
+      "sha256": "edbb9e5ee600e032f8190533b4f3d9f40dc8719a1de17d96383e789737ab12ee",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/FBLB-134215544_page110.pdf",
+      "sha256": "ab7babcb8a07455aa8e69be15d1a69184dfe1b8ee6a52a2f33d74fef39b7593f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/GWR-2024_Layout_E_RGB_Web_p75.pdf",
+      "sha256": "e80a7d2c375feb5737bdd6b57e4150050f505c5a2e050b4a177f71f89424847f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/614c519a-7fe2-4057-a7eb-8a7614148818_p29.pdf",
+      "sha256": "53d79ccea27b18533b635be1d628c672be6ed29d61502288d267a86909ef8e60",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1751.pdf",
+      "sha256": "1f1648642c937e5accbfb4ff9e6bba20429c9193f94efb71ce71801ad58d5561",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/pdf_f270146f8ca7_p4.pdf",
+      "sha256": "4cd286a1fc65b0321d0e40fdba9fe2395afbac24e8404f5796690ae4daa2dfd8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/SRI-Insights-August 2025_media_embargo_p1.pdf",
+      "sha256": "32b71ef51d9787a9aceaf3e78d45c0f4a339fe65c13ff0c1127ae52b22f8ab04",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/245804406-CV-Nevers-signé-EX_page10.pdf",
+      "sha256": "67aadf54b040e7619fd94fdbeb862b1ebfe97b8e51f970ec250a4f1480881a89",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p185.pdf",
+      "sha256": "0adae3ddb965e46e7800fe02827f5f383ffe612c85286985de4cfcae1bd8e572",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/Low-Back-Guideline (1)_page2.pdf",
+      "sha256": "8ae691cbe3fdc673d66103e4c7dd4cbf62d7cddde8c1d0ba5986c65f268300a4",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/BRWS-134565917_page837.pdf",
+      "sha256": "40ad2eb7b983a1f727ce1c08351fb5c09f7ebf2070f769cbe284e43d3a55ee07",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/article_thebeatjun2025_p36.pdf",
+      "sha256": "986556372c26dc440dd3e6f6bb630332894d44ac2c8d6468230e7c92c1c19fb0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/4544e35498_17462318ed_p16.pdf",
+      "sha256": "df1f9f4fa7389b318eebc30f55c7ac1187b2a0bfe1a6ef040a5f335e41eca7c8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1288.pdf",
+      "sha256": "5c32b44c4d6790bfac1252ab8d391f29a8c3b65a4ed6e26441a28ab2292fec6b",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p102.pdf",
+      "sha256": "a38012ab30e61b404cfd4aa7c3d2f7749e9ddf437ff9669469b278787698d395",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/AXP_2023_2024_ESG_Report_p5.pdf",
+      "sha256": "d05546266c3e28a26041523d404cf8b67c865844b577858af4c047ce852c021f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1282.pdf",
+      "sha256": "85bbd314b1661c18430fbfb2e4e646e76ff8be0beaf87126c9bc71486fbb1d56",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Earnings_Presentation_(FY25_Q4)_p19.pdf",
+      "sha256": "f78817638e7fd99ad00466019a83336b4b4008ce403fee401fe3034e1ddc9805",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/pos343693_p1.pdf",
+      "sha256": "10e6bd544f9bec012f4bd777b4ad1f704d7ac48af00d7d3f64d7a5f0d73c0552",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/BRWS-134565917_page1171.pdf",
+      "sha256": "b93cce7f803395c638d19f55ca1274225c99e4584140eb0fdc1726125fa65bd8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/(Web_version)_E-Government_Survey_2024_1392024_p170.pdf",
+      "sha256": "1d6d58288f186b8fd49bc4aa89bb160eafafe02a4d77db59d44585c78314de2f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/iul age 50 example_p12.pdf",
+      "sha256": "07d3c8861f361477a7e509bed90830c35ac7b26910d24bcee35c7aee7cbe9538",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1139.pdf",
+      "sha256": "529754a2221bae90c71ab11e8f34e931cbff3d96939aa09e45910b8fc4488521",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p95.pdf",
+      "sha256": "2b3630ca05ba95809b7005dc48ede5b80de6e4335175d1fc178c499c0f13a183",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/245804406-CV-Nevers-signé-EX_page10.pdf",
+      "sha256": "40a6d3e7787f6313b101557160570913ffc9b4fc52edc92c0ae38a76e7cc2f71",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/myco hierarchical table header_page4.pdf",
+      "sha256": "40eab9bf5cf9062d6c02b2298d554ff795a1aa9f59ef0eab995b84801a8604bf",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p157.pdf",
+      "sha256": "8d390de9281663eb8695a07ab7cd0eba7fd443cc57f3d7644e7eb544e3ab49cc",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2072665602.jpg",
+      "sha256": "81e8fd410c3ab9abc6f50dd77569c0ea0c1426b4a00a4559d26072a96838b87d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/DS5795A-06_page5.pdf",
+      "sha256": "83d478b2f29bf28603522be6b8d0fb28291670124bc80c1d3f0a4089577e9730",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/investing-in-education-2025-NC0125093ENN-1_p14.pdf",
+      "sha256": "d32b06546babd4306cd579cfff19575db3328732304148e9be5da348aef95c32",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/IPCC_AR6_WGII_FinalDraft_Chapter13_SupplementaryMaterial_p13.pdf",
+      "sha256": "9b67a116160853167a847a35f4d43a4692de5ba41f5cddb089be2274af7bb5ce",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page1999.pdf",
+      "sha256": "685c8d8616a0701d4836b9eef2d6ae07f12a3302e3795cd0fc3a4223d84c713e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2024_healthatglance_rep_en_p119.pdf",
+      "sha256": "070b3529f64cb2d65d745090bd412ddc38df6acd85f60855ed59066b233d4f11",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/OUEREIT_AR2023_p6.pdf",
+      "sha256": "aaae6b99ebcf3790d5545ff9b806b7f701c4b734493fea228791ffc907f8bab5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1124.pdf",
+      "sha256": "2966bd96639c5c6b7716228490d868a799c3f792c0830c88b494228849fb0e7e",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p64.pdf",
+      "sha256": "ac9b53e2d5d7f367ae553749e6f53ddaf6230d7ad9b42b4e787dfbeef4b0d20b",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/journal.pdf",
+      "sha256": "a63408be9c6540d6747d41f44923753d1c099272c833525d94b7f945cfa8ec6c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/VRSK.2012.page_125.pdf_105195_page1.pdf",
+      "sha256": "3b248b777c90c02e5b9e77de3c48bc4288e58ba20324c94541ae8f6d52791d17",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Digital_News-Report_2022_p41.pdf",
+      "sha256": "f0191e7a26641fc968f0099bdda1155d78ebd7a79a641d786d482c92537aa168",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/00102.jpg",
+      "sha256": "4eed7c3d092d04bbc5031ecb5ce7cdad45a116e54131993838f6b652857054a9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page2747.pdf",
+      "sha256": "87ca4228f6942c1631fa1cc1687966feedd16e97498fd8ef5da8a0f04e077dd4",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Digital_News-Report_2022_p26.pdf",
+      "sha256": "d0e99bb8a0a88a5036e4fff21334ad9cbfe62d6f5c1a8a0068da68530fbc3593",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/2024-amazon-sustainability-report_p16.pdf",
+      "sha256": "0721df7a5539c4ec865043bfdd2fbf18f0c4c64525874aa122e4d89915b9261d",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/222876fb_page4.pdf",
+      "sha256": "879ece64079c583e600d10e11ffc2d9268f506d76f4c38095c5bf0241e8e0ed8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2025-EIS_p64.pdf",
+      "sha256": "95970caf9748b17f3639c015283556954ab2055877b7edbf6530dd828ecc101b",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/record.pdf",
+      "sha256": "bd270b8840a4317b8242d4af5bc6e68debc49eb67057b3d72c046560512d6c8f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/metlife_sustainability_report_2024_non_gaap_and_other_financial_disclosures_page3.pdf",
+      "sha256": "3f364b02fd9f53d3e102db9c516530c4764eb6293cee9d6969586191f71d9f4f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p182.pdf",
+      "sha256": "1e45b5515f41f50179b8844c70b3ea037cddb5cae64a96b78897233b0045ff20",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/pdf_ccc50d8a450e_p11.pdf",
+      "sha256": "a2fb31f0f29a0d8b50343dde5f2c1ad05aefe1adf726e9ea2cfe3639d4608bba",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_CA_random_pages 1_page22.pdf",
+      "sha256": "861789fa8b1949ed70a0f58e935b4adc7558919402806003e7e8ab58b2e8a667",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p143.pdf",
+      "sha256": "b4b3a855c069d23311ac452423707a001a78e33b45431310f253b2ee4bca2af9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/annual-report_fy2023_07_en_p5.pdf",
+      "sha256": "ab18e31767dce754380c6d3ef4cfcf1ec61c623f5f24c23518f6442d9d0fe9cf",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/1 timetable (1)_page6.pdf",
+      "sha256": "8e9ad02e84e2112c876df8052acd85f98c19a7adbb451bfaa8d2a100f0460ff8",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Treasury_Bulletin_2025_06_p9.pdf",
+      "sha256": "3c90dac396143b3e1542d11f3227a63cd1e5a2c814848a8ef6443b9712184e20",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/20240402_072920_TS0U_5JAN8NIL1XY3DOFS.1_p39.pdf",
+      "sha256": "aef7938d4cdfb884fd41429a27932fd47d97390fae8ec774ae4a13d90a516803",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/Goldman Sachs 10-k_page122.pdf",
+      "sha256": "cf591a4e6658197edb6932647363c89faab2dfec6776f574066e82a277bfa2d9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p247.pdf",
+      "sha256": "36367a99a341312f241c97dedcf163a665d5f1028d6adf74d6987e1a493cfa0c",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/integrated-annual-report-2023-24_p2.pdf",
+      "sha256": "9c865e3d684cf9566adac1b08b75f18b4dad645b2c4a9bbfbfd8ae9c31a8c4ef",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/AZ LIC Rate Tables 2.0.v2_page80.pdf",
+      "sha256": "c81a7b6dd2b9b35e4720bee87a90a1c4c001cc923a36c055394da75c4211f298",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/tdr2023ch1_en_p19.pdf",
+      "sha256": "79c93201d001a86842d8eb9084f479395867a5a2ef578138305603e2a5ab8075",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/1eee511b689c66082949cfbf0eb877a04842ec3b4a0427525ef21f4df6081f10.pdf",
+      "sha256": "2e86d32dba76c7378305d3759867be2662d9c753822ecf4ff23f685cea0ce854",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/IBM_Annual_Report_2018_page32.pdf",
+      "sha256": "2e75d3282800fa9575f0a009791171bac9a3323165701312da1decc070afe6a1",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/2025-EIS_p51.pdf",
+      "sha256": "be8abde66b32816adcdeba28a9b392529fa7e08574293955b112bbb98b2797b5",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/dupont_2024sustainabilityreport_p21.pdf",
+      "sha256": "0d3f677e522826190ffdbee33e37b12dec75c94bdcfc202f6cfe59d25dda4953",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/203924_fb04e77929bf4bbc93dbd659653a4f01_page27.pdf",
+      "sha256": "1f0259d2876e9ec03e52d94fa9d52877a4b66015e6916fa38a46e18ac1db9d96",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/EnergyEfficiency2024_p90.pdf",
+      "sha256": "ac9b7eeeb4a584e80ee0312dfbfe225afb9f566afdc8a45b0d1b4ef3c7f7475f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/20250320-annual-report-2024-incl-sustainability-report-and-corporate-governance-report-copy-of-the-official-ESEF-format_p24.pdf",
+      "sha256": "78456b713713ed1b7abd68f307d581c8831798d449630d74ede1f22c9b8edb99",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1213.pdf",
+      "sha256": "4fae58c9203ff922372e4fec41e47d1ae384f30abf834f26d268b78d1cdd9bb4",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/Digital_News-Report_2022_p11.pdf",
+      "sha256": "ce3e86d2b5dc129acc88667b53d97513ac8d882765106750f87300cba288a277",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/layout/FDA-2024-N-5933-0032_content_p5.pdf",
+      "sha256": "eebc3108c177cae9052171f74c3e21d6fe6eb351148e38bdee5b42532b329fef",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/SERFF_TX_random_pages 1_page1072.pdf",
+      "sha256": "d710ce5b8afb5d290bd13a1f14629b1f7204ae021179914353f8bcaf768558de",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/employment_and_social_developments_in_europe_esde_2024_report_p93.pdf",
+      "sha256": "3effdb5118db85416462c5c1dcda07cbc30c6c20711908b06a6cf87463ef23a7",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/table/BSC-Hospital-List-by-County (2)_page1.pdf",
+      "sha256": "98f3abec44316b55b3ce8cc70686e879b08070bb6de1a1f460c7d5f46729cbc0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p128.pdf",
+      "sha256": "1153bcac94ef93d76d53eea03adfe1249c4e25ff946a9adade32a31975dd77f0",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/World_Inequality_Report_2026_p107.pdf",
+      "sha256": "916a2801165a7cdf765ed7fe66935af1e0615d592e6b9710a44d327933fd3a6f",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/COM_2025_26_F1_COMMUNICATION_FROM_COMMISSION_TO_INST_EN_V10_P1_3877708_p21.pdf",
+      "sha256": "90ab078a3e8a77fce1a48f5449852440f78f1ac21fcd1724963f7af8484c4da6",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/b263dc5d-en_p138.pdf",
+      "sha256": "b2c6fc2659a28e6ad5460b053f46533fd6f155c8b6134e915e60214d7cafddc9",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/ac8b3538-en_p158.pdf",
+      "sha256": "a2f9c7fb8e408d7d8e7499e70fe9ecee186b1a24ac4bc7600fabbe580a83a763",
+      "page_count": 1
+    },
+    {
+      "source_path": "docs/chart/us-global-outsourcing-survey-2024-report_p15.pdf",
+      "sha256": "e0d0a809e10c7f1b5a42ae139cfbbee97bcf8efadd0b0b2d98525a3bd9dcc46d",
+      "page_count": 1
+    }
+  ],
+  "case_count": 252,
+  "dimension_cases": {
+    "chart": 57,
+    "layout": 50,
+    "table": 51,
+    "text_content": 50,
+    "text_formatting": 44
+  },
+  "timeout_seconds": 180,
+  "workers": 2,
+  "output_contract": "PDFSmith Markdown string; no bounding-box sidecar",
+  "started_at": "2026-10-17T22:11:18.000179+00:00",
+  "harness_sha256": "da3577f355e74cb18d44fbaba86bd755bbcbf8c849873404853623ff9b7c9dea",
+  "model_files": {},
+  "parent_run": "pdfminer-ff33a6b3ad8b41b186f18a5148b93717",
+  "parent_plan_sha256": "1b6505fef1df15f94c0845298aa0173fbed1cf701830d1dbe8f6ceb47d5d6a52",
+  "selection_sha256": "4a871386efaaa759e8b8b166abeeac8a8bd3ca4c7576b5355d19b205ccd61ad7",
+  "full_population_inputs": 2078,
+  "input_order": "Shared dimension-interleaved frozen screening population",
+  "timing_policy": "Reused and new cold API calls have distinct provenance; no latency ranking"
+}

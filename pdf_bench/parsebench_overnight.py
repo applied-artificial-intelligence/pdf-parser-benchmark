@@ -80,7 +80,7 @@ def pilot_estimates(config: dict, unit: Path) -> dict:
     return {
         "at": datetime.now(timezone.utc).isoformat(),
         "backends": estimates,
-        "all_backends_sampled": len(estimates) == len(config["jobs"]),
+        "all_backends_sampled": bool(config["jobs"]) and len(estimates) == len(config["jobs"]),
         "nominal_critical_path_hours": lower,
         "planning_nights_range": [math.ceil(lower / 9), math.ceil(lower * 1.7 / 9)],
         "limitation": (
@@ -120,11 +120,17 @@ def calibrated_jobs(config: dict, unit: Path) -> list[dict]:
 
 def run_queue(config_path: Path) -> None:
     config = json.loads(config_path.read_text())
+    if config.get("execution_paused"):
+        print("Benchmark execution is paused; nothing started.", flush=True)
+        return
     unit = config_path.parent
     end = window_end(datetime.now(timezone.utc))
     if end is None:
         print("Outside approved 22:00-07:00 New York window; nothing started.", flush=True)
         return
+    held = [j for j in config["jobs"] if j.get("hold_reason")]
+    config["jobs"] = [j for j in config["jobs"] if not j.get("hold_reason")]
+    config["held_jobs"] = held
     os.sched_setaffinity(0, set(config["cpus"]))
     os.nice(max(0, config["nice"] - os.getpriority(os.PRIO_PROCESS, 0)))
     for key in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS"):
@@ -295,7 +301,17 @@ def run_queue(config_path: Path) -> None:
         write_json_atomic(
             unit / "overnight-status.json",
             {
-                "state": "failed" if failures else "parse_complete" if complete else "checkpointed",
+                "state": (
+                    "held"
+                    if held and not config["jobs"]
+                    else "failed"
+                    if failures
+                    else "available_screen_complete"
+                    if complete and held
+                    else "parse_complete"
+                    if complete
+                    else "checkpointed"
+                ),
                 "started_at": start.isoformat(),
                 "finished_at": datetime.now(timezone.utc).isoformat(),
                 "stop_at": end.isoformat(),
@@ -307,6 +323,9 @@ def run_queue(config_path: Path) -> None:
 
 def launch_service(config_path: Path) -> None:
     config = json.loads(config_path.read_text())
+    if config.get("execution_paused"):
+        print("Benchmark execution is paused; no service started.")
+        return
     end = window_end(datetime.now(timezone.utc))
     if end is None:
         print("Outside approved window; no service started.")

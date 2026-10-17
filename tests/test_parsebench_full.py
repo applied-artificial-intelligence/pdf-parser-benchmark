@@ -205,6 +205,13 @@ def test_overnight_queue_runs_real_calls_and_resumes_without_repeating_attempts(
     )
     for name in ("OMP_NUM_THREADS", "MKL_NUM_THREADS", "OPENBLAS_NUM_THREADS"):
         monkeypatch.setenv(name, "2")
+    config["jobs"][0]["hold_reason"] = "Unqualified runtime must not enter the parser queue"
+    policy.write_text(json.dumps(config))
+    overnight.run_queue(policy)
+    assert not (target / "attempts").exists()
+    assert json.loads((unit / "overnight-status.json").read_text())["state"] == "held"
+    del config["jobs"][0]["hold_reason"]
+    policy.write_text(json.dumps(config))
     overnight.run_queue(policy)
     assert json.loads((unit / "overnight-status.json").read_text())["state"] == "parse_complete"
     assert len(list((target / "attempts").glob("*/attempt.json"))) == 2
@@ -213,3 +220,75 @@ def test_overnight_queue_runs_real_calls_and_resumes_without_repeating_attempts(
     before = {p: p.read_bytes() for p in target.rglob("attempt.json")}
     overnight.run_queue(policy)
     assert {p: p.read_bytes() for p in target.rglob("attempt.json")} == before
+
+
+def test_screening_reuses_real_outputs_and_keeps_failed_inputs(resumable_run):
+    from pdf_bench.parsebench_full import digest, resume
+    from pdf_bench.parsebench_sampling import prepare, select_inputs
+
+    unit = resumable_run.parent
+    root = unit / "full-comparison-evidence"
+    root.mkdir()
+    resumable_run.rename(root / "original")
+    parent = root / "original"
+    resume(parent, 2, datetime.now(timezone.utc) + timedelta(hours=1))
+    plan = json.loads((parent / "plan.json").read_text())
+    inputs = [
+        {
+            **row,
+            "source_format": "pdf",
+            "page_count": 1,
+            "tags": [],
+            "text_characters": 200,
+            "groups": ["chart", "layout", "table"]
+            if row["source_path"] == "corrupt.pdf"
+            else ["text_content", "text_formatting"],
+        }
+        for row in plan["inputs"]
+    ]
+    selected, _ = select_inputs(inputs, 1)
+    reversed_selection, _ = select_inputs(list(reversed(inputs)), 1)
+    assert selected == reversed_selection
+    (unit / "parsebench-source-coverage.json").write_text(json.dumps({"inputs": inputs}))
+    (unit / "parsebench-inventory.json").write_text(
+        json.dumps(
+            {
+                "cases": [
+                    {"source_path": r["source_path"], "group": g}
+                    for r in inputs
+                    for g in r["groups"]
+                ]
+            }
+        )
+    )
+    policy = {
+        "sample": "pilot.json",
+        "jobs": [
+            {
+                "backend": "pypdf",
+                "run": "original",
+                "workers": 2,
+                "priority": 0,
+                "python": sys.executable,
+                "plan_sha256": digest(parent / "plan.json"),
+            }
+        ],
+    }
+    (unit / "overnight-policy.json").write_text(json.dumps(policy))
+    original_plan = (parent / "plan.json").read_bytes()
+    result = prepare(unit, 2)
+    assert result["new_calls"] == 0
+    assert result["cases"] == 5
+    assert result["reused"] == {"pypdf": 2}
+    new_job = json.loads((unit / "overnight-policy.json").read_text())["jobs"][0]
+    target = root / new_job["run"]
+    resume(target, 2, datetime.now(timezone.utc) + timedelta(hours=1))
+    attempts = json.loads((target / "journal.json").read_text())["attempts"]
+    assert {r["outcome"] for r in attempts} == {"success_content", "parser_failure"}
+    assert all(r["reused_from"]["run"] == "original" for r in attempts)
+    assert (parent / "plan.json").read_bytes() == original_plan
+    # Repeating preparation must preserve the frozen queue rather than replacing run identities.
+    before = (unit / "overnight-policy.json").read_bytes()
+    with pytest.raises(ValueError, match="already frozen"):
+        prepare(unit, 2)
+    assert (unit / "overnight-policy.json").read_bytes() == before
