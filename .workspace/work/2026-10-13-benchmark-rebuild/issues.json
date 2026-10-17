@@ -1,6 +1,6 @@
 {
   "repo": "applied-artificial-intelligence/pdf-parser-benchmark",
-  "milestone": "rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example",
+  "milestone": "rebuild-1 - Assessed ParseBench coverage and PDFSmith parser comparison",
   "milestone_number": 1,
   "issues": [
     {
@@ -50,6 +50,24 @@
       "number": 8,
       "title": "Generate benchmark-fit findings, design lessons and integration export",
       "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/8"
+    },
+    {
+      "plan_issue": 9,
+      "number": 10,
+      "title": "Complete the ParseBench source and capability coverage assessment",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/10"
+    },
+    {
+      "plan_issue": 10,
+      "number": 11,
+      "title": "Execute the PDFSmith local roster through all ParseBench dimensions",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/11"
+    },
+    {
+      "plan_issue": 11,
+      "number": 12,
+      "title": "Deliver useful parser results and a public-benchmark recommendation",
+      "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/12"
     }
   ]
 }

@@ -13,6 +13,8 @@ review packet remains unchanged; Git preserves its specification and plan.
 
 ## Objective
 
+Revision 4, October 17, 2026, follows Stefan's explicit scope correction and instruction to implement it. The earlier two-parser experiments are engineering groundwork, not completion of the benchmark. The completed deliverable is an assessed public benchmark and a useful PDFSmith parser comparison across its dimensions.
+
 An engineering team can judge whether ParseBench covers its document distribution
 and downstream task, select a relevant public subset when suitable, and establish
 what internal evaluation is necessary when it is not. Reproducible comparisons and
@@ -288,6 +290,46 @@ that ParseBench lacks reproducibility or operational features.
     code licensing. Assessment uncertainty stays visible and can motivate targeted
     inspection rather than a claim of absence.
 
+## Expanded completion criteria, October 17
+
+25. Account for every pinned ParseBench source input, not only the 63 inspected
+    examples. Acquire and validate the complete source population, measure actual
+    pages/text-layer properties, and classify document families using source
+    content with recorded evidence and uncertainty. Distinguish automatic labels
+    from visual qualification. Review ambiguous and consequential cases and retain
+    unknowns instead of inferring absence. Explain annotation construction, metrics,
+    dimension weighting, page versus whole-document scope and source concentration.
+26. Give a clear judgment for text recovery/reading order, tables, charts/figures,
+    meaningful formatting and visual grounding: what ParseBench measures, what it
+    does not measure, and whether another established benchmark supplies the need.
+    Compare relevant OmniDocBench and ExtractBench contracts from primary sources.
+    A documented measurement boundary is not automatically a defect. Recommend
+    public reuse first; custom data requires a consequential demonstrated mismatch.
+27. Inventory every current PDFSmith backend, separate backend families from model
+    aliases, and exercise every local integration on actual public inputs. Installed
+    metadata alone does not establish readiness. Repair benchmark integration and
+    isolated dependency incompatibilities where feasible; record actual failure
+    evidence for unavailable backends. No paid endpoint may be invoked.
+28. Execute the available local parser configurations against the full pinned
+    ParseBench input population, with all five dimensions evaluated under upstream
+    contracts. Share one extraction across dimensions where upstream does. Include
+    classical text baselines and available modern table/layout/OCR pipelines.
+    Unsupported output capabilities stay explicit; never manufacture bounding boxes
+    or chart semantics from reference answers. Native zero and unavailable capability
+    are separately reported, with the output contract that explains them.
+29. Freeze configurations, actual source/dependency/model identity and membership
+    before scored execution. Preserve every planned pair, failures, empty outputs,
+    timeouts and evaluator exceptions. Retain outputs for independent regrading.
+    Invalid downloads/configuration/identity and incomplete evaluation must not
+    replace earlier valid outputs or publish a complete aggregate. No output-driven
+    exclusion or silently performance-selected subset is permitted.
+30. Produce a concise results-led assessment with dimension tables, document-family
+    diagnostics, inspected good/bad outputs and practical selection implications.
+    Separate local results, upstream-reported paid results and proposed paid runs.
+    Explicitly answer whether public ground truth resolves the project's original
+    problem and where material additional evaluation is warranted. A green suite,
+    two-parser illustration or completed issue checklist is not sufficient closure.
+
 ## In scope
 
 - Benchmark-design lessons and a worked internal-evaluation protocol grounded in
@@ -313,8 +355,8 @@ that ParseBench lacks reproducibility or operational features.
   deployment, website CMS changes, or rewriting retained editorial manuscripts.
 - New agents or chats, production/confidential documents, or changes to PDFsmith's
   separate API/packaging ownership.
-- A new UI, generalized workflow framework, exhaustive new corpus collection or
-  all-family rerun in the first engineering milestone.
+- A new UI, generalized workflow framework or speculative new corpus collection.
+  Full ParseBench execution and the available local PDFSmith roster are now in scope.
 
 ## Constraints
 
@@ -386,7 +428,7 @@ that ParseBench lacks reproducibility or operational features.
 - Positioning is resolved by Stefan's October 14 replies: practical parser selection
   and instruction in building use-case-specific internal benchmarks. External
   reviewers may challenge whether the proposed demonstration serves that goal;
-  full ParseBench replication is not the default reconstruction scope.
+  the October 17 instruction now requires full public-population local execution.
 - Returned reviews are retained with hashes and dispositions. Registry work and
   non-scored execution repairs can proceed. Strong scored-run claims remain gated
   on the frozen task protocol, complete rendition qualification, extraction isolation,
@@ -396,8 +438,7 @@ that ParseBench lacks reproducibility or operational features.
   fixed population. An unresolved truth disagreement blocks strong affected
   scores, not preservation of the run's diagnostic evidence.
 - ParseBench subset access/source rights and dependency compatibility require
-  bounded checks before the first reference comparison. Broader OCR/model and
-  other-dimension coverage remain follow-on work. No paid runs are assumed.
+  bounded checks before the first reference comparison. Local OCR/model and all-dimension coverage are now required. No paid runs are assumed.
 - Cloud/frontier comparison is deferred. Stefan must approve the exact inputs,
   provider/model/configuration and spend ceiling before those calls.
 

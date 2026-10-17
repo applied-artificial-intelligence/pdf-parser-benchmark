@@ -1,4 +1,6 @@
-# Plan: Evaluate benchmark fit and reconstruct practical parser evidence
+# Plan: Assess ParseBench coverage and compare the available PDFSmith parsers
+
+Revision 4, October 17, expands completion after Stefan rejected the two-parser demonstration as insufficient. Issues 1-8 preserve implemented groundwork; Issues 9-11 are required before this reconstruction is considered complete. Full ParseBench source assessment and all available local parser families are in scope.
 
 Revision 3 incorporates Stefan's October 15 scope confirmation. Assess ParseBench
 coverage before choosing a relevant public subset or justifying custom evaluation.
@@ -56,7 +58,7 @@ separately from new regressions and repair relevant inherited defects as those f
 enter reviewed scope. Global formatting or cleanup of another worker's files is
 not a hidden milestone dependency.
 
-### Milestone: `rebuild-1 - Reconciled evidence and a reproducible internal-benchmark example`
+### Milestone: `rebuild-1 - Assessed ParseBench coverage and PDFSmith parser comparison`
 
 **Issue 1 - Assess ParseBench coverage against meaningful business workloads**
 
@@ -558,11 +560,90 @@ Input: report evidence
 
 Closes: report-evidence.record, report-evidence.absent-record, report-evidence.ordering-spacing, report-evidence.entity-identity, report-evidence.known-at, report-evidence.institution, report-inspectable, design-lessons-demonstrated
 
-## Bounded follow-on scope, separate from the first engineering milestone
+**Issue 9 - Complete the ParseBench source and capability coverage assessment**
 
-The following are protocols to qualify, not promised October results. Each gets
-its own reviewed input/reference/configuration manifest before execution. No paid
-call, large download or model installation is assumed available.
+Acquire all pinned source inputs using verified upstream identities and retained SHA256 bytes. Extend the existing ParseBench inventory with actual page counts, text/scan properties, content-evidenced family classification, source concentration and explicit unresolved labels. Audit consequential and ambiguous strata through rendered sources. Explain the exact text, table, chart, formatting and grounding contracts and compare relevant OmniDocBench/ExtractBench contracts using primary sources. Deliver an explicit reuse/gap judgment, not a global business-coverage percentage. No new synthetic corpus without a consequential demonstrated mismatch.
+
+Files: extend `pdf_bench/parsebench.py` or a narrowly scoped coverage module, `tests/test_parsebench_coverage.py`, source inventory/inspection evidence and the existing coverage report. Verify full membership, actual source-byte checks, unknown classifications, dimension semantics and failure atomicity. Run the real acquisition/classification on the complete corpus. Tests must reject omitted sources and mismatched bytes without replacing a valid inventory.
+
+### Premises
+
+Input: public source coverage
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
+| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
+| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
+| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
+| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
+| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| public-source-coverage-complete | Every annotated source has an evidence-bearing coverage record and the assessment distinguishes documented measurement scope from an unproven corpus gap. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+
+Closes: public-source-coverage.record, public-source-coverage.absent-record, public-source-coverage.ordering-spacing, public-source-coverage.entity-identity, public-source-coverage.known-at, public-source-coverage.institution, public-source-coverage-complete
+
+**Issue 10 - Execute the PDFSmith local roster through all ParseBench dimensions**
+
+Depends on Issue 9 source identity; readiness work can overlap acquisition. Inventory the entire current PDFSmith backend registry without invoking paid services. Exercise every local backend on actual public sources; distinguish installed, usable, missing runtime/model, incompatible integration and paid-only. Freeze actual code/configuration/dependency/model identities. Extend the existing comparison path beyond its two-parser and two-dimension assumptions, using pinned upstream evaluators across text, tables, charts, formatting and grounding. Preserve native output contracts: Markdown-only PDFSmith does not magically expose grounding. Record unsupported contracts beside native scores. Do not silently relabel native direct-SDK results as PDFSmith results. Repair feasible benchmark/dependency issues in an isolated task runtime, preserving sibling ownership.
+
+Files: existing comparison/evaluation modules and focused roster tests. Verify actual local parser output reaches the native evaluators, paid integrations are never initialized, parser options/identities are preserved, output-lacking capabilities remain visible, and required evaluator errors invalidate completeness. Execute the full pinned input population for available local backends. Use predeclared initialization failure policies rather than burning thousands of identical failed calls; retain unstarted membership separately. Fresh outputs and a representative offline regrade must agree.
+
+### Premises
+
+Input: public roster execution
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
+| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
+| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
+| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
+| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
+| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| public-roster-execution-complete | The comparison includes the available local parser families, the full declared population and every dimension, with failures and unsupported output contracts explicit. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+
+Closes: public-roster-execution.record, public-roster-execution.absent-record, public-roster-execution.ordering-spacing, public-roster-execution.entity-identity, public-roster-execution.known-at, public-roster-execution.institution, public-roster-execution-complete
+
+**Issue 11 - Deliver useful parser results and a public-benchmark recommendation**
+
+Depends on Issues 9-10. Replace the two-parser demonstration as the report's principal result with generated full-population local comparisons. Report native dimensions separately, family diagnostics and failure counts with exact denominators. Inspect source/output examples that explain differences, including charts, scanned content, tables, formatting and grounding. Clearly distinguish PDFSmith output limitations from underlying SDK capabilities. Answer whether ParseBench supplies the needed ground truth, which meaningful needs require another benchmark or additional internal cases, and what readers can choose using the new results. Preserve historical and invoice work as supporting examples. Prepare an exact paid-run proposal only for unresolved consequential comparisons, with provider/configuration, shared inputs and a spending ceiling to approve before calls. Keep the PR draft until the expanded acceptance criteria are met.
+
+Files: existing source report/export path, coverage report, runtime/result checkpoints and focused result aggregation tests. Verify complete membership, correct dimension/family denominators, no silent failure omission, and source-linked recommendation examples. Regrade retained outputs independently and recompute published tables before issue closure. Run focused checks, core lint/types and the complete test suite; preserve unrelated dirty files.
+
+### Premises
+
+Input: public results assessment
+
+| Question | Answer | Kind |
+|---|---|---|
+| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
+| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
+| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
+| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
+| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
+| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+
+### Claims
+
+| Id | Claim | How it could be false |
+|---|---|---|
+| public-results-assessment-complete | The final recommendation follows inspected coverage and executed parser results rather than issue completion or synthetic examples alone. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+
+Closes: public-results-assessment.record, public-results-assessment.absent-record, public-results-assessment.ordering-spacing, public-results-assessment.entity-identity, public-results-assessment.known-at, public-results-assessment.institution, public-results-assessment-complete
+
+## Retained follow-on candidates, subordinate to the expanded public comparison
+
+The public comparison now includes available local OCR, tables/charts and other dimensions. These earlier custom-corpus candidates remain secondary; they cannot replace the full public assessment and comparison. Paid calls still require approval.
 
 | Track | Fixed candidate inputs and task | Reference and comparison | Completion and gate |
 |---|---|---|---|
