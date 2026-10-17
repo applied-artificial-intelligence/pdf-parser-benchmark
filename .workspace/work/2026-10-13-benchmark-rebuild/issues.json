@@ -1,6 +1,6 @@
 {
   "repo": "applied-artificial-intelligence/pdf-parser-benchmark",
-  "milestone": "rebuild-1 - Assessed ParseBench coverage and PDFSmith parser comparison",
+  "milestone": "rebuild-1 - Practical PDF parser evaluation guide",
   "milestone_number": 1,
   "issues": [
     {
@@ -54,19 +54,19 @@
     {
       "plan_issue": 9,
       "number": 10,
-      "title": "Complete the ParseBench source and capability coverage assessment",
+      "title": "Qualify public benchmark evidence and reuse recommendations",
       "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/10"
     },
     {
       "plan_issue": 10,
       "number": 11,
-      "title": "Execute the PDFSmith local roster through all ParseBench dimensions",
+      "title": "Explain evaluation and PDFSmith execution failures from retained evidence",
       "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/11"
     },
     {
       "plan_issue": 11,
       "number": 12,
-      "title": "Deliver useful parser results and a public-benchmark recommendation",
+      "title": "Write and check the practical parser evaluation guide",
       "url": "https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/issues/12"
     }
   ]

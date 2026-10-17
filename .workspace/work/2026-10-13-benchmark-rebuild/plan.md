@@ -1,64 +1,32 @@
-# Plan: Assess ParseBench coverage and compare the available PDFSmith parsers
+# Plan: Explain how to choose and evaluate document parsers
 
-Revision 4, October 17, expands completion after Stefan rejected the two-parser demonstration as insufficient. Issues 1-8 preserve implemented groundwork; Issues 9-11 are required before this reconstruction is considered complete. Full ParseBench source assessment and all available local parser families are in scope.
+Revision 5, October 17, 2026, implements Stefan's accepted guide concept and current
+instruction to write from retained evidence. The deliverable is a source-verified
+practical explanation with an inspectable inventory. It is not another general
+leaderboard. All benchmark, regrading, profiling and GPU execution stays paused.
 
-Revision 3 incorporates Stefan's October 15 scope confirmation. Assess ParseBench
-coverage before choosing a relevant public subset or justifying custom evaluation.
-The existing invoice example demonstrates a specific task without presuming a
-public-benchmark gap. Revision 2 incorporated GPT and Fable reports, with dispositions
-in `review-dispositions.txt`. This decomposes `spec.md`, seeded by the commission and Stefan's
-October 14 decision to focus on practical parser selection and teaching teams how
-to design their own document benchmark. The first deliverable is this plan and a
-self-contained review packet. Both reports recommend bounded revision. Registry
-work and non-scored execution repair can proceed under the amended contract.
-Scored-run closure requires qualified references, a frozen blind task/extractor
-protocol, complete attempt accounting and actual regression evidence.
+## Gating and preserved work
 
-## Gating and implementation boundaries
+Issues 1-8 below retain their implemented engineering contracts as history. Their
+acceptance references resolve to the earlier specification at Git commit
+`c8fa6abe702c04e9316485e772de29b8b846b3be`. Commands in those historical sections are
+not current execution authorization. Their existing evidence remains preserved.
 
-Assess public-benchmark fit and snapshot retained evidence -> qualify references and
-freeze extractor/grader -> repair execution/provenance -> execute both comparisons
--> generate an inspectable report and export. The ordered issues below define one
-engineering milestone. Later research coverage and release approvals are separate.
-The first invoice run is a worked example, not all-family project completion.
+Current work is Issues 9-11, mapped to GitHub #10-#12: qualify public evidence and
+reuse recommendations -> document retained evaluation/execution lessons -> write
+and check the guide. These steps use file/source reads and light metadata checks;
+no parser, native grader, model import, corpus rerun or broad test suite runs.
 
-Reuse `pdf_bench/inventory.py`, the existing story generator, BenchmarkRunner,
-PDFsmith adapter, caching utilities and atomic persistence. Prefer extending these
-surfaces over a second runner, database or parser abstraction. The smoke wrapper
-is prior evidence and a useful failure example, not the new architecture.
+The earlier full-roster and 208-input proposals are deferred research artifacts,
+not milestone requirements. A new experiment needs an unanswered decision, a
+specified comparison and fresh authorization for resources/spending. The current
+execution policy and heartbeat remain paused throughout this writing work.
 
-Existing checked-out base is `bf8285b4cf4e69295eda2391665d54d9077d4d0a`.
-Reviewed checkpoint is `d9305d6100e5288fa2fc255e088bfd8e22664b98`.
-Dirty inherited files and untracked corpora are preserved. Exact implementation
-and evidence hashes, rather than this base label alone, define the review input.
-An owned checkpoint must not stage inherited changes incidentally. No source-main
-merge, paid call or website/editorial write is included.
+The active owner is this conversation on `codex/benchmark-rebuild`, using the
+existing checkout and draft PR #9. Original data and inherited dirty work stay intact.
+Public-main merge, editorial changes and publication are outside this plan.
 
-## Review dispositions and progress
-
-Both returned reviews are retained unchanged. `review-dispositions.txt` records each finding,
-severity, affected acceptance criterion/issue, disposition and evidence required.
-Resolve correctness blockers before the dependent issue. Testable alternatives
-can be adopted; optional extensions go to later scope without restarting planning.
-Record explicit unresolved disagreements. `progress.txt` records current milestone,
-changes, actual checks, next owner action and decisions needed. A review requested
-or a prior coordinator check is never recorded as a returned specification review.
-
-## Verification policy
-
-Reproduce defects through existing CLI/generator/runner paths before repairs.
-The specific proposed test files below will be created by their issues, not assumed
-to exist now. Show red/green for actual producing-code defects, not source-string
-assertions or artificial records that the pipeline cannot produce. Timing remains
-descriptive until a repeat protocol and resource boundaries justify comparison.
-
-Format and lint owned files, run non-mutating repository-wide checks, and inspect
-owned diffs at checkpoints. Preserve unrelated dirty work. Record inherited findings
-separately from new regressions and repair relevant inherited defects as those files
-enter reviewed scope. Global formatting or cleanup of another worker's files is
-not a hidden milestone dependency.
-
-### Milestone: `rebuild-1 - Assessed ParseBench coverage and PDFSmith parser comparison`
+### Milestone: `rebuild-1 - Practical PDF parser evaluation guide`
 
 **Issue 1 - Assess ParseBench coverage against meaningful business workloads**
 
@@ -560,105 +528,138 @@ Input: report evidence
 
 Closes: report-evidence.record, report-evidence.absent-record, report-evidence.ordering-spacing, report-evidence.entity-identity, report-evidence.known-at, report-evidence.institution, report-inspectable, design-lessons-demonstrated
 
-**Issue 9 - Complete the ParseBench source and capability coverage assessment**
+**Issue 9 - Qualify public benchmark evidence and reuse recommendations**
 
-Acquire all pinned source inputs using verified upstream identities and retained SHA256 bytes. Extend the existing ParseBench inventory with actual page counts, text/scan properties, content-evidenced family classification, source concentration and explicit unresolved labels. Audit consequential and ambiguous strata through rendered sources. Explain the exact text, table, chart, formatting and grounding contracts and compare relevant OmniDocBench/ExtractBench contracts using primary sources. Deliver an explicit reuse/gap judgment, not a global business-coverage percentage. No new synthetic corpus without a consequential demonstrated mismatch.
+Use the complete retained ParseBench inventory, source measurement and visual
+observations. Reconcile the five metric contracts and actual source units; do not
+rerun acquisition or inspection. Check published parser coverage and distinguish
+provider families from configurations and local wrappers from hosted services.
+Use pinned ExtractBench/OmniDocBench primary sources to explain alternative tasks.
+Refresh `parsebench-coverage.md` to recommend public reuse and remove all promises
+of automatic parser runs. Preserve the inventory and unknown family labels.
 
-Files: extend `pdf_bench/parsebench.py` or a narrowly scoped coverage module, `tests/test_parsebench_coverage.py`, source inventory/inspection evidence and the existing coverage report. Verify full membership, actual source-byte checks, unknown classifications, dimension semantics and failure atomicity. Run the real acquisition/classification on the complete corpus. Tests must reject omitted sources and mismatched bytes without replacing a valid inventory.
+Files: existing coverage report, retained primary-source record and the guide's
+single evidence record. Verify by reading source records, independently counting
+inventory rows and resolving citations/hashes. A missing source or changed identity
+prevents the affected claim; previous evidence and disabled execution stay intact.
+No new benchmark or GPU work. This fulfills current spec criteria 2-4 and 9.
 
 ### Premises
 
-Input: public source coverage
+Input: guide public evidence
 
 | Question | Answer | Kind |
 |---|---|---|
-| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
-| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
-| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
-| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
-| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
-| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+| record | A source-backed guide assertion tied to its exact retained artifact or primary source. | definitional |
+| absent-record | Missing or unreviewed evidence remains unknown; it is not absence, success or a new result. | definitional |
+| ordering-spacing | Case counts, source files, original documents and benchmark dimensions are distinct; no global rank follows from row order. | definitional |
+| entity-identity | Source revision, artifact hash, configuration and evidence scope identify the claim. | definitional |
+| known-at | The guide uses already retained evidence; recommendations do not become executed experiments. | definitional |
+| institution | Upstream contracts define public metrics; declared workflow requirements define acceptance; Stefan controls new execution and release. | definitional |
 
 ### Claims
 
 | Id | Claim | How it could be false |
 |---|---|---|
-| public-source-coverage-complete | Every annotated source has an evidence-bearing coverage record and the assessment distinguishes documented measurement scope from an unproven corpus gap. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+| guide-public-evidence-qualified | Public-reuse recommendations distinguish checked benchmark scope from unproven coverage gaps. | A material assertion lacks the cited source, confuses its units or scope, or implies unperformed execution. |
 
-Closes: public-source-coverage.record, public-source-coverage.absent-record, public-source-coverage.ordering-spacing, public-source-coverage.entity-identity, public-source-coverage.known-at, public-source-coverage.institution, public-source-coverage-complete
+Closes: guide-public-evidence.record, guide-public-evidence.absent-record, guide-public-evidence.ordering-spacing, guide-public-evidence.entity-identity, guide-public-evidence.known-at, guide-public-evidence.institution, guide-public-evidence-qualified
 
-**Issue 10 - Execute the PDFSmith local roster through all ParseBench dimensions**
+**Issue 10 - Explain evaluation and PDFSmith execution failures from retained evidence**
 
-Depends on Issue 9 source identity; readiness work can overlap acquisition. Inventory the entire current PDFSmith backend registry without invoking paid services. Exercise every local backend on actual public sources; distinguish installed, usable, missing runtime/model, incompatible integration and paid-only. Freeze actual code/configuration/dependency/model identities. Extend the existing comparison path beyond its two-parser and two-dimension assumptions, using pinned upstream evaluators across text, tables, charts, formatting and grounding. Preserve native output contracts: Markdown-only PDFSmith does not magically expose grounding. Record unsupported contracts beside native scores. Do not silently relabel native direct-SDK results as PDFSmith results. Repair feasible benchmark/dependency issues in an isolated task runtime, preserving sibling ownership.
+Depends on Issue 9's source boundaries. Explain reference/rendition mismatch,
+parser-dependent selection, incomplete task acceptance, output-contract loss,
+cache/timing identity and model/process lifecycle using already retained records.
+Recompute illustrative arithmetic from saved grades only; do not execute parsers,
+native evaluators, models or performance probes. Separate the qualified synthetic
+invoice example from real-vendor claims, and observed code behavior from unmeasured
+warm speedup or GPU utilization. Treat full/sample runs as incomplete preparations.
 
-Files: existing comparison/evaluation modules and focused roster tests. Verify actual local parser output reaches the native evaluators, paid integrations are never initialized, parser options/identities are preserved, output-lacking capabilities remain visible, and required evaluator errors invalidate completeness. Execute the full pinned input population for available local backends. Use predeclared initialization failure policies rather than burning thousands of identical failed calls; retain unstarted membership separately. Fresh outputs and a representative offline regrade must agree.
-
-Overnight execution, approved October 17: heavy parsing and native grading run only 22:00-07:00 America/New_York. Use a single shared service limited to twelve logical CPUs, 48 GB RAM, nice 10 and at most eight concurrent calls. Run one Docling GPU call, at most two Marker and two Unstructured calls, and share remaining capacity with lightweight parsers. Compare one versus two workers on ten common, dimension-balanced PDF inputs before bulk execution; reduce concurrency if throughput improves less than 20% or failures increase. Record CPU and memory usage and revise the remaining-time estimate from actual isolated and shared throughput. Retain validated completed attempts, including failures and timeouts; never overwrite interrupted files or silently retry failures. Reserve the full enforced call deadline plus cleanup before admitting work near 07:00; the service also has a hard 07:00 limit covering descendants. Native grading shares the same budget. No paid calls.
+Files: existing failure/selection/reference receipts, frozen source snapshots and
+the guide evidence record; no sibling PDFSmith or runner changes. Verify numerical
+examples against actual saved rows and inspect source/call boundaries for each
+mechanism. Recorded test/replay receipts are prior evidence, not freshly rerun
+checks. Use explicit limits, not synthetic examples as the guide's principal value.
+This fulfills current spec criteria 5-7, 9 and 12.
 
 ### Premises
 
-Input: public roster execution
+Input: guide retained lessons
 
 | Question | Answer | Kind |
 |---|---|---|
-| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
-| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
-| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
-| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
-| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
-| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+| record | A source-backed guide assertion tied to its exact retained artifact or primary source. | definitional |
+| absent-record | Missing or unreviewed evidence remains unknown; it is not absence, success or a new result. | definitional |
+| ordering-spacing | Case counts, source files, original documents and benchmark dimensions are distinct; no global rank follows from row order. | definitional |
+| entity-identity | Source revision, artifact hash, configuration and evidence scope identify the claim. | definitional |
+| known-at | The guide uses already retained evidence; recommendations do not become executed experiments. | definitional |
+| institution | Upstream contracts define public metrics; declared workflow requirements define acceptance; Stefan controls new execution and release. | definitional |
 
 ### Claims
 
 | Id | Claim | How it could be false |
 |---|---|---|
-| public-roster-execution-complete | The comparison includes the available local parser families, the full declared population and every dimension, with failures and unsupported output contracts explicit. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+| guide-retained-lessons-qualified | Worked lessons follow retained sources and make no new parser-quality or operating-performance claim. | A material assertion lacks the cited source, confuses its units or scope, or implies unperformed execution. |
 
-Closes: public-roster-execution.record, public-roster-execution.absent-record, public-roster-execution.ordering-spacing, public-roster-execution.entity-identity, public-roster-execution.known-at, public-roster-execution.institution, public-roster-execution-complete
+Closes: guide-retained-lessons.record, guide-retained-lessons.absent-record, guide-retained-lessons.ordering-spacing, guide-retained-lessons.entity-identity, guide-retained-lessons.known-at, guide-retained-lessons.institution, guide-retained-lessons-qualified
 
-**Issue 11 - Deliver useful parser results and a public-benchmark recommendation**
+**Issue 11 - Write and check the practical parser evaluation guide**
 
-Depends on Issues 9-10. Replace the two-parser demonstration as the report's principal result with generated full-population local comparisons. Report native dimensions separately, family diagnostics and failure counts with exact denominators. Inspect source/output examples that explain differences, including charts, scanned content, tables, formatting and grounding. Clearly distinguish PDFSmith output limitations from underlying SDK capabilities. Answer whether ParseBench supplies the needed ground truth, which meaningful needs require another benchmark or additional internal cases, and what readers can choose using the new results. Preserve historical and invoice work as supporting examples. Prepare an exact paid-run proposal only for unresolved consequential comparisons, with provider/configuration, shared inputs and a spending ceiling to approve before calls. Keep the PR draft until the expanded acceptance criteria are met.
+Depends on Issues 9-10. Write `benchmark-design-guide.md` as a finished explanation
+for practitioners, with the source inventory as linked reference material. Lead
+with the decision: use published evidence when it fits; inspect a matching subset
+when needed; collect new truth only for a consequential unanswered requirement.
+Include concrete task/metric choices, reference construction, failure accounting,
+paired comparisons, uncertainty, operational constraints and a stopping rule.
+Explain the scoped consulting engagement without implying a proprietary corpus or
+new leaderboard is necessary. Preserve historical/controlled work with its limits.
 
-Files: existing source report/export path, coverage report, runtime/result checkpoints and focused result aggregation tests. Verify complete membership, correct dimension/family denominators, no silent failure omission, and source-linked recommendation examples. Regrade retained outputs independently and recompute published tables before issue closure. Run focused checks, core lint/types and the complete test suite; preserve unrelated dirty files.
+Files: the guide and one evidence JSON, existing orientation/README/progress and
+integration handoff. Check every local link, exact cited numbers, source identities
+and distinctions between findings and recommendations. Read the complete guide for
+coherence, usable examples and unsupported claims. No new testing framework,
+parser/native scoring, broad test suite or GPU work is needed. Update draft PR #9
+and mapped issues to the actual delivery; publication remains a separate decision.
+
+The guide can be delivered for review without claiming the milestone's engineering
+coverage gates or public release passed. Issue-closing commits remain gated by the
+verification workflow; ordinary documentation checkpoints do not close issues.
+This fulfills current spec criteria 1, 8-12.
 
 ### Premises
 
-Input: public results assessment
+Input: guide delivery
 
 | Question | Answer | Kind |
 |---|---|---|
-| record | A pinned source or planned input/configuration result with its actual bytes and contract. | definitional |
-| absent-record | Missing evidence is unknown or incomplete, never an omitted difficult case or an assumed success. | definitional |
-| ordering-spacing | Source order and repeated annotation groups do not establish prevalence or independent documents. | definitional |
-| entity-identity | Dataset revision, input hash, pipeline options and source/runtime identities bind each result. | definitional |
-| known-at | Membership and configuration precede scored outputs; subsequent repairs create a new execution identity. | definitional |
-| institution | Upstream evaluator semantics define native scores; declared business tasks define fitness; Stefan controls paid runs and release. | definitional |
+| record | A source-backed guide assertion tied to its exact retained artifact or primary source. | definitional |
+| absent-record | Missing or unreviewed evidence remains unknown; it is not absence, success or a new result. | definitional |
+| ordering-spacing | Case counts, source files, original documents and benchmark dimensions are distinct; no global rank follows from row order. | definitional |
+| entity-identity | Source revision, artifact hash, configuration and evidence scope identify the claim. | definitional |
+| known-at | The guide uses already retained evidence; recommendations do not become executed experiments. | definitional |
+| institution | Upstream contracts define public metrics; declared workflow requirements define acceptance; Stefan controls new execution and release. | definitional |
 
 ### Claims
 
 | Id | Claim | How it could be false |
 |---|---|---|
-| public-results-assessment-complete | The final recommendation follows inspected coverage and executed parser results rather than issue completion or synthetic examples alone. | A source/failure/dimension is silently omitted, identities change, or an unsupported conclusion is asserted. |
+| guide-delivery-inspectable | The authored guide and linked evidence explain actionable decisions without inventing results or restarting execution. | A material assertion lacks the cited source, confuses its units or scope, or implies unperformed execution. |
 
-Closes: public-results-assessment.record, public-results-assessment.absent-record, public-results-assessment.ordering-spacing, public-results-assessment.entity-identity, public-results-assessment.known-at, public-results-assessment.institution, public-results-assessment-complete
+Closes: guide-delivery.record, guide-delivery.absent-record, guide-delivery.ordering-spacing, guide-delivery.entity-identity, guide-delivery.known-at, guide-delivery.institution, guide-delivery-inspectable
 
-## Retained follow-on candidates, subordinate to the expanded public comparison
+## Deferred execution and release
 
-The public comparison now includes available local OCR, tables/charts and other dimensions. These earlier custom-corpus candidates remain secondary; they cannot replace the full public assessment and comparison. Paid calls still require approval.
+Full-population and 208-input parser plans, model lifecycle/GPU repairs, new native
+grading, OCR/deck/formula experiments and paid comparisons remain deferred. They
+are not hidden dependencies of the guide. Existing outputs, snapshots and historical
+reports stay available. No blanket inference follows about all business workloads.
 
-| Track | Fixed candidate inputs and task | Reference and comparison | Completion and gate |
-|---|---|---|---|
-| Scans/OCR | Twenty qualified invoices selected by source metadata across observed templates/complexities, rendered as image-only PDFs at 150 and 300 dpi; same field/row recovery task. | Reuse independently qualified source facts; keep paired digital/raster hashes. Compare the no-OCR baseline with two installed local OCR-capable configurations after actual capability/version checks. | Report paired task recovery, OCR omissions, empties/timeouts and page counts. If suitable local models are absent, prepare the exact model/download/resource request instead of claiming OCR coverage. |
-| Complex tables/charts | Additional pinned ParseBench table categories beyond the executed subset, plus a separately scoped ten-chart probe. | Assess reuse of pinned upstream GriTS/record matching and chart rules with declared normalization/applicability; inspect annotations before outputs. Compare two suitable available local configurations on shared inputs. | Scores distinguish detected, recovered, wrong associations and unsupported reference forms. No access to annotated answers during extraction. Document source/license/annotation limits. Chart incapability is a measured outcome, not exclusion. |
-| Presentations/decks | Qualify the ten retained synthetic source-first investor decks; task is slide-boundary/title/bullet ordering and exact chart/table facts where source truth exists. | Preserve PPTX/PDF pair identity; independently qualify rendering and source references. Compare two suitable local parsers. Keep public legacy decks as a distinct directional track. | Report source/template realism and task failures; do not call the synthetic ten-deck result representative of corporate presentations. Resolve missing pairs before strong scores. |
-| arXiv | Qualify the ten retained academic inputs and exact source revisions; task is reading order and equation/table recovery on those papers. | Audit LaTeX/Pandoc source-to-PDF agreement and unsupported formulas; compare two suitable local configurations. Never use HTML from another paper revision as exact truth. | Separate equation/text/structure denominators and source-coverage gaps. Technical-paper conclusions remain separate from business-invoice recommendations. |
-| Cloud/frontier | Choose one of the qualified task protocols only after a specific remaining decision requires paid comparison. | Exact provider/model/SDK/config/prompt, shared frozen inputs, retries/cache policy and cost accounting. Inspect a one-document pilot first. | Stefan approves maximum total spend and stop rules before calls. Report failures and actual costs; no historical paid pilot becomes a current winner. |
-
-SEC follow-on can use a parser-independent source/provenance rule over the retained
-catalog, audited PDF/HTML spans and a fixed information-extraction task. It does
-not reuse the pypdfium2 score threshold as a new impartial selection rule.
+All benchmark and GPU execution remains paused. Native protocol qualification of
+the unexecuted sample is unfinished and cannot be represented as a scored result.
+Current source writing does not authorize changes to the editorial repository,
+website CMS, publication, deployment or public main.
 
 ## Next actions
 
-No new user decision is required. Paid comparisons and public release remain deferred.
+No user action is required to write and check the guide. New runs and release need
+separate decisions; none is requested as part of this work.
