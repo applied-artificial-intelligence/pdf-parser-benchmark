@@ -8,6 +8,14 @@ and confidence-based review. Internal project history does not lead the guide.
 All benchmark and GPU execution is paused;
 full-population and sampled comparisons are deferred.
 
+The editorial finish adds a real financial-table selection example, explicit
+parser-call versus invoice-task denominators, a continuation-row source/prediction
+comparison and a three-percentage-point hypothetical review-cost break-even.
+A [portable publication edition](../.workspace/work/2026-10-13-benchmark-rebuild/publication/guide.html)
+and readable evidence appendix were checked at 1280px and 375px. This is an
+editorial publication recommendation, not approval to merge the whole engineering
+PR or a claim of new configured-system qualification.
+
 The guide recommends consulting published ParseBench results before repeating
 experiments. ExtractBench, ExtractBench Pro and OmniDocBench supply other relevant
 task/reference contracts. Pro is assessed from its pinned card and shared

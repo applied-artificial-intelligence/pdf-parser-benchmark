@@ -10,6 +10,12 @@ then explains representative evaluation, quality thresholds, confidence-based
 review, latency, throughput and total operating cost. Retained results provide
 a compact example of how task acceptance changes a component decision.
 
+The [publication edition](.workspace/work/2026-10-13-benchmark-rebuild/publication/guide.html)
+includes a [readable evidence appendix](.workspace/work/2026-10-13-benchmark-rebuild/publication/evidence.html),
+a worked financial-table selection and a source/output invoice example. Its
+standalone layout was checked at desktop and phone widths. Publication remains
+subject to approval.
+
 The [ParseBench coverage assessment](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md)
 and [filterable workload inventory](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-workload-index.csv)
 account for all 2,078 source input paths. Visual observations cover 221 inputs;

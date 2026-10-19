@@ -6,7 +6,7 @@ task, quality threshold and total cost, including confidence and review policies
 It uses retained examples rather than a new general leaderboard. All benchmark and GPU execution remains paused, including
 the overnight heartbeat. Prepared full and sampled comparisons are deferred.
 
-The work unit is `.workspace/work/2026-10-13-benchmark-rebuild/`. Revision 6 of
+The work unit is `.workspace/work/2026-10-13-benchmark-rebuild/`. Revision 7 of
 its `spec.md` and current `plan.md` supersede the earlier full-roster execution
 scope. `progress.txt` records the delivery/checkpoint status. Draft
 [PR #9](https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9)
@@ -29,6 +29,11 @@ does not estimate arbitrary real-vendor performance.
 
 Paths below are relative to the work unit:
 
+- `publication/guide.html` is the portable publication edition;
+  `publication/evidence.html` is the readable appendix. Regenerate with
+  `uv run --no-sync python publication/render.py` from the work unit, or invoke
+  that script by its full path. It renders authored text only, with no inference.
+  `publication/review/` retains desktop/375px screenshots.
 - `benchmark-design-guide.md` is the current authored guide;
   `guide-evidence.json` records its source identities, checks and claim limits.
 - `parsebench-coverage.md`, `parsebench-workload-index.csv` and

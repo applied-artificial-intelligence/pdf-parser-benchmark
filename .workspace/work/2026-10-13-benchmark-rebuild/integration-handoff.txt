@@ -1,54 +1,54 @@
-PDF-Bench component-selection guide - October 19, 2026
+PDF-Bench publication edition - editorial finish, October 19, 2026
+
+Recommendation: publish this editorial edition after Stefan's approval. No further
+benchmark, grading, model or GPU work is required for this article. This is not a
+recommendation to merge the entire engineering PR without its separate checks.
 
 Branch: codex/benchmark-rebuild
 Draft PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
-Scope: spec.md revision 6, implementing Stefan's attached revision prompt.
+Current contract: spec.md revision 7 and plan.md.
 
-Reader artifact: benchmark-design-guide.md
-Title: Selecting document parsing and extraction tools
-Guide SHA256: 2365371bbcfaca58d294ada786d8cc04fd80eedf6a433452f323fd52445cbff5
-Evidence record: guide-evidence.json
-Evidence SHA256: 403e9bd2b352797f25c4c9aae524324b09dbe48c6fe47584f62a4f3853723f5e
-Assessment: parsebench-coverage.md
-All artifact paths are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
+Portable article: publication/guide.html
+Readable appendix: publication/evidence.html
+Editable source: benchmark-design-guide.md and publication/evidence.md
+Shared styling: publication/article.css
+Assets and visual checks: publication/assets/ and publication/review/
+Regenerate HTML: uv run --no-sync python publication/render.py (from this work unit).
+Deploying the HTML requires copying publication/ with its assets and stylesheet;
+serving it requires no parser, model, API key or application runtime.
+Paths above are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
 
-Argument: select a configuration meeting task-specific quality requirements at
-acceptable total cost for the actual document collection. Distinguish parsing
-from schema-guided extraction. Use published evidence to shortlist, inspect
-matching cases, then evaluate only unresolved requirements. Include confidence,
-review workload, omissions, application latency, throughput and operating effort.
+Guide SHA256: df7a21153ec89abbd41e301d916ae3a430b8b0bbf03579de59d16620c49a2ba3
+Publication HTML SHA256: 329f22bbe6e316dd23616b254a32304d21fec3ccacb9fbb5614fc98ac84a10f0
+Evidence record: guide-evidence.json (source identities, arithmetic, visual metrics).
+Evidence SHA256: c83f635a6afd7b45164c54d4bcbec143aa7407f8393ccd2fa5e8689cee475e05
 
-ExtractBench Pro is now assessed from its pinned dataset card, existing shared
-README and primary announcement. All six challenges, synthetic construction,
-shared evaluator, perfect-value versus grounded metrics and inspection limits
-are explicit. Documentation reports 100 documents, 2622 pages and 144141 values;
-those table totals reconcile. No Pro PDFs or annotation rows were downloaded or
-independently audited. OpenDocRouter's official SDK and public OpenAPI establish
-its documented access interface; no parsing/upload/authenticated call was made.
-The guide corrects the brief's dates, dimension count and unverified ranking.
+Finished changes: a financial-table selection using a retained Apple page connects
+required normalized output, public annotations, actual published candidate rows
+and the remaining acceptance check. It does not invent a new configured winner.
+The invoice table distinguishes 100 successful calls per parser from 84/55 task
+passes, explains record F1 and shows an actual continuation row omitted by the
+fixed extractor despite being present in the raw output. The cost example includes
+a three-percentage-point review-rate break-even under hypothetical assumptions.
 
-The guide includes a hypothetical monthly cost comparison, checked to 42000,
-18000 and 26000 dollars under stated assumptions. These are not provider prices
-or measured review rates. Its retained invoice example is a compact illustration
-of conflicting acceptance metrics, qualified as generated-template evidence.
+Checks: 200 saved grades and 1209 completion-bound file hashes; public source and
+annotation identities; published candidate rows; normalized count and cost math;
+25 local authored links/anchors; 12 generated HTML asset/link/anchor targets;
+10 immutable repository source targets including the operating anchor; focused
+renderer lint, prose and plan checks. One uncommitted-input citation was replaced
+with the pinned upstream PDF URL. No new inference or native evaluation.
 
-Fresh checks: retained ParseBench inventory/CSV reconciliation; 200 saved invoice
-grades summed; 1209 completion-bound files hash-checked; pinned source identities;
-25 local links/anchors; plan shape/terms/premises/closure; guide and assessment
-prose checks. These were light source/file checks. Prior engineering tests,
-replays and PDFSmith lifecycle probes remain historical evidence. No new issue
-engineering-coverage gate or full/sample leaderboard completion is claimed.
+Visual review: standalone HTML at 1280x950 and 375x812. Body/table/caption sizes
+18/15/14px on desktop and 17/15/14px on phone, using Arial/Helvetica. Wide tables
+and original-source crops scroll inside their panels; phone document width was
+360px within the 375px viewport, with no page overflow. Temporary viewport
+settings were reset. These are checks of the portable edition, not a live CMS.
 
-Positioning: this technical guide supports component selection within larger
-document intelligence systems. Keep the Swiss Re/Swift3 case study and patent/
-inventorship material separate. No client narrative, acquisition speculation,
-website/service page, editorial package, CMS or sibling repository was changed.
-
-All benchmark and GPU execution remains paused. Policy execution_paused=true,
-heartbeat PAUSED, service inactive and no matching owned process at inspection.
-No new parser, native grader, model import, dependency installation, GPU job,
-paid call or broad test suite. Full/sample plans and immutable reports remain
-unchanged. Public-main merge/publication remain separate decisions.
+The Swiss Re/Swift3 case study, patent/inventorship narrative and broader services
+page remain separate. No paid calls, sibling repository, CMS, editorial package,
+publication, deployment or public-main merge. Existing full/sample outputs and
+immutable reports remain unchanged. Benchmark/GPU policy and heartbeat stay paused.
 
 Next actions
-No user decision is required for this revision delivery.
+Stefan's approval is required before publishing the prepared article. No new
+benchmark or compute authorization is needed for the editorial edition.

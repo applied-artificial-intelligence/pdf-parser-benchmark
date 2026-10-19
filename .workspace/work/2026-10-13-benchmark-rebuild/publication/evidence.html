@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evidence and worked-example notes</title>
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+<main>
+<article>
+<h1 id="evidence-and-worked-example-notes">Evidence and worked-example notes</h1>
+<p>This appendix supports <a href="guide.html">Selecting document parsing and extraction tools</a>. It separates retained observations, upstream reported scores and illustrative application requirements. No new parsing, grading, model or GPU experiment was performed for the publication edition.</p>
+<h2 id="financial">Financial-table example</h2>
+<p>The source is Apple 2025 Form 10-K, printed page 19. ParseBench names its input Apple 10-k_page22.pdf. The article figure is a crop rendered directly from the retained PDF. Its values and units were checked visually against that page.</p>
+<ul>
+<li><a href="https://huggingface.co/datasets/llamaindex/ParseBench/resolve/2805a1d940f95a203e0ae4b88be9934f7765b3fc/docs/table/Apple%2010-k_page22.pdf">Pinned upstream input</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/frozen-plan/references/table.jsonl">Retained table references</a>. Find the row whose PDF is <code>docs/table/Apple 10-k_page22.pdf</code>.</li>
+</ul>
+<p>The first period is June 29 through August 2, 2025. The printed share count is 33,265, stated in thousands, giving 33,265,000 shares. The average price is $210.43. The HTML table reference includes the printed count and header, but not the unit sentence above the table. A normalized application record therefore requires information beyond agreement with that table reference alone.</p>
+<p>The three-period schema, source-evidence requirement and treatment of the total are illustrative application requirements. No configured candidate was executed against that schema, and no production qualification is claimed.</p>
+<h2 id="candidates">Candidate evidence</h2>
+<p>The article quotes two rows of the pinned <a href="https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/leaderboard.csv">ParseBench leaderboard CSV</a>:</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Evaluated configuration</th>
+<th style="text-align: right;">Table score</th>
+<th style="text-align: right;">Visual-grounding score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure Document Intelligence (Layout)</td>
+<td style="text-align: right;">86.00</td>
+<td style="text-align: right;">73.78</td>
+</tr>
+<tr>
+<td>LlamaParse Agentic</td>
+<td style="text-align: right;">88.88</td>
+<td style="text-align: right;">84.25</td>
+</tr>
+</tbody>
+</table></div>
+<p>Scores are on the source's scale out of 100. They describe its aggregate population, not the Apple page, a new local run or a current product guarantee. These rows illustrate cross-supplier candidate inspection, not an exhaustive ranking. Current prices and task-specific review rates were not measured.</p>
+<h2 id="invoice">Invoice result and continuation row</h2>
+<p>The retained comparison uses generated PDFs from six source template/complexity combinations, a fixed extractor and frozen task rules. Prior qualification included coding-agent visual review, not independent human adjudication or real-vendor sampling. The ten-item invoice used as an illustration was chosen to explain a continuation-row failure; it is not a representative estimate by itself.</p>
+<ul>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json">Aggregate result</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-plan/inputs/invoice_001.pdf">Generated source PDF</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/attempts/pdfplumber--invoice_001/retained-output.md">pdfplumber raw output</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/attempts/pdfplumber--invoice_001/prediction.json">pdfplumber combination's prediction</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/attempts/pypdf--invoice_001/prediction.json">pypdf combination's prediction</a></li>
+<li><a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-checkpoint.json">Reference qualification</a> and <a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/invoice-failure-audit.json">all failed-pair audit</a></li>
+</ul>
+<p>Both configurations returned content on 100 inputs. Complete-task passes were 84 and 55, respectively. Record F1 is 2 × matched / (expected + predicted), giving 95.84% from 668 / 696 / 698 and 97.62% from 677 / 696 / 691.</p>
+<p>In invoice 001, the continuation row has quantity 84.07 and amount $4,407,902.75. The pdfplumber raw output contains it after the nine-record Markdown table, in the plain-text section. The selected <code>markdown_tables</code> extraction path returned nine records and omitted that item. The pypdf combination returned ten. Both recovered all five requested fields on this document. These observations diagnose an extractor/representation interaction without implying that the raw text lacked the row.</p>
+<h2 id="public-benchmarks">Public benchmark assessment</h2>
+<p>The <a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md">source assessment</a> explains counting units, document observations, metric contracts and the scopes of ParseBench, ExtractBench, Pro and OmniDocBench. Pro's counts and synthesis method are upstream reports checked against its pinned card, not a new independent annotation audit. The guide credits LlamaIndex's confidence-validation method.</p>
+<h2 id="inventory">Full ParseBench inventory</h2>
+<p>The <a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/parsebench-workload-index.csv">CSV inventory</a> accounts for 2,078 input paths and 2,060 distinct file hashes. Its associated 2,553 cases cover overlapping capability groups. Visual observations cover 221 inputs, while mechanical measurements cover the full pinned population. Unknown family labels remain unknown; they do not establish missing benchmark coverage.</p>
+<h2 id="operating">Operating observations</h2>
+<p>The <a href="https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/blob/37c821e38e3d61530711278b56207039a7a638f0/.workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md#retained-local-execution-limitations">retained source inspection</a> identifies fresh processes, converters and model loading in frozen local configurations. It establishes no measured warm speedup, reload fraction, serving-cost comparison or general limitation of an underlying SDK.</p>
+<p>The article's processing prices, review rates and labor costs are hypothetical. Its break-even result assumes equal final quality and no other cost differences. It is a calculation readers can adapt, not a provider recommendation.</p>
+
+</article>
+</main>
+</body>
+</html>

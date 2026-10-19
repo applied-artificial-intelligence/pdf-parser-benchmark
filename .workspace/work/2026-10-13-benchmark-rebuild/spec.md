@@ -1,6 +1,13 @@
 # Spec: Selecting document parsing and extraction components
 
-Revision 6, October 19, 2026. The attached prompt explicitly authorizes revision
+Revision 7, October 19, 2026. Stefan explicitly authorized finishing the editorial
+changes identified in the publication review. Add a concrete selection example
+from retained public documents, clarify invoice task acceptance and record F1,
+show an inspectable source/output disagreement, add cost break-even arithmetic,
+and prepare a portable publication layout with readable evidence links. Verify
+desktop and phone rendering. All benchmark and GPU execution remains paused.
+
+Revision 6 followed the attached prompt, which explicitly authorized revision
 of the assessment and guide around application quality and total cost. Include
 ExtractBench Pro, verified common-API and confidence-score developments, and the
 component's concise relationship to a complete document intelligence workflow.
@@ -105,6 +112,19 @@ Context: pdf-bench, document-parser-evaluation
     disabled execution intact. Unsupported claims are corrected or removed from
     the draft; a missing source is not repaired by fabricating a result or running
     a new experiment. Original output/reference bytes stay unchanged.
+13. The worked selection example identifies an actual retained public input,
+    required normalized output, relevant public annotation/metric, candidate
+    evidence and an explicit decision or remaining acceptance check. Application
+    requirements are illustrative; no unexecuted pipeline is declared qualified.
+14. Invoice results distinguish 100 successful parser calls per configuration from
+    complete-task passes. Explain record precision/recall/F1, retain counts and
+    show a source/prediction disagreement without attributing extractor omissions
+    to missing parser text. Label any illustrative economics independently.
+15. Provide a portable article HTML and readable evidence appendix generated from
+    the authored guide and retained sources. No CMS/website deployment. Check
+    typography, source excerpts, tables, links, clipping and page overflow at
+    desktop and 375px phone width. Static PDF page rendering is permitted solely
+    for evidence figures; no new parsing, scoring, model or GPU compute.
 
 ## In scope
 

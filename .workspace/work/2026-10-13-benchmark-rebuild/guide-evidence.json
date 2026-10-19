@@ -1,12 +1,13 @@
 {
   "title": "Evidence for Selecting document parsing and extraction tools",
-  "spec_revision": 6,
+  "spec_revision": 7,
   "review_date": "2026-10-19",
-  "checked_at_utc": "2026-10-19T21:01:05.244270+00:00",
+  "checked_at_utc": "2026-10-19T23:28:43.915206+00:00",
   "guide": {
     "path": "benchmark-design-guide.md",
-    "sha256": "2365371bbcfaca58d294ada786d8cc04fd80eedf6a433452f323fd52445cbff5",
-    "type": "authored explanation"
+    "sha256": "df7a21153ec89abbd41e301d916ae3a430b8b0bbf03579de59d16620c49a2ba3",
+    "type": "authored explanation",
+    "publication_html": "publication/guide.html"
   },
   "scope": "Read-only public-source research and light checks over retained artifacts; no new parsing, grading, model/GPU job, corpus acquisition or broad test suite.",
   "public_sources": {
@@ -351,18 +352,25 @@
         "review_usd": 10000.0,
         "subtotal_usd": 26000.0
       }
-    ]
+    ],
+    "break_even": {
+      "comparison": "B versus A",
+      "extra_processing_usd_per_document": 0.06,
+      "avoided_review_usd_per_document": 2,
+      "review_fraction_reduction": 0.03,
+      "assumptions": "Same final quality; other cost differences absent."
+    }
   },
   "document_validation": {
     "local_links_and_anchors_checked": 25,
     "checked_files": [
       ".workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md",
-      ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md",
+      ".workspace/work/2026-10-13-benchmark-rebuild/publication/evidence.md",
       "README.md",
       "PROJECT_ORIENTATION.md",
       "docs/BENCHMARK_STATUS_REPORT.md"
     ],
-    "guide_words": 2595,
+    "guide_words": 3499,
     "pro_card_table_totals_reconciled": true,
     "plan_shape_terms_premises_closure": "passed; not issue coverage",
     "guide_house_style_tells": "none",
@@ -381,5 +389,116 @@
     "No new issue engineering-coverage gate, merge, publication, deployment, paid run or model-performance claim.",
     "Prior replay/test receipts remain prior evidence.",
     "Full/sample plans and frozen outputs remain unchanged."
-  ]
+  ],
+  "publication_review": {
+    "local_rendered_links_assets_anchors_checked": 12,
+    "immutable_repository_targets_verified": 10,
+    "external_sources": "Pinned upstream URLs and retained source identities reused; no new remote price or performance claims.",
+    "desktop": {
+      "viewport_width": 1280,
+      "viewport_height": 950,
+      "body_font_px": 18,
+      "table_font_px": 15,
+      "caption_font_px": 14,
+      "family": "Arial, Helvetica, sans-serif"
+    },
+    "phone": {
+      "viewport_width": 375,
+      "viewport_height": 812,
+      "document_width": 360,
+      "body_font_px": 17,
+      "table_font_px": 15,
+      "caption_font_px": 14,
+      "wide_content": "Tables and source excerpts use internal horizontal scrolling; no page overflow."
+    },
+    "screenshots": [
+      "publication/review/desktop-invoice.png",
+      "publication/review/desktop-selection.png",
+      "publication/review/phone-economics.png",
+      "publication/review/phone-invoice.png",
+      "publication/review/phone-source.png"
+    ],
+    "viewport_override_reset": true,
+    "renderer": "Pandoc with a small local export script; no CMS changes or production rendering claimed.",
+    "scoring_or_inference_performed": false,
+    "renderer_lint": "Focused Ruff format/check passed for publication/render.py; no broad suite or inference.",
+    "source_excerpt_scale": {
+      "financial": {
+        "natural_width_px": 790,
+        "rendered_width_px": 1000
+      },
+      "invoice": {
+        "natural_width_px": 720,
+        "rendered_width_px": 720
+      },
+      "presentation": "Unmodified source typography is preserved in exact PDF crops; scrolling prevents shrinking the source labels on phones."
+    }
+  },
+  "worked_selection": {
+    "case_id": "table-7ce868b56c95",
+    "source_path": "docs/table/Apple 10-k_page22.pdf",
+    "pdf_sha256": "7663042ad5740e9ed4e57813130b18106a1a6f74aafa3b07244ce9d9c0905e8a",
+    "annotation_path": "parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/frozen-plan/references/table.jsonl",
+    "annotation_sha256": "9e7c39fb68bfe90c9125c4176c878d9a3b27effb34ddff0e33415e27d296e5bf",
+    "annotation_line": 5,
+    "native_scores_recomputed": false,
+    "normalized_example_shares": 33265000,
+    "source_printed_units": "shares in thousands",
+    "requirements": "Illustrative three-period records plus source evidence, not an executed qualification.",
+    "candidates": [
+      {
+        "Provider": "Azure Document Intelligence (Layout)",
+        "Tables": "86.00",
+        "Visual_Grounding": "73.78"
+      },
+      {
+        "Provider": "LlamaParse Agentic",
+        "Tables": "88.88",
+        "Visual_Grounding": "84.25"
+      }
+    ],
+    "candidate_source_sha256": "a53994f42c51a9626b72b04dadfaf097919dd350b015639a6b7d63fd338cfd1b",
+    "decision": "Inspect the two configured candidates for schema/evidence compatibility. The retained Markdown-only local interface lacks required coordinate sidecars. Neither candidate is production-qualified by this example."
+  },
+  "invoice_clarification": {
+    "call_and_task_counts": {
+      "pypdf": {
+        "success_content": 100,
+        "task_passes": 84,
+        "record_f1_percent_rounded": 95.84
+      },
+      "pdfplumber": {
+        "success_content": 100,
+        "task_passes": 55,
+        "record_f1_percent_rounded": 97.62
+      }
+    },
+    "example": "invoice_001",
+    "fields_correct_each": 5,
+    "expected_records": 10,
+    "predicted_records": {
+      "pypdf": 10,
+      "pdfplumber": 9
+    },
+    "omitted_quantity": "84.07",
+    "omitted_amount": "4407902.75",
+    "raw_output_contains_continuation": true,
+    "cause": "The fixed extraction path selected the nine-record Markdown table although raw text also contains the continuation.",
+    "reference_qualification": "Retained generated-source qualification and coding-agent visual review; no real-vendor extrapolation."
+  },
+  "publication_files": {
+    "publication/guide.html": "329f22bbe6e316dd23616b254a32304d21fec3ccacb9fbb5614fc98ac84a10f0",
+    "publication/evidence.md": "b69b1c24d406037ae988a2d6253fb95b6d3b7c95b68351319ae529a5e4cbe7e7",
+    "publication/render.py": "080c26800df01de021c9b2ba2032fb0165dbcf8cbf0a66b7cc6cde027f462374",
+    "publication/article.css": "3552d785afc400043c76c56db2bd328e39b05b99692d45b3b7067e0663494aea",
+    "publication/evidence.html": "7d7fa0957e5ee6c4620185135a45bbf9e2dd1030d66c80553c3cfaa9a1a54cf8",
+    "publication/review/phone-economics.png": "ce6fcf1b20e86dca815ba93e39c9e70a505c29ce7ca48350fabfb38f91a81d6d",
+    "publication/review/phone-source.png": "b7be7f6d9b7274a25de2f9662cf9d43a26d80c38992edf19fdee554b687ca3b5",
+    "publication/review/desktop-selection.png": "a4e52b205387b3ac7ded7c7bc740c1b6b84168f6a74f3d5436b18855bdb5da24",
+    "publication/review/desktop-invoice.png": "6b1015ce45bc2dc96ae7836465a16034b1811a96d5f2d14d4a559c08ea2c3aa4",
+    "publication/review/phone-invoice.png": "961c17e98458e8c77ca8f8e5adc67c4a8625fc2c0a54c346e67e2a23d2e45945",
+    "publication/assets/invoice-continuation-row.png": "41e0c4b56857a685dd138d8011a6e838bf19778137e8d370e4f04541cda1cb1c",
+    "publication/assets/financial-table-excerpt.png": "2667f34d48e30c154d86f4356344eb38bc3d3ef821896b1817912ed468dc215a"
+  },
+  "publication_recommendation": "Editorial edition ready for publication approval; whole-PR engineering closure and deployment remain separate."
 }

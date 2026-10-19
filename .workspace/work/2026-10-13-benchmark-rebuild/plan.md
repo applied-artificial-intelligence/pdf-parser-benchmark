@@ -1,6 +1,6 @@
 # Plan: Select document parsing and extraction components
 
-Revision 6, October 19, 2026, implements the attached revision brief. The guide
+Revision 7, October 19, 2026, includes the authorized final editorial pass. The guide
 explains component selection for a defined document collection, downstream task,
 quality threshold and total cost. Include ExtractBench Pro, OpenDocRouter and
 confidence-score evidence. Keep client case studies, patent/inventorship material
@@ -628,7 +628,15 @@ copy separate. Preserve historical/controlled work with its limits in reference
 material; use a compact worked example only where it develops the argument.
 
 Files: the guide and one evidence JSON, existing orientation/README/progress and
-integration handoff. Check every local link, exact cited numbers, source identities
+integration handoff, plus a portable HTML article, evidence appendix and source
+figures under `publication/`. Use an actual retained financial-table page to
+connect required output, public references, candidate evidence and the selection
+decision/remaining check. Clarify parser-call success versus invoice task passes,
+explain record F1 and show a retained source/prediction disagreement. Add a
+cost break-even calculation from declared assumptions. Generate the publication
+layout from the guide and check it at desktop and 375px, including readable figure
+typography, table scrolling and evidence links. No website/CMS change or new run.
+Check every local link, exact cited numbers, source identities
 and distinctions between findings and recommendations. Read the complete guide for
 coherence, usable examples and unsupported claims. No new testing framework,
 parser/native scoring, broad test suite or GPU work is needed. Update draft PR #9
@@ -637,7 +645,7 @@ and mapped issues to the actual delivery; publication remains a separate decisio
 The guide can be delivered for review without claiming the milestone's engineering
 coverage gates or public release passed. Issue-closing commits remain gated by the
 verification workflow; ordinary documentation checkpoints do not close issues.
-This fulfills current spec criteria 1, 8-12.
+This fulfills current spec criteria 1, 8-15.
 
 ### Premises
 

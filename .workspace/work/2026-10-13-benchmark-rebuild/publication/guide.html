@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Selecting document parsing and extraction tools</title>
+<link rel="stylesheet" href="article.css">
+</head>
+<body>
+<main>
+<article>
+<h1 id="selecting-document-parsing-and-extraction-tools">Selecting document parsing and extraction tools</h1>
+<p>Choose a parsing and extraction configuration that meets the application's quality requirements at the lowest total operating cost. Make that choice against the documents and task the system will actually handle. Public benchmarks provide valuable evidence for selecting candidates; a deployment decision also needs to account for the required outputs, integration, review workload and operating limits.</p>
+<p>A financial-reporting team may need every table value attached to the correct period, entity and unit. A legal team may need clause hierarchy, exceptions and cross-references preserved. An engineering team may need relationships in a diagram as well as text. These requirements determine which capabilities to compare and what counts as an acceptable result. The highest overall leaderboard score need not identify the most economical configuration that meets them.</p>
+<p>This guide explains how to use existing benchmark evidence and when additional evaluation is justified. The <a href="evidence.html#public-benchmarks">supporting assessment</a> records source revisions, coverage observations and limits. Sources were reviewed on October 19, 2026; this revision uses public documentation and retained results, with no new parser or benchmark execution.</p>
+<h2 id="define-the-output-the-application-needs">Define the output the application needs</h2>
+<p>Parsing produces a usable representation of a document: text, reading order, tables, headings, images and, where supported, source coordinates. Structured extraction returns information requested by a schema, such as parties, dates, amounts and repeated records. Some products perform both operations within one service. Others expose an intermediate representation that a separate extractor uses.</p>
+<p>The distinction affects evaluation. A parser can preserve two adjacent address blocks while an extractor assigns the wrong party. An extractor may correctly return a requested total even when the intermediate representation contains formatting errors. Inspecting parsing quality helps diagnose either outcome; measuring the requested task establishes whether the configured combination works.</p>
+<p>Define success in terms the receiving application can check. An amount may need its currency, unit and effective period. A repeated record may need all its fields associated correctly. A reviewer may need evidence on the original page. An absent value, an unreadable value and a value that does not apply can require different outputs.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Application requirement</th>
+<th>Capability to evaluate</th>
+<th>Consequential failure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Search and quote passages</td>
+<td>Text, boundaries and reading order</td>
+<td>A quotation joins unrelated columns or omits an exception</td>
+</tr>
+<tr>
+<td>Reconcile financial schedules</td>
+<td>Table structure, units and complete records</td>
+<td>Correct numbers are attached to the wrong headers</td>
+</tr>
+<tr>
+<td>Extract contractual terms</td>
+<td>Hierarchy, cross-references and requested fields</td>
+<td>An exception or amendment is separated from the term it qualifies</td>
+</tr>
+<tr>
+<td>Interpret technical documents</td>
+<td>Tables, formulas and drawn relationships as required</td>
+<td>A label survives while its connection to another element is lost</td>
+</tr>
+<tr>
+<td>Review extracted facts</td>
+<td>Value correctness and source evidence</td>
+<td>A plausible answer points to the wrong passage</td>
+</tr>
+</tbody>
+</table></div>
+<p>These are application requirements to investigate, not claims that public benchmarks omit those capabilities. Establish the relevant deployment constraints too: supported formats, permitted hosting, document size, volume and turnaround. A candidate that cannot satisfy a necessary constraint can leave the shortlist before any quality experiment.</p>
+<h2 id="use-public-benchmarks-for-the-capabilities-they-measure">Use public benchmarks for the capabilities they measure</h2>
+<p>ParseBench, ExtractBench and ExtractBench Pro come from LlamaIndex; OmniDocBench provides another set of parsing references and document conditions. Their tasks and counting units differ.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Resource</th>
+<th>Evaluated task</th>
+<th>Useful role in selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/run-llama/ParseBench">ParseBench</a></td>
+<td>Recover document content, structure and source regions across five dimensions</td>
+<td>Compare parsing capabilities and inspect relevant page conditions</td>
+</tr>
+<tr>
+<td><a href="https://github.com/run-llama/ExtractBench/tree/56b8fdd91b2cf3648caf75c717c68441ecf4d43f">ExtractBench</a></td>
+<td>Return schema-guided values, records and evidence from complete documents</td>
+<td>Compare requested information extraction, including long-document completeness</td>
+</tr>
+<tr>
+<td><a href="https://huggingface.co/datasets/llamaindex/ExtractBenchPro/tree/4ae1ffe48696297a8f6c9153034b3914fc7763d0">ExtractBench Pro</a></td>
+<td>Extract values requiring document-specific interpretation, calculation or visual relationships</td>
+<td>Stress relevant extraction and reasoning requirements</td>
+</tr>
+<tr>
+<td><a href="https://github.com/opendatalab/OmniDocBench/tree/f133a71e9e91c3621c7ce8994200a7b394a06eb3">OmniDocBench</a></td>
+<td>Recover text, tables, formulas, layout and reading order across document attributes</td>
+<td>Inspect relevant technical, layout and language conditions</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="parsebench-assesses-several-distinct-parsing-capabilities">ParseBench assesses several distinct parsing capabilities</h3>
+<p>ParseBench reports tables, charts, content faithfulness, semantic formatting and visual grounding. Reading order contributes to the content evaluation; heading hierarchy contributes to formatting. They are not additional headline dimensions. An application requiring a navigable table of contents should check the relevant annotations and output contract rather than infer a complete navigation test.</p>
+<p>The retained source inventory accounts for 2,078 input paths and 2,553 capability-group cases. Most inputs are individual pages. Those counts are not 2,078 independent complete business documents. The <a href="evidence.html#inventory">filterable inventory</a> exposes formats, source hashes, groups, challenge tags and observations. The linked assessment distinguishes full mechanical coverage from visual inspection of 221 inputs.</p>
+<p>Use the <a href="https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/leaderboard.csv">published dimension results</a> to identify suitable configurations. A content average is not the proportion of wholly correct documents. Chart spot checks do not establish reconstruction of every figure or diagram. A combined score assigns weights that may differ from the application's priorities.</p>
+<h3 id="extractbench-assesses-requested-information-and-completeness">ExtractBench assesses requested information and completeness</h3>
+<p>The pinned ExtractBench documentation reports 370 documents and 4,869 pages across 67 document types, including 325 real documents and 45 synthetic long-list examples. Its schema-guided task, value scoring, record alignment and evidence requirements are closer to a requested information product than to general page-to-Markdown conversion.</p>
+<p>Its short, medium and long document slices can help reveal whether an extraction system returns the required records throughout a document. Inspect recall beside precision. A small set of correct returned values can conceal many omissions. Whether its schemas and record definitions match the intended application still requires inspection. These counts and construction details are upstream reports, not an independent reference audit.</p>
+<h3 id="extractbench-pro-extends-the-interpretation-challenge">ExtractBench Pro extends the interpretation challenge</h3>
+<p>Pro uses the same evaluation framework with 100 synthetic documents. Its six challenge groups cover document conventions, organization-specific vocabulary, counting rules, drawn relationships, charts within documents and long chart sheets. The <a href="https://huggingface.co/datasets/llamaindex/ExtractBenchPro/blob/4ae1ffe48696297a8f6c9153034b3914fc7763d0/README.md">dataset card</a> describes fictional values established before rendering. Public evaluation therefore already includes problems that might otherwise appear to justify creating new examples.</p>
+<p>The <a href="https://www.llamaindex.ai/blog/introducing-extractbench-pro">Pro announcement</a> also reports the proportion of documents with perfect value F1 beside aggregate value and grounding scores. Perfect value F1 is a stricter value-completeness measure; it does not by itself require correct citations or satisfy every business acceptance rule. Difficult synthetic examples expose capabilities, but do not estimate their prevalence in a particular organization's incoming documents.</p>
+<h3 id="inspect-the-method-behind-the-score">Inspect the method behind the score</h3>
+<p>These resources publish data and evaluation code, which makes their task contracts inspectable. Their release dates and scope should travel with any comparison. ParseBench launched in April 2026, ExtractBench in August, and Pro in October. Recent availability does not establish independent validation or stable provider rankings.</p>
+<p>Check how expected answers were constructed, which cases a score includes, the metric's treatment of missing values and the exact evaluated configuration. Vendor-produced evidence is useful when those details support the intended comparison. Credit it without treating a vendor's headline as an application acceptance test. A same-named local wrapper can expose different options or outputs.</p>
+<h2 id="match-the-evidence-to-the-document-collection">Match the evidence to the document collection</h2>
+<p>An industry label gives insufficient detail for a selection decision. Financial reports can contain narrative pages, scans, dense schedules and charts. A law firm's work may involve signed agreements, amended clauses or image-only exhibits. An engineering collection may combine manuals, calculations and large drawings. Record which conditions occur, their volume and the cost of getting them wrong.</p>
+<p>Compare those conditions with actual public cases and their annotations. Useful matches include structure, capture quality, language, document length, relevant facts and the required representation. Unknown metadata remains unknown. An unrecognized family label in an automatic inventory does not establish that the benchmark lacks the family.</p>
+<p>Public results may already support a shortlist. Separately reported slices or retained case results may support a more relevant comparison. When the necessary configuration, schema or delivered representation differs, an additional acceptance check may be justified. Collect new references only for the unresolved requirement. A stricter aggregate over existing annotations can sometimes answer the question without another corpus.</p>
+<p>A targeted assessment should distinguish a demonstrated mismatch from an unexamined condition. The available inspection establishes neither a percentage of all business use cases covered nor a general coverage failure. An application can fit public evidence well even though its internal documents are unavailable to benchmark authors.</p>
+<h2 id="a-worked-selection-share-repurchase-records-with-source-evidence">A worked selection: share-repurchase records with source evidence</h2>
+<p>Consider a financial-analysis workflow that needs one record per reporting period, with the share count, average price and supporting source location. The example uses an actual <a href="evidence.html#financial">Apple filing page retained in ParseBench</a>. The workflow requirements below are illustrative; the page, annotations and saved parser outputs are retained evidence.</p>
+<figure id="financial-source">
+<div class="source-scroll">
+<img src="assets/financial-table-excerpt.png" width="790" height="350" alt="Apple share-repurchase table showing three reporting periods, share counts and average prices; the introductory sentence specifies that share counts are in thousands.">
+</div>
+<figcaption>
+Source excerpt: Apple 2025 Form 10-K, printed page 19. ParseBench names the input Apple 10-k_page22.pdf. The complete page and annotation are linked in the evidence appendix. Scroll horizontally to inspect the original at readable size on a phone.
+</figcaption>
+</figure>
+<p>The introductory sentence gives different units for different columns. For the first period, the required normalized record would contain:</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr>
+<th>Required field</th>
+<th>Accepted value for this source example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Period</td>
+<td>June 29 through August 2, 2025</td>
+</tr>
+<tr>
+<td>Shares purchased</td>
+<td>33,265,000 shares, from 33,265 stated in thousands</td>
+</tr>
+<tr>
+<td>Average price per share</td>
+<td>$210.43</td>
+</tr>
+<tr>
+<td>Supporting source</td>
+<td>This row, its headers and the unit sentence on the same page</td>
+</tr>
+</tbody>
+</table></div>
+<p>The application must also distinguish the period rows from the total. All three periods must be returned, with no duplicate records or invented price for the total. An output of 33,265 without its scale fails the declared contract even though the printed digits are correct. The source location must support the number and its interpretation.</p>
+<p><strong>What the existing benchmark supplies.</strong> The public table reference includes 33,265 and the relevant column header. Its expected HTML does not include the unit sentence above the table. Table scoring can therefore inform candidate selection without certifying the normalized share count required here. Content and grounding evidence are relevant too. This example already exists publicly; creating another financial-table corpus is unnecessary to explain the requirement.</p>
+<p><strong>Which candidates merit inspection.</strong> The pinned published leaderboard gives the following aggregate scores on its evaluated population:</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 27%" />
+<col style="width: 36%" />
+<col style="width: 36%" />
+</colgroup>
+<thead>
+<tr>
+<th>Published configuration</th>
+<th style="text-align: right;">Tables, score out of 100</th>
+<th style="text-align: right;">Visual grounding, score out of 100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Azure Document Intelligence (Layout)</td>
+<td style="text-align: right;">86.00</td>
+<td style="text-align: right;">73.78</td>
+</tr>
+<tr>
+<td>LlamaParse Agentic</td>
+<td style="text-align: right;">88.88</td>
+<td style="text-align: right;">84.25</td>
+</tr>
+</tbody>
+</table></div>
+<p>These are two candidates for output-contract verification, selected to illustrate comparison across suppliers. The table is not a complete shortlist or an Apple-page result. The <a href="evidence.html#candidates">dated source snapshot</a> identifies the exact leaderboard rows. Published aggregates do not establish either candidate's accuracy on this schema or its current configuration's operating cost.</p>
+<p><strong>The decision supported now.</strong> Keep those two configurations for a check of the required record and source evidence. The retained Markdown-only local integration cannot supply the required coordinate sidecar, so it cannot be deployed unchanged for this workflow. That interface finding does not establish a limitation of every underlying parser SDK.</p>
+<p>The remaining acceptance check is specific: obtain all three period records, correctly scaled, with their supporting regions; check the total is handled as declared; then compare complete-workflow cost and review needs on representative reports. That check has not been run. Existing evidence justifies a targeted comparison of the configured candidates, not production approval of either one.</p>
+<h2 id="compare-configurations-on-representative-independent-references">Compare configurations on representative, independent references</h2>
+<p>When additional evaluation can change the decision, define the eligible population before inspecting candidate outputs. Include important document conditions and ordinary work. Report a production-weighted result separately from a deliberately difficult stress set. Selecting only documents that one candidate handles well biases the comparison. A fixed percentage sample does not, by itself, establish adequate coverage or precision.</p>
+<p>Reference answers must describe the actual rendered input. Source data, filing HTML and editable originals can help construct truth, but a different rendition can omit or rearrange information. Resolve ambiguous readings against the page and task definition. Evaluated answers can identify a disagreement for review; they cannot establish their own correctness.</p>
+<p>Document normalization and record identity too. Equivalent date formats may be acceptable, while a lost sign or unit changes the result. Identical descriptions can belong to separate legitimate records. Matching only isolated field values can miss incorrect associations between otherwise correct fields.</p>
+<p>Compare candidates on the same input bytes and freeze the complete configuration, including parser mode, model version, extractor, schema, prompts and preprocessing. Retain planned attempts, failures, empty outputs and timeouts. An evaluator exception leaves an incomplete evaluation; excluding that case would change the comparison.</p>
+<p>Use metrics that distinguish useful partial recovery from operational acceptance:</p>
+<ul>
+<li>Field precision and recall show incorrect and omitted requested values.</li>
+<li>Record metrics show whether associated fields form the correct complete records.</li>
+<li>Document acceptance shows whether every critical requirement passed together.</li>
+<li>Evidence metrics show whether returned facts point to appropriate support.</li>
+<li>Results by document condition reveal failures hidden by a population average.</li>
+</ul>
+<p>Keep the parser output, extracted answer and reference available for disagreement review. The result measures a configured combination. Diagnosis determines whether a failure arose in perception, representation, extraction or the reference.</p>
+<h3 id="successful-parser-calls-and-complete-task-acceptance-are-different">Successful parser calls and complete task acceptance are different</h3>
+<p>A retained invoice experiment used 100 generated documents from six source template/complexity combinations and a fixed downstream extractor. Both configured parsers returned content on all 100 inputs. A task pass additionally required all five requested fields and every required line record, without missing or extra records under the frozen rules.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 15%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+</colgroup>
+<thead>
+<tr>
+<th>Retained configuration</th>
+<th style="text-align: right;">Calls returning content</th>
+<th style="text-align: right;">Complete-task passes</th>
+<th style="text-align: right;">Matched / expected / predicted records</th>
+<th style="text-align: right;">Record F1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pypdf plus fixed extractor</td>
+<td style="text-align: right;">100/100</td>
+<td style="text-align: right;">84/100</td>
+<td style="text-align: right;">668 / 696 / 698</td>
+<td style="text-align: right;">95.84%</td>
+</tr>
+<tr>
+<td>pdfplumber plus fixed extractor</td>
+<td style="text-align: right;">100/100</td>
+<td style="text-align: right;">55/100</td>
+<td style="text-align: right;">677 / 696 / 691</td>
+<td style="text-align: right;">97.62%</td>
+</tr>
+</tbody>
+</table></div>
+<p>Record precision is matched records divided by predicted records; recall is matched records divided by expected records. Their harmonic mean, F1, is equivalently 2 × matched / (expected + predicted), summed across these invoices. It gives partial credit for recovered records. Complete-task acceptance fails an invoice with any required field or record error. The different ordering follows from those different acceptance criteria. These are generated-template results for configured combinations, not estimates for arbitrary supplier invoices.</p>
+<p>One retained document shows the source of an extraction failure directly:</p>
+<figure id="invoice-source">
+<div class="source-scroll">
+<img src="assets/invoice-continuation-row.png" width="720" height="65" alt="The tenth line item on page two of a generated invoice: Enterprise Plan - Annual, quantity 84.07, unit subscription, unit price $52,431.34 and amount $4,407,902.75.">
+</div>
+<figcaption>
+Generated invoice 001, page two. This continuation row belongs to the ten expected line records. It is a controlled example with fictional values.
+</figcaption>
+</figure>
+<p>The pdfplumber output contains this row in its plain-text section. The fixed extractor chose its Markdown-table representation, which contained only nine records. Its saved prediction omitted the continuation item. The pypdf combination returned all ten records on this document. Both combinations recovered the five requested fields. The <a href="evidence.html#invoice">source, outputs and predictions</a> show the disagreement.</p>
+<p>This omission occurred between the retained parser representation and the selected extraction path. Describing it as a parser crash or claiming that the raw output lost the row would misdiagnose the failure. The <a href="evidence.html#invoice">saved summary and qualification</a> retain the population, reference and extractor limits.</p>
+<p>Use paired disagreements to investigate consequential differences. Multiple fields on one page, or repeated pages from one template, supply dependent observations. Do not claim narrow uncertainty merely from a large count of field grades. Separate examples used to tune a configuration from examples used to assess the final choice.</p>
+<h2 id="evaluate-confidence-as-a-review-policy">Evaluate confidence as a review policy</h2>
+<p>Confidence scores can help allocate review effort, but the presence of a score does not establish a safe automation threshold. A reported confidence of 0.95 needs validation before it can be interpreted as 95% correctness in the intended workload. Different providers' scores need not share that interpretation.</p>
+<p>LlamaIndex's <a href="https://www.llamaindex.ai/blog/what-makes-an-extraction-confidence-score-useful">confidence guidance</a> recommends choosing a cutoff against reference data and checking it on separate representative data. Compare how much work each candidate can accept automatically at the required precision. A threshold that accepts almost nothing may look accurate while saving little review effort.</p>
+<p>Measure omissions separately. Confidence attached to returned values cannot flag a required record that was never returned. Field-level confidence also does not establish whole-document correctness. Define whether review applies to one value, a complete record or the entire document, then measure workload at that unit. Track wrong automatic acceptances, incomplete documents and the accuracy of the reviewed final output as well as accepted-value precision.</p>
+<p>Choose thresholds and fallback rules using development data; assess the frozen policy on separate documents. Recheck it when document conditions or component versions change. A high-confidence answer with invalid source support still fails a workflow that requires traceability.</p>
+<h2 id="compare-the-economics-of-the-complete-configuration">Compare the economics of the complete configuration</h2>
+<p>The relevant cost includes parsing, extraction, retries, manual review and operation. Local inference has hardware and maintenance costs; an API bill can omit review and integration effort. Separate the one-time cost of evaluation and implementation from recurring processing expenditure.</p>
+<p>Consider a hypothetical workload of 100,000 documents per month, averaging two pages each. Review takes three minutes per document at an assumed labor cost of $40 per hour, or $2 per reviewed document. Assume all three configurations meet the final quality requirement with their stated review policy.</p>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr>
+<th>Hypothetical configuration</th>
+<th style="text-align: right;">Processing price per page</th>
+<th style="text-align: right;">Documents sent to review</th>
+<th style="text-align: right;">Processing cost</th>
+<th style="text-align: right;">Review cost</th>
+<th style="text-align: right;">Monthly subtotal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td style="text-align: right;">$0.01</td>
+<td style="text-align: right;">20%</td>
+<td style="text-align: right;">$2,000</td>
+<td style="text-align: right;">$40,000</td>
+<td style="text-align: right;">$42,000</td>
+</tr>
+<tr>
+<td>B</td>
+<td style="text-align: right;">$0.04</td>
+<td style="text-align: right;">5%</td>
+<td style="text-align: right;">$8,000</td>
+<td style="text-align: right;">$10,000</td>
+<td style="text-align: right;">$18,000</td>
+</tr>
+<tr>
+<td>C</td>
+<td style="text-align: right;">$0.08</td>
+<td style="text-align: right;">5%</td>
+<td style="text-align: right;">$16,000</td>
+<td style="text-align: right;">$10,000</td>
+<td style="text-align: right;">$26,000</td>
+</tr>
+</tbody>
+</table></div>
+<p>These are illustrative assumptions, not measured provider prices or review rates. B has the lowest subtotal despite A's lower processing price. C's higher price buys no review reduction in this example. Additional integration, infrastructure and residual error costs could change the decision. Review effectiveness must be measured rather than assumed in an actual deployment.</p>
+<p>The same assumptions give a reusable break-even calculation. B costs $0.06 more per document to process: two pages × ($0.04 - $0.01). Each avoided review saves $2. B therefore breaks even with A when its review rate is three percentage points lower, since $0.06 / $2 = 0.03. A larger review reduction lowers the subtotal; a smaller reduction leaves A cheaper. Substitute the application's processing prices and review cost before using that threshold. It holds only when both configurations meet the quality requirement and other cost differences are absent.</p>
+<p>Compare cost at a shared quality requirement. A configuration that fails a critical acceptance criterion cannot be made suitable by a low average cost. Among suitable configurations, account for differences in supported volume, review capacity and operating effort. Avoid paying for accuracy improvements that do not improve the application's accepted output or economics.</p>
+<h3 id="measure-latency-and-throughput-under-the-intended-operating-conditions">Measure latency and throughput under the intended operating conditions</h3>
+<p>Measure elapsed time from the application's submission to a usable result. Upload, queueing, preprocessing, extraction, validation and retries can all contribute. Report typical and slow completions, failure rates and concurrency. Throughput should describe complete accepted documents over elapsed time, including the unsuccessful work needed to obtain them.</p>
+<p>Separate cold startup, initialized-model processing and output-cache replay. Cached model weights on disk do not establish reuse of initialized models. Changing concurrency can alter throughput, memory needs and contention. Declare device, worker limits and competing load before interpreting a local measurement. The <a href="evidence.html#operating">technical evidence appendix</a> explains what retained initialization observations establish and which performance costs remain unmeasured.</p>
+<h3 id="common-apis-simplify-access-but-preserve-evaluation-obligations">Common APIs simplify access but preserve evaluation obligations</h3>
+<p><a href="https://github.com/run-llama/opendocrouter-py/tree/84c5420a3b824a0b2d306bba6583da92460a0f05">OpenDocRouter's published SDK</a> exposes model listing and parsing through a common client. Such an interface can reduce integration work when comparing models. It does not establish equivalent quality, preprocessing or service behaviour. Record the selected model and configuration, per-input outcomes and delivered representation. Evaluate any routing or fallback policy as the actual combination the application will use. No parsing or extraction requests were made to OpenDocRouter for this guide.</p>
+<h2 id="record-a-component-decision-the-implementation-can-use">Record a component decision the implementation can use</h2>
+<p>A useful selection record names the chosen configuration, the acceptance requirements it meets and the evidence supporting the choice. It identifies unresolved conditions, the review/fallback policy, expected volume and operating costs. Another engineer should be able to distinguish measured results from assumptions and reproduce the declared comparison.</p>
+<p>Further experiments need a question whose answer could change that choice. Existing public evidence and a bounded integration check may be sufficient. When candidates disagree on critical cases, inspect those disagreements before expanding the run indiscriminately. When the remaining uncertainty is acceptable for the intended use, document it and proceed to implementation acceptance.</p>
+<p>Parsing and extraction feed validation, interpretation, orchestration and downstream business applications. Within Applied AI's workflow automation work, component evaluation supports the larger responsibility of designing, integrating and operating a reliable document intelligence system. A component benchmark informs that design; the complete workflow still needs its own acceptance evidence.</p>
+
+</article>
+</main>
+</body>
+</html>

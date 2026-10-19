@@ -14,7 +14,7 @@ what counts as an acceptable result. The highest overall leaderboard score need
 not identify the most economical configuration that meets them.
 
 This guide explains how to use existing benchmark evidence and when additional
-evaluation is justified. The [supporting assessment](parsebench-coverage.md)
+evaluation is justified. The [supporting assessment](publication/evidence.html#public-benchmarks)
 records source revisions, coverage observations and limits. Sources were reviewed
 on October 19, 2026; this revision uses public documentation and retained results,
 with no new parser or benchmark execution.
@@ -78,7 +78,7 @@ annotations and output contract rather than infer a complete navigation test.
 The retained source inventory accounts for 2,078 input paths and 2,553
 capability-group cases. Most inputs are individual pages. Those counts are not
 2,078 independent complete business documents. The
-[filterable inventory](parsebench-workload-index.csv) exposes formats, source
+[filterable inventory](publication/evidence.html#inventory) exposes formats, source
 hashes, groups, challenge tags and observations. The linked assessment distinguishes
 full mechanical coverage from visual inspection of 221 inputs.
 
@@ -161,6 +161,68 @@ of all business use cases covered nor a general coverage failure. An application
 can fit public evidence well even though its internal documents are unavailable
 to benchmark authors.
 
+## A worked selection: share-repurchase records with source evidence
+
+Consider a financial-analysis workflow that needs one record per reporting period,
+with the share count, average price and supporting source location. The example
+uses an actual [Apple filing page retained in ParseBench](publication/evidence.html#financial).
+The workflow requirements below are illustrative; the page, annotations and saved
+parser outputs are retained evidence.
+
+<figure id="financial-source">
+<div class="source-scroll"><img src="publication/assets/financial-table-excerpt.png" width="790" height="350" alt="Apple share-repurchase table showing three reporting periods, share counts and average prices; the introductory sentence specifies that share counts are in thousands."></div>
+<figcaption>Source excerpt: Apple 2025 Form 10-K, printed page 19. ParseBench names the input Apple 10-k_page22.pdf. The complete page and annotation are linked in the evidence appendix. Scroll horizontally to inspect the original at readable size on a phone.</figcaption>
+</figure>
+
+The introductory sentence gives different units for different columns. For the
+first period, the required normalized record would contain:
+
+| Required field | Accepted value for this source example |
+|---|---|
+| Period | June 29 through August 2, 2025 |
+| Shares purchased | 33,265,000 shares, from 33,265 stated in thousands |
+| Average price per share | $210.43 |
+| Supporting source | This row, its headers and the unit sentence on the same page |
+
+The application must also distinguish the period rows from the total. All three
+periods must be returned, with no duplicate records or invented price for the total.
+An output of 33,265 without its scale fails the declared contract even though the
+printed digits are correct. The source location must support the number and its
+interpretation.
+
+**What the existing benchmark supplies.** The public table reference includes
+33,265 and the relevant column header. Its expected HTML does not include the
+unit sentence above the table. Table scoring can therefore inform candidate
+selection without certifying the normalized share count required here. Content
+and grounding evidence are relevant too. This example already exists publicly;
+creating another financial-table corpus is unnecessary to explain the requirement.
+
+**Which candidates merit inspection.** The pinned published leaderboard gives the
+following aggregate scores on its evaluated population:
+
+| Published configuration | Tables, score out of 100 | Visual grounding, score out of 100 |
+|---|---:|---:|
+| Azure Document Intelligence (Layout) | 86.00 | 73.78 |
+| LlamaParse Agentic | 88.88 | 84.25 |
+
+These are two candidates for output-contract verification, selected to illustrate
+comparison across suppliers. The table is not a complete shortlist or an Apple-page
+result. The [dated source snapshot](publication/evidence.html#candidates) identifies
+the exact leaderboard rows. Published aggregates do not establish either candidate's
+accuracy on this schema or its current configuration's operating cost.
+
+**The decision supported now.** Keep those two configurations for a check of the
+required record and source evidence. The retained Markdown-only local integration
+cannot supply the required coordinate sidecar, so it cannot be deployed unchanged
+for this workflow. That interface finding does not establish a limitation of every
+underlying parser SDK.
+
+The remaining acceptance check is specific: obtain all three period records,
+correctly scaled, with their supporting regions; check the total is handled as
+declared; then compare complete-workflow cost and review needs on representative
+reports. That check has not been run. Existing evidence justifies a targeted
+comparison of the configured candidates, not production approval of either one.
+
 ## Compare configurations on representative, independent references
 
 When additional evaluation can change the decision, define the eligible population
@@ -198,14 +260,45 @@ Keep the parser output, extracted answer and reference available for disagreemen
 review. The result measures a configured combination. Diagnosis determines whether
 a failure arose in perception, representation, extraction or the reference.
 
-A retained controlled invoice experiment illustrates the distinction. On 100
-generated documents from six template/complexity combinations, pypdf plus a fixed
-extractor completed 84 invoices, while pdfplumber plus that extractor completed
-55. A choice based on line-record F1 would favour pdfplumber, which scored
-0.976208 against pypdf's 0.958393. The [saved results](invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json)
-illustrate how acceptance changes the decision. They do not estimate accuracy
-on arbitrary supplier invoices. The [reference qualification](invoice-reference-checkpoint.json)
-and [failure audit](invoice-failure-audit.json) document that example's limits.
+### Successful parser calls and complete task acceptance are different
+
+A retained invoice experiment used 100 generated documents from six source
+template/complexity combinations and a fixed downstream extractor. Both configured
+parsers returned content on all 100 inputs. A task pass additionally required all
+five requested fields and every required line record, without missing or extra
+records under the frozen rules.
+
+| Retained configuration | Calls returning content | Complete-task passes | Matched / expected / predicted records | Record F1 |
+|---|---:|---:|---:|---:|
+| pypdf plus fixed extractor | 100/100 | 84/100 | 668 / 696 / 698 | 95.84% |
+| pdfplumber plus fixed extractor | 100/100 | 55/100 | 677 / 696 / 691 | 97.62% |
+
+Record precision is matched records divided by predicted records; recall is matched
+records divided by expected records. Their harmonic mean, F1, is equivalently
+2 × matched / (expected + predicted), summed across these invoices. It gives
+partial credit for recovered records. Complete-task acceptance fails an invoice
+with any required field or record error. The different ordering follows from
+those different acceptance criteria. These are generated-template results for
+configured combinations, not estimates for arbitrary supplier invoices.
+
+One retained document shows the source of an extraction failure directly:
+
+<figure id="invoice-source">
+<div class="source-scroll"><img src="publication/assets/invoice-continuation-row.png" width="720" height="65" alt="The tenth line item on page two of a generated invoice: Enterprise Plan - Annual, quantity 84.07, unit subscription, unit price $52,431.34 and amount $4,407,902.75."></div>
+<figcaption>Generated invoice 001, page two. This continuation row belongs to the ten expected line records. It is a controlled example with fictional values.</figcaption>
+</figure>
+
+The pdfplumber output contains this row in its plain-text section. The fixed
+extractor chose its Markdown-table representation, which contained only nine
+records. Its saved prediction omitted the continuation item. The pypdf combination
+returned all ten records on this document. Both combinations recovered the five
+requested fields. The [source, outputs and predictions](publication/evidence.html#invoice)
+show the disagreement.
+
+This omission occurred between the retained parser representation and the selected
+extraction path. Describing it as a parser crash or claiming that the raw output
+lost the row would misdiagnose the failure. The [saved summary and qualification](publication/evidence.html#invoice)
+retain the population, reference and extractor limits.
 
 Use paired disagreements to investigate consequential differences. Multiple fields
 on one page, or repeated pages from one template, supply dependent observations.
@@ -261,6 +354,14 @@ buys no review reduction in this example. Additional integration, infrastructure
 and residual error costs could change the decision. Review effectiveness must be
 measured rather than assumed in an actual deployment.
 
+The same assumptions give a reusable break-even calculation. B costs $0.06 more
+per document to process: two pages × ($0.04 - $0.01). Each avoided review saves $2.
+B therefore breaks even with A when its review rate is three percentage points
+lower, since $0.06 / $2 = 0.03. A larger review reduction lowers the subtotal;
+a smaller reduction leaves A cheaper. Substitute the application's processing
+prices and review cost before using that threshold. It holds only when both
+configurations meet the quality requirement and other cost differences are absent.
+
 Compare cost at a shared quality requirement. A configuration that fails a critical
 acceptance criterion cannot be made suitable by a low average cost. Among suitable
 configurations, account for differences in supported volume, review capacity and
@@ -279,8 +380,9 @@ Separate cold startup, initialized-model processing and output-cache replay.
 Cached model weights on disk do not establish reuse of initialized models.
 Changing concurrency can alter throughput, memory needs and contention. Declare
 device, worker limits and competing load before interpreting a local measurement.
-The linked assessment retains source-observed initialization limitations, without
-claiming an unmeasured warm speedup or a current operating-performance winner.
+The [technical evidence appendix](publication/evidence.html#operating) explains
+what retained initialization observations establish and which performance costs
+remain unmeasured.
 
 ### Common APIs simplify access but preserve evaluation obligations
 
