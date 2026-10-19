@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-75594",
+    "vendor": "Flow Technologies",
+    "due_date": "2025-10-19",
+    "grand_total": "9189004.88",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "API Usage @ $3.02/per 1000 calls",
+      "quantity": "67.9",
+      "line_total": "205.06"
+    },
+    {
+      "description": "Implementation Services @ $250.98/hour",
+      "quantity": "18.74",
+      "line_total": "4703.37"
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $45105.00/subscription",
+      "quantity": "71.88",
+      "line_total": "3242147.4"
+    },
+    {
+      "description": "Implementation Services @ $289.52/hour",
+      "quantity": "56.33",
+      "line_total": "16308.66"
+    },
+    {
+      "description": "Enterprise Plan - Annual @ $49789.90/subscription",
+      "quantity": "85",
+      "line_total": "4232141.5"
+    },
+    {
+      "description": "API Usage @ $2.31/per 1000 calls",
+      "quantity": "40.94",
+      "line_total": "94.57"
+    },
+    {
+      "description": "Premium Support @ $3590.39/month",
+      "quantity": "10.13",
+      "line_total": "36370.65"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-75594",
+    "vendor": "Flow Technologies",
+    "due_date": "10/19/2025",
+    "grand_total": "$9,189,004.88",
+    "records": [
+      {
+        "description": "API Usage @ $3.02/per 1000 calls",
+        "quantity": "67.90",
+        "line_total": "$205.06"
+      },
+      {
+        "description": "Implementation Services @ $250.98/hour",
+        "quantity": "18.74",
+        "line_total": "$4,703.37"
+      },
+      {
+        "description": "Enterprise Plan - Annual @ $45105.00/subscription",
+        "quantity": "71.88",
+        "line_total": "$3,242,147.40"
+      },
+      {
+        "description": "Implementation Services @ $289.52/hour",
+        "quantity": "56.33",
+        "line_total": "$16,308.66"
+      },
+      {
+        "description": "Enterprise Plan - Annual @ $49789.90/subscription",
+        "quantity": "85.00",
+        "line_total": "$4,232,141.50"
+      },
+      {
+        "description": "API Usage @ $2.31/per 1000 calls",
+        "quantity": "40.94",
+        "line_total": "$94.57"
+      },
+      {
+        "description": "Premium Support @ $3590.39/month",
+        "quantity": "10.13",
+        "line_total": "$36,370.65"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7"
+    ]
+  },
+  "document_id": "invoice_042"
+}

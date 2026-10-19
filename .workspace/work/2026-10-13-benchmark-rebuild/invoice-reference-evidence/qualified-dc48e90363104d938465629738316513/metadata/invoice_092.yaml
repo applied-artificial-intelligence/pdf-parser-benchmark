@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: New Zealand
+  name: Little-Barnes
+document_id: invoice_092
+due_date: '2025-09-04'
+generated_at: '2025-11-18T16:47:15.302681'
+industry: freight
+invoice_date: '2025-08-20'
+invoice_number: INV-57789
+line_item_count: 8
+payment_terms: Net 15
+region: APAC
+subtotal: 17308.06
+tax_amount: 2596.21
+template_style: enterprise
+total: 19904.27
+vendor:
+  country: New Zealand
+  name: Express Freight
+corpus: business
+source_url: generated://invoice_092
+domain: invoices
+doc_id: invoice_092

@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "producer": "pdf_bench/parsebench_comparison.py",
+  "test": "tests/test_parsebench_comparison.py::test_two_fresh_public_runs_preserve_identical_pairs_outputs_and_native_scores",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench_comparison.py",
+      "old": "                \"order_index\": len(attempts),",
+      "new": "                \"order_index\": 0,"
+    }
+  }
+}

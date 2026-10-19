@@ -1,0 +1,23 @@
+{
+  "archive": "full-retained-checkpoint-20261017.zip",
+  "sha256": "bd4051959307c75ca857b5a73c270427f8946b6510c9bfea4bbc345dbddf0c48",
+  "bytes": 20359379,
+  "terminal_attempts": 7968,
+  "run_attempts": {
+    "docling-13c7ef3eb8554d53918dee18bdd0aafa": 16,
+    "docling-3b0c3cb78a55424cae9daa48d81e7d9f": 8,
+    "extractous-974a75a9eda64503a874eae8ef12a317": 751,
+    "kreuzberg-e6c08da7f480478abeac09057092f1ab": 839,
+    "marker-28a37f30d4604393b75e51b32af579f3": 7,
+    "marker-64aada83e3d344369386694fd93377f4": 4,
+    "pdfminer-ff33a6b3ad8b41b186f18a5148b93717": 1127,
+    "pdfplumber-e2d58e3d7924488eac4c1aed9620bf8e": 1077,
+    "pymupdf-a2fdbe5a5f6d4960b5c7a80a50e41a17": 923,
+    "pymupdf4llm-bd7bdb80b24a4776a8b85ba647174925": 380,
+    "pypdf-9a29e22fbd3c483c95cf6d9b15230b36": 1309,
+    "pypdfium2-212c10fe83b44e83a0fa0859d7c797be": 1486,
+    "unstructured-bc2190ae5cab492488b77a9cbdf173bb": 23,
+    "unstructured-f2c7980b25db43e7bcc73bf598d81b4a": 18
+  },
+  "scope": "Exact frozen plans, harnesses, terminal attempt JSON and referenced Markdown. Earlier slow runs remain diagnostic. Interrupted nonterminal files remain untouched on disk."
+}

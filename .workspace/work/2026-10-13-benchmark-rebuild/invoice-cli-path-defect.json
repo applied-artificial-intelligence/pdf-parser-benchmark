@@ -1,0 +1,16 @@
+{
+  "status": "incomplete_not_registered",
+  "cause": "CLI relative output root could not be made relative to an absolute retained-output path",
+  "original_plan": "invoice-comparison-plan/plan.json",
+  "original_commit": "b8e8daf6100e917f83ca207271f6ba2742fc1ab2",
+  "incomplete_directory": "invoice-comparison-evidence/.incomplete-52b793c5e0654c0ca6350da7fc13b754",
+  "planned_pairs": 200,
+  "committed_terminal_rows": 0,
+  "known_successful_raw_productions": 1,
+  "retained_raw_sha256": "a7a81056e2524cd1e5b66160eda6c1c48e649d97b9b2baaab6082436f40be13f",
+  "completion_present": false,
+  "latest_pointer_present": false,
+  "reproducing_test": "tests/test_invoice_comparison.py::test_cli_relative_paths_do_not_lose_the_first_produced_attempt",
+  "test_before_fix": "failed on the same relative_to path error",
+  "test_after_fix": "passed"
+}

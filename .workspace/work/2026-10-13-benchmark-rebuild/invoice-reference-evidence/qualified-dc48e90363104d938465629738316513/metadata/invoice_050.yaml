@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Italy
+  name: Siering Biggen e.G.
+document_id: invoice_050
+due_date: '2025-10-31'
+generated_at: '2025-11-18T16:46:12.895780'
+industry: freight
+invoice_date: '2025-10-16'
+invoice_number: INV-16712
+line_item_count: 10
+payment_terms: Net 15
+region: EU
+subtotal: 34910.98
+tax_amount: 6633.09
+template_style: small_business
+total: 41544.07
+vendor:
+  country: Spain
+  name: Express Freight
+corpus: business
+source_url: generated://invoice_050
+domain: invoices
+doc_id: invoice_050

@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Reed-Abbott
+document_id: invoice_019
+due_date: '2025-11-05'
+generated_at: '2025-11-18T16:45:29.171695'
+industry: saas
+invoice_date: '2025-10-06'
+invoice_number: INV-38350
+line_item_count: 10
+payment_terms: Net 30
+region: US
+subtotal: 2793577.08
+tax_amount: 246393.5
+template_style: enterprise
+total: 3039970.58
+vendor:
+  country: USA
+  name: Connect Solutions
+corpus: business
+source_url: generated://invoice_019
+domain: invoices
+doc_id: invoice_019

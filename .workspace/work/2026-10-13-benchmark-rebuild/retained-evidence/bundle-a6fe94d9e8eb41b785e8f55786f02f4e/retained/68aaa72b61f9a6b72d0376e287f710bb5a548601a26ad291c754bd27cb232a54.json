@@ -1,0 +1,149 @@
+{
+  "benchmark": {
+    "name": "OmniDocBench OCR Validation (3 docs)",
+    "timestamp": "2025-11-23T13:27:05.912842+00:00",
+    "config_file": "benchmarks/omnidocbench_ocr_validation.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "docling-ocr": "2.63.0",
+      "marker": "1.10.1",
+      "kreuzberg": "3.21.0",
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8683514545988833,
+        "chrf++": 82.0279838234245
+      },
+      "error": null,
+      "parse_time_seconds": 9.094411611557007
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8902163383919922,
+        "chrf++": 77.52807108778985
+      },
+      "error": null,
+      "parse_time_seconds": 7.453387260437012
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8789435069699193,
+        "chrf++": 82.0136657291097
+      },
+      "error": null,
+      "parse_time_seconds": 7.085252285003662
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9294739935351161,
+        "chrf++": 92.16723947991204
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009593963623046875
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9589925734581853,
+        "chrf++": 92.69712823473161
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007557868957519531
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844735565259582,
+        "chrf++": 96.67555577720655
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021584033966064453
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009365081787109375
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007174015045166016
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019450187683105469
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "unstructured",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Unstructured: Could not get the OCRAgent instance. Please check the OCR package and the OCR_AGENT environment variable.",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "unstructured",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Unstructured: Could not get the OCRAgent instance. Please check the OCR package and the OCR_AGENT environment variable.",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "unstructured",
+      "success": false,
+      "metrics": {},
+      "error": "Failed to parse PDF with Unstructured: Could not get the OCRAgent instance. Please check the OCR package and the OCR_AGENT environment variable.",
+      "parse_time_seconds": 0.0
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 4,
+    "total_results": 12,
+    "success_count": 9,
+    "failure_count": 3
+  }
+}

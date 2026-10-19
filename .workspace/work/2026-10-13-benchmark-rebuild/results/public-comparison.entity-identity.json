@@ -1,0 +1,12 @@
+{
+ "item": "public-comparison.entity-identity",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench_comparison.py::test_changed_qualification_source_cannot_freeze_a_different_public_input",
+  "fixture (both runs): Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

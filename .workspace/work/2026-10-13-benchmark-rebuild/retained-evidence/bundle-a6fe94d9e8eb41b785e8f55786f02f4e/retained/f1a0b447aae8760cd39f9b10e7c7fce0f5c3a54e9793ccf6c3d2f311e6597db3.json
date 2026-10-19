@@ -1,0 +1,1466 @@
+{
+  "benchmark": {
+    "name": "frontier_unified_30docs",
+    "timestamp": "2025-11-30T00:41:23.308667+00:00",
+    "config_file": "benchmarks/frontier_unified_30docs.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "llamaparse": "0.6.x",
+      "gemini_gemini_2_0_flash": "1.0.0",
+      "openai_gpt_4o_mini": "1.0.0",
+      "anthropic_claude_3_5_haiku": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.933920704845815,
+        "chrf++": 96.21516477704013,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 7.474195241928101
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8771929824561404,
+        "chrf++": 90.5285786649765,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 11.129266738891602
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7702702702702703,
+        "chrf++": 82.1329140248303,
+        "tree_similarity": 0.9387755102040817
+      },
+      "error": null,
+      "parse_time_seconds": 11.496130228042603
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9776785714285714,
+        "chrf++": 99.79518429060066,
+        "tree_similarity": 0.7391304347826086
+      },
+      "error": null,
+      "parse_time_seconds": 7.629924535751343
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9856459330143541,
+        "chrf++": 100.0,
+        "tree_similarity": 0.6571428571428571
+      },
+      "error": null,
+      "parse_time_seconds": 6.7865705490112305
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9815303430079155,
+        "chrf++": 97.05940273293189,
+        "tree_similarity": 0.8846153846153846
+      },
+      "error": null,
+      "parse_time_seconds": 4.315448522567749
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4948905109489051,
+        "chrf++": 88.33494048384178,
+        "tree_similarity": -0.1428571428571428
+      },
+      "error": null,
+      "parse_time_seconds": 10.860108375549316
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9206349206349207,
+        "chrf++": 90.67166514080519,
+        "tree_similarity": 0.17647058823529416
+      },
+      "error": null,
+      "parse_time_seconds": 7.424268007278442
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9527272727272728,
+        "chrf++": 95.71628121487257,
+        "tree_similarity": 0.8695652173913043
+      },
+      "error": null,
+      "parse_time_seconds": 16.403498649597168
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.950592885375494,
+        "chrf++": 94.92370509055912,
+        "tree_similarity": 0.7019230769230769
+      },
+      "error": null,
+      "parse_time_seconds": 16.707836627960205
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6182943603851444,
+        "chrf++": 80.50204460806268,
+        "tree_similarity": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 22.00497841835022
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8102493074792244,
+        "chrf++": 87.41889125552709,
+        "tree_similarity": 0.08536585365853655
+      },
+      "error": null,
+      "parse_time_seconds": 11.561569929122925
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.744916820702403,
+        "chrf++": 81.02520354844796,
+        "tree_similarity": -0.016129032258064502
+      },
+      "error": null,
+      "parse_time_seconds": 22.399629592895508
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7168913560666138,
+        "chrf++": 81.14297356293694,
+        "tree_similarity": -0.07361963190184051
+      },
+      "error": null,
+      "parse_time_seconds": 17.60449457168579
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6145251396648045,
+        "chrf++": 80.6736530132689,
+        "tree_similarity": 0.10191082802547768
+      },
+      "error": null,
+      "parse_time_seconds": 22.249465465545654
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9737864077669903,
+        "chrf++": 94.89137199875425,
+        "tree_similarity": 0.39682539682539686
+      },
+      "error": null,
+      "parse_time_seconds": 17.844879865646362
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7140921409214092,
+        "chrf++": 85.87381086571143,
+        "tree_similarity": 0.32432432432432434
+      },
+      "error": null,
+      "parse_time_seconds": 12.015803813934326
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9735729386892178,
+        "chrf++": 94.93101727911314,
+        "tree_similarity": 0.2952380952380952
+      },
+      "error": null,
+      "parse_time_seconds": 16.94172978401184
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958664546899841,
+        "chrf++": 90.6521205221077,
+        "tree_similarity": 0.2517985611510791
+      },
+      "error": null,
+      "parse_time_seconds": 17.21176791191101
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9512195121951219,
+        "chrf++": 89.89960227728922,
+        "tree_similarity": 0.25396825396825395
+      },
+      "error": null,
+      "parse_time_seconds": 17.62581467628479
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6012788513496128,
+        "chrf++": 69.07484447164146,
+        "tree_similarity": 0.309823677581864
+      },
+      "error": null,
+      "parse_time_seconds": 48.14981007575989
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2591568044260488,
+        "chrf++": 30.362124316918955,
+        "tree_similarity": 0.3513513513513513
+      },
+      "error": null,
+      "parse_time_seconds": 152.50054287910461
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06697301738491857,
+        "chrf++": 15.885802634238406,
+        "tree_similarity": 0.09834177798249655
+      },
+      "error": null,
+      "parse_time_seconds": 101.45538830757141
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49146514935988617,
+        "chrf++": 59.77687385492466,
+        "tree_similarity": 0.1993670886075949
+      },
+      "error": null,
+      "parse_time_seconds": 84.56483721733093
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4738262277388019,
+        "chrf++": 55.91900597941362,
+        "tree_similarity": 0.3741883116883117
+      },
+      "error": null,
+      "parse_time_seconds": 45.22681283950806
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.954416850047155,
+        "chrf++": 97.32440036085312,
+        "tree_similarity": 0.45333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 27.807938814163208
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.843499245852187,
+        "chrf++": 85.59011643580358,
+        "tree_similarity": 0.15353260869565222
+      },
+      "error": null,
+      "parse_time_seconds": 23.256863832473755
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9588703043597477,
+        "chrf++": 95.716037508041,
+        "tree_similarity": 0.6069489685124865
+      },
+      "error": null,
+      "parse_time_seconds": 22.351670742034912
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9429220692420799,
+        "chrf++": 95.36138005885896,
+        "tree_similarity": 0.4647058823529412
+      },
+      "error": null,
+      "parse_time_seconds": 37.54684805870056
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "llamaparse",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.891206313416009,
+        "chrf++": 95.08692323929012,
+        "tree_similarity": 0.5428571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 21.84077215194702
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9177489177489178,
+        "chrf++": 95.86861650189701,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 2.0223820209503174
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7296137339055794,
+        "chrf++": 84.53011168824975,
+        "tree_similarity": 0.5
+      },
+      "error": null,
+      "parse_time_seconds": 1.814692735671997
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9135802469135803,
+        "chrf++": 96.68841911345197,
+        "tree_similarity": 0.9019607843137255
+      },
+      "error": null,
+      "parse_time_seconds": 2.798858880996704
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9644444444444444,
+        "chrf++": 95.15736216789963,
+        "tree_similarity": 0.6956521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 1.700850009918213
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9245283018867925,
+        "chrf++": 75.4417439937167,
+        "tree_similarity": 0.8108108108108107
+      },
+      "error": null,
+      "parse_time_seconds": 1.8622028827667236
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9425587467362925,
+        "chrf++": 81.66716825520344,
+        "tree_similarity": 0.5882352941176471
+      },
+      "error": null,
+      "parse_time_seconds": 2.02673077583313
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9365750528541226,
+        "chrf++": 94.71018060316008,
+        "tree_similarity": 0.5294117647058824
+      },
+      "error": null,
+      "parse_time_seconds": 2.105851411819458
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9206349206349207,
+        "chrf++": 91.45617002507689,
+        "tree_similarity": 0.23809523809523814
+      },
+      "error": null,
+      "parse_time_seconds": 2.037716865539551
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9221238938053098,
+        "chrf++": 91.88714937758843,
+        "tree_similarity": 0.015873015873015928
+      },
+      "error": null,
+      "parse_time_seconds": 2.322176694869995
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9535353535353536,
+        "chrf++": 90.92095689755836,
+        "tree_similarity": 0.8073394495412844
+      },
+      "error": null,
+      "parse_time_seconds": 3.3048453330993652
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7009063444108761,
+        "chrf++": 81.68770771654611,
+        "tree_similarity": 0.11518324607329844
+      },
+      "error": null,
+      "parse_time_seconds": 4.954562425613403
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6610878661087867,
+        "chrf++": 87.52942855057788,
+        "tree_similarity": 0.21621621621621623
+      },
+      "error": null,
+      "parse_time_seconds": 3.5170626640319824
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7068965517241379,
+        "chrf++": 86.0760790467678,
+        "tree_similarity": 0.09090909090909094
+      },
+      "error": null,
+      "parse_time_seconds": 5.000497341156006
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.748135874067937,
+        "chrf++": 77.36308528928478,
+        "tree_similarity": -0.03750000000000009
+      },
+      "error": null,
+      "parse_time_seconds": 4.1978747844696045
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6613055818353832,
+        "chrf++": 82.09457764237672,
+        "tree_similarity": 0.16083916083916083
+      },
+      "error": null,
+      "parse_time_seconds": 5.2489166259765625
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.945127719962157,
+        "chrf++": 87.7953388882225,
+        "tree_similarity": 0.4342105263157895
+      },
+      "error": null,
+      "parse_time_seconds": 2.8742733001708984
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6883468834688347,
+        "chrf++": 81.16118073642052,
+        "tree_similarity": 0.31081081081081086
+      },
+      "error": null,
+      "parse_time_seconds": 2.553405523300171
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9490379615184608,
+        "chrf++": 91.0824685535993,
+        "tree_similarity": 0.0117647058823529
+      },
+      "error": null,
+      "parse_time_seconds": 4.392838478088379
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9605753862546617,
+        "chrf++": 91.61343041996105,
+        "tree_similarity": 0.23300970873786409
+      },
+      "error": null,
+      "parse_time_seconds": 3.602271795272827
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.954367666232073,
+        "chrf++": 91.45893112935856,
+        "tree_similarity": 0.20879120879120883
+      },
+      "error": null,
+      "parse_time_seconds": 3.5678067207336426
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3935748655533541,
+        "chrf++": 41.875575307281885,
+        "tree_similarity": 0.24811083123425692
+      },
+      "error": null,
+      "parse_time_seconds": 43.958836793899536
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.07510902195691815,
+        "chrf++": 9.022031639103513,
+        "tree_similarity": 0.21310602024507197
+      },
+      "error": null,
+      "parse_time_seconds": 33.77473592758179
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.17519752662315358,
+        "chrf++": 22.695143473936586,
+        "tree_similarity": 0.10303030303030303
+      },
+      "error": null,
+      "parse_time_seconds": 15.114683628082275
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45838503677249476,
+        "chrf++": 52.35525868103181,
+        "tree_similarity": 0.27531645569620256
+      },
+      "error": null,
+      "parse_time_seconds": 44.44744157791138
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.35994183606164176,
+        "chrf++": 44.155736882996486,
+        "tree_similarity": 0.29518072289156627
+      },
+      "error": null,
+      "parse_time_seconds": 38.74562621116638
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9754253308128544,
+        "chrf++": 99.18719754765269,
+        "tree_similarity": 0.2551020408163265
+      },
+      "error": null,
+      "parse_time_seconds": 8.112769842147827
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9618702865761689,
+        "chrf++": 93.57104335194616,
+        "tree_similarity": 0.09112426035502963
+      },
+      "error": null,
+      "parse_time_seconds": 23.115933418273926
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9777899643542638,
+        "chrf++": 97.55410710365544,
+        "tree_similarity": 0.5419039869812856
+      },
+      "error": null,
+      "parse_time_seconds": 39.04996657371521
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9528137949471995,
+        "chrf++": 95.55530506110281,
+        "tree_similarity": 0.2565055762081785
+      },
+      "error": null,
+      "parse_time_seconds": 9.9588782787323
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "gemini_gemini_2_0_flash",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9033588685916323,
+        "chrf++": 98.03047316838762,
+        "tree_similarity": 0.6329113924050633
+      },
+      "error": null,
+      "parse_time_seconds": 3.9831748008728027
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8956521739130435,
+        "chrf++": 94.06274706544349,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 6.2610931396484375
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7355371900826446,
+        "chrf++": 81.32310480236806,
+        "tree_similarity": 0.02857142857142858
+      },
+      "error": null,
+      "parse_time_seconds": 4.092771768569946
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8450363196125907,
+        "chrf++": 90.96766751028343,
+        "tree_similarity": 0.020408163265306145
+      },
+      "error": null,
+      "parse_time_seconds": 6.079164028167725
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6529680365296804,
+        "chrf++": 70.24266209403062,
+        "tree_similarity": 0.75
+      },
+      "error": null,
+      "parse_time_seconds": 2.700443983078003
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9035087719298246,
+        "chrf++": 97.08835098998837,
+        "tree_similarity": 0.02941176470588236
+      },
+      "error": null,
+      "parse_time_seconds": 3.6086184978485107
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7272727272727273,
+        "chrf++": 75.68625559086979,
+        "tree_similarity": 0.7142857142857143
+      },
+      "error": null,
+      "parse_time_seconds": 3.752241849899292
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7822410147991543,
+        "chrf++": 80.43315911614593,
+        "tree_similarity": 0.04761904761904767
+      },
+      "error": null,
+      "parse_time_seconds": 4.012373447418213
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8826530612244898,
+        "chrf++": 86.67302449182353,
+        "tree_similarity": 0.06666666666666665
+      },
+      "error": null,
+      "parse_time_seconds": 2.897186756134033
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.925,
+        "chrf++": 93.03851756039721,
+        "tree_similarity": 0.8260869565217391
+      },
+      "error": null,
+      "parse_time_seconds": 4.390407085418701
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9238921001926782,
+        "chrf++": 92.15309939781778,
+        "tree_similarity": 0.010204081632653073
+      },
+      "error": null,
+      "parse_time_seconds": 6.2715418338775635
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.757554945054945,
+        "chrf++": 73.59748197197284,
+        "tree_similarity": 0.005235602094240788
+      },
+      "error": null,
+      "parse_time_seconds": 12.84958529472351
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7548891786179922,
+        "chrf++": 74.76551471291522,
+        "tree_similarity": 0.01449275362318836
+      },
+      "error": null,
+      "parse_time_seconds": 5.511905908584595
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.766859344894027,
+        "chrf++": 76.41464178762327,
+        "tree_similarity": 0.009090909090909038
+      },
+      "error": null,
+      "parse_time_seconds": 9.585516214370728
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7550167224080268,
+        "chrf++": 73.5825416884671,
+        "tree_similarity": 0.006249999999999978
+      },
+      "error": null,
+      "parse_time_seconds": 9.93554973602295
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7571684587813621,
+        "chrf++": 72.01399668221741,
+        "tree_similarity": 0.007352941176470562
+      },
+      "error": null,
+      "parse_time_seconds": 13.528050184249878
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8999106344950849,
+        "chrf++": 88.35464805398816,
+        "tree_similarity": 0.01754385964912286
+      },
+      "error": null,
+      "parse_time_seconds": 7.33000111579895
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6615969581749049,
+        "chrf++": 83.39382100554711,
+        "tree_similarity": 0.020000000000000018
+      },
+      "error": null,
+      "parse_time_seconds": 5.095531463623047
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9507005708354956,
+        "chrf++": 91.05500462201769,
+        "tree_similarity": 0.0117647058823529
+      },
+      "error": null,
+      "parse_time_seconds": 10.17113733291626
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9298515104966718,
+        "chrf++": 89.7072819391267,
+        "tree_similarity": 0.012987012987012991
+      },
+      "error": null,
+      "parse_time_seconds": 8.92283582687378
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.924953095684803,
+        "chrf++": 88.74176795351852,
+        "tree_similarity": 0.013698630136986356
+      },
+      "error": null,
+      "parse_time_seconds": 8.5795156955719
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5170470627589223,
+        "chrf++": 55.761509731249795,
+        "tree_similarity": 0.46914357682619645
+      },
+      "error": null,
+      "parse_time_seconds": 162.40329003334045
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14073712015640927,
+        "chrf++": 15.897562245689793,
+        "tree_similarity": 0.0005327650506127268
+      },
+      "error": null,
+      "parse_time_seconds": 246.86512565612793
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.10627641003050914,
+        "chrf++": 21.036977603327177,
+        "tree_similarity": 0.0015151515151514694
+      },
+      "error": null,
+      "parse_time_seconds": 284.0991623401642
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5797191368299991,
+        "chrf++": 61.901671521979274,
+        "tree_similarity": 0.0007911392405063333
+      },
+      "error": null,
+      "parse_time_seconds": 153.60173630714417
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1623943155243749,
+        "chrf++": 18.744284591026027,
+        "tree_similarity": 0.000860585197934638
+      },
+      "error": null,
+      "parse_time_seconds": 49.23006558418274
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9193446754883428,
+        "chrf++": 92.30311194911307,
+        "tree_similarity": 0.01388888888888884
+      },
+      "error": null,
+      "parse_time_seconds": 23.111811876296997
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9180693815987934,
+        "chrf++": 88.34957738548106,
+        "tree_similarity": 0.007936507936507908
+      },
+      "error": null,
+      "parse_time_seconds": 76.48661780357361
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9475063217865521,
+        "chrf++": 93.73232600907517,
+        "tree_similarity": 0.0011990407673860837
+      },
+      "error": null,
+      "parse_time_seconds": 128.26665830612183
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9267477609945194,
+        "chrf++": 92.65472013228097,
+        "tree_similarity": 0.006993006993006978
+      },
+      "error": null,
+      "parse_time_seconds": 29.33765959739685
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "openai_gpt_4o_mini",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8689982216953172,
+        "chrf++": 89.88894398184429,
+        "tree_similarity": 0.018867924528301883
+      },
+      "error": null,
+      "parse_time_seconds": 9.980952978134155
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8917748917748918,
+        "chrf++": 93.98250756797876,
+        "tree_similarity": 0.8648648648648649
+      },
+      "error": null,
+      "parse_time_seconds": 2.714812994003296
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7962962962962963,
+        "chrf++": 82.03806608601943,
+        "tree_similarity": 0.6571428571428571
+      },
+      "error": null,
+      "parse_time_seconds": 2.9215381145477295
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9528795811518325,
+        "chrf++": 96.49138020720962,
+        "tree_similarity": 0.9019607843137255
+      },
+      "error": null,
+      "parse_time_seconds": 3.4647581577301025
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9733333333333334,
+        "chrf++": 98.89698236906894,
+        "tree_similarity": 0.6956521739130435
+      },
+      "error": null,
+      "parse_time_seconds": 2.4313740730285645
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9716981132075472,
+        "chrf++": 98.81351236915309,
+        "tree_similarity": 0.8108108108108107
+      },
+      "error": null,
+      "parse_time_seconds": 2.331880807876587
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9738219895287958,
+        "chrf++": 96.54305486311394,
+        "tree_similarity": 0.6
+      },
+      "error": null,
+      "parse_time_seconds": 2.744683265686035
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7632135306553911,
+        "chrf++": 77.07931207814482,
+        "tree_similarity": 0.04761904761904767
+      },
+      "error": null,
+      "parse_time_seconds": 2.997473955154419
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9153439153439153,
+        "chrf++": 90.89403969265265,
+        "tree_similarity": 0.16666666666666663
+      },
+      "error": null,
+      "parse_time_seconds": 3.2741098403930664
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9384057971014492,
+        "chrf++": 93.16585247425716,
+        "tree_similarity": 0.8615384615384616
+      },
+      "error": null,
+      "parse_time_seconds": 4.407404899597168
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9512437810945273,
+        "chrf++": 93.69829650565822,
+        "tree_similarity": 0.79
+      },
+      "error": null,
+      "parse_time_seconds": 6.430256128311157
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7872947894361171,
+        "chrf++": 74.5859188146481,
+        "tree_similarity": 0.11734693877551017
+      },
+      "error": null,
+      "parse_time_seconds": 12.940574407577515
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.84,
+        "chrf++": 83.55756545428773,
+        "tree_similarity": 0.2716049382716049
+      },
+      "error": null,
+      "parse_time_seconds": 7.421512603759766
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8167170191339376,
+        "chrf++": 78.37696468070165,
+        "tree_similarity": 0.11811023622047245
+      },
+      "error": null,
+      "parse_time_seconds": 10.04321575164795
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7865853658536586,
+        "chrf++": 74.93384658588563,
+        "tree_similarity": 0.018750000000000044
+      },
+      "error": null,
+      "parse_time_seconds": 11.221876382827759
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7845868152274837,
+        "chrf++": 73.50976127393572,
+        "tree_similarity": 0.1923076923076923
+      },
+      "error": null,
+      "parse_time_seconds": 10.849117517471313
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9681774349083896,
+        "chrf++": 93.82102355356727,
+        "tree_similarity": 0.288135593220339
+      },
+      "error": null,
+      "parse_time_seconds": 7.688867568969727
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7181571815718157,
+        "chrf++": 88.3014567917164,
+        "tree_similarity": 0.303030303030303
+      },
+      "error": null,
+      "parse_time_seconds": 6.139416694641113
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9725593667546174,
+        "chrf++": 95.33118486518171,
+        "tree_similarity": 0.13684210526315788
+      },
+      "error": null,
+      "parse_time_seconds": 12.273702383041382
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9775641025641025,
+        "chrf++": 96.53961973170303,
+        "tree_similarity": 0.2705882352941177
+      },
+      "error": null,
+      "parse_time_seconds": 12.036924362182617
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759114583333334,
+        "chrf++": 95.96364479281672,
+        "tree_similarity": 0.21333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 10.524624109268188
+    },
+    {
+      "document_id": "arxiv-2302.00722",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06333787921673573,
+        "chrf++": 7.587275989185837,
+        "tree_similarity": 0.05352644836272036
+      },
+      "error": null,
+      "parse_time_seconds": 33.345213413238525
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.012912775501431661,
+        "chrf++": 1.612164109310339,
+        "tree_similarity": 0.0191795418220565
+      },
+      "error": null,
+      "parse_time_seconds": 35.10072445869446
+    },
+    {
+      "document_id": "arxiv-2312.00752",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1306374834372086,
+        "chrf++": 16.85829792954657,
+        "tree_similarity": 0.08181818181818179
+      },
+      "error": null,
+      "parse_time_seconds": 35.67204570770264
+    },
+    {
+      "document_id": "arxiv-2401.06244",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.04545867255833658,
+        "chrf++": 5.050186987652773,
+        "tree_similarity": 0.07357594936708856
+      },
+      "error": null,
+      "parse_time_seconds": 20.7563533782959
+    },
+    {
+      "document_id": "arxiv-2403.09313",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06987167955867357,
+        "chrf++": 8.18023455613464,
+        "tree_similarity": 0.09294320137693635
+      },
+      "error": null,
+      "parse_time_seconds": 30.760032892227173
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.90705734089477,
+        "chrf++": 91.90458629092723,
+        "tree_similarity": 0.5178571428571428
+      },
+      "error": null,
+      "parse_time_seconds": 31.53250503540039
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.33266968325791857,
+        "chrf++": 37.275444557498076,
+        "tree_similarity": 0.22258064516129028
+      },
+      "error": null,
+      "parse_time_seconds": 38.023428201675415
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.08768241781677477,
+        "chrf++": 9.436364481912925,
+        "tree_similarity": 0.056354916067146266
+      },
+      "error": null,
+      "parse_time_seconds": 23.234311819076538
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46785189145836115,
+        "chrf++": 51.647525946438556,
+        "tree_similarity": 0.18881118881118886
+      },
+      "error": null,
+      "parse_time_seconds": 19.296167373657227
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "anthropic_claude_3_5_haiku",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7998833138856476,
+        "chrf++": 85.7709700086903,
+        "tree_similarity": 0.3557692307692307
+      },
+      "error": null,
+      "parse_time_seconds": 9.960076808929443
+    }
+  ],
+  "summary": {
+    "total_documents": 30,
+    "total_parsers": 4,
+    "total_results": 120,
+    "success_count": 120,
+    "failure_count": 0
+  }
+}

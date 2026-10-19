@@ -1,0 +1,12 @@
+{
+ "item": "extractor-blind",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_task_evaluation.py::test_extractor_subprocess_has_no_access_to_answers_and_predictions_depend_on_output",
+  "fixture (both runs): Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,0 +1,12 @@
+{
+ "item": "parser-attempts.known-at",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_comparison.py::test_population_is_frozen_before_any_backend_initialization",
+  "fixture (both runs): Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

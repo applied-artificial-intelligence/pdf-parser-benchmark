@@ -1,0 +1,479 @@
+{
+  "method": "Coding agent inspection of retained raw excerpts and prediction/reference differences, with source facts bound to prior all-page PDF qualification; not independent human adjudication",
+  "candidate_sha256": "865c3f3859d71efc00fff0ad0817abd2996868b9adb094c05291bb12d03dc8e6",
+  "decisions": [
+    {
+      "pair_id": "pdfplumber--invoice_001",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The expected final annual-plan row and its amounts are present in linear text at lines 56-57, outside the recovered Markdown table. The frozen extractor prefers tables and omits that continuation."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_003",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "FROM/TO and both party names share flattened lines 19-20. Supplier words remain, but column association is unavailable to the frozen field extractor; vendor is null."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_006",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "FROM/TO and Quality Direct plus the customer share lines 23-24. The extractor abstains on the merged party columns; all records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_007",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Implementation is split as Implementatio/newline/n in the raw table and linear text. Extraction inserts a space in the description; associated numeric values and unit remain correct."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_009",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "FROM/TO and Wilson LLP plus the customer are flattened together at lines 23-24; vendor is null while records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_012",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Direct Supply and the customer appear under one flattened FROM/TO line at lines 23-24. The frozen extractor abstains; records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_013",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Both missing Implementation Services records have matching numeric roles, but the raw word is split within Implementation and extraction inserts a space."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_014",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The final Assembly Labor 59.12 record and amounts are present only in the linear continuation at lines 41-42, omitted after the extractor chooses the Markdown table."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_015",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Supplier and customer names share flattened FROM/TO lines 13-14. Vendor abstention is the only field/record mismatch."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_018",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Quality Supply and the customer share flattened FROM/TO lines 19-20. Vendor is unresolved; all source records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_019",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The missing record has matching quantity, hour unit and money values; the raw within-word Implementation line break is preserved as an inserted description space."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_021",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Johnson Law Offices and the customer share flattened FROM/TO lines 23-24. The footer mentions the supplier too, but the frozen extractor does not infer party roles from footer text."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_024",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "National Outlet and the customer share FROM/TO lines 19-20; the supplier text survives, but the column boundary is lost and the extractor abstains."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_027",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Roberts Attorneys at Law and the customer share FROM/TO lines 13-14; vendor is null and all records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_030",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Quality Outlet and the customer share FROM/TO lines 23-24; vendor is the sole failed field."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_033",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Design Design Group and the customer share FROM/TO lines 18-19; supplier roles are unresolved although all line records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_036",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "United Manufacturing and the customer share FROM/TO lines 21-22; vendor is null while all records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_039",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Professional Publishing and the customer share FROM/TO lines 13-14; the extractor cannot assign the supplier name."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_042",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Flow Technologies and the customer share FROM/TO lines 19-20; the sole mismatch is the abstained vendor field."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_045",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Continental Freight and the customer share FROM/TO lines 13-14; all records are recovered but vendor is unresolved."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_048",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Landmark AIA and the customer share FROM/TO lines 17-18; the frozen extractor abstains on the merged party names."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_025",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The Implementation Services row has exact numeric/unit roles, but raw Implementatio/newline/n yields an inserted space in the extracted description."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_037",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The sole incorrect record retains its numeric roles and hour unit; the raw within-word break in Implementation is joined with a space."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_049",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Both Brochures - Tri-fold records retain all numeric roles and per-1000 units; raw Tri-/newline/fold is normalized to Tri- fold, failing the frozen exact-description rule."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_053",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Bright Studios and the customer share FROM/TO lines 18-19; the vendor field is null with complete matching records."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_056",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Liberty Tax Group and the customer share FROM/TO lines 17-18. A supplier contact footer exists, but the frozen extractor abstains on party-role ambiguity."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_062",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Premier Real Estate and the customer share flattened FROM/TO lines 19-20; only vendor fails."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_065",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Bright Group and the customer share FROM/TO lines 21-22; all records match but vendor is unresolved."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_068",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Summit Associates and the customer share FROM/TO lines 13-14; the frozen extractor abstains."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_071",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Synergy Technology Group and the customer share FROM/TO lines 25-26; the null vendor is the only mismatch."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_074",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Apex Contractors and the customer share FROM/TO lines 21-22; the supplier name is present without a usable column boundary."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_077",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Green Landscaping and the customer share FROM/TO lines 15-16; vendor is unresolved while all rows match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_080",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Advanced P.C. and the customer share FROM/TO lines 17-18; the sole task mismatch is null vendor."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_052",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Financial Planning 54.24 with its exact rate and total appears only in the linear continuation at lines 43-44. Choosing Markdown tables suppresses its recovery."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_059",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Supplier/customer names merge at FROM/TO lines 23-24. The final Court Filing Fees record also exists in linear continuation lines 50-51 but outside recovered Markdown tables; both limitations contribute."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_070",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Equipment Rental 34.12, rate 482.50 and amount 16462.90 appear in the linear continuation at lines 43-44 but not the selected Markdown table."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_083",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Quantum Systems and the customer share FROM/TO lines 25-26; the vendor is null with all line records matching."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_088",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Global Logistics and the customer share FROM/TO lines 25-26; the supplier role is unresolved by the frozen extractor."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_091",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Global Fabrication and the customer share FROM/TO lines 16-17; a supplier footer does not provide a supported field-extraction path."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_094",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Nexus Labs and the customer share FROM/TO lines 17-18; the sole mismatch is the abstained vendor."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_097",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Gourmet Culinary and the customer share FROM/TO lines 22-23; all records match, and the supplier footer is not used to infer vendor."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_100",
+      "causes": [
+        "lost_or_misassociated_parser_content",
+        "unsupported_extractor_representation"
+      ],
+      "note": "Swift Freight and the customer share FROM/TO lines 17-18; vendor is null while all records match."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_086",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Both Implementation Services records retain all numeric/unit roles. Raw Implementatio/newline/n is joined with a space, causing exact-description mismatches."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_093",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The final Breakfast Buffet numeric record is in the Markdown table, but its per-person description continuation is present only in the next-page linear text before Subtotal. Full raw output was reopened; the extractor does not merge that continuation into its chosen table."
+    },
+    {
+      "pair_id": "pdfplumber--invoice_098",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Two records contain within-word Implementation breaks. The final Enterprise Plan table row also loses its Annual fragment, which survives as a standalone next-page linear line before Subtotal. Full raw output was reopened; numeric roles are correct."
+    },
+    {
+      "pair_id": "pypdf--invoice_007",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The raw description is Implementatio/newline/n Services before its values. Extraction joins with a space; all numeric roles and hour unit match the source record."
+    },
+    {
+      "pair_id": "pypdf--invoice_013",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Two records preserve exact numeric/unit roles; the raw Implementatio/newline/n Services description becomes Implementatio n Services."
+    },
+    {
+      "pair_id": "pypdf--invoice_019",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "The sole incorrect record retains its numeric/unit roles, but the raw within-word Implementation break is joined with a space."
+    },
+    {
+      "pair_id": "pypdf--invoice_025",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Raw Implementatio/newline/n Services becomes a spaced description; quantity 56.25 and both amounts match."
+    },
+    {
+      "pair_id": "pypdf--invoice_037",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Raw Implementation word pieces survive before the numeric values; whitespace joining changes the description while other roles match."
+    },
+    {
+      "pair_id": "pypdf--invoice_047",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "API Usage description ends with per 1000 before its values, then calls) resumes after a page break and is prepended to Premium Support. Raw words and numeric roles survive, but the extractor does not join after-value continuation fragments."
+    },
+    {
+      "pair_id": "pypdf--invoice_049",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Both Tri-fold records retain their numeric roles and per-1000 units, but raw Tri-/newline/fold is joined as Tri- fold and fails the frozen exact-description rule."
+    },
+    {
+      "pair_id": "pypdf--invoice_061",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Social Media is followed by its values before the next-page Management (month) fragment; that fragment is attached to Video Production by the description-before-values extractor. Numeric roles match both source records."
+    },
+    {
+      "pair_id": "pypdf--invoice_064",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Bookkeeping is followed by its values before the next-page Services (month) fragment; that fragment is attached to Payroll Processing. Raw words and numeric roles remain, but the frozen extraction pattern cannot assign the continuation."
+    },
+    {
+      "pair_id": "pypdf--invoice_067",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Systems Analyst is followed by its values before the next-page (hour) fragment. That fragment is then prepended to Security Assessment. Raw words and all numeric roles survive; the extraction state cannot assign after-value continuation text."
+    },
+    {
+      "pair_id": "pypdf--invoice_073",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Fertilization Treatment is followed by its values before next-page (application), which gets prepended to Fall Cleanup. The frozen description-before-values rule misassigns the continuation."
+    },
+    {
+      "pair_id": "pypdf--invoice_076",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Physical Therapy 82.53 is followed by its numeric values before next-page (session); the fragment attaches to the next Physical Therapy record. All numeric roles match the corresponding source records."
+    },
+    {
+      "pair_id": "pypdf--invoice_085",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Fertilization 95.32 is followed by its values before next-page Treatment (application); the fragment attaches to Fall Cleanup. The raw words remain available, but records have incorrect descriptions."
+    },
+    {
+      "pair_id": "pypdf--invoice_086",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Both Implementation Services rows retain numeric/unit roles but split the word as Implementatio/newline/n. Extraction inserts a space and fails the frozen exact-description criterion."
+    },
+    {
+      "pair_id": "pypdf--invoice_093",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Breakfast Buffet 99.11 retains quantity/rate/amount but its per-person text appears after the page break. The extractor emits an incomplete description plus an invalid fragment record. Source page 2 was reopened and visibly shows the continuation in the first table cell."
+    },
+    {
+      "pair_id": "pypdf--invoice_098",
+      "causes": [
+        "unsupported_extractor_representation"
+      ],
+      "note": "Two Implementation descriptions have within-word breaks. Enterprise Plan 30.99 retains values before the next-page Annual fragment; the extractor emits a shortened description and an invalid fragment row. Source page 2 was reopened and shows the Annual continuation in its first cell."
+    }
+  ],
+  "source_visual_rechecks": [
+    {
+      "document_id": "invoice_093",
+      "page": 2,
+      "image_sha256": "2228447bd216e9e7ae14b76f81d7fd2dad7f16a974254e034c562679fd881d48",
+      "observation": "Per-person description continues in the first table cell on page 2."
+    },
+    {
+      "document_id": "invoice_098",
+      "page": 2,
+      "image_sha256": "f3e06175872f789e7e84113e0bf236e8d4bf5f505ba7b7279aed2b92afe13442",
+      "observation": "Annual description continues in the first table cell on page 2."
+    }
+  ]
+}

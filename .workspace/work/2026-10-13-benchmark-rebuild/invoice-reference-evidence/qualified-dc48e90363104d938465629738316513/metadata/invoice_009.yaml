@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Hunter-Flowers
+document_id: invoice_009
+due_date: '2025-09-15'
+generated_at: '2025-11-18T16:45:14.720176'
+industry: legal
+invoice_date: '2025-09-15'
+invoice_number: INV-90712
+line_item_count: 9
+payment_terms: Due on Receipt
+region: US
+subtotal: 151267.45
+tax_amount: 13341.79
+template_style: economy
+total: 164609.24
+vendor:
+  country: USA
+  name: Wilson LLP
+corpus: business
+source_url: generated://invoice_009
+domain: invoices
+doc_id: invoice_009

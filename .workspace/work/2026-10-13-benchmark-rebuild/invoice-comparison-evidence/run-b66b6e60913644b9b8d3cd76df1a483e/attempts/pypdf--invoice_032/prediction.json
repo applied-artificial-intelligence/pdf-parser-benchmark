@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-20844",
+    "vendor": "Sync Digital",
+    "due_date": "2025-09-23",
+    "grand_total": "144893.71",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-20844"
+    ],
+    "due_date": [
+      "September 23, 2025"
+    ],
+    "grand_total": [
+      "$144,893.71"
+    ],
+    "vendor": [
+      "Sync Digital"
+    ]
+  },
+  "records": [
+    {
+      "description": "Implementation Services (hour)",
+      "quantity": "97.22",
+      "unit_price": "176.38",
+      "line_total": "17147.66",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementation\nServices (hour)",
+        "quantity": "97.22",
+        "unit_price": "$176.38",
+        "line_total": "$17,147.66"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly (subscription)",
+      "quantity": "44.48",
+      "unit_price": "2035.54",
+      "line_total": "90540.82",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional Plan -\nMonthly\n(subscription)",
+        "quantity": "44.48",
+        "unit_price": "$2,035.54",
+        "line_total": "$90,540.82"
+      }
+    },
+    {
+      "description": "Additional Storage (TB/month)",
+      "quantity": "81.71",
+      "unit_price": "134.08",
+      "line_total": "10955.68",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Additional Storage\n(TB/month)",
+        "quantity": "81.71",
+        "unit_price": "$134.08",
+        "line_total": "$10,955.68"
+      }
+    },
+    {
+      "description": "API Usage (per 1000 calls)",
+      "quantity": "85.94",
+      "unit_price": "1.41",
+      "line_total": "121.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage (per 1000\ncalls)",
+        "quantity": "85.94",
+        "unit_price": "$1.41",
+        "line_total": "$121.18"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-76842",
+    "vendor": "Express Shipping",
+    "due_date": "2025-10-11",
+    "grand_total": "31926.15",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-76842"
+    ],
+    "due_date": [
+      "October 11, 2025"
+    ],
+    "grand_total": [
+      "$31,926.15"
+    ],
+    "vendor": [
+      "Express Shipping"
+    ]
+  },
+  "records": [
+    {
+      "description": "Residential Delivery",
+      "quantity": "35.03",
+      "unit": "per stop",
+      "unit_price": "59.64",
+      "line_total": "2089.19",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential\nDelivery",
+        "quantity": "35.03",
+        "unit": "per stop",
+        "unit_price": "$59.64",
+        "line_total": "$2,089.19"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85",
+      "quantity": "71.67",
+      "unit": "cwt",
+      "unit_price": "44.31",
+      "line_total": "3175.7",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight -\nClass 85",
+        "quantity": "71.67",
+        "unit": "cwt",
+        "unit_price": "$44.31",
+        "line_total": "$3,175.70"
+      }
+    },
+    {
+      "description": "Pallet Exchange",
+      "quantity": "57.68",
+      "unit": "pallet",
+      "unit_price": "20.35",
+      "line_total": "1173.79",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange",
+        "quantity": "57.68",
+        "unit": "pallet",
+        "unit_price": "$20.35",
+        "line_total": "$1,173.79"
+      }
+    },
+    {
+      "description": "Liftgate Service",
+      "quantity": "97.37",
+      "unit": "per stop",
+      "unit_price": "76.62",
+      "line_total": "7460.49",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service",
+        "quantity": "97.37",
+        "unit": "per stop",
+        "unit_price": "$76.62",
+        "line_total": "$7,460.49"
+      }
+    },
+    {
+      "description": "Residential Delivery",
+      "quantity": "37.31",
+      "unit": "per stop",
+      "unit_price": "50.17",
+      "line_total": "1871.84",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential\nDelivery",
+        "quantity": "37.31",
+        "unit": "per stop",
+        "unit_price": "$50.17",
+        "line_total": "$1,871.84"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85",
+      "quantity": "82.37",
+      "unit": "cwt",
+      "unit_price": "60.94",
+      "line_total": "5019.63",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight -\nClass 85",
+        "quantity": "82.37",
+        "unit": "cwt",
+        "unit_price": "$60.94",
+        "line_total": "$5,019.63"
+      }
+    },
+    {
+      "description": "Inside Delivery",
+      "quantity": "19.03",
+      "unit": "per stop",
+      "unit_price": "95.1",
+      "line_total": "1809.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery",
+        "quantity": "19.03",
+        "unit": "per stop",
+        "unit_price": "$95.10",
+        "line_total": "$1,809.75"
+      }
+    },
+    {
+      "description": "Liftgate Service",
+      "quantity": "52.92",
+      "unit": "per stop",
+      "unit_price": "79.9",
+      "line_total": "4228.31",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service",
+        "quantity": "52.92",
+        "unit": "per stop",
+        "unit_price": "$79.90",
+        "line_total": "$4,228.31"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

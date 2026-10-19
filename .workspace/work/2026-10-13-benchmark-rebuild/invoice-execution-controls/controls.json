@@ -1,0 +1,76 @@
+{
+  "scope": "Mechanism controls only; excluded from primary 200-pair population",
+  "attempts": [
+    {
+      "control_id": "pypdf-truncated",
+      "expected_outcome": "parser_failure",
+      "input_sha256": "0d5bf66eb9cf2e0866cadd29c43ff0a731d7f5b7273929ab63faebfe52dba550",
+      "outcome": "parser_failure",
+      "parse_time_seconds": 0.047422888019355014,
+      "wall_time_seconds": 0.9578283469891176,
+      "output_path": null,
+      "output_sha256": null,
+      "error": "pdfsmith pypdf failed: Stream has ended unexpectedly",
+      "error_type": "RuntimeError",
+      "returned_path": null,
+      "worker_pid": 3160137
+    },
+    {
+      "control_id": "pypdf-blank",
+      "expected_outcome": "success_empty",
+      "input_sha256": "6928514b3dcf95d5d71fec38e883367399e1d2e65a6dd5a6d36064a9fce9673c",
+      "outcome": "success_empty",
+      "parse_time_seconds": 0.06258267399971373,
+      "wall_time_seconds": 0.9602439400041476,
+      "output_path": "pypdf-blank/retained-output.md",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": null,
+      "error_type": null,
+      "returned_path": "pypdf-blank/parser-output/blank.md",
+      "worker_pid": 3160359
+    },
+    {
+      "control_id": "pdfplumber-truncated",
+      "expected_outcome": "parser_failure",
+      "input_sha256": "0d5bf66eb9cf2e0866cadd29c43ff0a731d7f5b7273929ab63faebfe52dba550",
+      "outcome": "parser_failure",
+      "parse_time_seconds": 0.051983356999699026,
+      "wall_time_seconds": 0.8607454029843211,
+      "output_path": null,
+      "output_sha256": null,
+      "error": "pdfsmith pdfplumber failed: Unexpected EOF",
+      "error_type": "RuntimeError",
+      "returned_path": null,
+      "worker_pid": 3160454
+    },
+    {
+      "control_id": "pdfplumber-blank",
+      "expected_outcome": "success_empty",
+      "input_sha256": "6928514b3dcf95d5d71fec38e883367399e1d2e65a6dd5a6d36064a9fce9673c",
+      "outcome": "success_empty",
+      "parse_time_seconds": 0.04355837099137716,
+      "wall_time_seconds": 0.9658529779990204,
+      "output_path": "pdfplumber-blank/retained-output.md",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "error": null,
+      "error_type": null,
+      "returned_path": "pdfplumber-blank/parser-output/blank.md",
+      "worker_pid": 3160573
+    },
+    {
+      "control_id": "delayed-writer",
+      "expected_outcome": "enforced_timeout",
+      "worker_stopped": true,
+      "outcome": "enforced_timeout",
+      "parse_time_seconds": 4.406161591003183,
+      "wall_time_seconds": 5.010734220995801,
+      "output_path": null,
+      "output_sha256": null,
+      "error": "Attempt exceeded 5 seconds",
+      "error_type": "EnforcedParseTimeoutError",
+      "returned_path": null,
+      "worker_pid": 3160718
+    }
+  ],
+  "implementation_sha256": "ebb44644861561b732aad06be9d3f2efa149913cd69cf971fb550001b45372f2"
+}

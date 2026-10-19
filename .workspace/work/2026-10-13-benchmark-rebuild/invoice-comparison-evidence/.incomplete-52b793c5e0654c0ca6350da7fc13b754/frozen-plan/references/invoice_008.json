@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-34407",
+    "vendor": "Standard Manufacturing",
+    "due_date": "2025-11-03",
+    "grand_total": "3263.1",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "27.24",
+      "unit_price": "7.65",
+      "line_total": "208.39"
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "89.23",
+      "unit_price": "7.26",
+      "line_total": "647.81"
+    },
+    {
+      "description": "CNC Machining (hour)",
+      "quantity": "3.23",
+      "unit_price": "108.17",
+      "line_total": "349.39"
+    },
+    {
+      "description": "Aluminum Extrusion (linear ft)",
+      "quantity": "85.65",
+      "unit_price": "21.53",
+      "line_total": "1844.04"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-34407",
+    "vendor": "Standard Manufacturing",
+    "due_date": "November 03, 2025",
+    "grand_total": "$3,263.10",
+    "records": [
+      {
+        "description": "Steel Plate - 1/4 inch (sq ft)",
+        "quantity": "27.24",
+        "unit_price": "$7.65",
+        "line_total": "$208.39"
+      },
+      {
+        "description": "Steel Plate - 1/4 inch (sq ft)",
+        "quantity": "89.23",
+        "unit_price": "$7.26",
+        "line_total": "$647.81"
+      },
+      {
+        "description": "CNC Machining (hour)",
+        "quantity": "3.23",
+        "unit_price": "$108.17",
+        "line_total": "$349.39"
+      },
+      {
+        "description": "Aluminum Extrusion (linear ft)",
+        "quantity": "85.65",
+        "unit_price": "$21.53",
+        "line_total": "$1,844.04"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_008"
+}

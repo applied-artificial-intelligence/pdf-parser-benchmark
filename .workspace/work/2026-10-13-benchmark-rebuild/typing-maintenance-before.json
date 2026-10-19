@@ -1,0 +1,17 @@
+{
+  "invoice_extraction.py": "985c358d68169ca6cfba34c73cc42320f939f1605447356be96ddfc9df44f286",
+  "invoice_task.py": "31dbb02cea0b4f4d0f49ba48dfd0716235b011776720e1670e0e94543ce422f1",
+  "invoice_references.py": "6c12b50f086678eaede982c9e921a5ec51d088d7905c80154814e52b83f37e5e",
+  "invoice_comparison.py": "bab7bb8edcf7b97d1420357c60d693a5e3ea0b9463ae492184c45c1330d4c399",
+  "invoice_offline.py": "b171dcc632b94946b23398be682a4bad50f8ca1040b5bda78f3b86f78de1bf23",
+  "execution.py": "cc362c03980b5b607f023c4f6efad6884deb1699587cdb3ea6912415d4e82100",
+  "runner.py": "26e074b11e597b9be26efb37f99cffb4d23bab25bb7c55651cf266a24f43c838",
+  "parsebench.py": "b934ff18b5920f69f9ecea43f28453ae77f060a94f17a40b19c551a2f1e9bf6a",
+  "parsebench_native.py": "1f069f795314ea686a3056603f6d6dd7e24c81c3a06c662d22e12246398ac188",
+  "parsebench_comparison.py": "1331bc104bb2efa420bb5e088dd261a8801d2b8b43277c528493e3ef6f1ea2cd",
+  "inventory.py": "e4f60a265b750318f6da1d4c2a4a9581f38591bc9db5d643f51691785d4e2765",
+  "local_evaluation.py": "80428fd7f413886dbce54de636dde181b8162a5f100f60f7ad471184ece8fee4",
+  "invoice_reproduction.py": "b15fcb181d53ff8f110316ed4d5b20d94a995b47b1b0bdf12ea3fa75b1668c43",
+  "execution_controls.py": "ebb44644861561b732aad06be9d3f2efa149913cd69cf971fb550001b45372f2",
+  "main.py": "effebca0670e120ffac95799451b2b530eb177bdcc8b0c30d679b9a41673d1da"
+}

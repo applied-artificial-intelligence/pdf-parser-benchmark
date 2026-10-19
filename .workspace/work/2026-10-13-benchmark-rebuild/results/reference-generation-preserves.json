@@ -1,0 +1,12 @@
+{
+ "item": "reference-generation-preserves",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_reference_qualification.py::test_failed_finalization_keeps_prior_qualified_references_intact",
+  "fixture (both runs): Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-36279",
+    "vendor": "Elite Inc",
+    "due_date": "2025-10-11",
+    "grand_total": "111548.02",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-36279"
+    ],
+    "due_date": [
+      "October 11, 2025"
+    ],
+    "grand_total": [
+      "$111,548.02"
+    ],
+    "vendor": [
+      "Elite Inc"
+    ]
+  },
+  "records": [
+    {
+      "description": "Irrigation Maintenance (visit)",
+      "quantity": "84.56",
+      "unit_price": "166.32",
+      "line_total": "14064.02",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance (visit)",
+        "quantity": "84.56",
+        "unit_price": "$166.32",
+        "line_total": "$14,064.02"
+      }
+    },
+    {
+      "description": "Fertilization Treatment (application)",
+      "quantity": "29.96",
+      "unit_price": "119.02",
+      "line_total": "3565.84",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fertilization\nTreatment\n(application)",
+        "quantity": "29.96",
+        "unit_price": "$119.02",
+        "line_total": "$3,565.84"
+      }
+    },
+    {
+      "description": "Tree Trimming (hour)",
+      "quantity": "79.46",
+      "unit_price": "114.3",
+      "line_total": "9082.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tree Trimming\n(hour)",
+        "quantity": "79.46",
+        "unit_price": "$114.30",
+        "line_total": "$9,082.28"
+      }
+    },
+    {
+      "description": "Fall Cleanup (service)",
+      "quantity": "91.26",
+      "unit_price": "238.75",
+      "line_total": "21788.32",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fall Cleanup\n(service)",
+        "quantity": "91.26",
+        "unit_price": "$238.75",
+        "line_total": "$21,788.32"
+      }
+    },
+    {
+      "description": "Fertilization",
+      "quantity": "95.32",
+      "unit_price": "177.54",
+      "line_total": "16923.11",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fertilization",
+        "quantity": "95.32",
+        "unit_price": "$177.54",
+        "line_total": "$16,923.11"
+      }
+    },
+    {
+      "description": "Treatment (application) Fall Cleanup (service)",
+      "quantity": "63",
+      "unit_price": "238.68",
+      "line_total": "15036.84",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Treatment\n(application)\nFall Cleanup\n(service)",
+        "quantity": "63.00",
+        "unit_price": "$238.68",
+        "line_total": "$15,036.84"
+      }
+    },
+    {
+      "description": "Irrigation Maintenance (visit)",
+      "quantity": "73.38",
+      "unit_price": "260.78",
+      "line_total": "19136.04",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance (visit)",
+        "quantity": "73.38",
+        "unit_price": "$260.78",
+        "line_total": "$19,136.04"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

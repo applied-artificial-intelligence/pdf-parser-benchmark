@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Full retained qualified invoice/public bundles and historical registry through the actual report generator and consumer",
+  "producer": "pdf_bench/reconstruction_report.py",
+  "test": "tests/test_reconstruction_report.py::test_exported_numerators_and_denominators_recompute_from_actual_grades",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/reconstruction_report.py",
+      "old": "        value = pointer(read_json(path), at)",
+      "new": "        value = 0"
+    }
+  }
+}

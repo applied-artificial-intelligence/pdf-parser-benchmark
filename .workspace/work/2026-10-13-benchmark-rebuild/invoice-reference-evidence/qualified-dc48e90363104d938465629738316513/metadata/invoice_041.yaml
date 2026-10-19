@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: France
+  name: Schleich GmbH & Co. KG
+document_id: invoice_041
+due_date: '2025-09-27'
+generated_at: '2025-11-18T16:45:59.580048'
+industry: manufacturing
+invoice_date: '2025-08-28'
+invoice_number: INV-90618
+line_item_count: 9
+payment_terms: Net 30
+region: EU
+subtotal: 232524.52
+tax_amount: 46504.9
+template_style: small_business
+total: 279029.42
+vendor:
+  country: Netherlands
+  name: Advanced Inc
+corpus: business
+source_url: generated://invoice_041
+domain: invoices
+doc_id: invoice_041

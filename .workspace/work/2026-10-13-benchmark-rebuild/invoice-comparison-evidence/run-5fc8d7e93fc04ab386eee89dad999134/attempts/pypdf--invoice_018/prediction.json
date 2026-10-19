@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-77598",
+    "vendor": "Quality Supply",
+    "due_date": "2025-12-14",
+    "grand_total": "184865.68",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-77598"
+    ],
+    "due_date": [
+      "12/14/2025"
+    ],
+    "grand_total": [
+      "$184,865.68"
+    ],
+    "vendor": [
+      "Quality Supply"
+    ]
+  },
+  "records": [
+    {
+      "description": "Electronics - Various @ $1025.43/each",
+      "quantity": "40.29",
+      "line_total": "41314.57",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electronics - Various @\n$1025.43/each",
+        "quantity": "40.29",
+        "line_total": "$41,314.57"
+      }
+    },
+    {
+      "description": "Electronics - Various @ $1258.73/each",
+      "quantity": "15.9",
+      "line_total": "20013.81",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electronics - Various @\n$1258.73/each",
+        "quantity": "15.90",
+        "line_total": "$20,013.81"
+      }
+    },
+    {
+      "description": "Break Room Supplies @ $64.64/case",
+      "quantity": "22.5",
+      "line_total": "1454.4",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Break Room Supplies @\n$64.64/case",
+        "quantity": "22.50",
+        "line_total": "$1,454.40"
+      }
+    },
+    {
+      "description": "Break Room Supplies @ $52.47/case",
+      "quantity": "26.63",
+      "line_total": "1397.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Break Room Supplies @\n$52.47/case",
+        "quantity": "26.63",
+        "line_total": "$1,397.28"
+      }
+    },
+    {
+      "description": "Office Supplies - Bulk @ $139.49/case",
+      "quantity": "18.41",
+      "line_total": "2568.01",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Office Supplies - Bulk @\n$139.49/case",
+        "quantity": "18.41",
+        "line_total": "$2,568.01"
+      }
+    },
+    {
+      "description": "Furniture - Office @ $1567.44/each",
+      "quantity": "67.51",
+      "line_total": "105817.87",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Furniture - Office @\n$1567.44/each",
+        "quantity": "67.51",
+        "line_total": "$105,817.87"
+      }
+    },
+    {
+      "description": "Break Room Supplies @ $91.84/case",
+      "quantity": "2.24",
+      "line_total": "205.72",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Break Room Supplies @\n$91.84/case",
+        "quantity": "2.24",
+        "line_total": "$205.72"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

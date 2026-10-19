@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-67176",
+    "vendor": "Creative Printing",
+    "due_date": "2025-11-23",
+    "grand_total": "15529.71",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-67176"
+    ],
+    "due_date": [
+      "November 23, 2025"
+    ],
+    "grand_total": [
+      "$15,529.71"
+    ],
+    "vendor": [
+      "Creative Printing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Business Cards - 4/4 Color (per 1000)",
+      "quantity": "87.29",
+      "unit_price": "131.37",
+      "line_total": "11467.29",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Business Cards - 4/4\nColor (per 1000)",
+        "quantity": "87.29",
+        "unit_price": "$131.37",
+        "line_total": "$11,467.29"
+      }
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "18.41",
+      "unit_price": "11.05",
+      "line_total": "203.43",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat (sq ft)",
+        "quantity": "18.41",
+        "unit_price": "$11.05",
+        "line_total": "$203.43"
+      }
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "47.83",
+      "unit_price": "23.53",
+      "line_total": "1125.44",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat (sq ft)",
+        "quantity": "47.83",
+        "unit_price": "$23.53",
+        "line_total": "$1,125.44"
+      }
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "1.82",
+      "unit_price": "21.05",
+      "line_total": "38.31",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat (sq ft)",
+        "quantity": "1.82",
+        "unit_price": "$21.05",
+        "line_total": "$38.31"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

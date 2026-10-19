@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-82517",
+    "vendor": "Quantum Consulting",
+    "due_date": "2025-09-23",
+    "grand_total": "5009486.82",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-82517"
+    ],
+    "due_date": [
+      "September 23, 2025"
+    ],
+    "grand_total": [
+      "$5,009,486.82"
+    ],
+    "vendor": [
+      "Quantum Consulting"
+    ]
+  },
+  "records": [
+    {
+      "description": "Security Assessment",
+      "quantity": "82.7",
+      "unit": "assessment",
+      "unit_price": "18152.61",
+      "line_total": "1501220.85",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment",
+        "quantity": "82.70",
+        "unit": "assessment",
+        "unit_price": "$18,152.61",
+        "line_total": "$1,501,220.85"
+      }
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "44.1",
+      "unit": "hour",
+      "unit_price": "221.79",
+      "line_total": "9780.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior\nConsultant",
+        "quantity": "44.10",
+        "unit": "hour",
+        "unit_price": "$221.79",
+        "line_total": "$9,780.94"
+      }
+    },
+    {
+      "description": "Security Assessment",
+      "quantity": "90.95",
+      "unit": "assessment",
+      "unit_price": "17251.69",
+      "line_total": "1569041.21",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment",
+        "quantity": "90.95",
+        "unit": "assessment",
+        "unit_price": "$17,251.69",
+        "line_total": "$1,569,041.21"
+      }
+    },
+    {
+      "description": "Project Management",
+      "quantity": "57.28",
+      "unit": "hour",
+      "unit_price": "148.8",
+      "line_total": "8523.26",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project\nManagement",
+        "quantity": "57.28",
+        "unit": "hour",
+        "unit_price": "$148.80",
+        "line_total": "$8,523.26"
+      }
+    },
+    {
+      "description": "Security Assessment",
+      "quantity": "65.07",
+      "unit": "assessment",
+      "unit_price": "22820.45",
+      "line_total": "1484926.68",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment",
+        "quantity": "65.07",
+        "unit": "assessment",
+        "unit_price": "$22,820.45",
+        "line_total": "$1,484,926.68"
+      }
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "10.31",
+      "unit": "hour",
+      "unit_price": "154.38",
+      "line_total": "1591.66",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst",
+        "quantity": "10.31",
+        "unit": "hour",
+        "unit_price": "$154.38",
+        "line_total": "$1,591.66"
+      }
+    },
+    {
+      "description": "Project Management",
+      "quantity": "46.12",
+      "unit": "hour",
+      "unit_price": "237.64",
+      "line_total": "10959.96",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project\nManagement",
+        "quantity": "46.12",
+        "unit": "hour",
+        "unit_price": "$237.64",
+        "line_total": "$10,959.96"
+      }
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "74.29",
+      "unit": "hour",
+      "unit_price": "198.07",
+      "line_total": "14714.62",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst",
+        "quantity": "74.29",
+        "unit": "hour",
+        "unit_price": "$198.07",
+        "line_total": "$14,714.62"
+      }
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "76.71",
+      "unit": "hour",
+      "unit_price": "379.1",
+      "line_total": "29080.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "After-Hours\nSupport",
+        "quantity": "76.71",
+        "unit": "hour",
+        "unit_price": "$379.10",
+        "line_total": "$29,080.76"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

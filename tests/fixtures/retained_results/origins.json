@@ -1,0 +1,30 @@
+{
+  "invoices_100docs_fresh.json": {
+    "source": "results/invoices_100docs_fresh.json",
+    "sha256": "e246ef2645072c6ee9b298bbac5b31fbdc93a26f586c2f848231067e63e3694c"
+  },
+  "invoices_100docs.yaml": {
+    "source": "benchmarks/invoices_100docs.yaml",
+    "sha256": "c8e89394ce3f3487dec27295d5429dc60ea2b48c4264e1ffd78c901f77a10a1e"
+  },
+  "invoices_100docs_fresh.yaml": {
+    "source": "benchmarks/invoices_100docs_fresh.yaml",
+    "sha256": "545b5386b7faf9e889ba6c1e75100c1fcac4097180174aa9043a885026713d58"
+  },
+  "sec_filings_47docs.yaml": {
+    "source": "benchmarks/sec_filings_47docs.yaml",
+    "sha256": "5f3a0b63762522d38809c0f28686b35b553ae3c98b48855d5a5a8661d61a1182"
+  },
+  "sec_filings_commercial_5docs.json": {
+    "source": "results/sec_filings_commercial_5docs.json",
+    "sha256": "6d15752d84b0c4768d287135c26fde51bf4fa43208600b229c2f64117c422f14"
+  },
+  "sec_filings_screen_all.json": {
+    "source": "results/sec_filings_screen_all.json",
+    "sha256": "e5dddbbb4df0cbc36c0a32ec68f71224bdd137e1712ba7e8ecab33bf540a22d0"
+  },
+  "pareto_analysis.json": {
+    "source": "results/pareto_analysis.json",
+    "sha256": "b9573af289f75b84e1a3e6237b3c53944d6e8e88d9796cbdfd2603835f65e81e"
+  }
+}

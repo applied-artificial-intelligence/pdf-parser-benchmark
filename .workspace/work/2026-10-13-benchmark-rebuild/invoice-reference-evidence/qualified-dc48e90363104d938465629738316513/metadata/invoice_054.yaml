@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: United Kingdom
+  name: Bryant-Turner
+document_id: invoice_054
+due_date: '2025-09-30'
+generated_at: '2025-11-18T16:46:18.800924'
+industry: property_mgmt
+invoice_date: '2025-09-15'
+invoice_number: INV-53248
+line_item_count: 8
+payment_terms: Net 15
+region: UK
+subtotal: 140631.08
+tax_amount: 28126.22
+template_style: enterprise
+total: 168757.3
+vendor:
+  country: United Kingdom
+  name: Elite Management
+corpus: business
+source_url: generated://invoice_054
+domain: invoices
+doc_id: invoice_054

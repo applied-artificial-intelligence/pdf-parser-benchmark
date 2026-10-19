@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-80900",
+    "vendor": "Summit Contractors",
+    "due_date": "2025-10-06",
+    "grand_total": "134209.59",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-80900",
+      "INV-80900"
+    ],
+    "due_date": [
+      "October 06, 2025",
+      "October 06, 2025"
+    ],
+    "grand_total": [
+      "$134,209.59"
+    ],
+    "vendor": [
+      "Summit Contractors"
+    ]
+  },
+  "records": [
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "20.77",
+      "unit_price": "82.63",
+      "line_total": "1716.23",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing (hour)",
+        "quantity": "20.77",
+        "unit_price": "$82.63",
+        "line_total": "$1,716.23"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "48.41",
+      "unit_price": "7.65",
+      "line_total": "370.34",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "48.41",
+        "unit_price": "$7.65",
+        "line_total": "$370.34"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "48.69",
+      "unit_price": "68.59",
+      "line_total": "3339.65",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "48.69",
+        "unit_price": "$68.59",
+        "line_total": "$3,339.65"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "23.11",
+      "unit_price": "163.78",
+      "line_total": "3784.96",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "23.11",
+        "unit_price": "$163.78",
+        "line_total": "$3,784.96"
+      }
+    },
+    {
+      "description": "Permits and Fees (lump sum)",
+      "quantity": "97.07",
+      "unit_price": "1176.47",
+      "line_total": "114199.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Permits and Fees\n(lump sum)",
+        "quantity": "97.07",
+        "unit_price": "$1,176.47",
+        "line_total": "$114,199.94"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

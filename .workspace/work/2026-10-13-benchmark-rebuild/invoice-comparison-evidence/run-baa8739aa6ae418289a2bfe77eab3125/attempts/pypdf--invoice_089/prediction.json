@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-28471",
+    "vendor": "Tasteful Culinary",
+    "due_date": "2025-12-14",
+    "grand_total": "13998.32",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-28471"
+    ],
+    "due_date": [
+      "December 14, 2025"
+    ],
+    "grand_total": [
+      "$13,998.32"
+    ],
+    "vendor": [
+      "Tasteful Culinary"
+    ]
+  },
+  "records": [
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "22.42",
+      "unit": "per person",
+      "unit_price": "108.92",
+      "line_total": "2441.99",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service -\nPlated",
+        "quantity": "22.42",
+        "unit": "per person",
+        "unit_price": "$108.92",
+        "line_total": "$2,441.99"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "2.87",
+      "unit": "per person",
+      "unit_price": "60.36",
+      "line_total": "173.23",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service -\nPlated",
+        "quantity": "2.87",
+        "unit": "per person",
+        "unit_price": "$60.36",
+        "line_total": "$173.23"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "80.33",
+      "unit": "per person",
+      "unit_price": "80.87",
+      "line_total": "6496.29",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service -\nPlated",
+        "quantity": "80.33",
+        "unit": "per person",
+        "unit_price": "$80.87",
+        "line_total": "$6,496.29"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated",
+      "quantity": "48.06",
+      "unit": "per person",
+      "unit_price": "63.69",
+      "line_total": "3060.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service -\nPlated",
+        "quantity": "48.06",
+        "unit": "per person",
+        "unit_price": "$63.69",
+        "line_total": "$3,060.94"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

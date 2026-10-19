@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Hernandez, Smith and Potts
+document_id: invoice_027
+due_date: '2025-10-09'
+generated_at: '2025-11-18T16:45:40.013099'
+industry: legal
+invoice_date: '2025-10-09'
+invoice_number: INV-77196
+line_item_count: 4
+payment_terms: Due on Receipt
+region: US
+subtotal: 34956.46
+tax_amount: 2978.29
+template_style: economy
+total: 37934.75
+vendor:
+  country: USA
+  name: Roberts Attorneys at Law
+corpus: business
+source_url: generated://invoice_027
+domain: invoices
+doc_id: invoice_027

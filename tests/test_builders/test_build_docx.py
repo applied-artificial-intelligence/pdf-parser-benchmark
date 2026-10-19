@@ -16,9 +16,12 @@ def temp_dir():
 
 
 @pytest.fixture
-def templates_dir():
+def templates_dir(tmp_path):
     """Return path to templates directory."""
-    return Path("corpus/synthetic/templates")
+    from builders.create_docx_templates import create_simple_report_template
+
+    create_simple_report_template(tmp_path / "01_simple_report.docx")
+    return tmp_path
 
 
 @pytest.fixture

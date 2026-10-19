@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-10338",
+    "vendor": "Elite Real Estate",
+    "due_date": "2025-12-03",
+    "grand_total": "37214.68",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-10338",
+      "INV-10338"
+    ],
+    "due_date": [
+      "December 03, 2025",
+      "December 03, 2025"
+    ],
+    "grand_total": [
+      "$37,214.68"
+    ],
+    "vendor": [
+      "Elite Real Estate"
+    ]
+  },
+  "records": [
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "14.54",
+      "unit_price": "85.59",
+      "line_total": "1244.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance\nCoordination (hour)",
+        "quantity": "14.54",
+        "unit_price": "$85.59",
+        "line_total": "$1,244.48"
+      }
+    },
+    {
+      "description": "Leasing Fee - New Tenant (% of annual rent)",
+      "quantity": "81.24",
+      "unit_price": "64.36",
+      "line_total": "5228.61",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Leasing Fee - New\nTenant (% of\nannual rent)",
+        "quantity": "81.24",
+        "unit_price": "$64.36",
+        "line_total": "$5,228.61"
+      }
+    },
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "73.29",
+      "unit_price": "68.66",
+      "line_total": "5032.09",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance\nCoordination (hour)",
+        "quantity": "73.29",
+        "unit_price": "$68.66",
+        "line_total": "$5,032.09"
+      }
+    },
+    {
+      "description": "Tenant Screening (application)",
+      "quantity": "59.01",
+      "unit_price": "54.95",
+      "line_total": "3242.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tenant Screening\n(application)",
+        "quantity": "59.01",
+        "unit_price": "$54.95",
+        "line_total": "$3,242.60"
+      }
+    },
+    {
+      "description": "Marketing & Advertising (month)",
+      "quantity": "4.25",
+      "unit_price": "797.73",
+      "line_total": "3390.35",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Marketing &\nAdvertising (month)",
+        "quantity": "4.25",
+        "unit_price": "$797.73",
+        "line_total": "$3,390.35"
+      }
+    },
+    {
+      "description": "Property Inspection (inspection)",
+      "quantity": "34.3",
+      "unit_price": "183.95",
+      "line_total": "6309.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Property Inspection\n(inspection)",
+        "quantity": "34.30",
+        "unit_price": "$183.95",
+        "line_total": "$6,309.48"
+      }
+    },
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "72.17",
+      "unit_price": "73.77",
+      "line_total": "5323.98",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance\nCoordination (hour)",
+        "quantity": "72.17",
+        "unit_price": "$73.77",
+        "line_total": "$5,323.98"
+      }
+    },
+    {
+      "description": "Property Management Fee (% of rent)",
+      "quantity": "24.14",
+      "unit_price": "11.24",
+      "line_total": "271.33",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Property\nManagement Fee\n(% of rent)",
+        "quantity": "24.14",
+        "unit_price": "$11.24",
+        "line_total": "$271.33"
+      }
+    },
+    {
+      "description": "Property Management Fee (% of rent)",
+      "quantity": "97.32",
+      "unit_price": "9.96",
+      "line_total": "969.31",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Property\nManagement Fee\n(% of rent)",
+        "quantity": "97.32",
+        "unit_price": "$9.96",
+        "line_total": "$969.31"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

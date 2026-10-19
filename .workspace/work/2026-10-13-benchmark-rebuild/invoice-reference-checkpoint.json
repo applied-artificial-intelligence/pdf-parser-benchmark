@@ -1,0 +1,42 @@
+{
+  "status": "qualified",
+  "bundle": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-reference-evidence/qualified-dc48e90363104d938465629738316513",
+  "manifest_sha256": "2cff95eba5904e0933caf5e761ea836f8392f3528d484ac8914131257de6d765",
+  "reviewer": "Coding agent visual review, not human adjudication",
+  "documents": 100,
+  "physical_pages": 182,
+  "line_items": 696,
+  "source_layout_cells": {
+    "economy/complex": 15,
+    "economy/medium": 17,
+    "enterprise/medium": 15,
+    "enterprise/simple": 19,
+    "small_business/medium": 15,
+    "small_business/simple": 19
+  },
+  "record_schemas": {
+    "Description, Qty, Amount": 32,
+    "Description, Qty, Rate, Amount": 34,
+    "Description, Quantity, Unit, Unit Price, Amount": 34
+  },
+  "render_review": ".workspace/work/2026-10-13-benchmark-rebuild/invoice-rendition-review.json",
+  "mechanical_miss_documents": 10,
+  "unresolved_mismatches": 0,
+  "original_bytes_check": "All 100 source, PDF, metadata, current reference and backup reference files match pre-run inventory",
+  "qualification_limit": "Controlled generated templates with agent visual qualification; not real vendor coverage or independent human adjudication",
+  "reference_history": "Current source extraction reproduces all 100 backup text references and none of 100 current references. Historical scored reference bytes remain unknown. New semantic references do not validate old scores.",
+  "fresh_replay": {
+    "status": "passed",
+    "documents": 100,
+    "pages": 182,
+    "original_manifest_sha256": "2cff95eba5904e0933caf5e761ea836f8392f3528d484ac8914131257de6d765",
+    "replayed_manifest_sha256": "2cff95eba5904e0933caf5e761ea836f8392f3528d484ac8914131257de6d765",
+    "judgment_policy": "Reuse earlier agent observations only for identical facts and pixels"
+  },
+  "tests": {
+    "focused": 8,
+    "full_passed": 906,
+    "full_skipped": 18,
+    "producing_mutation_witnesses_preflight_passed": 9
+  }
+}

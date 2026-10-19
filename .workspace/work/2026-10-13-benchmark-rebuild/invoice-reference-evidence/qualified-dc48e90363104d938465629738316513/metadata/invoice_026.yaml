@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: USA
+  name: Bishop-Simmons
+document_id: invoice_026
+due_date: '2025-09-24'
+generated_at: '2025-11-18T16:45:38.841577'
+industry: manufacturing
+invoice_date: '2025-08-25'
+invoice_number: INV-47605
+line_item_count: 4
+payment_terms: Net 30
+region: US
+subtotal: 9341.09
+tax_amount: 765.97
+template_style: small_business
+total: 10107.06
+vendor:
+  country: USA
+  name: Advanced Manufacturing
+corpus: business
+source_url: generated://invoice_026
+domain: invoices
+doc_id: invoice_026

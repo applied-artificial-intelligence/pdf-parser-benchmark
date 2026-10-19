@@ -60,16 +60,16 @@ class TestDocumentMetadata:
         with pytest.raises(ValueError, match="doc_id is required"):
             metadata.validate()
 
-    def test_missing_source_url(self) -> None:
-        """Test that missing source_url fails validation."""
+    def test_source_url_optional_for_local_corpora(self) -> None:
+        """Local datasets remain loadable without a public download URL."""
         metadata = DocumentMetadata(
             doc_id="test_001",
             source_url="",
             corpus="academic",
             domain="arxiv",
         )
-        with pytest.raises(ValueError, match="source_url is required"):
-            metadata.validate()
+        metadata.validate()
+        assert metadata.to_dict()["source_url"] == ""
 
     def test_invalid_corpus(self) -> None:
         """Test that invalid corpus fails validation."""
@@ -128,8 +128,8 @@ class TestDocumentMetadata:
         with pytest.raises(ValueError, match="file_size_bytes must be >= 0"):
             metadata.validate()
 
-    def test_invalid_feature(self) -> None:
-        """Test that unknown feature fails validation."""
+    def test_custom_feature_tags_preserved(self) -> None:
+        """Synthetic corpora retain descriptive tags outside the suggested vocabulary."""
         metadata = DocumentMetadata(
             doc_id="test_001",
             source_url="https://example.com/doc.pdf",
@@ -137,20 +137,20 @@ class TestDocumentMetadata:
             domain="arxiv",
             features=["tables", "unknown_feature"],
         )
-        with pytest.raises(ValueError, match="Unknown feature"):
-            metadata.validate()
+        metadata.validate()
+        assert metadata.to_dict()["features"] == ["tables", "unknown_feature"]
 
-    def test_invalid_language_code(self) -> None:
-        """Test that invalid language code fails validation."""
+    def test_descriptive_language_label_preserved(self) -> None:
+        """Corpus language descriptions remain valid alongside ISO codes."""
         metadata = DocumentMetadata(
             doc_id="test_001",
             source_url="https://example.com/doc.pdf",
             corpus="academic",
             domain="arxiv",
-            language="eng",  # Should be 2 letters
+            language="simplified_chinese",
         )
-        with pytest.raises(ValueError, match="language should be 2-letter"):
-            metadata.validate()
+        metadata.validate()
+        assert metadata.to_dict()["language"] == "simplified_chinese"
 
     def test_invalid_publication_date_format(self) -> None:
         """Test that invalid date format fails validation."""

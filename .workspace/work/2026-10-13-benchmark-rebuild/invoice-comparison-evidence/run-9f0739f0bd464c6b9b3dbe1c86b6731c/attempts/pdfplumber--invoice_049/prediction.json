@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-34503",
+    "vendor": "Creative Graphics",
+    "due_date": "2025-11-07",
+    "grand_total": "21977.12",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-34503"
+    ],
+    "due_date": [
+      "November 07, 2025"
+    ],
+    "grand_total": [
+      "$21,977.12"
+    ],
+    "vendor": [
+      "Creative Graphics"
+    ]
+  },
+  "records": [
+    {
+      "description": "Brochures - Tri- fold",
+      "quantity": "5.34",
+      "unit": "per 1000",
+      "unit_price": "680.85",
+      "line_total": "3635.74",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Brochures - Tri-\nfold",
+        "quantity": "5.34",
+        "unit": "per 1000",
+        "unit_price": "$680.85",
+        "line_total": "$3,635.74"
+      }
+    },
+    {
+      "description": "Rush Production",
+      "quantity": "21.45",
+      "unit": "% surcharge",
+      "unit_price": "43.07",
+      "line_total": "923.85",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Rush\nProduction",
+        "quantity": "21.45",
+        "unit": "% surcharge",
+        "unit_price": "$43.07",
+        "line_total": "$923.85"
+      }
+    },
+    {
+      "description": "Brochures - Tri- fold",
+      "quantity": "44.69",
+      "unit": "per 1000",
+      "unit_price": "284.99",
+      "line_total": "12736.2",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Brochures - Tri-\nfold",
+        "quantity": "44.69",
+        "unit": "per 1000",
+        "unit_price": "$284.99",
+        "line_total": "$12,736.20"
+      }
+    },
+    {
+      "description": "Rush Production",
+      "quantity": "17.61",
+      "unit": "% surcharge",
+      "unit_price": "49.24",
+      "line_total": "867.12",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Rush\nProduction",
+        "quantity": "17.61",
+        "unit": "% surcharge",
+        "unit_price": "$49.24",
+        "line_total": "$867.12"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

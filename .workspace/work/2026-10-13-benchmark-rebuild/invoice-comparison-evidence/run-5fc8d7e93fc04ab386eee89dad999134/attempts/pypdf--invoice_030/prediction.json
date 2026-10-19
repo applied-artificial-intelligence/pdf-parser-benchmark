@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-72400",
+    "vendor": "Quality Outlet",
+    "due_date": "2025-10-05",
+    "grand_total": "139909.62",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-72400"
+    ],
+    "due_date": [
+      "10/05/2025"
+    ],
+    "grand_total": [
+      "$139,909.62"
+    ],
+    "vendor": [
+      "Quality Outlet"
+    ]
+  },
+  "records": [
+    {
+      "description": "Shipping & Handling @ $24.26/order",
+      "quantity": "81.15",
+      "line_total": "1968.7",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Shipping & Handling @\n$24.26/order",
+        "quantity": "81.15",
+        "line_total": "$1,968.70"
+      }
+    },
+    {
+      "description": "Cleaning Supplies @ $112.06/case",
+      "quantity": "92.69",
+      "line_total": "10386.84",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cleaning Supplies @\n$112.06/case",
+        "quantity": "92.69",
+        "line_total": "$10,386.84"
+      }
+    },
+    {
+      "description": "Shipping & Handling @ $122.91/order",
+      "quantity": "54.86",
+      "line_total": "6742.84",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Shipping & Handling @\n$122.91/order",
+        "quantity": "54.86",
+        "line_total": "$6,742.84"
+      }
+    },
+    {
+      "description": "Cleaning Supplies @ $102.74/case",
+      "quantity": "42.04",
+      "line_total": "4319.19",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cleaning Supplies @\n$102.74/case",
+        "quantity": "42.04",
+        "line_total": "$4,319.19"
+      }
+    },
+    {
+      "description": "Furniture - Office @ $2685.65/each",
+      "quantity": "35.37",
+      "line_total": "94991.44",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Furniture - Office @\n$2685.65/each",
+        "quantity": "35.37",
+        "line_total": "$94,991.44"
+      }
+    },
+    {
+      "description": "Office Supplies - Bulk @ $37.94/case",
+      "quantity": "72.71",
+      "line_total": "2758.62",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Office Supplies - Bulk @\n$37.94/case",
+        "quantity": "72.71",
+        "line_total": "$2,758.62"
+      }
+    },
+    {
+      "description": "Cleaning Supplies @ $96.27/case",
+      "quantity": "5.24",
+      "line_total": "504.45",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cleaning Supplies @\n$96.27/case",
+        "quantity": "5.24",
+        "line_total": "$504.45"
+      }
+    },
+    {
+      "description": "Office Supplies - Bulk @ $59.57/case",
+      "quantity": "36.3",
+      "line_total": "2162.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Office Supplies - Bulk @\n$59.57/case",
+        "quantity": "36.30",
+        "line_total": "$2,162.39"
+      }
+    },
+    {
+      "description": "Office Supplies - Bulk @ $115.43/case",
+      "quantity": "41.74",
+      "line_total": "4818.05",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Office Supplies - Bulk @\n$115.43/case",
+        "quantity": "41.74",
+        "line_total": "$4,818.05"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

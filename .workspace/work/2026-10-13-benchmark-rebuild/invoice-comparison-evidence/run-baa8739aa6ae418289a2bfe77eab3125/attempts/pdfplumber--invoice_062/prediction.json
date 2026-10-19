@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-50983",
+    "vendor": null,
+    "due_date": "2025-09-29",
+    "grand_total": "30522.23",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-50983"
+    ],
+    "due_date": [
+      "09/29/2025"
+    ],
+    "grand_total": [
+      "$30,522.23"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Maintenance Coordination @ $73.29/hour",
+      "quantity": "91.31",
+      "line_total": "6692.11",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance Coordination @\n$73.29/hour",
+        "quantity": "91.31",
+        "line_total": "$6,692.11"
+      }
+    },
+    {
+      "description": "Maintenance Coordination @ $60.03/hour",
+      "quantity": "78.93",
+      "line_total": "4738.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance Coordination @\n$60.03/hour",
+        "quantity": "78.93",
+        "line_total": "$4,738.17"
+      }
+    },
+    {
+      "description": "Property Management Fee @ $9.25/% of rent",
+      "quantity": "19.49",
+      "line_total": "180.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Property Management Fee @\n$9.25/% of rent",
+        "quantity": "19.49",
+        "line_total": "$180.28"
+      }
+    },
+    {
+      "description": "Maintenance Coordination @ $72.08/hour",
+      "quantity": "77.32",
+      "line_total": "5573.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Maintenance Coordination @\n$72.08/hour",
+        "quantity": "77.32",
+        "line_total": "$5,573.23"
+      }
+    },
+    {
+      "description": "Property Management Fee @ $8.60/% of rent",
+      "quantity": "42.12",
+      "line_total": "362.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Property Management Fee @\n$8.60/% of rent",
+        "quantity": "42.12",
+        "line_total": "$362.23"
+      }
+    },
+    {
+      "description": "Leasing Fee - New Tenant @ $59.10/% of annual rent",
+      "quantity": "54.46",
+      "line_total": "3218.59",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Leasing Fee - New Tenant @\n$59.10/% of annual rent",
+        "quantity": "54.46",
+        "line_total": "$3,218.59"
+      }
+    },
+    {
+      "description": "Leasing Fee - New Tenant @ $67.67/% of annual rent",
+      "quantity": "69.02",
+      "line_total": "4670.58",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Leasing Fee - New Tenant @\n$67.67/% of annual rent",
+        "quantity": "69.02",
+        "line_total": "$4,670.58"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

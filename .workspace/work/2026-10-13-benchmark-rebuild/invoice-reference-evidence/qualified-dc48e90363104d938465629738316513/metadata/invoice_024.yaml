@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: USA
+  name: Rodgers and Sons
+document_id: invoice_024
+due_date: '2025-11-13'
+generated_at: '2025-11-18T16:45:36.048276'
+industry: retail
+invoice_date: '2025-10-14'
+invoice_number: INV-55147
+line_item_count: 7
+payment_terms: Net 30
+region: US
+subtotal: 296794.53
+tax_amount: 26177.28
+template_style: economy
+total: 322971.81
+vendor:
+  country: USA
+  name: National Outlet
+corpus: business
+source_url: generated://invoice_024
+domain: invoices
+doc_id: invoice_024

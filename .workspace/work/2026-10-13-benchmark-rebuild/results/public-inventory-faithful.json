@@ -1,0 +1,12 @@
+{
+ "item": "public-inventory-faithful",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench.py::test_rule_ids_reused_on_other_pages_do_not_drop_cases",
+  "fixture (both runs): Unchanged reduced pinned ParseBench annotation rows and actual rendered-source inspection records",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

@@ -1,0 +1,504 @@
+{
+  "title": "Evidence for Selecting document parsing and extraction tools",
+  "spec_revision": 7,
+  "review_date": "2026-10-19",
+  "checked_at_utc": "2026-10-19T23:28:43.915206+00:00",
+  "guide": {
+    "path": "benchmark-design-guide.md",
+    "sha256": "df7a21153ec89abbd41e301d916ae3a430b8b0bbf03579de59d16620c49a2ba3",
+    "type": "authored explanation",
+    "publication_html": "publication/guide.html"
+  },
+  "scope": "Read-only public-source research and light checks over retained artifacts; no new parsing, grading, model/GPU job, corpus acquisition or broad test suite.",
+  "public_sources": {
+    "parsebench": {
+      "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+      "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+      "leaderboard_url": "https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/leaderboard.csv",
+      "leaderboard_sha256": "a53994f42c51a9626b72b04dadfaf097919dd350b015639a6b7d63fd338cfd1b",
+      "configuration_rows": 147,
+      "dataset_url": "https://huggingface.co/datasets/llamaindex/ParseBench/tree/2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+      "evaluator_source_url": "https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/src/parse_bench/evaluation/evaluators/parse.py",
+      "evaluator_source_sha256": "d124735bb46613155676058e4c1adf5bc5072bc559bfc7f49c61313ce662ea64"
+    },
+    "retained_primary_documents": [
+      {
+        "benchmark": "omnidocbench",
+        "revision": "f133a71e9e91c3621c7ce8994200a7b394a06eb3",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/opendatalab/OmniDocBench/f133a71e9e91c3621c7ce8994200a7b394a06eb3/README.md",
+        "sha256": "a799f3dabee0d8e2be9f990fc325c3fefadb8d7f8d0cf56148406547d495a3ad",
+        "retained_path": "benchmark-contract-sources/omnidocbench-README.md"
+      },
+      {
+        "benchmark": "extractbench",
+        "revision": "56b8fdd91b2cf3648caf75c717c68441ecf4d43f",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
+        "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
+        "retained_path": "benchmark-contract-sources/extractbench-README.md"
+      },
+      {
+        "benchmark": "extractbench-pro",
+        "revision": "4ae1ffe48696297a8f6c9153034b3914fc7763d0",
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/llamaindex/ExtractBenchPro/raw/4ae1ffe48696297a8f6c9153034b3914fc7763d0/README.md",
+        "sha256": "54c7d7e1c9ab023c4b101dd35309c87869850f71b1c01f5e405cd6420890be1e",
+        "retained_path": "benchmark-contract-sources/extractbench-pro-README.md"
+      },
+      {
+        "benchmark": "opendocrouter",
+        "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/README.md",
+        "sha256": "79b45d18f52e15a1e41ddf4668b6d3c0d5e1d4466d9d405e35f397bec6830da4",
+        "retained_path": "benchmark-contract-sources/opendocrouter-README.md"
+      },
+      {
+        "benchmark": "opendocrouter-api",
+        "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+        "path": "api.md",
+        "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/api.md",
+        "sha256": "fa04748a2f0673d8d10995f5b5dda78c6553ed1d46403703c727be91985d8d41",
+        "retained_path": "benchmark-contract-sources/opendocrouter-api-api.md"
+      }
+    ],
+    "current_web_documents": {
+      "pro-launch": {
+        "url": "https://www.llamaindex.ai/blog/introducing-extractbench-pro",
+        "retrieved_on": "2026-10-19",
+        "sha256": "8e931204129c3ac863420a402afbc147fbdb4d9d22506ba3e08039f32bba42dc",
+        "bytes": 1079766,
+        "status": "read_only_source_retrieved"
+      },
+      "extraction-confidence": {
+        "url": "https://www.llamaindex.ai/blog/what-makes-an-extraction-confidence-score-useful",
+        "retrieved_on": "2026-10-19",
+        "sha256": "d05df7278681b2296c36e297a28cc85776fcd59800c4614ae30a7c203cdd9e2d",
+        "bytes": 1008770,
+        "status": "read_only_source_retrieved"
+      },
+      "router-openapi": {
+        "url": "https://www.opendocrouter.ai/v1/openapi.json",
+        "retrieved_on": "2026-10-19",
+        "sha256": "b2505896e49a58646258678471e87a16e0c8e36bd14ad4b2d3a15ddb70bbd15c",
+        "bytes": 29447,
+        "status": "read_only_source_retrieved",
+        "retained_path": "benchmark-contract-sources/opendocrouter-openapi.json",
+        "description": "Parse PDFs and images to markdown with the model of your choice."
+      }
+    },
+    "pdfsmith_backend_history": {
+      "_process.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "6cf06fa391861bb2f32b72323286489ebc8f469cfdd3c8dc71dd1fb4873c788a",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/_process.py"
+      },
+      "docling_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "ec5b6174dd0c327096095e9a025eb3fa2e8db7cb1f58f17f0c96683f1cfab259",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/docling_backend.py"
+      },
+      "marker_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "30563697624a005d3913c7036f88810d22a09a8b211d99ce214ebae5b7b3f374",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/marker_backend.py"
+      },
+      "unstructured_backend.py": {
+        "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
+        "sha256": "c4544a3e439a18918f7052c378ffa6c0d53b9618e69afd6ca0fef4557570d7ab",
+        "url": "https://github.com/applied-artificial-intelligence/pdfsmith/blob/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends/unstructured_backend.py"
+      }
+    }
+  },
+  "retained_sources": [
+    {
+      "path": "parsebench-inventory.json",
+      "sha256": "e8b25baa212e836d0b10b33766ed6cc5e61f24f3b625c1cda52407ba12fd84bb"
+    },
+    {
+      "path": "parsebench-source-coverage.json",
+      "sha256": "07e7d05b1f6eb808516b260f2d22e3d12439f612d0176a41c6885f090a1a934b"
+    },
+    {
+      "path": "parsebench-workload-index.json",
+      "sha256": "bb71376ad1ae5392ac3b9658a68a4f768a924bb06fa510e9e63417aae833b54f"
+    },
+    {
+      "path": "parsebench-workload-index.csv",
+      "sha256": "1b745f05f5387931a6a8fa927fed0a89b031c4a24f1939fd30d99ebaa985a288"
+    },
+    {
+      "path": "parsebench-coverage.md",
+      "sha256": "39c2ff5fe1240dea421c0c209e5d6b4ca485b4e5f9b6ec6d99aecc37eb77810b"
+    },
+    {
+      "path": "benchmark-contract-sources.json",
+      "sha256": "77aaa2b49ad2db8c096f8dc86550d063b3087faff20d6e14aa3fe822950558ce"
+    },
+    {
+      "path": "invoice-reference-checkpoint.json",
+      "sha256": "2342d31ff86781b65322dd68318cec1f24e6e634a611cb1e5da59abb5c509104"
+    },
+    {
+      "path": "invoice-failure-audit.json",
+      "sha256": "5950ebdb1415e77127978154c76bbf58fa34779e1dc8b6516edd29fcf8b58b38"
+    },
+    {
+      "path": "invoice-selection-bias-demonstration.json",
+      "sha256": "df3d5fc4bf810f1327bfad90e30ab443bb500c878f95da224dbb4e9ce37db137"
+    },
+    {
+      "path": "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json",
+      "sha256": "f10a7efa1282352d341ac05283d21504852a5ab26a1e5c5944ca9772d1b65da0"
+    },
+    {
+      "path": "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json",
+      "sha256": "85b0fd1ee600cf9e7bc26566fc87f0f76ab4ceefed88d6b7382e526a25b79867"
+    },
+    {
+      "path": "retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json",
+      "sha256": "3fca725289bb947236aaa0f98769b0d79f2da8ba3c4c76c8fa310a24ef16822b"
+    },
+    {
+      "path": "execution-stop-20261017.json",
+      "sha256": "e7131a6397abdcf03d6028f4336ff26858c6d56deeb8f8257fa5f21f9202c099"
+    },
+    {
+      "path": "overnight-policy.json",
+      "sha256": "7cfd7ccfc5b7aacef0e43893a41614472a1ec3ccf687518d423918f6dd1edef7"
+    }
+  ],
+  "assertion_support": [
+    {
+      "section": "Use public benchmarks for the capabilities they measure",
+      "kind": "public contracts, not locally reproduced provider results",
+      "sources": [
+        "public_sources/parsebench",
+        "benchmark-contract-sources.json"
+      ],
+      "limits": "Five ParseBench dimensions; reading order/hierarchy are components, not extra headline metrics. No navigation completeness or OpenParse winner asserted."
+    },
+    {
+      "section": "ExtractBench Pro extends the interpretation challenge",
+      "kind": "upstream dataset-card/announcement reports",
+      "source_revision": "4ae1ffe48696297a8f6c9153034b3914fc7763d0",
+      "challenge_table_recount": {
+        "document_conventions": {
+          "documents": 22,
+          "pages": 875,
+          "expected_values": 121287
+        },
+        "house_vocabulary": {
+          "documents": 14,
+          "pages": 606,
+          "expected_values": 15242
+        },
+        "house_counting_rules": {
+          "documents": 12,
+          "pages": 225,
+          "expected_values": 409
+        },
+        "drawn_relations": {
+          "documents": 20,
+          "pages": 352,
+          "expected_values": 2349
+        },
+        "charts_inside_documents": {
+          "documents": 25,
+          "pages": 557,
+          "expected_values": 1347
+        },
+        "long_chart_sheets": {
+          "documents": 7,
+          "pages": 7,
+          "expected_values": 3507
+        }
+      },
+      "table_totals": {
+        "documents": 100,
+        "pages": 2622,
+        "expected_values": 144141
+      },
+      "declared_document_types": 86,
+      "limits": "Only documentation read. No Pro PDF/annotation-row acquisition, independent render/reference audit or score reproduction. All 100 documents synthetic; no production prevalence inference."
+    },
+    {
+      "section": "Match the evidence to the document collection",
+      "kind": "retained ParseBench counts and prior coding-agent visual observations",
+      "recounted": {
+        "input_paths": 2078,
+        "distinct_sha256": 2060,
+        "group_cases": 2553,
+        "annotation_rows": 169011,
+        "visually_reviewed_inputs": 221
+      },
+      "sources": [
+        "parsebench-inventory.json#/cases",
+        "parsebench-workload-index.json#/inputs",
+        "parsebench-workload-index.csv"
+      ],
+      "limits": "No percentage of all business tasks or systematic reference failure established. Missing metadata is not absent coverage."
+    },
+    {
+      "section": "Compare configurations on representative, independent references",
+      "kind": "arithmetic over saved grade files and retained reference/failure audits",
+      "sources": [
+        "invoice-reference-checkpoint.json",
+        "invoice-failure-audit.json",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pypdf/task",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pdfplumber/task"
+      ],
+      "limits": "Configured parser plus fixed extractor, generated templates and prior coding-agent qualification; no arbitrary real-vendor recommendation."
+    },
+    {
+      "section": "Evaluate confidence as a review policy",
+      "kind": "source-backed evaluation recommendation",
+      "sources": [
+        "public_sources/current_web_documents/extraction-confidence"
+      ],
+      "limits": "No local calibration measurement, borrowed cutoff, provider-score comparability or guarantee about final reviewed accuracy."
+    },
+    {
+      "section": "Compare the economics of the complete configuration",
+      "kind": "hypothetical arithmetic, not a measured comparison",
+      "sources": [
+        "hypothetical_economics"
+      ],
+      "limits": "Prices/review rates are assumptions. Integration, infrastructure and residual-error costs are excluded from the subtotal. Review effectiveness is assumed for explanation and requires actual validation."
+    },
+    {
+      "section": "Common APIs simplify access but preserve evaluation obligations",
+      "kind": "official SDK and unauthenticated public API source inspection",
+      "sources": [
+        "benchmark-contract-sources/opendocrouter-README.md",
+        "benchmark-contract-sources/opendocrouter-api-api.md",
+        "benchmark-contract-sources/opendocrouter-openapi.json"
+      ],
+      "limits": "No upload, authenticated API call, inference, live provider test, model catalog comparison or billed request."
+    },
+    {
+      "section": "Record a component decision the implementation can use",
+      "kind": "engineering recommendation and user-defined positioning",
+      "limits": "Component selection informs broader system design; no client case, patent/inventorship claim, website/service copy or corporate acquisition speculation included."
+    }
+  ],
+  "source_corrections": {
+    "release_dates": {
+      "ParseBench": "2026-04-13",
+      "ExtractBench": "2026-08-11",
+      "ExtractBench_Pro": "2026-10-15"
+    },
+    "release_date_sources": [
+      "https://www.llamaindex.ai/blog/parsebench",
+      "https://www.llamaindex.ai/blog/introducing-extractbench",
+      "https://www.llamaindex.ai/blog/introducing-extractbench-pro"
+    ],
+    "OpenParse": "No named entry in the pinned 147-row ParseBench CSV; no ranking claim made.",
+    "maturity": "Public contracts and source availability checked; no independent certification, stable ranking or business-wide coverage estimate implied."
+  },
+  "saved_grade_arithmetic": {
+    "formula": "2 * sum(records_matched) / (sum(records_expected) + sum(records_predicted))",
+    "grade_files_read": 200,
+    "completion_bound_files_checked": 1209,
+    "native_regrading_performed": false,
+    "results": {
+      "pypdf": {
+        "records_matched": 668,
+        "records_expected": 696,
+        "records_predicted": 698,
+        "document_success": 84,
+        "documents_expected": 100,
+        "record_micro_f1": 0.9583931133428981
+      },
+      "pdfplumber": {
+        "records_matched": 677,
+        "records_expected": 696,
+        "records_predicted": 691,
+        "document_success": 55,
+        "documents_expected": 100,
+        "record_micro_f1": 0.9762076423936553
+      }
+    }
+  },
+  "hypothetical_economics": {
+    "monthly_documents": 100000,
+    "pages_per_document": 2,
+    "review_minutes_per_document": 3,
+    "labor_usd_per_hour": 40,
+    "required_final_quality": "Assumed met with the stated review policy in all three cases; not empirically established.",
+    "rows": [
+      {
+        "configuration": "A",
+        "price_per_page_usd": 0.01,
+        "review_document_fraction": 0.2,
+        "processing_usd": 2000.0,
+        "review_usd": 40000.0,
+        "subtotal_usd": 42000.0
+      },
+      {
+        "configuration": "B",
+        "price_per_page_usd": 0.04,
+        "review_document_fraction": 0.05,
+        "processing_usd": 8000.0,
+        "review_usd": 10000.0,
+        "subtotal_usd": 18000.0
+      },
+      {
+        "configuration": "C",
+        "price_per_page_usd": 0.08,
+        "review_document_fraction": 0.05,
+        "processing_usd": 16000.0,
+        "review_usd": 10000.0,
+        "subtotal_usd": 26000.0
+      }
+    ],
+    "break_even": {
+      "comparison": "B versus A",
+      "extra_processing_usd_per_document": 0.06,
+      "avoided_review_usd_per_document": 2,
+      "review_fraction_reduction": 0.03,
+      "assumptions": "Same final quality; other cost differences absent."
+    }
+  },
+  "document_validation": {
+    "local_links_and_anchors_checked": 25,
+    "checked_files": [
+      ".workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md",
+      ".workspace/work/2026-10-13-benchmark-rebuild/publication/evidence.md",
+      "README.md",
+      "PROJECT_ORIENTATION.md",
+      "docs/BENCHMARK_STATUS_REPORT.md"
+    ],
+    "guide_words": 3499,
+    "pro_card_table_totals_reconciled": true,
+    "plan_shape_terms_premises_closure": "passed; not issue coverage",
+    "guide_house_style_tells": "none",
+    "source_availability": "OpenDocRouter docs/HF card failed in web tool; pinned SDK/card and public OpenAPI were retrieved with read-only HTTP.",
+    "no_em_dashes_in_checked_authored_documents": true,
+    "assessment_house_style_tells": "none"
+  },
+  "pause_verification": {
+    "policy_execution_paused": true,
+    "heartbeat_status": "PAUSED",
+    "matching_owned_process_ids": [],
+    "new_benchmark_or_GPU_runs": 0,
+    "service_state_observed": "inactive"
+  },
+  "delivery_limits": [
+    "No new issue engineering-coverage gate, merge, publication, deployment, paid run or model-performance claim.",
+    "Prior replay/test receipts remain prior evidence.",
+    "Full/sample plans and frozen outputs remain unchanged."
+  ],
+  "publication_review": {
+    "local_rendered_links_assets_anchors_checked": 12,
+    "immutable_repository_targets_verified": 10,
+    "external_sources": "Pinned upstream URLs and retained source identities reused; no new remote price or performance claims.",
+    "desktop": {
+      "viewport_width": 1280,
+      "viewport_height": 950,
+      "body_font_px": 18,
+      "table_font_px": 15,
+      "caption_font_px": 14,
+      "family": "Arial, Helvetica, sans-serif"
+    },
+    "phone": {
+      "viewport_width": 375,
+      "viewport_height": 812,
+      "document_width": 360,
+      "body_font_px": 17,
+      "table_font_px": 15,
+      "caption_font_px": 14,
+      "wide_content": "Tables and source excerpts use internal horizontal scrolling; no page overflow."
+    },
+    "screenshots": [
+      "publication/review/desktop-invoice.png",
+      "publication/review/desktop-selection.png",
+      "publication/review/phone-economics.png",
+      "publication/review/phone-invoice.png",
+      "publication/review/phone-source.png"
+    ],
+    "viewport_override_reset": true,
+    "renderer": "Pandoc with a small local export script; no CMS changes or production rendering claimed.",
+    "scoring_or_inference_performed": false,
+    "renderer_lint": "Focused Ruff format/check passed for publication/render.py; no broad suite or inference.",
+    "source_excerpt_scale": {
+      "financial": {
+        "natural_width_px": 790,
+        "rendered_width_px": 1000
+      },
+      "invoice": {
+        "natural_width_px": 720,
+        "rendered_width_px": 720
+      },
+      "presentation": "Unmodified source typography is preserved in exact PDF crops; scrolling prevents shrinking the source labels on phones."
+    }
+  },
+  "worked_selection": {
+    "case_id": "table-7ce868b56c95",
+    "source_path": "docs/table/Apple 10-k_page22.pdf",
+    "pdf_sha256": "7663042ad5740e9ed4e57813130b18106a1a6f74aafa3b07244ce9d9c0905e8a",
+    "annotation_path": "parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01/frozen-plan/references/table.jsonl",
+    "annotation_sha256": "9e7c39fb68bfe90c9125c4176c878d9a3b27effb34ddff0e33415e27d296e5bf",
+    "annotation_line": 5,
+    "native_scores_recomputed": false,
+    "normalized_example_shares": 33265000,
+    "source_printed_units": "shares in thousands",
+    "requirements": "Illustrative three-period records plus source evidence, not an executed qualification.",
+    "candidates": [
+      {
+        "Provider": "Azure Document Intelligence (Layout)",
+        "Tables": "86.00",
+        "Visual_Grounding": "73.78"
+      },
+      {
+        "Provider": "LlamaParse Agentic",
+        "Tables": "88.88",
+        "Visual_Grounding": "84.25"
+      }
+    ],
+    "candidate_source_sha256": "a53994f42c51a9626b72b04dadfaf097919dd350b015639a6b7d63fd338cfd1b",
+    "decision": "Inspect the two configured candidates for schema/evidence compatibility. The retained Markdown-only local interface lacks required coordinate sidecars. Neither candidate is production-qualified by this example."
+  },
+  "invoice_clarification": {
+    "call_and_task_counts": {
+      "pypdf": {
+        "success_content": 100,
+        "task_passes": 84,
+        "record_f1_percent_rounded": 95.84
+      },
+      "pdfplumber": {
+        "success_content": 100,
+        "task_passes": 55,
+        "record_f1_percent_rounded": 97.62
+      }
+    },
+    "example": "invoice_001",
+    "fields_correct_each": 5,
+    "expected_records": 10,
+    "predicted_records": {
+      "pypdf": 10,
+      "pdfplumber": 9
+    },
+    "omitted_quantity": "84.07",
+    "omitted_amount": "4407902.75",
+    "raw_output_contains_continuation": true,
+    "cause": "The fixed extraction path selected the nine-record Markdown table although raw text also contains the continuation.",
+    "reference_qualification": "Retained generated-source qualification and coding-agent visual review; no real-vendor extrapolation."
+  },
+  "publication_files": {
+    "publication/guide.html": "329f22bbe6e316dd23616b254a32304d21fec3ccacb9fbb5614fc98ac84a10f0",
+    "publication/evidence.md": "b69b1c24d406037ae988a2d6253fb95b6d3b7c95b68351319ae529a5e4cbe7e7",
+    "publication/render.py": "080c26800df01de021c9b2ba2032fb0165dbcf8cbf0a66b7cc6cde027f462374",
+    "publication/article.css": "3552d785afc400043c76c56db2bd328e39b05b99692d45b3b7067e0663494aea",
+    "publication/evidence.html": "7d7fa0957e5ee6c4620185135a45bbf9e2dd1030d66c80553c3cfaa9a1a54cf8",
+    "publication/review/phone-economics.png": "ce6fcf1b20e86dca815ba93e39c9e70a505c29ce7ca48350fabfb38f91a81d6d",
+    "publication/review/phone-source.png": "b7be7f6d9b7274a25de2f9662cf9d43a26d80c38992edf19fdee554b687ca3b5",
+    "publication/review/desktop-selection.png": "a4e52b205387b3ac7ded7c7bc740c1b6b84168f6a74f3d5436b18855bdb5da24",
+    "publication/review/desktop-invoice.png": "6b1015ce45bc2dc96ae7836465a16034b1811a96d5f2d14d4a559c08ea2c3aa4",
+    "publication/review/phone-invoice.png": "961c17e98458e8c77ca8f8e5adc67c4a8625fc2c0a54c346e67e2a23d2e45945",
+    "publication/assets/invoice-continuation-row.png": "41e0c4b56857a685dd138d8011a6e838bf19778137e8d370e4f04541cda1cb1c",
+    "publication/assets/financial-table-excerpt.png": "2667f34d48e30c154d86f4356344eb38bc3d3ef821896b1817912ed468dc215a"
+  },
+  "publication_recommendation": "Editorial edition ready for publication approval; whole-PR engineering closure and deployment remain separate."
+}

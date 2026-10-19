@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: United Kingdom
+  name: Curtis, Field and Holt
+document_id: invoice_052
+due_date: '2025-11-17'
+generated_at: '2025-11-18T16:46:15.948519'
+industry: accounting
+invoice_date: '2025-11-17'
+invoice_number: INV-46924
+line_item_count: 5
+payment_terms: Due on Receipt
+region: UK
+subtotal: 1122203.03
+tax_amount: 224440.61
+template_style: small_business
+total: 1346643.64
+vendor:
+  country: United Kingdom
+  name: Alliance CPA
+corpus: business
+source_url: generated://invoice_052
+domain: invoices
+doc_id: invoice_052

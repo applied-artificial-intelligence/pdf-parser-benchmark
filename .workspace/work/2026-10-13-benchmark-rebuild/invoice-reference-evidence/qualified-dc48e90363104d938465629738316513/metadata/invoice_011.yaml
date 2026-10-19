@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Mason-Reese
+document_id: invoice_011
+due_date: '2025-11-03'
+generated_at: '2025-11-18T16:45:17.640270'
+industry: construction
+invoice_date: '2025-10-04'
+invoice_number: INV-13361
+line_item_count: 7
+payment_terms: Net 30
+region: US
+subtotal: 37726.72
+tax_amount: 3093.59
+template_style: small_business
+total: 40820.31
+vendor:
+  country: USA
+  name: Summit Development
+corpus: business
+source_url: generated://invoice_011
+domain: invoices
+doc_id: invoice_011

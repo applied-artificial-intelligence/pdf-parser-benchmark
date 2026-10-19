@@ -1,0 +1,158 @@
+{
+  "benchmark": {
+    "name": "OmniDocBench OCR Validation - 4 Parsers (3 docs)",
+    "timestamp": "2025-11-23T13:54:35.100790+00:00",
+    "config_file": "benchmarks/omnidocbench_ocr_4parsers_validation.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "docling-ocr": "2.63.0",
+      "marker": "1.10.1",
+      "kreuzberg": "3.21.0",
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8683514545988833,
+        "chrf++": 82.0279838234245
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011210441589355469
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8902163383919922,
+        "chrf++": 77.52807108778985
+      },
+      "error": null,
+      "parse_time_seconds": 0.0032317638397216797
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "docling-ocr",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8789435069699193,
+        "chrf++": 82.0136657291097
+      },
+      "error": null,
+      "parse_time_seconds": 0.0028030872344970703
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9294739935351161,
+        "chrf++": 92.16723947991204
+      },
+      "error": null,
+      "parse_time_seconds": 0.001378774642944336
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9589925734581853,
+        "chrf++": 92.69712823473161
+      },
+      "error": null,
+      "parse_time_seconds": 0.003227710723876953
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9844735565259582,
+        "chrf++": 96.67555577720655
+      },
+      "error": null,
+      "parse_time_seconds": 0.006525754928588867
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7296157450796625,
+        "chrf++": 73.07356848331165
+      },
+      "error": null,
+      "parse_time_seconds": 1.0728650093078613
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5864513588026783,
+        "chrf++": 59.81659700089189
+      },
+      "error": null,
+      "parse_time_seconds": 4.44689416885376
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6571197411003236,
+        "chrf++": 64.74414026332317
+      },
+      "error": null,
+      "parse_time_seconds": 7.722903251647949
+    },
+    {
+      "document_id": "omnidoc_000",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.685120093731693,
+        "chrf++": 91.08209798010685
+      },
+      "error": null,
+      "parse_time_seconds": 0.00951075553894043
+    },
+    {
+      "document_id": "omnidoc_050",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9415335463258786,
+        "chrf++": 94.55809921222142
+      },
+      "error": null,
+      "parse_time_seconds": 15.509740829467773
+    },
+    {
+      "document_id": "omnidoc_100",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9691937424789411,
+        "chrf++": 97.13280098598813
+      },
+      "error": null,
+      "parse_time_seconds": 10.239398002624512
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 4,
+    "total_results": 12,
+    "success_count": 12,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,1141 @@
+{
+  "benchmark": {
+    "name": "Commercial Parsers - 50 Doc Sample",
+    "timestamp": "2025-11-23T21:27:36.131600+00:00",
+    "config_file": "benchmarks/commercial_50doc_sample.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "aws_textract": "1.40.73",
+      "azure_document_intelligence": "1.0.2",
+      "google_document_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9317147192716236,
+        "chrf++": 96.74571926454749
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008702278137207031
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9142091152815013,
+        "chrf++": 91.81981250414219
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041413307189941406
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9051151893791488,
+        "chrf++": 97.20090179481302
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004639625549316406
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9260161363982341,
+        "chrf++": 95.3349576001852
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004680156707763672
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9663799843627834,
+        "chrf++": 99.18719754765269
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005486011505126953
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9525674367969034,
+        "chrf++": 96.5519622788519
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004112720489501953
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.97515554694396,
+        "chrf++": 98.64205260842499
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005829334259033203
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9745085566754315,
+        "chrf++": 98.13814019115617
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007951259613037109
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9718070126574444,
+        "chrf++": 99.24636538483462
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004999637603759766
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9663700245292632,
+        "chrf++": 98.25483744682302
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004982948303222656
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9650939210176009,
+        "chrf++": 98.402031210807
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003867149353027344
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9748274783880074,
+        "chrf++": 99.52641195247311
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006365776062011719
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9746814766416204,
+        "chrf++": 98.06849176861058
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005319118499755859
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9804369142728544,
+        "chrf++": 99.7377602977032
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044345855712890625
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.437744714173845,
+        "chrf++": 73.49082352755642
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003254413604736328
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3595263724434876,
+        "chrf++": 75.21676941875506
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032401084899902344
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4126829268292683,
+        "chrf++": 73.10839518192326
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004799365997314453
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.22234636871508384,
+        "chrf++": 77.06077937147762
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003452301025390625
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3808574277168495,
+        "chrf++": 73.9698899499109
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003113746643066406
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43897824030274357,
+        "chrf++": 73.07223444572102
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039649009704589844
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3409770687936191,
+        "chrf++": 73.8470331000163
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008873939514160156
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43742405832320774,
+        "chrf++": 75.55890308235226
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042748451232910156
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1487935656836461,
+        "chrf++": 78.93294912313092
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003566741943359375
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3646408839779005,
+        "chrf++": 76.23040551310268
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005357265472412109
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9105814739688979,
+        "chrf++": 94.71380877170981
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005414485931396484
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9094842506057459,
+        "chrf++": 94.6572695927314
+      },
+      "error": null,
+      "parse_time_seconds": 0.00030493736267089844
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9475218658892128,
+        "chrf++": 90.10454331094076
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033545494079589844
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9576180257510729,
+        "chrf++": 92.96772773229989
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046133995056152344
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9566630552546046,
+        "chrf++": 92.94541016379205
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005464553833007812
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486504279131007,
+        "chrf++": 91.64323428119758
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003345012664794922
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.19470385546011082,
+        "chrf++": 31.637789810028
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006854534149169922
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1810229710873381,
+        "chrf++": 21.402239157114288
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004837512969970703
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.23945885186994909,
+        "chrf++": 29.13917296871706
+      },
+      "error": null,
+      "parse_time_seconds": 0.003653287887573242
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.37655433563918683,
+        "chrf++": 45.732732351418775
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015969276428222656
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "aws_textract",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2018167492198808,
+        "chrf++": 54.033774454176694
+      },
+      "error": null,
+      "parse_time_seconds": 0.005218982696533203
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9319213313161876,
+        "chrf++": 96.60264634251958
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033664703369140625
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9145888594164456,
+        "chrf++": 91.40806185215258
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003304481506347656
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9055501460564752,
+        "chrf++": 97.19129535786769
+      },
+      "error": null,
+      "parse_time_seconds": 0.00022792816162109375
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.816339161380164,
+        "chrf++": 86.76567105053672
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002505779266357422
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8372715816005041,
+        "chrf++": 87.70751127924783
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004639625549316406
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01694992137413809,
+        "chrf++": 1.8966030719189717
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045680999755859375
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1377876891766081,
+        "chrf++": 16.945124661761277
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004227161407470703
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01560985233739598,
+        "chrf++": 1.9347781968627766
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008606910705566406
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1513274611721498,
+        "chrf++": 18.41661035888808
+      },
+      "error": null,
+      "parse_time_seconds": 3.5072555541992188
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.007939423384564326,
+        "chrf++": 0.8712203482239522
+      },
+      "error": null,
+      "parse_time_seconds": 3.4870777130126953
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9244194645762461,
+        "chrf++": 94.90672220275567
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005033016204833984
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.006532810708476666,
+        "chrf++": 0.6936824910754493
+      },
+      "error": null,
+      "parse_time_seconds": 57.612837076187134
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.10565682988637293,
+        "chrf++": 13.039133511583808
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009098052978515625
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.13977344547620207,
+        "chrf++": 17.033339234924217
+      },
+      "error": null,
+      "parse_time_seconds": 3.6159560680389404
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5787000783085356,
+        "chrf++": 79.45745429896431
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005505084991455078
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4155005382131324,
+        "chrf++": 78.29238836783928
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037860870361328125
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5609756097560976,
+        "chrf++": 79.59639730499686
+      },
+      "error": null,
+      "parse_time_seconds": 0.000247955322265625
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.42346368715083804,
+        "chrf++": 86.21655672652552
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002918243408203125
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.24027916251246262,
+        "chrf++": 76.50889256692726
+      },
+      "error": null,
+      "parse_time_seconds": 3.3389482498168945
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5723746452223273,
+        "chrf++": 79.01796378130209
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006251335144042969
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4436689930209372,
+        "chrf++": 78.55777190950236
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005059242248535156
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5236938031591738,
+        "chrf++": 79.20845198233724
+      },
+      "error": null,
+      "parse_time_seconds": 59.33395433425903
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3297587131367292,
+        "chrf++": 87.09842942456764
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008606910705566406
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5679558011049723,
+        "chrf++": 80.69289915661669
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005819797515869141
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.31795131845841784,
+        "chrf++": 37.41829164023571
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004451274871826172
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.31066112841813776,
+        "chrf++": 36.58591291906224
+      },
+      "error": null,
+      "parse_time_seconds": 58.376880407333374
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9455782312925171,
+        "chrf++": 87.87666177529546
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007848739624023438
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9477020602218701,
+        "chrf++": 89.47814403142489
+      },
+      "error": null,
+      "parse_time_seconds": 3.3944225311279297
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9517684887459807,
+        "chrf++": 90.11964461111639
+      },
+      "error": null,
+      "parse_time_seconds": 3.298605442047119
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9452054794520548,
+        "chrf++": 88.69235087138327
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003693103790283203
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0278465303632216,
+        "chrf++": 3.4619684246989824
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006921291351318359
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.047382556377440044,
+        "chrf++": 5.50824556991105
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005819797515869141
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "azure_document_intelligence",
+      "success": false,
+      "metrics": {},
+      "error": "Invalid PDF file: (InvalidRequest) Invalid request.\nCode: InvalidRequest\nMessage: Invalid request.\nInner error: {\n    \"code\": \"InvalidContentLength\",\n    \"message\": \"The input image is too large. Refer to documentation for the maximum file size.\"\n}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "azure_document_intelligence",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.009123987222610097,
+        "chrf++": 0.8651560326650302
+      },
+      "error": null,
+      "parse_time_seconds": 0.002670764923095703
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "azure_document_intelligence",
+      "success": false,
+      "metrics": {},
+      "error": "Invalid PDF file: (InvalidRequest) Invalid request.\nCode: InvalidRequest\nMessage: Invalid request.\nInner error: {\n    \"code\": \"InvalidContentLength\",\n    \"message\": \"The input image is too large. Refer to documentation for the maximum file size.\"\n}",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486590038314177,
+        "chrf++": 98.03191503564351
+      },
+      "error": null,
+      "parse_time_seconds": 1.9154119491577148
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9397849462365592,
+        "chrf++": 95.1603543552051
+      },
+      "error": null,
+      "parse_time_seconds": 2.043649673461914
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9170470331414964,
+        "chrf++": 97.71887378503881
+      },
+      "error": null,
+      "parse_time_seconds": 2.110912561416626
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9354391371340524,
+        "chrf++": 96.11692878168024
+      },
+      "error": null,
+      "parse_time_seconds": 2.669579029083252
+    },
+    {
+      "document_id": "cuad_000",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9530560806553245,
+        "chrf++": 96.84975267271231
+      },
+      "error": null,
+      "parse_time_seconds": 2.376488447189331
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 30. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"30\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 18. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"18\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 96 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"96\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9696535839895422,
+        "chrf++": 97.3622496530227
+      },
+      "error": null,
+      "parse_time_seconds": 5.607602834701538
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 63 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"63\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9507469309273776,
+        "chrf++": 96.69505371596533
+      },
+      "error": null,
+      "parse_time_seconds": 2.3589682579040527
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 82 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"82\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 19. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"19\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 16. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"16\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3445575567736884,
+        "chrf++": 64.0278150039959
+      },
+      "error": null,
+      "parse_time_seconds": 2.246025562286377
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.30678148546824546,
+        "chrf++": 71.0980099237552
+      },
+      "error": null,
+      "parse_time_seconds": 1.9509663581848145
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43512195121951225,
+        "chrf++": 69.70565785750634
+      },
+      "error": null,
+      "parse_time_seconds": 2.1949622631073
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2178770949720671,
+        "chrf++": 69.55915324049272
+      },
+      "error": null,
+      "parse_time_seconds": 1.9263498783111572
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.288135593220339,
+        "chrf++": 66.07368274695193
+      },
+      "error": null,
+      "parse_time_seconds": 1.9324004650115967
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44234404536862004,
+        "chrf++": 71.41808735116997
+      },
+      "error": null,
+      "parse_time_seconds": 2.053626775741577
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.33798604187437686,
+        "chrf++": 70.53208611222281
+      },
+      "error": null,
+      "parse_time_seconds": 1.848262071609497
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43742405832320774,
+        "chrf++": 72.23771148485325
+      },
+      "error": null,
+      "parse_time_seconds": 1.911865472793579
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.1554959785522788,
+        "chrf++": 76.62630514131324
+      },
+      "error": null,
+      "parse_time_seconds": 2.1530556678771973
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.394475138121547,
+        "chrf++": 68.38390693014976
+      },
+      "error": null,
+      "parse_time_seconds": 1.9496707916259766
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9175118323191346,
+        "chrf++": 93.19039021593456
+      },
+      "error": null,
+      "parse_time_seconds": 2.2789487838745117
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9170993423329872,
+        "chrf++": 93.2982680023569
+      },
+      "error": null,
+      "parse_time_seconds": 2.275219202041626
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9526963103122044,
+        "chrf++": 93.67277802464162
+      },
+      "error": null,
+      "parse_time_seconds": 1.812124252319336
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9608150470219435,
+        "chrf++": 95.47261768412176
+      },
+      "error": null,
+      "parse_time_seconds": 2.166530132293701
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683646112600536,
+        "chrf++": 95.47597340795666
+      },
+      "error": null,
+      "parse_time_seconds": 2.1432249546051025
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.966321243523316,
+        "chrf++": 95.55219887323368
+      },
+      "error": null,
+      "parse_time_seconds": 2.0329577922821045
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 27. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"27\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2005881558613033,
+        "chrf++": 22.09149924215104
+      },
+      "error": null,
+      "parse_time_seconds": 4.003320693969727
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 100 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"100\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 76 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"76\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 144 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"144\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    }
+  ],
+  "summary": {
+    "total_documents": 35,
+    "total_parsers": 3,
+    "total_results": 105,
+    "success_count": 92,
+    "failure_count": 13
+  }
+}

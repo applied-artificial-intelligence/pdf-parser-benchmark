@@ -1,0 +1,83 @@
+{
+  "reason": "Stefan reported machine impact and challenged continuation; stop owned work and hold scheduled launch",
+  "orphan_servers_terminated": [
+    {
+      "pid": 2603041,
+      "command": [
+        "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
+        "-I",
+        "-m",
+        "pdfsmith.backends._process",
+        "--marker-server",
+        "surya.fast_layout.server",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "37091",
+        "--checkpoint",
+        "hf://datalab-to/surya_layout2",
+        ""
+      ],
+      "reason": "Orphan from this benchmark retained after prior parent termination"
+    },
+    {
+      "pid": 2603087,
+      "command": [
+        "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
+        "-I",
+        "-m",
+        "pdfsmith.backends._process",
+        "--marker-server",
+        "surya.fast_layout.server",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "33223",
+        "--checkpoint",
+        "hf://datalab-to/surya_layout2",
+        ""
+      ],
+      "reason": "Orphan from this benchmark retained after prior parent termination"
+    },
+    {
+      "pid": 2619429,
+      "command": [
+        "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
+        "-I",
+        "-m",
+        "pdfsmith.backends._process",
+        "--marker-server",
+        "surya.ocr_error.server",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "45711",
+        "--checkpoint",
+        "s3://ocr_error_detection/2025_02_18",
+        ""
+      ],
+      "reason": "Orphan from this benchmark retained after prior parent termination"
+    },
+    {
+      "pid": 2621328,
+      "command": [
+        "/home/stefan/applied-ai/pdf-bench/data_exports/parsebench/marker-runtime/bin/python",
+        "-I",
+        "-m",
+        "pdfsmith.backends._process",
+        "--marker-server",
+        "surya.ocr_error.server",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "59741",
+        "--checkpoint",
+        "s3://ocr_error_detection/2025_02_18",
+        ""
+      ],
+      "reason": "Orphan from this benchmark retained after prior parent termination"
+    }
+  ],
+  "benchmark_service": "inactive",
+  "latest_focused_tests": "Finished before stop inspection: 16 passed in 26.38s; Mypy passed 53 modules"
+}

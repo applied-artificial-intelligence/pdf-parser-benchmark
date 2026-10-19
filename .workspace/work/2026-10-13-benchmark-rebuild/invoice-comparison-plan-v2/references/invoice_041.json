@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-90618",
+    "vendor": "Advanced Inc",
+    "due_date": "2025-09-27",
+    "grand_total": "279029.42",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "41.41",
+      "unit_price": "101.68",
+      "line_total": "4210.57"
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "29.43",
+      "unit_price": "2090.14",
+      "line_total": "61512.82"
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "77.68",
+      "unit_price": "4.06",
+      "line_total": "315.38"
+    },
+    {
+      "description": "Powder Coating (sq ft)",
+      "quantity": "74.46",
+      "unit_price": "4.97",
+      "line_total": "370.07"
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "59.93",
+      "unit_price": "92.09",
+      "line_total": "5518.95"
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "53.56",
+      "unit_price": "2898.33",
+      "line_total": "155234.55"
+    },
+    {
+      "description": "Powder Coating (sq ft)",
+      "quantity": "97.71",
+      "unit_price": "5.31",
+      "line_total": "518.84"
+    },
+    {
+      "description": "Powder Coating (sq ft)",
+      "quantity": "90.36",
+      "unit_price": "3.16",
+      "line_total": "285.54"
+    },
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "40.21",
+      "unit_price": "113.35",
+      "line_total": "4557.8"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-90618",
+    "vendor": "Advanced Inc",
+    "due_date": "September 27, 2025",
+    "grand_total": "$279,029.42",
+    "records": [
+      {
+        "description": "Quality Inspection (hour)",
+        "quantity": "41.41",
+        "unit_price": "$101.68",
+        "line_total": "$4,210.57"
+      },
+      {
+        "description": "Custom Tooling (each)",
+        "quantity": "29.43",
+        "unit_price": "$2,090.14",
+        "line_total": "$61,512.82"
+      },
+      {
+        "description": "Steel Plate - 1/4 inch (sq ft)",
+        "quantity": "77.68",
+        "unit_price": "$4.06",
+        "line_total": "$315.38"
+      },
+      {
+        "description": "Powder Coating (sq ft)",
+        "quantity": "74.46",
+        "unit_price": "$4.97",
+        "line_total": "$370.07"
+      },
+      {
+        "description": "Quality Inspection (hour)",
+        "quantity": "59.93",
+        "unit_price": "$92.09",
+        "line_total": "$5,518.95"
+      },
+      {
+        "description": "Custom Tooling (each)",
+        "quantity": "53.56",
+        "unit_price": "$2,898.33",
+        "line_total": "$155,234.55"
+      },
+      {
+        "description": "Powder Coating (sq ft)",
+        "quantity": "97.71",
+        "unit_price": "$5.31",
+        "line_total": "$518.84"
+      },
+      {
+        "description": "Powder Coating (sq ft)",
+        "quantity": "90.36",
+        "unit_price": "$3.16",
+        "line_total": "$285.54"
+      },
+      {
+        "description": "Quality Inspection (hour)",
+        "quantity": "40.21",
+        "unit_price": "$113.35",
+        "line_total": "$4,557.80"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_041"
+}

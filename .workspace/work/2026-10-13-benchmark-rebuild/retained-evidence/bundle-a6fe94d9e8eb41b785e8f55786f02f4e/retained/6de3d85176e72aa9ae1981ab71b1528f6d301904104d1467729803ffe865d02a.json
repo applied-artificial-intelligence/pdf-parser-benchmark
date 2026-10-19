@@ -1,0 +1,2987 @@
+{
+  "benchmark": {
+    "name": "PyPDF2 Gap Fill",
+    "timestamp": "2025-11-24T15:43:45.302998+00:00",
+    "config_file": "benchmarks/pypdf2_gap_fill.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pypdf2": "3.0.1"
+    }
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2731476666874658,
+        "character_error_rate": 0.7268523333125342,
+        "chrf++": 32.02509651392902
+      },
+      "error": null,
+      "parse_time_seconds": 0.002137422561645508
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2005731518852496,
+        "character_error_rate": 0.7994268481147504,
+        "chrf++": 21.49537697198124
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012922286987304688
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.26087996895315424,
+        "character_error_rate": 0.7391200310468458,
+        "chrf++": 29.33402403522718
+      },
+      "error": null,
+      "parse_time_seconds": 0.005627155303955078
+    },
+    {
+      "document_id": "arxiv-2303.17564",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.38410018827611014,
+        "character_error_rate": 0.6158998117238899,
+        "chrf++": 45.98247050293133
+      },
+      "error": null,
+      "parse_time_seconds": 0.0030062198638916016
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3582668337400251,
+        "character_error_rate": 0.6417331662599749,
+        "chrf++": 54.798862162912044
+      },
+      "error": null,
+      "parse_time_seconds": 0.008766412734985352
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.958656330749354,
+        "character_error_rate": 0.041343669250646,
+        "chrf++": 93.60614212515028
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007605552673339844
+    },
+    {
+      "document_id": "invoice_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9603267211201867,
+        "character_error_rate": 0.039673278879813305,
+        "chrf++": 95.77470064179627
+      },
+      "error": null,
+      "parse_time_seconds": 0.00048279762268066406
+    },
+    {
+      "document_id": "invoice_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9785894206549118,
+        "character_error_rate": 0.021410579345088162,
+        "chrf++": 96.69480661909363
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004086494445800781
+    },
+    {
+      "document_id": "invoice_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9663394109396914,
+        "character_error_rate": 0.033660589060308554,
+        "chrf++": 95.76672509031134
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016582012176513672
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9663526244952894,
+        "character_error_rate": 0.033647375504710635,
+        "chrf++": 97.78892924833977
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004684925079345703
+    },
+    {
+      "document_id": "invoice_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9754959159859977,
+        "character_error_rate": 0.024504084014002333,
+        "chrf++": 96.07904787374697
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003001689910888672
+    },
+    {
+      "document_id": "invoice_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9597069597069597,
+        "character_error_rate": 0.040293040293040296,
+        "chrf++": 94.99366008242954
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002448558807373047
+    },
+    {
+      "document_id": "invoice_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9678362573099415,
+        "character_error_rate": 0.03216374269005848,
+        "chrf++": 97.60388740821281
+      },
+      "error": null,
+      "parse_time_seconds": 0.00022149085998535156
+    },
+    {
+      "document_id": "invoice_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9760820045558086,
+        "character_error_rate": 0.023917995444191344,
+        "chrf++": 96.05302745627287
+      },
+      "error": null,
+      "parse_time_seconds": 0.00025653839111328125
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9621301775147929,
+        "character_error_rate": 0.0378698224852071,
+        "chrf++": 95.95258156326152
+      },
+      "error": null,
+      "parse_time_seconds": 0.00022268295288085938
+    },
+    {
+      "document_id": "invoice_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9620563035495716,
+        "character_error_rate": 0.037943696450428395,
+        "chrf++": 96.9248893460867
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002903938293457031
+    },
+    {
+      "document_id": "invoice_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9756662804171494,
+        "character_error_rate": 0.02433371958285052,
+        "chrf++": 96.33447261467919
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015196800231933594
+    },
+    {
+      "document_id": "invoice_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9662650602409638,
+        "character_error_rate": 0.033734939759036145,
+        "chrf++": 95.2566906191742
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004918575286865234
+    },
+    {
+      "document_id": "invoice_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9647887323943662,
+        "character_error_rate": 0.035211267605633804,
+        "chrf++": 96.90034857199295
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004258155822753906
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9817275747508306,
+        "character_error_rate": 0.018272425249169437,
+        "chrf++": 97.35349757424667
+      },
+      "error": null,
+      "parse_time_seconds": 0.00030994415283203125
+    },
+    {
+      "document_id": "invoice_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9567354965585054,
+        "character_error_rate": 0.043264503441494594,
+        "chrf++": 94.44592150412436
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037384033203125
+    },
+    {
+      "document_id": "invoice_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9620098039215687,
+        "character_error_rate": 0.03799019607843137,
+        "chrf++": 96.32785387852661
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003542900085449219
+    },
+    {
+      "document_id": "invoice_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9769647696476965,
+        "character_error_rate": 0.023035230352303523,
+        "chrf++": 96.3652507724717
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003407001495361328
+    },
+    {
+      "document_id": "invoice_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956989247311828,
+        "character_error_rate": 0.043010752688172046,
+        "chrf++": 94.75710185769081
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004572868347167969
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9601722282023681,
+        "character_error_rate": 0.03982777179763186,
+        "chrf++": 95.92858492073648
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012807846069335938
+    },
+    {
+      "document_id": "invoice_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759174311926605,
+        "character_error_rate": 0.02408256880733945,
+        "chrf++": 95.97285100321696
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005042552947998047
+    },
+    {
+      "document_id": "invoice_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9670588235294117,
+        "character_error_rate": 0.03294117647058824,
+        "chrf++": 95.95258156326152
+      },
+      "error": null,
+      "parse_time_seconds": 0.001222848892211914
+    },
+    {
+      "document_id": "invoice_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9654088050314465,
+        "character_error_rate": 0.03459119496855346,
+        "chrf++": 97.09907125325732
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004115104675292969
+    },
+    {
+      "document_id": "invoice_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9776902887139107,
+        "character_error_rate": 0.02230971128608924,
+        "chrf++": 96.41949566860045
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003139972686767578
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9661016949152542,
+        "character_error_rate": 0.03389830508474576,
+        "chrf++": 96.35972387769195
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011854171752929688
+    },
+    {
+      "document_id": "invoice_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.968299711815562,
+        "character_error_rate": 0.03170028818443804,
+        "chrf++": 97.46909664428551
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003902912139892578
+    },
+    {
+      "document_id": "invoice_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.982484076433121,
+        "character_error_rate": 0.01751592356687898,
+        "chrf++": 97.46996483880659
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042557716369628906
+    },
+    {
+      "document_id": "invoice_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9563318777292577,
+        "character_error_rate": 0.043668122270742356,
+        "chrf++": 95.16005238501765
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011260509490966797
+    },
+    {
+      "document_id": "invoice_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9592061742006616,
+        "character_error_rate": 0.040793825799338476,
+        "chrf++": 96.32971434668528
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005917549133300781
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.975,
+        "character_error_rate": 0.025,
+        "chrf++": 96.21374959858713
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007452964782714844
+    },
+    {
+      "document_id": "invoice_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9573964497041421,
+        "character_error_rate": 0.04260355029585799,
+        "chrf++": 95.31060854121245
+      },
+      "error": null,
+      "parse_time_seconds": 0.000347137451171875
+    },
+    {
+      "document_id": "invoice_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9676945668135095,
+        "character_error_rate": 0.032305433186490456,
+        "chrf++": 97.26054157093532
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004229545593261719
+    },
+    {
+      "document_id": "invoice_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.976551724137931,
+        "character_error_rate": 0.023448275862068966,
+        "chrf++": 96.83886810225883
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005180835723876953
+    },
+    {
+      "document_id": "invoice_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9563794983642312,
+        "character_error_rate": 0.04362050163576881,
+        "chrf++": 97.32840409652249
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003790855407714844
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9652448657187994,
+        "character_error_rate": 0.03475513428120063,
+        "chrf++": 97.13998559392131
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005404949188232422
+    },
+    {
+      "document_id": "invoice_036",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9743589743589743,
+        "character_error_rate": 0.02564102564102564,
+        "chrf++": 96.80136886756782
+      },
+      "error": null,
+      "parse_time_seconds": 0.00121307373046875
+    },
+    {
+      "document_id": "invoice_037",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9601328903654485,
+        "character_error_rate": 0.03986710963455149,
+        "chrf++": 95.16126842675948
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005011558532714844
+    },
+    {
+      "document_id": "invoice_038",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9591160220994475,
+        "character_error_rate": 0.04088397790055249,
+        "chrf++": 96.19288008113267
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008020401000976562
+    },
+    {
+      "document_id": "invoice_039",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.981418918918919,
+        "character_error_rate": 0.018581081081081082,
+        "chrf++": 97.35349757424667
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003669261932373047
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.955703211517165,
+        "character_error_rate": 0.044296788482835,
+        "chrf++": 94.38063936891126
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004124641418457031
+    },
+    {
+      "document_id": "invoice_041",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9582863585118376,
+        "character_error_rate": 0.04171364148816235,
+        "chrf++": 95.65940613433645
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041675567626953125
+    },
+    {
+      "document_id": "invoice_042",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9776315789473684,
+        "character_error_rate": 0.02236842105263158,
+        "chrf++": 96.38283715781606
+      },
+      "error": null,
+      "parse_time_seconds": 0.00034427642822265625
+    },
+    {
+      "document_id": "invoice_043",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9669876203576341,
+        "character_error_rate": 0.033012379642365884,
+        "chrf++": 95.73195873455495
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044918060302734375
+    },
+    {
+      "document_id": "invoice_044",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9669669669669669,
+        "character_error_rate": 0.03303303303303303,
+        "chrf++": 97.64098101735784
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011272430419921875
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9805996472663139,
+        "character_error_rate": 0.019400352733686066,
+        "chrf++": 97.02968001105717
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004949569702148438
+    },
+    {
+      "document_id": "invoice_046",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9499478623566214,
+        "character_error_rate": 0.05005213764337852,
+        "chrf++": 95.57493563026796
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004165172576904297
+    },
+    {
+      "document_id": "invoice_047",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9633507853403142,
+        "character_error_rate": 0.03664921465968586,
+        "chrf++": 96.88889712124306
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036144256591796875
+    },
+    {
+      "document_id": "invoice_048",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9782293178519593,
+        "character_error_rate": 0.02177068214804064,
+        "chrf++": 96.56936437343956
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003883838653564453
+    },
+    {
+      "document_id": "invoice_049",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683794466403162,
+        "character_error_rate": 0.03162055335968379,
+        "chrf++": 97.41822157076444
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003936290740966797
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9581151832460733,
+        "character_error_rate": 0.041884816753926704,
+        "chrf++": 95.56093163516086
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003631114959716797
+    },
+    {
+      "document_id": "invoice_051",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9669421487603306,
+        "character_error_rate": 0.03305785123966942,
+        "chrf++": 96.00552481347027
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003833770751953125
+    },
+    {
+      "document_id": "invoice_052",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9665327978580991,
+        "character_error_rate": 0.03346720214190094,
+        "chrf++": 96.88889712124306
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011050701141357422
+    },
+    {
+      "document_id": "invoice_053",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9779507133592736,
+        "character_error_rate": 0.02204928664072633,
+        "chrf++": 97.17208482819633
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005159378051757812
+    },
+    {
+      "document_id": "invoice_054",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595959595959596,
+        "character_error_rate": 0.04040404040404041,
+        "chrf++": 94.02268282923023
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003714561462402344
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9605133267522211,
+        "character_error_rate": 0.039486673247778874,
+        "chrf++": 95.30560756825672
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002598762512207031
+    },
+    {
+      "document_id": "invoice_056",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9802110817941952,
+        "character_error_rate": 0.01978891820580475,
+        "chrf++": 96.78012592002776
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002498626708984375
+    },
+    {
+      "document_id": "invoice_057",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9582898852971846,
+        "character_error_rate": 0.04171011470281543,
+        "chrf++": 95.64394987804002
+      },
+      "error": null,
+      "parse_time_seconds": 0.00023674964904785156
+    },
+    {
+      "document_id": "invoice_058",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9609292502639916,
+        "character_error_rate": 0.03907074973600845,
+        "chrf++": 95.80826112226408
+      },
+      "error": null,
+      "parse_time_seconds": 0.00023484230041503906
+    },
+    {
+      "document_id": "invoice_059",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.975609756097561,
+        "character_error_rate": 0.024390243902439025,
+        "chrf++": 96.11275320090807
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029730796813964844
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.960482985729967,
+        "character_error_rate": 0.03951701427003293,
+        "chrf++": 95.44017004649518
+      },
+      "error": null,
+      "parse_time_seconds": 0.00026702880859375
+    },
+    {
+      "document_id": "invoice_061",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9626783754116356,
+        "character_error_rate": 0.03732162458836443,
+        "chrf++": 96.37370261437795
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003199577331542969
+    },
+    {
+      "document_id": "invoice_062",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9778933680104032,
+        "character_error_rate": 0.022106631989596878,
+        "chrf++": 96.64481620840519
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029158592224121094
+    },
+    {
+      "document_id": "invoice_063",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9631336405529954,
+        "character_error_rate": 0.03686635944700461,
+        "chrf++": 96.66566375840702
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002467632293701172
+    },
+    {
+      "document_id": "invoice_064",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9614181438998958,
+        "character_error_rate": 0.03858185610010428,
+        "chrf++": 96.04988637426474
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004546642303466797
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759450171821306,
+        "character_error_rate": 0.024054982817869417,
+        "chrf++": 96.99696139944594
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004982948303222656
+    },
+    {
+      "document_id": "invoice_066",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683377308707124,
+        "character_error_rate": 0.0316622691292876,
+        "chrf++": 97.3037711635915
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004184246063232422
+    },
+    {
+      "document_id": "invoice_067",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.963226571767497,
+        "character_error_rate": 0.036773428232502965,
+        "chrf++": 96.64228874409517
+      },
+      "error": null,
+      "parse_time_seconds": 0.00033473968505859375
+    },
+    {
+      "document_id": "invoice_068",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9825949367088608,
+        "character_error_rate": 0.01740506329113924,
+        "chrf++": 97.46996483880659
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003020763397216797
+    },
+    {
+      "document_id": "invoice_069",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9520958083832335,
+        "character_error_rate": 0.04790419161676647,
+        "chrf++": 95.68335199019549
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004379749298095703
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624664879356568,
+        "character_error_rate": 0.03753351206434316,
+        "chrf++": 97.11949041093149
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045371055603027344
+    },
+    {
+      "document_id": "invoice_071",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9760416666666667,
+        "character_error_rate": 0.023958333333333335,
+        "chrf++": 95.96386523216538
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002827644348144531
+    },
+    {
+      "document_id": "invoice_072",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.959349593495935,
+        "character_error_rate": 0.04065040650406504,
+        "chrf++": 94.95214194226904
+      },
+      "error": null,
+      "parse_time_seconds": 0.00028324127197265625
+    },
+    {
+      "document_id": "invoice_073",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9623329283110571,
+        "character_error_rate": 0.03766707168894289,
+        "chrf++": 96.82433521742134
+      },
+      "error": null,
+      "parse_time_seconds": 0.00039839744567871094
+    },
+    {
+      "document_id": "invoice_074",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9761006289308176,
+        "character_error_rate": 0.02389937106918239,
+        "chrf++": 96.43153041210117
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002636909484863281
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.963677639046538,
+        "character_error_rate": 0.036322360953461974,
+        "chrf++": 95.02179000160776
+      },
+      "error": null,
+      "parse_time_seconds": 0.00023508071899414062
+    },
+    {
+      "document_id": "invoice_076",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9642857142857143,
+        "character_error_rate": 0.03571428571428571,
+        "chrf++": 96.70926408544537
+      },
+      "error": null,
+      "parse_time_seconds": 0.000278472900390625
+    },
+    {
+      "document_id": "invoice_077",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9804216867469879,
+        "character_error_rate": 0.01957831325301205,
+        "chrf++": 97.2060740627112
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003490447998046875
+    },
+    {
+      "document_id": "invoice_078",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578454332552693,
+        "character_error_rate": 0.04215456674473068,
+        "chrf++": 97.33856497821897
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002796649932861328
+    },
+    {
+      "document_id": "invoice_079",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9676945668135095,
+        "character_error_rate": 0.032305433186490456,
+        "chrf++": 97.12435316921542
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002765655517578125
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9786324786324786,
+        "character_error_rate": 0.021367521367521368,
+        "chrf++": 96.6824999183218
+      },
+      "error": null,
+      "parse_time_seconds": 0.00027108192443847656
+    },
+    {
+      "document_id": "invoice_081",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9627473806752037,
+        "character_error_rate": 0.037252619324796274,
+        "chrf++": 97.4716497306749
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032258033752441406
+    },
+    {
+      "document_id": "invoice_082",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.962378640776699,
+        "character_error_rate": 0.03762135922330097,
+        "chrf++": 96.99388719396617
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002357959747314453
+    },
+    {
+      "document_id": "invoice_083",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9737742303306728,
+        "character_error_rate": 0.026225769669327253,
+        "chrf++": 95.88505885505701
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003235340118408203
+    },
+    {
+      "document_id": "invoice_084",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.960741548527808,
+        "character_error_rate": 0.03925845147219193,
+        "chrf++": 94.97021024891019
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035834312438964844
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9631391200951248,
+        "character_error_rate": 0.036860879904875146,
+        "chrf++": 96.68723787900122
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003859996795654297
+    },
+    {
+      "document_id": "invoice_086",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9558676028084253,
+        "character_error_rate": 0.044132397191574725,
+        "chrf++": 96.82166659481503
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041747093200683594
+    },
+    {
+      "document_id": "invoice_087",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9580272822665268,
+        "character_error_rate": 0.04197271773347324,
+        "chrf++": 95.65515509587526
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004153251647949219
+    },
+    {
+      "document_id": "invoice_088",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9737742303306728,
+        "character_error_rate": 0.026225769669327253,
+        "chrf++": 96.25104358779949
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041222572326660156
+    },
+    {
+      "document_id": "invoice_089",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.969735182849937,
+        "character_error_rate": 0.03026481715006305,
+        "chrf++": 97.03246680334672
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037026405334472656
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.966142684401451,
+        "character_error_rate": 0.03385731559854897,
+        "chrf++": 96.34470316982527
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003731250762939453
+    },
+    {
+      "document_id": "invoice_091",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9777777777777777,
+        "character_error_rate": 0.022222222222222223,
+        "chrf++": 97.2060740627112
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003173351287841797
+    },
+    {
+      "document_id": "invoice_092",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9577167019027484,
+        "character_error_rate": 0.042283298097251586,
+        "chrf++": 96.57775279466071
+      },
+      "error": null,
+      "parse_time_seconds": 0.00063323974609375
+    },
+    {
+      "document_id": "invoice_093",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.963963963963964,
+        "character_error_rate": 0.036036036036036036,
+        "chrf++": 98.38132176382987
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042510032653808594
+    },
+    {
+      "document_id": "invoice_094",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9798927613941019,
+        "character_error_rate": 0.020107238605898123,
+        "chrf++": 96.57100387081098
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003972053527832031
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9607843137254902,
+        "character_error_rate": 0.0392156862745098,
+        "chrf++": 95.90234185504765
+      },
+      "error": null,
+      "parse_time_seconds": 0.00025343894958496094
+    },
+    {
+      "document_id": "invoice_096",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.960233918128655,
+        "character_error_rate": 0.03976608187134503,
+        "chrf++": 96.27124150005216
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002288818359375
+    },
+    {
+      "document_id": "invoice_097",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9759450171821306,
+        "character_error_rate": 0.024054982817869417,
+        "chrf++": 96.7251752298013
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029754638671875
+    },
+    {
+      "document_id": "invoice_098",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9565610859728507,
+        "character_error_rate": 0.04343891402714932,
+        "chrf++": 94.27381657990574
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002319812774658203
+    },
+    {
+      "document_id": "invoice_099",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9653543307086614,
+        "character_error_rate": 0.03464566929133858,
+        "chrf++": 97.3230104583287
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003306865692138672
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9782923299565847,
+        "character_error_rate": 0.02170767004341534,
+        "chrf++": 96.75539173475946
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005254745483398438
+    },
+    {
+      "document_id": "legal_cons_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988695242581253,
+        "character_error_rate": 0.011304757418747056,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046324729919433594
+    },
+    {
+      "document_id": "legal_cons_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879866518353726,
+        "character_error_rate": 0.012013348164627364,
+        "chrf++": 99.86926670850741
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005955696105957031
+    },
+    {
+      "document_id": "legal_cons_081",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883692755027865,
+        "character_error_rate": 0.011630724497213472,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006530284881591797
+    },
+    {
+      "document_id": "legal_cons_082",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887392900856793,
+        "character_error_rate": 0.011260709914320686,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007193088531494141
+    },
+    {
+      "document_id": "legal_cons_083",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888077858880778,
+        "character_error_rate": 0.01119221411192214,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005393028259277344
+    },
+    {
+      "document_id": "legal_cons_084",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886170985710826,
+        "character_error_rate": 0.011382901428917413,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005087852478027344
+    },
+    {
+      "document_id": "legal_cons_085",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887118193891102,
+        "character_error_rate": 0.011288180610889775,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005686283111572266
+    },
+    {
+      "document_id": "legal_cons_086",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882573978393612,
+        "character_error_rate": 0.011742602160638797,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00031828880310058594
+    },
+    {
+      "document_id": "legal_cons_087",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888164026095061,
+        "character_error_rate": 0.011183597390493943,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006761550903320312
+    },
+    {
+      "document_id": "legal_cons_088",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886903415516851,
+        "character_error_rate": 0.011309658448314861,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006213188171386719
+    },
+    {
+      "document_id": "legal_cons_089",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887100648570742,
+        "character_error_rate": 0.011289935142925775,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007345676422119141
+    },
+    {
+      "document_id": "legal_cons_090",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887122782768947,
+        "character_error_rate": 0.011287721723105276,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.000507354736328125
+    },
+    {
+      "document_id": "legal_emp_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883419689119171,
+        "character_error_rate": 0.011658031088082901,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004470348358154297
+    },
+    {
+      "document_id": "legal_emp_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883189436262062,
+        "character_error_rate": 0.011681056373793804,
+        "chrf++": 99.83861912470954
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005068778991699219
+    },
+    {
+      "document_id": "legal_emp_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885803270179081,
+        "character_error_rate": 0.011419672982091877,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006000995635986328
+    },
+    {
+      "document_id": "legal_emp_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883630721489527,
+        "character_error_rate": 0.011636927851047323,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035309791564941406
+    },
+    {
+      "document_id": "legal_emp_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886475814412635,
+        "character_error_rate": 0.011352418558736426,
+        "chrf++": 99.92096764670659
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006287097930908203
+    },
+    {
+      "document_id": "legal_emp_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885685884691849,
+        "character_error_rate": 0.01143141153081511,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006604194641113281
+    },
+    {
+      "document_id": "legal_emp_035",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882443138257092,
+        "character_error_rate": 0.011755686174290826,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004742145538330078
+    },
+    {
+      "document_id": "legal_emp_036",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881565396498455,
+        "character_error_rate": 0.01184346035015448,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004963874816894531
+    },
+    {
+      "document_id": "legal_emp_037",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.98820815175596,
+        "character_error_rate": 0.01179184824403999,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003936290740966797
+    },
+    {
+      "document_id": "legal_emp_038",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883691529709229,
+        "character_error_rate": 0.011630847029077117,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004279613494873047
+    },
+    {
+      "document_id": "legal_emp_039",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884635553224961,
+        "character_error_rate": 0.011536444677503933,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008296966552734375
+    },
+    {
+      "document_id": "legal_emp_040",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887503056982148,
+        "character_error_rate": 0.011249694301785278,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003383159637451172
+    },
+    {
+      "document_id": "legal_emp_041",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883664566165778,
+        "character_error_rate": 0.0116335433834222,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006318092346191406
+    },
+    {
+      "document_id": "legal_emp_042",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884480160723255,
+        "character_error_rate": 0.011551983927674536,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005290508270263672
+    },
+    {
+      "document_id": "legal_emp_043",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887266205482962,
+        "character_error_rate": 0.011273379451703817,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005114078521728516
+    },
+    {
+      "document_id": "legal_emp_044",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886069394096323,
+        "character_error_rate": 0.011393060590367685,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046539306640625
+    },
+    {
+      "document_id": "legal_emp_045",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884798397195091,
+        "character_error_rate": 0.01152016028049086,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004019737243652344
+    },
+    {
+      "document_id": "legal_emp_046",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886246122026887,
+        "character_error_rate": 0.011375387797311272,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006854534149169922
+    },
+    {
+      "document_id": "legal_emp_047",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883813044626353,
+        "character_error_rate": 0.011618695537364668,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007996559143066406
+    },
+    {
+      "document_id": "legal_emp_048",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886583011583011,
+        "character_error_rate": 0.011341698841698842,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004100799560546875
+    },
+    {
+      "document_id": "legal_emp_049",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883544303797468,
+        "character_error_rate": 0.011645569620253165,
+        "chrf++": 99.91935752990814
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004546642303466797
+    },
+    {
+      "document_id": "legal_emp_050",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882291394193042,
+        "character_error_rate": 0.01177086058069579,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040721893310546875
+    },
+    {
+      "document_id": "legal_emp_051",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885714285714285,
+        "character_error_rate": 0.011428571428571429,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037360191345214844
+    },
+    {
+      "document_id": "legal_emp_052",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988353626257279,
+        "character_error_rate": 0.011646373742721016,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.000453948974609375
+    },
+    {
+      "document_id": "legal_emp_053",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884364002011061,
+        "character_error_rate": 0.011563599798893917,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003924369812011719
+    },
+    {
+      "document_id": "legal_emp_054",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885327078446703,
+        "character_error_rate": 0.011467292155329685,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047516822814941406
+    },
+    {
+      "document_id": "legal_emp_055",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883567081238422,
+        "character_error_rate": 0.011643291876157714,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003619194030761719
+    },
+    {
+      "document_id": "legal_emp_056",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885001223391241,
+        "character_error_rate": 0.011499877660875948,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003578662872314453
+    },
+    {
+      "document_id": "legal_emp_057",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886894516842881,
+        "character_error_rate": 0.011310548315711827,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040340423583984375
+    },
+    {
+      "document_id": "legal_emp_058",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881534895699202,
+        "character_error_rate": 0.011846510430079836,
+        "chrf++": 99.92003631769933
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005671977996826172
+    },
+    {
+      "document_id": "legal_emp_059",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887310142087212,
+        "character_error_rate": 0.011268985791278784,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004642009735107422
+    },
+    {
+      "document_id": "legal_emp_060",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879839786381842,
+        "character_error_rate": 0.012016021361815754,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005662441253662109
+    },
+    {
+      "document_id": "legal_nda_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888408107492599,
+        "character_error_rate": 0.01115918925074015,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005583763122558594
+    },
+    {
+      "document_id": "legal_nda_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887158654931166,
+        "character_error_rate": 0.011284134506883321,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005202293395996094
+    },
+    {
+      "document_id": "legal_nda_061",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888712241653418,
+        "character_error_rate": 0.011128775834658187,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006313323974609375
+    },
+    {
+      "document_id": "legal_nda_062",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9889233495790872,
+        "character_error_rate": 0.011076650420912717,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044417381286621094
+    },
+    {
+      "document_id": "legal_nda_063",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886569872958257,
+        "character_error_rate": 0.011343012704174229,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005218982696533203
+    },
+    {
+      "document_id": "legal_nda_064",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887209564628919,
+        "character_error_rate": 0.011279043537108053,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005979537963867188
+    },
+    {
+      "document_id": "legal_nda_065",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886621315192744,
+        "character_error_rate": 0.011337868480725623,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00055694580078125
+    },
+    {
+      "document_id": "legal_nda_066",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887917507285362,
+        "character_error_rate": 0.011208249271463798,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006270408630371094
+    },
+    {
+      "document_id": "legal_nda_067",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887564650326063,
+        "character_error_rate": 0.011243534967393748,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006668567657470703
+    },
+    {
+      "document_id": "legal_nda_068",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988881325164511,
+        "character_error_rate": 0.011118674835488994,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005700588226318359
+    },
+    {
+      "document_id": "legal_nda_069",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888255416191563,
+        "character_error_rate": 0.011174458380843785,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007944107055664062
+    },
+    {
+      "document_id": "legal_nda_070",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888492417484389,
+        "character_error_rate": 0.011150758251561105,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003943443298339844
+    },
+    {
+      "document_id": "legal_nda_071",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888017917133258,
+        "character_error_rate": 0.011198208286674132,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005068778991699219
+    },
+    {
+      "document_id": "legal_nda_072",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988828089375285,
+        "character_error_rate": 0.011171910624715002,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006406307220458984
+    },
+    {
+      "document_id": "legal_nda_073",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887539361223572,
+        "character_error_rate": 0.011246063877642825,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006661415100097656
+    },
+    {
+      "document_id": "legal_nda_074",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888509670079636,
+        "character_error_rate": 0.011149032992036406,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006268024444580078
+    },
+    {
+      "document_id": "legal_nda_075",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888168195034668,
+        "character_error_rate": 0.011183180496533215,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044727325439453125
+    },
+    {
+      "document_id": "legal_nda_076",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886928991406604,
+        "character_error_rate": 0.011307100859339666,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.000396728515625
+    },
+    {
+      "document_id": "legal_nda_077",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887892376681614,
+        "character_error_rate": 0.011210762331838564,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00054931640625
+    },
+    {
+      "document_id": "legal_nda_078",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9888318070136252,
+        "character_error_rate": 0.011168192986374805,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004048347473144531
+    },
+    {
+      "document_id": "legal_nda_079",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886260236578708,
+        "character_error_rate": 0.011373976342129208,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003857612609863281
+    },
+    {
+      "document_id": "legal_nda_080",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9887336638125281,
+        "character_error_rate": 0.011266336187471835,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004642009735107422
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883367139959433,
+        "character_error_rate": 0.011663286004056795,
+        "chrf++": 99.93360556690556
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006597042083740234
+    },
+    {
+      "document_id": "legal_saas_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883561643835617,
+        "character_error_rate": 0.011643835616438357,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004975795745849609
+    },
+    {
+      "document_id": "legal_saas_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882892057026477,
+        "character_error_rate": 0.011710794297352342,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005571842193603516
+    },
+    {
+      "document_id": "legal_saas_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884072580645161,
+        "character_error_rate": 0.011592741935483871,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003879070281982422
+    },
+    {
+      "document_id": "legal_saas_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885782475281282,
+        "character_error_rate": 0.011421752471871804,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008237361907958984
+    },
+    {
+      "document_id": "legal_saas_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988309953239813,
+        "character_error_rate": 0.01169004676018704,
+        "chrf++": 99.93412394378363
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005297660827636719
+    },
+    {
+      "document_id": "legal_saas_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883601506333447,
+        "character_error_rate": 0.011639849366655255,
+        "chrf++": 99.95113270311514
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006773471832275391
+    },
+    {
+      "document_id": "legal_saas_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885548343013324,
+        "character_error_rate": 0.011445165698667577,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005736351013183594
+    },
+    {
+      "document_id": "legal_saas_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885136293502486,
+        "character_error_rate": 0.011486370649751415,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006227493286132812
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885773624091381,
+        "character_error_rate": 0.01142263759086189,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006234645843505859
+    },
+    {
+      "document_id": "legal_saas_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882473173224323,
+        "character_error_rate": 0.011752682677567705,
+        "chrf++": 99.95202118203358
+      },
+      "error": null,
+      "parse_time_seconds": 0.001312255859375
+    },
+    {
+      "document_id": "legal_saas_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884595208952615,
+        "character_error_rate": 0.01154047910473859,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044727325439453125
+    },
+    {
+      "document_id": "legal_saas_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884776536312849,
+        "character_error_rate": 0.011522346368715084,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003802776336669922
+    },
+    {
+      "document_id": "legal_saas_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885840858749361,
+        "character_error_rate": 0.011415914125063894,
+        "chrf++": 99.95383958687619
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005230903625488281
+    },
+    {
+      "document_id": "legal_saas_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885411322045493,
+        "character_error_rate": 0.011458867795450658,
+        "chrf++": 99.95401832663879
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007090568542480469
+    },
+    {
+      "document_id": "legal_saas_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885733490169719,
+        "character_error_rate": 0.011426650983028062,
+        "chrf++": 99.93405958977397
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045943260192871094
+    },
+    {
+      "document_id": "legal_saas_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882593159775396,
+        "character_error_rate": 0.01174068402246044,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005383491516113281
+    },
+    {
+      "document_id": "legal_saas_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884939034861755,
+        "character_error_rate": 0.011506096513824489,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00041413307189941406
+    },
+    {
+      "document_id": "legal_saas_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883255503669113,
+        "character_error_rate": 0.011674449633088725,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005044937133789062
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885595423816953,
+        "character_error_rate": 0.011440457618304731,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005745887756347656
+    },
+    {
+      "document_id": "legal_saas_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988663967611336,
+        "character_error_rate": 0.011336032388663968,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004398822784423828
+    },
+    {
+      "document_id": "legal_saas_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885077485634686,
+        "character_error_rate": 0.01149225143653143,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004591941833496094
+    },
+    {
+      "document_id": "legal_saas_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884068153873178,
+        "character_error_rate": 0.011593184612682241,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007016658782958984
+    },
+    {
+      "document_id": "legal_saas_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885458167330677,
+        "character_error_rate": 0.011454183266932271,
+        "chrf++": 99.93418817230418
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005795955657958984
+    },
+    {
+      "document_id": "legal_saas_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9884736290604261,
+        "character_error_rate": 0.011526370939573873,
+        "chrf++": 99.95148210486352
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006237030029296875
+    },
+    {
+      "document_id": "legal_saas_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886324491904926,
+        "character_error_rate": 0.011367550809507406,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005004405975341797
+    },
+    {
+      "document_id": "legal_saas_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9886030608922175,
+        "character_error_rate": 0.011396939107782481,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007140636444091797
+    },
+    {
+      "document_id": "legal_saas_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988429172510519,
+        "character_error_rate": 0.011570827489481066,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008966922760009766
+    },
+    {
+      "document_id": "legal_saas_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885476314419573,
+        "character_error_rate": 0.011452368558042686,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004360675811767578
+    },
+    {
+      "document_id": "legal_saas_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9885863362139247,
+        "character_error_rate": 0.01141366378607533,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005445480346679688
+    },
+    {
+      "document_id": "legal_svc_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881456392887383,
+        "character_error_rate": 0.011854360711261643,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007693767547607422
+    },
+    {
+      "document_id": "legal_svc_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9883203559510567,
+        "character_error_rate": 0.01167964404894327,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006041526794433594
+    },
+    {
+      "document_id": "legal_svc_091",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881019830028328,
+        "character_error_rate": 0.01189801699716714,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007803440093994141
+    },
+    {
+      "document_id": "legal_svc_092",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881623449830891,
+        "character_error_rate": 0.011837655016910935,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006501674652099609
+    },
+    {
+      "document_id": "legal_svc_093",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9879247402415052,
+        "character_error_rate": 0.012075259758494805,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005867481231689453
+    },
+    {
+      "document_id": "legal_svc_094",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9881756756756757,
+        "character_error_rate": 0.011824324324324325,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006213188171386719
+    },
+    {
+      "document_id": "legal_svc_095",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880621876735147,
+        "character_error_rate": 0.011937812326485286,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005791187286376953
+    },
+    {
+      "document_id": "legal_svc_096",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882286995515696,
+        "character_error_rate": 0.011771300448430493,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006003379821777344
+    },
+    {
+      "document_id": "legal_svc_097",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9880721220527046,
+        "character_error_rate": 0.011927877947295423,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005359649658203125
+    },
+    {
+      "document_id": "legal_svc_098",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.988,
+        "character_error_rate": 0.012,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005321502685546875
+    },
+    {
+      "document_id": "legal_svc_099",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9882288529975363,
+        "character_error_rate": 0.011771147002463728,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010483264923095703
+    },
+    {
+      "document_id": "legal_svc_100",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9877743817727146,
+        "character_error_rate": 0.012225618227285358,
+        "chrf++": 100.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004949569702148438
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.956268221574344,
+        "character_error_rate": 0.043731778425655975,
+        "chrf++": 91.83302463363037
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004601478576660156
+    },
+    {
+      "document_id": "resume_002",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6512396694214876,
+        "character_error_rate": 0.3487603305785124,
+        "chrf++": 88.66856835506026
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004029273986816406
+    },
+    {
+      "document_id": "resume_003",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9693926351028216,
+        "character_error_rate": 0.030607364897178385,
+        "chrf++": 93.04787610699319
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004780292510986328
+    },
+    {
+      "document_id": "resume_004",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9675789473684211,
+        "character_error_rate": 0.03242105263157895,
+        "chrf++": 92.8939978833269
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042319297790527344
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6978319783197833,
+        "character_error_rate": 0.3021680216802168,
+        "chrf++": 87.70664758528682
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005707740783691406
+    },
+    {
+      "document_id": "resume_006",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9657236126224157,
+        "character_error_rate": 0.03427638737758433,
+        "chrf++": 92.73343392106308
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005354881286621094
+    },
+    {
+      "document_id": "resume_007",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.968098681412165,
+        "character_error_rate": 0.031901318587834966,
+        "chrf++": 92.53043643276577
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011265277862548828
+    },
+    {
+      "document_id": "resume_008",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7849944008958567,
+        "character_error_rate": 0.21500559910414332,
+        "chrf++": 91.74959762685528
+      },
+      "error": null,
+      "parse_time_seconds": 0.00047326087951660156
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9597107438016529,
+        "character_error_rate": 0.040289256198347105,
+        "chrf++": 92.34854070563986
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004892349243164062
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.967274678111588,
+        "character_error_rate": 0.03272532188841202,
+        "chrf++": 92.30222623105074
+      },
+      "error": null,
+      "parse_time_seconds": 0.00040721893310546875
+    },
+    {
+      "document_id": "resume_011",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9593998234774934,
+        "character_error_rate": 0.04060017652250662,
+        "chrf++": 92.58201962186543
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004553794860839844
+    },
+    {
+      "document_id": "resume_012",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6482670089858793,
+        "character_error_rate": 0.35173299101412064,
+        "chrf++": 90.94564634826425
+      },
+      "error": null,
+      "parse_time_seconds": 0.00037360191345214844
+    },
+    {
+      "document_id": "resume_013",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9705772811918063,
+        "character_error_rate": 0.02942271880819367,
+        "chrf++": 93.78288496955417
+      },
+      "error": null,
+      "parse_time_seconds": 0.00051116943359375
+    },
+    {
+      "document_id": "resume_014",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9708214398985093,
+        "character_error_rate": 0.029178560101490645,
+        "chrf++": 92.86030608543533
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003609657287597656
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.754950495049505,
+        "character_error_rate": 0.24504950495049505,
+        "chrf++": 90.12474551972025
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005385875701904297
+    },
+    {
+      "document_id": "resume_016",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9626587005227782,
+        "character_error_rate": 0.037341299477221805,
+        "chrf++": 93.7253004867687
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012006759643554688
+    },
+    {
+      "document_id": "resume_017",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9700427960057061,
+        "character_error_rate": 0.029957203994293864,
+        "chrf++": 93.41247630151312
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042819976806640625
+    },
+    {
+      "document_id": "resume_018",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6573938506588579,
+        "character_error_rate": 0.34260614934114203,
+        "chrf++": 92.47503784357764
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003647804260253906
+    },
+    {
+      "document_id": "resume_019",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9595015576323987,
+        "character_error_rate": 0.040498442367601244,
+        "chrf++": 92.71158113385995
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003733634948730469
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9680390032502708,
+        "character_error_rate": 0.031960996749729145,
+        "chrf++": 92.96751133337399
+      },
+      "error": null,
+      "parse_time_seconds": 0.00034427642822265625
+    },
+    {
+      "document_id": "resume_021",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9578503688092729,
+        "character_error_rate": 0.04214963119072708,
+        "chrf++": 91.94992558096538
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007355213165283203
+    },
+    {
+      "document_id": "resume_022",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6204444444444445,
+        "character_error_rate": 0.37955555555555553,
+        "chrf++": 89.72675797112011
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004725456237792969
+    },
+    {
+      "document_id": "resume_023",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.969685628742515,
+        "character_error_rate": 0.03031437125748503,
+        "chrf++": 92.81545834165861
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005345344543457031
+    },
+    {
+      "document_id": "resume_024",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9675640609795654,
+        "character_error_rate": 0.032435939020434644,
+        "chrf++": 92.08125696890549
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006473064422607422
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5965130759651307,
+        "character_error_rate": 0.40348692403486924,
+        "chrf++": 88.18427655825445
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010790824890136719
+    },
+    {
+      "document_id": "resume_026",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9672781358453149,
+        "character_error_rate": 0.03272186415468518,
+        "chrf++": 92.190493397766
+      },
+      "error": null,
+      "parse_time_seconds": 0.00045490264892578125
+    },
+    {
+      "document_id": "resume_027",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9692360871068095,
+        "character_error_rate": 0.03076391289319046,
+        "chrf++": 92.6914922920435
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008437633514404297
+    },
+    {
+      "document_id": "resume_028",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6644736842105263,
+        "character_error_rate": 0.3355263157894737,
+        "chrf++": 91.18608800011806
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005154609680175781
+    },
+    {
+      "document_id": "resume_029",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9556592765460911,
+        "character_error_rate": 0.044340723453908985,
+        "chrf++": 91.85213500271901
+      },
+      "error": null,
+      "parse_time_seconds": 0.00042319297790527344
+    },
+    {
+      "document_id": "resume_030",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9624753127057275,
+        "character_error_rate": 0.037524687294272545,
+        "chrf++": 92.26003737208899
+      },
+      "error": null,
+      "parse_time_seconds": 0.000545501708984375
+    },
+    {
+      "document_id": "resume_031",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9611248966087675,
+        "character_error_rate": 0.03887510339123242,
+        "chrf++": 92.32302668973334
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005140304565429688
+    },
+    {
+      "document_id": "resume_032",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6575429662635264,
+        "character_error_rate": 0.34245703373647357,
+        "chrf++": 91.33138008314882
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015261173248291016
+    },
+    {
+      "document_id": "resume_033",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9689285714285715,
+        "character_error_rate": 0.031071428571428573,
+        "chrf++": 92.83766917477078
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046944618225097656
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "pypdf2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9712121212121212,
+        "character_error_rate": 0.02878787878787879,
+        "chrf++": 92.44148767713145
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011556148529052734
+    }
+  ],
+  "summary": {
+    "total_documents": 247,
+    "total_parsers": 1,
+    "total_results": 247,
+    "success_count": 247,
+    "failure_count": 0
+  }
+}

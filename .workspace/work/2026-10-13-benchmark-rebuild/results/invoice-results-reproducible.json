@@ -1,0 +1,12 @@
+{
+ "item": "invoice-results-reproducible",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_reconstruction_export.py::test_relocated_offline_regrade_needs_no_input_pdfs_parser_imports_or_original_paths",
+  "fixture (both runs): Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

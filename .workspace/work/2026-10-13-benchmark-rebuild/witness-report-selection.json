@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Full retained qualified invoice/public bundles and historical registry through the actual report generator and consumer",
+  "producer": "pdf_bench/reconstruction_report.py",
+  "test": "tests/test_reconstruction_report.py::test_actual_performance_selected_population_reverses_record_ordering",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/reconstruction_report.py",
+      "old": "if grades[\"pypdf\"][doc_id][\"document_success\"]",
+      "new": "if True"
+    }
+  }
+}

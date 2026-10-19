@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "producer": "pdf_bench/invoice_reproduction.py",
+  "test": "tests/test_reconstruction_export.py::test_hundred_invoice_fills_remain_six_source_cells_in_reporting",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_reproduction.py",
+      "old": "            cell = f\"{document['template_style']}/{document['complexity']}\"",
+      "new": "            cell = document[\"document_id\"]"
+    }
+  }
+}

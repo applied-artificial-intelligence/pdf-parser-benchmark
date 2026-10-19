@@ -1,0 +1,84 @@
+{
+  "benchmark": {
+    "name": "Test All Metrics",
+    "timestamp": "2025-11-20T20:01:27.835052+00:00",
+    "config_file": "benchmarks/test_all_metrics.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfplumber": "0.11.8",
+      "pymupdf": "1.26.6"
+    }
+  },
+  "results": [
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.32727272727272727,
+        "chrf++": 91.1570440241975,
+        "character_error_rate": 0.8564814814814815,
+        "tree_similarity": 0.627906976744186,
+        "element_f1": 0.8947368421052632,
+        "teds": 0.9473684210526316
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002644062042236328
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2710997442455243,
+        "chrf++": 86.37217455675365,
+        "character_error_rate": 0.8742331288343558,
+        "tree_similarity": 0.7096774193548387,
+        "element_f1": 0.9107142857142857,
+        "teds": 0.8928571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003380775451660156
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6805555555555556,
+        "chrf++": 61.534848273782984,
+        "character_error_rate": 0.3194444444444444,
+        "tree_similarity": 0.1428571428571429,
+        "element_f1": 0.4827586206896552,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.00036787986755371094
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5858895705521472,
+        "chrf++": 51.95622147068535,
+        "character_error_rate": 0.41411042944785276,
+        "tree_similarity": 0.11538461538461542,
+        "element_f1": 0.4719101123595506,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003311634063720703
+    }
+  ],
+  "summary": {
+    "total_documents": 2,
+    "total_parsers": 2,
+    "total_results": 4,
+    "success_count": 4,
+    "failure_count": 0
+  }
+}

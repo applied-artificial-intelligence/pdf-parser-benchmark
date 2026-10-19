@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual frozen retained invoice PDFs through uncached local adapters; labeled initialization/timeout controls exercise mechanisms only",
+  "producer": "pdf_bench/invoice_comparison.py",
+  "test": "tests/test_invoice_comparison.py::test_population_is_frozen_before_any_backend_initialization",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_comparison.py",
+      "old": "    ids = list(POPULATION) if document_ids is None else document_ids",
+      "new": "    ids = list(POPULATION[:-1]) if document_ids is None else document_ids"
+    }
+  }
+}

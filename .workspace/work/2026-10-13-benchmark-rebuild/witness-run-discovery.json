@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/inventory.py",
+  "fixture": "Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "test": "tests/test_run_registry.py::test_discovery_keeps_checkpoints_unknown_json_and_truncated_artifacts",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/inventory.py",
+      "old": "return sorted(paths)",
+      "new": "return sorted(paths)[:1]"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "unicode_database_version": "15.1.0",
+  "required_fields": [
+    "invoice_number",
+    "vendor",
+    "due_date",
+    "grand_total",
+    "currency_marker"
+  ],
+  "development_ids": [
+    "invoice_001",
+    "invoice_002",
+    "invoice_003",
+    "invoice_004",
+    "invoice_005",
+    "invoice_006"
+  ],
+  "header_aliases": {
+    "description": "description",
+    "quantity": "quantity",
+    "qty": "quantity",
+    "unit": "unit",
+    "unit price": "unit_price",
+    "rate": "unit_price",
+    "amount": "line_total"
+  },
+  "normalization": "NFKC and whitespace; vendor/description casefold; exact units, signs and currency markers; Decimal strings without rounding; printed MM/DD/YYYY or English month dates",
+  "record_matching": "Complete associated records as a multiset; duplicates retain multiplicity",
+  "representation_policy": "Prefer Markdown line-item tables when present, suppressing duplicated linear text. Reuse headers for Markdown page continuations; concatenate description-only rows. Otherwise consume linear description-before-values rows under displayed header roles.",
+  "limits": "No OCR or semantic repair. Merged FROM/TO text is ambiguous. Within-word wraps, values followed by description fragments and missing headers may defeat extraction. This is a configured pipeline test on retained templates, not an unseen test set.",
+  "denominators": "Eligible documents and five fields per document stay fixed, including failures, empty outputs and timeouts as zero recovery. Grader exceptions invalidate aggregates.",
+  "extractor_sha256": "de6258153920fe50471f0f8614a5bd89ace8b77cd8940fbce344b517b2a47727",
+  "grader_sha256": "bb24837a06ad9378d521ddf213b41bf4dda610939c780e23f46943a313a765c0",
+  "frozen_at": "2026-10-15T19:39:57.484651+00:00",
+  "development_policy": "Six declared retained IDs only; primary 100-document comparison has not executed. These are development diagnostics, not a held-out estimate."
+}

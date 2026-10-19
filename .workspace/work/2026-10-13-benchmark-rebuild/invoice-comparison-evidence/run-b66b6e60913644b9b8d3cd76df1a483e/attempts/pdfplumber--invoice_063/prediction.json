@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-62954",
+    "vendor": "Johnson Law Offices",
+    "due_date": "2025-11-09",
+    "grand_total": "69349.7",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-62954"
+    ],
+    "due_date": [
+      "November 09, 2025"
+    ],
+    "grand_total": [
+      "$69,349.70"
+    ],
+    "vendor": [
+      "Johnson Law Offices"
+    ]
+  },
+  "records": [
+    {
+      "description": "Court Filing Fees",
+      "quantity": "47.57",
+      "unit": "filing",
+      "unit_price": "337.39",
+      "line_total": "16049.64",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing\nFees",
+        "quantity": "47.57",
+        "unit": "filing",
+        "unit_price": "$337.39",
+        "line_total": "$16,049.64"
+      }
+    },
+    {
+      "description": "Associate Legal Services",
+      "quantity": "20.27",
+      "unit": "hour",
+      "unit_price": "415.32",
+      "line_total": "8418.54",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal\nServices",
+        "quantity": "20.27",
+        "unit": "hour",
+        "unit_price": "$415.32",
+        "line_total": "$8,418.54"
+      }
+    },
+    {
+      "description": "Legal Research",
+      "quantity": "41.13",
+      "unit": "hour",
+      "unit_price": "204.78",
+      "line_total": "8422.6",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research",
+        "quantity": "41.13",
+        "unit": "hour",
+        "unit_price": "$204.78",
+        "line_total": "$8,422.60"
+      }
+    },
+    {
+      "description": "Paralegal Services",
+      "quantity": "68.55",
+      "unit": "hour",
+      "unit_price": "190.13",
+      "line_total": "13033.41",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal\nServices",
+        "quantity": "68.55",
+        "unit": "hour",
+        "unit_price": "$190.13",
+        "line_total": "$13,033.41"
+      }
+    },
+    {
+      "description": "Paralegal Services",
+      "quantity": "54.37",
+      "unit": "hour",
+      "unit_price": "143.93",
+      "line_total": "7825.47",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal\nServices",
+        "quantity": "54.37",
+        "unit": "hour",
+        "unit_price": "$143.93",
+        "line_total": "$7,825.47"
+      }
+    },
+    {
+      "description": "Court Filing Fees",
+      "quantity": "27.99",
+      "unit": "filing",
+      "unit_price": "144.4",
+      "line_total": "4041.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing\nFees",
+        "quantity": "27.99",
+        "unit": "filing",
+        "unit_price": "$144.40",
+        "line_total": "$4,041.76"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

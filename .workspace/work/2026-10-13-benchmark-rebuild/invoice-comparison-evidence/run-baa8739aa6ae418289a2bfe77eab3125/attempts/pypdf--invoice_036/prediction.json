@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-39480",
+    "vendor": "United Manufacturing",
+    "due_date": "2025-12-06",
+    "grand_total": "241107.97",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-39480"
+    ],
+    "due_date": [
+      "12/06/2025"
+    ],
+    "grand_total": [
+      "$241,107.97"
+    ],
+    "vendor": [
+      "United Manufacturing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Powder Coating @ $4.74/sq ft",
+      "quantity": "9.81",
+      "line_total": "46.5",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating @ $4.74/sq ft",
+        "quantity": "9.81",
+        "line_total": "$46.50"
+      }
+    },
+    {
+      "description": "Powder Coating @ $3.26/sq ft",
+      "quantity": "84.6",
+      "line_total": "275.8",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating @ $3.26/sq ft",
+        "quantity": "84.60",
+        "line_total": "$275.80"
+      }
+    },
+    {
+      "description": "Quality Inspection @ $81.69/hour",
+      "quantity": "89.55",
+      "line_total": "7315.34",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Quality Inspection @\n$81.69/hour",
+        "quantity": "89.55",
+        "line_total": "$7,315.34"
+      }
+    },
+    {
+      "description": "CNC Machining @ $101.52/hour",
+      "quantity": "59.36",
+      "line_total": "6026.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining @\n$101.52/hour",
+        "quantity": "59.36",
+        "line_total": "$6,026.23"
+      }
+    },
+    {
+      "description": "CNC Machining @ $135.64/hour",
+      "quantity": "21.56",
+      "line_total": "2924.4",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining @\n$135.64/hour",
+        "quantity": "21.56",
+        "line_total": "$2,924.40"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch @ $4.54/sq ft",
+      "quantity": "50.64",
+      "line_total": "229.91",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4 inch @\n$4.54/sq ft",
+        "quantity": "50.64",
+        "line_total": "$229.91"
+      }
+    },
+    {
+      "description": "Custom Tooling @ $4344.37/each",
+      "quantity": "40.25",
+      "line_total": "174860.89",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling @\n$4344.37/each",
+        "quantity": "40.25",
+        "line_total": "$174,860.89"
+      }
+    },
+    {
+      "description": "CNC Machining @ $117.31/hour",
+      "quantity": "74.55",
+      "line_total": "8745.46",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "CNC Machining @\n$117.31/hour",
+        "quantity": "74.55",
+        "line_total": "$8,745.46"
+      }
+    },
+    {
+      "description": "Aluminum Extrusion @ $24.51/linear ft",
+      "quantity": "20.35",
+      "line_total": "498.78",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum Extrusion @\n$24.51/linear ft",
+        "quantity": "20.35",
+        "line_total": "$498.78"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

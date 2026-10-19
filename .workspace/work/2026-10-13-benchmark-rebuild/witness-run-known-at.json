@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/inventory.py",
+  "fixture": "Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "test": "tests/test_run_registry.py::test_current_config_and_story_labels_do_not_certify_historical_truth",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/inventory.py",
+      "old": "\"historical_equivalence\": \"not established by present-day files\",",
+      "new": "\"historical_equivalence\": \"verified\","
+    }
+  }
+}

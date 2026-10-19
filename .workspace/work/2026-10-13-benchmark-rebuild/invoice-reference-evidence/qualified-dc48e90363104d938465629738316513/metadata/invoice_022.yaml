@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Browning Inc
+document_id: invoice_022
+due_date: '2025-12-06'
+generated_at: '2025-11-18T16:45:33.411459'
+industry: it_consulting
+invoice_date: '2025-11-06'
+invoice_number: INV-11713
+line_item_count: 5
+payment_terms: Net 30
+region: US
+subtotal: 4159957.29
+tax_amount: 354428.36
+template_style: enterprise
+total: 4514385.65
+vendor:
+  country: USA
+  name: Synergy IT Solutions
+corpus: business
+source_url: generated://invoice_022
+domain: invoices
+doc_id: invoice_022

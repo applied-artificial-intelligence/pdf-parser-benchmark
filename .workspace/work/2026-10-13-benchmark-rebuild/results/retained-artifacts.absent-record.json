@@ -1,0 +1,12 @@
+{
+ "item": "retained-artifacts.absent-record",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_run_registry.py::test_original_commercial_counters_do_not_override_observed_attempts",
+  "fixture (both runs): Unchanged retained commercial, screening and invoice artifacts; actual generator/runner output paths",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

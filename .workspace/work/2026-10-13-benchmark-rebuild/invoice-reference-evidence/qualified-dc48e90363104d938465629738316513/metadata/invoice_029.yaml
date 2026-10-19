@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: USA
+  name: Ramirez, Garcia and Jarvis
+document_id: invoice_029
+due_date: '2025-09-24'
+generated_at: '2025-11-18T16:45:42.743917'
+industry: construction
+invoice_date: '2025-08-25'
+invoice_number: INV-70863
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 34210.36
+tax_amount: 3017.35
+template_style: small_business
+total: 37227.71
+vendor:
+  country: USA
+  name: Summit Construction
+corpus: business
+source_url: generated://invoice_029
+domain: invoices
+doc_id: invoice_029

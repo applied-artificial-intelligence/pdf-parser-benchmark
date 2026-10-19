@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-77196",
+    "vendor": null,
+    "due_date": "2025-10-09",
+    "grand_total": "37934.75",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-77196"
+    ],
+    "due_date": [
+      "10/09/2025"
+    ],
+    "grand_total": [
+      "$37,934.75"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Expert Witness Consultation @ $333.48/hour",
+      "quantity": "41.73",
+      "line_total": "13916.12",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness Consultation\n@ $333.48/hour",
+        "quantity": "41.73",
+        "line_total": "$13,916.12"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $177.33/hour",
+      "quantity": "66.73",
+      "line_total": "11833.23",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$177.33/hour",
+        "quantity": "66.73",
+        "line_total": "$11,833.23"
+      }
+    },
+    {
+      "description": "Expert Witness Consultation @ $337.49/hour",
+      "quantity": "19.45",
+      "line_total": "6564.18",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness Consultation\n@ $337.49/hour",
+        "quantity": "19.45",
+        "line_total": "$6,564.18"
+      }
+    },
+    {
+      "description": "Court Filing Fees @ $58.33/filing",
+      "quantity": "45.31",
+      "line_total": "2642.93",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees @\n$58.33/filing",
+        "quantity": "45.31",
+        "line_total": "$2,642.93"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

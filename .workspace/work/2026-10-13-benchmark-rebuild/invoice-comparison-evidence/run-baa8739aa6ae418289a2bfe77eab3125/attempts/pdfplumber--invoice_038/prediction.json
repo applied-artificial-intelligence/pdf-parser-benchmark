@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-88139",
+    "vendor": "Visionary AIA",
+    "due_date": "2025-11-08",
+    "grand_total": "61476.41",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-88139",
+      "INV-88139"
+    ],
+    "due_date": [
+      "November 08, 2025",
+      "November 08, 2025"
+    ],
+    "grand_total": [
+      "$61,476.41"
+    ],
+    "vendor": [
+      "Visionary AIA"
+    ]
+  },
+  "records": [
+    {
+      "description": "Schematic Design (% of project)",
+      "quantity": "59.29",
+      "unit_price": "15.73",
+      "line_total": "932.63",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Schematic Design\n(% of project)",
+        "quantity": "59.29",
+        "unit_price": "$15.73",
+        "line_total": "$932.63"
+      }
+    },
+    {
+      "description": "Site Visits (visit)",
+      "quantity": "29.54",
+      "unit_price": "831.8",
+      "line_total": "24571.37",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Site Visits (visit)",
+        "quantity": "29.54",
+        "unit_price": "$831.80",
+        "line_total": "$24,571.37"
+      }
+    },
+    {
+      "description": "Project Architect (hour)",
+      "quantity": "16.17",
+      "unit_price": "128.25",
+      "line_total": "2073.8",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Architect\n(hour)",
+        "quantity": "16.17",
+        "unit_price": "$128.25",
+        "line_total": "$2,073.80"
+      }
+    },
+    {
+      "description": "Design Development (% of project)",
+      "quantity": "39.19",
+      "unit_price": "26.18",
+      "line_total": "1025.99",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Design\nDevelopment (% of\nproject)",
+        "quantity": "39.19",
+        "unit_price": "$26.18",
+        "line_total": "$1,025.99"
+      }
+    },
+    {
+      "description": "Schematic Design (% of project)",
+      "quantity": "62.1",
+      "unit_price": "17.5",
+      "line_total": "1086.75",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Schematic Design\n(% of project)",
+        "quantity": "62.10",
+        "unit_price": "$17.50",
+        "line_total": "$1,086.75"
+      }
+    },
+    {
+      "description": "Project Architect (hour)",
+      "quantity": "97.8",
+      "unit_price": "156.91",
+      "line_total": "15345.8",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project Architect\n(hour)",
+        "quantity": "97.80",
+        "unit_price": "$156.91",
+        "line_total": "$15,345.80"
+      }
+    },
+    {
+      "description": "Construction Documents (% of project)",
+      "quantity": "80.09",
+      "unit_price": "48.21",
+      "line_total": "3861.14",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Construction\nDocuments (% of\nproject)",
+        "quantity": "80.09",
+        "unit_price": "$48.21",
+        "line_total": "$3,861.14"
+      }
+    },
+    {
+      "description": "Design Development (% of project)",
+      "quantity": "26.48",
+      "unit_price": "29.4",
+      "line_total": "778.51",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Design\nDevelopment (% of\nproject)",
+        "quantity": "26.48",
+        "unit_price": "$29.40",
+        "line_total": "$778.51"
+      }
+    },
+    {
+      "description": "Construction Documents (% of project)",
+      "quantity": "25.57",
+      "unit_price": "44.23",
+      "line_total": "1130.96",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Construction\nDocuments (% of\nproject)",
+        "quantity": "25.57",
+        "unit_price": "$44.23",
+        "line_total": "$1,130.96"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

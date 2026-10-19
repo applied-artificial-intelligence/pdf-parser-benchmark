@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-55147",
+    "vendor": "National Outlet",
+    "due_date": "2025-11-13",
+    "grand_total": "322971.81",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-55147"
+    ],
+    "due_date": [
+      "11/13/2025"
+    ],
+    "grand_total": [
+      "$322,971.81"
+    ],
+    "vendor": [
+      "National Outlet"
+    ]
+  },
+  "records": [
+    {
+      "description": "Break Room Supplies @ $78.65/case",
+      "quantity": "23.54",
+      "line_total": "1851.42",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Break Room Supplies @\n$78.65/case",
+        "quantity": "23.54",
+        "line_total": "$1,851.42"
+      }
+    },
+    {
+      "description": "Shipping & Handling @ $108.78/order",
+      "quantity": "40.79",
+      "line_total": "4437.14",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Shipping & Handling @\n$108.78/order",
+        "quantity": "40.79",
+        "line_total": "$4,437.14"
+      }
+    },
+    {
+      "description": "Furniture - Office @ $503.13/each",
+      "quantity": "30.5",
+      "line_total": "15345.46",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Furniture - Office @\n$503.13/each",
+        "quantity": "30.50",
+        "line_total": "$15,345.46"
+      }
+    },
+    {
+      "description": "Cleaning Supplies @ $39.86/case",
+      "quantity": "35.96",
+      "line_total": "1433.37",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cleaning Supplies @\n$39.86/case",
+        "quantity": "35.96",
+        "line_total": "$1,433.37"
+      }
+    },
+    {
+      "description": "Furniture - Office @ $2644.85/each",
+      "quantity": "97.65",
+      "line_total": "258269.6",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Furniture - Office @\n$2644.85/each",
+        "quantity": "97.65",
+        "line_total": "$258,269.60"
+      }
+    },
+    {
+      "description": "Cleaning Supplies @ $105.79/case",
+      "quantity": "98.88",
+      "line_total": "10460.52",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cleaning Supplies @\n$105.79/case",
+        "quantity": "98.88",
+        "line_total": "$10,460.52"
+      }
+    },
+    {
+      "description": "Break Room Supplies @ $91.42/case",
+      "quantity": "54.66",
+      "line_total": "4997.02",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Break Room Supplies @\n$91.42/case",
+        "quantity": "54.66",
+        "line_total": "$4,997.02"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

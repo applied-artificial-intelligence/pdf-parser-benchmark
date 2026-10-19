@@ -1,0 +1,12 @@
+{
+ "item": "extracted-invoice-records.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_invoice_task_evaluation.py::test_amount_sign_currency_unit_or_precision_changes_fail",
+  "fixture (both runs): Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-15"
+}

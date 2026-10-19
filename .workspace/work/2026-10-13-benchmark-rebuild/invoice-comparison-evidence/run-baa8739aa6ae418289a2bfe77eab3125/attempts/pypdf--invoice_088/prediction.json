@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-67687",
+    "vendor": "Global Logistics",
+    "due_date": "2025-11-22",
+    "grand_total": "32941.18",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-67687"
+    ],
+    "due_date": [
+      "11/22/2025"
+    ],
+    "grand_total": [
+      "$32,941.18"
+    ],
+    "vendor": [
+      "Global Logistics"
+    ]
+  },
+  "records": [
+    {
+      "description": "Residential Delivery @ $75.46/per stop",
+      "quantity": "87.57",
+      "line_total": "6608.03",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential Delivery @\n$75.46/per stop",
+        "quantity": "87.57",
+        "line_total": "$6,608.03"
+      }
+    },
+    {
+      "description": "Pallet Exchange @ $22.14/pallet",
+      "quantity": "71.8",
+      "line_total": "1589.65",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange @\n$22.14/pallet",
+        "quantity": "71.80",
+        "line_total": "$1,589.65"
+      }
+    },
+    {
+      "description": "Residential Delivery @ $61.82/per stop",
+      "quantity": "11.61",
+      "line_total": "717.73",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Residential Delivery @\n$61.82/per stop",
+        "quantity": "11.61",
+        "line_total": "$717.73"
+      }
+    },
+    {
+      "description": "Liftgate Service @ $126.34/per stop",
+      "quantity": "87.57",
+      "line_total": "11063.59",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service @\n$126.34/per stop",
+        "quantity": "87.57",
+        "line_total": "$11,063.59"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85 @ $34.48/cwt",
+      "quantity": "23.51",
+      "line_total": "810.62",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class 85 @\n$34.48/cwt",
+        "quantity": "23.51",
+        "line_total": "$810.62"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 50 @ $43.66/cwt",
+      "quantity": "7.18",
+      "line_total": "313.48",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class 50 @\n$43.66/cwt",
+        "quantity": "7.18",
+        "line_total": "$313.48"
+      }
+    },
+    {
+      "description": "Fuel Surcharge @ $26.01/% of base",
+      "quantity": "48.3",
+      "line_total": "1256.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge @ $26.01/% of\nbase",
+        "quantity": "48.30",
+        "line_total": "$1,256.28"
+      }
+    },
+    {
+      "description": "Liftgate Service @ $86.66/per stop",
+      "quantity": "71.05",
+      "line_total": "6157.19",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Liftgate Service @ $86.66/per\nstop",
+        "quantity": "71.05",
+        "line_total": "$6,157.19"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85 @ $47.69/cwt",
+      "quantity": "6.62",
+      "line_total": "315.71",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class 85 @\n$47.69/cwt",
+        "quantity": "6.62",
+        "line_total": "$315.71"
+      }
+    },
+    {
+      "description": "Inside Delivery @ $60.26/per stop",
+      "quantity": "23.05",
+      "line_total": "1388.99",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $60.26/per\nstop",
+        "quantity": "23.05",
+        "line_total": "$1,388.99"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

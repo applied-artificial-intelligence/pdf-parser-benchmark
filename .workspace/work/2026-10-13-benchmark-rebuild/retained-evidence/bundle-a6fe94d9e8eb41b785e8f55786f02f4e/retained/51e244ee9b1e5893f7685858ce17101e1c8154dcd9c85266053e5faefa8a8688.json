@@ -1,0 +1,1073 @@
+{
+  "benchmark": {
+    "name": "CUAD Unstructured Benchmark",
+    "timestamp": "2025-11-22T21:32:50.838376+00:00",
+    "config_file": "benchmarks/cuad_75docs_unstructured.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "cuad_000",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014624595642089844
+    },
+    {
+      "document_id": "cuad_001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016334056854248047
+    },
+    {
+      "document_id": "cuad_002",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012745857238769531
+    },
+    {
+      "document_id": "cuad_003",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013096332550048828
+    },
+    {
+      "document_id": "cuad_004",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011174678802490234
+    },
+    {
+      "document_id": "cuad_005",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012395381927490234
+    },
+    {
+      "document_id": "cuad_006",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013985633850097656
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011034011840820312
+    },
+    {
+      "document_id": "cuad_008",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017266273498535156
+    },
+    {
+      "document_id": "cuad_009",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017430782318115234
+    },
+    {
+      "document_id": "cuad_010",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014636516571044922
+    },
+    {
+      "document_id": "cuad_011",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012843608856201172
+    },
+    {
+      "document_id": "cuad_012",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012845993041992188
+    },
+    {
+      "document_id": "cuad_013",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001313924789428711
+    },
+    {
+      "document_id": "cuad_014",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001954317092895508
+    },
+    {
+      "document_id": "cuad_015",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011174678802490234
+    },
+    {
+      "document_id": "cuad_016",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010259151458740234
+    },
+    {
+      "document_id": "cuad_017",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011892318725585938
+    },
+    {
+      "document_id": "cuad_018",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018854141235351562
+    },
+    {
+      "document_id": "cuad_019",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016143321990966797
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013282299041748047
+    },
+    {
+      "document_id": "cuad_021",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.002006053924560547
+    },
+    {
+      "document_id": "cuad_022",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015244483947753906
+    },
+    {
+      "document_id": "cuad_023",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019750595092773438
+    },
+    {
+      "document_id": "cuad_024",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018277168273925781
+    },
+    {
+      "document_id": "cuad_025",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021758079528808594
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010368824005126953
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015959739685058594
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011737346649169922
+    },
+    {
+      "document_id": "cuad_029",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008149147033691406
+    },
+    {
+      "document_id": "cuad_030",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001409292221069336
+    },
+    {
+      "document_id": "cuad_031",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.002535104751586914
+    },
+    {
+      "document_id": "cuad_032",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012593269348144531
+    },
+    {
+      "document_id": "cuad_033",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014121532440185547
+    },
+    {
+      "document_id": "cuad_034",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0016269683837890625
+    },
+    {
+      "document_id": "cuad_035",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009624958038330078
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010230541229248047
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011174678802490234
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012311935424804688
+    },
+    {
+      "document_id": "cuad_039",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012934207916259766
+    },
+    {
+      "document_id": "cuad_040",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001050710678100586
+    },
+    {
+      "document_id": "cuad_041",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.002234220504760742
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001210927963256836
+    },
+    {
+      "document_id": "cuad_043",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009450912475585938
+    },
+    {
+      "document_id": "cuad_044",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010690689086914062
+    },
+    {
+      "document_id": "cuad_045",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013439655303955078
+    },
+    {
+      "document_id": "cuad_046",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0013761520385742188
+    },
+    {
+      "document_id": "cuad_047",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014581680297851562
+    },
+    {
+      "document_id": "cuad_048",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012774467468261719
+    },
+    {
+      "document_id": "cuad_049",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0017752647399902344
+    },
+    {
+      "document_id": "cuad_050",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011348724365234375
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001613616943359375
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015039443969726562
+    },
+    {
+      "document_id": "cuad_053",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010533332824707031
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012743473052978516
+    },
+    {
+      "document_id": "cuad_055",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001631021499633789
+    },
+    {
+      "document_id": "cuad_056",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012886524200439453
+    },
+    {
+      "document_id": "cuad_057",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014386177062988281
+    },
+    {
+      "document_id": "cuad_058",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001146078109741211
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001127004623413086
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009098052978515625
+    },
+    {
+      "document_id": "cuad_061",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012369155883789062
+    },
+    {
+      "document_id": "cuad_062",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011627674102783203
+    },
+    {
+      "document_id": "cuad_063",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012021064758300781
+    },
+    {
+      "document_id": "cuad_064",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001972198486328125
+    },
+    {
+      "document_id": "cuad_065",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015521049499511719
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011668205261230469
+    },
+    {
+      "document_id": "cuad_067",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0012347698211669922
+    },
+    {
+      "document_id": "cuad_068",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0015833377838134766
+    },
+    {
+      "document_id": "cuad_069",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010662078857421875
+    },
+    {
+      "document_id": "cuad_070",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014522075653076172
+    },
+    {
+      "document_id": "cuad_071",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.001201629638671875
+    },
+    {
+      "document_id": "cuad_072",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010895729064941406
+    },
+    {
+      "document_id": "cuad_073",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009732246398925781
+    },
+    {
+      "document_id": "cuad_074",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0014040470123291016
+    }
+  ],
+  "summary": {
+    "total_documents": 75,
+    "total_parsers": 1,
+    "total_results": 75,
+    "success_count": 75,
+    "failure_count": 0
+  }
+}

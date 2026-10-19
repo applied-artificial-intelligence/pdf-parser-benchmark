@@ -1,0 +1,18 @@
+doc_id: arxiv-2303.17564
+source_url: https://arxiv.org/abs/2303.17564
+corpus: academic
+domain: arxiv
+title: "BloombergGPT: A Large Language Model for Finance"
+authors:
+  - Bloomberg
+publication_date: '2023-03-30'
+features:
+  - equations
+  - tables
+  - two_column
+  - citations
+license: arXiv
+notes: BloombergGPT - 76 pages, financial NLP with equations and tables
+file_paths:
+  pdf: corpus/academic/sample/pdfs/2303.17564.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2303.17564.md

@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-10338",
+    "vendor": "Elite Real Estate",
+    "due_date": "2025-12-03",
+    "grand_total": "37214.68",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "14.54",
+      "unit_price": "85.59",
+      "line_total": "1244.48"
+    },
+    {
+      "description": "Leasing Fee - New Tenant (% of annual rent)",
+      "quantity": "81.24",
+      "unit_price": "64.36",
+      "line_total": "5228.61"
+    },
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "73.29",
+      "unit_price": "68.66",
+      "line_total": "5032.09"
+    },
+    {
+      "description": "Tenant Screening (application)",
+      "quantity": "59.01",
+      "unit_price": "54.95",
+      "line_total": "3242.6"
+    },
+    {
+      "description": "Marketing & Advertising (month)",
+      "quantity": "4.25",
+      "unit_price": "797.73",
+      "line_total": "3390.35"
+    },
+    {
+      "description": "Property Inspection (inspection)",
+      "quantity": "34.3",
+      "unit_price": "183.95",
+      "line_total": "6309.48"
+    },
+    {
+      "description": "Maintenance Coordination (hour)",
+      "quantity": "72.17",
+      "unit_price": "73.77",
+      "line_total": "5323.98"
+    },
+    {
+      "description": "Property Management Fee (% of rent)",
+      "quantity": "24.14",
+      "unit_price": "11.24",
+      "line_total": "271.33"
+    },
+    {
+      "description": "Property Management Fee (% of rent)",
+      "quantity": "97.32",
+      "unit_price": "9.96",
+      "line_total": "969.31"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-10338",
+    "vendor": "Elite Real Estate",
+    "due_date": "December 03, 2025",
+    "grand_total": "$37,214.68",
+    "records": [
+      {
+        "description": "Maintenance Coordination (hour)",
+        "quantity": "14.54",
+        "unit_price": "$85.59",
+        "line_total": "$1,244.48"
+      },
+      {
+        "description": "Leasing Fee - New Tenant (% of annual rent)",
+        "quantity": "81.24",
+        "unit_price": "$64.36",
+        "line_total": "$5,228.61"
+      },
+      {
+        "description": "Maintenance Coordination (hour)",
+        "quantity": "73.29",
+        "unit_price": "$68.66",
+        "line_total": "$5,032.09"
+      },
+      {
+        "description": "Tenant Screening (application)",
+        "quantity": "59.01",
+        "unit_price": "$54.95",
+        "line_total": "$3,242.60"
+      },
+      {
+        "description": "Marketing & Advertising (month)",
+        "quantity": "4.25",
+        "unit_price": "$797.73",
+        "line_total": "$3,390.35"
+      },
+      {
+        "description": "Property Inspection (inspection)",
+        "quantity": "34.30",
+        "unit_price": "$183.95",
+        "line_total": "$6,309.48"
+      },
+      {
+        "description": "Maintenance Coordination (hour)",
+        "quantity": "72.17",
+        "unit_price": "$73.77",
+        "line_total": "$5,323.98"
+      },
+      {
+        "description": "Property Management Fee (% of rent)",
+        "quantity": "24.14",
+        "unit_price": "$11.24",
+        "line_total": "$271.33"
+      },
+      {
+        "description": "Property Management Fee (% of rent)",
+        "quantity": "97.32",
+        "unit_price": "$9.96",
+        "line_total": "$969.31"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_058"
+}

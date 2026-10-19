@@ -1,0 +1,541 @@
+{
+  "benchmark": {
+    "name": "Synthetic Business Suite - Investor Decks (Subset)",
+    "timestamp": "2026-03-31T20:55:40.338138+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "investor_deck_001",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7508789552988449,
+        "chrf++": 70.79669078357092,
+        "character_error_rate": 0.2491210447011552,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.024124622344970703
+    },
+    {
+      "document_id": "investor_deck_002",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7524801587301587,
+        "chrf++": 71.02348530895748,
+        "character_error_rate": 0.24751984126984128,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.003885507583618164
+    },
+    {
+      "document_id": "investor_deck_003",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7518684603886397,
+        "chrf++": 70.96205737387722,
+        "character_error_rate": 0.24813153961136025,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020651817321777344
+    },
+    {
+      "document_id": "investor_deck_004",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7543338286280337,
+        "chrf++": 71.20336290488609,
+        "character_error_rate": 0.2456661713719663,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018773078918457031
+    },
+    {
+      "document_id": "investor_deck_005",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7562043795620438,
+        "chrf++": 71.47291009469602,
+        "character_error_rate": 0.24379562043795622,
+        "element_f1": 0.45833333333333326
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020165443420410156
+    },
+    {
+      "document_id": "investor_deck_006",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.75,
+        "chrf++": 70.68007206014317,
+        "character_error_rate": 0.25,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.002068758010864258
+    },
+    {
+      "document_id": "investor_deck_007",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7527254707631318,
+        "chrf++": 71.0399760800357,
+        "character_error_rate": 0.24727452923686818,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019762516021728516
+    },
+    {
+      "document_id": "investor_deck_008",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7532210109018831,
+        "chrf++": 71.10146254689356,
+        "character_error_rate": 0.24677898909811694,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018687248229980469
+    },
+    {
+      "document_id": "investor_deck_009",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7545769421078674,
+        "chrf++": 71.22751280832983,
+        "character_error_rate": 0.24542305789213262,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.0018768310546875
+    },
+    {
+      "document_id": "investor_deck_010",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7551319648093842,
+        "chrf++": 71.34668564548139,
+        "character_error_rate": 0.24486803519061584,
+        "element_f1": 0.45833333333333326
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019676685333251953
+    },
+    {
+      "document_id": "investor_deck_001",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6695128076343546,
+        "chrf++": 76.84140179568924,
+        "character_error_rate": 0.3304871923656454,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.07172369956970215
+    },
+    {
+      "document_id": "investor_deck_002",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6706349206349207,
+        "chrf++": 76.9934793087066,
+        "character_error_rate": 0.32936507936507936,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.04204106330871582
+    },
+    {
+      "document_id": "investor_deck_003",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.669157947184853,
+        "chrf++": 76.96903016900617,
+        "character_error_rate": 0.330842052815147,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.07222938537597656
+    },
+    {
+      "document_id": "investor_deck_004",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6736007924715206,
+        "chrf++": 77.13350935138733,
+        "character_error_rate": 0.32639920752847945,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.03974509239196777
+    },
+    {
+      "document_id": "investor_deck_005",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6690997566909975,
+        "chrf++": 77.19070723765445,
+        "character_error_rate": 0.3309002433090024,
+        "element_f1": 0.5290322580645161
+      },
+      "error": null,
+      "parse_time_seconds": 0.040589094161987305
+    },
+    {
+      "document_id": "investor_deck_006",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6678427419354839,
+        "chrf++": 76.75612502779836,
+        "character_error_rate": 0.3321572580645161,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.03832387924194336
+    },
+    {
+      "document_id": "investor_deck_007",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6709613478691774,
+        "chrf++": 77.05204935048116,
+        "character_error_rate": 0.3290386521308226,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.04031538963317871
+    },
+    {
+      "document_id": "investor_deck_008",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6704658077304262,
+        "chrf++": 77.03820949101647,
+        "character_error_rate": 0.3295341922695738,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.038831472396850586
+    },
+    {
+      "document_id": "investor_deck_009",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6729341909945572,
+        "chrf++": 77.14548941770776,
+        "character_error_rate": 0.32706580900544285,
+        "element_f1": 0.5324675324675324
+      },
+      "error": null,
+      "parse_time_seconds": 0.04087257385253906
+    },
+    {
+      "document_id": "investor_deck_010",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6676441837732161,
+        "chrf++": 77.09777505580948,
+        "character_error_rate": 0.33235581622678395,
+        "element_f1": 0.5290322580645161
+      },
+      "error": null,
+      "parse_time_seconds": 0.04049491882324219
+    },
+    {
+      "document_id": "investor_deck_001",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7448518332496232,
+        "chrf++": 70.79669078357092,
+        "character_error_rate": 0.2551481667503767,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.009645700454711914
+    },
+    {
+      "document_id": "investor_deck_002",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7465277777777778,
+        "chrf++": 71.02348530895748,
+        "character_error_rate": 0.2534722222222222,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.002221822738647461
+    },
+    {
+      "document_id": "investor_deck_003",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7458893871449925,
+        "chrf++": 70.96205737387722,
+        "character_error_rate": 0.25411061285500747,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020284652709960938
+    },
+    {
+      "document_id": "investor_deck_004",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7483902922238732,
+        "chrf++": 71.20336290488609,
+        "character_error_rate": 0.2516097077761268,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.0023937225341796875
+    },
+    {
+      "document_id": "investor_deck_005",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7508515815085158,
+        "chrf++": 71.47291009469602,
+        "character_error_rate": 0.2491484184914842,
+        "element_f1": 0.43670886075949367
+      },
+      "error": null,
+      "parse_time_seconds": 0.002041339874267578
+    },
+    {
+      "document_id": "investor_deck_006",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7439516129032258,
+        "chrf++": 70.68007206014317,
+        "character_error_rate": 0.2560483870967742,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.002092123031616211
+    },
+    {
+      "document_id": "investor_deck_007",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7467789890981169,
+        "chrf++": 71.0399760800357,
+        "character_error_rate": 0.25322101090188304,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.0025682449340820312
+    },
+    {
+      "document_id": "investor_deck_008",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7472745292368682,
+        "chrf++": 71.10146254689356,
+        "character_error_rate": 0.2527254707631318,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.0021409988403320312
+    },
+    {
+      "document_id": "investor_deck_009",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7486392874814448,
+        "chrf++": 71.22751280832983,
+        "character_error_rate": 0.2513607125185552,
+        "element_f1": 0.4394904458598726
+      },
+      "error": null,
+      "parse_time_seconds": 0.002047300338745117
+    },
+    {
+      "document_id": "investor_deck_010",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7497556207233627,
+        "chrf++": 71.34668564548139,
+        "character_error_rate": 0.25024437927663734,
+        "element_f1": 0.43670886075949367
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020313262939453125
+    },
+    {
+      "document_id": "investor_deck_001",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7508789552988449,
+        "chrf++": 70.79669078357092,
+        "character_error_rate": 0.2491210447011552,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.03404879570007324
+    },
+    {
+      "document_id": "investor_deck_002",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7524801587301587,
+        "chrf++": 71.02348530895748,
+        "character_error_rate": 0.24751984126984128,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.012740850448608398
+    },
+    {
+      "document_id": "investor_deck_003",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7518684603886397,
+        "chrf++": 70.96205737387722,
+        "character_error_rate": 0.24813153961136025,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.01353597640991211
+    },
+    {
+      "document_id": "investor_deck_004",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7543338286280337,
+        "chrf++": 71.20336290488609,
+        "character_error_rate": 0.2456661713719663,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.01300501823425293
+    },
+    {
+      "document_id": "investor_deck_005",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7562043795620438,
+        "chrf++": 71.47291009469602,
+        "character_error_rate": 0.24379562043795622,
+        "element_f1": 0.45833333333333326
+      },
+      "error": null,
+      "parse_time_seconds": 0.012911319732666016
+    },
+    {
+      "document_id": "investor_deck_006",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.75,
+        "chrf++": 70.68007206014317,
+        "character_error_rate": 0.25,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.012624979019165039
+    },
+    {
+      "document_id": "investor_deck_007",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7527254707631318,
+        "chrf++": 71.0399760800357,
+        "character_error_rate": 0.24727452923686818,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.012683629989624023
+    },
+    {
+      "document_id": "investor_deck_008",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7532210109018831,
+        "chrf++": 71.10146254689356,
+        "character_error_rate": 0.24677898909811694,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.012824773788452148
+    },
+    {
+      "document_id": "investor_deck_009",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7545769421078674,
+        "chrf++": 71.22751280832983,
+        "character_error_rate": 0.24542305789213262,
+        "element_f1": 0.4507042253521127
+      },
+      "error": null,
+      "parse_time_seconds": 0.013194561004638672
+    },
+    {
+      "document_id": "investor_deck_010",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7551319648093842,
+        "chrf++": 71.34668564548139,
+        "character_error_rate": 0.24486803519061584,
+        "element_f1": 0.45833333333333326
+      },
+      "error": null,
+      "parse_time_seconds": 0.012953758239746094
+    }
+  ],
+  "summary": {
+    "total_documents": 10,
+    "total_parsers": 4,
+    "total_results": 40,
+    "success_count": 40,
+    "failure_count": 0
+  }
+}

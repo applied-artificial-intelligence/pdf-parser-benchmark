@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-31757",
+    "vendor": "Swift Freight",
+    "due_date": "2025-11-15",
+    "grand_total": "19469.79",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Pallet Exchange @ $20.13/pallet",
+      "quantity": "27.66",
+      "line_total": "556.8"
+    },
+    {
+      "description": "Inside Delivery @ $84.90/per stop",
+      "quantity": "96.55",
+      "line_total": "8197.1"
+    },
+    {
+      "description": "Inside Delivery @ $50.19/per stop",
+      "quantity": "66.67",
+      "line_total": "3346.17"
+    },
+    {
+      "description": "Inside Delivery @ $112.14/per stop",
+      "quantity": "17.7",
+      "line_total": "1984.88"
+    },
+    {
+      "description": "LTL Freight - Class 85 @ $52.21/cwt",
+      "quantity": "61.8",
+      "line_total": "3226.58"
+    },
+    {
+      "description": "Fuel Surcharge @ $25.11/% of base",
+      "quantity": "21.93",
+      "line_total": "550.66"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-31757",
+    "vendor": "Swift Freight",
+    "due_date": "11/15/2025",
+    "grand_total": "$19,469.79",
+    "records": [
+      {
+        "description": "Pallet Exchange @ $20.13/pallet",
+        "quantity": "27.66",
+        "line_total": "$556.80"
+      },
+      {
+        "description": "Inside Delivery @ $84.90/per stop",
+        "quantity": "96.55",
+        "line_total": "$8,197.10"
+      },
+      {
+        "description": "Inside Delivery @ $50.19/per stop",
+        "quantity": "66.67",
+        "line_total": "$3,346.17"
+      },
+      {
+        "description": "Inside Delivery @ $112.14/per stop",
+        "quantity": "17.70",
+        "line_total": "$1,984.88"
+      },
+      {
+        "description": "LTL Freight - Class 85 @ $52.21/cwt",
+        "quantity": "61.80",
+        "line_total": "$3,226.58"
+      },
+      {
+        "description": "Fuel Surcharge @ $25.11/% of base",
+        "quantity": "21.93",
+        "line_total": "$550.66"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6"
+    ]
+  },
+  "document_id": "invoice_100"
+}

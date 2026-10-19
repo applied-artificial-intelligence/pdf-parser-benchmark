@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Germany
+  name: Stiffel Stiftung & Co. KG
+document_id: invoice_032
+due_date: '2025-09-23'
+generated_at: '2025-11-18T16:45:46.837786'
+industry: saas
+invoice_date: '2025-08-24'
+invoice_number: INV-20844
+line_item_count: 4
+payment_terms: Net 30
+region: EU
+subtotal: 118765.34
+tax_amount: 26128.37
+template_style: small_business
+total: 144893.71
+vendor:
+  country: Spain
+  name: Sync Digital
+corpus: business
+source_url: generated://invoice_032
+domain: invoices
+doc_id: invoice_032

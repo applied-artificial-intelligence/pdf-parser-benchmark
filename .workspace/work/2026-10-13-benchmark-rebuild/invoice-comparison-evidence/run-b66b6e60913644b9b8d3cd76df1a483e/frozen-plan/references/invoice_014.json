@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-29667",
+    "vendor": "Standard Corp",
+    "due_date": "2025-11-17",
+    "grand_total": "387346.85",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Quality Inspection (hour)",
+      "quantity": "34.38",
+      "unit_price": "111.3",
+      "line_total": "3826.49"
+    },
+    {
+      "description": "Custom Tooling (each)",
+      "quantity": "94.54",
+      "unit_price": "3671.75",
+      "line_total": "347127.24"
+    },
+    {
+      "description": "Steel Plate - 1/4 inch (sq ft)",
+      "quantity": "38.76",
+      "unit_price": "7.64",
+      "line_total": "296.13"
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "16.92",
+      "unit_price": "54.94",
+      "line_total": "929.58"
+    },
+    {
+      "description": "Assembly Labor (hour)",
+      "quantity": "59.12",
+      "unit_price": "63.81",
+      "line_total": "3772.45"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-29667",
+    "vendor": "Standard Corp",
+    "due_date": "November 17, 2025",
+    "grand_total": "$387,346.85",
+    "records": [
+      {
+        "description": "Quality Inspection (hour)",
+        "quantity": "34.38",
+        "unit_price": "$111.30",
+        "line_total": "$3,826.49"
+      },
+      {
+        "description": "Custom Tooling (each)",
+        "quantity": "94.54",
+        "unit_price": "$3,671.75",
+        "line_total": "$347,127.24"
+      },
+      {
+        "description": "Steel Plate - 1/4 inch (sq ft)",
+        "quantity": "38.76",
+        "unit_price": "$7.64",
+        "line_total": "$296.13"
+      },
+      {
+        "description": "Assembly Labor (hour)",
+        "quantity": "16.92",
+        "unit_price": "$54.94",
+        "line_total": "$929.58"
+      },
+      {
+        "description": "Assembly Labor (hour)",
+        "quantity": "59.12",
+        "unit_price": "$63.81",
+        "line_total": "$3,772.45"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5"
+    ]
+  },
+  "document_id": "invoice_014"
+}

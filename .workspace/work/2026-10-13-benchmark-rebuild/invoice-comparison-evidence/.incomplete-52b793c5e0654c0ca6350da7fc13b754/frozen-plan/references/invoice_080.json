@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-27105",
+    "vendor": "Advanced P.C.",
+    "due_date": "2025-08-21",
+    "grand_total": "389626.25",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Medical Consultation @ $259.77/visit",
+      "quantity": "7.56",
+      "line_total": "1963.86"
+    },
+    {
+      "description": "Laboratory Services @ $263.19/panel",
+      "quantity": "62.24",
+      "line_total": "16380.95"
+    },
+    {
+      "description": "Laboratory Services @ $185.82/panel",
+      "quantity": "18.77",
+      "line_total": "3487.84"
+    },
+    {
+      "description": "Physical Therapy @ $161.92/session",
+      "quantity": "78.58",
+      "line_total": "12723.67"
+    },
+    {
+      "description": "Specialized Procedure @ $3751.33/procedure",
+      "quantity": "82.46",
+      "line_total": "309334.67"
+    },
+    {
+      "description": "Laboratory Services @ $410.36/panel",
+      "quantity": "2.22",
+      "line_total": "911"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-27105",
+    "vendor": "Advanced P.C.",
+    "due_date": "08/21/2025",
+    "grand_total": "$389,626.25",
+    "records": [
+      {
+        "description": "Medical Consultation @ $259.77/visit",
+        "quantity": "7.56",
+        "line_total": "$1,963.86"
+      },
+      {
+        "description": "Laboratory Services @ $263.19/panel",
+        "quantity": "62.24",
+        "line_total": "$16,380.95"
+      },
+      {
+        "description": "Laboratory Services @ $185.82/panel",
+        "quantity": "18.77",
+        "line_total": "$3,487.84"
+      },
+      {
+        "description": "Physical Therapy @ $161.92/session",
+        "quantity": "78.58",
+        "line_total": "$12,723.67"
+      },
+      {
+        "description": "Specialized Procedure @ $3751.33/procedure",
+        "quantity": "82.46",
+        "line_total": "$309,334.67"
+      },
+      {
+        "description": "Laboratory Services @ $410.36/panel",
+        "quantity": "2.22",
+        "line_total": "$911.00"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6"
+    ]
+  },
+  "document_id": "invoice_080"
+}

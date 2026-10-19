@@ -1,0 +1,18 @@
+doc_id: arxiv-2303.18223
+source_url: https://arxiv.org/abs/2303.18223
+corpus: academic
+domain: arxiv
+title: "A Survey of Large Language Models"
+authors:
+  - Wayne Xin Zhao
+  - et al.
+publication_date: '2023-03-31'
+features:
+  - tables
+  - two_column
+  - citations
+license: arXiv
+notes: LLM survey - 144 pages. Ground truth still ar5iv (non-standard LaTeX blocked Pandoc conversion)
+file_paths:
+  pdf: corpus/academic/sample/pdfs/2303.18223.pdf
+  ground_truth: corpus/academic/sample/ground_truth/2303.18223.md

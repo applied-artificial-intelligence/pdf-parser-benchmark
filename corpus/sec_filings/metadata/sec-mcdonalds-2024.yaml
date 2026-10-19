@@ -1,0 +1,5 @@
+doc_id: sec-mcdonalds-2024
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/63908/000110465925032675/tm257733d2_ars.pdf

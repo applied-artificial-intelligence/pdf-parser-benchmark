@@ -1,0 +1,12 @@
+{
+ "item": "report-inspectable",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_reconstruction_report.py::test_changed_claim_value_is_rejected_by_the_consumer_against_original_source",
+  "fixture (both runs): Full retained qualified invoice/public bundles and historical registry through the actual report generator and consumer",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

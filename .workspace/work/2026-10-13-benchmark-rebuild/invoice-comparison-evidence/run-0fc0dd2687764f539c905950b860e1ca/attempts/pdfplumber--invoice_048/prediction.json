@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": null,
+    "vendor": null,
+    "due_date": null,
+    "grand_total": null,
+    "currency_marker": null
+  },
+  "field_surfaces": {
+    "invoice_number": [],
+    "due_date": [],
+    "grand_total": [],
+    "vendor": []
+  },
+  "records": [],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

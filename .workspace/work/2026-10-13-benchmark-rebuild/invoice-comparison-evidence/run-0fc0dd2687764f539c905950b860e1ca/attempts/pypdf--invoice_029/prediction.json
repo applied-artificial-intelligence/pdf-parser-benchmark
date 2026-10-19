@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-70863",
+    "vendor": "Summit Construction",
+    "due_date": "2025-09-24",
+    "grand_total": "37227.71",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-70863"
+    ],
+    "due_date": [
+      "September 24, 2025"
+    ],
+    "grand_total": [
+      "$37,227.71"
+    ],
+    "vendor": [
+      "Summit Construction"
+    ]
+  },
+  "records": [
+    {
+      "description": "Equipment Rental (day)",
+      "quantity": "5.66",
+      "unit_price": "542.92",
+      "line_total": "3072.93",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental\n(day)",
+        "quantity": "5.66",
+        "unit_price": "$542.92",
+        "line_total": "$3,072.93"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "49.94",
+      "unit_price": "82.75",
+      "line_total": "4132.54",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "49.94",
+        "unit_price": "$82.75",
+        "line_total": "$4,132.54"
+      }
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "76.64",
+      "unit_price": "83.43",
+      "line_total": "6394.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electrical Work\n(hour)",
+        "quantity": "76.64",
+        "unit_price": "$83.43",
+        "line_total": "$6,394.08"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "85.1",
+      "unit_price": "6.67",
+      "line_total": "567.62",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "85.10",
+        "unit_price": "$6.67",
+        "line_total": "$567.62"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "33.82",
+      "unit_price": "4.62",
+      "line_total": "156.25",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "33.82",
+        "unit_price": "$4.62",
+        "line_total": "$156.25"
+      }
+    },
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "15.61",
+      "unit_price": "113.7",
+      "line_total": "1774.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing (hour)",
+        "quantity": "15.61",
+        "unit_price": "$113.70",
+        "line_total": "$1,774.86"
+      }
+    },
+    {
+      "description": "Electrical Work (hour)",
+      "quantity": "66.96",
+      "unit_price": "119.66",
+      "line_total": "8012.43",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Electrical Work\n(hour)",
+        "quantity": "66.96",
+        "unit_price": "$119.66",
+        "line_total": "$8,012.43"
+      }
+    },
+    {
+      "description": "Materials - Concrete (cu yd)",
+      "quantity": "78.36",
+      "unit_price": "121.92",
+      "line_total": "9553.65",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Concrete\n(cu yd)",
+        "quantity": "78.36",
+        "unit_price": "$121.92",
+        "line_total": "$9,553.65"
+      }
+    },
+    {
+      "description": "General Labor (hour)",
+      "quantity": "11.23",
+      "unit_price": "48.62",
+      "line_total": "546",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor\n(hour)",
+        "quantity": "11.23",
+        "unit_price": "$48.62",
+        "line_total": "$546.00"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

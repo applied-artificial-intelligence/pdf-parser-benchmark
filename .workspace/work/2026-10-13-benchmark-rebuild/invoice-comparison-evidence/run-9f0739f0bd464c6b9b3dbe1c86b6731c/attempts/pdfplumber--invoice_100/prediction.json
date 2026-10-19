@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-31757",
+    "vendor": null,
+    "due_date": "2025-11-15",
+    "grand_total": "19469.79",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-31757"
+    ],
+    "due_date": [
+      "11/15/2025"
+    ],
+    "grand_total": [
+      "$19,469.79"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Pallet Exchange @ $20.13/pallet",
+      "quantity": "27.66",
+      "line_total": "556.8",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Pallet Exchange @\n$20.13/pallet",
+        "quantity": "27.66",
+        "line_total": "$556.80"
+      }
+    },
+    {
+      "description": "Inside Delivery @ $84.90/per stop",
+      "quantity": "96.55",
+      "line_total": "8197.1",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $84.90/per\nstop",
+        "quantity": "96.55",
+        "line_total": "$8,197.10"
+      }
+    },
+    {
+      "description": "Inside Delivery @ $50.19/per stop",
+      "quantity": "66.67",
+      "line_total": "3346.17",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $50.19/per\nstop",
+        "quantity": "66.67",
+        "line_total": "$3,346.17"
+      }
+    },
+    {
+      "description": "Inside Delivery @ $112.14/per stop",
+      "quantity": "17.7",
+      "line_total": "1984.88",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Inside Delivery @ $112.14/per\nstop",
+        "quantity": "17.70",
+        "line_total": "$1,984.88"
+      }
+    },
+    {
+      "description": "LTL Freight - Class 85 @ $52.21/cwt",
+      "quantity": "61.8",
+      "line_total": "3226.58",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "LTL Freight - Class 85 @\n$52.21/cwt",
+        "quantity": "61.80",
+        "line_total": "$3,226.58"
+      }
+    },
+    {
+      "description": "Fuel Surcharge @ $25.11/% of base",
+      "quantity": "21.93",
+      "line_total": "550.66",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fuel Surcharge @ $25.11/% of\nbase",
+        "quantity": "21.93",
+        "line_total": "$550.66"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

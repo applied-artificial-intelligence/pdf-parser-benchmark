@@ -1,0 +1,517 @@
+{
+  "benchmark": {
+    "name": "Comprehensive Multi-Metric Evaluation",
+    "timestamp": "2025-11-20T18:33:24.287707+00:00",
+    "config_file": "benchmarks/comprehensive_metrics.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "marker_ollama": "1.10.1-ollama",
+      "pypdfium2": "4.30.0",
+      "pymupdf": "1.26.6",
+      "pdfplumber": "0.11.8",
+      "unstructured": "0.18.20"
+    }
+  },
+  "results": [
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9508622005188463,
+        "chrf++": 96.86644162902157,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007126331329345703
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9564596716630978,
+        "chrf++": 96.50882557966187,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005390644073486328
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9443254817987152,
+        "chrf++": 97.52043327250665,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003619194030761719
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8198403648802737,
+        "chrf++": 81.73639673816275,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00027751922607421875
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9553846153846154,
+        "chrf++": 99.49699792169189,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00021314620971679688
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9730679156908665,
+        "chrf++": 96.2873325867799,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.000225067138671875
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "marker_ollama",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9243564356435644,
+        "chrf++": 99.46257996313167,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003330707550048828
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9462233798069557,
+        "chrf++": 98.24731166517951,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002617835998535156
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.95941708171924,
+        "chrf++": 95.07971403019909,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00029158592224121094
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9347244515783841,
+        "chrf++": 96.54738526709973,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002589225769042969
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7899015832263586,
+        "chrf++": 70.45054761192586,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002193450927734375
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9500384319754035,
+        "chrf++": 98.43026193571487,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020694732666015625
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9707784431137725,
+        "chrf++": 97.18129410232405,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020837783813476562
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9205153617443013,
+        "chrf++": 98.52064337483006,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032401084899902344
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.943373125191307,
+        "chrf++": 98.24587757476995,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003414154052734375
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9503781590112526,
+        "chrf++": 93.83409344283581,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0008249282836914062
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9362272240085745,
+        "chrf++": 96.49219907938281,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00046181678771972656
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7556696619597775,
+        "chrf++": 70.20338332008478,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003917217254638672
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9486196319018405,
+        "chrf++": 98.2911677312472,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002338886260986328
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9655254967680154,
+        "chrf++": 96.2596255643573,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020647048950195312
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9183633129076892,
+        "chrf++": 98.54835557254049,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002551078796386719
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9396138996138996,
+        "chrf++": 96.76321349746887,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00032329559326171875
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9186496956281129,
+        "chrf++": 90.82945437890395,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006644725799560547
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9041621029572837,
+        "chrf++": 90.43925326590116,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003037452697753906
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.789045785194694,
+        "chrf++": 70.20338332008478,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00023603439331054688
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9211356466876972,
+        "chrf++": 92.95244262805228,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002067089080810547
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9429940119760479,
+        "chrf++": 91.88203191512864,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002193450927734375
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9048853439680957,
+        "chrf++": 94.31351267797685,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004291534423828125
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9309818292869141,
+        "chrf++": 97.96656099785437,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003056526184082031
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.920704845814978,
+        "chrf++": 93.53646722127222,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003707408905029297
+    },
+    {
+      "document_id": "syn-lists-001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9427807486631016,
+        "chrf++": 96.17858651856326,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00035762786865234375
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6508344030808729,
+        "chrf++": 70.45088890037731,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003218650817871094
+    },
+    {
+      "document_id": "syn-basic-001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9503058103975535,
+        "chrf++": 98.25485851807808,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.00043845176696777344
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9747641509433962,
+        "chrf++": 95.98947218218312,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006401538848876953
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9196375812487689,
+        "chrf++": 98.33670294402272,
+        "tree_similarity": null,
+        "element_f1": null,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003135204315185547
+    }
+  ],
+  "summary": {
+    "total_documents": 7,
+    "total_parsers": 5,
+    "total_results": 35,
+    "success_count": 35,
+    "failure_count": 0
+  }
+}

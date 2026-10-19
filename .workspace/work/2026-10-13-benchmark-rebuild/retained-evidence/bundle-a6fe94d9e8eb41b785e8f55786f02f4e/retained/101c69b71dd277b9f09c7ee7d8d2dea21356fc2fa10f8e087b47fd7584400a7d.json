@@ -1,0 +1,1581 @@
+{
+  "benchmark": {
+    "name": "Databricks + Google Cache Rebuild",
+    "timestamp": "2025-11-24T02:27:52.066138+00:00",
+    "config_file": "benchmarks/databricks_google_rebuild.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "databricks": "1.0.0",
+      "google_document_ai": "1.0.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9820118343195267,
+        "chrf++": 97.6726805757116
+      },
+      "error": null,
+      "parse_time_seconds": 28.929489135742188
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5702292541168873,
+        "chrf++": 60.36909195787011
+      },
+      "error": null,
+      "parse_time_seconds": 6.847342252731323
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9479913916786227,
+        "chrf++": 94.16407808716535
+      },
+      "error": null,
+      "parse_time_seconds": 6.86696457862854
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4568690095846646,
+        "chrf++": 51.835246175718765
+      },
+      "error": null,
+      "parse_time_seconds": 4.052157878875732
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4642857142857143,
+        "chrf++": 51.38585186076433
+      },
+      "error": null,
+      "parse_time_seconds": 3.100709915161133
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4004629629629629,
+        "chrf++": 44.50281711989344
+      },
+      "error": null,
+      "parse_time_seconds": 3.5559701919555664
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5284552845528455,
+        "chrf++": 60.05022815143962
+      },
+      "error": null,
+      "parse_time_seconds": 3.7305638790130615
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.38497652582159625,
+        "chrf++": 43.0983254642252
+      },
+      "error": null,
+      "parse_time_seconds": 3.394930601119995
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5374280230326296,
+        "chrf++": 56.84074865414254
+      },
+      "error": null,
+      "parse_time_seconds": 3.7196061611175537
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9366515837104072,
+        "chrf++": 89.9200195704728
+      },
+      "error": null,
+      "parse_time_seconds": 3.993255853652954
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.957983193277311,
+        "chrf++": 93.09293311362774
+      },
+      "error": null,
+      "parse_time_seconds": 4.296185731887817
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8932038834951457,
+        "chrf++": 79.08012220320838
+      },
+      "error": null,
+      "parse_time_seconds": 4.494097948074341
+    },
+    {
+      "document_id": "18_list_nested_3level",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9005847953216375,
+        "chrf++": 78.71675441408017
+      },
+      "error": null,
+      "parse_time_seconds": 7.326364040374756
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9224598930481284,
+        "chrf++": 84.69311031656845
+      },
+      "error": null,
+      "parse_time_seconds": 5.943727731704712
+    },
+    {
+      "document_id": "20_list_with_paragraphs",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9737654320987654,
+        "chrf++": 97.24914521320088
+      },
+      "error": null,
+      "parse_time_seconds": 4.452868938446045
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9365750528541226,
+        "chrf++": 94.71018060316008
+      },
+      "error": null,
+      "parse_time_seconds": 4.37466835975647
+    },
+    {
+      "document_id": "22_column_three_column",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5824175824175823,
+        "chrf++": 77.17757955809437
+      },
+      "error": null,
+      "parse_time_seconds": 3.918410301208496
+    },
+    {
+      "document_id": "23_column_mixed_width",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9363867684478372,
+        "chrf++": 92.70431410450094
+      },
+      "error": null,
+      "parse_time_seconds": 3.6803505420684814
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9312169312169312,
+        "chrf++": 92.56194038202693
+      },
+      "error": null,
+      "parse_time_seconds": 4.0939390659332275
+    },
+    {
+      "document_id": "25_column_academic",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9346534653465346,
+        "chrf++": 93.54547373660637
+      },
+      "error": null,
+      "parse_time_seconds": 4.609341382980347
+    },
+    {
+      "document_id": "26_column_brochure",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.726923076923077,
+        "chrf++": 82.40840990979657
+      },
+      "error": null,
+      "parse_time_seconds": 5.518367528915405
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7018927444794953,
+        "chrf++": 72.02832654119815
+      },
+      "error": null,
+      "parse_time_seconds": 8.087158441543579
+    },
+    {
+      "document_id": "28_mixed_technical_docs",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6791171477079796,
+        "chrf++": 68.84416822309875
+      },
+      "error": null,
+      "parse_time_seconds": 6.007853269577026
+    },
+    {
+      "document_id": "29_mixed_policy_doc",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6768488745980707,
+        "chrf++": 68.54576879398708
+      },
+      "error": null,
+      "parse_time_seconds": 5.559030532836914
+    },
+    {
+      "document_id": "30_mixed_meeting_minutes",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7407912687585265,
+        "chrf++": 77.92531431569255
+      },
+      "error": null,
+      "parse_time_seconds": 8.498045921325684
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6651917404129793,
+        "chrf++": 69.09911445833748
+      },
+      "error": null,
+      "parse_time_seconds": 6.753772497177124
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7816196542311192,
+        "chrf++": 78.28286229931416
+      },
+      "error": null,
+      "parse_time_seconds": 12.695696115493774
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "databricks",
+      "success": false,
+      "metrics": {},
+      "error": "'NoneType' object has no attribute 'strip'",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9781097470788345,
+        "chrf++": 98.11651944993797
+      },
+      "error": null,
+      "parse_time_seconds": 8.39190411567688
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7797760434340006,
+        "chrf++": 86.11052604126365
+      },
+      "error": null,
+      "parse_time_seconds": 8.551965951919556
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "databricks",
+      "success": false,
+      "metrics": {},
+      "error": "'NoneType' object has no attribute 'strip'",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7984344422700587,
+        "chrf++": 85.69905177320207
+      },
+      "error": null,
+      "parse_time_seconds": 6.9324421882629395
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.970015851492523,
+        "chrf++": 97.50252760482697
+      },
+      "error": null,
+      "parse_time_seconds": 26.72089982032776
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9794825545346937,
+        "chrf++": 98.45396913406988
+      },
+      "error": null,
+      "parse_time_seconds": 14.203220844268799
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9698337553671694,
+        "chrf++": 98.15566354279758
+      },
+      "error": null,
+      "parse_time_seconds": 11.20472764968872
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9783963952842417,
+        "chrf++": 98.35464653304243
+      },
+      "error": null,
+      "parse_time_seconds": 12.06530237197876
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8667361219350128,
+        "chrf++": 93.14963265982739
+      },
+      "error": null,
+      "parse_time_seconds": 21.6344051361084
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9827293812931894,
+        "chrf++": 98.61730972284397
+      },
+      "error": null,
+      "parse_time_seconds": 55.4361355304718
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "databricks",
+      "success": false,
+      "metrics": {},
+      "error": "'NoneType' object has no attribute 'strip'",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9767446178411949,
+        "chrf++": 99.20199655481531
+      },
+      "error": null,
+      "parse_time_seconds": 27.058916568756104
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7049210886044488,
+        "chrf++": 88.5297812652862
+      },
+      "error": null,
+      "parse_time_seconds": 56.4845335483551
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "databricks",
+      "success": false,
+      "metrics": {},
+      "error": "'NoneType' object has no attribute 'strip'",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4792810783824264,
+        "chrf++": 65.05998739241127
+      },
+      "error": null,
+      "parse_time_seconds": 11.676653623580933
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6916342412451362,
+        "chrf++": 79.3778764865049
+      },
+      "error": null,
+      "parse_time_seconds": 8.954824447631836
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4917293233082707,
+        "chrf++": 70.39527518093864
+      },
+      "error": null,
+      "parse_time_seconds": 9.20084834098816
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7236679058240396,
+        "chrf++": 83.18440594829224
+      },
+      "error": null,
+      "parse_time_seconds": 6.498976707458496
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48886059834500317,
+        "chrf++": 66.0722253154755
+      },
+      "error": null,
+      "parse_time_seconds": 5.40538477897644
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5708117443868739,
+        "chrf++": 77.23705177058785
+      },
+      "error": null,
+      "parse_time_seconds": 5.746934413909912
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6666666666666667,
+        "chrf++": 78.7233385958438
+      },
+      "error": null,
+      "parse_time_seconds": 6.110792875289917
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6923963133640554,
+        "chrf++": 79.871409679243
+      },
+      "error": null,
+      "parse_time_seconds": 5.3441481590271
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5006747638326585,
+        "chrf++": 66.06999977350338
+      },
+      "error": null,
+      "parse_time_seconds": 6.927964448928833
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6923076923076923,
+        "chrf++": 83.0837523477335
+      },
+      "error": null,
+      "parse_time_seconds": 4.743175029754639
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5515750463248918,
+        "chrf++": 66.6407679903477
+      },
+      "error": null,
+      "parse_time_seconds": 5.789020538330078
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5652431791221827,
+        "chrf++": 70.34276410299228
+      },
+      "error": null,
+      "parse_time_seconds": 6.670268297195435
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5260029717682021,
+        "chrf++": 73.43483106065986
+      },
+      "error": null,
+      "parse_time_seconds": 10.473637342453003
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6758286176232822,
+        "chrf++": 79.32495905711762
+      },
+      "error": null,
+      "parse_time_seconds": 6.874567031860352
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6128472222222222,
+        "chrf++": 74.7188019365184
+      },
+      "error": null,
+      "parse_time_seconds": 6.157151460647583
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5422535211267605,
+        "chrf++": 75.60906545417586
+      },
+      "error": null,
+      "parse_time_seconds": 7.6375648975372314
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5977249224405378,
+        "chrf++": 76.44278550294581
+      },
+      "error": null,
+      "parse_time_seconds": 4.803189277648926
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5003494060097834,
+        "chrf++": 67.25154887382969
+      },
+      "error": null,
+      "parse_time_seconds": 5.600477933883667
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5546875,
+        "chrf++": 69.76894884744887
+      },
+      "error": null,
+      "parse_time_seconds": 5.450004577636719
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5232558139534884,
+        "chrf++": 74.10778466457371
+      },
+      "error": null,
+      "parse_time_seconds": 6.907726764678955
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5282331511839709,
+        "chrf++": 71.66487126542103
+      },
+      "error": null,
+      "parse_time_seconds": 6.492275953292847
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.987378640776699,
+        "chrf++": 98.64767734564057
+      },
+      "error": null,
+      "parse_time_seconds": 14.228399515151978
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7357723577235773,
+        "chrf++": 91.410161401711
+      },
+      "error": null,
+      "parse_time_seconds": 6.158767223358154
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9834135901551632,
+        "chrf++": 98.42575089973336
+      },
+      "error": null,
+      "parse_time_seconds": 8.582536458969116
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7871287128712872,
+        "chrf++": 94.97912501889849
+      },
+      "error": null,
+      "parse_time_seconds": 5.630832672119141
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9848484848484849,
+        "chrf++": 98.12384078657132
+      },
+      "error": null,
+      "parse_time_seconds": 10.954580068588257
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6288916562889166,
+        "chrf++": 91.0131730101381
+      },
+      "error": null,
+      "parse_time_seconds": 11.86434292793274
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8786342123056119,
+        "chrf++": 88.08468788820586
+      },
+      "error": null,
+      "parse_time_seconds": 9.63411259651184
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9250605745932848,
+        "chrf++": 94.15551715584823
+      },
+      "error": null,
+      "parse_time_seconds": 12.03245234489441
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "databricks",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9284104697521234,
+        "chrf++": 94.41859342864971
+      },
+      "error": null,
+      "parse_time_seconds": 14.868362426757812
+    },
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9911799761620977,
+        "chrf++": 98.95854877503429
+      },
+      "error": null,
+      "parse_time_seconds": 2.248258352279663
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6602481814291827,
+        "chrf++": 70.3440486811975
+      },
+      "error": null,
+      "parse_time_seconds": 2.1095187664031982
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9389411547684929,
+        "chrf++": 96.23239957975703
+      },
+      "error": null,
+      "parse_time_seconds": 2.3288729190826416
+    },
+    {
+      "document_id": "09_table_simple_grid",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5896226415094339,
+        "chrf++": 62.0622928968679
+      },
+      "error": null,
+      "parse_time_seconds": 1.4666111469268799
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6111111111111112,
+        "chrf++": 60.666661454553605
+      },
+      "error": null,
+      "parse_time_seconds": 1.3587830066680908
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5194805194805194,
+        "chrf++": 53.217870964900385
+      },
+      "error": null,
+      "parse_time_seconds": 1.5732038021087646
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6402266288951841,
+        "chrf++": 66.58555902305834
+      },
+      "error": null,
+      "parse_time_seconds": 1.6124651432037354
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5920245398773006,
+        "chrf++": 51.26378080485471
+      },
+      "error": null,
+      "parse_time_seconds": 1.7084343433380127
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.672972972972973,
+        "chrf++": 68.68755985222363
+      },
+      "error": null,
+      "parse_time_seconds": 1.7334790229797363
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9310344827586207,
+        "chrf++": 90.75203713945666
+      },
+      "error": null,
+      "parse_time_seconds": 1.728262186050415
+    },
+    {
+      "document_id": "16_list_numbered",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9633802816901409,
+        "chrf++": 93.76590720936358
+      },
+      "error": null,
+      "parse_time_seconds": 1.598137617111206
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8933333333333333,
+        "chrf++": 86.43890449186743
+      },
+      "error": null,
+      "parse_time_seconds": 1.610316514968872
+    },
+    {
+      "document_id": "18_list_nested_3level",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9088397790055248,
+        "chrf++": 83.08465501042788
+      },
+      "error": null,
+      "parse_time_seconds": 1.7017407417297363
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.914572864321608,
+        "chrf++": 85.57132899337401
+      },
+      "error": null,
+      "parse_time_seconds": 1.8448495864868164
+    },
+    {
+      "document_id": "20_list_with_paragraphs",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9725609756097561,
+        "chrf++": 97.63775989821728
+      },
+      "error": null,
+      "parse_time_seconds": 2.0503017902374268
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9260042283298098,
+        "chrf++": 93.03577389062761
+      },
+      "error": null,
+      "parse_time_seconds": 1.638948678970337
+    },
+    {
+      "document_id": "22_column_three_column",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5604395604395604,
+        "chrf++": 71.54308016259534
+      },
+      "error": null,
+      "parse_time_seconds": 1.5670363903045654
+    },
+    {
+      "document_id": "23_column_mixed_width",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9312977099236641,
+        "chrf++": 91.95524789185913
+      },
+      "error": null,
+      "parse_time_seconds": 1.5915765762329102
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.917989417989418,
+        "chrf++": 91.59637592916555
+      },
+      "error": null,
+      "parse_time_seconds": 1.6475927829742432
+    },
+    {
+      "document_id": "25_column_academic",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9386138613861386,
+        "chrf++": 93.72539666826553
+      },
+      "error": null,
+      "parse_time_seconds": 1.5314431190490723
+    },
+    {
+      "document_id": "26_column_brochure",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8538461538461538,
+        "chrf++": 83.09356859371981
+      },
+      "error": null,
+      "parse_time_seconds": 1.7287416458129883
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7775665399239544,
+        "chrf++": 79.06055900585143
+      },
+      "error": null,
+      "parse_time_seconds": 1.7405610084533691
+    },
+    {
+      "document_id": "28_mixed_technical_docs",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5441478439425051,
+        "chrf++": 75.71646337751672
+      },
+      "error": null,
+      "parse_time_seconds": 1.538968801498413
+    },
+    {
+      "document_id": "29_mixed_policy_doc",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6765873015873016,
+        "chrf++": 75.16241951719933
+      },
+      "error": null,
+      "parse_time_seconds": 1.8465213775634766
+    },
+    {
+      "document_id": "30_mixed_meeting_minutes",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.856,
+        "chrf++": 80.67223095132006
+      },
+      "error": null,
+      "parse_time_seconds": 1.8362078666687012
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8115942028985508,
+        "chrf++": 75.60938958330297
+      },
+      "error": null,
+      "parse_time_seconds": 1.7375972270965576
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8429752066115702,
+        "chrf++": 82.30871208557244
+      },
+      "error": null,
+      "parse_time_seconds": 1.7933166027069092
+    },
+    {
+      "document_id": "cuad_007",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.91052790346908,
+        "chrf++": 91.11450218929382
+      },
+      "error": null,
+      "parse_time_seconds": 4.823103427886963
+    },
+    {
+      "document_id": "cuad_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9507469309273776,
+        "chrf++": 96.69505371596533
+      },
+      "error": null,
+      "parse_time_seconds": 2.1866917610168457
+    },
+    {
+      "document_id": "cuad_026",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7689099526066351,
+        "chrf++": 83.5553371557146
+      },
+      "error": null,
+      "parse_time_seconds": 2.260303497314453
+    },
+    {
+      "document_id": "cuad_027",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 111 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"111\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_028",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8109965635738832,
+        "chrf++": 95.79688022633897
+      },
+      "error": null,
+      "parse_time_seconds": 1.960758924484253
+    },
+    {
+      "document_id": "cuad_036",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages in non-imageless mode exceed the limit: 15 got 20. Try using imageless mode to increase the limit to 30. [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"20\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_037",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9662364015557184,
+        "chrf++": 97.07369624055563
+      },
+      "error": null,
+      "parse_time_seconds": 5.208453178405762
+    },
+    {
+      "document_id": "cuad_038",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9705019646909071,
+        "chrf++": 98.18169935723212
+      },
+      "error": null,
+      "parse_time_seconds": 3.6580429077148438
+    },
+    {
+      "document_id": "cuad_042",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9622419244838489,
+        "chrf++": 97.12804763698516
+      },
+      "error": null,
+      "parse_time_seconds": 3.343358278274536
+    },
+    {
+      "document_id": "cuad_051",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 52 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"52\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_052",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 106 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"106\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_054",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9420944805977344,
+        "chrf++": 97.11789380001127
+      },
+      "error": null,
+      "parse_time_seconds": 2.387951374053955
+    },
+    {
+      "document_id": "cuad_059",
+      "parser_name": "google_document_ai",
+      "success": false,
+      "metrics": {},
+      "error": "Document AI processing failed: 400 Document pages exceed the limit: 30 got 37 [reason: \"PAGE_LIMIT_EXCEEDED\"\ndomain: \"documentai.googleapis.com\"\nmetadata {\n  key: \"pages\"\n  value: \"37\"\n}\nmetadata {\n  key: \"page_limit\"\n  value: \"30\"\n}\n]",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "cuad_060",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.932098512477974,
+        "chrf++": 94.74224248032908
+      },
+      "error": null,
+      "parse_time_seconds": 3.7621402740478516
+    },
+    {
+      "document_id": "cuad_066",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.864,
+        "chrf++": 93.66773095314672
+      },
+      "error": null,
+      "parse_time_seconds": 2.207948684692383
+    },
+    {
+      "document_id": "invoice_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4547803617571059,
+        "chrf++": 72.80232823704418
+      },
+      "error": null,
+      "parse_time_seconds": 1.704984426498413
+    },
+    {
+      "document_id": "invoice_005",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7026699029126213,
+        "chrf++": 85.40454600909175
+      },
+      "error": null,
+      "parse_time_seconds": 1.6382191181182861
+    },
+    {
+      "document_id": "invoice_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5426008968609866,
+        "chrf++": 80.19181265004713
+      },
+      "error": null,
+      "parse_time_seconds": 1.7600057125091553
+    },
+    {
+      "document_id": "invoice_015",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5954545454545455,
+        "chrf++": 88.14311445808474
+      },
+      "error": null,
+      "parse_time_seconds": 1.6328191757202148
+    },
+    {
+      "document_id": "invoice_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5527638190954773,
+        "chrf++": 78.78968971190135
+      },
+      "error": null,
+      "parse_time_seconds": 3.372642993927002
+    },
+    {
+      "document_id": "invoice_025",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5301478953356087,
+        "chrf++": 81.64835799914464
+      },
+      "error": null,
+      "parse_time_seconds": 1.7525227069854736
+    },
+    {
+      "document_id": "invoice_030",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5202380952380952,
+        "chrf++": 76.39009107581238
+      },
+      "error": null,
+      "parse_time_seconds": 1.7606515884399414
+    },
+    {
+      "document_id": "invoice_035",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6739446870451238,
+        "chrf++": 82.54477617038305
+      },
+      "error": null,
+      "parse_time_seconds": 1.8713164329528809
+    },
+    {
+      "document_id": "invoice_040",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5054704595185995,
+        "chrf++": 76.3958598377919
+      },
+      "error": null,
+      "parse_time_seconds": 1.7370986938476562
+    },
+    {
+      "document_id": "invoice_045",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6587677725118484,
+        "chrf++": 85.96029705616999
+      },
+      "error": null,
+      "parse_time_seconds": 1.621718406677246
+    },
+    {
+      "document_id": "invoice_050",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.668241965973535,
+        "chrf++": 82.39280024162422
+      },
+      "error": null,
+      "parse_time_seconds": 2.386847734451294
+    },
+    {
+      "document_id": "invoice_055",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5844027640671273,
+        "chrf++": 72.98036547227348
+      },
+      "error": null,
+      "parse_time_seconds": 2.201030731201172
+    },
+    {
+      "document_id": "invoice_060",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6765015806111696,
+        "chrf++": 79.90731406194737
+      },
+      "error": null,
+      "parse_time_seconds": 2.4955525398254395
+    },
+    {
+      "document_id": "invoice_065",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7333333333333334,
+        "chrf++": 84.954995397623
+      },
+      "error": null,
+      "parse_time_seconds": 1.7958793640136719
+    },
+    {
+      "document_id": "invoice_070",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5012224938875305,
+        "chrf++": 81.77647335165621
+      },
+      "error": null,
+      "parse_time_seconds": 2.090846300125122
+    },
+    {
+      "document_id": "invoice_075",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5770877944325482,
+        "chrf++": 80.84307528148368
+      },
+      "error": null,
+      "parse_time_seconds": 1.9249682426452637
+    },
+    {
+      "document_id": "invoice_080",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5288461538461539,
+        "chrf++": 82.87839923782803
+      },
+      "error": null,
+      "parse_time_seconds": 2.238300323486328
+    },
+    {
+      "document_id": "invoice_085",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5224056603773585,
+        "chrf++": 77.56965827895051
+      },
+      "error": null,
+      "parse_time_seconds": 1.8365118503570557
+    },
+    {
+      "document_id": "invoice_090",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.46570397111913353,
+        "chrf++": 78.12053466266637
+      },
+      "error": null,
+      "parse_time_seconds": 1.6960785388946533
+    },
+    {
+      "document_id": "invoice_095",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5640449438202247,
+        "chrf++": 82.80063572010062
+      },
+      "error": null,
+      "parse_time_seconds": 1.7130308151245117
+    },
+    {
+      "document_id": "invoice_100",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6657789613848202,
+        "chrf++": 86.76364581821481
+      },
+      "error": null,
+      "parse_time_seconds": 1.808842420578003
+    },
+    {
+      "document_id": "resume_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9526963103122044,
+        "chrf++": 93.67277802464162
+      },
+      "error": null,
+      "parse_time_seconds": 1.8289101123809814
+    },
+    {
+      "document_id": "resume_005",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6869918699186992,
+        "chrf++": 84.47931345876754
+      },
+      "error": null,
+      "parse_time_seconds": 1.6402599811553955
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9608150470219435,
+        "chrf++": 95.47261768412176
+      },
+      "error": null,
+      "parse_time_seconds": 1.9473803043365479
+    },
+    {
+      "document_id": "resume_015",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7425742574257426,
+        "chrf++": 89.75581023403817
+      },
+      "error": null,
+      "parse_time_seconds": 1.720731258392334
+    },
+    {
+      "document_id": "resume_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9683646112600536,
+        "chrf++": 95.47597340795666
+      },
+      "error": null,
+      "parse_time_seconds": 1.8513624668121338
+    },
+    {
+      "document_id": "resume_025",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5821078431372548,
+        "chrf++": 85.2827233460549
+      },
+      "error": null,
+      "parse_time_seconds": 1.720442533493042
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9175118323191346,
+        "chrf++": 93.19039021593456
+      },
+      "error": null,
+      "parse_time_seconds": 2.2736003398895264
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9170993423329872,
+        "chrf++": 93.2982680023569
+      },
+      "error": null,
+      "parse_time_seconds": 2.153252363204956
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "google_document_ai",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9164499913329867,
+        "chrf++": 93.10306703846338
+      },
+      "error": null,
+      "parse_time_seconds": 1.9782989025115967
+    }
+  ],
+  "summary": {
+    "total_documents": 72,
+    "total_parsers": 2,
+    "total_results": 144,
+    "success_count": 135,
+    "failure_count": 9
+  }
+}

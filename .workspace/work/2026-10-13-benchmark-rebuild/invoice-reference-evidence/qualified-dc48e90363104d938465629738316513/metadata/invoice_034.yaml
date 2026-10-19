@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Netherlands
+  name: Aumann
+document_id: invoice_034
+due_date: '2025-11-16'
+generated_at: '2025-11-18T16:45:49.672721'
+industry: printing
+invoice_date: '2025-10-17'
+invoice_number: INV-64033
+line_item_count: 8
+payment_terms: 50% Deposit, 50% on Completion
+region: EU
+subtotal: 4967.23
+tax_amount: 1043.12
+template_style: enterprise
+total: 6010.35
+vendor:
+  country: Germany
+  name: Digital Printing
+corpus: business
+source_url: generated://invoice_034
+domain: invoices
+doc_id: invoice_034

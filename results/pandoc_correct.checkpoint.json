@@ -1,0 +1,77 @@
+{
+  "benchmark": {
+    "name": "Academic Papers - Pandoc Ground Truth Test",
+    "timestamp": "2026-02-01T17:54:46.847709+00:00",
+    "config_file": null
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-94-generic-x86_64-with-glibc2.39",
+    "parser_versions": {}
+  },
+  "results": [
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45712876546020187,
+        "chrf++": 41.97556636649945,
+        "character_error_rate": 0.5428712345397981,
+        "latex_f1": 0.0,
+        "element_f1": 0.4607129168263702
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009722709655761719
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.45549738219895286,
+        "chrf++": 42.07139960743363,
+        "character_error_rate": 0.5445026178010471,
+        "latex_f1": 0.0,
+        "element_f1": 0.5192557334487234
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010731220245361328
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6433340921162456,
+        "chrf++": 65.20182219413626,
+        "character_error_rate": 0.35666590788375446,
+        "latex_f1": 0.15813953488372093,
+        "element_f1": 0.6778947368421053
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010144710540771484
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40860459822444795,
+        "chrf++": 40.56389331743097,
+        "character_error_rate": 0.591395401775552,
+        "latex_f1": 0.0,
+        "element_f1": 0.32625482625482627
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009818077087402344
+    }
+  ],
+  "summary": {
+    "total_documents": 1,
+    "total_parsers": 4,
+    "total_results": 4,
+    "success_count": 4,
+    "failure_count": 0
+  }
+}

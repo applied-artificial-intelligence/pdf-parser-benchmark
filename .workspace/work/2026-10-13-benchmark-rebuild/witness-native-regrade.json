@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "producer": "pdf_bench/parsebench_comparison.py",
+  "test": "tests/test_parsebench_comparison.py::test_newly_wrong_native_grade_cannot_reuse_a_previous_verified_score",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/parsebench_comparison.py",
+      "old": "    if actual != read_json(bundle / \"native-results.json\"):",
+      "new": "    if False:"
+    }
+  }
+}

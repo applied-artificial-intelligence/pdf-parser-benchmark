@@ -1,0 +1,163 @@
+{
+  "prepared_at": "2026-10-14T23:15:32.908526+00:00",
+  "base_revision": "bf8285b4cf4e69295eda2391665d54d9077d4d0a",
+  "branch": "main",
+  "origin_main_observed": "6a6b01a9482b4b019d1267fb672a76629bdc2fcf",
+  "reviewed_revision": "d9305d6100e5288fa2fc255e088bfd8e22664b98",
+  "source_identity_warning": "Dirty working tree: base revision alone does not version inputs",
+  "tracked_diff_sha256": "d5299bc656107d2c669bd2429f981dada3bbff7d031cd3d95a2239e70838799f",
+  "inputs": {
+    "pdf_bench/persistence.py": {
+      "sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "bytes": 5863
+    },
+    "pdf_bench/systems/pdfsmith_adapter.py": {
+      "sha256": "a6dc60a2c3336ddec3f04a5979cffa8a8b5c6b9252076c89baeb9d4bfe050c0a",
+      "bytes": 6256
+    },
+    "pdf_bench/utils/caching.py": {
+      "sha256": "ac6b0b6a12b4262dc2b7f33bbf34ad7d12ab810dfbcbd70e34c0f9a621b95bed",
+      "bytes": 14740
+    },
+    "pdf_bench/runner.py": {
+      "sha256": "7f42b008aca79ed560f0033821b7b832b97068053b697f24c96fa6e75d212be9",
+      "bytes": 25342
+    },
+    "pdf_bench/inventory.py": {
+      "sha256": "90c87281bd9a7788bb88302829b000dfcab02ee84a1004e819d8cf17b90b169a",
+      "bytes": 34968
+    },
+    "scripts/build_internal_benchmark_story.py": {
+      "sha256": "d9580283c1bd0115aeb494305d38c6e9fcd52f50304da21fd85e82d8aa9a2f09",
+      "bytes": 14532
+    },
+    "pdf_bench/local_evaluation.py": {
+      "sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "bytes": 11455
+    },
+    "tests/test_local_evaluation.py": {
+      "sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "bytes": 3127
+    },
+    "builders/generate_invoice_corpus.py": {
+      "sha256": "997e9689fb40bdd8e8099924df9a39c18bb1a1a042e432e36028faf69bdc7388",
+      "bytes": 15033
+    },
+    "builders/invoice/data_generators.py": {
+      "sha256": "8cc8e11193446111d201e87182b2d54ccc3e93b43db041827eb8244afbc2d280",
+      "bytes": 13697
+    },
+    "benchmarks/sec_filings_47docs.yaml": {
+      "sha256": "5f3a0b63762522d38809c0f28686b35b553ae3c98b48855d5a5a8661d61a1182",
+      "bytes": 2364
+    },
+    "benchmarks/invoices_100docs_fresh.yaml": {
+      "sha256": "545b5386b7faf9e889ba6c1e75100c1fcac4097180174aa9043a885026713d58",
+      "bytes": 2127
+    },
+    ".workspace/work/2026-10-13-local-parser-evaluation/technical-report.md": {
+      "sha256": "6b4aca6ee26956f155d2c16d4e1f1297d825f0987fa08e13e8bb6276e9b34821",
+      "bytes": 6413
+    },
+    "results/sec_filings_47docs.json": {
+      "sha256": "ad41db79a24444d579cfa8dcc5cef8b5e38f2ac6be984ffff76638bb9afdd5dc",
+      "bytes": 225700
+    },
+    "results/invoices_100docs_fresh.json": {
+      "sha256": "e246ef2645072c6ee9b298bbac5b31fbdc93a26f586c2f848231067e63e3694c",
+      "bytes": 175538
+    },
+    "results/presentations_30docs.json": {
+      "sha256": "1a001008d74788f09ac3fb7fa143b5984674c1b17759aa2dc12a2b60d9af1a7b",
+      "bytes": 149262
+    },
+    "results/business_synthetic_investor_decks_subset_refresh.json": {
+      "sha256": "4446bc0835951ac265158d06b1925ca559adfe05636ee4bc2945bb9140345891",
+      "bytes": 16354
+    },
+    "results/arxiv_10docs_fresh.json": {
+      "sha256": "7ae67448f5584c8e31d747c8d74af736ae851ee6676a20aafa54386aeb7b9efb",
+      "bytes": 56077
+    },
+    "results/frontier_unified_30docs.json": {
+      "sha256": "f1a0b447aae8760cd39f9b10e7c7fce0f5c3a54e9793ccf6c3d2f311e6597db3",
+      "bytes": 42003
+    },
+    "results/frontier_premium_300p.json": {
+      "sha256": "05aca40921b6c6eecf99bb1a4fd116f3e50e82f180360ac2e84ef8c8b1a79f7a",
+      "bytes": 29490
+    },
+    "results/sec_filings_screen_all.json": {
+      "sha256": "e5dddbbb4df0cbc36c0a32ec68f71224bdd137e1712ba7e8ecab33bf540a22d0",
+      "bytes": 98750
+    },
+    "results/sec_filings_commercial_5docs.json": {
+      "sha256": "6d15752d84b0c4768d287135c26fde51bf4fa43208600b229c2f64117c422f14",
+      "bytes": 6776
+    },
+    ".workspace/work/2026-10-13-local-parser-evaluation/run-03/comparison.json": {
+      "sha256": "1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242",
+      "bytes": 9732
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/start-here.txt": {
+      "sha256": "ed34d77a436b421b1198b40a4e6e83eb5927524b00a17dbcc22fc455f0930b3b",
+      "bytes": 5926
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/review-context.txt": {
+      "sha256": "2700e124c821fc9b7c18b0acf5237f660ed024f3e1932a699284fa1740b61826",
+      "bytes": 9329
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/spec.md": {
+      "sha256": "d9e8b576afc35a351c625b202ce3314b857d392c75b7ea10dce2249bc0a8d82c",
+      "bytes": 21264
+    },
+    ".workspace/work/2026-10-13-benchmark-rebuild/plan.md": {
+      "sha256": "dbaadeb702c1815d7e522a4fd452db0749c5b6f2f7fbfb17884e508bc64ed4ee",
+      "bytes": 30635
+    }
+  },
+  "reviewed_checkpoint_matches": {
+    "pdf_bench/local_evaluation.py": {
+      "reviewed_sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "working_sha256": "fbfadc9a652c173ef49c8354a2139bb3b8d110b6785f0649500670f42798a423",
+      "matches": true
+    },
+    "pdf_bench/persistence.py": {
+      "reviewed_sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "working_sha256": "5ec81c7f4a840ead22abe6746a798bb0b2599852357bf954d7b4b5acf590cbd6",
+      "matches": true
+    },
+    "pdf_bench/systems/tika_parser.py": {
+      "reviewed_sha256": "a371c2036045c0e31b586d3c2dd44f46f46b0176631ecef8bcda4fb2ce2237c9",
+      "working_sha256": "a371c2036045c0e31b586d3c2dd44f46f46b0176631ecef8bcda4fb2ce2237c9",
+      "matches": true
+    },
+    "tests/test_runner.py": {
+      "reviewed_sha256": "7a570892db114370f835cd7856fe1d12c99f248861fff0808c56f7e2c8c668e2",
+      "working_sha256": "7a570892db114370f835cd7856fe1d12c99f248861fff0808c56f7e2c8c668e2",
+      "matches": true
+    },
+    "tests/test_local_evaluation.py": {
+      "reviewed_sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "working_sha256": "078eabc7a287b4832883ea3152992e58207fba4386548d893eb0344dcbbde27c",
+      "matches": true
+    }
+  },
+  "observed_package_versions": {
+    "pdfsmith": "0.2.0",
+    "pypdf": "6.3.0",
+    "pdfplumber": "0.11.8",
+    "PyMuPDF": "1.26.6",
+    "pymupdf4llm": "0.2.2",
+    "reportlab": "4.4.5"
+  },
+  "observed_pdfsmith_source_declared_version": "0.3.0",
+  "observed_pdfsmith_project_version": "0.2.0",
+  "pdfsmith_source_sha256": "4ae92d4bf4672042d0a9d556e9368416fb7b3a3c24643b441d08ddf5361b2c1f",
+  "pdfsmith_project_sha256": "010b306ed4d60f0d64e5577b8c948187d3061d24ff3f6b72bd912a6269181a3f",
+  "pdfsmith_version_note": "Editable metadata/project version and source declaration disagree; recorded explicitly",
+  "external_code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "external_dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "prior_smoke_comparison_sha256": "1b7ca15e231de50ea303e34e9b9ef20c759ad09533687605ad2f3c8129f7f242",
+  "new_specification_reviews": "pending; none returned"
+}

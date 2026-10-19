@@ -1,0 +1,41 @@
+name: "Marker+Ollama on 5 arXiv papers"
+description: "Test marker with LLM enhancement on same 5 arxiv papers tested with LlamaParse"
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains:
+    - arxiv
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - arxiv-2302.00722
+    - arxiv-2302.13971
+    - arxiv-2312.00752
+    - arxiv-2401.06244
+    - arxiv-2403.09313
+  max_documents: null
+
+parser_config:
+  parsers:
+    - marker_ollama
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - tree_similarity
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 1
+
+execution:
+  parallel_workers: 1
+  timeout_seconds: 600

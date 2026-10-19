@@ -1,0 +1,132 @@
+{
+  "declared_development_ids": [
+    "invoice_001",
+    "invoice_002",
+    "invoice_003",
+    "invoice_004",
+    "invoice_005",
+    "invoice_006"
+  ],
+  "records": [
+    {
+      "document_id": "invoice_001",
+      "parser": "pypdf",
+      "input_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "output_file": "invoice_001-pypdf.md",
+      "output_sha256": "a7a81056e2524cd1e5b66160eda6c1c48e649d97b9b2baaab6082436f40be13f",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_002",
+      "parser": "pypdf",
+      "input_sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+      "output_file": "invoice_002-pypdf.md",
+      "output_sha256": "6bb250eef8e6ea04f1ef5bbc84f024700011d51b24445794b4edd82f7315c2ab",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_003",
+      "parser": "pypdf",
+      "input_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "output_file": "invoice_003-pypdf.md",
+      "output_sha256": "604e1a379b4c20a27403e0a83e1774df1dcd6c20754a1f844f3d5dd268224db1",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_004",
+      "parser": "pypdf",
+      "input_sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+      "output_file": "invoice_004-pypdf.md",
+      "output_sha256": "9e13e98dced618fd18d52638d6d132d771cb05b3367e62be0eb6d3fc900b38b3",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_005",
+      "parser": "pypdf",
+      "input_sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+      "output_file": "invoice_005-pypdf.md",
+      "output_sha256": "dc8590390ab45f41d65c001fb01bf6925aa23e93ffeeb914009c406bdb7248b3",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_006",
+      "parser": "pypdf",
+      "input_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "output_file": "invoice_006-pypdf.md",
+      "output_sha256": "219c2b5a95a289c0c41cf0867c0b9c9a843efbe7ecb7ca4d9ab8710f06936239",
+      "backend_source_sha256": "1345dec49436e2e34b7e1d74ffb3c2d123cb3715e12475a4541390b8a06009b0",
+      "package_version": "6.3.0",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_001",
+      "parser": "pdfplumber",
+      "input_sha256": "f832e2435edd8771acbbf4e49cf8ffb85b77b6a4b3ba73ad0c19c919a681948a",
+      "output_file": "invoice_001-pdfplumber.md",
+      "output_sha256": "603e5d7c1c87f440e20fa30698fd2c291ce3f9753816e1f3c185686ccc83389b",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_002",
+      "parser": "pdfplumber",
+      "input_sha256": "087c91c38747e7e9ba3b6b0940d7d9737f1478c07d41599be40bbacedb16dbc7",
+      "output_file": "invoice_002-pdfplumber.md",
+      "output_sha256": "244323869ef74d70483d04dbb50814dd48122e9ac4585f9b058d29b11b92fd2b",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_003",
+      "parser": "pdfplumber",
+      "input_sha256": "f7e5d8aa95acd4b5cf44228505678d36c2f3fc90ef5c26f6f7de7f7af0573b36",
+      "output_file": "invoice_003-pdfplumber.md",
+      "output_sha256": "fa36a75ccdbc090996a8a8d2d629742f9044c2ebbf3cc6cf5a5d2271f191b70d",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_004",
+      "parser": "pdfplumber",
+      "input_sha256": "2db8d20bbd1285432c26602e59df64871b30344f19d7b6b95e9abd18fee3b676",
+      "output_file": "invoice_004-pdfplumber.md",
+      "output_sha256": "9a065a62baa65e3fd78e92534f07272867ed9dce8d29bf4fe6aa071c4ba276e8",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_005",
+      "parser": "pdfplumber",
+      "input_sha256": "e7107b2a6414bea11c97e7799048e9adc11f336df700084f8d6271590001562b",
+      "output_file": "invoice_005-pdfplumber.md",
+      "output_sha256": "f64410833610109da121bb2c3d5df13512d8d2695265449b6b459f4e378286c7",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    },
+    {
+      "document_id": "invoice_006",
+      "parser": "pdfplumber",
+      "input_sha256": "aae86f4a6af83a6cd9b765361f63e01a6c48e83283e8f822a9a04969b8b1b044",
+      "output_file": "invoice_006-pdfplumber.md",
+      "output_sha256": "e1d6ecb99d3ee19481fb5b8ad487c46b3e214ad9c4cf2dd312187ef07466bff5",
+      "backend_source_sha256": "746c4c79b748780eb15189bd64aa25342b6f898d36af250e0abd852b01e6957f",
+      "package_version": "0.11.8",
+      "mode": "Direct uncached backend call for declared development IDs only; not primary adapter run"
+    }
+  ]
+}

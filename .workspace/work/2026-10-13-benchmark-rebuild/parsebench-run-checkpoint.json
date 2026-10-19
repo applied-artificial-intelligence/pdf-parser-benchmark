@@ -1,0 +1,28 @@
+{
+  "status": "verified_issue_7",
+  "plan": "parsebench-comparison-plan-v2",
+  "plan_sha256": "d6ff3ab11cee53e90acfb0420b88b54d6e4032e81be6a90f8a6ccf02580c08ba",
+  "primary_bundle": "parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01",
+  "repeat_bundle": "parsebench-comparison-evidence/run-f9756b2ef12e45a1a2b8db48c5271cbc",
+  "primary_completion_sha256": "cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6",
+  "matching_fresh_pairs": 100,
+  "runtime_artifacts": "parsebench-runtime-artifacts",
+  "prior_diagnostic": "parsebench-integration-diagnostic-v1.json",
+  "relocated_bundle": "parsebench-comparison-evidence/run-48d9b24a1c1745a6af2b9ebbf22af19a",
+  "relocated_verification": "parsebench-relocated-reproduction-v2.json",
+  "offline_regraded_pairs": 100,
+  "verification": {
+    "focused_tests": 9,
+    "latest_full_passed": 975,
+    "skipped": 18,
+    "seven_mutation_preflights_passed": true,
+    "fresh_pairs_matched": 100,
+    "relocated_pairs_matched": 100,
+    "offline_pairs_regraded": 100,
+    "gate": {
+      "covered": 8,
+      "waived": 0,
+      "deferred": 0
+    }
+  }
+}

@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: United Kingdom
+  name: Gilbert and Sons
+document_id: invoice_062
+due_date: '2025-09-29'
+generated_at: '2025-11-18T16:46:30.505574'
+industry: property_mgmt
+invoice_date: '2025-09-14'
+invoice_number: INV-50983
+line_item_count: 7
+payment_terms: Net 15
+region: UK
+subtotal: 25435.19
+tax_amount: 5087.04
+template_style: economy
+total: 30522.23
+vendor:
+  country: United Kingdom
+  name: Premier Real Estate
+corpus: business
+source_url: generated://invoice_062
+domain: invoices
+doc_id: invoice_062

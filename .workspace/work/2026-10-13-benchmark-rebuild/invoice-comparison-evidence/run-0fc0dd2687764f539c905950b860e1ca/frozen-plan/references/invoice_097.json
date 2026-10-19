@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-27725",
+    "vendor": "Gourmet Culinary",
+    "due_date": "2025-09-24",
+    "grand_total": "172202.15",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Equipment Rental @ $1217.86/event",
+      "quantity": "65.01",
+      "line_total": "79173.08"
+    },
+    {
+      "description": "Delivery & Setup @ $359.38/event",
+      "quantity": "71.75",
+      "line_total": "25785.52"
+    },
+    {
+      "description": "Appetizers - Passed @ $65.53/dozen",
+      "quantity": "9.81",
+      "line_total": "642.85"
+    },
+    {
+      "description": "Appetizers - Passed @ $46.41/dozen",
+      "quantity": "96.41",
+      "line_total": "4474.39"
+    },
+    {
+      "description": "Delivery & Setup @ $471.42/event",
+      "quantity": "22.57",
+      "line_total": "10639.95"
+    },
+    {
+      "description": "Equipment Rental @ $873.78/event",
+      "quantity": "33.62",
+      "line_total": "29376.48"
+    },
+    {
+      "description": "Dinner Service - Plated @ $84.12/per person",
+      "quantity": "61.05",
+      "line_total": "5135.53"
+    },
+    {
+      "description": "Dinner Service - Plated @ $43.18/per person",
+      "quantity": "50.02",
+      "line_total": "2159.86"
+    },
+    {
+      "description": "Service Staff @ $33.67/hour",
+      "quantity": "17.7",
+      "line_total": "595.96"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-27725",
+    "vendor": "Gourmet Culinary",
+    "due_date": "09/24/2025",
+    "grand_total": "$172,202.15",
+    "records": [
+      {
+        "description": "Equipment Rental @ $1217.86/event",
+        "quantity": "65.01",
+        "line_total": "$79,173.08"
+      },
+      {
+        "description": "Delivery & Setup @ $359.38/event",
+        "quantity": "71.75",
+        "line_total": "$25,785.52"
+      },
+      {
+        "description": "Appetizers - Passed @ $65.53/dozen",
+        "quantity": "9.81",
+        "line_total": "$642.85"
+      },
+      {
+        "description": "Appetizers - Passed @ $46.41/dozen",
+        "quantity": "96.41",
+        "line_total": "$4,474.39"
+      },
+      {
+        "description": "Delivery & Setup @ $471.42/event",
+        "quantity": "22.57",
+        "line_total": "$10,639.95"
+      },
+      {
+        "description": "Equipment Rental @ $873.78/event",
+        "quantity": "33.62",
+        "line_total": "$29,376.48"
+      },
+      {
+        "description": "Dinner Service - Plated @ $84.12/per person",
+        "quantity": "61.05",
+        "line_total": "$5,135.53"
+      },
+      {
+        "description": "Dinner Service - Plated @ $43.18/per person",
+        "quantity": "50.02",
+        "line_total": "$2,159.86"
+      },
+      {
+        "description": "Service Staff @ $33.67/hour",
+        "quantity": "17.70",
+        "line_total": "$595.96"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_097"
+}

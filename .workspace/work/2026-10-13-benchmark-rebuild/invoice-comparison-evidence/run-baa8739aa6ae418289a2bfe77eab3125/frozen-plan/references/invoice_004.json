@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-22581",
+    "vendor": "Quantum IT Solutions",
+    "due_date": "2025-12-15",
+    "grand_total": "93595.35",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "After-Hours Support",
+      "quantity": "86.23",
+      "unit": "hour",
+      "unit_price": "369.37",
+      "line_total": "31850.78"
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "86.24",
+      "unit": "hour",
+      "unit_price": "390.22",
+      "line_total": "33652.57"
+    },
+    {
+      "description": "After-Hours Support",
+      "quantity": "35.21",
+      "unit": "hour",
+      "unit_price": "243.92",
+      "line_total": "8588.42"
+    },
+    {
+      "description": "Project Management",
+      "quantity": "76.66",
+      "unit": "hour",
+      "unit_price": "155.46",
+      "line_total": "11917.56"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-22581",
+    "vendor": "Quantum IT Solutions",
+    "due_date": "December 15, 2025",
+    "grand_total": "$93,595.35",
+    "records": [
+      {
+        "description": "After-Hours Support",
+        "quantity": "86.23",
+        "unit": "hour",
+        "unit_price": "$369.37",
+        "line_total": "$31,850.78"
+      },
+      {
+        "description": "After-Hours Support",
+        "quantity": "86.24",
+        "unit": "hour",
+        "unit_price": "$390.22",
+        "line_total": "$33,652.57"
+      },
+      {
+        "description": "After-Hours Support",
+        "quantity": "35.21",
+        "unit": "hour",
+        "unit_price": "$243.92",
+        "line_total": "$8,588.42"
+      },
+      {
+        "description": "Project Management",
+        "quantity": "76.66",
+        "unit": "hour",
+        "unit_price": "$155.46",
+        "line_total": "$11,917.56"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_004"
+}

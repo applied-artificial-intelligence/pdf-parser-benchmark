@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-34503",
+    "vendor": "Creative Graphics",
+    "due_date": "2025-11-07",
+    "grand_total": "21977.12",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Brochures - Tri-fold",
+      "quantity": "5.34",
+      "unit": "per 1000",
+      "unit_price": "680.85",
+      "line_total": "3635.74"
+    },
+    {
+      "description": "Rush Production",
+      "quantity": "21.45",
+      "unit": "% surcharge",
+      "unit_price": "43.07",
+      "line_total": "923.85"
+    },
+    {
+      "description": "Brochures - Tri-fold",
+      "quantity": "44.69",
+      "unit": "per 1000",
+      "unit_price": "284.99",
+      "line_total": "12736.2"
+    },
+    {
+      "description": "Rush Production",
+      "quantity": "17.61",
+      "unit": "% surcharge",
+      "unit_price": "49.24",
+      "line_total": "867.12"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-34503",
+    "vendor": "Creative Graphics",
+    "due_date": "November 07, 2025",
+    "grand_total": "$21,977.12",
+    "records": [
+      {
+        "description": "Brochures - Tri-fold",
+        "quantity": "5.34",
+        "unit": "per 1000",
+        "unit_price": "$680.85",
+        "line_total": "$3,635.74"
+      },
+      {
+        "description": "Rush Production",
+        "quantity": "21.45",
+        "unit": "% surcharge",
+        "unit_price": "$43.07",
+        "line_total": "$923.85"
+      },
+      {
+        "description": "Brochures - Tri-fold",
+        "quantity": "44.69",
+        "unit": "per 1000",
+        "unit_price": "$284.99",
+        "line_total": "$12,736.20"
+      },
+      {
+        "description": "Rush Production",
+        "quantity": "17.61",
+        "unit": "% surcharge",
+        "unit_price": "$49.24",
+        "line_total": "$867.12"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_049"
+}

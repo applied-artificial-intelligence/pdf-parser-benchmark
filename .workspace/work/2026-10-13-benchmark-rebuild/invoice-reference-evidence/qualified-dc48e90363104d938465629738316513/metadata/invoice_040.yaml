@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Germany
+  name: Gotthard Junken AG
+document_id: invoice_040
+due_date: '2025-10-11'
+generated_at: '2025-11-18T16:45:58.116142'
+industry: freight
+invoice_date: '2025-09-26'
+invoice_number: INV-76842
+line_item_count: 8
+payment_terms: Net 15
+region: EU
+subtotal: 26828.7
+tax_amount: 5097.45
+template_style: enterprise
+total: 31926.15
+vendor:
+  country: Italy
+  name: Express Shipping
+corpus: business
+source_url: generated://invoice_040
+domain: invoices
+doc_id: invoice_040

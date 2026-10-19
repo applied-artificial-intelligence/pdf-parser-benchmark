@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-37661",
+    "vendor": null,
+    "due_date": "2025-10-13",
+    "grand_total": "93927.11",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-37661"
+    ],
+    "due_date": [
+      "10/13/2025"
+    ],
+    "grand_total": [
+      "$93,927.11"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Legal Research @ $154.83/hour",
+      "quantity": "58.86",
+      "line_total": "9113.29",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$154.83/hour",
+        "quantity": "58.86",
+        "line_total": "$9,113.29"
+      }
+    },
+    {
+      "description": "Document Review @ $303.10/hour",
+      "quantity": "32.35",
+      "line_total": "9805.28",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Document Review @\n$303.10/hour",
+        "quantity": "32.35",
+        "line_total": "$9,805.28"
+      }
+    },
+    {
+      "description": "Partner Legal Services @ $784.09/hour",
+      "quantity": "47.97",
+      "line_total": "37612.8",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Partner Legal Services @\n$784.09/hour",
+        "quantity": "47.97",
+        "line_total": "$37,612.80"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $439.77/hour",
+      "quantity": "67.85",
+      "line_total": "29838.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$439.77/hour",
+        "quantity": "67.85",
+        "line_total": "$29,838.39"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Netherlands
+  name: Schmidt Krebs GbR
+document_id: invoice_035
+due_date: '2025-10-23'
+generated_at: '2025-11-18T16:45:50.886638'
+industry: freight
+invoice_date: '2025-10-08'
+invoice_number: INV-97651
+line_item_count: 4
+payment_terms: Net 15
+region: EU
+subtotal: 7021.29
+tax_amount: 1334.05
+template_style: small_business
+total: 8355.34
+vendor:
+  country: Spain
+  name: Express Transport
+corpus: business
+source_url: generated://invoice_035
+domain: invoices
+doc_id: invoice_035

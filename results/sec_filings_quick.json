@@ -1,0 +1,413 @@
+{
+  "benchmark": {
+    "name": "SEC Filings - Quick Baseline (pypdfium2 only)",
+    "timestamp": "2026-02-24T16:50:53.620010+00:00",
+    "config_file": "benchmarks/sec_filings_quick.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-100-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfsmith-pypdfium2": "0.3.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "sec-aecom-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7312628265250216,
+        "chrf++": 85.0489281870004,
+        "character_error_rate": 0.2958239949707008,
+        "element_f1": 0.37868579128885643
+      },
+      "error": null,
+      "parse_time_seconds": 0.7210791110992432
+    },
+    {
+      "document_id": "sec-transdigm-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8589120068325782,
+        "chrf++": 88.57420171222363,
+        "character_error_rate": 0.14108799316742188,
+        "element_f1": 0.3696663863190356
+      },
+      "error": null,
+      "parse_time_seconds": 0.2605140209197998
+    },
+    {
+      "document_id": "sec-td_synnex-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8998672433947834,
+        "chrf++": 90.87169120719092,
+        "character_error_rate": 0.10013275660521664,
+        "element_f1": 0.39961239098496454
+      },
+      "error": null,
+      "parse_time_seconds": 0.27793312072753906
+    },
+    {
+      "document_id": "sec-agilent_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8265089829470861,
+        "chrf++": 88.2164126213079,
+        "character_error_rate": 0.17852701647188202,
+        "element_f1": 0.30935497478957835
+      },
+      "error": null,
+      "parse_time_seconds": 0.37117815017700195
+    },
+    {
+      "document_id": "sec-analog_devices-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02139965297860036,
+        "chrf++": 5.412202016244573,
+        "character_error_rate": 0.9829777256740915,
+        "element_f1": 0.5648542379190805
+      },
+      "error": null,
+      "parse_time_seconds": 0.15177488327026367
+    },
+    {
+      "document_id": "sec-synopsys-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8952129846883239,
+        "chrf++": 89.18750262429074,
+        "character_error_rate": 0.10478701531167606,
+        "element_f1": 0.36479935362240773
+      },
+      "error": null,
+      "parse_time_seconds": 0.5815365314483643
+    },
+    {
+      "document_id": "sec-adient-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9061080004007436,
+        "chrf++": 90.0397612326011,
+        "character_error_rate": 0.0938919995992564,
+        "element_f1": 0.29306880964339527
+      },
+      "error": null,
+      "parse_time_seconds": 0.42357707023620605
+    },
+    {
+      "document_id": "sec-hewlett_packard_enterprise-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8761038473639582,
+        "chrf++": 89.52703774752219,
+        "character_error_rate": 0.12389615263604183,
+        "element_f1": 0.3396058543529517
+      },
+      "error": null,
+      "parse_time_seconds": 0.5360617637634277
+    },
+    {
+      "document_id": "sec-fastenal-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7301396429055627,
+        "chrf++": 86.12368457829017,
+        "character_error_rate": 0.31085912169617547,
+        "element_f1": 0.4245639479409183
+      },
+      "error": null,
+      "parse_time_seconds": 0.3316771984100342
+    },
+    {
+      "document_id": "sec-cencora-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6042049753525163,
+        "chrf++": 66.08969991811725,
+        "character_error_rate": 0.40046210913848657,
+        "element_f1": 0.5454436880449063
+      },
+      "error": null,
+      "parse_time_seconds": 0.26763486862182617
+    },
+    {
+      "document_id": "sec-mccormick-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8481348989623156,
+        "chrf++": 87.94162970538505,
+        "character_error_rate": 0.15186510103768433,
+        "element_f1": 0.40764718902169095
+      },
+      "error": null,
+      "parse_time_seconds": 0.20641136169433594
+    },
+    {
+      "document_id": "sec-toro-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.87200793796739,
+        "chrf++": 92.15048654645015,
+        "character_error_rate": 0.13019012770003546,
+        "element_f1": 0.46970910061382437
+      },
+      "error": null,
+      "parse_time_seconds": 0.4474470615386963
+    },
+    {
+      "document_id": "sec-raymond_james_financial-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.07325762804339164,
+        "chrf++": 8.704985124013795,
+        "character_error_rate": 0.9875256533224737,
+        "element_f1": 0.27572261455082936
+      },
+      "error": null,
+      "parse_time_seconds": 0.6939911842346191
+    },
+    {
+      "document_id": "sec-ciena-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.820206305631811,
+        "chrf++": 85.79715992983387,
+        "character_error_rate": 0.179793694368189,
+        "element_f1": 0.3537165873306481
+      },
+      "error": null,
+      "parse_time_seconds": 0.14527106285095215
+    },
+    {
+      "document_id": "sec-walt_disney-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8880571959405877,
+        "chrf++": 87.7123128116274,
+        "character_error_rate": 0.11194280405941226,
+        "element_f1": 0.3461028815537053
+      },
+      "error": null,
+      "parse_time_seconds": 0.39307594299316406
+    },
+    {
+      "document_id": "sec-abm_industries-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8627072195516421,
+        "chrf++": 88.0743992372228,
+        "character_error_rate": 0.13729278044835797,
+        "element_f1": 0.3349562412258431
+      },
+      "error": null,
+      "parse_time_seconds": 0.12894105911254883
+    },
+    {
+      "document_id": "sec-fair_isaac-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8691661606698442,
+        "chrf++": 89.6498378583202,
+        "character_error_rate": 0.13083383933015577,
+        "element_f1": 0.3872947853027189
+      },
+      "error": null,
+      "parse_time_seconds": 0.19226717948913574
+    },
+    {
+      "document_id": "sec-nordson-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8121769798012184,
+        "chrf++": 85.4197453563811,
+        "character_error_rate": 0.18782302019878166,
+        "element_f1": 0.29927544435639086
+      },
+      "error": null,
+      "parse_time_seconds": 0.1386585235595703
+    },
+    {
+      "document_id": "sec-heico-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.026402035461218887,
+        "chrf++": 2.2321213902694454,
+        "character_error_rate": 1.052005819876543,
+        "element_f1": 0.5678783292239339
+      },
+      "error": null,
+      "parse_time_seconds": 0.21202969551086426
+    },
+    {
+      "document_id": "sec-f5-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8749677125742611,
+        "chrf++": 90.97139528420846,
+        "character_error_rate": 0.1250322874257389,
+        "element_f1": 0.42003958244402184
+      },
+      "error": null,
+      "parse_time_seconds": 0.32308101654052734
+    },
+    {
+      "document_id": "sec-autoliv-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8140889365949822,
+        "chrf++": 89.07688364693774,
+        "character_error_rate": 0.19301189616707967,
+        "element_f1": 0.33646621329054277
+      },
+      "error": null,
+      "parse_time_seconds": 0.3031289577484131
+    },
+    {
+      "document_id": "sec-keysight_technologies-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8281650127643512,
+        "chrf++": 87.1156016314473,
+        "character_error_rate": 0.1765915266937119,
+        "element_f1": 0.3518657920206474
+      },
+      "error": null,
+      "parse_time_seconds": 0.2280268669128418
+    },
+    {
+      "document_id": "sec-warner_music-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.01942839737354929,
+        "chrf++": 1.6515817975464289,
+        "character_error_rate": 0.9805716026264507,
+        "element_f1": 0.5865766397010425
+      },
+      "error": null,
+      "parse_time_seconds": 0.22071480751037598
+    },
+    {
+      "document_id": "sec-qualcomm-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9427259904481453,
+        "chrf++": 93.87646945771426,
+        "character_error_rate": 0.057274009551854695,
+        "element_f1": 0.4573234141268699
+      },
+      "error": null,
+      "parse_time_seconds": 0.20552444458007812
+    },
+    {
+      "document_id": "sec-johnsonntrols_international-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5157486079726462,
+        "chrf++": 79.11118554630099,
+        "character_error_rate": 0.7792906681271932,
+        "element_f1": 0.4323159231746276
+      },
+      "error": null,
+      "parse_time_seconds": 0.5439534187316895
+    },
+    {
+      "document_id": "sec-toll_brothers-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.47799439605314886,
+        "chrf++": 51.58826894433331,
+        "character_error_rate": 0.5220056039468511,
+        "element_f1": 0.44758785589423133
+      },
+      "error": null,
+      "parse_time_seconds": 0.2711048126220703
+    },
+    {
+      "document_id": "sec-starbucks-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8689197801006417,
+        "chrf++": 87.34023527234835,
+        "character_error_rate": 0.13108021989935822,
+        "element_f1": 0.32547216454069017
+      },
+      "error": null,
+      "parse_time_seconds": 0.1312878131866455
+    },
+    {
+      "document_id": "sec-tennectivity-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8236392936473753,
+        "chrf++": 82.55995381886446,
+        "character_error_rate": 0.17636070635262463,
+        "element_f1": 0.21426936601402383
+      },
+      "error": null,
+      "parse_time_seconds": 1.0850582122802734
+    },
+    {
+      "document_id": "sec-applied_materials-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8771651896748929,
+        "chrf++": 89.33848535172324,
+        "character_error_rate": 0.12283481032510717,
+        "element_f1": 0.36129923980649614
+      },
+      "error": null,
+      "parse_time_seconds": 0.44797587394714355
+    },
+    {
+      "document_id": "sec-deere-2025",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7440542632585914,
+        "chrf++": 75.9621223189568,
+        "character_error_rate": 0.2559457367414087,
+        "element_f1": 0.1909840846596117
+      },
+      "error": null,
+      "parse_time_seconds": 0.4980032444000244
+    }
+  ],
+  "summary": {
+    "total_documents": 30,
+    "total_parsers": 1,
+    "total_results": 30,
+    "success_count": 30,
+    "failure_count": 0
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-85892",
+    "vendor": "Elite Construction",
+    "due_date": "2025-11-23",
+    "grand_total": "317562.92",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-85892",
+      "INV-85892"
+    ],
+    "due_date": [
+      "November 23, 2025",
+      "November 23, 2025"
+    ],
+    "grand_total": [
+      "$317,562.92"
+    ],
+    "vendor": [
+      "Elite Construction"
+    ]
+  },
+  "records": [
+    {
+      "description": "Permits and Fees (lump sum)",
+      "quantity": "80.76",
+      "unit_price": "1542.02",
+      "line_total": "124533.54",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Permits and Fees\n(lump sum)",
+        "quantity": "80.76",
+        "unit_price": "$1,542.02",
+        "line_total": "$124,533.54"
+      }
+    },
+    {
+      "description": "Permits and Fees (lump sum)",
+      "quantity": "72.84",
+      "unit_price": "2288.19",
+      "line_total": "166671.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Permits and Fees\n(lump sum)",
+        "quantity": "72.84",
+        "unit_price": "$2,288.19",
+        "line_total": "$166,671.76"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "48.31",
+      "unit_price": "6.02",
+      "line_total": "290.83",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "48.31",
+        "unit_price": "$6.02",
+        "line_total": "$290.83"
+      }
+    },
+    {
+      "description": "General Labor (hour)",
+      "quantity": "92.94",
+      "unit_price": "55.16",
+      "line_total": "5126.57",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "General Labor\n(hour)",
+        "quantity": "92.94",
+        "unit_price": "$55.16",
+        "line_total": "$5,126.57"
+      }
+    },
+    {
+      "description": "Materials - Lumber (board ft)",
+      "quantity": "70.12",
+      "unit_price": "4.22",
+      "line_total": "295.91",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Materials - Lumber\n(board ft)",
+        "quantity": "70.12",
+        "unit_price": "$4.22",
+        "line_total": "$295.91"
+      }
+    },
+    {
+      "description": "Skilled Carpentry (hour)",
+      "quantity": "12.74",
+      "unit_price": "78.44",
+      "line_total": "999.33",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Skilled Carpentry\n(hour)",
+        "quantity": "12.74",
+        "unit_price": "$78.44",
+        "line_total": "$999.33"
+      }
+    },
+    {
+      "description": "Plumbing (hour)",
+      "quantity": "51.52",
+      "unit_price": "87.79",
+      "line_total": "4522.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Plumbing (hour)",
+        "quantity": "51.52",
+        "unit_price": "$87.79",
+        "line_total": "$4,522.94"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

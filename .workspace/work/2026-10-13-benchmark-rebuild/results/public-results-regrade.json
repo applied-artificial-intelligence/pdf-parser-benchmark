@@ -1,0 +1,12 @@
+{
+ "item": "public-results-regrade",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_parsebench_comparison.py::test_newly_wrong_native_grade_cannot_reuse_a_previous_verified_score",
+  "fixture (both runs): Two source-qualified public PDFs through actual local adapters and pinned native upstream evaluation, with retained raw output and a separate grading process",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

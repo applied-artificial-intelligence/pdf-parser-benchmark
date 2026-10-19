@@ -1,0 +1,4714 @@
+{
+  "benchmark": {
+    "name": "Presentations - 30 PPTX-derived PDFs (LoC .gov dataset)",
+    "timestamp": "2026-03-11T05:31:23.356315+00:00",
+    "config_file": "benchmarks/presentations_30docs.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-101-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfsmith-pypdfium2": "0.3.0",
+      "pdfsmith-pymupdf": "0.3.0",
+      "pdfsmith-kreuzberg": "0.3.0",
+      "pdfsmith-marker": "0.3.0",
+      "pdfsmith-docling": "0.3.0",
+      "pdfsmith-pypdf": "0.3.0",
+      "pdfsmith-pdfplumber": "0.3.0",
+      "pdfsmith-pdfminer": "0.3.0",
+      "pdfsmith-pymupdf4llm": "0.3.0",
+      "pdfsmith-extractous": "0.3.0",
+      "pdfsmith-unstructured": "0.3.0",
+      "tika": "3.1.0"
+    }
+  },
+  "results": [
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8204032741066081,
+        "chrf++": 90.79647000513107,
+        "character_error_rate": 0.19791437497249967,
+        "element_f1": 0.39723320158102765
+      },
+      "error": null,
+      "parse_time_seconds": 0.08438658714294434
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8708139277001552,
+        "chrf++": 85.87055546491727,
+        "character_error_rate": 0.12918607229984475,
+        "element_f1": 0.38703829594380246
+      },
+      "error": null,
+      "parse_time_seconds": 0.06566047668457031
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9142666765380913,
+        "chrf++": 88.67090758046562,
+        "character_error_rate": 0.08573332346190864,
+        "element_f1": 0.45406046235921754
+      },
+      "error": null,
+      "parse_time_seconds": 0.021990299224853516
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.907657498409107,
+        "chrf++": 87.56137265585365,
+        "character_error_rate": 0.09234250159089302,
+        "element_f1": 0.4366412213740458
+      },
+      "error": null,
+      "parse_time_seconds": 0.0231935977935791
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7776488395560041,
+        "chrf++": 86.18619696612777,
+        "character_error_rate": 0.2650827067669173,
+        "element_f1": 0.2307116104868914
+      },
+      "error": null,
+      "parse_time_seconds": 0.04089069366455078
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8021109192093648,
+        "chrf++": 87.78707437977617,
+        "character_error_rate": 0.21333995365772923,
+        "element_f1": 0.3517872711421099
+      },
+      "error": null,
+      "parse_time_seconds": 0.2382183074951172
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43027178753609885,
+        "chrf++": 57.252541684947566,
+        "character_error_rate": 0.5697282124639012,
+        "element_f1": 0.48585972850678727
+      },
+      "error": null,
+      "parse_time_seconds": 0.029544353485107422
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8643183710663168,
+        "chrf++": 94.92763425027572,
+        "character_error_rate": 0.14754070353475818,
+        "element_f1": 0.2974808944240023
+      },
+      "error": null,
+      "parse_time_seconds": 0.0006437301635742188
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.721114557180131,
+        "chrf++": 86.89812939742328,
+        "character_error_rate": 0.3676900110339456,
+        "element_f1": 0.3343982960596379
+      },
+      "error": null,
+      "parse_time_seconds": 0.0637204647064209
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8961284230406044,
+        "chrf++": 95.2240469475371,
+        "character_error_rate": 0.10676718884023295,
+        "element_f1": 0.4313617606602476
+      },
+      "error": null,
+      "parse_time_seconds": 0.0623621940612793
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8146805724441119,
+        "chrf++": 93.39272034714344,
+        "character_error_rate": 0.21185874301601304,
+        "element_f1": 0.29177521399330114
+      },
+      "error": null,
+      "parse_time_seconds": 0.030787229537963867
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8874929845011441,
+        "chrf++": 91.74400753709698,
+        "character_error_rate": 0.11250701549885593,
+        "element_f1": 0.4269854824935952
+      },
+      "error": null,
+      "parse_time_seconds": 0.02631235122680664
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8501856058507397,
+        "chrf++": 85.60913341549914,
+        "character_error_rate": 0.14981439414926034,
+        "element_f1": 0.40224859462835727
+      },
+      "error": null,
+      "parse_time_seconds": 0.08140158653259277
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9148507122877773,
+        "chrf++": 87.12119396768813,
+        "character_error_rate": 0.08514928771222273,
+        "element_f1": 0.4298884036875303
+      },
+      "error": null,
+      "parse_time_seconds": 0.023006677627563477
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8156839388524916,
+        "chrf++": 89.75852392629798,
+        "character_error_rate": 0.19390142021720969,
+        "element_f1": 0.32506565509191715
+      },
+      "error": null,
+      "parse_time_seconds": 0.05019116401672363
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8662263406940063,
+        "chrf++": 85.0425947341249,
+        "character_error_rate": 0.13410416049016702,
+        "element_f1": 0.44752475247524753
+      },
+      "error": null,
+      "parse_time_seconds": 0.04996132850646973
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7626038882583386,
+        "chrf++": 85.3643256191126,
+        "character_error_rate": 0.2789417078941708,
+        "element_f1": 0.370515329419439
+      },
+      "error": null,
+      "parse_time_seconds": 0.036337852478027344
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9025681341719077,
+        "chrf++": 86.6318128715847,
+        "character_error_rate": 0.09743186582809224,
+        "element_f1": 0.4525493114998139
+      },
+      "error": null,
+      "parse_time_seconds": 0.033949851989746094
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5657356948228882,
+        "chrf++": 76.79995499072068,
+        "character_error_rate": 0.6790945406125166,
+        "element_f1": 0.5038402457757296
+      },
+      "error": null,
+      "parse_time_seconds": 0.03866267204284668
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8847879376532075,
+        "chrf++": 95.40892838933632,
+        "character_error_rate": 0.12224566913677185,
+        "element_f1": 0.28770841411399767
+      },
+      "error": null,
+      "parse_time_seconds": 0.03260326385498047
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8718657033574161,
+        "chrf++": 87.75393841932504,
+        "character_error_rate": 0.12813429664258394,
+        "element_f1": 0.5149378986236993
+      },
+      "error": null,
+      "parse_time_seconds": 0.06303119659423828
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7988037982488593,
+        "chrf++": 84.27859707285647,
+        "character_error_rate": 0.2011962017511407,
+        "element_f1": 0.43565348022033046
+      },
+      "error": null,
+      "parse_time_seconds": 0.02303004264831543
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.912718342627128,
+        "chrf++": 91.6428963651502,
+        "character_error_rate": 0.08728165737287197,
+        "element_f1": 0.436044549443132
+      },
+      "error": null,
+      "parse_time_seconds": 0.1507711410522461
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8514325830371638,
+        "chrf++": 81.82168503877857,
+        "character_error_rate": 0.1485674169628362,
+        "element_f1": 0.41807596340449127
+      },
+      "error": null,
+      "parse_time_seconds": 0.7406206130981445
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8717647921401862,
+        "chrf++": 84.66492704049634,
+        "character_error_rate": 0.12823520785981377,
+        "element_f1": 0.4510560981149216
+      },
+      "error": null,
+      "parse_time_seconds": 0.04845452308654785
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8763649655046375,
+        "chrf++": 85.4855576887002,
+        "character_error_rate": 0.12363503449536255,
+        "element_f1": 0.5085817524841915
+      },
+      "error": null,
+      "parse_time_seconds": 0.04783320426940918
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9030871714060598,
+        "chrf++": 89.41803216482278,
+        "character_error_rate": 0.09691282859394026,
+        "element_f1": 0.47228144989339016
+      },
+      "error": null,
+      "parse_time_seconds": 0.06702804565429688
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9224639168205759,
+        "chrf++": 89.3877987469543,
+        "character_error_rate": 0.07753608317942404,
+        "element_f1": 0.45100584036340036
+      },
+      "error": null,
+      "parse_time_seconds": 0.031742095947265625
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9424895282868807,
+        "chrf++": 91.01075181060705,
+        "character_error_rate": 0.057510471713119245,
+        "element_f1": 0.3917006011246849
+      },
+      "error": null,
+      "parse_time_seconds": 0.07715916633605957
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pypdfium2",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8800008319554072,
+        "chrf++": 87.688470842366,
+        "character_error_rate": 0.1199991680445928,
+        "element_f1": 0.3553469661414683
+      },
+      "error": null,
+      "parse_time_seconds": 0.14752721786499023
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8170469905382842,
+        "chrf++": 90.87518116908926,
+        "character_error_rate": 0.2024904298851586,
+        "element_f1": 0.3834463408931494
+      },
+      "error": null,
+      "parse_time_seconds": 0.11978292465209961
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8722277666888445,
+        "chrf++": 85.80241347204536,
+        "character_error_rate": 0.12777223331115548,
+        "element_f1": 0.37997775305895437
+      },
+      "error": null,
+      "parse_time_seconds": 0.13742542266845703
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.915821425927297,
+        "chrf++": 88.78827011104238,
+        "character_error_rate": 0.08417857407270304,
+        "element_f1": 0.4501457725947522
+      },
+      "error": null,
+      "parse_time_seconds": 0.03262758255004883
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9086473874001273,
+        "chrf++": 87.56137265585365,
+        "character_error_rate": 0.09135261259987273,
+        "element_f1": 0.4313725490196078
+      },
+      "error": null,
+      "parse_time_seconds": 0.02761387825012207
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7927225806451613,
+        "chrf++": 86.82301824746166,
+        "character_error_rate": 0.2415639097744361,
+        "element_f1": 0.346626910175177
+      },
+      "error": null,
+      "parse_time_seconds": 0.054793596267700195
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7173470727224993,
+        "chrf++": 84.68308547411058,
+        "character_error_rate": 0.3563803376365442,
+        "element_f1": 0.3415141430948419
+      },
+      "error": null,
+      "parse_time_seconds": 0.21608591079711914
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.42924617419232947,
+        "chrf++": 57.35865157024554,
+        "character_error_rate": 0.5707538258076705,
+        "element_f1": 0.49972482113373684
+      },
+      "error": null,
+      "parse_time_seconds": 0.035299062728881836
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8652113869621167,
+        "chrf++": 94.9484739069775,
+        "character_error_rate": 0.1467377376864333,
+        "element_f1": 0.2824618463847886
+      },
+      "error": null,
+      "parse_time_seconds": 0.06248164176940918
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7277739490006891,
+        "chrf++": 86.89721309847558,
+        "character_error_rate": 0.35892776010904137,
+        "element_f1": 0.2942254812098991
+      },
+      "error": null,
+      "parse_time_seconds": 0.04611539840698242
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8962270362810298,
+        "chrf++": 95.30682848081543,
+        "character_error_rate": 0.10672204415150557,
+        "element_f1": 0.41512427287149656
+      },
+      "error": null,
+      "parse_time_seconds": 0.0675652027130127
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8165751022793688,
+        "chrf++": 93.35913470797689,
+        "character_error_rate": 0.20974683882695752,
+        "element_f1": 0.2596026490066225
+      },
+      "error": null,
+      "parse_time_seconds": 0.0833425521850586
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8905582178474291,
+        "chrf++": 91.78799837219805,
+        "character_error_rate": 0.10944178215257092,
+        "element_f1": 0.3960474308300395
+      },
+      "error": null,
+      "parse_time_seconds": 0.028895139694213867
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8459254371494556,
+        "chrf++": 85.72130445351766,
+        "character_error_rate": 0.15524405784253975,
+        "element_f1": 0.4045014066895905
+      },
+      "error": null,
+      "parse_time_seconds": 0.07998108863830566
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9149157613998569,
+        "chrf++": 87.14368267339925,
+        "character_error_rate": 0.08508423860014311,
+        "element_f1": 0.4257568476693897
+      },
+      "error": null,
+      "parse_time_seconds": 0.02359318733215332
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8227363382528919,
+        "chrf++": 89.1075128499575,
+        "character_error_rate": 0.18563074352548037,
+        "element_f1": 0.3257720688712763
+      },
+      "error": null,
+      "parse_time_seconds": 0.046401262283325195
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8582999902410462,
+        "chrf++": 84.93919167702587,
+        "character_error_rate": 0.14349243996442337,
+        "element_f1": 0.4081878386514148
+      },
+      "error": null,
+      "parse_time_seconds": 0.059702157974243164
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7567916251981275,
+        "chrf++": 84.48903189984382,
+        "character_error_rate": 0.28384598838459885,
+        "element_f1": 0.3484107579462102
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010733604431152344
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9046121593291405,
+        "chrf++": 86.67140729260882,
+        "character_error_rate": 0.09538784067085954,
+        "element_f1": 0.44105912223431265
+      },
+      "error": null,
+      "parse_time_seconds": 0.005575895309448242
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.571696504688832,
+        "chrf++": 76.97712340182562,
+        "character_error_rate": 0.6689747003994674,
+        "element_f1": 0.45366528354080227
+      },
+      "error": null,
+      "parse_time_seconds": 0.03135824203491211
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8908247303097089,
+        "chrf++": 95.12251310894632,
+        "character_error_rate": 0.1154733277715071,
+        "element_f1": 0.2760492040520984
+      },
+      "error": null,
+      "parse_time_seconds": 0.03826022148132324
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8721726401284412,
+        "chrf++": 87.87993366786502,
+        "character_error_rate": 0.12782735987155877,
+        "element_f1": 0.4706783034757311
+      },
+      "error": null,
+      "parse_time_seconds": 0.0779881477355957
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8086693797015662,
+        "chrf++": 83.7842221271386,
+        "character_error_rate": 0.19133062029843384,
+        "element_f1": 0.42213516160626835
+      },
+      "error": null,
+      "parse_time_seconds": 0.03900909423828125
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9108164998707485,
+        "chrf++": 91.66310386599739,
+        "character_error_rate": 0.08918350012925146,
+        "element_f1": 0.41610951926138173
+      },
+      "error": null,
+      "parse_time_seconds": 0.1073760986328125
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8445877758764424,
+        "chrf++": 81.28682597892922,
+        "character_error_rate": 0.15541222412355754,
+        "element_f1": 0.4098939929328621
+      },
+      "error": null,
+      "parse_time_seconds": 1.3685331344604492
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.872681281618887,
+        "chrf++": 84.7876372485449,
+        "character_error_rate": 0.12731871838111297,
+        "element_f1": 0.44031007751937984
+      },
+      "error": null,
+      "parse_time_seconds": 0.003563404083251953
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8672271211221273,
+        "chrf++": 85.1263115947396,
+        "character_error_rate": 0.1327728788778727,
+        "element_f1": 0.4054246966452534
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009746551513671875
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9136881312226918,
+        "chrf++": 88.19713477877204,
+        "character_error_rate": 0.08631186877730822,
+        "element_f1": 0.45861887190300477
+      },
+      "error": null,
+      "parse_time_seconds": 0.0030434131622314453
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9229769478076476,
+        "chrf++": 89.42293609900139,
+        "character_error_rate": 0.07702305219235242,
+        "element_f1": 0.41465648854961834
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009627342224121094
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9383008430391828,
+        "chrf++": 90.03790242787292,
+        "character_error_rate": 0.061699156960817236,
+        "element_f1": 0.35179614227570344
+      },
+      "error": null,
+      "parse_time_seconds": 0.08516573905944824
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8822471115548207,
+        "chrf++": 86.96970744615008,
+        "character_error_rate": 0.11775288844517934,
+        "element_f1": 0.34464751958224543
+      },
+      "error": null,
+      "parse_time_seconds": 0.1591053009033203
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8200880352140856,
+        "chrf++": 90.79647000513107,
+        "character_error_rate": 0.197826373916487,
+        "element_f1": 0.3700222606975018
+      },
+      "error": null,
+      "parse_time_seconds": 0.5610830783843994
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8654912397427368,
+        "chrf++": 85.85928662034927,
+        "character_error_rate": 0.13450876025726324,
+        "element_f1": 0.2987307343608341
+      },
+      "error": null,
+      "parse_time_seconds": 0.19614315032958984
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.909158214259273,
+        "chrf++": 88.59418226962596,
+        "character_error_rate": 0.09084178574072703,
+        "element_f1": 0.3841138114997036
+      },
+      "error": null,
+      "parse_time_seconds": 0.0713663101196289
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9041221805840345,
+        "chrf++": 87.56137265585365,
+        "character_error_rate": 0.0958778194159655,
+        "element_f1": 0.3857506361323155
+      },
+      "error": null,
+      "parse_time_seconds": 0.06631326675415039
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7782789377660653,
+        "chrf++": 85.99534255588318,
+        "character_error_rate": 0.2631578947368421,
+        "element_f1": 0.1997503121098627
+      },
+      "error": null,
+      "parse_time_seconds": 0.0953974723815918
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7971982093238654,
+        "chrf++": 87.73762089352617,
+        "character_error_rate": 0.2174362793776895,
+        "element_f1": 0.29718524983635175
+      },
+      "error": null,
+      "parse_time_seconds": 0.4495997428894043
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.43043372648511513,
+        "chrf++": 57.2100644105121,
+        "character_error_rate": 0.5695662735148849,
+        "element_f1": 0.4722850678733031
+      },
+      "error": null,
+      "parse_time_seconds": 0.08613300323486328
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8633246295655457,
+        "chrf++": 94.85626170279043,
+        "character_error_rate": 0.1484461756615926,
+        "element_f1": 0.2927174837064324
+      },
+      "error": null,
+      "parse_time_seconds": 0.13087105751037598
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7208131846442317,
+        "chrf++": 86.89812939742328,
+        "character_error_rate": 0.36723567209709873,
+        "element_f1": 0.2843450479233227
+      },
+      "error": null,
+      "parse_time_seconds": 0.05500674247741699
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8886284223096996,
+        "chrf++": 94.68970587112496,
+        "character_error_rate": 0.11367432621552075,
+        "element_f1": 0.4008822718500138
+      },
+      "error": null,
+      "parse_time_seconds": 0.1235191822052002
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8141363093984698,
+        "chrf++": 93.39272034714344,
+        "character_error_rate": 0.21236666933996312,
+        "element_f1": 0.28635263451871157
+      },
+      "error": null,
+      "parse_time_seconds": 0.09509754180908203
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.889263048827872,
+        "chrf++": 91.70020261540537,
+        "character_error_rate": 0.11073695117212796,
+        "element_f1": 0.3825789923142613
+      },
+      "error": null,
+      "parse_time_seconds": 0.10936498641967773
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8458086320571777,
+        "chrf++": 85.60913341549914,
+        "character_error_rate": 0.15419136794282232,
+        "element_f1": 0.3447845096814491
+      },
+      "error": null,
+      "parse_time_seconds": 0.20040369033813477
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9060690821570285,
+        "chrf++": 86.54371764240459,
+        "character_error_rate": 0.09393091784297145,
+        "element_f1": 0.3653190452995616
+      },
+      "error": null,
+      "parse_time_seconds": 0.05246162414550781
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8166879387364391,
+        "chrf++": 89.60493993261893,
+        "character_error_rate": 0.19197994987468672,
+        "element_f1": 0.27562043795620433
+      },
+      "error": null,
+      "parse_time_seconds": 0.13750576972961426
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8614487597588695,
+        "chrf++": 85.0425947341249,
+        "character_error_rate": 0.13855124024113055,
+        "element_f1": 0.3801980198019802
+      },
+      "error": null,
+      "parse_time_seconds": 0.05917787551879883
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7614658686152829,
+        "chrf++": 85.3513438504579,
+        "character_error_rate": 0.2794579479457948,
+        "element_f1": 0.33398564905414224
+      },
+      "error": null,
+      "parse_time_seconds": 0.0773458480834961
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8981656184486373,
+        "chrf++": 86.6318128715847,
+        "character_error_rate": 0.10183438155136268,
+        "element_f1": 0.3916604616530156
+      },
+      "error": null,
+      "parse_time_seconds": 0.09682798385620117
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5642649323977409,
+        "chrf++": 76.79995499072068,
+        "character_error_rate": 0.6780292942743009,
+        "element_f1": 0.4147465437788018
+      },
+      "error": null,
+      "parse_time_seconds": 0.04856371879577637
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.884266543267006,
+        "chrf++": 95.40892838933632,
+        "character_error_rate": 0.1227364185110664,
+        "element_f1": 0.2791779759596743
+      },
+      "error": null,
+      "parse_time_seconds": 0.08118343353271484
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8693157671058224,
+        "chrf++": 87.74273232778202,
+        "character_error_rate": 0.13068423289417763,
+        "element_f1": 0.46757621694458484
+      },
+      "error": null,
+      "parse_time_seconds": 0.21011877059936523
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7952891848563325,
+        "chrf++": 84.24814853686577,
+        "character_error_rate": 0.20471081514366754,
+        "element_f1": 0.374749498997996
+      },
+      "error": null,
+      "parse_time_seconds": 0.1422264575958252
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9084161158092987,
+        "chrf++": 91.29049261705894,
+        "character_error_rate": 0.09158388419070128,
+        "element_f1": 0.3947504748748057
+      },
+      "error": null,
+      "parse_time_seconds": 0.4311196804046631
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8456408231319381,
+        "chrf++": 81.82488398301916,
+        "character_error_rate": 0.15435917686806194,
+        "element_f1": 0.3467629897193665
+      },
+      "error": null,
+      "parse_time_seconds": 0.8353075981140137
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8671090255883862,
+        "chrf++": 84.6448912100027,
+        "character_error_rate": 0.13289097441161377,
+        "element_f1": 0.38982280781462975
+      },
+      "error": null,
+      "parse_time_seconds": 0.14349746704101562
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8743546397404852,
+        "chrf++": 85.46356108472462,
+        "character_error_rate": 0.12564536025951478,
+        "element_f1": 0.4724480578139114
+      },
+      "error": null,
+      "parse_time_seconds": 0.07259511947631836
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8990759974213881,
+        "chrf++": 89.41803216482278,
+        "character_error_rate": 0.10092400257861185,
+        "element_f1": 0.410037373198078
+      },
+      "error": null,
+      "parse_time_seconds": 0.11887383460998535
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9199671660168274,
+        "chrf++": 89.3877987469543,
+        "character_error_rate": 0.08003283398317258,
+        "element_f1": 0.4067357512953368
+      },
+      "error": null,
+      "parse_time_seconds": 0.061888694763183594
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9407751718774854,
+        "chrf++": 91.00886599668512,
+        "character_error_rate": 0.059224828122514624,
+        "element_f1": 0.3546071774975752
+      },
+      "error": null,
+      "parse_time_seconds": 0.11367034912109375
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-kreuzberg",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8665127549163365,
+        "chrf++": 86.7153535829048,
+        "character_error_rate": 0.13348724508366352,
+        "element_f1": 0.30482089052561095
+      },
+      "error": null,
+      "parse_time_seconds": 0.33109569549560547
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6111233334800017,
+        "chrf++": 71.49221212113018,
+        "character_error_rate": 0.38887666651999825,
+        "element_f1": 0.6004070556309363
+      },
+      "error": null,
+      "parse_time_seconds": 95.39869999885559
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7318133644936003,
+        "chrf++": 78.21672619811515,
+        "character_error_rate": 0.27359170547793304,
+        "element_f1": 0.6355776788053444
+      },
+      "error": null,
+      "parse_time_seconds": 168.72910952568054
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6090288765822784,
+        "chrf++": 81.65563683855575,
+        "character_error_rate": 0.5854001628785075,
+        "element_f1": 0.458276950834461
+      },
+      "error": null,
+      "parse_time_seconds": 107.32015633583069
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8919777040852325,
+        "chrf++": 90.16002390214733,
+        "character_error_rate": 0.10825143180371916,
+        "element_f1": 0.5910931174089069
+      },
+      "error": null,
+      "parse_time_seconds": 36.42671799659729
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.49967162872154114,
+        "chrf++": 74.962545039345,
+        "character_error_rate": 0.8248421052631579,
+        "element_f1": 0.5366518922604842
+      },
+      "error": null,
+      "parse_time_seconds": 190.75194454193115
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7710880909728172,
+        "chrf++": 76.0686870806567,
+        "character_error_rate": 0.2432141674942072,
+        "element_f1": 0.5292242295430393
+      },
+      "error": null,
+      "parse_time_seconds": 142.98074865341187
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4316752584275728,
+        "chrf++": 49.14358563208415,
+        "character_error_rate": 0.5683247415724272,
+        "element_f1": 0.4091073364654861
+      },
+      "error": null,
+      "parse_time_seconds": 30.02226448059082
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6640015034254181,
+        "chrf++": 88.74345432541917,
+        "character_error_rate": 0.33599849657458186,
+        "element_f1": 0.6572668112798266
+      },
+      "error": null,
+      "parse_time_seconds": 126.73867177963257
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8198172142526607,
+        "chrf++": 88.97053605380894,
+        "character_error_rate": 0.20218082689686506,
+        "element_f1": 0.5801825293350716
+      },
+      "error": null,
+      "parse_time_seconds": 94.20842099189758
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5784691735063944,
+        "chrf++": 85.79303399444804,
+        "character_error_rate": 0.4984876529276331,
+        "element_f1": 0.6512247071352502
+      },
+      "error": null,
+      "parse_time_seconds": 201.7291440963745
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5465625644197073,
+        "chrf++": 86.22792827045657,
+        "character_error_rate": 0.47041997487101345,
+        "element_f1": 0.6767228630582668
+      },
+      "error": null,
+      "parse_time_seconds": 270.15074157714844
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8294262401243362,
+        "chrf++": 85.01352057608234,
+        "character_error_rate": 0.17057375987566378,
+        "element_f1": 0.5203084832904884
+      },
+      "error": null,
+      "parse_time_seconds": 53.02883553504944
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7581179937898006,
+        "chrf++": 79.95978362534608,
+        "character_error_rate": 0.25464014626849135,
+        "element_f1": 0.5890834191555098
+      },
+      "error": null,
+      "parse_time_seconds": 73.14417719841003
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8677551551421323,
+        "chrf++": 85.16688417444034,
+        "character_error_rate": 0.1322448448578677,
+        "element_f1": 0.631779257849667
+      },
+      "error": null,
+      "parse_time_seconds": 37.952338457107544
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5698849342186663,
+        "chrf++": 66.6374180228372,
+        "character_error_rate": 0.43563074352548037,
+        "element_f1": 0.7795473595976531
+      },
+      "error": null,
+      "parse_time_seconds": 65.23768639564514
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7136377854238348,
+        "chrf++": 81.42443791360353,
+        "character_error_rate": 0.3618934677339658,
+        "element_f1": 0.5898123324396782
+      },
+      "error": null,
+      "parse_time_seconds": 53.75124502182007
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7635129708457152,
+        "chrf++": 86.39027261851052,
+        "character_error_rate": 0.25334480533448056,
+        "element_f1": 0.6724252491694352
+      },
+      "error": null,
+      "parse_time_seconds": 90.07011413574219
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6386906495776289,
+        "chrf++": 80.8978706136583,
+        "character_error_rate": 0.5200733752620545,
+        "element_f1": 0.6046114432109307
+      },
+      "error": null,
+      "parse_time_seconds": 63.631213426589966
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5672387573321747,
+        "chrf++": 71.53524465190075,
+        "character_error_rate": 0.5304926764314247,
+        "element_f1": 0.6768759571209801
+      },
+      "error": null,
+      "parse_time_seconds": 22.61746072769165
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5646562300633067,
+        "chrf++": 85.3216919122669,
+        "character_error_rate": 0.4353437699366933,
+        "element_f1": 0.6058015267175573
+      },
+      "error": null,
+      "parse_time_seconds": 156.82120656967163
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6325942170240415,
+        "chrf++": 78.06878797969493,
+        "character_error_rate": 0.4272087642253388,
+        "element_f1": 0.45539507221750214
+      },
+      "error": null,
+      "parse_time_seconds": 189.12645077705383
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4608229703771105,
+        "chrf++": 70.36236091659752,
+        "character_error_rate": 0.9864964853866075,
+        "element_f1": 0.3873598369011213
+      },
+      "error": null,
+      "parse_time_seconds": 152.52826571464539
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7126950780312125,
+        "chrf++": 81.09466677068916,
+        "character_error_rate": 0.3535211787732191,
+        "element_f1": 0.4814516129032258
+      },
+      "error": null,
+      "parse_time_seconds": 434.78375792503357
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48929835008932643,
+        "chrf++": 72.45676416713994,
+        "character_error_rate": 0.6396823307445921,
+        "element_f1": 0.5505117935024477
+      },
+      "error": null,
+      "parse_time_seconds": 215.41571974754333
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6934271308233447,
+        "chrf++": 82.32430399232186,
+        "character_error_rate": 0.3722413666691106,
+        "element_f1": 0.6585617144034618
+      },
+      "error": null,
+      "parse_time_seconds": 219.9752209186554
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6664678641594162,
+        "chrf++": 81.39744470036864,
+        "character_error_rate": 0.43436743272262074,
+        "element_f1": 0.48203497615262314
+      },
+      "error": null,
+      "parse_time_seconds": 55.14278244972229
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7048685145700071,
+        "chrf++": 80.01696806274643,
+        "character_error_rate": 0.35692285652890193,
+        "element_f1": 0.6679980029955067
+      },
+      "error": null,
+      "parse_time_seconds": 106.78253650665283
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7004536962903656,
+        "chrf++": 87.50283739660668,
+        "character_error_rate": 0.3838839865927902,
+        "element_f1": 0.451625386996904
+      },
+      "error": null,
+      "parse_time_seconds": 155.20086431503296
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8949978294987812,
+        "chrf++": 92.29549975572688,
+        "character_error_rate": 0.11115038617203656,
+        "element_f1": 0.6142781968075777
+      },
+      "error": null,
+      "parse_time_seconds": 154.11378645896912
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.747855383742115,
+        "chrf++": 82.8361252605025,
+        "character_error_rate": 0.2864110483678075,
+        "element_f1": 0.5816466291279866
+      },
+      "error": null,
+      "parse_time_seconds": 309.47972869873047
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.613367360408325,
+        "chrf++": 71.45217628237258,
+        "character_error_rate": 0.3866326395916751,
+        "element_f1": 0.5155256266367377
+      },
+      "error": null,
+      "parse_time_seconds": 11.064631700515747
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8451662460221662,
+        "chrf++": 87.56081133556661,
+        "character_error_rate": 0.15646484808161454,
+        "element_f1": 0.6719322990126938
+      },
+      "error": null,
+      "parse_time_seconds": 12.155656099319458
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.84957206436152,
+        "chrf++": 88.06314209260337,
+        "character_error_rate": 0.16265640038498555,
+        "element_f1": 0.5062093435836782
+      },
+      "error": null,
+      "parse_time_seconds": 3.669313430786133
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.90341511701902,
+        "chrf++": 91.29049785843603,
+        "character_error_rate": 0.09658488298097999,
+        "element_f1": 0.5741831815747187
+      },
+      "error": null,
+      "parse_time_seconds": 3.265474796295166
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7375582990397805,
+        "chrf++": 83.22469616950235,
+        "character_error_rate": 0.28769924812030073,
+        "element_f1": 0.5210171250648676
+      },
+      "error": null,
+      "parse_time_seconds": 4.640046834945679
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6668355285376562,
+        "chrf++": 82.71595480769946,
+        "character_error_rate": 0.4081843760344257,
+        "element_f1": 0.6016764979819932
+      },
+      "error": null,
+      "parse_time_seconds": 12.876944780349731
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4219589214865995,
+        "chrf++": 50.011366104065836,
+        "character_error_rate": 0.5780410785134005,
+        "element_f1": 0.39347906632085955
+      },
+      "error": null,
+      "parse_time_seconds": 2.781273365020752
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6439862194751241,
+        "chrf++": 90.8869065204762,
+        "character_error_rate": 0.36015580954333454,
+        "element_f1": 0.6617972554227535
+      },
+      "error": null,
+      "parse_time_seconds": 5.824966907501221
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8389870160252662,
+        "chrf++": 91.34010142817726,
+        "character_error_rate": 0.1786850133056403,
+        "element_f1": 0.5426997245179064
+      },
+      "error": null,
+      "parse_time_seconds": 4.010951995849609
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6522734852695942,
+        "chrf++": 89.48366587679521,
+        "character_error_rate": 0.3530088935036793,
+        "element_f1": 0.6567366283006093
+      },
+      "error": null,
+      "parse_time_seconds": 5.660726308822632
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5833934825032747,
+        "chrf++": 89.68120714355751,
+        "character_error_rate": 0.4166065174967252,
+        "element_f1": 0.6504947334822854
+      },
+      "error": null,
+      "parse_time_seconds": 5.891099452972412
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8417303458101282,
+        "chrf++": 84.35217964418494,
+        "character_error_rate": 0.15826965418987177,
+        "element_f1": 0.5574572127139364
+      },
+      "error": null,
+      "parse_time_seconds": 3.4061625003814697
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8192143609064214,
+        "chrf++": 85.64713873074226,
+        "character_error_rate": 0.1807856390935786,
+        "element_f1": 0.541033434650456
+      },
+      "error": null,
+      "parse_time_seconds": 8.115908145904541
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9337800039029467,
+        "chrf++": 92.84820051968802,
+        "character_error_rate": 0.06621999609705327,
+        "element_f1": 0.6371936568957232
+      },
+      "error": null,
+      "parse_time_seconds": 4.198070287704468
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6568281763796997,
+        "chrf++": 76.58855469361603,
+        "character_error_rate": 0.36182121971595654,
+        "element_f1": 0.5337470907680372
+      },
+      "error": null,
+      "parse_time_seconds": 5.83502984046936
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7928357155461443,
+        "chrf++": 86.34036533330406,
+        "character_error_rate": 0.2320387390058306,
+        "element_f1": 0.5392834695160277
+      },
+      "error": null,
+      "parse_time_seconds": 8.261178016662598
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7681346168422648,
+        "chrf++": 87.95741831785861,
+        "character_error_rate": 0.26319638631963865,
+        "element_f1": 0.6721902017291067
+      },
+      "error": null,
+      "parse_time_seconds": 11.703760862350464
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7445230730115683,
+        "chrf++": 86.60868604266055,
+        "character_error_rate": 0.3159853249475891,
+        "element_f1": 0.5712285614280714
+      },
+      "error": null,
+      "parse_time_seconds": 8.52472472190857
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.541432412613053,
+        "chrf++": 76.9476026024881,
+        "character_error_rate": 0.4996005326231691,
+        "element_f1": 0.5631768953068591
+      },
+      "error": null,
+      "parse_time_seconds": 2.764096975326538
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.561834421161113,
+        "chrf++": 85.39735757779975,
+        "character_error_rate": 0.43816557883888696,
+        "element_f1": 0.5441542288557214
+      },
+      "error": null,
+      "parse_time_seconds": 3.7596242427825928
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6631630626408694,
+        "chrf++": 83.54612259300887,
+        "character_error_rate": 0.35637720168106907,
+        "element_f1": 0.5298040850354314
+      },
+      "error": null,
+      "parse_time_seconds": 10.930257320404053
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7323078656750056,
+        "chrf++": 83.85758457492105,
+        "character_error_rate": 0.2929461092613146,
+        "element_f1": 0.5403225806451614
+      },
+      "error": null,
+      "parse_time_seconds": 9.957754611968994
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7669685687692418,
+        "chrf++": 85.13039131159267,
+        "character_error_rate": 0.24038923150781047,
+        "element_f1": 0.6156633782967587
+      },
+      "error": null,
+      "parse_time_seconds": 12.82214879989624
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7322164836595634,
+        "chrf++": 83.41793161109322,
+        "character_error_rate": 0.27072089860032467,
+        "element_f1": 0.7724257282953563
+      },
+      "error": null,
+      "parse_time_seconds": 51.80780863761902
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7990586403369077,
+        "chrf++": 87.89502428034478,
+        "character_error_rate": 0.20815309040252217,
+        "element_f1": 0.6303684581084252
+      },
+      "error": null,
+      "parse_time_seconds": 9.297507524490356
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6952505162482339,
+        "chrf++": 87.40611991342239,
+        "character_error_rate": 0.38433773472837757,
+        "element_f1": 0.5932621199671323
+      },
+      "error": null,
+      "parse_time_seconds": 6.973223686218262
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7171406059737842,
+        "chrf++": 79.60983009052413,
+        "character_error_rate": 0.2828593940262159,
+        "element_f1": 0.518243661100804
+      },
+      "error": null,
+      "parse_time_seconds": 4.994093894958496
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.864781927396187,
+        "chrf++": 92.9035174290421,
+        "character_error_rate": 0.14166495656337644,
+        "element_f1": 0.6368515205724508
+      },
+      "error": null,
+      "parse_time_seconds": 9.837179899215698
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9124207285444171,
+        "chrf++": 92.0739483951786,
+        "character_error_rate": 0.09250455099768473,
+        "element_f1": 0.6123305974422599
+      },
+      "error": null,
+      "parse_time_seconds": 7.407021999359131
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-docling",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7975026313271457,
+        "chrf++": 86.60412519470279,
+        "character_error_rate": 0.22008340352957081,
+        "element_f1": 0.6570342205323194
+      },
+      "error": null,
+      "parse_time_seconds": 21.72780466079712
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.818333664744482,
+        "chrf++": 90.8672091027749,
+        "character_error_rate": 0.2009944119329432,
+        "element_f1": 0.40875186474390857
+      },
+      "error": null,
+      "parse_time_seconds": 1.5297763347625732
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8712020403637171,
+        "chrf++": 85.89804669668464,
+        "character_error_rate": 0.128797959636283,
+        "element_f1": 0.38661541939859817
+      },
+      "error": null,
+      "parse_time_seconds": 1.7915377616882324
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9149329977048938,
+        "chrf++": 88.76150551414817,
+        "character_error_rate": 0.08506700229510625,
+        "element_f1": 0.4565345949142519
+      },
+      "error": null,
+      "parse_time_seconds": 0.23698949813842773
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9077282047656084,
+        "chrf++": 87.56137265585365,
+        "character_error_rate": 0.09227179523439157,
+        "element_f1": 0.4370860927152318
+      },
+      "error": null,
+      "parse_time_seconds": 0.3344721794128418
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.786774559323781,
+        "chrf++": 86.95905190754655,
+        "character_error_rate": 0.2488421052631579,
+        "element_f1": 0.3831891223733004
+      },
+      "error": null,
+      "parse_time_seconds": 0.7546017169952393
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7204550655464383,
+        "chrf++": 85.09042809266764,
+        "character_error_rate": 0.3538149619331347,
+        "element_f1": 0.38880849011095026
+      },
+      "error": null,
+      "parse_time_seconds": 15.392148971557617
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4297859706890502,
+        "chrf++": 57.32921259857701,
+        "character_error_rate": 0.5702140293109498,
+        "element_f1": 0.4861503674392312
+      },
+      "error": null,
+      "parse_time_seconds": 1.0274467468261719
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8643320200291962,
+        "chrf++": 94.95851311825092,
+        "character_error_rate": 0.14766029419301932,
+        "element_f1": 0.2961397576782192
+      },
+      "error": null,
+      "parse_time_seconds": 1.335815668106079
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7229496898690558,
+        "chrf++": 86.9003295236473,
+        "character_error_rate": 0.36528850522489775,
+        "element_f1": 0.3268839103869654
+      },
+      "error": null,
+      "parse_time_seconds": 0.43011021614074707
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8960848000702278,
+        "chrf++": 95.24335256759933,
+        "character_error_rate": 0.10688005056205137,
+        "element_f1": 0.4512614678899083
+      },
+      "error": null,
+      "parse_time_seconds": 1.0757794380187988
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8138133931073129,
+        "chrf++": 93.39173902510231,
+        "character_error_rate": 0.21316865827251583,
+        "element_f1": 0.2878066642255584
+      },
+      "error": null,
+      "parse_time_seconds": 0.797353982925415
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8873202952985364,
+        "chrf++": 91.77079188473637,
+        "character_error_rate": 0.11267970470146355,
+        "element_f1": 0.4267461669505962
+      },
+      "error": null,
+      "parse_time_seconds": 0.36049342155456543
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.844745091569048,
+        "chrf++": 85.68308938642342,
+        "character_error_rate": 0.15640755720538535,
+        "element_f1": 0.41170855870187717
+      },
+      "error": null,
+      "parse_time_seconds": 3.0234131813049316
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9148507122877773,
+        "chrf++": 87.14368267339925,
+        "character_error_rate": 0.08514928771222273,
+        "element_f1": 0.4294716432380029
+      },
+      "error": null,
+      "parse_time_seconds": 0.2794623374938965
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8170755876174244,
+        "chrf++": 89.8275646867976,
+        "character_error_rate": 0.1927736006683375,
+        "element_f1": 0.3452070663191428
+      },
+      "error": null,
+      "parse_time_seconds": 1.2540011405944824
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8614268914151313,
+        "chrf++": 85.03369324814318,
+        "character_error_rate": 0.1397371281747208,
+        "element_f1": 0.4352865421764327
+      },
+      "error": null,
+      "parse_time_seconds": 1.8856427669525146
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7615044409517892,
+        "chrf++": 85.37120084406521,
+        "character_error_rate": 0.2807055280705528,
+        "element_f1": 0.36835278858625164
+      },
+      "error": null,
+      "parse_time_seconds": 0.8070681095123291
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9056603773584906,
+        "chrf++": 86.83577027944389,
+        "character_error_rate": 0.09433962264150944,
+        "element_f1": 0.44788213627992635
+      },
+      "error": null,
+      "parse_time_seconds": 0.007907390594482422
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.564041906049341,
+        "chrf++": 76.79747508164057,
+        "character_error_rate": 0.6870838881491345,
+        "element_f1": 0.49772382397572074
+      },
+      "error": null,
+      "parse_time_seconds": 1.1993780136108398
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8861075766338924,
+        "chrf++": 95.486142734793,
+        "character_error_rate": 0.12079795848260294,
+        "element_f1": 0.2990543735224586
+      },
+      "error": null,
+      "parse_time_seconds": 0.9590630531311035
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8751475657553005,
+        "chrf++": 87.90026638107766,
+        "character_error_rate": 0.12485243424469944,
+        "element_f1": 0.5137215528781793
+      },
+      "error": null,
+      "parse_time_seconds": 2.8554317951202393
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8413073797829119,
+        "chrf++": 87.70102001143623,
+        "character_error_rate": 0.1613639166358367,
+        "element_f1": 0.4114607797087834
+      },
+      "error": null,
+      "parse_time_seconds": 0.3517262935638428
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.914066250600096,
+        "chrf++": 91.72384855132123,
+        "character_error_rate": 0.08593374939990399,
+        "element_f1": 0.43268744734625103
+      },
+      "error": null,
+      "parse_time_seconds": 5.579989194869995
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8477469176429292,
+        "chrf++": 81.77246857180116,
+        "character_error_rate": 0.15225308235707077,
+        "element_f1": 0.41715076071922547
+      },
+      "error": null,
+      "parse_time_seconds": 82.39079403877258
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8739277073099201,
+        "chrf++": 84.79328728864782,
+        "character_error_rate": 0.1260722926900799,
+        "element_f1": 0.4516715942688197
+      },
+      "error": null,
+      "parse_time_seconds": 0.011511564254760742
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8761365193950748,
+        "chrf++": 85.4938192086249,
+        "character_error_rate": 0.1238634806049253,
+        "element_f1": 0.5112511251125113
+      },
+      "error": null,
+      "parse_time_seconds": 1.2699785232543945
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9030871714060598,
+        "chrf++": 89.38757905617162,
+        "character_error_rate": 0.09691282859394026,
+        "element_f1": 0.47234042553191485
+      },
+      "error": null,
+      "parse_time_seconds": 5.900188684463501
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9224639168205759,
+        "chrf++": 89.42293609900139,
+        "character_error_rate": 0.07753608317942404,
+        "element_f1": 0.4486223662884927
+      },
+      "error": null,
+      "parse_time_seconds": 0.000789642333984375
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9424895282868807,
+        "chrf++": 91.04328640544506,
+        "character_error_rate": 0.057510471713119245,
+        "element_f1": 0.3909425198374298
+      },
+      "error": null,
+      "parse_time_seconds": 2.4950995445251465
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pypdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8806663962811594,
+        "chrf++": 87.7297710394791,
+        "character_error_rate": 0.11933360371884066,
+        "element_f1": 0.35035531317137664
+      },
+      "error": null,
+      "parse_time_seconds": 2.152329683303833
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.605093269608018,
+        "chrf++": 84.91789580497242,
+        "character_error_rate": 0.48717384608615305,
+        "element_f1": 0.4085499149866408
+      },
+      "error": null,
+      "parse_time_seconds": 2.739555597305298
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8227711244178311,
+        "chrf++": 85.61433411240242,
+        "character_error_rate": 0.177228875582169,
+        "element_f1": 0.380847308031774
+      },
+      "error": null,
+      "parse_time_seconds": 4.933870792388916
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8725845857703414,
+        "chrf++": 88.96168593361466,
+        "character_error_rate": 0.12741541422965869,
+        "element_f1": 0.4461269656377402
+      },
+      "error": null,
+      "parse_time_seconds": 0.0022008419036865234
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9044757123665418,
+        "chrf++": 87.80937753879475,
+        "character_error_rate": 0.09552428763345824,
+        "element_f1": 0.4379785604900459
+      },
+      "error": null,
+      "parse_time_seconds": 0.38360047340393066
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3679021891460881,
+        "chrf++": 69.17684507474588,
+        "character_error_rate": 1.5735338345864662,
+        "element_f1": 0.24232707283554744
+      },
+      "error": null,
+      "parse_time_seconds": 2.376011848449707
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.30314370264209034,
+        "chrf++": 58.03817019969457,
+        "character_error_rate": 2.172831843760344,
+        "element_f1": 0.141321044546851
+      },
+      "error": null,
+      "parse_time_seconds": 30.606627941131592
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4162640684461958,
+        "chrf++": 57.80952866401245,
+        "character_error_rate": 0.5837359315538042,
+        "element_f1": 0.433009099466583
+      },
+      "error": null,
+      "parse_time_seconds": 1.8760900497436523
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.39972144846796653,
+        "chrf++": 77.00307590069721,
+        "character_error_rate": 1.3327695488015308,
+        "element_f1": 0.24039653035935565
+      },
+      "error": null,
+      "parse_time_seconds": 4.559430837631226
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3114659046199084,
+        "chrf++": 64.91847700929696,
+        "character_error_rate": 2.158109950022717,
+        "element_f1": 0.09886048660301819
+      },
+      "error": null,
+      "parse_time_seconds": 1.6605684757232666
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5780564813190668,
+        "chrf++": 89.46509400100406,
+        "character_error_rate": 0.5429777436684574,
+        "element_f1": 0.42266701325708345
+      },
+      "error": null,
+      "parse_time_seconds": 2.704225540161133
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3862169503351691,
+        "chrf++": 77.44547707356007,
+        "character_error_rate": 1.3168925602160024,
+        "element_f1": 0.2405906195715113
+      },
+      "error": null,
+      "parse_time_seconds": 3.2990100383758545
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8634891853386867,
+        "chrf++": 91.44331489606937,
+        "character_error_rate": 0.1365108146613133,
+        "element_f1": 0.4488330341113106
+      },
+      "error": null,
+      "parse_time_seconds": 1.9205677509307861
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7306855277475517,
+        "chrf++": 82.89791671205924,
+        "character_error_rate": 0.3016787633663915,
+        "element_f1": 0.3883553421368547
+      },
+      "error": null,
+      "parse_time_seconds": 5.992096900939941
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.912834189813309,
+        "chrf++": 86.93117530640403,
+        "character_error_rate": 0.08716581018669095,
+        "element_f1": 0.42331581462016243
+      },
+      "error": null,
+      "parse_time_seconds": 1.2386236190795898
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6115444000158359,
+        "chrf++": 86.90075385935363,
+        "character_error_rate": 0.4098579782790309,
+        "element_f1": 0.33403172702783596
+      },
+      "error": null,
+      "parse_time_seconds": 2.984880208969116
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.06905789008839347,
+        "chrf++": 28.40535553680688,
+        "character_error_rate": 12.604012254175315,
+        "element_f1": 0.012217187059077404
+      },
+      "error": null,
+      "parse_time_seconds": 28.177058696746826
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3463533480037724,
+        "chrf++": 67.91298889977611,
+        "character_error_rate": 1.7889868788986878,
+        "element_f1": 0.2904049616928128
+      },
+      "error": null,
+      "parse_time_seconds": 2.9058291912078857
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7891455080560682,
+        "chrf++": 86.30904999580093,
+        "character_error_rate": 0.22154088050314466,
+        "element_f1": 0.45216158752657687
+      },
+      "error": null,
+      "parse_time_seconds": 1.1700797080993652
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.13140989937247038,
+        "chrf++": 39.38650420562449,
+        "character_error_rate": 6.229560585885486,
+        "element_f1": 0.2598794373744139
+      },
+      "error": null,
+      "parse_time_seconds": 2.744598865509033
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4040726874258058,
+        "chrf++": 77.12768213357529,
+        "character_error_rate": 1.2810521666584875,
+        "element_f1": 0.2184243434764485
+      },
+      "error": null,
+      "parse_time_seconds": 2.786052942276001
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6739067253104958,
+        "chrf++": 87.1003970666506,
+        "character_error_rate": 0.3973650658733532,
+        "element_f1": 0.48566808760840807
+      },
+      "error": null,
+      "parse_time_seconds": 4.329190015792847
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6797606408647814,
+        "chrf++": 87.18166520837737,
+        "character_error_rate": 0.4091749907510174,
+        "element_f1": 0.3681341719077568
+      },
+      "error": null,
+      "parse_time_seconds": 1.7826943397521973
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8088591915420715,
+        "chrf++": 92.3827516930236,
+        "character_error_rate": 0.2022969829018797,
+        "element_f1": 0.41769420468557333
+      },
+      "error": null,
+      "parse_time_seconds": 7.93812108039856
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7524022640515993,
+        "chrf++": 81.76958479975784,
+        "character_error_rate": 0.24759773594840068,
+        "element_f1": 0.4205352266521027
+      },
+      "error": null,
+      "parse_time_seconds": 139.41596841812134
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7616201174894363,
+        "chrf++": 85.14346651969203,
+        "character_error_rate": 0.25438081970818976,
+        "element_f1": 0.48481065334997914
+      },
+      "error": null,
+      "parse_time_seconds": 2.6721200942993164
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5766285853184249,
+        "chrf++": 84.99011405285533,
+        "character_error_rate": 0.6366336181294833,
+        "element_f1": 0.4446147949405903
+      },
+      "error": null,
+      "parse_time_seconds": 2.512601375579834
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.14960294625388426,
+        "chrf++": 44.122972695624824,
+        "character_error_rate": 5.2926724446672875,
+        "element_f1": 0.22883295194508008
+      },
+      "error": null,
+      "parse_time_seconds": 8.414645195007324
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8156323204328747,
+        "chrf++": 89.56205602067725,
+        "character_error_rate": 0.1911211437170805,
+        "element_f1": 0.4324984728161271
+      },
+      "error": null,
+      "parse_time_seconds": 1.2102224826812744
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8730006236200301,
+        "chrf++": 91.38273109848673,
+        "character_error_rate": 0.13317191283292978,
+        "element_f1": 0.37794978289597886
+      },
+      "error": null,
+      "parse_time_seconds": 10.782768726348877
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8202560342765628,
+        "chrf++": 87.59407073283164,
+        "character_error_rate": 0.17974396572343723,
+        "element_f1": 0.3534575569358178
+      },
+      "error": null,
+      "parse_time_seconds": 4.163240671157837
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6676579638498378,
+        "chrf++": 88.6332508506364,
+        "character_error_rate": 0.37862454349452196,
+        "element_f1": 0.6178010471204188
+      },
+      "error": null,
+      "parse_time_seconds": 1.1536715030670166
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8496340652029275,
+        "chrf++": 85.77798336732107,
+        "character_error_rate": 0.15036593479707253,
+        "element_f1": 0.48353125700201655
+      },
+      "error": null,
+      "parse_time_seconds": 2.6467041969299316
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8701414081587325,
+        "chrf++": 89.09442426610079,
+        "character_error_rate": 0.1298585918412675,
+        "element_f1": 0.6910377358490566
+      },
+      "error": null,
+      "parse_time_seconds": 0.48519110679626465
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9096372763911476,
+        "chrf++": 87.86133418929396,
+        "character_error_rate": 0.09036272360885243,
+        "element_f1": 0.6846663270504331
+      },
+      "error": null,
+      "parse_time_seconds": 0.4533731937408447
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6854011521708585,
+        "chrf++": 85.46710785341112,
+        "character_error_rate": 0.4040300751879699,
+        "element_f1": 0.2769811320754717
+      },
+      "error": null,
+      "parse_time_seconds": 1.4091358184814453
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.65190625,
+        "chrf++": 82.11321638030782,
+        "character_error_rate": 0.4608987090367428,
+        "element_f1": 0.40865051903114186
+      },
+      "error": null,
+      "parse_time_seconds": 17.910658359527588
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4102453375077596,
+        "chrf++": 57.03643479804592,
+        "character_error_rate": 0.5897546624922404,
+        "element_f1": 0.7960308710033076
+      },
+      "error": null,
+      "parse_time_seconds": 1.4452075958251953
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5716821614465806,
+        "chrf++": 93.62551089935309,
+        "character_error_rate": 0.48642646028735925,
+        "element_f1": 0.3932329275840726
+      },
+      "error": null,
+      "parse_time_seconds": 3.35256028175354
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6952733923758183,
+        "chrf++": 87.23544488417751,
+        "character_error_rate": 0.41091711559680666,
+        "element_f1": 0.45512506130456104
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007925033569335938
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6966518582728356,
+        "chrf++": 94.71612532914564,
+        "character_error_rate": 0.3159676764028712,
+        "element_f1": 0.6420626895854398
+      },
+      "error": null,
+      "parse_time_seconds": 1.1042160987854004
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5165884194053207,
+        "chrf++": 92.14836965666345,
+        "character_error_rate": 0.5780468896195899,
+        "element_f1": 0.4165933743770155
+      },
+      "error": null,
+      "parse_time_seconds": 1.6184568405151367
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8922851098735052,
+        "chrf++": 91.86637300067673,
+        "character_error_rate": 0.10771489012649484,
+        "element_f1": 0.6666666666666666
+      },
+      "error": null,
+      "parse_time_seconds": 0.911139726638794
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7977937238941845,
+        "chrf++": 84.77449461231417,
+        "character_error_rate": 0.20920826638594936,
+        "element_f1": 0.5933671945025395
+      },
+      "error": null,
+      "parse_time_seconds": 4.077465772628784
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9135497300461849,
+        "chrf++": 87.086552217173,
+        "character_error_rate": 0.08645026995381513,
+        "element_f1": 0.6422018348623854
+      },
+      "error": null,
+      "parse_time_seconds": 0.0036008358001708984
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7504078937145521,
+        "chrf++": 89.48355117188252,
+        "character_error_rate": 0.2683792815371763,
+        "element_f1": 0.46839945280437756
+      },
+      "error": null,
+      "parse_time_seconds": 1.9780676364898682
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7897786643868149,
+        "chrf++": 84.62184364363895,
+        "character_error_rate": 0.21869749975294,
+        "element_f1": 0.6058394160583942
+      },
+      "error": null,
+      "parse_time_seconds": 2.175316095352173
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7290868054311611,
+        "chrf++": 85.09952870522325,
+        "character_error_rate": 0.32531727253172726,
+        "element_f1": 0.5275200989486704
+      },
+      "error": null,
+      "parse_time_seconds": 1.280545949935913
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8617924528301887,
+        "chrf++": 86.80494196842345,
+        "character_error_rate": 0.13820754716981132,
+        "element_f1": 0.6605772743880162
+      },
+      "error": null,
+      "parse_time_seconds": 0.680711030960083
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5531879748926329,
+        "chrf++": 75.90647993513893,
+        "character_error_rate": 0.7203728362183754,
+        "element_f1": 0.5759768451519536
+      },
+      "error": null,
+      "parse_time_seconds": 2.0078842639923096
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5428054618048662,
+        "chrf++": 93.5605651712429,
+        "character_error_rate": 0.5085635765814399,
+        "element_f1": 0.3881643528256906
+      },
+      "error": null,
+      "parse_time_seconds": 1.5106480121612549
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7432119752561741,
+        "chrf++": 88.01124345025553,
+        "character_error_rate": 0.25678802474382584,
+        "element_f1": 0.6617511520737327
+      },
+      "error": null,
+      "parse_time_seconds": 3.0579349994659424
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7704648292883587,
+        "chrf++": 86.60976149969898,
+        "character_error_rate": 0.24084350721420644,
+        "element_f1": 0.5312359550561796
+      },
+      "error": null,
+      "parse_time_seconds": 0.6618402004241943
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8396174157095905,
+        "chrf++": 91.28988176222099,
+        "character_error_rate": 0.16038258429040955,
+        "element_f1": 0.590006406149904
+      },
+      "error": null,
+      "parse_time_seconds": 6.197028160095215
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7723224079680575,
+        "chrf++": 81.63012961768307,
+        "character_error_rate": 0.22767759203194243,
+        "element_f1": 0.5757575757575757
+      },
+      "error": null,
+      "parse_time_seconds": 113.50660967826843
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8202580834372022,
+        "chrf++": 84.4024052332636,
+        "character_error_rate": 0.17974191656279787,
+        "element_f1": 0.6128819520773796
+      },
+      "error": null,
+      "parse_time_seconds": 2.2607734203338623
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7331292548087907,
+        "chrf++": 85.27087230639165,
+        "character_error_rate": 0.2668707451912094,
+        "element_f1": 0.5084496693607642
+      },
+      "error": null,
+      "parse_time_seconds": 0.962714672088623
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8412721151779958,
+        "chrf++": 88.96888406687108,
+        "character_error_rate": 0.15872788482200414,
+        "element_f1": 0.6893255443441317
+      },
+      "error": null,
+      "parse_time_seconds": 5.851909875869751
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8656884875846501,
+        "chrf++": 89.46936286891432,
+        "character_error_rate": 0.1343115124153499,
+        "element_f1": 0.6570893191755153
+      },
+      "error": null,
+      "parse_time_seconds": 0.8934271335601807
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9250808575316802,
+        "chrf++": 91.07730318056075,
+        "character_error_rate": 0.07491914246831975,
+        "element_f1": 0.5738710276900204
+      },
+      "error": null,
+      "parse_time_seconds": 3.351285219192505
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pdfminer",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8607202653937749,
+        "chrf++": 87.65997861624804,
+        "character_error_rate": 0.13927973460622511,
+        "element_f1": 0.49958928864793817
+      },
+      "error": null,
+      "parse_time_seconds": 4.0391058921813965
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.41906102873234474,
+        "chrf++": 63.491211217942315,
+        "character_error_rate": 0.5809389712676553,
+        "element_f1": 0.5133617785762407
+      },
+      "error": null,
+      "parse_time_seconds": 6.886829853057861
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8104375557417367,
+        "chrf++": 80.67053418107426,
+        "character_error_rate": 0.19444444444444445,
+        "element_f1": 0.5155378486055777
+      },
+      "error": null,
+      "parse_time_seconds": 37.61621022224426
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7338726697150897,
+        "chrf++": 85.14935971879324,
+        "character_error_rate": 0.28007699711260825,
+        "element_f1": 0.7191854233654876
+      },
+      "error": null,
+      "parse_time_seconds": 3.6463968753814697
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8681326451247967,
+        "chrf++": 85.21326036142788,
+        "character_error_rate": 0.1318673548752033,
+        "element_f1": 0.7855603448275863
+      },
+      "error": null,
+      "parse_time_seconds": 3.0927088260650635
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6611729323308271,
+        "chrf++": 68.71445333597671,
+        "character_error_rate": 0.3388270676691729,
+        "element_f1": 0.6226415094339623
+      },
+      "error": null,
+      "parse_time_seconds": 7.4775168895721436
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12711022840119168,
+        "chrf++": 10.607484405717672,
+        "character_error_rate": 0.8728897715988083,
+        "element_f1": 0.39333333333333337
+      },
+      "error": null,
+      "parse_time_seconds": 21.431231021881104
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.40803217187120455,
+        "chrf++": 54.32022265964114,
+        "character_error_rate": 0.5919678281287954,
+        "element_f1": 0.6392993979200876
+      },
+      "error": null,
+      "parse_time_seconds": 4.626203775405884
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.033365793654861364,
+        "chrf++": 2.6011808641770404,
+        "character_error_rate": 0.9666342063451386,
+        "element_f1": 0.42369419317187046
+      },
+      "error": null,
+      "parse_time_seconds": 13.371993064880371
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7345067213488266,
+        "chrf++": 85.49121580989492,
+        "character_error_rate": 0.30252482637762057,
+        "element_f1": 0.6577777777777778
+      },
+      "error": null,
+      "parse_time_seconds": 3.9184021949768066
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4481287526522505,
+        "chrf++": 57.38239689537888,
+        "character_error_rate": 0.5518712473477495,
+        "element_f1": 0.6216216216216217
+      },
+      "error": null,
+      "parse_time_seconds": 31.718791961669922
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.11217151869970865,
+        "chrf++": 11.506886898265787,
+        "character_error_rate": 0.8878284813002914,
+        "element_f1": 0.4191176470588235
+      },
+      "error": null,
+      "parse_time_seconds": 9.702069282531738
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.004533091568449721,
+        "chrf++": 0.506941921069823,
+        "character_error_rate": 0.9954669084315503,
+        "element_f1": 0.01119402985074627
+      },
+      "error": null,
+      "parse_time_seconds": 1.215280532836914
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.12892681034960385,
+        "chrf++": 10.249903594510007,
+        "character_error_rate": 0.8710731896503962,
+        "element_f1": 0.34450963956412406
+      },
+      "error": null,
+      "parse_time_seconds": 25.4983127117157
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8649470815641042,
+        "chrf++": 83.19505231177475,
+        "character_error_rate": 0.13861965784167046,
+        "element_f1": 0.6806236080178174
+      },
+      "error": null,
+      "parse_time_seconds": 0.00044035911560058594
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.016457811194653282,
+        "chrf++": 1.606709901077486,
+        "character_error_rate": 0.9835421888053467,
+        "element_f1": 0.05425631431244153
+      },
+      "error": null,
+      "parse_time_seconds": 5.48542857170105
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 1.5233592987060547
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5473562589315577,
+        "chrf++": 73.29169427749027,
+        "character_error_rate": 0.6404388040438804,
+        "element_f1": 0.4578155657292348
+      },
+      "error": null,
+      "parse_time_seconds": 2.1934146881103516
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8155788817293702,
+        "chrf++": 84.77781830466552,
+        "character_error_rate": 0.1860062893081761,
+        "element_f1": 0.7359454855195912
+      },
+      "error": null,
+      "parse_time_seconds": 9.547419786453247
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.16431424766977365,
+        "chrf++": 16.058428802518492,
+        "character_error_rate": 0.8356857523302264,
+        "element_f1": 0.37037037037037046
+      },
+      "error": null,
+      "parse_time_seconds": 4.230183124542236
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.024880993276733543,
+        "chrf++": 2.0832562149147362,
+        "character_error_rate": 0.9751190067232665,
+        "element_f1": 0.20786516853932582
+      },
+      "error": null,
+      "parse_time_seconds": 5.554892301559448
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6052721670660732,
+        "chrf++": 70.86613628847329,
+        "character_error_rate": 0.46278981914341033,
+        "element_f1": 0.5154587557892102
+      },
+      "error": null,
+      "parse_time_seconds": 14.113366603851318
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.3393646712032362,
+        "chrf++": 61.15768632555928,
+        "character_error_rate": 1.2989887779010976,
+        "element_f1": 0.17280340289778015
+      },
+      "error": null,
+      "parse_time_seconds": 12.349460363388062
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6570082490594691,
+        "chrf++": 70.26129615353791,
+        "character_error_rate": 0.36698179401011854,
+        "element_f1": 0.408622305529522
+      },
+      "error": null,
+      "parse_time_seconds": 29.24843430519104
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.02224562327234436,
+        "chrf++": 1.9957609985583005,
+        "character_error_rate": 0.9777543767276556,
+        "element_f1": 0.06793618116314977
+      },
+      "error": null,
+      "parse_time_seconds": 115.23849272727966
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.10198694918982332,
+        "chrf++": 10.465996766903652,
+        "character_error_rate": 0.8980130508101767,
+        "element_f1": 0.36612612612612616
+      },
+      "error": null,
+      "parse_time_seconds": 15.939811706542969
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5723246769539581,
+        "chrf++": 76.09573869304906,
+        "character_error_rate": 0.6230182299995431,
+        "element_f1": 0.4187153053132434
+      },
+      "error": null,
+      "parse_time_seconds": 2.8605639934539795
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.0,
+        "chrf++": 0.0,
+        "character_error_rate": 1.0,
+        "element_f1": 0.0
+      },
+      "error": null,
+      "parse_time_seconds": 8.756044387817383
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7920172378411656,
+        "chrf++": 82.51978321397,
+        "character_error_rate": 0.2079827621588344,
+        "element_f1": 0.7228915662650602
+      },
+      "error": null,
+      "parse_time_seconds": 2.4885945320129395
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8926991150442478,
+        "chrf++": 88.81096957585169,
+        "character_error_rate": 0.11314752302009508,
+        "element_f1": 0.6040885860306644
+      },
+      "error": null,
+      "parse_time_seconds": 3.8761181831359863
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-pymupdf4llm",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6225834295281774,
+        "chrf++": 64.1349307404532,
+        "character_error_rate": 0.3774165704718227,
+        "element_f1": 0.6033880075289055
+      },
+      "error": null,
+      "parse_time_seconds": 78.30807328224182
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7669298182081553,
+        "chrf++": 89.43365478828358,
+        "character_error_rate": 0.283187398248779,
+        "element_f1": 0.6584955539533766
+      },
+      "error": null,
+      "parse_time_seconds": 1.769667148590088
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7402480270574971,
+        "chrf++": 83.52359931466358,
+        "character_error_rate": 0.2874251497005988,
+        "element_f1": 0.48866727107887575
+      },
+      "error": null,
+      "parse_time_seconds": 1.1325194835662842
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7207463814450967,
+        "chrf++": 84.70839234484426,
+        "character_error_rate": 0.3556674317020804,
+        "element_f1": 0.6647759500850823
+      },
+      "error": null,
+      "parse_time_seconds": 5.339329242706299
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8199042938437662,
+        "chrf++": 85.85844975410375,
+        "character_error_rate": 0.1969172028565368,
+        "element_f1": 0.659877800407332
+      },
+      "error": null,
+      "parse_time_seconds": 0.7834136486053467
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.565501481772414,
+        "chrf++": 79.86561224082293,
+        "character_error_rate": 0.73196992481203,
+        "element_f1": 0.38572553135659937
+      },
+      "error": null,
+      "parse_time_seconds": 0.9051127433776855
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6247576848518416,
+        "chrf++": 82.07626789169863,
+        "character_error_rate": 0.5606587222773916,
+        "element_f1": 0.48263103802672147
+      },
+      "error": null,
+      "parse_time_seconds": 1.7611238956451416
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44962349194353723,
+        "chrf++": 58.62437504874683,
+        "character_error_rate": 0.5503765080564628,
+        "element_f1": 0.7541537595043649
+      },
+      "error": null,
+      "parse_time_seconds": 0.7723515033721924
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8465012302706596,
+        "chrf++": 94.61383126381565,
+        "character_error_rate": 0.1747902892385492,
+        "element_f1": 0.43416533089077175
+      },
+      "error": null,
+      "parse_time_seconds": 0.7958080768585205
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6714376590330788,
+        "chrf++": 85.48748158528632,
+        "character_error_rate": 0.46933212176283506,
+        "element_f1": 0.49171566007482626
+      },
+      "error": null,
+      "parse_time_seconds": 0.7180745601654053
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8269939628205384,
+        "chrf++": 93.66136369320202,
+        "character_error_rate": 0.19599566610988217,
+        "element_f1": 0.670712401055409
+      },
+      "error": null,
+      "parse_time_seconds": 9.068515062332153
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7964460239893381,
+        "chrf++": 93.0403002601608,
+        "character_error_rate": 0.24498088593044082,
+        "element_f1": 0.4423470190341356
+      },
+      "error": null,
+      "parse_time_seconds": 0.7797820568084717
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8141483461676575,
+        "chrf++": 90.26014189914633,
+        "character_error_rate": 0.20109657643655832,
+        "element_f1": 0.6845466155810983
+      },
+      "error": null,
+      "parse_time_seconds": 0.8811450004577637
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7205782081003682,
+        "chrf++": 82.86965362803699,
+        "character_error_rate": 0.34057288492437254,
+        "element_f1": 0.6013309134906232
+      },
+      "error": null,
+      "parse_time_seconds": 36.84731078147888
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8123745424489314,
+        "chrf++": 85.17807577987992,
+        "character_error_rate": 0.2067260781890327,
+        "element_f1": 0.6453488372093024
+      },
+      "error": null,
+      "parse_time_seconds": 0.7064774036407471
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7395502876067631,
+        "chrf++": 87.74963426923483,
+        "character_error_rate": 0.3120718462823726,
+        "element_f1": 0.49680789320951824
+      },
+      "error": null,
+      "parse_time_seconds": 0.7695391178131104
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7538435967755339,
+        "chrf++": 82.6172117414324,
+        "character_error_rate": 0.2927166716078664,
+        "element_f1": 0.6266582438408086
+      },
+      "error": null,
+      "parse_time_seconds": 2.923631429672241
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7004846846252761,
+        "chrf++": 83.64002604633099,
+        "character_error_rate": 0.3907937190793719,
+        "element_f1": 0.5473211421238371
+      },
+      "error": null,
+      "parse_time_seconds": 0.8084285259246826
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8045747911921033,
+        "chrf++": 84.95460148797203,
+        "character_error_rate": 0.21582809224318658,
+        "element_f1": 0.6686390532544378
+      },
+      "error": null,
+      "parse_time_seconds": 0.7469639778137207
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.48501207557891746,
+        "chrf++": 73.44408675523533,
+        "character_error_rate": 0.9653794940079894,
+        "element_f1": 0.6048632218844985
+      },
+      "error": null,
+      "parse_time_seconds": 0.7965385913848877
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8664954502180796,
+        "chrf++": 95.05175641939377,
+        "character_error_rate": 0.14796093634980614,
+        "element_f1": 0.43483748816661405
+      },
+      "error": null,
+      "parse_time_seconds": 0.8204760551452637
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7671983518467387,
+        "chrf++": 85.70184967902257,
+        "character_error_rate": 0.2587949190159135,
+        "element_f1": 0.7046123650637881
+      },
+      "error": null,
+      "parse_time_seconds": 4.315027236938477
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6673887449964682,
+        "chrf++": 83.46146140615228,
+        "character_error_rate": 0.43550376125292883,
+        "element_f1": 0.5082536924413553
+      },
+      "error": null,
+      "parse_time_seconds": 9.494381189346313
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8433555019187692,
+        "chrf++": 90.40253374885994,
+        "character_error_rate": 0.16656818937183795,
+        "element_f1": 0.6142259414225941
+      },
+      "error": null,
+      "parse_time_seconds": 6.440300464630127
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7404631296846866,
+        "chrf++": 80.06464850803113,
+        "character_error_rate": 0.27194945373173623,
+        "element_f1": 0.5778269283936965
+      },
+      "error": null,
+      "parse_time_seconds": 7.197416305541992
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7428755433907583,
+        "chrf++": 82.14146791263366,
+        "character_error_rate": 0.2927267394970306,
+        "element_f1": 0.6141060197663971
+      },
+      "error": null,
+      "parse_time_seconds": 2.60711932182312
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8350619088956915,
+        "chrf++": 84.83891562067357,
+        "character_error_rate": 0.1649380911043085,
+        "element_f1": 0.6220224719101123
+      },
+      "error": null,
+      "parse_time_seconds": 0.7899036407470703
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7628967642526965,
+        "chrf++": 86.46779534467404,
+        "character_error_rate": 0.2755533271255641,
+        "element_f1": 0.6498516320474778
+      },
+      "error": null,
+      "parse_time_seconds": 14.476943969726562
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8188750590830314,
+        "chrf++": 87.80937156686886,
+        "character_error_rate": 0.19659347424584445,
+        "element_f1": 0.6429479034307496
+      },
+      "error": null,
+      "parse_time_seconds": 3.0401604175567627
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8731220089710027,
+        "chrf++": 89.85709727025738,
+        "character_error_rate": 0.13447977236174688,
+        "element_f1": 0.5753424657534247
+      },
+      "error": null,
+      "parse_time_seconds": 1.7764999866485596
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-extractous",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.816017337052118,
+        "chrf++": 86.42921309730308,
+        "character_error_rate": 0.19688224711155483,
+        "element_f1": 0.4985966650156844
+      },
+      "error": null,
+      "parse_time_seconds": 2.896714448928833
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6475787565158269,
+        "chrf++": 88.54801431810655,
+        "character_error_rate": 0.4105249262991156,
+        "element_f1": 0.7001675041876047
+      },
+      "error": null,
+      "parse_time_seconds": 3.0082826614379883
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8701485917054779,
+        "chrf++": 87.29415776666048,
+        "character_error_rate": 0.12985140829452207,
+        "element_f1": 0.7551082647148522
+      },
+      "error": null,
+      "parse_time_seconds": 1.5124537944793701
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8953875768120234,
+        "chrf++": 92.01578223899602,
+        "character_error_rate": 0.1046124231879766,
+        "element_f1": 0.7939538583929993
+      },
+      "error": null,
+      "parse_time_seconds": 0.2675440311431885
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9172028565368027,
+        "chrf++": 90.07565523750112,
+        "character_error_rate": 0.08279714346319735,
+        "element_f1": 0.6442577030812324
+      },
+      "error": null,
+      "parse_time_seconds": 0.3083076477050781
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6930198111460841,
+        "chrf++": 86.87044494577735,
+        "character_error_rate": 0.3989172932330827,
+        "element_f1": 0.6811657242279252
+      },
+      "error": null,
+      "parse_time_seconds": 0.7355296611785889
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6419854529961351,
+        "chrf++": 81.54933247123013,
+        "character_error_rate": 0.4867593512082092,
+        "element_f1": 0.7118163785775007
+      },
+      "error": null,
+      "parse_time_seconds": 11.15466022491455
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4155893228252948,
+        "chrf++": 58.003048640177305,
+        "character_error_rate": 0.5844106771747052,
+        "element_f1": 0.6385382059800664
+      },
+      "error": null,
+      "parse_time_seconds": 1.2384757995605469
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5283831914051622,
+        "chrf++": 91.76908659939404,
+        "character_error_rate": 0.5497240872670117,
+        "element_f1": 0.6499312242090783
+      },
+      "error": null,
+      "parse_time_seconds": 1.660135269165039
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.711156807421931,
+        "chrf++": 89.47294650338765,
+        "character_error_rate": 0.39202959693645745,
+        "element_f1": 0.6900826446280991
+      },
+      "error": null,
+      "parse_time_seconds": 0.6311917304992676
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6792700792830059,
+        "chrf++": 94.34343758569173,
+        "character_error_rate": 0.3360344905421877,
+        "element_f1": 0.7190422745978302
+      },
+      "error": null,
+      "parse_time_seconds": 0.825920581817627
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5079410282810138,
+        "chrf++": 90.07827045017419,
+        "character_error_rate": 0.600475846766648,
+        "element_f1": 0.6373033707865169
+      },
+      "error": null,
+      "parse_time_seconds": 1.2458922863006592
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.905539006173639,
+        "chrf++": 93.23087332424667,
+        "character_error_rate": 0.094460993826361,
+        "element_f1": 0.7381215469613259
+      },
+      "error": null,
+      "parse_time_seconds": 0.5361533164978027
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8026998411858126,
+        "chrf++": 86.67219010523749,
+        "character_error_rate": 0.20649343453930966,
+        "element_f1": 0.7166152490083737
+      },
+      "error": null,
+      "parse_time_seconds": 2.64300537109375
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9300722045144084,
+        "chrf++": 89.50728711045495,
+        "character_error_rate": 0.06992779548559162,
+        "element_f1": 0.6252505010020041
+      },
+      "error": null,
+      "parse_time_seconds": 0.29129791259765625
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7513171759747103,
+        "chrf++": 89.11395031701055,
+        "character_error_rate": 0.2760233918128655,
+        "element_f1": 0.6776572668112799
+      },
+      "error": null,
+      "parse_time_seconds": 0.9985888004302979
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7989700553118444,
+        "chrf++": 88.05955076333815,
+        "character_error_rate": 0.2083209803340251,
+        "element_f1": 0.7890855457227138
+      },
+      "error": null,
+      "parse_time_seconds": 2.118238687515259
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7029907064495842,
+        "chrf++": 84.35618663114195,
+        "character_error_rate": 0.36571305657130565,
+        "element_f1": 0.6252983293556087
+      },
+      "error": null,
+      "parse_time_seconds": 0.6220657825469971
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8747379454926625,
+        "chrf++": 88.6619149518949,
+        "character_error_rate": 0.12526205450733752,
+        "element_f1": 0.6761951700344998
+      },
+      "error": null,
+      "parse_time_seconds": 0.4425773620605469
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5536852426867136,
+        "chrf++": 77.07699137651441,
+        "character_error_rate": 0.7272969374167776,
+        "element_f1": 0.7130730050933787
+      },
+      "error": null,
+      "parse_time_seconds": 1.0544607639312744
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5115702301106342,
+        "chrf++": 92.06270232049772,
+        "character_error_rate": 0.5557245914511459,
+        "element_f1": 0.6879521077575456
+      },
+      "error": null,
+      "parse_time_seconds": 1.1436991691589355
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.76786135902158,
+        "chrf++": 88.35611100286846,
+        "character_error_rate": 0.23213864097842,
+        "element_f1": 0.7479569892473118
+      },
+      "error": null,
+      "parse_time_seconds": 1.9721300601959229
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7751888805582791,
+        "chrf++": 86.707648414291,
+        "character_error_rate": 0.2403502281415711,
+        "element_f1": 0.664459161147903
+      },
+      "error": null,
+      "parse_time_seconds": 0.5783164501190186
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8492004874626093,
+        "chrf++": 91.00482088825822,
+        "character_error_rate": 0.1507995125373906,
+        "element_f1": 0.7860486891385767
+      },
+      "error": null,
+      "parse_time_seconds": 3.6631808280944824
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.768724496511781,
+        "chrf++": 81.30353480120503,
+        "character_error_rate": 0.23127550348821904,
+        "element_f1": 0.6772655007949125
+      },
+      "error": null,
+      "parse_time_seconds": 68.18763327598572
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8182051470049123,
+        "chrf++": 86.17503237606849,
+        "character_error_rate": 0.18179485299508763,
+        "element_f1": 0.6315463278586924
+      },
+      "error": null,
+      "parse_time_seconds": 1.2766849994659424
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7150363229314205,
+        "chrf++": 84.89352734329387,
+        "character_error_rate": 0.2849636770685795,
+        "element_f1": 0.6066441983630235
+      },
+      "error": null,
+      "parse_time_seconds": 1.0705859661102295
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8285939402621589,
+        "chrf++": 87.93060462166332,
+        "character_error_rate": 0.17140605973784112,
+        "element_f1": 0.7062107466852756
+      },
+      "error": null,
+      "parse_time_seconds": 3.6553168296813965
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8747520350229154,
+        "chrf++": 90.25228498953712,
+        "character_error_rate": 0.12524796497708462,
+        "element_f1": 0.6419354838709678
+      },
+      "error": null,
+      "parse_time_seconds": 0.5843443870544434
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9229969149405024,
+        "chrf++": 90.54786307424195,
+        "character_error_rate": 0.07719905975504145,
+        "element_f1": 0.701677607585704
+      },
+      "error": null,
+      "parse_time_seconds": 2.0676844120025635
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "pdfsmith-unstructured",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8678288529262927,
+        "chrf++": 87.50583626017804,
+        "character_error_rate": 0.1330920662652482,
+        "element_f1": 0.7005365159312384
+      },
+      "error": null,
+      "parse_time_seconds": 2.2235419750213623
+    },
+    {
+      "document_id": "pptx-presentation_at_va_qual_inst_team_success",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7656543745480839,
+        "chrf++": 89.39783785155228,
+        "character_error_rate": 0.28521142253707044,
+        "element_f1": 0.6581791976939707
+      },
+      "error": null,
+      "parse_time_seconds": 0.9134156703948975
+    },
+    {
+      "document_id": "pptx-protección_contra_caídas_osha_susan_harwood_otorgamiento_de",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.738474224743247,
+        "chrf++": 83.48370134668656,
+        "character_error_rate": 0.29014193834553115,
+        "element_f1": 0.488445854100589
+      },
+      "error": null,
+      "parse_time_seconds": 0.5778217315673828
+    },
+    {
+      "document_id": "pptx-landscaping_and_horticulture_safety",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7191741097320496,
+        "chrf++": 84.6648709436706,
+        "character_error_rate": 0.35848078773969055,
+        "element_f1": 0.6632710809281268
+      },
+      "error": null,
+      "parse_time_seconds": 3.6467223167419434
+    },
+    {
+      "document_id": "pptx-swp_training_-_intro",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.819126953377244,
+        "chrf++": 85.84650915292268,
+        "character_error_rate": 0.19804850456056,
+        "element_f1": 0.6602238046795524
+      },
+      "error": null,
+      "parse_time_seconds": 0.04168200492858887
+    },
+    {
+      "document_id": "pptx-cabig_seminar_overview",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5650840081332715,
+        "chrf++": 79.84547828038174,
+        "character_error_rate": 0.7333533834586466,
+        "element_f1": 0.3855232100708104
+      },
+      "error": null,
+      "parse_time_seconds": 0.05999040603637695
+    },
+    {
+      "document_id": "pptx-3671s1_07",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6244809832253778,
+        "chrf++": 82.06861837980493,
+        "character_error_rate": 0.5613207547169812,
+        "element_f1": 0.48243271008835015
+      },
+      "error": null,
+      "parse_time_seconds": 0.5882139205932617
+    },
+    {
+      "document_id": "pptx-workshop_template",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.44911068527165254,
+        "chrf++": 58.643213765127044,
+        "character_error_rate": 0.5508893147283475,
+        "element_f1": 0.7548550520686743
+      },
+      "error": null,
+      "parse_time_seconds": 0.10879850387573242
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8453690108770563,
+        "chrf++": 94.58810358608721,
+        "character_error_rate": 0.17632788341619257,
+        "element_f1": 0.43396658274204625
+      },
+      "error": null,
+      "parse_time_seconds": 0.07578086853027344
+    },
+    {
+      "document_id": "pptx-technical_assistance_focus",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.670584498094028,
+        "chrf++": 85.46109236396242,
+        "character_error_rate": 0.4711494775102226,
+        "element_f1": 0.4911906033101974
+      },
+      "error": null,
+      "parse_time_seconds": 0.042456865310668945
+    },
+    {
+      "document_id": "pptx-poster_intro20slides_final20v1",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8250258367119803,
+        "chrf++": 93.59926599257733,
+        "character_error_rate": 0.19872691977788814,
+        "element_f1": 0.6671899529042385
+      },
+      "error": null,
+      "parse_time_seconds": 5.940032958984375
+    },
+    {
+      "document_id": "pptx-state_of_washington_human_resource_management_report_statewi_7OS4ZP",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7948752050361307,
+        "chrf++": 92.99686609872296,
+        "character_error_rate": 0.24738685272809902,
+        "element_f1": 0.4420688570979406
+      },
+      "error": null,
+      "parse_time_seconds": 0.0005252361297607422
+    },
+    {
+      "document_id": "pptx-electronic_death_registration",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.813740336335379,
+        "chrf++": 90.24736099497005,
+        "character_error_rate": 0.20178733324698872,
+        "element_f1": 0.6848149723521905
+      },
+      "error": null,
+      "parse_time_seconds": 0.02862071990966797
+    },
+    {
+      "document_id": "pptx-module_iv",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7206056197144676,
+        "chrf++": 82.87424736808391,
+        "character_error_rate": 0.3404620754612444,
+        "element_f1": 0.6055995130858186
+      },
+      "error": null,
+      "parse_time_seconds": 17.721941471099854
+    },
+    {
+      "document_id": "pptx-clinical_pharmacology_overview",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8110783736004714,
+        "chrf++": 85.14563623394054,
+        "character_error_rate": 0.20854745332726207,
+        "element_f1": 0.6447241045498548
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004067420959472656
+    },
+    {
+      "document_id": "pptx-standardization_of_application",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7388654803774768,
+        "chrf++": 87.72908390490089,
+        "character_error_rate": 0.31324143692564743,
+        "element_f1": 0.4965197215777263
+      },
+      "error": null,
+      "parse_time_seconds": 0.0616297721862793
+    },
+    {
+      "document_id": "pptx-hepatitis_c",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7536749439415331,
+        "chrf++": 82.60320609243597,
+        "character_error_rate": 0.2931119675857298,
+        "element_f1": 0.6270543615676358
+      },
+      "error": null,
+      "parse_time_seconds": 1.43577241897583
+    },
+    {
+      "document_id": "pptx-how_to_obtain_schedule_70_2011",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6997463851651791,
+        "chrf++": 83.61851781611641,
+        "character_error_rate": 0.3921703592170359,
+        "element_f1": 0.5469701827508818
+      },
+      "error": null,
+      "parse_time_seconds": 0.0011525154113769531
+    },
+    {
+      "document_id": "pptx-module_3_forest_management",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8036585943794133,
+        "chrf++": 84.92885337724225,
+        "character_error_rate": 0.21713836477987422,
+        "element_f1": 0.6681448632668145
+      },
+      "error": null,
+      "parse_time_seconds": 0.05328202247619629
+    },
+    {
+      "document_id": "pptx-transferable_development_rights_tdr",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.4823396439672224,
+        "chrf++": 73.31788381887159,
+        "character_error_rate": 0.9757656458055926,
+        "element_f1": 0.6030303030303031
+      },
+      "error": null,
+      "parse_time_seconds": 0.06754875183105469
+    },
+    {
+      "document_id": "pptx-human_resource_management_report",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8665958717727484,
+        "chrf++": 95.03687228021569,
+        "character_error_rate": 0.14796093634980614,
+        "element_f1": 0.434563229265216
+      },
+      "error": null,
+      "parse_time_seconds": 0.05571460723876953
+    },
+    {
+      "document_id": "pptx-differentiating_teacher-directed_instruction",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7665181413112667,
+        "chrf++": 85.68437840830985,
+        "character_error_rate": 0.25981017141238133,
+        "element_f1": 0.7043819489862656
+      },
+      "error": null,
+      "parse_time_seconds": 2.959686279296875
+    },
+    {
+      "document_id": "pptx-fruits_and_vegetables_the_flavor_of_life",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.6715931627160261,
+        "chrf++": 83.52427872218671,
+        "character_error_rate": 0.42884449377235173,
+        "element_f1": 0.5175746924428822
+      },
+      "error": null,
+      "parse_time_seconds": 5.587197542190552
+    },
+    {
+      "document_id": "pptx-transportation_of_hazardous_materials",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8435996735147526,
+        "chrf++": 90.40666541632878,
+        "character_error_rate": 0.16629122198013221,
+        "element_f1": 0.6156685119946318
+      },
+      "error": null,
+      "parse_time_seconds": 3.005049467086792
+    },
+    {
+      "document_id": "pptx-placement_test_elem",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7401841774801172,
+        "chrf++": 80.05897491021472,
+        "character_error_rate": 0.27234434645254707,
+        "element_f1": 0.5775075987841946
+      },
+      "error": null,
+      "parse_time_seconds": 2.8998985290527344
+    },
+    {
+      "document_id": "pptx-swp_presentation",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7446664299777297,
+        "chrf++": 82.18014141508078,
+        "character_error_rate": 0.29001393064007625,
+        "element_f1": 0.6144875532630635
+      },
+      "error": null,
+      "parse_time_seconds": 0.9843432903289795
+    },
+    {
+      "document_id": "pptx-agency_outreach_presentation_4-22_revised",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8348334627861287,
+        "chrf++": 84.83258230798482,
+        "character_error_rate": 0.16516653721387126,
+        "element_f1": 0.6214638527166593
+      },
+      "error": null,
+      "parse_time_seconds": 0.001371145248413086
+    },
+    {
+      "document_id": "pptx-accessing_the_general_curriculum",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7634289238359544,
+        "chrf++": 86.46081211240309,
+        "character_error_rate": 0.2747654179500036,
+        "element_f1": 0.643426294820717
+      },
+      "error": null,
+      "parse_time_seconds": 8.310548543930054
+    },
+    {
+      "document_id": "pptx-infant_mortality_trends",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8182047164761814,
+        "chrf++": 87.79440278666385,
+        "character_error_rate": 0.19748272795676858,
+        "element_f1": 0.6425396825396825
+      },
+      "error": null,
+      "parse_time_seconds": 1.5044059753417969
+    },
+    {
+      "document_id": "pptx-federal_financial_participation_web_trn_06-07-06",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8724613052098432,
+        "chrf++": 89.8431983989053,
+        "character_error_rate": 0.13529276612290345,
+        "element_f1": 0.5755062680810029
+      },
+      "error": null,
+      "parse_time_seconds": 0.5120525360107422
+    },
+    {
+      "document_id": "pptx-consol_elt_template",
+      "parser_name": "tika",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8158853534126791,
+        "chrf++": 86.42588266845948,
+        "character_error_rate": 0.19706943707817262,
+        "element_f1": 0.49851436117530534
+      },
+      "error": null,
+      "parse_time_seconds": 0.9963364601135254
+    }
+  ],
+  "summary": {
+    "total_documents": 30,
+    "total_parsers": 12,
+    "total_results": 360,
+    "success_count": 360,
+    "failure_count": 0
+  }
+}

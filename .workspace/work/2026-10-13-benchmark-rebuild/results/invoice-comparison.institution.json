@@ -1,0 +1,12 @@
+{
+ "item": "invoice-comparison.institution",
+ "state": "covered",
+ "problems": [],
+ "report": [
+  "test: tests/test_reconstruction_export.py::test_hundred_invoice_fills_remain_six_source_cells_in_reporting",
+  "fixture (both runs): Actual retained invoice PDFs through local adapters, declared mechanism controls, and source-bound completed comparison artifacts",
+  "correct run: exit 0",
+  "violated run: exit 1"
+ ],
+ "date": "2026-10-16"
+}

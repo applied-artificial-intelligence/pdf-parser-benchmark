@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-64033",
+    "vendor": "Digital Printing",
+    "due_date": "2025-11-16",
+    "grand_total": "6010.35",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-64033"
+    ],
+    "due_date": [
+      "November 16, 2025"
+    ],
+    "grand_total": [
+      "$6,010.35"
+    ],
+    "vendor": [
+      "Digital Printing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Posters - Large Format",
+      "quantity": "27.99",
+      "unit": "sq ft",
+      "unit_price": "13.09",
+      "line_total": "366.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat",
+        "quantity": "27.99",
+        "unit": "sq ft",
+        "unit_price": "$13.09",
+        "line_total": "$366.39"
+      }
+    },
+    {
+      "description": "Posters - Large Format",
+      "quantity": "35.3",
+      "unit": "sq ft",
+      "unit_price": "15.49",
+      "line_total": "546.8",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat",
+        "quantity": "35.30",
+        "unit": "sq ft",
+        "unit_price": "$15.49",
+        "line_total": "$546.80"
+      }
+    },
+    {
+      "description": "Posters - Large Format",
+      "quantity": "47.61",
+      "unit": "sq ft",
+      "unit_price": "10.9",
+      "line_total": "518.95",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat",
+        "quantity": "47.61",
+        "unit": "sq ft",
+        "unit_price": "$10.90",
+        "line_total": "$518.95"
+      }
+    },
+    {
+      "description": "Posters - Large Format",
+      "quantity": "30.74",
+      "unit": "sq ft",
+      "unit_price": "16.93",
+      "line_total": "520.43",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Posters - Large\nFormat",
+        "quantity": "30.74",
+        "unit": "sq ft",
+        "unit_price": "$16.93",
+        "line_total": "$520.43"
+      }
+    },
+    {
+      "description": "Graphic Design",
+      "quantity": "7.63",
+      "unit": "hour",
+      "unit_price": "102.54",
+      "line_total": "782.38",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Graphic Design",
+        "quantity": "7.63",
+        "unit": "hour",
+        "unit_price": "$102.54",
+        "line_total": "$782.38"
+      }
+    },
+    {
+      "description": "Business Cards - 4/4 Color",
+      "quantity": "9.88",
+      "unit": "per 1000",
+      "unit_price": "126.85",
+      "line_total": "1253.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Business Cards -\n4/4 Color",
+        "quantity": "9.88",
+        "unit": "per 1000",
+        "unit_price": "$126.85",
+        "line_total": "$1,253.28"
+      }
+    },
+    {
+      "description": "Binding Services",
+      "quantity": "79.54",
+      "unit": "book",
+      "unit_price": "10.59",
+      "line_total": "842.33",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Binding\nServices",
+        "quantity": "79.54",
+        "unit": "book",
+        "unit_price": "$10.59",
+        "line_total": "$842.33"
+      }
+    },
+    {
+      "description": "Binding Services",
+      "quantity": "9.31",
+      "unit": "book",
+      "unit_price": "14.68",
+      "line_total": "136.67",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Binding\nServices",
+        "quantity": "9.31",
+        "unit": "book",
+        "unit_price": "$14.68",
+        "line_total": "$136.67"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

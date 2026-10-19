@@ -1,0 +1,15 @@
+[
+  {
+    "backend": "marker",
+    "input": ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-comparison-plan-v2/inputs/table-4b72cf115166.pdf",
+    "outcome": "success_content",
+    "parse_time_seconds": 68.42371966100109,
+    "wall_time_seconds": 70.24076578200038,
+    "output_path": "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/roster-readiness/probe-4467f87f696745ecb7054802201b6604/marker-0/retained-output.md",
+    "output_sha256": "cb8ac56a64371c78bd2671a86290d18d5893081ae7b1cbc5071b7cc9adf6bcc8",
+    "error": null,
+    "error_type": null,
+    "returned_path": "/home/stefan/applied-ai/pdf-bench/.workspace/work/2026-10-13-benchmark-rebuild/roster-readiness/probe-4467f87f696745ecb7054802201b6604/marker-0/parser-output/table-4b72cf115166.md",
+    "worker_pid": 2368949
+  }
+]

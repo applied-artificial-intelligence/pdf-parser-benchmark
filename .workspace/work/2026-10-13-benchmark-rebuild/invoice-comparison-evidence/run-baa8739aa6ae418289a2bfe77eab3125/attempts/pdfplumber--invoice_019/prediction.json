@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-38350",
+    "vendor": "Connect Solutions",
+    "due_date": "2025-11-05",
+    "grand_total": "3039970.58",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-38350"
+    ],
+    "due_date": [
+      "November 05, 2025"
+    ],
+    "grand_total": [
+      "$3,039,970.58"
+    ],
+    "vendor": [
+      "Connect Solutions"
+    ]
+  },
+  "records": [
+    {
+      "description": "Premium Support",
+      "quantity": "61.48",
+      "unit": "month",
+      "unit_price": "2550.34",
+      "line_total": "156794.9",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium\nSupport",
+        "quantity": "61.48",
+        "unit": "month",
+        "unit_price": "$2,550.34",
+        "line_total": "$156,794.90"
+      }
+    },
+    {
+      "description": "Premium Support",
+      "quantity": "27.13",
+      "unit": "month",
+      "unit_price": "2011.45",
+      "line_total": "54570.64",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Premium\nSupport",
+        "quantity": "27.13",
+        "unit": "month",
+        "unit_price": "$2,011.45",
+        "line_total": "$54,570.64"
+      }
+    },
+    {
+      "description": "API Usage",
+      "quantity": "8.9",
+      "unit": "per 1000 calls",
+      "unit_price": "3.66",
+      "line_total": "32.57",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage",
+        "quantity": "8.90",
+        "unit": "per 1000 calls",
+        "unit_price": "$3.66",
+        "line_total": "$32.57"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "80.87",
+      "unit": "subscription",
+      "unit_price": "2495.39",
+      "line_total": "201802.19",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional\nPlan - Monthly",
+        "quantity": "80.87",
+        "unit": "subscription",
+        "unit_price": "$2,495.39",
+        "line_total": "$201,802.19"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "28.31",
+      "unit": "subscription",
+      "unit_price": "2133.83",
+      "line_total": "60408.73",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional\nPlan - Monthly",
+        "quantity": "28.31",
+        "unit": "subscription",
+        "unit_price": "$2,133.83",
+        "line_total": "$60,408.73"
+      }
+    },
+    {
+      "description": "Implementatio n Services",
+      "quantity": "70.78",
+      "unit": "hour",
+      "unit_price": "233.09",
+      "line_total": "16498.11",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Implementatio\nn Services",
+        "quantity": "70.78",
+        "unit": "hour",
+        "unit_price": "$233.09",
+        "line_total": "$16,498.11"
+      }
+    },
+    {
+      "description": "API Usage",
+      "quantity": "94.84",
+      "unit": "per 1000 calls",
+      "unit_price": "1.69",
+      "line_total": "160.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "API Usage",
+        "quantity": "94.84",
+        "unit": "per 1000 calls",
+        "unit_price": "$1.69",
+        "line_total": "$160.28"
+      }
+    },
+    {
+      "description": "Enterprise Plan - Annual",
+      "quantity": "64.98",
+      "unit": "subscription",
+      "unit_price": "34027.05",
+      "line_total": "2211077.71",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Enterprise Plan\n- Annual",
+        "quantity": "64.98",
+        "unit": "subscription",
+        "unit_price": "$34,027.05",
+        "line_total": "$2,211,077.71"
+      }
+    },
+    {
+      "description": "Additional Storage",
+      "quantity": "42.01",
+      "unit": "TB/month",
+      "unit_price": "79.34",
+      "line_total": "3333.07",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Additional\nStorage",
+        "quantity": "42.01",
+        "unit": "TB/month",
+        "unit_price": "$79.34",
+        "line_total": "$3,333.07"
+      }
+    },
+    {
+      "description": "Professional Plan - Monthly",
+      "quantity": "41.03",
+      "unit": "subscription",
+      "unit_price": "2166.68",
+      "line_total": "88898.88",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Professional\nPlan - Monthly",
+        "quantity": "41.03",
+        "unit": "subscription",
+        "unit_price": "$2,166.68",
+        "line_total": "$88,898.88"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

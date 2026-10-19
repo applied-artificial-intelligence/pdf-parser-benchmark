@@ -1,0 +1,10 @@
+{
+  "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
+  "dataset_revision": "2805a1d940f95a203e0ae4b88be9934f7765b3fc",
+  "source_license": "Apache-2.0",
+  "data_license_declaration": "Apache-2.0 in pinned dataset README; original third-party document rights not independently cleared",
+  "python": "3.14.3",
+  "wheel": "parse_bench-1.0.5-py3-none-any.whl",
+  "normalization": "off",
+  "no_provider_or_judge_calls": true
+}

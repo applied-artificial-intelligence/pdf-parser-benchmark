@@ -1,0 +1,24 @@
+complexity: medium
+customer:
+  country: Singapore
+  name: Campbell, Alexander and Torres
+document_id: invoice_100
+due_date: '2025-11-15'
+generated_at: '2025-11-18T16:47:27.219189'
+industry: freight
+invoice_date: '2025-10-31'
+invoice_number: INV-31757
+line_item_count: 6
+payment_terms: Net 15
+region: APAC
+subtotal: 17862.19
+tax_amount: 1607.6
+template_style: economy
+total: 19469.79
+vendor:
+  country: Singapore
+  name: Swift Freight
+corpus: business
+source_url: generated://invoice_100
+domain: invoices
+doc_id: invoice_100

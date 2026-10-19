@@ -1,0 +1,1663 @@
+{
+  "benchmark": {
+    "name": "Marker Gap Fill",
+    "timestamp": "2025-11-24T15:52:25.853343+00:00",
+    "config_file": "benchmarks/marker_gap_fill.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-88-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "marker": "1.10.1"
+    }
+  },
+  "results": [
+    {
+      "document_id": "06_docx_simple",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9730679156908665,
+        "character_error_rate": 0.027544910179640718,
+        "chrf++": 96.2873325867799
+      },
+      "error": null,
+      "parse_time_seconds": 7.4507129192352295
+    },
+    {
+      "document_id": "07_docx_tables",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7438524590163935,
+        "character_error_rate": 0.26743688489516476,
+        "chrf++": 78.08163332914101
+      },
+      "error": null,
+      "parse_time_seconds": 7.2687461376190186
+    },
+    {
+      "document_id": "08_docx_multicolumn",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9380216657787249,
+        "character_error_rate": 0.06437926581811473,
+        "chrf++": 95.16573551243303
+      },
+      "error": null,
+      "parse_time_seconds": 7.453317642211914
+    },
+    {
+      "document_id": "10_table_colspan",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8376068376068376,
+        "character_error_rate": 0.17592592592592593,
+        "chrf++": 79.3363200338692
+      },
+      "error": null,
+      "parse_time_seconds": 6.284094333648682
+    },
+    {
+      "document_id": "11_table_wide",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8225352112676056,
+        "character_error_rate": 0.20454545454545456,
+        "chrf++": 76.15161509608383
+      },
+      "error": null,
+      "parse_time_seconds": 6.5003416538238525
+    },
+    {
+      "document_id": "12_table_multiple",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8639798488664987,
+        "character_error_rate": 0.1529745042492918,
+        "chrf++": 86.09837601728405
+      },
+      "error": null,
+      "parse_time_seconds": 6.708850622177124
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7822085889570553,
+        "character_error_rate": 0.21779141104294478,
+        "chrf++": 71.75865005646921
+      },
+      "error": null,
+      "parse_time_seconds": 6.417020559310913
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8666666666666667,
+        "character_error_rate": 0.15135135135135136,
+        "chrf++": 82.29385099638186
+      },
+      "error": null,
+      "parse_time_seconds": 6.612678527832031
+    },
+    {
+      "document_id": "15_list_simple_bullets",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9521739130434783,
+        "character_error_rate": 0.0502283105022831,
+        "chrf++": 95.25303872937256
+      },
+      "error": null,
+      "parse_time_seconds": 6.157769680023193
+    },
+    {
+      "document_id": "17_list_nested_2level",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9493087557603687,
+        "character_error_rate": 0.05339805825242718,
+        "chrf++": 94.81414160599095
+      },
+      "error": null,
+      "parse_time_seconds": 6.453307628631592
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9514066496163683,
+        "character_error_rate": 0.05080213903743316,
+        "chrf++": 94.04381119975996
+      },
+      "error": null,
+      "parse_time_seconds": 6.4010231494903564
+    },
+    {
+      "document_id": "20_list_with_paragraphs",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9677914110429447,
+        "character_error_rate": 0.0328125,
+        "chrf++": 95.99712338502076
+      },
+      "error": null,
+      "parse_time_seconds": 6.284560680389404
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9344608879492601,
+        "character_error_rate": 0.06553911205073996,
+        "chrf++": 94.62280121405236
+      },
+      "error": null,
+      "parse_time_seconds": 6.401197195053101
+    },
+    {
+      "document_id": "25_column_academic",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.916015625,
+        "character_error_rate": 0.08514851485148515,
+        "chrf++": 90.62035647041449
+      },
+      "error": null,
+      "parse_time_seconds": 6.150434970855713
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9024390243902439,
+        "character_error_rate": 0.10646387832699619,
+        "chrf++": 86.20143352336022
+      },
+      "error": null,
+      "parse_time_seconds": 6.8646934032440186
+    },
+    {
+      "document_id": "28_mixed_technical_docs",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8735849056603774,
+        "character_error_rate": 0.1375770020533881,
+        "chrf++": 87.04074123861682
+      },
+      "error": null,
+      "parse_time_seconds": 6.497778654098511
+    },
+    {
+      "document_id": "29_mixed_policy_doc",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8949343339587242,
+        "character_error_rate": 0.1111111111111111,
+        "chrf++": 87.4303089823336
+      },
+      "error": null,
+      "parse_time_seconds": 0.00019359588623046875
+    },
+    {
+      "document_id": "30_mixed_meeting_minutes",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8947368421052632,
+        "character_error_rate": 0.11556982343499198,
+        "chrf++": 89.49192629253287
+      },
+      "error": null,
+      "parse_time_seconds": 6.712429523468018
+    },
+    {
+      "document_id": "31_mixed_research_summary",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9018302828618968,
+        "character_error_rate": 0.1068840579710145,
+        "chrf++": 90.71609391059421
+      },
+      "error": null,
+      "parse_time_seconds": 6.50506591796875
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9274661508704062,
+        "character_error_rate": 0.07747933884297521,
+        "chrf++": 88.10160914456768
+      },
+      "error": null,
+      "parse_time_seconds": 6.995840311050415
+    },
+    {
+      "document_id": "arxiv-2302.13971",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.27283914668219666,
+        "character_error_rate": 0.7271608533178033,
+        "chrf++": 33.422031703803015
+      },
+      "error": null,
+      "parse_time_seconds": 64.34298181533813
+    },
+    {
+      "document_id": "arxiv-2302.14852",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.30040960854626475,
+        "character_error_rate": 0.6995903914537352,
+        "chrf++": 31.11422121999582
+      },
+      "error": null,
+      "parse_time_seconds": 70.1970112323761
+    },
+    {
+      "document_id": "arxiv-2303.08774",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.26091817426851904,
+        "character_error_rate": 0.739081825731481,
+        "chrf++": 29.869557157717335
+      },
+      "error": null,
+      "parse_time_seconds": 55.41335940361023
+    },
+    {
+      "document_id": "arxiv-2303.18223",
+      "parser_name": "marker",
+      "success": false,
+      "metrics": {},
+      "error": "Marker processing timed out after 300 seconds: Command '['/home/stefan/applied-ai/pdf-bench/.venv/bin/marker_single', '/home/stefan/applied-ai/pdf-bench/corpus/academic/pdfs/2303.18223.pdf', '--output_dir', '/home/stefan/applied-ai/pdf-bench/benchmarks/results/marker_temp']' timed out after 300 seconds",
+      "parse_time_seconds": 0.0
+    },
+    {
+      "document_id": "legal_cons_007",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8784738577484692,
+        "character_error_rate": 0.12152614225153086,
+        "chrf++": 88.65542168424031
+      },
+      "error": null,
+      "parse_time_seconds": 9.513339519500732
+    },
+    {
+      "document_id": "legal_cons_008",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8729699666295885,
+        "character_error_rate": 0.12703003337041158,
+        "chrf++": 88.84061892048013
+      },
+      "error": null,
+      "parse_time_seconds": 11.815564632415771
+    },
+    {
+      "document_id": "legal_cons_081",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.871335110249576,
+        "character_error_rate": 0.12866488975042403,
+        "chrf++": 87.73249247063657
+      },
+      "error": null,
+      "parse_time_seconds": 9.454606294631958
+    },
+    {
+      "document_id": "legal_cons_082",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8753977968176254,
+        "character_error_rate": 0.12460220318237454,
+        "chrf++": 88.22757168770356
+      },
+      "error": null,
+      "parse_time_seconds": 10.241982221603394
+    },
+    {
+      "document_id": "legal_cons_083",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.878345498783455,
+        "character_error_rate": 0.12165450121654502,
+        "chrf++": 88.2268325267906
+      },
+      "error": null,
+      "parse_time_seconds": 9.688838481903076
+    },
+    {
+      "document_id": "legal_cons_084",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.869944296439816,
+        "character_error_rate": 0.13005570356018406,
+        "chrf++": 87.74690082773755
+      },
+      "error": null,
+      "parse_time_seconds": 9.459556341171265
+    },
+    {
+      "document_id": "legal_cons_085",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8804780876494024,
+        "character_error_rate": 0.11952191235059761,
+        "chrf++": 88.88697817877961
+      },
+      "error": null,
+      "parse_time_seconds": 9.52293610572815
+    },
+    {
+      "document_id": "legal_cons_086",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8809300140911226,
+        "character_error_rate": 0.11906998590887741,
+        "chrf++": 88.28979870355947
+      },
+      "error": null,
+      "parse_time_seconds": 10.115684270858765
+    },
+    {
+      "document_id": "legal_cons_087",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8816402609506058,
+        "character_error_rate": 0.11835973904939422,
+        "chrf++": 88.6522796232088
+      },
+      "error": null,
+      "parse_time_seconds": 9.82475471496582
+    },
+    {
+      "document_id": "legal_cons_088",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8864510291789188,
+        "character_error_rate": 0.1135489708210812,
+        "chrf++": 89.04254805085314
+      },
+      "error": null,
+      "parse_time_seconds": 9.716757774353027
+    },
+    {
+      "document_id": "legal_cons_089",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8755705020417968,
+        "character_error_rate": 0.12442949795820323,
+        "chrf++": 88.43316129628678
+      },
+      "error": null,
+      "parse_time_seconds": 9.27130937576294
+    },
+    {
+      "document_id": "legal_cons_090",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8767565077171159,
+        "character_error_rate": 0.12324349228288413,
+        "chrf++": 88.32452273272911
+      },
+      "error": null,
+      "parse_time_seconds": 9.567001342773438
+    },
+    {
+      "document_id": "legal_emp_003",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8650259067357513,
+        "character_error_rate": 0.1349740932642487,
+        "chrf++": 87.48009716481207
+      },
+      "error": null,
+      "parse_time_seconds": 9.175062417984009
+    },
+    {
+      "document_id": "legal_emp_004",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8610970035551041,
+        "character_error_rate": 0.1389029964448959,
+        "chrf++": 86.66709523580879
+      },
+      "error": null,
+      "parse_time_seconds": 9.975738286972046
+    },
+    {
+      "document_id": "legal_emp_031",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8645211523488191,
+        "character_error_rate": 0.1354788476511809,
+        "chrf++": 87.13379833545262
+      },
+      "error": null,
+      "parse_time_seconds": 9.556863784790039
+    },
+    {
+      "document_id": "legal_emp_032",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8657874321179209,
+        "character_error_rate": 0.13421256788207914,
+        "chrf++": 87.25225368709644
+      },
+      "error": null,
+      "parse_time_seconds": 9.080302476882935
+    },
+    {
+      "document_id": "legal_emp_033",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.863770977295163,
+        "character_error_rate": 0.1362290227048371,
+        "chrf++": 87.31082718627627
+      },
+      "error": null,
+      "parse_time_seconds": 9.394503355026245
+    },
+    {
+      "document_id": "legal_emp_034",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8653081510934394,
+        "character_error_rate": 0.13469184890656064,
+        "chrf++": 87.56607947818532
+      },
+      "error": null,
+      "parse_time_seconds": 8.964159727096558
+    },
+    {
+      "document_id": "legal_emp_035",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8589317659085101,
+        "character_error_rate": 0.1410682340914899,
+        "chrf++": 86.92342843518699
+      },
+      "error": null,
+      "parse_time_seconds": 9.32777190208435
+    },
+    {
+      "document_id": "legal_emp_036",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8578784757981462,
+        "character_error_rate": 0.14212152420185376,
+        "chrf++": 87.07243882047874
+      },
+      "error": null,
+      "parse_time_seconds": 9.205912113189697
+    },
+    {
+      "document_id": "legal_emp_037",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8615739553960523,
+        "character_error_rate": 0.1384260446039477,
+        "chrf++": 86.91201517325347
+      },
+      "error": null,
+      "parse_time_seconds": 9.248451709747314
+    },
+    {
+      "document_id": "legal_emp_038",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8664981036662452,
+        "character_error_rate": 0.13350189633375473,
+        "chrf++": 87.55834538750901
+      },
+      "error": null,
+      "parse_time_seconds": 9.384879350662231
+    },
+    {
+      "document_id": "legal_emp_039",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8633980073413738,
+        "character_error_rate": 0.1366019926586261,
+        "chrf++": 86.88124909425103
+      },
+      "error": null,
+      "parse_time_seconds": 9.791069269180298
+    },
+    {
+      "document_id": "legal_emp_040",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8674492540963561,
+        "character_error_rate": 0.13255074590364394,
+        "chrf++": 87.94678838436863
+      },
+      "error": null,
+      "parse_time_seconds": 9.354644060134888
+    },
+    {
+      "document_id": "legal_emp_041",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8662142510906448,
+        "character_error_rate": 0.1337857489093553,
+        "chrf++": 87.3738827957355
+      },
+      "error": null,
+      "parse_time_seconds": 9.287932395935059
+    },
+    {
+      "document_id": "legal_emp_042",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8699146157709694,
+        "character_error_rate": 0.13008538422903063,
+        "chrf++": 87.66968129510545
+      },
+      "error": null,
+      "parse_time_seconds": 9.453176021575928
+    },
+    {
+      "document_id": "legal_emp_043",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8606200358698437,
+        "character_error_rate": 0.1393799641301563,
+        "chrf++": 86.69931142264404
+      },
+      "error": null,
+      "parse_time_seconds": 9.0205659866333
+    },
+    {
+      "document_id": "legal_emp_044",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8643190056965303,
+        "character_error_rate": 0.1356809943034697,
+        "chrf++": 87.00688888500062
+      },
+      "error": null,
+      "parse_time_seconds": 9.970318794250488
+    },
+    {
+      "document_id": "legal_emp_045",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8617580766341097,
+        "character_error_rate": 0.1382419233658903,
+        "chrf++": 87.38110107742787
+      },
+      "error": null,
+      "parse_time_seconds": 9.441396951675415
+    },
+    {
+      "document_id": "legal_emp_046",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8673733195449844,
+        "character_error_rate": 0.13262668045501552,
+        "chrf++": 87.06003184232497
+      },
+      "error": null,
+      "parse_time_seconds": 9.923278093338013
+    },
+    {
+      "document_id": "legal_emp_047",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8645365724848164,
+        "character_error_rate": 0.13546342751518353,
+        "chrf++": 86.79050776723157
+      },
+      "error": null,
+      "parse_time_seconds": 9.924164772033691
+    },
+    {
+      "document_id": "legal_emp_048",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8718629343629344,
+        "character_error_rate": 0.12813706563706564,
+        "chrf++": 88.17607948895872
+      },
+      "error": null,
+      "parse_time_seconds": 9.572084665298462
+    },
+    {
+      "document_id": "legal_emp_049",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8668354430379747,
+        "character_error_rate": 0.1331645569620253,
+        "chrf++": 87.35470133223043
+      },
+      "error": null,
+      "parse_time_seconds": 10.491997718811035
+    },
+    {
+      "document_id": "legal_emp_050",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8618885691865028,
+        "character_error_rate": 0.13811143081349725,
+        "chrf++": 86.97306416474947
+      },
+      "error": null,
+      "parse_time_seconds": 9.397474765777588
+    },
+    {
+      "document_id": "legal_emp_051",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8695652173913043,
+        "character_error_rate": 0.13043478260869565,
+        "chrf++": 87.8997899021947
+      },
+      "error": null,
+      "parse_time_seconds": 10.387411832809448
+    },
+    {
+      "document_id": "legal_emp_052",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8615669666490207,
+        "character_error_rate": 0.13843303335097937,
+        "chrf++": 86.99548331430216
+      },
+      "error": null,
+      "parse_time_seconds": 9.595962762832642
+    },
+    {
+      "document_id": "legal_emp_053",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8677727501256913,
+        "character_error_rate": 0.1322272498743087,
+        "chrf++": 87.67387781651793
+      },
+      "error": null,
+      "parse_time_seconds": 10.241978883743286
+    },
+    {
+      "document_id": "legal_emp_054",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8657805577273912,
+        "character_error_rate": 0.13421944227260882,
+        "chrf++": 87.24717540169665
+      },
+      "error": null,
+      "parse_time_seconds": 9.274015188217163
+    },
+    {
+      "document_id": "legal_emp_055",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8602804974861075,
+        "character_error_rate": 0.13971950251389256,
+        "chrf++": 86.84178790095783
+      },
+      "error": null,
+      "parse_time_seconds": 9.469724416732788
+    },
+    {
+      "document_id": "legal_emp_056",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8661609982872522,
+        "character_error_rate": 0.13383900171274773,
+        "chrf++": 87.51745572805521
+      },
+      "error": null,
+      "parse_time_seconds": 9.194156885147095
+    },
+    {
+      "document_id": "legal_emp_057",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8701745758544381,
+        "character_error_rate": 0.12982542414556184,
+        "chrf++": 87.84759970391907
+      },
+      "error": null,
+      "parse_time_seconds": 9.48933720588684
+    },
+    {
+      "document_id": "legal_emp_058",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8580994076744786,
+        "character_error_rate": 0.1419005923255215,
+        "chrf++": 86.91185437011299
+      },
+      "error": null,
+      "parse_time_seconds": 9.220650911331177
+    },
+    {
+      "document_id": "legal_emp_059",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8672219500244978,
+        "character_error_rate": 0.13277804997550222,
+        "chrf++": 87.62326064685772
+      },
+      "error": null,
+      "parse_time_seconds": 10.31221628189087
+    },
+    {
+      "document_id": "legal_emp_060",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8590120160213618,
+        "character_error_rate": 0.14098798397863818,
+        "chrf++": 86.89603038390584
+      },
+      "error": null,
+      "parse_time_seconds": 9.124669551849365
+    },
+    {
+      "document_id": "legal_nda_005",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8774766567979959,
+        "character_error_rate": 0.1225233432020041,
+        "chrf++": 88.45088696831665
+      },
+      "error": null,
+      "parse_time_seconds": 9.48668384552002
+    },
+    {
+      "document_id": "legal_nda_006",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8790340780862108,
+        "character_error_rate": 0.12096592191378921,
+        "chrf++": 88.82589623677268
+      },
+      "error": null,
+      "parse_time_seconds": 9.219406604766846
+    },
+    {
+      "document_id": "legal_nda_061",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8764478764478765,
+        "character_error_rate": 0.12355212355212356,
+        "chrf++": 88.69482932821936
+      },
+      "error": null,
+      "parse_time_seconds": 9.518129348754883
+    },
+    {
+      "document_id": "legal_nda_062",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8801506424457244,
+        "character_error_rate": 0.11984935755427559,
+        "chrf++": 88.97813368731106
+      },
+      "error": null,
+      "parse_time_seconds": 9.666877269744873
+    },
+    {
+      "document_id": "legal_nda_063",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8793103448275862,
+        "character_error_rate": 0.1206896551724138,
+        "chrf++": 88.60705602539615
+      },
+      "error": null,
+      "parse_time_seconds": 10.087400436401367
+    },
+    {
+      "document_id": "legal_nda_064",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8779607489284909,
+        "character_error_rate": 0.12203925107150913,
+        "chrf++": 88.62096266330299
+      },
+      "error": null,
+      "parse_time_seconds": 9.57053256034851
+    },
+    {
+      "document_id": "legal_nda_065",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8816326530612245,
+        "character_error_rate": 0.11836734693877551,
+        "chrf++": 89.09063940195595
+      },
+      "error": null,
+      "parse_time_seconds": 9.530094623565674
+    },
+    {
+      "document_id": "legal_nda_066",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8798475678099081,
+        "character_error_rate": 0.1201524321900919,
+        "chrf++": 88.75280073542245
+      },
+      "error": null,
+      "parse_time_seconds": 10.338572978973389
+    },
+    {
+      "document_id": "legal_nda_067",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8785698223521475,
+        "character_error_rate": 0.12143017764785248,
+        "chrf++": 88.67809689097483
+      },
+      "error": null,
+      "parse_time_seconds": 9.642614126205444
+    },
+    {
+      "document_id": "legal_nda_068",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8813251645110052,
+        "character_error_rate": 0.11867483548899478,
+        "chrf++": 88.85701022287971
+      },
+      "error": null,
+      "parse_time_seconds": 9.757515668869019
+    },
+    {
+      "document_id": "legal_nda_069",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8805017103762828,
+        "character_error_rate": 0.11949828962371722,
+        "chrf++": 88.75075320269333
+      },
+      "error": null,
+      "parse_time_seconds": 9.5631844997406
+    },
+    {
+      "document_id": "legal_nda_070",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8782337198929527,
+        "character_error_rate": 0.12176628010704728,
+        "chrf++": 88.40293331739906
+      },
+      "error": null,
+      "parse_time_seconds": 9.527777194976807
+    },
+    {
+      "document_id": "legal_nda_071",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8826427771556551,
+        "character_error_rate": 0.11735722284434491,
+        "chrf++": 89.26225927489374
+      },
+      "error": null,
+      "parse_time_seconds": 9.308601140975952
+    },
+    {
+      "document_id": "legal_nda_072",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.883264933880529,
+        "character_error_rate": 0.11673506611947104,
+        "chrf++": 88.50842845007357
+      },
+      "error": null,
+      "parse_time_seconds": 9.322268962860107
+    },
+    {
+      "document_id": "legal_nda_073",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8783175888439047,
+        "character_error_rate": 0.12168241115609536,
+        "chrf++": 88.41830945235445
+      },
+      "error": null,
+      "parse_time_seconds": 9.540567636489868
+    },
+    {
+      "document_id": "legal_nda_074",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8850967007963595,
+        "character_error_rate": 0.1149032992036405,
+        "chrf++": 88.7434710607301
+      },
+      "error": null,
+      "parse_time_seconds": 9.194355726242065
+    },
+    {
+      "document_id": "legal_nda_075",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8798926414672332,
+        "character_error_rate": 0.12010735853276672,
+        "chrf++": 88.80217790105928
+      },
+      "error": null,
+      "parse_time_seconds": 9.761823177337646
+    },
+    {
+      "document_id": "legal_nda_076",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8781094527363185,
+        "character_error_rate": 0.12189054726368159,
+        "chrf++": 88.54808289114328
+      },
+      "error": null,
+      "parse_time_seconds": 9.184397220611572
+    },
+    {
+      "document_id": "legal_nda_077",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8780269058295964,
+        "character_error_rate": 0.12197309417040358,
+        "chrf++": 88.61762368429848
+      },
+      "error": null,
+      "parse_time_seconds": 9.865169286727905
+    },
+    {
+      "document_id": "legal_nda_078",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.884297520661157,
+        "character_error_rate": 0.11570247933884298,
+        "chrf++": 89.26028406084534
+      },
+      "error": null,
+      "parse_time_seconds": 9.535788536071777
+    },
+    {
+      "document_id": "legal_nda_079",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8814831665150137,
+        "character_error_rate": 0.11851683348498634,
+        "chrf++": 88.97359611799676
+      },
+      "error": null,
+      "parse_time_seconds": 9.301374673843384
+    },
+    {
+      "document_id": "legal_nda_080",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8783235691753042,
+        "character_error_rate": 0.12167643082469581,
+        "chrf++": 88.88926043079856
+      },
+      "error": null,
+      "parse_time_seconds": 9.217761039733887
+    },
+    {
+      "document_id": "legal_saas_001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8970588235294118,
+        "character_error_rate": 0.10294117647058823,
+        "chrf++": 90.50779751440005
+      },
+      "error": null,
+      "parse_time_seconds": 9.411889553070068
+    },
+    {
+      "document_id": "legal_saas_002",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8871966527196653,
+        "character_error_rate": 0.11541095890410959,
+        "chrf++": 89.22857116422901
+      },
+      "error": null,
+      "parse_time_seconds": 10.594529390335083
+    },
+    {
+      "document_id": "legal_saas_003",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8957909029192125,
+        "character_error_rate": 0.1042090970807875,
+        "chrf++": 90.3213087547449
+      },
+      "error": null,
+      "parse_time_seconds": 9.212852239608765
+    },
+    {
+      "document_id": "legal_saas_004",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9010416666666666,
+        "character_error_rate": 0.09895833333333333,
+        "chrf++": 90.25811856271709
+      },
+      "error": null,
+      "parse_time_seconds": 10.06714653968811
+    },
+    {
+      "document_id": "legal_saas_005",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8917490623934539,
+        "character_error_rate": 0.1082509376065462,
+        "chrf++": 89.83218572489257
+      },
+      "error": null,
+      "parse_time_seconds": 9.462443113327026
+    },
+    {
+      "document_id": "legal_saas_006",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8879425517702071,
+        "character_error_rate": 0.11205744822979292,
+        "chrf++": 89.4776618975926
+      },
+      "error": null,
+      "parse_time_seconds": 10.061135530471802
+    },
+    {
+      "document_id": "legal_saas_007",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8954125299554947,
+        "character_error_rate": 0.1045874700445053,
+        "chrf++": 90.29916563048
+      },
+      "error": null,
+      "parse_time_seconds": 9.521993637084961
+    },
+    {
+      "document_id": "legal_saas_008",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8952852750256235,
+        "character_error_rate": 0.10471472497437649,
+        "chrf++": 90.28768005760269
+      },
+      "error": null,
+      "parse_time_seconds": 9.245158672332764
+    },
+    {
+      "document_id": "legal_saas_009",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9003943082461855,
+        "character_error_rate": 0.09960569175381451,
+        "chrf++": 90.41878995853325
+      },
+      "error": null,
+      "parse_time_seconds": 9.193806171417236
+    },
+    {
+      "document_id": "legal_saas_010",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.898650985818056,
+        "character_error_rate": 0.10141917618553133,
+        "chrf++": 89.96025116221618
+      },
+      "error": null,
+      "parse_time_seconds": 9.306130647659302
+    },
+    {
+      "document_id": "legal_saas_011",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8930335547606881,
+        "character_error_rate": 0.10696644523931187,
+        "chrf++": 89.95581211837222
+      },
+      "error": null,
+      "parse_time_seconds": 9.62972378730774
+    },
+    {
+      "document_id": "legal_saas_012",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8893920919700401,
+        "character_error_rate": 0.11103339744710614,
+        "chrf++": 89.63208575828942
+      },
+      "error": null,
+      "parse_time_seconds": 9.820550680160522
+    },
+    {
+      "document_id": "legal_saas_013",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8926326815642458,
+        "character_error_rate": 0.10736731843575419,
+        "chrf++": 90.06561004222064
+      },
+      "error": null,
+      "parse_time_seconds": 9.180753231048584
+    },
+    {
+      "document_id": "legal_saas_014",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9042426307718521,
+        "character_error_rate": 0.0957573692281479,
+        "chrf++": 90.5768273173891
+      },
+      "error": null,
+      "parse_time_seconds": 9.318731784820557
+    },
+    {
+      "document_id": "legal_saas_015",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8908842141269027,
+        "character_error_rate": 0.10911578587309731,
+        "chrf++": 89.97147075820801
+      },
+      "error": null,
+      "parse_time_seconds": 9.405627965927124
+    },
+    {
+      "document_id": "legal_saas_016",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8941275167785235,
+        "character_error_rate": 0.10603259956309864,
+        "chrf++": 89.91557119581898
+      },
+      "error": null,
+      "parse_time_seconds": 10.11848497390747
+    },
+    {
+      "document_id": "legal_saas_017",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8958652373660031,
+        "character_error_rate": 0.10413476263399694,
+        "chrf++": 90.4192233044076
+      },
+      "error": null,
+      "parse_time_seconds": 9.351582527160645
+    },
+    {
+      "document_id": "legal_saas_018",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.893353941267388,
+        "character_error_rate": 0.10664605873261206,
+        "chrf++": 89.88608863752917
+      },
+      "error": null,
+      "parse_time_seconds": 9.146854639053345
+    },
+    {
+      "document_id": "legal_saas_019",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8896826715401229,
+        "character_error_rate": 0.11074049366244162,
+        "chrf++": 89.45900066181284
+      },
+      "error": null,
+      "parse_time_seconds": 10.121568441390991
+    },
+    {
+      "document_id": "legal_saas_020",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8901022707574969,
+        "character_error_rate": 0.10989772924250303,
+        "chrf++": 89.79485209609065
+      },
+      "error": null,
+      "parse_time_seconds": 9.975077629089355
+    },
+    {
+      "document_id": "legal_saas_021",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8919838056680162,
+        "character_error_rate": 0.10801619433198381,
+        "chrf++": 90.17646510232431
+      },
+      "error": null,
+      "parse_time_seconds": 9.800808191299438
+    },
+    {
+      "document_id": "legal_saas_022",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8953508619188577,
+        "character_error_rate": 0.10464913808114226,
+        "chrf++": 90.17241034583287
+      },
+      "error": null,
+      "parse_time_seconds": 9.367128610610962
+    },
+    {
+      "document_id": "legal_saas_023",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8888108203056385,
+        "character_error_rate": 0.1111891796943615,
+        "chrf++": 89.78146921715471
+      },
+      "error": null,
+      "parse_time_seconds": 9.433090448379517
+    },
+    {
+      "document_id": "legal_saas_024",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.899734395750332,
+        "character_error_rate": 0.10026560424966799,
+        "chrf++": 90.02151162697561
+      },
+      "error": null,
+      "parse_time_seconds": 9.681896686553955
+    },
+    {
+      "document_id": "legal_saas_025",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8983583653510304,
+        "character_error_rate": 0.10164163464896961,
+        "chrf++": 90.08295747765668
+      },
+      "error": null,
+      "parse_time_seconds": 9.490323066711426
+    },
+    {
+      "document_id": "legal_saas_026",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8941816944538958,
+        "character_error_rate": 0.107130554598691,
+        "chrf++": 89.79475134512445
+      },
+      "error": null,
+      "parse_time_seconds": 9.788085222244263
+    },
+    {
+      "document_id": "legal_saas_027",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9054054054054054,
+        "character_error_rate": 0.0945945945945946,
+        "chrf++": 90.74547113070884
+      },
+      "error": null,
+      "parse_time_seconds": 10.412585973739624
+    },
+    {
+      "document_id": "legal_saas_028",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8946353436185133,
+        "character_error_rate": 0.10536465638148668,
+        "chrf++": 90.06124891909919
+      },
+      "error": null,
+      "parse_time_seconds": 10.019791841506958
+    },
+    {
+      "document_id": "legal_saas_029",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8991844525420788,
+        "character_error_rate": 0.10081554745792122,
+        "chrf++": 90.24408014370599
+      },
+      "error": null,
+      "parse_time_seconds": 10.035918235778809
+    },
+    {
+      "document_id": "legal_saas_030",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8948312408283059,
+        "character_error_rate": 0.10516875917169412,
+        "chrf++": 90.14548235155256
+      },
+      "error": null,
+      "parse_time_seconds": 10.096685886383057
+    },
+    {
+      "document_id": "legal_svc_009",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8554896979960486,
+        "character_error_rate": 0.14451030200395146,
+        "chrf++": 86.40767423835621
+      },
+      "error": null,
+      "parse_time_seconds": 8.992968797683716
+    },
+    {
+      "document_id": "legal_svc_010",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8562291434927698,
+        "character_error_rate": 0.14377085650723026,
+        "chrf++": 86.50396865609217
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002677440643310547
+    },
+    {
+      "document_id": "legal_svc_091",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.858356940509915,
+        "character_error_rate": 0.141643059490085,
+        "chrf++": 86.8518596170571
+      },
+      "error": null,
+      "parse_time_seconds": 9.37320613861084
+    },
+    {
+      "document_id": "legal_svc_092",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8568207440811725,
+        "character_error_rate": 0.14317925591882752,
+        "chrf++": 86.81981161260154
+      },
+      "error": null,
+      "parse_time_seconds": 9.187390565872192
+    },
+    {
+      "document_id": "legal_svc_093",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8581859028362819,
+        "character_error_rate": 0.14181409716371807,
+        "chrf++": 86.83885640998919
+      },
+      "error": null,
+      "parse_time_seconds": 9.21218752861023
+    },
+    {
+      "document_id": "legal_svc_094",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8628941441441441,
+        "character_error_rate": 0.13710585585585586,
+        "chrf++": 86.95880351220181
+      },
+      "error": null,
+      "parse_time_seconds": 9.107919692993164
+    },
+    {
+      "document_id": "legal_svc_095",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.862576346474181,
+        "character_error_rate": 0.13742365352581898,
+        "chrf++": 86.93944174735266
+      },
+      "error": null,
+      "parse_time_seconds": 0.0004031658172607422
+    },
+    {
+      "document_id": "legal_svc_096",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.85902466367713,
+        "character_error_rate": 0.14097533632286996,
+        "chrf++": 86.92801854342169
+      },
+      "error": null,
+      "parse_time_seconds": 0.00020766258239746094
+    },
+    {
+      "document_id": "legal_svc_097",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8626907073509016,
+        "character_error_rate": 0.13730929264909847,
+        "chrf++": 87.14349830502715
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002110004425048828
+    },
+    {
+      "document_id": "legal_svc_098",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8542857142857143,
+        "character_error_rate": 0.1457142857142857,
+        "chrf++": 85.99153348474277
+      },
+      "error": null,
+      "parse_time_seconds": 0.00018835067749023438
+    },
+    {
+      "document_id": "legal_svc_099",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8639474404598959,
+        "character_error_rate": 0.13605255954010403,
+        "chrf++": 87.24417047916522
+      },
+      "error": null,
+      "parse_time_seconds": 9.399781703948975
+    },
+    {
+      "document_id": "legal_svc_100",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.8577382606279522,
+        "character_error_rate": 0.14226173937204778,
+        "chrf++": 86.38351020143806
+      },
+      "error": null,
+      "parse_time_seconds": 9.684123992919922
+    },
+    {
+      "document_id": "resume_009",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.933852140077821,
+        "character_error_rate": 0.07024793388429752,
+        "chrf++": 87.77483479991459
+      },
+      "error": null,
+      "parse_time_seconds": 0.0003185272216796875
+    },
+    {
+      "document_id": "resume_010",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9517453798767967,
+        "character_error_rate": 0.05042918454935622,
+        "chrf++": 90.30348351239864
+      },
+      "error": null,
+      "parse_time_seconds": 0.00021409988403320312
+    },
+    {
+      "document_id": "resume_034",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9536182612918893,
+        "character_error_rate": 0.04823232323232323,
+        "chrf++": 90.58874697320518
+      },
+      "error": null,
+      "parse_time_seconds": 7.2994279861450195
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9499923768867206,
+        "character_error_rate": 0.05075042549899428,
+        "chrf++": 96.70947672024471
+      },
+      "error": null,
+      "parse_time_seconds": 0.0002574920654296875
+    },
+    {
+      "document_id": "syn-tables-001",
+      "parser_name": "marker",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9243564356435644,
+        "character_error_rate": 0.07617148554336989,
+        "chrf++": 99.46257996313167
+      },
+      "error": null,
+      "parse_time_seconds": 0.00024390220642089844
+    }
+  ],
+  "summary": {
+    "total_documents": 137,
+    "total_parsers": 1,
+    "total_results": 137,
+    "success_count": 136,
+    "failure_count": 1
+  }
+}

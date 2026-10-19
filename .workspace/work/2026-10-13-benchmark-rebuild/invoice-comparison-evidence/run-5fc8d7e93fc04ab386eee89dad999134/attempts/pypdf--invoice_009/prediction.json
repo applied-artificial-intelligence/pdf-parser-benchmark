@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-90712",
+    "vendor": "Wilson LLP",
+    "due_date": "2025-09-15",
+    "grand_total": "164609.24",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-90712"
+    ],
+    "due_date": [
+      "09/15/2025"
+    ],
+    "grand_total": [
+      "$164,609.24"
+    ],
+    "vendor": [
+      "Wilson LLP"
+    ]
+  },
+  "records": [
+    {
+      "description": "Expert Witness Consultation @ $497.15/hour",
+      "quantity": "81",
+      "line_total": "40269.15",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness Consultation\n@ $497.15/hour",
+        "quantity": "81.00",
+        "line_total": "$40,269.15"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $329.57/hour",
+      "quantity": "26.65",
+      "line_total": "8783.04",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$329.57/hour",
+        "quantity": "26.65",
+        "line_total": "$8,783.04"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $375.03/hour",
+      "quantity": "79.34",
+      "line_total": "29754.88",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$375.03/hour",
+        "quantity": "79.34",
+        "line_total": "$29,754.88"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $168.00/hour",
+      "quantity": "49.64",
+      "line_total": "8339.52",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$168.00/hour",
+        "quantity": "49.64",
+        "line_total": "$8,339.52"
+      }
+    },
+    {
+      "description": "Court Filing Fees @ $232.85/filing",
+      "quantity": "70.87",
+      "line_total": "16502.08",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Court Filing Fees @\n$232.85/filing",
+        "quantity": "70.87",
+        "line_total": "$16,502.08"
+      }
+    },
+    {
+      "description": "Paralegal Services @ $169.30/hour",
+      "quantity": "46.49",
+      "line_total": "7870.76",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Paralegal Services @\n$169.30/hour",
+        "quantity": "46.49",
+        "line_total": "$7,870.76"
+      }
+    },
+    {
+      "description": "Associate Legal Services @ $377.26/hour",
+      "quantity": "44.8",
+      "line_total": "16901.25",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Associate Legal Services @\n$377.26/hour",
+        "quantity": "44.80",
+        "line_total": "$16,901.25"
+      }
+    },
+    {
+      "description": "Legal Research @ $215.31/hour",
+      "quantity": "82.66",
+      "line_total": "17797.52",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Legal Research @\n$215.31/hour",
+        "quantity": "82.66",
+        "line_total": "$17,797.52"
+      }
+    },
+    {
+      "description": "Expert Witness Consultation @ $309.77/hour",
+      "quantity": "16.3",
+      "line_total": "5049.25",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Expert Witness Consultation\n@ $309.77/hour",
+        "quantity": "16.30",
+        "line_total": "$5,049.25"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

@@ -1,0 +1,96 @@
+{
+  "benchmark": {
+    "name": "Element F1 Fix Test",
+    "timestamp": "2025-11-20T21:22:15.415191+00:00",
+    "config_file": "benchmarks/element_f1_test.yaml"
+  },
+  "environment": {
+    "python_version": "3.13.5",
+    "platform": "Linux-6.8.0-87-generic-x86_64-with-glibc2.39",
+    "parser_versions": {
+      "pdfplumber": "0.11.8",
+      "pymupdf": "1.26.6"
+    }
+  },
+  "results": [
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.7724268177525968,
+        "element_f1": 0.6871794871794872,
+        "teds": 1.0
+      },
+      "error": null,
+      "parse_time_seconds": 0.0010437965393066406
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.9396138996138996,
+        "element_f1": 0.5743440233236151,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0009131431579589844
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pdfplumber",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.2710997442455243,
+        "element_f1": 0.9107142857142857,
+        "teds": 0.8928571428571429
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007145404815673828
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.890495867768595,
+        "element_f1": 0.45685279187817257,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0007417201995849609
+    },
+    {
+      "document_id": "syn-complex-001",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.943373125191307,
+        "element_f1": 0.6801075268817204,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0020720958709716797
+    },
+    {
+      "document_id": "13_table_complex_headers",
+      "parser_name": "pymupdf",
+      "success": true,
+      "metrics": {
+        "edit_similarity": 0.5858895705521472,
+        "element_f1": 0.4719101123595506,
+        "teds": null
+      },
+      "error": null,
+      "parse_time_seconds": 0.0019538402557373047
+    }
+  ],
+  "summary": {
+    "total_documents": 3,
+    "total_parsers": 2,
+    "total_results": 6,
+    "success_count": 6,
+    "failure_count": 0
+  }
+}

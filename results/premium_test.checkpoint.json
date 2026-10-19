@@ -1,0 +1,170 @@
+{
+  "benchmark": {
+    "name": "premium_gap_fill_21docs",
+    "timestamp": "2025-12-02T19:53:01.080008+00:00"
+  },
+  "results": [
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 3.5797979831695557,
+      "output_length": 462
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 3.165588617324829,
+      "output_length": 464
+    },
+    {
+      "document_id": "14_table_financial",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 4.547105312347412,
+      "output_length": 374
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 3.1089375019073486,
+      "output_length": 423
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 1.8825585842132568,
+      "output_length": 416
+    },
+    {
+      "document_id": "19_list_mixed_types",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 4.720563888549805,
+      "output_length": 409
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 2.5317416191101074,
+      "output_length": 492
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 1.8667914867401123,
+      "output_length": 461
+    },
+    {
+      "document_id": "21_column_two_column",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 8.793321371078491,
+      "output_length": 476
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 2.168973207473755,
+      "output_length": 395
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 1.8986952304840088,
+      "output_length": 364
+    },
+    {
+      "document_id": "24_column_newsletter",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 5.253041982650757,
+      "output_length": 375
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 2.434227228164673,
+      "output_length": 591
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 2.217787981033325,
+      "output_length": 543
+    },
+    {
+      "document_id": "27_mixed_business_report",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 5.968410015106201,
+      "output_length": 550
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "openai_gpt_4o",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 4.670175552368164,
+      "output_length": 1082
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "gemini_2_flash",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 78.59868621826172,
+      "output_length": 1016
+    },
+    {
+      "document_id": "32_mixed_comprehensive",
+      "parser_name": "anthropic_sonnet_4_5",
+      "success": true,
+      "metrics": {},
+      "error": null,
+      "parse_time_seconds": 7.230712175369263,
+      "output_length": 1003
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-46924",
+    "vendor": "Alliance CPA",
+    "due_date": "2025-11-17",
+    "grand_total": "1346643.64",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-46924"
+    ],
+    "due_date": [
+      "November 17, 2025"
+    ],
+    "grand_total": [
+      "$1,346,643.64"
+    ],
+    "vendor": [
+      "Alliance CPA"
+    ]
+  },
+  "records": [
+    {
+      "description": "Payroll Processing (month)",
+      "quantity": "77.87",
+      "unit_price": "606.83",
+      "line_total": "47253.85",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Payroll Processing\n(month)",
+        "quantity": "77.87",
+        "unit_price": "$606.83",
+        "line_total": "$47,253.85"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate (return)",
+      "quantity": "33.35",
+      "unit_price": "12545.35",
+      "line_total": "418387.42",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation -\nCorporate (return)",
+        "quantity": "33.35",
+        "unit_price": "$12,545.35",
+        "line_total": "$418,387.42"
+      }
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "96.17",
+      "unit_price": "299.28",
+      "line_total": "28781.76",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial Planning\n(hour)",
+        "quantity": "96.17",
+        "unit_price": "$299.28",
+        "line_total": "$28,781.76"
+      }
+    },
+    {
+      "description": "Tax Preparation - Corporate (return)",
+      "quantity": "69.08",
+      "unit_price": "8917.82",
+      "line_total": "616043.01",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Tax Preparation -\nCorporate (return)",
+        "quantity": "69.08",
+        "unit_price": "$8,917.82",
+        "line_total": "$616,043.01"
+      }
+    },
+    {
+      "description": "Financial Planning (hour)",
+      "quantity": "54.24",
+      "unit_price": "216.39",
+      "line_total": "11736.99",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Financial Planning\n(hour)",
+        "quantity": "54.24",
+        "unit_price": "$216.39",
+        "line_total": "$11,736.99"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

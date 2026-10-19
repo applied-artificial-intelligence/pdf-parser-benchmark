@@ -1,0 +1,5 @@
+doc_id: sec-acuity_de-2025
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/1144215/000114421525000108/formars.pdf

@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-83943",
+    "vendor": "Titan Manufacturing",
+    "due_date": "2025-11-25",
+    "grand_total": "22063.66",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-83943"
+    ],
+    "due_date": [
+      "November 25, 2025"
+    ],
+    "grand_total": [
+      "$22,063.66"
+    ],
+    "vendor": [
+      "Titan Manufacturing"
+    ]
+  },
+  "records": [
+    {
+      "description": "Aluminum Extrusion",
+      "quantity": "59.09",
+      "unit": "linear ft",
+      "unit_price": "23.21",
+      "line_total": "1371.48",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Aluminum\nExtrusion",
+        "quantity": "59.09",
+        "unit": "linear ft",
+        "unit_price": "$23.21",
+        "line_total": "$1,371.48"
+      }
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "50.55",
+      "unit": "hour",
+      "unit_price": "67.54",
+      "line_total": "3414.15",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor",
+        "quantity": "50.55",
+        "unit": "hour",
+        "unit_price": "$67.54",
+        "line_total": "$3,414.15"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch",
+      "quantity": "26.26",
+      "unit": "sq ft",
+      "unit_price": "7.01",
+      "line_total": "184.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4\ninch",
+        "quantity": "26.26",
+        "unit": "sq ft",
+        "unit_price": "$7.01",
+        "line_total": "$184.08"
+      }
+    },
+    {
+      "description": "Steel Plate - 1/4 inch",
+      "quantity": "42.15",
+      "unit": "sq ft",
+      "unit_price": "6.01",
+      "line_total": "253.32",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Steel Plate - 1/4\ninch",
+        "quantity": "42.15",
+        "unit": "sq ft",
+        "unit_price": "$6.01",
+        "line_total": "$253.32"
+      }
+    },
+    {
+      "description": "Powder Coating",
+      "quantity": "55.75",
+      "unit": "sq ft",
+      "unit_price": "4.02",
+      "line_total": "224.12",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Powder Coating",
+        "quantity": "55.75",
+        "unit": "sq ft",
+        "unit_price": "$4.02",
+        "line_total": "$224.12"
+      }
+    },
+    {
+      "description": "Custom Tooling",
+      "quantity": "6.54",
+      "unit": "each",
+      "unit_price": "1692.82",
+      "line_total": "11071.04",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Custom Tooling",
+        "quantity": "6.54",
+        "unit": "each",
+        "unit_price": "$1,692.82",
+        "line_total": "$11,071.04"
+      }
+    },
+    {
+      "description": "Assembly Labor",
+      "quantity": "21.05",
+      "unit": "hour",
+      "unit_price": "88.75",
+      "line_total": "1868.19",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Assembly Labor",
+        "quantity": "21.05",
+        "unit": "hour",
+        "unit_price": "$88.75",
+        "line_total": "$1,868.19"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

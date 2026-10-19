@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Canada
+  name: Smith Group
+document_id: invoice_072
+due_date: '2025-10-20'
+generated_at: '2025-11-18T16:46:45.134440'
+industry: medical
+invoice_date: '2025-10-20'
+invoice_number: INV-84686
+line_item_count: 8
+payment_terms: Due on Receipt
+region: CA
+subtotal: 113274.55
+tax_amount: 14725.69
+template_style: enterprise
+total: 128000.24
+vendor:
+  country: Canada
+  name: Premier Medical Group
+corpus: business
+source_url: generated://invoice_072
+domain: invoices
+doc_id: invoice_072

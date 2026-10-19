@@ -1,4 +1,9 @@
-# PDF Parser Benchmark Results
+# Historical parser benchmark results
+
+Historical record. For current source-verified findings, use `PROJECT_ORIENTATION.md`
+and the reconstruction report identified by `docs/BENCHMARK_STATUS_REPORT.md`.
+The labels and recommendations below describe the retained historical artifact;
+they are not current publication approval or current parser recommendations.
 
 **Last Updated**: 2025-11-24
 **Parsers Tested**: 13 open-source + 5 commercial parsers

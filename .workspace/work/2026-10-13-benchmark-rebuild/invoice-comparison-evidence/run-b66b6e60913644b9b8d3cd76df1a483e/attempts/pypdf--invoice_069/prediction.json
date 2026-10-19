@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-18719",
+    "vendor": "Green Inc",
+    "due_date": "2025-10-17",
+    "grand_total": "211594.35",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-18719"
+    ],
+    "due_date": [
+      "October 17, 2025"
+    ],
+    "grand_total": [
+      "$211,594.35"
+    ],
+    "vendor": [
+      "Green Inc"
+    ]
+  },
+  "records": [
+    {
+      "description": "Snow Removal",
+      "quantity": "43.31",
+      "unit": "push",
+      "unit_price": "298.03",
+      "line_total": "12907.68",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Snow Removal",
+        "quantity": "43.31",
+        "unit": "push",
+        "unit_price": "$298.03",
+        "line_total": "$12,907.68"
+      }
+    },
+    {
+      "description": "Irrigation Maintenance",
+      "quantity": "64.59",
+      "unit": "visit",
+      "unit_price": "277.45",
+      "line_total": "17920.5",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance",
+        "quantity": "64.59",
+        "unit": "visit",
+        "unit_price": "$277.45",
+        "line_total": "$17,920.50"
+      }
+    },
+    {
+      "description": "Fall Cleanup",
+      "quantity": "81.31",
+      "unit": "service",
+      "unit_price": "530.13",
+      "line_total": "43104.87",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fall Cleanup",
+        "quantity": "81.31",
+        "unit": "service",
+        "unit_price": "$530.13",
+        "line_total": "$43,104.87"
+      }
+    },
+    {
+      "description": "Irrigation Maintenance",
+      "quantity": "3.1",
+      "unit": "visit",
+      "unit_price": "223.93",
+      "line_total": "694.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Irrigation\nMaintenance",
+        "quantity": "3.10",
+        "unit": "visit",
+        "unit_price": "$223.93",
+        "line_total": "$694.18"
+      }
+    },
+    {
+      "description": "Snow Removal",
+      "quantity": "15.89",
+      "unit": "push",
+      "unit_price": "168.59",
+      "line_total": "2678.9",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Snow Removal",
+        "quantity": "15.89",
+        "unit": "push",
+        "unit_price": "$168.59",
+        "line_total": "$2,678.90"
+      }
+    },
+    {
+      "description": "Spring Cleanup",
+      "quantity": "55.49",
+      "unit": "service",
+      "unit_price": "774.66",
+      "line_total": "42985.88",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Spring Cleanup",
+        "quantity": "55.49",
+        "unit": "service",
+        "unit_price": "$774.66",
+        "line_total": "$42,985.88"
+      }
+    },
+    {
+      "description": "Spring Cleanup",
+      "quantity": "9.41",
+      "unit": "service",
+      "unit_price": "725.74",
+      "line_total": "6829.21",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Spring Cleanup",
+        "quantity": "9.41",
+        "unit": "service",
+        "unit_price": "$725.74",
+        "line_total": "$6,829.21"
+      }
+    },
+    {
+      "description": "Mulch Installation",
+      "quantity": "62.27",
+      "unit": "cu yd",
+      "unit_price": "78.72",
+      "line_total": "4901.89",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Mulch\nInstallation",
+        "quantity": "62.27",
+        "unit": "cu yd",
+        "unit_price": "$78.72",
+        "line_total": "$4,901.89"
+      }
+    },
+    {
+      "description": "Spring Cleanup",
+      "quantity": "41.06",
+      "unit": "service",
+      "unit_price": "446.75",
+      "line_total": "18343.56",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Spring Cleanup",
+        "quantity": "41.06",
+        "unit": "service",
+        "unit_price": "$446.75",
+        "line_total": "$18,343.56"
+      }
+    },
+    {
+      "description": "Fall Cleanup",
+      "quantity": "81.82",
+      "unit": "service",
+      "unit_price": "471.24",
+      "line_total": "38556.86",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Fall Cleanup",
+        "quantity": "81.82",
+        "unit": "service",
+        "unit_price": "$471.24",
+        "line_total": "$38,556.86"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "plain_linear_rows"
+}

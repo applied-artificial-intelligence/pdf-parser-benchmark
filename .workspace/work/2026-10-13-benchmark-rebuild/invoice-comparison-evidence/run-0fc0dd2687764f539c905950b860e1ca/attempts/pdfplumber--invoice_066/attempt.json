@@ -1,0 +1,22 @@
+{
+  "document_id": "invoice_066",
+  "pipeline_id": "pdfplumber",
+  "pair_id": "pdfplumber--invoice_066",
+  "order": 165,
+  "outcome": "parser_failure",
+  "parse_time_seconds": 0.001211351016536355,
+  "wall_time_seconds": 0.2870070549834054,
+  "output_path": null,
+  "output_sha256": null,
+  "error": "pdfsmith pdfplumber failed: Reference/source access denied during parsing",
+  "error_type": "RuntimeError",
+  "returned_path": null,
+  "worker_pid": 3180975,
+  "extractor_sha256": "985c358d68169ca6cfba34c73cc42320f939f1605447356be96ddfc9df44f286",
+  "grader_sha256": "bb24837a06ad9378d521ddf213b41bf4dda610939c780e23f46943a313a765c0",
+  "stage_identities": {
+    "parse": "c5a04741e22eff8f14ecf8118bc5d4c5b99b1a3709bbaf1cb821fdb2b8b04eb0",
+    "prediction": "80588e5e2a761917d31f822947a2cc9281c820fbc3434245be7470c2925e08fd",
+    "grade": "712c92f2268516bbb82064f78fc96fe459062fb9ed896972098acd0882472ae5"
+  }
+}

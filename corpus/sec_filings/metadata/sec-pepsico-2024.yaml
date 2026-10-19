@@ -1,0 +1,5 @@
+doc_id: sec-pepsico-2024
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/77476/000130817925000292/pep4354281-ars.pdf

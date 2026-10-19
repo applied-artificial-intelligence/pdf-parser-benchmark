@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-44693",
+    "vendor": "Visionary Architects",
+    "due_date": "2025-10-09",
+    "grand_total": "23275.15",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Quantity",
+    "Unit",
+    "Unit Price",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Design Development",
+      "quantity": "2.81",
+      "unit": "% of project",
+      "unit_price": "24",
+      "line_total": "67.44"
+    },
+    {
+      "description": "Principal Architect",
+      "quantity": "49.85",
+      "unit": "hour",
+      "unit_price": "335.13",
+      "line_total": "16706.23"
+    },
+    {
+      "description": "Design Development",
+      "quantity": "35.62",
+      "unit": "% of project",
+      "unit_price": "33.84",
+      "line_total": "1205.38"
+    },
+    {
+      "description": "Schematic Design",
+      "quantity": "78.44",
+      "unit": "% of project",
+      "unit_price": "16.02",
+      "line_total": "1256.61"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-44693",
+    "vendor": "Visionary Architects",
+    "due_date": "October 09, 2025",
+    "grand_total": "$23,275.15",
+    "records": [
+      {
+        "description": "Design Development",
+        "quantity": "2.81",
+        "unit": "% of project",
+        "unit_price": "$24.00",
+        "line_total": "$67.44"
+      },
+      {
+        "description": "Principal Architect",
+        "quantity": "49.85",
+        "unit": "hour",
+        "unit_price": "$335.13",
+        "line_total": "$16,706.23"
+      },
+      {
+        "description": "Design Development",
+        "quantity": "35.62",
+        "unit": "% of project",
+        "unit_price": "$33.84",
+        "line_total": "$1,205.38"
+      },
+      {
+        "description": "Schematic Design",
+        "quantity": "78.44",
+        "unit": "% of project",
+        "unit_price": "$16.02",
+        "line_total": "$1,256.61"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/0"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_043"
+}

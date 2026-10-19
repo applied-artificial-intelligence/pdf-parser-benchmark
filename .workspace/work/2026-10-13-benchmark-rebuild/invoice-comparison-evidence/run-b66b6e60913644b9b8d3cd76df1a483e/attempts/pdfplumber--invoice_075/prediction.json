@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-28221",
+    "vendor": "Digital Systems",
+    "due_date": "2025-11-30",
+    "grand_total": "9985915.56",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-28221"
+    ],
+    "due_date": [
+      "November 30, 2025"
+    ],
+    "grand_total": [
+      "$9,985,915.56"
+    ],
+    "vendor": [
+      "Digital Systems"
+    ]
+  },
+  "records": [
+    {
+      "description": "Network Engineer",
+      "quantity": "98.02",
+      "unit": "hour",
+      "unit_price": "232.24",
+      "line_total": "22764.16",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Network\nEngineer",
+        "quantity": "98.02",
+        "unit": "hour",
+        "unit_price": "$232.24",
+        "line_total": "$22,764.16"
+      }
+    },
+    {
+      "description": "Network Engineer",
+      "quantity": "94.59",
+      "unit": "hour",
+      "unit_price": "208.43",
+      "line_total": "19715.39",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Network\nEngineer",
+        "quantity": "94.59",
+        "unit": "hour",
+        "unit_price": "$208.43",
+        "line_total": "$19,715.39"
+      }
+    },
+    {
+      "description": "Senior Consultant",
+      "quantity": "37.45",
+      "unit": "hour",
+      "unit_price": "279.42",
+      "line_total": "10464.28",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Senior\nConsultant",
+        "quantity": "37.45",
+        "unit": "hour",
+        "unit_price": "$279.42",
+        "line_total": "$10,464.28"
+      }
+    },
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "55.8",
+      "unit": "project",
+      "unit_price": "83663.71",
+      "line_total": "4668435.02",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cloud Migration\nServices",
+        "quantity": "55.80",
+        "unit": "project",
+        "unit_price": "$83,663.71",
+        "line_total": "$4,668,435.02"
+      }
+    },
+    {
+      "description": "Cloud Migration Services",
+      "quantity": "64.37",
+      "unit": "project",
+      "unit_price": "61479.18",
+      "line_total": "3957414.82",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cloud Migration\nServices",
+        "quantity": "64.37",
+        "unit": "project",
+        "unit_price": "$61,479.18",
+        "line_total": "$3,957,414.82"
+      }
+    },
+    {
+      "description": "Systems Analyst",
+      "quantity": "40.93",
+      "unit": "hour",
+      "unit_price": "158.79",
+      "line_total": "6499.27",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst",
+        "quantity": "40.93",
+        "unit": "hour",
+        "unit_price": "$158.79",
+        "line_total": "$6,499.27"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

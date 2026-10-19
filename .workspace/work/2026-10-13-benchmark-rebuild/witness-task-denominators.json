@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "fixture": "Actual pdfplumber output from retained development PDFs, fixed supported-format controls and an answer-denied standalone subprocess",
+  "producer": "pdf_bench/invoice_task.py",
+  "test": "tests/test_invoice_task_evaluation.py::test_missing_failed_empty_and_all_failed_outputs_keep_fixed_denominators",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_task.py",
+      "old": "    totals = {",
+      "new": "    grades = {key: grade for key, grade in grades.items() if grade[\"fields_correct\"]}\n    totals = {"
+    }
+  }
+}

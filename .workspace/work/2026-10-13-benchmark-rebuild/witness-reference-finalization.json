@@ -1,0 +1,22 @@
+{
+  "root": "../../..",
+  "command": [
+    "uv",
+    "run",
+    "--no-sync",
+    "pytest",
+    "-o",
+    "addopts=",
+    "-q"
+  ],
+  "producer": "pdf_bench/invoice_references.py",
+  "fixture": "Actual retained DOCX/PDF invoice fixtures and actual LibreOffice converter output; no mocked scoring",
+  "test": "tests/test_invoice_reference_qualification.py::test_failed_finalization_keeps_prior_qualified_references_intact",
+  "variant": {
+    "mutation": {
+      "file": "pdf_bench/invoice_references.py",
+      "old": "    validate_reference_bundle(staging, require_qualified=True)",
+      "new": "    pass  # Defect: finalize without validating copied artifacts"
+    }
+  }
+}

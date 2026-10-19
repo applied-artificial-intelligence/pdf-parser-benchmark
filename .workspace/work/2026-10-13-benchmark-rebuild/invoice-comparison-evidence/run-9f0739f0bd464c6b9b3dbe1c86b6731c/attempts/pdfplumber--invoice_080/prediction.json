@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-27105",
+    "vendor": null,
+    "due_date": "2025-08-21",
+    "grand_total": "389626.25",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-27105"
+    ],
+    "due_date": [
+      "08/21/2025"
+    ],
+    "grand_total": [
+      "$389,626.25"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Medical Consultation @ $259.77/visit",
+      "quantity": "7.56",
+      "line_total": "1963.86",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Medical Consultation @\n$259.77/visit",
+        "quantity": "7.56",
+        "line_total": "$1,963.86"
+      }
+    },
+    {
+      "description": "Laboratory Services @ $263.19/panel",
+      "quantity": "62.24",
+      "line_total": "16380.95",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory Services @\n$263.19/panel",
+        "quantity": "62.24",
+        "line_total": "$16,380.95"
+      }
+    },
+    {
+      "description": "Laboratory Services @ $185.82/panel",
+      "quantity": "18.77",
+      "line_total": "3487.84",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory Services @\n$185.82/panel",
+        "quantity": "18.77",
+        "line_total": "$3,487.84"
+      }
+    },
+    {
+      "description": "Physical Therapy @ $161.92/session",
+      "quantity": "78.58",
+      "line_total": "12723.67",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Physical Therapy @\n$161.92/session",
+        "quantity": "78.58",
+        "line_total": "$12,723.67"
+      }
+    },
+    {
+      "description": "Specialized Procedure @ $3751.33/procedure",
+      "quantity": "82.46",
+      "line_total": "309334.67",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Specialized Procedure @\n$3751.33/procedure",
+        "quantity": "82.46",
+        "line_total": "$309,334.67"
+      }
+    },
+    {
+      "description": "Laboratory Services @ $410.36/panel",
+      "quantity": "2.22",
+      "line_total": "911",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Laboratory Services @\n$410.36/panel",
+        "quantity": "2.22",
+        "line_total": "$911.00"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,20 @@
+{
+  "observed_at": "2026-10-16T20:04:59.427046+00:00",
+  "executed_at": null,
+  "date_basis": "Three executions were performed in this active session on 2026-10-16; exact UTC start/completion timestamps were not recorded by the public harness. Monotonic per-attempt and sequential durations are retained.",
+  "runs": [
+    {
+      "bundle": "parsebench-comparison-evidence/run-738d3881c229472b8c73fc69f8e8ca01",
+      "completion_sha256": "cc66fb8451d2c40a4dbd877d56e29715423ff185c89b5a6f3057073de27604a6"
+    },
+    {
+      "bundle": "parsebench-comparison-evidence/run-f9756b2ef12e45a1a2b8db48c5271cbc",
+      "completion_sha256": "c6b19ef1054bddefb3e2be4f4ddfd2904c58d958aa3fe32c4a8b8f487c693c31"
+    },
+    {
+      "bundle": "parsebench-comparison-evidence/run-48d9b24a1c1745a6af2b9ebbf22af19a",
+      "completion_sha256": "b9c0dc62d3e4c0e4567abff3bda8f4575d9aff2b558b61ee4a7e5d1787b3531a"
+    }
+  ],
+  "interpretation": "Observed execution date is distinct from the pinned upstream release date and from author/publication approval."
+}

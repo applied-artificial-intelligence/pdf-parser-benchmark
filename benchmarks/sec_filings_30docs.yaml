@@ -1,0 +1,67 @@
+name: "SEC Filings - 28 Annual Reports (10-K Wraps)"
+description: "ARS annual report PDFs benchmarked against 10-K iXBRL HTML ground truth from SEC EDGAR. Only includes documents where ARS content closely matches the 10-K filing."
+
+corpus_dir: ../corpus
+
+document_filter:
+  domains: []
+  corpora: []
+  features: []
+  exclude_doc_ids: []
+  include_doc_ids:
+    - sec-qualcomm-2025
+    - sec-adient-2025
+    - sec-hewlett_packard_enterprise-2025
+    - sec-walt_disney-2025
+    - sec-synopsys-2025
+    - sec-micron_technology-2025
+    - sec-jacobs_solutions-2025
+    - sec-transdigm-2025
+    - sec-deere-2025
+    - sec-pfizer-2024
+    - sec-walmart-2025
+    - sec-merck-2024
+    - sec-coca_cola-2024
+    - sec-tennectivity-2025
+    - sec-starbucks-2025
+    - sec-dolby_laboratories-2025
+    - sec-agilent_technologies-2025
+    - sec-nordson-2025
+    - sec-horton_d_r-2025
+    - sec-valvoline-2025
+    - sec-abm_industries-2025
+    - sec-applied_materials-2025
+    - sec-post_holdings-2025
+    - sec-fair_isaac-2025
+    - sec-td_synnex-2025
+    - sec-ciena-2025
+    - sec-woodward-2025
+    - sec-keysight_technologies-2025
+  max_documents: null
+
+parser_config:
+  parsers:
+    - pypdfium2
+    - pymupdf
+    - marker
+    - docling
+
+  parser_options: {}
+
+metric_config:
+  metrics:
+    - edit_similarity
+    - chrf++
+    - character_error_rate
+    - element_f1
+
+output:
+  format: json
+  include_raw_output: false
+  checkpointing: true
+  checkpoint_interval: 5
+
+parallel_workers: 1
+
+execution:
+  timeout_seconds: 600

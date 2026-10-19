@@ -1,0 +1,5 @@
+doc_id: sec-pfizer-2024
+corpus: business
+domain: sec-edgar
+source: sec_edgar
+source_url: https://www.sec.gov/Archives/edgar/data/78003/000007800325000066/pfe-ars2025.pdf

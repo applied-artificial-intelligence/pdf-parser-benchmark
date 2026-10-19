@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-89478",
+    "vendor": "Quality Direct",
+    "due_date": "2025-12-15",
+    "grand_total": "151539.78",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Office Supplies - Bulk @ $104.73/case",
+      "quantity": "80.1",
+      "line_total": "8388.87"
+    },
+    {
+      "description": "Office Supplies - Bulk @ $136.69/case",
+      "quantity": "90.54",
+      "line_total": "12375.91"
+    },
+    {
+      "description": "Electronics - Various @ $435.01/each",
+      "quantity": "19.61",
+      "line_total": "8530.55"
+    },
+    {
+      "description": "Shipping & Handling @ $29.17/order",
+      "quantity": "81.19",
+      "line_total": "2368.31"
+    },
+    {
+      "description": "Electronics - Various @ $951.02/each",
+      "quantity": "49.12",
+      "line_total": "46714.1"
+    },
+    {
+      "description": "Furniture - Office @ $1483.59/each",
+      "quantity": "7.35",
+      "line_total": "10904.39"
+    },
+    {
+      "description": "Shipping & Handling @ $47.75/order",
+      "quantity": "27.41",
+      "line_total": "1308.83"
+    },
+    {
+      "description": "Furniture - Office @ $1221.51/each",
+      "quantity": "36.46",
+      "line_total": "44536.25"
+    },
+    {
+      "description": "Cleaning Supplies @ $70.27/case",
+      "quantity": "70.13",
+      "line_total": "4928.04"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-89478",
+    "vendor": "Quality Direct",
+    "due_date": "12/15/2025",
+    "grand_total": "$151,539.78",
+    "records": [
+      {
+        "description": "Office Supplies - Bulk @ $104.73/case",
+        "quantity": "80.10",
+        "line_total": "$8,388.87"
+      },
+      {
+        "description": "Office Supplies - Bulk @ $136.69/case",
+        "quantity": "90.54",
+        "line_total": "$12,375.91"
+      },
+      {
+        "description": "Electronics - Various @ $435.01/each",
+        "quantity": "19.61",
+        "line_total": "$8,530.55"
+      },
+      {
+        "description": "Shipping & Handling @ $29.17/order",
+        "quantity": "81.19",
+        "line_total": "$2,368.31"
+      },
+      {
+        "description": "Electronics - Various @ $951.02/each",
+        "quantity": "49.12",
+        "line_total": "$46,714.10"
+      },
+      {
+        "description": "Furniture - Office @ $1483.59/each",
+        "quantity": "7.35",
+        "line_total": "$10,904.39"
+      },
+      {
+        "description": "Shipping & Handling @ $47.75/order",
+        "quantity": "27.41",
+        "line_total": "$1,308.83"
+      },
+      {
+        "description": "Furniture - Office @ $1221.51/each",
+        "quantity": "36.46",
+        "line_total": "$44,536.25"
+      },
+      {
+        "description": "Cleaning Supplies @ $70.27/case",
+        "quantity": "70.13",
+        "line_total": "$4,928.04"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "paragraph/2"
+    ],
+    "due_date": [
+      "paragraph/2"
+    ],
+    "grand_total": [
+      "paragraph/5"
+    ],
+    "vendor": "table/0/row/0/column/0",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4",
+      "table/1/row/5",
+      "table/1/row/6",
+      "table/1/row/7",
+      "table/1/row/8",
+      "table/1/row/9"
+    ]
+  },
+  "document_id": "invoice_006"
+}

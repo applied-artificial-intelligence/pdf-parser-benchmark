@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-67176",
+    "vendor": "Creative Printing",
+    "due_date": "2025-11-23",
+    "grand_total": "15529.71",
+    "currency_marker": "$"
+  },
+  "source_headers": [
+    "Description",
+    "Qty",
+    "Rate",
+    "Amount"
+  ],
+  "applicable_record_fields": [
+    "description",
+    "quantity",
+    "unit_price",
+    "line_total"
+  ],
+  "records": [
+    {
+      "description": "Business Cards - 4/4 Color (per 1000)",
+      "quantity": "87.29",
+      "unit_price": "131.37",
+      "line_total": "11467.29"
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "18.41",
+      "unit_price": "11.05",
+      "line_total": "203.43"
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "47.83",
+      "unit_price": "23.53",
+      "line_total": "1125.44"
+    },
+    {
+      "description": "Posters - Large Format (sq ft)",
+      "quantity": "1.82",
+      "unit_price": "21.05",
+      "line_total": "38.31"
+    }
+  ],
+  "surfaces": {
+    "invoice_number": "INV-67176",
+    "vendor": "Creative Printing",
+    "due_date": "November 23, 2025",
+    "grand_total": "$15,529.71",
+    "records": [
+      {
+        "description": "Business Cards - 4/4 Color (per 1000)",
+        "quantity": "87.29",
+        "unit_price": "$131.37",
+        "line_total": "$11,467.29"
+      },
+      {
+        "description": "Posters - Large Format (sq ft)",
+        "quantity": "18.41",
+        "unit_price": "$11.05",
+        "line_total": "$203.43"
+      },
+      {
+        "description": "Posters - Large Format (sq ft)",
+        "quantity": "47.83",
+        "unit_price": "$23.53",
+        "line_total": "$1,125.44"
+      },
+      {
+        "description": "Posters - Large Format (sq ft)",
+        "quantity": "1.82",
+        "unit_price": "$21.05",
+        "line_total": "$38.31"
+      }
+    ]
+  },
+  "source_locations": {
+    "invoice_number": [
+      "table/0/row/0"
+    ],
+    "due_date": [
+      "table/0/row/2"
+    ],
+    "grand_total": [
+      "table/2/row/2"
+    ],
+    "vendor": "paragraph/1",
+    "records": [
+      "table/1/row/1",
+      "table/1/row/2",
+      "table/1/row/3",
+      "table/1/row/4"
+    ]
+  },
+  "document_id": "invoice_044"
+}

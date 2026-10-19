@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-83903",
+    "vendor": "Quantum IT Solutions",
+    "due_date": "2025-12-04",
+    "grand_total": "2638443.31",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-83903",
+      "INV-83903"
+    ],
+    "due_date": [
+      "December 04, 2025",
+      "December 04, 2025"
+    ],
+    "grand_total": [
+      "$2,638,443.31"
+    ],
+    "vendor": [
+      "Quantum IT Solutions"
+    ]
+  },
+  "records": [
+    {
+      "description": "Systems Analyst (hour)",
+      "quantity": "94.72",
+      "unit_price": "148.47",
+      "line_total": "14063.08",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst\n(hour)",
+        "quantity": "94.72",
+        "unit_price": "$148.47",
+        "line_total": "$14,063.08"
+      }
+    },
+    {
+      "description": "Project Management (hour)",
+      "quantity": "73.59",
+      "unit_price": "141.05",
+      "line_total": "10379.87",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Project\nManagement (hour)",
+        "quantity": "73.59",
+        "unit_price": "$141.05",
+        "line_total": "$10,379.87"
+      }
+    },
+    {
+      "description": "Security Assessment (assessment)",
+      "quantity": "78.73",
+      "unit_price": "8648.24",
+      "line_total": "680875.94",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment\n(assessment)",
+        "quantity": "78.73",
+        "unit_price": "$8,648.24",
+        "line_total": "$680,875.94"
+      }
+    },
+    {
+      "description": "After-Hours Support (hour)",
+      "quantity": "36.92",
+      "unit_price": "235.75",
+      "line_total": "8703.89",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "After-Hours\nSupport (hour)",
+        "quantity": "36.92",
+        "unit_price": "$235.75",
+        "line_total": "$8,703.89"
+      }
+    },
+    {
+      "description": "Systems Analyst (hour)",
+      "quantity": "79.36",
+      "unit_price": "204.03",
+      "line_total": "16191.82",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Systems Analyst\n(hour)",
+        "quantity": "79.36",
+        "unit_price": "$204.03",
+        "line_total": "$16,191.82"
+      }
+    },
+    {
+      "description": "Security Assessment (assessment)",
+      "quantity": "49.52",
+      "unit_price": "7153.91",
+      "line_total": "354261.62",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Security\nAssessment\n(assessment)",
+        "quantity": "49.52",
+        "unit_price": "$7,153.91",
+        "line_total": "$354,261.62"
+      }
+    },
+    {
+      "description": "Cloud Migration Services (project)",
+      "quantity": "15.92",
+      "unit_price": "76025.2",
+      "line_total": "1210321.18",
+      "currency_markers": {
+        "unit_price": "$",
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Cloud Migration\nServices (project)",
+        "quantity": "15.92",
+        "unit_price": "$76,025.20",
+        "line_total": "$1,210,321.18"
+      }
+    }
+  ],
+  "ambiguities": [],
+  "representation": "markdown_tables"
+}

@@ -1,0 +1,24 @@
+complexity: complex
+customer:
+  country: USA
+  name: Ramos LLC
+document_id: invoice_030
+due_date: '2025-10-05'
+generated_at: '2025-11-18T16:45:44.085913'
+industry: retail
+invoice_date: '2025-09-05'
+invoice_number: INV-72400
+line_item_count: 9
+payment_terms: Net 30
+region: US
+subtotal: 128652.52
+tax_amount: 11257.1
+template_style: economy
+total: 139909.62
+vendor:
+  country: USA
+  name: Quality Outlet
+corpus: business
+source_url: generated://invoice_030
+domain: invoices
+doc_id: invoice_030

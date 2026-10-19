@@ -1,0 +1,24 @@
+complexity: simple
+customer:
+  country: Germany
+  name: Thanel
+document_id: invoice_043
+due_date: '2025-10-09'
+generated_at: '2025-11-18T16:46:02.677516'
+industry: architecture
+invoice_date: '2025-09-09'
+invoice_number: INV-44693
+line_item_count: 4
+payment_terms: Net 30
+region: EU
+subtotal: 19235.66
+tax_amount: 4039.49
+template_style: enterprise
+total: 23275.15
+vendor:
+  country: Germany
+  name: Visionary Architects
+corpus: business
+source_url: generated://invoice_043
+domain: invoices
+doc_id: invoice_043

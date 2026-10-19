@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "fields": {
+    "invoice_number": "INV-27725",
+    "vendor": null,
+    "due_date": "2025-09-24",
+    "grand_total": "172202.15",
+    "currency_marker": "$"
+  },
+  "field_surfaces": {
+    "invoice_number": [
+      "INV-27725"
+    ],
+    "due_date": [
+      "09/24/2025"
+    ],
+    "grand_total": [
+      "$172,202.15"
+    ],
+    "vendor": []
+  },
+  "records": [
+    {
+      "description": "Equipment Rental @ $1217.86/event",
+      "quantity": "65.01",
+      "line_total": "79173.08",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental @\n$1217.86/event",
+        "quantity": "65.01",
+        "line_total": "$79,173.08"
+      }
+    },
+    {
+      "description": "Delivery & Setup @ $359.38/event",
+      "quantity": "71.75",
+      "line_total": "25785.52",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Delivery & Setup @\n$359.38/event",
+        "quantity": "71.75",
+        "line_total": "$25,785.52"
+      }
+    },
+    {
+      "description": "Appetizers - Passed @ $65.53/dozen",
+      "quantity": "9.81",
+      "line_total": "642.85",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Appetizers - Passed @\n$65.53/dozen",
+        "quantity": "9.81",
+        "line_total": "$642.85"
+      }
+    },
+    {
+      "description": "Appetizers - Passed @ $46.41/dozen",
+      "quantity": "96.41",
+      "line_total": "4474.39",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Appetizers - Passed @\n$46.41/dozen",
+        "quantity": "96.41",
+        "line_total": "$4,474.39"
+      }
+    },
+    {
+      "description": "Delivery & Setup @ $471.42/event",
+      "quantity": "22.57",
+      "line_total": "10639.95",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Delivery & Setup @\n$471.42/event",
+        "quantity": "22.57",
+        "line_total": "$10,639.95"
+      }
+    },
+    {
+      "description": "Equipment Rental @ $873.78/event",
+      "quantity": "33.62",
+      "line_total": "29376.48",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Equipment Rental @\n$873.78/event",
+        "quantity": "33.62",
+        "line_total": "$29,376.48"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated @ $84.12/per person",
+      "quantity": "61.05",
+      "line_total": "5135.53",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service - Plated @\n$84.12/per person",
+        "quantity": "61.05",
+        "line_total": "$5,135.53"
+      }
+    },
+    {
+      "description": "Dinner Service - Plated @ $43.18/per person",
+      "quantity": "50.02",
+      "line_total": "2159.86",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Dinner Service - Plated @\n$43.18/per person",
+        "quantity": "50.02",
+        "line_total": "$2,159.86"
+      }
+    },
+    {
+      "description": "Service Staff @ $33.67/hour",
+      "quantity": "17.7",
+      "line_total": "595.96",
+      "currency_markers": {
+        "line_total": "$"
+      },
+      "surfaces": {
+        "description": "Service Staff @ $33.67/hour",
+        "quantity": "17.70",
+        "line_total": "$595.96"
+      }
+    }
+  ],
+  "ambiguities": [
+    "vendor: merged FROM/TO columns"
+  ],
+  "representation": "markdown_tables"
+}

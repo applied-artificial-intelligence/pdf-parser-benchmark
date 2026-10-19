@@ -110,6 +110,35 @@ for alias, target in PARSER_ALIASES.items():
         PARSER_REGISTRY[alias] = PARSER_REGISTRY[target]
 
 
+# Supported image extensions for document inputs
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".tiff", ".webp", ".bmp"}
+
+# Backends that support image inputs (subset of pdfsmith backends)
+IMAGE_CAPABLE_BACKENDS = {
+    # Open-source
+    "pdfsmith-docling",
+    "pdfsmith-kreuzberg",
+    "pdfsmith-extractous",
+    # Commercial APIs (all support images)
+    "pdfsmith-aws_textract",
+    "pdfsmith-azure",
+    "pdfsmith-google",
+    "pdfsmith-databricks",
+    "pdfsmith-llamaparse",
+    # LLM Vision APIs (all support images)
+    "pdfsmith-anthropic",
+    "pdfsmith-anthropic-haiku",
+    "pdfsmith-anthropic-sonnet",
+    "pdfsmith-openai",
+    "pdfsmith-openai-mini",
+    "pdfsmith-openai-4o",
+    "pdfsmith-openai-5",
+    "pdfsmith-gemini",
+    "pdfsmith-gemini-flash",
+    "pdfsmith-gemini-pro",
+}
+
+
 @dataclass
 class DocumentInfo:
     """
@@ -117,15 +146,22 @@ class DocumentInfo:
 
     Fields:
         doc_id: Document identifier
-        pdf_path: Absolute path to PDF file
+        input_path: Absolute path to input file (PDF or image)
         ground_truth_path: Absolute path to ground truth Markdown file
         metadata: Document metadata (from YAML file)
+        input_type: Type of input file ("pdf" or "image")
     """
 
     doc_id: str
-    pdf_path: Path
+    input_path: Path
     ground_truth_path: Path
     metadata: DocumentMetadata
+    input_type: str = "pdf"
+
+    @property
+    def pdf_path(self) -> Path:
+        """Backward compatibility: alias for input_path."""
+        return self.input_path
 
 
 @dataclass
@@ -214,13 +250,34 @@ def discover_documents(
                             pdf_path = corpus_root / "pdfs" / f"{file_stem}.pdf"
                             gt_path = corpus_root / "ground_truth" / f"{file_stem}.md"
 
-                        if pdf_path.exists() and gt_path.exists():
+                        # Pattern 3: Image input (OmniDocBench - images/ directory)
+                        input_path = pdf_path
+                        input_type = "pdf"
+                        if not pdf_path.exists():
+                            corpus_root = yaml_file.parent.parent
+                            for ext in IMAGE_EXTENSIONS:
+                                image_path = corpus_root / "images" / f"{file_stem}{ext}"
+                                if image_path.exists():
+                                    input_path = image_path
+                                    input_type = "image"
+                                    break
+                            # Also check same directory for images
+                            if input_type == "pdf":
+                                for ext in IMAGE_EXTENSIONS:
+                                    image_path = yaml_file.parent / f"{file_stem}{ext}"
+                                    if image_path.exists():
+                                        input_path = image_path
+                                        input_type = "image"
+                                        break
+
+                        if input_path.exists() and gt_path.exists():
                             documents.append(
                                 DocumentInfo(
                                     doc_id=doc_id,
-                                    pdf_path=pdf_path,
+                                    input_path=input_path,
                                     ground_truth_path=gt_path,
                                     metadata=metadata,
+                                    input_type=input_type,
                                 )
                             )
                             found = True
@@ -276,8 +333,30 @@ def discover_documents(
                 pdf_path = corpus_root / "pdfs" / f"{file_stem}.pdf"
                 gt_path = corpus_root / "ground_truth" / f"{file_stem}.md"
 
+            # Determine input path and type (PDF or image)
+            input_path = pdf_path
+            input_type = "pdf"
+
+            # Pattern 3: Image input (OmniDocBench - images/ directory)
+            if not pdf_path.exists():
+                corpus_root = metadata_path.parent.parent
+                for ext in IMAGE_EXTENSIONS:
+                    image_path = corpus_root / "images" / f"{file_stem}{ext}"
+                    if image_path.exists():
+                        input_path = image_path
+                        input_type = "image"
+                        break
+                # Also check same directory for images
+                if input_type == "pdf":
+                    for ext in IMAGE_EXTENSIONS:
+                        image_path = metadata_path.parent / f"{file_stem}{ext}"
+                        if image_path.exists():
+                            input_path = image_path
+                            input_type = "image"
+                            break
+
             # Verify files exist
-            if not pdf_path.exists() or not gt_path.exists():
+            if not input_path.exists() or not gt_path.exists():
                 continue
 
             # Use metadata's doc_id for identification
@@ -286,9 +365,10 @@ def discover_documents(
             documents.append(
                 DocumentInfo(
                     doc_id=doc_id,
-                    pdf_path=pdf_path,
+                    input_path=input_path,
                     ground_truth_path=gt_path,
                     metadata=metadata,
+                    input_type=input_type,
                 )
             )
 

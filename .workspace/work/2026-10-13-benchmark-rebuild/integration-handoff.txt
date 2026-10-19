@@ -1,0 +1,54 @@
+PDF-Bench publication edition - editorial finish, October 19, 2026
+
+Recommendation: publish this editorial edition after Stefan's approval. No further
+benchmark, grading, model or GPU work is required for this article. This is not a
+recommendation to merge the entire engineering PR without its separate checks.
+
+Branch: codex/benchmark-rebuild
+Draft PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
+Current contract: spec.md revision 7 and plan.md.
+
+Portable article: publication/guide.html
+Readable appendix: publication/evidence.html
+Editable source: benchmark-design-guide.md and publication/evidence.md
+Shared styling: publication/article.css
+Assets and visual checks: publication/assets/ and publication/review/
+Regenerate HTML: uv run --no-sync python publication/render.py (from this work unit).
+Deploying the HTML requires copying publication/ with its assets and stylesheet;
+serving it requires no parser, model, API key or application runtime.
+Paths above are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
+
+Guide SHA256: df7a21153ec89abbd41e301d916ae3a430b8b0bbf03579de59d16620c49a2ba3
+Publication HTML SHA256: 329f22bbe6e316dd23616b254a32304d21fec3ccacb9fbb5614fc98ac84a10f0
+Evidence record: guide-evidence.json (source identities, arithmetic, visual metrics).
+Evidence SHA256: c83f635a6afd7b45164c54d4bcbec143aa7407f8393ccd2fa5e8689cee475e05
+
+Finished changes: a financial-table selection using a retained Apple page connects
+required normalized output, public annotations, actual published candidate rows
+and the remaining acceptance check. It does not invent a new configured winner.
+The invoice table distinguishes 100 successful calls per parser from 84/55 task
+passes, explains record F1 and shows an actual continuation row omitted by the
+fixed extractor despite being present in the raw output. The cost example includes
+a three-percentage-point review-rate break-even under hypothetical assumptions.
+
+Checks: 200 saved grades and 1209 completion-bound file hashes; public source and
+annotation identities; published candidate rows; normalized count and cost math;
+25 local authored links/anchors; 12 generated HTML asset/link/anchor targets;
+10 immutable repository source targets including the operating anchor; focused
+renderer lint, prose and plan checks. One uncommitted-input citation was replaced
+with the pinned upstream PDF URL. No new inference or native evaluation.
+
+Visual review: standalone HTML at 1280x950 and 375x812. Body/table/caption sizes
+18/15/14px on desktop and 17/15/14px on phone, using Arial/Helvetica. Wide tables
+and original-source crops scroll inside their panels; phone document width was
+360px within the 375px viewport, with no page overflow. Temporary viewport
+settings were reset. These are checks of the portable edition, not a live CMS.
+
+The Swiss Re/Swift3 case study, patent/inventorship narrative and broader services
+page remain separate. No paid calls, sibling repository, CMS, editorial package,
+publication, deployment or public-main merge. Existing full/sample outputs and
+immutable reports remain unchanged. Benchmark/GPU policy and heartbeat stay paused.
+
+Next actions
+Stefan's approval is required before publishing the prepared article. No new
+benchmark or compute authorization is needed for the editorial edition.
