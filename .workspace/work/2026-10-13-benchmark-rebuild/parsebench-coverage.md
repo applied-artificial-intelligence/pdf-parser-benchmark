@@ -1,14 +1,15 @@
-# ParseBench coverage and the PDF-Bench decision
+# Public benchmark assessment for parsing and structured extraction
 
-Assessment updated October 17, 2026. Source inspection is complete for mechanical
+Assessment revised October 19, 2026. Retained source inspection is complete for mechanical
 properties of the full pinned input population. Visual review covers 221 distinct
 inputs. All benchmark and GPU execution is paused. Retained parser outputs are
 not a completed full-population comparison.
 
 ## Recommendation
 
-Consult ParseBench's published results before commissioning another parser
-comparison. It directly addresses the text, tables, charts,
+Select components against a defined collection, downstream task, quality threshold
+and total cost. Consult public results before commissioning another comparison.
+ParseBench directly addresses the text, tables, charts,
 meaningful formatting and localization dimensions for which this project
 previously struggled to construct references. Building another general-purpose
 corpus of synthetic invoices is not justified by this assessment. The current
@@ -16,8 +17,9 @@ deliverable is a [practical evaluation guide](benchmark-design-guide.md), using
 this inventory and retained experiments to explain benchmark fit and design.
 
 Use OmniDocBench when formula recognition and its document/layout/language slices
-matter. Use ExtractBench when the decision concerns schema-guided information
-extraction, repeated records or long-document tasks. Additional internal examples
+matter. Use ExtractBench for schema-guided information extraction and inspect
+ExtractBench Pro for document-specific interpretation, calculation and visual
+relationships. Additional internal examples
 need a demonstrated mismatch with the relevant public documents or acceptance
 criteria. None of this establishes that one public score captures every business
 workload, or that any benchmark is the uniquely best choice for all tasks.
@@ -146,11 +148,116 @@ figures are upstream-reported, not independently re-enumerated in this assessmen
 They make it inappropriate to claim that public benchmarks generally omit
 long-document extraction or business forms.
 
-The current primary-source READMEs were acquired at pinned revisions with hashes
+The primary-source READMEs were acquired at pinned revisions with hashes
 in [the contract source record](benchmark-contract-sources.json). This does not
 upgrade the older static ExtractBench implementation review into a current run.
 The old source-level missing/null discrepancy is tied to its old revision; it is
 not a claim about the present leaderboard.
+
+### ExtractBench Pro
+
+The [pinned Pro dataset card](https://huggingface.co/datasets/llamaindex/ExtractBenchPro/blob/4ae1ffe48696297a8f6c9153034b3914fc7763d0/README.md)
+reports 100 synthetic documents, 2,622 pages, 86 document types and 144,141 expected
+values. Document length ranges from 1 to 83 pages. Its challenge counts are:
+
+| Challenge | Documents |
+|---|---:|
+| Document conventions | 22 |
+| Organization-specific vocabulary | 14 |
+| Counting rules | 12 |
+| Drawn relationships | 20 |
+| Charts inside documents | 25 |
+| Long chart sheets | 7 |
+
+The examples require interpreting document rules, calculating requested values
+and following visual relationships. They extend the original extraction task,
+using the same schema/field-rule format and evaluator. The upstream construction
+sets fictional facts before rendering. It supplies repeatable references, while
+synthetic conditions and deliberate challenge selection limit prevalence claims
+about a customer's documents.
+
+The [October 15 announcement](https://www.llamaindex.ai/blog/introducing-extractbench-pro)
+adds perfect-document value F1 to value and grounded F1 reporting. Perfect value
+F1 does not by itself require correct grounding. The announcement also states a
+30-minute per-document limit and zero value/grounding scores for failed or timed-out
+documents. Those are published evaluation conditions, not local measurements.
+
+The extension changes gap assessment. Internal jargon, rules elsewhere in a
+document, derived counts and diagram relationships already occur in public
+evaluation. Any additional evaluation must identify the actual mismatch with
+required documents, schemas, acceptance rules or deployment. An engineering label
+alone does not establish a missing public capability.
+
+This revision reads the pinned card, shared README and announcement. It does not
+acquire or inspect the 100 PDFs, audit every expected value, execute the shared
+evaluator or reproduce published system scores. Pro's counts and generation
+method remain upstream-reported, distinct from the mechanically enumerated
+ParseBench population. The [source record](benchmark-contract-sources.json)
+retains the dataset revision and card hash.
+
+### Release history, maturity and claims in the brief
+
+Primary announcements date ParseBench to April 13, ExtractBench to August 11 and
+Pro to October 15, 2026. Pro is the recent extension; the original ExtractBench
+was not first released days before this assessment. Open data, code and declared
+metrics make the contracts inspectable. They do not establish independent
+reference validation or a permanent ranking of changing provider configurations.
+
+ParseBench has five headline dimensions. Reading order and heading hierarchy
+appear within existing dimensions; the source does not establish separate overall
+scores for cross-page flow or tables-of-contents navigation. The pinned 147-row
+leaderboard contains no provider named OpenParse. No claim about that parser's
+rank is carried into the guide. Comparisons must name the actual entry and revision.
+
+These checks support reuse of substantial public evidence. They establish no
+business-wide coverage percentage, current universal winner or reason to rebuild
+the public benchmarks. A targeted customer acceptance comparison remains a
+different question from reproducing a general leaderboard.
+
+## Related tools and operating evidence
+
+### OpenDocRouter
+
+The [official SDK](https://github.com/run-llama/opendocrouter-py/tree/84c5420a3b824a0b2d306bba6583da92460a0f05)
+and public OpenAPI document expose model listing, uploads and model-selected
+parsing through one client. This is an access interface, not a benchmark or
+evidence that providers return equivalent output. The public API description
+specifies PDF/image parsing to Markdown. No authenticated request, upload,
+inference, billing experiment or model-catalog comparison was performed here.
+The SDK snapshot and the OpenAPI source identity are recorded for inspection.
+
+A common API can reduce integration effort. A routed comparison must still
+identify the selected model/configuration, preprocessing, representation,
+failures and price boundary. Routing/fallback policies require evaluation as
+the actual combination selected for deployment.
+
+### Confidence and total cost
+
+LlamaIndex's [September 16 confidence guidance](https://www.llamaindex.ai/blog/what-makes-an-extraction-confidence-score-useful)
+already describes precision-targeted cutoffs, separate validation data and
+rechecking under changing document conditions. The guide adopts that evaluation
+principle without transferring a provider's example cutoff to a customer's work.
+Scores on returned values do not account for never-returned required values.
+Whole-document acceptance and final reviewed-output accuracy remain separate.
+
+Candidate cost must include review workload, failed/retried work, operating
+effort and quality requirements beside processing charges. The revised guide's
+cost table is hypothetical; it contains no current provider price comparison.
+Cold versus initialized-model timing and application-to-result elapsed time
+are declared measurement choices. This source review adds no local latency,
+throughput, confidence calibration, serving-cost or GPU-utilization measurement.
+
+### Retained local execution limitations
+
+The retained [PDFSmith revision](https://github.com/applied-artificial-intelligence/pdfsmith/tree/48de187103ffd5e0932ee3bb550affc58314a346/src/pdfsmith/backends)
+starts fresh subprocesses for the relevant backends. Docling creates a converter
+per extraction; Marker recreates models and owned inference processes with CPU
+execution and zero GPU offload configured; Unstructured loads spaCy per call.
+The benchmark also starts per-document outer workers. Keeping only those outer
+workers alive would not establish inner-model reuse. These are source observations,
+not measured reload fractions, warm speedups or general properties of the underlying
+SDKs. Exact file hashes remain in guide-evidence.json. The prior helper-process
+cleanup is recorded in execution-stop-20261017.json; it is not a throughput result.
 
 ## What requires internal work
 
@@ -159,7 +266,7 @@ unrepresented, the reference does not score the required fact/relationship, or
 the operating contract changes the decision. Examples include a team's actual
 scan degradation and document mix, an all-fields-and-records acceptance threshold,
 or required evidence links and image assets in the delivered output. First check
-whether existing ParseBench/OmniDocBench/ExtractBench cases and annotations supply
+whether existing ParseBench/OmniDocBench/ExtractBench/Pro cases and annotations supply
 that need. A different acceptance threshold may need a different aggregate rather
 than a new corpus.
 

@@ -1,12 +1,14 @@
 # PDF-Bench
 
-How do you know whether a public parser benchmark supports your own document
-workflow, and when is an internal evaluation worth building?
+Select parsing and extraction components that meet quality requirements at an
+acceptable total cost for the documents and task the application will handle.
 
-Start with [Choosing a PDF parser: when public benchmarks are enough](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
-The guide assesses what ParseBench, ExtractBench and OmniDocBench can tell you,
-then uses retained PDF-Bench experiments to explain reference qualification,
-selection bias, conflicting metrics and configuration-dependent results.
+Start with [Selecting document parsing and extraction tools](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
+The guide assesses what ParseBench, ExtractBench, ExtractBench Pro and
+OmniDocBench can tell you,
+then explains representative evaluation, quality thresholds, confidence-based
+review, latency, throughput and total operating cost. Retained results provide
+a compact example of how task acceptance changes a component decision.
 
 The [ParseBench coverage assessment](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md)
 and [filterable workload inventory](.workspace/work/2026-10-13-benchmark-rebuild/parsebench-workload-index.csv)
@@ -23,8 +25,8 @@ design; they do not establish a new universal parser ranking.
 
 The guide and supporting work are on draft [PR #9](https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9).
 The [plan](.workspace/work/2026-10-13-benchmark-rebuild/plan.md) now centres on
-public evidence, retained design lessons and the guide. **All benchmark and GPU
-execution is paused**, including the overnight queue. Full and sampled parser
+public evidence, application requirements, operating economics and the guide.
+**All benchmark and GPU execution is paused**, including the overnight queue. Full and sampled parser
 runs are deferred. No new execution is required to read or check the guide.
 
 See [project orientation](PROJECT_ORIENTATION.md) for authoritative artifacts and

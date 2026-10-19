@@ -1,12 +1,12 @@
 # PDF-Bench orientation
 
-The current deliverable is [Choosing a PDF parser: when public benchmarks are enough](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
-It explains when to reuse public evidence, how to judge its fit, and what an
-internal evaluation must establish. It uses retained examples rather than a new
-general leaderboard. All benchmark and GPU execution remains paused, including
+The current deliverable is [Selecting document parsing and extraction tools](.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
+It explains component selection for a defined document collection, downstream
+task, quality threshold and total cost, including confidence and review policies.
+It uses retained examples rather than a new general leaderboard. All benchmark and GPU execution remains paused, including
 the overnight heartbeat. Prepared full and sampled comparisons are deferred.
 
-The work unit is `.workspace/work/2026-10-13-benchmark-rebuild/`. Revision 5 of
+The work unit is `.workspace/work/2026-10-13-benchmark-rebuild/`. Revision 6 of
 its `spec.md` and current `plan.md` supersede the earlier full-roster execution
 scope. `progress.txt` records the delivery/checkpoint status. Draft
 [PR #9](https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9)
@@ -15,8 +15,8 @@ contains the work. Issues are not closed merely because a draft was delivered.
 ## Purpose
 
 Assess whether public benchmark documents, required outputs and scoring rules
-support the intended parser decision. Consult ParseBench, ExtractBench and
-OmniDocBench before proposing new experiments. Additional evaluation needs an
+support the intended component decision. Consult ParseBench, ExtractBench,
+ExtractBench Pro and OmniDocBench before proposing new experiments. Additional evaluation needs an
 important uncertainty that existing evidence cannot resolve. Do not invent
 marginal omissions or a percentage of all business use cases.
 
@@ -46,6 +46,9 @@ Paths below are relative to the work unit:
 
 ## Verification and ownership
 
+The October 19 brief requires a reader-focused guide and an ExtractBench Pro
+assessment. Keep Swiss Re/Swift3, patent and inventorship material separate.
+No website/service page or speculative acquisition narrative is included.
 This writing task permits light source, JSON, hash, arithmetic and link checks.
 It does not authorize parser or native-evaluator execution, model imports,
 profiling, dependency installation or heavyweight tests. Historical replay

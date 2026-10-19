@@ -1,23 +1,27 @@
 # PDF-Bench source status
 
-October 17, 2026. The current deliverable is the
+October 19, 2026. The current deliverable is the
 [practical parser evaluation guide](../.workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md).
-The plan and issues now centre on interpreting public evidence and learning from
-retained evaluation mistakes. All benchmark and GPU execution is paused;
+The current revision explains selecting parsing/extraction components against
+application quality and total cost. It includes ExtractBench Pro, OpenDocRouter
+and confidence-based review. Internal project history does not lead the guide.
+All benchmark and GPU execution is paused;
 full-population and sampled comparisons are deferred.
 
 The guide recommends consulting published ParseBench results before repeating
-experiments. ExtractBench and OmniDocBench supply other relevant task/reference
-contracts. Our full ParseBench inventory accounts for 2,078 input paths and
+experiments. ExtractBench, ExtractBench Pro and OmniDocBench supply other relevant
+task/reference contracts. Pro is assessed from its pinned card and shared
+evaluation contract; no Pro corpus or published scores were reproduced.
+Our full ParseBench inventory accounts for 2,078 input paths and
 2,553 group/input cases; visual observations cover 221 inputs. It establishes
 neither a business-wide coverage percentage nor a consequential deficit that
 justifies a replacement general-purpose corpus.
 
 The retained invoice example shows how complete-document acceptance and record
-F1 can prefer different configured pipelines. Selecting only one pipeline's
-successful inputs reverses their record-F1 ordering. These are controlled
-generated-template examples, not a real-vendor parser recommendation. The guide
-also explains reference mismatch, output-contract loss and cold initialization.
+F1 can prefer different configured pipelines. This controlled generated-template
+example is not a real-vendor parser recommendation. Additional retained selection
+and execution diagnostics remain in the supporting evidence. The guide explains
+reference qualification, task acceptance, confidence validation and operating cost.
 
 The [guide evidence record](../.workspace/work/2026-10-13-benchmark-rebuild/guide-evidence.json)
 identifies pinned sources, saved artifact hashes, recomputed arithmetic and

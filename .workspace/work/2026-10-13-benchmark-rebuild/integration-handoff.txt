@@ -1,54 +1,54 @@
-PDF-Bench practical evaluation guide - October 17, 2026
+PDF-Bench component-selection guide - October 19, 2026
 
 Branch: codex/benchmark-rebuild
 Draft PR: https://github.com/applied-artificial-intelligence/pdf-parser-benchmark/pull/9
-Current scope: spec.md revision 5 and the guide-centred plan.md in this work unit.
+Scope: spec.md revision 6, implementing Stefan's attached revision prompt.
 
-Primary reader artifact: benchmark-design-guide.md
-Title: Choosing a PDF parser: when public benchmarks are enough
-Guide SHA256: 2276fe30f77dc595255bb8ea25b26deca03e6911a0f289add7abf1463a4ad47f
-Source/check record: guide-evidence.json
-Evidence record SHA256: dc84c83aa883ebfdda4f27ba4d21c68aae0b21afde2c9c6a8c3dc6b84928381e
-All paths above are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
+Reader artifact: benchmark-design-guide.md
+Title: Selecting document parsing and extraction tools
+Guide SHA256: 2365371bbcfaca58d294ada786d8cc04fd80eedf6a433452f323fd52445cbff5
+Evidence record: guide-evidence.json
+Evidence SHA256: 403e9bd2b352797f25c4c9aae524324b09dbe48c6fe47584f62a4f3853723f5e
+Assessment: parsebench-coverage.md
+All artifact paths are relative to .workspace/work/2026-10-13-benchmark-rebuild/.
 
-Recommendation: consult existing published evidence before repeating parser runs.
-Check matching documents, required outputs and metric semantics. New internal
-truth needs a consequential uncertainty that current evidence cannot resolve.
-No replacement general-purpose corpus or business-wide coverage percentage is
-justified by this assessment.
+Argument: select a configuration meeting task-specific quality requirements at
+acceptable total cost for the actual document collection. Distinguish parsing
+from schema-guided extraction. Use published evidence to shortlist, inspect
+matching cases, then evaluate only unresolved requirements. Include confidence,
+review workload, omissions, application latency, throughput and operating effort.
 
-Useful evidence: complete inventory of 2078 ParseBench input paths and 2553
-capability cases, with coding-agent visual observations on 221 inputs; pinned
-ParseBench, ExtractBench and OmniDocBench contracts; retained examples showing
-that acceptance criteria and performance-based selection change conclusions;
-source-backed PDFSmith output-contract and model-lifecycle observations.
+ExtractBench Pro is now assessed from its pinned dataset card, existing shared
+README and primary announcement. All six challenges, synthetic construction,
+shared evaluator, perfect-value versus grounded metrics and inspection limits
+are explicit. Documentation reports 100 documents, 2622 pages and 144141 values;
+those table totals reconcile. No Pro PDFs or annotation rows were downloaded or
+independently audited. OpenDocRouter's official SDK and public OpenAPI establish
+its documented access interface; no parsing/upload/authenticated call was made.
+The guide corrects the brief's dates, dimension count and unverified ranking.
 
-Checks performed for this writing task: inventory recount and CSV/JSON identity
-agreement; arithmetic independently summed from 200 saved grades; all 1209 files
-bound by the invoice completion manifest hash-checked; four frozen PDFSmith
-backend files matched against the pinned Git revision; 32 local Markdown links
-and anchors checked across the guide and entry points. These were file reads,
-not fresh parsing, reference adjudication, native scoring or model profiling.
+The guide includes a hypothetical monthly cost comparison, checked to 42000,
+18000 and 26000 dollars under stated assumptions. These are not provider prices
+or measured review rates. Its retained invoice example is a compact illustration
+of conflicting acceptance metrics, qualified as generated-template evidence.
 
-Limits: invoice results measure two configured pipelines on generated templates,
-not arbitrary real vendors. Public corpus inspection is not an independent audit
-of every annotation. No warm speedup, reload fraction, GPU utilization, serving
-cost or new full/sample parser ranking was measured. Historical test receipts
-remain prior evidence; no new engineering coverage gate is claimed.
+Fresh checks: retained ParseBench inventory/CSV reconciliation; 200 saved invoice
+grades summed; 1209 completion-bound files hash-checked; pinned source identities;
+25 local links/anchors; plan shape/terms/premises/closure; guide and assessment
+prose checks. These were light source/file checks. Prior engineering tests,
+replays and PDFSmith lifecycle probes remain historical evidence. No new issue
+engineering-coverage gate or full/sample leaderboard completion is claimed.
 
-Preserved prior report: report-evidence/bundle-84919105ac8a48658b4911e2d91fd59b
-Its generated report/claims remain unchanged. The guide is the current authored
-explanation; earlier experiments retain their original scope and evidence tiers.
+Positioning: this technical guide supports component selection within larger
+document intelligence systems. Keep the Swiss Re/Swift3 case study and patent/
+inventorship material separate. No client narrative, acquisition speculation,
+website/service page, editorial package, CMS or sibling repository was changed.
 
-All benchmark and GPU execution is paused. The overnight automation is PAUSED,
-the service was inactive and no exact benchmark runner module was active at
-inspection. Prepared full/sample plans and lifecycle repairs remain deferred.
-
-Editorial and website owners may use this guide as source material. No sibling
-repository, CMS, editorial package, publication or deployment was changed. Issues
-#10-#12 receive delivery evidence but no closing footer or formal gate claim.
+All benchmark and GPU execution remains paused. Policy execution_paused=true,
+heartbeat PAUSED, service inactive and no matching owned process at inspection.
+No new parser, native grader, model import, dependency installation, GPU job,
+paid call or broad test suite. Full/sample plans and immutable reports remain
+unchanged. Public-main merge/publication remain separate decisions.
 
 Next actions
-No user action is required to complete this writing delivery. Public-main merge,
-publication and any future experiment remain separate decisions; none is requested
-by this handoff.
+No user decision is required for this revision delivery.

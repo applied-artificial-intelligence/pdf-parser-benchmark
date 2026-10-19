@@ -1,9 +1,11 @@
-# Plan: Explain how to choose and evaluate document parsers
+# Plan: Select document parsing and extraction components
 
-Revision 5, October 17, 2026, implements Stefan's accepted guide concept and current
-instruction to write from retained evidence. The deliverable is a source-verified
-practical explanation with an inspectable inventory. It is not another general
-leaderboard. All benchmark, regrading, profiling and GPU execution stays paused.
+Revision 6, October 19, 2026, implements the attached revision brief. The guide
+explains component selection for a defined document collection, downstream task,
+quality threshold and total cost. Include ExtractBench Pro, OpenDocRouter and
+confidence-score evidence. Keep client case studies, patent/inventorship material
+and speculative acquisition narratives separate. All benchmark, regrading,
+profiling and GPU execution stays paused.
 
 ## Gating and preserved work
 
@@ -534,7 +536,11 @@ Use the complete retained ParseBench inventory, source measurement and visual
 observations. Reconcile the five metric contracts and actual source units; do not
 rerun acquisition or inspection. Check published parser coverage and distinguish
 provider families from configurations and local wrappers from hosted services.
-Use pinned ExtractBench/OmniDocBench primary sources to explain alternative tasks.
+Use pinned ExtractBench/ExtractBench Pro/OmniDocBench primary sources to explain
+alternative tasks. For Pro, check synthesis, challenge counts, same-evaluator
+contract, perfect-document metrics and source-review limits. Verify OpenDocRouter
+from its official SDK/API and confidence scoring from primary documentation.
+Correct the brief's launch dates, dimension count and unsupported ranking claims.
 Refresh `parsebench-coverage.md` to recommend public reuse and remove all promises
 of automatic parser runs. Preserve the inventory and unknown family labels.
 
@@ -605,14 +611,21 @@ Closes: guide-retained-lessons.record, guide-retained-lessons.absent-record, gui
 
 **Issue 11 - Write and check the practical parser evaluation guide**
 
-Depends on Issues 9-10. Write `benchmark-design-guide.md` as a finished explanation
-for practitioners, with the source inventory as linked reference material. Lead
-with the decision: use published evidence when it fits; inspect a matching subset
-when needed; collect new truth only for a consequential unanswered requirement.
+Depends on Issues 9-10. Rewrite `benchmark-design-guide.md` as a finished explanation
+for practitioners selecting parsing and extraction components. Lead with the
+least total cost among configurations meeting task-specific quality and operating
+requirements. Explain the distinct parsing/extraction contracts, then public
+benchmark scopes and representative evaluation. Use public evidence when it fits;
+collect new truth only for a consequential unanswered requirement.
 Include concrete task/metric choices, reference construction, failure accounting,
 paired comparisons, uncertainty, operational constraints and a stopping rule.
-Explain the scoped consulting engagement without implying a proprietary corpus or
-new leaderboard is necessary. Preserve historical/controlled work with its limits.
+Include confidence validation, false acceptance, missing output, review workload,
+latency/throughput boundaries and a hypothetical cost comparison with checked
+arithmetic. Close with a concise connection to complete document intelligence
+systems. Remove internal project confessions and operational scheduling from the
+reader narrative. Keep Swiss Re/Swift3, patents, inventorship and broader website
+copy separate. Preserve historical/controlled work with its limits in reference
+material; use a compact worked example only where it develops the argument.
 
 Files: the guide and one evidence JSON, existing orientation/README/progress and
 integration handoff. Check every local link, exact cited numbers, source identities

@@ -12,5 +12,26 @@
     "path": "README.md",
     "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
     "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8"
+  },
+  {
+    "benchmark": "extractbench-pro",
+    "revision": "4ae1ffe48696297a8f6c9153034b3914fc7763d0",
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/llamaindex/ExtractBenchPro/raw/4ae1ffe48696297a8f6c9153034b3914fc7763d0/README.md",
+    "sha256": "54c7d7e1c9ab023c4b101dd35309c87869850f71b1c01f5e405cd6420890be1e"
+  },
+  {
+    "benchmark": "opendocrouter",
+    "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/README.md",
+    "sha256": "79b45d18f52e15a1e41ddf4668b6d3c0d5e1d4466d9d405e35f397bec6830da4"
+  },
+  {
+    "benchmark": "opendocrouter-api",
+    "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+    "path": "api.md",
+    "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/api.md",
+    "sha256": "fa04748a2f0673d8d10995f5b5dda78c6553ed1d46403703c727be91985d8d41"
   }
 ]

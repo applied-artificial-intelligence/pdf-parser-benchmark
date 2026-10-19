@@ -1,6 +1,14 @@
-# Spec: A practical guide to choosing and evaluating PDF parsers
+# Spec: Selecting document parsing and extraction components
 
-Revision 5, October 17, 2026. Stefan approved the concept in this conversation and
+Revision 6, October 19, 2026. The attached prompt explicitly authorizes revision
+of the assessment and guide around application quality and total cost. Include
+ExtractBench Pro, verified common-API and confidence-score developments, and the
+component's concise relationship to a complete document intelligence workflow.
+Keep the Swiss Re case study, patent and inventorship discussion separate.
+Do not publish speculation about corporate acquisition ambitions. The prior
+guide/spec are recoverable at commit `3758df4be6ccfd16b54cba9fff0a1f1db62ff833`.
+
+Stefan previously approved the concept in this conversation and
 instructed this owner to update the plan/issues and write the guide using retained
 evidence, with all benchmark and GPU runs paused. This supersedes the full-roster
 execution requirement and the subsequent sample proposal. Revision 4 and its
@@ -9,12 +17,12 @@ engineering contracts remain recoverable at Git commit
 
 ## Objective
 
-A practitioner can decide whether existing public benchmarks support a particular
-parser choice, identify what additional validation is justified, and design that
-validation without reproducing an existing leaderboard or trusting misleading
-references, averages and operating measurements. The deliverable is an independent,
-source-verified guide and an inspectable coverage inventory, grounded in the
-project's retained successes and mistakes.
+A practitioner can identify a cost-effective parsing and extraction configuration
+that meets quality requirements for a defined document collection and downstream
+task. A revised explanation assesses current public evidence, distinguishes
+parsing from structured extraction, and explains representative evaluation,
+independent references, review policies and operational economics. Internal
+project history does not supply the reader-facing argument.
 
 ## Why
 
@@ -44,14 +52,20 @@ Context: pdf-bench, document-parser-evaluation
    conversation context. Its primary document type is explanation. It develops
    decisions and their consequences through examples; exact configurations and
    exhaustive inventories remain linked reference material.
-2. Give a clear recommendation about PDF-Bench's contribution. Attribute existing
+2. Lead with component selection against task-specific quality and total cost.
+   Omit project confessions, internal scheduling and case-study/patent material.
+   Give a clear recommendation about PDF-Bench's contribution. Attribute existing
    benchmark ground truth/results and explain why another broad leaderboard is
    not currently justified. Do not claim a systematic ParseBench flaw or an
    all-business coverage percentage that the evidence does not establish.
-3. Explain the distinct scopes of ParseBench, ExtractBench and OmniDocBench using
+3. Explain the distinct scopes of ParseBench, ExtractBench, ExtractBench Pro and OmniDocBench using
    checked primary sources and pinned retained snapshots. Separate a published
    aggregate, a matching public subset, an internal acceptance criterion and new
    reference collection. A changed threshold need not require a new corpus.
+   Verify Pro's construction, challenges, metrics and limits from its dataset
+   card and source. Correct launch-date, dimension and leaderboard assumptions
+   in the brief when the primary sources differ. Review OpenDocRouter's actual
+   documented interface and confidence scoring without making live calls.
 4. Link the full source inventory and explain input files, pages, annotation
    cases/rules and original documents as different units. Preserve unknown family
    labels and distinguish mechanical inventory, visual inspection and upstream
@@ -63,10 +77,14 @@ Context: pdf-bench, document-parser-evaluation
    paired comparisons, missing/failed outcomes and representation/extractor
    interactions using retained evidence. The synthetic invoice result is a methods
    example, never the principal claim or evidence about real-vendor prevalence.
-7. Describe confirmed execution limitations from retained source/receipts: fresh
+7. Explain cold versus warm latency, throughput, failure/retry denominators,
+   review workload and local/API operating cost. Include a clearly hypothetical
+   worked cost comparison checked by arithmetic, not current provider prices.
+   Describe confirmed execution limitations from retained source/receipts: fresh
    processes and converters, forced CPU Marker options, cache/timing boundaries
    and surviving helper processes. Do not infer a measured warm speedup, GPU
-   utilization during parsing, energy cost or general SDK incapability.
+   utilization during parsing, energy cost or general SDK incapability. Detailed
+   process/debugging history stays in linked assessment/evidence.
 8. Explain how to specify an internal acceptance evaluation: important document
    conditions and outputs, independent truth, ambiguity, false associations,
    critical errors, attempt denominators, operational limits and when to stop.
@@ -101,6 +119,7 @@ Context: pdf-bench, document-parser-evaluation
 - A new general leaderboard, automatic 208-input screen or full-corpus comparison.
 - New parsing, regrading, model/GPU profiling, dependencies or heavyweight tests.
 - PDFSmith API repairs, costed provider experiments and new synthetic corpora.
+- Swiss Re case study, patent/inventorship narrative, speculative company strategy.
 - Website/editorial implementation, publication, release or public-main merge.
 
 ## Constraints

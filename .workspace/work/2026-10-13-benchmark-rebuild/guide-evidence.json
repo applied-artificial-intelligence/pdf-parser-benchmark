@@ -1,12 +1,14 @@
 {
-  "title": "Evidence for Choosing a PDF parser: when public benchmarks are enough",
-  "checked_at_utc": "2026-10-17T22:30:15.677224+00:00",
+  "title": "Evidence for Selecting document parsing and extraction tools",
+  "spec_revision": 6,
+  "review_date": "2026-10-19",
+  "checked_at_utc": "2026-10-19T21:01:05.244270+00:00",
   "guide": {
     "path": "benchmark-design-guide.md",
-    "sha256": "2276fe30f77dc595255bb8ea25b26deca03e6911a0f289add7abf1463a4ad47f",
+    "sha256": "2365371bbcfaca58d294ada786d8cc04fd80eedf6a433452f323fd52445cbff5",
     "type": "authored explanation"
   },
-  "scope": "Light reads, hashes and arithmetic over existing records; no parser, grader, model import, GPU work, corpus acquisition or broad tests.",
+  "scope": "Read-only public-source research and light checks over retained artifacts; no new parsing, grading, model/GPU job, corpus acquisition or broad test suite.",
   "public_sources": {
     "parsebench": {
       "code_revision": "d423e529ae329317bcd33c650b367acfb60e6620",
@@ -18,7 +20,7 @@
       "evaluator_source_url": "https://github.com/run-llama/ParseBench/blob/d423e529ae329317bcd33c650b367acfb60e6620/src/parse_bench/evaluation/evaluators/parse.py",
       "evaluator_source_sha256": "d124735bb46613155676058e4c1adf5bc5072bc559bfc7f49c61313ce662ea64"
     },
-    "other_benchmark_contracts": [
+    "retained_primary_documents": [
       {
         "benchmark": "omnidocbench",
         "revision": "f133a71e9e91c3621c7ce8994200a7b394a06eb3",
@@ -34,9 +36,58 @@
         "url": "https://raw.githubusercontent.com/run-llama/ExtractBench/56b8fdd91b2cf3648caf75c717c68441ecf4d43f/README.md",
         "sha256": "f7aef6a19daeb84b1ed9997ecb8826bff44abe9a5a8984e3dc971328818e53e8",
         "retained_path": "benchmark-contract-sources/extractbench-README.md"
+      },
+      {
+        "benchmark": "extractbench-pro",
+        "revision": "4ae1ffe48696297a8f6c9153034b3914fc7763d0",
+        "path": "README.md",
+        "url": "https://huggingface.co/datasets/llamaindex/ExtractBenchPro/raw/4ae1ffe48696297a8f6c9153034b3914fc7763d0/README.md",
+        "sha256": "54c7d7e1c9ab023c4b101dd35309c87869850f71b1c01f5e405cd6420890be1e",
+        "retained_path": "benchmark-contract-sources/extractbench-pro-README.md"
+      },
+      {
+        "benchmark": "opendocrouter",
+        "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+        "path": "README.md",
+        "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/README.md",
+        "sha256": "79b45d18f52e15a1e41ddf4668b6d3c0d5e1d4466d9d405e35f397bec6830da4",
+        "retained_path": "benchmark-contract-sources/opendocrouter-README.md"
+      },
+      {
+        "benchmark": "opendocrouter-api",
+        "revision": "84c5420a3b824a0b2d306bba6583da92460a0f05",
+        "path": "api.md",
+        "url": "https://raw.githubusercontent.com/run-llama/opendocrouter-py/84c5420a3b824a0b2d306bba6583da92460a0f05/api.md",
+        "sha256": "fa04748a2f0673d8d10995f5b5dda78c6553ed1d46403703c727be91985d8d41",
+        "retained_path": "benchmark-contract-sources/opendocrouter-api-api.md"
       }
     ],
-    "pdfsmith_backends": {
+    "current_web_documents": {
+      "pro-launch": {
+        "url": "https://www.llamaindex.ai/blog/introducing-extractbench-pro",
+        "retrieved_on": "2026-10-19",
+        "sha256": "8e931204129c3ac863420a402afbc147fbdb4d9d22506ba3e08039f32bba42dc",
+        "bytes": 1079766,
+        "status": "read_only_source_retrieved"
+      },
+      "extraction-confidence": {
+        "url": "https://www.llamaindex.ai/blog/what-makes-an-extraction-confidence-score-useful",
+        "retrieved_on": "2026-10-19",
+        "sha256": "d05df7278681b2296c36e297a28cc85776fcd59800c4614ae30a7c203cdd9e2d",
+        "bytes": 1008770,
+        "status": "read_only_source_retrieved"
+      },
+      "router-openapi": {
+        "url": "https://www.opendocrouter.ai/v1/openapi.json",
+        "retrieved_on": "2026-10-19",
+        "sha256": "b2505896e49a58646258678471e87a16e0c8e36bd14ad4b2d3a15ddb70bbd15c",
+        "bytes": 29447,
+        "status": "read_only_source_retrieved",
+        "retained_path": "benchmark-contract-sources/opendocrouter-openapi.json",
+        "description": "Parse PDFs and images to markdown with the model of your choice."
+      }
+    },
+    "pdfsmith_backend_history": {
       "_process.py": {
         "revision": "48de187103ffd5e0932ee3bb550affc58314a346",
         "sha256": "6cf06fa391861bb2f32b72323286489ebc8f469cfdd3c8dc71dd1fb4873c788a",
@@ -78,11 +129,11 @@
     },
     {
       "path": "parsebench-coverage.md",
-      "sha256": "7946cb761cf939413978b38db4c8296dc2d1b950f498b4914ba6a0f5dc712f54"
+      "sha256": "39c2ff5fe1240dea421c0c209e5d6b4ca485b4e5f9b6ec6d99aecc37eb77810b"
     },
     {
       "path": "benchmark-contract-sources.json",
-      "sha256": "c28156d63b656e2c34d533451d954b0848050e534ab65b2fd6f5ab6e2d4e1cba"
+      "sha256": "77aaa2b49ad2db8c096f8dc86550d063b3087faff20d6e14aa3fe822950558ce"
     },
     {
       "path": "invoice-reference-checkpoint.json",
@@ -119,162 +170,191 @@
   ],
   "assertion_support": [
     {
-      "guide_section": "Judge the documents as well as the benchmark description",
-      "kind": "retained mechanical counts and prior coding-agent visual observations",
-      "sources": [
-        "parsebench-inventory.json#/cases",
-        "parsebench-source-coverage.json#/inputs",
-        "parsebench-workload-index.json#/inputs"
-      ],
-      "independently_recounted": {
-        "input_paths": 2078,
-        "distinct_sha256": 2060,
-        "formats": {
-          "pdf": 2036,
-          "jpg": 23,
-          "png": 19
-        },
-        "group_cases": 2553,
-        "annotation_rows": 169011,
-        "physical_pdf_pages": 2038,
-        "visually_reviewed_inputs": 221,
-        "sparse_inputs": 168,
-        "no_text_inputs": 141,
-        "table_SERFF_named_paths": 193
-      },
-      "limits": "Text/family metadata is not certified domain classification. Visual coverage is not independent human reference adjudication. No business-wide percentage or systematic annotation flaw established."
-    },
-    {
-      "guide_section": "Start with the public evidence that answers your task",
-      "kind": "upstream documented contracts and published configuration rows",
+      "section": "Use public benchmarks for the capabilities they measure",
+      "kind": "public contracts, not locally reproduced provider results",
       "sources": [
         "public_sources/parsebench",
-        "public_sources/other_benchmark_contracts"
+        "benchmark-contract-sources.json"
       ],
-      "limits": "No new native comparison, no equivalence between a family name and a configured system, no prices or contemporary quality winner asserted."
+      "limits": "Five ParseBench dimensions; reading order/hierarchy are components, not extra headline metrics. No navigation completeness or OpenParse winner asserted."
     },
     {
-      "guide_section": "Translate metric scores into acceptance decisions",
-      "kind": "pinned evaluator contract interpretation",
-      "sources": [
-        "parsebench-coverage.md#what-the-ground-truth-measures",
-        "public_sources/parsebench/evaluator_source_url"
-      ],
-      "limits": "Mean rule/case scores are not perfect-document acceptance rates. Chart fact scores are not general diagram semantics or pixel reconstruction."
-    },
-    {
-      "guide_section": "A retained example: changing success changes the preferred pipeline",
-      "kind": "arithmetic over saved per-attempt grade records",
-      "sources": [
-        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/completion.json#/files",
-        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pypdf/task",
-        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pdfplumber/task",
-        "invoice-reference-checkpoint.json",
-        "invoice-failure-audit.json"
-      ],
-      "limits": "Generated documents from six source template/complexity cells, fixed extractor, coding-agent qualification; no real-vendor generalization or isolated parser merit."
-    },
-    {
-      "guide_section": "References and selection can manufacture a winner",
-      "kind": "retained historical uncertainty and a deliberately biased subset of saved grades",
-      "sources": [
-        "invoice-selection-bias-demonstration.json",
-        "retained-evidence/bundle-a6fe94d9e8eb41b785e8f55786f02f4e/registry.json"
-      ],
-      "limits": "The invoice selection example does not reconstruct historical SEC counterfactuals or establish that every old score is wrong."
-    },
-    {
-      "guide_section": "The interface and execution path are part of the evidence",
-      "kind": "source inspection and retained stop receipt",
-      "sources": [
-        "../../../pdf_bench/systems/pdfsmith_adapter.py",
-        "../../../pdf_bench/execution.py",
-        "public_sources/pdfsmith_backends",
-        "execution-stop-20261017.json"
-      ],
-      "limits": "Output contract and cold-call lifecycle are source observations; no measured warm speedup, reload fraction, GPU utilization or serving cost. Four orphan helper terminations do not establish the cause of all machine load."
-    },
-    {
-      "guide_section": "What an internal evaluation needs to add",
-      "kind": "recommendation",
-      "sources": [
-        "benchmark-design-guide.md"
-      ],
-      "limits": "Candidate workload mismatches require inspection; they are not new findings that public benchmarks omit those workloads."
-    }
-  ],
-  "saved_grade_arithmetic": {
-    "formula": "record_micro_f1 = 2 * sum(records_matched) / (sum(records_expected) + sum(records_predicted))",
-    "selection": "IDs whose saved pypdf grade has document_success true",
-    "grade_files_read": 200,
-    "completion_bound_files_sha256_checked": 1209,
-    "native_regrading_performed": false,
-    "results": {
-      "full_population": {
-        "pypdf": {
-          "fields_correct": 500,
-          "fields_expected": 500,
-          "records_matched": 668,
-          "records_expected": 696,
-          "records_predicted": 698,
-          "document_success": 84,
-          "documents_expected": 100,
-          "record_micro_f1": 0.9583931133428981
+      "section": "ExtractBench Pro extends the interpretation challenge",
+      "kind": "upstream dataset-card/announcement reports",
+      "source_revision": "4ae1ffe48696297a8f6c9153034b3914fc7763d0",
+      "challenge_table_recount": {
+        "document_conventions": {
+          "documents": 22,
+          "pages": 875,
+          "expected_values": 121287
         },
-        "pdfplumber": {
-          "fields_correct": 468,
-          "fields_expected": 500,
-          "records_matched": 677,
-          "records_expected": 696,
-          "records_predicted": 691,
-          "document_success": 55,
-          "documents_expected": 100,
-          "record_micro_f1": 0.9762076423936553
+        "house_vocabulary": {
+          "documents": 14,
+          "pages": 606,
+          "expected_values": 15242
+        },
+        "house_counting_rules": {
+          "documents": 12,
+          "pages": 225,
+          "expected_values": 409
+        },
+        "drawn_relations": {
+          "documents": 20,
+          "pages": 352,
+          "expected_values": 2349
+        },
+        "charts_inside_documents": {
+          "documents": 25,
+          "pages": 557,
+          "expected_values": 1347
+        },
+        "long_chart_sheets": {
+          "documents": 7,
+          "pages": 7,
+          "expected_values": 3507
         }
       },
-      "performance_selected_population": {
-        "pypdf": {
-          "fields_correct": 420,
-          "fields_expected": 420,
-          "records_matched": 580,
-          "records_expected": 580,
-          "records_predicted": 580,
-          "document_success": 84,
-          "documents_expected": 84,
-          "record_micro_f1": 1.0
-        },
-        "pdfplumber": {
-          "fields_correct": 388,
-          "fields_expected": 420,
-          "records_matched": 575,
-          "records_expected": 580,
-          "records_predicted": 575,
-          "document_success": 48,
-          "documents_expected": 84,
-          "record_micro_f1": 0.9956709956709957
-        }
+      "table_totals": {
+        "documents": 100,
+        "pages": 2622,
+        "expected_values": 144141
+      },
+      "declared_document_types": 86,
+      "limits": "Only documentation read. No Pro PDF/annotation-row acquisition, independent render/reference audit or score reproduction. All 100 documents synthetic; no production prevalence inference."
+    },
+    {
+      "section": "Match the evidence to the document collection",
+      "kind": "retained ParseBench counts and prior coding-agent visual observations",
+      "recounted": {
+        "input_paths": 2078,
+        "distinct_sha256": 2060,
+        "group_cases": 2553,
+        "annotation_rows": 169011,
+        "visually_reviewed_inputs": 221
+      },
+      "sources": [
+        "parsebench-inventory.json#/cases",
+        "parsebench-workload-index.json#/inputs",
+        "parsebench-workload-index.csv"
+      ],
+      "limits": "No percentage of all business tasks or systematic reference failure established. Missing metadata is not absent coverage."
+    },
+    {
+      "section": "Compare configurations on representative, independent references",
+      "kind": "arithmetic over saved grade files and retained reference/failure audits",
+      "sources": [
+        "invoice-reference-checkpoint.json",
+        "invoice-failure-audit.json",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pypdf/task",
+        "invoice-comparison-evidence/run-9f0739f0bd464c6b9b3dbe1c86b6731c/summary.json#/pdfplumber/task"
+      ],
+      "limits": "Configured parser plus fixed extractor, generated templates and prior coding-agent qualification; no arbitrary real-vendor recommendation."
+    },
+    {
+      "section": "Evaluate confidence as a review policy",
+      "kind": "source-backed evaluation recommendation",
+      "sources": [
+        "public_sources/current_web_documents/extraction-confidence"
+      ],
+      "limits": "No local calibration measurement, borrowed cutoff, provider-score comparability or guarantee about final reviewed accuracy."
+    },
+    {
+      "section": "Compare the economics of the complete configuration",
+      "kind": "hypothetical arithmetic, not a measured comparison",
+      "sources": [
+        "hypothetical_economics"
+      ],
+      "limits": "Prices/review rates are assumptions. Integration, infrastructure and residual-error costs are excluded from the subtotal. Review effectiveness is assumed for explanation and requires actual validation."
+    },
+    {
+      "section": "Common APIs simplify access but preserve evaluation obligations",
+      "kind": "official SDK and unauthenticated public API source inspection",
+      "sources": [
+        "benchmark-contract-sources/opendocrouter-README.md",
+        "benchmark-contract-sources/opendocrouter-api-api.md",
+        "benchmark-contract-sources/opendocrouter-openapi.json"
+      ],
+      "limits": "No upload, authenticated API call, inference, live provider test, model catalog comparison or billed request."
+    },
+    {
+      "section": "Record a component decision the implementation can use",
+      "kind": "engineering recommendation and user-defined positioning",
+      "limits": "Component selection informs broader system design; no client case, patent/inventorship claim, website/service copy or corporate acquisition speculation included."
+    }
+  ],
+  "source_corrections": {
+    "release_dates": {
+      "ParseBench": "2026-04-13",
+      "ExtractBench": "2026-08-11",
+      "ExtractBench_Pro": "2026-10-15"
+    },
+    "release_date_sources": [
+      "https://www.llamaindex.ai/blog/parsebench",
+      "https://www.llamaindex.ai/blog/introducing-extractbench",
+      "https://www.llamaindex.ai/blog/introducing-extractbench-pro"
+    ],
+    "OpenParse": "No named entry in the pinned 147-row ParseBench CSV; no ranking claim made.",
+    "maturity": "Public contracts and source availability checked; no independent certification, stable ranking or business-wide coverage estimate implied."
+  },
+  "saved_grade_arithmetic": {
+    "formula": "2 * sum(records_matched) / (sum(records_expected) + sum(records_predicted))",
+    "grade_files_read": 200,
+    "completion_bound_files_checked": 1209,
+    "native_regrading_performed": false,
+    "results": {
+      "pypdf": {
+        "records_matched": 668,
+        "records_expected": 696,
+        "records_predicted": 698,
+        "document_success": 84,
+        "documents_expected": 100,
+        "record_micro_f1": 0.9583931133428981
+      },
+      "pdfplumber": {
+        "records_matched": 677,
+        "records_expected": 696,
+        "records_predicted": 691,
+        "document_success": 55,
+        "documents_expected": 100,
+        "record_micro_f1": 0.9762076423936553
       }
     }
   },
-  "local_source_code": {
-    "pdf_bench/systems/pdfsmith_adapter.py": "1342dee8baa0745820aafe258d52ddfdfb80dd982561e3bbda2db03c80abd6f6",
-    "pdf_bench/execution.py": "637ec09785bb88bfd2d39013d0a7d25d56dd92e41d40d6ee11db2976ce144a1f"
+  "hypothetical_economics": {
+    "monthly_documents": 100000,
+    "pages_per_document": 2,
+    "review_minutes_per_document": 3,
+    "labor_usd_per_hour": 40,
+    "required_final_quality": "Assumed met with the stated review policy in all three cases; not empirically established.",
+    "rows": [
+      {
+        "configuration": "A",
+        "price_per_page_usd": 0.01,
+        "review_document_fraction": 0.2,
+        "processing_usd": 2000.0,
+        "review_usd": 40000.0,
+        "subtotal_usd": 42000.0
+      },
+      {
+        "configuration": "B",
+        "price_per_page_usd": 0.04,
+        "review_document_fraction": 0.05,
+        "processing_usd": 8000.0,
+        "review_usd": 10000.0,
+        "subtotal_usd": 18000.0
+      },
+      {
+        "configuration": "C",
+        "price_per_page_usd": 0.08,
+        "review_document_fraction": 0.05,
+        "processing_usd": 16000.0,
+        "review_usd": 10000.0,
+        "subtotal_usd": 26000.0
+      }
+    ]
   },
-  "pause_verification": {
-    "policy_execution_paused": true,
-    "heartbeat_status": "PAUSED",
-    "service_state_observed": "inactive",
-    "matching_exact_module_process_ids": [],
-    "prior_orphan_helper_pids_absent": true,
-    "new_benchmark_or_GPU_runs": 0
-  },
-  "delivery_limits": [
-    "This is a guide and supporting inventory, not a completed full/sample leaderboard.",
-    "Prior replay and engineering test receipts were not rerun for this writing task.",
-    "No new issue coverage gate, merge, publication, release, deployment or paid execution is claimed."
-  ],
   "document_validation": {
-    "local_markdown_links_and_anchors_checked": 32,
+    "local_links_and_anchors_checked": 25,
     "checked_files": [
       ".workspace/work/2026-10-13-benchmark-rebuild/benchmark-design-guide.md",
       ".workspace/work/2026-10-13-benchmark-rebuild/parsebench-coverage.md",
@@ -282,7 +362,24 @@
       "PROJECT_ORIENTATION.md",
       "docs/BENCHMARK_STATUS_REPORT.md"
     ],
-    "external_links": "Pinned primary-source links inspected during source review; not a new full remote availability sweep.",
-    "no_em_dashes": true
-  }
+    "guide_words": 2595,
+    "pro_card_table_totals_reconciled": true,
+    "plan_shape_terms_premises_closure": "passed; not issue coverage",
+    "guide_house_style_tells": "none",
+    "source_availability": "OpenDocRouter docs/HF card failed in web tool; pinned SDK/card and public OpenAPI were retrieved with read-only HTTP.",
+    "no_em_dashes_in_checked_authored_documents": true,
+    "assessment_house_style_tells": "none"
+  },
+  "pause_verification": {
+    "policy_execution_paused": true,
+    "heartbeat_status": "PAUSED",
+    "matching_owned_process_ids": [],
+    "new_benchmark_or_GPU_runs": 0,
+    "service_state_observed": "inactive"
+  },
+  "delivery_limits": [
+    "No new issue engineering-coverage gate, merge, publication, deployment, paid run or model-performance claim.",
+    "Prior replay/test receipts remain prior evidence.",
+    "Full/sample plans and frozen outputs remain unchanged."
+  ]
 }
